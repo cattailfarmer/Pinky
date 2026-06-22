@@ -1,9 +1,0 @@
-# OpenCode configuration for sprite generation
-
-commands:
-  sprite:
-    description: Generate a pixel‑art sprite via SD‑2.1 + LoRA
-    handler: scripts/gen_sprite.py
-    allow_file_access:
-      - "C:/Project/Artwork/Sprites"
-    # Allows read/write within the sprites directory
