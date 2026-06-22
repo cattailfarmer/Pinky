@@ -1,0 +1,161 @@
+& [MultiplayerSplitscreenDataContracts] is the data contract set for the first host-session split-screen feature
+  + [contract_uuid] is d1e451a5-af91-4519-a047-6f704cc481b0
+  + [source_feature_specification] is unreal_platform_project/specifications/Multiplayer_Splitscreen_Hosting_Feature_Specification.sop
+  + [source_document] is unreal_platform_project/source_documents/2026-06-21_multiplayer_splitscreen_intake/Dictated_Multiplayer_Splitscreen_Source.sop
+  + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_status] is unsigned_data_contract_draft
+  + [authority_state] is draft_until_user_review_and_SJS_satisfaction
+
+  & [IdentityModel] is the natural identity surface for local multiplayer hosting
+    + [platform_user_id] is the natural key for one authenticated platform user
+    + [host_device_id] is the platform-visible device identity for the local machine hosting a session
+    + [experience_id] is the natural key for one creator-authored experience
+    + [experience_version_id] is the immutable version identity for one publishable experience build
+    + [host_session_id] is the generated session identity for one live or completed hosted experience run
+    + [local_slot_id] is the stable slot identity within one host_session_id
+    + [binding_id] is the generated identity for one AuthenticatedUser to LocalPlayerSlot assignment interval
+    + [audit_event_id] is the append-only identity for one trace event in the host session
+
+    = must: treat host_session_id plus local_slot_id as the local slot natural identity
+    = must: treat platform_user_id as distinct from local_slot_id, host_device_id, input_device_id, PlayerController, and viewport index
+    = must: preserve experience_version_id in every host session
+    - never: use viewport index, controller id, or pawn pointer as durable account identity
+
+  | [HostSessionState] is (created | starting | active | ending | ended | failed)
+  | [LocalSlotState] is (empty | awaiting_login | authenticated | spawning | active | leaving | disconnected | released)
+  | [BindingState] is (pending | active | suspended | ended | invalidated)
+  | [AuditEventKind] is (
+    host_session_created |
+    host_session_started |
+    local_slot_created |
+    login_started |
+    login_succeeded |
+    login_failed |
+    user_bound_to_slot |
+    player_controller_created |
+    pawn_spawned |
+    viewport_assigned |
+    input_assigned |
+    player_left |
+    slot_released |
+    host_session_ended |
+    fault_detected
+  )
+
+  & [HostDevice] is the platform-visible runtime device that can host a local split-screen session
+    + [host_device_id] is required
+    + [device_label] is optional human-readable local name
+    + [runtime_platform] is Windows, Linux, Mac, console, or unresolved
+    + [capability_set] is local_split_screen, listen_server_candidate, controller_input, keyboard_mouse_input, or unresolved
+
+  & [ExperienceVersion] is the immutable creator-authored world package selected for hosting
+    + [experience_id] is required
+    + [experience_version_id] is required
+    + [content_hash] is required when a package exists
+    + [launch_map] is required when a UE project exists
+    + [compatibility_flags] is split_screen_supported, local_multiplayer_supported, network_forward_compatible, or unresolved
+
+  & [HostSession] is one live or historical hosted execution of an experience version
+    + [host_session_id] is required
+    + [host_device_id] is required
+    + [experience_version_id] is required
+    + [host_user_id] is optional because a device may host before or apart from a local player account
+    + [state] is exclusive [HostSessionState]
+    + [created_at] is required
+    + [started_at] is optional
+    + [ended_at] is optional
+    + [authority_mode] is local_authoritative, listen_server_candidate, dedicated_server, or unresolved
+    + [max_local_slots] is required
+    + [audit_log_ref] is required
+
+    = must: allow local users to join without requiring all users to be host_user_id
+    = must: reject active session without experience_version_id
+
+  & [LocalPlayerSlot] is one local play lane inside a host session
+    + [host_session_id] is required
+    + [local_slot_id] is required
+    + [slot_index] is visual ordering only
+    + [state] is exclusive [LocalSlotState]
+    + [input_device_id] is optional until assigned
+    + [viewport_id] is optional until assigned
+    + [player_controller_ref] is optional UE runtime reference
+    + [pawn_ref] is optional UE runtime reference
+    + [hud_ref] is optional UE runtime reference
+
+    = must: keep slot_index replaceable without changing local_slot_id
+    = must: allow slot release without deleting historical audit events
+
+  & [AuthenticatedUser] is one platform account joining the host session
+    + [platform_user_id] is required
+    + [display_name] is required for UI proof
+    + [auth_method] is mock, online_account, guest, or unresolved
+    + [account_restriction_set] is optional
+    + [avatar_profile_id] is optional
+
+    = must: support mock auth for first implementation slice
+    = must: preserve the future transition to online auth
+
+  & [UserSessionBinding] is the time-bounded assignment of a platform user to a local player slot
+    + [binding_id] is required
+    + [host_session_id] is required
+    + [local_slot_id] is required
+    + [platform_user_id] is required
+    + [state] is exclusive [BindingState]
+    + [bound_at] is required
+    + [ended_at] is optional
+    + [end_reason] is leave, kick, auth_lost, session_end, slot_reassignment, or unresolved
+
+    = must: reject binding when local_slot_id already has an active binding to a different platform_user_id
+    = must: reject binding when one platform_user_id already has an active binding in the same host_session_id unless an explicit future multi-seat policy allows it
+
+  & [PlayerControllerBinding] is the UE runtime relation produced from a UserSessionBinding
+    + [binding_id] is required
+    + [player_controller_ref] is required when spawned
+    + [pawn_ref] is required when possessed
+    + [viewport_id] is required when rendered
+    + [input_device_id] is required when playable
+    + [hud_ref] is required when UI proof exists
+
+    = must: trace each runtime reference back to binding_id
+    = must: emit a fault event when a runtime reference cannot be traced back to one binding
+
+  & [SessionAuditEvent] is append-only evidence of host-session behavior
+    + [audit_event_id] is required
+    + [host_session_id] is required
+    + [event_kind] is exclusive [AuditEventKind]
+    + [occurred_at] is required
+    + [platform_user_id] is optional
+    + [local_slot_id] is optional
+    + [binding_id] is optional
+    + [ue_ref] is optional
+    + [summary] is required
+
+    = must: append instead of mutating prior events
+    = must: include host_session_id in every event
+    = should: include local_slot_id and platform_user_id when the event concerns a player
+
+  & [JoinPolicy] is the rule set for local users entering one host session
+    + [requires_distinct_users] is true for v0
+    + [requires_authentication] is true for v0 through mock authentication
+    + [allows_guest] is false for v0
+    + [max_local_slots] is 2 for first proof
+    + [remote_join_state] is deferred
+
+    = must: reject duplicate platform_user_id in active local slots for v0
+    = must: reject join when max_local_slots is reached
+    = must: record rejection as SessionAuditEvent when a join attempt reaches the platform layer
+
+  & [DataQualityGate] is the validation pass before implementation may claim readiness
+    = verify: HostDevice, HostSession, LocalPlayerSlot, AuthenticatedUser, UserSessionBinding, PlayerControllerBinding, and SessionAuditEvent remain distinct
+    = verify: each acceptance criterion in Multiplayer_Splitscreen_Hosting_Feature_Specification has at least one supporting data subject
+    = verify: every lifecycle state has a valid transition path or is marked future
+    = verify: audit events can prove AC7 and AC8
+    = verify: mock auth can be replaced by online auth without changing local_slot_id semantics
+
+  & [SJSProcessingStatus] is the current processing state
+    + [processing_state] is data_contract_draft
+    + [source_preserved] is true
+    + [canonical_signature] is not_issued
+    + [required_next_stage] is user_review_then_implementation_slice
+
+  - never: treat this contract as final implementation authority before review and proof planning

@@ -1,0 +1,17 @@
+& [SLMSlice48PrimerSchemaVersioning] is a work-ready slice for primer compatibility
+  + [slice_id] is SLM-48
+  + [status] is verified_wsl
+  + [effort] is S
+  + [risk] is low
+  + [depends_on] is SLM-10, SLM-37
+  + [scope] is define schema version, compatibility notes, and migration expectations for SLM primers
+  + [acceptance_criteria] is primer JSON exposes versioned schema and stable required fields
+  + [proof_route] is Rust serialization test and WSL cargo test
+
+  ! [CompletionEvidence] is the SLM-48 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Primer_Schema_Versioning_Contract.sop
+    @ [implementation] is slm_rust/src/primer.rs PrimerSchemaInfo and primer_schema_info
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 17 tests
+    @ [self_check] passed
+    @ [demo_schema] is slm_primer 0.1.0 compatibility_floor 0.1.0

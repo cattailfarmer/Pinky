@@ -1,0 +1,14 @@
+& [SLMSlice09SemanticGraphAndUncertaintyGlyphs] is a work-ready slice for compact graph identity
+  + [slice_id] is SLM-09
+  + [status] is blocked
+  + [feature_cluster] is ClusterGSemanticGraph
+  + [source_refs] is SemanticGraphBoundary, GlyphStabilization, UncertaintyGlyphTypes
+  + [depends_on] is SLM-08
+  + [scope] is define SemanticGraph contents, append-only relations, glyph lifecycle, uncertainty glyph types, and lineage edges
+  + [deliverable] is SOP contract for SemanticGraph, Glyph, SemanticRelation, UncertaintyGlyph, GraphLineage, RetireEvent, SupersedeEvent, and graph inspection
+  + [acceptance_criteria] is graph contains only stabilized meaning and bounded uncertainty
+  + [acceptance_criteria] is every graph object links back to evidence or deliberation lineage
+  + [proof_route] is graph expected-output review for "The fish swim." and unresolved "Time flies like an arrow." case
+  + [exclusions] is evidence workspace temporary candidates
+  + [next_action] is unblock after stabilization contract exists
+

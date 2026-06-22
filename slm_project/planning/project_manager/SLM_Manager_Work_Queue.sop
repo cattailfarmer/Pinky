@@ -1,0 +1,263 @@
+& [SLMManagerWorkQueue] is the active queue for ongoing SLM work
+  + [queue_uuid] is 7b01d46b-f829-464a-8228-634758da5d3e
+  + [status] is active
+  + [policy_gate] is Windows Application Control blocks Cargo-generated executables
+  + [trusted_verification_route] is WSL Cargo with CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker /home/pinky/bin/zigcc
+
+  & [QueueItems] is the current buffet
+    + [SLM-18] is Trusted Rust Verification Route
+      + [status] is complete
+      + [effort] is M-L
+      + [risk] is resolved
+      + [next_action] is use WSL Cargo with CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker /home/pinky/bin/zigcc
+    + [SLM-19] is Evidence Query Surface
+      + [status] is verified_wsl
+      + [effort] is S
+      + [risk] is medium
+      + [next_action] is extend only when new sidecar or primer queries require it
+    + [SLM-20] is Closed-Class Relation Template Rules
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is refine relation kind mapping when new preposition subclasses are added
+    + [SLM-21] is Lexical Sense Coherence Scoring
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is add more sense fixtures when new lexical domains are selected
+    + [SLM-22] is Sidecar Evidence Bundle Format
+      + [status] is verified_wsl
+      + [effort] is S
+      + [risk] is medium
+      + [next_action] is extend prompt envelope only when live sidecar tasks require it
+    + [SLM-23] is LM Studio Sidecar Adapter
+      + [status] is verified_wsl_source_only
+      + [effort] is M-L
+      + [risk] is high
+      + [next_action] is verify request/response conversion and add live transport only after policy gate resolves
+    + [SLM-24] is Diffusion Rule Table Extraction
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is externalize rule tables later if runtime configurability becomes necessary
+    + [SLM-25] is Manager Effort Model
+      + [status] is complete
+      + [effort] is S
+      + [risk] is low
+      + [next_action] is maintain queue continuously
+    + [SLM-26] is Provider Disagreement Payloads
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is connect typed payloads to live provider adapter responses later
+    + [SLM-27] is Provider Internal Faculty Report
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is connect provider faculty reports to live sidecar prompts later
+    + [SLM-28] is Primer Provider Evidence
+      + [status] is verified_wsl
+      + [effort] is S
+      + [risk] is medium
+      + [next_action] is tune compact evidence size after primer consumers exist
+    + [SLM-29] is Fixture Provider Evidence Coverage
+      + [status] is verified_wsl
+      + [effort] is S
+      + [risk] is medium
+      + [next_action] is add more fixture domains when new grammar phenomena are chosen
+    + [SLM-30] is Source-Only Verification Gate
+      + [status] is complete
+      + [effort] is S
+      + [risk] is low
+      + [next_action] is run python slm_project/tools/slm_source_gate_check.py after each source-only batch
+    + [SLM-31] is Closed-Class Role-Pair Suppression
+      + [status] is complete
+      + [effort] is XS
+      + [risk] is low
+      + [next_action] is keep structural-token exclusions in future role-pair rule additions
+    + [SLM-32] is Imperative Subject and Implied Actor Uncertainty
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is refine implied actor only when downstream sidecar/provider evidence can propose a concrete actor
+    + [SLM-33] is Candidate Relation Stabilization Audit
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is use relation audit refs when expanding relation taxonomy
+    + [SLM-34] is Live LM Studio Transport Gate
+      + [status] is blocked_external_runtime
+      + [effort] is M-L
+      + [risk] is high
+      + [next_action] is wait until user confirms LM Studio endpoint and model are available
+    + [SLM-35] is Sidecar Task Prompt Contracts
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is use task-specific prompt contracts before live sidecar response validation
+    + [SLM-36] is Provider Jury Panel Expansion
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is use panel member refs and aggregate measurements in contradiction and arbitration fixtures
+    + [SLM-37] is Primer Compaction Budget
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is tune policy only when downstream primer consumers require different budgets
+    + [SLM-38] is Closed-Class Lexical Sense Routing
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is keep default deferral for closed-class token senses and use explicit all-sense routing only for query/audit modes
+    + [SLM-39] is Activation Score Split Plan
+      + [status] is ready_sop_only
+      + [effort] is S
+      + [risk] is low
+      + [next_action] is define confidence, energy, and routing priority semantics
+    + [SLM-40] is Append-Only Learning Store Design
+      + [status] is ready_sop_only
+      + [effort] is M
+      + [risk] is low
+      + [next_action] is define event schema and replay assumptions
+    + [SLM-41] is Fixture Expansion Matrix
+      + [status] is specification_complete
+      + [effort] is S-M
+      + [risk] is low
+      + [next_action] is implement selected fixture cases in dependent slices
+    + [SLM-42] is Evidence Provenance Normalization
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is use normalized primer refs for downstream contradiction and wobble attribution
+    + [SLM-43] is Support Propagation Idempotence
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is preserve ensure_support_record as the boundary for future support-producing passes
+    + [SLM-44] is Contradiction Propagation Expansion
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is use contradiction deliberation and jury refs in future safety and arbitration fixtures
+    + [SLM-45] is Wobble Factor Attribution
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is use local wobble factors for routing and uncertainty-boundary rules
+    + [SLM-46] is Uncertainty Boundary Stabilization Rules
+      + [status] is verified_wsl
+      + [effort] is M-L
+      + [risk] is medium
+      + [next_action] is use typed uncertainty criteria for pronoun and negation/scope expansion
+    + [SLM-47] is Relation Taxonomy Round 2
+      + [status] is ready_after_SLM-65
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is split broad relation kinds only where fixtures demand it
+    + [SLM-48] is Primer Schema Versioning
+      + [status] is verified_wsl
+      + [effort] is S
+      + [risk] is low
+      + [next_action] is require schema_id, schema_version, compatibility_floor, and required_fields in future primer consumers
+    + [SLM-49] is Demo Output Modes
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is low
+      + [next_action] is use --mode compact for concise smoke output and --mode primer-only for downstream primer consumers
+    + [SLM-50] is CLI Regression Harness
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is low
+      + [next_action] is use python slm_project/tools/slm_regression_harness.py before snapshot or release-style checks
+    + [SLM-51] is Golden Fixture Snapshots
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is review compact JSON diffs from slm_golden_snapshot.py before accepting behavior changes
+    + [SLM-52] is Lexical Substrate Delta Rebuild Workflow
+      + [status] is verified_source_gate
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is use dry-run checksum plan before any intentional lexical substrate rebuild
+    + [SLM-53] is Lexicon License and Provenance Audit
+      + [status] is specification_complete
+      + [effort] is S-M
+      + [risk] is low
+      + [next_action] is preserve CC-BY 4.0 attribution and project-internal closed-class seed boundary in future substrate refreshes
+    + [SLM-54] is LM Studio Response Validation and Repair
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is use validated parser for live or mock LM Studio adapter responses
+    + [SLM-55] is Ollama Sidecar Adapter Skeleton
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is use Ollama source-only envelope for provider configuration and future transport checks
+    + [SLM-56] is Provider Set Configuration
+      + [status] is verified_wsl
+      + [effort] is M-L
+      + [risk] is medium
+      + [next_action] is use local_provider_set_v0.json for future provider orchestration without live calls
+    + [SLM-57] is Sidecar Mock Server Harness
+      + [status] is blocked_external_runtime
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is wait until SLM-34 live/mock endpoint gate is selected
+    + [SLM-58] is Multi-Provider Arbitration Fixtures
+      + [status] is ready
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is add support-support-object fixture variants
+    + [SLM-59] is Append-Only Learning Store Rust Skeleton
+      + [status] is ready_after_SLM-40
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is implement storage-neutral semantic memory event structs
+    + [SLM-60] is Graph Replay and Audit CLI
+      + [status] is ready_after_SLM-59
+      + [effort] is M-L
+      + [risk] is medium
+      + [next_action] is replay append-only event sequences into active graph state
+    + [SLM-61] is Architecture Narrative Refresh
+      + [status] is ready_sop_only
+      + [effort] is S-M
+      + [risk] is low
+      + [next_action] is update project narrative for current verified architecture
+    + [SLM-62] is Threshold Calibration Fixtures
+      + [status] is verified_wsl
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is preserve threshold boundary tests when changing faculty, contradiction, or wobble gates
+    + [SLM-63] is Wobble Routing Policies
+      + [status] is verified_wsl
+      + [effort] is S-M
+      + [risk] is medium
+      + [next_action] is keep routing decisions tied to dimensions and factor refs as new wobble dimensions appear
+    + [SLM-64] is Pronoun Reference Fixture and Rules
+      + [status] is ready
+      + [effort] is M
+      + [risk] is medium
+      + [next_action] is add pronoun unresolved-reference uncertainty fixture
+    + [SLM-65] is Negation and Coordination Diffusion Expansion
+      + [status] is ready
+      + [effort] is M-L
+      + [risk] is medium
+      + [next_action] is deepen negator and conjunction templates with fixtures
+
+  & [RecommendedRound3Order] is the next serving order
+    + [first] is SLM-38 Closed-Class Lexical Sense Routing
+    + [second] is SLM-37 Primer Compaction Budget
+    + [third] is SLM-32 Imperative Subject and Implied Actor Uncertainty
+    + [fourth] is SLM-33 Candidate Relation Stabilization Audit
+    + [fifth] is SLM-35 Sidecar Task Prompt Contracts
+    + [blocked] is SLM-34 Live LM Studio Transport Gate until endpoint and model are confirmed
+
+  & [RecommendedLongRunOrder] is the expanded serving order
+    + [phase_1] is SLM-38, SLM-37, SLM-42, SLM-43, SLM-45
+    + [phase_2] is SLM-32, SLM-33, SLM-41, SLM-62, SLM-63
+    + [phase_3] is SLM-35, SLM-36, SLM-54, SLM-55, SLM-56, SLM-58
+    + [phase_4] is SLM-39, SLM-40, SLM-59, SLM-60, SLM-61
+    + [phase_5] is SLM-44, SLM-46, SLM-47, SLM-64, SLM-65
+    + [blocked_live] is SLM-34 and SLM-57 until live/mock endpoint testing is selected

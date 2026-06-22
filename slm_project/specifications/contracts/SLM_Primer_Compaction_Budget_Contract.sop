@@ -1,0 +1,41 @@
+& [SLMPrimerCompactionBudgetContract] is the contract for bounded compact evidence in SLM primers
+  + [contract_uuid] is 9e134f29-3d81-48f6-8adf-0e027969a16f
+  + [slice_id] is SLM-37
+  + [depends_on] is SLM_Primer_Rendering_Contract, SLM_Lexical_Sense_Evidence_Contract, SLM_Primer_Provider_Evidence_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to keep primer evidence machine-reingestible as the evidence workspace grows
+    = must: preserve compact evidence required to reconstruct the reasoning surface
+    = must: cap verbose evidence classes before they dominate the primer
+    = must: rank capped evidence by support activation and stable id ordering
+    = must: report omitted evidence counts by kind
+    = must: keep compaction policy visible in the primer JSON
+    - never: use compaction to hide unresolved uncertainty, contradiction, or wobble
+
+  & [MustKeepEvidenceKinds] are evidence classes retained as routing-critical
+    + [kind] is tokens
+    + [kind] is structural_hint
+    + [kind] is span_candidate
+    + [kind] is contradiction
+    + [kind] is provider_deliberation
+    + [kind] is wobble
+
+  & [CappedEvidenceKinds] are evidence classes with v0 top-k budgets
+    + [support] is top support records by support_activation
+    + [provider_suggestion] is top provider suggestions by support_activation then stable id
+    + [lexical_sense] is top senses per token by support_activation then stable id
+    = must: keep at least lexical sense evidence for open-class terms when available
+    = must: treat closed-class sense deferral from SLM-38 as upstream evidence routing rather than primer-only filtering
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/primer.rs PrimerCompactionBudget
+    + [module] is slm_rust/src/primer.rs PrimerCompactionSummary
+    + [module] is slm_rust/src/primer.rs compact_evidence_with_budget
+    + [proof_route] is WSL cargo test and demo primer evidence-kind inspection
+
+  ! [Slice37SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 9 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_proof] workspace lexical sense candidates were 13 and primer retained 6 lexical_sense compact evidence items
+    @ [demo_proof] primer compaction reported 37 omitted evidence items by kind

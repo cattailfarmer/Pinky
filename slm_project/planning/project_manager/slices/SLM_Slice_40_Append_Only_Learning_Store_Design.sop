@@ -1,0 +1,12 @@
+& [SLMSlice40AppendOnlyLearningStoreDesign] is a work-ready SOP slice for persistent semantic memory
+  + [slice_id] is SLM-40
+  + [status] is ready_sop_only
+  + [effort] is M
+  + [risk] is low
+  + [depends_on] is SLM-09, SLM-13
+  + [scope] is design append-only records for create, link, activate, retire, and supersede events beyond in-memory graph lifecycle
+  + [deliverable] is storage-neutral SOP contract for future learning store
+  + [acceptance_criteria] is no semantic identity rewrite path exists in the design
+  + [proof_route] is SOP review and lifecycle event trace audit
+  + [exclusions] is choosing SQLite, sled, RocksDB, or another storage engine
+  + [next_action] is define event schema and replay assumptions

@@ -1,0 +1,36 @@
+& [SLMOllamaSidecarAdapterSkeletonContract] is the source-only contract for Ollama sidecar compatibility
+  + [contract_uuid] is b4104fd0-3c6e-40ff-a15c-f51748f42f62
+  + [slice_id] is SLM-55
+  + [depends_on] is SLM_LM_Studio_Sidecar_Adapter_Contract, SLM_Sidecar_Task_Prompt_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to prepare Ollama-compatible sidecar exchange without live network execution
+    = must: build an Ollama /api/chat style request from SidecarPromptEnvelope
+    = must: include the same task_contract and response contract boundaries as LM Studio
+    = must: keep stream false for deterministic v0 parsing
+    = must: parse Ollama assistant message content through the validated sidecar parser
+    = must: return ProviderSuggestion evidence only
+    - never: execute a network call in this slice
+    - never: mutate the semantic graph directly
+
+  & [OllamaRequest] is the source-only request surface
+    + [endpoint] defaults to http://127.0.0.1:11434/api/chat
+    + [model] is adapter configuration
+    + [messages] include system and user messages
+    + [options.temperature] is low by default
+    + [options.num_predict] is bounded by configuration
+    + [stream] is false
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/sidecar.rs OllamaSidecarConfig
+    + [module] is slm_rust/src/sidecar.rs OllamaChatRequest
+    + [module] is slm_rust/src/sidecar.rs to_ollama_chat_request
+    + [module] is slm_rust/src/sidecar.rs parse_ollama_provider_suggestions_validated
+    + [proof_route] is WSL cargo test and regression harness
+
+  ! [Slice55SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 28 library tests and 3 slm_demo tests
+    @ [regression_harness] passed slm_regression_harness_ok
+    @ [request_test] Ollama request embeds task_contract and uses stream false
+    @ [parser_test] Ollama response message.content is parsed through validated sidecar parser

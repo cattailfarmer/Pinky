@@ -1,0 +1,17 @@
+& [SLMSenseCoherenceScoringContract] is the contract for local lexical sense support adjustment
+  + [contract_uuid] is 0d2f913a-9449-4423-b3aa-92da29c47672
+  + [slice_id] is SLM-21
+  + [status] is source_implemented_policy_gated
+
+  & [SenseCoherence] is a heuristic evidence-support pass
+    + [input] is lexical sense candidates
+    + [input] is token context and span context
+    + [output] is support records for coherent senses
+    = must: increase support without collapsing ambiguity
+    = must: preserve all competing senses
+    - never: treat coherence support as truth
+
+  & [ImplementationProjection] is slm_rust/src/diffusion.rs SenseCoherenceScoring pass
+    + [status] is source_complete_policy_gated
+    + [rule_table] is slm_rust/src/rules.rs SENSE_COHERENCE_RULES
+    + [extraction_slice] is SLM-24

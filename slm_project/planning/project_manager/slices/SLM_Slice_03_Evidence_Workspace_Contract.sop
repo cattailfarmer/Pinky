@@ -1,0 +1,14 @@
+& [SLMSlice03EvidenceWorkspaceContract] is a work-ready slice for the evidence workspace
+  + [slice_id] is SLM-03
+  + [status] is ready
+  + [feature_cluster] is ClusterBDataIdentity
+  + [source_refs] is WorkspaceArchitecture, EvidenceLayer, SemanticGraphBoundary
+  + [depends_on] is SLM-02
+  + [scope] is define the pre-graph workspace that holds tokens, candidate roles, candidate meanings, candidate relations, support, contradictions, and provider evidence
+  + [deliverable] is SOP contract for EvidenceWorkspace inputs, contained records, update rules, query surfaces, and trace outputs
+  + [acceptance_criteria] is EvidenceWorkspace can contain temporary hypotheses without polluting SemanticGraph
+  + [acceptance_criteria] is every evidence item has source or provider provenance
+  + [proof_route] is fixture review for "The fish swim." and "Time flies like an arrow." as evidence-only before stabilization
+  + [exclusions] is diffusion pass implementation and graph promotion
+  + [next_action] is author slm_project/specifications/contracts/SLM_Evidence_Workspace_Contract.sop
+

@@ -1,0 +1,48 @@
+& [UnrealPlatformWorkSliceIndex] is the project-manager index for the UE5 Roblox-like platform work
+  + [index_uuid] is b970bc3a-9499-4553-bdaa-66179389f95e
+  + [project_subject] is UE5-powered user-generated multiplayer game platform
+  + [source_document] is unreal_platform_project/source_documents/2026-06-21_platform_intake/Dictated_Unreal_Platform_Source.sop
+  + [feature_import_specification] is unreal_platform_project/specifications/Roblox_Feature_Import_Specification.sop
+  + [active_feature_specification] is unreal_platform_project/specifications/Multiplayer_Splitscreen_Hosting_Feature_Specification.sop
+  + [active_data_contract] is unreal_platform_project/specifications/contracts/Multiplayer_Splitscreen_Data_Contracts.sop
+  + [coordination_mode] is single_conversation_project_manager
+  + [coordination_layer] is inactive
+  + [manager_rule] is complete and review one slice before claiming the next dependent slice
+
+  & [ReadinessModel] is the local status vocabulary
+    + [ready] is clear enough for immediate work
+    + [blocked] is waiting on dependency or unresolved decision
+    + [deferred] is valid future work outside the current frontier
+    + [active] is currently being prepared or reviewed
+    + [complete] is finished and reviewed for support_delta and requirement_delta
+
+  & [SliceSet] is the ordered work map
+    + [slice_01] is unreal_platform_project/planning/project_manager/slices/Slice_01_Multiplayer_Splitscreen_Data_Contract.sop
+      + [status] is complete
+      + [depends_on] is source preservation and feature expansion draft
+      + [completion_review] is unreal_platform_project/planning/project_manager/reviews/Review_2026-06-21_Multiplayer_Splitscreen_Scaffold.sop
+    + [slice_02] is unreal_platform_project/planning/project_manager/slices/Slice_02_UE5_Prototype_Host_Session_Scaffold.sop
+      + [status] is complete
+      + [depends_on] is slice_01 review
+      + [completion_review] is unreal_platform_project/planning/project_manager/reviews/Review_2026-06-21_Multiplayer_Splitscreen_Scaffold.sop
+    + [slice_03] is future slice for mock authentication and user-slot binding
+      + [status] is ready
+      + [depends_on] is slice_02
+    + [slice_04] is future slice for split-screen player creation, input isolation, and HUD proof
+      + [status] is deferred
+      + [depends_on] is slice_03
+    + [slice_05] is future slice for audit log persistence and smoke proof
+      + [status] is deferred
+      + [depends_on] is slice_04
+
+  & [ManagerNextFrontier] is the recommended immediate work order
+    + [first] is implement two-player local split-screen slot creation using the compiled host-session scaffold
+    + [second] is add HUD proof that distinct mock users are bound to distinct local slots
+    + [third] is add smoke proof for audit events and identity-collapse guard
+
+  & [CompletedWorkReviewRule] is the manager check between slices
+    = must: inspect completed slice deliverables
+    = must: record support_delta when a slice supports another requirement
+    = must: record requirement_delta when a slice changes the requirement shape
+    = must: update this index before starting a dependent slice
+    - never: proceed from a completed slice as if completion is only a stamp

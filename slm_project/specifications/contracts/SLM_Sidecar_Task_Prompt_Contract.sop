@@ -1,0 +1,53 @@
+& [SLMSidecarTaskPromptContract] is the contract for task-specific sidecar prompt authority
+  + [contract_uuid] is f7b740d9-8e36-4680-a195-dc522e3b5590
+  + [slice_id] is SLM-35
+  + [depends_on] is SLM_Sidecar_Evidence_Bundle_Contract, SLM_LM_Studio_Sidecar_Adapter_Contract, SLM_Provider_Internal_Faculty_Report_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to prevent sidecar prompts from becoming hidden graph authority
+    = must: define a task-specific instruction for every sidecar task kind
+    = must: define allowed evidence for each task
+    = must: define required output for each task
+    = must: define forbidden authority for each task
+    = must: require ProviderSuggestion output with rationale and provenance
+    = must: preserve uncertainty when evidence does not justify resolution
+    - never: allow sidecar output to create glyphs directly
+    - never: allow sidecar output to rewrite EvidenceWorkspace records
+
+  & [TaskContracts] are the v0 task set
+    + [rank_senses] is contextual ranking of lexical sense candidates
+    + [propose_spans] is bounded proposal of candidate spans from token and structure evidence
+    + [object_to_parse] is objection to candidate meanings or relations with rationale
+    + [answer_objection] is evidence-grounded answer to an objection
+    + [run_faculty_validation] is seven-faculty dual-hemisphere validation report for a candidate
+
+  & [AllowedEvidenceRule] is the prompt boundary
+    = must: use only the SidecarEvidenceBundle, task target, question, and response contract
+    = must: cite evidence refs in the returned ProviderSuggestion lineage or payload
+    = must: prefer uncertainty output over unsupported certainty
+    - never: use unstated world knowledge as if it were SLM evidence
+
+  & [RequiredOutputRule] is the response boundary
+    = must: return JSON matching LmStudioProviderSuggestionResponse
+    = must: include provider_suggestions as an array
+    = must: include rationale-bearing ProviderSuggestion payloads
+    = must: use provider suggestion kinds rather than glyph identities
+    - never: return prose outside JSON for machine sidecar calls
+
+  & [MachineTemplate] is the source prompt contract artifact
+    + [template] is slm_project/sidecar_prompts/sidecar_task_prompt_contracts_v0.json
+    + [format] is slm_sidecar_task_prompt_contracts_v0
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/sidecar.rs SidecarTaskPromptContract
+    + [module] is slm_rust/src/sidecar.rs sidecar_task_prompt_contract
+    + [module] is slm_rust/src/sidecar.rs task_instruction_text
+    + [module] is slm_rust/src/sidecar.rs SidecarPromptEnvelope task_contract
+    + [proof_route] is source gate and WSL cargo test
+
+  ! [Slice35SourceComplete] is accepted
+    @ [source_gate] passed with sidecar_prompt_contract_validation_ok tasks=5
+    @ [wsl_cargo_test] passed 19 library tests and 3 slm_demo tests
+    @ [regression_harness] passed slm_regression_harness_ok
+    @ [template] is slm_project/sidecar_prompts/sidecar_task_prompt_contracts_v0.json
+    @ [task_count] is 5

@@ -1,0 +1,42 @@
+& [SLMAuthoritySourceRails] is the authority contract for the SLM project before implementation
+  + [contract_uuid] is 5ce91f17-4b7d-4e9a-8d69-b9b3d45e3c15
+  + [slice_id] is SLM-01
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [source_manifest] is slm_project/source_documents/2026-06-20_slm_intake/Source_Document_Manifest.sop
+  + [canonical_specification] is slm_project/specifications/SLM_Canonical_Specification.sop
+  + [prior_exploded_specification] is slm_project/specifications/SLM_Exploded_Specification.sop
+  + [work_decomposition_explosion] is slm_project/specifications/SLM_Explosion_Round_2_Work_Decomposition.sop
+  + [work_slice_index] is slm_project/planning/project_manager/SLM_Work_Slice_Index.sop
+  + [status] is accepted_for_sop_contract_work
+
+  & [AuthorityOrder] is the local authority stack for this project
+    + [first] is direct current user instruction
+    + [second] is preserved source document
+    + [third] is active ReasoningFramework SOP governance
+    + [fourth] is canonical SLM specification draft
+    + [fifth] is exploded specifications and work decomposition
+    + [sixth] is project manager slice index and slice files
+    + [seventh] is implementation artifacts after formation
+    = must: treat source text as provenance and constraint pressure
+    = must: treat canonical and exploded specs as derived interpretation, not source replacement
+    = must: route conflicts back through source preservation and SJS reprocessing
+
+  & [FalseStartQuarantine] is the status of premature implementation
+    + [path] is slm_prototype
+    + [classification] is owned_by_current_conversation_before_framework_activation
+    + [status] is quarantined_reference_not_authority
+    = must: not use slm_prototype as governing implementation authority
+    = may: inspect or reuse concepts only after implementation formation maps them to accepted contracts
+    - never: allow false-start code to silently decide architecture
+
+  & [SOPFirstExecutionRule] is the current phase boundary
+    + [current_phase] is specification_contract_formation
+    + [not_current_phase] is executable Python implementation
+    = must: finish and review SOP contracts before new implementation work
+    = must: keep each work slice independently reviewable
+    = must: update project manager slice state after each completed slice
+
+  ! [Slice01Complete] is accepted
+    @ [support] source document, manifest, canonical draft, explosion documents, staged plan, and work index exist as separate artifacts
+    @ [support] false-start implementation is explicitly quarantined
+

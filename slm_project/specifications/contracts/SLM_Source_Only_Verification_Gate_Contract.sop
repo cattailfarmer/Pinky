@@ -1,0 +1,23 @@
+& [SLMSourceOnlyVerificationGateContract] is the contract for non-Cargo verification while executable generation is blocked
+  + [contract_uuid] is 0fd02567-b951-43c9-ac72-d1bc43232252
+  + [slice_id] is SLM-30
+  + [status] is source_implemented
+
+  & [Purpose] is to make policy-gated validation repeatable
+    = must: avoid Cargo build, test, run, or check
+    = must: avoid generating Rust target executables
+    = must: validate Rust source shape where possible
+    = must: validate Python lexicon scripts compile
+    = must: validate lexical substrate artifact shape when present
+    = must: check source markers for recently added SLM slices
+    - never: claim this replaces Cargo verification
+
+  & [GateChecks] is the v0 source-only checklist
+    + [rust_brace_scan] checks balanced braces across slm_rust/src
+    + [python_compile] checks slm_lexicon scripts with py_compile
+    + [substrate_validation] checks manifest, index, closed-class table, and representative terms
+    + [target_absence] confirms slm_rust/target and slm_rust/target-check are absent
+    + [source_marker_scan] checks rule tables, provider payloads, faculty reports, primer evidence, and LM Studio skeleton markers
+
+  & [RuntimeProjection] is slm_project/tools/slm_source_gate_check.py
+    + [status] is source_complete

@@ -1,0 +1,32 @@
+& [SLMClosedClassLexicalSenseRoutingContract] is the contract for routing open-class senses on closed-class tokens
+  + [contract_uuid] is a42a4d85-86e7-43ac-b55a-07c1833f0f68
+  + [slice_id] is SLM-38
+  + [depends_on] is SLM_Closed_Class_Diffusion_Contract, SLM_Lexical_Sense_Evidence_Contract, SLM_Closed_Class_Role_Pair_Suppression_Contract
+  + [status] is verified_wsl
+
+  & [RoutingPrinciple] is how closed-class lexical senses should enter the evidence system
+    = must: preserve source lexicon entries without deleting WordNet or database evidence
+    = must: emit closed-class structural hints when closed-class authority exists
+    = must: defer ordinary lexical sense suggestions for closed-class tokens by default
+    = must: allow explicit routing policy to emit all senses for query and audit modes
+    = must: treat deferred senses as routing discipline, not semantic collapse
+    - never: convert a closed-class token into an open-class semantic glyph from raw lexical score alone
+
+  & [ImplementationProjection] is the Rust source surface
+    + [module] is slm_rust/src/lexicon.rs LexicalSenseRoutingPolicy
+    + [module] is slm_rust/src/lexicon.rs LexicalSubstrateProvider::with_sense_routing_policy
+    + [default_policy] is DeferClosedClassTokenSenses
+    + [audit_policy] is EmitAllSenses
+    + [verification] is WSL cargo test plus demo lexical sense inspection
+
+  & [AcceptanceCriteria] is the behavioral proof target
+    = must: article "a" emits determiner or structural evidence
+    = must: article "a" does not emit ordinary lexical sense candidates in default demo output
+    = must: explicit all-sense routing can still recover closed-class token senses
+    = must: "Design a compiler for FPGA hardware." keeps lexical senses for open-class terms
+
+  ! [Slice38SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 8 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [demo_proof] article token "a" produced 0 lexical sense candidates and one article/indefinite structural hint
+    @ [demo_proof] open-class lexical sense terms remained design, compiler, hardware

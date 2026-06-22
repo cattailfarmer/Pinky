@@ -1,0 +1,50 @@
+& [SLMUncertaintyBoundaryStabilizationContract] is the contract for stabilizing bounded uncertainty identities
+  + [contract_uuid] is 6920b886-7646-4508-a8a6-99a7f0ca95cb
+  + [slice_id] is SLM-46
+  + [depends_on] is SLM_Faculty_Validation_Stabilization_Contract, SLM_Semantic_Graph_Uncertainty_Contract, SLM_Imperative_Subject_Uncertainty_Contract, SLM_Wobble_Factor_Attribution_Contract
+  + [status] is verified_wsl
+
+  & [BoundaryPrinciple] is when uncertainty itself may enter the SemanticGraph
+    = must: create uncertainty glyphs only for bounded uncertainty identities
+    = must: preserve vague or unbounded uncertainty in EvidenceWorkspace
+    = must: use type-specific criteria rather than one generic uncertainty gate
+    = must: preserve lineage and candidate_set for later reconsideration
+    - never: stabilize uncertainty merely because aggregate wobble is high
+
+  & [ProviderDisagreementBoundary] is stabilized when disagreement is deliberated
+    + [uncertainty_type] is provider_disagreement
+    + [required_candidate_count] is 1 or more
+    + [required_lineage] is provider objection or deliberation lineage
+    + [required_boundary] is statement names provider disagreement
+
+  & [UnresolvedRoleBoundary] is stabilized when role alternatives are locally bounded
+    + [uncertainty_type] is unresolved_role
+    + [required_candidate_count] is 2 or more grammar candidates for one token
+    + [required_lineage] is token id
+    + [required_boundary] is statement names competing roles
+
+  & [UnresolvedScopeBoundary] is stabilized when scope alternatives are locally bounded
+    + [uncertainty_type] is unresolved_scope
+    + [required_candidate_count] is candidate relation plus unresolved endpoint labels
+    + [required_lineage] is candidate relation lineage
+    + [required_boundary] is statement names relation scope or attachment ambiguity
+
+  & [UnresolvedSubjectBoundary] is stabilized when implied actor is specific
+    + [uncertainty_type] is unresolved_subject_boundary
+    + [required_candidate_count] is action candidate plus implied actor placeholder
+    + [required_lineage] is command-leading action token
+    + [required_boundary] is statement names implied actor or command subject
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/stabilization.rs UncertaintyBoundaryCriteria
+    + [module] is slm_rust/src/stabilization.rs uncertainty_boundary_criteria
+    + [module] is slm_rust/src/diffusion.rs propose_unresolved_role_uncertainties
+    + [module] is slm_rust/src/diffusion.rs propose_unresolved_scope_uncertainties
+    + [proof_route] is WSL cargo test plus demo uncertainty inspection
+
+  ! [Slice46SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 15 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_proof] design/compiler primer emitted unresolved_subject_boundary, unresolved_role, and unresolved_scope uncertainty types
+    @ [demo_refinement] unresolved_role requires distinct grammatical roles rather than duplicate evidence for the same role

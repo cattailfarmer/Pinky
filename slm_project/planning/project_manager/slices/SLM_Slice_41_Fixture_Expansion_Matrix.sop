@@ -1,0 +1,18 @@
+& [SLMSlice41FixtureExpansionMatrix] is a work-ready slice for the next deterministic fixture set
+  + [slice_id] is SLM-41
+  + [status] is specification_complete
+  + [effort] is S-M
+  + [risk] is low
+  + [depends_on] is SLM-11, SLM-29, SLM-32
+  + [scope] is define fixture sentences for imperative subject, negation, coordination, pronoun reference, and attachment ambiguity
+  + [deliverable] is SOP fixture matrix and optional mock-provider fixture expansion
+  + [acceptance_criteria] is each fixture has expected workspace, diffusion trace, wobble vector, graph boundary, and primer expectation
+  + [proof_route] is SOP review then WSL cargo test when fixtures are implemented
+  + [exclusions] is broad natural-language benchmark suite
+  + [next_action] is implement selected fixture cases in dependent slices
+
+  ! [CompletionEvidence] is the SLM-41 SOP review record
+    @ [contract] is slm_project/specifications/contracts/SLM_Fixture_Expansion_Matrix_Contract.sop
+    @ [fixture_count] is 7
+    @ [coverage] is imperative subject, negation, coordination, pronoun reference, attachment ambiguity, security veto, and threshold boundary
+    @ [proof] source gate remains responsible for file consistency until Rust fixture slices implement the cases

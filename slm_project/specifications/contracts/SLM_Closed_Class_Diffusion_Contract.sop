@@ -1,0 +1,25 @@
+& [SLMClosedClassDiffusionContract] is the contract for using function-word evidence as early diffusion pressure
+  + [contract_uuid] is 3f3c9111-8f87-46f0-b997-81ec43389bcb
+  + [slice_id] is SLM-14
+  + [depends_on] is SLM_Lexical_Authority_Foundation_Contract, SLM_Semantic_Diffusion_Pass_Contract
+  + [status] is source_implemented_policy_gated
+
+  & [ClosedClassDiffusion] is the early structural pass over lexical substrate hints
+    + [input] is StructuralHint records from LexicalSubstrateProvider
+    + [input] is closed_class_speed_table generated from the lexical substrate pack
+    + [output] is SupportRecord pressure for function-word constraints
+    + [output] is DiffusionPassTrace of closed_class_constraint
+    = must: run before semantic graph promotion
+    = must: preserve closed-class ambiguity
+    = must: treat articles, prepositions, conjunctions, auxiliaries, modals, negators, and quantifiers as structural pressure
+    - never: force semantic meaning from a function word alone
+
+  & [ImplementationProjection] is the Rust source surface
+    + [module] is slm_rust/src/core.rs StructuralHint
+    + [module] is slm_rust/src/providers.rs ProviderSuggestionKind::StructuralHint
+    + [module] is slm_rust/src/evidence.rs structural_hints workspace field
+    + [module] is slm_rust/src/diffusion.rs DiffusionPassKind::ClosedClassConstraint
+
+  ! [Slice14SourceComplete] is accepted
+    @ [support] source-level implementation exists
+    @ [limitation] Cargo execution remains gated by Windows Application Control

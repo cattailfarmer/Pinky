@@ -1,0 +1,34 @@
+& [SLMEvidenceProvenanceNormalizationContract] is the contract for parseable evidence refs in primer projection
+  + [contract_uuid] is c006b1fd-6751-4a2e-8589-a06fc065d272
+  + [slice_id] is SLM-42
+  + [depends_on] is SLM_Evidence_Query_Surface_Contract, SLM_Provider_Disagreement_Payload_Contract, SLM_Primer_Provider_Evidence_Contract
+  + [status] is verified_wsl
+
+  & [NormalizationBoundary] is where ref normalization occurs
+    = must: normalize refs emitted by primers for machine re-ingestion
+    = must: preserve raw evidence workspace ids and lineage internally
+    = must: preserve source identity by keeping an explicit namespace prefix
+    = must: keep normalized refs deterministic and stable across runs
+    = should: normalize raw note-like refs into source_note identities
+    - never: rewrite old semantic identities or raw evidence records to satisfy primer formatting
+
+  & [RefGrammar] is the v0 parseable string form
+    + [shape] is namespace:source_identity
+    + [namespace] may be tok, provider, meaning, lexical_sense, structural_hint, span, synset, support, contradiction, deliberation, wobble, evidence, source_note, or an existing valid namespace
+    + [source_identity] is the remaining stable identity string after the first colon
+    = must: include a colon separator
+    = must: avoid whitespace in normalized refs
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/primer.rs normalize_evidence_ref
+    + [module] is slm_rust/src/primer.rs normalize_ref_list
+    + [module] is slm_rust/src/primer.rs compact evidence refs
+    + [module] is slm_rust/src/primer.rs primer lineage refs
+    + [proof_route] is WSL cargo test plus primer evidence scan
+
+  ! [Slice42SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 10 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_proof] primer compact evidence emitted 73 refs with 0 missing namespaces and 0 whitespace refs
+    @ [demo_namespaces] included lexical_sense, meaning, provider, source_note, span, structural_hint, synset, tok, and wobble

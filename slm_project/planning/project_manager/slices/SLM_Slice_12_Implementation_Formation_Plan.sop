@@ -1,0 +1,12 @@
+& [SLMSlice12ImplementationFormationPlan] is the completed first slice for turning SOP contracts into executable Rust work
+  + [slice_id] is SLM-12
+  + [status] is complete
+  + [feature_cluster] is implementation_frontier
+  + [source_refs] is completed SLM-01 through SLM-11 contracts and reviews
+  + [depends_on] is SLM-01, SLM-02, SLM-03, SLM-04, SLM-05, SLM-06, SLM-07, SLM-08, SLM-09, SLM-10, SLM-11
+  + [scope] is define and implement the first deterministic Rust projection of the SOP contracts
+  + [deliverable] is slm_rust crate with module boundaries, deterministic fixtures, tests, and demo binary
+  + [acceptance_criteria] is every implemented module maps back to a completed SOP contract and proof route
+  + [proof_route] is cargo fmt, cargo test, cargo clippy, and default demo execution
+  + [exclusions] is live lower-LLM network adapters and learned model training
+  + [next_action] is inspect v0 behavior and choose SLM-13 frontier

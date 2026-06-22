@@ -1,0 +1,36 @@
+& [SLMRuntimeEvidenceExpansionReview20260621] is the review for SLM-14 through SLM-17
+  + [review_uuid] is 62d30d85-2ebf-4b5e-a6f3-cf3fd293c912
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [reviewed_slices] is SLM-14, SLM-15, SLM-16, SLM-17
+  + [status] is source_complete_with_policy_gate
+
+  & [ImplementedRuntimeEvidence] is the source-level implementation result
+    + [SLM-14] is closed-class structural hint diffusion
+    + [SLM-15] is span candidate layer
+    + [SLM-16] is lexical sense evidence and sense wobble
+    + [SLM-17] is tiny-LLM sidecar contract only
+
+  & [RustSurface] is the modified code surface
+    + [core] added StructuralHint, SpanKind, SpanCandidate, LexicalSenseCandidate
+    + [providers] added StructuralHint and LexicalSense provider suggestions
+    + [lexicon] emits role, structural hint, and sense evidence from LexicalSubstrateProvider
+    + [evidence] stores structural_hints, span_candidates, and lexical_sense_candidates
+    + [diffusion] adds closed_class_constraint, span_candidate_formation, and lexical_sense_support passes
+    + [wobble] adds span_boundary_instability and sense_instability
+    + [primer] includes structural hints, span candidates, and lexical senses in compact evidence
+    + [demo] exposes the new evidence layers in JSON output
+
+  & [PolicyGate] is still active
+    + [observed] Windows Application Control blocked Cargo-generated executables
+    + [decision] no Cargo build/test commands were run during this expansion
+    + [validation] source inspection and Python substrate validation only
+
+  & [SupportDelta] is the capability added
+    + [delta] function words now shape diffusion instead of merely existing as role candidates
+    + [delta] phrase/span evidence exists before semantic graph promotion
+    + [delta] open-class WordNet senses are preserved and can raise sense wobble
+    + [delta] tiny-LLM sidecar role is bounded before implementation
+
+  & [RequirementDelta] is accepted
+    + [new_requirement] diffusion must consume closed-class substrate hints before final semantic stabilization
+    + [new_requirement] EvidenceWorkspace must preserve spans and senses separately from glyphs

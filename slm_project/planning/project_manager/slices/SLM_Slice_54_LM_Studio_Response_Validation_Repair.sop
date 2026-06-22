@@ -1,0 +1,17 @@
+& [SLMSlice54LMStudioResponseValidationRepair] is a work-ready slice for defensive sidecar parsing
+  + [slice_id] is SLM-54
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-23, SLM-35
+  + [scope] is validate, reject, or repair malformed sidecar JSON without trusting freeform text
+  + [acceptance_criteria] is invalid sidecar response becomes provider objection or parse failure, not graph evidence
+  + [proof_route] is parser tests and WSL cargo test
+
+  ! [CompletionEvidence] is the SLM-54 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_LM_Studio_Response_Validation_Repair_Contract.sop
+    @ [implementation] is slm_rust/src/sidecar.rs parse_lm_studio_provider_suggestions_validated
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 26 library tests and 3 slm_demo tests
+    @ [regression_harness] passed
+    @ [parser_cases] are accepted exact JSON, repaired fenced array JSON, and rejected freeform objection evidence

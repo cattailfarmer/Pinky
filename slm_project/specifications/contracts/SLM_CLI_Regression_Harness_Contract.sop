@@ -1,0 +1,43 @@
+& [SLMCLIRegressionHarnessContract] is the contract for one-command regression verification
+  + [contract_uuid] is 0d099f18-11a9-44e1-9485-fd38f3a7e820
+  + [slice_id] is SLM-50
+  + [depends_on] is SLM_Source_Only_Verification_Gate_Contract, SLM_Demo_Output_Modes_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to make the trusted verification route repeatable without manual command reconstruction
+    = must: run the existing source gate from the workspace root
+    = must: run WSL cargo test with the trusted target directory and linker
+    = must: run slm_self_check through WSL
+    = must: run slm_demo compact smoke and validate compact JSON boundaries
+    = must: run slm_demo primer-only smoke and validate primer schema
+    = must: run slm_demo SOP smoke and validate plain-text prefix
+    - never: write Cargo target output into slm_rust/target on Windows
+
+  & [HarnessStages] are the required checks
+    + [stage] is source_gate
+    + [stage] is cargo_test
+    + [stage] is self_check
+    + [stage] is demo_compact
+    + [stage] is demo_primer_only
+    + [stage] is demo_sop
+
+  & [OutputContract] is the command-line reporting surface
+    = must: print one status line per successful stage
+    = must: print parsed smoke facts for demo modes
+    = must: exit non-zero if any command fails or any parsed condition fails
+    = must: end with slm_regression_harness_ok when all stages pass
+
+  & [RuntimeProjection] is the source surface
+    + [script] is slm_project/tools/slm_regression_harness.py
+    + [source_gate] is slm_project/tools/slm_source_gate_check.py compiles the harness
+    + [proof_route] is python slm_project/tools/slm_regression_harness.py
+
+  ! [Slice50SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [harness] passed python slm_project/tools/slm_regression_harness.py
+    @ [harness_stage] source_gate_ok
+    @ [harness_stage] cargo_test_ok
+    @ [harness_stage] self_check_ok
+    @ [harness_stage] demo_compact_ok lexical_sense_candidate_count=13 wobble_route=seek_sidecar
+    @ [harness_stage] demo_primer_only_ok schema=slm_primer:0.1.0 compact_evidence_count=35
+    @ [harness_stage] demo_sop_ok first_line=SLM_PRIMER_V0

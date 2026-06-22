@@ -1,0 +1,9 @@
+& [SLMSlice61ArchitectureNarrativeRefresh] is a work-ready documentation slice
+  + [slice_id] is SLM-61
+  + [status] is ready_sop_only
+  + [effort] is S-M
+  + [risk] is low
+  + [depends_on] is SLM-31, SLM-38, SLM-40
+  + [scope] is update project narrative to reflect verified Rust, lexical substrate, WSL route, and next frontier
+  + [acceptance_criteria] is a reader can understand current architecture without replaying the whole conversation
+  + [proof_route] is SOP review

@@ -1,0 +1,63 @@
+& [SLMRustImplementationFormation] is the Rust target projection of the language-independent SLM SOP contracts
+  + [formation_uuid] is 84978c01-982f-4d17-9716-723bbd44d7c3
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [contract_set] is slm_project/specifications/contracts/*.sop
+  + [work_slice_index] is slm_project/planning/project_manager/SLM_Work_Slice_Index.sop
+  + [target_language] is Rust
+  + [target_workspace] is slm_rust
+  + [toolchain] is stable-x86_64-pc-windows-msvc
+  + [rustc_observed] is rustc 1.96.0
+  + [cargo_observed] is cargo 1.96.0
+  + [status] is implemented_v0
+
+  & [FormationBoundary] is the distinction between SOP authority and Rust projection
+    = must: treat SOP contracts as language-independent authority
+    = must: treat Rust files as a target-specific implementation projection
+    = must: map every Rust module to one or more accepted SOP contracts before implementing behavior
+    = must: keep mock-provider deterministic tests before live lower LLM provider calls
+    - never: let Rust type convenience rewrite the SLM semantic model
+
+  & [InitialRustWorkspace] is the implemented v0 crate surface
+    + [crate_path] is slm_rust
+    + [crate_kind] is library plus demo binary
+    + [crate_name] is slm_rust
+    + [edition] is 2024
+    + [current_purpose] is deterministic v0 SLM reasoning pipeline
+    + [present] is EvidenceWorkspace implementation
+    + [present] is ProviderAdapter and MockProvider implementation
+    + [present] is ProviderDeliberationEngine implementation
+    + [present] is WobbleVector measurement implementation
+    + [present] is DiffusionEngine implementation
+    + [present] is seven-faculty Stabilizer implementation
+    + [present] is SemanticGraph implementation
+    + [present] is SlmPrimer JSON and SOP rendering implementation
+    + [present] is slm_demo binary for the compiler sentence demo
+
+  & [ImplementedRustModuleMap] is the accepted v0 module-to-contract projection
+    + [module] is authority references SLM_Authority_Source_Rails
+    + [module] is core references SLM_Core_Data_Contracts
+    + [module] is evidence references SLM_Evidence_Workspace_Contract
+    + [module] is providers references SLM_LLM_Provider_Adapter_Contract
+    + [module] is deliberation references SLM_Provider_Deliberation_Contract
+    + [module] is wobble references SLM_Wobble_Contradiction_Contract
+    + [module] is diffusion references SLM_Semantic_Diffusion_Pass_Contract
+    + [module] is stabilization references SLM_Faculty_Validation_Stabilization_Contract
+    + [module] is graph references SLM_Semantic_Graph_Uncertainty_Contract
+    + [module] is primer references SLM_Primer_Rendering_Contract
+    + [module] is fixtures references SLM_Fixture_Proof_Suite
+
+  & [RustReadinessProof] is the prepared-toolchain proof
+    + [proof] is rustc available
+    + [proof] is cargo available
+    + [proof] is rustfmt component available
+    + [proof] is clippy component available
+    + [proof] is cargo test passes for scaffold
+    + [proof] is cargo fmt check passes for scaffold
+    + [proof] is cargo clippy passes for scaffold
+    + [proof] is cargo fmt passes for v0 implementation
+    + [proof] is cargo test passes with 4 tests for v0 implementation
+    + [proof] is cargo clippy --all-targets --all-features -- -D warnings passes for v0 implementation
+    + [proof] is cargo run --quiet --bin slm_demo emits compiler-sentence SLM report
+
+  ~ [ImplementationEntered] is accepted
+    @ [support] user approved Rust lift and v0 behavior is now present under slm_rust

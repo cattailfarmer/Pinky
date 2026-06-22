@@ -1,0 +1,26 @@
+& [SLMRelationStabilizationAuditContract] is the contract for relation promotion traceability
+  + [contract_uuid] is 81f93727-41fc-4b1d-9db2-2c74101885a5
+  + [slice_id] is SLM-33
+  + [depends_on] is SLM_Semantic_Graph_Uncertainty_Contract, SLM_Closed_Class_Relation_Template_Contract, SLM_Diffusion_Rule_Table_Contract
+  + [status] is verified_wsl
+
+  & [PromotionBoundary] is how candidate relations enter the SemanticGraph
+    = must: keep CandidateRelation records in EvidenceWorkspace before stabilization
+    = must: promote a SemanticRelation only when both endpoint glyphs exist
+    = must: cite the source CandidateRelation id
+    = must: cite endpoint stabilization decision ids
+    = must: preserve candidate relation lineage and endpoint decision lineage in relation lineage transform refs
+    - never: promote a relation template directly from a structural hint into SemanticGraph
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/graph.rs SemanticRelation candidate_relation_ref
+    + [module] is slm_rust/src/graph.rs endpoint_decision_refs
+    + [module] is slm_rust/src/graph.rs relation_endpoint_decision_refs
+    + [proof_route] is WSL cargo test and demo relation lineage inspection
+
+  ! [Slice33SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 14 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_proof] acts_on and constrains relations cite candidate_relation_ref plus endpoint_decision_refs
+    @ [demo_lineage] relation lineage transform_refs include candidate relation and endpoint decisions

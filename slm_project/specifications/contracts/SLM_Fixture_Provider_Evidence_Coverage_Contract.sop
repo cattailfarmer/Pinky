@@ -1,0 +1,20 @@
+& [SLMFixtureProviderEvidenceCoverageContract] is the contract for deterministic coverage of provider evidence payloads
+  + [contract_uuid] is d512a6f5-679a-4417-a4c2-9afa25c857ce
+  + [slice_id] is SLM-29
+  + [status] is source_implemented_policy_gated
+
+  & [Purpose] is to keep new provider evidence structures represented in fixtures
+    = must: include a typed objection payload in at least one deterministic fixture
+    = must: include a typed answer payload in at least one deterministic fixture
+    = must: include a provider internal faculty report in at least one deterministic fixture
+    = must: route those fixture records through ProviderDeliberation where applicable
+    - never: leave new evidence structures unrepresented until live LLM integration
+
+  & [FixtureProjection] is the v0 coverage route
+    + [fixture] is TimeFliesArrow provider disagreement
+    + [typed_objection] is role_conflict against TimeFliesAssertion
+    + [typed_answer] is narrows against the same target
+    + [provider_faculty_report] is mock-support internal faculty report for the disputed target
+
+  & [RuntimeProjection] is slm_rust/src/fixtures.rs
+    + [status] is source_complete_policy_gated

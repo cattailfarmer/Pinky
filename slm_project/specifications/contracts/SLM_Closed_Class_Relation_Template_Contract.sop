@@ -1,0 +1,17 @@
+& [SLMClosedClassRelationTemplateContract] is the contract for relation candidates emitted from structural words
+  + [contract_uuid] is 65dc9365-e920-4269-8809-db3c237b64a1
+  + [slice_id] is SLM-20
+  + [status] is source_implemented_policy_gated
+
+  & [RelationTemplates] is the v0 relation mapping
+    + [preposition] maps to constrains unless subclass indicates composition or possession
+    + [composition_or_possession] maps to refers_to
+    + [negator] maps to scopes_over following predicate or relation candidate
+    + [conjunction] maps to scopes_over coordination span
+    = must: remain candidate relations in EvidenceWorkspace
+    - never: promote template relation directly into SemanticGraph
+
+  & [ImplementationProjection] is slm_rust/src/diffusion.rs ClosedClassRelationTemplate pass
+    + [status] is source_complete_policy_gated
+    + [rule_table] is slm_rust/src/rules.rs PREPOSITION_RELATION_RULES
+    + [extraction_slice] is SLM-24

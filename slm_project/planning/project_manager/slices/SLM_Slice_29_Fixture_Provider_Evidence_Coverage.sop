@@ -1,0 +1,18 @@
+& [SLMSlice29FixtureProviderEvidenceCoverage] is the source-complete slice for deterministic provider evidence fixture coverage
+  + [slice_id] is SLM-29
+  + [status] is source_complete_policy_gated
+  + [effort] is S
+  + [risk] is medium
+  + [depends_on] is SLM-11, SLM-26, SLM-27, SLM-28
+  + [contract] is slm_project/specifications/contracts/SLM_Fixture_Provider_Evidence_Coverage_Contract.sop
+  + [deliverable] is enriched TimeFlies provider fixture
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+
+  & [WorkCompleted] is the slice result
+    + [updated] is time_flies_providers with typed objection
+    + [updated] is time_flies_providers with typed answer
+    + [updated] is time_flies_providers with provider internal faculty report
+
+  & [RemainingGate] is executable verification
+    + [blocked_by] is Windows Application Control policy for Cargo-generated executables
+    + [allowed_validation] is source scan and SOP review only

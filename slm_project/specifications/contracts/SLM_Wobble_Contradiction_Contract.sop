@@ -1,0 +1,40 @@
+& [SLMWobbleContradictionContract] is the instability and contradiction contract for SLM v0
+  + [contract_uuid] is 7706d4d3-cb58-43b1-b8a3-10ce09ceda5d
+  + [slice_id] is SLM-06
+  + [depends_on] is SLM_Evidence_Workspace_Contract
+  + [status] is accepted_for_diffusion_and_stabilization_contracts
+
+  & [WobbleVector] is diagnostic instability in the path from evidence to meaning
+    + [aggregate_score] is routing and stop-decision value
+    + [dimension] is role_instability
+    + [dimension] is relation_instability
+    + [dimension] is subject_boundary_instability
+    + [dimension] is contradiction
+    + [dimension] is low_support
+    + [dimension] is unresolved_ambiguity
+    + [factor_set] is WobbleFactor records
+    + [lineage] is EvidenceWorkspace and DiffusionPassTrace references
+    = must: preserve diagnostic dimensions separately from aggregate_score
+    - never: use aggregate score as the only explanation
+
+  & [ContradictionRecord] is opposition evidence against a candidate or relation
+    + [contradiction_id] is unique in EvidenceWorkspace
+    + [target_ref] is candidate, relation, support record, provider suggestion, or stabilization proposal
+    + [severity] is low, medium, high, or blocking
+    + [contradiction_kind] is role_conflict, relation_conflict, scope_conflict, provider_objection, unsupported_claim, invalid_consequence, lineage_gap, or semantic_incoherence
+    + [source_ref] is required
+    + [answer_ref] is optional
+    + [status] is active, answered, unresolved, retired, or superseded
+    = must: block stabilization when unresolved high or blocking contradiction remains
+
+  & [WobbleRoutingRule] is how instability affects work
+    = must: raise role_instability when grammatical candidates remain close or unresolved
+    = must: raise relation_instability when relation candidates compete or fail fit
+    = must: raise subject_boundary_instability when subject scope cannot be bounded
+    = must: raise contradiction when active contradiction records remain
+    = must: raise low_support when support sources are weak or missing
+    = must: raise unresolved_ambiguity when multiple plausible meanings survive without enough evidence to choose
+    = must: feed wobble_score into GlyphStabilization
+
+  ! [Slice06Complete] is accepted
+    @ [support] wobble and contradiction are modeled as diagnostic, traceable, and stabilization-relevant

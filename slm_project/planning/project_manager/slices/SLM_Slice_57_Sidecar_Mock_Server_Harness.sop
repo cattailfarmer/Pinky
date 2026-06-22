@@ -1,0 +1,9 @@
+& [SLMSlice57SidecarMockServerHarness] is a work-ready slice for safe transport tests
+  + [slice_id] is SLM-57
+  + [status] is ready_after_SLM-54
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-34, SLM-54
+  + [scope] is provide a local mock OpenAI-compatible sidecar endpoint for transport validation
+  + [acceptance_criteria] is live transport can be tested against mock responses before LM Studio
+  + [proof_route] is local mock test script and WSL cargo test

@@ -1,0 +1,13 @@
+& [MultiplayerSplitscreenSourceDocumentManifest] is the source manifest for the first expanded multiplayer split-screen hosting feature
+  + [manifest_uuid] is 6ee8011b-481f-4f0e-9aa3-02707774cfeb
+  + [workspace_root] is C:/Project/Pinky
+  + [project_work_area] is C:/Project/Pinky/unreal_platform_project
+  + [source_document] is unreal_platform_project/source_documents/2026-06-21_multiplayer_splitscreen_intake/Dictated_Multiplayer_Splitscreen_Source.sop
+  + [source_document_uuid] is d58d20f4-cf42-4057-819a-d60735921783
+  + [prior_feature_import_specification] is unreal_platform_project/specifications/Roblox_Feature_Import_Specification.sop
+  + [derived_artifact_frontier] is unreal_platform_project/specifications/Multiplayer_Splitscreen_Hosting_Feature_Specification.sop
+
+  ! [SourceDocumentRegistered] is accepted
+    @ [support] source_document is listed before expanded feature processing
+
+  - never: treat derived artifacts as replacements for source_document

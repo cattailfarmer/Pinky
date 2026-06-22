@@ -1,0 +1,14 @@
+& [SLMSlice02CoreDataIdentityContracts] is a work-ready slice for the core SLM data subjects
+  + [slice_id] is SLM-02
+  + [status] is ready
+  + [feature_cluster] is ClusterBDataIdentity
+  + [source_refs] is SLM_Canonical_Specification.CoreAxioms, SLM_Exploded_Specification.DataModel
+  + [depends_on] is SLM-01
+  + [scope] is define stable contracts for observations, evidence, semantic identities, relations, uncertainty, and lineage
+  + [deliverable] is SOP contract for Token, RoleCandidate, CandidateMeaning, CandidateRelation, SupportRecord, ContradictionRecord, Glyph, SemanticRelation, UncertaintyGlyph, LineageRecord, and lifecycle states
+  + [acceptance_criteria] is tokens are observations, grammar and lower LLM outputs are evidence, semantics is target, and glyphs are stabilized semantic identities
+  + [acceptance_criteria] is no unstable evidence subject is modeled as a SemanticGraph node
+  + [proof_route] is contract review against the EpistemicLadder and SemanticGraphBoundary constraints
+  + [exclusions] is transform algorithms and provider calls
+  + [next_action] is author slm_project/specifications/contracts/SLM_Core_Data_Contracts.sop
+

@@ -1,0 +1,14 @@
+& [RobloxFeatureImportSourceDocumentManifest] is the source manifest for the Roblox feature import intake
+  + [manifest_uuid] is c893a422-1ff8-4bb7-9249-8cc7c7f05c1b
+  + [workspace_root] is C:/Project/Pinky
+  + [project_work_area] is C:/Project/Pinky/unreal_platform_project
+  + [source_document] is unreal_platform_project/source_documents/2026-06-21_feature_import_intake/Dictated_Roblox_Feature_Import_Source.sop
+  + [source_document_uuid] is 738c6262-5b48-4c4a-b33e-fde5057d2390
+  + [prior_source_document] is unreal_platform_project/source_documents/2026-06-21_platform_intake/Dictated_Unreal_Platform_Source.sop
+  + [source_shape] is preserved_user_approved_specification_direction
+  + [derived_artifact_frontier] is unreal_platform_project/specifications/Roblox_Feature_Import_Specification.sop
+
+  ! [SourceDocumentRegistered] is accepted
+    @ [support] source_document is listed before researched feature inventory or canonical processing
+
+  - never: treat researched derived artifacts as replacements for source_document

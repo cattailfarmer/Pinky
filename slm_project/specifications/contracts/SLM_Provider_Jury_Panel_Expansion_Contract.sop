@@ -1,0 +1,41 @@
+& [SLMProviderJuryPanelExpansionContract] is the contract for explicit provider jury measurement
+  + [contract_uuid] is 33bb1ca2-fb4f-426b-a44d-ef59fb925e17
+  + [slice_id] is SLM-36
+  + [depends_on] is SLM_Provider_Disagreement_Payload_Contract, SLM_Provider_Internal_Faculty_Report_Contract, SLM_Sidecar_Task_Prompt_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to replace the mock-jury placeholder with measurable panel evidence
+    = must: create explicit panel member review records
+    = must: cite objection, answer, and provider faculty report refs used by the panel
+    = must: aggregate panel reviews into one JuryMeasurement
+    = must: allow creates_uncertainty, blocks_stabilization, and needs_more_context outcomes
+    = must: preserve disagreement rather than converting jury output into graph authority
+    - never: let a jury review stabilize a glyph directly
+
+  & [PanelMemberModel] is the deterministic v0 jury shape
+    + [member] is jury_observer
+    + [member] is jury_honesty
+    + [member] is jury_weaver
+    = must: record panel member refs separately from aggregate review id
+    = must: keep each member rationale compact and evidence-cited
+
+  & [AggregationPolicy] is the v0 measurement rule
+    + [blocks_stabilization] is selected for invalid consequence or contradiction disagreement classes
+    + [creates_uncertainty] is selected when objection remains unanswered or unsupported by faculty convergence
+    + [needs_more_context] is selected when answers or faculty reports narrow the disagreement but do not resolve it
+    + [supports_stabilization] is reserved for future resolved-support panel cases
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/deliberation.rs JuryPanelMemberReview
+    + [module] is slm_rust/src/deliberation.rs jury_panel_member_reviews
+    + [module] is slm_rust/src/deliberation.rs aggregate_jury_measurement
+    + [module] is slm_rust/src/deliberation.rs measurement_status
+    + [proof_route] is WSL cargo test plus TimeFlies fixture expansion
+
+  ! [Slice36SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 22 library tests and 3 slm_demo tests
+    @ [regression_harness] passed slm_regression_harness_ok
+    @ [time_flies_jury] measured needs_more_context with three panel members and faculty report ref
+    @ [unanswered_jury] measured creates_uncertainty
+    @ [invalid_consequence_jury] measured blocks_stabilization

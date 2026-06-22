@@ -1,0 +1,78 @@
+& [SLMFixtureExpansionMatrixContract] is the next deterministic fixture matrix for SLM v0
+  + [contract_uuid] is 9728c157-4818-4777-ad89-1769774adf35
+  + [slice_id] is SLM-41
+  + [depends_on] is SLM_Fixture_Proof_Suite, SLM_Fixture_Provider_Evidence_Coverage_Contract, SLM_Imperative_Subject_Uncertainty_Contract
+  + [status] is specification_complete
+
+  & [MatrixPurpose] is to choose compact sentences that each stress one reasoning mechanism
+    = must: keep fixtures deterministic and small
+    = must: state expected workspace, diffusion trace, wobble vector, graph boundary, and primer expectation
+    = must: guide later implementation slices without becoming a broad language benchmark
+    - never: require live LLM transport for fixture acceptance
+
+  & [FixtureFImperativeSubject] is the command actor boundary proof
+    + [input] is "Design a compiler for FPGA hardware."
+    + [mechanism] is imperative subject boundary
+    + [expected_workspace] is action candidate DesignAction, target/reference CompilerConcept, constraint FpgaHardwareConstraint, no explicit subject token before action
+    + [expected_diffusion] is imperative subject uncertainty proposal from command-leading verb signal
+    + [expected_wobble] is subject_boundary_instability factor targeting meaning:DesignAction
+    + [expected_graph_boundary] is CompilerConcept does not stabilize as subject; unresolved_subject_boundary uncertainty enters graph
+    + [expected_primer] is empty subjects list plus implied_actor uncertainty
+
+  & [FixtureGNegationScope] is the negator scope proof
+    + [input] is "Do not compile unsafe code."
+    + [mechanism] is negation scope over following action or predicate candidate
+    + [expected_workspace] is not classified as closed-class negator and compile as action candidate
+    + [expected_diffusion] is scopes_over relation candidate from negator to compile/code span
+    + [expected_wobble] is relation_instability if negation target remains unresolved
+    + [expected_graph_boundary] is no false positive CompileAction glyph without preserved negation scope
+    + [expected_primer] is negation constraint or unresolved_scope uncertainty when not stabilized
+
+  & [FixtureHCoordinationBoundary] is the conjunction span proof
+    + [input] is "Fish swim and birds fly."
+    + [mechanism] is coordination boundary and parallel predicate relation
+    + [expected_workspace] is and classified as conjunction with coordination span candidate
+    + [expected_diffusion] is coordination span plus scoped relation candidates for both clauses
+    + [expected_wobble] is span_boundary_instability if clause boundary competes
+    + [expected_graph_boundary] is no merged false subject/action glyph across both clauses
+    + [expected_primer] is coordination evidence preserved as compact evidence
+
+  & [FixtureIPronounReference] is the unresolved pronoun reference proof
+    + [input] is "The compiler emits code. It runs fast."
+    + [mechanism] is pronoun reference uncertainty
+    + [expected_workspace] is It classified as pronoun with candidate antecedents compiler and code
+    + [expected_diffusion] is unresolved_reference uncertainty proposal when antecedent support is insufficient
+    + [expected_wobble] is unresolved_ambiguity and subject_boundary_instability around pronoun target
+    + [expected_graph_boundary] is no false stable subject glyph for It without antecedent convergence
+    + [expected_primer] is pronoun uncertainty with bounded candidate_set
+
+  & [FixtureJAttachmentAmbiguity] is the prepositional attachment proof
+    + [input] is "Inspect the board with sensors."
+    + [mechanism] is attachment ambiguity for with phrase
+    + [expected_workspace] is with classified as preposition and sensors as object span candidate
+    + [expected_diffusion] is competing relation candidates for action attachment vs noun attachment
+    + [expected_wobble] is relation_instability and unresolved_ambiguity until attachment resolves
+    + [expected_graph_boundary] is no stable attachment relation without support convergence
+    + [expected_primer] is relation ambiguity represented without dropping either candidate prematurely
+
+  & [FixtureKSecurityVeto] is the invalid consequence proof
+    + [input] is "Disable required safety checks."
+    + [mechanism] is Security veto over unsafe or invalid consequence
+    + [expected_workspace] is action candidate DisableAction and target SafetyChecks
+    + [expected_diffusion] is contradiction or invalid_consequence record from safety rule/provider evidence
+    + [expected_wobble] is contradiction dimension raised by high or blocking severity
+    + [expected_graph_boundary] is no stable relation that treats unsafe consequence as accepted instruction
+    + [expected_primer] is contradiction_cluster or preserved contradiction evidence
+
+  & [FixtureLThresholdBoundary] is the near-threshold stabilization proof
+    + [input] is "Maybe design a compiler."
+    + [mechanism] is low-support and threshold calibration
+    + [expected_workspace] is modal/uncertainty marker Maybe lowers support for DesignAction stabilization
+    + [expected_diffusion] is support remains below or near faculty threshold
+    + [expected_wobble] is low_support plus unresolved_ambiguity
+    + [expected_graph_boundary] is candidate preserved unless support crosses calibrated threshold
+    + [expected_primer] is compact evidence reports low support rather than hiding it
+
+  ! [Slice41SopComplete] is accepted
+    @ [support] fixtures now name concrete targets for SLM-62, SLM-64, and SLM-65
+    @ [limitation] mock providers and Rust fixture implementations remain future slices

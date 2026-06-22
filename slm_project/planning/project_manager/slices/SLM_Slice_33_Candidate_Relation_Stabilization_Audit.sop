@@ -1,0 +1,19 @@
+& [SLMSlice33CandidateRelationStabilizationAudit] is a work-ready slice for relation promotion correctness
+  + [slice_id] is SLM-33
+  + [status] is verified_wsl
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-09, SLM-20, SLM-24
+  + [scope] is audit how candidate relations become SemanticGraph relations through stabilization decisions
+  + [deliverable] is relation stabilization contract update plus focused tests or self-checks
+  + [acceptance_criteria] is graph relations cite candidate relation lineage and stabilization decision lineage
+  + [proof_route] is WSL cargo test and demo relation lineage inspection
+  + [exclusions] is new relation taxonomy beyond current RelationKind
+  + [next_action] is use relation audit refs when expanding relation taxonomy
+
+  ! [CompletionEvidence] is the SLM-33 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Relation_Stabilization_Audit_Contract.sop
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 14 tests
+    @ [self_check] passed slm_self_check
+    @ [demo] graph and primer relations cite candidate relation and endpoint decisions

@@ -1,0 +1,54 @@
+& [SLMManagerBatchReview20260621] is the project-manager review for self-managed buffet batch two
+  + [review_uuid] is 49feb5f7-8f83-45f0-bc4d-4bba3044ff72
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [reviewed_slices] is SLM-18, SLM-19, SLM-20, SLM-21, SLM-22, SLM-23, SLM-24, SLM-25, SLM-26, SLM-27, SLM-28, SLM-29, SLM-30, SLM-31
+  + [status] is verified_with_wsl_route
+
+  & [ManagerWork] is the new planning layer
+    + [created] is SLM_Manager_Effort_Model.sop
+    + [created] is SLM_Manager_Work_Queue.sop
+    + [complete] is SLM-25 manager effort model
+
+  & [SourceImplementation] is the Rust source work completed
+    + [SLM-19] is EvidenceBundle and query methods
+    + [SLM-20] is closed-class relation templates
+    + [SLM-21] is sense coherence support scoring
+    + [SLM-22] is sidecar prompt envelope and evidence bundle format
+    + [SLM-23] is LM Studio request/response sidecar skeleton
+    + [SLM-24] is typed diffusion rule table extraction
+    + [SLM-26] is typed provider disagreement payloads
+    + [SLM-27] is provider internal faculty report evidence
+    + [SLM-28] is compact primer provider evidence
+    + [SLM-29] is deterministic fixture coverage for provider evidence payloads
+    + [SLM-30] is reusable source-only verification gate
+    + [SLM-31] is closed-class suppression for false role-pair compound spans
+
+  & [BlockedWork] is recorded instead of ignored
+    + [windows_native_cargo] is still blocked by Windows Application Control for generated executables
+    + [SLM-18] is resolved through WSL Ubuntu and Zig cc linker
+
+  & [Validation] is WSL plus source-gate verified
+    + [source_gate] is passed by python slm_project/tools/slm_source_gate_check.py
+    + [python_script_compile] is passed for 4 lexicon build/export scripts
+    + [rust_source_scan] is passed for balanced Rust source braces across 16 files
+    + [substrate_validation] is passed for slm_lexical_substrate_en_oewn2025_v0 with 127323 substrate entries
+    + [wsl_cargo_check] is passed with CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    + [wsl_cargo_test] is passed with 6 tests
+    + [wsl_self_check] is passed
+    + [wsl_demo_smoke] is passed for "Design a compiler for FPGA hardware."
+    + [windows_cargo_execution] is not run because Windows Application Control blocks generated executables
+    + [cargo_target_state] is target_exists=False and target_check_exists=False
+
+  & [SupportDelta] is added capability
+    + [delta] manager queue can now keep feeding work
+    + [delta] sidecar packets can be constructed from evidence bundles
+    + [delta] LM Studio compatible request/response shape exists without live transport
+    + [delta] relation and sense evidence are richer before stabilization
+    + [delta] diffusion behavior is now inspectable through rule tables
+    + [delta] provider disagreement no longer defaults every objection to role_conflict
+    + [delta] provider agreement can cite internal seven-faculty validation evidence
+    + [delta] primers preserve provider suggestions and deliberation evidence for re-ingestion
+    + [delta] TimeFlies fixture now exercises typed objection, typed answer, and provider faculty report evidence
+    + [delta] source-only verification is repeatable instead of ad hoc
+    + [delta] WSL verification route compiles and tests Rust without Windows target executables
+    + [delta] demo span noise from closed-class token noun senses is reduced

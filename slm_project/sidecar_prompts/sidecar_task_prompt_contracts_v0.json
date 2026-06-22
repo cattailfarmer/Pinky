@@ -1,0 +1,122 @@
+{
+  "format": "slm_sidecar_task_prompt_contracts_v0",
+  "contract_id": "sidecar_task_prompt_contracts_v0",
+  "global_forbidden_authority": [
+    "do_not_emit_glyphs",
+    "do_not_rewrite_evidence_workspace",
+    "do_not_treat_freeform_world_knowledge_as_slm_evidence",
+    "do_not_force_resolution_when_uncertainty_remains"
+  ],
+  "response_format": "LmStudioProviderSuggestionResponse",
+  "tasks": [
+    {
+      "task_kind": "rank_senses",
+      "instruction": "Rank the provided lexical sense candidates for the target in context. Preserve ties and uncertainty when evidence is insufficient.",
+      "allowed_evidence": [
+        "tokens",
+        "grammar_candidates",
+        "structural_hints",
+        "lexical_sense_candidates",
+        "support_records",
+        "latest_wobble"
+      ],
+      "required_output": [
+        "provider_suggestions",
+        "ranked sense refs or preserved ambiguity",
+        "rationale citing evidence refs"
+      ],
+      "forbidden_authority": [
+        "no new lexical definitions",
+        "no glyph creation",
+        "no deletion of lower-ranked senses"
+      ]
+    },
+    {
+      "task_kind": "propose_spans",
+      "instruction": "Propose bounded token spans that are supported by token, grammar, and structural evidence. Mark weak boundaries explicitly.",
+      "allowed_evidence": [
+        "tokens",
+        "grammar_candidates",
+        "structural_hints",
+        "span_candidates",
+        "latest_wobble"
+      ],
+      "required_output": [
+        "provider_suggestions",
+        "span proposal refs or uncertainty refs",
+        "rationale citing token and structural refs"
+      ],
+      "forbidden_authority": [
+        "no graph relations",
+        "no glyph creation",
+        "no unsupported span collapse"
+      ]
+    },
+    {
+      "task_kind": "object_to_parse",
+      "instruction": "Object to a candidate parse only when evidence shows contradiction, weak support, boundary ambiguity, or incoherent relation fit.",
+      "allowed_evidence": [
+        "target_bundle",
+        "candidate_relations",
+        "support_records",
+        "contradiction_records",
+        "latest_wobble"
+      ],
+      "required_output": [
+        "provider_suggestions",
+        "typed objection payload",
+        "rationale citing the challenged candidate and evidence refs"
+      ],
+      "forbidden_authority": [
+        "no replacement parse as final truth",
+        "no glyph creation",
+        "no objection without cited evidence"
+      ]
+    },
+    {
+      "task_kind": "answer_objection",
+      "instruction": "Answer the objection from available evidence. Concede unresolved ambiguity when support does not defeat the objection.",
+      "allowed_evidence": [
+        "target_bundle",
+        "support_records",
+        "contradiction_records",
+        "provider_deliberation_refs",
+        "latest_wobble"
+      ],
+      "required_output": [
+        "provider_suggestions",
+        "answer payload with supported, conceded, or unresolved status",
+        "rationale citing objection and support refs"
+      ],
+      "forbidden_authority": [
+        "no silent dismissal of objections",
+        "no glyph creation",
+        "no unsupported certainty"
+      ]
+    },
+    {
+      "task_kind": "run_faculty_validation",
+      "instruction": "Run Observer, Honesty, Security, Planner, Weaver, Scribe, and Refiner validation from dual-hemisphere perspectives and report votes, vetoes, and uncertainty.",
+      "allowed_evidence": [
+        "target_bundle",
+        "tokens",
+        "grammar_candidates",
+        "candidate_relations",
+        "support_records",
+        "contradiction_records",
+        "latest_wobble"
+      ],
+      "required_output": [
+        "provider_suggestions",
+        "faculty report payload",
+        "vetoes from Honesty or Security when applicable",
+        "rationale citing evidence refs"
+      ],
+      "forbidden_authority": [
+        "no stabilization decision",
+        "no glyph creation",
+        "no missing lineage"
+      ]
+    }
+  ]
+}

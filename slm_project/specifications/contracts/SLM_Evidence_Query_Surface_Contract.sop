@@ -1,0 +1,19 @@
+& [SLMEvidenceQuerySurfaceContract] is the contract for inspectable evidence bundles
+  + [contract_uuid] is f0730063-5a55-4ed9-970c-f15ae0b96c37
+  + [slice_id] is SLM-19
+  + [status] is source_implemented_policy_gated
+
+  & [QuerySurface] is the stable workspace inspection API
+    + [query] is candidates_by_token
+    + [query] is structural_hints_for_token
+    + [query] is spans_for_token
+    + [query] is senses_for_token
+    + [query] is candidate_meanings_for_token
+    + [query] is candidate_relations_for_label
+    + [query] is evidence_bundle_for_token
+    + [query] is evidence_bundle_for_candidate
+    = must: return evidence references, not stabilized semantics
+    = must: support sidecar prompt bundle construction
+
+  & [ImplementationProjection] is slm_rust/src/evidence.rs EvidenceBundle and query methods
+    + [status] is source_complete_policy_gated

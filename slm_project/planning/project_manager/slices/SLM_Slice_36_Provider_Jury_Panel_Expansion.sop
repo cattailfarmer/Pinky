@@ -1,0 +1,20 @@
+& [SLMSlice36ProviderJuryPanelExpansion] is a work-ready slice for persistent disagreement handling
+  + [slice_id] is SLM-36
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-26, SLM-27, SLM-35
+  + [scope] is expand jury review from mock-jury placeholder into explicit panel request/measurement records
+  + [deliverable] is jury panel evidence shape and fixture with persistent disagreement
+  + [acceptance_criteria] is persistent disagreement can produce creates_uncertainty, blocks_stabilization, or needs_more_context with cited panel refs
+  + [proof_route] is WSL cargo test plus TimeFlies fixture expansion
+  + [exclusions] is live multi-provider orchestration
+  + [next_action] is define panel member refs and measurement aggregation rules
+
+  ! [CompletionEvidence] is the SLM-36 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Provider_Jury_Panel_Expansion_Contract.sop
+    @ [implementation] is slm_rust/src/deliberation.rs JuryPanelMemberReview and aggregate_jury_measurement
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 22 library tests and 3 slm_demo tests
+    @ [regression_harness] passed
+    @ [jury_outcomes] are creates_uncertainty, blocks_stabilization, and needs_more_context

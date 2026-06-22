@@ -1,0 +1,52 @@
+& [SLMDemoOutputModesContract] is the contract for selectable SLM demo renderings
+  + [contract_uuid] is b24fc663-0e1c-4395-a408-d40fca59f7bd
+  + [slice_id] is SLM-49
+  + [depends_on] is SLM_Rust_Implementation_Formation, SLM_Primer_Compaction_Budget_Contract, SLM_Primer_Schema_Versioning_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to make slm_demo usable for different inspection needs
+    = must: retain full JSON output for complete evidence inspection
+    = must: provide compact JSON output that avoids large evidence dumps
+    = must: provide primer-only JSON output for downstream machine re-ingestion
+    = must: provide SOP text output for human reasoning review
+    = must: keep the default mode compatible with the existing full report
+    - never: make compact mode the authority source for exhaustive evidence
+
+  & [ModeSet] is the v0 CLI output surface
+    + [full] is complete demo JSON with tokens, candidates, trace, graph, wobble, and primer
+    + [compact] is bounded demo JSON with token surfaces, counts, graph summary, wobble route, primer schema, and compaction summary
+    + [primer-only] is the final SLM primer JSON without demo wrapper fields
+    + [sop] is the primer SOP rendering as plain text
+
+  & [CliContract] is the flag shape
+    + [default] is full
+    + [flag] is --mode full
+    + [flag] is --mode compact
+    + [flag] is --mode primer-only
+    + [flag] is --mode sop
+    + [alias] is --mode primer for primer-only
+    = must: allow --mode=value and --mode value forms
+    = must: keep positional text input after recognized flags
+    = must: reject unknown mode names with a clear error
+
+  & [CompactOutputBoundary] is the non-exhaustive compact report rule
+    = must: include counts for candidate roles, structural hints, spans, lexical senses, compact evidence, and omitted evidence
+    = must: include a compact graph summary rather than the full evidence workspace
+    = must: include primer schema identity for downstream compatibility checks
+    = must: include wobble route and reason
+    - never: include the full lexical_sense_candidates array in compact mode
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/bin/slm_demo.rs DemoOutputMode
+    + [module] is slm_rust/src/bin/slm_demo.rs CompactDemoReport
+    + [module] is slm_rust/src/bin/slm_demo.rs parse_demo_args
+    + [module] is slm_rust/src/bin/slm_demo.rs render_demo_output
+    + [proof_route] is WSL cargo test and WSL cargo run smoke tests for each mode
+
+  ! [Slice49SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 17 library tests and 3 slm_demo tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [full_mode] emitted complete demo JSON with 12 top-level keys
+    @ [compact_mode] emitted compact JSON with lexical_sense_candidate_count 13 and no lexical_sense_candidates array
+    @ [primer_only_mode] emitted primer JSON with schema slm_primer 0.1.0
+    @ [sop_mode] emitted SLM_PRIMER_V0 plain text

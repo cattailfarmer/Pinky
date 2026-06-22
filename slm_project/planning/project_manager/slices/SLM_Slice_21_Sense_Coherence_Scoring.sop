@@ -1,0 +1,8 @@
+& [SLMSlice21SenseCoherenceScoring] is the source-complete slice for sense coherence support
+  + [slice_id] is SLM-21
+  + [status] is source_complete_policy_gated
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-16
+  + [deliverable] is SenseCoherenceScoring diffusion pass
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop

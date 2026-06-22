@@ -1,0 +1,31 @@
+& [SLMLexicalSubstrateDeltaRebuildWorkflowContract] is the contract for repeatable lexical substrate rebuilds
+  + [contract_uuid] is f83fd3c1-8377-4b0a-a135-764d19b2eec9
+  + [slice_id] is SLM-52
+  + [depends_on] is SLM_Lexical_Authority_Foundation_Contract, SLM_Source_Only_Verification_Gate_Contract
+  + [status] is verified_source_gate
+
+  & [Purpose] is to make lexical database and substrate pack rebuilds explicit and auditable
+    = must: preserve downloaded source documents separately from generated artifacts
+    = must: show rebuild commands before executing them
+    = must: report current artifact checksums
+    = must: default to dry-run
+    = must: require an explicit flag before source download or local artifact regeneration
+    - never: silently overwrite raw source documents
+
+  & [WorkflowSteps] are the planned rebuild sequence
+    + [step] is optional download_open_english_wordnet.py
+    + [step] is build_lexicon_db.py
+    + [step] is export_lexicon_cache.py
+    + [step] is build_lexical_substrate_pack.py
+    + [step] is slm_source_gate_check.py
+
+  & [RuntimeProjection] is the source surface
+    + [script] is slm_lexicon/scripts/rebuild_lexical_substrate_workflow.py
+    + [documentation] is slm_lexicon/REBUILD_WORKFLOW.sop
+    + [proof_route] is dry-run plus source gate
+
+  ! [Slice52SourceComplete] is accepted
+    @ [dry_run] passed python slm_lexicon/scripts/rebuild_lexical_substrate_workflow.py --dry-run
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [python_compile] source gate now compiles 7 Python scripts
+    @ [checksum_reporting] printed raw manifest, SQLite, substrate manifest, index, closed-class table, and source provenance sha256 values

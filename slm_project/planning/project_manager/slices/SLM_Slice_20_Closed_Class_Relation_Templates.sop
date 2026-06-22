@@ -1,0 +1,8 @@
+& [SLMSlice20ClosedClassRelationTemplates] is the source-complete slice for relation candidates from structural words
+  + [slice_id] is SLM-20
+  + [status] is source_complete_policy_gated
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-14, SLM-15
+  + [deliverable] is ClosedClassRelationTemplate diffusion pass
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop

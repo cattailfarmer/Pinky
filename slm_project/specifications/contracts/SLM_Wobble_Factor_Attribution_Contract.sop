@@ -1,0 +1,34 @@
+& [SLMWobbleFactorAttributionContract] is the contract for local wobble explanations
+  + [contract_uuid] is 4e973948-5c67-4a16-a387-3a8c523226c3
+  + [slice_id] is SLM-45
+  + [depends_on] is SLM_Wobble_Contradiction_Contract, SLM_Evidence_Query_Surface_Contract, SLM_Primer_Provider_Evidence_Contract
+  + [status] is verified_wsl
+
+  & [AttributionPrinciple] is how wobble becomes diagnosable
+    = must: preserve aggregate wobble score for routing
+    = must: preserve dimension vector for diagnosis
+    = must: emit local WobbleFactor records with stable ids
+    = must: identify the local target kind and target ref when wobble has a local source
+    = must: include human-readable local explanation in the primer
+    - never: hide instability behind only the aggregate score
+
+  & [FactorShape] is the v0 wobble factor record
+    + [id] is parseable and stable within the measured wobble vector
+    + [dimension] is the wobble dimension being raised
+    + [target_kind] is token, span, relation, meaning, contradiction, deliberation, provider, workspace, or evidence
+    + [target_ref] is the normalized local evidence ref
+    + [score] is the factor contribution before dimension clamping
+    + [explanation] is the local reason
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/wobble.rs WobbleFactor id and target_kind
+    + [module] is slm_rust/src/wobble.rs push_factor
+    + [module] is slm_rust/src/primer.rs WobbleFactorPrimer
+    + [proof_route] is WSL cargo test plus demo wobble factor inspection
+
+  ! [Slice45SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 12 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_proof] design/compiler primer emitted 9 local wobble factors across role_instability, sense_instability, and span_boundary_instability
+    @ [fixture_proof] TimeFlies primer emitted relation_instability factor for meaning:TimeFliesAssertion

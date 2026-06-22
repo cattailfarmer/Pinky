@@ -1,0 +1,13 @@
+& [SLMSlice11FixtureAndProofSuite] is a work-ready slice for deterministic proof surfaces
+  + [slice_id] is SLM-11
+  + [status] is ready
+  + [feature_cluster] is ClusterIFixtureAndProof
+  + [source_refs] is AcceptanceCriteria, FailureModes, ProjectManagerCut
+  + [depends_on] is SLM-02, SLM-04, SLM-06
+  + [scope] is define fixture sentences, mock provider records, expected workspace states, expected deliberation traces, expected graph states, and negative cases
+  + [deliverable] is SOP fixture suite contract with at least "The fish swim.", "Design a compiler for FPGA hardware.", and "Time flies like an arrow."
+  + [acceptance_criteria] is fixture suite covers stable interpretation, command/prepositional constraint, ambiguity, provider disagreement, veto, and typed uncertainty
+  + [proof_route] is review fixture expectations against canonical acceptance criteria
+  + [exclusions] is executable Python tests until implementation formation begins
+  + [next_action] is author slm_project/specifications/contracts/SLM_Fixture_Proof_Suite.sop after core contracts start settling
+

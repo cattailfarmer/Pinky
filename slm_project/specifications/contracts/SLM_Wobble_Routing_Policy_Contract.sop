@@ -1,0 +1,32 @@
+& [SLMWobbleRoutingPolicyContract] is the contract for operational routing from wobble
+  + [contract_uuid] is 22bd38d5-56a3-4378-b0fd-8feb20b48a59
+  + [slice_id] is SLM-63
+  + [depends_on] is SLM_Wobble_Factor_Attribution_Contract
+  + [status] is verified_wsl
+
+  & [RoutingPrinciple] is how wobble should drive next action
+    = must: derive route from dimensions and local factors, not aggregate score alone
+    = must: preserve aggregate score as one input
+    = must: expose reason and factor refs for machine re-ingestion
+    = must: distinguish route_to_deliberation, seek_sidecar, continue_diffusion, and ready_for_reingestion
+    - never: hide a high contradiction behind a low aggregate score
+
+  & [RoutePolicy] is the v0 deterministic routing table
+    + [route_to_deliberation] is selected by high contradiction
+    + [seek_sidecar] is selected by unresolved ambiguity, subject boundary instability, or low support
+    + [continue_diffusion] is selected by role, span, sense, or relation instability without sidecar pressure
+    + [ready_for_reingestion] is selected when no dimension asks for additional work
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/wobble.rs WobbleRoute
+    + [module] is slm_rust/src/wobble.rs WobbleRoutingDecision
+    + [module] is slm_rust/src/wobble.rs routing_decision
+    + [module] is slm_rust/src/primer.rs WobblePrimer routing_decision
+    + [proof_route] is Rust unit tests and WSL cargo test
+
+  ! [Slice63SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 16 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_proof] design/compiler primer routed seek_sidecar from subject_boundary_instability and cited factor ref
+    @ [unit_proof] high contradiction routes to deliberation even when aggregate wobble is low

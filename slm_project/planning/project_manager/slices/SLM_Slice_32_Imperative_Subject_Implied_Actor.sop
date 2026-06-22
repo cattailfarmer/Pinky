@@ -1,0 +1,20 @@
+& [SLMSlice32ImperativeSubjectImpliedActor] is a work-ready slice for command subject uncertainty
+  + [slice_id] is SLM-32
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-20, SLM-24, SLM-31
+  + [scope] is represent command-like inputs with implied actor or command subject uncertainty
+  + [deliverable] is diffusion rule and uncertainty proposal for imperative subject boundaries
+  + [acceptance_criteria] is "Design a compiler for FPGA hardware." can preserve implied actor uncertainty without making "compiler" the grammatical subject
+  + [proof_route] is WSL cargo test plus demo primer inspection
+  + [exclusions] is full imperative grammar parser
+  + [next_action] is refine implied actor only when downstream sidecar/provider evidence can propose a concrete actor
+
+  ! [CompletionEvidence] is the SLM-32 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Imperative_Subject_Uncertainty_Contract.sop
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 13 tests
+    @ [self_check] passed slm_self_check
+    @ [demo] no primer subjects for "Design a compiler for FPGA hardware."
+    @ [demo] unresolved_subject_boundary uncertainty preserves implied actor

@@ -1,0 +1,8 @@
+& [SLMSlice17TinyLLMSidecarContract] is the work slice for the future contextual sidecar
+  + [slice_id] is SLM-17
+  + [status] is specification_complete
+  + [feature_cluster] is llm_sidecar_frontier
+  + [depends_on] is SLM-04, SLM-05, SLM-13
+  + [scope] is define sidecar role, call surface, and overreach boundaries before implementation
+  + [deliverable] is SOP contract
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop

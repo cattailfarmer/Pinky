@@ -1,0 +1,20 @@
+& [SLMSlice35SidecarTaskPromptContracts] is a work-ready slice for task-specific sidecar prompts
+  + [slice_id] is SLM-35
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-22, SLM-23, SLM-27
+  + [scope] is define prompt contracts for rank_senses, propose_spans, object_to_parse, answer_objection, and run_faculty_validation
+  + [deliverable] is SOP prompt contract plus Rust enum/helper text for sidecar task instructions
+  + [acceptance_criteria] is each sidecar task states allowed evidence, required output, and forbidden graph authority
+  + [proof_route] is source gate and WSL cargo test if Rust helpers are added
+  + [exclusions] is live model execution
+  + [next_action] is author machine-readable prompt contract templates
+
+  ! [CompletionEvidence] is the SLM-35 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Sidecar_Task_Prompt_Contract.sop
+    @ [template] is slm_project/sidecar_prompts/sidecar_task_prompt_contracts_v0.json
+    @ [implementation] is slm_rust/src/sidecar.rs SidecarTaskPromptContract and task_contract envelope field
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 19 library tests and 3 slm_demo tests
+    @ [regression_harness] passed

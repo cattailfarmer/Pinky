@@ -1,0 +1,31 @@
+# Workspace-local logs and temporary output
+*.log
+*.tmp
+*.temp
+
+# Nested repositories / external checkouts
+home-workspace/
+stable-diffusion-v2-1-base/
+
+# Python and test caches
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+
+# Node/package caches
+node_modules/
+
+# Unreal generated state
+**/Binaries/
+**/Build/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+.vs/
+
+# Local databases and generated data caches
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+slm_lexicon/data/

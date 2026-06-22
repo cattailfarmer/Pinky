@@ -1,0 +1,20 @@
+& [SLMSlice37PrimerCompactionBudget] is a work-ready slice for reducing primer verbosity
+  + [slice_id] is SLM-37
+  + [status] is verified_wsl
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-10, SLM-16, SLM-28
+  + [scope] is add compaction budget rules for lexical senses, provider suggestions, and support records
+  + [deliverable] is primer compaction policy and Rust filtering or summarization helpers
+  + [acceptance_criteria] is demo primer remains machine-reingestible without dumping every lexical sense for closed-class tokens
+  + [proof_route] is WSL cargo test and demo JSON size/evidence-kind inspection
+  + [exclusions] is lossy deletion of unresolved uncertainty
+  + [next_action] is tune policy only when downstream primer consumers require different budgets
+
+  ! [CompletionEvidence] is the SLM-37 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Primer_Compaction_Budget_Contract.sop
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 9 tests
+    @ [self_check] passed slm_self_check
+    @ [demo] compact evidence retained tokens, structural hints, spans, top lexical senses, top provider suggestions, top support records, and wobble
+    @ [demo] omitted_by_kind recorded lexical_sense, provider_suggestion, and support omissions

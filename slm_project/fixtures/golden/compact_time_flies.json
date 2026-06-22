@@ -1,0 +1,69 @@
+{
+  "candidate_role_count": 19,
+  "compact_evidence_count": 37,
+  "compaction_omitted_item_count": 50,
+  "graph_summary": {
+    "glyphs": [],
+    "relations": [],
+    "uncertainties": [
+      {
+        "boundary_statement": "provider disagreement around meaning:TimeFliesAssertion remains bounded by deliberation deliberation:0:meaning:TimeFliesAssertion",
+        "semantic_id": "glyph:uncertainty:uncertainty:deliberation:0:meaning:TimeFliesAssertion",
+        "uncertainty_type": "provider_disagreement"
+      },
+      {
+        "boundary_statement": "token 'Time' has competing grammatical roles noun and verb",
+        "semantic_id": "glyph:uncertainty:uncertainty:unresolved_role:tok:demo-input:0",
+        "uncertainty_type": "unresolved_role"
+      },
+      {
+        "boundary_statement": "token 'like' has competing grammatical roles preposition and adjective",
+        "semantic_id": "glyph:uncertainty:uncertainty:unresolved_role:tok:demo-input:2",
+        "uncertainty_type": "unresolved_role"
+      }
+    ]
+  },
+  "input": "Time flies like an arrow.",
+  "lexical_sense_candidate_count": 19,
+  "output_mode": "compact",
+  "primer_schema": {
+    "compatibility_floor": "0.1.0",
+    "compatibility_notes": [
+      "Additive optional fields do not require a compatibility floor change.",
+      "Required field changes require a schema_version increment.",
+      "compact_evidence is bounded by compaction metadata and is not exhaustive by default."
+    ],
+    "required_fields": [
+      "version",
+      "schema",
+      "input_ref",
+      "graph_ref",
+      "subjects",
+      "actions",
+      "relations",
+      "modifiers",
+      "constraints",
+      "uncertainty",
+      "wobble",
+      "compact_evidence",
+      "compaction",
+      "lineage_refs",
+      "sop_rendering"
+    ],
+    "schema_id": "slm_primer",
+    "schema_version": "0.1.0"
+  },
+  "span_candidate_count": 3,
+  "structural_hint_count": 1,
+  "token_surfaces": [
+    "Time",
+    "flies",
+    "like",
+    "an",
+    "arrow",
+    "."
+  ],
+  "wobble_reason": "high contradiction requires deliberation before re-ingestion",
+  "wobble_route": "route_to_deliberation",
+  "wobble_score": 0.345
+}

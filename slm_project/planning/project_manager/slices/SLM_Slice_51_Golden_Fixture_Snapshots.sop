@@ -1,0 +1,17 @@
+& [SLMSlice51GoldenFixtureSnapshots] is a work-ready slice for stable output fixtures
+  + [slice_id] is SLM-51
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-41, SLM-49, SLM-50
+  + [scope] is store canonical compact outputs for selected fixtures and compare regressions
+  + [acceptance_criteria] is snapshot diffs reveal graph, wobble, and primer changes
+  + [proof_route] is CLI regression harness
+
+  ! [CompletionEvidence] is the SLM-51 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Golden_Fixture_Snapshot_Contract.sop
+    @ [implementation] is slm_project/tools/slm_golden_snapshot.py and slm_project/fixtures/golden/*.json
+    @ [source_gate] passed
+    @ [snapshot_check] passed
+    @ [regression_harness] passed with golden snapshot stage
+    @ [fixtures] are design_compiler, fish_swim, and time_flies

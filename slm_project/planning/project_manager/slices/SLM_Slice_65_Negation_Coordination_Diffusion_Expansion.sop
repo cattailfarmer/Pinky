@@ -1,0 +1,9 @@
+& [SLMSlice65NegationCoordinationDiffusionExpansion] is a work-ready slice for structural scope growth
+  + [slice_id] is SLM-65
+  + [status] is ready_after_SLM-41
+  + [effort] is M-L
+  + [risk] is medium
+  + [depends_on] is SLM-20, SLM-24, SLM-41
+  + [scope] is deepen negator and conjunction handling with fixtures and relation templates
+  + [acceptance_criteria] is negation scopes over the right predicate and conjunction forms bounded coordination spans
+  + [proof_route] is WSL cargo test and demo fixture inspection

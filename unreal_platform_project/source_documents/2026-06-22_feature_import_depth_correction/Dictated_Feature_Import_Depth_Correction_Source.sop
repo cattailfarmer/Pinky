@@ -1,0 +1,12 @@
+& [DictatedFeatureImportDepthCorrectionSource] is the preserved raw correction for the Roblox feature import specification
+  + [source_document_uuid] is a3cf970f-9d05-4fbc-97ea-5d4bf682fc7c
+  + [captured_at_local] is 2026-06-22
+  + [workspace_root] is C:/Project/Pinky
+  + [project_work_area] is C:/Project/Pinky/unreal_platform_project
+  + [source_kind] is user_correction_to_feature_import_specification
+  + [source_text] is "What about RobloxFeatureImportSpecification? Developer Exchange isn't named in there. And ImportedPlatformFeatureFamilies lists a lot of features that are described at the surface level only. No depth to describe implementation and activation of any contract or features from that surface."
+
+  ! [SourcePreserved] is accepted
+    @ [support] this file preserves the user's critique before revising the derived Roblox feature import specification
+
+  - never: overwrite this correction source with the revised feature specification

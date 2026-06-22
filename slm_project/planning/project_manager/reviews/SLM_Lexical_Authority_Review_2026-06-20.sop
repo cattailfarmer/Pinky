@@ -1,0 +1,67 @@
+& [SLMLexicalAuthorityReview20260620] is the project-manager review for SLM-13 lexical substrate setup
+  + [review_uuid] is 2aa4259d-1203-4672-a2e1-7421cb572ab0
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [reviewed_slice] is SLM-13
+  + [review_subject] is local lexical authority database, first-class substrate pack, and Rust speed-dial provider
+  + [status] is complete_with_policy_gate
+
+  & [GeneratedAuthority] is the local database result
+    + [sqlite_database] is slm_lexicon/data/slm_lexicon.sqlite
+    + [substrate_pack] is slm_lexicon/data/slm_lexical_substrate
+    + [substrate_manifest] is slm_lexicon/data/slm_lexical_substrate/manifest.json
+    + [substrate_manifest_sop] is slm_lexicon/data/slm_lexical_substrate/manifest.sop
+    + [substrate_index_sha256] is 48873cae2cd9ff5692ae035f28d12db32b40a3cff61cff44da0870223ec627f1
+    + [legacy_json_cache] is slm_lexicon/data/lexicon_lookup_cache.json
+    + [closed_class_count] is 28
+    + [terms_count] is 127339
+    + [grammar_roles_count] is 135339
+    + [senses_count] is 185129
+    + [synsets_count] is 107519
+    + [sense_relations_count] is 234810
+    + [substrate_entries] is 127323
+
+  & [SampleProof] is the observed lookup behavior
+    + [term] is a
+      + [evidence] is closed-class article indefinite determiner
+    + [term] is for
+      + [evidence] is closed-class preposition/conjunction with purpose_or_beneficiary structural hint
+    + [term] is design
+      + [evidence] is WordNet noun and verb
+    + [term] is compiler
+      + [evidence] is WordNet noun with computer-science sense
+    + [term] is quickly
+      + [evidence] is WordNet adverb
+
+  & [RustIntegration] is the implemented provider boundary
+    + [module] is slm_rust/src/lexicon.rs
+    + [provider] is LexicalSubstrateProvider
+    + [adapter_kind] is LexicalDatabase
+    + [source] is EvidenceSource::LexicalAuthority
+    + [effect] is lexical rows become GrammarCandidate evidence in EvidenceWorkspace
+    - never: lexical rows become Glyphs directly
+
+  & [Verification] is the proof route actually completed
+    + [python_download] is passed
+    + [python_build_db] is passed
+    + [python_export_cache] is passed
+    + [python_build_substrate_pack] is passed
+    + [sample_sqlite_lookup] is passed
+    + [demo_sample_before_cleanup] showed lexical_authority candidate roles
+    + [cargo_clippy_before_cleanup] passed after cache pivot
+    + [cargo_test_before_policy_block] passed before subsequent Windows block state changed
+
+  & [PolicyGate] is the remaining local environment limitation
+    + [observed] Windows Application Control blocked Cargo-generated executables
+    + [blocked] cargo test generated binary execution
+    + [blocked] fresh Cargo build-script execution in a new target directory
+    + [cleanup] removed slm_rust/target and slm_rust/target-check generated output directories
+    + [decision] do not run further Cargo build/test commands until policy is resolved or a trusted build location is configured
+
+  & [SupportDelta] is the capability added
+    + [delta] SLM now has explicit lexical substrate speed-dial below diffusion
+    + [delta] function-word detection is no longer only heuristic
+    + [delta] WordNet open-class roles and senses can be used as source-attributed evidence
+
+  & [RequirementDelta] is accepted
+    + [new_requirement] maintain lexical authority as evidence, not semantic stabilization
+    + [new_requirement] keep runtime substrate generated from inspectable SQLite source

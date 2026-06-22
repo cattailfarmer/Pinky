@@ -1,0 +1,9 @@
+& [SLMSlice47RelationTaxonomyRound2] is a work-ready slice for relation vocabulary refinement
+  + [slice_id] is SLM-47
+  + [status] is ready_after_SLM-33
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-20, SLM-33, SLM-65
+  + [scope] is split broad relation kinds where current constrains/scopes_over/refers_to are too coarse
+  + [acceptance_criteria] is new relation kinds have fixture-backed reason to exist
+  + [proof_route] is SOP contract plus WSL cargo test if enum changes

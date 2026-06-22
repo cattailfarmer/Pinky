@@ -1,0 +1,9 @@
+& [SLMSlice60GraphReplayAuditCLI] is a work-ready slice for graph lifecycle inspection
+  + [slice_id] is SLM-60
+  + [status] is ready_after_SLM-59
+  + [effort] is M-L
+  + [risk] is medium
+  + [depends_on] is SLM-59
+  + [scope] is add CLI or helper to replay append-only graph and memory events for audit
+  + [acceptance_criteria] is replay produces same active graph state from event sequence
+  + [proof_route] is WSL cargo test and CLI smoke

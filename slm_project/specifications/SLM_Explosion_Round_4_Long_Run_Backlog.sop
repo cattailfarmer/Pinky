@@ -1,0 +1,45 @@
+& [SLMExplosionRound4LongRunBacklog] is the long-run backlog cut for sustained SLM work
+  + [explosion_round_uuid] is 14434e0e-7fa1-4a85-bf60-de4699013111
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [prior_frontier] is slm_project/specifications/SLM_Explosion_Round_3_Next_Frontier.sop
+  + [purpose] is create enough work-ready slices for extended self-managed implementation
+
+  & [BacklogBands] is the long-run organization
+    + [BandA] is deterministic evidence quality and wobble attribution
+    + [BandB] is primer, CLI, fixture, and regression tooling
+    + [BandC] is lexical substrate operations and provenance
+    + [BandD] is sidecar/provider integration staged without graph authority leaks
+    + [BandE] is append-only memory, graph replay, and architecture narrative
+    + [BandF] is grammar phenomena expansion
+
+  & [Round4SliceSet] is the extended tray
+    + [SLM-42] is Evidence Provenance Normalization
+    + [SLM-43] is Support Propagation Idempotence
+    + [SLM-44] is Contradiction Propagation Expansion
+    + [SLM-45] is Wobble Factor Attribution
+    + [SLM-46] is Uncertainty Boundary Stabilization Rules
+    + [SLM-47] is Relation Taxonomy Round 2
+    + [SLM-48] is Primer Schema Versioning
+    + [SLM-49] is Demo Output Modes
+    + [SLM-50] is CLI Regression Harness
+    + [SLM-51] is Golden Fixture Snapshots
+    + [SLM-52] is Lexical Substrate Delta Rebuild Workflow
+    + [SLM-53] is Lexicon License and Provenance Audit
+    + [SLM-54] is LM Studio Response Validation and Repair
+    + [SLM-55] is Ollama Sidecar Adapter Skeleton
+    + [SLM-56] is Provider Set Configuration
+    + [SLM-57] is Sidecar Mock Server Harness
+    + [SLM-58] is Multi-Provider Arbitration Fixtures
+    + [SLM-59] is Append-Only Learning Store Rust Skeleton
+    + [SLM-60] is Graph Replay and Audit CLI
+    + [SLM-61] is Architecture Narrative Refresh
+    + [SLM-62] is Threshold Calibration Fixtures
+    + [SLM-63] is Wobble Routing Policies
+    + [SLM-64] is Pronoun Reference Fixture and Rules
+    + [SLM-65] is Negation and Coordination Diffusion Expansion
+
+  & [LongRunRule] is how to consume this backlog
+    = must: finish deterministic quality slices before live provider transport
+    = must: pair runtime changes with WSL Cargo verification
+    = must: keep SOP-only architecture slices separate from runtime implementation slices
+    = must: update reviews after each consumed batch

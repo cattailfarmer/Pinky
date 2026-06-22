@@ -1,0 +1,25 @@
+Subject: Open Roads Driving Simulator Project Identity Source
+Description: Preserved raw source note for the user-selected project identity and early concept boundary.
+
+& [SourceSpecificationPreservationRecord] is the preserved source record for the project naming decision
+  + [recorded_at_local_date] is 2026-06-21
+  + [workspace_root] is C:\Project\Pinky
+  + [project_identity] is Open Roads Driving Simulator
+  + [project_folder] is C:\Project\Pinky\OpenRoadsDrivingSimulator
+  + [source_status] is source_preserved
+  + [processing_status] is unprocessed_by_SJS
+  + [implementation_authority] is false
+
+  @ [user_statement] "let's call this project \"Open Roads Driving Simulator\""
+  @ [conversation_context] The project concept concerns a driving or road-trip simulator that uses navigation map data, open/public route evidence, AI-assisted route research, and legally traceable visual cue synthesis.
+
+  ! [ProjectNameSelected] is accepted for conversation and project-folder identity
+    @ [support] direct user naming statement
+
+  ~ [ProjectScope] assumes the project may include route planning, open map data, POI enrichment, landmark research, evidence provenance, and procedural or AI-assisted scenery/model generation.
+    ? [when: a canonical build specification is requested]
+      = must: run preserved source material through SpecificationJustificationSolution before treating it as implementation authority
+
+  - never: treat this source preservation record as a signed canonical specification
+  - never: overwrite this source record with an exploded, canonical, or implementation-ready specification
+

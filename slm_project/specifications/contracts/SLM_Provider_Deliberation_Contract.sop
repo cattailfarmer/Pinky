@@ -1,0 +1,49 @@
+& [SLMProviderDeliberationContract] is the cross-provider disagreement contract
+  + [contract_uuid] is 0c3d6d0e-1381-4271-87d7-752696f54eb9
+  + [slice_id] is SLM-05
+  + [depends_on] is SLM_LLM_Provider_Adapter_Contract
+  + [status] is accepted_for_stabilization_contracts
+
+  & [ProviderDeliberation] is the objection-answer-review process for lower LLM disagreement
+    + [deliberation_id] is unique in EvidenceWorkspace
+    + [candidate_ref] is the candidate meaning, relation, or reasoning path under dispute
+    + [objecting_provider] is provider that challenges the candidate
+    + [supporting_provider_set] is providers that support the candidate
+    + [objection_set] is ProviderObjection records
+    + [answer_set] is ProviderAnswer records
+    + [jury_review_set] is JuryReview records when disagreement persists
+    + [faculty_report_refs] is lower-provider internal faculty reports attached to the disputed target
+    + [status] is resolved_supported, resolved_rejected, persistent_disagreement, insufficient_context, or deferred
+    + [lineage] is required
+    = must: occur before provider disagreement becomes a wobble factor
+    = must: preserve all provider identities separately
+
+  & [ProviderObjection] is an articulated challenge
+    + [objection_id] is unique in ProviderDeliberation
+    + [provider_provenance] is required
+    + [objection_kind] is role_conflict, relation_conflict, scope_conflict, unsupported_claim, contradiction, insufficient_context, invalid_consequence, or lineage_gap
+    + [rationale] is required
+    + [target_ref] is required
+    + [payload_source] is SLM-26 ProviderDisagreementPayload when available
+    - never: accept an objection without articulated rationale
+
+  & [ProviderAnswer] is a response from a supporting provider
+    + [answer_id] is unique in ProviderDeliberation
+    + [provider_provenance] is required
+    + [answered_objection] is ProviderObjection
+    + [answer_kind] is resolves, narrows, reframes, concedes, rejects, or defers
+    + [rationale] is required
+    + [payload_source] is SLM-26 ProviderDisagreementPayload when available
+
+  & [JuryReview] is the panel measurement for persistent disagreement
+    + [jury_review_id] is unique in ProviderDeliberation
+    + [panel_member_set] is one or more provider or deliberation pass refs
+    + [classification] is same_meaning_different_words, role_conflict, relation_conflict, scope_conflict, unsupported_claim, contradiction, insufficient_context, invalid_consequence, or lineage_gap
+    + [measurement] is supports_stabilization, blocks_stabilization, creates_uncertainty, or needs_more_context
+    + [rationale] is required
+    = must: classify disagreement rather than vote vaguely on truth
+
+  ! [Slice05Complete] is accepted
+    @ [support] provider disagreement has objection, answer, and jury classification records
+    @ [support_delta] SLM-26 removes the v0 hardcoded role_conflict and narrows assumptions
+    @ [support_delta] SLM-27 lets provider deliberation cite internal seven-faculty validation evidence

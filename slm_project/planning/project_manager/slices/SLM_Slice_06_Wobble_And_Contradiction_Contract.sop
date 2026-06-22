@@ -1,0 +1,14 @@
+& [SLMSlice06WobbleAndContradictionContract] is a work-ready slice for instability measurement
+  + [slice_id] is SLM-06
+  + [status] is ready
+  + [feature_cluster] is ClusterEDiffusionEngine
+  + [source_refs] is WobbleIsEvidenceToMeaningInstability, WobbleReport, DiffusionContract
+  + [depends_on] is SLM-03
+  + [scope] is define wobble aggregate score, diagnostic vector, contradiction score, severity, and routing behavior
+  + [deliverable] is SOP contract for WobbleVector, WobbleFactor, ContradictionRecord, ContradictionPropagationInput, and threshold configuration
+  + [acceptance_criteria] is wobble includes role_instability, relation_instability, subject_boundary_instability, contradiction, low_support, and unresolved_ambiguity
+  + [acceptance_criteria] is contradiction and wobble can block glyph stabilization
+  + [proof_route] is fixture review for ambiguous and contradictory provider evidence
+  + [exclusions] is final numeric formula beyond v0 defaults
+  + [next_action] is author slm_project/specifications/contracts/SLM_Wobble_Contradiction_Contract.sop
+

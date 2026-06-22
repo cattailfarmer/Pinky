@@ -1,0 +1,39 @@
+& [SLMManagerEffortModel] is the effort and batching model for sustained self-managed SLM work
+  + [model_uuid] is b2d43f7f-70b0-46a9-8f08-bb09a80e28cf
+  + [status] is active
+  + [purpose] is let Codex manage its own work queue until the buffet is empty or blocked
+
+  & [EffortBands] is the local sizing vocabulary
+    + [XS] is 5-15 minutes
+    + [S] is 15-45 minutes
+    + [M] is 1-2 hours
+    + [L] is 2-4 hours
+    + [XL] is 4-8 hours
+    + [XXL] is 8+ hours
+
+  & [RiskBands] is the local uncertainty vocabulary
+    + [low] is isolated source or SOP changes
+    + [medium] is multi-module source changes without executable verification
+    + [high] is behavior-affecting code behind current Cargo policy gate
+    + [blocked] is not safely executable without external environment change
+
+  & [PolicyGateRule] is active while Windows Application Control blocks Cargo-generated executables
+    = must: avoid Windows-native Cargo build/test/run/check commands until resolved
+    = must: mark Rust code changes as source_complete_policy_gated unless WSL verification has passed
+    = must: use Python-only validation and source inspection where meaningful
+    = must: prefer SOP, generated data, and source-shape work while policy gate remains
+
+  & [TrustedVerificationRoute] is active after SLM-18 completion
+    + [route] is WSL Ubuntu with Cargo target directory in /home/pinky/slm_rust_target
+    + [linker] is /home/pinky/bin/zigcc
+    = must: use WSL Cargo for Rust verification while Windows native Cargo remains blocked
+    = must: keep Cargo target outputs outside C:\Project\Pinky
+    - never: run Windows-native Cargo build/test/run/check until Windows Application Control is resolved
+
+  & [BatchRule] is how to choose work during a long session
+    = must: pick ready slices with no unresolved user decision
+    = must: skip or document blocked slices instead of stalling
+    = must: keep implementation and SOP review paired
+    = must: update work queue after each batch
+    = should: batch XS/S slices together
+    = should: split L/XL slices into sub-slices before implementation

@@ -1,0 +1,17 @@
+& [SLMSlice55OllamaSidecarAdapterSkeleton] is a work-ready source-only slice for Ollama compatibility
+  + [slice_id] is SLM-55
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-23, SLM-35
+  + [scope] is add Ollama request/response envelope skeleton parallel to LM Studio
+  + [acceptance_criteria] is no live network call is required and output remains ProviderSuggestion evidence
+  + [proof_route] is WSL cargo test
+
+  ! [CompletionEvidence] is the SLM-55 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Ollama_Sidecar_Adapter_Skeleton_Contract.sop
+    @ [implementation] is slm_rust/src/sidecar.rs OllamaSidecarConfig and parse_ollama_provider_suggestions_validated
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 28 library tests and 3 slm_demo tests
+    @ [regression_harness] passed
+    @ [live_network] is not used

@@ -1,0 +1,16 @@
+& [SLMSlice63WobbleRoutingPolicies] is a work-ready slice for operational wobble decisions
+  + [slice_id] is SLM-63
+  + [status] is verified_wsl
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-45
+  + [scope] is define route_to_deliberation, continue_diffusion, seek_sidecar, and ready_for_reingestion policies
+  + [acceptance_criteria] is wobble routing is derived from vector dimensions, not only aggregate score
+  + [proof_route] is Rust unit tests and WSL cargo test
+
+  ! [CompletionEvidence] is the SLM-63 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Wobble_Routing_Policy_Contract.sop
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 16 tests
+    @ [self_check] passed slm_self_check
+    @ [demo] primer routing_decision route is seek_sidecar with subject_boundary_instability dimension ref

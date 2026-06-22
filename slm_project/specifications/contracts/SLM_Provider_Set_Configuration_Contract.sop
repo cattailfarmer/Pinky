@@ -1,0 +1,44 @@
+& [SLMProviderSetConfigurationContract] is the contract for local provider-set configuration
+  + [contract_uuid] is 9cadb933-93d8-4c28-b998-cd5cb1401f53
+  + [slice_id] is SLM-56
+  + [depends_on] is SLM_LLM_Provider_Adapter_Contract, SLM_LM_Studio_Sidecar_Adapter_Contract, SLM_Ollama_Sidecar_Adapter_Skeleton_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to declare available lower providers without changing semantic graph authority
+    = must: preserve stable provider identities
+    = must: declare adapter kind, model id, prompt contract, adapter version, and capabilities
+    = must: allow mock, LM Studio, Ollama, and future hosted providers
+    = must: validate that non-mock providers name a prompt contract
+    = must: load configuration without starting a network call
+    - never: let provider configuration create graph objects or semantic glyphs
+
+  & [CapabilitySet] is the v0 provider capability vocabulary
+    + [capability] is dictionary_service
+    + [capability] is role_suggestion
+    + [capability] is candidate_meaning
+    + [capability] is candidate_relation
+    + [capability] is faculty_run
+    + [capability] is objection
+    + [capability] is answer
+    + [capability] is jury_review
+
+  & [LocalConfigArtifact] is the checked-in provider set
+    + [config] is slm_project/provider_sets/local_provider_set_v0.json
+    + [provider] is mock-fixture
+    + [provider] is local-lm-studio
+    + [provider] is local-ollama
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/providers.rs ProviderCapability
+    + [module] is slm_rust/src/providers.rs ProviderConfig
+    + [module] is slm_rust/src/providers.rs ProviderSetConfig
+    + [module] is slm_rust/src/providers.rs provider_set_from_json
+    + [module] is slm_rust/src/providers.rs validate_provider_set
+    + [proof_route] is config parser tests and WSL cargo test
+
+  ! [Slice56SourceComplete] is accepted
+    @ [source_gate] passed with provider_set_validation_ok providers=3
+    @ [wsl_cargo_test] passed 31 library tests and 3 slm_demo tests
+    @ [regression_harness] passed slm_regression_harness_ok
+    @ [config] is slm_project/provider_sets/local_provider_set_v0.json
+    @ [providers] are mock-fixture, local-lm-studio, and local-ollama

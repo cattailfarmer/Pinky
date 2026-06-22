@@ -1,0 +1,59 @@
+& [SLMPrimerSchemaVersioningContract] is the contract for stable primer schema identity
+  + [contract_uuid] is 431ca8d4-72f0-4780-a4d0-d48f7fd16f5e
+  + [slice_id] is SLM-48
+  + [depends_on] is SLM_Primer_Rendering_Contract, SLM_Primer_Compaction_Budget_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to make SLM primers safe for machine re-ingestion across prototype changes
+    = must: expose a stable schema id in every primer JSON object
+    = must: expose a concrete schema version in every primer JSON object
+    = must: expose a compatibility floor for readers that accept earlier v0 primers
+    = must: list stable required fields so downstream consumers can validate primer shape
+    = must: preserve the existing version field as a legacy short identifier during v0
+    - never: remove or silently rename a required primer field without a schema version change
+
+  & [SchemaIdentity] is the v0 primer identity surface
+    + [schema_id] is slm_primer
+    + [schema_version] is 0.1.0
+    + [compatibility_floor] is 0.1.0
+    + [legacy_version] is slm_primer_v0
+
+  & [RequiredFields] are the stable v0 primer fields
+    + [field] is version
+    + [field] is schema
+    + [field] is input_ref
+    + [field] is graph_ref
+    + [field] is subjects
+    + [field] is actions
+    + [field] is relations
+    + [field] is modifiers
+    + [field] is constraints
+    + [field] is uncertainty
+    + [field] is wobble
+    + [field] is compact_evidence
+    + [field] is compaction
+    + [field] is lineage_refs
+    + [field] is sop_rendering
+
+  & [CompatibilityPolicy] is the migration expectation
+    = must: add optional fields without changing compatibility_floor when older readers can ignore them
+    = must: increment schema_version when field meaning, requiredness, or interpretation changes
+    = must: increase compatibility_floor only when older readers cannot safely consume the primer
+    = must: keep primer evidence refs normalized before schema publication
+    - never: treat compact_evidence as exhaustive unless compaction metadata says no evidence was omitted
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/primer.rs PrimerSchemaInfo
+    + [module] is slm_rust/src/primer.rs SLM_PRIMER_SCHEMA_ID
+    + [module] is slm_rust/src/primer.rs SLM_PRIMER_SCHEMA_VERSION
+    + [module] is slm_rust/src/primer.rs primer_schema_info
+    + [proof_route] is Rust serialization test and WSL cargo test
+
+  ! [Slice48SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 17 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_schema_id] is slm_primer
+    @ [demo_schema_version] is 0.1.0
+    @ [demo_compatibility_floor] is 0.1.0
+    @ [demo_required_field_count] is 15

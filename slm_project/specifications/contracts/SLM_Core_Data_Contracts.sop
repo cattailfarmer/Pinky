@@ -1,0 +1,67 @@
+& [SLMCoreDataContracts] is the data identity contract for SLM v0
+  + [contract_uuid] is 9f4789ad-bf65-4ff6-97b0-326a615ef732
+  + [slice_id] is SLM-02
+  + [depends_on] is SLM_Authority_Source_Rails
+  + [status] is accepted_for_downstream_contracts
+
+  & [EpistemicTypeSeparation] is the non-negotiable data boundary
+    + [Token] is observation
+    + [GrammarCandidate] is evidence
+    + [LLMSuggestion] is evidence
+    + [CandidateMeaning] is pre-stabilization semantic hypothesis
+    + [CandidateRelation] is pre-stabilization relation hypothesis
+    + [SupportRecord] is weighted support evidence
+    + [ContradictionRecord] is weighted opposition evidence
+    + [Glyph] is stabilized semantic identity
+    + [SemanticRelation] is stabilized relation between Glyph identities
+    + [UncertaintyGlyph] is bounded uncertainty identity
+    + [LineageRecord] is provenance bridge from graph object to evidence
+    - never: treat Token, GrammarCandidate, LLMSuggestion, CandidateMeaning, or CandidateRelation as Glyph
+
+  & [TokenContract] is the observation unit
+    + [natural_key] is input_id plus token_index
+    + [required_field] is input_id
+    + [required_field] is token_index
+    + [required_field] is surface_text
+    + [required_field] is normalized_text
+    + [optional_field] is source_span
+    + [optional_field] is token_shape
+    + [lifecycle] is immutable_after_observation
+
+  & [GrammarCandidateContract] is role evidence for a Token
+    + [natural_key] is token_id plus grammar_role plus provider_or_rule_id
+    + [grammar_role] is noun, verb, adjective, adverb, determiner, preposition, conjunction, auxiliary, modal, punctuation, unknown, or extension
+    + [support_weight] is evidence support, not truth
+    + [evidence_source] is heuristic, lower_llm, dictionary, morphology, position, structural_rule, or user_rule
+    + [status] is active, deferred, contradicted, rejected, or superseded
+
+  & [CandidateMeaningContract] is pre-stabilization semantic hypothesis
+    + [natural_key] is evidence_workspace_id plus candidate_meaning_id
+    + [meaning_kind] is subject, action, relation, modifier, constraint, reference, or uncertainty_candidate
+    + [support_record_set] is SupportRecord references
+    + [contradiction_record_set] is ContradictionRecord references
+    + [lineage] is required
+    - never: enter SemanticGraph before stabilization
+
+  & [GlyphContract] is stabilized semantic identity
+    + [surrogate_key] is semantic_id
+    + [kind] is subject, action, relation_subject, modifier, constraint, uncertainty, wobble, primer_field, or semantic_trace
+    + [label] is descriptive, not identity authority
+    + [lineage] is required
+    + [stabilization_decision] is required
+    + [lifecycle_state] is active, retired, superseded, or preserved_trace
+    = must: be append-only after creation except lifecycle events represented separately
+    - never: mutate semantic_id
+
+  & [UncertaintyGlyphContract] is bounded unresolved meaning
+    + [surrogate_key] is semantic_id
+    + [uncertainty_type] is unresolved_role, unresolved_relation, unresolved_subject_boundary, unresolved_reference, contradiction_cluster, low_support_candidate, provider_disagreement, or unresolved_scope
+    + [boundary_statement] is required
+    + [lineage] is required
+    + [candidate_set] is the bounded unresolved alternatives
+    = must: be created only when uncertainty is specific enough to preserve
+    - never: create one uncertainty glyph per every fleeting hypothesis
+
+  ! [Slice02Complete] is accepted
+    @ [support] core identities distinguish observations, evidence, hypotheses, stabilized meaning, uncertainty, and lineage
+

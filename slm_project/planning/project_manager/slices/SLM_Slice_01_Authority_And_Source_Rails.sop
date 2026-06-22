@@ -1,0 +1,14 @@
+& [SLMSlice01AuthorityAndSourceRails] is a work-ready slice for source authority and project rails
+  + [slice_id] is SLM-01
+  + [status] is ready
+  + [feature_cluster] is ClusterAAuthorityAndRails
+  + [source_refs] is Dictated_SLM_Source.sop, Source_Document_Manifest.sop, SLM_Canonical_Specification.sop, SLM_Exploded_Specification.sop, SLM_Explosion_Round_2_Work_Decomposition.sop
+  + [depends_on] is none
+  + [scope] is preserve source authority, link derived artifacts, mark false-start prototype as non-authoritative, and define current discussion-draft status
+  + [deliverable] is updated manifest and planning references proving source-to-derived lineage
+  + [acceptance_criteria] is every derived artifact is listed from the source manifest or staged plan
+  + [acceptance_criteria] is slm_prototype remains quarantined until implementation authority permits reuse
+  + [proof_route] is inspect file paths and confirm no source document was overwritten
+  + [exclusions] is implementation code and live provider integration
+  + [next_action] is update manifest and staged plan references after new slice artifacts exist
+

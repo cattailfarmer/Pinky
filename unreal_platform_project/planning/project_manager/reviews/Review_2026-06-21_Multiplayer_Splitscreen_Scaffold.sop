@@ -1,0 +1,35 @@
+& [Review20260621MultiplayerSplitscreenScaffold] is the completed-work review for the first multiplayer split-screen data and scaffold slices
+  + [review_uuid] is 97e978fe-6e23-4aa4-a76f-617e593f482b
+  + [reviewed_slice] is unreal_platform_project/planning/project_manager/slices/Slice_01_Multiplayer_Splitscreen_Data_Contract.sop
+  + [reviewed_slice] is unreal_platform_project/planning/project_manager/slices/Slice_02_UE5_Prototype_Host_Session_Scaffold.sop
+  + [reviewed_at_local] is 2026-06-21
+  + [source_feature_specification] is unreal_platform_project/specifications/Multiplayer_Splitscreen_Hosting_Feature_Specification.sop
+  + [data_contract] is unreal_platform_project/specifications/contracts/Multiplayer_Splitscreen_Data_Contracts.sop
+  + [runtime_project] is unreal_platform_project/runtime/UnrealPlatformPrototype/UnrealPlatformPrototype.uproject
+
+  & [VerifiedSupport] is the support delta provided by completed work
+    ! [DataIdentitySpineExists] is accepted
+      @ [support] Multiplayer_Splitscreen_Data_Contracts.sop defines HostDevice, HostSession, LocalPlayerSlot, AuthenticatedUser, UserSessionBinding, PlayerControllerBinding, and SessionAuditEvent as separate subjects
+    ! [UE5ScaffoldCompiles] is accepted
+      @ [support] UnrealBuildTool UnrealPlatformPrototypeEditor Win64 Development succeeded with UE_5.7
+    ! [MockBindingProofSurfaceExists] is accepted
+      @ [support] APlatformHostSessionState exposes CreateMockHostSession, CreateLocalPlayerSlot, MockLoginUserToSlot, and HasIdentityCollapseFault
+
+  & [RequirementDelta] is the requirement shape discovered by implementation
+    + [delta] is UE_5.7 includes a bundled DotNet runtime that must be placed on DOTNET_ROOT and PATH for UBT in this shell
+    + [delta] is split-screen visual proof should be its own slice after platform identity and binding state compile
+    + [delta] is generated Unreal folders must be ignored as build output
+
+  & [RemainingGaps] is the unresolved support set
+    + [gap] is no split-screen viewport creation yet
+    + [gap] is no input device isolation yet
+    + [gap] is no pawn spawn or possession proof yet
+    + [gap] is no HUD/user identity display yet
+    + [gap] is no automated UE smoke command beyond compilation yet
+
+  & [NextSliceRecommendation] is the immediate continuation
+    + [next_slice] is create two local players in one host session and bind mock users to each slot at runtime
+    + [proof_needed] is editor or commandlet proof that local player slots, controller bindings, and audit events are created without identity collapse
+    + [model_routing_assessment] is Spark-suitable now that the core identity boundary is drafted and compiled
+
+  - never: mark AC2 through AC6 of the feature specification complete until viewport, input, pawn, HUD, and shared-world proof exist

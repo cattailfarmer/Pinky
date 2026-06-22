@@ -1,0 +1,15 @@
+& [SLMSlice50CLIRegressionHarness] is a work-ready slice for repeatable command checks
+  + [slice_id] is SLM-50
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is low
+  + [depends_on] is SLM-30, SLM-49
+  + [scope] is create scriptable CLI regression checks for demo and self-check commands
+  + [acceptance_criteria] is one command runs source gate, cargo test, self-check, and demo smoke
+  + [proof_route] is execute harness through PowerShell and WSL
+
+  ! [CompletionEvidence] is the SLM-50 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_CLI_Regression_Harness_Contract.sop
+    @ [implementation] is slm_project/tools/slm_regression_harness.py
+    @ [source_gate] passed
+    @ [harness] passed with source_gate_ok, cargo_test_ok, self_check_ok, demo_compact_ok, demo_primer_only_ok, and demo_sop_ok

@@ -1,0 +1,9 @@
+& [SLMSlice64PronounReferenceFixtureRules] is a work-ready slice for reference uncertainty
+  + [slice_id] is SLM-64
+  + [status] is ready_after_SLM-41
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-41, SLM-46
+  + [scope] is add pronoun role evidence and unresolved_reference uncertainty fixture
+  + [acceptance_criteria] is pronoun reference uncertainty can be bounded without false subject glyph promotion
+  + [proof_route] is WSL cargo test

@@ -1,0 +1,14 @@
+& [SLMSlice31ClosedClassRolePairSuppression] is the complete slice for suppressing false compounds across structural tokens
+  + [slice_id] is SLM-31
+  + [status] is complete
+  + [effort] is XS
+  + [risk] is low
+  + [depends_on] is SLM-24 and demo verification
+  + [contract] is slm_project/specifications/contracts/SLM_Closed_Class_Role_Pair_Suppression_Contract.sop
+  + [deliverable] is role-pair span exclusion for structural hint tokens
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+
+  & [WorkCompleted] is the slice result
+    + [updated] is RolePairSpanRule with exclude_structural_hint_tokens
+    + [updated] is diffusion role-pair scan to skip structural tokens for compound rules
+    + [verified] is WSL Cargo test route after source update

@@ -1,0 +1,16 @@
+& [SLMSlice42EvidenceProvenanceNormalization] is a work-ready slice for consistent evidence refs
+  + [slice_id] is SLM-42
+  + [status] is verified_wsl
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-19, SLM-26, SLM-28
+  + [scope] is normalize provider, lexicon, support, contradiction, and lineage refs for stable primer re-ingestion
+  + [acceptance_criteria] is every compact evidence ref has a parseable namespace and source identity
+  + [proof_route] is WSL cargo test plus primer evidence scan
+
+  ! [CompletionEvidence] is the SLM-42 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Evidence_Provenance_Normalization_Contract.sop
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 10 tests
+    @ [self_check] passed slm_self_check
+    @ [demo] compact evidence refs all had namespace separators and no whitespace

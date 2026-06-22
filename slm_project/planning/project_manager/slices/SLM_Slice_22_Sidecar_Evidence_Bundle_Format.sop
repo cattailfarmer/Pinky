@@ -1,0 +1,8 @@
+& [SLMSlice22SidecarEvidenceBundleFormat] is the source-complete slice for tiny-LLM prompt packet structure
+  + [slice_id] is SLM-22
+  + [status] is source_complete_policy_gated
+  + [effort] is S
+  + [risk] is medium
+  + [depends_on] is SLM-17, SLM-19
+  + [deliverable] is slm_rust/src/sidecar.rs
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop

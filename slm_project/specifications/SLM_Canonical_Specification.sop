@@ -1,0 +1,253 @@
+& [SLMCanonicalSpecification] is the current implementation authority candidate for the Semantic Logic Model prototype
+  + [canonical_specification_uuid] is db89d0a7-ad8b-4cca-bf27-80ad5e040c5c
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [exploded_specification] is slm_project/specifications/SLM_Exploded_Specification.sop
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_status] is discussion_draft
+  + [authority_state] is not_final_until_user_review
+
+  & [ProjectDefinition] is the bounded project identity
+    + [name] is Semantic Logic Model prototype
+    + [short_name] is SLM prototype
+    + [project_type] is exploratory semantic reasoning prototype
+    + [primary_language] is Python
+    + [first_runtime] is command line and tests
+    + [prototype_boundary] is inspectable deterministic or heuristic prototype, not trained ML model
+    + [llm_dependency] is lower language model layer used as dictionary and semantic substrate
+    + [architecture_role] is hierarchical reasoning layer above a lower LLM, not an independently-running language model
+
+  & [CoreAxioms] is the v0 epistemic ladder for the SLM project
+    ! [TokensAreObservations] is accepted
+      @ [support] user statement: "Tokens are observations."
+    ! [GrammarIsEvidence] is accepted
+      @ [support] user statement: "Grammar is evidence."
+    ! [SemanticsIsTheTarget] is accepted
+      @ [support] user statement: "Semantics is the target."
+    ! [GlyphsAreStabilizedSemanticIdentities] is accepted
+      @ [support] user statement: "Glyphs are stabilized semantic identities."
+    ! [WobbleIsEvidenceToMeaningInstability] is accepted
+      @ [support] user statement: "Wobble is instability in the path from evidence to meaning."
+    ! [DiffusionDenoisesMeaning] is accepted
+      @ [support] user statement: "Diffusion is not denoising text. Diffusion is denoising meaning."
+
+  & [CanonicalPurpose] is the purpose of the first implementation
+    = must: convert natural language input into an explicit semantic candidate field
+    = must: reduce ambiguity through staged semantic diffusion
+    = must: preserve unresolved alternatives until evidence or constraints justify lower activation
+    = must: emit a semantic graph and compact primer suitable for later LLM use
+    = must: expose wobble when the graph remains unstable
+    = must: preserve the distinction between SLM reasoning authority and lower LLM lexical or semantic suggestions
+
+  & [LLMSubstrateContract] is the dependency boundary between SLM and lower language model services
+    + [lower_llm_layer] is the external model or service that can provide dictionary-like lexical, grammatical, semantic, and faculty-deliberation support
+    + [llm_adapter] is the exchange boundary that lets one or more lower LLM providers supply evidence
+    + [provider] is one configured lower LLM source
+    + [provider_set] is one or more lower LLM sources queried for multi-perspective attention
+    + [dictionary_service] is the minimum required LLM-backed function for candidate meanings, usage senses, paraphrases, and role possibilities
+    + [faculty_substrate] is the LLM-backed support used by Observer, Honesty, Security, Planner, Weaver, Scribe, and Refiner
+    + [multi_perspective_attention] is evidence collection from multiple providers or prompts to expose convergences, disagreements, and blind spots
+    + [provider_deliberation] is cross-provider objection, answer, and review when lower LLMs disagree
+    + [objecting_provider] is a lower LLM provider that rejects or challenges a candidate reasoning path
+    + [supporting_provider] is a lower LLM provider that supports the candidate reasoning path
+    + [jury_panel] is one or more additional providers or deliberation passes used to measure persistent disagreement
+    + [internal_faculty_run] is each provider applying the dual-hemisphere seven-faculty pattern before its agreement or objection is counted
+    + [llm_output] is evidence, not stabilized semantic identity
+    + [provider_provenance] is provider id, model id, prompt contract, response id or hash, timestamp, and adapter version when available
+    + [trust_boundary] is lower LLM suggestions require SLM evidence tracking, provider provenance, diffusion, wobble measurement, and deliberative stabilization before graph promotion
+    + [v0_adapter] is optional and may be mocked or rule-based until live LLM integration is intentionally selected
+    = must: treat lower LLM responses as evidence entering EvidenceWorkspace
+    = must: allow lower LLM providers to be exchanged without changing SLM graph semantics
+    = must: support provider_set shape even if v0 uses a single mock provider
+    = must: preserve per-provider provenance for each suggestion
+    = must: require objecting providers to articulate why an objection is raised
+    = must: require supporting providers to answer articulated objections
+    = must: route persistent disagreement to jury_panel measurement
+    = must: preserve provider disagreement as deliberation trace and possible wobble input
+    = must: count provider agreement only after internal_faculty_run is represented or cited
+    = must: preserve provenance for LLM-derived suggestions
+    = must: allow v0 to mock the lower LLM layer for deterministic tests
+    - never: let lower LLM output directly create stable Glyphs
+    - never: confuse dictionary support with semantic stabilization
+    - never: collapse multiple provider outputs into one anonymous evidence claim
+
+  & [CanonicalArchitecture] is the required module shape for the first prototype
+    + [module] is tokenizer
+      = must: convert input text into Token records with source lineage
+    + [module] is candidate_roles
+      = must: generate RoleCandidate records without early single-role commitment
+    + [module] is semantic_graph
+      = must: own Glyph, SemanticEdge, graph event, and append-only identity behavior
+    + [module] is diffusion
+      = must: run staged transforms beginning with structural tokens
+    + [module] is wobble
+      = must: calculate instability score and explain factors
+    + [module] is primer
+      = must: project graph state into compact structured output
+    + [module] is demo
+      = must: run the first sentence through the full pipeline
+    + [module] is tests
+      = must: verify each transform and the demo result
+
+  & [CanonicalDataContracts] is the minimum data model to implement first
+    + [Token] is immutable source token with index, text, normalized_text, and source span when practical
+    + [RoleCandidate] is possible grammatical role with role_kind, support_weight, evidence, and lifecycle status
+    + [Glyph] is immutable stabilized semantic identity with semantic_id, kind, label, payload, and lifecycle state
+    + [SemanticEdge] is append-only relation with source, target, relation_kind, activation, evidence, and lifecycle state
+    + [GraphEvent] is append-only create, link, activate, retire, supersede, or bind trace
+    + [StructuralHint] is structural-token-derived relation or scope pressure
+    + [DiffusionSnapshot] is inspectable state after a pass
+    + [WobbleReport] is aggregate_score plus diagnostic vector and named factors
+    + [SLMPrimer] is stable JSON plus readable SOP-style rendering containing subjects, actions, relations, modifiers, constraints, uncertainty, and trace summary
+    - never: assign Glyph IDs to raw tokens in v0
+    - never: assign Glyph IDs to temporary role candidates in v0
+    - never: treat support_weight as truth
+
+  & [LayerSeparation] is the v0 evidence-to-meaning boundary
+    + [grammar_layer] is evidence layer containing tokens, grammatical role candidates, structural words, morphology, position, and relation hints
+    + [semantic_layer] is target layer containing stabilized subjects, actions, relations, modifiers, constraints, and uncertainty identities
+    + [collapse_rule] is grammatical candidates may support semantic roles but do not equal semantic roles
+    + [support_weight] is activation score combining evidence strength, relation fit, and diffusion priority
+    + [future_score_split] is confidence, energy, and routing priority after v0
+    = must: keep unstable candidates in EvidenceWorkspace
+    = must: keep SemanticGraph downstream of diffusion and stabilization
+    - never: put unstable candidate roles, meanings, or relations directly into SemanticGraph
+    - never: use SemanticGraph as the workspace where diffusion occurs
+
+  & [WorkspaceArchitecture] is the v0 pipeline boundary
+    + [EvidenceWorkspace] contains tokens, candidate grammatical roles, candidate meanings, candidate relations, support, and contradictions
+    + [LLMSubstrate] supplies dictionary and faculty support as evidence into EvidenceWorkspace
+    + [DiffusionEngine] performs constraint propagation, support propagation, contradiction propagation, and wobble measurement
+    + [DeliberativeStabilization] validates candidate semantic identities through the seven faculties
+    + [SemanticGraph] contains stabilized glyphs, stabilized relations, explicit uncertainty glyphs, and lineage
+    + [architecture_sentence] is EvidenceWorkspace to SemanticDiffusion to DeliberativeStabilization to SemanticGraph
+    = must: treat SemanticGraph as the result of diffusion, not the place where diffusion occurs
+    = must: allow explicit uncertainty identities into SemanticGraph when uncertainty has stable boundaries
+    = must: keep temporary hypotheses out of SemanticGraph
+    = must: preserve lineage from SemanticGraph glyphs back to EvidenceWorkspace candidates
+    = must: assume every token may have multiple candidate grammatical roles until diffusion proves otherwise
+    - never: allow every tentative interpretation to become a graph node
+    - never: hard-code noun-first or verb-first assumptions
+
+  & [GlyphStabilization] is the v0 deliberative convergence contract
+    + [candidate_glyph] is a proposed semantic identity before stabilization
+    + [faculty_vote] is one independent validation result from Observer, Honesty, Security, Planner, Weaver, Scribe, or Refiner
+    + [support_sources] is the count of evidence sources supporting the candidate
+    + [contradiction_score] is severity-weighted unresolved contradiction against the candidate
+    + [wobble_score] is instability in the path from evidence to meaning
+    + [lineage] is provenance from source observation through evidence and diffusion trace
+    + [stable_glyph] is candidate_glyph accepted as semantic identity
+    + [uncertainty_identity] is stabilized uncertainty created when convergence is partial
+    + [evidence_workspace_candidate] is candidate preserved without glyph stabilization when contradiction remains
+    + [faculty_threshold] is configurable in v0
+    + [contradiction_threshold] is configurable in v0
+    + [wobble_threshold] is configurable in v0
+    = must: require deliberative convergence before stabilizing a Glyph
+    = must: model the seven faculties as independent validators in v0
+    = must: require support_sources greater than or equal to 1
+    = must: require faculty_votes greater than or equal to faculty_threshold
+    = must: require contradiction_score less than contradiction_threshold
+    = must: require wobble_score less than wobble_threshold
+    = must: require lineage to be present
+    = must: create uncertainty_identity when convergence is partial and the uncertainty itself has stable boundaries
+    = must: preserve candidate in evidence workspace when contradiction remains
+    - never: stabilize a Glyph merely because a support score is high
+
+  & [FacultyValidators] is the v0 validation set for candidate glyph stabilization
+    + [Observer] is validator asking whether the candidate is actually present
+    + [Honesty] is validator asking whether support is sufficient
+    + [Security] is validator asking whether unsafe or invalid consequences exist
+    + [Planner] is validator asking whether the candidate fits sequence or task
+    + [Weaver] is validator asking whether the candidate coheres relationally
+    + [Scribe] is validator asking whether lineage and provenance are preserved
+    + [Refiner] is validator asking whether meaning is compressed without distortion
+    + [ObserverAuthority] is Observer manages the ordinary faculty system
+    + [HonestyVeto] is Honesty can veto Observer when truth or support fails
+    + [SecurityVeto] is Security can veto Observer when invalid or unsafe consequences remain
+    = must: let Observer coordinate Planner, Weaver, Scribe, and Refiner unless vetoed
+    = must: let Honesty veto stabilization over unsupported or false reasoning
+    = must: let Security veto stabilization over invalid, unsafe, or forbidden consequences
+
+  & [CanonicalPipeline] is the required first processing flow
+    = must: tokenize input
+    = must: attach multiple candidate roles to tokens
+    = must: identify structural tokens and derive relation hints
+    = must: begin diffusion with maximal uncertainty
+    = must: activate candidate interpretations
+    = must: apply structural constraints
+    = must: propagate support through relationships
+    = must: propagate contradictions through relationships
+    = must: measure wobble
+    = must: promote only interpretations that satisfy GlyphStabilization
+    = must: preserve unresolved interpretations
+    = must: create graph glyphs only when semantic identities stabilize through deliberative convergence
+    = must: keep candidate interpretations outside the semantic graph until promotion
+    = must: append edges and events for candidate roles, hints, scopes, and late bindings
+    = must: run late binding for subjects and actions only after structural hints are applied
+    = must: calculate wobble after graph formation as aggregate score plus diagnostic vector
+    = must: emit machine-reingestible JSON primer without hiding uncertainty
+    = should: emit readable SOP-style primer rendering for human inspection
+
+  & [DiffusionContract] is the v0 meaning-denoising process
+    + [purpose] is reduce wobble by propagating evidence, constraints, support, and contradiction through the semantic workspace
+    + [output] is stabilized semantic field, not language
+    + [successful_pass_reduces] is role ambiguity, subject ambiguity, relation ambiguity, contradiction, and wobble
+    + [preservation_rule] is uncertainty remains where resolution is not justified
+    = must: treat diffusion as constraint propagation and semantic stabilization
+    = must: not treat diffusion as direct meaning inference
+    = must: not treat diffusion as text denoising
+
+  & [UncertaintyGlyphTypes] is the v0 vocabulary for bounded uncertainty identities
+    + [type] is unresolved_role, unresolved_relation, unresolved_subject_boundary, unresolved_reference, contradiction_cluster, low_support_candidate, provider_disagreement, or unresolved_scope
+    = must: assign an uncertainty type when uncertainty enters SemanticGraph
+    = must: preserve lineage to the EvidenceWorkspace candidates and provider deliberation when applicable
+
+  & [AcceptanceCriteria] is the first completion standard
+    + [AC1] is demo command accepts "Design a compiler for FPGA hardware."
+    + [AC2] is output includes token list
+    + [AC3] is output includes candidate roles for each non-punctuation token
+    + [AC4] is output includes structural relation hints from "a" and "for"
+    + [AC5] is semantic graph contains immutable glyph IDs only for semantic identities
+    + [AC5b] is unstable candidate roles and meanings remain in EvidenceWorkspace rather than SemanticGraph
+    + [AC6] is graph changes are represented as appended events or edges
+    + [AC7] is output includes at least one action candidate and subject/object candidate without pretending certainty is absolute
+    + [AC8] is wobble aggregate score, vector dimensions, and factor list are emitted
+    + [AC9] is primer includes subjects, actions, relations, constraints, uncertainty, and support weights
+    + [AC10] is tests cover tokenizer, candidate roles, structural hints, graph identity immutability, wobble, and primer shape
+    + [AC11] is tests cover faculty validator voting and non-stabilization under unresolved contradiction
+    + [AC12] is primer includes compact evidence sufficient for machine re-ingestion
+    + [AC13] is provider disagreement can produce objection, answer, jury measurement, and typed uncertainty
+
+  & [OpenQuestions] is the discussion frontier before final implementation authority
+    ? [OQ1: What counts as a stable subject graph?]
+      ~ [current_answer] is convergence of relation support, reduced competing role activation, and coherent scope boundaries
+    ! [Decision1GlyphBoundary] is accepted for v0
+      @ [support] user decision: glyphs represent semantic identities only; tokens and role candidates are evidence
+    ! [Decision2LayerSeparation] is accepted for v0
+      @ [support] user decision: grammar is evidence layer and semantics is target layer
+    ! [Decision3WobbleShape] is accepted for v0
+      @ [support] user decision: wobble is both aggregate score and diagnostic vector
+    ! [Decision4ActivationMeaning] is accepted for v0
+      @ [support] user decision: activation means support weight, not truth
+    ! [Decision5PrimerTarget] is accepted for v0
+      @ [support] user decision: primer optimizes for machine re-ingestion with human readability
+    ? [OQ3: Is semantic diffusion deterministic?]
+      ~ [current_answer] is deterministic in prototype for inspectability, but the concept may later admit probabilistic activation
+    ? [OQ5: What should learning mean in a non-ML prototype?]
+      ~ [current_answer] is append-only local memory of created identities, links, activations, retirements, and supersessions
+    ? [OQ6: What should wobble do operationally?]
+      ~ [current_answer] is not just score instability, but point to the relation or boundary that prevents stable interpretation
+    ? [OQ7: What thresholds should v0 use for faculty_votes, contradiction_score, and wobble_score?]
+      ~ [current_answer] is configurable defaults until empirical behavior is observed
+    ? [OQ8: How deep should dual-hemisphere deliberation be in a prototype validator?]
+      ~ [current_answer] is independent faculty validators first, richer deliberative recursion later
+    ? [OQ9: What unfinished continuation follows the user's 'to be continued' marker?]
+      ~ [current_answer] is intentionally open source frontier
+    ? [OQ10: What qualifies as stable boundaries for an uncertainty identity?]
+      ~ [current_answer] is unresolved, but the uncertainty must be specific enough to preserve without promoting every temporary hypothesis
+
+  & [SatisfactionSignatureDraft] is the unsigned processing status
+    + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+    + [signature_status] is not_issued
+    + [reason] is user discussion and conceptual exploration are still active
+    + [required_before_signature] is user review of open questions, acceptance criteria, and first implementation boundary

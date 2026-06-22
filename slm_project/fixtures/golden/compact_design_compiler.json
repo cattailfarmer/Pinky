@@ -1,0 +1,99 @@
+{
+  "candidate_role_count": 19,
+  "compact_evidence_count": 35,
+  "compaction_omitted_item_count": 37,
+  "graph_summary": {
+    "glyphs": [
+      {
+        "kind": "action",
+        "label": "DesignAction",
+        "semantic_id": "glyph:DesignAction"
+      },
+      {
+        "kind": "semantic_trace",
+        "label": "CompilerConcept",
+        "semantic_id": "glyph:CompilerConcept"
+      },
+      {
+        "kind": "constraint",
+        "label": "FpgaHardwareConstraint",
+        "semantic_id": "glyph:FpgaHardwareConstraint"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "acts_on",
+        "relation_id": "relation:DesignAction:CompilerConcept:0",
+        "source_glyph": "glyph:DesignAction",
+        "target_glyph": "glyph:CompilerConcept"
+      },
+      {
+        "kind": "constrains",
+        "relation_id": "relation:DesignAction:FpgaHardwareConstraint:1",
+        "source_glyph": "glyph:DesignAction",
+        "target_glyph": "glyph:FpgaHardwareConstraint"
+      }
+    ],
+    "uncertainties": [
+      {
+        "boundary_statement": "imperative action DesignAction has an implied actor; no explicit grammatical subject appears before the command action",
+        "semantic_id": "glyph:uncertainty:uncertainty:implied_actor:DesignAction",
+        "uncertainty_type": "unresolved_subject_boundary"
+      },
+      {
+        "boundary_statement": "token 'Design' has competing grammatical roles verb and noun",
+        "semantic_id": "glyph:uncertainty:uncertainty:unresolved_role:tok:demo-input:0",
+        "uncertainty_type": "unresolved_role"
+      },
+      {
+        "boundary_statement": "relation Constrains has unresolved scope between CompilerConcept and SpanEvidence:ForFpgaHardware",
+        "semantic_id": "glyph:uncertainty:uncertainty:unresolved_scope:candidate_relation:CompilerConcept:SpanEvidence:ForFpgaHardware:Constrains",
+        "uncertainty_type": "unresolved_scope"
+      }
+    ]
+  },
+  "input": "Design a compiler for FPGA hardware.",
+  "lexical_sense_candidate_count": 13,
+  "output_mode": "compact",
+  "primer_schema": {
+    "compatibility_floor": "0.1.0",
+    "compatibility_notes": [
+      "Additive optional fields do not require a compatibility floor change.",
+      "Required field changes require a schema_version increment.",
+      "compact_evidence is bounded by compaction metadata and is not exhaustive by default."
+    ],
+    "required_fields": [
+      "version",
+      "schema",
+      "input_ref",
+      "graph_ref",
+      "subjects",
+      "actions",
+      "relations",
+      "modifiers",
+      "constraints",
+      "uncertainty",
+      "wobble",
+      "compact_evidence",
+      "compaction",
+      "lineage_refs",
+      "sop_rendering"
+    ],
+    "schema_id": "slm_primer",
+    "schema_version": "0.1.0"
+  },
+  "span_candidate_count": 3,
+  "structural_hint_count": 2,
+  "token_surfaces": [
+    "Design",
+    "a",
+    "compiler",
+    "for",
+    "FPGA",
+    "hardware",
+    "."
+  ],
+  "wobble_reason": "subject boundary instability needs actor or scope evidence",
+  "wobble_route": "seek_sidecar",
+  "wobble_score": 0.23625001
+}

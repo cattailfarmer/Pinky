@@ -1,0 +1,16 @@
+& [SLMSlice62ThresholdCalibrationFixtures] is a work-ready slice for stabilization threshold behavior
+  + [slice_id] is SLM-62
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-08, SLM-41, SLM-45
+  + [scope] is create fixtures around faculty threshold, contradiction threshold, and wobble threshold boundaries
+  + [acceptance_criteria] is near-threshold candidates produce expected promote or preserve outcomes
+  + [proof_route] is WSL cargo test
+
+  ! [CompletionEvidence] is the SLM-62 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Threshold_Calibration_Fixture_Contract.sop
+    @ [implementation] is slm_rust/src/stabilization.rs threshold fixture tests
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 34 library tests and 3 slm_demo tests
+    @ [regression_harness] passed

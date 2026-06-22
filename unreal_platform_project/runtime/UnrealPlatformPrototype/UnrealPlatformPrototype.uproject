@@ -1,0 +1,13 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.7",
+  "Category": "Games",
+  "Description": "UE5 prototype for a user-generated multiplayer platform, beginning with local split-screen host-session identity.",
+  "Modules": [
+    {
+      "Name": "UnrealPlatformPrototype",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+& [SLMTinyLLMSidecarContract] is the contract for a small contextual LLM helper beside the lexical substrate
+  + [contract_uuid] is 0f8b6360-c4d5-4a3c-8417-2f4dd0b04b52
+  + [slice_id] is SLM-17
+  + [depends_on] is SLM_LLM_Provider_Adapter_Contract, SLM_Lexical_Authority_Foundation_Contract, SLM_Provider_Deliberation_Contract
+  + [status] is specification_complete_not_implemented
+
+  & [SidecarRole] is contextual judgment, not lexical authority
+    + [does] is rank lexical senses in context
+    + [does] is propose spans when substrate evidence is weak
+    + [does] is object to parse candidates with rationale
+    + [does] is answer objections using cited evidence
+    + [does] is run faculty validation prompts when requested
+    - never: define articles, prepositions, or basic closed-class roles by freeform generation
+    - never: bypass EvidenceWorkspace, wobble, diffusion, or stabilization
+
+  & [SidecarCallSurface] is the minimum v0 adapter shape
+    + [call] is rank_senses(context, lexical_sense_candidates)
+    + [call] is propose_spans(tokens, grammar_candidates, structural_hints)
+    + [call] is object_to_parse(candidate_relation_or_meaning)
+    + [call] is answer_objection(objection, evidence_bundle)
+    + [call] is run_faculty_validation(candidate, evidence_bundle)
+    = must: return source-attributed ProviderSuggestion records
+    = must: preserve uncertainty and disagreement
+    = must: support LM Studio or Ollama transport later
+    + [lm_studio_projection] is SLM_LM_Studio_Sidecar_Adapter_Contract
+
+  & [IntegrationBoundary] is the protection against sidecar overreach
+    = must: use LexicalSubstrate as speed-dial evidence before sidecar judgment
+    = must: send compact evidence bundles, not raw unbounded chat context
+    = must: let ProviderDeliberationEngine handle disagreement
+    - never: let sidecar response become a Glyph directly
+
+  ! [Slice17SpecificationComplete] is accepted
+    @ [support] sidecar role is now defined before implementation
+    @ [support_delta] SLM-23 adds source-only LM Studio request and response skeleton

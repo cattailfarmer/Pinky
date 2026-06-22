@@ -1,0 +1,255 @@
+& [RobloxFeatureImportSpecification] is the first imported feature baseline for the UE5-powered user-generated multiplayer game platform
+  + [specification_uuid] is 58ecf32e-4303-451a-a27d-b099741059fc
+  + [source_document] is unreal_platform_project/source_documents/2026-06-21_feature_import_intake/Dictated_Roblox_Feature_Import_Source.sop
+  + [correction_source_document] is unreal_platform_project/source_documents/2026-06-22_feature_import_depth_correction/Dictated_Feature_Import_Depth_Correction_Source.sop
+  + [prior_source_document] is unreal_platform_project/source_documents/2026-06-21_platform_intake/Dictated_Unreal_Platform_Source.sop
+  + [reference_platform] is Roblox
+  + [target_platform] is UE5-powered user-generated multiplayer game platform
+  + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_status] is unsigned_research_import_draft
+  + [authority_state] is feature_inventory_candidate_until_SJS_expansion_and_user_review
+
+  @ [source] https://github.com/Roblox/creator-docs/blob/main/content/en-us/platform.md
+  @ [source] https://create.roblox.com/docs/en-us/production/creator-store.md
+  @ [source] https://create.roblox.com/docs/en-us/projects/assets.md
+  @ [source] https://create.roblox.com/docs/en-us/projects/groups.md
+  @ [source] https://create.roblox.com/docs/en-us/avatar.md
+  @ [source] https://create.roblox.com/docs/en-us/marketplace/publish-to-marketplace.md
+  @ [source] https://create.roblox.com/docs/en-us/production/analytics.md
+  @ [source] https://create.roblox.com/docs/en-us/monetize.md
+  @ [source] https://create.roblox.com/docs/production/monetization/developer-exchange
+  @ [source] https://en.help.roblox.com/hc/en-us/articles/203314100-Developer-Exchange-DevEx-Overview-How-to-Submit-Requirements
+  @ [source] https://en.help.roblox.com/hc/en-us/articles/115005718246-Developer-Exchange-Terms-of-Use
+  @ [source] https://en.help.roblox.com/hc/en-us/articles/13061189551124-Developer-Exchange-Help-and-Information-Page
+  @ [source] https://about.roblox.com/community-standards
+
+  & [ImportBoundary] is the rule for using Roblox as a reference surface
+    = must: import feature categories, platform responsibilities, and product problems
+    = must: reinterpret all imported features through the target platform identity and Unreal Engine 5 constraints
+    = must: preserve Roblox-specific names, currency, branding, UI, assets, and trade dress as outside the target platform
+    = must: treat Roblox documentation as evidence of implemented feature families, not as permission to copy expression
+    - never: copy Roblox brand identity, protected content, marketplace naming, currency naming, avatar style, UI layout, or proprietary documentation wording
+
+  & [ImportedPlatformFeatureFamilies] is the baseline feature set observed from Roblox's implemented platform surface
+    + [depth_policy] is each feature family must expose implementation depth before being treated as actionable platform scope
+
+    & [FeatureActivationDepthContract] is the required shape for expanding any imported surface feature
+      + [activation_trigger] is the event, user action, system event, lifecycle transition, or policy condition that starts the feature
+      + [actor_set] is the user, creator, moderator, service, runtime, or external processor involved
+      + [data_subject_set] is the platform identities, records, ledgers, assets, sessions, or events the feature owns or changes
+      + [service_boundary_set] is the backend, runtime, editor, dashboard, payment, moderation, analytics, or infrastructure responsibility set
+      + [state_transition_set] is the valid lifecycle movement caused by activation
+      + [policy_gate_set] is eligibility, safety, payment, permission, age, compliance, or trust checks required before activation
+      + [proof_gate_set] is the test, audit event, UI inspection, ledger record, or operational metric that proves the feature works
+
+      = must: define activation_trigger before implementation planning
+      = must: define data_subject_set before selecting storage, UE classes, or UI
+      = must: define service_boundary_set before assigning implementation ownership
+      = must: define policy_gate_set when user-generated content, money, identity, minors, or moderation are involved
+      = must: define proof_gate_set before a feature can be marked ready
+      - never: let a surface feature name become a work slice without activation, data, service, policy, and proof depth
+
+    & [CreatorTools] is the feature family for building, scripting, testing, and publishing user experiences
+      + [reference_observation] is Roblox exposes Studio as an all-in-one IDE for building, scripting, testing, and publishing experiences
+      + [target_interpretation] is the target platform needs a UE5-compatible creation workflow for authoring worlds, gameplay rules, assets, and publishable experience packages
+      + [activation_trigger] is creator creates, opens, tests, saves, validates, or publishes an experience project
+      + [data_subject_set] is CreatorProject, ExperienceVersion, SourceAsset, ScriptModule, ValidationResult, PublishDraft, and EditorSession
+      + [service_boundary_set] is UE editor integration, platform project registry, validation service, local test runner, source control or version store, and publish pipeline
+      + [proof_gate_set] is creator can create a project, modify content, run validation, launch test play, and produce a publishable draft with trace
+      + [expansion_frontier] is decide whether creator tooling is an Unreal Editor plugin, custom editor, standalone launcher, in-game editor, web dashboard, or staged combination
+
+    & [RuntimeEngineAndSimulation] is the feature family for world execution
+      + [reference_observation] is Roblox provides an engine with data storage, physics simulation, primitives, default simulation behavior, runtime customization, and client streaming
+      + [target_interpretation] is the target platform should define a UE5 runtime contract for multiplayer simulation, physics authority, streaming, replication, save data, and creator-authored behavior
+      + [activation_trigger] is experience instance starts, player joins, world state changes, replication occurs, save state is read or written, or runtime authority changes
+      + [data_subject_set] is ExperienceInstance, HostSession, PlayerSession, ReplicatedActorState, SaveDataRecord, RuntimeRule, and SimulationEvent
+      + [service_boundary_set] is UE runtime, session orchestrator, persistence service, replication authority, telemetry stream, and safety hooks
+      + [proof_gate_set] is authoritative world state updates consistently across participating players and records enough trace to debug session behavior
+      + [expansion_frontier] is separate engine-native UE5 capabilities from platform-owned services that UE5 does not provide
+
+    & [ExperiencesAndWorlds] is the feature family for creator-authored playable spaces
+      + [reference_observation] is Roblox experiences include games, communication environments, learning spaces, showcases, concerts, simulations, and other 3D worlds
+      + [target_interpretation] is the target platform needs an experience identity model with world packages, versions, metadata, permissions, server launch policy, content rating, and discoverability
+      + [activation_trigger] is creator creates, imports, publishes, updates, archives, or launches a world package
+      + [data_subject_set] is Experience, ExperienceVersion, WorldPackage, LaunchPolicy, ContentRating, VisibilityState, and DiscoveryMetadata
+      + [service_boundary_set] is package registry, version store, launch service, moderation review, compatibility validator, and discovery index
+      + [proof_gate_set] is one experience version can be selected, launched, identified in telemetry, and rolled back or superseded without identity confusion
+      + [expansion_frontier] is choose the first vertical slice experience type that proves the platform identity without requiring every genre
+
+    & [ScriptingAndGameplayLogic] is the feature family for creator-authored behavior
+      + [reference_observation] is Roblox experiences are highly customizable through scriptable engine behavior and runtime properties
+      + [target_interpretation] is the target platform needs a sandboxed gameplay logic layer that can safely affect UE5 world state, player state, networking, and assets
+      + [activation_trigger] is creator-authored logic loads, validates, runs, handles an event, changes state, or is rejected
+      + [data_subject_set] is ScriptModule, RuntimeCapabilityGrant, SandboxPolicy, ScriptEventBinding, ExecutionTrace, FaultRecord, and PermissionDeniedRecord
+      + [service_boundary_set] is script compiler or validator, sandbox runtime, UE event bridge, policy engine, audit logger, and crash containment
+      + [policy_gate_set] is script may only access approved APIs and must not escape platform permissions or unsafe runtime boundaries
+      + [proof_gate_set] is permitted logic can affect a test experience while forbidden logic is blocked with an inspectable fault
+      + [expansion_frontier] is choose scripting substrate: restricted Blueprint surface, Verse-like language, Lua-style language, visual scripting, data-only rules, or hybrid model
+
+    & [CloudPlatformAPIs] is the feature family for external tool and automation access
+      + [reference_observation] is Roblox Open Cloud provides web APIs for tools and apps that access creations
+      + [target_interpretation] is the target platform needs API boundaries for project metadata, assets, publishing, analytics, permissions, moderation state, server operations, and automation
+      + [activation_trigger] is external client authenticates and calls a platform API
+      + [data_subject_set] is ApiClient, ApiCredential, PermissionGrant, ApiRequest, ApiResponse, RateLimitRecord, and AuditEvent
+      + [service_boundary_set] is auth gateway, API gateway, permission service, rate limiter, audit log, and domain services
+      + [policy_gate_set] is credential validity, scope permission, rate limit, organization membership, and target resource authority
+      + [proof_gate_set] is an external tool can read or mutate an allowed resource and is rejected from forbidden resources with an audit trace
+      + [expansion_frontier] is define minimum public API after internal data contracts stabilize
+
+    & [CreatorDashboard] is the feature family for web management of creations
+      + [reference_observation] is Roblox Creator Hub lets creators manage creations, view analytics, track earnings, and connect with the community
+      + [target_interpretation] is the target platform needs a creator dashboard for projects, releases, analytics, earnings, teams, moderation status, and operational health
+      + [activation_trigger] is creator signs into dashboard and inspects or changes a managed resource
+      + [data_subject_set] is DashboardSession, CreatorProject, ReleaseRecord, AnalyticsProjection, EarningsProjection, TeamRole, ModerationNotice, and OperationalAlert
+      + [service_boundary_set] is web frontend, backend-for-frontend, auth, project registry, analytics projection, earnings ledger, and moderation inbox
+      + [proof_gate_set] is dashboard displays current project state, release state, analytics summary, and actionable moderation or earnings state with provenance
+      + [expansion_frontier] is decide first dashboard surface: project registry, publish flow, analytics, team permissions, or moderation inbox
+
+    & [AssetManagement] is the feature family for cloud-based reusable assets
+      + [reference_observation] is Roblox represents platform content as cloud-based assets with unique IDs and reuse across experiences
+      + [reference_observation] is Roblox Creator Store includes models, materials, plugins, gameplay scripts, UI elements, and sound effects
+      + [target_interpretation] is the target platform needs asset identity, storage, validation, dependency tracking, versioning, licensing, moderation, import/export, and runtime packaging
+      + [activation_trigger] is asset is imported, uploaded, validated, versioned, referenced, packaged, shared, sold, moderated, or retired
+      + [data_subject_set] is Asset, AssetVersion, AssetKind, AssetDependency, AssetLicense, ModerationState, PackageReference, and ProvenanceRecord
+      + [service_boundary_set] is object store, metadata registry, validation pipeline, dependency resolver, license service, moderation queue, and package builder
+      + [proof_gate_set] is one asset can be uploaded, validated, referenced by an experience version, packaged, and traced back to source/provenance
+      + [expansion_frontier] is define asset kinds for the first pass: meshes, materials, audio, UI, code modules, templates, world packages, avatar items, and plugins
+
+    & [MarketplaceAndCreatorStore] is the feature family for distributing assets and extensions
+      + [reference_observation] is Roblox lets qualified users publish and sell assets after validation, moderation, metadata configuration, and marketplace settings
+      + [target_interpretation] is the target platform needs a marketplace policy for eligibility, upload limits, validation, moderation, listings, ownership, sales, refunds, and creator payouts
+      + [activation_trigger] is creator submits, prices, lists, updates, unlists, sells, refunds, or transfers an asset or plugin
+      + [data_subject_set] is StoreListing, SellerEligibility, PriceRecord, PurchaseRecord, RefundRecord, AssetEntitlement, ListingModerationState, and RevenueAttribution
+      + [service_boundary_set] is seller eligibility service, listing service, catalog search, payment service, entitlement service, refund workflow, and moderation review
+      + [policy_gate_set] is seller eligibility, content moderation, asset ownership, price rules, tax/payment readiness, and anti-fraud checks
+      + [proof_gate_set] is buyer can acquire an approved listing and receive entitlement while rejected listings cannot sell
+      + [expansion_frontier] is decide whether marketplace is deferred until after private/team asset sharing is proven
+
+    & [AvatarsAndIdentity] is the feature family for persistent user characters
+      + [reference_observation] is Roblox users have customizable avatars that persist across experiences, with bodies, clothing, accessories, and animations
+      + [target_interpretation] is the target platform needs player identity, avatar ownership, customization, animation compatibility, safety review, per-experience override rules, and UE5 character integration
+      + [activation_trigger] is user edits avatar, equips item, joins experience, or an experience requests avatar override
+      + [data_subject_set] is PlatformUser, AvatarProfile, AvatarItem, EquippedItem, AvatarCompatibilityRule, ExperienceAvatarOverride, and SafetyReviewState
+      + [service_boundary_set] is account service, avatar inventory, asset moderation, UE character customization bridge, animation compatibility validator, and entitlement service
+      + [proof_gate_set] is user identity can resolve to a UE-compatible character representation with owned items and experience-specific restrictions
+      + [expansion_frontier] is decide whether v0 uses platform avatars, experience-local pawns, or a bridge between both
+
+    & [TeamsAndGroups] is the feature family for collaborative creation
+      + [reference_observation] is Roblox groups let multiple creators work on the same experience, use shared assets, share profits, and credit contributors
+      + [target_interpretation] is the target platform needs teams, roles, permissions, contributor credit, shared asset ownership, release authority, revenue shares, and conflict boundaries
+      + [activation_trigger] is team is created, member invited, role changed, asset shared, release approved, or revenue share assigned
+      + [data_subject_set] is CreatorTeam, TeamMember, RoleGrant, SharedAsset, ProjectPermission, ReleaseApproval, ContributorCredit, and RevenueShareRule
+      + [service_boundary_set] is organization service, permission engine, invitation workflow, shared ownership registry, approval workflow, and payout allocation service
+      + [policy_gate_set] is role authority, ownership proof, group policy, release authority, and payment eligibility where money is involved
+      + [proof_gate_set] is two creators can collaborate on a project with distinct permissions and auditable release authority
+      + [expansion_frontier] is define permission primitives before marketplace or payout support
+
+    & [PublishingAndDeployment] is the feature family for taking creator content live
+      + [reference_observation] is Roblox emphasizes rapid global publishing, hosting, infrastructure, localization, and payment processing
+      + [target_interpretation] is the target platform needs build validation, package signing, server deployment, version rollout, rollback, platform compatibility, localization metadata, and public/private visibility
+      + [activation_trigger] is creator submits a publish candidate, platform validates it, deploys it, rolls it back, or changes visibility
+      + [data_subject_set] is PublishCandidate, ValidationResult, SignedPackage, DeploymentRecord, RolloutPolicy, VisibilityState, CompatibilityResult, and RollbackRecord
+      + [service_boundary_set] is build service, validation service, signing service, deployment orchestrator, session launch service, CDN or package distribution, and rollback service
+      + [policy_gate_set] is content approval, package integrity, compatibility, creator permission, age/maturity classification, and operational capacity
+      + [proof_gate_set] is one signed experience version can deploy, launch, and roll back with traceable records
+      + [expansion_frontier] is design a publish pipeline that can deploy one controlled UE5 experience package before supporting arbitrary creator content
+
+    & [MultiplatformAccess] is the feature family for users joining experiences across device classes
+      + [reference_observation] is Roblox positions experiences as deployed globally across mobile, console, desktop, VR, and multiple languages
+      + [target_interpretation] is the target platform should define supported client platforms, input profiles, performance tiers, content streaming, localization, and account continuity
+      + [activation_trigger] is user launches client, authenticates, selects experience, downloads compatible content, and joins session
+      + [data_subject_set] is ClientBuild, DeviceProfile, InputProfile, PerformanceTier, LocalizationPack, ContentCompatibilityResult, and AccountContinuitySession
+      + [service_boundary_set] is launcher, patcher, compatibility service, account service, localization service, content delivery, and telemetry
+      + [proof_gate_set] is a supported client can join a compatible experience and unsupported combinations fail with clear reason
+      + [expansion_frontier] is choose v0 device target; desktop-first is likely simplest for UE5 platform proof
+
+    & [DiscoveryAndUserAcquisition] is the feature family for finding experiences and audiences
+      + [reference_observation] is Roblox documentation frames discovery, acquisition, scaling, and global audience reach as platform capabilities
+      + [target_interpretation] is the target platform needs experience pages, search, categories, recommendations, featured lists, social joins, retention loops, and acquisition attribution
+      + [activation_trigger] is user searches, browses, follows a link, receives recommendation, joins a friend, or returns through acquisition source
+      + [data_subject_set] is ExperiencePage, SearchIndexRecord, CategoryTag, RecommendationCandidate, SocialJoinSignal, AcquisitionAttribution, and DiscoverySafetyState
+      + [service_boundary_set] is search service, recommendation service, social graph, metadata registry, moderation filter, and attribution analytics
+      + [policy_gate_set] is content visibility, safety status, age/maturity compatibility, ranking integrity, and anti-manipulation rules
+      + [proof_gate_set] is user can find a visible approved experience and discovery excludes hidden, unsafe, or incompatible experiences
+      + [expansion_frontier] is defer algorithmic recommendation until metadata, safety, and analytics foundations exist
+
+    & [AnalyticsAndOperations] is the feature family for measuring growth and health
+      + [reference_observation] is Roblox analytics tracks growth, technical performance, user behavior, retention, sales, revenue, acquisition, and optimization opportunities
+      + [target_interpretation] is the target platform needs creator-facing and operator-facing analytics for retention, engagement, session time, crashes, server cost, moderation events, monetization, and content health
+      + [activation_trigger] is runtime, dashboard, marketplace, discovery, moderation, or payment event is emitted and processed into metrics
+      + [data_subject_set] is TelemetryEvent, MetricDefinition, AnalyticsProjection, RetentionCohort, PerformanceSignal, RevenueMetric, CrashReport, and PrivacyPolicy
+      + [service_boundary_set] is event ingestion, stream processor, metric store, dashboard projection, privacy filter, and anomaly detector
+      + [policy_gate_set] is privacy consent, data minimization, retention policy, and creator visibility boundaries
+      + [proof_gate_set] is selected events become reproducible dashboard metrics with source lineage and privacy filtering
+      + [expansion_frontier] is define telemetry events and privacy boundaries before dashboards
+
+    & [MonetizationAndEconomy] is the feature family for creator income
+      + [reference_observation] is Roblox supports monetization through in-experience purchases, ads, avatar items, and plugins
+      + [target_interpretation] is the target platform may support optional creator economy features: purchases, subscriptions, ads, paid assets, creator payouts, tax/compliance workflows, fraud controls, and refund handling
+      + [activation_trigger] is user purchases, subscribes, views eligible ad, buys asset, pays access fee, rents private server, or creator receives earned balance
+      + [data_subject_set] is Product, PriceRecord, Transaction, Entitlement, Refund, EarnedBalance, RevenueShareRule, PayoutHold, FraudSignal, and TaxProfile
+      + [service_boundary_set] is commerce service, entitlement service, wallet or balance ledger, payment processor, refund workflow, fraud/risk engine, tax/compliance provider, and creator dashboard
+      + [policy_gate_set] is age, region, payment method, refund eligibility, fraud status, marketplace policy, tax readiness, and creator payout eligibility
+      + [proof_gate_set] is purchase creates entitlement and ledger records while rejected transactions produce explainable failures
+      + [expansion_frontier] is mark economy as optional until safety, identity, ownership, moderation, and payment obligations are understood
+
+    & [DeveloperExchange] is the feature family for converting earned platform currency or creator earnings into real-world payout
+      + [reference_observation] is Roblox Developer Exchange allows eligible creators to exchange Earned Robux for real money
+      + [reference_observation] is Roblox DevEx eligibility includes earned-balance threshold, verified email, DevEx portal account, age requirement, and good standing with terms and community standards
+      + [reference_observation] is Roblox documents exchange-rate categories and cash-out ordering rules for old-rate, new-rate, and US 18+ DevEx rates
+      + [target_interpretation] is the target platform needs a payout conversion contract separate from ordinary monetization, with earned-balance eligibility, compliance, tax/payment onboarding, review, approval, rate application, payout execution, and auditability
+      + [activation_trigger] is eligible creator requests cash-out of earned balance
+      + [data_subject_set] is CreatorPayoutAccount, EarnedBalanceLedger, PayoutEligibilityRecord, PayoutRequest, ExchangeRateSchedule, RateBucket, ComplianceReview, TaxProfile, PaymentProviderAccount, PayoutTransaction, and PayoutAuditEvent
+      + [service_boundary_set] is creator earnings ledger, eligibility service, compliance review, tax/payment provider integration, exchange-rate service, payout processor, fraud/risk review, creator dashboard, and finance audit ledger
+      + [policy_gate_set] is minimum earned balance, age, verified account, good standing, identity verification when required, tax/payment setup, anti-fraud review, and terms acceptance
+      + [state_transition_set] is earnings_accrue -> eligible_balance -> payout_requested -> compliance_review -> approved_or_rejected -> payout_submitted -> paid_or_failed -> ledger_closed_or_retried
+      + [proof_gate_set] is a payout request can be accepted or rejected from explicit eligibility records, applies the correct exchange-rate bucket, creates immutable audit events, and reconciles with payment-provider result
+      + [expansion_frontier] is defer real-money payout until economy, identity, compliance, and fraud controls are specified; preserve DevEx as a named platform capability from the start
+
+    & [SafetyModerationAndPolicy] is the feature family for trust and compliance
+      + [reference_observation] is Roblox Community Standards cover safety, civility, integrity, security, IP violations, scams, advertising, economy abuse, personal information, and report abuse workflows
+      + [target_interpretation] is the target platform needs content moderation, behavior moderation, chat safety, age or maturity handling, reporting, appeals, enforcement records, IP takedown workflow, and off-platform risk policy
+      + [activation_trigger] is content is uploaded, user behavior is reported, automated policy detects risk, moderation decision is made, appeal is submitted, or enforcement expires
+      + [data_subject_set] is ModerationCase, Report, PolicyRule, EvidenceRecord, EnforcementAction, Appeal, ContentReviewState, UserRestriction, and TrustSignal
+      + [service_boundary_set] is report intake, automated review, human moderation queue, policy engine, enforcement service, appeals workflow, audit log, and safety dashboard
+      + [policy_gate_set] is content safety, user safety, IP rights, privacy, scams/fraud, advertising rules, economy abuse, and age/maturity compatibility
+      + [proof_gate_set] is report or automated detection creates a case, decision creates enforcement or rejection, and appeal preserves trace
+      + [expansion_frontier] is safety must be treated as platform foundation, not a late feature, especially if minors or public UGC are in scope
+
+  & [ImportedFeatureDepthGaps] is the correction ledger created after user review
+    + [gap] is prior draft named many Roblox feature surfaces without enough activation, data, service, policy, or proof depth
+    + [gap] is Developer Exchange was missing as a named feature family and payout contract
+    + [repair] is FeatureActivationDepthContract now governs all imported feature expansions
+    + [repair] is DeveloperExchange now exists as a distinct imported platform feature
+    + [remaining_gap] is each feature family still needs its own separate contract file before implementation authority
+
+  & [FeatureContractActivationOrder] is the proposed order for deep contract expansion
+    + [first] is RuntimeEngineAndSimulation because the current work has started with host-session multiplayer
+    + [second] is ExperiencesAndWorlds because every runtime session needs versioned world identity
+    + [third] is CreatorTools because publishing and editing need an authoring loop
+    + [fourth] is AssetManagement because creator worlds depend on validated, versioned assets
+    + [fifth] is SafetyModerationAndPolicy because public UGC cannot safely launch without policy gates
+    + [sixth] is MonetizationAndEconomy because economy creates fraud, refund, entitlement, and tax pressure
+    + [seventh] is DeveloperExchange because payouts depend on proven earned-balance ledgers and compliance gates
+
+  & [FirstExpansionQuestions] is the next decision frontier before implementation planning
+    ? [Q1: What is the minimum Roblox-like vertical slice?]
+      ~ [candidate_answer] is one creator-authored multiplayer room, one controlled gameplay logic surface, one uploaded asset, one publish record, one hosted session, one discovery entry, and one moderation status
+    ? [Q2: What is the creator tool surface?]
+      ~ [candidate_answer] is Unreal Editor plugin first for power users, with a later simplified creator editor if the platform targets non-technical creators
+    ? [Q3: What scripting model is safe enough?]
+      ~ [candidate_answer] is data-driven rules or restricted scripting before arbitrary code execution
+    ? [Q4: Is the target audience children, adults, studios, hobbyists, or mixed?]
+      ~ [candidate_answer] is unresolved because safety, moderation, economy, and UX differ sharply by audience
+    ? [Q5: Is creator economy in v0?]
+      ~ [candidate_answer] is likely no for v0; ownership and marketplace foundations can be specified without enabling money flow
+    ? [Q6: What should UE5 own versus platform services?]
+      ~ [candidate_answer] is UE5 owns rendering, physics, client runtime, and editor integration; platform services own identity, publishing, asset registry, moderation, analytics, discovery, and orchestration
+
+  & [SJSProcessingStatus] is the current processing state
+    + [processing_state] is researched_feature_import_draft
+    + [source_preserved] is true
+    + [canonical_signature] is not_issued
+    + [required_next_stage] is user_review_then_feature_expansion_slices
+
+  - never: treat this imported feature draft as final implementation authority before expansion, SJS satisfaction, and user review

@@ -1,0 +1,17 @@
+& [SLMSlice56ProviderSetConfiguration] is a work-ready slice for provider orchestration config
+  + [slice_id] is SLM-56
+  + [status] is verified_wsl
+  + [effort] is M-L
+  + [risk] is medium
+  + [depends_on] is SLM-04, SLM-23, SLM-55
+  + [scope] is define local provider set configuration for mock, LM Studio, Ollama, and future hosted adapters
+  + [acceptance_criteria] is provider identities and capabilities load without changing graph semantics
+  + [proof_route] is config parser tests and WSL cargo test
+
+  ! [CompletionEvidence] is the SLM-56 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Provider_Set_Configuration_Contract.sop
+    @ [config] is slm_project/provider_sets/local_provider_set_v0.json
+    @ [implementation] is slm_rust/src/providers.rs ProviderSetConfig
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 31 library tests and 3 slm_demo tests
+    @ [regression_harness] passed

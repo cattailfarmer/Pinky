@@ -1,0 +1,18 @@
+& [SLMClosedClassRolePairSuppressionContract] is the contract for suppressing compound spans across structural tokens
+  + [contract_uuid] is 408e3ca6-1e87-4aef-afd3-caa7b7cf4f1b
+  + [slice_id] is SLM-31
+  + [status] is source_implemented
+
+  & [Problem] is lexical noun senses on closed-class tokens can create false role-pair compounds
+    + [observed] is article "a" has lexical noun senses from WordNet
+    + [observed] is noun-noun scan emitted "Design a" and compound "a compiler"
+    + [desired] is article-created nominal span "a compiler" remains valid
+
+  & [Rule] is structural-token exclusion for role-pair compound scans
+    = must: skip role-pair span rules when either token has a structural hint
+    = must: preserve span rules directly emitted by structural hints
+    = must: preserve lexical uncertainty on the token itself
+    - never: hard-delete the closed-class token's lexical evidence
+
+  & [RuntimeProjection] is slm_rust/src/rules.rs and slm_rust/src/diffusion.rs
+    + [status] is source_complete

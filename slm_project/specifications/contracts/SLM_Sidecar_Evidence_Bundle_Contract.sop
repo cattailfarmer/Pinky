@@ -1,0 +1,24 @@
+& [SLMSidecarEvidenceBundleContract] is the contract for compact packets sent to a tiny LLM sidecar
+  + [contract_uuid] is cf1df6d0-adf5-42d8-843f-7961f689f65f
+  + [slice_id] is SLM-22
+  + [status] is source_implemented_policy_gated
+
+  & [PromptEnvelope] is the sidecar packet boundary
+    + [task_kind] is rank_senses
+    + [task_kind] is propose_spans
+    + [task_kind] is object_to_parse
+    + [task_kind] is answer_objection
+    + [task_kind] is run_faculty_validation
+    + [contains] is target evidence bundle
+    + [contains] is tokens
+    + [contains] is grammar candidates
+    + [contains] is structural hints
+    + [contains] is span candidates
+    + [contains] is lexical sense candidates
+    + [contains] is candidate relations
+    + [contains] is supports, contradictions, and latest wobble
+    = must: require rationale and uncertainty preservation
+    - never: allow sidecar to emit glyphs directly
+
+  & [ImplementationProjection] is slm_rust/src/sidecar.rs
+    + [status] is source_complete_policy_gated

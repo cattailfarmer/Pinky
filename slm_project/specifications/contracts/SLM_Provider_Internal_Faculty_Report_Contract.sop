@@ -1,0 +1,29 @@
+& [SLMProviderInternalFacultyReportContract] is the contract for lower-provider seven-faculty self-validation evidence
+  + [contract_uuid] is e44fb708-24b2-4592-883c-aeea1d2f951a
+  + [slice_id] is SLM-27
+  + [status] is source_implemented_policy_gated
+
+  & [Purpose] is to represent provider agreement as deliberated evidence
+    = must: let a provider cite its internal seven-faculty validation run
+    = must: preserve dual-hemisphere perspective notes when present
+    = must: keep provider faculty reports as evidence, not stabilization authority
+    = must: let provider deliberation cite faculty report references
+    - never: count provider agreement as convergence without represented or cited internal faculty work
+
+  & [ProviderFacultyReport] is one lower-provider validation trace
+    + [run_id] is stable inside the provider response
+    + [target_ref] is the candidate, relation, or reasoning path being evaluated
+    + [votes] are faculty, result, hemisphere perspective, and rationale records
+    + [vetoes] are Honesty or Security veto records when present
+    + [convergence_score] is provider-local support for convergence, not truth
+    + [convergence_statement] is compact natural-language summary
+
+  & [ProviderDeliberationLink] is the connection from disagreement to faculty evidence
+    + [faculty_report_refs] is zero or more provider suggestion refs attached to the disputed target
+    = must: preserve refs even when disagreement remains unresolved
+    = must: allow jury review to inspect faculty report lineage later
+
+  & [RuntimeProjection] is provider faculty report evidence
+    + [provider_source] is slm_rust/src/providers.rs
+    + [deliberation_consumer] is slm_rust/src/deliberation.rs
+    + [status] is source_complete_policy_gated

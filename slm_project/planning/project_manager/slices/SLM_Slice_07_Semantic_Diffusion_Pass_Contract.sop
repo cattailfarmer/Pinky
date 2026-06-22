@@ -1,0 +1,14 @@
+& [SLMSlice07SemanticDiffusionPassContract] is a work-ready slice for the diffusion engine
+  + [slice_id] is SLM-07
+  + [status] is blocked
+  + [feature_cluster] is ClusterEDiffusionEngine
+  + [source_refs] is DiffusionContract, TransformMap, SemanticGraphBoundary
+  + [depends_on] is SLM-03, SLM-06
+  + [scope] is define ordered diffusion passes over EvidenceWorkspace without using SemanticGraph as workspace
+  + [deliverable] is SOP contract for CandidateActivation, StructuralConstraint, SupportPropagation, ContradictionPropagation, WobbleMeasurement, and PassTrace
+  + [acceptance_criteria] is each pass declares input shape, output shape, preconditions, postconditions, and trace
+  + [acceptance_criteria] is successful passes reduce wobble while preserving unjustified uncertainty
+  + [proof_route] is trace walk through "Design a compiler for FPGA hardware." and "Time flies like an arrow."
+  + [exclusions] is faculty stabilization and graph promotion
+  + [next_action] is unblock after EvidenceWorkspace and Wobble contracts exist
+

@@ -1,0 +1,16 @@
+# Unreal generated state
+runtime/*/Binaries/
+runtime/*/Build/
+runtime/*/DerivedDataCache/
+runtime/*/Intermediate/
+runtime/*/Saved/
+runtime/*/.vs/
+
+# IDE generated files
+*.sln
+*.suo
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb

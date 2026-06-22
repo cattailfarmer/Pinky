@@ -1,0 +1,133 @@
+& [SLMStagedProjectPlan] is the project-manager planning surface for the Semantic Logic Model prototype
+  + [plan_uuid] is bcb780ab-0255-4dce-81dd-e3336a624f56
+  + [canonical_specification] is slm_project/specifications/SLM_Canonical_Specification.sop
+  + [exploded_specification] is slm_project/specifications/SLM_Exploded_Specification.sop
+  + [explosion_round_2] is slm_project/specifications/SLM_Explosion_Round_2_Work_Decomposition.sop
+  + [work_slice_index] is slm_project/planning/project_manager/SLM_Work_Slice_Index.sop
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [coordination_mode] is single_conversation_project_manager_planning
+  + [coordination_layer] is inactive_by_user_direction
+
+  & [PlanningPrinciple] is the rule for doing this project sanely
+    = must: define the logical shape before writing more code
+    = must: preserve traceable authority from source to specification to implementation
+    = must: keep conceptual uncertainty visible
+    = must: implement only the next stable slice
+    = must: review completed slices against feature requirements before proceeding
+    = must: preserve the v0 epistemic ladder: tokens are observations, grammar is evidence, semantics is the target, glyphs are stabilized semantic identities, and wobble is evidence-to-meaning instability
+    = must: preserve the workspace boundary: EvidenceWorkspace to SemanticDiffusion to DeliberativeStabilization to SemanticGraph
+    = must: treat lower LLM services as evidence providers, not direct semantic authority
+
+  & [Stage0ProcessRepair] is the correction for the premature prototype
+    + [existing_path] is slm_prototype
+    + [classification] is owned_by_current_conversation but created_before_framework_activation
+    + [status] is quarantined_false_start_reference
+    = must: not treat slm_prototype as authoritative implementation
+    = may: reuse ideas or code only after canonical specification authorizes them
+    = must: preserve this as an operational fault lesson
+
+  & [Stage1SpecificationDiscussion] is the current stage
+    + [goal] is refine the SLM concept, open questions, data model, and prototype boundary
+    + [deliverable] is reviewed source, exploded specification, canonical discussion draft, round 2 work decomposition, staged plan, and work slice index
+    + [completion_gate] is user accepts or revises the first logical shape
+    + [proof] is inspection of .sop artifacts and updated open questions
+
+  & [Stage2DataModelFormation] is the first implementation-prep stage
+    + [goal] is settle Token, RoleCandidate, Glyph, SemanticEdge, DiffusionPass, WobbleReport, and SLMPrimer contracts
+    + [work_items] is EvidenceWorkspace, LLMSubstrate adapter contract, provider provenance model, multi-provider evidence shape, provider objection-answer-jury deliberation, DiffusionEngine, DeliberativeStabilization, SemanticGraph, uncertainty glyph typing, compact evidence primer fields, data classes, enums, lifecycle states, support weight semantics, faculty validator contracts, wobble vector dimensions, JSON primer schema, SOP-style primer rendering, and trace event vocabulary
+    + [completion_gate] is data contracts are testable without full pipeline
+    + [proof] is unit tests for identity immutability and append-only graph behavior
+
+  & [Stage3TransformFormation] is the semantic pipeline stage
+    + [goal] is implement tokenization, role candidate generation, candidate activation, structural constraints, support propagation, contradiction propagation, wobble measurement, faculty validation, semantic promotion, uncertainty preservation, and primer projection
+    + [work_items] is one transform module at a time with tests
+    + [completion_gate] is demo sentence produces all required output sections
+    + [proof] is pipeline tests and CLI demo output
+
+  & [Stage4HeuristicReview] is the first conceptual correction stage
+    + [goal] is review whether the prototype behavior matches the SLM thesis
+    + [work_items] is inspect output for premature role commitment, hidden uncertainty, weak wobble factors, and graph identity mistakes
+    + [completion_gate] is failure modes are either fixed, deferred, or recorded
+    + [proof] is review notes and updated specification deltas
+
+  & [Stage5ExpansionDecision] is the future frontier stage
+    + [goal] is choose whether to extend the prototype
+    + [candidate_expansion] is richer role vocabulary
+    + [candidate_expansion] is better structural grammar
+    + [candidate_expansion] is persistence for append-only learning
+    + [candidate_expansion] is interactive graph inspection
+    + [candidate_expansion] is LLM primer consumption experiment
+    + [candidate_expansion] is live lower LLM dictionary adapter after mocked v0 boundary stabilizes
+    + [completion_gate] is new source or user decision selects a next bounded frontier
+
+  & [SliceReadiness] is the initial feature support map
+    + [slice_1] is source and specification artifact creation
+      + [status] is implemented
+      + [support] is current .sop files
+    + [slice_2] is conceptual discussion and open-question refinement
+      + [status] is active
+      + [support_gap] is user review needed
+    + [slice_3] is data contract implementation
+      + [status] is deferred
+      + [dependency] is slice_2 accepted or revised
+    + [slice_4] is transform implementation
+      + [status] is deferred
+      + [dependency] is slice_3 complete
+    + [slice_5] is demo and tests
+      + [status] is deferred
+      + [dependency] is slice_4 complete
+
+  & [ProjectManagerSliceSurface] is the operational work-ready slice board
+    + [index] is slm_project/planning/project_manager/SLM_Work_Slice_Index.sop
+    + [slice_count] is 12
+    + [ready_slice] is SLM-01 Authority and source rails
+    + [ready_slice] is SLM-02 Core data identity contracts after SLM-01 review
+    + [ready_slice] is SLM-03 Evidence workspace contract after SLM-02 review
+    + [ready_slice] is SLM-04 LLM provider adapter contract after SLM-02 review
+    + [ready_slice] is SLM-06 Wobble and contradiction contract after SLM-03 review
+    + [ready_slice] is SLM-11 Fixture and proof suite after SLM-02, SLM-04, and SLM-06 review
+    + [deferred_slice] is SLM-12 Implementation formation plan until SLM-01 through SLM-11 are reviewed
+    + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [contract_set] is slm_project/specifications/contracts/*.sop
+    = must: use the work_slice_index for next-work selection
+    = must: review completed work for support_delta and requirement_delta before starting dependent slices
+
+  & [CurrentReadinessState] is the status after long-turn contract work
+    + [completed_contract_slices] is SLM-01 through SLM-11
+    + [deferred_slice] is SLM-12 Implementation Formation Plan
+    + [implementation_status] is rust_workspace_prepared_not_implemented
+    + [rust_formation] is slm_project/specifications/SLM_Rust_Implementation_Formation.sop
+    + [rust_workspace] is slm_rust
+    + [next_gate] is user review and approval to enter implementation formation
+    + [support_gap] is explicit decision on slm_prototype reuse, ignore, or removal
+    + [support_gap] is explicit decision on mock-only provider first versus live adapter in v0
+
+  & [DiscussionPrompts] is the near-term conversation frontier
+    ! [ResolvedPrompt1] is accepted
+      @ [support] Glyphs represent semantic identities only in v0
+    ! [ResolvedPrompt2] is accepted
+      @ [support] grammatical roles and semantic roles are separate layers from the start
+    ! [ResolvedPrompt3] is accepted
+      @ [support] wobble is both aggregate score and diagnostic vector
+    ! [ResolvedPrompt4] is accepted
+      @ [support] activation scores initially mean support weight
+    ! [ResolvedPrompt5] is accepted
+      @ [support] primer optimizes for machine re-ingestion with human readability
+    ? [Prompt6]
+      = ask: What minimum evidence should allow semantic identity stabilization into a Glyph?
+    ? [Prompt7]
+      = ask: Should v0 define separate semantic role vocabularies for subject/action/relation/modifier/constraint, or one generic role enum with type-specific payloads?
+    ? [Prompt8]
+      = ask: Should support weights be normalized per token, per pass, or globally across the sentence?
+    ? [Prompt9]
+      = ask: What default thresholds should v0 use for faculty_votes, contradiction_score, and wobble_score?
+    ? [Prompt10]
+      = ask: What qualifies as stable boundaries for an uncertainty identity?
+    ? [Prompt11]
+      = ask: For v0, should the lower LLM layer be mocked first, or should the prototype call a live LLM dictionary adapter immediately?
+    ? [Prompt12]
+      = ask: Should multi-provider attention be part of v0 data contracts only, or should the first implementation actually query multiple providers?
+    ? [Prompt13]
+      = ask: What should count as a sufficient jury panel for persistent provider disagreement in v0?
+    ? [Prompt14]
+      = ask: Which compact evidence fields must appear in the primer for machine re-ingestion?

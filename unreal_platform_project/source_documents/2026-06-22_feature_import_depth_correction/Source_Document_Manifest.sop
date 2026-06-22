@@ -1,0 +1,13 @@
+& [FeatureImportDepthCorrectionSourceDocumentManifest] is the source manifest for the feature import depth correction
+  + [manifest_uuid] is a753e2fd-ae36-426c-bae3-5051a7b216ec
+  + [workspace_root] is C:/Project/Pinky
+  + [project_work_area] is C:/Project/Pinky/unreal_platform_project
+  + [source_document] is unreal_platform_project/source_documents/2026-06-22_feature_import_depth_correction/Dictated_Feature_Import_Depth_Correction_Source.sop
+  + [source_document_uuid] is a3cf970f-9d05-4fbc-97ea-5d4bf682fc7c
+  + [corrected_artifact] is unreal_platform_project/specifications/Roblox_Feature_Import_Specification.sop
+  + [prior_source_document] is unreal_platform_project/source_documents/2026-06-21_feature_import_intake/Dictated_Roblox_Feature_Import_Source.sop
+
+  ! [SourceDocumentRegistered] is accepted
+    @ [support] source_document is listed before derived feature import correction
+
+  - never: treat the revised feature spec as a replacement for this correction source

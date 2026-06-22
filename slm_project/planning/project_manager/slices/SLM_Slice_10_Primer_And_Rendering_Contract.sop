@@ -1,0 +1,14 @@
+& [SLMSlice10PrimerAndRenderingContract] is a work-ready slice for downstream export
+  + [slice_id] is SLM-10
+  + [status] is blocked
+  + [feature_cluster] is ClusterHPrimerAndRendering
+  + [source_refs] is SLMPrimer, PrimerFormatDecision, compact evidence decision
+  + [depends_on] is SLM-09
+  + [scope] is define machine-reingestible JSON primer, readable SOP-style rendering, compact evidence fields, uncertainty summary, and graph trace summary
+  + [deliverable] is SOP contract for PrimerJSONSchema, PrimerSOPRendering, CompactEvidenceRef, PrimerUncertaintyBlock, and PrimerTraceSummary
+  + [acceptance_criteria] is primer is stable enough for machine re-ingestion
+  + [acceptance_criteria] is primer includes compact evidence without dumping entire EvidenceWorkspace
+  + [proof_route] is fixture primers for stable and unresolved cases
+  + [exclusions] is LLM consumption experiment
+  + [next_action] is unblock after SemanticGraph contract exists
+

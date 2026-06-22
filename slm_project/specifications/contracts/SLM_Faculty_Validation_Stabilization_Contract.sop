@@ -1,0 +1,48 @@
+& [SLMFacultyValidationStabilizationContract] is the glyph stabilization authority contract
+  + [contract_uuid] is 6c41a783-8ff0-444c-a337-385b05628198
+  + [slice_id] is SLM-08
+  + [depends_on] is SLM_Provider_Deliberation_Contract, SLM_Wobble_Contradiction_Contract, SLM_Semantic_Diffusion_Pass_Contract
+  + [status] is accepted_for_graph_contracts
+
+  & [StabilizationProposal] is a candidate semantic identity submitted for faculty review
+    + [proposal_id] is unique in EvidenceWorkspace
+    + [candidate_ref] is CandidateMeaning or CandidateRelation
+    + [support_sources] is required and must be at least one
+    + [wobble_vector] is required
+    + [contradiction_set] is required
+    + [lineage] is required
+    + [provider_deliberation_ref] is optional
+    + [provider_faculty_report_refs] are optional lower-provider internal faculty traces
+
+  & [FacultyRun] is the seven-faculty validation record
+    + [faculty_run_id] is unique per StabilizationProposal
+    + [ObserverVote] is presence validation
+    + [HonestyVote] is support sufficiency validation
+    + [SecurityVote] is invalid or unsafe consequence validation
+    + [PlannerVote] is sequence or task fit validation
+    + [WeaverVote] is relational coherence validation
+    + [ScribeVote] is lineage preservation validation
+    + [RefinerVote] is compression without distortion validation
+    + [observer_coordination] is Observer manages Planner, Weaver, Scribe, and Refiner unless vetoed
+    + [honesty_veto] is optional blocking veto
+    + [security_veto] is optional blocking veto
+    = must: record each faculty result as approve, reject, abstain, or needs_more_evidence
+    = must: preserve rationale for reject, abstain, needs_more_evidence, and veto
+
+  & [StabilizationDecision] is the promotion gate result
+    + [decision] is promote_glyph, create_uncertainty_glyph, preserve_in_evidence_workspace, or reject_candidate
+    + [faculty_vote_count] is required
+    + [faculty_threshold] is required
+    + [contradiction_score] is required
+    + [contradiction_threshold] is required
+    + [wobble_score] is required
+    + [wobble_threshold] is required
+    + [lineage_present] is required
+    = must: promote_glyph only when support, faculty threshold, contradiction, wobble, and lineage gates pass
+    = must: create_uncertainty_glyph only when partial convergence has stable uncertainty boundaries
+    = must: preserve_in_evidence_workspace when contradiction remains or uncertainty is unbounded
+    - never: promote because support_weight is high by itself
+
+  ! [Slice08Complete] is accepted
+    @ [support] stabilization contract defines faculty votes, vetoes, thresholds, and outcomes
+    @ [support_delta] SLM-27 separates provider-internal faculty evidence from SLM stabilization authority

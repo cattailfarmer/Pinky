@@ -1,0 +1,16 @@
+& [UnrealPlatformSourceDocumentManifest] is the source manifest for the Unreal Engine 5 Roblox-like platform project intake
+  + [manifest_uuid] is c3d39144-57a5-41f6-8fed-7cc591b9f849
+  + [workspace_root] is C:/Project/Pinky
+  + [project_work_area] is C:/Project/Pinky/unreal_platform_project
+  + [source_document] is unreal_platform_project/source_documents/2026-06-21_platform_intake/Dictated_Unreal_Platform_Source.sop
+  + [source_document_uuid] is 2cd7d616-ef70-4dd8-b9a6-ccfcfbb21f0d
+  + [source_shape] is preserved_user_dictated_project_seed
+  + [source_subject] is Roblox-like gaming platform using Unreal Engine 5
+  + [derived_artifact_frontier] is unreal_platform_project/specifications
+  + [planning_frontier] is unreal_platform_project/planning
+  + [implementation_frontier] is unresolved
+
+  ! [SourceDocumentRegistered] is accepted
+    @ [support] source_document is listed before canonical processing or implementation planning
+
+  - never: treat derived artifacts as replacements for source_document

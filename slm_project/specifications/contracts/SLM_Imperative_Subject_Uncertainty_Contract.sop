@@ -1,0 +1,31 @@
+& [SLMImperativeSubjectUncertaintyContract] is the contract for command-leading implied actor uncertainty
+  + [contract_uuid] is bb134d08-5d49-4437-9c9e-4ec70fc27727
+  + [slice_id] is SLM-32
+  + [depends_on] is SLM_Closed_Class_Relation_Template_Contract, SLM_Diffusion_Rule_Table_Contract, SLM_Closed_Class_Role_Pair_Suppression_Contract
+  + [status] is verified_wsl
+
+  & [CommandLeadingVerbSignal] is the v0 imperative detection boundary
+    = must: detect a first content token with strong verb evidence and action meaning support
+    = must: require absence of an explicit stabilized subject before the action token
+    = must: avoid treating the action object as the grammatical subject
+    = should: preserve the implied actor as bounded uncertainty
+    - never: invent a stable actor glyph without evidence or faculty convergence
+
+  & [ImpliedActorUncertainty] is the bounded graph object
+    + [uncertainty_type] is unresolved_subject_boundary
+    + [candidate_set] includes the action candidate and implied actor placeholder
+    + [lineage] includes the command-leading action token
+    + [boundary_statement] explains that the command actor is implied by imperative form
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/diffusion.rs imperative_action_candidate
+    + [module] is slm_rust/src/diffusion.rs propose_imperative_subject_uncertainty
+    + [module] is slm_rust/src/wobble.rs subject_boundary_instability factor
+    + [proof_route] is WSL cargo test plus demo primer inspection
+
+  ! [Slice32SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 13 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [demo_proof] design/compiler primer emitted no subject glyphs and one unresolved_subject_boundary uncertainty for implied_actor:command_executor
+    @ [demo_graph] CompilerConcept stabilized as semantic_trace relation target, not subject

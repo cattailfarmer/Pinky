@@ -1,0 +1,27 @@
+& [SLMLexicalSubstrateRebuildWorkflow] is the operational guide for lexical substrate rebuilds
+  + [workflow_uuid] is d9fa3b40-2f63-43d7-8ba4-d5b47f29e932
+  + [contract] is slm_project/specifications/contracts/SLM_Lexical_Substrate_Delta_Rebuild_Workflow_Contract.sop
+  + [default_mode] is dry_run
+
+  & [DryRunCommand] is the safe inspection path
+    + [command] is python slm_lexicon/scripts/rebuild_lexical_substrate_workflow.py --dry-run
+    = must: print planned commands
+    = must: print current artifact checksums
+    = must: avoid modifying files
+
+  & [LocalRebuildCommand] is the explicit generated-artifact rebuild path
+    + [command] is python slm_lexicon/scripts/rebuild_lexical_substrate_workflow.py --execute-local
+    = must: rebuild SQLite/cache/substrate artifacts from already preserved source files
+    = must: run source gate after rebuild
+    - never: download source data
+
+  & [SourceRefreshCommand] is the explicit source-download path
+    + [command] is python slm_lexicon/scripts/rebuild_lexical_substrate_workflow.py --execute-local --include-download
+    = must: be used only when intentionally refreshing source authority
+    = must: preserve source manifest and checksums
+    - never: run as an implicit side effect of ordinary tests
+
+  & [ArtifactBoundary] is the preservation rule
+    = must: treat slm_lexicon/data/raw as preserved source material
+    = must: treat slm_lexicon/data/slm_lexicon.sqlite and slm_lexicon/data/slm_lexical_substrate as generated artifacts
+    = must: review checksum changes before accepting a rebuild

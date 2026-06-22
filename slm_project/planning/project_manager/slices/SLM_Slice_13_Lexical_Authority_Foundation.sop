@@ -1,0 +1,29 @@
+& [SLMSlice13LexicalAuthorityFoundation] is the completed work slice for the first-class SLM lexical substrate
+  + [slice_id] is SLM-13
+  + [status] is complete
+  + [feature_cluster] is lexical_authority_frontier
+  + [source_refs] is user request to download a dictionary system and provide SLM with database authority for semantic typing
+  + [depends_on] is SLM-02, SLM-03, SLM-04, SLM-12
+  + [scope] is create local lexical authority database, closed-class seed lexicon, WordNet importer, runtime substrate pack, and Rust speed-dial provider
+  + [deliverable] is slm_lexicon substrate pack plus slm_rust/src/lexicon.rs
+  + [acceptance_criteria] is function words and open-class WordNet roles are available as evidence with provenance
+  + [proof_route] is Python import counts, cache export counts, and Rust source integration review
+  + [exclusions] is direct Rust SQLite binding until Windows policy allows native build scripts
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Lexical_Authority_Review_2026-06-20.sop
+
+  & [WorkDone] is the completed implementation surface
+    + [created] is slm_lexicon/schema/lexical_schema.sql
+    + [created] is slm_lexicon/seeds/closed_class_terms.json
+    + [created] is slm_lexicon/scripts/download_open_english_wordnet.py
+    + [created] is slm_lexicon/scripts/build_lexicon_db.py
+    + [created] is slm_lexicon/scripts/export_lexicon_cache.py
+    + [created] is slm_lexicon/scripts/build_lexical_substrate_pack.py
+    + [created] is slm_rust/src/lexicon.rs
+    + [updated] is slm_rust/src/core.rs with LexicalAuthority evidence source and Pronoun role
+    + [updated] is slm_rust/src/evidence.rs to preserve lexical authority grammar candidates
+    + [updated] is slm_rust/src/providers.rs with LexicalDatabase adapter kind and grammar_role suggestions
+
+  & [KnownPolicyGate] is the current local build limitation
+    + [gate] is Windows Application Control blocked Cargo-generated executables under target directories
+    + [mitigation] is remove native SQLite Rust dependency and use generated JSON cache
+    + [remaining] is fresh Cargo build/test execution may still require Windows policy trust for generated executables

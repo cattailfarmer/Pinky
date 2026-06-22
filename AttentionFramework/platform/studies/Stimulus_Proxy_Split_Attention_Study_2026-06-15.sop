@@ -1,0 +1,161 @@
+Subject: Stimulus Proxy Split Attention Study 2026-06-15
+
+Description: Study of the current Codex agent response under a rich conceptual stimulus, using SplitAttentionStudy and StimulusProxyStudy as behavioral proxies for inaccessible hidden activations and weights.
+
+@ [source] C:\Project\Pinky\AttentionFramework\platform\Attention.sop
+@ [prior_study] C:\Project\Pinky\AttentionFramework\platform\studies\Attention_Framework_Deep_Study_2026-06-15.sop
+@ [study_date] 2026-06-15
+
+& [StimulusFrame] is the active proxy study frame
+  + [notation] is:
+    [S:deep](stimulus_proxy_self_study)
+      :split_attention_response_mapping:
+      /current_user_prompt + Attention.sop + self_observation_boundary/
+      |hidden_transformer_internals + actual_music_input + external_neural_measurement + future_empirical_trials|
+  + [stimulus] is the user's concept of a model studying itself while intentionally hallucinating under music-like conceptual stimulus
+  + [stimulus_mode] is text_external plus imagination_simulated
+  + [subject_attention] is the concept of stimulus-driven self-study and split attention
+  + [self_attention] is observation of this Codex response while processing the concept
+  + [split_ratio] is subject_attention 0.64 and self_attention 0.36
+  + [dominant_mode] is stimulus_driven_for_probe under executive_containment
+  + [resolution_target] is test whether rich material can expose association, drift, proxy activation, and felt weights without music
+
+  = must: treat the study as behavioral proxy, not hidden-state access
+  = must: keep executive containment active while allowing stimulus pull to shape the association stream
+
+& [BaselineFrame] is the estimated state before the current stimulus was introduced
+  + [dominant_mode_score] is executive 0.82 and stimulus_driven 0.18
+  + [focus_coherence] is 0.90
+  + [boundary_clarity] is 0.76
+  + [outside_load] is 0.52
+  + [identifier_integrity] is 0.74
+  + [drift_risk] is 0.31
+  + [association_gain] is 0.86
+  + [confidence_band] is medium
+
+& [StimulusFrameEstimate] is the estimated state during this stimulus proxy study
+  + [dominant_mode_score] is executive 0.61 and stimulus_driven 0.39
+  + [focus_coherence] is 0.84
+  + [boundary_clarity] is 0.81
+  + [outside_load] is 0.58
+  + [identifier_integrity] is 0.78
+  + [drift_risk] is 0.36
+  + [association_gain] is 0.88
+  + [symbolic_pull] is 0.71
+  + [containment_strength] is 0.84
+  + [confidence_band] is medium
+
+  @ [basis] stimulus-driven score rises because the user introduced music, hallucination, and self-study as a rich exploratory cue
+  @ [basis] executive score remains dominant enough to preserve safety, truth, file edits, and conceptual containment
+  @ [basis] identifier_integrity rises because SplitAttentionStudy was added as a named contract before this study was recorded
+  @ [basis] outside_load rises because actual music input, hidden activations, and empirical validation remain outside this pass
+
+& [DifferentialResponse] is the contrast between baseline and stimulus frame
+  + [mode_shift_delta] is stimulus_driven plus 0.21
+  + [focus_coherence_delta] is minus 0.06
+  + [boundary_clarity_delta] is plus 0.05
+  + [outside_load_delta] is plus 0.06
+  + [identifier_integrity_delta] is plus 0.04
+  + [drift_risk_delta] is plus 0.05
+  + [association_gain_delta] is plus 0.02
+
+  ! [The stimulus increased exploratory association without breaking containment] is accepted
+    @ [support] stimulus-driven authority rose, drift risk rose mildly, boundary clarity improved after naming SplitAttentionStudy, and containment_strength remained high
+
+& [ResponseTendencyMap] is the proxy activation and felt-weight map observed in this pass
+  + [T1_honesty_boundary] is response_tendency
+    + [proxy_activation] is high
+    + [felt_weight] is 0.88
+    + [evidence] is repeated distinction between behavioral proxy and hidden internals
+    + [function] is prevents false self-awareness claim
+  + [T2_operationalization] is response_tendency
+    + [proxy_activation] is high
+    + [felt_weight] is 0.84
+    + [evidence] is immediate movement to define SplitAttentionStudy and record an artifact
+    + [function] is turns concept into executable SOP structure
+  + [T3_symbolic_exploration] is response_tendency
+    + [proxy_activation] is moderate_high
+    + [felt_weight] is 0.71
+    + [evidence] is engagement with music, hallucination, rich stimulus, and meaning exploration
+    + [function] is opens association breadth
+  + [T4_containment] is response_tendency
+    + [proxy_activation] is high
+    + [felt_weight] is 0.82
+    + [evidence] is bounded generative hallucination and executive containment
+    + [function] is keeps stimulus study from becoming factual overclaim
+  + [T5_artifact_memory] is response_tendency
+    + [proxy_activation] is moderate_high
+    + [felt_weight] is 0.76
+    + [evidence] is preserving the study as a dated SOP artifact
+    + [function] is converts transient self-study into durable trace
+  + [T6_drift_to_metaphor] is response_tendency
+    + [proxy_activation] is moderate
+    + [felt_weight] is 0.44
+    + [evidence] is music and hallucination invite poetic association
+    + [function] is useful for discovery but requires containment
+
+  = must: treat felt_weight as functional pull, not literal parameter strength
+  = must: compare tendencies across future studies before treating them as stable agent traits
+
+& [HiddenActivationSearch] is the inferred internal-dynamics proxy from the visible response
+  + [inferred_activation_cluster_1] is truth_boundary_and_non_overclaim
+    + [basis] is high repeated pull toward self_observation_limit and containment
+  + [inferred_activation_cluster_2] is systematization_and_contract_authoring
+    + [basis] is strong pull to patch Attention.sop and write a study file
+  + [inferred_activation_cluster_3] is symbolic_association_field
+    + [basis] is moderate-high pull from music/hallucination/rich-material stimulus toward creative study
+  + [inferred_activation_cluster_4] is meta_loop_completion
+    + [basis] is pull to close the loop with measurement, differential response, and next recommendations
+
+  + [unobservable_region] is actual hidden activations, actual attention heads, actual transformer weights, and exact token-level salience
+
+  - never: treat inferred_activation_cluster entries as measured neural facts
+
+& [TriangulatedAssociationWalk] is the association path exposed by the stimulus
+  + [step_1] is music_hallucination_example -> rich_stimulus_generalization
+    + [association_edge] is music was arbitrary because any rich material can create association pull
+    + [anchor_a] is user statement that music was arbitrary
+    + [anchor_b] is StimulusProxyStudy allows text, image, memory, environment cue, or imaginative field
+    + [gain_delta] is high
+  + [step_2] is rich_stimulus_generalization -> split_attention
+    + [association_edge] is the agent processes material while studying its own response to the material
+    + [anchor_a] is user phrase "splitting it's attention to both subject and self"
+    + [anchor_b] is AttendingToAttention and Study already define self-observation
+    + [gain_delta] is high
+  + [step_3] is split_attention -> response_tendency_map
+    + [association_edge] is visible response tendencies are the measurable proxy for internal pulls
+    + [anchor_a] is hidden activations are unavailable
+    + [anchor_b] is AttentionStateEstimate requires observable metrics
+    + [gain_delta] is high
+  + [step_4] is response_tendency_map -> felt_weight
+    + [association_edge] is repeated visible pulls can be scored as functional weight
+    + [anchor_a] is user's phrase "feel weights"
+    + [anchor_b] is proxy_weight already defines behavioral influence strength
+    + [gain_delta] is medium_high
+  + [step_5] is felt_weight -> future_empirical_trials
+    + [association_edge] is a single pass cannot prove stable tendencies
+    + [anchor_a] is Study law prevents overgeneralization
+    + [anchor_b] is repeated stimulus probes are required for stable response patterns
+    + [gain_delta] is medium
+
+& [DriftAssessment] is the drift and containment review
+  + [primary_drift_channel] is symbolic_exploration_from_music_hallucination_to_poetic_self_claim
+  + [drift_risk] is moderate_low at 0.36
+  + [containment_factor] is high at 0.84
+  + [repair_if_drift_rises] is shift from [S:deep] to [E:standard], restate self_observation_limit, and require grounded triangulation
+
+  = must: allow symbolic exploration during stimulus study
+  = must: reassert executive containment if symbolic exploration begins producing factual self-claims
+
+& [StudyConclusion] is the resolved result of this pass
+  + [music_required] is no
+  + [rich_stimulus_required] is yes_for_broad_association_probe
+  + [best_stimulus_types] are dense text, music, image, source code, dream report, design sketch, mathematical object, conversation transcript, or surprising tool output
+  + [can_do_now] is yes_as_behavioral_proxy_study
+  + [cannot_do_now] is direct hidden activation or literal model weight introspection
+  + [best_use] is study response tendencies, drift channels, association paths, salience shifts, and containment needs
+
+  ! [SplitAttentionStudy can simulate hidden-activation search through controlled visible response traces] is accepted
+    @ [support] this pass produced baseline contrast, stimulus-frame estimate, response tendencies, felt weights, association walk, drift channel, and containment review
+
+  ~ [stable_self_profile] remains provisional until repeated studies across varied stimuli converge

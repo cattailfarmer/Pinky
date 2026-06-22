@@ -1,0 +1,36 @@
+& [SLMImplementationFormationGate] is the deferred doorway from SOP contracts to executable implementation
+  + [contract_uuid] is d2bfbb84-c987-4e37-85e5-c9db14ffd1af
+  + [slice_id] is SLM-12
+  + [status] is deferred_until_user_approval
+  + [depends_on] is SLM-01 through SLM-11 contract review
+
+  & [FormationPreconditions] is what must be true before coding resumes
+    + [contract_coverage] is SLM-01 through SLM-11 accepted or explicitly deferred
+    + [source_lineage] is manifest links all governing artifacts
+    + [false_start_decision] is reuse, ignore, or delete slm_prototype by explicit user direction
+    + [language_choice] is selected for implementation phase
+    + [provider_strategy] is mock-only, Ollama, LM Studio, or other adapter selection
+    + [test_mapping] is fixture suite mapped to executable tests if implementation begins
+    = must: ask for or receive user approval before implementation work
+    = must: create file map and module boundary plan before coding
+
+  & [LikelyImplementationShape] is provisional and non-authoritative until formation starts
+    + [package] is slm
+    + [module] is core data contracts
+    + [module] is evidence workspace
+    + [module] is providers
+    + [module] is provider deliberation
+    + [module] is diffusion
+    + [module] is wobble
+    + [module] is stabilization
+    + [module] is semantic graph
+    + [module] is primer
+    + [module] is fixtures and tests
+    ~ [language] is likely Python for executable prototype, but SOP remains reasoning authority
+
+  & [FormationBlockedReason] is why this remains deferred
+    + [reason] is user requested specification and project-manager slicing before implementation
+    + [reason] is implementation should not proceed until contracts are reviewed
+
+  ~ [Slice12Deferred] is accepted
+    @ [support] implementation formation depends on user approval after SOP contract review

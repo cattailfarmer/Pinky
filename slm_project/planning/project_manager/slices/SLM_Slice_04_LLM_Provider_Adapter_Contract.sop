@@ -1,0 +1,14 @@
+& [SLMSlice04LLMProviderAdapterContract] is a work-ready slice for lower LLM provider evidence
+  + [slice_id] is SLM-04
+  + [status] is ready
+  + [feature_cluster] is ClusterCLLMSubstrate
+  + [source_refs] is LLMSubstrateContract and LLMSubstrate
+  + [depends_on] is SLM-02
+  + [scope] is define provider adapter boundary, mock provider shape, provider provenance, prompt contract, response hashing, and provider_set behavior
+  + [deliverable] is SOP contract for LLMProvider, MockProvider, ProviderSuggestion, ProviderProvenance, InternalFacultyRun payload, and adapter failure modes
+  + [acceptance_criteria] is lower LLM output is evidence only and cannot directly create Glyphs
+  + [acceptance_criteria] is multiple provider outputs remain separately attributable
+  + [proof_route] is deterministic mock provider fixtures with different suggestions for the same sentence
+  + [exclusions] is live LM Studio, Ollama, or hosted API calls
+  + [next_action] is author slm_project/specifications/contracts/SLM_LLM_Provider_Adapter_Contract.sop
+

@@ -1,0 +1,15 @@
+& [SLMSlice53LexiconLicenseProvenanceAudit] is a work-ready SOP slice for lexical authority provenance
+  + [slice_id] is SLM-53
+  + [status] is specification_complete
+  + [effort] is S-M
+  + [risk] is low
+  + [depends_on] is SLM-13, SLM-52
+  + [scope] is audit source provenance, license notes, retrieval hashes, and generated artifact boundaries
+  + [acceptance_criteria] is lexical substrate authority can cite every imported source
+  + [proof_route] is SOP review and source provenance file inspection
+
+  ! [CompletionEvidence] is the SLM-53 SOP verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Lexicon_License_Provenance_Audit.sop
+    @ [source_manifest] inspected
+    @ [source_provenance] inspected
+    @ [substrate_manifest] inspected

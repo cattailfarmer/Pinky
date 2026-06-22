@@ -1,0 +1,17 @@
+& [SLMSlice45WobbleFactorAttribution] is a work-ready slice for explainable wobble
+  + [slice_id] is SLM-45
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-06, SLM-19, SLM-28
+  + [scope] is add named factor refs and local explanations for wobble dimensions
+  + [acceptance_criteria] is primer can show which tokens, spans, relations, or contradictions caused wobble
+  + [proof_route] is WSL cargo test plus demo wobble factor inspection
+
+  ! [CompletionEvidence] is the SLM-45 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Wobble_Factor_Attribution_Contract.sop
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 12 tests
+    @ [self_check] passed slm_self_check
+    @ [demo] design/compiler primer exposed 9 local wobble factors
+    @ [fixture] TimeFlies primer exposed provider-disagreement relation_instability factor

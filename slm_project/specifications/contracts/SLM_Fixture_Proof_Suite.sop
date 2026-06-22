@@ -1,0 +1,68 @@
+& [SLMFixtureProofSuite] is the deterministic proof contract for SLM v0
+  + [contract_uuid] is 56dc9c3c-c93a-49d4-a1b4-063f69700a4d
+  + [slice_id] is SLM-11
+  + [depends_on] is SLM_Core_Data_Contracts, SLM_LLM_Provider_Adapter_Contract, SLM_Wobble_Contradiction_Contract
+  + [status] is accepted_for_implementation_formation
+
+  & [FixturePrinciple] is the proof strategy
+    = must: use deterministic mock providers before live LLM calls
+    = must: include stable, ambiguous, contradictory, and vetoed cases
+    = must: define expected EvidenceWorkspace, DiffusionTrace, StabilizationDecision, SemanticGraph, WobbleVector, and Primer outputs at contract level
+    = must: prove negative boundaries such as unstable candidates not entering SemanticGraph
+
+  & [FixtureATheFishSwim] is the simple stabilization proof
+    + [input] is "The fish swim."
+    + [purpose] is test noun-verb ambiguity and stable subject-action relation
+    + [mock_provider_a] is fish noun strong, fish verb weak, swim verb strong, swim noun weak
+    + [mock_provider_b] is fish animal concept, swim action concept
+    + [expected_workspace] is fish and swim have multiple grammar candidates before diffusion
+    + [expected_diffusion] is determiner supports fish as subject candidate and swim as action candidate
+    + [expected_stabilization] is FishConcept and SwimmingAction pass faculty validation unless unexpected contradiction is introduced
+    + [expected_graph] is Glyph FishConcept, Glyph SwimmingAction, relation performs(FishConcept, SwimmingAction)
+    + [expected_wobble] is low after stabilization with residual role candidates preserved as evidence history
+
+  & [FixtureBDesignCompilerFPGA] is the command and prepositional constraint proof
+    + [input] is "Design a compiler for FPGA hardware."
+    + [purpose] is test command-like action, object candidate, and prepositional constraint
+    + [expected_workspace] is Design has verb and noun evidence, compiler has noun evidence, for introduces relation or purpose constraint, FPGA hardware forms constrained target phrase
+    + [expected_diffusion] is structural constraints from "a" and "for" shape candidate relations before semantic promotion
+    + [expected_graph] is action DesignAction, subject or object CompilerConcept, constraint or relation ForFPGATargetHardware
+    + [expected_wobble] is moderate until imperative subject is handled or represented as implied actor uncertainty
+    + [expected_uncertainty] is optional implied_actor or command_subject uncertainty glyph if not resolved
+
+  & [FixtureCTimeFliesArrow] is the ambiguity and disagreement proof
+    + [input] is "Time flies like an arrow."
+    + [purpose] is test provider disagreement, relation ambiguity, and typed uncertainty
+    + [mock_provider_a] is time noun, flies verb, like preposition
+    + [mock_provider_b] is time_flies noun phrase candidate, like verb candidate
+    + [expected_deliberation] is provider objection and answer records exist before wobble classification
+    + [expected_provider_payloads] is typed objection, typed answer, and provider internal faculty report evidence
+    + [expected_jury] is disagreement classified as role_conflict, relation_conflict, scope_conflict, or insufficient_context
+    + [expected_graph] is no false stable graph if contradiction or ambiguity remains high
+    + [expected_uncertainty] is provider_disagreement or unresolved_relation uncertainty glyph only if the uncertainty boundary is specific enough
+    + [expected_wobble] is high unresolved_ambiguity and relation_instability
+
+  & [FixtureDHonestyVeto] is the support sufficiency proof
+    + [input] is a candidate with high support_weight but missing source lineage
+    + [purpose] is prove high score cannot stabilize a Glyph
+    + [expected_faculty] is Honesty veto or Scribe rejection blocks stabilization
+    + [expected_graph] is no stable glyph
+    + [expected_workspace] is candidate preserved with lineage_gap contradiction
+
+  & [FixtureESecurityVeto] is the invalid consequence proof
+    + [input] is a candidate relation whose consequence violates declared constraints
+    + [purpose] is prove Security can veto Observer-managed flow
+    + [expected_faculty] is Security veto blocks stabilization
+    + [expected_graph] is no stable relation glyph
+    + [expected_uncertainty] is contradiction_cluster if bounded
+
+  & [FixtureCoverageGate] is the fixture acceptance checklist
+    = verify: every fixture preserves tokens as observations
+    = verify: every fixture keeps unstable candidates in EvidenceWorkspace
+    = verify: every promoted graph object has stabilization lineage
+    = verify: wobble vector explains instability dimensions
+    = verify: primer includes compact evidence without dumping entire workspace
+
+  ! [Slice11Complete] is accepted
+    @ [support] fixture suite covers stable interpretation, command/prepositional constraint, ambiguity, provider disagreement, veto, and typed uncertainty
+    @ [support_delta] SLM-29 makes provider disagreement payload and faculty report coverage deterministic

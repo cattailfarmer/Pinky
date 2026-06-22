@@ -1,0 +1,8 @@
+& [SLMSlice15SpanCandidateLayer] is the work slice for evidence-level spans
+  + [slice_id] is SLM-15
+  + [status] is source_complete_policy_gated
+  + [feature_cluster] is evidence_workspace_expansion
+  + [depends_on] is SLM-14
+  + [scope] is create nominal, prepositional, compound, and coordination span candidates before graph promotion
+  + [deliverable] is Rust source-level implementation and SOP contract
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop

@@ -1,0 +1,19 @@
+& [SLMSlice38ClosedClassLexicalSenseRouting] is a work-ready slice for closed-class lexical sense discipline
+  + [slice_id] is SLM-38
+  + [status] is verified_wsl
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-14, SLM-16, SLM-31
+  + [scope] is route open-class senses on closed-class tokens into lower priority or compact uncertainty instead of ordinary sense candidates
+  + [deliverable] is lexical substrate provider or evidence ingestion refinement
+  + [acceptance_criteria] is article "a" still emits structural hint but does not flood primer with blood-group or alphabet senses unless specifically queried
+  + [proof_route] is WSL cargo test plus demo lexical sense inspection
+  + [exclusions] is deleting source lexicon entries from the substrate
+  + [next_action] is use default closed-class sense deferral and explicit all-sense routing for audit/query modes
+
+  ! [CompletionEvidence] is the SLM-38 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Closed_Class_Lexical_Sense_Routing_Contract.sop
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 8 tests
+    @ [self_check] passed slm_self_check
+    @ [demo] "Design a compiler for FPGA hardware." preserved article structural hint and suppressed article lexical senses

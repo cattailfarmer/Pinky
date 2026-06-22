@@ -1,0 +1,126 @@
+& [SLMExplosionRound2WorkDecomposition] is the second constrained explosion pass for turning SLM specification material into work-ready slices
+  + [explosion_round_uuid] is 3e0d38a4-1c2f-4b3f-9cf0-081aefedc1b0
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [prior_exploded_specification] is slm_project/specifications/SLM_Exploded_Specification.sop
+  + [canonical_specification] is slm_project/specifications/SLM_Canonical_Specification.sop
+  + [planning_surface] is slm_project/planning/SLM_Staged_Project_Plan.sop
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [processing_state] is work_decomposition_explosion
+  + [coordination_layer] is inactive_by_user_direction
+  + [project_manager_role] is single-conversation scope cutting and readiness tracking
+
+  & [ExplosionIntent] is the purpose of this pass
+    = must: convert the active SLM specification into work-ready, independently reviewable chunks
+    = must: preserve all major architecture decisions as traceable constraints
+    = must: identify dependencies and proof routes before implementation begins
+    = must: separate SOP authority work from later executable implementation work
+    = must: expose uncertainty and unresolved design choices as blocking or deferred slice material
+    - never: claim implementation readiness for a slice whose governing identity is still unstable
+
+  & [ConstraintLedgerRound2] is the constraint set reapplied during work decomposition
+    + [sop_first] is reasoning and authority formation happen in .sop before code
+    + [source_preservation] is source dictation remains separate from derived artifacts
+    + [graph_boundary] is SemanticGraph is output of diffusion, not diffusion workspace
+    + [evidence_boundary] is tokens, grammar, lower LLM suggestions, candidates, support, and contradictions remain in EvidenceWorkspace until stabilization
+    + [llm_as_evidence] is lower LLM output is evidence, not semantic authority
+    + [multi_provider_provenance] is provider outputs remain separately attributable
+    + [deliberative_stabilization] is Glyph stabilization requires seven-faculty convergence and no high-severity contradiction
+    + [veto_topology] is Observer coordinates ordinary faculty flow while Honesty and Security can veto
+    + [uncertainty_typing] is uncertainty glyphs require type and lineage
+    + [machine_reingestion] is primer favors stable JSON with compact evidence plus readable SOP rendering
+    + [mock_before_live] is implementation should support mock providers before live nondeterministic model calls unless user changes the boundary
+    + [coordination_inactive] is no mailbox or multi-thread worker machinery is required for this project-manager pass
+
+  & [FoldTraceRound2] is the expansion and pruning record for this pass
+    + [fold_1_edge_probe] is source_governance_to_work_authority
+    + [fold_1_gain_delta] is explicit separation of source, prior explosion, canonical draft, and manager slicing authority
+    + [fold_1_pruned_material] is treating current discussion draft as signed final authority
+    + [fold_2_edge_probe] is epistemic_ladder_to_data_substrate
+    + [fold_2_gain_delta] is work chunks must preserve Token as observation, grammar and LLM outputs as evidence, semantics as target, Glyph as stabilized identity
+    + [fold_2_pruned_material] is data classes that blur evidence and semantic graph identity
+    + [fold_3_edge_probe] is lower_llm_substrate_to_provider_deliberation
+    + [fold_3_gain_delta] is adapter, provider provenance, internal faculty run, objection-answer flow, and jury panel become separate work obligations
+    + [fold_3_pruned_material] is provider voting without articulated objection and answer
+    + [fold_4_edge_probe] is diffusion_loop_to_stabilization_gate
+    + [fold_4_gain_delta] is candidate activation, structural constraints, support propagation, contradiction propagation, wobble, faculty validation, semantic promotion, and uncertainty preservation become ordered transforms
+    + [fold_4_pruned_material] is one monolithic diffusion function hiding internal trace
+    + [fold_5_edge_probe] is semantic_graph_boundary_to_primer_output
+    + [fold_5_gain_delta] is graph compactness, typed uncertainty glyphs, lineage edges, JSON primer, and SOP rendering become proof targets
+    + [fold_5_pruned_material] is graph nodes for every temporary hypothesis
+    + [fold_6_edge_probe] is acceptance_criteria_to_fixture_proofs
+    + [fold_6_gain_delta] is fixture sentence set, deterministic provider records, disagreement cases, and non-stabilization cases become testable proof surface
+    + [fold_6_pruned_material] is testing only the happy path sentence
+    + [fold_7_edge_probe] is implementation_frontier_to_manager_slices
+    + [fold_7_gain_delta] is contiguous feature clusters cut into dependency-ordered slices with support gaps and completion proofs
+    + [fold_7_pruned_material] is giant "build SLM" task that cannot be reviewed or rerouted
+    + [exhaustion_state] is phase_locked_for_initial_project_manager_work_slicing
+
+  & [ContiguousFeatureClusters] is the decomposed scope map
+    & [ClusterAAuthorityAndRails] is source, derived specifications, manifest, and process fault containment
+      + [owns] is source preservation, canonical draft status, explosion lineage, staged plan, false-start quarantine
+      + [readiness] is partial because round 2 artifacts must be linked into manifest and plan
+
+    & [ClusterBDataIdentity] is the stable data subject layer
+      + [owns] is Token, RoleCandidate, CandidateMeaning, CandidateRelation, SupportRecord, ContradictionRecord, EvidenceWorkspace, Glyph, SemanticRelation, UncertaintyGlyph, LineageRecord
+      + [readiness] is ready_for_contract_authoring
+
+    & [ClusterCLLMSubstrate] is the lower model adapter and provider evidence boundary
+      + [owns] is provider adapter, provider provenance, mock provider, provider set, lower LLM suggestion, internal faculty run payload
+      + [readiness] is ready_for_mock_contract
+      + [support_gap] is live provider call shape intentionally deferred
+
+    & [ClusterDProviderDeliberation] is cross-provider objection and jury handling
+      + [owns] is objection record, answer record, disagreement classification, jury review, persistent disagreement measurement
+      + [readiness] is ready_for_deterministic_fixture_design
+
+    & [ClusterEDiffusionEngine] is the evidence-to-meaning transform system
+      + [owns] is candidate activation, structural constraint, support propagation, contradiction propagation, wobble measurement, pass trace
+      + [readiness] is blocked_by_data_contract_completion
+
+    & [ClusterFDeliberativeStabilization] is the glyph promotion authority
+      + [owns] is seven faculty validators, Observer coordination, Honesty veto, Security veto, faculty threshold, contradiction threshold, wobble threshold, stabilization decision
+      + [readiness] is blocked_by_provider_and_wobble_contracts
+
+    & [ClusterGSemanticGraph] is the compact stabilized meaning record
+      + [owns] is stabilized glyphs, stabilized semantic relations, uncertainty glyphs, lineage, append-only lifecycle
+      + [readiness] is blocked_by_stabilization_contract
+
+    & [ClusterHPrimerAndRendering] is the downstream export projection
+      + [owns] is machine JSON primer, SOP-style rendering, compact evidence fields, graph and uncertainty summaries
+      + [readiness] is blocked_by_graph_contract
+
+    & [ClusterIFixtureAndProof] is the deterministic demonstration and review suite
+      + [owns] is fixture sentences, mock provider outputs, expected evidence workspace, expected diffusion trace, expected graph, expected primer, negative proof cases
+      + [readiness] is ready_for_specification_now
+
+  & [ProjectManagerCut] is the selected first slice set
+    + [slice_01] is Authority and source rails
+    + [slice_02] is Core data identity contracts
+    + [slice_03] is Evidence workspace contract
+    + [slice_04] is Lower LLM provider adapter and provenance contract
+    + [slice_05] is Provider deliberation contract
+    + [slice_06] is Wobble and contradiction contract
+    + [slice_07] is Semantic diffusion pass contract
+    + [slice_08] is Faculty validation and stabilization contract
+    + [slice_09] is Semantic graph and uncertainty glyph contract
+    + [slice_10] is Primer and rendering contract
+    + [slice_11] is Fixture and proof suite contract
+    + [slice_12] is Implementation formation plan
+
+  & [ReadinessRules] is the definition of work-ready for this project manager pass
+    + [work_ready] is a slice with scope, dependencies, source support, acceptance criteria, proof route, exclusions, and next action
+    + [blocked] is a slice whose dependency or decision is not yet resolved enough for direct work
+    + [deferred] is a valid future slice outside the current SOP-first frontier
+    = must: mark each slice work_ready, blocked, or deferred
+    = must: include proof route before implementation begins
+    = must: include support gaps rather than hiding them in notes
+    = must: review completed slices for requirement_delta and support_delta before moving to the next slice
+
+  & [Round2QualityGate] is the result of this explosion pass
+    ! [WorkDecompositionProduced] is accepted
+      @ [support] ProjectManagerCut defines twelve work slices
+    ! [CoordinationLayerExcluded] is accepted
+      @ [support] coordination_layer is inactive_by_user_direction
+    ! [DataDrivenBoundariesPreserved] is accepted
+      @ [support] ContiguousFeatureClusters preserve data identity, transform identity, and graph boundary
+    ~ [ImplementationAuthority] is not yet final because slice artifacts must be reviewed and accepted before code work

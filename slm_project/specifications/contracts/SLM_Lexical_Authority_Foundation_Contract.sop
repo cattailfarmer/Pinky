@@ -1,0 +1,71 @@
+& [SLMLexicalAuthorityFoundationContract] is the contract for the first-class SLM lexical substrate under diffusion
+  + [contract_uuid] is a83848bd-2263-43c9-b252-05e27c5b3854
+  + [slice_id] is SLM-13
+  + [depends_on] is SLM_Core_Data_Contracts, SLM_Evidence_Workspace_Contract, SLM_LLM_Provider_Adapter_Contract
+  + [status] is implemented_v0
+
+  & [LexicalSubstrateLayer] is the foundational word-type evidence provider inside SLM's runtime body
+    + [purpose] is provide speed-dial lexical and grammatical evidence before diffusion
+    + [authority_artifact] is slm_lexicon/data/slm_lexicon.sqlite
+    + [runtime_artifact] is slm_lexicon/data/slm_lexical_substrate/term_role_sense_index.json
+    + [runtime_manifest] is slm_lexicon/data/slm_lexical_substrate/manifest.json
+    + [runtime_manifest_sop] is slm_lexicon/data/slm_lexical_substrate/manifest.sop
+    + [closed_class_speed_table] is slm_lexicon/data/slm_lexical_substrate/closed_class_speed_table.json
+    + [closed_class_source] is slm_lexicon/seeds/closed_class_terms.json
+    + [open_class_source] is Open English WordNet 2025 XML
+    + [runtime_provider] is slm_rust/src/lexicon.rs LexicalSubstrateProvider
+    + [output] is GrammarCandidate evidence through ProviderSuggestion records
+    - never: promote lexical rows directly into SemanticGraph
+    - never: treat dictionary membership as semantic truth
+
+  & [ClosedClassLexicon] is the project-owned structural word authority
+    + [covers] is articles
+    + [covers] is determiners
+    + [covers] is prepositions
+    + [covers] is conjunctions
+    + [covers] is auxiliaries
+    + [covers] is modals
+    + [covers] is negators
+    + [covers] is quantifiers
+    + [field] is diffusion_priority
+    + [field] is structural_hint
+    = must: be checked early because function words constrain relation and scope
+    = must: preserve ambiguous closed-class roles when present
+
+  & [OpenClassLexicon] is the imported WordNet-backed semantic evidence source
+    + [covers] is nouns
+    + [covers] is verbs
+    + [covers] is adjectives
+    + [covers] is adverbs
+    + [field] is sense_key
+    + [field] is synset_id
+    + [field] is definition
+    + [field] is relation_type for synset relations
+    = must: remain source-attributed to Open English WordNet
+    = must: provide possible roles and senses without collapsing them
+
+  & [SubstrateBuildPath] is the rebuildable local digestion pipeline
+    + [step] is python slm_lexicon/scripts/download_open_english_wordnet.py
+    + [step] is python slm_lexicon/scripts/build_lexicon_db.py
+    + [step] is python slm_lexicon/scripts/build_lexical_substrate_pack.py
+    + [generated] is SQLite authority database
+    + [generated] is first-class lexical substrate pack
+    + [legacy_debug_artifact] is optional JSON lookup cache from export_lexicon_cache.py
+    = must: keep generated data outside source-control intent unless explicitly vendored later
+
+  & [EvidenceBoundary] is the protection against premature semantics
+    = must: lexical authority creates evidence only
+    = must: lexical grammar roles enter EvidenceWorkspace as LexicalAuthority source records
+    = must: diffusion may use closed-class priority as structural pressure
+    = must: stabilization still requires faculty convergence
+    - never: allow WordNet synset identity to become a Glyph without deliberative stabilization
+
+  & [RuntimePolicyDecision] is accepted for v0
+    + [decision] is Rust runtime reads generated lexical substrate pack rather than SQLite directly
+    + [reason] is Windows Application Control blocked native SQLite Rust build scripts
+    + [preserved_authority] is SQLite remains the inspectable generated database
+    + [preserved_runtime] is lexical substrate pack is generated from SQLite and source-attributed
+
+  ! [Slice13Complete] is accepted
+    @ [support] local database and cache were generated from closed-class seed plus Open English WordNet
+    @ [support] Rust LexicalSubstrateProvider maps substrate rows into lexical authority grammar evidence

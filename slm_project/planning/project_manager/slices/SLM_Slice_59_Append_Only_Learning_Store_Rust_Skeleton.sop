@@ -1,0 +1,9 @@
+& [SLMSlice59AppendOnlyLearningStoreRustSkeleton] is a work-ready slice for memory event types
+  + [slice_id] is SLM-59
+  + [status] is ready_after_SLM-40
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-40
+  + [scope] is implement storage-neutral Rust structs for append-only semantic memory events
+  + [acceptance_criteria] is events can represent create, link, activate, retire, and supersede without identity rewrite
+  + [proof_route] is serialization tests and WSL cargo test

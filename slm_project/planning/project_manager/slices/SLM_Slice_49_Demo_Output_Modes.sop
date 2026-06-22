@@ -1,0 +1,19 @@
+& [SLMSlice49DemoOutputModes] is a work-ready slice for usable demo output
+  + [slice_id] is SLM-49
+  + [status] is verified_wsl
+  + [effort] is S-M
+  + [risk] is low
+  + [depends_on] is SLM-12, SLM-37, SLM-48
+  + [scope] is add full, compact, primer-only, and SOP rendering modes to slm_demo
+  + [acceptance_criteria] is demo can emit compact JSON without huge evidence dumps
+  + [proof_route] is WSL cargo run smoke tests
+
+  ! [CompletionEvidence] is the SLM-49 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Demo_Output_Modes_Contract.sop
+    @ [implementation] is slm_rust/src/bin/slm_demo.rs DemoOutputMode and CompactDemoReport
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 17 library tests and 3 slm_demo tests
+    @ [smoke_full] passed
+    @ [smoke_compact] passed without lexical_sense_candidates array
+    @ [smoke_primer_only] passed with schema slm_primer 0.1.0
+    @ [smoke_sop] passed with SLM_PRIMER_V0 prefix

@@ -1,0 +1,39 @@
+& [SLMLexiconLicenseProvenanceAudit] is the audit record for lexical authority provenance
+  + [contract_uuid] is 33246c80-f32b-453f-97a0-e741348826ec
+  + [slice_id] is SLM-53
+  + [depends_on] is SLM_Lexical_Authority_Foundation_Contract, SLM_Lexical_Substrate_Delta_Rebuild_Workflow_Contract
+  + [status] is specification_complete
+
+  & [AuditedSources] are the imported lexical authority sources
+    + [source] is open_english_wordnet_2025_xml
+      + [source_name] is Open English WordNet
+      + [source_version] is 2025 XML
+      + [source_url] is https://en-word.net/static/english-wordnet-2025.xml.gz
+      + [license] is CC-BY 4.0
+      + [retrieved_at] is 2026-06-21T04:38:46.449091+00:00
+      + [sha256] is 9ca6d1dcb75f822fdd66617f7d9da48142ace38dd544d6ad5e2feca1674ad3fe
+    + [source] is slm_closed_class_v0
+      + [source_name] is SLM Closed-Class Seed Lexicon
+      + [source_version] is 0.1.0
+      + [source_url] is local://slm_lexicon/seeds/closed_class_terms.json
+      + [license] is project-internal
+
+  & [GeneratedArtifacts] are derived runtime evidence artifacts
+    + [authority_database] is slm_lexicon/data/slm_lexicon.sqlite
+    + [substrate_manifest] is slm_lexicon/data/slm_lexical_substrate/manifest.json
+    + [term_role_sense_index_sha256] is 48873cae2cd9ff5692ae035f28d12db32b40a3cff61cff44da0870223ec627f1
+    + [closed_class_speed_table_sha256] is 6e27830cff87260defbd78e97f50ad659ab30e500220d90985384dd2f5d2c621
+    + [source_provenance_sha256] is 0ea726a9bcc0b178854df6619a6130c69b84ffdd90466ab9a6fb25416ac4f874
+
+  & [AuthorityBoundary] is the legal and semantic use boundary
+    = must: preserve Open English WordNet attribution and CC-BY 4.0 license notes in downstream distribution planning
+    = must: treat closed-class seed data as project-internal source material
+    = must: preserve raw source hashes separately from generated artifact hashes
+    = must: treat the lexical substrate as evidence authority only
+    - never: claim lexical substrate rows are stabilized semantic glyphs
+    - never: refresh source data without updating source manifest, provenance, and checksum audit
+
+  ! [Slice53SopComplete] is accepted
+    @ [source_manifest] inspected slm_lexicon/data/raw/open_english_wordnet/manifest.json
+    @ [source_provenance] inspected slm_lexicon/data/slm_lexical_substrate/source_provenance.json
+    @ [substrate_manifest] inspected slm_lexicon/data/slm_lexical_substrate/manifest.json

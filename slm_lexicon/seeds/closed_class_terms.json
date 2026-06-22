@@ -1,0 +1,235 @@
+{
+  "source": {
+    "id": "slm_closed_class_v0",
+    "source_name": "SLM Closed-Class Seed Lexicon",
+    "source_version": "0.1.0",
+    "source_url": "local://slm_lexicon/seeds/closed_class_terms.json",
+    "license": "project-internal"
+  },
+  "terms": [
+    {
+      "lemma": "a",
+      "roles": ["determiner"],
+      "class": "article",
+      "subclass": "indefinite",
+      "diffusion_priority": 0.96,
+      "structural_hint": "introduces an indefinite nominal scope"
+    },
+    {
+      "lemma": "an",
+      "roles": ["determiner"],
+      "class": "article",
+      "subclass": "indefinite",
+      "diffusion_priority": 0.96,
+      "structural_hint": "introduces an indefinite nominal scope before vowel sound"
+    },
+    {
+      "lemma": "the",
+      "roles": ["determiner"],
+      "class": "article",
+      "subclass": "definite",
+      "diffusion_priority": 0.97,
+      "structural_hint": "introduces a definite nominal scope"
+    },
+    {
+      "lemma": "this",
+      "roles": ["determiner", "pronoun"],
+      "class": "demonstrative",
+      "subclass": "proximal",
+      "diffusion_priority": 0.9,
+      "structural_hint": "anchors a nearby referent or nominal scope"
+    },
+    {
+      "lemma": "that",
+      "roles": ["determiner", "pronoun", "conjunction"],
+      "class": "demonstrative",
+      "subclass": "distal_or_clause_marker",
+      "diffusion_priority": 0.86,
+      "structural_hint": "may anchor a distal referent or introduce a clause"
+    },
+    {
+      "lemma": "for",
+      "roles": ["preposition", "conjunction"],
+      "class": "preposition",
+      "subclass": "purpose_or_beneficiary",
+      "diffusion_priority": 0.93,
+      "structural_hint": "often introduces purpose, target platform, beneficiary, or reason"
+    },
+    {
+      "lemma": "to",
+      "roles": ["preposition"],
+      "class": "preposition",
+      "subclass": "direction_or_infinitive",
+      "diffusion_priority": 0.94,
+      "structural_hint": "marks direction, recipient, limit, or infinitive action"
+    },
+    {
+      "lemma": "of",
+      "roles": ["preposition"],
+      "class": "preposition",
+      "subclass": "possession_or_composition",
+      "diffusion_priority": 0.94,
+      "structural_hint": "marks possession, composition, association, or measure"
+    },
+    {
+      "lemma": "with",
+      "roles": ["preposition"],
+      "class": "preposition",
+      "subclass": "instrument_or_association",
+      "diffusion_priority": 0.91,
+      "structural_hint": "marks instrument, accompaniment, possession, or manner"
+    },
+    {
+      "lemma": "in",
+      "roles": ["preposition", "adverb"],
+      "class": "preposition",
+      "subclass": "location_or_state",
+      "diffusion_priority": 0.9,
+      "structural_hint": "marks location, containment, time, state, or domain"
+    },
+    {
+      "lemma": "on",
+      "roles": ["preposition", "adverb"],
+      "class": "preposition",
+      "subclass": "surface_or_topic",
+      "diffusion_priority": 0.9,
+      "structural_hint": "marks surface contact, topic, schedule, or activation"
+    },
+    {
+      "lemma": "and",
+      "roles": ["conjunction"],
+      "class": "conjunction",
+      "subclass": "coordination",
+      "diffusion_priority": 0.96,
+      "structural_hint": "coordinates parallel scopes"
+    },
+    {
+      "lemma": "or",
+      "roles": ["conjunction"],
+      "class": "conjunction",
+      "subclass": "alternative",
+      "diffusion_priority": 0.95,
+      "structural_hint": "marks alternatives or choice scope"
+    },
+    {
+      "lemma": "but",
+      "roles": ["conjunction"],
+      "class": "conjunction",
+      "subclass": "contrast",
+      "diffusion_priority": 0.94,
+      "structural_hint": "marks contrast or exception"
+    },
+    {
+      "lemma": "because",
+      "roles": ["conjunction"],
+      "class": "conjunction",
+      "subclass": "cause",
+      "diffusion_priority": 0.92,
+      "structural_hint": "introduces causal support"
+    },
+    {
+      "lemma": "is",
+      "roles": ["auxiliary", "verb"],
+      "class": "auxiliary",
+      "subclass": "be_present_singular",
+      "diffusion_priority": 0.9,
+      "structural_hint": "marks predication, state, identity, or progressive/passive support"
+    },
+    {
+      "lemma": "are",
+      "roles": ["auxiliary", "verb"],
+      "class": "auxiliary",
+      "subclass": "be_present_plural",
+      "diffusion_priority": 0.9,
+      "structural_hint": "marks predication, state, identity, or progressive/passive support"
+    },
+    {
+      "lemma": "was",
+      "roles": ["auxiliary", "verb"],
+      "class": "auxiliary",
+      "subclass": "be_past_singular",
+      "diffusion_priority": 0.88,
+      "structural_hint": "marks past predication, state, identity, or passive support"
+    },
+    {
+      "lemma": "will",
+      "roles": ["modal", "noun", "verb"],
+      "class": "modal",
+      "subclass": "future_or_volition",
+      "diffusion_priority": 0.86,
+      "structural_hint": "may mark future action or volition; preserve noun/verb ambiguity"
+    },
+    {
+      "lemma": "can",
+      "roles": ["modal", "noun", "verb"],
+      "class": "modal",
+      "subclass": "ability_or_permission",
+      "diffusion_priority": 0.86,
+      "structural_hint": "may mark ability or permission; preserve noun/verb ambiguity"
+    },
+    {
+      "lemma": "should",
+      "roles": ["modal"],
+      "class": "modal",
+      "subclass": "obligation_or_expectation",
+      "diffusion_priority": 0.88,
+      "structural_hint": "marks expected or recommended action"
+    },
+    {
+      "lemma": "must",
+      "roles": ["modal", "noun"],
+      "class": "modal",
+      "subclass": "necessity",
+      "diffusion_priority": 0.9,
+      "structural_hint": "marks necessity or requirement"
+    },
+    {
+      "lemma": "not",
+      "roles": ["adverb"],
+      "class": "negator",
+      "subclass": "negation",
+      "diffusion_priority": 0.98,
+      "structural_hint": "negates the scoped predicate or relation"
+    },
+    {
+      "lemma": "never",
+      "roles": ["adverb"],
+      "class": "negator",
+      "subclass": "temporal_negation",
+      "diffusion_priority": 0.96,
+      "structural_hint": "negates across temporal scope"
+    },
+    {
+      "lemma": "all",
+      "roles": ["determiner", "pronoun", "adverb"],
+      "class": "quantifier",
+      "subclass": "universal",
+      "diffusion_priority": 0.91,
+      "structural_hint": "marks universal quantity or scope"
+    },
+    {
+      "lemma": "some",
+      "roles": ["determiner", "pronoun", "adverb"],
+      "class": "quantifier",
+      "subclass": "existential",
+      "diffusion_priority": 0.88,
+      "structural_hint": "marks partial or existential quantity"
+    },
+    {
+      "lemma": "many",
+      "roles": ["determiner", "adjective", "pronoun"],
+      "class": "quantifier",
+      "subclass": "large_quantity",
+      "diffusion_priority": 0.86,
+      "structural_hint": "marks large plural quantity"
+    },
+    {
+      "lemma": "few",
+      "roles": ["determiner", "adjective", "pronoun"],
+      "class": "quantifier",
+      "subclass": "small_quantity",
+      "diffusion_priority": 0.86,
+      "structural_hint": "marks small plural quantity"
+    }
+  ]
+}

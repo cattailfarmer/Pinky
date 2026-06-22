@@ -1,0 +1,12 @@
+& [SLMSlice34LiveLMStudioTransportGate] is a staged slice for live LM Studio transport
+  + [slice_id] is SLM-34
+  + [status] is blocked_external_runtime
+  + [effort] is M-L
+  + [risk] is high
+  + [depends_on] is SLM-23, SLM-35
+  + [scope] is add optional HTTP transport from SidecarPromptEnvelope to LM Studio OpenAI-compatible endpoint
+  + [deliverable] is adapter transport behind explicit configuration and no graph mutation
+  + [acceptance_criteria] is live call can be disabled, mocked, or pointed at localhost endpoint
+  + [proof_route] is source tests with mocked response before any live endpoint call
+  + [exclusions] is model selection, prompt tuning, or hosted provider credentials
+  + [next_action] is wait until user confirms LM Studio endpoint and model are available

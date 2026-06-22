@@ -1,0 +1,27 @@
+& [SLMPrimerProviderEvidenceContract] is the contract for provider evidence in machine-reingestible primers
+  + [contract_uuid] is 6c22925d-f1de-4377-8775-b5139fc957ad
+  + [slice_id] is SLM-28
+  + [status] is source_implemented_policy_gated
+
+  & [Purpose] is to keep lower-provider evidence visible in the primer
+    = must: include compact provider suggestions
+    = must: include provider deliberation refs for objection, answer, jury, and faculty-report evidence
+    = must: preserve provider identity in compact evidence refs
+    = must: keep primer output machine-reingestible
+    - never: hide lower-provider disagreement behind only an aggregate wobble score
+
+  & [CompactProviderSuggestion] is a provider evidence primer item
+    + [kind] is provider_suggestion
+    + [id] is ProviderSuggestion id
+    + [summary] includes suggestion kind and payload
+    + [refs] include target_ref and provider_id
+    + [support_activation] is provider support when present
+
+  & [CompactProviderDeliberation] is a provider deliberation primer item
+    + [kind] is provider_deliberation
+    + [id] is ProviderDeliberation id
+    + [summary] includes status, objecting provider, and supporting provider count
+    + [refs] include candidate_ref, objection refs, answer refs, jury refs, and faculty_report_refs
+
+  & [RuntimeProjection] is slm_rust/src/primer.rs compact_evidence
+    + [status] is source_complete_policy_gated

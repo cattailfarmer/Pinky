@@ -1,0 +1,29 @@
+& [SLMLexicalSenseEvidenceContract] is the contract for WordNet sense candidates as evidence
+  + [contract_uuid] is 54527fc6-4f8f-43fd-a7f7-8fed1a2663af
+  + [slice_id] is SLM-16
+  + [depends_on] is SLM_Lexical_Authority_Foundation_Contract, SLM_Evidence_Workspace_Contract
+  + [status] is source_implemented_policy_gated
+
+  & [LexicalSenseEvidence] is open-class sense possibility before contextual collapse
+    + [field] is lemma
+    + [field] is sense_key
+    + [field] is synset_id
+    + [field] is part_of_speech
+    + [field] is definition
+    + [field] is source provenance
+    = must: preserve multiple possible senses
+    = must: emit support records for sense candidates
+    = must: increase sense_instability when unresolved senses remain
+    - never: treat a WordNet synset as a stabilized semantic glyph without faculty convergence
+
+  & [ImplementationProjection] is the Rust source surface
+    + [module] is slm_rust/src/core.rs LexicalSenseCandidate
+    + [module] is slm_rust/src/providers.rs ProviderSuggestionKind::LexicalSense
+    + [module] is slm_rust/src/lexicon.rs LexicalSubstrateProvider sense suggestions
+    + [module] is slm_rust/src/evidence.rs lexical_sense_candidates workspace field
+    + [module] is slm_rust/src/diffusion.rs DiffusionPassKind::LexicalSenseSupport
+    + [module] is slm_rust/src/wobble.rs sense_instability
+
+  ! [Slice16SourceComplete] is accepted
+    @ [support] source-level implementation exists
+    @ [limitation] Cargo execution remains gated by Windows Application Control

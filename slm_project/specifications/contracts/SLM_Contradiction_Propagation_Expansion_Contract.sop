@@ -1,0 +1,33 @@
+& [SLMContradictionPropagationExpansionContract] is the contract for target-specific contradiction flow
+  + [contract_uuid] is 6e01d36a-ed2a-42da-8c0f-0f1dfe670f9c
+  + [slice_id] is SLM-44
+  + [depends_on] is SLM_Provider_Disagreement_Payload_Contract, SLM_Provider_Jury_Panel_Expansion_Contract, SLM_Evidence_Provenance_Normalization_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to turn provider objections and jury measurements into traceable contradiction evidence
+    = must: create contradiction records with stable target refs
+    = must: preserve source objection refs
+    = must: preserve answer refs when present
+    = must: preserve provider deliberation refs and jury review refs
+    = must: preserve cited panel refs for audit
+    = must: map jury measurement to contradiction severity and unresolved status
+    - never: duplicate contradiction records across repeated diffusion runs
+
+  & [MeasurementMapping] is the v0 severity and status rule
+    + [blocks_stabilization] is Severity::Blocking and ContradictionStatus::Unresolved
+    + [creates_uncertainty] is Severity::High and ContradictionStatus::Unresolved
+    + [needs_more_context] is Severity::High and ContradictionStatus::Unresolved
+    + [supports_stabilization] is Severity::Low and ContradictionStatus::Answered
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/core.rs ContradictionRecord provider_deliberation_ref, jury_review_ref, and cited_panel_refs
+    + [module] is slm_rust/src/diffusion.rs ensure_contradiction_record
+    + [module] is slm_rust/src/diffusion.rs contradiction_severity
+    + [module] is slm_rust/src/primer.rs contradiction_refs
+    + [proof_route] is TimeFlies fixture, WSL cargo test, and regression harness
+
+  ! [Slice44SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 23 library tests and 3 slm_demo tests
+    @ [regression_harness] passed slm_regression_harness_ok
+    @ [time_flies_contradiction] cites answer, jury review, provider deliberation, faculty report ref, Severity::High, and ContradictionStatus::Unresolved

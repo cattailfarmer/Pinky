@@ -1,0 +1,30 @@
+& [SLMSpanCandidateLayerContract] is the contract for evidence-level phrase and scope candidates
+  + [contract_uuid] is 944bbd97-c7ef-4bd6-b610-c41ad71893bc
+  + [slice_id] is SLM-15
+  + [depends_on] is SLM_Evidence_Workspace_Contract, SLM_Closed_Class_Diffusion_Contract
+  + [status] is source_implemented_policy_gated
+
+  & [SpanCandidateLayer] is the phrase/scope evidence field between tokens and semantic candidates
+    + [span_kind] is nominal
+    + [span_kind] is prepositional
+    + [span_kind] is compound
+    + [span_kind] is predicate
+    + [span_kind] is coordination
+    + [span_kind] is unknown
+    + [example] is a compiler
+    + [example] is FPGA hardware
+    + [example] is for FPGA hardware
+    = must: remain in EvidenceWorkspace until stabilization uses or rejects it
+    = must: support overlapping span candidates
+    = must: preserve source token refs
+    - never: create Glyphs for span candidates directly
+
+  & [ImplementationProjection] is the Rust source surface
+    + [module] is slm_rust/src/core.rs SpanKind and SpanCandidate
+    + [module] is slm_rust/src/evidence.rs span_candidates workspace field
+    + [module] is slm_rust/src/diffusion.rs DiffusionPassKind::SpanCandidateFormation
+    + [module] is slm_rust/src/wobble.rs span_boundary_instability
+
+  ! [Slice15SourceComplete] is accepted
+    @ [support] source-level implementation exists
+    @ [limitation] Cargo execution remains gated by Windows Application Control

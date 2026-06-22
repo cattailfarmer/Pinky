@@ -1,0 +1,32 @@
+& [SLMSlice18TrustedRustVerificationRoute] is the completed slice for executable Rust verification
+  + [slice_id] is SLM-18
+  + [status] is complete
+  + [effort] is M-L
+  + [risk] is blocked
+  + [depends_on] is Windows policy or trusted execution route
+  + [scope] is find a Cargo route that does not trigger Application Control blocks
+  + [next_action] is use WSL Ubuntu with Zig cc linker for Cargo verification
+
+  & [EnvironmentFindings] is the current route inspection
+    + [windows_rustc] is C:\Users\enjer\.cargo\bin\rustc.exe
+    + [windows_cargo] is C:\Users\enjer\.cargo\bin\cargo.exe
+    + [wsl] is available at C:\Windows\system32\wsl.exe
+    + [wsl_default_distro] is Ubuntu-24.04
+    + [wsl_version] is WSL2
+    + [wsl_rust] is installed with rustup minimal profile
+    + [wsl_zig] is installed in /home/pinky/tools/zig-x86_64-linux-0.16.0
+    + [wsl_linker_wrapper] is /home/pinky/bin/zigcc
+
+  & [RecommendedRoute] is WSL verification
+    + [reason] is Cargo outputs become Linux artifacts instead of Windows generated executables
+    + [workspace_path] is /mnt/c/Project/Pinky
+    + [target_dir] is /home/pinky/slm_rust_target
+    + [required_setup] is complete
+    + [cargo_check] is passed
+    + [cargo_test] is passed with 6 tests
+    + [slm_self_check] is passed
+    + [demo_smoke] is passed for "Design a compiler for FPGA hardware."
+
+  & [BlockedRoute] is Windows Cargo target execution
+    + [reason] is Windows Application Control blocks generated executables from Cargo target directories
+    - never: run cargo build, cargo test, cargo run, or cargo check on Windows until this is resolved

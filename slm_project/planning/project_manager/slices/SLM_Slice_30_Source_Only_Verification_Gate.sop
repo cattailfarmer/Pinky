@@ -1,0 +1,17 @@
+& [SLMSlice30SourceOnlyVerificationGate] is the complete slice for repeatable source-only verification
+  + [slice_id] is SLM-30
+  + [status] is complete
+  + [effort] is S
+  + [risk] is low
+  + [depends_on] is SLM-18 policy gate, SLM-23 through SLM-29 source work
+  + [contract] is slm_project/specifications/contracts/SLM_Source_Only_Verification_Gate_Contract.sop
+  + [deliverable] is slm_project/tools/slm_source_gate_check.py
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+
+  & [WorkCompleted] is the slice result
+    + [added] is reusable source-only verification script
+    + [verified] is Rust source brace shape
+    + [verified] is Python lexicon script syntax
+    + [verified] is lexical substrate artifact shape
+    + [verified] is no Cargo target directories exist
+    + [verified] is SLM-23 through SLM-29 source markers

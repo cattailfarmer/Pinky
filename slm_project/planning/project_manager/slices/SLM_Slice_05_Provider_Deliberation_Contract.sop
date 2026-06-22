@@ -1,0 +1,14 @@
+& [SLMSlice05ProviderDeliberationContract] is a work-ready slice for cross-provider disagreement handling
+  + [slice_id] is SLM-05
+  + [status] is blocked
+  + [feature_cluster] is ClusterDProviderDeliberation
+  + [source_refs] is cross-LLM deliberation source addendum, LLMSubstrateContract.provider_deliberation
+  + [depends_on] is SLM-04
+  + [scope] is define objection records, answer records, disagreement classification, jury panel review, and persistent disagreement measurement
+  + [deliverable] is SOP contract for ProviderObjection, ProviderAnswer, DisagreementClass, JuryReview, and DeliberationTrace
+  + [acceptance_criteria] is provider disagreement cannot become a mere score bump without articulated objection and answer
+  + [acceptance_criteria] is provider agreement counts only after internal faculty validation is represented or cited
+  + [proof_route] is fixture where ProviderA supports and ProviderB objects, with jury result preserved as typed uncertainty or resolved support
+  + [exclusions] is real multi-model orchestration
+  + [next_action] is unblock after SLM-04 provider payload contract exists
+

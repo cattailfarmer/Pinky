@@ -1,0 +1,8 @@
+& [SLMSlice16LexicalSenseEvidence] is the work slice for open-class sense evidence
+  + [slice_id] is SLM-16
+  + [status] is source_complete_policy_gated
+  + [feature_cluster] is lexical_substrate_diffusion
+  + [depends_on] is SLM-13, SLM-15
+  + [scope] is ingest WordNet sense candidates into EvidenceWorkspace and wobble
+  + [deliverable] is Rust source-level implementation and SOP contract
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop

@@ -1,0 +1,40 @@
+& [SLMPrimerRenderingContract] is the machine re-ingestion and human rendering contract
+  + [contract_uuid] is b8eb50be-2b41-4dc5-96b8-8a76a3530c3c
+  + [slice_id] is SLM-10
+  + [depends_on] is SLM_Semantic_Graph_Uncertainty_Contract
+  + [status] is accepted_for_fixture_contracts
+
+  & [PrimerJSON] is the primary output format
+    + [version] is required
+    + [input_ref] is required
+    + [graph_ref] is required
+    + [subjects] is stable subject glyph summaries
+    + [actions] is stable action glyph summaries
+    + [relations] is stable relation summaries
+    + [modifiers] is stable modifier summaries
+    + [constraints] is stable constraint summaries
+    + [uncertainty] is typed uncertainty glyph summaries
+    + [wobble] is aggregate and vector summary
+    + [compact_evidence] is required
+    + [lineage] is compact trace summary
+    = must: optimize for machine re-ingestion
+    = should: remain human inspectable
+
+  & [CompactEvidenceRef] is the evidence included in primer without dumping the whole workspace
+    + [evidence_id] is required
+    + [evidence_kind] is token_span, grammar_candidate, provider_suggestion, support_record, contradiction_record, faculty_vote, provider_objection, provider_answer, jury_review, diffusion_trace, or stabilization_decision
+    + [provider_evidence_contract] is SLM_Primer_Provider_Evidence_Contract
+    + [summary] is required
+    + [source_ref] is required
+    + [support_weight] is optional
+    + [status] is active, answered, unresolved, promoted, or deferred
+
+  & [PrimerSOPRendering] is the secondary readable output
+    + [purpose] is human inspection and reasoning continuity
+    + [shape] is SOP-style summary of graph identities, relations, uncertainty, wobble, and evidence
+    = must: not replace PrimerJSON as machine source
+    = must: preserve same semantic content at lower detail
+
+  ! [Slice10Complete] is accepted
+    @ [support] primer contract defines stable JSON plus SOP rendering and compact evidence
+    @ [support_delta] SLM-28 makes provider suggestions and deliberation refs explicit compact evidence

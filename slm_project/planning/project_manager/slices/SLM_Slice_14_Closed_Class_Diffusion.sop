@@ -1,0 +1,8 @@
+& [SLMSlice14ClosedClassDiffusion] is the work slice for function-word structural diffusion
+  + [slice_id] is SLM-14
+  + [status] is source_complete_policy_gated
+  + [feature_cluster] is lexical_substrate_diffusion
+  + [depends_on] is SLM-13, SLM-07
+  + [scope] is consume lexical substrate closed-class hints during early diffusion
+  + [deliverable] is Rust source-level implementation and SOP contract
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop

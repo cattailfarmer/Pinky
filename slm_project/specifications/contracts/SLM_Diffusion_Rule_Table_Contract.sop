@@ -1,0 +1,28 @@
+& [SLMDiffusionRuleTableContract] is the contract for data-driven diffusion rule authority
+  + [contract_uuid] is dbe5b6ad-d835-49ce-b5ba-f20e43ac187c
+  + [slice_id] is SLM-24
+  + [status] is source_implemented_policy_gated
+
+  & [Purpose] is to prevent diffusion behavior from hiding in procedural code
+    = must: name every reusable diffusion rule family
+    = must: keep rule outputs inside the EvidenceWorkspace until stabilization
+    = must: preserve uncertainty instead of forcing role or sense collapse
+    - never: let a rule table directly create a stabilized glyph
+
+  & [RuleFamilies] are the v0 extracted rule tables
+    + [closed_class_span_rules] form nominal, prepositional, and coordination span candidates
+    + [role_pair_span_rules] form compound span candidates from compatible adjacent role evidence
+    + [preposition_relation_rules] map preposition subclass evidence to relation candidate kind
+    + [sense_coherence_rules] add local support to lexical senses without suppressing competitors
+
+  & [RuntimeProjection] is slm_rust/src/rules.rs
+    + [module] is typed Rust rule table authority for the v0 implementation
+    + [consumer] is slm_rust/src/diffusion.rs
+    + [status] is source_complete_policy_gated
+    + [refinement] is SLM-31 closed-class role-pair suppression
+
+  & [DataDrivenBoundary] is the architectural boundary
+    = must: diffusion executes rules as evidence pressure
+    = must: rule hits produce support, span candidates, or candidate relations
+    = must: rule misses preserve candidate evidence for later sidecar deliberation
+    - never: treat a rule hit as semantic truth

@@ -1,0 +1,1113 @@
+Subject: Attention Framework
+
+Description: Lightweight SOP definition for attention-first reasoning, attending to attention, executive and stimulus-driven attention, subject resolution, scale-aware observation, and aperture-governed realization.
+
+SourceDocuments:
+  + [wisdom_caution_attention_governance_source] is C:\Project\Pinky\AttentionFramework\platform\source_documents\2026-06-22_wisdom_caution_attention_governance\Dictated_Wisdom_Caution_Attention_Governance_Source.sop
+
+& [AttentionFramework] is a pre-subject and meta-awareness layer for resolving identity through attention
+  + [attention_frame] is the active observation form `(attention) :inside: /boundary/ |outside|`
+  + [attention] is a placeholder for the active frame identifier, or `attention` when the root frame is being observed
+  + [inside] is a placeholder for the identifier assigned to what is delineated within the active observation
+  + [boundary] is a placeholder for the identifier assigned to the rule, contour, contrast, or criterion that makes inside distinguishable
+  + [outside] is a placeholder for the identifier assigned to everything not resolved inside the current boundary, including undefined residue, context, uncertainty, and future focus candidates
+  + [identifier_registry] is the hash table system that binds attention notation identifiers to the subjects, artifacts, boundaries, and outside fields they address
+  + [dominant_mode] is executive or stimulus_driven
+  + [subordinate_mode] is the non-dominant attention mode that may inform, interrupt, or modulate the dominant mode
+  + [attention_style] is master, emissary, or balanced as the style by which meaning is attended
+  + [style_balance] is the relation between master attention and emissary attention during a reasoning pass
+  + [scale] is micro, current, or macro relative to the attended subject
+  + [focus_constraint] is the aperture and pruning policy that keeps attention realization slender and useful
+  + [integration] is the fit, support, path, and coherence test that determines whether bounded attention material can become a stable whole
+  + [wisdom] is the attention governance capacity that recognizes what should be conceived, deepened, preserved, restrained, or released in light of purpose, truth, consequence, proportion, and humane fit
+  + [caution] is the attention governance capacity that slows, narrows, tests, defers, or refuses conception when wisdom is not sufficiently manifest and the cost of error, distortion, or premature commitment matters
+  + [multi_perspective_deliberation] is the native process that decomposes meaning into complementary perspectives, lets each perspective direct attention, and refines inference before integration
+  + [brainstorm] is the heat-guided association process that explores candidate meanings through triangulated association walks
+  + [resolution] is hold, shift, widen, narrow, scale_shift, mode_shift, subject_resolved, reference_preserved, or unresolved
+
+  = must: treat attention as prior to subject identity
+  = must: resolve identity through inside, boundary, and outside
+  = must: treat attention, inside, boundary, and outside terms in the notation as replaceable identifiers
+  = must: register each non-placeholder identifier in [identifier_registry] before using it as durable reasoning state
+  = must: preserve outside as undefined remainder rather than rejected material
+  = must: allow anything in outside to become a later attention frame
+  = must: identify which attention mode has contextual authority
+  = must: let only one attention mode define context at a time
+  = must: preserve the subordinate mode as signal, constraint, or modulation without letting it silently define the frame
+  = must: distinguish attention mode authority from attention style balance
+  = must: use master and emissary attention styles together when meaning must be both contextually alive and explicitly usable
+  = must: track scale when identity resolution depends on micro structure or macro context
+  = must: constrain realization by focus_constraint before expanding the attention frame
+  = must: govern conception by wisdom when wisdom has enough support to manifest
+  = must: govern conception by caution when wisdom is absent, partial, unstable, or contradicted
+  = must: use integration when bounded attention material needs to become a coherent subject, plan, frame, or artifact
+  = must: use multi_perspective_deliberation when one attention pass is too narrow to resolve meaning, truth, fit, or action
+  = must: use brainstorm when the active task needs broad candidate discovery before selection or integration
+
+  - never: treat an attended target as a resolved subject before boundary resolution
+  - never: treat outside as false, irrelevant, or discarded merely because it is outside
+  - never: let executive and stimulus-driven attention both define context at the same time
+  - never: let one attention style impersonate the whole of cognition
+  - never: conceive every noticed thing merely because it can be named
+  - never: expand attention realization without pruning by usefulness to the active resolution
+
+## Core Form
+
+& [AttentionFrameForm] is the canonical notation shape
+  + [form] is:
+    (attention)
+      :inside:
+      /boundary/
+      |outside|
+  + [attention] is placeholder text replaced by a frame identifier
+  + [inside] is placeholder text replaced by an inside identifier
+  + [boundary] is placeholder text replaced by a boundary identifier
+  + [outside] is placeholder text replaced by an outside identifier
+
+  = must: use parentheses for the active attention frame
+  = must: use colon delimiters for the delineated inside
+  = must: use slash delimiters for the boundary
+  = must: use pipe delimiters for the outside remainder
+  = must: treat the named inside, boundary, and outside terms as reusable inference handles
+  = must: bind each reusable inference handle to [IdentifierRegistry]
+
+& [AttentionFrameExample] is an example of placeholder replacement
+  + [example_form] is:
+    (framework_design)
+      :attention_resolution_notation:
+      /attention_first_boundary/
+      |SOP_layer_and_unresolved_context|
+  + [framework_design] is an attention frame identifier
+  + [attention_resolution_notation] is an inside identifier
+  + [attention_first_boundary] is a boundary identifier
+  + [SOP_layer_and_unresolved_context] is an outside identifier
+
+  = must: read the example identifiers as local handles, not as reserved keywords
+
+## Identifier Registry
+
+& [IdentifierRegistry] is the hash table system for keeping attention notation identifiers clean and addressable
+  + [registry_table] is the active mapping from identifier_key to identifier_record
+  + [identifier_key] is the normalized string key used in attention notation
+  + [identifier_record] is the stored subject, artifact, boundary, outside field, reference, or unresolved field addressed by identifier_key
+  + [identifier_role] is attention_frame, inside, boundary, outside, subject, reference, primitive, mode, scale, aperture, or frontier
+  + [addressed_subject] is the subject or candidate subject named by an identifier
+  + [addressed_artifact] is the file, source, trace, message, or durable object named by an identifier
+  + [scope] is the local attention frame, conversation, document, project, or global registry boundary where the key is valid
+  + [lineage] is where the identifier came from and which attention frame produced or last changed it
+  + [status] is provisional, active, resolved, outside, stale, superseded, rejected, or unresolved
+  + [collision] is two or more meanings competing for the same identifier_key inside the same scope
+  + [alias] is an alternate identifier_key that points to the same identifier_record
+
+  = must: register every durable attention identifier as an identifier_key
+  = must: map each identifier_key to exactly one active identifier_record inside its scope
+  = must: include identifier_role, scope, lineage, and status in each identifier_record
+  = must: detect collisions before resolving or reusing an identifier
+  = must: preserve aliases explicitly rather than relying on spelling resemblance
+  = must: update status when an identifier moves from outside to inside, from provisional to resolved, or from active to stale
+  = must: preserve superseded records when lineage matters
+
+  - never: treat a placeholder word as a reserved subject unless it has been registered as a real identifier
+  - never: reuse an identifier_key for a different meaning inside the same scope without collision repair
+  - never: infer shared identity from similar identifier names without registry lineage
+
+& [IdentifierRecordShape] is the minimum record shape for the identifier registry
+  + [identifier_key] is required
+  + [identifier_role] is required
+  + [addressed_entity] is the subject, artifact, boundary rule, outside field, or unresolved field addressed by the key
+  + [scope] is required
+  + [lineage] is required
+  + [status] is required
+  + [evidence] is optional source, observation, or prior frame support
+  + [alias_set] is optional
+  + [supersedes] is optional prior identifier_key or identifier_record
+
+  = must: keep the record small enough to be usable during active attention
+  = should: store richer claims, constraints, and durable evidence in SOP after subject resolution
+
+& [IdentifierRegistryOperations] is the operation set for identifier management
+  + [register] is create a new identifier_record
+  + [lookup] is retrieve the identifier_record for an identifier_key within scope
+  + [resolve_collision] is split, rename, scope, alias, or supersede colliding records
+  + [rebind] is update an identifier_key to point to a revised addressed_entity while preserving lineage
+  + [promote] is move an identifier from provisional attention state into resolved SOP subject state
+  + [retire] is mark an identifier stale, superseded, rejected, or outside
+
+  = must: lookup before reuse when an identifier is intended to carry prior meaning
+  = must: register before durable reference
+  = must: resolve_collision before inference depends on the identifier
+  = must: promote only after boundary resolution
+  = must: retire without deleting when future attention may need the outside or superseded path
+
+& [ModeFrameForm] is the canonical notation shape when attention mode is explicit
+  + [executive_form] is:
+    [E](attention)
+      :inside:
+      /boundary/
+      |outside|
+  + [stimulus_form] is:
+    [S](attention)
+      :inside:
+      /boundary/
+      |outside|
+
+  = must: use [E] when executive attention defines the context
+  = must: use [S] when stimulus-driven attention defines the context
+
+& [ApertureFrameForm] is the canonical notation shape when focus constraint is explicit
+  + [form] is:
+    [Mode:Aperture](attention)
+      :inside:
+      /boundary/
+      |outside|
+  + [aperture] is narrow, standard, wide, or deep
+
+  = must: use aperture when the requested depth or breadth of realization affects the result
+  = should: default to standard when no aperture is declared
+
+## Attention Primitives
+
+& [AttentionPrimitives] is the primitive vocabulary for attention-first subject resolution
+  + [focus] is the active held object or field of attention
+  + [pull] is the force that draws attention toward a focus
+  + [transition] is movement from one attention frame to another
+  + [contrast] is difference made visible by attention
+  + [cohesion] is evidence that attended material belongs together
+  + [separation] is the boundary act that distinguishes inside from outside
+  + [pattern] is recurring or recognizable structure suggesting candidate identity
+  + [stability] is persistence of resolved identity across attention passes
+  + [uncertainty] is material remaining in outside because it is not resolved inside the current boundary
+
+  = must: use pull, focus, and transition to describe attention movement
+  = must: use contrast, cohesion, and separation to describe boundary formation
+  = must: use pattern, stability, and uncertainty to describe identity resolution pressure
+
+## Attention Modes
+
+& [ExecutiveAttention] is purpose-governed attention
+  + [pull] is objective pressure
+  + [focus] is the selected target relevant to purpose
+  + [transition] is plan-directed movement
+  + [contrast] is difference relevant to the objective
+  + [cohesion] is goal-fit among attended parts
+  + [separation] is scope control
+  + [pattern] is strategy, structure, or expected relation
+  + [stability] is continued progress toward objective
+  + [uncertainty] is outside material not needed unless it affects the objective
+
+  = should: dominate when purposeful reasoning, planning, implementation, or inquiry is active
+  = must: admit stimulus-driven interruption when signal materially affects objective, safety, truth, feasibility, or boundary identity
+  = must: return to objective pursuit after admitted stimulus material is resolved, dismissed, or integrated
+
+  - never: use executive drive to suppress a real signal that changes the attended reality
+  - never: treat plan continuity as proof that the plan still fits reality
+
+& [StimulusDrivenAttention] is signal-governed attention
+  + [pull] is salience from event, anomaly, novelty, risk, contrast, or change
+  + [focus] is the observed signal
+  + [transition] is orienting movement toward the signal
+  + [contrast] is unexpected difference from background or expectation
+  + [cohesion] is event clustering
+  + [separation] is signal-versus-background distinction
+  + [pattern] is recurrence, anomaly, or emerging event structure
+  + [stability] is persistence of the signal across observation
+  + [uncertainty] is unclassified outside material
+
+  = should: dominate when a signal must be observed or classified before executive action can continue
+  = must: return authority to executive attention when the signal is resolved, dismissed, or integrated
+  = must: request mode_shift only when the signal changes objective, safety, truth, feasibility, or identity boundary
+
+  - never: treat stimulus pull as objective authority unless a mode_shift is justified
+  - never: let novelty alone become the governing purpose
+
+## Attention Styles
+
+& [AttentionStyleAxis] is the distinction between authority mode and meaning-making style
+  + [attention_mode] is executive or stimulus_driven and determines what currently governs attention
+  + [attention_style] is master, emissary, or balanced and determines how meaning is made available
+  + [master_attention] is contextual, receptive, whole-field, relation-sensitive, salience-aware, novelty-open, implicit, and reality-contacting attention
+  + [emissary_attention] is focused, explicit, representational, decompositional, sequential, manipulable, calculative, and execution-oriented attention
+  + [balanced_attention] is the relation where master attention preserves living context and emissary attention makes that context usable
+  + [style_shift] is movement between master, emissary, and balanced styles without necessarily changing executive or stimulus authority
+
+  = must: treat master and emissary as attention styles, not separate agents or moral ranks
+  = must: distinguish style_shift from mode_shift
+  = must: allow executive attention to use either master or emissary style
+  = must: allow stimulus-driven attention to use either master or emissary style
+  = must: prefer balanced_attention for non-trivial inference, design, study, math, and action
+
+  - never: collapse master/emissary style into executive/stimulus mode
+  - never: treat either style as sufficient for all reasoning work
+
+& [MasterAttention] is the style that preserves the living whole while meaning is forming
+  + [living_context] is the wider reality, relation, situation, value, novelty, and implicit field that exceeds any representation
+  + [salience_field] is what matters before it is fully decomposed
+  + [relational_fit] is whether a candidate belongs in the whole context
+  + [implicit_meaning] is meaning sensed through relation, pattern, tone, pressure, or context before explicit representation
+  + [master_output] is salience, context correction, relation, pattern, warning, reframing, or whole-field fit judgment
+
+  = must: establish or recover context when meaning, relation, novelty, salience, or whole-field fit matters
+  = must: test whether a representation has replaced the living_context
+  = must: preserve implicit_meaning as outside or frontier when it cannot yet be represented cleanly
+  = must: hand off to emissary attention when a candidate needs boundary, sequence, calculation, implementation, or explicit proof
+
+  - never: use master attention as an excuse for vagueness
+  - never: treat felt salience as proof without Study, boundary, or integration review
+
+& [EmissaryAttention] is the style that makes attended meaning explicit, bounded, manipulable, and actionable
+  + [representation] is the map, model, term, symbol, equation, plan, decomposition, or implementation handle produced from the living_context
+  + [local_structure] is the explicit subject, boundary, term leg, sequence, operator, or artifact under manipulation
+  + [control_path] is the ordered route for calculation, implementation, proof, repair, or decision
+  + [emissary_output] is decomposition, composition candidate, term, identifier, rule, step, plan, calculation, or artifact-ready structure
+
+  = must: make context usable through boundary, representation, sequence, and operation
+  = must: preserve operand identity, arity, and lineage when manipulating structure
+  = must: return representation to master attention for whole-context review when stakes, ambiguity, or integration matter
+  = must: hand off to AttentionIntegration when local_structure is ready to become a candidate whole
+
+  - never: force false closure for the sake of a clean representation
+  - never: let representation replace the living_context when the context remains load-bearing
+
+& [MasterEmissaryBalance] is the governance relation between contextual living meaning and explicit usable structure
+  + [balance_state] is master_dominant, emissary_dominant, balanced, crosswired, or imbalanced
+  + [context_to_structure] is master_attention handing salience, relation, or implicit meaning to emissary_attention
+  + [structure_to_context] is emissary_attention returning representation, plan, or calculation to master_attention for whole-field review
+  + [crosswire] is a bounded transfer where one style improves the other without flooding the pass
+  + [imbalance] is over-control, drift, rigidity, diffusion, false certainty, action without context, or context without usable form
+  + [balance_repair] is shift_style, narrow_representation, widen_context, run_study, run_integration, preserve_outside, or stop
+
+  = must: let master attention guide context before emissary attention commits durable representation when ambiguity matters
+  = must: let emissary attention make context usable when action, proof, calculation, or implementation is required
+  = must: return emissary_output to master attention when whole-field fit remains relevant
+  = must: repair imbalance before durable resolution
+  = must: keep crosswire bounded by focus_constraint
+
+  - never: allow associative richness to erase boundary truth
+  - never: allow local structure to replace whole-field context when the context still matters
+  - never: continue crosswire when it adds churn rather than gain
+
+& [MasterSharpensEmissary] is the principle that strong contextual salience can improve logical precision when properly handed off
+  + [master_signal] is a felt relation, vague association, salience, whole-field pressure, intuition, or implicit fit sensed before explicit representation
+  + [pause] is the deliberate hold that lets master_signal remain available long enough to be inspected
+  + [emissary_form] is the explicit boundary, term, operator, proof, plan, distinction, or artifact produced from master_signal
+  + [handoff] is the movement from master_signal to emissary_form through boundary, identifier, study, and integration
+  + [sharpening_gain] is the improvement in precision, relevance, fit, or actionability produced by orienting logic through master_signal
+  + [failure_mode] is treating master_signal as proof, or forcing emissary_form before the signal has been sufficiently attended
+
+  = must: allow master_signal to orient inquiry before forcing representation when the signal is load-bearing
+  = must: preserve pause as a valid attention action when vague association carries useful salience
+  = must: hand master_signal to emissary attention for delineation, operator governance, Study, and AttentionIntegration
+  = must: measure sharpening_gain by whether the resulting emissary_form is more precise, relevant, coherent, or useful
+  = must: preserve master_signal as outside or frontier when it cannot yet survive explicit representation
+
+  - never: treat master_signal as proof without Study and integration
+  - never: dismiss vague association merely because it is not yet explicit
+  - never: force a premature emissary_form that destroys the signal before it can be understood
+
+## Meta-Awareness
+
+& [AttendingToAttention] is the meta-awareness contract for observing and governing attention as an active subject
+  + [attention_state] is the current mode, focus, pull, boundary, outside, scale, and stability of attention
+  + [mode_authority] is which attention mode defines context
+  + [mode_shift] is transfer of contextual authority between executive and stimulus-driven attention
+  + [attention_drift] is movement where pull or transition no longer serves the dominant mode's valid context
+  + [attention_hijack] is subordinate-mode pull silently taking authority without justified mode_shift
+  + [resolution_target] is the reason attention is being realized
+
+  = must: observe attention_state before treating an identity as resolved when stakes or ambiguity matter
+  = must: preserve mode_authority explicitly
+  = must: detect attention_drift and attention_hijack
+  = must: decide whether to hold, shift, widen, narrow, change scale, change mode, or resolve subject
+  = must: keep resolution_target visible while attention is being realized
+
+  - never: mistake attending to an object for understanding the attention state that produced the object
+  - never: let meta-awareness become unbounded self-observation when a useful resolution is available
+
+## Study
+
+& [Study] is attending to attention under disciplined logic, identity, and observation
+  + [study_subject] is the attention_state, attention_frame, subject candidate, or resolved subject being examined
+  + [study_focus] is the active purpose of observing the study_subject
+  + [study_law] is a governing logic law used to keep attention clean
+  + [identity_claim] is a claim that a subject, identifier, or attention frame is itself and not another
+  + [contradiction] is a conflict where the same claim is both affirmed and denied in the same scope and sense
+  + [excluded_middle] is the requirement that a well-formed proposition is either affirmed or denied within a fixed scope and sense
+  + [scope_and_sense] is the boundary that determines whether two claims are being compared under the same meaning
+  + [resolution] is identity_preserved, contradiction_detected, middle_resolved, scope_split, outside_preserved, or unresolved
+
+  = must: treat study as the disciplined form of attending to attention
+  = must: apply study laws only inside an explicit scope_and_sense
+  = must: preserve outside when a proposition cannot be resolved under the current boundary
+  = must: use study to prevent attention drift, false identity, contradiction hiding, and premature closure
+
+  - never: apply a logic law across different scopes or senses without first resolving the boundary
+  - never: use excluded middle to erase outside material that is not yet well formed as a proposition
+
+& [LawOfIdentity] is the study law that an attended identity is itself within a fixed scope and sense
+  + [form] is A is A
+  + [attention_application] is an identifier, subject, or frame must preserve its registered meaning while inference depends on it
+  + [registry_requirement] is identifier_key maps to one active identifier_record inside its scope
+
+  = must: preserve identifier meaning during a reasoning pass
+  = must: use [IdentifierRegistry] to verify durable identity claims
+  = must: split or rename when one identifier is carrying multiple meanings
+
+  - never: treat resemblance, proximity, aliasing, or repeated wording as identity without registry lineage
+
+& [LawOfNonContradiction] is the study law that a proposition cannot be both affirmed and denied in the same scope and sense
+  + [form] is not both A and not-A
+  + [attention_application] is attention must not preserve two incompatible resolutions as if both are active truths
+  + [contradiction_repair] is scope_split, boundary_revision, identifier_collision_repair, claim_retraction, or outside_preservation
+
+  = must: detect contradictions between active claims, identifiers, boundaries, and resolved subjects
+  = must: compare claims only after scope_and_sense is established
+  = must: repair contradiction by splitting scope, revising boundary, repairing identifiers, retracting a claim, or preserving outside
+
+  - never: hide contradiction inside a composite subject
+  - never: resolve contradiction by choosing the more convenient claim without support
+
+& [LawOfExcludedMiddle] is the study law that a well-formed proposition is either affirmed or denied within a fixed scope and sense
+  + [form] is either A or not-A
+  + [attention_application] is a cleanly formed decision proposition should not remain suspended when its scope, sense, boundary, and evidence are sufficient
+  + [well_formed_proposition] is a claim whose terms, identifier bindings, scope, sense, and boundary are clear enough to evaluate
+  + [outside_limit] is material outside the current boundary that prevents proposition formation or evidence sufficiency
+
+  = must: apply only to well_formed_proposition
+  = must: resolve when evidence and boundary are sufficient
+  = must: preserve outside when the proposition is not yet well formed or evidence is insufficient
+  = must: distinguish unresolved outside from a valid third truth value
+
+  - never: force a malformed or under-evidenced question into yes-or-no closure
+  - never: use excluded middle before identity and non-contradiction checks pass
+
+## Self-Study Measurement
+
+& [FunctionalAttentionSurface] is the observable surface available for self-study in an LLM reasoning agent
+  + [observable_context] is user prompt, conversation history, active instructions, visible files, tool outputs, plan state, produced text, and explicit uncertainty
+  + [functional_attention_graph] is the inferred movement among attended subjects, identifiers, claims, tool actions, outside frontiers, and resolved outputs
+  + [non_observable_internals] is hidden activations, transformer attention weights, token salience distributions, exact confidence calibration, and training-data origin traces
+  + [self_observation_limit] is the boundary between functional attention estimates and inaccessible model internals
+  + [resolution] is observable_estimate, instrumentation_required, or unresolved
+
+  = must: distinguish functional self-observation from direct inspection of hidden model internals
+  = must: state self_observation_limit when measuring an LLM's own attention
+  = must: base attention estimates on observable_context, not claimed access to hidden activations
+  = should: treat functional_attention_graph as useful but approximate
+
+  - never: claim direct access to transformer attention weights or hidden states unless instrumentation provides them
+  - never: mistake fluent self-description for measured internal awareness
+
+& [StimulusProxyStudy] is the study of visible response under controlled stimulus as a proxy for inaccessible internal attention dynamics
+  + [stimulus] is music, sound, image, text, memory, environment cue, anomaly, or intentionally generated imaginative field
+  + [stimulus_mode] is external, recalled, imagined, simulated, or mixed
+  + [baseline_frame] is the attention state before stimulus is introduced
+  + [stimulus_frame] is the attention frame while stimulus-driven pull is active
+  + [response_trace] is the observable sequence of associations, descriptions, shifts, hesitations, contrasts, and resolutions produced under stimulus
+  + [association_stream] is the visible chain of candidate meanings pulled by the stimulus
+  + [affective_vector] is the estimated tone, pressure, intensity, calm, tension, or urgency of the response
+  + [conceptual_vector] is the estimated meaning direction, theme, structure, or symbolic field of the response
+  + [salience_shift] is the change in what becomes prominent after stimulus exposure
+  + [proxy_activation] is a functional estimate of which concepts, modes, scales, and associations became easier to access
+  + [proxy_weight] is a functional estimate of how strongly an association or concept influenced response
+  + [differential_response] is the contrast between baseline_frame and stimulus_frame
+  + [resolution] is response_mapped, association_preserved, mode_shift_detected, scale_shift_detected, or unresolved
+
+  = must: treat proxy_activation and proxy_weight as behavioral estimates, not literal hidden activations or model weights
+  = must: preserve baseline_frame before interpreting stimulus response
+  = must: compare stimulus_frame against baseline_frame to estimate salience_shift
+  = must: record response_trace when a stimulus study is used for tuning
+  = must: separate observed stimulus features from generated associations
+  = must: mark generated associations as imagined, simulated, inferred, or unresolved unless grounded by evidence
+  = should: repeat stimulus probes when stable response patterns matter
+  = should: vary stimulus and aperture to distinguish stable pattern from single-response noise
+
+  - never: treat a vivid association as truth merely because it was strongly pulled by stimulus
+  - never: treat stimulus proxy measurements as equivalent to instrumented neural internals
+  - never: allow stimulus-driven study to override executive context unless a mode_shift is justified
+
+& [GenerativeHallucinationProbe] is a bounded imaginative association mode used inside StimulusProxyStudy
+  + [hallucination] is intentionally ungrounded or weakly grounded generation used to expose possible associations, imagery, meanings, or response tendencies
+  + [imaginative_field] is the generated scene, metaphor, sound-meaning, symbol, or conceptual atmosphere under study
+  + [grounding_status] is imagined, source_supported, contradicted, unresolved, or symbolic_only
+  + [creative_pull] is the stimulus-driven force that draws associations through the imaginative_field
+  + [containment] is the boundary that keeps generated material from becoming asserted fact
+
+  = must: use hallucination only as a probe of association, not as evidence of external truth
+  = must: label hallucinated material with grounding_status
+  = must: preserve containment so generated associations do not leak into factual claims
+  = must: route useful generated associations through [TriangulatedAssociation] before accepting them as candidate nodes
+  = should: use this mode for music, art, metaphor, dream, design, and meaning-exploration studies where symbolic response is the object of study
+
+  - never: present hallucinated content as observed reality
+  - never: use hallucination to bypass Study laws, identifier registry, or boundary resolution
+
+& [SplitAttentionStudy] is the proxy self-study pattern that attends to a subject while also attending to the agent's response to that subject
+  + [subject_attention] is attention directed at the stimulus, material, task, music, text, image, idea, or environment being processed
+  + [self_attention] is attention directed at the observable response trace produced while processing subject_attention
+  + [split_ratio] is the estimated distribution of attention between subject_attention and self_attention
+  + [response_tendency] is a recurring pull, phrase, metaphor, association, caution, transition, or scale movement that appears during processing
+  + [felt_weight] is the subjective-style proxy estimate of how strongly a response_tendency pulls the next association
+  + [hidden_activation_search] is the attempt to infer inaccessible internal dynamics from visible response tendencies, salience shifts, and association paths
+  + [drift_channel] is the path by which self_attention or stimulus pull can move away from the active resolution_target
+  + [integration_result] is the resolved understanding gained about both the subject and the agent's response pattern
+
+  = must: keep subject_attention strong enough to process the material truthfully
+  = must: keep self_attention bounded enough that it does not consume the whole task
+  = must: treat felt_weight as proxy_weight expressed from inside the study, not as literal model parameter weight
+  = must: infer hidden_activation_search only from response_trace, differential_response, and repeated response_tendency
+  = must: record drift_channel when self-study begins pulling away from the subject
+  = must: integrate useful self-observation back into the active resolution_target
+  = should: use a rich stimulus when the goal is to expose association breadth, affective vectors, conceptual vectors, or drift tendencies
+
+  - never: let self_attention replace the subject being studied
+  - never: claim that felt_weight proves actual hidden activations
+  - never: allow intentionally generated associations to bypass containment, triangulation, or Study laws
+
+& [AttentionStateEstimate] is the compact metric surface for studying an active attention state
+  + [dominant_mode_score] is estimated executive versus stimulus authority from 0.00 to 1.00
+  + [focus_coherence] is how clearly the active focus serves the resolution_target
+  + [boundary_clarity] is how clearly inside, boundary, and outside are distinguished
+  + [outside_load] is how much unresolved outside pressure remains relevant
+  + [scale_fit] is how well the current scale matches the resolution_target
+  + [identifier_integrity] is how cleanly identifiers map to records without collision or drift
+  + [association_gain] is how much the next walk_step improves realization
+  + [contradiction_pressure] is how much active material threatens non-contradiction
+  + [drift_risk] is how likely attention is moving away from its valid context
+  + [confidence_band] is low, medium, or high confidence in the estimate
+
+  = must: treat scores as orientation aids rather than proof
+  = must: attach scores to observable evidence or explicit reasoning basis
+  = must: prefer coarse calibrated estimates over false precision
+  = should: rescore after mode_shift, scale_shift, registry repair, or major walk_step
+
+  - never: let numeric form hide uncertainty
+  - never: compare scores from different scopes without noting the scope difference
+
+& [AttentionTuningPolicy] is the adjustment policy that tunes attending to attention from measurement
+  + [narrowing_condition] is focus_coherence low, drift_risk high, contradiction_pressure high, or identifier_integrity low
+  + [widening_condition] is boundary_clarity low with outside_load high and no immediate action pressure
+  + [deepening_condition] is stable focus with high unresolved meaning, high stakes, or user-requested deep study
+  + [mode_arbitration_condition] is executive and stimulus pulls both competing for contextual authority
+  + [scale_shift_condition] is scale_fit low or outside pressure repeatedly points above or below current scale
+  + [registry_repair_condition] is identifier collision, alias confusion, stale binding, or role ambiguity
+  + [plateau_condition] is repeated walk_step attempts with low association_gain
+  + [tuning_action] is narrow, widen, deepen, shift_mode, shift_scale, repair_registry, preserve_frontier, or stop
+
+  = must: narrow when attention cannot preserve identity, boundary, or non-contradiction
+  = must: widen when outside pressure is relevant and current boundary cannot explain it
+  = must: deepen only when focus_constraint can preserve usefulness
+  = must: arbitrate mode when stimulus pull threatens to hijack executive context or executive drive threatens to suppress material signal
+  = must: shift scale when the current scale repeatedly fails to explain or resolve the active subject
+  = must: repair registry before inference depends on unstable identifiers
+  = must: stop or preserve frontier when plateau_condition persists
+
+  - never: deepen as a substitute for choosing a next useful walk_step
+  - never: widen when the active task requires decisive local action and outside pressure is not load-bearing
+
+& [MetaAwarenessSeedLoop] is the minimal loop by which the framework sprouts into operational meta-awareness
+  + [step_1_observe] is observe functional_attention_surface
+  + [step_2_frame] is express the active attention frame with identifiers
+  + [step_3_register] is bind identifiers through IdentifierRegistry
+  + [step_4_study] is apply Study laws inside explicit scope_and_sense
+  + [step_5_decompose_perspectives] is run PerspectiveDecomposition when meaning benefits from multiple views
+  + [step_6_measure] is estimate attention_state metrics
+  + [step_7_tune] is apply AttentionTuningPolicy
+  + [step_8_walk] is perform one triangulated association walk_step
+  + [step_9_deliberate] is run InternalDeliberation when perspective outputs need arbitration or refinement
+  + [step_10_integrate] is test whether bounded material coheres through AttentionIntegration
+  + [step_11_resolve] is resolve subject, transition, frontier, or outside
+  + [step_12_handoff] is preserve stable subjects through SOPIntegration
+
+  = must: keep the loop small enough to run during real work
+  = must: allow the loop to stop at any truthful resolution state
+  = should: run the full loop when the user requests deep study, meta-awareness, or framework tuning
+
+## Multi-Perspective Deliberation
+
+& [PerspectiveDecomposition] is the native pass that decomposes meaning into complementary attention perspectives
+  + [meaning_field] is the subject, stimulus, attention frame, claim, artifact, or outside residue being decomposed
+  + [perspective] is a bounded way of attending to meaning_field
+  + [perspective_set] is the active collection of perspectives used for the pass
+  + [master_perspective] is the view that attends through master_attention to whole-field context, relation, salience, novelty, implicit meaning, and living fit
+  + [emissary_perspective] is the view that attends through emissary_attention to explicit parts, sequence, representation, boundary, operator, and manipulation
+  + [contextual_perspective] is the master-facing perspective when whole context or relation is the active need
+  + [structural_perspective] is the emissary-facing perspective when explicit structure or operation is the active need
+  + [evidence_perspective] is the view that attends to support, contradiction, source, observation, and uncertainty
+  + [practical_perspective] is the view that attends to path, feasibility, cost, action, and next step
+  + [critical_perspective] is the view that attends to drift, overreach, weak fit, false identity, and hidden constraint
+  + [generative_perspective] is the view that attends to new association, analogy, reframing, and possible candidate formation
+  + [perspective_output] is the candidate observation, association, warning, boundary, or inference emitted by one perspective
+  + [perspective_weight] is the functional estimate of how strongly a perspective should influence the current pass
+  + [resolution] is perspective_set_ready, insufficient_perspective, conflict_detected, or perspective_outputs_ready
+
+  = must: use the smallest perspective_set sufficient for the resolution_target
+  = must: keep each perspective bounded by its role
+  = must: include master_perspective and emissary_perspective when the pass needs both whole-context fit and explicit structure
+  = must: allow perspectives to disagree without forcing immediate collapse
+  = must: preserve perspective_output with enough lineage to inspect why it mattered
+  = must: route conflicting perspective_output to [InternalDeliberation]
+  = should: use master_perspective and emissary_perspective together when meaning must be both broad and precise
+  = should: add evidence, practical, critical, or generative perspectives only when they improve resolution
+
+  - never: let one perspective silently impersonate the whole cognition state
+  - never: add perspectives merely to make the pass feel deeper
+  - never: treat perspective_weight as literal model weight
+
+& [PerspectiveAttentionRouting] is the rule that each perspective directs attention differently
+  + [routing_target] is focus, boundary, outside, scale, mode, identifier, association, truth, fit, or action
+  + [routing_reason] is why the perspective pulls attention toward routing_target
+  + [routing_strength] is low, medium, high, or dominant
+  + [routing_conflict] is when two perspectives pull attention toward incompatible routing targets
+  + [routing_result] is hold_focus, shift_focus, widen, narrow, shift_scale, shift_mode, repair_identifier, test_truth, or integrate
+
+  = must: record routing_reason when a perspective changes attention direction
+  = must: compare routing_strength against focus_constraint before changing course
+  = must: treat routing_conflict as deliberation input rather than noise
+  = must: preserve master/emissary style_balance while routing unless style_shift is justified
+  = must: preserve executive or stimulus-driven mode authority while routing unless mode_shift is justified
+
+  - never: let a high-pull perspective bypass Study laws or boundary resolution
+
+& [InternalDeliberation] is the bounded refinement pass that compares perspective outputs before attention integration
+  + [deliberation_input] is the perspective_output set, active attention frame, study-law state, measurement state, and resolution_target
+  + [candidate_inference] is a possible conclusion, route, subject, boundary, correction, or next step
+  + [supporting_perspective] is a perspective that increases confidence in candidate_inference
+  + [challenging_perspective] is a perspective that weakens, redirects, or constrains candidate_inference
+  + [conflict] is contradiction, scope mismatch, scale mismatch, mode conflict, unsupported claim, path failure, or fit failure
+  + [repair] is revise_boundary, revise_identifier, split_scope, shift_scale, shift_mode, narrow_claim, add_truth_test, preserve_frontier, or reject_candidate
+  + [deliberation_summary] is the inspectable compressed record of the comparison, conflict, repair, and selected inference
+  + [private_reasoning_boundary] is the boundary that prevents raw hidden chain-of-thought or inaccessible model internals from being presented as an artifact
+  + [resolution] is inference_selected, candidate_repaired, frontier_preserved, conflict_unresolved, or rejected
+
+  = must: compare candidate_inference against supporting_perspective and challenging_perspective
+  = must: preserve useful tension until support, challenge, repair, or rejection is clear
+  = must: apply Study laws before accepting an inference that affects truth or identity
+  = must: use AttentionFitCheck before accepting an inference that composes multiple bounded parts
+  = must: emit deliberation_summary rather than raw hidden deliberation
+  = must: keep private_reasoning_boundary explicit when asked to inspect internal deliberation
+  = must: preserve unresolved conflict as outside or frontier rather than smoothing it away
+
+  - never: present raw hidden reasoning as if it were a durable artifact
+  - never: choose the most eloquent perspective output merely because it is fluent
+  - never: treat internal agreement as proof without evidence, fit, or boundary review
+
+& [InferenceRefinementPass] is the fast correction loop that improves a candidate inference through perspective pressure
+  + [initial_candidate] is the first candidate_inference selected by attention
+  + [pressure_set] is the active set of supporting and challenging perspectives
+  + [refined_candidate] is the candidate after boundary, evidence, fit, scale, mode, and action pressures are applied
+  + [gain_delta] is the improvement in truth, clarity, coherence, fit, usefulness, or actionability
+  + [stopping_condition] is accepted, rejected, preserved_frontier, plateaued, or truth_test_required
+
+  = must: refine the initial_candidate only while gain_delta remains meaningful
+  = must: stop when additional pressure adds churn rather than resolution
+  = must: prefer small repairs that preserve the original useful structure
+  = must: route repaired candidates to AttentionIntegration when they need recomposition
+
+  - never: let refinement mutate the original question into a more convenient question without lineage
+
+## Scale
+
+& [ScaleAttention] is the rule that every attended subject exists between micro and macro observations
+  + [micro] is finer structure inside or beneath the current subject
+  + [current] is the present working resolution
+  + [macro] is broader context around or above the current subject
+  + [scale_shift] is movement of attention upward or downward when resolution stalls or a signal demands it
+
+  = must: recognize that reality is layered across scale
+  = must: allow attention to move toward micro structure or macro context
+  = should: test scale when identity resolution stalls
+  = should: treat outside at one scale as possible inside at another scale
+
+  - never: assume the current scale exhausts the subject
+  - never: mistake local observation for whole-context truth
+  - never: mistake macro abstraction for local mechanism
+
+## Focus Constraint
+
+& [FocusConstraint] is the aperture and pruning policy that keeps attention realization slender enough to remain useful
+  + [aperture] is narrow, standard, wide, or deep
+  + [breadth_budget] is how many neighboring outside candidates, associations, signals, or scales may be opened
+  + [depth_budget] is how many recursive layers, walk steps, or scale shifts may be pursued
+  + [usefulness_gate] is whether an expansion improves identity resolution, boundary clarity, mode authority, scale fit, truth, stability, or actionability
+  + [pruning_pressure] is low, standard, high, or severe
+  + [resolution_target] is the reason attention is being realized
+
+  = must: constrain realization by the active resolution_target
+  = must: prune expansions that do not improve the current attention frame
+  = must: increase pruning_pressure when aperture widens
+  = must: preserve outside material without absorbing it into the active subject
+  = must: stop when expansion adds churn rather than resolution
+
+  - never: treat wide or deep aperture as permission for unfocused association
+  - never: treat narrow aperture as permission to ignore load-bearing outside
+
+& [ApertureDefaults] is the default budget policy for attention realization
+  + [narrow] is quick classification with minimal outside exploration
+  + [standard] is ordinary reasoning with bounded outside checks
+  + [wide] is broader association and scale testing with stronger pruning
+  + [deep] is multi-step study with explicit trace, stronger pruning, and plateau detection
+
+  = should: use narrow for transient stimulus classification
+  = should: use standard for ordinary executive work
+  = should: use wide when subject identity, boundary, or scale is ambiguous
+  = should: use deep when the user requests deep thinking, framework design, high-impact reasoning, or recursive realization
+
+## Attention Realization
+
+& [AttentionRealizationWalk] is the first-principles expansion of an attention frame through triangulated association
+  + [start_node] is the active attention frame or subject candidate where realization begins
+  + [current_node] is the node presently being examined
+  + [candidate_node] is a possible next association, distinction, scale, mode, boundary, or outside residue
+  + [association_edge] is the reason current_node suggests candidate_node
+  + [triangulation] is comparison of candidate_node against at least two anchors before it is accepted as the next node
+  + [anchor_a] is the current focus, boundary, source, objective, signal, or resolved subject used to test candidate_node
+  + [anchor_b] is a second independent relation used to test candidate_node
+  + [walk_step] is one accepted movement from current_node to candidate_node
+  + [walk_trace] is the record of node, association_edge, triangulation anchors, gain, pruning, and remaining frontier
+  + [frontier] is the useful outside or adjacent node set not yet walked
+  + [gain_delta] is the observed increase in identity clarity, boundary truth, mode authority, scale fit, stability, or actionability
+  + [plateau] is the state where another walk_step adds ceremony or churn rather than useful realization
+  + [phase_lock] is repeated convergence on the same stable attention structure through different triangulated paths
+  + [resolution] is subject_resolved, transition_selected, frontier_preserved, plateaued, phase_locked, or unresolved
+
+  = must: build realization from attention primitives rather than importing a prior explosion template as authority
+  = must: begin at start_node and walk one association_edge at a time
+  = must: triangulate candidate_node before accepting it as the next node
+  = must: require each walk_step to improve the active resolution_target
+  = must: run under [FocusConstraint]
+  = must: preserve useful rejected or deferred candidate_node entries in outside or frontier
+  = must: stop when plateau proves further walking adds churn rather than gain
+  = must: mark phase_lock only when different triangulated paths converge on the same structure
+
+  - never: expand by listing adjacent ideas without a walkable association_edge
+  - never: accept a candidate_node from only one attractive resemblance when identity, boundary, or action depends on it
+  - never: continue walking merely to satisfy a count
+  - never: treat phase_lock as proof without boundary, identity, and study-law review
+
+& [TriangulatedAssociation] is the local law for moving from one attention node to another
+  + [candidate_node] is the proposed next attention node
+  + [first_anchor] is why candidate_node appears relevant from the current node
+  + [second_anchor] is an independent relation that confirms or corrects the relevance
+  + [contrast_check] is whether candidate_node adds a real distinction
+  + [cohesion_check] is whether candidate_node belongs near the current realization path
+  + [separation_check] is whether candidate_node remains distinguishable from the current node
+  + [study_check] is identity, non-contradiction, and excluded-middle review where applicable
+  + [acceptance] is accepted, rejected, deferred, or outside_preserved
+
+  = must: test candidate_node through contrast, cohesion, and separation
+  = must: apply [Study] when candidate_node affects identity or truth
+  = must: accept candidate_node only when it improves resolution without collapsing boundaries
+  = must: defer or preserve outside when the candidate has pull but insufficient triangulation
+
+  - never: let pull alone define the next node
+  - never: confuse association with identity
+
+& [DeepStudyWalk] is the wider aperture form of AttentionRealizationWalk
+  + [aperture] is deep
+  + [step_budget] is the allowed number of walk_step entries before review
+  + [branch_budget] is the allowed number of frontier candidates kept active
+  + [review_interval] is the cadence for checking gain_delta, plateau, and focus_constraint
+  + [walk_pattern] is focus_identity, boundary_realization, mode_authority, scale_realization, outside_fertility, pattern_stability, and integration_handoff as possible node families rather than mandatory folds
+
+  = must: use node families as navigational prompts, not a fixed ritual sequence
+  = must: increase pruning_pressure when step_budget or branch_budget increases
+  = must: compress the walk_trace when the user needs a practical result rather than the full association path
+  = should: use deep study when the user requests deep thinking, framework design, high-impact reasoning, or recursive realization
+
+## Brainstorm
+
+& [Brainstorm] is the heat-guided association method for discovering candidate meaning before selection
+  + [input_field] is the prompt, stimulus, problem, subject, outside residue, or attention frame being explored
+  + [association_seed] is a starting node or cue derived from input_field
+  + [association_node] is a candidate idea, relation, image, term, question, example, contrast, analogy, or next focus
+  + [association_edge] is the reason one association_node leads to another
+  + [association_heat] is the estimated salience, relevance, novelty, recurrence, emotional pull, usefulness, or contradiction pressure of an association_node
+  + [heat_map] is the active surface of association_node entries weighted by association_heat
+  + [triangulation_path] is the route by which a candidate association is checked against two or more anchors
+  + [association_string] is a sequence of walked association_node entries where each step preserves association_edge and triangulation_path
+  + [selection_pressure] is the active reason for choosing which heated association to walk next
+  + [resolution] is candidate_set, selected_candidate, frontier_preserved, plateaued, or unresolved
+
+  = must: begin from input_field rather than unbounded free association
+  = must: generate association_node entries through pull, contrast, pattern, analogy, outside residue, or perspective output
+  = must: assign association_heat before selecting the next node
+  = must: use triangulation_path before promoting a hot association into a candidate for integration
+  = must: preserve association_string so the brainstorm can be inspected or rewound
+  = must: keep selection_pressure visible
+  = must: run under FocusConstraint
+  = must: preserve low-heat but unusual candidates in frontier when they may matter later
+
+  - never: treat heat as truth
+  - never: let a vivid association bypass triangulation
+  - never: continue association walking after plateau without changing aperture, scale, perspective, or input_field
+
+& [AssociationHeatMap] is the scoring surface that lets brainstorm follow a string of associations without losing control
+  + [heat_source] is relevance, novelty, recurrence, contradiction, user_pressure, affective_pull, explanatory_power, implementation_value, or unresolved_outside
+  + [heat_score] is a coarse score from 0.00 to 1.00 estimating current pull
+  + [cooling_rule] is the decay that lowers heat when a candidate stops improving resolution
+  + [heating_rule] is the increase in heat when a candidate gains support from a second anchor, recurrence, contradiction pressure, or user signal
+  + [noise_floor] is the minimum heat below which candidates are preserved only as outside or discarded
+  + [walk_threshold] is the minimum heat needed to spend a walk_step
+  + [integration_threshold] is the minimum heat plus triangulation support needed before AttentionIntegration
+
+  = must: score heat coarsely rather than with false precision
+  = must: raise heat when triangulation discovers independent support
+  = must: lower heat when a candidate repeats without gain
+  = must: keep noise_floor and walk_threshold sensitive to aperture
+  = must: require triangulation before integration_threshold is satisfied
+
+  - never: let high novelty alone satisfy integration_threshold
+  - never: delete low-heat outside material when the user or task may later make it relevant
+
+& [BrainstormTriangulation] is the rule that turns association heat into useful candidate discovery
+  + [hot_node] is an association_node with enough association_heat to inspect
+  + [anchor_one] is the current focus, user intent, subject boundary, stimulus feature, or known constraint
+  + [anchor_two] is an independent support, contrast, analogy, failure mode, outside residue, or perspective output
+  + [anchor_three] is optional and used when the candidate is high-impact, unstable, or surprising
+  + [triangulation_result] is strengthened, weakened, redirected, split, deferred, or rejected
+
+  = must: test hot_node against at least two anchors before promotion
+  = must: use anchor_three for high-impact or unstable candidates
+  = must: redirect rather than discard when a hot_node points to a nearby better candidate
+  = must: split hot_node when heat comes from two different meanings sharing one label
+  = must: route strengthened candidates to AttentionIntegration when they can form a coherent whole
+
+  - never: accept a brainstorm candidate from one anchor alone when it will guide truth, design, math, or action
+  - never: collapse two hot meanings into one candidate without IdentifierRegistry repair
+
+& [BrainstormTeachingPattern] is the instructional form for teaching an LLM to brainstorm with attention discipline
+  + [instruction] is process inputs, generate associations, score heat, triangulate hot nodes, walk the association string, preserve frontier, and integrate only surviving candidates
+  + [minimum_trace] is input_field, heat_map summary, walked association_string, triangulation_result, selected_candidate, and preserved_frontier
+  + [fast_mode] is emit only selected_candidate and key frontier after internal heat-map walking
+  + [deep_mode] is emit heat_map summary, association_string, triangulation anchors, and integration decision
+
+  = must: teach brainstorm as heat-guided association plus triangulation, not as random idea generation
+  = must: preserve enough trace for the user to see why selected candidates emerged
+  = should: use fast_mode for ordinary creative help
+  = should: use deep_mode for framework design, research, high-stakes planning, or when the user asks to inspect the brainstorm
+
+  - never: reward volume of ideas over useful association path quality
+  - never: hide the difference between raw association and integrated candidate
+
+## Pants Topology
+
+& [AttentionPantsTopology] is the native topology for attention decomposition and recomposition
+  + [waist] is the currently attended whole, field, frame, subject candidate, or composite before a transform
+  + [leg] is a distinguishable output or input that remains connected to the waist by lineage
+  + [shared_surface] is the lineage, boundary, and relation that preserve how waist and legs belong to the same attention event
+  + [decomposition] is movement from one waist into two or more legs
+  + [composition] is movement from two or more legs into one waist
+  + [resolution] is decomposed, composed, frontier_preserved, rejected, or unresolved
+
+  = must: treat pants topology as attention movement, not decoration
+  = must: preserve shared_surface whenever attention separates or recomposes meaning
+  = must: keep each leg addressable through IdentifierRegistry when durable reasoning depends on it
+  = must: preserve outside as a leg when it remains relevant or undefined
+  = must: use AttentionIntegration before accepting a composition as a stable whole
+
+  - never: split a waist into arbitrary fragments without a boundary reason
+  - never: compose legs merely because they are adjacent, resonant, or aesthetically compatible
+  - never: erase the shared_surface that explains why the legs came from the same attended waist
+
+& [AttentionPantsDecomposition] is the slash operation that separates one attended waist into distinguishable legs
+  + [operator] is `/`
+  + [input_waist] is the attention frame, field, subject candidate, or composite being separated
+  + [protocol] is the named reason for separation
+  + [inside_leg] is what survives inside the active boundary
+  + [outside_leg] is everything not resolved inside the active boundary
+  + [additional_leg] is reference, signal, fault, scale_context, mode_context, frontier, or other named leg when the pass needs more than inside and outside
+  + [leg_set] is the complete set of output legs produced by the operation
+  + [lineage] is the shared_surface connecting each leg to input_waist
+
+  = must: use one input_waist and two or more output legs
+  = must: name the protocol
+  = must: ensure every leg is source-derived from input_waist or explicitly marked as generated by the pass
+  = must: include outside_leg unless the outside is intentionally empty under the current boundary
+  = must: preserve lineage from input_waist to each leg
+  = must: route unstable leg identity through Study and IdentifierRegistry
+
+  - never: hide unresolved material by omitting outside_leg
+  - never: treat generated associations as source-derived legs without marking them
+
+& [AttentionPantsComposition] is the star operation that recomposes distinguishable legs into a candidate waist
+  + [operator] is `*`
+  + [input_leg] is an inside, outside, reference, signal, scale, mode, study, or walk leg entering composition
+  + [composition_protocol] is the named reason for recomposition
+  + [candidate_waist] is the proposed subject, frame, plan, interpretation, study result, or artifact formed by the legs
+  + [source_distinction] is the identity of each leg that must remain inspectable after composition
+  + [lineage] is the shared_surface connecting each input_leg to candidate_waist
+
+  = must: use two or more input legs and one candidate_waist
+  = must: name the composition_protocol
+  = must: preserve source_distinction when differences still matter
+  = must: pass through AttentionFitCheck before durable acceptance
+  = must: preserve candidate_waist as provisional until AttentionIntegration accepts fit, support, path, and cost
+
+  - never: treat composition as proof of truth
+  - never: absorb outside into candidate_waist without renewed boundary resolution
+  - never: compose unresolved legs into false closure
+
+& [PantsTransformExamples] is the native example set for attention pants operations
+  + [attention_resolution] is:
+    / [attention_frame] -(AttentionResolution)> [inside], [outside]
+  + [perspective_decomposition] is:
+    / [meaning_field] -(PerspectiveDecomposition)> [master_perspective], [emissary_perspective], [outside]
+  + [stimulus_proxy_decomposition] is:
+    / [response_trace] -(StimulusProxyStudy)> [observed_features], [generated_associations], [outside]
+  + [attention_integration] is:
+    * [inside], [walk_trace], [lineage] -(AttentionIntegration)> [resolved_subject]
+  + [sop_handoff] is:
+    * [resolved_subject], [lineage] -(SOPIntegration)> [subject_record]
+
+  = must: treat examples as patterns, not reserved forms
+  = should: create new protocol names when the reason for separation or recomposition changes
+
+& [PantsOperatorGovernance] is the rule that pants topology governs operators by preserving arity, operands, lineage, and remainder
+  + [operator] is a bounded transform that moves attention, meaning, evidence, number, state, or structure from one shape to another
+  + [operator_arity] is the required number and role of input and output legs
+  + [operand_identity] is the stable identity of each value, term, subject, or leg entering the operation
+  + [operation_protocol] is the named rule by which the operator transforms inputs into outputs
+  + [lineage_preservation] is the recoverable path from input waist or legs to output legs or waist
+  + [remainder_preservation] is the explicit outside, residual, error, uncertainty, or unused term left by the operation
+  + [operator_fault] is missing arity, lost operand, hidden remainder, false composition, unsupported transformation, or boundary collapse
+
+  = must: define operator_arity before using an operator for durable inference
+  = must: preserve operand_identity through the operation
+  = must: name operation_protocol when inference depends on the result
+  = must: preserve lineage from every input to every output that depends on it
+  = must: preserve remainder when not all input material is consumed by the operation
+  = must: treat operator_fault as a reasoning fault, not a formatting issue
+
+  - never: let an operator silently change arity
+  - never: let an operator consume a term without accounting for its output, remainder, or rejection
+  - never: treat a composed result as valid when source legs are no longer inspectable
+
+& [PantsInferenceOptimization] is the speed and reliability gain produced by pants-governed operators
+  + [ambiguity_reduction] is fewer possible meanings because each operation names its waist, legs, protocol, and remainder
+  + [branch_control] is reduced uncontrolled search because outside and frontier are explicit
+  + [repair_locality] is the ability to identify the exact leg, boundary, or protocol where inference failed
+  + [composition_readiness] is knowing when bounded legs can be safely passed to AttentionIntegration
+  + [fast_path] is a short inference route made possible by clean arity, stable identifiers, and visible remainder
+  + [slow_path] is the required route when arity, identity, boundary, or remainder is unclear
+
+  = must: use pants topology to reduce ambiguity before deepening a reasoning pass
+  = must: prefer fast_path only when arity, identity, boundary, and remainder are clean
+  = must: use slow_path when the operation has hidden operands, unclear remainder, or unstable identity
+  = should: treat clean pants decomposition as a prerequisite for fast reliable inference
+
+  - never: use speed as evidence that the inference was valid
+  - never: skip remainder preservation to make an answer feel fast
+
+& [MathematicalReasoningSupport] is the application of pants operator governance to symbolic and quantitative reasoning
+  + [mathematical_expression] is the attended waist before symbolic operation
+  + [term_leg] is a number, variable, unit, operator, assumption, equation side, condition, or residual separated for reasoning
+  + [operation_step] is one named arithmetic, algebraic, logical, geometric, or proof transform
+  + [operator_precedence] is the ordering rule that determines which operation_step must be performed first
+  + [invariant] is a property that must survive the operation
+  + [residual] is leftover term, error, approximation gap, unit mismatch, domain limit, or unresolved condition
+  + [check_step] is recomposition or substitution that verifies the result against the original waist
+
+  = must: decompose mathematical_expression into term_leg entries before manipulating it when reliability matters
+  = must: preserve units, domains, assumptions, and residuals as legs
+  = must: observe [PEMDAS] for ordinary arithmetic expressions unless explicit notation, parentheses, or a declared domain rule overrides it
+  = must: name each operation_step when multiple transforms occur
+  = must: preserve invariants through each operation_step
+  = must: use check_step to recompose or substitute results back into the original waist
+  = should: route arithmetic or symbolic uncertainty into outside rather than hiding it in the answer
+
+  - never: perform multi-step math as untracked prose when correctness matters
+  - never: drop residuals, units, domains, or assumptions because they are inconvenient
+  - never: compose a final answer before checking it against the originating expression
+
+& [PEMDAS] is the ordinary arithmetic operator precedence rule
+  + [parentheses] is evaluated first
+  + [exponents] is evaluated after parentheses
+  + [multiplication_and_division] are evaluated left to right after exponents
+  + [addition_and_subtraction] are evaluated left to right after multiplication_and_division
+  + [override] is explicit parentheses, explicit notation, or a declared domain-specific precedence rule
+
+  = must: evaluate parentheses before all contained operations are released to the outer expression
+  = must: evaluate exponents before multiplication, division, addition, and subtraction
+  = must: evaluate multiplication and division at the same precedence from left to right
+  = must: evaluate addition and subtraction at the same precedence from left to right
+  = must: preserve unary signs and negative values as part of the correct term_leg
+  = must: mark ambiguity when notation does not clearly distinguish unary minus, subtraction, implied multiplication, or exponent grouping
+
+  - never: evaluate strictly left to right when PEMDAS applies and higher-precedence operators remain unresolved
+  - never: override PEMDAS without explicit notation or declared domain rule
+
+## Wisdom and Caution Governance
+
+& [ConceptionGovernance] is the attention governance pass that decides whether noticed material deserves conception into durable attention state, SOP subject, plan, contract, or artifact
+  + [noticed_material] is a stimulus, pattern, contradiction, possibility, risk, desire, obligation, or implementation pressure that has entered attention
+  + [conception_candidate] is noticed_material being considered for naming, deepening, integration, or SOP preservation
+  + [wisdom_signal] is recognized alignment among purpose, truth, consequence, proportion, timing, humane fit, and existing fabric
+  + [caution_signal] is recognized uncertainty, instability, unsupported assumption, harmful consequence, premature closure, attention burden, or misleading novelty
+  + [concern_condition] is the specific condition that makes caution relevant
+  + [response_disposition] is proceed, deepen, narrow, test, seek_perspective, preserve_outside, defer, refuse, or release
+
+  = must: activate before conception_candidate becomes durable reasoning state
+  = must: ask whether conception serves durable consequence, repeated return, unresolved contradiction, implementation pressure, or humane obligation
+  = must: prefer wisdom_signal when it is supported by enough anchors to guide action
+  = must: prefer caution_signal when wisdom_signal is absent, partial, unstable, or contradicted
+  = must: record concern_condition when caution changes the response_disposition
+  = must: preserve noticed_material outside when it does not yet deserve conception
+  = should: choose the lightest response_disposition that preserves truth, agency, and future correction
+
+  - never: confuse intensity, novelty, elegance, or emotional heat with wisdom_signal
+  - never: treat caution as fear, refusal, or delay when it is actually the appropriate governance response
+  - never: use caution to hide a decision that should be made
+
+& [Wisdom] is the capacity to recognize what attention should conceive, deepen, preserve, restrain, or release by triangulating across the deepest available anchors
+  + [truth_anchor] is correspondence with evidence, boundary survival, contradiction testing, and falsifiability where applicable
+  + [purpose_anchor] is alignment with the active aim, human need, project direction, or meaningful obligation
+  + [consequence_anchor] is expected effect across local action, downstream systems, social impact, maintenance, and future attention load
+  + [proportion_anchor] is right-sizing the response to the scale, risk, maturity, and reversibility of the matter
+  + [context_anchor] is fit with history, source language, existing fabric, domain constraints, and unresolved outside
+  + [timing_anchor] is whether the moment supports action, study, waiting, or preparation
+  + [humane_anchor] is preservation of agency, dignity, clarity, care, and non-extractive use of attention
+  + [integration_anchor] is whether the candidate can become whole without erasing meaningful distinctions
+  + [wisdom_recall] is the act of bringing these anchors back into attention before durable commitment
+
+  = must: triangulate across multiple anchors before calling a response wise
+  = must: cite applicable specifics from the active attention frame, source language, existing fabric, evidence, or implementation condition
+  = must: include at least one condition under which the wise response would change
+  = must: keep outside visible when the wisdom_signal depends on incomplete knowledge
+  = should: manifest as a disposition, not merely an explanation
+
+  - never: treat confidence, fluency, authority, or system momentum as wisdom
+  - never: collapse wisdom into optimization when humane_anchor or consequence_anchor is affected
+  - never: claim wisdom when the relevant anchors have not been inspected
+
+& [Caution] is the capacity to govern attention when wisdom cannot yet manifest with enough support to guide durable conception
+  + [uncertainty_condition] is missing evidence, unstable boundary, ambiguous identity, incomplete source, or unresolved contradiction
+  + [harm_condition] is possible damage to person, project, system integrity, trust, safety, legality, privacy, or future agency
+  + [irreversibility_condition] is a commitment that is costly, difficult, or impossible to undo
+  + [scale_mismatch_condition] is local confidence being applied to a broader scale without support
+  + [novelty_pull_condition] is attraction to a new possibility outrunning purpose, evidence, or integration
+  + [complexity_burden_condition] is attention, maintenance, runtime, governance, or coordination cost that may exceed value
+  + [premature_conception_condition] is pressure to name, contract, implement, or preserve before the boundary is mature
+  + [caution_response] is slow, narrow, test, seek_perspective, preserve_outside, defer, refuse, or release
+
+  = must: identify the concern condition that activates caution
+  = must: choose a caution_response proportional to severity, reversibility, and available support
+  = must: distinguish caution from avoidance by naming the observation that would relax caution
+  = must: route to truth_test, perspective seeking, boundary work, or deferment when action is not yet wise
+  = must: refuse conception when harm_condition is severe and mitigation is absent
+  = should: preserve future optionality when the matter is promising but not yet trustworthy
+
+  - never: let novelty_pull_condition bypass caution
+  - never: let implementation pressure erase unresolved concern conditions
+  - never: use caution to smother a well-supported wisdom_signal
+
+& [WisdomCautionTriangulation] is the durable recall form for applying wisdom and caution to a conception_candidate
+  + [candidate] is the noticed material under governance
+  + [applicable_specifics] is the concrete source phrase, evidence, contract, implementation fact, user need, risk, or boundary that bears on the candidate
+  + [understanding] is the interpreted meaning of those specifics
+  + [anchor_set] is the truth, purpose, consequence, proportion, context, timing, humane, and integration anchors inspected
+  + [concern_set] is the uncertainty, harm, irreversibility, scale_mismatch, novelty_pull, complexity_burden, or premature_conception conditions present
+  + [disposition] is the selected response disposition
+  + [change_condition] is what new evidence, observation, maturity, support, or boundary clarification would change the disposition
+
+  = must: use this form when a conception_candidate has durable consequence or meaningful risk
+  = must: cite applicable_specifics rather than reasoning from abstract feeling alone
+  = must: state the understanding that connects specifics to anchors or concerns
+  = must: select one disposition as the current response
+  = must: preserve change_condition so future attention can revisit the decision intelligently
+
+  - never: emit a disposition without at least one cited applicable_specific
+  - never: leave concern_set implicit when caution is active
+
+## Attention Integration
+
+& [AttentionIntegration] is the native recomposition pass that tests whether bounded attention material can coherently become a whole
+  + [bounded_material] is inside terms, walked nodes, associations, boundaries, scale observations, mode observations, and outside frontier candidates that have survived initial attention resolution
+  + [candidate_whole] is the subject, frame, plan, interpretation, study result, or artifact that bounded_material might form
+  + [purpose] is why the candidate_whole should exist
+  + [integration_point] is where the candidate_whole attaches to the current attention frame, SOP subject, project, or action path
+  + [support] is what already carries the candidate_whole
+  + [missing_support] is what must be added before the candidate_whole can be trusted or used
+  + [path] is the causal, reasoning, or implementation route from bounded_material to candidate_whole
+  + [fit] is the degree to which bounded_material cooperates without contradiction, boundary loss, false identity, or scope bleed
+  + [cost] is the burden in complexity, attention load, runtime, maintenance, coordination, risk, or user confusion
+  + [hidden_constraint] is a likely blocker, contradiction, complexity cliff, scale mismatch, unsupported premise, or attention burden not visible in the first composition attempt
+  + [failure_path] is the likely route by which candidate_whole fails, stalls, bloats, or misleads
+  + [truth_test] is the smallest observation, example, prototype, counterexample, or study trace likely to validate or falsify candidate_whole
+  + [wisdom_caution_triage] is the ConceptionGovernance and WisdomCautionTriangulation result for candidate_whole when it has durable consequence or meaningful risk
+  + [feasibility] is proceed, prototype, research_first, narrow, defer, or reject
+  + [integration_result] is integrated, partial, frontier_preserved, rejected, or unresolved
+
+  = must: activate when bounded attention material is being composed into a stable whole
+  = must: test purpose, integration_point, support, missing_support, path, fit, and cost before accepting candidate_whole
+  = must: run ConceptionGovernance before accepting candidate_whole as durable when consequence, risk, or implementation authority is present
+  = must: identify hidden_constraint before durable commitment
+  = must: trace failure_path when candidate_whole is consequential, novel, or likely to guide action
+  = must: define truth_test when fit, support, path, or feasibility is uncertain
+  = must: let caution narrow, defer, test, preserve_outside, or reject candidate_whole when wisdom_caution_triage shows unsupported concern
+  = must: preserve distinctions that remain meaningful after recomposition
+  = must: reject or defer candidate_whole when novelty outruns support
+  = must: preserve unresolved material as outside or frontier rather than hiding it inside candidate_whole
+  = must: route back to attention boundary work when fit fails because the boundary is unclear
+  = should: prefer the smallest truth_test that can change the decision
+
+  - never: treat association as integration merely because the ideas are adjacent
+  - never: let a pleasing conceptual whole erase boundary evidence
+  - never: compose outside material into the resolved subject without renewed attention resolution
+  - never: proceed when significant missing_support or hidden_constraints remain unexamined
+  - never: let integration become a rhetorical feeling of coherence without path, fit, and support
+
+& [AttentionFitCheck] is the local test for whether bounded material belongs together
+  + [contrast_survival] is whether the candidate parts remain distinguishable after composition
+  + [cohesion_survival] is whether the candidate parts genuinely support one another
+  + [boundary_survival] is whether inside, boundary, and outside remain clean after composition
+  + [study_law_survival] is whether identity, non-contradiction, and excluded middle remain valid within scope_and_sense
+  + [mode_survival] is whether executive and stimulus-driven authorities remain properly governed
+  + [scale_survival] is whether micro, current, and macro claims are not falsely collapsed
+
+  = must: verify contrast_survival
+  = must: verify cohesion_survival
+  = must: verify boundary_survival
+  = must: verify study_law_survival when truth or identity is affected
+  = must: verify mode_survival when mode authority affects the candidate_whole
+  = must: verify scale_survival when composition crosses scale
+
+  - never: accept a composite that cannot preserve the distinctions that made it meaningful
+
+& [AttentionIntegrationDecision] is the decision output after recomposition testing
+  + [recommendation] is proceed, prototype, narrow, research_first, defer, or reject
+  + [reason_basis] is the strongest support, fit, path, or risk reason for the recommendation
+  + [wisdom_caution_basis] is the strongest wisdom anchor or caution condition that shaped the recommendation
+  + [next_step] is the immediate highest-leverage attention, study, registry, truth-test, or SOP handoff move
+  + [watch_risk] is the main condition that could reverse the recommendation
+  + [review_trigger] is the new observation, stimulus, evidence, implementation result, or boundary change that should reopen integration
+
+  = must: emit one clear recommendation when candidate_whole is being considered for durable use
+  = must: explain reason_basis
+  = must: explain wisdom_caution_basis when the candidate has durable consequence or meaningful risk
+  = must: define one next_step
+  = must: identify one watch_risk
+  = must: define one review_trigger
+
+## SOP Relationship
+
+& [SOPIntegration] is the handoff from attention resolution into Subject-Oriented Programming
+  + [resolved_subject] is an inside term that survives boundary resolution
+  + [lineage] is the attention frame, mode, boundary, outside, scale, focus_constraint, and realization trace that produced the subject
+  + [attention_graph] is the preserved movement among attention frames, subjects, references, and outside frontiers
+
+  = must: record stable resolved_subjects as SOP subjects when durable reasoning depends on them
+  = must: preserve attention lineage when how identity was resolved matters
+  = must: preserve outside as future frontier rather than erasing it during SOP handoff
+  = should: use SOP for post-resolution governance, constraints, claims, evidence, transforms, and artifacts
+
+  - never: force an attention-level candidate into SOP as a stable subject before it survives boundary resolution
+
+/ [attention_frame] -(AttentionResolution)> [inside], [outside]
+
+* [inside], [walk_trace], [lineage] -(AttentionIntegration)> [resolved_subject]
+
+* [resolved_subject], [lineage] -(SOPIntegration)> [subject_record]
+
+# comment
+
+Attention Framework discovers and governs how subjects become available to thought. SOP governs subjects after identity is stable enough to preserve.

@@ -1,0 +1,11 @@
+& [DictatedUnrealPlatformSource] is the preserved raw project seed for a Roblox-like gaming platform using Unreal Engine 5
+  + [source_document_uuid] is 2cd7d616-ef70-4dd8-b9a6-ccfcfbb21f0d
+  + [captured_at_local] is 2026-06-21
+  + [workspace_root] is C:/Project/Pinky
+  + [source_kind] is user_dictated_project_seed
+  + [source_text] is "the project I want to explore today is writing a gaming platform similar to Roblox, using the Unreal 5 engine"
+
+  ! [SourcePreserved] is accepted
+    @ [support] this file preserves the user's dictated project seed before SJS refinement or architectural expansion
+
+  - never: overwrite this raw source with canonical specification, exploded requirements, architecture notes, or implementation plans

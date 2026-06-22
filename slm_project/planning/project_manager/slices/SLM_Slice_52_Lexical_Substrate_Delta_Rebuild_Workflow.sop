@@ -1,0 +1,16 @@
+& [SLMSlice52LexicalSubstrateDeltaRebuildWorkflow] is a work-ready slice for lexicon rebuild operations
+  + [slice_id] is SLM-52
+  + [status] is verified_source_gate
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-13, SLM-30
+  + [scope] is document and script repeatable lexicon database and substrate pack rebuild flow
+  + [acceptance_criteria] is rebuild steps are explicit, checksummed, and do not overwrite source documents
+  + [proof_route] is dry-run/source gate unless full rebuild is intentionally requested
+
+  ! [CompletionEvidence] is the SLM-52 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Lexical_Substrate_Delta_Rebuild_Workflow_Contract.sop
+    @ [script] is slm_lexicon/scripts/rebuild_lexical_substrate_workflow.py
+    @ [documentation] is slm_lexicon/REBUILD_WORKFLOW.sop
+    @ [dry_run] passed with checksum and planned-step output
+    @ [source_gate] passed

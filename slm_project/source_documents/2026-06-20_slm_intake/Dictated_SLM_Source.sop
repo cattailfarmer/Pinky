@@ -1,0 +1,188 @@
+& [DictatedSLMSource] is the preserved user-dictated source document for the Semantic Logic Model project
+  + [source_document_uuid] is 9a8f4714-69bb-4552-b796-55c3d9a4cf6d
+  + [captured_at] is 2026-06-20 America/Chicago
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [source_status] is preserved_raw_dictation
+  + [intended_processing] is SpecificationJustificationSolution plus SpecificationExplosion plus DataDrivenDesign plus staged WorkPlanning
+
+  @ [user_dictation] initial project request:
+    "I want to start a new project implementing a prototype Semantic Logic Model (SLM).
+
+    Core concept:
+    An SLM is a meaning-first reasoning layer that converts natural language into stable semantic structures before language generation or inference. It does not primarily predict text. It performs semantic diffusion: progressive reduction of ambiguity, role uncertainty, and incoherence until a stable subject graph emerges.
+
+    Build an initial prototype, not a full ML model.
+
+    Primary goals:
+    1. Parse an input prompt into unresolved semantic candidates.
+    2. Avoid assigning fixed word roles too early.
+    3. Treat each word as having possible roles: noun, verb, adjective, adverb, article/determiner, preposition, conjunction, auxiliary/modal, etc.
+    4. Start diffusion from structural/function words because they define relationships and constraints.
+    5. Let nouns and final semantic roles be late-bound after competing interpretations fail.
+    6. Produce a semantic graph with:
+       - subjects
+       - actions
+       - relations
+       - modifiers
+       - constraints
+       - uncertainty
+       - confidence/activation scores
+    7. Detect wobble: unresolved instability caused by competing interpretations, contradictory roles, weak subject boundaries, or incoherent relations.
+    8. Emit a compact structured primer that could later be passed to an LLM.
+
+    Important architecture rules:
+    - Glyphs / semantic IDs should be immutable once created.
+    - Learning should be append-only: create, link, activate, retire; never rewrite old semantic identities.
+    - The system should preserve uncertainty explicitly instead of forcing premature interpretation.
+    - Early passes should rank and defer possibilities, not hard-delete them.
+    - Precision should increase as unresolved semantic scope decreases.
+
+    Suggested components:
+    - tokenizer.py
+    - candidate_roles.py
+    - semantic_graph.py
+    - diffusion.py
+    - wobble.py
+    - primer.py
+    - tests/
+
+    The first demo should take a sentence such as:
+    Design a compiler for FPGA hardware.
+
+    and output:
+    - token list
+    - candidate roles
+    - structural relation hints
+    - progressively refined semantic graph
+    - wobble score
+    - final SLM primer
+
+    Favor clear architecture, type hints, tests, and extensibility over sophistication."
+
+  @ [user_correction] process correction:
+    "hold on, we didn't start this properly yet..."
+
+  @ [user_framework_direction] reasoning rail requirement:
+    "I have a system defined in C:\Project\ReasoningFramework\ that defines a strong structure for laying the rails for work we do here. read AGENTS.md and follow it's directions for finding that framework and report back to me what systems you activate from that framework"
+
+  @ [user_process_clarification] active project method:
+    "SJS + Data Driven Design, including specification explosion and staged planning (project manager part of the coordination system) to define the entire scope of the project before actually working out the details. Essentially I have the system write the logical shape of the program before we write the program, so we have traceable authority on the work done and can rebuild where something goes wrong."
+
+  @ [user_scope_clarification] coordination boundary:
+    "The project manager is important, but I don't think we'll be using the coordination layer."
+
+  @ [user_state] exploration posture:
+    "write this specification and discuss it further with me, because I've only begun to explore what I'm working on here, and I really don't know what I'm doing. I'm navigating new seas."
+
+  @ [user_addendum] glyph stabilization and diffusion:
+    "Glyph stabilization requires deliberative convergence.
+
+    A glyph is not stabilized merely because a score is high.
+    It stabilizes when the 7-faculty deliberation system using dual-hemisphere perspectives converges on the same semantic identity with no unresolved high-severity contradiction.
+
+    For v0, model each faculty as an independent validator:
+
+    Observer: is the candidate actually present?
+    Honesty: is the support sufficient?
+    Security: are there unsafe or invalid consequences?
+    Planner: does it fit the sequence/task?
+    Weaver: does it cohere relationally?
+    Scribe: is lineage/provenance preserved?
+    Refiner: is the meaning compressed without distortion?
+
+    candidate_glyph is stable if:
+      support_sources >= 1
+      faculty_votes >= threshold
+      contradiction_score < threshold
+      wobble_score < threshold
+      lineage is present
+
+    If convergence is partial:
+      create uncertainty identity, not stable glyph.
+
+    If contradiction remains:
+      do not stabilize.
+      preserve candidate in evidence workspace.
+
+    Diffusion is constraint propagation and semantic stabilization.
+
+    The purpose of diffusion is not to infer meaning directly.
+    The purpose of diffusion is to reduce wobble by propagating evidence,
+    constraints, and support through the semantic workspace until stable
+    interpretations emerge.
+
+    Diffusion begins with maximal uncertainty.
+
+    Each pass:
+
+    1. Activates candidate interpretations.
+    2. Applies structural constraints.
+    3. Propagates support through relationships.
+    4. Propagates contradictions through relationships.
+    5. Measures wobble.
+    6. Promotes stable interpretations.
+    7. Preserves unresolved interpretations.
+
+    The output of diffusion is not language.
+    The output of diffusion is a stabilized semantic field.
+
+    A successful diffusion pass reduces:
+    - role ambiguity
+    - subject ambiguity
+    - relation ambiguity
+    - contradiction
+    - wobble
+
+    while preserving uncertainty where resolution is not justified.
+
+    Diffusion is not denoising text.
+
+    Diffusion is denoising meaning.
+
+    ... to be continued..."
+
+  @ [user_addendum] graph boundary and evidence workspace:
+    "I would not put unstable candidates directly into the semantic graph.
+
+    Evidence Workspace contains tokens, candidate roles, candidate meanings, candidate relations, support, and contradictions.
+
+    Diffusion Engine contains constraint propagation, support propagation, and wobble measurement.
+
+    Semantic Graph contains stabilized glyphs, stabilized relations, explicit uncertainty glyphs, and lineage.
+
+    Only stabilized meaning enters the graph.
+
+    Important exception: uncertainty itself can become a graph object. For example, fish as noun 52% and verb 48% may create Glyph: UnresolvedFishRole with lineage pointing to both interpretations.
+
+    This preserves uncertainty without polluting the graph with every temporary hypothesis.
+
+    The architecture in one sentence:
+    Evidence Workspace -> Semantic Diffusion -> Deliberative Stabilization -> Semantic Graph.
+
+    The graph should be the result of diffusion, not the place where diffusion occurs.
+
+    If every tentative interpretation becomes a graph node, the graph explodes. If the graph contains only stabilized meaning and explicit uncertainty identities, it remains compact, navigable, and suitable for the glyph-based reasoning layer.
+
+    Assume every token may have multiple candidate grammatical roles until diffusion proves otherwise.
+
+    Do not hard-code noun-first or verb-first assumptions."
+
+  @ [user_addendum] LLM substrate dependency:
+    "It's not an independently-running language model. I imagined it as a kind of hierarchical reasoning model that will rely on a LLM for a dictionary system at bare minimum. The seven faculty, dual-hemisphere system needs to run from that lower LLM layer."
+
+  @ [user_addendum] cross-LLM deliberation and faculty authority:
+    "If two providers disagree, that should raise deliberations between LLMs, as any objecting LLM needs to articulate why the objection is raised, and that needs to be answered by any LLMs in support of the applied reasoning. If the disagreement persists, it should be considered and measured by a panel of other LLMs like a jury.
+
+    LLM agreements will be via each one applying the dual-hemisphere 7-faculty pattern of internally validating the reasoning.
+
+    Honesty and Security have veto powers over Observer, and Observer manages the rest of the faculty system.
+
+    Uncertainty glyphs should have types.
+
+    Primer should include compact evidence."
+
+  @ [user_process_instruction] high-reasoning specification explosion and manager slicing:
+    "switched you to high reasoning for a turn at reasoning out the next steps. prepare to do the work. explode the specification and then use the project manager system to cut up the work into chunks work-ready bites out of the specification."
+
+  - never: overwrite this source document with canonicalized or exploded specification material
+  - never: treat derived requirements as the user's exact words

@@ -1,0 +1,22 @@
+& [SLMSlice24DiffusionRuleTableExtraction] is the source-complete slice for extracting diffusion rules into table authority
+  + [slice_id] is SLM-24
+  + [status] is source_complete_policy_gated
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-14, SLM-15, SLM-20, SLM-21
+  + [contract] is slm_project/specifications/contracts/SLM_Diffusion_Rule_Table_Contract.sop
+  + [deliverable] is slm_rust/src/rules.rs plus diffusion.rs table consumption
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+
+  & [WorkCompleted] is the slice result
+    + [created] is closed_class_span_rules
+    + [created] is role_pair_span_rules
+    + [created] is preposition_relation_rules
+    + [created] is sense_coherence_rules
+    + [updated] is diffusion span formation to read closed-class span rules
+    + [updated] is diffusion preposition relation typing to read relation rules
+    + [updated] is sense coherence scoring to read sense coherence rules
+
+  & [RemainingGate] is executable verification
+    + [blocked_by] is Windows Application Control policy for Cargo-generated executables
+    + [allowed_validation] is source scan, Python substrate validation, and SOP review only

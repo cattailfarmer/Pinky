@@ -1,0 +1,8 @@
+& [SLMSlice19EvidenceQuerySurface] is the source-complete slice for workspace query APIs
+  + [slice_id] is SLM-19
+  + [status] is source_complete_policy_gated
+  + [effort] is S
+  + [risk] is medium
+  + [depends_on] is SLM-03, SLM-14, SLM-15, SLM-16
+  + [deliverable] is EvidenceBundle and query methods in slm_rust/src/evidence.rs
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop

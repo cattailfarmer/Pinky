@@ -1,0 +1,12 @@
+& [SLMSlice39ActivationScoreSplitPlan] is a work-ready SOP slice for future score semantics
+  + [slice_id] is SLM-39
+  + [status] is ready_sop_only
+  + [effort] is S
+  + [risk] is low
+  + [depends_on] is SLM-06, SLM-21
+  + [scope] is split support_weight conceptually into confidence, energy, and routing priority without changing runtime yet
+  + [deliverable] is specification contract for future score fields and migration rules
+  + [acceptance_criteria] is current support_weight remains valid v0 while future scoring is named
+  + [proof_route] is SOP review
+  + [exclusions] is changing Rust data model in this slice
+  + [next_action] is define semantics and non-equivalence of each score

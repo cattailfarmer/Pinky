@@ -1,0 +1,19 @@
+& [SLMSlice26ProviderDisagreementPayloads] is the source-complete slice for typed provider disagreement payloads
+  + [slice_id] is SLM-26
+  + [status] is source_complete_policy_gated
+  + [effort] is S-M
+  + [risk] is medium
+  + [depends_on] is SLM-05, SLM-17, SLM-22
+  + [contract] is slm_project/specifications/contracts/SLM_Provider_Disagreement_Payload_Contract.sop
+  + [deliverable] is typed provider objection and answer payload fields
+  + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+
+  & [WorkCompleted] is the slice result
+    + [added] is disagreement_class field on provider suggestions
+    + [added] is answer_kind field on provider suggestions
+    + [added] is constructors for typed objections and typed answers
+    + [updated] is deliberation classification to consume provider payloads
+
+  & [RemainingGate] is executable verification
+    + [blocked_by] is Windows Application Control policy for Cargo-generated executables
+    + [allowed_validation] is source scan and SOP review only

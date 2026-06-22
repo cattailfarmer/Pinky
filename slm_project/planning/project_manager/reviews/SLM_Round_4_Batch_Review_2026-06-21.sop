@@ -1,0 +1,252 @@
+& [SLMRound4BatchReview20260621] is the project-manager review for long-run buffet batch four
+  + [review_uuid] is 46f40c42-e2ab-41fd-b918-78211e95e846
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [reviewed_slices] is SLM-38, SLM-37, SLM-42, SLM-43, SLM-45, SLM-32, SLM-33, SLM-41, SLM-46, SLM-63, SLM-48, SLM-49, SLM-50, SLM-51, SLM-35, SLM-36, SLM-44, SLM-54, SLM-55, SLM-56, SLM-52, SLM-53, SLM-62
+  + [status] is active_batch_review
+
+  & [VerifiedWork] is the completed source and runtime work
+    + [SLM-38] is Closed-Class Lexical Sense Routing
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Closed_Class_Lexical_Sense_Routing_Contract.sop
+      + [implementation] is slm_rust/src/lexicon.rs LexicalSenseRoutingPolicy
+      + [default_behavior] is defer lexical sense suggestions for closed-class tokens
+      + [audit_behavior] is EmitAllSenses recovers closed-class token senses when explicitly requested
+    + [SLM-37] is Primer Compaction Budget
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Primer_Compaction_Budget_Contract.sop
+      + [implementation] is slm_rust/src/primer.rs PrimerCompactionBudget and PrimerCompactionSummary
+      + [default_behavior] is keep must-keep evidence and top-k verbose evidence
+      + [audit_behavior] is primer reports omitted evidence counts by kind
+    + [SLM-48] is Primer Schema Versioning
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Primer_Schema_Versioning_Contract.sop
+      + [implementation] is slm_rust/src/primer.rs PrimerSchemaInfo and primer_schema_info
+      + [default_behavior] is primer JSON exposes schema_id, schema_version, compatibility_floor, and required_fields
+      + [proof_behavior] is demo primer reports slm_primer schema 0.1.0 with 15 required fields
+    + [SLM-49] is Demo Output Modes
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Demo_Output_Modes_Contract.sop
+      + [implementation] is slm_rust/src/bin/slm_demo.rs DemoOutputMode and CompactDemoReport
+      + [default_behavior] is full JSON output remains default
+      + [proof_behavior] is compact, primer-only, and SOP modes smoke-tested through WSL cargo run
+    + [SLM-50] is CLI Regression Harness
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_CLI_Regression_Harness_Contract.sop
+      + [implementation] is slm_project/tools/slm_regression_harness.py
+      + [default_behavior] is one command runs source gate, WSL cargo test, self-check, compact demo, primer-only demo, and SOP demo
+      + [proof_behavior] is harness ended with slm_regression_harness_ok
+    + [SLM-51] is Golden Fixture Snapshots
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Golden_Fixture_Snapshot_Contract.sop
+      + [implementation] is slm_project/tools/slm_golden_snapshot.py and slm_project/fixtures/golden/*.json
+      + [default_behavior] is compact snapshot comparison for design_compiler, fish_swim, and time_flies
+      + [proof_behavior] is golden snapshot check passed standalone and inside the regression harness
+    + [SLM-35] is Sidecar Task Prompt Contracts
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Sidecar_Task_Prompt_Contract.sop
+      + [template] is slm_project/sidecar_prompts/sidecar_task_prompt_contracts_v0.json
+      + [implementation] is slm_rust/src/sidecar.rs SidecarTaskPromptContract and SidecarPromptEnvelope task_contract
+      + [default_behavior] is every sidecar task carries allowed evidence, required output, and forbidden authority
+      + [proof_behavior] is source gate prompt validation, WSL cargo tests, and regression harness passed
+    + [SLM-36] is Provider Jury Panel Expansion
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Provider_Jury_Panel_Expansion_Contract.sop
+      + [implementation] is slm_rust/src/deliberation.rs JuryPanelMemberReview and aggregate_jury_measurement
+      + [default_behavior] is jury_observer, jury_honesty, and jury_weaver produce cited member reviews
+      + [proof_behavior] is tests cover creates_uncertainty, blocks_stabilization, and TimeFlies needs_more_context
+    + [SLM-44] is Contradiction Propagation Expansion
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Contradiction_Propagation_Expansion_Contract.sop
+      + [implementation] is slm_rust/src/core.rs ContradictionRecord lineage fields plus slm_rust/src/diffusion.rs ensure_contradiction_record
+      + [default_behavior] is provider objection contradictions cite answer, deliberation, jury review, and panel refs
+      + [proof_behavior] is TimeFlies contradiction fixture verifies target, source, answer, severity, unresolved status, and primer refs
+    + [SLM-54] is LM Studio Response Validation and Repair
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_LM_Studio_Response_Validation_Repair_Contract.sop
+      + [implementation] is slm_rust/src/sidecar.rs parse_lm_studio_provider_suggestions_validated
+      + [default_behavior] is accept exact JSON, repair fenced/array JSON, and reject freeform as lineage_gap objection evidence
+      + [proof_behavior] is parser tests, WSL cargo test, and regression harness passed
+    + [SLM-55] is Ollama Sidecar Adapter Skeleton
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Ollama_Sidecar_Adapter_Skeleton_Contract.sop
+      + [implementation] is slm_rust/src/sidecar.rs OllamaSidecarConfig, OllamaChatRequest, and parse_ollama_provider_suggestions_validated
+      + [default_behavior] is source-only Ollama /api/chat envelope with validated response parsing and no network call
+      + [proof_behavior] is Ollama request/parser tests, WSL cargo test, and regression harness passed
+    + [SLM-56] is Provider Set Configuration
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Provider_Set_Configuration_Contract.sop
+      + [config] is slm_project/provider_sets/local_provider_set_v0.json
+      + [implementation] is slm_rust/src/providers.rs ProviderSetConfig and validate_provider_set
+      + [default_behavior] is mock, LM Studio, and Ollama provider identities load without live network calls
+      + [proof_behavior] is provider-set JSON validation, config parser tests, WSL cargo test, and regression harness passed
+    + [SLM-52] is Lexical Substrate Delta Rebuild Workflow
+      + [status] is verified_source_gate
+      + [contract] is slm_project/specifications/contracts/SLM_Lexical_Substrate_Delta_Rebuild_Workflow_Contract.sop
+      + [script] is slm_lexicon/scripts/rebuild_lexical_substrate_workflow.py
+      + [documentation] is slm_lexicon/REBUILD_WORKFLOW.sop
+      + [default_behavior] is dry-run checksum and planned-step reporting without file modification
+      + [proof_behavior] is dry-run and source gate passed
+    + [SLM-53] is Lexicon License and Provenance Audit
+      + [status] is specification_complete
+      + [contract] is slm_project/specifications/contracts/SLM_Lexicon_License_Provenance_Audit.sop
+      + [audited_source] is Open English WordNet 2025 XML under CC-BY 4.0
+      + [audited_source] is project-internal SLM Closed-Class Seed Lexicon
+      + [proof_behavior] is source manifest, source provenance, and substrate manifest inspected
+    + [SLM-62] is Threshold Calibration Fixtures
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Threshold_Calibration_Fixture_Contract.sop
+      + [implementation] is slm_rust/src/stabilization.rs threshold fixture tests
+      + [default_behavior] is faculty, contradiction, and wobble gates are fixture-tested at boundary conditions
+      + [proof_behavior] is WSL cargo test and regression harness passed
+    + [SLM-42] is Evidence Provenance Normalization
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Evidence_Provenance_Normalization_Contract.sop
+      + [implementation] is slm_rust/src/primer.rs normalize_evidence_ref and normalize_ref_list
+      + [default_behavior] is normalize compact evidence refs and primer lineage refs at projection time
+      + [preservation_behavior] is raw evidence workspace records remain unchanged
+    + [SLM-43] is Support Propagation Idempotence
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Support_Propagation_Idempotence_Contract.sop
+      + [implementation] is slm_rust/src/diffusion.rs ensure_support_record
+      + [default_behavior] is skip support insertion when a stable support id already exists
+      + [proof_behavior] is repeated diffusion preserves support and relation id sets
+    + [SLM-45] is Wobble Factor Attribution
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Wobble_Factor_Attribution_Contract.sop
+      + [implementation] is slm_rust/src/wobble.rs WobbleFactor id and target_kind plus slm_rust/src/primer.rs WobbleFactorPrimer
+      + [default_behavior] is primer exposes local wobble factor ids, dimensions, target kinds, target refs, scores, and explanations
+      + [proof_behavior] is design/compiler factors and TimeFlies relation-instability factor are visible in primer output
+    + [SLM-32] is Imperative Subject and Implied Actor Uncertainty
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Imperative_Subject_Uncertainty_Contract.sop
+      + [implementation] is slm_rust/src/diffusion.rs imperative_action_candidate and propose_imperative_subject_uncertainty
+      + [default_behavior] is command-leading action creates bounded unresolved_subject_boundary uncertainty
+      + [proof_behavior] is CompilerConcept remains an action target instead of a subject glyph
+    + [SLM-33] is Candidate Relation Stabilization Audit
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Relation_Stabilization_Audit_Contract.sop
+      + [implementation] is slm_rust/src/graph.rs SemanticRelation candidate_relation_ref and endpoint_decision_refs
+      + [default_behavior] is graph relations cite candidate relation and endpoint stabilization decisions
+      + [proof_behavior] is design/compiler acts_on and constrains relations expose graph and primer audit refs
+    + [SLM-41] is Fixture Expansion Matrix
+      + [status] is specification_complete
+      + [contract] is slm_project/specifications/contracts/SLM_Fixture_Expansion_Matrix_Contract.sop
+      + [fixture_count] is 7
+      + [coverage] is imperative subject, negation, coordination, pronoun reference, attachment ambiguity, security veto, and threshold boundary
+      + [proof_behavior] is SOP-reviewed matrix ready for dependent fixture implementation slices
+    + [SLM-46] is Uncertainty Boundary Stabilization Rules
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Uncertainty_Boundary_Stabilization_Contract.sop
+      + [implementation] is slm_rust/src/stabilization.rs UncertaintyBoundaryCriteria plus slm_rust/src/diffusion.rs unresolved role and scope proposals
+      + [default_behavior] is type-specific criteria gate uncertainty glyph creation
+      + [proof_behavior] is provider_disagreement, unresolved_role, unresolved_scope, and unresolved_subject_boundary are fixture-tested
+    + [SLM-63] is Wobble Routing Policies
+      + [status] is verified_wsl
+      + [contract] is slm_project/specifications/contracts/SLM_Wobble_Routing_Policy_Contract.sop
+      + [implementation] is slm_rust/src/wobble.rs WobbleRoute and WobbleRoutingDecision plus slm_rust/src/primer.rs routing_decision
+      + [default_behavior] is route from dimensions and factor refs rather than aggregate score alone
+      + [proof_behavior] is contradiction routes to deliberation and design/compiler routes to sidecar from subject boundary instability
+
+  & [Validation] is the verification route used
+    + [source_gate] is passed by python slm_project/tools/slm_source_gate_check.py
+    + [wsl_cargo_test] is passed with 17 library tests and 3 slm_demo tests
+    + [wsl_self_check] is passed
+    + [demo_smoke] is passed for "Design a compiler for FPGA hardware."
+    + [demo_article_senses] is 0 for token "a"
+    + [demo_article_hint] is article/indefinite
+    + [demo_open_class_senses] are design, compiler, hardware
+    + [demo_primer_compact_evidence_count] is 35
+    + [demo_primer_lexical_sense_items] is 6 retained from 13 workspace lexical sense candidates
+    + [demo_primer_omitted_item_count] is 37
+    + [demo_primer_ref_count] is 73 normalized refs with 0 missing namespaces and 0 whitespace refs
+    + [idempotence_test] is repeated diffusion preserved support record ids and relation candidate ids
+    + [demo_wobble_factor_count] is 9 for design/compiler demo
+    + [timeflies_relation_factor] is relation_instability for meaning:TimeFliesAssertion
+    + [demo_imperative_subjects] is empty subject list with unresolved_subject_boundary uncertainty
+    + [demo_relation_audit] is acts_on and constrains cite candidate_relation_ref plus endpoint_decision_refs
+    + [fixture_matrix] is 7 selected fixture sentences with expected workspace, diffusion, wobble, graph boundary, and primer outcomes
+    + [demo_uncertainty_types] are unresolved_subject_boundary, unresolved_role, and unresolved_scope
+    + [demo_wobble_route] is seek_sidecar with subject_boundary_instability dimension and factor refs
+    + [demo_primer_schema] is slm_primer 0.1.0 compatibility_floor 0.1.0 with 15 required fields
+    + [demo_output_modes] are full, compact, primer-only, and sop
+    + [demo_compact_boundary] is no lexical_sense_candidates array while preserving lexical_sense_candidate_count 13
+    + [regression_harness] is passed with source_gate_ok, cargo_test_ok, self_check_ok, demo_compact_ok, demo_primer_only_ok, and demo_sop_ok
+    + [golden_snapshot_check] is passed for design_compiler, fish_swim, and time_flies
+    + [golden_snapshot_routes] are design_compiler=seek_sidecar, fish_swim=continue_diffusion, time_flies=route_to_deliberation
+    + [sidecar_prompt_contract_validation] is passed for 5 task contracts
+    + [sidecar_task_tests] are all_sidecar_task_prompt_contracts_declare_boundaries and prompt_envelope_embeds_task_contract_for_transport
+    + [jury_panel_tests] are TimeFlies needs_more_context, unanswered creates_uncertainty, and invalid consequence blocks_stabilization
+    + [timeflies_contradiction_test] verifies answer_ref, jury_review_ref, provider_deliberation_ref, cited_panel_refs, Severity::High, and ContradictionStatus::Unresolved
+    + [sidecar_response_validation_tests] are accepted exact JSON, repaired fenced array JSON, and rejected freeform objection evidence
+    + [ollama_sidecar_tests] are request envelope generation and response message.content validated parsing
+    + [provider_set_tests] are default local config, JSON load/provenance template, and invalid non-mock prompt contract rejection
+    + [lexical_rebuild_dry_run] reports watched artifact checksums and planned rebuild/source-gate steps
+    + [lexicon_provenance_audit] records Open English WordNet hash, CC-BY 4.0 license, closed-class seed boundary, and generated artifact checksums
+    + [threshold_fixture_tests] cover faculty threshold, high contradiction Security veto, and wobble threshold boundary
+
+  & [SupportDelta] is added capability
+    + [delta] closed-class structural words stay high-priority for relation hints without flooding semantic sense candidates
+    + [delta] the lexical substrate remains source-preserving because no source entries are deleted
+    + [delta] primer and demo outputs become more compact before the explicit compaction-budget slice
+    + [delta] primer compaction is now explicit, inspectable, and policy-named in the primer JSON
+    + [delta] SLM-48 and SLM-49 are now unblocked by the SLM-37 dependency
+    + [delta] compact evidence refs are parseable by namespace for later primer re-ingestion and audit tooling
+    + [delta] SLM-44 is now blocked only by SLM-36 instead of SLM-42
+    + [delta] repeated deterministic diffusion no longer risks activation inflation through duplicate support records
+    + [delta] wobble is now locally attributable in primer output instead of only aggregate/vector level
+    + [delta] SLM-63 is now ready because SLM-45 is verified
+    + [delta] imperative inputs no longer misclassify action targets as grammatical subjects
+    + [delta] SLM-46 is now ready because SLM-32 and SLM-45 are verified
+    + [delta] graph relations now carry promotion audit refs for candidate relation and endpoint decisions
+    + [delta] fixture expansion matrix now gives SLM-62, SLM-64, and SLM-65 concrete proof targets
+    + [delta] SLM-62 and SLM-65 are now ready because SLM-41 is specification_complete
+    + [delta] uncertainty graph identities now require type-specific bounded criteria
+    + [delta] SLM-64 is now ready because SLM-46 is verified
+    + [delta] wobble routing is now operational and inspectable by route, reason, dimension_refs, and factor_refs
+    + [delta] primer schema identity is now explicit enough for machine re-ingestion and version-aware demo modes
+    + [delta] slm_demo can now emit compact output for smoke tests and primer-only output for downstream re-ingestion checks
+    + [delta] SLM-50 is now ready because SLM-49 is verified
+    + [delta] SLM-51 remained gated by SLM-50 after its SLM-49 prerequisite was satisfied
+    + [delta] SLM-51 is now ready because SLM-50 is verified
+    + [delta] regression verification is now a single scriptable command instead of a remembered command sequence
+    + [delta] compact demo outputs now have golden snapshots that reveal graph, wobble, primer schema, and compaction changes
+    + [delta] sidecar task prompts are now authority-bounded before live model execution
+    + [delta] SLM-36, SLM-54, and SLM-55 are now ready because SLM-35 is verified
+    + [delta] SLM-56 remains gated by SLM-55 even though its SLM-35 prerequisite is now satisfied
+    + [delta] provider disagreement now has explicit jury member refs and aggregate measurements instead of a mock-jury placeholder
+    + [delta] SLM-44 and SLM-58 are now ready because SLM-36 is verified
+    + [delta] contradiction propagation now carries answer, deliberation, jury, and cited panel refs into primer compact evidence
+    + [delta] LM Studio sidecar parsing now has a defensive validation/repair boundary before provider suggestions are ingested
+    + [delta] SLM-57 remains blocked by the live/mock endpoint gate even though SLM-54 is verified
+    + [delta] Ollama now has a source-only request/response adapter skeleton parallel to LM Studio
+    + [delta] SLM-56 is now ready because SLM-55 is verified
+    + [delta] provider orchestration now has a checked-in local provider set for mock, LM Studio, and Ollama
+    + [delta] lexical substrate rebuilds now have a dry-run-first workflow with checksum reporting
+    + [delta] lexical authority provenance can now cite imported source, license, retrieval hash, and generated artifact boundary
+    + [delta] stabilization thresholds now have focused fixtures protecting faculty convergence, contradiction, and wobble gate semantics
+
+  & [RequirementDelta] is the updated requirement shape
+    + [delta] closed-class sense routing is now a policy surface with a default operational mode and explicit audit/query mode
+    + [delta] future primer compaction should treat closed-class sense deferral as upstream evidence discipline, not as post-render filtering
+    + [delta] future primer consumers must read compaction metadata before treating compact_evidence as exhaustive workspace evidence
+    + [delta] future evidence output should choose a parseable namespace at projection boundaries rather than writing raw notes into refs
+    + [delta] future support-producing diffusion passes should use ensure_support_record instead of direct support_records.push
+    + [delta] future routing policy should consume WobbleFactorPrimer rather than relying only on aggregate wobble score
+    + [delta] future actor resolution should convert implied actor uncertainty only with explicit provider or dialogue evidence
+    + [delta] future relation taxonomy changes should preserve candidate_relation_ref and endpoint_decision_refs
+    + [delta] future fixture implementation slices should implement the matrix cases without broadening into benchmark design
+    + [delta] future uncertainty proposal types must define boundary criteria before entering SemanticGraph
+    + [delta] future routing changes should add dimensions/factors rather than aggregate-only thresholds
+    + [delta] future primer consumers must validate schema_id, schema_version, compatibility_floor, and required_fields before relying on field semantics
+    + [delta] future regression scripts should prefer compact mode unless they explicitly need exhaustive evidence arrays
+    + [delta] future snapshot and fixture slices should use slm_regression_harness.py as their proof route baseline
+    + [delta] future accepted behavior changes that alter compact outputs should update golden snapshots deliberately through slm_golden_snapshot.py --update
+    + [delta] future sidecar adapters must include the task_contract envelope field and must not treat sidecar ProviderSuggestion output as graph authority
+    + [delta] future contradiction and arbitration work should consume jury measurements and cited_panel_refs rather than inferring disagreement severity from status alone
+    + [delta] future contradiction-producing passes should use ensure_contradiction_record to keep repeated diffusion idempotent
+    + [delta] future sidecar transports must call the validated parser or provide an equivalent rejection path before ingesting provider suggestions
+    + [delta] future provider set configuration can reference mock, LM Studio, and Ollama adapters without adding live network execution
+    + [delta] future provider selection should load ProviderSetConfig and validate capabilities before constructing live adapter calls
+    + [delta] future lexical substrate changes should begin with rebuild_lexical_substrate_workflow.py --dry-run and only execute rebuilds intentionally
+    + [delta] future lexical substrate distribution planning must preserve Open English WordNet CC-BY 4.0 attribution and distinguish generated artifacts from source authority
+    + [delta] future stabilization changes must update threshold calibration fixtures when changing gate values or comparison semantics

@@ -1,0 +1,27 @@
+& [SLMThresholdCalibrationFixtureContract] is the contract for stabilization threshold fixtures
+  + [contract_uuid] is edc38d6b-f09b-46e3-aa83-6504de7a1503
+  + [slice_id] is SLM-62
+  + [depends_on] is SLM_Faculty_Validation_Stabilization_Contract, SLM_Fixture_Expansion_Matrix_Contract, SLM_Wobble_Factor_Attribution_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to prove near-threshold stabilization behavior explicitly
+    = must: show a candidate can be preserved when faculty threshold is not met
+    = must: show high contradiction blocks stabilization
+    = must: show wobble at or above threshold preserves candidate evidence
+    = must: show just-below-threshold wobble can still promote when other gates pass
+    - never: stabilize solely because a support score is high
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/stabilization.rs threshold fixture tests
+    + [fixture] is faculty_threshold_boundary_preserves_without_enough_votes
+    + [fixture] is high_contradiction_threshold_blocks_stabilization
+    + [fixture] is wobble_threshold_boundary_preserves_at_threshold_and_promotes_below
+    + [proof_route] is WSL cargo test and regression harness
+
+  ! [Slice62SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 34 library tests and 3 slm_demo tests
+    @ [regression_harness] passed slm_regression_harness_ok
+    @ [fixture] faculty threshold 8 preserves a 7-vote candidate while default threshold promotes
+    @ [fixture] high contradiction triggers Security veto and preserves candidate
+    @ [fixture] wobble at 0.55 preserves while 0.54 promotes

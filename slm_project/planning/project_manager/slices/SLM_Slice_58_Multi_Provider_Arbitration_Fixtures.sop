@@ -1,0 +1,9 @@
+& [SLMSlice58MultiProviderArbitrationFixtures] is a work-ready slice for provider disagreement scenarios
+  + [slice_id] is SLM-58
+  + [status] is ready_after_SLM-36
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-36, SLM-41
+  + [scope] is add fixtures where two providers support, one objects, and jury classification varies
+  + [acceptance_criteria] is arbitration outcome affects uncertainty and wobble without creating false glyphs
+  + [proof_route] is WSL cargo test

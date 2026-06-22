@@ -1,0 +1,33 @@
+& [SLMSourceDocumentManifest] is the source manifest for the Semantic Logic Model intake
+  + [manifest_uuid] is cdf6f09b-cd5f-49af-89d4-57c44ecf7696
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [source_document_uuid] is 9a8f4714-69bb-4552-b796-55c3d9a4cf6d
+  + [source_shape] is preserved_user_dictation_with_process_corrections
+  + [derived_artifact] is slm_project/specifications/SLM_Canonical_Specification.sop
+  + [derived_artifact] is slm_project/specifications/SLM_Exploded_Specification.sop
+  + [derived_artifact] is slm_project/specifications/SLM_Explosion_Round_2_Work_Decomposition.sop
+  + [derived_artifact] is slm_project/planning/SLM_Staged_Project_Plan.sop
+  + [derived_artifact] is slm_project/planning/project_manager/SLM_Work_Slice_Index.sop
+  + [derived_artifact_set] is slm_project/planning/project_manager/slices/*.sop
+  + [derived_artifact_set] is slm_project/specifications/contracts/*.sop
+  + [derived_artifact] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+  + [derived_artifact] is slm_project/specifications/SLM_Rust_Implementation_Formation.sop
+  + [implementation_projection] is slm_rust
+
+  ! [SourcePreserved] is accepted
+    @ [support] source document exists as a separate .sop artifact
+
+  ! [Round2WorkDecompositionLinked] is accepted
+    @ [support] slm_project/specifications/SLM_Explosion_Round_2_Work_Decomposition.sop
+    @ [support] slm_project/planning/project_manager/SLM_Work_Slice_Index.sop
+
+  ! [ContractSliceCompletionLinked] is accepted
+    @ [support] slm_project/specifications/contracts/*.sop
+    @ [support] slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+
+  ! [RustWorkspacePrepared] is accepted
+    @ [support] slm_project/specifications/SLM_Rust_Implementation_Formation.sop
+    @ [support] slm_rust
+
+  - never: collapse source_document and derived_artifact identities

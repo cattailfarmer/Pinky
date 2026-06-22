@@ -1,0 +1,38 @@
+& [Slice02UE5PrototypeHostSessionScaffold] is the first implementation-oriented slice for the multiplayer split-screen feature
+  + [slice_uuid] is a6d93d69-1729-4316-bf81-e486e0d0b46f
+  + [status] is complete_pending_review
+  + [feature_specification] is unreal_platform_project/specifications/Multiplayer_Splitscreen_Hosting_Feature_Specification.sop
+  + [data_contract] is unreal_platform_project/specifications/contracts/Multiplayer_Splitscreen_Data_Contracts.sop
+  + [target_deliverable] is UE5 prototype project scaffold under unreal_platform_project/runtime or user-selected Unreal project path
+  + [model_routing_assessment] is Spark-suitable after UE5 path and project type are confirmed; deeper reasoning already used for identity boundary
+
+  & [Scope] is the bounded work for this slice
+    = must: confirm or create UE5 project location
+    = must: define minimal host-session runtime classes or Blueprint-equivalent assets
+    = must: create mock platform data structures for HostSession, LocalPlayerSlot, AuthenticatedUser, UserSessionBinding, and SessionAuditEvent
+    = must: support a non-networked local host-session state model that can later map to listen-server authority
+    = must: include a simple proof command, editor play procedure, or automated smoke target if UE tooling is available
+    - never: implement marketplace, public matchmaking, creator scripting, economy, or remote internet join in this slice
+
+  & [Inputs] is the required input set before work starts
+    + [required] is accepted or explicitly provisional data contract
+    + [required] is local Unreal Engine 5 availability and version
+    + [required] is chosen project path
+    + [optional] is C++ project preference versus Blueprint-first prototype preference
+
+  & [AcceptanceCriteria] is the slice proof standard
+    + [AC1] is project scaffold exists in the selected UE5 path
+    + [AC2] is host-session model can create one session with two local slots in data
+    + [AC3] is two mock AuthenticatedUser records can bind to separate LocalPlayerSlot records
+    + [AC4] is audit log records host_session_created, local_slot_created, login_succeeded, and user_bound_to_slot
+    + [AC5] is scaffold names the later transition point for split-screen viewport creation
+    + [AC6] is no code collapses host device, host user, local slot, authenticated user, and player controller into one identity
+
+  & [CompletionRecord] is the current completion note
+    + [completed_by] is current Codex conversation
+    + [completed_at_local] is 2026-06-21
+    + [result_summary] is C++ UE5 prototype scaffold created under unreal_platform_project/runtime/UnrealPlatformPrototype with host-session data structs, GameState host-session manager, mock user binding, audit append behavior, and identity-collapse guard
+    + [proof_ref] is UnrealBuildTool UnrealPlatformPrototypeEditor Win64 Development succeeded using UE_5.7 bundled DotNet runtime
+    + [remaining_concerns] is split-screen viewport creation, input isolation, pawn spawning, and HUD proof remain for the next slice
+
+  - never: treat this scaffold as completed split-screen gameplay; it only proves the compiled platform identity spine

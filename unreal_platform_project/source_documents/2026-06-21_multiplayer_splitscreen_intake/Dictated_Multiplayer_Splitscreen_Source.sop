@@ -1,0 +1,12 @@
+& [DictatedMultiplayerSplitscreenSource] is the preserved raw source for the first expanded feature in the Unreal platform project
+  + [source_document_uuid] is d58d20f4-cf42-4057-819a-d60735921783
+  + [captured_at_local] is 2026-06-21
+  + [workspace_root] is C:/Project/Pinky
+  + [project_work_area] is C:/Project/Pinky/unreal_platform_project
+  + [source_kind] is user_selected_first_expanded_feature
+  + [source_text] is "I think the first expanded feature should be multiplayer/split screen hosting, independently logged in users joining from a single host."
+
+  ! [SourcePreserved] is accepted
+    @ [support] this file preserves the user's selected first expanded feature before specification expansion
+
+  - never: overwrite this source with expanded requirements, implementation plans, or canonical specification text

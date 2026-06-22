@@ -1,0 +1,43 @@
+& [SLMSemanticGraphUncertaintyContract] is the compact graph contract for stabilized meaning
+  + [contract_uuid] is 0a73370f-527f-4b7d-a813-5e87ff56f83b
+  + [slice_id] is SLM-09
+  + [depends_on] is SLM_Faculty_Validation_Stabilization_Contract
+  + [status] is accepted_for_primer_contracts
+
+  & [SemanticGraph] is the stabilized meaning field
+    + [graph_id] is unique per analyzed input or persisted semantic field
+    + [contains] is Glyph records
+    + [contains] is SemanticRelation records
+    + [contains] is UncertaintyGlyph records
+    + [contains] is LineageRecord records
+    + [contains] is GraphLifecycleEvent records
+    - never: contain Token, GrammarCandidate, CandidateMeaning, CandidateRelation, raw SupportRecord, or raw ContradictionRecord as graph nodes
+
+  & [SemanticRelation] is a stabilized relation between semantic identities
+    + [relation_id] is unique in SemanticGraph
+    + [source_glyph] is required
+    + [target_glyph] is required unless relation is unary or scoped uncertainty
+    + [relation_kind] is performs, acts_on, modifies, constrains, scopes_over, refers_to, supports, contradicts, supersedes, retires, or extension
+    + [stabilization_decision] is required
+    + [lineage] is required
+    + [lifecycle_state] is active, retired, superseded, or preserved_trace
+
+  & [GraphLifecycleEvent] is append-only semantic history
+    + [event_kind] is create_glyph, create_relation, create_uncertainty_glyph, activate, retire, supersede, or preserve_trace
+    + [target_ref] is required
+    + [reason] is required
+    + [lineage] is required
+    - never: rewrite a prior semantic identity
+
+  & [StableUncertaintyBoundary] is the gate for uncertainty glyph creation
+    + [boundary_statement] is required
+    + [candidate_set] is bounded
+    + [uncertainty_type] is required
+    + [lineage] is required
+    + [stabilization_decision] is create_uncertainty_glyph
+    = must: be specific enough for later reasoning to revisit
+    - never: represent vague unease as a Glyph
+
+  ! [Slice09Complete] is accepted
+    @ [support] graph contract preserves compact stabilized meaning and bounded uncertainty only
+

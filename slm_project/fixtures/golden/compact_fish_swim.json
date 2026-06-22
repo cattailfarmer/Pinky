@@ -1,0 +1,80 @@
+{
+  "candidate_role_count": 11,
+  "compact_evidence_count": 31,
+  "compaction_omitted_item_count": 26,
+  "graph_summary": {
+    "glyphs": [
+      {
+        "kind": "subject",
+        "label": "FishConcept",
+        "semantic_id": "glyph:FishConcept"
+      },
+      {
+        "kind": "action",
+        "label": "SwimmingAction",
+        "semantic_id": "glyph:SwimmingAction"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "performs",
+        "relation_id": "relation:FishConcept:SwimmingAction:0",
+        "source_glyph": "glyph:FishConcept",
+        "target_glyph": "glyph:SwimmingAction"
+      }
+    ],
+    "uncertainties": [
+      {
+        "boundary_statement": "token 'fish' has competing grammatical roles noun and verb",
+        "semantic_id": "glyph:uncertainty:uncertainty:unresolved_role:tok:demo-input:1",
+        "uncertainty_type": "unresolved_role"
+      },
+      {
+        "boundary_statement": "token 'swim' has competing grammatical roles verb and noun",
+        "semantic_id": "glyph:uncertainty:uncertainty:unresolved_role:tok:demo-input:2",
+        "uncertainty_type": "unresolved_role"
+      }
+    ]
+  },
+  "input": "The fish swim.",
+  "lexical_sense_candidate_count": 11,
+  "output_mode": "compact",
+  "primer_schema": {
+    "compatibility_floor": "0.1.0",
+    "compatibility_notes": [
+      "Additive optional fields do not require a compatibility floor change.",
+      "Required field changes require a schema_version increment.",
+      "compact_evidence is bounded by compaction metadata and is not exhaustive by default."
+    ],
+    "required_fields": [
+      "version",
+      "schema",
+      "input_ref",
+      "graph_ref",
+      "subjects",
+      "actions",
+      "relations",
+      "modifiers",
+      "constraints",
+      "uncertainty",
+      "wobble",
+      "compact_evidence",
+      "compaction",
+      "lineage_refs",
+      "sop_rendering"
+    ],
+    "schema_id": "slm_primer",
+    "schema_version": "0.1.0"
+  },
+  "span_candidate_count": 2,
+  "structural_hint_count": 1,
+  "token_surfaces": [
+    "The",
+    "fish",
+    "swim",
+    "."
+  ],
+  "wobble_reason": "local instability may reduce through additional deterministic diffusion",
+  "wobble_route": "continue_diffusion",
+  "wobble_score": 0.13
+}

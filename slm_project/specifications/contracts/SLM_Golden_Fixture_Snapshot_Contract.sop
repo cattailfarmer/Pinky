@@ -1,0 +1,50 @@
+& [SLMGoldenFixtureSnapshotContract] is the contract for compact output snapshots
+  + [contract_uuid] is 99690353-6a9d-4b97-9267-9d1823edbe4f
+  + [slice_id] is SLM-51
+  + [depends_on] is SLM_Fixture_Expansion_Matrix_Contract, SLM_Demo_Output_Modes_Contract, SLM_CLI_Regression_Harness_Contract
+  + [status] is verified_wsl
+
+  & [Purpose] is to make graph, wobble, and primer changes visible as deterministic snapshot diffs
+    = must: store compact JSON snapshots for currently implemented deterministic fixtures
+    = must: compare current compact demo output against stored snapshots
+    = must: include graph summary, wobble route, primer schema, and compaction metadata in snapshots
+    = must: keep full evidence arrays out of snapshots unless a future snapshot contract explicitly requires them
+    = must: update snapshots only through an explicit update command
+    - never: snapshot live LLM output or non-deterministic provider responses
+
+  & [SnapshotFixtureSet] is the v0 implemented deterministic set
+    + [design_compiler] is "Design a compiler for FPGA hardware."
+    + [fish_swim] is "The fish swim."
+    + [time_flies] is "Time flies like an arrow."
+
+  & [SnapshotDirectory] is the checked-in fixture surface
+    + [directory] is slm_project/fixtures/golden
+    + [manifest] is slm_project/fixtures/golden/manifest.sop
+    + [mode] is slm_demo --mode compact
+
+  & [SnapshotToolContract] is the command surface
+    + [script] is slm_project/tools/slm_golden_snapshot.py
+    + [update] is python slm_project/tools/slm_golden_snapshot.py --update
+    + [check] is python slm_project/tools/slm_golden_snapshot.py --check
+    = must: fail with a diff when current output differs from a stored snapshot
+    = must: fail when a compact output leaks the lexical_sense_candidates array
+    = must: print one status line per fixture
+
+  & [HarnessIntegration] is the regression proof boundary
+    = must: include golden_snapshot_check in slm_regression_harness.py after demo mode smoke tests
+    = must: keep SLM-50 baseline stages intact
+
+  & [RuntimeProjection] is the source surface
+    + [script] is slm_project/tools/slm_golden_snapshot.py
+    + [harness] is slm_project/tools/slm_regression_harness.py golden snapshot stage
+    + [snapshots] is slm_project/fixtures/golden/*.json
+    + [proof_route] is python slm_project/tools/slm_golden_snapshot.py --check and python slm_project/tools/slm_regression_harness.py
+
+  ! [Slice51SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [snapshot_update] generated design_compiler, fish_swim, and time_flies compact snapshots
+    @ [snapshot_check] passed python slm_project/tools/slm_golden_snapshot.py --check
+    @ [harness] passed python slm_project/tools/slm_regression_harness.py with snapshot_ok lines for all fixtures
+    @ [snapshot_route_design_compiler] is seek_sidecar
+    @ [snapshot_route_fish_swim] is continue_diffusion
+    @ [snapshot_route_time_flies] is route_to_deliberation

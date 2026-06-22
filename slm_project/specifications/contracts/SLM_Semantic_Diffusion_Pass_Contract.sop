@@ -1,0 +1,44 @@
+& [SLMSemanticDiffusionPassContract] is the transform contract for meaning-denoising diffusion
+  + [contract_uuid] is f0b9f7b4-61dd-4748-9861-91c159628adb
+  + [slice_id] is SLM-07
+  + [depends_on] is SLM_Evidence_Workspace_Contract, SLM_Wobble_Contradiction_Contract
+  + [status] is accepted_for_stabilization_contracts
+
+  & [DiffusionEngine] is constraint propagation over EvidenceWorkspace
+    + [input] is EvidenceWorkspace
+    + [output] is updated EvidenceWorkspace plus StableCandidateProposal and UncertaintyProposal
+    + [not_output] is language
+    + [not_workspace] is SemanticGraph
+    = must: begin with maximal uncertainty
+    = must: reduce wobble when evidence justifies reduction
+    = must: preserve uncertainty when reduction is not justified
+    - never: infer meaning directly without evidence propagation
+
+  & [DiffusionPassTrace] is required for every pass
+    + [pass_id] is unique in EvidenceWorkspace
+    + [pass_kind] is candidate_activation, structural_constraint, support_propagation, contradiction_propagation, wobble_measurement, semantic_candidate_proposal, uncertainty_proposal, or no_gain_stop
+    + [input_refs] is required
+    + [output_refs] is required
+    + [constraint_refs] is required when constraints are applied
+    + [gain_delta] is role_ambiguity_delta, subject_ambiguity_delta, relation_ambiguity_delta, contradiction_delta, or wobble_delta
+    + [remaining_uncertainty] is required
+
+  & [PassOrder] is the v0 diffusion sequence
+    + [step_1] is CandidateActivation
+    + [step_2] is StructuralConstraint
+    + [step_3] is SupportPropagation
+    + [step_4] is ContradictionPropagation
+    + [step_5] is WobbleMeasurement
+    + [step_6] is StableCandidateProposal
+    + [step_7] is UncertaintyProposal
+    = must: repeat bounded passes only while gain_delta improves truth, clarity, or stabilization readiness
+    = stop_when: wobble does not improve and no new support or contradiction appears
+
+  & [StructuralConstraint] is the first relation-shaping pressure
+    + [source] is determiner, preposition, conjunction, auxiliary, modal, punctuation, or structural phrase marker
+    + [effect] is relation scope, candidate lowering, candidate raising, boundary suggestion, or contradiction suggestion
+    - never: force noun-first or verb-first commitment
+
+  ! [Slice07Complete] is accepted
+    @ [support] diffusion pass contract keeps all temporary hypotheses in EvidenceWorkspace and emits proposals for stabilization
+

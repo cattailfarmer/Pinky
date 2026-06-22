@@ -1,0 +1,29 @@
+& [SLMLMStudioSidecarAdapterContract] is the contract for LM Studio compatible sidecar exchange
+  + [contract_uuid] is 33df65a2-0ffe-42f8-97eb-4cb5f4028b1a
+  + [slice_id] is SLM-23
+  + [status] is source_implemented_policy_gated
+
+  & [Purpose] is to prepare an exchange layer without committing to live network execution
+    = must: build an OpenAI-compatible chat request for LM Studio
+    = must: serialize SidecarPromptEnvelope as machine-readable prompt content
+    = must: require provider suggestions in the response contract
+    = must: parse provider suggestions from a structured response body
+    = must: avoid direct graph mutation
+    - never: execute network calls until the runtime verification policy gate is resolved
+
+  & [LMStudioRequest] is the OpenAI-compatible chat payload
+    + [endpoint] defaults to http://127.0.0.1:1234/v1/chat/completions
+    + [model] is adapter configuration
+    + [messages] include system and user messages
+    + [temperature] defaults low for deterministic evidence
+    + [max_tokens] is adapter configuration
+    + [stream] is false in v0
+
+  & [LMStudioResponseParsing] is the source-only parser boundary
+    + [input] is assistant message content containing JSON
+    + [expected_json] includes provider_suggestions
+    + [output] is Vec<ProviderSuggestion>
+    = must: preserve provider provenance encoded in suggestions
+
+  & [RuntimeProjection] is slm_rust/src/sidecar.rs LM Studio request and parser helpers
+    + [status] is source_complete_policy_gated

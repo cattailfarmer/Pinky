@@ -1,0 +1,28 @@
+& [SLMProviderDisagreementPayloadContract] is the contract for typed provider objections and answers
+  + [contract_uuid] is 6b64fb05-9b1f-43c6-82d1-9b4d17294a41
+  + [slice_id] is SLM-26
+  + [status] is source_implemented_policy_gated
+
+  & [Purpose] is to keep lower-LLM disagreement articulated instead of flattened
+    = must: allow objecting providers to name the disagreement class
+    = must: allow supporting providers to name the answer kind
+    = must: preserve rationale and provider provenance separately
+    = must: let deliberation consume typed payloads without assuming all objections are role conflicts
+    - never: turn disagreement into a vague score bump without objection and answer lineage
+
+  & [ProviderObjectionPayload] is the objection evidence payload
+    + [disagreement_class] is same_meaning_different_words, role_conflict, relation_conflict, scope_conflict, unsupported_claim, contradiction, insufficient_context, invalid_consequence, or lineage_gap
+    + [rationale] is required
+    + [target_ref] is required
+    + [provider_provenance] is required
+
+  & [ProviderAnswerPayload] is the answer evidence payload
+    + [answer_kind] is resolves, narrows, reframes, concedes, rejects, or defers
+    + [rationale] is required
+    + [target_ref] is required
+    + [provider_provenance] is required
+
+  & [RuntimeProjection] is provider suggestion fields consumed by deliberation
+    + [provider_source] is slm_rust/src/providers.rs
+    + [deliberation_consumer] is slm_rust/src/deliberation.rs
+    + [status] is source_complete_policy_gated

@@ -1,0 +1,17 @@
+& [SLMSlice44ContradictionPropagationExpansion] is a work-ready slice for richer contradiction flow
+  + [slice_id] is SLM-44
+  + [status] is verified_wsl
+  + [effort] is M
+  + [risk] is medium
+  + [depends_on] is SLM-26, SLM-36, SLM-42
+  + [scope] is propagate provider objections and relation conflicts into target-specific contradiction records
+  + [acceptance_criteria] is contradiction records identify target, source, answer, severity, and unresolved status
+  + [proof_route] is TimeFlies fixture and WSL cargo test
+
+  ! [CompletionEvidence] is the SLM-44 verification record
+    @ [contract] is slm_project/specifications/contracts/SLM_Contradiction_Propagation_Expansion_Contract.sop
+    @ [implementation] is slm_rust/src/core.rs ContradictionRecord fields plus slm_rust/src/diffusion.rs ensure_contradiction_record
+    @ [source_gate] passed
+    @ [wsl_cargo_test] passed with 23 library tests and 3 slm_demo tests
+    @ [regression_harness] passed
+    @ [timeflies_fixture] contradiction cites source, answer, jury, deliberation, severity, and unresolved status

@@ -1,0 +1,123 @@
+& [MultiplayerSplitscreenHostingFeatureSpecification] is the expanded first feature specification for single-host multiplayer split-screen with independently authenticated local users
+  + [specification_uuid] is b4bc45fd-f55e-4c0f-a1ba-074e9c7f204f
+  + [source_document] is unreal_platform_project/source_documents/2026-06-21_multiplayer_splitscreen_intake/Dictated_Multiplayer_Splitscreen_Source.sop
+  + [feature_import_specification] is unreal_platform_project/specifications/Roblox_Feature_Import_Specification.sop
+  + [target_platform] is UE5-powered user-generated multiplayer game platform
+  + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_status] is unsigned_feature_expansion_draft
+  + [authority_state] is draft_until_user_review_and_SJS_satisfaction
+
+  @ [source] https://dev.epicgames.com/documentation/unreal-engine/networking-overview-for-unreal-engine
+  @ [source] https://dev.epicgames.com/documentation/unreal-engine/setting-up-dedicated-servers-in-unreal-engine
+
+  & [FeatureIdentity] is the bounded feature being specified
+    + [feature_name] is multiplayer split-screen hosting
+    + [feature_goal] is allow multiple independently logged-in users to join one platform experience from a single host machine using local split-screen while preserving each user's account identity, player state, permissions, and platform trace
+    + [platform_reason] is this proves the platform can distinguish device, session, local player, authenticated user, avatar, and hosted world before broader online scale is attempted
+    + [reference_import_family] is RuntimeEngineAndSimulation, ExperiencesAndWorlds, AvatarsAndIdentity, TeamsAndGroups, SafetyModerationAndPolicy, AnalyticsAndOperations
+
+  & [TechnicalBoundary] is the Unreal multiplayer model boundary that shapes the feature
+    + [local_multiplayer] is multiple local players using one machine, one game instance, local input, and split-screen viewports
+    + [networked_multiplayer] is multiple machines connected to an authoritative server that replicates game state
+    + [listen_server] is a hosting client that also acts as server and local player
+    + [dedicated_server] is a headless authoritative server with no local player
+    + [target_v0_mode] is local_split_screen_listen_host_candidate
+
+    = must: distinguish local player identity from authenticated platform user identity
+    = must: distinguish host machine from host user
+    = must: distinguish visual split-screen from network authority
+    = must: preserve the server-authoritative gameplay model when networked clients are later added
+    = should: build gameplay with multiplayer assumptions from the start
+    - never: assume split-screen support alone proves platform multiplayer
+    - never: bind all local players to the host user's account
+
+  & [CoreDataSubjects] is the data identity model for this feature
+    + [HostDevice] is the physical or runtime device running the UE5 client instance and optional listen server
+    + [HostSession] is the platform session created by one host device for one experience version
+    + [ExperienceInstance] is the live execution of a creator-authored world under a host session
+    + [LocalPlayerSlot] is one local controller, viewport, input mapping, and pawn ownership lane on the host device
+    + [AuthenticatedUser] is one independently logged-in platform account assigned to a local player slot
+    + [UserSessionBinding] is the relation between AuthenticatedUser, LocalPlayerSlot, HostSession, avatar, permissions, and telemetry identity
+    + [PlayerControllerBinding] is the UE-side relation between LocalPlayerSlot, PlayerController, Pawn, HUD, camera, and input device
+    + [HostAuthority] is the server-side gameplay authority held by the host session
+    + [JoinPolicy] is the rule set for who may join locally, who may join remotely later, and what login proof is required
+    + [SessionAuditEvent] is append-only trace for login, join, leave, controller assignment, authority change, moderation action, and session end
+
+    = must: give each LocalPlayerSlot a stable slot identity within HostSession
+    = must: bind each LocalPlayerSlot to zero or one AuthenticatedUser at a time
+    = must: allow AuthenticatedUser to differ from HostUser
+    = must: preserve UserSessionBinding as first-class platform data
+    = must: record SessionAuditEvent when a user joins, leaves, changes slot, or loses authentication
+    = must: preserve ExperienceInstance version identity
+    - never: use viewport index as the only durable identity for a player
+    - never: treat input device identity as account identity
+
+  & [FunctionalRequirements] is the required behavior set for the first vertical slice
+    + [R1_HostCreatesSession] is the host can launch a selected experience version as a host session
+    + [R2_LocalSlotCreation] is the host can create at least two local player slots in one UE5 client instance
+    + [R3_IndependentLogin] is each local player slot can authenticate or select a distinct platform user identity
+    + [R4_SlotUserBinding] is each authenticated user is bound to the correct local player slot, pawn, camera, HUD, input, and avatar identity
+    + [R5_SplitscreenView] is each active local player has a distinct viewport and camera view
+    + [R6_InputIsolation] is input from one local controller affects only that slot's player controller and pawn unless gameplay rules intentionally share control
+    + [R7_SharedWorldState] is all local players participate in the same authoritative experience instance
+    + [R8_UserPresence] is platform presence shows every authenticated local user as present in the hosted experience
+    + [R9_LeaveAndRejoin] is one local user can leave without ending the host session for remaining users
+    + [R10_AuditTrace] is join, leave, login, slot assignment, and session end are logged with user and slot identity
+    + [R11_SafetyHooks] is moderation, reporting, blocking, and parental or account restrictions can inspect each local user separately
+    + [R12_NetworkForwardCompatibility] is the same authority and player identity model can later accept remote clients without redesigning core identity
+
+  & [NonGoals] is what the first slice should not attempt
+    + [not_goal] is massive public matchmaking
+    + [not_goal] is arbitrary internet join through NAT traversal
+    + [not_goal] is dedicated server fleet orchestration
+    + [not_goal] is creator-authored arbitrary networking code
+    + [not_goal] is monetization or marketplace integration
+    + [not_goal] is cross-platform console certification
+    + [not_goal] is public child-account safety launch
+
+  & [AcceptanceCriteria] is the first proof standard
+    + [AC1] is a host can start a test experience as a host session
+    + [AC2] is two local player slots can be created and rendered as split-screen
+    + [AC3] is two different platform user identities can be assigned to those slots
+    + [AC4] is each slot controls its own pawn through a distinct input lane
+    + [AC5] is each slot has distinct HUD/user identity display
+    + [AC6] is shared world state is visible consistently to both local players
+    + [AC7] is host-session audit log records host start, user login, slot assignment, player spawn, leave, and session end
+    + [AC8] is the data model does not collapse HostDevice, HostUser, LocalPlayerSlot, AuthenticatedUser, and PlayerControllerBinding into one identity
+    + [AC9] is the design names the future transition path to remote network clients or dedicated servers
+
+  & [RisksAndFaults] is the risk surface for this feature
+    + [risk] is account_identity_collapse where every local player inherits the host account
+    + [risk] is viewport_identity_confusion where split-screen index becomes the durable player identity
+    + [risk] is input_bleed where one controller affects another player slot
+    + [risk] is host_advantage when listen server gameplay later competes with remote players
+    + [risk] is moderation_blindness where reports or restrictions cannot distinguish local users
+    + [risk] is save_data_corruption where progress is written to the wrong account
+    + [risk] is multiplayer_refactor_debt if v0 is built as local-only without server-authoritative assumptions
+
+  & [ExpansionQuestions] is the next decision frontier
+    ? [Q1: Is v0 split-screen only, or split-screen plus one remote client?]
+      ~ [candidate_answer] is split-screen only for the first proof, but data and authority model should be network-compatible
+    ? [Q2: Does local login require online authentication at session start?]
+      ~ [candidate_answer] is yes for platform identity proof, with an offline guest mode considered separate
+    ? [Q3: How many local players are supported first?]
+      ~ [candidate_answer] is two for v0, with data model allowing more slots
+    ? [Q4: Can one account occupy multiple local slots?]
+      ~ [candidate_answer] is no by default because the feature is explicitly about independently logged-in users
+    ? [Q5: Is the host user also required to be one local player?]
+      ~ [candidate_answer] is unresolved; host device may host while a distinct set of local users join
+    ? [Q6: Should this use Lyra or a minimal custom UE5 sample?]
+      ~ [candidate_answer] is unresolved; Lyra gives multiplayer scaffolding, minimal sample gives lower conceptual noise
+
+  & [RecommendedFirstImplementationSlice] is the smallest platform proof implied by this specification
+    + [slice_name] is two_local_authenticated_users_one_host_session
+    + [slice_summary] is create a UE5 prototype host session with two split-screen local players, each bound to a separate mock-authenticated platform user, with separate input, pawn, HUD, shared world state, and append-only audit trace
+    + [model_routing_assessment] is requires deeper reasoning for identity and authority design; Spark-suitable later for bounded fixtures, mock auth, UI labels, audit event tests, and smoke checks after the design is accepted
+
+  & [SJSProcessingStatus] is the current processing state
+    + [processing_state] is feature_expansion_draft
+    + [source_preserved] is true
+    + [canonical_signature] is not_issued
+    + [required_next_stage] is user_review_then_data_contract_and_work_slice_decomposition
+
+  - never: treat this feature expansion as final implementation authority before user review, data contract extraction, and SJS satisfaction

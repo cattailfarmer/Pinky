@@ -1,0 +1,294 @@
+& [SLMWorkSliceIndex] is the project-manager index for SLM work-ready slices
+  + [index_uuid] is 480ab236-1d9b-4709-8efc-37fef79f2130
+  + [project_subject] is Semantic Logic Model prototype
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [canonical_specification] is slm_project/specifications/SLM_Canonical_Specification.sop
+  + [explosion_round_2] is slm_project/specifications/SLM_Explosion_Round_2_Work_Decomposition.sop
+  + [explosion_round_3] is slm_project/specifications/SLM_Explosion_Round_3_Next_Frontier.sop
+  + [explosion_round_4] is slm_project/specifications/SLM_Explosion_Round_4_Long_Run_Backlog.sop
+  + [coordination_mode] is single_conversation_project_manager
+  + [coordination_layer] is inactive
+  + [manager_rule] is complete and review one slice before claiming the next dependent slice
+
+  & [ReadinessModel] is the local status vocabulary
+    + [ready] is clear enough for immediate SOP work
+    + [blocked] is waiting on dependency or unresolved decision
+    + [deferred] is valid future work outside the current frontier
+    + [active] is currently being prepared or reviewed
+    + [complete] is finished and reviewed for support_delta and requirement_delta
+
+  & [SliceSet] is the ordered work map
+    + [slice_01] is slm_project/planning/project_manager/slices/SLM_Slice_01_Authority_And_Source_Rails.sop
+      + [status] is complete
+      + [depends_on] is none
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_02] is slm_project/planning/project_manager/slices/SLM_Slice_02_Core_Data_Identity_Contracts.sop
+      + [status] is complete
+      + [depends_on] is slice_01
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_03] is slm_project/planning/project_manager/slices/SLM_Slice_03_Evidence_Workspace_Contract.sop
+      + [status] is complete
+      + [depends_on] is slice_02
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_04] is slm_project/planning/project_manager/slices/SLM_Slice_04_LLM_Provider_Adapter_Contract.sop
+      + [status] is complete
+      + [depends_on] is slice_02
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_05] is slm_project/planning/project_manager/slices/SLM_Slice_05_Provider_Deliberation_Contract.sop
+      + [status] is complete
+      + [depends_on] is slice_04
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_06] is slm_project/planning/project_manager/slices/SLM_Slice_06_Wobble_And_Contradiction_Contract.sop
+      + [status] is complete
+      + [depends_on] is slice_03
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_07] is slm_project/planning/project_manager/slices/SLM_Slice_07_Semantic_Diffusion_Pass_Contract.sop
+      + [status] is complete
+      + [depends_on] is slice_03, slice_06
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_08] is slm_project/planning/project_manager/slices/SLM_Slice_08_Faculty_Validation_And_Stabilization.sop
+      + [status] is complete
+      + [depends_on] is slice_05, slice_06, slice_07
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_09] is slm_project/planning/project_manager/slices/SLM_Slice_09_Semantic_Graph_And_Uncertainty_Glyphs.sop
+      + [status] is complete
+      + [depends_on] is slice_08
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_10] is slm_project/planning/project_manager/slices/SLM_Slice_10_Primer_And_Rendering_Contract.sop
+      + [status] is complete
+      + [depends_on] is slice_09
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_11] is slm_project/planning/project_manager/slices/SLM_Slice_11_Fixture_And_Proof_Suite.sop
+      + [status] is complete
+      + [depends_on] is slice_02, slice_04, slice_06
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Slice_Completion_Review_2026-06-20.sop
+    + [slice_12] is slm_project/planning/project_manager/slices/SLM_Slice_12_Implementation_Formation_Plan.sop
+      + [status] is complete
+      + [depends_on] is slice_01 through slice_11 review
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Rust_Implementation_Review_2026-06-20.sop
+    + [slice_13] is slm_project/planning/project_manager/slices/SLM_Slice_13_Lexical_Authority_Foundation.sop
+      + [status] is complete
+      + [depends_on] is slice_02, slice_03, slice_04, slice_12
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Lexical_Authority_Review_2026-06-20.sop
+    + [slice_14] is slm_project/planning/project_manager/slices/SLM_Slice_14_Closed_Class_Diffusion.sop
+      + [status] is source_complete_policy_gated
+      + [depends_on] is slice_13, slice_07
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop
+    + [slice_15] is slm_project/planning/project_manager/slices/SLM_Slice_15_Span_Candidate_Layer.sop
+      + [status] is source_complete_policy_gated
+      + [depends_on] is slice_14
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop
+    + [slice_16] is slm_project/planning/project_manager/slices/SLM_Slice_16_Lexical_Sense_Evidence.sop
+      + [status] is source_complete_policy_gated
+      + [depends_on] is slice_13, slice_15
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop
+    + [slice_17] is slm_project/planning/project_manager/slices/SLM_Slice_17_Tiny_LLM_Sidecar_Contract.sop
+      + [status] is specification_complete
+      + [depends_on] is slice_04, slice_05, slice_13
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Runtime_Evidence_Expansion_Review_2026-06-21.sop
+    + [slice_18] is slm_project/planning/project_manager/slices/SLM_Slice_18_Trusted_Rust_Verification_Route.sop
+      + [status] is complete
+      + [depends_on] is Windows Application Control policy or alternate trusted execution route
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_19] is slm_project/planning/project_manager/slices/SLM_Slice_19_Evidence_Query_Surface.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_03, slice_14, slice_15, slice_16
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_20] is slm_project/planning/project_manager/slices/SLM_Slice_20_Closed_Class_Relation_Templates.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_14, slice_15
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_21] is slm_project/planning/project_manager/slices/SLM_Slice_21_Sense_Coherence_Scoring.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_16
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_22] is slm_project/planning/project_manager/slices/SLM_Slice_22_Sidecar_Evidence_Bundle_Format.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_17, slice_19
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_23] is slm_project/planning/project_manager/slices/SLM_Slice_23_LM_Studio_Sidecar_Adapter.sop
+      + [status] is verified_wsl_source_only
+      + [depends_on] is slice_17, slice_22, slice_26, slice_27
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_24] is slm_project/planning/project_manager/slices/SLM_Slice_24_Diffusion_Rule_Table_Extraction.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_14, slice_15, slice_20, slice_21
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_25] is slm_project/planning/project_manager/SLM_Manager_Effort_Model.sop
+      + [status] is complete
+      + [depends_on] is manager need for sustained work batching
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_26] is slm_project/planning/project_manager/slices/SLM_Slice_26_Provider_Disagreement_Payloads.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_05, slice_17, slice_22
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_27] is slm_project/planning/project_manager/slices/SLM_Slice_27_Provider_Internal_Faculty_Report.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_04, slice_05, slice_08, slice_22, slice_26
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_28] is slm_project/planning/project_manager/slices/SLM_Slice_28_Primer_Provider_Evidence.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_10, slice_22, slice_26, slice_27
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_29] is slm_project/planning/project_manager/slices/SLM_Slice_29_Fixture_Provider_Evidence_Coverage.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_11, slice_26, slice_27, slice_28
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_30] is slm_project/planning/project_manager/slices/SLM_Slice_30_Source_Only_Verification_Gate.sop
+      + [status] is complete
+      + [depends_on] is slice_18, slice_23 through slice_29 source work
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_31] is slm_project/planning/project_manager/slices/SLM_Slice_31_Closed_Class_Role_Pair_Suppression.sop
+      + [status] is complete
+      + [depends_on] is slice_24 and demo verification
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Manager_Batch_Review_2026-06-21.sop
+    + [slice_32] is slm_project/planning/project_manager/slices/SLM_Slice_32_Imperative_Subject_Implied_Actor.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_20, slice_24, slice_31
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_33] is slm_project/planning/project_manager/slices/SLM_Slice_33_Candidate_Relation_Stabilization_Audit.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_09, slice_20, slice_24
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_34] is slm_project/planning/project_manager/slices/SLM_Slice_34_Live_LM_Studio_Transport_Gate.sop
+      + [status] is blocked_external_runtime
+      + [depends_on] is slice_23, slice_35
+      + [completion_review] is pending
+    + [slice_35] is slm_project/planning/project_manager/slices/SLM_Slice_35_Sidecar_Task_Prompt_Contracts.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_22, slice_23, slice_27
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_36] is slm_project/planning/project_manager/slices/SLM_Slice_36_Provider_Jury_Panel_Expansion.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_26, slice_27, slice_35
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_37] is slm_project/planning/project_manager/slices/SLM_Slice_37_Primer_Compaction_Budget.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_10, slice_16, slice_28
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_38] is slm_project/planning/project_manager/slices/SLM_Slice_38_Closed_Class_Lexical_Sense_Routing.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_14, slice_16, slice_31
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_39] is slm_project/planning/project_manager/slices/SLM_Slice_39_Activation_Score_Split_Plan.sop
+      + [status] is ready_sop_only
+      + [depends_on] is slice_06, slice_21
+      + [completion_review] is pending
+    + [slice_40] is slm_project/planning/project_manager/slices/SLM_Slice_40_Append_Only_Learning_Store_Design.sop
+      + [status] is ready_sop_only
+      + [depends_on] is slice_09, slice_13
+      + [completion_review] is pending
+    + [slice_41] is slm_project/planning/project_manager/slices/SLM_Slice_41_Fixture_Expansion_Matrix.sop
+      + [status] is specification_complete
+      + [depends_on] is slice_11, slice_29, slice_32
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_42] is slm_project/planning/project_manager/slices/SLM_Slice_42_Evidence_Provenance_Normalization.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_19, slice_26, slice_28
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_43] is slm_project/planning/project_manager/slices/SLM_Slice_43_Support_Propagation_Idempotence.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_07, slice_21, slice_24
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_44] is slm_project/planning/project_manager/slices/SLM_Slice_44_Contradiction_Propagation_Expansion.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_26, slice_36, slice_42
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_45] is slm_project/planning/project_manager/slices/SLM_Slice_45_Wobble_Factor_Attribution.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_06, slice_19, slice_28
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_46] is slm_project/planning/project_manager/slices/SLM_Slice_46_Uncertainty_Boundary_Stabilization_Rules.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_08, slice_09, slice_32, slice_45
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_47] is slm_project/planning/project_manager/slices/SLM_Slice_47_Relation_Taxonomy_Round_2.sop
+      + [status] is ready_after_slice_65
+      + [depends_on] is slice_20, slice_33, slice_65
+      + [completion_review] is pending
+    + [slice_48] is slm_project/planning/project_manager/slices/SLM_Slice_48_Primer_Schema_Versioning.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_10, slice_37
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_49] is slm_project/planning/project_manager/slices/SLM_Slice_49_Demo_Output_Modes.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_12, slice_37, slice_48
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_50] is slm_project/planning/project_manager/slices/SLM_Slice_50_CLI_Regression_Harness.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_30, slice_49
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_51] is slm_project/planning/project_manager/slices/SLM_Slice_51_Golden_Fixture_Snapshots.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_41, slice_49, slice_50
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_52] is slm_project/planning/project_manager/slices/SLM_Slice_52_Lexical_Substrate_Delta_Rebuild_Workflow.sop
+      + [status] is verified_source_gate
+      + [depends_on] is slice_13, slice_30
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_53] is slm_project/planning/project_manager/slices/SLM_Slice_53_Lexicon_License_Provenance_Audit.sop
+      + [status] is specification_complete
+      + [depends_on] is slice_13, slice_52
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_54] is slm_project/planning/project_manager/slices/SLM_Slice_54_LM_Studio_Response_Validation_Repair.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_23, slice_35
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_55] is slm_project/planning/project_manager/slices/SLM_Slice_55_Ollama_Sidecar_Adapter_Skeleton.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_23, slice_35
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_56] is slm_project/planning/project_manager/slices/SLM_Slice_56_Provider_Set_Configuration.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_04, slice_23, slice_55
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_57] is slm_project/planning/project_manager/slices/SLM_Slice_57_Sidecar_Mock_Server_Harness.sop
+      + [status] is blocked_external_runtime
+      + [depends_on] is slice_34, slice_54
+      + [completion_review] is pending
+    + [slice_58] is slm_project/planning/project_manager/slices/SLM_Slice_58_Multi_Provider_Arbitration_Fixtures.sop
+      + [status] is ready
+      + [depends_on] is slice_36, slice_41
+      + [completion_review] is pending
+    + [slice_59] is slm_project/planning/project_manager/slices/SLM_Slice_59_Append_Only_Learning_Store_Rust_Skeleton.sop
+      + [status] is ready_after_slice_40
+      + [depends_on] is slice_40
+      + [completion_review] is pending
+    + [slice_60] is slm_project/planning/project_manager/slices/SLM_Slice_60_Graph_Replay_Audit_CLI.sop
+      + [status] is ready_after_slice_59
+      + [depends_on] is slice_59
+      + [completion_review] is pending
+    + [slice_61] is slm_project/planning/project_manager/slices/SLM_Slice_61_Architecture_Narrative_Refresh.sop
+      + [status] is ready_sop_only
+      + [depends_on] is slice_31, slice_38, slice_40
+      + [completion_review] is pending
+    + [slice_62] is slm_project/planning/project_manager/slices/SLM_Slice_62_Threshold_Calibration_Fixtures.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_08, slice_41, slice_45
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_63] is slm_project/planning/project_manager/slices/SLM_Slice_63_Wobble_Routing_Policies.sop
+      + [status] is verified_wsl
+      + [depends_on] is slice_45
+      + [completion_review] is slm_project/planning/project_manager/reviews/SLM_Round_4_Batch_Review_2026-06-21.sop
+    + [slice_64] is slm_project/planning/project_manager/slices/SLM_Slice_64_Pronoun_Reference_Fixture_Rules.sop
+      + [status] is ready
+      + [depends_on] is slice_41, slice_46
+      + [completion_review] is pending
+    + [slice_65] is slm_project/planning/project_manager/slices/SLM_Slice_65_Negation_Coordination_Diffusion_Expansion.sop
+      + [status] is ready
+      + [depends_on] is slice_20, slice_24, slice_41
+      + [completion_review] is pending
+
+  & [ManagerNextFrontier] is the recommended immediate work order
+    + [first] is SLM-38 Closed-Class Lexical Sense Routing
+    + [second] is SLM-37 Primer Compaction Budget
+    + [third] is SLM-32 Imperative Subject and Implied Actor Uncertainty
+    + [fourth] is SLM-33 Candidate Relation Stabilization Audit
+    + [fifth] is SLM-35 Sidecar Task Prompt Contracts
+
+  & [CompletedWorkReviewRule] is the manager check between slices
+    = must: inspect completed slice deliverables
+    = must: record support_delta when a slice supports another requirement
+    = must: record requirement_delta when a slice changes the requirement shape
+    = must: update this index before starting a dependent slice
+    - never: proceed from a completed slice as if completion is only a stamp

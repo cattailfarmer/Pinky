@@ -1,0 +1,37 @@
+& [SLMLLMProviderAdapterContract] is the lower LLM evidence adapter contract
+  + [contract_uuid] is 59a5ba3b-c461-4856-a544-b377ec02dfd7
+  + [slice_id] is SLM-04
+  + [depends_on] is SLM_Core_Data_Contracts
+  + [status] is accepted_for_provider_deliberation_contracts
+
+  & [ProviderAdapter] is the exchange boundary for lower LLM evidence
+    + [provider_id] is stable local provider identity
+    + [model_id] is model name or version
+    + [adapter_kind] is mock, lm_studio_openai_compatible, ollama, llama_cpp_server, hosted_openai_compatible, or extension
+    + [capability] is dictionary_service, role_suggestion, candidate_meaning, candidate_relation, faculty_run, objection, answer, or jury_review
+    + [prompt_contract] is required for non-mock provider calls
+    + [response_hash] is required when response body is preserved or summarized
+    + [timestamp] is required when live provider is used
+    + [adapter_version] is required
+    = must: return evidence records, not graph objects
+    = must: preserve provider provenance with every suggestion
+    = must: support deterministic MockProvider for SOP and implementation tests
+
+  & [ProviderSuggestion] is evidence emitted by a ProviderAdapter
+    + [suggestion_id] is unique in EvidenceWorkspace
+    + [provider_provenance] is required
+    + [suggestion_kind] is grammar_role, lexical_sense, candidate_meaning, candidate_relation, faculty_vote, objection, answer, or jury_measurement
+    + [support_weight] is optional provider-supplied support
+    + [natural_language_rationale] is optional but required for objection and answer
+    + [provider_faculty_report] is optional structured internal seven-faculty validation evidence
+    + [lineage] is input prompt, token refs, and prompt contract
+    - never: create Glyph directly
+
+  & [MockProviderRequirement] is the v0 determinism rule
+    = must: define at least one mock provider before live provider integration
+    = should: define two mock providers with intentional disagreement for wobble and deliberation testing
+    = must: allow provider_set behavior without requiring real model calls
+
+  ! [Slice04Complete] is accepted
+    @ [support] adapter boundary allows LM Studio, Ollama, llama.cpp server, hosted providers, and mocks without changing semantic graph rules
+    @ [support_delta] SLM-27 defines provider internal faculty report payloads for future live adapters

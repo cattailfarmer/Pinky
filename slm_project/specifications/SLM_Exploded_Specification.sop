@@ -1,0 +1,274 @@
+& [SLMExplodedSpecification] is the first expanded specification surface for the Semantic Logic Model prototype
+  + [exploded_specification_uuid] is 9bc6d824-43ed-45e3-8a36-f4a9e7ac980b
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [conversation_uuid] is 8e866d87-af62-422e-b8bf-87f8ebd83740
+  + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [processing_state] is exploratory_phase_locked_not_final
+  + [exhaustion_state] is open_with_named_growth_seeds
+
+  & [RootSubject] is Semantic Logic Model prototype
+    + [purpose] is convert natural language into inspectable semantic structures before generation or inference
+    + [non_goal] is training or shipping a full machine learning model
+    + [non_goal] is replacing a general LLM
+    + [dependency] is lower LLM layer for dictionary-like lexical and semantic support
+    + [architecture_role] is hierarchical reasoning model above lower LLM substrate
+    + [non_goal] is claiming linguistic completeness
+    + [quality_bar] is clear architecture, explicit uncertainty, testable transforms, and rebuildable trace
+    + [first_demo_sentence] is "Design a compiler for FPGA hardware."
+
+  & [CoreThesis] is the meaning-first reasoning claim under exploration
+    ! [SLMIsMeaningFirst] is accepted as project hypothesis
+      @ [support] user source defines SLM as a meaning-first reasoning layer
+    ! [SemanticDiffusionIsCentral] is accepted as project hypothesis
+      @ [support] user source defines progressive reduction of ambiguity, role uncertainty, and incoherence
+    ! [GlyphStabilizationRequiresDeliberativeConvergence] is accepted for v0
+      @ [support] user addendum defines seven-faculty convergence as stabilization authority
+    ! [DiffusionIsMeaningDenoising] is accepted for v0
+      @ [support] user addendum states diffusion is not denoising text, it is denoising meaning
+    ~ [StableSubjectGraph] is provisional because graph stability criteria are not yet mathematically defined
+    ~ [Diffusion] is provisional because its algorithmic form is conceptual before implementation experiments
+
+  & [EpistemicLadder] is the v0 ordering from surface input to meaning
+    + [observation_layer] is Token records
+    + [evidence_layer] is grammatical candidates, structural hints, morphology, position, lower LLM dictionary suggestions, and relation pressure
+    + [target_layer] is semantic subjects, actions, relations, modifiers, constraints, and uncertainty
+    + [stabilized_identity_layer] is Glyph records
+    + [instability_signal] is Wobble across the path from evidence to meaning
+    = must: preserve this layer order during implementation
+    = must: reject implementation choices that treat observations as semantics without evidence and stabilization
+
+  & [LLMSubstrate] is the lower language-model dependency used by SLM
+    + [minimum_service] is dictionary system for lexical sense, candidate meanings, role possibilities, and usage hints
+    + [llm_adapter] is the provider exchange boundary for querying one or more lower LLMs
+    + [provider_set] is one or more configured LLM providers used for multi-perspective attention
+    + [faculty_support] is LLM-backed deliberative support for seven-faculty validation and dual-hemisphere perspectives
+    + [multi_perspective_attention] is the use of multiple providers, prompts, or model perspectives to surface convergence and disagreement
+    + [provider_deliberation] is an objection-answer-review process between lower LLM providers when disagreement appears
+    + [objecting_provider] is a provider that articulates why a candidate reasoning path should not be accepted
+    + [supporting_provider] is a provider that answers objections in support of the candidate reasoning path
+    + [jury_panel] is additional provider review used when disagreement persists after objection and answer
+    + [internal_faculty_run] is one provider's dual-hemisphere seven-faculty validation pass
+    + [output_status] is evidence, not authority
+    + [provenance] is required for every lower LLM suggestion used by diffusion or stabilization
+    + [provider_provenance] is provider id, model id, prompt contract, response id or hash, timestamp, and adapter version when available
+    + [mockability] is required for v0 tests
+    = must: route lower LLM output into EvidenceWorkspace
+    = must: keep provider outputs separately attributable
+    = must: turn provider disagreement into provider_deliberation before treating it as merely a score change
+    = must: require objections to be articulated
+    = must: require supporting providers to answer objections
+    = must: route persistent disagreement to jury_panel measurement
+    = must: preserve model disagreement as possible wobble evidence after deliberation trace exists
+    = must: require provider agreement to come through internal_faculty_run
+    = must: allow providers to be exchanged without changing semantic graph identity rules
+    = must: subject lower LLM output to diffusion, wobble, and stabilization before graph promotion
+    - never: allow lower LLM output to bypass deliberative convergence
+    - never: merge multiple provider outputs without preserving their source identities
+
+  & [ConstraintLedger] is the active constraint set preserved through design and implementation
+    + [source_preservation] is source documents remain separate from derived specifications
+    + [prototype_boundary] is initial work must be prototype, not full ML model
+    + [uncertainty_preservation] is unresolved interpretation must remain visible and structured
+    + [late_binding] is final semantic roles must not be forced before competing interpretations are tested
+    + [structural_seed] is diffusion begins from function and structural words when present
+    + [immutable_identity] is glyphs and semantic IDs are immutable once created
+    + [append_only_learning] is semantic learning records create, link, activate, retire, or supersede instead of rewriting identity
+    + [rank_do_not_delete] is early passes rank and defer candidates rather than hard-delete them
+    + [scope_precision] is precision increases as unresolved semantic scope decreases
+    + [traceability] is each durable output must preserve lineage to source, transform, and confidence basis
+    + [testability] is each transform must have a focused proof path
+
+  & [DataModel] is the conceptual and logical shape of the SLM prototype
+    & [Token] is a source-derived surface unit
+      + [natural_key] is input_id plus token_index
+      + [field] is surface_text
+      + [field] is normalized_text
+      + [field] is span
+      + [field] is punctuation_or_word_class
+      + [lineage] is input_prompt
+
+    & [RoleCandidate] is an unresolved possible grammatical or semantic role for one Token
+      + [natural_key] is token_id plus role_kind plus candidate_source
+      + [role_kind] is noun, verb, adjective, adverb, determiner, preposition, conjunction, auxiliary, modal, punctuation, unknown, or future_extension
+      + [activation] is numeric confidence-like score
+      + [evidence] is lexical, structural, position, morphology, user_rule, or heuristic
+      + [status] is active, deferred, rejected, superseded, or late_bound
+      - never: make one RoleCandidate erase sibling candidates during early passes
+
+    & [Glyph] is an immutable stabilized semantic identity
+      + [surrogate_key] is semantic_id
+      + [natural_key] is unresolved unless the semantic unit maps cleanly to source identity
+      + [kind] is subject, action, relation, modifier, constraint, uncertainty, wobble, primer_field, or semantic_trace
+      + [label] is human-readable but not identity-authoritative
+      + [payload] is source-derived attributes
+      + [lifecycle_state] is active, retired, superseded, or preserved_trace
+      - never: mutate semantic_id after creation
+      - never: assign Glyph identity to raw Token records in v0
+      - never: assign Glyph identity to temporary RoleCandidate records in v0
+
+    & [EvidenceLayer] is the grammatical and source-derived support field before semantic stabilization
+      + [Token] is source evidence, not Glyph identity
+      + [RoleCandidate] is grammatical evidence, not Glyph identity
+      + [StructuralHint] is relation evidence, not Glyph identity until stabilized into semantic relation
+      + [LLMSuggestion] is lower LLM dictionary or faculty support evidence, not Glyph identity
+      + [activation] is support weight for ranking, relation fit, and diffusion priority
+      + [candidate_meaning] is possible semantic interpretation held before stabilization
+      + [candidate_relation] is possible semantic relation held before stabilization
+      + [support] is evidence strength or relation fit attached to candidates
+      + [contradiction] is evidence against candidates or relations
+      - never: treat support weight as truth
+      - never: emit temporary candidates as SemanticGraph nodes
+
+    & [SemanticLayer] is the target meaning field produced by diffusion
+      + [SemanticRole] is subject, action, relation, modifier, constraint, or uncertainty
+      + [semantic_collapse] is late binding from surviving evidence to stabilized meaning
+      + [semantic_identity] is represented by Glyph only after stabilization threshold or explicit uncertainty identity is reached
+      - never: collapse grammatical role directly into semantic role without relation support
+
+    & [SemanticGraphBoundary] is the rule that keeps graph identity compact
+      + [graph_content] is stabilized glyphs, stabilized relations, explicit uncertainty glyphs, and lineage
+      + [excluded_content] is tokens, candidate grammatical roles, candidate meanings, candidate relations, temporary support, and temporary contradictions
+      + [exception] is uncertainty_identity when unresolved meaning has stable boundaries worth preserving as a graph object
+      = must: keep SemanticGraph as output of diffusion
+      = must: keep EvidenceWorkspace as the place where candidate explosion is allowed
+      = must: preserve candidate lineage without promoting every candidate into graph identity
+      - never: hard-code noun-first or verb-first assumptions
+      - never: pollute SemanticGraph with every temporary hypothesis
+
+    & [DeliberationLayer] is the faculty validation surface for semantic stabilization
+      + [ObserverVote] is presence validation
+      + [HonestyVote] is support sufficiency validation
+      + [SecurityVote] is invalid or unsafe consequence validation
+      + [PlannerVote] is sequence and task fit validation
+      + [WeaverVote] is relational coherence validation
+      + [ScribeVote] is lineage and provenance validation
+      + [RefinerVote] is compression without distortion validation
+      + [convergence] is faculty agreement on the same candidate semantic identity
+      + [partial_convergence] is enough structure to preserve uncertainty identity but not stable Glyph
+      + [blocking_contradiction] is unresolved contradiction above severity threshold
+      = must: evaluate candidate_glyph through each validator
+      = must: preserve validator results in trace
+      = must: let Observer manage ordinary faculty coordination
+      = must: let Honesty veto Observer when truth or support fails
+      = must: let Security veto Observer when invalid or unsafe consequences remain
+
+    & [UncertaintyGlyphTyping] is the explicit uncertainty identity vocabulary
+      + [uncertainty_type] is unresolved_role, unresolved_relation, unresolved_subject_boundary, unresolved_reference, contradiction_cluster, low_support_candidate, provider_disagreement, or unresolved_scope
+      = must: type uncertainty glyphs when they enter SemanticGraph
+      = must: cite evidence and deliberation lineage for each uncertainty glyph
+
+    & [SemanticEdge] is an append-only relation between Glyph records
+      + [natural_key] is source_glyph_id plus relation_kind plus target_glyph_id plus evidence_id
+      + [relation_kind] is candidate_role, scopes_over, constrains, modifies, acts_on, relates_to, supports, contradicts, defers, retires, supersedes, or late_binds
+      + [activation] is numeric support score
+      + [evidence] is transform event or source-derived reason
+      + [lifecycle_state] is active, retired, or superseded
+
+    & [DiffusionPass] is a named transform that changes activation and graph support without rewriting identity
+      + [pass_kind] is tokenization, role_candidate_generation, candidate_activation, structural_constraint, support_propagation, contradiction_propagation, wobble_analysis, faculty_validation, semantic_promotion, uncertainty_preservation, or primer_projection
+      + [input_shape] is graph plus candidate set plus current uncertainty
+      + [output_shape] is graph plus appended events and updated activation projections
+      + [trace] is required
+
+    & [WobbleReport] is a measurement of unresolved instability
+      + [aggregate_score] is numeric instability estimate for routing and stop decisions
+      + [vector_dimension] is role_instability, relation_instability, subject_boundary_instability, contradiction, low_support, or unresolved_ambiguity
+      + [explanation] is compact source-linked reason
+      + [resolution_hint] is defer, split_scope, seek_context, lower_confidence, or reject_relation
+
+    & [SLMPrimer] is compact structured output for downstream LLM or reasoning layer
+      + [subjects] is late-bound or provisional subject nodes
+      + [actions] is late-bound or provisional action nodes
+      + [relations] is active relation set with confidence
+      + [modifiers] is modifier set with scope
+      + [constraints] is structural and semantic constraints
+      + [uncertainty] is unresolved candidates and wobble factors
+      + [trace_summary] is compact lineage from input to primer
+      + [primary_format] is stable JSON for machine re-ingestion
+      + [secondary_format] is readable SOP-style rendering for human inspection
+
+  & [TransformMap] is the required processing sequence
+    / [InputPrompt] -(Tokenization)> [TokenSet], [InputTrace]
+    / [Token] -(CandidateRoleGeneration)> [RoleCandidateSet], [RoleUncertainty]
+    * [RoleCandidateSet], [MaximalUncertainty] -(CandidateActivation)> [EvidenceWorkspace]
+    * [StructuralTokens], [EvidenceWorkspace] -(StructuralConstraint)> [RelationHints]
+    * [RelationHints], [EvidenceWorkspace] -(SupportPropagation)> [SupportedSemanticCandidates]
+    * [RelationHints], [SupportedSemanticCandidates] -(ContradictionPropagation)> [ContradictionField]
+    / [ContradictionField] -(WobbleAnalysis)> [StableRegions], [UnstableRegions], [WobbleReport]
+    * [StableRegions], [FacultyValidators], [Lineage] -(SemanticPromotion)> [SubjectGraph], [GraphUncertainty]
+    * [StableRegions], [UnstableRegions], [WobbleReport] -(PrimerProjection)> [SLMPrimer]
+
+  & [FeatureRequirements] is the first atomic requirement map
+    + [FR1] is preserve raw input text and token lineage
+    + [FR2] is generate multiple grammatical role candidates per token where ambiguity exists
+    + [FR3] is identify structural and function tokens before resolving open-class roles
+    + [FR4] is express relation hints from structural tokens
+    + [FR5] is create immutable semantic IDs only for stabilized semantic identities
+    + [FR6] is append graph events and edges rather than rewriting semantic identity
+    + [FR7] is calculate activation or confidence scores for candidates, edges, and graph regions
+    + [FR8] is preserve uncertainty explicitly in data structures and output
+    + [FR9] is bind subjects, actions, relations, modifiers, and constraints late through deliberative convergence
+    + [FR10] is detect and explain wobble as aggregate score plus diagnostic vector
+    + [FR11] is emit a compact SLM primer optimized for machine re-ingestion with human-readable rendering
+    + [FR12] is provide a CLI or demo runner for the first sentence
+    + [FR13] is provide tests for each transform and the demo pipeline
+    + [FR14] is implement seven independent faculty validators for candidate glyph stabilization
+    + [FR15] is preserve candidates in evidence workspace when contradiction blocks stabilization
+    + [FR16] is keep SemanticGraph free of unstable candidates except explicit uncertainty glyphs with stable boundaries
+    + [FR17] is define lower LLM adapter boundary for dictionary and faculty support evidence
+    + [FR18] is support one or more lower LLM providers with separate provenance for multi-perspective attention
+    + [FR19] is implement provider disagreement as objection, answer, and optional jury panel measurement
+    + [FR20] is type uncertainty glyphs and include compact evidence in the primer
+
+  & [FailureModes] is how the project can go wrong
+    + [FM1] is role certainty is forced too early
+    + [FM2] is graph identity mutates instead of appending trace
+    + [FM3] is heuristic confidence looks more authoritative than it is
+    + [FM4] is grammar labels dominate semantic meaning
+    + [FM5] is wobble becomes a vague score without actionable factors
+    + [FM6] is the prototype grows into a pseudo-ML system before the semantics are understood
+    + [FM7] is generated primer hides unresolved instability
+    + [FM8] is implementation files exist without governing specification lineage
+    + [FM9] is high score bypasses faculty convergence
+    + [FM10] is partial convergence becomes false stable glyph instead of uncertainty identity
+    + [FM11] is SemanticGraph becomes the diffusion workspace and explodes with temporary hypotheses
+    + [FM12] is lower LLM output is mistaken for stabilized semantic authority
+    + [FM13] is multiple LLM outputs are averaged or merged without preserving disagreement and provenance
+    + [FM14] is provider disagreement becomes a numeric wobble bump without articulated objection and answer
+    + [FM15] is provider agreement is counted without internal seven-faculty validation
+
+  & [PruningTrace] is material excluded from the first canonical target
+    + [pruned_material] is neural training, embedding search, probabilistic parser, dependency parser integration, UI, persistence database, and multi-agent coordination
+    + [prune_reason] is outside initial prototype boundary
+    + [quarantine_target] is future_growth_seed
+
+  & [GrowthSeedSet] is the next conceptual frontier
+    + [seed_1] is define graph stability more rigorously
+    + [seed_2] is separate grammatical role from semantic role vocabulary
+    + [seed_3] is define activation math and decay rules
+    + [seed_4] is define wobble categories and thresholds
+    + [seed_5] is define append-only learning store beyond in-memory prototype
+    + [seed_6] is compare SLM primer shape against what an LLM actually needs
+    + [seed_7] is explore whether semantic diffusion should be deterministic, probabilistic, or hybrid
+    + [seed_8] is split support weight into confidence, energy, and routing priority after v0 proves the simpler model
+    + [seed_9] is deepen faculty validators into true dual-hemisphere deliberation rather than independent checks
+    + [seed_10] is experiment with simultaneous multi-provider dictionary and faculty evidence
+
+  & [ExplodedSpecificationQualityGate] is the first review result
+    ! [SourcePreservationPassed] is accepted
+      @ [support] slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+    ! [DataIdentitySurfaceExists] is accepted
+      @ [support] DataModel section defines Token, RoleCandidate, Glyph, SemanticEdge, DiffusionPass, WobbleReport, and SLMPrimer
+    ~ [SatisfactionSignature] is provisional because this first spec is exploratory and should be discussed before final signing
+    ~ [GraphStabilityCriteria] is unresolved
+    ~ [ActivationSemantics] is unresolved
+    ! [GlyphBoundaryDecision] is accepted for v0
+      @ [support] user decision states glyphs represent semantic identities only and tokens plus role candidates are evidence
+    ! [GrammarSemanticSeparationDecision] is accepted for v0
+      @ [support] user decision states grammar is evidence layer and semantics is target layer
+    ! [WobbleShapeDecision] is accepted for v0
+      @ [support] user decision states wobble is aggregate score plus diagnostic vector
+    ! [ActivationMeaningDecision] is accepted for v0
+      @ [support] user decision states activation initially means support weight, not truth
+    ! [PrimerFormatDecision] is accepted for v0
+      @ [support] user decision states primer optimizes for machine re-ingestion with human readability

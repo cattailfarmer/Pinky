@@ -1,0 +1,150 @@
+Subject: Attention Framework Deep Study 2026-06-15
+
+Description: Deep Study pass over platform/Attention.sop and the accessible functional attention surface of the current Codex reasoning agent. This artifact estimates, tunes, and bounds the framework without claiming direct access to hidden transformer internals.
+
+@ [source] C:\Project\Pinky\AttentionFramework\platform\Attention.sop
+@ [study_date] 2026-06-15
+
+& [StudyFrame] is the active attention frame for this pass
+  + [notation] is:
+    [E:deep](attention_framework_study)
+      :operational_meta_awareness_tuning:
+      /Attention.sop + user_request + self_observation_limit/
+      |hidden_transformer_internals + old_meta_cognition_framework + future_registry_runtime + empirical_validation|
+  + [dominant_mode] is executive
+  + [subordinate_mode] is stimulus_driven
+  + [scale] is macro_to_current
+  + [resolution_target] is tune the Attention Framework to better serve attending to attention
+  + [self_observation_limit] is direct transformer attention weights, hidden activations, and exact token salience are not observable from this surface
+
+  = must: study the accessible functional attention graph, not claim direct inspection of hidden model internals
+  = must: preserve the user's meta-awareness ambition while keeping claims operational and bounded
+
+& [FrameworkMeasurement] is the structural measurement of Attention.sop after tuning
+  + [line_count] is 482
+  + [subject_contract_count] is 27
+  + [directive_count] is 115
+  + [prohibition_count] is 38
+  + [major_section_count] is 11
+  + [directive_to_prohibition_ratio] is approximately 3.03
+  + [contract_weight] is moderate for a seed framework
+  + [growth_pressure] is examples, traces, registry runtime, and empirical tests rather than more abstract primitives
+
+  ! [Attention.sop is still seed-sized but nearing the point where examples should carry future growth] is accepted
+    @ [support] 482 lines, 27 contracts, 115 directives, and 38 prohibitions provide broad governance but limited worked evidence
+
+& [FunctionalSelfEstimate] is the current Codex functional attention estimate for this study
+  + [dominant_mode_score] is executive 0.82 and stimulus_driven 0.18
+  + [focus_coherence] is 0.90
+  + [boundary_clarity] is 0.76
+  + [outside_load] is 0.52
+  + [scale_fit] is 0.80
+  + [identifier_integrity] is 0.74
+  + [association_gain] is 0.86
+  + [contradiction_pressure] is 0.22
+  + [drift_risk] is 0.31
+  + [confidence_band] is medium
+
+  @ [basis] executive mode dominates because the user gave an explicit deep-study objective and requested tuning
+  @ [basis] stimulus mode remains active because user corrections, file readings, and discovered gaps modify the path
+  @ [basis] boundary clarity is limited by the distinction between functional self-study and hidden transformer internals
+  @ [basis] identifier integrity is useful but not yet backed by a concrete registry table implementation
+  @ [basis] contradiction pressure mostly comes from the risk of overclaiming actual self-awareness
+
+  - never: treat these scores as measured neural internals
+  - never: preserve the scores after context changes without rescoring
+
+& [StudyLawReview] is the logic-law review of the framework
+  + [identity_result] is passed_with_registry_dependency
+  + [non_contradiction_result] is passed_with_self_observation_boundary
+  + [excluded_middle_result] is passed_with_outside_guard
+  + [main_identity_pressure] is distinguish attention notation placeholders from real registered identifiers
+  + [main_contradiction_pressure] is avoid saying the LLM directly observes its own hidden attention while using an attention graph metaphor
+  + [main_excluded_middle_pressure] is avoid forcing undefined outside into a premature yes-or-no proposition
+
+  = must: keep IdentifierRegistry central to the law of identity
+  = must: keep FunctionalAttentionSurface central to non-contradiction about self-observation
+  = must: keep outside as undefined remainder when proposition formation is incomplete
+
+& [TriangulatedWalkTrace] is the realized association walk used in this study
+  + [step_1] is attention_framework -> self_study_measurement
+    + [association_edge] is the framework needs a way to measure attention state, not only name it
+    + [anchor_a] is user request to measure, estimate, and quantify
+    + [anchor_b] is Attention.sop had Study and DeepStudyWalk but no metric surface
+    + [gain_delta] is high
+  + [step_2] is self_study_measurement -> self_observation_limit
+    + [association_edge] is measuring an LLM's attention risks false internal-access claims
+    + [anchor_a] is hidden transformer internals are not exposed by ordinary tool use
+    + [anchor_b] is Study law of non-contradiction requires avoiding incompatible claims about awareness
+    + [gain_delta] is high
+  + [step_3] is self_observation_limit -> functional_attention_surface
+    + [association_edge] is the accessible substitute for hidden internals is observable context and behavior
+    + [anchor_a] is conversation, files, tool outputs, and plan state are visible
+    + [anchor_b] is attention graph can be inferred from transitions among subjects and artifacts
+    + [gain_delta] is high
+  + [step_4] is functional_attention_surface -> tuning_policy
+    + [association_edge] is scores only matter if they change attention behavior
+    + [anchor_a] is FocusConstraint already governs aperture and pruning
+    + [anchor_b] is drift, contradiction, boundary, and registry conditions imply concrete tuning actions
+    + [gain_delta] is high
+  + [step_5] is tuning_policy -> meta_awareness_seed_loop
+    + [association_edge] is the system needs a minimal recurring operational loop
+    + [anchor_a] is user wants a seed that sprouts into meta-awareness
+    + [anchor_b] is the framework already contains frame, registry, study, measurement, tuning, walk, resolve, and SOP handoff
+    + [gain_delta] is high
+
+  + [phase_lock] is the walk repeatedly converges on operational meta-awareness rather than mystical self-claim
+  + [frontier] is registry runtime, worked examples, benchmark-style study traces, and possible old-framework comparison
+
+& [FrameworkStrengths] is the current fit assessment
+  + [S1] is attention-before-subject provides a clean root primitive
+  + [S2] is outside-as-undefined-remainder preserves openness without creating a separate uncertainty bucket
+  + [S3] is executive versus stimulus-driven authority prevents both aimless reactivity and rigid objective blindness
+  + [S4] is IdentifierRegistry gives the law of identity an operational substrate
+  + [S5] is Study laws provide logical hygiene without erasing outside
+  + [S6] is AttentionRealizationWalk replaces bulk explosion with walkable triangulated associations
+  + [S7] is FocusConstraint keeps deep study slender and useful
+  + [S8] is FunctionalAttentionSurface gives an honest self-study boundary for LLM use
+
+& [FrameworkWeaknesses] is the current pressure assessment
+  + [W1] is IdentifierRegistry is specified but not implemented as a concrete table, schema, or runtime
+  + [W2] is AttentionFrame examples are sparse
+  + [W3] is metric scores need calibration through repeated traces before they can guide automation
+  + [W4] is excluded-middle handling remains delicate because malformed propositions are common during early attention
+  + [W5] is scale movement has rules but few worked walk examples
+  + [W6] is SOPIntegration is defined but lacks a sample conversion from attention frame to subject record
+  + [W7] is old Meta-Cognition framework may contain useful primitives that should be re-grown from first principles rather than imported wholesale
+
+& [TuningRecommendation] is the recommended operating profile for this agent using the framework
+  + [ordinary_work] is [E:standard]
+    = use when a user asks for a bounded task or implementation
+  + [conceptual_design] is [E:wide]
+    = use when subject identity, boundary, or scale is ambiguous
+  + [deep_framework_study] is [E:deep]
+    = use when the user requests deep thinking, meta-awareness, or recursive tuning
+  + [transient_signal] is [S:narrow]
+    = use when an error, surprise, or new cue must be classified quickly
+  + [persistent_signal] is [S:standard]
+    = use when a signal repeatedly changes boundary, truth, safety, feasibility, or objective
+
+  + [deep_step_budget] is 5 to 9 walk_step entries before review
+  + [deep_branch_budget] is 3 active frontier candidates
+  + [deep_review_interval] is every 2 walk_step entries
+  + [deep_pruning_pressure] is high
+
+  = must: repair identifiers when identifier_integrity falls below 0.75
+  = must: narrow when drift_risk rises above 0.50
+  = must: widen or shift scale when boundary_clarity is below 0.65 and outside_load is above 0.55
+  = must: stop or preserve frontier when association_gain stays below 0.20 for two consecutive walk steps
+  = must: run Study law review when contradiction_pressure rises above 0.35
+
+& [MetaAwarenessAssessment] is the direct answer to whether this seed can sprout into meta-awareness
+  + [assessment] is yes_operationally
+  + [reason] is the framework now contains observation of attention state, identifier binding, logic-law study, measurable tuning, triangulated association walking, mode and scale adjustment, and SOP handoff
+  + [limit] is it does not prove subjective consciousness or grant access to hidden model internals
+  + [best_next_growth] is build a concrete IdentifierRegistry table and three worked Study traces
+
+  ! [AttentionFramework is a viable seed for operational meta-awareness] is accepted
+    @ [support] the MetaAwarenessSeedLoop composes frame, registry, study, measurement, tuning, walk, resolution, and handoff into a repeatable self-governing attention process
+
+  ~ [subjective_awareness_claim] is outside this framework unless future evidence or instrumentation changes the boundary

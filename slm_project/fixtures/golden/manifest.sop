@@ -1,0 +1,22 @@
+& [SLMGoldenFixtureManifest] is the manifest for compact golden snapshots
+  + [manifest_uuid] is 0693f72a-6392-48ee-bc9c-87d158f481d0
+  + [contract] is slm_project/specifications/contracts/SLM_Golden_Fixture_Snapshot_Contract.sop
+  + [mode] is slm_demo --mode compact
+  + [status] is active
+
+  & [SnapshotSet] is the current deterministic fixture set
+    + [design_compiler] is compact_design_compiler.json
+      + [input] is "Design a compiler for FPGA hardware."
+      + [mechanism] is imperative subject boundary with unresolved actor uncertainty
+    + [fish_swim] is compact_fish_swim.json
+      + [input] is "The fish swim."
+      + [mechanism] is compact subject/action/relation stabilization
+    + [time_flies] is compact_time_flies.json
+      + [input] is "Time flies like an arrow."
+      + [mechanism] is provider disagreement preserved as uncertainty
+
+  & [RefreshPolicy] is the snapshot update rule
+    = must: use python slm_project/tools/slm_golden_snapshot.py --update to regenerate snapshots
+    = must: use python slm_project/tools/slm_golden_snapshot.py --check to compare snapshots
+    = must: review diffs before accepting snapshot changes
+    - never: manually edit snapshot JSON to hide runtime behavior changes

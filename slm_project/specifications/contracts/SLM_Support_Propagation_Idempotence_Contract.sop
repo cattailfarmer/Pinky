@@ -1,0 +1,28 @@
+& [SLMSupportPropagationIdempotenceContract] is the contract for repeated diffusion safety
+  + [contract_uuid] is b85aeb16-ee05-4333-a9f2-a9f6457d2a85
+  + [slice_id] is SLM-43
+  + [depends_on] is SLM_Semantic_Diffusion_Pass_Contract, SLM_Sense_Coherence_Scoring_Contract, SLM_Diffusion_Rule_Table_Contract
+  + [status] is verified_wsl
+
+  & [IdempotencePrinciple] is how repeated diffusion should behave
+    = must: allow bounded repeated diffusion passes over the same EvidenceWorkspace
+    = must: avoid duplicate support records when a pass is run again
+    = must: avoid duplicate relation candidates when structural relation passes are run again
+    = must: use stable support ids as the duplicate boundary
+    = should: centralize support insertion through a single helper
+    - never: inflate activation merely because the same deterministic pass was rerun
+
+  & [AcceptedRepeatableGrowth] is evidence that may legitimately append on rerun
+    + [pass_traces] may append because each pass trace is an audit event
+    + [wobble_vectors] may append because each measurement is a new measurement event
+
+  & [RuntimeProjection] is the Rust source surface
+    + [module] is slm_rust/src/diffusion.rs ensure_support_record
+    + [module] is slm_rust/src/diffusion.rs ensure_relation
+    + [proof_route] is focused Rust test and WSL cargo test
+
+  ! [Slice43SourceComplete] is accepted
+    @ [source_gate] passed python slm_project/tools/slm_source_gate_check.py
+    @ [wsl_cargo_test] passed 11 tests through CARGO_TARGET_DIR=/home/pinky/slm_rust_target and linker=/home/pinky/bin/zigcc
+    @ [self_check] passed slm_self_check
+    @ [proof] repeated diffusion over the design/compiler fixture preserved identical support record ids and relation candidate ids

@@ -1,0 +1,14 @@
+& [SLMSlice08FacultyValidationAndStabilization] is a work-ready slice for glyph promotion authority
+  + [slice_id] is SLM-08
+  + [status] is blocked
+  + [feature_cluster] is ClusterFDeliberativeStabilization
+  + [source_refs] is GlyphStabilization, FacultyValidators, provider internal faculty run decision
+  + [depends_on] is SLM-05, SLM-06, SLM-07
+  + [scope] is define seven faculty validators, Observer coordination, Honesty veto, Security veto, thresholds, and stabilization outcomes
+  + [deliverable] is SOP contract for FacultyVote, FacultyRun, VetoRecord, StabilizationDecision, StableGlyphPromotion, UncertaintyIdentityCreation, and EvidencePreservation
+  + [acceptance_criteria] is high support score alone cannot stabilize a glyph
+  + [acceptance_criteria] is partial convergence creates typed uncertainty only when the uncertainty has stable boundaries
+  + [proof_route] is positive, partial, and vetoed stabilization fixtures
+  + [exclusions] is live LLM faculty prompting
+  + [next_action] is unblock after provider deliberation, wobble, and diffusion pass contracts exist
+

@@ -1,0 +1,58 @@
+{
+  "provider_set_id": "local_provider_set_v0",
+  "description": "Local deterministic/mock-first provider set for SLM prototype work.",
+  "providers": [
+    {
+      "provider_id": "mock-fixture",
+      "adapter_kind": "mock",
+      "model_id": "mock-model",
+      "endpoint": null,
+      "prompt_contract": "mock-fixture",
+      "adapter_version": "v0",
+      "enabled": true,
+      "capabilities": [
+        "role_suggestion",
+        "candidate_meaning",
+        "candidate_relation",
+        "faculty_run",
+        "objection",
+        "answer",
+        "jury_review"
+      ]
+    },
+    {
+      "provider_id": "local-lm-studio",
+      "adapter_kind": "lm_studio_open_ai_compatible",
+      "model_id": "local-model",
+      "endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+      "prompt_contract": "sidecar_task_prompt_contracts_v0",
+      "adapter_version": "source-only-v0",
+      "enabled": false,
+      "capabilities": [
+        "role_suggestion",
+        "candidate_meaning",
+        "candidate_relation",
+        "faculty_run",
+        "objection",
+        "answer"
+      ]
+    },
+    {
+      "provider_id": "local-ollama",
+      "adapter_kind": "ollama",
+      "model_id": "llama3.2",
+      "endpoint": "http://127.0.0.1:11434/api/chat",
+      "prompt_contract": "sidecar_task_prompt_contracts_v0",
+      "adapter_version": "source-only-v0",
+      "enabled": false,
+      "capabilities": [
+        "role_suggestion",
+        "candidate_meaning",
+        "candidate_relation",
+        "faculty_run",
+        "objection",
+        "answer"
+      ]
+    }
+  ]
+}

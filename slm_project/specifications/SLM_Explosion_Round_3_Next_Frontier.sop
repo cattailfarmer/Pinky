@@ -1,0 +1,32 @@
+& [SLMExplosionRound3NextFrontier] is the third project-manager cut for the SLM prototype
+  + [explosion_round_uuid] is c3abed16-23a3-4736-bcba-31fc2353fd47
+  + [source_document] is slm_project/source_documents/2026-06-20_slm_intake/Dictated_SLM_Source.sop
+  + [prior_queue] is slm_project/planning/project_manager/SLM_Manager_Work_Queue.sop
+  + [trigger] is current buffet is verified or complete through SLM-31
+  + [processing_state] is next_frontier_slicing
+
+  & [ObservedPrototypePressure] is what the verified prototype now reveals
+    + [pressure] demo output is rich but too verbose for downstream re-ingestion
+    + [pressure] closed-class tokens still carry open-class lexical senses that need routing discipline
+    + [pressure] imperative commands need explicit implied actor or command-subject uncertainty handling
+    + [pressure] live LM Studio transport must be staged after source-only request/response shape
+    + [pressure] provider jury and faculty work need task-specific prompt contracts before live calls
+    + [pressure] future learning requires append-only identity records beyond in-memory graph events
+
+  & [Round3SliceSet] is the next tray of work-ready servings
+    + [SLM-32] is Imperative Subject and Implied Actor Uncertainty
+    + [SLM-33] is Candidate Relation Stabilization Audit
+    + [SLM-34] is Live LM Studio Transport Gate
+    + [SLM-35] is Sidecar Task Prompt Contracts
+    + [SLM-36] is Provider Jury Panel Expansion
+    + [SLM-37] is Primer Compaction Budget
+    + [SLM-38] is Closed-Class Lexical Sense Routing
+    + [SLM-39] is Activation Score Split Plan
+    + [SLM-40] is Append-Only Learning Store Design
+    + [SLM-41] is Fixture Expansion Matrix
+
+  & [ManagerCutRule] is how to eat this tray
+    = must: prefer SLM-37 and SLM-38 before live sidecar transport because they improve deterministic quality
+    = must: keep live LM Studio work source-gated until endpoint availability is intentionally tested
+    = must: verify Rust changes through WSL Cargo route
+    = must: keep Windows-native Cargo forbidden while Windows Application Control remains active

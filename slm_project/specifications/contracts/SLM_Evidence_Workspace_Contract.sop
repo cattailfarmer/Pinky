@@ -1,0 +1,48 @@
+& [SLMEvidenceWorkspaceContract] is the pre-graph workspace contract for SLM v0
+  + [contract_uuid] is 61ee2baf-cd27-44b3-a299-49499c1f9da3
+  + [slice_id] is SLM-03
+  + [depends_on] is SLM_Core_Data_Contracts
+  + [status] is accepted_for_diffusion_contracts
+
+  & [EvidenceWorkspace] is the contained candidate field before semantic graph promotion
+    + [workspace_id] is unique per input analysis
+    + [contains] is Token records
+    + [contains] is GrammarCandidate records
+    + [contains] is LLMSuggestion records
+    + [contains] is CandidateMeaning records
+    + [contains] is CandidateRelation records
+    + [contains] is SupportRecord records
+    + [contains] is ContradictionRecord records
+    + [contains] is ProviderDeliberation records
+    + [contains] is WobbleVector records
+    + [contains] is DiffusionPassTrace records
+    + [output_candidate] is StableCandidateProposal
+    + [output_candidate] is UncertaintyProposal
+    - never: contain Glyph records as active workspace hypotheses
+
+  & [WorkspaceUpdateRule] is how evidence changes inside the workspace
+    = must: append evidence records rather than overwrite source observations
+    = must: preserve contradictory evidence as first-class material
+    = must: record transform name, input refs, output refs, and reason for each update
+    = must: expose unresolved candidates to wobble measurement
+    - never: hard-delete early candidates during diffusion
+
+  & [WorkspaceQuerySurface] is the required inspection surface
+    + [query] is candidates_by_token
+    + [query] is support_by_candidate
+    + [query] is contradictions_by_candidate
+    + [query] is provider_disagreements
+    + [query] is wobble_by_dimension
+    + [query] is stabilization_ready_candidates
+    + [query] is unresolved_boundary_candidates
+
+  & [WorkspaceFixtureExpectation] is the first evidence-only proof shape
+    + [sentence] is "The fish swim."
+    + [expectation] is fish and swim each may carry multiple grammatical candidates before diffusion
+    + [expectation] is no FishConcept or SwimmingAction Glyph exists before stabilization
+    + [sentence] is "Time flies like an arrow."
+    + [expectation] is competing candidate meanings and relations remain in EvidenceWorkspace until deliberation resolves or bounds uncertainty
+
+  ! [Slice03Complete] is accepted
+    @ [support] workspace contract preserves unstable evidence outside SemanticGraph
+

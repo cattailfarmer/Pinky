@@ -1,0 +1,21 @@
+& [Slice01MultiplayerSplitscreenDataContract] is the first work slice for the Unreal platform project
+  + [slice_uuid] is d2cbcb27-55b0-4802-9a78-c29649e74eb4
+  + [status] is complete_pending_review
+  + [feature_specification] is unreal_platform_project/specifications/Multiplayer_Splitscreen_Hosting_Feature_Specification.sop
+  + [deliverable] is unreal_platform_project/specifications/contracts/Multiplayer_Splitscreen_Data_Contracts.sop
+  + [proof_route] is manual specification inspection against AC7, AC8, and identity-collapse risks
+
+  & [CompletionCriteria] is the slice completion standard
+    + [CC1] is HostDevice, HostSession, LocalPlayerSlot, AuthenticatedUser, UserSessionBinding, PlayerControllerBinding, and SessionAuditEvent are distinct subjects
+    + [CC2] is natural keys and generated identities are named
+    + [CC3] is lifecycle states are declared
+    + [CC4] is join policy rejects duplicate users for v0
+    + [CC5] is audit events can prove login, join, slot assignment, player spawn, leave, and session end
+
+  & [CompletionRecord] is the current completion note
+    + [completed_by] is current Codex conversation
+    + [completed_at_local] is 2026-06-21
+    + [result_summary] is data contract draft created with separate platform user, local slot, session, runtime binding, and audit-event identities
+    + [remaining_concerns] is contract remains unsigned and needs user review before implementation authority
+
+  - never: treat this completed_pending_review state as final support without review
