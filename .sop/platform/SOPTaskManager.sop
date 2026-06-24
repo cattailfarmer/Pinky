@@ -1,0 +1,163 @@
+Subject: SOP Task Manager
+
+Description: Task manager contract for turning SOP narrative and work slices into lane-fit worker packets, then capturing worker returns into the task narrative.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_task_manager\Dictated_SOP_Task_Manager_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
+@ [source] C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
+@ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+@ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+@ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
+
+& [SOPTaskManager] is the slim coordinating agent for narrative-driven worker orchestration
+  + [pattern_role] is narrative_slice_to_worker_packet_task_management
+  + [active_root] is C:\Project\Pinky\.sop
+  + [publication_repo] is C:\Project\Pinky
+  + [task_manager] is the slim agent that reads selected narrative, prepares work slices, routes worker packets, and captures results
+  + [narrative_profile] is the selected task story, objective, constraints, source lineage, active focus, risk, and desired output shape
+  + [slice_set] is the selected specification slices, manager tasks, source documents, proofs, or event records that define work
+  + [task_frame] is the live task context frame that holds task subject, operational details, reminder patterns, lane context, gates, status, and return anchors
+  + [reminder_pattern_set] is the task-local reminders that should fire when matching task subject, lane, operation, risk, source, or return conditions appear
+  + [task_unit] is one bounded unit of work with objective, inputs, authority, lane fit, output schema, evidence gate, and return anchor
+  + [lane_router] is the decision surface that assigns task_unit work to local_gpu_lane, lm_studio_lane, openai_codex_lane, codex_cli_lane, or manual_lane
+  + [worker_packet] is the compact job packet containing narrative_profile, slice_set, compiled attention kernel, instructions, expected output, return schema, and outside
+  + [local_gpu_lane] is local model inference using the user's GPU through an available provider such as LM Studio or another configured local runtime
+  + [lm_studio_lane] is local OpenAI-compatible LM Studio inference when available
+  + [openai_codex_lane] is OpenAI Codex agent work suited for code edits, repo changes, tests, high-context implementation, and structured proof
+  + [codex_cli_lane] is local Codex CLI worker lane when explicitly launched and bounded
+  + [manual_lane] is human or deferred review when credentials, policy, destructive actions, or unclear authority block automation
+  + [spool_handoff] is the optional handoff to SpoolMasterHub for visible worker records and hub tree rendering
+  + [result_capture] is the record of worker output, changed files, proof, narrative delta, unresolved outside, and return status
+  + [task_narrative] is the cumulative story of task assignment, worker action, returned evidence, integration, and remaining outside
+  + [manager_outside] is automatic launch, hidden model state, credentials, uninspected remote state, worker claims without capture, and unrelated Pinky worktree changes
+
+  ? [use_when: SOP narrative and work slices need coordinated worker execution across local and OpenAI lanes]
+    = activate [SOPTaskManager]
+
+  = must: begin from SourceAuthorityRoot and CurrentFocalPoint
+  = must: preserve the user directive as source before canonical task routing changes
+  = must: build narrative_profile before creating task_unit records
+  = must: create a task_frame before worker_packet emission when a task has operational details, lane routing, or reminder needs
+  = must: bind reminder_pattern_set to task_frame so the task subject and operational details stay active during work
+  = must: select slice_set from visible SOP records, manager state, source documents, or repo diffs
+  = must: compile a worker_packet before assigning or launching a worker
+  = must: use AttentionKernelCompiler when worker_packet needs a compact in-context SOP pattern bundle
+  = must: route local_gpu_lane or lm_studio_lane work toward associative scan, summarization, candidate extraction, low-risk critique, style variation, cross-model perspective, or non-mutating analysis
+  = must: route openai_codex_lane or codex_cli_lane work toward code edits, repo mutations, tests, multi-file integration, high-context specification writing, or proof-bearing changes
+  = must: route manual_lane when credentials, remote authorization, destructive commands, unclear authority, or policy choices are required
+  = must: make launch_command inspectable before execution
+  = must: capture worker output before treating a task_unit as completed
+  = must: integrate result_capture into task_narrative only after evidence_gate and action_gate are satisfied
+  = must: preserve unresolved material in manager_outside or tracker records
+  = must: keep unrelated Pinky dirty files outside task commits unless explicitly selected
+  = should: use SpoolMasterHub for visible worker folders, status files, hub trees, and prompt packets
+  = should: keep task_unit scope small enough for one worker to finish autonomously
+  = should: prefer local lanes for cheap breadth and Codex lanes for authoritative repo work
+  - never: launch local or remote workers silently
+  - never: let worker output become authority without capture, source links, proof, and integration disposition
+  - never: allow remote worker claims to overwrite local SourceAuthorityRoot records without import and acceptance
+
+& [TaskFrame] is the reminder-bearing context holder for one task subject
+  + [task_frame_id] is the stable identifier for the task frame
+  + [task_subject] is the subject the task is about
+  + [operational_details] is the lane, allowed surface, blocked surface, expected output, gates, tools, status, and return conditions
+  + [reminder_pattern_set] is the active reminders associated with the task subject and operations
+  + [subject_reminder] is the reminder that reasserts what the task is about when focus drifts
+  + [boundary_reminder] is the reminder that reasserts what the task may not touch, claim, launch, or integrate
+  + [operation_reminder] is the reminder that reasserts current step, lane, status, and expected output
+  + [evidence_reminder] is the reminder that output needs capture, proof, source, diff, or citation before integration
+  + [return_reminder] is the reminder that worker output must return to task_narrative, manager state, or outside
+  + [frame_state] is proposed, active, suspended, returned, integrated, blocked, failed, deferred, or closed
+  + [frame_outside] is unrelated task material, expired reminders, hidden model state, unapproved launch, and uncaptured output
+
+  = must: hold task_subject and operational_details together
+  = must: attach reminder_pattern_set before launch or worker handoff
+  = must: keep reminders inspectable rather than implicit in prose
+  = must: expire or close reminders when frame_state becomes integrated, rejected, or outside
+  = must: preserve boundary_reminder and evidence_reminder when a task is suspended or deferred
+  = should: keep reminder text short enough to fit worker packets
+  - never: let reminders become authority beyond the task_frame boundary
+  - never: let an expired task_frame keep steering unrelated work
+
+& [TaskUnitRecord] is one bounded work unit prepared by the task manager
+  + [task_id] is the stable identifier for the work unit
+  + [task_frame] is the live context frame holding reminders and operational details for this task
+  + [objective] is the concrete work result expected from the worker
+  + [narrative_profile] is why this task exists and what story it advances
+  + [slice_refs] is the selected SOP slice, source document, manager task, file path, or event input
+  + [lane_fit] is local_gpu, lm_studio, openai_codex, codex_cli, manual, or deferred
+  + [authority_boundary] is what the worker may read, write, claim, launch, or leave outside
+  + [expected_output] is source, spec, patch, proof, critique, summary, scan, packet, or question
+  + [evidence_gate] is the proof, citation, diff, test, or source support required before integration
+  + [action_gate] is the permission, local state, remote state, credential, or safety condition required before action
+  + [return_anchor] is task_narrative, manager_state, source document, event record, or pull request/commit report target
+  + [status] is proposed, packet_ready, queued, assigned, launched, returned, integrated, blocked, failed, deferred, or outside
+
+  = must: include lane_fit and return_anchor before assignment
+  = must: reference task_frame when reminders or operational details affect the task
+  = must: include evidence_gate before integration
+  = must: include action_gate before launch or file mutation
+  = should: include one primary objective and one expected output shape
+
+& [LaneRoutingLaw] is the assignment policy for local and OpenAI worker lanes
+  + [local_gpu_fit] is broad low-risk inference, semantic scan, cross-model triangulation, summarization, brainstorming, critique, classification, or draft generation without direct repo mutation
+  + [lm_studio_fit] is local OpenAI-compatible inference where prompt packets and captured responses are enough
+  + [openai_codex_fit] is implementation, tests, repo mutations, tool use, long-context integration, or durable proof work
+  + [codex_cli_fit] is bounded local agent work with explicit workspace, prompt packet, and capture slot
+  + [manual_fit] is credentials, destructive actions, legal/security decisions, remote policy, or user judgment
+  + [deferred_fit] is work blocked by missing provider, missing source, unclear authority, or unresolved safety boundary
+
+  = must: prefer non-mutating lanes for exploratory or speculative work
+  = must: prefer Codex lanes for file edits that require repo-aware verification
+  = must: classify provider absence as blocked or deferred, not failed
+  = must: preserve lane routing reason in worker_packet
+  - never: route high-authority repo mutation to an unverified local model lane
+
+& [WorkerPacketShape] is the packet handed to a subprocess agent or local model lane
+  + [packet_id] is the stable packet identifier
+  + [task_id] is the task_unit this packet serves
+  + [task_frame] is the reminder-bearing frame that must remain active while the worker performs the task
+  + [lane] is selected worker lane
+  + [narrative_profile] is objective story, source lineage, constraints, and reason for the task
+  + [compiled_attention_kernel] is the selected SOP pattern bundle from AttentionKernelCompiler when needed
+  + [work_slice] is the smallest relevant slice_set subset
+  + [instructions] is what to do, what to avoid, and how to report
+  + [allowed_surface] is files, concepts, commands, tools, or sources the worker may use
+  + [blocked_surface] is files, actions, claims, tools, or sources the worker must not use
+  + [return_schema] is output, evidence, changed files, proof, outside, and next-question shape
+  + [capture_target] is where the manager stores the worker response and status
+
+  = must: be understandable by a general LLM or Codex worker
+  = must: be compact enough for the lane context window
+  = must: carry enough source and boundary to prevent free-floating work
+  = must: include outside so the worker can decline, defer, or return uncertainty
+  = should: carry task_frame reminders in compact form when they affect worker behavior
+
+& [ResultCaptureCycle] is how worker output becomes task narrative
+  + [capture_input] is worker transcript, response, file diff, test result, artifact, or blocked note
+  + [capture_record] is the stored result under spool, events, planning, or source_documents
+  + [proof_record] is test, diff, citation, model response, source scan, or manual confirmation
+  + [integration_disposition] is integrate, revise, split, retry, defer, reject, or preserve_outside
+  + [task_narrative_delta] is what changed in the task story after the worker returned
+  + [followup_slice] is any new work slice produced by the result
+
+  = must: store capture_input before integration
+  = must: record integration_disposition
+  = must: update task_narrative_delta when a worker result changes plan, proof, scope, or outside
+  = must: route followup_slice through TaskUnitRecord before further work
+  - never: count launched work as returned work
+  - never: count returned work as integrated work without evidence_gate evaluation
+
+(sop_task_manager) :task_frame: /lane_fit and worker_packet/ |manager_outside|
+  + [task_frame] is task subject plus operational details plus reminder patterns
+  + [task_unit] is bounded work selected from narrative_profile and slice_set
+  + [lane_fit] is local_gpu, lm_studio, openai_codex, codex_cli, manual, deferred, or outside
+  + [worker_packet] is narrative profile plus slice plus compiled kernel plus return schema
+  + [result_capture] is output, evidence, diff/proof, outside, and narrative delta
+  |manager_outside| silent launch, hidden state, credentials, uninspected remote claims, unrelated dirty files, and uncaptured worker output
+
+/ [narrative_profile], [slice_set], [SourceAuthorityRoot] -(Prepares)> [task_frame], [task_unit], [manager_outside]
+* [task_frame], [task_unit], [LaneRoutingLaw], [AttentionKernelCompiler] -(Compiles)> [worker_packet], [spool_handoff], [capture_target]
+* [worker_output], [result_capture], [evidence_gate] -(Integrates)> [task_narrative], [followup_slice], [outside]

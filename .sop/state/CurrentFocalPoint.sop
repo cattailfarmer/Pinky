@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is focus resolution refinement and attention runtime registry
+  + [focus_subject] is SOP task manager and worker lane orchestration
   + [focus_mode] is mixed_focus
-  + [executive_drive] is focus on focusing: refine focus quality, focus membrane, periphery gradient, integration receipts, understanding ladder, shadow-horizon scan, and semantic attention stack frames
-  + [right_hemisphere_draw] is focus now has a live ledger: each attention movement can enter a semantic frame, open child frames, consult Wisdom and Caution, return a supported core, and close without losing outside
-  + [inside] is FocusResolutionRefinement.sop, AttentionRuntimeRegistry.sop, state\AttentionRuntimeRegistryState.sop, FocalPoint.sop, FocusZoom.sop, AttentionTraversalPolicy.sop, Wisdom.sop, Caution.sop, AttentionBalanceCenter.sop, AttentionTracker.sop, events\studies\2026-06-24_focus_on_focusing_study_001.sop, events\periphery_stream\2026-06-24_focus_resolution_refinement_070.hg.sop, events\periphery_stream\2026-06-24_attention_runtime_registry_071.hg.sop, events\periphery_stream\2026-06-24_current_attention_runtime_registry_state_072.hg.sop, platform\source_documents\2026-06-24_focus_on_focusing_study\Dictated_Focus_On_Focusing_Study_Source.sop, platform\source_documents\2026-06-24_attention_runtime_registry\Dictated_Attention_Runtime_Registry_Source.sop
-  + [boundary] is non-photonic focus refinement for the local SOP awareness node; the registry is visible semantic attention state, not hidden LLM internals, native stack frames, or executable runtime code
-  + [outside] is hidden activations, exact transformer attention, model weights, hard-coded runtime stack equivalence, active photo-computation development, photonic SOP articulation, and claims of complete understanding
+  + [executive_drive] is define the slim task manager that reads SOP narrative and slices, creates task frames with reminder patterns, routes worker packets to local GPU or OpenAI/Codex lanes, and captures returned output into task narrative
+  + [right_hemisphere_draw] is worker swarm coordination becomes stable when each task has a frame that keeps its subject, reminders, lane fit, packet boundaries, and result capture in one visible loop
+  + [inside] is SOPTaskManager.sop, SpoolMasterHub.sop, WorkerLanes.sop, AttentionKernelCompiler.sop, AttentionRuntimeRegistry.sop, SourceAuthorityRoot.sop, events\periphery_stream\2026-06-24_sop_task_manager_074.hg.sop, platform\source_documents\2026-06-24_sop_task_manager\Dictated_SOP_Task_Manager_Source.sop
+  + [boundary] is non-launching task management specification for narrative-slice routing and result capture; actual local GPU providers, Codex worker launches, credentials, and remote execution remain gated
+  + [outside] is automatic worker launch, credentials, hidden model state, uninspected remote execution, uncaptured worker output, and unrelated Pinky worktree changes
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\periphery_stream\2026-06-24_current_attention_runtime_registry_state_072.hg.sop
-  + [open_question] is whether the next visible step is a focus_quality scoring pass, a tracker lifecycle refinement, or a repo-first reflection integration receipt
+  + [active_reflection] is events\periphery_stream\2026-06-24_sop_task_manager_074.hg.sop
+  + [open_question] is whether the next visible step is a first non-launching task frame plus worker packet example, a packet emitter runtime, or a lane-fit task queue template
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression

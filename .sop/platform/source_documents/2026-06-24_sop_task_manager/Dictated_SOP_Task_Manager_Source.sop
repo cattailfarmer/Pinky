@@ -1,0 +1,25 @@
+Subject: Dictated SOP Task Manager Source
+
+Description: Preserved source directive for a task manager that routes SOP narrative slices to local and Codex workers.
+
+& [DictatedSOPTaskManagerSource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after C:\Project\Pinky\.sop became the active source authority root and the user identified task management as the next step
+  + [source_line_001] is "how to apply your new fork discovery to load worker threads to swarm a coordinated effort around a build plan"
+  + [source_line_002] is "with some jobs suited to local inference working from my GPU, and some from OpenAI Codex agent"
+  + [source_line_003] is "setting up a task manager is the next step"
+  + [source_line_004] is "the slim agent to pass over the SOP narrative and the slices of work produced in response to selected narrative"
+  + [source_line_005] is "be able to follow the specification slices by the narrative profile to lead a subprocess agent, local or remotely hosted"
+  + [source_line_006] is "follow the given SOP patterns for work, and capture that thread's working output to add to the task narrative as jobs are performed"
+  + [source_line_007] is "a task frame should be something that holds reminder patterns to denote the task subject and operational details"
+  + [active_root] is C:\Project\Pinky\.sop
+  + [worker_lane_set] is local_gpu, lm_studio_local, openai_codex, codex_cli, and manual
+  + [desired_output] is task manager contract for narrative-driven worker packet routing and result capture
+
+  = must: preserve this source separately from canonical task manager contract
+  = must: route worker jobs from SOP narrative and specification slices
+  = must: define task_frame as the reminder-bearing context holder for a task subject and operational details
+  = must: distinguish local GPU/local model work from OpenAI Codex work
+  = must: capture worker output into task narrative records
+  = must: keep launch and remote execution gated rather than silent
+  - outside: automatic worker launch, credential handling, hidden model state, and unreviewed remote execution

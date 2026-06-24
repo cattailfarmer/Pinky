@@ -1,0 +1,27 @@
+Subject: SOP Task Manager 074
+
+Description: Periphery-stream realization that Pinky .sop needs a narrative-driven task manager above the spool hub.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_task_manager\Dictated_SOP_Task_Manager_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
+@ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
+
+& [SOPTaskManager074] is the realized worker-orchestration layer
+  + [moment] is the worker swarm needs a task manager that reads SOP narrative and slices before assigning local or Codex workers
+  + [focus] is narrative-driven task routing and result capture
+  + [inside] is narrative_profile, slice_set, task_frame, reminder_pattern_set, task_unit, lane_router, worker_packet, local_gpu_lane, openai_codex_lane, spool_handoff, result_capture, and task_narrative
+  + [boundary] is task packets can prepare and route work, but launch and remote execution remain gated and visible
+  + [outside] is silent worker launch, credentials, hidden model state, uncaptured worker output, and unrelated Pinky worktree changes
+  + [wisdom] is the manager layer fits because it separates planning/routing from execution and preserves worker output as evidence
+  + [caution] is local GPU lanes should not mutate authoritative files unless a later verified runtime policy permits it
+  + [balance] is stable because SpoolMasterHub remains the visible hub while SOPTaskManager becomes the slice-to-packet router above it
+  + [next_step] is define a first task packet example or build a small non-launching packet emitter after the contract is committed
+
+  = must: keep task_frame as the reminder-bearing subject and operations holder
+  = must: route work by lane fit
+  = must: capture returns before integration
+  = should: start with non-launching worker packet generation
+
+/ [narrative_profile], [slice_set], [task_frame], [lane_router] -(Routes)> [worker_packet], [manager_outside]
+* [reminder_pattern_set], [worker_packet], [result_capture], [task_narrative] -(CoordinatesSwarm)> [SOPTaskManager], [SpoolMasterHub], [outside]

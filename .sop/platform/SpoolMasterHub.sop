@@ -4,9 +4,10 @@ Description: SOP contract for Codex-as-master job spooling and navigable worker 
 
 & [SpoolMasterHub] is the orchestration layer where Codex coordinates a turn-local worker pool
   + [master] is Codex acting as the turn master and compiler of worker packets
-  + [spool_root] is F:\.sop\spool
+  + [spool_root] is C:\Project\Pinky\.sop\spool
   + [turn_spool] is one bounded turn folder under spool\turns
   + [worker_pool] is the set of queued, launched, completed, blocked, or deferred workers
+  + [task_manager] is C:\Project\Pinky\.sop\platform\SOPTaskManager.sop as the narrative-to-worker routing layer above this hub
   + [lm_studio_lane] is local OpenAI-compatible LM Studio worker lane
   + [codex_cli_lane] is local Codex CLI worker lane
   + [web_hub] is the static or served web page for a turn spool
@@ -19,6 +20,7 @@ Description: SOP contract for Codex-as-master job spooling and navigable worker 
   + [outside] is automatic launch, remote push, hidden model state, and worker output that has not been captured
 
   = must: prepare worker packets before launching workers
+  = must: receive lane-fit worker packets from SOPTaskManager when a task is narrative-slice driven
   = must: render a hub tree that can be opened without a server
   = must: keep every worker status visible
   = must: record launch command intent without executing it unless explicitly requested

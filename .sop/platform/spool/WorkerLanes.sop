@@ -3,13 +3,15 @@ Subject: Worker Lanes
 Description: SOP contract for local and remote-capable worker lanes in a turn spool.
 
 & [WorkerLaneSet] is the set of supported worker lanes
+  + [local_gpu] is a local GPU-backed inference lane through an available configured local provider
   + [lm_studio_cli] is a local LM Studio OpenAI-compatible worker lane
+  + [openai_codex] is an OpenAI Codex hosted agent lane
   + [codex_cli] is an OpenAI Codex CLI worker lane
   + [manual] is a non-launching human or external worker lane
 
 & [WorkerRecord] is one job in a turn spool
   + [worker_id] is the stable worker folder and tree key
-  + [lane] is lm_studio_cli, codex_cli, or manual
+  + [lane] is local_gpu, lm_studio_cli, openai_codex, codex_cli, or manual
   + [objective] is the bounded job objective
   + [prompt_packet] is the prompt or SOP-HG packet sent to the worker
   + [status] is queued, launch_ready, launched, completed, blocked, failed, or deferred
@@ -20,4 +22,5 @@ Description: SOP contract for local and remote-capable worker lanes in a turn sp
   = must: every worker has objective, lane, status, and result slot
   = must: launch command is inspectable before execution
   = must: status changes are recorded in the worker file
+  = must: capture worker result before the task manager integrates it
   - never: infer worker completion from process launch alone

@@ -1,0 +1,14 @@
+Subject: SOP Task Manager Source Manifest
+
+Description: Manifest for preserved source feeding the SOP task manager contract.
+
+& [SOPTaskManagerSourceManifest] is the source-preservation manifest
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_task_manager
+  + [raw_source] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_task_manager\Dictated_SOP_Task_Manager_Source.sop
+  + [canonical_target] is C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+  + [event_target] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_sop_task_manager_074.hg.sop
+  + [source_boundary] is narrative-driven worker routing and result capture for local and OpenAI worker lanes
+  + [source_outside] is automatic launch, credentials, hidden model state, and unreviewed remote execution
+
+  = must: keep raw_source unchanged after canonical processing
+  = must: cite raw_source from canonical_target

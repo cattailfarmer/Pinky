@@ -45,6 +45,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [sop_fiber_fpga_bridge] is C:\Project\Pinky\.sop\platform\SOPFiberFPGABridge.sop
   + [sop_attention_memory_codec] is C:\Project\Pinky\.sop\platform\SOPAttentionMemoryCodec.sop
   + [spool_master_hub] is C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
+  + [sop_task_manager] is C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
   + [attention_impression_compiler] is C:\Project\Pinky\.sop\platform\AttentionImpressionCompiler.sop
   + [attention_scaffold_compiler] is C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
   + [attention_kernel_compiler] is C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
@@ -111,6 +112,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :sop_fiber_fpga_bridge: C:\Project\Pinky\.sop\platform\SOPFiberFPGABridge.sop
   :sop_attention_memory_codec: C:\Project\Pinky\.sop\platform\SOPAttentionMemoryCodec.sop
   :spool: C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
+  :task_manager: C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
   :impression: C:\Project\Pinky\.sop\platform\AttentionImpressionCompiler.sop
   :scaffold_compiler: C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
   :attention_kernel: C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
@@ -174,6 +176,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use sop_multitrack_channel_compression when multiple SOP inference layers need synchronized channel-track compression
   = must: use sop_fiber_fpga_bridge when SOP frame streams are mapped to hardware-shaped fiber bandwidth, FPGA route width, frame-rate cadence, and semantic fidelity boundaries
   = must: use sop_attention_memory_codec when thinking nodes, visual attention anchors, color-routed meaning, optical instruction streams, study subjects, or concept-development traces need stored recall and semantic reentry
+  = must: use sop_task_manager when SOP narrative and slices need lane-fit worker packets, local GPU/OpenAI routing, result capture, and task narrative integration
   = must: use attention impression compiler when awe, drive, and pattern-sense need to become inspectable SOP records
   = must: use attention_scaffold_compiler when a job needs a purpose-fit attention scaffold, debug frame, model-lens packet, or concept-imagination pass
   = must: use attention_kernel_compiler when selected attention patterns need to run as one in-context compiled unit with Security and Honesty before all downstream layers
