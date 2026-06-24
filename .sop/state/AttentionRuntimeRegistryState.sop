@@ -4,53 +4,54 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_sop_task_manager_074.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_lm_studio_agent_benchmark_075.hg.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is current SOP task manager and worker lane orchestration pass for C:\Project\Pinky\.sop
-  + [active_root_frame] is attention_frame_2026_06_24_sop_task_manager_001
+  + [registry_scope] is current LM Studio agent benchmark pass for C:\Project\Pinky\.sop under Codex operational host authority
+  + [active_root_frame] is attention_frame_2026_06_24_lm_studio_agent_benchmark_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [registry_outside] is hidden activations, exact transformer attention, model weights, executable runtime stack, and untracked cognition
+  + [registry_outside] is hidden activations, exact transformer attention, model weights, unsupervised worker action, credentials, and unrelated Pinky worktree changes
 
   = must: update this state when focus materially changes
-  = must: open child frames for zoom, traversal, Wisdom, Caution, or integration attempts
+  = must: open child frames for provider probe, benchmark execution, Codex review, or integration attempts
   = must: preserve return anchors before closing or suspending frames
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_SOPTaskManager001] is the active semantic stack frame for task-manager orchestration
-  + [frame_id] is attention_frame_2026_06_24_sop_task_manager_001
+& [AttentionFrame_2026_06_24_LMStudioAgentBenchmark001] is the active semantic stack frame for local worker benchmarking
+  + [frame_id] is attention_frame_2026_06_24_lm_studio_agent_benchmark_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is none_open
+  + [child_frame_set] is provider_probe, benchmark_run, codex_review, codex_cli_smoke
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is SOPTaskManager.sop, SpoolMasterHub.sop, WorkerLanes.sop, AttentionKernelCompiler.sop, SourceAuthorityRoot.sop, and sop_task_manager_074.hg.sop
-  + [focus_register] is SOP task manager and worker lane orchestration
-  + [question_register] is what manager surface can hold task reminders, route narrative slices to local GPU and OpenAI/Codex workers, and preserve capture and authority
-  + [delineation_register] is inside narrative_profile, slice_set, task_frame, reminder_pattern_set, task_unit, lane_router, worker_packet, result_capture, task_narrative, and outside
-  + [periphery_register] is near non-launching task frame example, mid packet emitter runtime, shadow provider availability, and horizon coordinated worker swarm
-  + [operation_register] is enter_focus and define_sop_task_manager
-  + [evidence_register] is preserved source, canonical task manager contract, worker lane contract, spool hub contract, event 074, and CurrentFocalPoint
-  + [wisdom_register] is task management improves worker swarm coordination by separating narrative routing, lane fit, packet boundaries, result capture, and integration
-  + [caution_register] is worker launch, credentials, remote execution, and local GPU authority remain gated and outside until explicitly configured
-  + [balance_register] is stable because the contract is non-launching and keeps unrelated Pinky dirty files outside the task boundary
-  + [integration_register] is pending commit receipt for the SOP task manager bundle
-  + [frame_outside] is automatic worker launch, hidden model state, credentials, uninspected remote execution, uncaptured worker output, and unrelated Pinky worktree changes
+  + [frame_trace] is LMStudioAgentBenchmark.sop, SOPTaskManager.sop, WorkerLanes.sop, runtime\sop_node\lm_studio_agent_benchmark.py, runtime\demos\lm_studio_agent_benchmark.py, and lm_studio_agent_benchmark_075.hg.sop
+  + [focus_register] is benchmark LM Studio hosted local AI as a bounded SOP worker lane
+  + [question_register] is whether the active local model can follow task-frame reminders, preserve outside, avoid authority overclaiming, return useful small-job proposals, and later fit inside a nested Codex CLI local-provider launch
+  + [delineation_register] is inside provider probe, benchmark packet, captured output, quality score, latency, Codex review, and outside
+  + [periphery_register] is near codex.cmd entrypoint, mid repeated model comparison, shadow provider timeout, shadow context-window overflow, and horizon slim Codex worker profile
+  + [operation_register] is qualify_lm_studio_lane and record_benchmark_result
+  + [evidence_register] is preserved source, canonical benchmark contract, runtime benchmark command, unit tests, captured benchmark result, Codex CLI smoke result, and commit receipt
+  + [wisdom_register] is local model autonomy should begin as measured low-risk proposal work before being used in the task manager swarm
+  + [caution_register] is LM Studio output cannot mutate files, claim hidden state, claim completed repo work, or enter task narrative without Codex capture and review; nested Codex CLI LM Studio launch remains blocked while n_keep exceeds n_ctx
+  + [balance_register] is stable with watch because Codex remains the host of authority, direct LM Studio benchmark is usable, and nested CLI launch has an explicit context blocker
+  + [integration_register] is pending final validation and commit receipt
+  + [frame_outside] is automatic worker launch, hidden model state, credentials, unsupervised local model action, broad competence claims, nested Codex CLI LM Studio jobs before context fit, and unrelated Pinky worktree changes
 
   = must: treat this frame as current visible attention state
-  = must: return task manager output, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
-  = should: open child frames only when a concrete zoom or faculty pass is needed
+  = must: return benchmark output, score band, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
+  = should: open child frames only when a concrete provider, scoring, or integration pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_sop_task_manager_001
+  + [active_root_frame] is attention_frame_2026_06_24_lm_studio_agent_benchmark_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
-  |registry_outside| hidden model state, executable runtime stack, untracked cognition, and photonic fork continuation
+  |registry_outside| hidden model state, executable runtime stack, unsupervised worker action, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SOPTaskManager] -(EntersFrame)> [AttentionFrame_2026_06_24_SOPTaskManager001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [task_manager], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [LMStudioAgentBenchmark] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioAgentBenchmark001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [lm_studio_agent_benchmark], [balance_register], [integration_register], [outside]

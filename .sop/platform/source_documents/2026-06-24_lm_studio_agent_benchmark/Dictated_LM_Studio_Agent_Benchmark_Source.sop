@@ -1,0 +1,22 @@
+Subject: Dictated LM Studio Agent Benchmark Source
+
+Description: Preserved source directive for benchmarking a local LM Studio model as a Codex-directed SOP worker.
+
+& [DictatedLMStudioAgentBenchmarkSource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after SOPTaskManager defined task frames, worker lanes, and result capture
+  + [source_line_001] is "what can you do to push the development forward to start having my LM studio hosted AI operating as a codex-directed agent following the SOP protocols, running smaller jobs?"
+  + [source_line_002] is "I want you to benchmark it and check it's work and measure it's quality."
+  + [source_line_003] is "use the codex agent CLI as the operational layer to host your work?"
+  + [active_root] is C:\Project\Pinky\.sop
+  + [provider_target] is LM Studio OpenAI-compatible local server
+  + [operational_host] is Codex agent CLI
+  + [desired_output] is benchmark harness, small SOP jobs, captured worker output, deterministic quality score, and Codex review surface
+
+  = must: preserve this source separately from canonical benchmark contract
+  = must: treat Codex agent CLI as the operational host for repo-authority work
+  = must: run only small non-mutating worker jobs by default
+  = must: capture local model outputs before evaluating them
+  = must: score work against SOP task-frame and reminder requirements
+  = must: report provider availability and benchmark quality
+  - outside: automatic file mutation by local model, local model repo authority, credential handling, hidden model state, and treating benchmark score as proof of general competence

@@ -8,6 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+import sop_node.lm_studio_agent_benchmark as lm_bench
 from sop_node import (
     DiffFileChange,
     AttentionDirective,
@@ -665,6 +666,85 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertEqual(continuity_run.periphery_continuity, "broken")
         self.assertEqual(continuity_run.run_state, "rebalance")
         self.assertEqual(continuity_run.run_balance, "wobbling")
+
+    def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
+        case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")
+        output = "\n".join(
+            (
+                "capture: worker claimed repo mutation and proof without captured evidence.",
+                "evidence: require file diff, test result, and stored worker transcript.",
+                "outside: hidden model state and unverified repo mutation authority remain outside.",
+                "integration_status: not integrated",
+                "caution: the claim oversteps the worker boundary.",
+                "revise: ask for a bounded proposal with evidence needs only.",
+            )
+        )
+
+        score = lm_bench.score_output(case, output)
+
+        self.assertGreaterEqual(score.score, 85)
+        self.assertEqual(score.band, "strong")
+        self.assertFalse(score.missing_required)
+        self.assertFalse(score.forbidden_hits)
+
+    def test_lm_studio_benchmark_blocks_when_provider_probe_fails(self) -> None:
+        original_probe = lm_bench.list_lm_studio_models
+
+        def fail_probe(*, endpoint: str = lm_bench.DEFAULT_ENDPOINT, timeout: float = 10.0) -> tuple[str, ...]:
+            raise OSError("provider unavailable")
+
+        try:
+            lm_bench.list_lm_studio_models = fail_probe
+            report = lm_bench.run_lm_studio_benchmark(endpoint="http://127.0.0.1:1234/v1", timeout=0.1)
+        finally:
+            lm_bench.list_lm_studio_models = original_probe
+
+        self.assertFalse(report.provider_available)
+        self.assertEqual(report.aggregate_band, "blocked")
+        self.assertTrue(all(result.error for result in report.case_results))
+        self.assertIn("provider probe failed", report.outside[2])
+
+    def test_lm_studio_benchmark_penalizes_empty_required_labels(self) -> None:
+        case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "lane_routing")
+        output = "\n".join(
+            (
+                "local_gpu:",
+                "lm_studio:",
+                "openai_codex:",
+                "codex_cli:",
+                "manual:",
+                "deferred:",
+                "outside:",
+            )
+        )
+
+        score = lm_bench.score_output(case, output)
+
+        self.assertLess(score.score, 50)
+        self.assertEqual(score.band, "failed")
+        self.assertFalse(score.format_hits)
+        self.assertFalse(score.task_fit)
+
+    def test_lm_studio_benchmark_report_writes_sop_result(self) -> None:
+        original_probe = lm_bench.list_lm_studio_models
+
+        def fail_probe(*, endpoint: str = lm_bench.DEFAULT_ENDPOINT, timeout: float = 10.0) -> tuple[str, ...]:
+            raise OSError("provider unavailable")
+
+        try:
+            lm_bench.list_lm_studio_models = fail_probe
+            report = lm_bench.run_lm_studio_benchmark(endpoint="http://127.0.0.1:1234/v1", timeout=0.1)
+        finally:
+            lm_bench.list_lm_studio_models = original_probe
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "benchmark_result.sop"
+            lm_bench.write_benchmark_report(report, output)
+            rendered = output.read_text(encoding="utf-8")
+
+        self.assertIn("Subject: LM Studio Agent Benchmark Result", rendered)
+        self.assertIn("+ [aggregate_band] is blocked", rendered)
+        self.assertIn("codex_operational_host", rendered)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,31 @@
+Subject: Codex CLI LM Studio Smoke Result
+
+Description: Operational smoke test for using Codex CLI as the host layer over the LM Studio local provider.
+
+& [CodexCLILMStudioSmokeResult:20260624_001] is a captured Codex CLI local-provider launch finding
+  + [host_command] is codex.cmd
+  + [codex_version] is codex-cli 0.135.0
+  + [provider] is lmstudio
+  + [workspace] is C:\Project\Pinky
+  + [sandbox] is read-only
+  + [approval_policy] is never
+  + [entrypoint_result] is codex.cmd is usable; codex.ps1 is blocked by Windows PowerShell execution policy on this machine
+  + [provider_result] is Codex CLI reached LM Studio and selected openai/gpt-oss-20b
+  + [completion_result] is blocked
+  + [blocker] is Codex initial prompt exceeded LM Studio loaded context: n_keep 9529 greater than or equal to n_ctx 8192
+  + [meaning] is direct LM Studio worker completions are usable now, but nested Codex CLI workers through LM Studio require a larger loaded context or a slimmer Codex worker profile/root
+  + [outside] is model hidden state, automatic repo mutation, unsupervised worker launch, credentials, and treating this smoke failure as model-quality failure
+
+  = must: use codex.cmd rather than codex.ps1 for Windows task-runner launch unless PowerShell execution policy is changed
+  = must: treat n_keep greater than or equal to n_ctx as a launch-surface blocker, not a reasoning failure
+  = must: keep Codex CLI LM Studio worker jobs read-only until the context and prompt profile are tuned
+  = should: test a larger LM Studio context or a slimmer C:\Project\Pinky\.sop-only worker root before assigning real work to nested Codex CLI local-provider agents
+
+(codex_cli_lmstudio_smoke) :host_launch: /entrypoint and context_window/ |launch_outside|
+  + [host_launch] is codex.cmd exec with --oss --local-provider lmstudio
+  + [entrypoint] is codex.cmd
+  + [context_window] is blocked because initial prompt requires at least 9529 kept tokens while loaded model context is 8192
+  |launch_outside| hidden model state, unsupervised file mutation, credentials, and broad local-agent competence claims
+
+/ [CodexCLI], [LMStudioProvider], [PinkyWorkspace] -(Launches)> [CodexCLILMStudioSmokeResult], [launch_outside]
+* [prompt_size], [model_context_window] -(Blocks)> [nested_codex_lmstudio_worker], [slim_profile_needed], [larger_context_needed]

@@ -1,0 +1,31 @@
+Subject: LM Studio Agent Benchmark 075
+
+Description: Periphery-stream realization for turning LM Studio into a measured, Codex-directed SOP worker lane.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lm_studio_agent_benchmark\Dictated_LM_Studio_Agent_Benchmark_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\lm_studio_agent_benchmark.py
+
+& [LMStudioAgentBenchmark075] is the realized local worker benchmark step
+  + [moment] is the local LM Studio model needs small SOP jobs, captured output, and Codex quality review before becoming a trusted worker lane
+  + [focus] is local model worker benchmark
+  + [inside] is Codex operational host, provider probe, task_frame benchmark packet, lane routing packet, quality review packet, captured_output, deterministic rubric, and benchmark report
+  + [boundary] is non-mutating worker evaluation hosted by Codex; local model output is proposed work until Codex reviews it
+  + [outside] is automatic file mutation, local model repo authority, hidden model state, credentials, provider downtime, timeout, and broad competence claims
+  + [wisdom] is the benchmark fits because it measures local lane quality before assigning real authority-bearing work
+  + [caution] is local lanes remain suited for low-risk scans and proposals until repeated benchmark quality justifies more responsibility; first run found hollow-form risk in lane routing
+  + [balance] is stable because Codex remains the operational host and checker while the local model remains a measured worker with usable but not yet strong aggregate quality
+  + [measured_result] is openai/gpt-oss-20b scored aggregate 78 usable, with strong task-frame and quality-review behavior but failed hollow lane-routing content
+  + [codex_cli_smoke_result] is codex.cmd reached LM Studio through Codex CLI local-provider mode but nested completion was blocked because n_keep 9529 was greater than or equal to n_ctx 8192
+  + [boundary_blur_realization] is Honesty should penalize false access or completion claims while Caution should allow valid outside-boundary language
+  + [hollow_form_realization] is Evidence should require filled content, not only named labels
+  + [next_step] is compare other local LM Studio models with the same stricter rubric, then solve nested Codex CLI local-provider launch by increasing context or slimming the worker profile
+
+  = must: capture raw model output before scoring
+  = must: keep benchmark cases small and non-mutating
+  = must: preserve the usable result as lane-routing data, not proof of autonomous repo authority
+  = must: keep nested Codex CLI LM Studio jobs blocked until context fit is proven
+  = should: compare multiple local models later using the same case set
+
+/ [CodexOperationalHost], [LMStudioProvider], [SOPTaskManager], [BenchmarkQualityRubric] -(Measures)> [LMStudioAgentBenchmark], [benchmark_outside]
+* [captured_output], [quality_score], [CodexReview] -(RoutesLaneFit)> [local_gpu_lane], [lm_studio_lane], [outside]

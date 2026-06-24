@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is SOP task manager and worker lane orchestration
+  + [focus_subject] is LM Studio agent benchmark under Codex operational host
   + [focus_mode] is mixed_focus
-  + [executive_drive] is define the slim task manager that reads SOP narrative and slices, creates task frames with reminder patterns, routes worker packets to local GPU or OpenAI/Codex lanes, and captures returned output into task narrative
-  + [right_hemisphere_draw] is worker swarm coordination becomes stable when each task has a frame that keeps its subject, reminders, lane fit, packet boundaries, and result capture in one visible loop
-  + [inside] is SOPTaskManager.sop, SpoolMasterHub.sop, WorkerLanes.sop, AttentionKernelCompiler.sop, AttentionRuntimeRegistry.sop, SourceAuthorityRoot.sop, events\periphery_stream\2026-06-24_sop_task_manager_074.hg.sop, platform\source_documents\2026-06-24_sop_task_manager\Dictated_SOP_Task_Manager_Source.sop
-  + [boundary] is non-launching task management specification for narrative-slice routing and result capture; actual local GPU providers, Codex worker launches, credentials, and remote execution remain gated
-  + [outside] is automatic worker launch, credentials, hidden model state, uninspected remote execution, uncaptured worker output, and unrelated Pinky worktree changes
+  + [executive_drive] is benchmark LM Studio hosted local AI on small SOP worker jobs while Codex agent CLI or current Codex host owns prompting, capture, scoring, repo writes, commits, pushes, and integration review; then solve nested Codex CLI local-provider context fit
+  + [right_hemisphere_draw] is the local model becomes useful as a measured proposal voice when task-frame reminders, outside preservation, latency, and overclaim checks are visible
+  + [inside] is LMStudioAgentBenchmark.sop, SOPTaskManager.sop, WorkerLanes.sop, runtime\sop_node\lm_studio_agent_benchmark.py, runtime\demos\lm_studio_agent_benchmark.py, runtime\tests\test_sensitivity_scan.py, events\benchmarks\lm_studio_agent_benchmark_20260624_182802.sop, events\benchmarks\codex_cli_lmstudio_smoke_20260624_001.sop, events\periphery_stream\2026-06-24_lm_studio_agent_benchmark_075.hg.sop, platform\source_documents\2026-06-24_lm_studio_agent_benchmark\Dictated_LM_Studio_Agent_Benchmark_Source.sop
+  + [boundary] is non-mutating LM Studio benchmark hosted by Codex; local model output is captured proposal text and cannot mutate files or count as integration without Codex review
+  + [outside] is automatic worker launch, credentials, hidden model state, unsupervised local model actions, uninspected remote execution, broad competence claims, nested Codex CLI LM Studio jobs until context fit is solved, and unrelated Pinky worktree changes
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\periphery_stream\2026-06-24_sop_task_manager_074.hg.sop
-  + [open_question] is whether the next visible step is a first non-launching task frame plus worker packet example, a packet emitter runtime, or a lane-fit task queue template
+  + [active_reflection] is events\periphery_stream\2026-06-24_lm_studio_agent_benchmark_075.hg.sop
+  + [open_question] is whether to solve nested Codex CLI local-provider launch by increasing LM Studio context or by defining a slimmer .sop-only Codex worker profile
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression

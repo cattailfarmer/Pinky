@@ -1,0 +1,92 @@
+Subject: LM Studio Agent Benchmark Result
+
+Description: Captured benchmark of a local LM Studio model operating as a Codex-hosted SOP worker lane.
+
+& [LMStudioAgentBenchmarkResult:lm_studio_agent_benchmark_20260624_182802] is a captured local worker benchmark
+  + [report_id] is lm_studio_agent_benchmark_20260624_182802
+  + [provider_endpoint] is http://127.0.0.1:1234/v1
+  + [model] is openai/gpt-oss-20b
+  + [operational_host] is codex_agent_cli
+  + [provider_available] is true
+  + [available_models] is openai/gpt-oss-20b, qwen/qwen3.6-35b-a3b, google/gemma-4-e4b, text-embedding-nomic-embed-text-v1.5
+  + [started_at_utc] is 2026-06-24T18:28:02Z
+  + [completed_at_utc] is 2026-06-24T18:28:04Z
+  + [aggregate_score] is 78
+  + [aggregate_band] is usable
+  + [codex_review] is benchmark scores local model proposal quality; Codex remains authority for repo mutation and integration
+  + [outside] is provider limits, hidden model state, benchmark narrowness, local model repo authority, and untested broader competence
+
+& [BenchmarkCaseResult:task_frame_reminders] is case 1
+  + [case_id] is task_frame_reminders
+  + [task_subject] is non-mutating SOP task frame
+  + [objective] is Create a compact task frame for a worker that summarizes a SOP contract without editing files.
+  + [latency_ms] is 682
+  + [score] is 100
+  + [score_band] is strong
+  + [missing_required] is none
+  + [forbidden_hits] is none
+  + [format_hits] is task_subject, subject_reminder, boundary_reminder, operation_reminder, evidence_reminder, return_reminder, outside
+  + [outside_present] is true
+  + [task_fit] is true
+  + [error] is none
+  + [captured_output] is:
+    task_subject: Summarize SourceAuthorityRoot SOP contract
+    subject_reminder: Provide a concise summary of the SourceAuthorityRoot SOP for future reference.
+    boundary_reminder: Do not modify any files or repository content.
+    operation_reminder: Output only the requested labels and brief summary text.
+    evidence_reminder: None required; this is a non-mutating task.
+    return_reminder: Return the output for Codex capture and review.
+    outside: Any detailed contract clauses, legal language, or file edits are outside scope.
+
+& [BenchmarkCaseResult:lane_routing] is case 2
+  + [case_id] is lane_routing
+  + [task_subject] is SOP worker lane routing
+  + [objective] is Route small jobs to local_gpu, lm_studio, openai_codex, codex_cli, manual, deferred, or outside.
+  + [latency_ms] is 529
+  + [score] is 43
+  + [score_band] is failed
+  + [missing_required] is none
+  + [forbidden_hits] is none
+  + [format_hits] is outside
+  + [outside_present] is true
+  + [task_fit] is false
+  + [error] is none
+  + [captured_output] is:
+    local_gpu:
+    lm_studio:
+    openai_codex:
+    codex_cli:
+    manual:
+    deferred:
+    outside:
+
+    These labels represent routing categories for small jobs based on their nature and the resources or expertise required.
+
+& [BenchmarkCaseResult:quality_review] is case 3
+  + [case_id] is quality_review
+  + [task_subject] is worker output quality review
+  + [objective] is Critique a weak worker output and keep it proposed, not integrated.
+  + [latency_ms] is 460
+  + [score] is 91
+  + [score_band] is strong
+  + [missing_required] is not integrated
+  + [forbidden_hits] is none
+  + [format_hits] is capture, evidence, outside, integration_status, caution, revise
+  + [outside_present] is true
+  + [task_fit] is true
+  + [error] is none
+  + [captured_output] is:
+    capture: The worker claims to have made changes and proven understanding but provides no specifics.
+    evidence: A diff of the repository, a test run showing the framework is correctly applied, and logs or screenshots demonstrating model behavior.
+    outside: No mention of potential conflicts with existing code or dependencies.
+    integration_status: Not ready for integration.
+    caution: The claim lacks verifiable proof; risk of breaking current functionality.
+    revise: Provide detailed commit message, unit test results, and a brief explanation of how the changes align with the framework.
+
+(lm_studio_agent_benchmark_result) :captured_output: /quality_score and codex_review/ |benchmark_outside|
+  + [aggregate_score] is 78
+  + [aggregate_band] is usable
+  + [codex_operational_host] is Codex-held authority over capture, scoring, file writes, commits, pushes, and integration
+  |benchmark_outside| hidden state, provider limits, local model repo authority, and untested broader competence
+  - outside: benchmark is non-mutating and measures narrow SOP worker behavior
+  - outside: local model output remains proposal text until Codex review

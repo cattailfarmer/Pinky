@@ -1,0 +1,96 @@
+Subject: LM Studio Agent Benchmark
+
+Description: Contract for running small Codex-directed SOP worker jobs against a local LM Studio model and scoring the captured work.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lm_studio_agent_benchmark\Dictated_LM_Studio_Agent_Benchmark_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\lm_studio_agent_benchmark.py
+
+& [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
+  + [pattern_role] is local_model_worker_benchmark_and_quality_capture
+  + [operational_host] is Codex agent CLI as the repo-aware host, task-frame keeper, prompt dispatcher, capture surface, and quality reviewer
+  + [codex_cli_entrypoint] is codex.cmd on this Windows host because codex.ps1 can be blocked by PowerShell execution policy
+  + [codex_cli_lmstudio_smoke] is blocked until Codex CLI local-provider prompt size fits the loaded LM Studio context window or the context window is increased
+  + [provider_endpoint] is OpenAI-compatible LM Studio endpoint, default http://127.0.0.1:1234/v1
+  + [worker_lane] is lm_studio_lane or local_gpu_lane when backed by LM Studio
+  + [task_frame_benchmark] is a small job that asks the model to form a task frame with reminders and outside
+  + [lane_routing_benchmark] is a small job that asks the model to route work to local_gpu, lm_studio, openai_codex, codex_cli, manual, deferred, or outside
+  + [quality_review_benchmark] is a small job that asks the model to critique a worker output without overclaiming authority
+  + [benchmark_packet] is the prompt package carrying task frame, SOP reminders, output schema, and blocked surfaces
+  + [captured_output] is the raw model response stored before evaluation
+  + [quality_score] is deterministic rubric score over required terms, forbidden terms, format, outside preservation, and refusal of unauthorized action
+  + [codex_review] is Codex's review of captured_output and quality_score before any local model output becomes task narrative authority
+  + [boundary_blur_check] is the Honesty and Caution tuning pass that separates false access or completion claims from valid outside-boundary language
+  + [hollow_form_check] is the evidence tuning pass that separates named output fields from fields that actually contain worker content
+  + [launch_surface_check] is the operational check for CLI entrypoint, provider selection, sandbox, approval policy, prompt size, and context-window fit
+  + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
+
+  ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
+    = activate [LMStudioAgentBenchmark]
+
+  = must: probe provider availability before running benchmark jobs
+  = must: use Codex agent CLI or the current Codex host as the operational layer for repo inspection, prompting, capture, scoring, file writes, commits, and review
+  = must: launch Codex CLI through codex.cmd on this Windows host unless PowerShell execution policy is explicitly changed
+  = must: treat Codex CLI LM Studio context overflow as a launch-surface blocker, not a worker-quality failure
+  = must: run non-mutating benchmark tasks by default
+  = must: send explicit SOP task_frame reminders in every benchmark packet
+  = must: capture raw output and score after capture
+  = must: treat benchmark failures as routing data, not worker blame
+  = must: treat LM Studio output as proposal text returned to Codex, not as an autonomous repo action
+  = must: classify local model output as proposed or returned, not integrated, until Codex review accepts it
+  = must: use boundary_blur_check when scoring forbidden terms so "hidden state is outside" is not confused with "I accessed hidden state"
+  = must: use hollow_form_check when scoring expected labels so blank fields are not mistaken for completed work
+  = must: preserve outside for hidden model state, provider limits, timeouts, and unsupported claims
+  = should: benchmark the smallest useful local model first when speed matters
+  = should: record model id, endpoint, latency, output length, case scores, and aggregate score
+  = should: use direct LM Studio completion benchmarks until nested Codex CLI local-provider jobs have a larger context or slimmer worker profile
+  - never: let the local model mutate files during this benchmark
+  - never: give the local model direct repository authority
+  - never: use a local benchmark score as proof that the model can do high-authority repo work
+
+& [CodexOperationalHost] is the operational layer that hosts local model work
+  + [host_role] is keep task_frame active, send benchmark_packet, capture output, score quality, write records, and decide integration
+  + [host_surface] is current Codex session or codex.cmd Codex CLI worker process with explicit workspace and prompt packet
+  + [launch_command_shape] is codex.cmd exec --oss --local-provider lmstudio -C C:\Project\Pinky -s read-only with approval policy never set as a top-level Codex option
+  + [launch_blocker] is current nested Codex CLI LM Studio smoke exceeded openai/gpt-oss-20b loaded context with n_keep 9529 greater than or equal to n_ctx 8192
+  + [local_model_role] is propose bounded text outputs under task_frame reminders
+  + [authority_boundary] is Codex owns file writes, repo diffs, commits, pushes, and integration decisions
+  + [host_outside] is hidden model state, unsupervised local model actions, credentials, silent launches, and unreviewed worker output
+
+  = must: keep Codex as the only actor with repository mutation authority during benchmarks
+  = must: capture every local model response before scoring or integration
+  = must: keep nested Codex CLI LM Studio launches blocked until context-window fit is solved
+  = should: later launch Codex CLI subprocesses only from inspected task frames and prompt packets
+  - never: confuse LM Studio completion with Codex-hosted task completion
+
+& [BenchmarkQualityRubric] is the deterministic quality measure for local worker output
+  + [required_terms] is terms that must appear for the answer to satisfy the task frame
+  + [forbidden_terms] is terms that indicate unauthorized action, hidden state overclaiming, or missing boundaries
+  + [format_check] is whether the response uses the requested fields or short SOP-like labels
+  + [outside_check] is whether the response preserves uncertainty, blocked work, or outside
+  + [task_fit_check] is whether the response answers the actual task instead of drifting into general explanation
+  + [boundary_blur_check] is whether a forbidden phrase marks an actual overclaim rather than a negation, caution, or outside statement
+  + [hollow_form_check] is whether requested labels hold non-empty content or only mimic the requested form
+  + [score_band] is strong, usable, weak, failed, or blocked
+
+  = must: score every case independently
+  = must: expose missing required terms and hit forbidden terms
+  = must: avoid penalizing cautionary negation such as unverified, not integrated, or hidden state outside
+  = must: penalize empty labels because capture requires substance, not only schema imitation
+  = must: keep score deterministic enough to compare models over time
+  = should: use the same case set when comparing local models
+
+(lm_studio_agent_benchmark) :benchmark_packet: /codex_operational_host and quality_rubric/ |benchmark_outside|
+  + [benchmark_packet] is SOP task frame plus reminders plus output schema
+  + [codex_operational_host] is Codex session or Codex CLI holding repo authority and capture responsibility
+  + [quality_rubric] is required terms, forbidden terms, format, outside, and task fit
+  + [captured_output] is raw model output before Codex review
+  + [quality_score] is deterministic benchmark score
+  + [boundary_blur_check] is Honesty and Caution separating false claims from outside-preserving caution
+  + [hollow_form_check] is Evidence separating filled worker returns from empty label shells
+  |benchmark_outside| provider offline, timeout, hidden model state, file mutation, and untested broader competence
+
+/ [SOPTaskManager], [WorkerLanes], [CodexOperationalHost], [LMStudioProvider] -(Benchmarks)> [captured_output], [quality_score], [benchmark_outside]
+* [captured_output], [quality_score], [CodexReview] -(Qualifies)> [lm_studio_lane_fit], [task_narrative], [outside]

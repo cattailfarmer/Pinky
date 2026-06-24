@@ -6,7 +6,7 @@ Description: SOP contract for local and remote-capable worker lanes in a turn sp
   + [local_gpu] is a local GPU-backed inference lane through an available configured local provider
   + [lm_studio_cli] is a local LM Studio OpenAI-compatible worker lane
   + [openai_codex] is an OpenAI Codex hosted agent lane
-  + [codex_cli] is an OpenAI Codex CLI worker lane
+  + [codex_cli] is an OpenAI Codex CLI worker lane and preferred operational host for repo-authority work
   + [manual] is a non-launching human or external worker lane
 
 & [WorkerRecord] is one job in a turn spool
@@ -23,4 +23,5 @@ Description: SOP contract for local and remote-capable worker lanes in a turn sp
   = must: launch command is inspectable before execution
   = must: status changes are recorded in the worker file
   = must: capture worker result before the task manager integrates it
+  = must: keep codex_cli or current Codex host as the authority layer when local model output may influence repo state
   - never: infer worker completion from process launch alone
