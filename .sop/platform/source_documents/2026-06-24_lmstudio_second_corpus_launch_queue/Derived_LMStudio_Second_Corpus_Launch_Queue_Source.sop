@@ -1,0 +1,19 @@
+Subject: Derived LM Studio Second Corpus Launch Queue Source
+
+Description: Preserved derived source for compiling the second diversified LM Studio corpus launch queue after the first three-family queue completed under validator gates.
+
+& [DerivedLMStudioSecondCorpusLaunchQueueSource] is preserved derived source
+  + [source_type] is derived_from_operating_loop_tick
+  + [source_tick] is operating_loop_tick_20260624_009
+  + [source_focus] is second diversified LM Studio corpus launch queue
+  + [completed_prior_queue] is lmstudio_diverse_corpus_launch_queue_001 with boundary_delineation, outside_preservation, and task_frame_routing accepted as three family signals only
+  + [new_queue_scope] is evidence_review, periphery_correlation, and integration_disposition
+  + [reason_for_change] is the readiness corpus needs the remaining task families prepared as inspectable scratch-isolated prompt packets before any further worker launch
+  + [authority_boundary] is Codex owns queue creation, launch choice, capture, validation, review, integration, commits, and pushes
+  + [outside] is automatic launch, worker mutation authority, broad LM Studio competence, hidden model state, credentials, destructive action, and unrelated dirty files
+
+  = must: compile prompt packets before launch
+  = must: keep second queue ready for inspection but not launched
+  = must: preserve family-specific validator profiles
+  = must: keep three prior passes as narrow family signals only
+  - never: treat queue readiness as worker evidence

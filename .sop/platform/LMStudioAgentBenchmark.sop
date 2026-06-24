@@ -23,6 +23,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_outside_preservation_worker_latch\Derived_Outside_Preservation_Worker_Latch_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_routing_worker_latch\Derived_Task_Frame_Routing_Worker_Latch_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -64,6 +65,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [boundary_delineation_retry_ladder] is first diverse family required operator, placeholder, and ASCII latches before retry 003 scored 100 strong
   + [outside_preservation_retry_ladder] is second diverse family required literal-term bundle and copy-exact latches before retry 003 scored 100 strong
   + [task_frame_routing_retry_ladder] is third diverse family passed fields and routing intent on first attempt but needed copy-exact ASCII repair before retry 001 scored 100 strong
+  + [second_corpus_queue_status] is evidence_review, periphery_correlation, and integration_disposition prompt packets compiled and ready for inspection but not launched
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]

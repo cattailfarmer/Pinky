@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_010] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_010
+  + [focus_subject] is second diversified LM Studio corpus launch queue
+  + [completed_step] is compiled lmstudio_diverse_corpus_launch_queue_002 with evidence_review, periphery_correlation, and integration_disposition prompt packets, capture targets, validator profiles, and ready-for-inspection status without launching workers
+  + [proof_state] is compiled_not_launched
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is inspect and optionally run corpus_evidence_review_013 through scratch isolation and validator gates
+  + [created_utc] is 2026-06-24T20:37:40Z
+  + [evidence_refs] is .sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop, .sop\events\benchmarks\corpus_prompts\2026-06-24_evidence_review_prompt_013.sop, .sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop, .sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015.sop, and .sop\platform\source_documents\2026-06-24_lmstudio_second_corpus_launch_queue\Derived_LMStudio_Second_Corpus_Launch_Queue_Source.sop
+  + [outside] is automatic launch, broad LM Studio competence, project-root authority, worker mutation, hidden model state, credentials, destructive action, unvalidated queue outputs, and unrelated dirty files
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before launching any queued candidate
+  - never: treat ready_for_inspection as launched or validated
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_010
+  + [proof_state] is compiled_not_launched
+  + [balance_state] is stable
+  + [next_step] is inspect and optionally run corpus_evidence_review_013 through scratch isolation and validator gates
+  |outside| automatic launch, broad competence, project-root authority, worker mutation, hidden model state, credentials, destructive action, unvalidated output, and unrelated dirty files

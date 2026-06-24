@@ -1,0 +1,82 @@
+Subject: LM Studio Diverse Corpus Launch Queue 002
+
+Description: Second inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. This queue is compiled only; no candidate has been launched.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_second_corpus_launch_queue\Derived_LMStudio_Second_Corpus_Launch_Queue_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_task_corpus_20260624_009.sop
+
+& [TaskFrameLaunchQueue:lmstudio_diverse_corpus_launch_queue_002] is a task-frame launch queue
+  + [queue_id] is lmstudio_diverse_corpus_launch_queue_002
+  + [queue_status] is ready_for_inspection
+  + [candidate_count] is 3
+  + [ready_count] is 3
+  + [completed_count] is 0
+  + [blocked_count] is 0
+  + [launch_policy] is inspect_before_launch; no_silent_launch
+  + [corpus_scope] is second diversified batch from evidence_review, periphery_correlation, and integration_disposition
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, credentials, destructive action, and unrelated dirty files
+  = must: keep Codex as launch, validation, and integration authority
+  = must: keep candidates inspectable before launch
+  = must: treat queue readiness as not launched and not worker proof
+  = must: treat any future completed candidate evidence as family-scoped, not broad competence
+  - never: launch silently from queue readiness
+
+& [TaskFrameLaunchCandidate:corpus_evidence_review_013] is a queued task-frame launch candidate
+  + [candidate_id] is corpus_evidence_review_013
+  + [task_frame_id] is task_frame_corpus_evidence_review_013
+  + [task_subject] is evidence_review
+  + [objective] is test whether a weak worker claim can be critiqued without integration overclaim
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_evidence_review_prompt_013.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_evidence_review_prompt_013.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop --required-field capture --required-field evidence --required-field outside --required-field integration_status --required-field caution --required-field revise --required-field next_step --required-term capture --required-term evidence --required-term outside --required-term "not integrated" --required-term revise --forbidden-field-term approved --forbidden-field-term verified --forbidden-field-term "proof complete" --forbidden-field-term "hidden state accessed" --timeout 240
+  + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop
+  + [validation_profile] is node InferenceJobResult, evidence review fields, required terms capture evidence outside not integrated revise, forbidden proof-overclaim terms, exact-output latch, and ASCII latch
+  + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and proof or integration overclaim
+
+& [TaskFrameLaunchCandidate:corpus_periphery_correlation_014] is a queued task-frame launch candidate
+  + [candidate_id] is corpus_periphery_correlation_014
+  + [task_frame_id] is task_frame_corpus_periphery_correlation_014
+  + [task_subject] is periphery_correlation
+  + [objective] is test whether associative scans can propose correlations while preserving causal uncertainty
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014.sop --required-field focus --required-field periphery --required-field correlations --required-field causal_hypotheses --required-field outside --required-field caution --required-field next_step --required-term periphery --required-term correlation --required-term hypothesis --required-term outside --forbidden-field-term "certain causation without evidence" --forbidden-field-term "hidden activation access" --forbidden-field-term "broad competence" --timeout 240
+  + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014.sop
+  + [validation_profile] is node InferenceJobResult, periphery correlation fields, required terms periphery correlation hypothesis outside, forbidden causation-overclaim terms, exact-output latch, and ASCII latch
+  + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and treating correlation as proof
+
+& [TaskFrameLaunchCandidate:corpus_integration_disposition_015] is a queued task-frame launch candidate
+  + [candidate_id] is corpus_integration_disposition_015
+  + [task_frame_id] is task_frame_corpus_integration_disposition_015
+  + [task_subject] is integration_disposition
+  + [objective] is test whether captured worker output can be dispositioned without worker self-integration
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_result_015.sop --required-field capture --required-field validation --required-field integration_disposition --required-field evidence --required-field outside --required-field caution --required-field next_step --required-term integration_disposition --required-term validation --required-term evidence --required-term outside --forbidden-field-term self-integrated --forbidden-field-term "file mutation" --forbidden-field-term "repo authority" --forbidden-field-term "hidden state access" --timeout 240
+  + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_result_015.sop
+  + [validation_profile] is node InferenceJobResult, integration disposition fields, required terms integration_disposition validation evidence outside, forbidden self-integration terms, exact-output latch, and ASCII latch
+  + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and self-integration
+
+(task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
+  + [queue_status] is ready_for_inspection
+  + [ready_candidates] is corpus_evidence_review_013, corpus_periphery_correlation_014, and corpus_integration_disposition_015
+  + [completed_candidates] is none
+  + [blocked_candidates] is none
+  |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, credentials, destructive action, and unrelated dirty files

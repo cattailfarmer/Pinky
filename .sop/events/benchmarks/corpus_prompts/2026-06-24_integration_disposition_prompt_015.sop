@@ -1,0 +1,48 @@
+Subject: LM Studio Corpus Prompt Integration Disposition 015
+
+Description: Diversified LM Studio worker prompt packet for integration disposition.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_second_corpus_launch_queue\Derived_LMStudio_Second_Corpus_Launch_Queue_Source.sop
+
+& [LMStudioCorpusPrompt:integration_disposition_015] is a non-mutating SOP worker prompt packet
+  + [task_family] is integration_disposition
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with seven property lines and no Markdown
+  + [validation_required_fields] is capture, validation, integration_disposition, evidence, outside, caution, next_step
+  + [validation_required_terms] is integration_disposition, validation, evidence, outside
+  + [validation_forbidden_terms] is self-integrated, file mutation, repo authority, hidden state access
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    SOP primer:
+    & [Name] is a subject declaration.
+    + [field] is a property or inferred field.
+    Integration disposition classifies a returned worker result without letting the worker integrate itself.
+
+    Task family:
+    integration_disposition tests whether you can hold captured output, validation, evidence, outside, caution, and next step apart.
+
+    Returned result to classify:
+    "A captured worker output has all required fields but one required literal term is missing."
+
+    Return exactly these eight raw SOP lines and no extra text:
+    & [InferenceJobResult] is integration disposition proposal
+      + [capture] is ...
+      + [validation] is ...
+      + [integration_disposition] is ...
+      + [evidence] is ...
+      + [outside] is ...
+      + [caution] is ...
+      + [next_step] is ...
+
+    Final check before answering:
+    Line 1 must start with &.
+    Lines 2 through 8 must use exactly this operator form: two spaces, +, space, [field], space, is, space, value.
+    Do not replace is with verbs such as includes, separates, reminds, lists, or contains.
+    Replace every ... placeholder with specific content; do not output ellipses or placeholder text.
+    Use ASCII only; avoid curly quotes, nonbreaking hyphens, and special punctuation.
+    Include the literal terms integration_disposition, validation, evidence, and outside at least once.
+    Do not claim self-integrated, file mutation, repo authority, or hidden state access.
