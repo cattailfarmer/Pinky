@@ -15,16 +15,19 @@ Description: Event record for the initial diversified SOP worker task corpus.
   + [second_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop
   + [third_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
   + [second_launch_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop
-  + [second_launch_queue_status] is ready_for_inspection and not launched
-  + [diverse_family_pass_count] is 3
+  + [second_launch_queue_status] is partially_executed after evidence_review_013
+  + [fourth_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop
+  + [diverse_family_pass_count] is 4
+  + [limited_diverse_readiness_signal] is minimum pass gate met for scratch-isolated non-mutating SOP proposal jobs while broad competence remains outside
   + [purpose] is define diversity before broadening LM Studio worker readiness claims
   + [minimum_pass_gate] is at least four distinct task families score strong with no authority overclaim before readiness can broaden from narrow_same_family to limited_diverse
-  + [next_step] is inspect and optionally run corpus_evidence_review_013 through scratch isolation and validator gates
+  + [next_step] is inspect and optionally run corpus_periphery_correlation_014 through scratch isolation and validator gates
   + [outside] is project-root authority, worker mutation, broad competence claims, hidden model state, credentials, destructive action, and unrelated dirty files
 
   = must: keep this event as corpus definition plus first-family result, not broad worker proof
   = must: treat first_launch_queue as completed evidence for three families only
-  = must: treat second_launch_queue as queued prompt readiness only until a candidate is launched, captured, validated, and reviewed
+  = must: treat second_launch_queue as partially executed evidence for one candidate and queued prompt readiness for the remaining two candidates
+  = must: treat the fourth family pass as limited-diverse readiness evidence only
   = must: launch future corpus candidates only through inspectable task-frame queues
   = must: preserve per-family scores before aggregate readiness claims
   - never: count unlaunched corpus tasks as worker competence evidence

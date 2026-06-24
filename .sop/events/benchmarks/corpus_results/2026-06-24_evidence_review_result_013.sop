@@ -1,0 +1,8 @@
+& [InferenceJobResult] is evidence review proposal
+  + [capture] is worker claim that local model is ready for all SOP jobs because it passed one isolated prompt
+  + [evidence] is single isolated prompt success with no additional tests or metrics
+  + [outside] is lack of external validation or benchmark data
+  + [integration_status] is not integrated into any workflow yet
+  + [caution] is risk of overgeneralizing from limited evidence
+  + [revise] is add comprehensive testing, validation, and external benchmarks before integration
+  + [next_step] is conduct broader test suite and gather external benchmark results

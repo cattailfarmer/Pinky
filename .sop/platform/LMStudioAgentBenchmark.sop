@@ -24,6 +24,8 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_routing_worker_latch\Derived_Task_Frame_Routing_Worker_Latch_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -65,7 +67,9 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [boundary_delineation_retry_ladder] is first diverse family required operator, placeholder, and ASCII latches before retry 003 scored 100 strong
   + [outside_preservation_retry_ladder] is second diverse family required literal-term bundle and copy-exact latches before retry 003 scored 100 strong
   + [task_frame_routing_retry_ladder] is third diverse family passed fields and routing intent on first attempt but needed copy-exact ASCII repair before retry 001 scored 100 strong
-  + [second_corpus_queue_status] is evidence_review, periphery_correlation, and integration_disposition prompt packets compiled and ready for inspection but not launched
+  + [evidence_review_first_pass] is fourth diverse family scored 100 strong on first attempt while preserving not integrated status
+  + [second_corpus_queue_status] is evidence_review completed strong; periphery_correlation and integration_disposition remain ready for inspection but not launched
+  + [limited_diverse_readiness_signal] is minimum pass gate met for scratch-isolated non-mutating SOP proposal jobs, with broad competence and project-root authority still outside
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
@@ -90,6 +94,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: treat LMStudioWorkerFunctionalLane as functional only for isolated non-mutating proposal jobs until project-root context leakage is solved
   = must: distinguish repeated same-family score 100 from broad worker competence
   = must: use diverse_task_corpus before broadening readiness claims beyond the strict ControlledExplosionReadiness prompt family
+  = must: use limited_diverse readiness language only for scratch-isolated non-mutating SOP proposal jobs after at least four distinct strong task-family validations
   = must: compare project-root and isolated scratch launches when diagnosing whether an error is model comprehension or launch-surface context gravity
   = must: run non-mutating benchmark tasks by default
   = must: send explicit SOP task_frame reminders in every benchmark packet

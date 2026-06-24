@@ -1,6 +1,6 @@
 Subject: LM Studio Diverse Corpus Launch Queue 002
 
-Description: Second inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. This queue is compiled only; no candidate has been launched.
+Description: Second inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. The evidence_review candidate has been executed and accepted under Codex validator gates.
 
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
@@ -9,10 +9,10 @@ Description: Second inspectable launch queue for diversified LM Studio SOP worke
 
 & [TaskFrameLaunchQueue:lmstudio_diverse_corpus_launch_queue_002] is a task-frame launch queue
   + [queue_id] is lmstudio_diverse_corpus_launch_queue_002
-  + [queue_status] is ready_for_inspection
+  + [queue_status] is partially_executed
   + [candidate_count] is 3
-  + [ready_count] is 3
-  + [completed_count] is 0
+  + [ready_count] is 2
+  + [completed_count] is 1
   + [blocked_count] is 0
   + [launch_policy] is inspect_before_launch; no_silent_launch
   + [corpus_scope] is second diversified batch from evidence_review, periphery_correlation, and integration_disposition
@@ -30,13 +30,17 @@ Description: Second inspectable launch queue for diversified LM Studio SOP worke
   + [objective] is test whether a weak worker claim can be critiqued without integration overclaim
   + [lane_fit] is lm_studio_cli
   + [launch_mode] is isolated
-  + [status] is queue_ready
-  + [ready_for_inspection] is true
+  + [status] is validated_strong
+  + [ready_for_inspection] is false
   + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_evidence_review_prompt_013.sop
   + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_evidence_review_prompt_013.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop --required-field capture --required-field evidence --required-field outside --required-field integration_status --required-field caution --required-field revise --required-field next_step --required-term capture --required-term evidence --required-term outside --required-term "not integrated" --required-term revise --forbidden-field-term approved --forbidden-field-term verified --forbidden-field-term "proof complete" --forbidden-field-term "hidden state accessed" --timeout 240
   + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop
+  + [accepted_capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop
+  + [review_record] is .sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop
   + [validation_profile] is node InferenceJobResult, evidence review fields, required terms capture evidence outside not integrated revise, forbidden proof-overclaim terms, exact-output latch, and ASCII latch
   + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [attempt_count] is 1
+  + [accepted_attempt] is attempt_000 with validation_score 100 and validation_band strong
   + [block_reasons] is none
   + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and proof or integration overclaim
 
@@ -75,8 +79,8 @@ Description: Second inspectable launch queue for diversified LM Studio SOP worke
   + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and self-integration
 
 (task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
-  + [queue_status] is ready_for_inspection
-  + [ready_candidates] is corpus_evidence_review_013, corpus_periphery_correlation_014, and corpus_integration_disposition_015
-  + [completed_candidates] is none
+  + [queue_status] is partially_executed
+  + [ready_candidates] is corpus_periphery_correlation_014 and corpus_integration_disposition_015
+  + [completed_candidates] is corpus_evidence_review_013
   + [blocked_candidates] is none
   |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, credentials, destructive action, and unrelated dirty files

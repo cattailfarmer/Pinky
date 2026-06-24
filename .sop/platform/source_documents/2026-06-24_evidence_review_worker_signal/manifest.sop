@@ -1,0 +1,12 @@
+Subject: Evidence Review Worker Signal Source Manifest
+
+Description: Source preservation manifest for the evidence review worker signal refinement.
+
+& [EvidenceReviewWorkerSignalSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop
+  + [target_contracts] is LMStudioAgentBenchmark.sop, LMStudioWorkerFunctionalLane.sop, LMStudioWorkerTaskCorpus.sop, and lmstudio_diverse_corpus_launch_queue_002.sop
+  + [event_record] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop
+  + [derived_terms] is evidence_review_first_pass, fourth_family_signal, limited_diverse_readiness_candidate, and not_integrated_preservation
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when auditing the fourth-family readiness effect

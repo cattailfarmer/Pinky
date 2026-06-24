@@ -1,0 +1,18 @@
+Subject: Derived Evidence Review Worker Signal Source
+
+Description: Preserved derived source for the evidence_review_013 worker signal observed during LM Studio corpus benchmarking.
+
+& [DerivedEvidenceReviewWorkerSignalSource] is preserved derived source
+  + [source_type] is derived_from_benchmark_observation
+  + [observed_subject] is corpus_evidence_review_013
+  + [accepted_attempt] is initial attempt passed score 100 strong with exact raw SOP, all evidence review fields, required terms, outside preservation, and no proof or integration overclaim
+  + [readiness_effect] is fourth distinct task-family signal meets the minimum pass gate for limited-diverse readiness language
+  + [caution_effect] is limited-diverse readiness remains scratch-isolated, prompt-only, non-mutating, validator-gated, and not project-root or broad competence authority
+  + [reason_for_change] is evidence review shows the worker can critique weak claims and preserve not integrated status under strict prompt boundaries
+  + [outside] is hidden model state, broad LM Studio competence, project-root authority, worker mutation authority, credentials, destructive action, and untested periphery_correlation or integration_disposition families
+
+  = must: preserve the raw worker output as benchmark data
+  = must: treat the accepted output as proposal evidence only
+  = must: distinguish minimum pass gate from broad readiness
+  = must: keep Codex as validator and integration authority
+  - never: let a fourth family pass erase outside or grant repo mutation authority

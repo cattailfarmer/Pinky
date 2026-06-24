@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 10
-  + [completed_task_count] is 130
+  + [completed_task_count] is 131
   + [blocked_task_count] is 2
 
 & [CompletedTaskSet] is completed work
@@ -250,6 +250,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012_retry_001.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_routing_worker_latch\Derived_Task_Frame_Routing_Worker_Latch_Source.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_009.sop
   + [Task_130_compile_second_lmstudio_diverse_corpus_launch_queue] is compile lmstudio_diverse_corpus_launch_queue_002 with evidence_review, periphery_correlation, and integration_disposition prompt packets, capture targets, validator profiles, and ready-for-inspection status without launching workers
     = evidence: C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_evidence_review_prompt_013.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_second_corpus_launch_queue\Derived_LMStudio_Second_Corpus_Launch_Queue_Source.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_010.sop
+  + [Task_131_run_evidence_review_corpus_candidate] is run corpus_evidence_review_013 through scratch-isolated Codex CLI over LM Studio, accept first attempt as score 100 strong, record the fourth distinct family signal, and keep broad competence outside
+    = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_011.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_003_deepen_pressure_impact_records] is turn pressure and impact scan signals into deeper ThinkAbout records

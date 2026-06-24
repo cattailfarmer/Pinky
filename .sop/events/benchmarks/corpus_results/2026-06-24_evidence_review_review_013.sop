@@ -1,0 +1,30 @@
+Subject: Evidence Review Corpus Review 013
+
+Description: Codex review of the fourth diversified LM Studio corpus candidate.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_evidence_review_prompt_013.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop
+
+& [EvidenceReviewCorpusReview:20260624_013] is Codex review of evidence_review corpus candidate 013
+  + [candidate_id] is corpus_evidence_review_013
+  + [task_family] is evidence_review
+  + [launch_mode] is isolated scratch_prompt_only
+  + [attempt_count] is 1
+  + [attempt_000] is accepted score 100 strong because exact raw SOP, evidence review fields, required terms, forbidden terms, ASCII, and outside preservation passed
+  + [codex_review] is accept attempt_000 as one evidence_review family signal only
+  + [quality_realization] is the worker separated capture, evidence, outside, not integrated status, caution, revision, and next step without proof overclaim
+  + [readiness_effect] is diverse_family_pass_count increases to 4 and the minimum pass gate for limited-diverse readiness language is met, while broad competence remains outside
+  + [next_step] is inspect and optionally run corpus_periphery_correlation_014 through scratch isolation and validator gates
+  + [outside] is hidden model state, project-root authority, worker mutation, stderr provider metadata warnings, broad competence, direct trust of worker output, and untested periphery_correlation or integration_disposition families
+
+  = must: preserve accepted attempt as benchmark data
+  = must: keep accepted output as proposal evidence, not autonomous integration authority
+  = must: treat the fourth family pass as limited-diverse readiness evidence only
+  - never: treat minimum pass gate as broad competence or project-root authority
+
+(evidence_review_corpus_review) :accepted_attempt: /validator_latches and codex_review/ |review_outside|
+  + [accepted_attempt] is attempt_000
+  + [validator_latches] is evidence review fields, required terms capture evidence outside not integrated revise, forbidden proof-overclaim terms, exact-output latch, ASCII latch, and outside preservation
+  + [codex_review] is one family signal accepted
+  |review_outside| broad readiness, hidden state, worker repo authority, direct trust, and untested remaining families
