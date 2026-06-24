@@ -18,6 +18,7 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
   + [reminder_bundle] is subject_reminder, boundary_reminder, operation_reminder, evidence_reminder, return_reminder, and outside_reminder
   + [gate_set] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, and action_gate
   + [capture_target] is the file where raw worker output or blocked result must be stored
+  + [launch_result] is the captured returned, validated, rejected, or blocked outcome after Codex chooses to launch a candidate
   + [queue_outside] is automatic launch, hidden model state, worker file mutation, credentials, project-root authority, destructive action, and unrelated dirty files
 
   ? [use_when: a task frame is ready enough to become a visible worker-launch candidate]
@@ -30,6 +31,7 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
   = must: keep LM Studio candidates scratch-isolated, prompt-only, captured, and validator-gated
   = must: route project-root LM Studio candidates to blocked or diagnostic_only until leakage is solved
   = must: let Codex decide whether a ready candidate is actually launched
+  = must: record launch_result after any launched candidate returns or blocks
   - never: launch a candidate merely because it is queued
   - never: treat ready_for_inspection as worker completion
   - never: give LM Studio worker output file mutation or integration authority
@@ -54,6 +56,20 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
   = must: stay non-mutating until Codex explicitly launches and validates it
   - never: infer launch, completion, or integration from queue status alone
 
+& [TaskFrameLaunchResult] is the captured outcome for one launched candidate
+  + [candidate_id] is the candidate that was launched or blocked
+  + [result_file] is the captured worker output, blocked record, or validation report
+  + [exit_code] is the worker process exit code or blocked
+  + [validation_score] is the Codex-side validator score when output exists
+  + [validation_band] is strong, usable, weak, failed, or blocked
+  + [integration_disposition] is accept_as_proposal_not_integrated, integrate, retry, reject, blocked, or preserve_outside
+  + [result_outside] is stderr warnings, hidden state, unvalidated authority, worker mutation, and broader competence claims
+
+  = must: keep validation distinct from integration
+  = must: preserve raw output before review
+  = must: route accepted output through Codex review before task narrative integration
+  - never: call a validated proposal integrated until Codex records the integration disposition
+
 (task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
   + [task_frame_candidate] is a task frame prepared for worker-lane inspection
   + [gate_set] is primer, isolation, capture, validator, Codex review, and action gates
@@ -62,4 +78,4 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
 
 / [task_frame], [lane_fit], [reminder_bundle] -(Queues)> [task_frame_candidate], [launch_command], [capture_target], [queue_outside]
 * [task_frame_candidate], [gate_set], [block_reasons] -(Classifies)> [queue_status], [ready_for_inspection], [blocked]
-* [ready_for_inspection], [CodexReview], [LMStudioWorkerFunctionalLane] -(MayLaunch)> [captured_output], [validator], [result_capture]
+* [ready_for_inspection], [CodexReview], [LMStudioWorkerFunctionalLane] -(MayLaunch)> [captured_output], [validator], [launch_result]

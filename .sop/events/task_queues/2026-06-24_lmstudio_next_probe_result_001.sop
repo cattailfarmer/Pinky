@@ -1,0 +1,37 @@
+Subject: LM Studio Next Probe Result
+
+Description: Captured result for the ready-for-inspection LM Studio launch candidate.
+
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_task_frame_launch_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+
+& [TaskFrameLaunchResult:lmstudio_next_probe_001] is a captured task-frame launch result
+  + [candidate_id] is lmstudio_next_probe_001
+  + [task_frame_id] is task_frame_lmstudio_next_probe_001
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [execution_surface] is scratch workspace and read-only Codex CLI over LM Studio
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\sop_inference_comparison_functional_prompt_20260624_007.sop --launch-mode isolated --output .sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop --timeout 240
+  + [result_file] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
+  + [exit_code] is 0
+  + [functional] is true
+  + [validation_score] is 100
+  + [validation_band] is strong
+  + [validation_result] is exact raw SOP output with required fields, outside, literal terms, and no forbidden inside terms
+  + [integration_disposition] is accept_as_proposal_not_integrated
+  + [codex_authority] is Codex owns review, integration, file mutation, commits, and pushes
+  + [outside] is model metadata warnings, hidden model state, stderr noise, unvalidated broader competence, project-root authority, and worker mutation authority
+
+  = must: keep accepted worker output as proposal until Codex integrates it
+  = must: preserve stderr warnings as outside, not as task failure
+  = must: treat repeated score 100 isolated runs as stronger local-lane evidence, not broad model competence
+  - never: let the worker result mutate files or self-integrate
+
+(task_frame_launch_result) :validated_worker_output: /capture_gate and validator_gate/ |result_outside|
+  + [validated_worker_output] is sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
+  + [capture_gate] is passed
+  + [validator_gate] is passed
+  + [codex_review_gate] is pending integration decision
+  |result_outside| model metadata warnings, hidden state, stderr noise, broader competence, project-root authority, and worker mutation authority

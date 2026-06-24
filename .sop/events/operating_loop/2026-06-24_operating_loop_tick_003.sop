@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_003] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_003
+  + [focus_subject] is validated LM Studio launch result over task-frame launch queue
+  + [completed_step] is ran lmstudio_next_probe_001 through scratch-isolated validator-gated launch and captured score 100 proposal output
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is decide whether to integrate validated LM Studio proposal evidence into LMStudioWorkerFunctionalLane readiness profile
+  + [created_utc] is 2026-06-24T19:50:35Z
+  + [evidence_refs] is .sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop, .sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop, validation:score_100_strong
+  + [outside] is validated proposal is not integrated authority, model metadata warnings remain outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat commit, proof, or report as evidence that the clock stopped
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_003
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is decide whether to integrate validated LM Studio proposal evidence into LMStudioWorkerFunctionalLane readiness profile
+  |outside| validated proposal is not integrated authority, model metadata warnings remain outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside

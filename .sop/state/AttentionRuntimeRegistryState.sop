@@ -15,12 +15,15 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_001.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_002.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_003.sop
 @ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_task_frame_launch_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is task-frame launch queue over functional LM Studio worker lane
-  + [active_root_frame] is attention_frame_2026_06_24_task_frame_launch_queue_001
+  + [registry_scope] is validated LM Studio launch result over task-frame launch queue
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_launch_result_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
@@ -32,23 +35,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_TaskFrameLaunchQueue001] is the active semantic stack frame for the task-frame launch queue
-  + [frame_id] is attention_frame_2026_06_24_task_frame_launch_queue_001
+& [AttentionFrame_2026_06_24_LMStudioLaunchResult001] is the active semantic stack frame for the validated LM Studio launch result
+  + [frame_id] is attention_frame_2026_06_24_lmstudio_launch_result_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_002, task_frame_launch_queue, lmstudio_next_probe_001, commit_receipt
+  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_003, task_frame_launch_result, lmstudio_next_probe_001, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is TaskFrameLaunchQueue.sop, task_frame_launch_queue.py, 2026-06-24_lmstudio_task_frame_launch_queue_001.sop, 2026-06-24_operating_loop_tick_002.sop, LMStudioWorkerFunctionalLane.sop, and CurrentFocalPoint.sop
-  + [focus_register] is ready-for-inspection LM Studio task-frame launch queue
-  + [question_register] is whether lmstudio_next_probe_001 should be launched through scratch isolation after Codex inspection
-  + [delineation_register] is inside task_frame_candidate, gate_set, launch_policy, capture_target, block_reasons, and queue_outside
-  + [periphery_register] is one-minute heartbeat, no_silent_launch, project-root leakage outside, validator gate, and unrelated dirty files outside
-  + [operation_register] is create_launch_queue_contract, implement_queue_runtime, emit_queue_001, emit_tick_002, update_reentry_state
-  + [evidence_register] is TaskFrameLaunchQueue.sop, task_frame_launch_queue.py, queue_001, operating_loop_tick_002, and runtime tests
-  + [wisdom_register] is a worker launch must pass through an inspectable membrane before execution
-  + [caution_register] is queue_ready means ready_for_inspection, not launched, completed, or integrated
-  + [balance_register] is stable because queue_001 has ready_count 1, block_count 0, no silent launch, and outside preserved
-  + [integration_register] is pending commit, push, and optional inspected launch of lmstudio_next_probe_001
+  + [frame_trace] is TaskFrameLaunchQueue.sop, 2026-06-24_lmstudio_next_probe_result_001.sop, sop_inference_comparison_lmstudio_next_probe_20260624_008.sop, 2026-06-24_operating_loop_tick_003.sop, LMStudioWorkerFunctionalLane.sop, and CurrentFocalPoint.sop
+  + [focus_register] is validated score 100 LM Studio proposal from scratch-isolated task-frame launch
+  + [question_register] is whether to integrate validated LM Studio proposal evidence into LMStudioWorkerFunctionalLane readiness profile
+  + [delineation_register] is inside launch_result, result_file, validation_score, validation_band, integration_disposition, and result_outside
+  + [periphery_register] is model metadata warnings, no project-root authority, proposal-not-integrated boundary, validator gate, and unrelated dirty files outside
+  + [operation_register] is inspect_queue_candidate, run_scratch_isolated_launch, validate_output, capture_result, emit_tick_003, update_reentry_state
+  + [evidence_register] is result_001, captured worker output 008, validation score 100, and operating_loop_tick_003
+  + [wisdom_register] is repeated isolated score 100 strengthens lane evidence without becoming broad competence proof
+  + [caution_register] is validated proposal does not self-integrate and stderr warnings remain outside
+  + [balance_register] is stable because launch was isolated, output captured, validation passed, and outside preserved
+  + [integration_register] is pending commit, push, and Codex review for readiness-profile integration
   + [frame_outside] is hidden model state, broad local-worker readiness, worker file mutation, remote claims before push, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -56,10 +59,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_task_frame_launch_queue_001
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_launch_result_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_TaskFrameLaunchQueue001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [task_frame_launch_queue], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioLaunchResult001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [launch_result], [operating_loop_tick], [balance_register], [integration_register], [outside]

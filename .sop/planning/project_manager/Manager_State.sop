@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 10
-  + [completed_task_count] is 122
+  + [completed_task_count] is 123
   + [blocked_task_count] is 2
 
 & [CompletedTaskSet] is completed work
@@ -234,6 +234,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_manager_operating_loop\Dictated_Task_Manager_Operating_Loop_Source.sop, C:\Project\Pinky\.sop\runtime\sop_node\task_manager_loop.py, C:\Project\Pinky\.sop\runtime\demos\task_manager_loop.py, C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_001.sop, and automation:sop-loop-reentry
   + [Task_122_generalize_task_frame_launch_queue] is define and implement the inspectable TaskFrameLaunchQueue membrane around LMStudioWorkerFunctionalLane, emit queue_001 with lmstudio_next_probe_001 ready for inspection, and record operating_loop_tick_002
     = evidence: C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_launch_queue\Derived_Task_Frame_Launch_Queue_Source.sop, C:\Project\Pinky\.sop\runtime\sop_node\task_frame_launch_queue.py, C:\Project\Pinky\.sop\runtime\demos\task_frame_launch_queue.py, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_task_frame_launch_queue_001.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_002.sop
+  + [Task_123_run_lmstudio_next_probe_candidate] is inspect and run lmstudio_next_probe_001 through scratch-isolated Codex CLI over LM Studio, capture exact SOP output, validate score 100 strong, and record operating_loop_tick_003 with integration still pending
+    = evidence: C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop, C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_003.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_003_deepen_pressure_impact_records] is turn pressure and impact scan signals into deeper ThinkAbout records

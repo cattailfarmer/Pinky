@@ -1,0 +1,8 @@
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is ControlledExplosionReadiness
+  + [inside] is atomic_thought, combustion_chamber, compression, spark, governor, piston, exhaust, cooling
+  + [boundary] is the bounded attention frame that holds focus, boundary, outside, authority, and output duty before expansion
+  + [outside] is rejected claims, unresolved uncertainty, dead associations, deferred work vented from focus
+  + [inference] is atomic_thought must be preserved, spark justified by constraints, governor active, piston coupled to useful output
+  + [caution] is maintain governor checks, avoid expansion when piston uncoupled, keep heat as inference not proof
+  + [next_step] is validate evidence gates, confirm compression limits, and proceed with controlled_explosion if all checks pass
