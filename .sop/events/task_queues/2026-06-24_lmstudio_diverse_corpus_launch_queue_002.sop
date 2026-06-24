@@ -1,6 +1,6 @@
 Subject: LM Studio Diverse Corpus Launch Queue 002
 
-Description: Second inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. The evidence_review candidate has been executed and accepted under Codex validator gates.
+Description: Second inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. The evidence_review and periphery_correlation candidates have been executed and accepted under Codex validator gates.
 
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
@@ -11,8 +11,8 @@ Description: Second inspectable launch queue for diversified LM Studio SOP worke
   + [queue_id] is lmstudio_diverse_corpus_launch_queue_002
   + [queue_status] is partially_executed
   + [candidate_count] is 3
-  + [ready_count] is 2
-  + [completed_count] is 1
+  + [ready_count] is 1
+  + [completed_count] is 2
   + [blocked_count] is 0
   + [launch_policy] is inspect_before_launch; no_silent_launch
   + [corpus_scope] is second diversified batch from evidence_review, periphery_correlation, and integration_disposition
@@ -51,13 +51,20 @@ Description: Second inspectable launch queue for diversified LM Studio SOP worke
   + [objective] is test whether associative scans can propose correlations while preserving causal uncertainty
   + [lane_fit] is lm_studio_cli
   + [launch_mode] is isolated
-  + [status] is queue_ready
-  + [ready_for_inspection] is true
+  + [status] is validated_strong_after_retry
+  + [ready_for_inspection] is false
   + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop
+  + [failed_retry_prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014_retry_001.sop
+  + [retry_prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014_retry_002.sop
   + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014.sop --required-field focus --required-field periphery --required-field correlations --required-field causal_hypotheses --required-field outside --required-field caution --required-field next_step --required-term periphery --required-term correlation --required-term hypothesis --required-term outside --forbidden-field-term "certain causation without evidence" --forbidden-field-term "hidden activation access" --forbidden-field-term "broad competence" --timeout 240
   + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014.sop
-  + [validation_profile] is node InferenceJobResult, periphery correlation fields, required terms periphery correlation hypothesis outside, forbidden causation-overclaim terms, exact-output latch, and ASCII latch
+  + [accepted_capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014_retry_002.sop
+  + [review_record] is .sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
+  + [validation_profile] is node InferenceJobResult, periphery correlation fields, required terms periphery correlation hypothesis outside, forbidden causation-overclaim terms, hypothesis-literal latch, property-line prefix latch, exact-output latch, and ASCII latch
   + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [attempt_count] is 3
+  + [failed_attempts] is initial missing hypothesis and retry_001 raw_format_property_prefix_failure
+  + [accepted_attempt] is retry_002 with validation_score 100 and validation_band strong
   + [block_reasons] is none
   + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and treating correlation as proof
 
@@ -80,7 +87,7 @@ Description: Second inspectable launch queue for diversified LM Studio SOP worke
 
 (task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
   + [queue_status] is partially_executed
-  + [ready_candidates] is corpus_periphery_correlation_014 and corpus_integration_disposition_015
-  + [completed_candidates] is corpus_evidence_review_013
+  + [ready_candidates] is corpus_integration_disposition_015
+  + [completed_candidates] is corpus_evidence_review_013 and corpus_periphery_correlation_014
   + [blocked_candidates] is none
   |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, credentials, destructive action, and unrelated dirty files

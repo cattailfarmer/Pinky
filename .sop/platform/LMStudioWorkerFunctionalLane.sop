@@ -11,6 +11,8 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop
 
 & [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
   + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
@@ -26,11 +28,11 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [rejected_output] is captured worker text that fails validator and becomes evidence for retry, fence tuning, or block
   + [spool_record] is the visible worker tree record containing prompt reference, launch command, result file, validation state, and authority boundary
   + [launch_queue_candidate] is a TaskFrameLaunchQueue candidate that is ready_for_inspection before Codex decides whether to launch
-  + [readiness_profile] is limited-diverse scratch-isolated, prompt-only, non-mutating SOP proposal readiness with four distinct Codex-validated strong task-family signals
-  + [readiness_evidence_count] is 4 distinct strong task-family validations plus earlier same-family stability evidence
+  + [readiness_profile] is limited-diverse scratch-isolated, prompt-only, non-mutating SOP proposal readiness with five distinct Codex-validated strong task-family signals
+  + [readiness_evidence_count] is 5 distinct strong task-family validations plus earlier same-family stability evidence
   + [readiness_profile_record] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
   + [functional_definition] is a local worker can complete a non-mutating booted SOP inference job in scratch_prompt_only mode, produce exact SOP output, pass validator, and return captured proposal text for Codex review
-  + [next_readiness_gate] is test remaining periphery_correlation and integration_disposition families before considering broader lane claims
+  + [next_readiness_gate] is test remaining integration_disposition family before considering broader lane claims
   + [task_corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
   + [lane_outside] is repo mutation by worker, direct trust of worker output, hidden model state, credentials, broad competence, and project-root authority until fenced

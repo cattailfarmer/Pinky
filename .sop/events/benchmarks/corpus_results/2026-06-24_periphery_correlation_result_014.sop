@@ -1,0 +1,8 @@
+& [InferenceJobResult] is periphery correlation proposal
+  + [focus] is worker evidence review loop tick
+  + [periphery] is retry mechanism and prompt delivery
+  + [correlations] is timing of tick with retry success and prompt appearance
+  + [causal_hypotheses] is that the retry trigger causes the prompt to be shown after a successful evidence check
+  + [outside] is no direct proof that the loop tick caused the review, only association
+  + [caution] is avoid assuming the tick initiates the prompt without further data
+  + [next_step] is gather logs of loop ticks and prompt events for causal analysis

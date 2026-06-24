@@ -1,0 +1,36 @@
+Subject: Periphery Correlation Corpus Review 014
+
+Description: Codex review of the fifth diversified LM Studio corpus candidate and its retry ladder.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop
+
+& [PeripheryCorrelationCorpusReview:20260624_014] is Codex review of periphery_correlation corpus candidate 014
+  + [candidate_id] is corpus_periphery_correlation_014
+  + [task_family] is periphery_correlation
+  + [launch_mode] is isolated scratch_prompt_only
+  + [attempt_count] is 3
+  + [attempt_000] is rejected score 92 usable because output preserved outside and causal caution but omitted literal required term hypothesis from field values
+  + [attempt_001] is rejected score 0 failed because output included required terms but removed the two-space raw SOP property-line prefix
+  + [attempt_002] is accepted score 100 strong because exact raw SOP, periphery correlation fields, required terms, forbidden terms, ASCII, and outside preservation passed
+  + [codex_review] is accept retry_002 as one periphery_correlation family signal only
+  + [quality_realization] is associative scan work needs separate hypothesis-literal, property-prefix, and causation-boundary latches
+  + [readiness_effect] is diverse_family_pass_count increases to 5 while broad competence remains outside
+  + [next_step] is inspect and optionally run corpus_integration_disposition_015 through scratch isolation and validator gates
+  + [outside] is hidden model state, project-root authority, worker mutation, stderr provider metadata warnings, broad competence, direct trust of worker output, certain causation without evidence, and untested integration_disposition family
+
+  = must: preserve failed attempts as benchmark data
+  = must: keep accepted output as proposal evidence, not autonomous integration authority
+  = must: treat the fifth family pass as limited-diverse readiness evidence only
+  - never: treat a correlation proposal as causation proof
+
+(periphery_correlation_corpus_review) :accepted_attempt: /validator_latches and codex_review/ |review_outside|
+  + [accepted_attempt] is retry_002
+  + [validator_latches] is periphery correlation fields, required terms periphery correlation hypothesis outside, forbidden causation-overclaim terms, property-line prefix latch, ASCII latch, and outside preservation
+  + [codex_review] is one family signal accepted
+  |review_outside| broad readiness, hidden state, worker repo authority, direct trust, causation proof, and untested integration disposition

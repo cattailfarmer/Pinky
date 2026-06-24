@@ -1,0 +1,8 @@
+& [InferenceJobResult] is periphery correlation proposal
++ [focus] is worker evidence review loop tick
++ [periphery] is retry mechanism, prompt delivery, and nearby validation signals
++ [correlations] is correlation between loop tick timing, retry success, and prompt appearance
++ [causal_hypotheses] is hypothesis only, not proof, that retry timing may relate to later prompt display
++ [outside] is no direct proof of causation, hidden activation access, or broad competence
++ [caution] is keep correlation separate from evidence until logs support a causal claim
++ [next_step] is compare loop tick logs, prompt events, and validator records before claiming causation

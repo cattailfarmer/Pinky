@@ -1,0 +1,12 @@
+Subject: Periphery Correlation Worker Latch Source Manifest
+
+Description: Source preservation manifest for the periphery correlation worker latch refinement.
+
+& [PeripheryCorrelationWorkerLatchSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop
+  + [target_contracts] is LMStudioAgentBenchmark.sop, LMStudioWorkerFunctionalLane.sop, LMStudioWorkerTaskCorpus.sop, and lmstudio_diverse_corpus_launch_queue_002.sop
+  + [event_record] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
+  + [derived_terms] is hypothesis_literal_value_latch, property_line_prefix_latch, causation_boundary_latch, and fifth_family_signal
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when auditing the periphery-correlation retry ladder

@@ -1,0 +1,18 @@
+Subject: Derived Periphery Correlation Worker Latch Source
+
+Description: Preserved derived source for the periphery_correlation_014 worker latch observed during LM Studio corpus benchmarking.
+
+& [DerivedPeripheryCorrelationWorkerLatchSource] is preserved derived source
+  + [source_type] is derived_from_benchmark_observation
+  + [observed_subject] is corpus_periphery_correlation_014
+  + [initial_failure] is worker produced a plausible correlation scan but omitted the literal required term hypothesis from field values
+  + [retry_001_failure] is worker included required terms but removed the two-space property-line prefix and failed raw SOP format
+  + [accepted_retry] is retry 002 passed after the prompt emphasized literal hypothesis and exact two-space property-line prefixes
+  + [derived_latches] is hypothesis_literal_value_latch, property_line_prefix_latch, causation_boundary_latch, and ASCII stability check
+  + [reason_for_change] is associative scan tasks need both semantic caution around causation and exact raw SOP line structure before worker output can become readiness evidence
+  + [outside] is hidden model state, broad LM Studio competence, project-root authority, worker mutation authority, credentials, destructive action, certain causation without evidence, and untested integration_disposition family
+
+  = must: preserve failed attempts as benchmark data
+  = must: treat retry success as one family signal only
+  = must: keep Codex as validator and integration authority
+  - never: treat correlation language as causation proof

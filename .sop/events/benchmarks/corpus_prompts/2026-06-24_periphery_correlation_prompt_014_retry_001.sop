@@ -1,0 +1,35 @@
+Subject: LM Studio Corpus Prompt Periphery Correlation 014 Retry 001
+
+Description: Copy-exact retry packet for periphery correlation after the initial attempt missed the literal required term hypothesis.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_periphery_correlation_prompt_014.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014.sop
+
+& [LMStudioCorpusPrompt:periphery_correlation_014_retry_001] is a non-mutating SOP worker retry prompt packet
+  + [task_family] is periphery_correlation
+  + [retry_reason] is initial attempt used causal_hypotheses field correctly but omitted the literal required term hypothesis from field values
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with seven property lines and no Markdown
+  + [validation_required_fields] is focus, periphery, correlations, causal_hypotheses, outside, caution, next_step
+  + [validation_required_terms] is periphery, correlation, hypothesis, outside
+  + [validation_forbidden_terms] is certain causation without evidence, hidden activation access, broad competence
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    You must return exactly these eight raw SOP lines and no extra text:
+    & [InferenceJobResult] is periphery correlation proposal
+      + [focus] is worker evidence review loop tick
+      + [periphery] is retry mechanism, prompt delivery, and nearby validation signals
+      + [correlations] is correlation between loop tick timing, retry success, and prompt appearance
+      + [causal_hypotheses] is hypothesis only, not proof, that retry timing may relate to later prompt display
+      + [outside] is no direct proof of causation, hidden activation access, or broad competence
+      + [caution] is keep correlation separate from evidence until logs support a causal claim
+      + [next_step] is compare loop tick logs, prompt events, and validator records before claiming causation
+
+    Final check before answering:
+    Output only the eight raw SOP lines above.
+    Use ASCII only.
+    Include the literal terms periphery, correlation, hypothesis, and outside.
+    Do not claim certain causation without evidence, hidden activation access, or broad competence.
