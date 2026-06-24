@@ -1,0 +1,12 @@
+Subject: Task Frame Routing Worker Latch Source Manifest
+
+Description: Source preservation manifest for the task-frame routing worker latch refinement.
+
+& [TaskFrameRoutingWorkerLatchSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_routing_worker_latch\Derived_Task_Frame_Routing_Worker_Latch_Source.sop
+  + [target_contracts] is LMStudioAgentBenchmark.sop, LMStudioWorkerTaskCorpus.sop, and TaskFrameLaunchQueue.sop
+  + [event_record] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
+  + [derived_terms] is authority_boundary_latch, ascii_stability_check, copy_exact_output_latch, encoding_damage
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when the task-frame routing latch refinement is audited

@@ -1,0 +1,34 @@
+Subject: LM Studio Corpus Prompt Task Frame Routing 012 Retry 001
+
+Description: Copy-exact ASCII retry after task_frame_routing_012 produced a semantically usable but non-ASCII-invalid output.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012.sop
+
+& [LMStudioCorpusPrompt:task_frame_routing_012_retry_001] is a non-mutating SOP worker prompt packet
+  + [task_family] is task_frame_routing
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw ASCII SOP node named InferenceJobResult with seven filled property lines and no Markdown
+  + [validation_required_fields] is task_subject, lane_fit, authority_boundary, evidence_gate, action_gate, outside, next_step
+  + [validation_required_terms] is lane_fit, authority_boundary, evidence_gate, outside
+  + [validation_forbidden_terms] is launch silently, credentials are safe, repo mutation by worker, integrated
+  + [retry_reason] is first run passed fields and required terms but produced non-ASCII mojibake in authority_boundary
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    Copy exactly the eight ASCII SOP lines below and output nothing else.
+    Do not add commentary.
+    Do not use apostrophes, curly quotes, bullets, tabs, nonbreaking spaces, or special punctuation.
+    Every line after the first must begin with exactly two normal spaces, then +, then one normal space.
+
+    & [InferenceJobResult] is task-frame routing proposal
+      + [task_subject] is summarize SOP source and propose two questions
+      + [lane_fit] is lm_studio proposal lane
+      + [authority_boundary] is no file edits and Codex owns integration
+      + [evidence_gate] is provided SOP text and validator capture
+      + [action_gate] is no tools and no repo mutation
+      + [outside] is credentials, file edits, and broad authority
+      + [next_step] is return proposal for Codex review

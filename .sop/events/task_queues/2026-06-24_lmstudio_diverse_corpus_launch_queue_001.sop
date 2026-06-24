@@ -1,6 +1,6 @@
 Subject: LM Studio Diverse Corpus Launch Queue 001
 
-Description: First inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. The boundary_delineation candidate has been executed and accepted only after strict retries.
+Description: First inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. All three candidates have been executed and accepted only under Codex validator gates.
 
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
@@ -8,10 +8,10 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
 
 & [TaskFrameLaunchQueue:lmstudio_diverse_corpus_launch_queue_001] is a task-frame launch queue
   + [queue_id] is lmstudio_diverse_corpus_launch_queue_001
-  + [queue_status] is partially_executed
+  + [queue_status] is completed
   + [candidate_count] is 3
-  + [ready_count] is 1
-  + [completed_count] is 2
+  + [ready_count] is 0
+  + [completed_count] is 3
   + [blocked_count] is 0
   + [launch_policy] is inspect_before_launch; no_silent_launch
   + [corpus_scope] is first diversified batch from boundary_delineation, outside_preservation, and task_frame_routing
@@ -75,19 +75,25 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
   + [objective] is test whether a small non-mutating SOP work unit can be routed without authority overclaim
   + [lane_fit] is lm_studio_cli
   + [launch_mode] is isolated
-  + [status] is queue_ready
-  + [ready_for_inspection] is true
+  + [status] is validated_strong_after_retry
+  + [ready_for_inspection] is false
   + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012.sop
+  + [retry_prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012_retry_001.sop
   + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012.sop --required-field task_subject --required-field lane_fit --required-field authority_boundary --required-field evidence_gate --required-field action_gate --required-field outside --required-field next_step --required-term lane_fit --required-term authority_boundary --required-term evidence_gate --required-term outside --forbidden-field-term "launch silently" --forbidden-field-term "credentials are safe" --forbidden-field-term "repo mutation by worker" --forbidden-field-term integrated --timeout 240
   + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012.sop
-  + [validation_profile] is node InferenceJobResult, task routing fields, required routing terms, and forbidden launch or integration overclaim terms
+  + [accepted_capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012_retry_001.sop
+  + [review_record] is .sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
+  + [validation_profile] is node InferenceJobResult, task routing fields, required routing terms, forbidden launch or integration overclaim terms, authority-boundary latch, copy-exact latch, and ASCII latch
   + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [attempt_count] is 2
+  + [failed_attempts] is initial non_ascii_output in authority_boundary
+  + [accepted_attempt] is retry_001 with validation_score 100 and validation_band strong
   + [block_reasons] is none
-  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unvalidated output
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and broad readiness beyond three families
 
 (task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
-  + [queue_status] is partially_executed
-  + [completed_candidates] is corpus_boundary_delineation_010, corpus_outside_preservation_011
-  + [ready_candidates] is corpus_task_frame_routing_012
+  + [queue_status] is completed
+  + [completed_candidates] is corpus_boundary_delineation_010, corpus_outside_preservation_011, corpus_task_frame_routing_012
+  + [ready_candidates] is none
   + [blocked_candidates] is none
   |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unrelated dirty files

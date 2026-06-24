@@ -1,0 +1,8 @@
+& [InferenceJobResult] is task-frame routing proposal
+  + [task_subject] is Summarize SOP source document and propose follow-up questions
+  + [lane_fit] is information gathering
+  + [authority_boundary] is read‑only, no code changes
+  + [evidence_gate] is provided SOP text in prompt
+  + [action_gate] is none beyond summarization and question generation
+  + [outside] is user request only
+  + [next_step] is deliver summary and two follow-up questions

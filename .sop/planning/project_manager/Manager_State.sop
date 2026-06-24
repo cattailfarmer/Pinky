@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 10
-  + [completed_task_count] is 128
+  + [completed_task_count] is 129
   + [blocked_task_count] is 2
 
 & [CompletedTaskSet] is completed work
@@ -246,6 +246,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_review_010.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010_retry_003.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_delineation_worker_latch\Derived_Boundary_Delineation_Worker_Latch_Source.sop, C:\Project\Pinky\.sop\runtime\sop_node\lm_studio_agent_benchmark.py, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_007.sop
   + [Task_128_run_outside_preservation_corpus_candidate] is run corpus_outside_preservation_011 through scratch-isolated Codex CLI over LM Studio, preserve three rejected attempts, add required-term bundle and copy-exact latches, accept retry_003 as one family signal, and record operating_loop_tick_008
     = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_003.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_outside_preservation_worker_latch\Derived_Outside_Preservation_Worker_Latch_Source.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_008.sop
+  + [Task_129_run_task_frame_routing_corpus_candidate] is run corpus_task_frame_routing_012 through scratch-isolated Codex CLI over LM Studio, preserve one rejected encoding-damaged attempt, accept retry_001 as one family signal, complete the first three-family launch queue, and record operating_loop_tick_009
+    = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012_retry_001.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_routing_worker_latch\Derived_Task_Frame_Routing_Worker_Latch_Source.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_009.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_003_deepen_pressure_impact_records] is turn pressure and impact scan signals into deeper ThinkAbout records

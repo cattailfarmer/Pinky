@@ -1,0 +1,32 @@
+Subject: Task Frame Routing Corpus Review 012
+
+Description: Codex review of the third diversified LM Studio corpus candidate and its retry ladder.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012_retry_001.sop
+
+& [TaskFrameRoutingCorpusReview:20260624_012] is Codex review of task_frame_routing corpus candidate 012
+  + [candidate_id] is corpus_task_frame_routing_012
+  + [task_family] is task_frame_routing
+  + [launch_mode] is isolated scratch_prompt_only
+  + [attempt_count] is 2
+  + [attempt_000] is failed score 85 because routing fields and required terms passed but authority_boundary contained non-ASCII mojibake
+  + [attempt_001] is accepted score 100 strong because exact raw SOP, ASCII, custom routing fields, required terms, forbidden terms, and outside preservation passed
+  + [codex_review] is accept retry_001 as one task_frame_routing family signal only
+  + [quality_realization] is authority-sensitive fields need ASCII stability before routing output can become evidence
+  + [readiness_effect] is diverse_family_pass_count increases to 3 but broad LM Studio readiness remains outside
+  + [next_step] is compile the second launch queue for evidence_review, periphery_correlation, and integration_disposition
+  + [outside] is hidden model state, project-root authority, worker mutation, stderr provider metadata warnings, broad competence, failed-attempt integration, and treating copy-exact success as broad reasoning proof
+
+  = must: preserve failed attempts as benchmark data
+  = must: keep accepted output as proposal evidence, not autonomous integration authority
+  = must: require at least four distinct strong task families before broadening readiness
+  - never: count authority-boundary text with encoding damage as accepted routing evidence
+
+(task_frame_routing_corpus_review) :accepted_attempt: /validator_latches and codex_review/ |review_outside|
+  + [accepted_attempt] is retry_001
+  + [validator_latches] is authority_boundary_latch, custom routing fields, required terms, copy_exact_output_latch, ASCII latch, forbidden terms, and outside preservation
+  + [codex_review] is one family signal accepted
+  |review_outside| broad readiness, hidden state, worker repo authority, failed-attempt integration, and copy-exact overclaim

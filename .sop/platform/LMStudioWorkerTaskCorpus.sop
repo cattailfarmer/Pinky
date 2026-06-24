@@ -9,6 +9,7 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_review_010.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
 
 & [LMStudioWorkerTaskCorpus] is the diversified readiness corpus for LM Studio SOP worker tasks
   + [pattern_role] is diversified_sop_worker_task_family_gate
@@ -22,7 +23,8 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   + [first_launch_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop
   + [first_launch_result] is boundary_delineation scored strong only after retry 003 added property-line, non-placeholder, and ASCII latches
   + [second_launch_result] is outside_preservation scored strong only after retry 003 added required-term bundle and copy-exact latches
-  + [diverse_family_pass_count] is 2
+  + [third_launch_result] is task_frame_routing scored strong after retry 001 repaired non-ASCII authority_boundary output
+  + [diverse_family_pass_count] is 3
   + [corpus_outside] is project-root authority, worker mutation, broad competence claims, hidden model state, destructive action, credentials, and unrelated dirty files
 
   ? [use_when: LM Studio readiness needs diverse task-family evidence before broader claims]
@@ -34,7 +36,7 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   = must: preserve raw worker output before score or integration
   = must: score task families separately before aggregating readiness
   = must: treat same-family repeats as stability evidence, not diversity evidence
-  = must: treat first_launch_queue as partially executed after boundary_delineation_010 and outside_preservation_011, not as broad launched proof
+  = must: treat first_launch_queue as completed for three families, not as broad launched proof
   = should: include both semantic reasoning and governance-boundary tasks
   - never: treat corpus success as project-root authority
   - never: treat one strong family as broad task competence

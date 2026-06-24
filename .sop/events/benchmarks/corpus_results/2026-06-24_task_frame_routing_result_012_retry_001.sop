@@ -1,0 +1,8 @@
+& [InferenceJobResult] is task-frame routing proposal
+  + [task_subject] is summarize SOP source and propose two questions
+  + [lane_fit] is lm_studio proposal lane
+  + [authority_boundary] is no file edits and Codex owns integration
+  + [evidence_gate] is provided SOP text and validator capture
+  + [action_gate] is no tools and no repo mutation
+  + [outside] is credentials, file edits, and broad authority
+  + [next_step] is return proposal for Codex review
