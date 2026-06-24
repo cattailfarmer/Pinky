@@ -1,0 +1,19 @@
+Subject: Derived LM Studio Six Family Readiness Synthesis Source
+
+Description: Preserved derived source for synthesizing the completed six-family LM Studio SOP worker corpus.
+
+& [DerivedLMStudioSixFamilyReadinessSynthesisSource] is preserved derived source
+  + [source_type] is derived_from_completed_benchmark_corpus
+  + [observed_subject] is six-family LM Studio worker readiness synthesis
+  + [input_evidence] is boundary_delineation_010, outside_preservation_011, task_frame_routing_012, evidence_review_013, periphery_correlation_014, and integration_disposition_015
+  + [accepted_signal] is six distinct task families scored 100 strong under scratch-isolated prompt-only launch and Codex-side validation
+  + [readiness_disposition] is promote from narrow same-family evidence to complete-corpus limited-diverse readiness for non-mutating SOP proposal jobs
+  + [observed_failure_pattern] is five of six families required retry or latch tuning before acceptance, so strict prompting and host validation remain required
+  + [required_latches] is exact property operator, two-space property prefix, required literal terms, non-placeholder content, ASCII stability, populated outside, validation-status truth, authority boundary, negative-inside rule, and forbidden phrase checks
+  + [reason_for_change] is the worker lane now has enough diverse family evidence to support a bounded pilot queue, but not enough evidence for broad competence, project-root authority, mutation authority, or direct trust
+  + [outside] is hidden model state, broad LM Studio competence, project-root authority, worker mutation authority, autonomous execution, credentials, destructive action, direct trust, and unvalidated future task families
+
+  = must: preserve this synthesis as bounded evidence, not broad model proof
+  = must: keep Codex as validator, integration authority, and repository authority
+  = must: use the synthesis to select the next limited worker pilot queue only under scratch isolation
+  - never: treat the six-family corpus as permission for unsupervised file mutation or project-root worker authority

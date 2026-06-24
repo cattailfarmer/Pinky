@@ -1,0 +1,12 @@
+Subject: LM Studio Six Family Readiness Synthesis Source Manifest
+
+Description: Source preservation manifest for the six-family LM Studio worker readiness synthesis.
+
+& [LMStudioSixFamilyReadinessSynthesisSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_six_family_readiness_synthesis\Derived_LMStudio_Six_Family_Readiness_Synthesis_Source.sop
+  + [target_contracts] is LMStudioAgentBenchmark.sop, LMStudioWorkerFunctionalLane.sop, LMStudioWorkerTaskCorpus.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
+  + [event_record] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+  + [derived_terms] is complete-corpus limited-diverse readiness, strict latch requirement, bounded worker pilot queue, and readiness outside preservation
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when auditing readiness broadening beyond the six-family corpus

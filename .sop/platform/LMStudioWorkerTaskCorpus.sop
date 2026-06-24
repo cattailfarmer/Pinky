@@ -18,6 +18,8 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_six_family_readiness_synthesis\Derived_LMStudio_Six_Family_Readiness_Synthesis_Source.sop
 
 & [LMStudioWorkerTaskCorpus] is the diversified readiness corpus for LM Studio SOP worker tasks
   + [pattern_role] is diversified_sop_worker_task_family_gate
@@ -40,6 +42,8 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   + [diverse_family_pass_count] is 6
   + [diverse_corpus_status] is complete
   + [limited_diverse_readiness_signal] is complete six-family corpus supports scratch-isolated non-mutating SOP proposal readiness while broad competence remains outside
+  + [readiness_synthesis_status] is compiled as C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+  + [next_gate] is limited worker pilot queue with the complete synthesis latch set
   + [corpus_outside] is project-root authority, worker mutation, broad competence claims, hidden model state, destructive action, credentials, and unrelated dirty files
 
   ? [use_when: LM Studio readiness needs diverse task-family evidence before broader claims]
@@ -54,6 +58,7 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   = must: treat first_launch_queue as completed for three families, not as broad launched proof
   = must: treat second_launch_queue as completed for three families, not as broad launched proof
   = must: treat the fourth, fifth, and sixth family passes as limited-diverse readiness evidence, not project-root or broad competence authority
+  = must: route any next pilot through readiness_synthesis_status and the full latch set
   = should: include both semantic reasoning and governance-boundary tasks
   - never: treat corpus success as project-root authority
   - never: treat one strong family as broad task competence

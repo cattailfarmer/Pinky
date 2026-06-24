@@ -22,15 +22,17 @@ Description: Event record for the initial diversified SOP worker task corpus.
   + [diverse_family_pass_count] is 6
   + [diverse_corpus_status] is complete
   + [limited_diverse_readiness_signal] is complete six-family corpus supports scratch-isolated non-mutating SOP proposal readiness while broad competence remains outside
+  + [readiness_synthesis] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
   + [purpose] is define diversity before broadening LM Studio worker readiness claims
   + [minimum_pass_gate] is at least four distinct task families score strong with no authority overclaim before readiness can broaden from narrow_same_family to limited_diverse
-  + [next_step] is compile the six-family LM Studio worker readiness synthesis
+  + [next_step] is compile a limited LM Studio worker pilot queue with the full synthesis latch set
   + [outside] is project-root authority, worker mutation, broad competence claims, hidden model state, credentials, destructive action, and unrelated dirty files
 
   = must: keep this event as corpus definition plus first-family result, not broad worker proof
   = must: treat first_launch_queue as completed evidence for three families only
   = must: treat second_launch_queue as completed evidence for three families only
   = must: treat the fourth, fifth, and sixth family passes as limited-diverse readiness evidence only
+  = must: treat readiness_synthesis as the bounded corpus conclusion, not broad worker proof
   = must: launch future corpus candidates only through inspectable task-frame queues
   = must: preserve per-family scores before aggregate readiness claims
   - never: count unlaunched corpus tasks as worker competence evidence

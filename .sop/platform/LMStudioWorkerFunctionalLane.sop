@@ -15,6 +15,8 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_six_family_readiness_synthesis\Derived_LMStudio_Six_Family_Readiness_Synthesis_Source.sop
 
 & [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
   + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
@@ -30,11 +32,12 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [rejected_output] is captured worker text that fails validator and becomes evidence for retry, fence tuning, or block
   + [spool_record] is the visible worker tree record containing prompt reference, launch command, result file, validation state, and authority boundary
   + [launch_queue_candidate] is a TaskFrameLaunchQueue candidate that is ready_for_inspection before Codex decides whether to launch
-  + [readiness_profile] is complete-corpus limited-diverse scratch-isolated, prompt-only, non-mutating SOP proposal readiness with six distinct Codex-validated strong task-family signals
-  + [readiness_evidence_count] is 6 distinct strong task-family validations plus earlier same-family stability evidence
+  + [readiness_profile] is complete-corpus limited-diverse scratch-isolated, prompt-only, non-mutating SOP proposal readiness with six distinct Codex-validated strong task-family signals and a compiled synthesis record
+  + [readiness_evidence_count] is 6 distinct strong task-family validations, 17 preserved attempts, and earlier same-family stability evidence
   + [readiness_profile_record] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
+  + [readiness_synthesis_record] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
   + [functional_definition] is a local worker can complete a non-mutating booted SOP inference job in scratch_prompt_only mode, produce exact SOP output, pass validator, and return captured proposal text for Codex review
-  + [next_readiness_gate] is compile readiness synthesis before considering any broader lane claim
+  + [next_readiness_gate] is compile a limited worker pilot queue before considering any broader lane claim
   + [task_corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
   + [lane_outside] is repo mutation by worker, direct trust of worker output, hidden model state, credentials, broad competence, and project-root authority until fenced
@@ -51,7 +54,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   = must: record functional worker runs in a spool record when task orchestration or future re-entry matters
   = must: keep accepted output as proposal text until Codex review integrates it
   = must: treat readiness_profile as limited-diverse only for scratch_prompt_only non-mutating SOP proposal jobs
-  = must: compile a readiness synthesis before broadening beyond complete-corpus limited-diverse readiness
+  = must: use the readiness synthesis before selecting a limited worker pilot queue or broadening any lane claim
   = should: retry with stricter boot only when failure suggests prompt ambiguity rather than model incapacity
   - never: grant file mutation or repo authority to LM Studio worker output
   - never: call the lane fully functional for project-root jobs while AGENTS.md leakage remains

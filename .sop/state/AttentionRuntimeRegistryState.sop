@@ -23,14 +23,16 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_013.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_014.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is six-family LM Studio worker readiness synthesis
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_readiness_synthesis
+  + [registry_scope] is limited LM Studio worker pilot queue selection
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_pilot_queue
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 7
+  + [closed_frame_count] is 8
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -39,23 +41,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_LMStudioReadinessSynthesis] is the active semantic stack frame for synthesizing six-family worker readiness
-  + [frame_id] is attention_frame_2026_06_24_lmstudio_readiness_synthesis
+& [AttentionFrame_2026_06_24_LMStudioWorkerPilotQueue] is the active semantic stack frame for selecting the first synthesis-backed worker pilot queue
+  + [frame_id] is attention_frame_2026_06_24_lmstudio_worker_pilot_queue
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_lmstudio_second_corpus_queue
-  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_013, six_family_corpus, readiness_profile, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_lmstudio_readiness_synthesis
+  + [child_frame_set] is functional_lmstudio_lane, readiness_synthesis, one_minute_heartbeat, operating_loop_tick_014, task_frame_launch_queue, pilot_candidate, latch_set, outside_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is lmstudio_diverse_corpus_launch_queue_001.sop, lmstudio_diverse_corpus_launch_queue_002.sop, integration_disposition_review_015.sop, 2026-06-24_operating_loop_tick_013.sop, and CurrentFocalPoint.sop
-  + [focus_register] is compile six-family readiness synthesis
-  + [question_register] is how to name the worker lane capability without broad competence, project-root authority, mutation authority, or direct trust overclaim
-  + [delineation_register] is inside six family signals, retry ladders, validator latches, accepted outputs, and synthesis outside
-  + [periphery_register] is broad competence outside, project-root authority outside, worker mutation outside, direct trust outside, and unrelated dirty files outside
-  + [operation_register] is synthesize_evidence, classify_readiness, preserve_outside, define_next_gate, emit_next_tick
-  + [evidence_register] is six family pass count, completed first queue, completed second queue, and operating_loop_tick_013
-  + [wisdom_register] is complete corpus evidence can improve confidence for the narrow scratch-isolated worker lane
-  + [caution_register] is six family passes still do not prove broad LM Studio competence, project-root safety, mutation authority, or autonomous task execution
-  + [balance_register] is stable because no worker launch is needed for the synthesis step
-  + [integration_register] is pending synthesis, commit, push, and next-gate selection
+  + [frame_trace] is lm_studio_worker_readiness_synthesis_20260624_016.sop, 2026-06-24_operating_loop_tick_014.sop, LMStudioWorkerFunctionalLane.sop, TaskFrameLaunchQueue.sop, and CurrentFocalPoint.sop
+  + [focus_register] is compile limited LM Studio worker pilot queue
+  + [question_register] is which real non-mutating SOP proposal job can safely test usefulness under the synthesis latch set
+  + [delineation_register] is inside ready SOP maintenance candidates, synthesis latch set, scratch isolation, capture targets, validator profile, and pilot outside
+  + [periphery_register] is broad competence outside, project-root authority outside, worker mutation outside, direct trust outside, automatic launch outside, and unrelated dirty files outside
+  + [operation_register] is select_candidate, preserve_source, compile_task_frame, attach_latch_set, define_validator, emit_next_tick
+  + [evidence_register] is readiness synthesis, six family pass count, completed corpus queues, and operating_loop_tick_014
+  + [wisdom_register] is a bounded pilot can convert readiness evidence into operational usefulness while keeping Codex in authority
+  + [caution_register] is the pilot must be queued before launch and must not use project-root authority, file mutation, broad competence, or direct trust
+  + [balance_register] is stable because the next action is queue compilation, not worker launch
+  + [integration_register] is synthesis integrated and next pilot queue pending
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -63,10 +65,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_readiness_synthesis
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_pilot_queue
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioReadinessSynthesis], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [readiness_synthesis], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioWorkerPilotQueue], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [pilot_queue_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]

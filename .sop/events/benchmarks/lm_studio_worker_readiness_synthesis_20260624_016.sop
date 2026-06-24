@@ -1,0 +1,51 @@
+Subject: LM Studio Worker Readiness Synthesis 016
+
+Description: Codex synthesis of six distinct LM Studio SOP worker task-family validations into a bounded readiness profile.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_review_010.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_six_family_readiness_synthesis\Derived_LMStudio_Six_Family_Readiness_Synthesis_Source.sop
+
+& [LMStudioWorkerReadinessSynthesis:20260624_016] is the bounded readiness synthesis for the LM Studio worker lane
+  + [synthesis_subject] is complete six-family LM Studio SOP worker corpus
+  + [readiness_disposition] is promote to complete-corpus limited-diverse readiness for scratch-isolated prompt-only non-mutating SOP proposal jobs
+  + [ready_surface] is Codex-prepared prompt packets, SOP primer and boot packet, scratch isolation, raw output capture, deterministic validator, Codex review, and proposal-only integration
+  + [family_count] is 6
+  + [accepted_family_signals] is boundary_delineation, outside_preservation, task_frame_routing, evidence_review, periphery_correlation, and integration_disposition
+  + [accepted_score_pattern] is six score-100 strong accepted outputs across six distinct task families
+  + [attempt_count] is 17 total attempts across the corpus
+  + [retry_pattern] is five families required retry or latch tuning and one family passed on first attempt
+  + [observed_strengths] is SOP schema completion, outside preservation after latching, task routing under authority boundary, evidence review without integration overclaim, correlation proposal with hypothesis caution, and integration disposition after validation-status correction
+  + [observed_faults] is property operator substitution, hollow placeholder fields, missing required literal terms, non-ASCII output, raw SOP property-prefix loss, validation-status blur, empty outside, and authority-boundary fragility
+  + [required_latches] is exact raw SOP node shape, two-space property prefix, property operator is, non-placeholder content, required term bundle, ASCII stability, outside-content latch, validation-status truth latch, negative-inside rule, forbidden-term check, and Codex review
+  + [codex_review] is accept the corpus as bounded worker-lane readiness evidence but not as autonomous integration authority
+  + [readiness_limit] is this proves a useful local worker lane for small SOP proposal jobs, not broad reasoning competence, project-root safety, mutation authority, hidden-state access, or direct trust
+  + [next_gate] is compile a limited worker pilot queue for one real non-mutating SOP proposal job with the full synthesis latch set
+  + [outside] is broad LM Studio competence, project-root authority, worker mutation, unsupervised PC control, hidden model state, direct trust, automatic launch, destructive action, credentials, and unrelated dirty files
+
+  = must: use complete-corpus limited-diverse readiness language only for scratch-isolated non-mutating SOP proposal jobs
+  = must: require the full latch set before any pilot worker output is accepted
+  = must: keep Codex as task selector, launcher, validator, integration authority, file writer, committer, and pusher
+  = must: preserve every failed attempt as calibration evidence
+  = should: use the next pilot to test usefulness on a real SOP maintenance task rather than another artificial family if the task remains non-mutating for the worker
+  - never: treat this synthesis as project-root authority, file mutation authority, or broad model competence
+
+(lm_studio_worker_readiness_synthesis) :ready_surface: /family_evidence and latch_set/ |readiness_outside|
+  + [ready_surface] is scratch-isolated prompt-only non-mutating SOP proposal jobs
+  + [family_evidence] is six accepted score-100 strong task-family signals
+  + [latch_set] is exact raw SOP, required literal terms, outside, ASCII, authority boundary, and Codex review
+  + [next_gate] is limited worker pilot queue
+  |readiness_outside| broad competence, project-root authority, worker mutation, hidden state, direct trust, unsupervised launch, and unrelated dirty files
+
+/ [LMStudioWorkerTaskCorpus], [TaskFrameLaunchQueue], [CodexValidator] -(Synthesizes)> [complete-corpus limited-diverse readiness], [required_latches], [readiness_outside]
+* [accepted_family_signals], [observed_faults], [CodexReview] -(Routes)> [limited_worker_pilot_queue], [outside]
