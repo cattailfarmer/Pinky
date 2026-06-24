@@ -1,0 +1,29 @@
+Subject: Unified Faculty Attention Periphery Realization
+
+Description: SOP-HG record for unifying faculty activation into one depth-weighted attention contract.
+
+@ [source] C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_unified_faculty_attention\Dictated_Unified_Faculty_Attention_Source.sop
+
+& [SOPHypergraphRecord] is unified_faculty_attention_082
+  + [record_type] is periphery_realization
+  + [focus_subject] is unified faculty attention
+  + [inside] is unified frame, faculty field, depth profile, balance axes, unified interrogation cycle, faculty responsibilities, and depth-weighted activation policy
+  + [boundary] is Pinky .sop authority, user source, existing pair contracts as support, no runtime mutation, and no hidden native parallelism claim
+  + [outside] is equal-noise activation, separate dispatch queues, unsupported promotion, uninspected faculty pressure, exact model internals, and unrelated workspace changes
+
+  = realization: the faculties are one attention field; pair structures are balance axes, and activation depth is the real control variable
+  = caution: activating all faculties must not flood output or pretend every facet contributes equally
+  = wisdom: quiet faculty presence is useful when it can raise depth on contradiction, risk, missing support, or hidden relation pressure
+
+/ [user_direction] -(PreservedAs)> [DictatedUnifiedFacultyAttentionSource], [source_preservation]
+/ [UnifiedFacultyAttention] -(Contains)> [faculty_field], [depth_profile], [balance_axis_set], [unified_disposition]
+/ [BalanceAxisSet] -(Retains)> [truth_integrity_axis], [memory_clarity_axis], [direction_integration_axis], [wisdom_caution_axis]
+/ [FacultyDepthScale] -(Controls)> [ambient], [watch], [active], [leading], [blocking]
+/ [UnifiedInterrogationCycle] -(Uses)> [faculty_findings], [axis_tension], [promotion_status], [residual_outside]
+/ [DepthWeightedActivationPolicy] -(Prevents)> [equal_noise_activation], [output_flood], [separate_dispatch_queues]
+
+(unified_faculty_attention_realization) :entry_cue: /unified_attention_boundary/ |unresolved_faculty_residual|
+  + [entry_cue] is the first visible pressure that sets depth
+  + [unified_attention_boundary] is one frame containing all faculty facets at depth
+  |unresolved_faculty_residual| uninspected faculty pressure, false balance, equal-noise activation, unsupported promotion, and exact model internals

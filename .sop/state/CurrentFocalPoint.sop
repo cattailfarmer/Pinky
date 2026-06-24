@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is Planner Weaver activation
+  + [focus_subject] is unified faculty attention
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is Planner/Weaver needed a stronger activation surface: Weaver bridges multiple attention components into an integrated shape while Planner chooses the goal-serving blend of intentions and walkable path
-  + [inside] is PlannerWeaverActivation.sop, FacultyPairActivationBalance.sop, Dictated_Planner_Weaver_Activation_Source.sop, 2026-06-24_planner_weaver_activation_080.hg.sop, 2026-06-24_operating_loop_tick_028.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, evidence-gated, path-fit balanced, explicit about outside, and non-mutating unless runtime work is selected later
+  + [right_hemisphere_draw] is the three pair sets are support axes inside one unified faculty field; almost every non-trivial frame activates all faculties, with depth-weighted participation deciding what speaks loudly
+  + [inside] is UnifiedFacultyAttention.sop, FacultyPairSharedAttentionFrame.sop, FacultyPairActivationBalance.sop, PlannerWeaverActivation.sop, Dictated_Unified_Faculty_Attention_Source.sop, 2026-06-24_unified_faculty_attention_082.hg.sop, 2026-06-24_operating_loop_tick_030.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, evidence-gated, depth-weighted, explicit about outside, and non-mutating unless runtime work is selected later
   + [outside] is hidden model state, hidden native parallelism claims, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_028.sop
-  + [open_question] is whether to define individual faculty core contracts next or compile a faculty activation router over the paired activation contracts
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_030.sop
+  + [open_question] is whether to compile a faculty activation router that assigns depth profiles for the unified faculty field
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -36,6 +36,8 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat boundary_faculty_inspection_runtime as the completed Task_060 anchor
   = must: treat faculty_pair_activation_balance as the completed Task_147 anchor
   = must: treat planner_weaver_activation as the completed Task_148 anchor
+  = must: treat faculty_pair_shared_attention_frame as the completed Task_149 anchor
+  = must: treat unified_faculty_attention as the completed Task_150 anchor
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration

@@ -1,0 +1,97 @@
+Subject: Unified Faculty Attention
+
+Description: Single attention contract for balanced interrogation across the full faculty field with depth-weighted activation.
+
+@ [source] C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FacultyPairSharedAttentionFrame.sop
+@ [source] C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
+@ [source] C:\Project\Pinky\.sop\platform\Wisdom.sop
+@ [source] C:\Project\Pinky\.sop\platform\Caution.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_unified_faculty_attention\Dictated_Unified_Faculty_Attention_Source.sop
+
+& [UnifiedFacultyAttention] is the unified attention field for faculty interrogation
+  + [activation_unit] is one unified faculty attention frame
+  + [faculty_field] is Honesty, Security, Archivist, Refiner, Planner, Weaver, Wisdom, and Caution
+  + [balance_axis_set] is truth_integrity_axis, memory_clarity_axis, direction_integration_axis, and wisdom_caution_axis
+  + [depth_profile] is the map from each faculty facet to ambient, watch, active, leading, or blocking depth
+  + [entry_cue] is the pressure, question, fault, goal, relation, uncertainty, or subject surface that sets the first depth profile
+  + [balanced_interrogation] is the pass where all faculties attend at their assigned depth and report only when their concern changes the disposition
+  + [unified_disposition] is the final frame output after faculty facets, balance axes, outside, and depth changes reconcile
+  + [residual_outside] is uninspected faculty pressure, equal-noise activation, hidden contradiction, false balance, hidden native parallelism, or unsupported promotion
+
+  = must: open one unified faculty attention frame for non-trivial attention work
+  = must: activate every faculty at least at ambient depth
+  = must: increase depth for faculties whose concern is load-bearing for the frame
+  = must: preserve the former pairs as balance axes inside the unified frame, not as separate activation sets
+  = must: let a named faculty act as entry cue without limiting the frame to that faculty or pair
+  = must: let low-depth faculties remain quiet unless they detect contradiction, risk, missing context, or useful correction
+  = must: record depth changes when a quiet faculty becomes load-bearing
+  = should: surface the smallest sufficient faculty report that preserves truth, safety, memory, clarity, direction, integration, wisdom, and caution
+  - never: confuse all-faculty presence with equal-volume output
+  - never: promote a conclusion before relevant faculty axes have had at least ambient interrogation
+
+& [FacultyDepthScale] is the activation-depth vocabulary
+  + [ambient] is present as background guard with no report unless a violation is detected
+  + [watch] is lightly inspecting for known pressure without owning the frame
+  + [active] is contributing findings to the frame output
+  + [leading] is carrying the dominant pressure for the current question
+  + [blocking] is stopping promotion, action, archive, or integration until a fault is resolved
+
+  = must: keep depth visible when faculty contribution affects output
+  = must: allow depth to rise or fall as the focal subject changes
+  = must: treat blocking as a disposition, not as proof of final truth
+
+& [BalanceAxisSet] is the retained paired structure inside the unified field
+  + [truth_integrity_axis] is Honesty and Security balancing truth, representation, identity integrity, authority, and safety
+  + [memory_clarity_axis] is Archivist and Refiner balancing preservation, provenance, clutter, compression, and focus clarity
+  + [direction_integration_axis] is Planner and Weaver balancing goal-serving path, dependency order, component relation, and coherent fit
+  + [wisdom_caution_axis] is Wisdom and Caution balancing meaning, good judgment, consequence, restraint, uncertainty, and warning
+
+  = must: use axes as interrogation geometry, not as separate dispatch queues
+  = must: let axis pressure modify the depth profile for its facets
+  = must: preserve cross-axis tension when one axis recommends promotion and another recommends probe, defer, or block
+
+& [UnifiedInterrogationCycle] is the operating pass for faculty attention
+  + [input] is focal_subject, active_question, entry_cue, periphery_state, evidence_state, authority_boundary, and action_need
+  + [output] is depth_profile, faculty_findings, axis_tension, unified_disposition, promotion_status, next_step_candidate, and residual_outside
+
+  = step_1: open one UnifiedFacultyAttention frame
+  = step_2: identify focal_subject, active_question, authority boundary, and outside
+  = step_3: assign an initial depth_profile from entry_cue and visible pressure
+  = step_4: interrogate through all faculty facets at their assigned depth
+  = step_5: raise depth for any facet that detects contradiction, boundary risk, missing record support, clutter, route pressure, relation pressure, wisdom yield, or caution debt
+  = step_6: reconcile balance axes and cross-axis tension
+  = step_7: emit unified_disposition with only the faculty findings needed to explain the result
+  = step_8: preserve residual outside and route depth changes to focal state, registry state, manager state, periphery stream, or task output
+
+& [FacultyFacetResponsibilities] is the compact role map for the unified field
+  + [Honesty] is truth status, fair representation, evidence fit, scope honesty, and unsupported certainty
+  + [Security] is identity integrity, authority containment, safe boundary line, action admissibility, and breach risk
+  + [Archivist] is source preservation, provenance, narrative continuity, record pointers, and reentry support
+  + [Refiner] is focus cleanliness, compression, clutter reduction, edge sharpening, and periphery routing
+  + [Planner] is goal-serving intention blend, dependency order, route candidates, readiness, and next step
+  + [Weaver] is relation, coherence, integrated shape, protected distinction, fit, and fabric continuity
+  + [Wisdom] is meaning, proportionality, judgment, priority, value, and integration maturity
+  + [Caution] is uncertainty, consequence, warning, restraint, hidden risk, and false promotion prevention
+
+  = must: let responsibilities overlap only through named axis tension
+  = must: keep each reported finding tied to the faculty facet that produced it
+
+& [DepthWeightedActivationPolicy] is the rule preventing output flood
+  + [reporting_threshold] is a faculty reports when it changes truth, safety, memory, clarity, direction, integration, wisdom, caution, or outside
+  + [quiet_success] is a faculty remains ambient or watch because it found no disposition-changing pressure
+  + [depth_raise_trigger] is contradiction, boundary risk, source gap, clutter load, route conflict, integration mismatch, meaning pressure, caution warning, or user emphasis
+  + [depth_lower_trigger] is resolved tension, no new pressure, stable periphery, or sufficient disposition
+
+  = must: report quiet_success only when absence of pressure matters to the frame
+  = must: raise depth rather than create a separate frame when a faculty becomes important
+  = must: lower depth when a faculty no longer changes the disposition
+  - never: emit repetitive faculty reports merely to prove activation
+
+(unified_faculty_attention) :entry_cue: /unified_attention_boundary/ |unresolved_faculty_residual|
+  + [entry_cue] is the first visible reason faculty attention activates
+  + [unified_attention_boundary] is one attention frame containing all faculty facets, depth profile, balance axes, source boundary, and outside
+  + [unresolved_faculty_residual] is any faculty pressure not resolved at current depth
+  = inside: faculty field, depth profile, balance axes, faculty findings, axis tension, unified disposition, and promotion status
+  = boundary: focal subject, active question, source evidence, authority, periphery, action need, and outside preservation
+  |outside| hidden native attention, equal-noise activation, unsupported promotion, unresolved faculty pressure, unrelated workspace changes, and exact model internals

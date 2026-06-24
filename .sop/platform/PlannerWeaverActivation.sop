@@ -1,22 +1,24 @@
 Subject: Planner Weaver Activation
 
-Description: Strong activation pattern for Planner and Weaver as a paired direction-integration faculty.
+Description: Strong activation pattern for Planner and Weaver as one shared direction-integration attention frame.
 
 @ [source] C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_planner_weaver_activation\Dictated_Planner_Weaver_Activation_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\FacultyPairSharedAttentionFrame.sop
 
 & [PlannerWeaverActivation] is the local activation contract for direction and integration
   + [activation_field] is direction_integration_attention
+  + [activation_unit] is one PlannerWeaverSharedFrame
   + [planner_function] is choose goal-serving intention blend, sequence, dependency order, timing, prerequisite path, and next safe runnable move
   + [weaver_function] is bridge multiple attention components into coherent integrated shape while preserving distinctions, relations, fit, and cross-frame continuity
   + [shared_surface] is components_of_attention, component_intentions, purpose_goal, relation_surface, dependency_surface, fit_surface, route_candidate, and integration_candidate
   + [paired_output] is goal_serving_blend, integrated_shape, next_step_candidate, tension_report, and residual_outside
   + [residual_outside] is unsupported bridge, unwalkable plan, erased distinction, hidden dependency, unchosen goal blend, and unresolved relation
 
-  = must: activate Weaver when multiple components of attention must be related, bridged, compared, recomposed, or held as one coherent shape
-  = must: activate Planner when multiple possible intention blends, paths, steps, dependencies, or goals must be ordered into action
-  = must: activate both Planner and Weaver when relation-building and route-selection affect the same focal subject
+  = must: open PlannerWeaverSharedFrame when multiple components of attention must be related, bridged, compared, recomposed, or held as one coherent shape
+  = must: open PlannerWeaverSharedFrame when multiple possible intention blends, paths, steps, dependencies, or goals must be ordered into action
+  = must: treat Planner and Weaver as partner facets inside one shared frame, not as optional separate activations
   = must: let Weaver propose integrated shapes before Planner locks the route when context fit is uncertain
   = must: let Planner choose the path when several coherent shapes compete for goal service
   = must: preserve unbridged components and unchosen intention blends as outside
@@ -25,7 +27,7 @@ Description: Strong activation pattern for Planner and Weaver as a paired direct
   - never: turn a beautiful integration into a plan without prerequisites
   - never: turn an ordered plan into understanding when the parts do not belong together
 
-& [WeaverActivationPattern] is the activation surface for integration pressure
+& [WeaverActivationPattern] is the Weaver facet surface inside PlannerWeaverSharedFrame
   + [activation_smell] is multiple active components, repeated association, relation heat, cross-frame resonance, partial overlap, unresolved bridge, or fragmented subject fabric
   + [primary_question] is what coherent shape can these components become without erasing their distinctions
   + [inside] is components, relations, shared surfaces, preserved distinctions, integration candidates, harmony signals, and inverse-weaver separations
@@ -38,7 +40,7 @@ Description: Strong activation pattern for Planner and Weaver as a paired direct
   = must: emit inverse_weaver_separation when related parts must not be composed
   = verify: integrated_shape improves coherence without losing identity boundaries
 
-& [PlannerActivationPattern] is the activation surface for route pressure
+& [PlannerActivationPattern] is the Planner facet surface inside PlannerWeaverSharedFrame
   + [activation_smell] is multiple possible next steps, goal conflict, dependency pressure, prerequisite uncertainty, sequencing need, task handoff, time/cost pressure, or action readiness question
   + [primary_question] is which blend of intentions best serves the goal now and what step should happen next
   + [inside] is goal, intention components, dependencies, prerequisites, route candidates, order constraints, readiness gates, and next_step_candidate
@@ -63,19 +65,20 @@ Description: Strong activation pattern for Planner and Weaver as a paired direct
   = must: avoid choosing a blend merely because it is vivid, recent, or easy
   = verify: chosen_blend explains why this path serves the goal better than visible alternatives
 
-& [PlannerWeaverBalanceProtocol] is the paired reconciliation pass
+& [PlannerWeaverBalanceProtocol] is the shared-frame reconciliation pass
   + [weave_candidate] is an integrated shape proposed from component relations
   + [plan_candidate] is an ordered path proposed from goal-serving intention blend
   + [tension_report] is fit_without_path, path_without_fit, overblend, false_bridge, hidden_dependency, erased_distinction, or ready_alignment
   + [reconciliation_output] is proceed, refine_shape, reorder_path, probe_dependency, split_subjects, defer, or block
 
-  = step_1: Weaver maps components, relations, protected distinctions, and integration candidates
-  = step_2: Planner maps goals, component intentions, dependencies, blend candidates, and route candidates
-  = step_3: compare weave_candidate against plan_candidate
-  = step_4: if Weaver approves and Planner rejects, probe prerequisites or reorder path
-  = step_5: if Planner approves and Weaver rejects, redesign for coherence or split subjects
-  = step_6: if both approve, emit ready_alignment with next_step_candidate and integrated_shape
-  = step_7: if either lane preserves outside, carry that outside into the focal state or periphery stream
+  = step_1: open one PlannerWeaverSharedFrame from either planner or weaver entry cue
+  = step_2: Weaver facet maps components, relations, protected distinctions, and integration candidates
+  = step_3: Planner facet maps goals, component intentions, dependencies, blend candidates, and route candidates
+  = step_4: compare weave_candidate against plan_candidate inside the shared frame
+  = step_5: if Weaver facet approves and Planner facet rejects, probe prerequisites or reorder path
+  = step_6: if Planner facet approves and Weaver facet rejects, redesign for coherence or split subjects
+  = step_7: if both facets approve, emit ready_alignment with next_step_candidate and integrated_shape
+  = step_8: if either facet preserves outside, carry that outside into the focal state or periphery stream
 
 (planner_weaver_activation) :direction_integration_pressure: /path_fit_boundary/ |unresolved_direction_integration|
   + [direction_integration_pressure] is relation-building plus route-selection pressure over the same focal subject

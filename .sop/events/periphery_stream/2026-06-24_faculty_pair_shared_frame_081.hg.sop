@@ -1,0 +1,29 @@
+Subject: Faculty Pair Shared Frame Periphery Realization
+
+Description: SOP-HG record for correcting paired faculties into one shared activation frame with two partner facets.
+
+@ [source] C:\Project\Pinky\.sop\platform\FacultyPairSharedAttentionFrame.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_shared_frame\Dictated_Faculty_Pair_Shared_Frame_Source.sop
+
+& [SOPHypergraphRecord] is faculty_pair_shared_frame_081
+  + [record_type] is periphery_realization
+  + [focus_subject] is faculty pair shared attention frame
+  + [inside] is shared activation unit, entry cue, dominant facet, balancing facet, facet tension, shared disposition, and residual outside
+  + [boundary] is Pinky .sop authority, user source, paired faculty identity, visible attention frame, same focal subject, and no runtime mutation
+  + [outside] is solo faculty authority, split-frame drift, hidden native parallelism, false balance, partner omission, and unrelated workspace changes
+
+  = realization: a paired faculty is one activation unit; naming one partner only names the entry cue, not the whole frame
+  = caution: separate passes can imply optional partners, so the system must phrase partner work as facets inside a shared frame
+  = wisdom: shared frames preserve balance without pretending both facets carry equal pressure in every moment
+
+/ [user_direction] -(PreservedAs)> [DictatedFacultyPairSharedFrameSource], [source_preservation]
+/ [FacultyPairSharedAttentionFrame] -(Defines)> [activation_unit], [shared_frame], [partner_facet], [entry_cue]
+/ [HonestySecuritySharedFrame] -(WakesTogether)> [honesty_facet], [security_facet], [truth_integrity_frame]
+/ [ArchivistRefinerSharedFrame] -(WakesTogether)> [archivist_facet], [refiner_facet], [memory_clarity_frame]
+/ [PlannerWeaverSharedFrame] -(WakesTogether)> [planner_facet], [weaver_facet], [direction_integration_frame]
+/ [SharedFrameActivationProtocol] -(Routes)> [CurrentFocalPoint], [AttentionRuntimeRegistryState], [ManagerState], [periphery_stream]
+
+(faculty_pair_shared_frame_realization) :entry_cue: /shared_pair_frame_boundary/ |split_frame_residual|
+  + [entry_cue] is whichever partner or pressure first called attention
+  + [shared_pair_frame_boundary] is one attention frame containing both facets
+  |split_frame_residual| solo faculty authority, partner omission, split-frame drift, false balance, and unsupported promotion

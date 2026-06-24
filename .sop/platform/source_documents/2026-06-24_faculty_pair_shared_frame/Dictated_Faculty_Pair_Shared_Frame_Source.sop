@@ -1,0 +1,13 @@
+Subject: Dictated Faculty Pair Shared Frame Source
+
+Description: Raw user-directed source preserved before canonical refinement.
+
+& [DictatedFacultyPairSharedFrameSource] is the preserved user direction
+  + [source_time] is 2026-06-24
+  + [source_authority] is user dictated direction in the Pinky .sop project
+  + [raw_direction] is these pairs should actually share the activation and attention frame, because it does not matter that we only call one into question, they always play together.
+
+  = must: preserve this source separately from canonical refinement
+  = must: correct paired faculty language from independent activation lanes to one shared pair attention frame
+  = must: keep partner-specific findings as facets inside the shared frame
+  - outside: Python runtime changes, hidden native parallelism claims, solo faculty authority, and unrelated workspace changes

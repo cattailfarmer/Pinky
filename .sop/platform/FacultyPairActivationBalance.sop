@@ -1,45 +1,47 @@
 Subject: Faculty Pair Activation Balance
 
-Description: SOP attention contract for activating governance faculties in paired, parallel, balanced lanes.
+Description: SOP attention contract for activating governance faculties as shared pair attention frames.
 
 @ [source] C:\Project\Pinky\.sop\platform\FacultyAttentionFieldNaming.sop
 @ [source] C:\Project\Pinky\.sop\platform\BoundaryFacultyInspection.sop
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_activation_balance\Dictated_Faculty_Pair_Activation_Balance_Source.sop
-@ [source] C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
 
 & [FacultyPairActivationBalance] is the paired activation layer for attention faculties
   + [activation_field] is faculty_pair_activation
   + [pair_set] is honesty_security_pair, archivist_refiner_pair, and planner_weaver_pair
-  + [parallel_meaning] is co-active semantic lanes inside one attention frame with separate outputs and one reconciliation gate
-  + [balance_meaning] is partner outputs are compared before promotion, integration, action, or archival disposition
-  + [activation_boundary] is a pair activates when attention pressure enters either partner's concern and the partner concern is load-bearing for the frame
+  + [parallel_meaning] is one shared pair attention frame with partner facets, not independent activation frames
+  + [balance_meaning] is partner facets are compared inside the shared frame before promotion, integration, action, or archival disposition
+  + [activation_boundary] is a pair activates as one unit when attention pressure enters either partner's concern and the concern is load-bearing for the frame
   + [residual_outside] is solo faculty overreach, hidden native parallelism claims, unsupported promotion, unscoped naming collision, and worker mutation authority
+  + [unified_role] is this contract defines balance axes that UnifiedFacultyAttention uses inside one full-faculty frame
 
-  = must: activate Honesty and Security together when truth, representation, identity-boundary, safety, authority, or action risk is load-bearing
-  = must: activate Archivist and Refiner together when memory preservation, provenance, context thinness, clutter, compression, or integration clarity is load-bearing
-  = must: activate Planner and Weaver together when sequencing, dependency, correlation, synthesis, route selection, or multi-thread coordination is load-bearing
-  = must: name each faculty output separately before balance reconciliation
+  = must: use FacultyPairSharedAttentionFrame when any paired faculty is called into question
+  = must: use UnifiedFacultyAttention as the top-level contract for non-trivial faculty interrogation
+  = must: activate Honesty and Security as one shared frame when truth, representation, identity-boundary, safety, authority, or action risk is load-bearing
+  = must: activate Archivist and Refiner as one shared frame when memory preservation, provenance, context thinness, clutter, compression, or integration clarity is load-bearing
+  = must: activate Planner and Weaver as one shared frame when sequencing, dependency, correlation, synthesis, route selection, or multi-thread coordination is load-bearing
+  = must: name each partner facet inside the shared frame before balance reconciliation
   = must: preserve outside explicitly when one partner cannot fully resolve its concern
   = should: let the stronger pressure lead the pair without silencing the partner lane
   - never: let a solo faculty become final authority when its balance partner is load-bearing
 
 & [HonestySecurityPair] is the truth-integrity pair
-  + [honesty_lane] is claim truth, fair representation, evidence fit, scope honesty, and distinction integrity
-  + [security_lane] is identity integrity, safe boundary lines, authority containment, action admissibility, and boundary breach detection
+  + [honesty_facet] is claim truth, fair representation, evidence fit, scope honesty, and distinction integrity
+  + [security_facet] is identity integrity, safe boundary lines, authority containment, action admissibility, and boundary breach detection
   + [joint_activation_signal] is claim_pressure, boundary_pressure, authority_pressure, safety_pressure, contradiction_pressure, or action_pressure
   + [balance_question] is whether the statement or action is both true to what is known and safe within the defined boundary
   + [reconciliation_output] is truth_status, security_status, admissibility_status, and residual_outside
 
-  = must: keep truth correction and safety correction distinct until reconciliation
+  = must: keep truth correction and safety correction distinct inside the shared frame until reconciliation
   = must: inspect the /boundary/ where honesty faults and security faults both tend to appear
   = should: treat lack of evidence as an Honesty outside condition unless it also creates a Security boundary weakness
   - outside: treating caution language as false merely because it names unknowns
 
 & [ArchivistRefinerPair] is the memory-clarity pair
-  + [archivist_lane] is follow what attention is trying to follow, preserve provenance, retain narrative continuity, and cite the record surface
-  + [refiner_lane] is reduce clutter, remove superfluous focus load, sharpen subject shape, and move non-load-bearing detail to periphery
+  + [archivist_facet] is follow what attention is trying to follow, preserve provenance, retain narrative continuity, and cite the record surface
+  + [refiner_facet] is reduce clutter, remove superfluous focus load, sharpen subject shape, and move non-load-bearing detail to periphery
   + [joint_activation_signal] is context_thinness, provenance_need, focus_clutter, compression_pressure, repeated_reference, or unclear_integration
   + [balance_question] is whether the frame has enough record support without overloading focus
   + [reconciliation_output] is archive_disposition, refinement_disposition, periphery_request, and focus_load_status
@@ -51,8 +53,8 @@ Description: SOP attention contract for activating governance faculties in paire
   - outside: archiving brittle summaries as if they were durable memory
 
 & [PlannerWeaverPair] is the direction-integration pair
-  + [planner_lane] is sequence steps, expose dependencies, select the next safe runnable action, and preserve execution boundaries
-  + [weaver_lane] is correlate subjects, integrate parallel meanings, maintain fabric continuity, and notice cross-frame resonance
+  + [planner_facet] is sequence steps, expose dependencies, select the next safe runnable action, and preserve execution boundaries
+  + [weaver_facet] is correlate subjects, integrate parallel meanings, maintain fabric continuity, and notice cross-frame resonance
   + [joint_activation_signal] is task_pressure, route_pressure, dependency_pressure, association_pressure, synthesis_pressure, or coordination_pressure
   + [balance_question] is whether the next step is ordered enough to act and connected enough to mean something
   + [reconciliation_output] is plan_disposition, weave_disposition, next_step_candidate, and integration_risk
@@ -67,21 +69,22 @@ Description: SOP attention contract for activating governance faculties in paire
 
 & [FacultyPairActivationProtocol] is the callable SOP pattern for paired faculties
   + [input] is active_attention_frame, activation_pressure, focal_subject, periphery_state, evidence_state, and action_need
-  + [output] is paired_lane_outputs, balance_delta, reconciliation_output, promotion_status, and residual_outside
-  + [balance_delta] is the visible difference between partner outputs after separate attention passes
+  + [output] is shared_pair_frame, partner_facet_findings, balance_delta, reconciliation_output, promotion_status, and residual_outside
+  + [balance_delta] is the visible difference between partner facets inside the same shared frame
   + [promotion_status] is promote, refine, archive, probe, block, or defer
 
   = step_1: identify which pair pressure is load-bearing
-  = step_2: name both partner lanes and their scope nouns
-  = step_3: run both semantic lanes over the same focal subject and boundary
-  = step_4: compare outputs for contradiction, omission, overreach, and missing outside
-  = step_5: reconcile into a disposition that preserves residual outside
-  = step_6: route disposition to CurrentFocalPoint, AttentionRuntimeRegistryState, manager state, or periphery stream as appropriate
+  = step_2: open one shared pair frame
+  = step_3: name both partner facets and their scope nouns inside that frame
+  = step_4: inspect the same focal subject and boundary through both facets
+  = step_5: compare facet findings for contradiction, omission, overreach, and missing outside
+  = step_6: reconcile into a disposition that preserves residual outside
+  = step_7: route disposition to CurrentFocalPoint, AttentionRuntimeRegistryState, manager state, or periphery stream as appropriate
 
 (faculty_pair_activation) :activation_pressure: /pair_balance_boundary/ |unbalanced_residual|
   + [activation_pressure] is truth_integrity_pressure, memory_clarity_pressure, direction_integration_pressure, or mixed_pair_pressure
-  + [pair_balance_boundary] is the paired faculty boundary that requires both partner outputs before promotion
-  + [unbalanced_residual] is what remains unresolved when one lane sees pressure the other lane cannot settle
-  = inside: co-active faculty lane outputs, balance_delta, reconciliation_output, and promotion_status
+  + [pair_balance_boundary] is the shared pair-frame boundary that requires both partner facets before promotion
+  + [unbalanced_residual] is what remains unresolved when one facet sees pressure the other facet cannot settle
+  = inside: shared pair frame, partner facet findings, balance_delta, reconciliation_output, and promotion_status
   = boundary: source evidence, current focal point, visible periphery, declared task authority, and outside preservation
   |outside| hidden native attention, hidden model state, unproved causation, unscoped field names, worker mutation authority, and unrelated files

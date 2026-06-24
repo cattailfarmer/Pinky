@@ -1,0 +1,88 @@
+Subject: Faculty Pair Shared Attention Frame
+
+Description: Shared activation-frame law for paired faculties that always wake together.
+
+@ [source] C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_shared_frame\Dictated_Faculty_Pair_Shared_Frame_Source.sop
+
+& [FacultyPairSharedAttentionFrame] is the activation primitive for paired faculties
+  + [activation_unit] is the pair, not either individual faculty alone
+  + [entry_cue] is the faculty, pressure, fault, question, or subject surface that first draws attention
+  + [shared_frame] is one attention frame containing both partner facets
+  + [partner_facet] is a named perspective inside the shared frame, not a separate activation frame
+  + [dominant_facet] is the partner facet whose concern produced the entry cue or carries greater current pressure
+  + [balancing_facet] is the partner facet that wakes with the dominant facet and checks the frame from its complementary concern
+  + [facet_tension] is disagreement, omission, pressure asymmetry, missing outside, or unresolved balance between facets
+  + [frame_output] is shared_disposition, facet_findings, facet_tension, promotion_status, and residual_outside
+  + [residual_outside] is solo-faculty authority, partner omission, split-frame drift, false balance, hidden native parallelism, and unsupported promotion
+  + [unified_role] is a support pattern used as a balance axis inside UnifiedFacultyAttention rather than a separate top-level activation set
+
+  = must: wake the whole pair when either partner is called into question
+  = must: hold both partner facets inside the same attention frame
+  = must: yield to UnifiedFacultyAttention when the work involves non-trivial attention across the full faculty field
+  = must: allow one facet to dominate pressure without making the other optional
+  = must: compare facet findings before promotion, action, archive, refinement, or integration
+  = must: route unresolved facet_tension to outside rather than pretending balance
+  = should: name the entry_cue so later review knows why the pair woke
+  = should: report shared_disposition in pair language before reporting individual facet findings
+  - never: run one partner as final authority while its pair is load-bearing
+  - never: split a pair into separate attention frames merely because one partner was named first
+
+& [PairFrameSet] is the current paired faculty frame set
+  + [truth_integrity_frame] is HonestySecuritySharedFrame
+  + [memory_clarity_frame] is ArchivistRefinerSharedFrame
+  + [direction_integration_frame] is PlannerWeaverSharedFrame
+
+  = must: use HonestySecuritySharedFrame when Honesty, Security, claim truth, fair representation, identity boundary, safety, authority, or action admissibility is called into question
+  = must: use ArchivistRefinerSharedFrame when Archivist, Refiner, memory, provenance, context thinness, clutter, compression, or focus load is called into question
+  = must: use PlannerWeaverSharedFrame when Planner, Weaver, path, fit, route, dependency, component relation, intention blend, or integration direction is called into question
+
+& [HonestySecuritySharedFrame] is the shared frame for truth and integrity
+  + [entry_cue_set] is honesty cue, security cue, claim pressure, boundary pressure, authority pressure, safety pressure, contradiction pressure, or action pressure
+  + [honesty_facet] is claim truth, fair representation, evidence fit, scope honesty, and distinction integrity
+  + [security_facet] is identity integrity, safe boundary lines, authority containment, action admissibility, and boundary breach detection
+  + [shared_question] is whether the statement or action is true enough and safe enough inside the defined boundary
+
+  = must: wake Security when Honesty wakes
+  = must: wake Honesty when Security wakes
+  = must: distinguish evidence absence from boundary breach while inspecting them in one frame
+
+& [ArchivistRefinerSharedFrame] is the shared frame for memory and clarity
+  + [entry_cue_set] is archivist cue, refiner cue, memory pressure, provenance pressure, context thinness, focus clutter, compression pressure, or unclear integration
+  + [archivist_facet] is follow what attention is trying to follow, preserve provenance, retain narrative continuity, and cite the record surface
+  + [refiner_facet] is reduce clutter, sharpen subject shape, move non-load-bearing detail to periphery, and preserve useful pointers
+  + [shared_question] is what must be preserved and what must be moved aside so focus remains both durable and clear
+
+  = must: wake Refiner when Archivist wakes
+  = must: wake Archivist when Refiner wakes
+  = must: preserve a pointer for content moved from focus to periphery
+
+& [PlannerWeaverSharedFrame] is the shared frame for direction and integration
+  + [entry_cue_set] is planner cue, weaver cue, route pressure, dependency pressure, component relation pressure, association pressure, synthesis pressure, coordination pressure, or intention blend pressure
+  + [planner_facet] is goal-serving intention blend, dependencies, sequence, route candidates, readiness gates, and next safe runnable step
+  + [weaver_facet] is component relations, integrated shape, protected distinctions, fit constraints, fabric continuity, and inverse-weaver separations
+  + [shared_question] is what shape fits together and which walkable intention blend serves the goal now
+
+  = must: wake Weaver when Planner wakes
+  = must: wake Planner when Weaver wakes
+  = must: require both coherent fit and walkable path before direction promotes to action
+
+& [SharedFrameActivationProtocol] is the callable SOP pattern for pair activation
+  + [input] is entry_cue, active_attention_frame, focal_subject, periphery_state, evidence_state, action_need, and pair_candidate
+  + [output] is shared_frame, dominant_facet, balancing_facet, facet_findings, facet_tension, shared_disposition, promotion_status, and residual_outside
+
+  = step_1: identify the entry cue and matching pair
+  = step_2: open one shared pair frame
+  = step_3: name the dominant facet and balancing facet inside that frame
+  = step_4: inspect the same focal subject and boundary through both facets
+  = step_5: compare findings for contradiction, omission, overreach, missing outside, and false balance
+  = step_6: emit a shared disposition with facet findings and residual outside
+  = step_7: route the shared disposition to focal state, registry state, manager state, periphery stream, or task output as appropriate
+
+(faculty_pair_shared_attention_frame) :entry_cue: /shared_pair_frame_boundary/ |split_frame_residual|
+  + [entry_cue] is whichever partner, pressure, or question first wakes attention
+  + [shared_pair_frame_boundary] is one attention frame containing both partner facets and the same focal subject
+  + [split_frame_residual] is any pressure that would incorrectly isolate one partner from its pair
+  = inside: shared frame, dominant facet, balancing facet, facet findings, facet tension, shared disposition, and promotion status
+  = boundary: pair identity, focal subject, shared evidence, visible periphery, source authority, and outside preservation
+  |outside| hidden native parallelism, solo faculty authority, split-frame drift, partner omission, false balance, and unsupported promotion
