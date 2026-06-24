@@ -1,0 +1,17 @@
+Subject: Dictated Narrative Subject File Index Source
+
+Description: Preserved source for defining an index of narrative subject matters to files of interest.
+
+& [DictatedNarrativeSubjectFileIndexSource] is preserved user direction
+  + [source_time] is 2026-06-24
+  + [source_type] is dictated refinement
+  + [source_scope] is C:\Project\Pinky\.sop narrative layer and attention indexing
+  + [raw_direction] is "that suggests we need an index of the subject matters in the narrative layer detailing the files of interest in respect to each of the narrated subjects. I don't think that's part of the overall system yet?"
+  + [interpreted_need] is define a narrative-subject index that maps narrated subject matters to the SOP files of interest for re-entry, search, review, and deeper inquiry
+  + [inside] is narrative subject keys, files of interest, relation reasons, depth hints, authority boundaries, unresolved subjects, and table-backed lookup
+  + [boundary] is SOP-only specification, local Pinky .sop authority, source preservation, no runtime mutation, and no exhaustive coverage claim
+  + [outside] is hidden model state, automatic file authority, complete repository coverage, worker mutation, and unrelated dirty files
+
+  = must: preserve this direction separately from canonical contracts
+  = must: keep the index as search and re-entry guidance rather than proof of meaning
+  = must: distinguish narrative subject indexing from semantic hash lookup and surface periphery lookup

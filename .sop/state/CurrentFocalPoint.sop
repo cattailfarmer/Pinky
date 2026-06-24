@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is surface periphery inquiry index
+  + [focus_subject] is narrative subject file index
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is surface SOP files now need compact periphery-inquiry terms that point into lookup tables for deeper files to search without loading every deeper layer into focus
-  + [inside] is SurfacePeripheryInquiryIndex.sop, SurfacePeripheryInquiryTable.sop, UnifiedFacultyAttention.sop, SemanticHashIndex.sop, SemanticHashTable.sop, Dictated_Surface_Periphery_Inquiry_Index_Source.sop, 2026-06-24_surface_periphery_inquiry_index_083.hg.sop, 2026-06-24_operating_loop_tick_031.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, evidence-gated, table-backed, explicit about unresolved inquiry, and non-mutating unless runtime work is selected later
+  + [right_hemisphere_draw] is narrative subjects need a compact index of files of interest so re-entry can open the right support files before broad search
+  + [inside] is NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, NarrativeDigestion.sop, SurfacePeripheryInquiryIndex.sop, Dictated_Narrative_Subject_File_Index_Source.sop, 2026-06-24_narrative_subject_file_index_084.hg.sop, 2026-06-24_operating_loop_tick_032.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, evidence-gated, table-backed, explicit about unresolved subject mapping, and non-mutating unless runtime work is selected later
   + [outside] is hidden model state, hidden native parallelism claims, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_031.sop
-  + [open_question] is whether to compile a faculty activation router that assigns depth profiles and consumes surface inquiry lookup entries
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_032.sop
+  + [open_question] is whether to compile a faculty activation router or narrative index emitter that consumes both narrative subject file lookup and surface inquiry lookup
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -39,6 +39,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat faculty_pair_shared_attention_frame as the completed Task_149 anchor
   = must: treat unified_faculty_attention as the completed Task_150 anchor
   = must: treat surface_periphery_inquiry_index as the completed Task_151 anchor
+  = must: treat narrative_subject_file_index as the completed Task_152 anchor
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration

@@ -23,6 +23,8 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [periphery_layer] is C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
   + [liminal_draw_layer] is C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
   + [narrative_layer] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+  + [narrative_subject_file_index] is C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+  + [narrative_subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   + [viewfinder_snapshot] is C:\Project\Pinky\.sop\platform\ViewfinderSnapshot.sop
   + [attention_tracker] is C:\Project\Pinky\.sop\platform\AttentionTracker.sop
   + [attention_runtime_registry] is C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
@@ -100,6 +102,8 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :periphery: C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
   :between: C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
   :narrative: C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+  :narrative_subject_index: C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+  :narrative_subject_table: C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   :viewfinder: C:\Project\Pinky\.sop\platform\ViewfinderSnapshot.sop
   :tracker: C:\Project\Pinky\.sop\platform\AttentionTracker.sop
   :attention_runtime_registry: C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
@@ -227,6 +231,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use the meta-awareness function when narrative realizations are mapped to change logs from a layer under analysis
   = must: use semantic hash indexing when periphery needs stable pointers into SOP components and unstable semantic landscape
   = must: use semantic hash table lookup when periphery needs permissive multi-dimensional re-entry into nearby SOP components
+  = must: use narrative_subject_file_index when a narrative subject needs its files of interest before re-entry, review, or deeper inquiry
   = must: use surface_periphery_inquiry_index when a visible SOP surface marks terms for deeper inquiry and needs table-backed file search pointers
   = must: use semantic correlation graphs when attention direction needs weighted bucket relations and directive tilt
   = must: use carried support balance when imported rails, laws, metaphors, or governance patterns might be mistaken for subject-native association

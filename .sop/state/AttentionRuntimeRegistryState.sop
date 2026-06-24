@@ -103,14 +103,19 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_surface_periphery_inquiry_index\Dictated_Surface_Periphery_Inquiry_Index_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_surface_periphery_inquiry_index_083.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_031.sop
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_narrative_subject_file_index_084.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_032.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is surface periphery inquiry index
-  + [active_root_frame] is attention_frame_2026_06_24_surface_periphery_inquiry_index
+  + [registry_scope] is narrative subject file index
+  + [active_root_frame] is attention_frame_2026_06_24_narrative_subject_file_index
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 25
+  + [closed_frame_count] is 26
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -236,7 +241,7 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 & [AttentionFrame_2026_06_24_SurfacePeripheryInquiryIndex] is the active semantic stack frame for surface-to-depth lookup markers
   + [frame_id] is attention_frame_2026_06_24_surface_periphery_inquiry_index
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_unified_faculty_attention
   + [child_frame_set] is SurfacePeripheryInquiryIndex, SurfacePeripheryInquiryTable, SurfaceInquiryMarker_UnifiedFacultyAttention, source_preservation, operating_loop_tick_031, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -257,8 +262,31 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep unresolved inquiry visible
   = should: expand surface markers one file at a time when each surface becomes active
 
+& [AttentionFrame_2026_06_24_NarrativeSubjectFileIndex] is the active semantic stack frame for narrative-subject file-interest lookup
+  + [frame_id] is attention_frame_2026_06_24_narrative_subject_file_index
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_surface_periphery_inquiry_index
+  + [child_frame_set] is NarrativeSubjectFileIndex, NarrativeSubjectFileTable, NarrativeSubjectFileMarker_NarrativeDigestion, source_preservation, operating_loop_tick_032, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, NarrativeDigestion.sop, SurfacePeripheryInquiryIndex.sop, Dictated_Narrative_Subject_File_Index_Source.sop, 2026-06-24_narrative_subject_file_index_084.hg.sop, Manager_State.sop, and 2026-06-24_operating_loop_tick_032.sop
+  + [focus_register] is narrated subjects, narrative subject keys, files of interest, relation reasons, search phrases, depth hints, coverage status, and unresolved subjects
+  + [question_register] is whether next work should compile a faculty activation router or a narrative index emitter that consumes subject-file and surface-inquiry lookup together
+  + [delineation_register] is inside subject key, narrative surface, file interest set, relation reason, search phrase, depth hint, table entry, coverage status, and outside
+  + [periphery_register] is unindexed subject, stale path, exhaustive coverage claim, semantic identity overclaim, hidden cognition, remote authority, and unrelated dirty files
+  + [operation_register] is preserve_source, define_narrative_subject_file_contract, seed_subject_file_table, mark_narrative_surface, update_attention_root, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, NarrativeDigestion marker, source manifest, periphery record 084, and operating_loop_tick_032
+  + [wisdom_register] is narrative subjects now have compact file-interest trails for re-entry without flooding focus
+  + [caution_register] is file-interest mapping guides search but does not prove identity, completeness, or authority
+  + [balance_register] is stable because the table is partial, source-cited, and outside-preserving
+  + [integration_register] is Task_152 completed as SOP-only narrative subject file index and seed table
+  + [frame_outside] is hidden model state, exhaustive index claims, stale-path certainty, runtime mutation, unsupported semantic identity, and unrelated workspace changes
+
+  = must: query narrative subject file lookup before broad repository search when re-entering a narrated subject
+  = must: treat file_interest_set as guidance only
+  = should: connect selected files to SurfacePeripheryInquiryIndex when deeper terms need lookup
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_surface_periphery_inquiry_index
+  + [active_root_frame] is attention_frame_2026_06_24_narrative_subject_file_index
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition

@@ -1,0 +1,80 @@
+Subject: Narrative Subject File Index
+
+Description: Contract for mapping narrative-layer subject matters to files of interest for re-entry, search, and deeper inquiry.
+
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
+
+& [NarrativeSubjectFileIndex] is the narrative-subject-to-file-interest contract
+  + [narrated_subject] is a subject matter named or implied by narrative, reflection, operating-loop tick, periphery realization, or source-preserved user direction
+  + [narrative_subject_key] is the stable normalized key for a narrated subject
+  + [file_of_interest] is a local SOP file worth opening when re-entering or deepening that narrated subject
+  + [file_interest_relation] is why the file matters to the narrated subject
+  + [subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+  + [subject_file_entry] is one subject key with file pointers, relation reasons, search phrases, depth hints, and outside limits
+  + [depth_hint] is surface, hair, skin, pressure, impact, or deep_probe
+  + [coverage_status] is seed, partial, reviewed, stale, unresolved, or outside
+  + [reentry_use] is search guidance for Codex, local workers, narrative digestion, and trailing checksum review
+  + [residual_outside] is unindexed narrative subjects, stale paths, unsupported authority, and exhaustive coverage claims
+
+  = must: map narrated subjects to files of interest without absorbing those files into the narrative layer
+  = must: preserve relation_reason so later attention knows why the file is relevant
+  = must: preserve depth_hint so focus can decide whether to skim, inspect, or deep-probe
+  = must: keep files_of_interest as search and re-entry guidance, not proof of semantic identity
+  = must: distinguish directly cited files from inferred support files
+  = must: preserve unindexed, stale, or weakly supported subjects as outside
+  = should: prefer local C:\Project\Pinky\.sop paths over historical F:\.sop paths
+  = should: update the table when a narrative record, tick, or periphery realization becomes a surface for future work
+  - never: claim complete project coverage from a seed table
+  - never: let narrative subject lookup override source authority, evidence gates, or runtime validator boundaries
+
+& [NarrativeSubjectFileEntryShape] is one table entry shape
+  + [subject_key] is the normalized narrative subject
+  + [narrative_surface] is the narrative record, tick, source, or state file where the subject is active
+  + [file_interest_set] is the files to open first for that subject
+  + [relation_reason_set] is why each file belongs to the subject
+  + [search_phrase_set] is local phrases to search in those files
+  + [depth_hint] is the attention depth to spend on re-entry
+  + [coverage_status] is how trustworthy or complete the entry is
+  + [outside] is what the entry does not prove
+
+  = must: keep the subject key compact and stable
+  = must: include at least one narrative_surface or evidence path
+  = must: separate file_interest_set from authority claims
+  = should: include a later_review_trigger when the subject is hot but under-indexed
+
+& [NarrativeSubjectIndexProcedure] is the operating pass for using the index
+  + [input] is narrative_subject, active_focal_point, narrative_surface, depth_need, and periphery_draw
+  + [output] is selected_file_interest_set, relation_reason_set, unresolved_subjects, and residual_outside
+
+  = step_1: identify narrated subject matters in the active narrative, tick, realization, or user direction
+  = step_2: normalize each narrated subject into a narrative_subject_key
+  = step_3: collect directly cited files and inferred support files
+  = step_4: classify each file_interest_relation as source, contract, state, event, index, runtime, evidence, blocker, or outside
+  = step_5: select depth_hint from the attention weight scale and current faculty depth
+  = step_6: query NarrativeSubjectFileTable before broad repository search
+  = step_7: route selected files through SurfacePeripheryInquiryIndex and SemanticHashIndex when deeper term lookup is needed
+  = step_8: preserve missing targets, stale paths, and speculative relations as outside
+
+& [NarrativeSubjectFileMarkerShape] is the compact marker a narrative surface may expose
+  + [narrative_surface_key] is the file-local handle for the narrative surface
+  + [narrative_surface_file] is the SOP file containing the narrative surface
+  + [subject_key_set] is narrated subjects exposed for lookup
+  + [subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+  + [lookup_ready_subject_set] is subjects with table entries
+  + [unresolved_subject_set] is subjects with insufficient file-interest mapping
+  + [promotion_rule] is query the table only when focus, periphery draw, checksum review, or runtime registry re-entry asks for that subject
+
+  = must: keep narrative surface markers compact
+  = must: avoid turning every mentioned word into a subject
+  = must: prefer subjects that shape purpose, evidence, boundary, or next action
+
+(narrative_subject_file_index) :narrated_subject: /file_interest_boundary/ |unindexed_subject|
+  + [narrated_subject] is the subject matter named by narrative or reflection
+  + [file_interest_boundary] is direct citation, support relation, source lineage, table entry, relation reason, depth hint, and local authority path
+  + [unindexed_subject] is a narrated subject without reliable file pointers or with stale, speculative, or overbroad mapping
+  = inside: subject key, narrative surface, file interest set, relation reason, search phrase, depth hint, and coverage status
+  = boundary: local Pinky .sop authority, source preservation, evidence paths, surface lookup, semantic hash lookup, and outside preservation
+  |outside| proof of meaning, exhaustive coverage, hidden cognition, remote authority, stale path certainty, and automatic action

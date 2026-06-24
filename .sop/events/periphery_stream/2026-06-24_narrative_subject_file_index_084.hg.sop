@@ -1,0 +1,32 @@
+Subject: Narrative Subject File Index Realization
+
+Description: SOP-HG record for adding a narrative-subject file-interest index to the local attention framework.
+
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
+
+& [SOPHypergraphRecord] is narrative_subject_file_index_084
+  + [record_type] is periphery_realization
+  + [focus_subject] is narrative subject file index
+  + [inside] is narrated subject, subject key, file of interest, relation reason, depth hint, narrative surface, lookup table, and unresolved subject
+  + [boundary] is Pinky .sop authority, source preservation, local file paths, table-backed guidance, and no runtime mutation
+  + [outside] is exhaustive repository coverage, proof of meaning, hidden cognition, stale-path certainty, and unrelated workspace changes
+
+  = realization: the narrative layer needed an index from narrated subject matters to files of interest so future re-entry can open the right files before broad search
+  = distinction: this is not the same as semantic hash lookup or surface periphery lookup; it begins from a narrated subject rather than a surface term or hash bucket
+  = caution: file-interest mapping guides search but does not prove semantic identity, authority, or completeness
+  = wisdom: narrative can now point to its own relevant evidence and support files without absorbing the full system into context
+
+/ [user_direction] -(PreservedAs)> [DictatedNarrativeSubjectFileIndexSource], [source_preservation]
+/ [NarrativeSubjectFileIndex] -(Defines)> [NarrativeSubjectFileEntryShape], [NarrativeSubjectIndexProcedure], [NarrativeSubjectFileMarkerShape]
+/ [NarrativeSubjectFileTable] -(MapsSubject)> [narrative_subject_file_index], [NarrativeSubjectFileIndex.sop]
+/ [NarrativeSubjectFileTable] -(MapsSubject)> [narrative_digestion], [NarrativeDigestion.sop]
+/ [NarrativeSubjectFileTable] -(MapsSubject)> [surface_periphery_inquiry_index], [SurfacePeripheryInquiryIndex.sop]
+/ [NarrativeSubjectFileTable] -(MapsSubject)> [unified_faculty_attention], [UnifiedFacultyAttention.sop]
+/ [NarrativeSubjectFileTable] -(MapsSubject)> [attention_runtime_registry], [AttentionRuntimeRegistryState.sop]
+
+(narrative_subject_file_index_realization) :narrated_subject: /file_interest_table and relation_reason/ |unindexed_subject|
+  + [narrated_subject] is a subject active in narrative or reflection
+  + [file_interest_table] is the seed mapping to files, reasons, phrases, and depth hints
+  |unindexed_subject| unindexed subject, stale file, weak relation, unsupported authority, and exhaustive coverage claim
