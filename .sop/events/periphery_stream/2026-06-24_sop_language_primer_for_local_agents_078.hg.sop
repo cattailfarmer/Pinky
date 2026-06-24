@@ -1,0 +1,25 @@
+Subject: SOP Language Primer For Local Agents 078
+
+Description: Periphery-stream realization that local LM Studio workers need SOP language introduction before SOP framework assignment.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_language_intro_for_local_agents\Dictated_SOP_Language_Intro_For_Local_Agents_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_smoke_20260624_002.sop
+
+& [SOPLanguagePrimerForLocalAgents078] is the realized local-worker primer gate
+  + [moment] is the failed exact-output retry suggested the LM Studio agent was receiving framework-shaped instructions before it had been introduced to SOP language
+  + [focus] is language introduction before framework assignment
+  + [inside] is marker set, attention delineation, outside rule, source authority, evidence gate, no-tool rule, exact-output schema, and comprehension check
+  + [boundary] is local worker language readiness only; it is not framework authority, repo authority, or proof of task competence
+  + [outside] is hidden model state, unprimed framework assignment, repo mutation, tool attempts, adjacent substitution, and syntax mimicry without content
+  + [wisdom] is a local model should first learn the symbols and boundaries of the language before being asked to operate inside a SOP framework
+  + [caution] is a worker can mimic nearby words such as SpecificationGovernance without understanding the requested SOP output shape
+  + [balance] is stable because the primer separates language comprehension from framework obedience and task execution
+  + [next_step] is rerun a nested Codex CLI LM Studio smoke test using a primer packet before the exact-output task
+
+  = must: introduce SOP notation before SOP framework packets
+  = must: require no-tool exact-output comprehension before worker readiness
+  = should: score adjacent substitution as a primer failure
+
+/ [SOPLanguagePrimer], [LocalWorker], [CodexOperationalHost] -(Prepares)> [framework_packet_readiness], [primer_outside]
+* [SmokeRetry002], [SpecificationGovernanceOutput], [ToolAttempt] -(Explains)> [language_primer_needed], [instruction_fidelity_gate], [tool_discipline_gate]

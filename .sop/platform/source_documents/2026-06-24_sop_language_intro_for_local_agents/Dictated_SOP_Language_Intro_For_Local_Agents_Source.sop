@@ -1,0 +1,15 @@
+Subject: Dictated SOP Language Intro For Local Agents Source
+
+Description: Preserved source directive for introducing LM Studio agents to SOP language before assigning SOP framework contracts.
+
+& [DictatedSOPLanguageIntroForLocalAgentsSource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after Codex CLI over LM Studio context retry completed but failed exact-output and tool-discipline gates
+  + [source_line_001] is "remember, the LM studio agent needs introduced to the SOP language before being given SOP framework defining it's shape and utility."
+  + [active_root] is C:\Project\Pinky\.sop
+  + [desired_output] is a reusable local-agent language primer gate that precedes SOP framework packets and work tasks
+
+  = must: preserve this source separately from canonical language-primer contract
+  = must: require SOP language introduction before larger SOP framework assignment
+  = must: distinguish language comprehension from framework obedience and task execution
+  - outside: assuming a local model already understands SOP notation, hidden model state, and treating primer completion as repo authority

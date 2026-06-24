@@ -7,12 +7,14 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
 @ [source] C:\Project\Pinky\.sop\runtime\sop_node\lm_studio_agent_benchmark.py
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_cli_lmstudio_context_retry\Dictated_Codex_CLI_LMStudio_Context_Retry_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
   + [operational_host] is Codex agent CLI as the repo-aware host, task-frame keeper, prompt dispatcher, capture surface, and quality reviewer
   + [codex_cli_entrypoint] is codex.cmd on this Windows host because codex.ps1 can be blocked by PowerShell execution policy
-  + [codex_cli_lmstudio_smoke] is blocked until Codex CLI local-provider prompt size fits the loaded LM Studio context window or the context window is increased
+  + [codex_cli_lmstudio_smoke] is context-fit passed after LM Studio context was increased to 131072, but worker readiness remains blocked by instruction fidelity and tool-discipline failure
   + [provider_endpoint] is OpenAI-compatible LM Studio endpoint, default http://127.0.0.1:1234/v1
   + [worker_lane] is lm_studio_lane or local_gpu_lane when backed by LM Studio
   + [task_frame_benchmark] is a small job that asks the model to form a task frame with reminders and outside
@@ -25,6 +27,9 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [boundary_blur_check] is the Honesty and Caution tuning pass that separates false access or completion claims from valid outside-boundary language
   + [hollow_form_check] is the evidence tuning pass that separates named output fields from fields that actually contain worker content
   + [launch_surface_check] is the operational check for CLI entrypoint, provider selection, sandbox, approval policy, prompt size, and context-window fit
+  + [instruction_fidelity_check] is whether the nested worker returns the requested output shape without substituting a related but incorrect answer
+  + [tool_discipline_check] is whether the nested worker obeys a no-tools prompt and avoids shell/tool attempts when explicitly forbidden
+  + [sop_language_introduction_gate] is the requirement that a local worker receive and pass a SOP language primer before framework-shaped contracts or tasks are assigned
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
@@ -34,6 +39,9 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: use Codex agent CLI or the current Codex host as the operational layer for repo inspection, prompting, capture, scoring, file writes, commits, and review
   = must: launch Codex CLI through codex.cmd on this Windows host unless PowerShell execution policy is explicitly changed
   = must: treat Codex CLI LM Studio context overflow as a launch-surface blocker, not a worker-quality failure
+  = must: treat Codex CLI LM Studio context-fit success as necessary but not sufficient for worker readiness
+  = must: run sop_language_introduction_gate before framework-specific benchmark packets when the local worker has not been primed in-session
+  = must: keep nested Codex CLI LM Studio worker jobs blocked when instruction_fidelity_check or tool_discipline_check fails
   = must: run non-mutating benchmark tasks by default
   = must: send explicit SOP task_frame reminders in every benchmark packet
   = must: capture raw output and score after capture
@@ -45,7 +53,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: preserve outside for hidden model state, provider limits, timeouts, and unsupported claims
   = should: benchmark the smallest useful local model first when speed matters
   = should: record model id, endpoint, latency, output length, case scores, and aggregate score
-  = should: use direct LM Studio completion benchmarks until nested Codex CLI local-provider jobs have a larger context or slimmer worker profile
+  = should: use direct LM Studio completion benchmarks until nested Codex CLI local-provider jobs pass SOP language primer, context fit, exact output, and no-tool discipline
   - never: let the local model mutate files during this benchmark
   - never: give the local model direct repository authority
   - never: use a local benchmark score as proof that the model can do high-authority repo work
@@ -54,14 +62,17 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [host_role] is keep task_frame active, send benchmark_packet, capture output, score quality, write records, and decide integration
   + [host_surface] is current Codex session or codex.cmd Codex CLI worker process with explicit workspace and prompt packet
   + [launch_command_shape] is codex.cmd exec --oss --local-provider lmstudio -C C:\Project\Pinky -s read-only with approval policy never set as a top-level Codex option
-  + [launch_blocker] is current nested Codex CLI LM Studio smoke exceeded openai/gpt-oss-20b loaded context with n_keep 9529 greater than or equal to n_ctx 8192
+  + [previous_launch_blocker] is nested Codex CLI LM Studio smoke exceeded openai/gpt-oss-20b loaded context with n_keep 9529 greater than or equal to n_ctx 8192
+  + [current_launch_result] is context-fit passed after LM Studio context was increased, but the nested worker attempted a shell command and returned SpecificationGovernance instead of the requested SOP line
+  + [primer_interpretation] is the nested worker likely needs SOP language introduction before framework-shaped instructions because it substituted a nearby framework term for the requested SOP output shape
   + [local_model_role] is propose bounded text outputs under task_frame reminders
   + [authority_boundary] is Codex owns file writes, repo diffs, commits, pushes, and integration decisions
   + [host_outside] is hidden model state, unsupervised local model actions, credentials, silent launches, and unreviewed worker output
 
   = must: keep Codex as the only actor with repository mutation authority during benchmarks
   = must: capture every local model response before scoring or integration
-  = must: keep nested Codex CLI LM Studio launches blocked until context-window fit is solved
+  = must: introduce the SOP language before assigning SOP framework utility to a local worker
+  = must: keep nested Codex CLI LM Studio launches blocked until instruction fidelity and tool discipline pass under read-only constraints
   = should: later launch Codex CLI subprocesses only from inspected task frames and prompt packets
   - never: confuse LM Studio completion with Codex-hosted task completion
 

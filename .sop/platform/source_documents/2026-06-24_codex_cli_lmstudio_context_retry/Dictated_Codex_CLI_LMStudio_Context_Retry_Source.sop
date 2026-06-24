@@ -1,0 +1,18 @@
+Subject: Dictated Codex CLI LM Studio Context Retry Source
+
+Description: Preserved source directive for retrying nested Codex CLI over LM Studio after increasing the provider context window.
+
+& [DictatedCodexCLILMStudioContextRetrySource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after codex_cli_lmstudio_smoke_20260624_001 found n_keep 9529 greater than or equal to n_ctx 8192
+  + [source_line_001] is "I had the context window limit at default 8192 tokens."
+  + [source_line_002] is "I just turned that up all the way."
+  + [source_line_003] is "it now says 131072 tokens context window size."
+  + [source_line_004] is "try again?"
+  + [active_root] is C:\Project\Pinky\.sop
+  + [desired_output] is rerun the Codex CLI LM Studio smoke test and record whether the launch blocker changed
+
+  = must: preserve this source separately from canonical benchmark updates
+  = must: treat the retry as a context-window launch-surface test
+  = must: distinguish context fit from instruction fidelity, tool discipline, and worker readiness
+  - outside: hidden model state, unsupervised worker authority, file mutation by the nested worker, and treating launch completion as task-quality proof

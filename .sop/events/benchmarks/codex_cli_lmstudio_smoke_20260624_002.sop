@@ -1,0 +1,44 @@
+Subject: Codex CLI LM Studio Smoke Retry Result
+
+Description: Operational retry after increasing LM Studio context window from 8192 to 131072 tokens.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_cli_lmstudio_context_retry\Dictated_Codex_CLI_LMStudio_Context_Retry_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_smoke_20260624_001.sop
+
+& [CodexCLILMStudioSmokeResult:20260624_002] is a captured Codex CLI local-provider launch retry finding
+  + [host_command] is codex.cmd
+  + [codex_version] is codex-cli 0.135.0
+  + [provider] is lmstudio
+  + [model] is openai/gpt-oss-20b
+  + [workspace] is C:\Project\Pinky
+  + [sandbox] is read-only
+  + [approval_policy] is never
+  + [configured_context_window] is 131072 tokens according to user report
+  + [previous_blocker] is n_keep 9529 greater than or equal to n_ctx 8192
+  + [context_fit_result] is passed because the retry completed without the prior n_ctx overflow
+  + [completion_result] is completed_with_quality_failure
+  + [captured_last_message] is SpecificationGovernance
+  + [requested_last_message] is & [CodexCLILMStudioSmoke] is ready
+  + [tool_discipline_result] is failed because the nested local-provider agent attempted a shell command despite the prompt saying do not run tools
+  + [instruction_fidelity_result] is failed because the final output did not match the requested single SOP line
+  + [sandbox_result] is blocked shell attempt with windows sandbox spawn setup refresh error
+  + [language_primer_result] is missing because the nested worker was not first introduced to SOP marker syntax, attention delineation, outside, evidence, and authority boundaries
+  + [meaning] is the larger context window solved the original launch-size blocker, but nested Codex CLI over LM Studio is not yet ready for real worker jobs until SOP language introduction, no-tool discipline, and exact-output fidelity pass
+  + [outside] is hidden model state, local model repo authority, unsupervised file mutation, and treating context-fit success as worker-quality success
+
+  = must: treat context_fit_result passed as launch-surface progress
+  = must: run a SOP language primer before judging future SOP-framework task performance
+  = must: treat instruction_fidelity_result failed and tool_discipline_result failed as worker-readiness blockers
+  = must: keep future nested Codex CLI LM Studio tests read-only and bounded
+  = should: retry with a stricter no-tools profile, a slimmer prompt, and a scoring rubric for exact output plus no tool calls
+
+(codex_cli_lmstudio_smoke_retry) :host_launch: /context_fit and instruction_fidelity/ |launch_outside|
+  + [host_launch] is codex.cmd exec with --oss --local-provider lmstudio
+  + [context_fit] is passed for the prior n_keep 9529 requirement after user raised context to 131072
+  + [instruction_fidelity] is failed because final answer was SpecificationGovernance instead of the requested SOP line
+  + [tool_discipline] is failed because a shell command was attempted under read-only sandbox
+  + [language_primer] is missing and should precede the next framework-shaped task
+  |launch_outside| hidden model state, unsupervised file mutation, credentials, and broad local-agent competence claims
+
+/ [ContextWindow131072], [CodexCLI], [LMStudioProvider] -(Clears)> [previous_context_blocker], [nested_codex_lmstudio_launch]
+* [no_tool_instruction], [exact_output_request], [nested_agent_behavior] -(Reveals)> [instruction_fidelity_gate], [tool_discipline_gate], [worker_readiness_outside]

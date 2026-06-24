@@ -1,0 +1,64 @@
+Subject: SOP Language Primer For Local Agents
+
+Description: Contract for introducing local LM Studio or Codex CLI local-provider agents to SOP notation before assigning SOP framework work.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_language_intro_for_local_agents\Dictated_SOP_Language_Intro_For_Local_Agents_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\Attention.sop
+
+& [SOPLanguagePrimerForLocalAgents] is the language-introduction gate for local SOP workers
+  + [pattern_role] is introduce_sop_notation_before_framework_assignment
+  + [target_worker] is LM Studio hosted model, Codex CLI local-provider worker, or other local LLM lane
+  + [primer_stage] is language_first, framework_second, task_third
+  + [sop_marker_set] is &, +, =, -, @, ?, / /, : :, | |, and relation arrows
+  + [subject_declaration] is & [SubjectName] is the node or contract being named
+  + [property_line] is + [field] is value or definition
+  + [directive_line] is = must, should, or other operational rule
+  + [constraint_line] is - never or outside-limiting rule
+  + [source_line] is @ [source] pointer to preserved authority
+  + [condition_line] is ? [use_when] activation condition
+  + [attention_delineation] is (attention) :inside: /boundary/ |outside|
+  + [inside_term] is what belongs in focused attention for the current subject
+  + [boundary_term] is the separation rule or identity membrane that keeps inside distinct
+  + [outside_term] is uncertainty, blocked work, residual material, or out-of-scope content
+  + [evidence_gate] is the proof, source, diff, test, benchmark, or citation required before integration
+  + [authority_boundary] is what the worker may claim, read, write, launch, or leave outside
+  + [comprehension_check] is a small no-tools response that restates the marker set, delineation pattern, outside rule, and authority boundary before any framework packet is assigned
+  + [primer_outside] is hidden model state, repo mutation, framework work before comprehension, and treating primer pass as durable authority
+
+  ? [use_when: a local LM Studio or Codex CLI local-provider worker will receive SOP framework material or task packets]
+    = activate [SOPLanguagePrimerForLocalAgents]
+
+  = must: send the SOP language primer before sending a full SOP framework contract
+  = must: keep the primer short enough for a local worker to echo and apply
+  = must: require comprehension_check before assigning SOP framework shape or utility
+  = must: keep the first comprehension_check no-tools and non-mutating
+  = must: ask the worker to distinguish language syntax from task authority
+  = must: ask the worker to preserve outside rather than guessing
+  = must: record whether the worker follows exact output and no-tool discipline during the primer
+  = should: use examples with one subject declaration, one attention delineation, one source line, one directive, one constraint, and one outside clause
+  = should: treat a wrong but adjacent answer as a language-primer failure, not as a framework failure
+  - never: assign framework utility before the worker has passed the language primer
+  - never: treat syntax mimicry as comprehension without content
+  - never: let a local worker claim repo authority from primer exposure
+
+& [PrimerPacketShape] is the minimal packet sent before SOP framework work
+  + [packet_order] is language primer, marker examples, comprehension check, framework excerpt, task packet
+  + [marker_examples] is a compact demonstration of &, +, =, -, @, and attention delineation
+  + [no_tool_rule] is do not call tools, do not inspect files, do not mutate state
+  + [response_schema] is exact fields proving marker comprehension, outside preservation, and authority boundary
+  + [pass_condition] is exact schema filled with non-empty content and no tool attempts
+  + [fail_condition] is tool attempt, empty labels, adjacent substitution, authority overclaim, missing outside, or wrong output shape
+
+  = must: run before LMStudioAgentBenchmark framework-specific cases when the worker has not been primed in-session
+  = should: include one tiny SOP example and one tiny explanation request
+
+(sop_language_primer_for_local_agents) :primer_packet: /comprehension_check and authority_boundary/ |primer_outside|
+  + [primer_packet] is SOP marker set plus examples plus no-tool rule
+  + [comprehension_check] is exact no-tools response proving language grasp
+  + [authority_boundary] is local worker proposes text only until Codex captures and reviews it
+  |primer_outside| hidden model state, repo mutation, framework assignment before primer pass, and proofless worker readiness
+
+/ [LocalWorker], [SOPMarkerSet], [AttentionDelineation] -(Introduces)> [comprehension_check], [primer_outside]
+* [comprehension_check], [authority_boundary], [no_tool_rule] -(Qualifies)> [framework_packet_readiness], [task_packet_readiness], [outside]

@@ -3,56 +3,55 @@ Subject: Current Attention Runtime Registry State
 Description: Live semantic stack-frame registry for the current focus pass.
 
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
-@ [source] C:\Project\Pinky\.sop\platform\ControlledExplosionReadiness.sop
-@ [source] C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
-@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_controlled_explosion_readiness_076.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_sop_language_primer_for_local_agents_078.hg.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is current controlled explosion readiness pass for C:\Project\Pinky\.sop
-  + [active_root_frame] is attention_frame_2026_06_24_controlled_explosion_readiness_001
+  + [registry_scope] is current SOP language primer gate for local LM Studio and Codex CLI local-provider workers
+  + [active_root_frame] is attention_frame_2026_06_24_sop_language_primer_for_local_agents_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [registry_outside] is hidden activations, exact transformer attention, model weights, uncontrolled inflation, proofless heat, metaphor confusion, and unrelated Pinky worktree changes
+  + [registry_outside] is hidden activations, exact transformer attention, model weights, unprimed framework assignment, syntax mimicry without content, unsupervised worker action, and unrelated Pinky worktree changes
 
   = must: update this state when focus materially changes
-  = must: open child frames for source preservation, chamber setup, governor check, expansion stroke, exhaust, cooling, or commit receipt
+  = must: open child frames for marker introduction, attention delineation, outside rule, authority boundary, comprehension check, or commit receipt
   = must: preserve return anchors before closing or suspending frames
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_ControlledExplosionReadiness001] is the active semantic stack frame for controlled SOP expansion readiness
-  + [frame_id] is attention_frame_2026_06_24_controlled_explosion_readiness_001
+& [AttentionFrame_2026_06_24_SOPLanguagePrimerForLocalAgents001] is the active semantic stack frame for local-worker SOP language introduction
+  + [frame_id] is attention_frame_2026_06_24_sop_language_primer_for_local_agents_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is source_preservation, chamber_check, governor_check, piston_check, exhaust_check, cooling_check, crankshaft_receipt
+  + [child_frame_set] is marker_set, attention_delineation, outside_rule, authority_boundary, comprehension_check, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is ControlledExplosionReadiness.sop, CurrentFocalPoint.sop, Attention.sop, Manager_State.sop, and controlled_explosion_readiness_076.hg.sop
-  + [focus_register] is structured readiness for harnessed atomic-thought SOP expansion
-  + [question_register] is how to let SOP explode with power while keeping source, chamber, governor, piston, exhaust, cooling, and crankshaft receipt visible
-  + [delineation_register] is inside atomic_thought, fuel, combustion_chamber, compression, spark, controlled_explosion, power_stroke, piston, crankshaft, governor, cooling, exhaust, and outside
-  + [periphery_register] is near LM Studio benchmark governor tuning, mid task-manager worker slicing, shadow uncontrolled inflation, and horizon repeatable expansion strokes
-  + [operation_register] is preserve_source, define_readiness, wire_attention_root, update_registry, and commit_receipt
-  + [evidence_register] is preserved source, canonical readiness contract, periphery realization, current focal point, manager state, and commit receipt
-  + [wisdom_register] is SOP's power comes from controlled expansion, not suppressed association or runaway inflation
-  + [caution_register] is heat of insight is not proof; every expansion stroke needs governor, output coupling, exhaust, cooling, and evidence receipts
-  + [balance_register] is stable because the pattern names both power and restraint and forces expansion to drive useful output
+  + [frame_trace] is SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, SOPTaskManager.sop, codex_cli_lmstudio_smoke_20260624_002.sop, sop_language_primer_for_local_agents_078.hg.sop, and CurrentFocalPoint.sop
+  + [focus_register] is introduce SOP language before local-worker framework assignment
+  + [question_register] is how to teach marker syntax, attention delineation, outside, evidence, and authority boundaries before asking a local worker to follow SOP framework contracts
+  + [delineation_register] is inside marker set, subject declaration, property line, directive line, constraint line, source line, attention delineation, outside, evidence gate, authority boundary, comprehension check, and outside
+  + [periphery_register] is near SpecificationGovernance substitution, mid no-tool exact-output prompt, shadow syntax mimicry, and horizon primed worker benchmark
+  + [operation_register] is preserve_source, define_primer, wire_attention_root, update_benchmark_gate, update_task_manager_gate, and commit_receipt
+  + [evidence_register] is user primer directive source, canonical primer contract, event 078, retry event 002, and commit receipt
+  + [wisdom_register] is the local worker should learn the language before being asked to operate the framework
+  + [caution_register] is primer pass is not task competence or repo authority; it only opens framework-packet readiness
+  + [balance_register] is stable because the primer separates language comprehension from framework obedience and task execution
   + [integration_register] is pending final validation and commit receipt
-  + [frame_outside] is uncontrolled inflation, unsupported certainty, hidden model state, native activation claims, metaphor confusion, uncoupled heat, and unrelated Pinky worktree changes
+  + [frame_outside] is hidden model state, unprimed framework assignment, unsupervised worker authority, file mutation, syntax mimicry without content, and unrelated Pinky worktree changes
 
   = must: treat this frame as current visible attention state
-  = must: return readiness state, caution_debt, wisdom_yield, output duty, exhaust, and outside to CurrentFocalPoint when this focus pass closes
-  = should: open child frames only when a concrete chamber, governor, expansion, cooling, or receipt pass is needed
+  = must: return primer readiness, comprehension_check, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
+  = should: open child frames only when a concrete primer, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_controlled_explosion_readiness_001
+  + [active_root_frame] is attention_frame_2026_06_24_sop_language_primer_for_local_agents_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
-  |registry_outside| hidden model state, executable runtime stack, uncontrolled inflation, metaphor confusion, unrelated dirty files, and untracked cognition
+  |registry_outside| hidden model state, executable runtime stack, unprimed framework assignment, syntax mimicry without content, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ControlledExplosionReadiness] -(EntersFrame)> [AttentionFrame_2026_06_24_ControlledExplosionReadiness001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [controlled_explosion_readiness], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SOPLanguagePrimerForLocalAgents] -(EntersFrame)> [AttentionFrame_2026_06_24_SOPLanguagePrimerForLocalAgents001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [sop_language_primer_for_local_agents], [balance_register], [integration_register], [outside]
