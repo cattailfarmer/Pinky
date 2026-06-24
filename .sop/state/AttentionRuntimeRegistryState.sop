@@ -5,17 +5,19 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_001.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is functional scratch-isolated LM Studio SOP worker lane
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_functional_lane_001
+  + [registry_scope] is semantic cognition operating loop over functional LM Studio worker lane
+  + [active_root_frame] is attention_frame_2026_06_24_semantic_cognition_operating_loop_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
@@ -27,34 +29,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_LMStudioWorkerFunctionalLane001] is the active semantic stack frame for functional LM Studio worker lane
-  + [frame_id] is attention_frame_2026_06_24_lmstudio_worker_functional_lane_001
+& [AttentionFrame_2026_06_24_SemanticCognitionOperatingLoop001] is the active semantic stack frame for the semantic cognition operating loop
+  + [frame_id] is attention_frame_2026_06_24_semantic_cognition_operating_loop_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is worker_boot_packet, strict_isolated_run_failed, functional_prompt_007, functional_isolated_run_passed, validator, task_frame_integration_next, commit_receipt
+  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_001, task_frame_launch_queue_next, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is LMStudioWorkerFunctionalLane.sop, LMStudioAgentBenchmark.sop, SOPWorkerBootPacket.sop, lm_studio_worker_functional_lane_report_20260624_007.sop, and runtime\sop_node\lm_studio_agent_benchmark.py
-  + [focus_register] is scratch-isolated Codex-over-LM-Studio worker functional readiness
-  + [question_register] is how to integrate the validated local worker lane into task frames and spool records
-  + [delineation_register] is inside scratch prompt-only launch, boot packet, validator, captured output, accepted proposal text, and outside project-root authority
-  + [periphery_register] is failed strict isolated missing terms, successful literal-term latch, project-root leakage, validator as gate, and next task-frame integration
-  + [operation_register] is define_functional_lane, implement_validator, implement_runner, test_runtime, run_functional_prompt_007, validate_output, record_report
-  + [evidence_register] is 27 passing runtime tests, functional prompt 007 worker output, validation score 100, and functional lane report 007
-  + [wisdom_register] is isolate local model cognition from repo rails, then let Codex carry repo awareness and validation
-  + [caution_register] is functional lane is not project-root authority, repo mutation, hidden state access, or broad competence proof
-  + [balance_register] is stable because worker output is non-mutating, captured, exact-schema validated, and rejected unless it passes
-  + [integration_register] is pending commit, push, and later task-frame/spool integration
+  + [frame_trace] is SemanticCognitionOperatingLoop.sop, task_manager_loop.py, 2026-06-24_operating_loop_tick_001.sop, LMStudioWorkerFunctionalLane.sop, and CurrentFocalPoint.sop
+  + [focus_register] is commit-report-review-step-in-again routine
+  + [question_register] is how to prevent completed work from falsely ending the task-manager process while preserving safety boundaries
+  + [delineation_register] is inside clock tick, proof state, balance state, drive state, next step, and outside stop or block conditions
+  + [periphery_register] is one-minute heartbeat, terminal-completion heuristic, running clock, task-frame launch queue, and unrelated dirty files outside
+  + [operation_register] is create_operating_loop_contract, implement_tick_runtime, create_heartbeat, emit_tick_001, update_reentry_state
+  + [evidence_register] is automation sop-loop-reentry, operating_loop_tick_001, runtime tests, and source-preserved directive
+  + [wisdom_register] is a task manager must turn proof into a next-step selection, not into a false terminal state
+  + [caution_register] is the loop must stop or block for explicit user stop, credentials, destructive actions, unclear authority, or unsafe PC control
+  + [balance_register] is stable because tick_001 has proof_state validated, clock_state running, drive_state continue, and outside preserved
+  + [integration_register] is pending commit, push, and next task-frame launch queue
   + [frame_outside] is hidden model state, broad local-worker readiness, worker file mutation, remote claims before push, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
-  = must: return functional_lane_result, validator_result, host_context_interference, and next task-frame integration gate to CurrentFocalPoint when this focus pass closes
+  = must: return clock_state, proof_state, balance_state, drive_state, next_step, and outside to CurrentFocalPoint when this focus pass closes
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_functional_lane_001
+  + [active_root_frame] is attention_frame_2026_06_24_semantic_cognition_operating_loop_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [LMStudioWorkerFunctionalLane] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioWorkerFunctionalLane001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [functional_lmstudio_worker_lane], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SemanticCognitionOperatingLoop] -(EntersFrame)> [AttentionFrame_2026_06_24_SemanticCognitionOperatingLoop001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [operating_loop_tick], [balance_register], [integration_register], [outside]

@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_001] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_001
+  + [focus_subject] is semantic cognition operating loop
+  + [completed_step] is recognized one-step stop as terminal-completion heuristic and created one-minute SOP loop heartbeat
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is generalize task-frame launch queue around LMStudioWorkerFunctionalLane
+  + [created_utc] is 2026-06-24T19:36:53Z
+  + [evidence_refs] is automation:sop-loop-reentry, .sop/platform/SemanticCognitionOperatingLoop.sop
+  + [outside] is project-root LM Studio authority remains outside, unrelated dirty files remain outside
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat commit, proof, or report as evidence that the clock stopped
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_001
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is generalize task-frame launch queue around LMStudioWorkerFunctionalLane
+  |outside| project-root LM Studio authority remains outside, unrelated dirty files remain outside

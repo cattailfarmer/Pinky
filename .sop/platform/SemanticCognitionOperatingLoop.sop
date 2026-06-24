@@ -1,0 +1,47 @@
+Subject: Semantic Cognition Operating Loop
+
+Description: Contract for running Pinky .sop as a semantic cognition operating layer with visible loop ticks, balance, proof, and next-step selection.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_manager_operating_loop\Dictated_Task_Manager_Operating_Loop_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+@ [source] C:\Project\Pinky\.sop\platform\StepBalanceWalk.sop
+
+& [SemanticCognitionOperatingLoop] is the clocked task-manager loop for the SOP cognition OS
+  + [pattern_role] is semantic_cognition_os_task_manager_loop
+  + [task_manager] is Codex acting as task manager, validator, repo authority, and power-user shell
+  + [clock_tick] is one completed or blocked process step that records evidence, balance, outside, and next visible runnable step
+  + [terminal_completion_heuristic] is the old habit of treating commit, proof, or report as a turn-ending terminal state
+  + [continuation_heuristic] is the new habit of treating commit, proof, or report as a loop tick that asks what safe process should run next
+  + [clock_state] is running, waiting, blocked, paused, or stopped
+  + [drive_state] is continue, retry, validate, integrate, defer, or stop
+  + [balance_state] is stable, watch, wobbling, or blocked
+  + [proof_state] is none, captured, validated, committed, pushed, or blocked
+  + [next_step] is the smallest safe runnable step visible after the current tick
+  + [outside] is unsafe action, unclear authority, explicit user stop, credentials, hidden model state, destructive operation, and unrelated dirty files
+
+  ? [use_when: a completed step, commit, worker result, validation, or blocked result should select the next task-manager action]
+    = activate [SemanticCognitionOperatingLoop]
+
+  = must: record clock_tick after meaningful completed, failed, blocked, committed, pushed, or validated work
+  = must: name proof_state before deciding next_step
+  = must: name balance_state before continuing
+  = must: set clock_state to running when there is a safe next_step and no user stop
+  = must: set clock_state to blocked when the next step requires unavailable provider, missing authority, credentials, destructive action, or user choice
+  = must: set clock_state to stopped when the user explicitly says stop or the objective is genuinely complete
+  = must: keep Codex as the authority layer for repo mutation and integration
+  = must: keep LM Studio workers in scratch-isolated proposal mode unless project-root leakage is solved
+  = should: prefer one small next_step over broad renewed explosion when the system is already moving
+  - never: treat "commit complete" as proof that the clock stopped
+  - never: continue into unsafe, destructive, credential, or unclear-authority actions without explicit approval
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is completed step plus evidence plus result disposition
+  + [proof_state] is captured, validated, committed, pushed, or blocked
+  + [balance_state] is stable, watch, wobbling, or blocked
+  + [next_step] is selected while clock_state is running
+  |outside| user stop, unsafe action, missing authority, hidden state, credentials, and unrelated dirty files
+
+/ [completed_step], [proof_state], [balance_state] -(Ticks)> [clock_state], [drive_state], [next_step], [outside]
+* [next_step], [SOPTaskManager], [LMStudioWorkerFunctionalLane] -(Schedules)> [task_frame], [worker_packet], [result_capture]

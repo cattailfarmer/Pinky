@@ -1,0 +1,16 @@
+Subject: Task Manager Operating Loop Source Manifest
+
+Description: Manifest for preserved source feeding the semantic cognition operating loop.
+
+& [TaskManagerOperatingLoopSourceManifest] is the source-preservation manifest
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_manager_operating_loop
+  + [raw_source] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_manager_operating_loop\Dictated_Task_Manager_Operating_Loop_Source.sop
+  + [contract_target] is C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
+  + [runtime_target] is C:\Project\Pinky\.sop\runtime\sop_node\task_manager_loop.py
+  + [demo_target] is C:\Project\Pinky\.sop\runtime\demos\task_manager_loop.py
+  + [test_target] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [source_boundary] is task-manager loop continuity under Codex authority
+  + [source_outside] is unsupervised PC control, hidden model state, destructive actions, credentials, and continuing after explicit user stop
+
+  = must: keep raw_source unchanged after processing
+  = must: cite raw_source from SemanticCognitionOperatingLoop

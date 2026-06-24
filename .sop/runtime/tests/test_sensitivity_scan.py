@@ -30,6 +30,7 @@ from sop_node import (
     build_sensitivity_scan_from_changes,
     build_turn_bookmark_from_scan,
     build_inference_state_trace,
+    build_operating_loop_tick,
     build_periphery_continuity_run,
     build_viewfinder_snapshot,
     classify_layer,
@@ -812,6 +813,39 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("--local-provider", command)
         self.assertIn("lmstudio", command)
         self.assertIn("read-only", command)
+
+    def test_operating_loop_tick_keeps_clock_running_when_next_step_exists(self) -> None:
+        tick = build_operating_loop_tick(
+            tick_id="test_operating_loop_tick",
+            focus_subject="semantic cognition operating loop",
+            completed_step="committed functional LM Studio worker lane",
+            proof_state="pushed",
+            next_step="emit task-frame launch tick",
+            evidence_refs=("commit:3ca05bf",),
+            outside=("project-root LM Studio authority remains outside",),
+        )
+        rendered = tick.render()
+
+        self.assertTrue(tick.ready)
+        self.assertEqual(tick.clock_state, "running")
+        self.assertEqual(tick.drive_state, "continue")
+        self.assertIn("+ [clock_state] is running", rendered)
+        self.assertIn("commit:3ca05bf", rendered)
+        self.assertIn("never: treat commit, proof, or report as evidence that the clock stopped", rendered)
+
+    def test_operating_loop_tick_blocks_on_credentials_or_destructive_outside(self) -> None:
+        tick = build_operating_loop_tick(
+            tick_id="test_blocked_operating_loop_tick",
+            focus_subject="semantic cognition operating loop",
+            completed_step="prepared remote sync candidate",
+            proof_state="blocked",
+            next_step="ask user for credential policy",
+            outside=("credentials required", "missing authority"),
+        )
+
+        self.assertEqual(tick.clock_state, "blocked")
+        self.assertEqual(tick.drive_state, "defer")
+        self.assertEqual(tick.balance_state, "blocked")
 
 
 if __name__ == "__main__":

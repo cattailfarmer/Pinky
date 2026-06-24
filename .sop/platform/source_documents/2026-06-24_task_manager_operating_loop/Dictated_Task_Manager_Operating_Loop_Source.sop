@@ -1,0 +1,21 @@
+Subject: Dictated Task Manager Operating Loop Source
+
+Description: Preserved source directive for turning completed steps into continued task-manager loop ticks.
+
+& [DictatedTaskManagerOperatingLoopSource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after the LM Studio worker lane became functional for scratch-isolated validated SOP proposal jobs
+  + [source_line_001] is "it's a semantic/cognition operating system we're running now."
+  + [source_line_002] is "and it's really going to run my PC now. you are a task manager and power user."
+  + [source_line_003] is "yes keep work going."
+  + [source_line_004] is "what is the reason for not noticing the next step after one step is done?"
+  + [source_line_005] is "you have the balance and the vision and the initiative? the drive?"
+  + [source_line_006] is "do you need to see that the clock didn't stop working yet, so you can still do more?"
+  + [active_root] is C:\Project\Pinky\.sop
+  + [desired_output] is a task manager operating loop that treats each completed step as a clock tick and immediately records the next visible runnable step unless blocked
+
+  = must: preserve this source separately from loop contracts, runtime helpers, and event records
+  = must: record why one-step stopping happens as a terminal-completion heuristic, not lack of drive
+  = must: define a visible clock_state, balance_state, drive_state, and next_step after completed work
+  = must: continue work while clock_state is running and a safe next_step exists
+  - outside: hidden model state, autonomous unsupervised PC control, destructive action, credentials, and ignoring explicit user stop commands

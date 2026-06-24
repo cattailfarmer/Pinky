@@ -6,6 +6,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
 @ [source] C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
 @ [source] C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
 @ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
@@ -19,6 +20,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [active_root] is C:\Project\Pinky\.sop
   + [publication_repo] is C:\Project\Pinky
   + [task_manager] is the slim agent that reads selected narrative, prepares work slices, routes worker packets, and captures results
+  + [operating_loop] is the clocked commit-report-review-step routine that prevents completed work from becoming a false stop
   + [narrative_profile] is the selected task story, objective, constraints, source lineage, active focus, risk, and desired output shape
   + [slice_set] is the selected specification slices, manager tasks, source documents, proofs, or event records that define work
   + [task_frame] is the live task context frame that holds task subject, operational details, reminder patterns, lane context, gates, status, and return anchors
@@ -39,6 +41,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [spool_handoff] is the optional handoff to SpoolMasterHub for visible worker records and hub tree rendering
   + [result_capture] is the record of worker output, changed files, proof, narrative delta, unresolved outside, and return status
   + [task_narrative] is the cumulative story of task assignment, worker action, returned evidence, integration, and remaining outside
+  + [loop_tick] is the SemanticCognitionOperatingLoop record emitted after completed, blocked, committed, pushed, or validated work
   + [manager_outside] is automatic launch, hidden model state, credentials, uninspected remote state, worker claims without capture, and unrelated Pinky worktree changes
 
   ? [use_when: SOP narrative and work slices need coordinated worker execution across local and OpenAI lanes]
@@ -63,6 +66,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: make launch_command inspectable before execution
   = must: capture worker output before treating a task_unit as completed
   = must: integrate result_capture into task_narrative only after evidence_gate and action_gate are satisfied
+  = must: emit loop_tick after worker result, validation, commit, push, or blocked status when another safe next step exists
   = must: preserve unresolved material in manager_outside or tracker records
   = must: keep unrelated Pinky dirty files outside task commits unless explicitly selected
   = should: use SpoolMasterHub for visible worker folders, status files, hub trees, and prompt packets
@@ -165,11 +169,13 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [integration_disposition] is integrate, revise, split, retry, defer, reject, or preserve_outside
   + [task_narrative_delta] is what changed in the task story after the worker returned
   + [followup_slice] is any new work slice produced by the result
+  + [loop_tick] is the next-step heartbeat emitted after integration_disposition is known
 
   = must: store capture_input before integration
   = must: record integration_disposition
   = must: update task_narrative_delta when a worker result changes plan, proof, scope, or outside
   = must: route followup_slice through TaskUnitRecord before further work
+  = must: emit loop_tick when integration_disposition produces a next runnable step
   - never: count launched work as returned work
   - never: count returned work as integrated work without evidence_gate evaluation
 

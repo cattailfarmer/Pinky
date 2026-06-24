@@ -120,6 +120,11 @@ from .lm_studio_agent_benchmark import (
     validate_sop_worker_output,
     write_benchmark_report,
 )
+from .task_manager_loop import (
+    OperatingLoopTick,
+    build_operating_loop_tick,
+    write_operating_loop_tick,
+)
 
 __all__ = [
     "AttentionFrame",
@@ -147,6 +152,7 @@ __all__ = [
     "PeripheryContinuityLink",
     "PeripheryContinuityRun",
     "PeripheryRunFrame",
+    "OperatingLoopTick",
     "ReflectionConsumption",
     "SemanticComponent",
     "SemanticHashIndex",
@@ -173,6 +179,7 @@ __all__ = [
     "build_attention_frame",
     "build_attention_kernel_packet",
     "build_codex_lmstudio_command",
+    "build_operating_loop_tick",
     "build_periphery_continuity_run",
     "build_step_balance_walk",
     "build_semantic_component",
@@ -210,4 +217,5 @@ __all__ = [
     "list_lm_studio_models",
     "write_scan",
     "write_benchmark_report",
+    "write_operating_loop_tick",
 ]
