@@ -122,7 +122,14 @@ def _infer_clock_state(*, next_step: str, proof_state: str, outside: tuple[str, 
     lower_outside = " ".join(outside).lower()
     if any(term in lower_outside for term in ("explicit user stop", "user stop", "stopped")):
         return "stopped"
-    if proof_state == "blocked" or any(term in lower_outside for term in ("credential", "destructive", "missing authority")):
+    blocking_phrases = (
+        "credential required",
+        "credentials required",
+        "missing authority",
+        "destructive action required",
+        "destructive action requested",
+    )
+    if proof_state == "blocked" or any(term in lower_outside for term in blocking_phrases):
         return "blocked"
     if next_step:
         return "running"

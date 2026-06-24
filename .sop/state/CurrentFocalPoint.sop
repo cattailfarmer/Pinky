@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is aperture reentry runtime selection
+  + [focus_subject] is topology map runtime selection
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is Task_043 is now integrated as a Codex-owned trailing checksum runtime, so the next movement should build the aperture reentry runtime from remaining ready tasks
-  + [inside] is 2026-06-24_operating_loop_tick_020.sop, 2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop, trailing_checksum.py, Manager_State.sop, AttentionRuntimeRegistryState.sop, and remaining ReadyTaskSet
+  + [right_hemisphere_draw] is Task_045 is now integrated as a Codex-owned aperture reentry runtime, so the next movement should build the topology map runtime from remaining ready tasks
+  + [inside] is 2026-06-24_operating_loop_tick_021.sop, 2026-06-24_task_045_aperture_reentry_runtime_001.sop, aperture_reentry.py, Manager_State.sop, AttentionRuntimeRegistryState.sop, and remaining ReadyTaskSet
   + [boundary] is continue only when clock_state is running and the next task remains inside .sop authority, Codex-owned mutation, source-cited, evidence-gated, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, direct trust, or unrelated dirty files
   + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_020.sop
-  + [open_question] is how to build Task_045 aperture reentry runtime under Codex authority without worker mutation, branch creation, or remote action
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_021.sop
+  + [open_question] is how to build Task_048 topology map runtime under Codex authority without worker mutation, branch creation, or remote action
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -28,6 +28,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat minimal_scaffold_compile_runtime as the completed Task_035 anchor
   = must: treat branch_refinement_artifact_runtime as the completed Task_039 anchor
   = must: treat trailing_checksum_runtime as the completed Task_043 anchor
+  = must: treat aperture_reentry_runtime as the completed Task_045 anchor
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration
   = must: emit or update an operating-loop tick after meaningful completed work so the next step stays visible

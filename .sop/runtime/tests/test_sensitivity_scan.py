@@ -19,6 +19,7 @@ from sop_node import (
     SupportProbe,
     build_attention_frame,
     build_attention_kernel_packet,
+    build_aperture_reentry_springboard,
     build_branch_refinement_artifact,
     build_compiled_attention_packet,
     build_step_balance_walk,
@@ -44,6 +45,7 @@ from sop_node import (
     parse_branch_refinement_finding,
     parse_periphery_terms,
     parse_edge_participants,
+    parse_aperture_support,
     parse_directive,
     parse_faculty_field,
     parse_periphery_run_frame,
@@ -817,6 +819,58 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("E:trails:", graph_rendered)
         self.assertIn("E:checksums:test_trailing_checksum_review", graph_rendered)
 
+    def test_aperture_reentry_springboard_reads_focal_point_and_supports(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            state = root / ".sop" / "state"
+            state.mkdir(parents=True)
+            focal_point = state / "CurrentFocalPoint.sop"
+            focal_point.write_text(
+                "\n".join(
+                    (
+                        "Subject: Current Focal Point",
+                        "",
+                        "& [CurrentFocalPoint] is active focus",
+                        "  + [focus_subject] is aperture reentry runtime selection",
+                        "  + [focus_mode] is mixed_focus",
+                        "  + [inside] is focal point, support draw, and close pass",
+                        "  + [boundary] is close before durable narrative or subject declarations",
+                        "  + [outside] is hidden state, worker mutation, and unbounded periphery",
+                        "  + [active_reflection] is tick_020",
+                        "  + [open_question] is how to emit a springboard",
+                    )
+                ),
+                encoding="utf-8",
+            )
+            supports = (
+                parse_aperture_support(
+                    "tick_020|operating loop tick 020|events/operating_loop/tick_020.sop|task_handoff|6|what next focus should survive reentry"
+                ),
+                parse_aperture_support(
+                    "aperture_cycle|ApertureReentryCycle contract|platform/ApertureReentryCycle.sop|open_close_sequence|9|which cycle steps must be preserved"
+                ),
+            )
+
+            springboard = build_aperture_reentry_springboard(
+                focal_point_path=focal_point,
+                supports=supports,
+                cycle_id="test_aperture_reentry_springboard",
+            )
+            rendered = springboard.render()
+            graph = springboard.to_hypergraph()
+            graph_rendered = graph.render()
+
+        self.assertTrue(springboard.ready)
+        self.assertTrue(graph.ready)
+        self.assertEqual(springboard.depth_adjustment, "wide")
+        self.assertIn("+ [focal_subject] is aperture reentry runtime selection", rendered)
+        self.assertIn("+ [close_pass] is compact reentry_springboard", rendered)
+        self.assertIn("second_pass_narrative_prompt_001", rendered)
+        self.assertIn("subject_declaration_prompt_001", rendered)
+        self.assertIn("E:opens:test_aperture_reentry_springboard", graph_rendered)
+        self.assertIn("E:closes:test_aperture_reentry_springboard", graph_rendered)
+        self.assertIn("E:springboards:test_aperture_reentry_springboard", graph_rendered)
+
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")
         output = "\n".join(
@@ -1112,6 +1166,20 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertEqual(tick.clock_state, "blocked")
         self.assertEqual(tick.drive_state, "defer")
         self.assertEqual(tick.balance_state, "blocked")
+
+    def test_operating_loop_tick_keeps_excluded_risks_outside_without_blocking(self) -> None:
+        tick = build_operating_loop_tick(
+            tick_id="test_running_boundary_tick",
+            focus_subject="semantic cognition operating loop",
+            completed_step="completed bounded local runtime",
+            proof_state="validated",
+            next_step="build next local runtime",
+            outside=("credentials remain outside", "destructive action remains outside"),
+        )
+
+        self.assertEqual(tick.clock_state, "running")
+        self.assertEqual(tick.drive_state, "continue")
+        self.assertEqual(tick.balance_state, "stable")
 
 
 if __name__ == "__main__":

@@ -10,6 +10,10 @@ Description: Contract for opening attention toward periphery, surveying supports
 @ [source] F:\.sop\platform\AttentionBalanceCenter.sop
 @ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
 @ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_aperture_reentry_runtime\Derived_Aperture_Reentry_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\aperture_reentry.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\aperture_reentry.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_045_aperture_reentry_runtime_001.sop
 
 & [ApertureReentryCycle] is the attention pattern for opening and closing focus around periphery-guided inference
   + [pattern_role] is open_close_inference_depth_control
@@ -23,6 +27,8 @@ Description: Contract for opening attention toward periphery, surveying supports
   + [deepening_pass] is inference over the focal subject and its relations through traversal, fold, unwind, dimensional probe, wisdom, and caution
   + [close_pass] is narrowing the aperture after deepening so the result becomes a compact re-entry shape rather than periphery flood
   + [reentry_springboard] is the compact packet of new perspective, selected relations, anchors, unresolved outside, and next inquiry points produced by close_pass
+  + [aperture_reentry_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\aperture_reentry.py for reading CurrentFocalPoint plus support_draw records and emitting a bounded reentry_springboard
+  + [aperture_reentry_demo] is C:\Project\Pinky\.sop\runtime\demos\aperture_reentry.py for command-line compact or SOP-HG springboard emission
   + [new_perspective] is the altered angle of attention gained by opening, surveying, and deepening
   + [new_attention_element] is a subject, relation, anchor, tracker, outside boundary, or narrative term added by the cycle
   + [second_pass_narrative] is the follow-up narrative pass that tells what changed in understanding after re-entry

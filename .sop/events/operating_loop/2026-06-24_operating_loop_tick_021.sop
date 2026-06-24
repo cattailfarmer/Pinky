@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_021] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_021
+  + [focus_subject] is aperture reentry runtime
+  + [completed_step] is built and tested Task_045 as a Codex-owned runtime command that reads CurrentFocalPoint plus support_draw records and emits a bounded reentry_springboard with second-pass narrative and subject-declaration prompts
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is build Task_048 topology map runtime under Codex authority, preserving worker mutation, branch creation, and remote action outside
+  + [created_utc] is 2026-06-24T21:52:52Z
+  + [evidence_refs] is .sop\runtime\sop_node\aperture_reentry.py, .sop\runtime\demos\aperture_reentry.py, .sop\runtime\tests\test_sensitivity_scan.py, .sop\events\periphery_stream\2026-06-24_task_045_aperture_reentry_runtime_001.sop, .sop\events\periphery_stream\2026-06-24_task_045_aperture_reentry_runtime_001.hg.sop, .sop\platform\source_documents\2026-06-24_aperture_reentry_runtime\Derived_Aperture_Reentry_Runtime_Source.sop
+  + [outside] is hidden model state, worker mutation authority, automatic branch creation, remote synchronization, credentials remain outside, destructive action remains outside, unrelated dirty files
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat commit, proof, or report as evidence that the clock stopped
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_021
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is build Task_048 topology map runtime under Codex authority, preserving worker mutation, branch creation, and remote action outside
+  |outside| hidden model state, worker mutation authority, automatic branch creation, remote synchronization, credentials remain outside, destructive action remains outside, unrelated dirty files

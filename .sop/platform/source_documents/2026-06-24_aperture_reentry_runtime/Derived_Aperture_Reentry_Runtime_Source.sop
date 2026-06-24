@@ -1,0 +1,18 @@
+Subject: Derived Aperture Reentry Runtime Source
+
+Description: Derived source record for Task_045, preserving the implementation intent before treating the runtime as integration authority.
+
+& [DerivedApertureReentryRuntimeSource] is the preserved derived source for the aperture reentry runtime
+  + [source_kind] is derived_task_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is C:\Project\Pinky\.sop
+  + [source_basis] is Task_045_build_aperture_reentry_runtime, ApertureReentryCycle.sop, FocusZoom.sop, AttentionTraversalPolicy.sop, CurrentFocalPoint.sop, and operating_loop_tick_020
+  + [implementation_intent] is build a local command that reads a focal point and selected support draws, chooses an aperture depth, surveys support relations, closes the aperture, and emits a compact reentry_springboard with second-pass narrative prompts and subject-declaration prompts
+  + [authority_boundary] is Codex owns durable integration, file mutation, validation, commit, and push; generated springboards are re-entry packets, not completed narrative or subject declarations
+  + [outside] is hidden model state, unsupported causation, unbounded periphery, worker mutation authority, durable subject declarations before close pass, and unrelated dirty files
+
+  = must: preserve this derived source separately from runtime code and generated springboard artifacts
+  = must: keep support_draw required before open_pass
+  = must: keep close_pass required before durable second_pass_narrative or subject_declaration_pass
+  = must: emit focal_subject, depth_adjustment, support_draw_count, relation_survey, approach_set, supported_core, prompts, and outside
+  - never: treat a reentry_springboard prompt as already-integrated understanding

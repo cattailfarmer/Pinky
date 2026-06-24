@@ -1,0 +1,59 @@
+Subject: Aperture Reentry Springboard
+
+& [ApertureReentrySpringboard:2026_06_24_task_045_aperture_reentry_runtime_001] is a reentry_springboard
+  + [cycle_id] is 2026-06-24_task_045_aperture_reentry_runtime_001
+  + [focal_source] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [focal_subject] is aperture reentry runtime selection
+  + [focus_mode] is mixed_focus
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_020.sop
+  + [depth_adjustment] is wide
+  + [support_draw_count] is 4
+  + [relation_survey] is task_handoff, open_close_sequence, delayed_review_to_support_draw, controlled_aperture_expansion
+  + [approach_set] is open_close_sequence, delayed_review_to_support_draw, task_handoff, controlled_aperture_expansion
+  + [open_pass] is support_draw admitted by focal boundary and depth_adjustment
+  + [deepening_pass] is fold selected supports, then unwind to supported_core, uncertainty, and outside
+  + [close_pass] is close widened attention into this compact springboard before narrative or subject declarations
+  + [supported_core] is aperture reentry runtime selection can open through 4 support_draw signals, survey task_handoff, open_close_sequence, delayed_review_to_support_draw, controlled_aperture_expansion, then close into a compact springboard before durable narrative or subject declarations
+  + [new_perspective] is aperture reentry runtime selection should treat ApertureReentryCycle contract as a draw input under wide aperture, while preserving springboard prompts as downstream work rather than completed integration
+  + [balance_state] is stable
+  + [outside] is hidden model state, worker mutation authority, unbounded periphery, durable subject declarations before close pass, unrelated dirty files
+
+& [SupportDrawSet] is selected periphery admitted into the aperture
+  + [support_001_focal_tick] is operating loop tick 020
+    = source_ref: .sop/events/operating_loop/2026-06-24_operating_loop_tick_020.sop
+    = relation: task_handoff
+    = heat: 6
+    = prompt_hint: what next focus should survive reentry
+  + [support_002_aperture_contract] is ApertureReentryCycle contract
+    = source_ref: .sop/platform/ApertureReentryCycle.sop
+    = relation: open_close_sequence
+    = heat: 9
+    = prompt_hint: which cycle steps must be preserved
+  + [support_003_trailing_checksum] is trailing checksum review
+    = source_ref: .sop/events/bookmarks/2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop
+    = relation: delayed_review_to_support_draw
+    = heat: 8
+    = prompt_hint: what delayed checksum heat changes about the next focus
+  + [support_004_focus_zoom] is FocusZoom contract
+    = source_ref: .sop/platform/FocusZoom.sop
+    = relation: controlled_aperture_expansion
+    = heat: 5
+    = prompt_hint: which periphery signals justify aperture widening
+
+& [SecondPassNarrativePromptSet] is downstream narrative work after close_pass
+  + [second_pass_narrative_prompt_001] is Re-narrate aperture reentry runtime selection through operating loop tick 020; answer what next focus should survive reentry; preserve outside and first-pass source.
+  + [second_pass_narrative_prompt_002] is Re-narrate aperture reentry runtime selection through ApertureReentryCycle contract; answer which cycle steps must be preserved; preserve outside and first-pass source.
+  + [second_pass_narrative_prompt_003] is Re-narrate aperture reentry runtime selection through trailing checksum review; answer what delayed checksum heat changes about the next focus; preserve outside and first-pass source.
+  + [second_pass_narrative_prompt_004] is Re-narrate aperture reentry runtime selection through FocusZoom contract; answer which periphery signals justify aperture widening; preserve outside and first-pass source.
+
+& [SubjectDeclarationPromptSet] is downstream subject work after second-pass narrative
+  + [subject_declaration_prompt_001] is Declare or update the subject relation between aperture reentry runtime selection and operating loop tick 020; cite .sop/events/operating_loop/2026-06-24_operating_loop_tick_020.sop; name boundary and outside.
+  + [subject_declaration_prompt_002] is Declare or update the subject relation between aperture reentry runtime selection and ApertureReentryCycle contract; cite .sop/platform/ApertureReentryCycle.sop; name boundary and outside.
+  + [subject_declaration_prompt_003] is Declare or update the subject relation between aperture reentry runtime selection and trailing checksum review; cite .sop/events/bookmarks/2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop; name boundary and outside.
+  + [subject_declaration_prompt_004] is Declare or update the subject relation between aperture reentry runtime selection and FocusZoom contract; cite .sop/platform/FocusZoom.sop; name boundary and outside.
+
+(aperture_reentry_springboard) :focal_subject: /support_draw and close_pass/ |outside|
+  + [focal_subject] is aperture reentry runtime selection
+  + [support_draw] is operating loop tick 020, ApertureReentryCycle contract, trailing checksum review, FocusZoom contract
+  + [close_pass] is compact reentry_springboard
+  |outside| hidden model state, worker mutation authority, unbounded periphery, durable subject declarations before close pass, unrelated dirty files

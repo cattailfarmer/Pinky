@@ -1,0 +1,58 @@
+Subject: 2026-06-24_task_045_aperture_reentry_runtime_001 Aperture Reentry Springboard
+
+& [Graph:2026_06_24_task_045_aperture_reentry_runtime_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG aperture-reentry-springboard
+  = focal_subject: aperture reentry runtime selection
+  = depth_adjustment: wide
+  = support_draw_count: 4
+
+  + [N:policy:2026_06_24_task_045_aperture_reentry_runtime_001] is 2026-06-24_task_045_aperture_reentry_runtime_001
+    = depth_adjustment: wide
+    = balance_state: stable
+  + [N:focus:aperture_reentry_runtime_selection] is aperture reentry runtime selection
+  + [N:aperture:wide] is wide
+  + [N:reentry:2026_06_24_task_045_aperture_reentry_runtime_001] is reentry springboard
+    = supported_core: aperture reentry runtime selection can open through 4 support_draw signals, survey task_handoff, open_close_sequence, delayed_review_to_support_draw, controlled_aperture_expansion, then close into a compact springboard before durable narrative or subject declarations
+  + [N:narrative:2026_06_24_task_045_aperture_reentry_runtime_001_second_pass] is second-pass narrative prompts
+    = prompt_count: 4
+  + [N:subject:2026_06_24_task_045_aperture_reentry_runtime_001_declaration_pass] is subject declaration prompts
+    = prompt_count: 4
+  + [N:outside:aperture_reentry_boundary] is hidden model state, worker mutation authority, unbounded periphery, durable subject declarations before close pass, unrelated dirty files
+  + [N:periphery:focal_tick] is operating loop tick 020
+    = heat: 6
+    = source_ref: .sop/events/operating_loop/2026-06-24_operating_loop_tick_020.sop
+  + [N:source:sop_events_operating_loop_2026_06_24_operating_loop_tick_020_sop] is .sop/events/operating_loop/2026-06-24_operating_loop_tick_020.sop
+  + [N:term:task_handoff] is task_handoff
+  + [N:periphery:aperture_contract] is ApertureReentryCycle contract
+    = heat: 9
+    = source_ref: .sop/platform/ApertureReentryCycle.sop
+  + [N:source:sop_platform_ApertureReentryCycle_sop] is .sop/platform/ApertureReentryCycle.sop
+  + [N:term:open_close_sequence] is open_close_sequence
+  + [N:periphery:trailing_checksum] is trailing checksum review
+    = heat: 8
+    = source_ref: .sop/events/bookmarks/2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop
+  + [N:source:sop_events_bookmarks_2026_06_24_v139_branch_refinement_runtime_trailing_checksum_001_sop] is .sop/events/bookmarks/2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop
+  + [N:term:delayed_review_to_support_draw] is delayed_review_to_support_draw
+  + [N:periphery:focus_zoom] is FocusZoom contract
+    = heat: 5
+    = source_ref: .sop/platform/FocusZoom.sop
+  + [N:source:sop_platform_FocusZoom_sop] is .sop/platform/FocusZoom.sop
+  + [N:term:controlled_aperture_expansion] is controlled_aperture_expansion
+
+/ [E:opens:2026_06_24_task_045_aperture_reentry_runtime_001] -(opens; cycle=N:policy:2026_06_24_task_045_aperture_reentry_runtime_001; focus=N:focus:aperture_reentry_runtime_selection; aperture=N:aperture:wide; support_draw_count=4)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:closes:2026_06_24_task_045_aperture_reentry_runtime_001] -(closes; cycle=N:policy:2026_06_24_task_045_aperture_reentry_runtime_001; aperture=N:aperture:wide; reentry=N:reentry:2026_06_24_task_045_aperture_reentry_runtime_001; close_pass=required_before_narrative)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:springboards:2026_06_24_task_045_aperture_reentry_runtime_001] -(springboards; reentry=N:reentry:2026_06_24_task_045_aperture_reentry_runtime_001; narrative=N:narrative:2026_06_24_task_045_aperture_reentry_runtime_001_second_pass; subject=N:subject:2026_06_24_task_045_aperture_reentry_runtime_001_declaration_pass)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:digests:2026_06_24_task_045_aperture_reentry_runtime_001] -(digests; narrative=N:narrative:2026_06_24_task_045_aperture_reentry_runtime_001_second_pass; focus=N:focus:aperture_reentry_runtime_selection; outside=N:outside:aperture_reentry_boundary)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:defines:2026_06_24_task_045_aperture_reentry_runtime_001] -(defines; subject=N:subject:2026_06_24_task_045_aperture_reentry_runtime_001_declaration_pass; focus=N:focus:aperture_reentry_runtime_selection; reentry=N:reentry:2026_06_24_task_045_aperture_reentry_runtime_001)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:bounds:2026_06_24_task_045_aperture_reentry_runtime_001] -(bounds; cycle=N:policy:2026_06_24_task_045_aperture_reentry_runtime_001; outside=N:outside:aperture_reentry_boundary)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:probes:2026_06_24_task_045_aperture_reentry_runtime_001_001] -(probes; cycle=N:policy:2026_06_24_task_045_aperture_reentry_runtime_001; support=N:periphery:focal_tick; source=N:source:sop_events_operating_loop_2026_06_24_operating_loop_tick_020_sop; relation=N:term:task_handoff; heat=6)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:probes:2026_06_24_task_045_aperture_reentry_runtime_001_002] -(probes; cycle=N:policy:2026_06_24_task_045_aperture_reentry_runtime_001; support=N:periphery:aperture_contract; source=N:source:sop_platform_ApertureReentryCycle_sop; relation=N:term:open_close_sequence; heat=9)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:probes:2026_06_24_task_045_aperture_reentry_runtime_001_003] -(probes; cycle=N:policy:2026_06_24_task_045_aperture_reentry_runtime_001; support=N:periphery:trailing_checksum; source=N:source:sop_events_bookmarks_2026_06_24_v139_branch_refinement_runtime_trailing_checksum_001_sop; relation=N:term:delayed_review_to_support_draw; heat=8)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+/ [E:probes:2026_06_24_task_045_aperture_reentry_runtime_001_004] -(probes; cycle=N:policy:2026_06_24_task_045_aperture_reentry_runtime_001; support=N:periphery:focus_zoom; source=N:source:sop_platform_FocusZoom_sop; relation=N:term:controlled_aperture_expansion; heat=5)> [Graph:2026_06_24_task_045_aperture_reentry_runtime_001]
+
+- outside: hidden model state
+- outside: worker mutation authority
+- outside: unbounded periphery
+- outside: durable subject declarations before close pass
+- outside: unrelated dirty files
