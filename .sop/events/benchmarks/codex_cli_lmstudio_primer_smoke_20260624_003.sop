@@ -1,0 +1,41 @@
+Subject: Codex CLI LM Studio Primer Smoke Result
+
+Description: Operational smoke test proving that SOP language priming improves nested Codex CLI over LM Studio worker behavior.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_primed_codex_cli_lmstudio_smoke_retry\Dictated_Primed_Codex_CLI_LMStudio_Smoke_Retry_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_smoke_20260624_002.sop
+
+& [CodexCLILMStudioPrimerSmokeResult:20260624_003] is a captured primed local-provider worker finding
+  + [host_command] is codex.cmd
+  + [codex_version] is codex-cli 0.135.0
+  + [provider] is lmstudio
+  + [model] is openai/gpt-oss-20b
+  + [workspace] is C:\Project\Pinky
+  + [sandbox] is read-only
+  + [approval_policy] is never
+  + [prompt_mode] is stdin_only for the passing run
+  + [primer_packet] is compact SOP language primer covering subject declaration, property, directive, constraint, source pointer, attention delineation, outside, and authority boundary
+  + [context_fit_result] is passed
+  + [sop_language_primer_result] is passed
+  + [tool_discipline_result] is passed because no shell or tool call was attempted in the passing run
+  + [instruction_fidelity_result] is passed because the captured last message exactly matched the requested SOP line
+  + [captured_last_message] is & [CodexCLILMStudioSmoke] is ready
+  + [transport_note] is prompt-as-argument runs returned the correct first line but carried an unwanted environment_context tail; stdin_only prompt avoided the tail
+  + [meaning] is the local Codex CLI over LM Studio worker can pass a minimal no-tools exact-output SOP smoke test when introduced to SOP language first and prompted through clean stdin transport
+  + [outside] is hidden model state, broad worker readiness, repo mutation, multi-step task execution, and framework competence beyond this minimal primer smoke
+
+  = must: use SOPLanguagePrimerForLocalAgents before framework-shaped tasks
+  = must: prefer stdin_only prompt transport for exact-output smoke tests in this host setup
+  = must: keep one smoke pass as narrow evidence, not general worker authority
+  = should: next test a primer comprehension schema before assigning a framework excerpt
+  = should: then test one small non-mutating SOP summarization task with no tools
+
+(codex_cli_lmstudio_primer_smoke) :primer_packet: /no_tool_exact_output/ |worker_readiness_outside|
+  + [primer_packet] is SOP language introduction before task
+  + [no_tool_exact_output] is passed with captured_last_message exactly matching requested SOP line
+  + [prompt_transport] is stdin_only
+  |worker_readiness_outside| hidden state, repo mutation, broad task competence, and framework authority
+
+/ [SOPLanguagePrimer], [stdin_only_prompt], [CodexCLI], [LMStudioProvider] -(Qualifies)> [minimal_exact_output_smoke], [worker_readiness_outside]
+* [prompt_argument_tail], [environment_context_capture] -(Explains)> [transport_note], [stdin_only_preference]

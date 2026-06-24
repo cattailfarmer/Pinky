@@ -6,6 +6,7 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
 @ [source] C:\Project\Pinky\.sop\platform\Attention.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
 
 & [SOPLanguagePrimerForLocalAgents] is the language-introduction gate for local SOP workers
   + [pattern_role] is introduce_sop_notation_before_framework_assignment
@@ -25,6 +26,8 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   + [evidence_gate] is the proof, source, diff, test, benchmark, or citation required before integration
   + [authority_boundary] is what the worker may claim, read, write, launch, or leave outside
   + [comprehension_check] is a small no-tools response that restates the marker set, delineation pattern, outside rule, and authority boundary before any framework packet is assigned
+  + [primer_smoke_result] is minimal no-tools exact-output pass when the prompt included the SOP primer and was sent through stdin_only transport
+  + [prompt_transport_preference] is stdin_only for exact-output smoke tests in this host setup because prompt-as-argument runs carried unwanted environment_context tails
   + [primer_outside] is hidden model state, repo mutation, framework work before comprehension, and treating primer pass as durable authority
 
   ? [use_when: a local LM Studio or Codex CLI local-provider worker will receive SOP framework material or task packets]
@@ -37,6 +40,7 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   = must: ask the worker to distinguish language syntax from task authority
   = must: ask the worker to preserve outside rather than guessing
   = must: record whether the worker follows exact output and no-tool discipline during the primer
+  = must: prefer stdin_only prompt transport for exact-output primer smoke tests in this host setup
   = should: use examples with one subject declaration, one attention delineation, one source line, one directive, one constraint, and one outside clause
   = should: treat a wrong but adjacent answer as a language-primer failure, not as a framework failure
   - never: assign framework utility before the worker has passed the language primer
@@ -50,8 +54,10 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   + [response_schema] is exact fields proving marker comprehension, outside preservation, and authority boundary
   + [pass_condition] is exact schema filled with non-empty content and no tool attempts
   + [fail_condition] is tool attempt, empty labels, adjacent substitution, authority overclaim, missing outside, or wrong output shape
+  + [transport_condition] is use stdin_only prompt transport when exact final message purity is being measured
 
   = must: run before LMStudioAgentBenchmark framework-specific cases when the worker has not been primed in-session
+  = must: treat minimal exact-output smoke pass as narrow readiness only
   = should: include one tiny SOP example and one tiny explanation request
 
 (sop_language_primer_for_local_agents) :primer_packet: /comprehension_check and authority_boundary/ |primer_outside|

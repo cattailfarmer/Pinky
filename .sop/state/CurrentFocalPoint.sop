@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is SOP language primer before Codex CLI LM Studio worker readiness
+  + [focus_subject] is primed Codex CLI LM Studio worker passed minimal no-tools SOP smoke
   + [focus_mode] is mixed_focus
-  + [executive_drive] is introduce local LM Studio and Codex CLI local-provider workers to SOP marker syntax, attention delineation, outside, evidence, and authority boundaries before assigning SOP framework contracts or tasks
-  + [right_hemisphere_draw] is the failed retry looks less like raw incapacity and more like starting the worker in the middle of a language it had not been taught
-  + [inside] is SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, SOPTaskManager.sop, events\benchmarks\codex_cli_lmstudio_smoke_20260624_002.sop, events\periphery_stream\2026-06-24_sop_language_primer_for_local_agents_078.hg.sop, platform\source_documents\2026-06-24_sop_language_intro_for_local_agents\Dictated_SOP_Language_Intro_For_Local_Agents_Source.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is language introduction and comprehension checking only; it is not framework authority, repo authority, or task competence proof
-  + [outside] is hidden model state, unprimed framework assignment, unsupervised worker authority, file mutation, syntax mimicry without content, and unrelated Pinky worktree changes
+  + [executive_drive] is use the successful primer-first stdin_only smoke test to define the next local-worker readiness gate: primer comprehension schema, then tiny framework excerpt, then non-mutating task
+  + [right_hemisphere_draw] is the worker failed when started mid-language but passed when the SOP marker language was introduced and the prompt transport was clean
+  + [inside] is SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop, events\benchmarks\codex_cli_lmstudio_smoke_20260624_002.sop, platform\source_documents\2026-06-24_primed_codex_cli_lmstudio_smoke_retry\Dictated_Primed_Codex_CLI_LMStudio_Smoke_Retry_Source.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is minimal no-tools exact-output smoke pass only; it is not broad framework competence, repo authority, or multi-step task readiness
+  + [outside] is hidden model state, broad worker readiness, framework competence beyond the primer smoke, unsupervised worker authority, file mutation, and unrelated Pinky worktree changes
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\periphery_stream\2026-06-24_sop_language_primer_for_local_agents_078.hg.sop
-  + [open_question] is how to build the next nested Codex CLI LM Studio smoke test with primer first, then exact no-tools output second
+  + [active_reflection] is events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
+  + [open_question] is how to build the next primer comprehension schema and tiny framework-excerpt test without giving repo authority
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression

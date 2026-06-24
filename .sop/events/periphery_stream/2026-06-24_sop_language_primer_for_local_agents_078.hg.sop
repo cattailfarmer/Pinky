@@ -15,10 +15,12 @@ Description: Periphery-stream realization that local LM Studio workers need SOP 
   + [wisdom] is a local model should first learn the symbols and boundaries of the language before being asked to operate inside a SOP framework
   + [caution] is a worker can mimic nearby words such as SpecificationGovernance without understanding the requested SOP output shape
   + [balance] is stable because the primer separates language comprehension from framework obedience and task execution
-  + [next_step] is rerun a nested Codex CLI LM Studio smoke test using a primer packet before the exact-output task
+  + [measured_result] is nested Codex CLI over LM Studio passed a minimal no-tools exact-output smoke when given a compact SOP language primer through stdin_only prompt transport
+  + [next_step] is test a primer comprehension schema before assigning a tiny SOP framework excerpt
 
   = must: introduce SOP notation before SOP framework packets
   = must: require no-tool exact-output comprehension before worker readiness
+  = must: keep the minimal smoke pass narrow and avoid treating it as broad worker readiness
   = should: score adjacent substitution as a primer failure
 
 / [SOPLanguagePrimer], [LocalWorker], [CodexOperationalHost] -(Prepares)> [framework_packet_readiness], [primer_outside]

@@ -1,0 +1,15 @@
+Subject: Dictated Primed Codex CLI LM Studio Smoke Retry Source
+
+Description: Preserved source directive for retrying the nested Codex CLI LM Studio smoke test after defining the SOP language primer gate.
+
+& [DictatedPrimedCodexCLILMStudioSmokeRetrySource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after SOPLanguagePrimerForLocalAgents was defined and after the user asked whether to just try again now
+  + [source_line_001] is "so that means... just try again now?"
+  + [active_root] is C:\Project\Pinky\.sop
+  + [desired_output] is rerun the nested Codex CLI LM Studio smoke test with SOP language primer before the exact-output task
+
+  = must: preserve this source separately from benchmark result records
+  = must: treat the retry as a primer-gate test
+  = must: distinguish model behavior from prompt transport and capture artifacts
+  - outside: hidden model state, unsupervised worker authority, file mutation, and treating one smoke pass as broad worker readiness

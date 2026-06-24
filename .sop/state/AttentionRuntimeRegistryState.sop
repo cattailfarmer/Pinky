@@ -6,12 +6,12 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_sop_language_primer_for_local_agents_078.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is current SOP language primer gate for local LM Studio and Codex CLI local-provider workers
-  + [active_root_frame] is attention_frame_2026_06_24_sop_language_primer_for_local_agents_001
+  + [registry_scope] is current primed Codex CLI LM Studio minimal smoke pass and next-readiness gate
+  + [active_root_frame] is attention_frame_2026_06_24_codex_cli_lmstudio_primer_smoke_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
@@ -19,39 +19,39 @@ Description: Live semantic stack-frame registry for the current focus pass.
   + [registry_outside] is hidden activations, exact transformer attention, model weights, unprimed framework assignment, syntax mimicry without content, unsupervised worker action, and unrelated Pinky worktree changes
 
   = must: update this state when focus materially changes
-  = must: open child frames for marker introduction, attention delineation, outside rule, authority boundary, comprehension check, or commit receipt
+  = must: open child frames for primer comprehension, framework excerpt, non-mutating task, capture, scoring, or commit receipt
   = must: preserve return anchors before closing or suspending frames
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_SOPLanguagePrimerForLocalAgents001] is the active semantic stack frame for local-worker SOP language introduction
-  + [frame_id] is attention_frame_2026_06_24_sop_language_primer_for_local_agents_001
+& [AttentionFrame_2026_06_24_CodexCLILMStudioPrimerSmoke001] is the active semantic stack frame for primed local-worker smoke testing
+  + [frame_id] is attention_frame_2026_06_24_codex_cli_lmstudio_primer_smoke_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is marker_set, attention_delineation, outside_rule, authority_boundary, comprehension_check, commit_receipt
+  + [child_frame_set] is passed_minimal_smoke, prompt_transport, next_comprehension_schema, framework_excerpt, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, SOPTaskManager.sop, codex_cli_lmstudio_smoke_20260624_002.sop, sop_language_primer_for_local_agents_078.hg.sop, and CurrentFocalPoint.sop
-  + [focus_register] is introduce SOP language before local-worker framework assignment
-  + [question_register] is how to teach marker syntax, attention delineation, outside, evidence, and authority boundaries before asking a local worker to follow SOP framework contracts
-  + [delineation_register] is inside marker set, subject declaration, property line, directive line, constraint line, source line, attention delineation, outside, evidence gate, authority boundary, comprehension check, and outside
-  + [periphery_register] is near SpecificationGovernance substitution, mid no-tool exact-output prompt, shadow syntax mimicry, and horizon primed worker benchmark
-  + [operation_register] is preserve_source, define_primer, wire_attention_root, update_benchmark_gate, update_task_manager_gate, and commit_receipt
-  + [evidence_register] is user primer directive source, canonical primer contract, event 078, retry event 002, and commit receipt
-  + [wisdom_register] is the local worker should learn the language before being asked to operate the framework
-  + [caution_register] is primer pass is not task competence or repo authority; it only opens framework-packet readiness
-  + [balance_register] is stable because the primer separates language comprehension from framework obedience and task execution
+  + [frame_trace] is SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, codex_cli_lmstudio_primer_smoke_20260624_003.sop, and CurrentFocalPoint.sop
+  + [focus_register] is primed nested Codex CLI over LM Studio passed minimal no-tools exact-output smoke
+  + [question_register] is how to move from minimal primer smoke to primer comprehension and tiny framework-excerpt competence without granting repo authority
+  + [delineation_register] is inside primer packet, stdin_only transport, exact captured line, no tool attempt, context fit, next comprehension schema, and outside
+  + [periphery_register] is near previous SpecificationGovernance substitution, mid transport tail artifact, shadow broad readiness overclaim, and horizon tiny framework excerpt
+  + [operation_register] is run_primed_smoke, verify_last_message, record_pass, update_primer_gate, and commit_receipt
+  + [evidence_register] is captured_last_message & [CodexCLILMStudioSmoke] is ready, event 003, primer contract, and commit receipt
+  + [wisdom_register] is SOP language introduction plus clean stdin transport can turn a failing local-provider smoke into a passing minimal worker signal
+  + [caution_register] is one exact-output smoke pass is not framework competence, multi-step task readiness, or repo authority
+  + [balance_register] is stable because the pass is narrow, non-mutating, captured, and still keeps broader readiness outside
   + [integration_register] is pending final validation and commit receipt
-  + [frame_outside] is hidden model state, unprimed framework assignment, unsupervised worker authority, file mutation, syntax mimicry without content, and unrelated Pinky worktree changes
+  + [frame_outside] is hidden model state, broad worker readiness, framework competence beyond primer smoke, unsupervised worker authority, file mutation, and unrelated Pinky worktree changes
 
   = must: treat this frame as current visible attention state
-  = must: return primer readiness, comprehension_check, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
+  = must: return primer_smoke_result, next_comprehension_schema, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
   = should: open child frames only when a concrete primer, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_sop_language_primer_for_local_agents_001
+  + [active_root_frame] is attention_frame_2026_06_24_codex_cli_lmstudio_primer_smoke_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unprimed framework assignment, syntax mimicry without content, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SOPLanguagePrimerForLocalAgents] -(EntersFrame)> [AttentionFrame_2026_06_24_SOPLanguagePrimerForLocalAgents001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [sop_language_primer_for_local_agents], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SOPLanguagePrimerForLocalAgents] -(EntersFrame)> [AttentionFrame_2026_06_24_CodexCLILMStudioPrimerSmoke001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [codex_cli_lmstudio_primer_smoke], [balance_register], [integration_register], [outside]
