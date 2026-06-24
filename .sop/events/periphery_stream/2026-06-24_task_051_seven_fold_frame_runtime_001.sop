@@ -1,0 +1,93 @@
+Subject: Seven-Fold Pants Correlation Frame
+
+& [SevenFoldPantsFrame:2026_06_24_task_051_seven_fold_frame_runtime_001] is a seven_fold_pants_correlation_frame
+  + [frame_id] is 2026-06-24_task_051_seven_fold_frame_runtime_001
+  + [subject_surface_frame] is seven-fold frame runtime selection
+  + [purpose] is rank visible correlations from the topology map runtime surface and preserve higher-dimensional periphery through fold-leg weighted orbit records
+  + [shared_boundary] is visible subject surface with heat separate from proof
+  + [central_correlation_triad] is topology, central_triad, outside
+  + [heat_order] is topology:17 > central_triad:16 > outside:15
+  + [seven_fold_capacity] is used=4 max=7
+  + [relationship_scatter] is corridor, dimension, scale, aperture
+  + [outside] is hidden geometry, direct transformer activations, unsupported heat, arbitrary tessellation aesthetics, unmeasured dimensions
+
+& [CentralCorrelationTriad] is the immediate focus heat order
+  + [central_anchor:1] is Topology map runtime
+    = cell_id: topology
+    = heat: 13
+    = salience: 5
+    = confidence: high
+    = caution_load: 1
+    = total_weight: 17
+    = source_ref: .sop/events/periphery_stream/2026-06-24_task_048_topology_map_runtime_001.hg.sop
+  + [central_anchor:2] is Central triad heat order
+    = cell_id: central_triad
+    = heat: 12
+    = salience: 4
+    = confidence: high
+    = caution_load: 0
+    = total_weight: 16
+    = source_ref: .sop/platform/SevenFoldPantsCorrelationFrame.sop
+  + [central_anchor:3] is Hidden geometry boundary
+    = cell_id: outside
+    = heat: 10
+    = salience: 5
+    = confidence: high
+    = caution_load: 0
+    = total_weight: 15
+    = source_ref: .sop/platform/SevenFoldPantsCorrelationFrame.sop
+
+& [FoldLegSet] is higher-dimensional periphery carried outside the flat slice
+  + [fold_leg:1] is corridor
+    = leg_id: leg_corridor
+    = central_anchor: topology
+    = relation_type: points_to_corridor
+    = dimension: corridor
+    = heat: 8
+    = confidence: medium
+    = source_anchor: .sop/platform/HyperbolicCorridorNavigator.sop
+    = outside: correlation only
+  + [fold_leg:2] is dimension
+    = leg_id: leg_dimension
+    = central_anchor: central_triad
+    = relation_type: preserves_dimension
+    = dimension: dimension
+    = heat: 7
+    = confidence: medium
+    = source_anchor: .sop/platform/PeripheryDimensionalProbe.sop
+    = outside: not proof
+  + [fold_leg:3] is scale
+    = leg_id: leg_scale
+    = central_anchor: outside
+    = relation_type: controls_frame_scale
+    = dimension: scale
+    = heat: 6
+    = confidence: medium
+    = source_anchor: .sop/platform/FocusZoom.sop
+    = outside: attention aperture only
+  + [fold_leg:4] is aperture
+    = leg_id: leg_aperture
+    = central_anchor: topology
+    = relation_type: returns_to_reentry
+    = dimension: reentry
+    = heat: 5
+    = confidence: medium
+    = source_anchor: .sop/events/periphery_stream/2026-06-24_task_045_aperture_reentry_runtime_001.sop
+    = outside: downstream support
+
+(seven-fold frame runtime selection) :central_correlation_triad: /visible_subject_surface_with_heat_separate_from_proof/ |outside|
+  + [central_anchor:1] is heat_ordered_cell
+    = heat: 13
+    = confidence: high
+  + [central_anchor:2] is heat_ordered_cell
+    = heat: 12
+    = confidence: high
+  + [central_anchor:3] is heat_ordered_cell
+    = heat: 10
+    = confidence: high
+  = seven_fold_capacity: used=4 max=7
+  = fold_leg:1 -> corridor by points_to_corridor with heat=8 confidence=medium
+  = fold_leg:2 -> dimension by preserves_dimension with heat=7 confidence=medium
+  = fold_leg:3 -> scale by controls_frame_scale with heat=6 confidence=medium
+  = fold_leg:4 -> aperture by returns_to_reentry with heat=5 confidence=medium
+  - outside: hidden geometry, direct transformer activations, unsupported heat, arbitrary tessellation aesthetics, unmeasured dimensions

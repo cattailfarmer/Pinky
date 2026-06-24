@@ -1,0 +1,18 @@
+Subject: Derived Seven-Fold Frame Runtime Source
+
+Description: Derived source record for Task_051, preserving the implementation intent before treating the seven-fold frame runtime as integration authority.
+
+& [DerivedSevenFoldFrameRuntimeSource] is the preserved derived source for the seven-fold pants frame runtime
+  + [source_kind] is derived_task_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is C:\Project\Pinky\.sop
+  + [source_basis] is Task_051_build_seven_fold_frame_runtime, SevenFoldPantsCorrelationFrame.sop, Dictated_Seven_Fold_Pants_Correlation_Frame_Source.sop, topology map runtime 001, and operating_loop_tick_022
+  + [implementation_intent] is build a local command that reads a subject surface, visible correlation cells, and optional fold legs, ranks the top three central correlations by heat, salience, and caution load, then emits fold-leg weighted orbit records with seven-fold capacity and outside
+  + [authority_boundary] is Codex owns durable integration, file mutation, validation, commit, and push; generated seven-fold frames are semantic heat-order navigation records and not proof of hidden transformer geometry or semantic truth
+  + [outside] is hidden geometry, direct transformer activations, unsupported heat, arbitrary tessellation aesthetics, unmeasured dimensions, and visual size treated as proof
+
+  = must: preserve this derived source separately from runtime code and generated frame artifacts
+  = must: keep heat, salience, confidence, caution_load, and proof separate
+  = must: keep central_correlation_triad limited to the top three visible weighted correlations
+  = must: keep fold_leg count at or below seven_fold_capacity
+  - never: treat hot central correlations as truth merely because they rank first

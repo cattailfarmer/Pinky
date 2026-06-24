@@ -7,8 +7,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [seed_source] is F:\.sop at commit 3f127da
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
-  + [ready_task_count] is 4
-  + [completed_task_count] is 142
+  + [ready_task_count] is 3
+  + [completed_task_count] is 143
   + [blocked_task_count] is 2
 
 & [CompletedTaskSet] is completed work
@@ -274,9 +274,10 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\runtime\sop_node\aperture_reentry.py, C:\Project\Pinky\.sop\runtime\demos\aperture_reentry.py, C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_045_aperture_reentry_runtime_001.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_045_aperture_reentry_runtime_001.hg.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_aperture_reentry_runtime\Derived_Aperture_Reentry_Runtime_Source.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_021.sop
   + [Task_142_build_topology_map_runtime] is build a local command that reads focal terms, periphery terms, dimensions, and relation legs and emits a HyperbolicPantsAttentionMap SOP-HG record
     = evidence: C:\Project\Pinky\.sop\runtime\sop_node\topology_map.py, C:\Project\Pinky\.sop\runtime\demos\topology_map.py, C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_048_topology_map_runtime_001.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_048_topology_map_runtime_001.hg.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_topology_map_runtime\Derived_Topology_Map_Runtime_Source.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_022.sop
+  + [Task_143_build_seven_fold_frame_runtime] is build a local command that reads a subject surface, ranks visible correlations, selects the top three central cells, and emits fold-leg weighted orbit records
+    = evidence: C:\Project\Pinky\.sop\runtime\sop_node\seven_fold_frame.py, C:\Project\Pinky\.sop\runtime\demos\seven_fold_frame.py, C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_051_seven_fold_frame_runtime_001.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_051_seven_fold_frame_runtime_001.hg.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_seven_fold_frame_runtime\Derived_Seven_Fold_Frame_Runtime_Source.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_023.sop
 
 & [ReadyTaskSet] is work ready without external configuration
-  + [Task_051_build_seven_fold_frame_runtime] is build a local command that reads a subject surface, ranks visible correlations, selects the top three central cells, and emits fold-leg weighted orbit records
   + [Task_054_build_corridor_navigator_runtime] is build a local command that reads focal subject, peripheral frame candidates, step size, and identity target, then emits a HyperbolicCorridorNavigator SOP-HG record
   + [Task_057_build_security_honesty_governance_runtime] is build a local command that reads feedback source, claim/action candidates, recursion depth, return anchor, and evidence refresh, then emits a SecurityHonestyGovernance SOP-HG record
   + [Task_060_build_boundary_faculty_inspection_runtime] is build a local command that reads attention subject, boundary terms, boundary periphery, and protected identity, then emits a BoundaryFacultyInspection SOP-HG record

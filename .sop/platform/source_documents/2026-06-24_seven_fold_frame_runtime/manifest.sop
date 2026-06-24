@@ -1,0 +1,14 @@
+Subject: Seven-Fold Frame Runtime Source Manifest
+
+Description: Manifest for Task_051 seven-fold frame runtime source preservation.
+
+& [SevenFoldFrameRuntimeSourceManifest] is the source preservation manifest for Task_051
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_seven_fold_frame_runtime
+  + [canonical_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\seven_fold_frame.py
+  + [demo_command] is C:\Project\Pinky\.sop\runtime\demos\seven_fold_frame.py
+  + [generated_frame] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_051_seven_fold_frame_runtime_001.sop
+  + [generated_graph] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_051_seven_fold_frame_runtime_001.hg.sop
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [status] is runtime_integrated
+
+  = must: keep the derived source available for future reinterpretation

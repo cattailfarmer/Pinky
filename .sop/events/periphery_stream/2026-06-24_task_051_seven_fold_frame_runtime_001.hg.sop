@@ -1,0 +1,96 @@
+Subject: 2026-06-24_task_051_seven_fold_frame_runtime_001 Seven-Fold Pants Correlation Frame
+
+& [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG seven-fold-pants-correlation-frame
+  = subject_surface: seven-fold frame runtime selection
+  = capacity_used: 4
+  = capacity_max: 7
+
+  + [N:map:2026_06_24_task_051_seven_fold_frame_runtime_001] is 2026-06-24_task_051_seven_fold_frame_runtime_001
+    = capacity_used: 4
+    = heat_order: topology:17 > central_triad:16 > outside:15
+  + [N:subject:seven_fold_frame_runtime_selection] is seven-fold frame runtime selection
+  + [N:signal:2026_06_24_task_051_seven_fold_frame_runtime_001_correlation_heat_map] is topology:17 > central_triad:16 > outside:15
+  + [N:outside:seven_fold_boundary] is hidden geometry, direct transformer activations, unsupported heat, arbitrary tessellation aesthetics, unmeasured dimensions
+  + [N:cell:central_1_topology] is Topology map runtime
+    = rank: 1
+    = heat: 13
+    = salience: 5
+    = confidence: high
+    = caution_load: 1
+    = total_weight: 17
+    = source_ref: .sop/events/periphery_stream/2026-06-24_task_048_topology_map_runtime_001.hg.sop
+  + [N:cell:central_2_central_triad] is Central triad heat order
+    = rank: 2
+    = heat: 12
+    = salience: 4
+    = confidence: high
+    = caution_load: 0
+    = total_weight: 16
+    = source_ref: .sop/platform/SevenFoldPantsCorrelationFrame.sop
+  + [N:cell:central_3_outside] is Hidden geometry boundary
+    = rank: 3
+    = heat: 10
+    = salience: 5
+    = confidence: high
+    = caution_load: 0
+    = total_weight: 15
+    = source_ref: .sop/platform/SevenFoldPantsCorrelationFrame.sop
+  + [N:leg:leg_corridor] is points_to_corridor
+    = heat: 8
+    = confidence: medium
+    = source_anchor: .sop/platform/HyperbolicCorridorNavigator.sop
+    = outside: correlation only
+  + [N:cell:corridor] is corridor
+  + [N:orbit:corridor] is corridor weighted balance orbit
+  + [N:dimension:corridor] is corridor
+  + [N:source:sop_platform_HyperbolicCorridorNavigator_sop] is .sop/platform/HyperbolicCorridorNavigator.sop
+  + [N:leg:leg_dimension] is preserves_dimension
+    = heat: 7
+    = confidence: medium
+    = source_anchor: .sop/platform/PeripheryDimensionalProbe.sop
+    = outside: not proof
+  + [N:cell:dimension] is dimension
+  + [N:orbit:dimension] is dimension weighted balance orbit
+  + [N:dimension:dimension] is dimension
+  + [N:source:sop_platform_PeripheryDimensionalProbe_sop] is .sop/platform/PeripheryDimensionalProbe.sop
+  + [N:leg:leg_scale] is controls_frame_scale
+    = heat: 6
+    = confidence: medium
+    = source_anchor: .sop/platform/FocusZoom.sop
+    = outside: attention aperture only
+  + [N:cell:scale] is scale
+  + [N:orbit:scale] is scale weighted balance orbit
+  + [N:dimension:scale] is scale
+  + [N:source:sop_platform_FocusZoom_sop] is .sop/platform/FocusZoom.sop
+  + [N:leg:leg_aperture] is returns_to_reentry
+    = heat: 5
+    = confidence: medium
+    = source_anchor: .sop/events/periphery_stream/2026-06-24_task_045_aperture_reentry_runtime_001.sop
+    = outside: downstream support
+  + [N:cell:aperture] is aperture
+  + [N:orbit:reentry] is reentry weighted balance orbit
+  + [N:dimension:reentry] is reentry
+  + [N:source:sop_events_periphery_stream_2026_06_24_task_045_aperture_reentry_runtime_001_sop] is .sop/events/periphery_stream/2026-06-24_task_045_aperture_reentry_runtime_001.sop
+
+/ [E:maps:2026_06_24_task_051_seven_fold_frame_runtime_001] -(maps; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; subject=N:subject:seven_fold_frame_runtime_selection; outside=N:outside:seven_fold_boundary; shared_boundary=visible subject surface with heat separate from proof)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:bounds:2026_06_24_task_051_seven_fold_frame_runtime_001] -(bounds; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; outside=N:outside:seven_fold_boundary; proof_status=heat_is_not_truth)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:weighs:central_1_topology] -(weighs; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; cell=N:cell:central_1_topology; heat=N:signal:2026_06_24_task_051_seven_fold_frame_runtime_001_correlation_heat_map; rank=1; total_weight=17)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:weighs:central_2_central_triad] -(weighs; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; cell=N:cell:central_2_central_triad; heat=N:signal:2026_06_24_task_051_seven_fold_frame_runtime_001_correlation_heat_map; rank=2; total_weight=16)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:weighs:central_3_outside] -(weighs; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; cell=N:cell:central_3_outside; heat=N:signal:2026_06_24_task_051_seven_fold_frame_runtime_001_correlation_heat_map; rank=3; total_weight=15)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:weighs:2026_06_24_task_051_seven_fold_frame_runtime_001_central_triad] -(weighs; heat=N:signal:2026_06_24_task_051_seven_fold_frame_runtime_001_correlation_heat_map; cell_1=N:cell:central_1_topology; cell_2=N:cell:central_2_central_triad; cell_3=N:cell:central_3_outside; order=topology:17 > central_triad:16 > outside:15)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:folds:leg_corridor] -(folds; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; leg=N:leg:leg_corridor; target=N:cell:corridor; source=N:source:sop_platform_HyperbolicCorridorNavigator_sop; order=1; capacity_max=7)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:orbits:leg_corridor] -(orbits; orbit=N:orbit:corridor; center=N:cell:central_1_topology; leg=N:leg:leg_corridor; dimension=N:dimension:corridor; weighted_balance=8)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:folds:leg_dimension] -(folds; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; leg=N:leg:leg_dimension; target=N:cell:dimension; source=N:source:sop_platform_PeripheryDimensionalProbe_sop; order=2; capacity_max=7)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:orbits:leg_dimension] -(orbits; orbit=N:orbit:dimension; center=N:cell:central_2_central_triad; leg=N:leg:leg_dimension; dimension=N:dimension:dimension; weighted_balance=7)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:folds:leg_scale] -(folds; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; leg=N:leg:leg_scale; target=N:cell:scale; source=N:source:sop_platform_FocusZoom_sop; order=3; capacity_max=7)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:orbits:leg_scale] -(orbits; orbit=N:orbit:scale; center=N:cell:central_3_outside; leg=N:leg:leg_scale; dimension=N:dimension:scale; weighted_balance=6)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:folds:leg_aperture] -(folds; frame=N:map:2026_06_24_task_051_seven_fold_frame_runtime_001; leg=N:leg:leg_aperture; target=N:cell:aperture; source=N:source:sop_events_periphery_stream_2026_06_24_task_045_aperture_reentry_runtime_001_sop; order=4; capacity_max=7)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+/ [E:orbits:leg_aperture] -(orbits; orbit=N:orbit:reentry; center=N:cell:central_1_topology; leg=N:leg:leg_aperture; dimension=N:dimension:reentry; weighted_balance=5)> [Graph:2026_06_24_task_051_seven_fold_frame_runtime_001]
+
+- outside: hidden geometry
+- outside: direct transformer activations
+- outside: unsupported heat
+- outside: arbitrary tessellation aesthetics
+- outside: unmeasured dimensions

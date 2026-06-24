@@ -11,6 +11,10 @@ Description: Contract for mapping higher-dimensional subject surfaces with three
 @ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
 @ [source] F:\.sop\platform\AttentionBalanceCenter.sop
 @ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_seven_fold_frame_runtime\Derived_Seven_Fold_Frame_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\seven_fold_frame.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\seven_fold_frame.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_051_seven_fold_frame_runtime_001.hg.sop
 
 & [SevenFoldPantsCorrelationFrame] is the weighted topology profile for higher-dimensional focal attention
   + [pattern_role] is heat_ordered_higher_dimensional_pants_frame
@@ -27,6 +31,8 @@ Description: Contract for mapping higher-dimensional subject surfaces with three
   + [weighted_balance_orbit] is the arrangement of related cells around the central_correlation_triad according to heat, relation role, source support, and caution load
   + [relationship_scatter] is the surrounding distribution of related periphery cells around the three central anchors
   + [correlation_heat_map] is the visible ordering surface from AttentionWeightScale or ChangelogCorrelationWeightNet
+  + [seven_fold_frame_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\seven_fold_frame.py for ranking visible correlations, selecting top_three_correlations, and emitting fold-leg weighted orbit records
+  + [seven_fold_frame_demo] is C:\Project\Pinky\.sop\runtime\demos\seven_fold_frame.py for command-line compact or SOP-HG seven-fold frame emission
   + [immediate_focus] is the central high-resolution area containing the top_three_correlations and their shared boundary
   + [folded_periphery] is periphery carried through fold_leg paths rather than flattened into immediate_focus
   + [hyperbolic_corridor_navigator] is F:\.sop\platform\HyperbolicCorridorNavigator.sop when fold legs become an ordered route through peripheral frames

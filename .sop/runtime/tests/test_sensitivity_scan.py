@@ -31,6 +31,7 @@ from sop_node import (
     build_attention_tracking_record,
     build_hyperbolic_pants_topology_map,
     build_lmstudio_task_frame_candidate,
+    build_seven_fold_pants_frame,
     build_sensitivity_scan,
     build_sensitivity_scan_from_changes,
     build_task_frame_launch_queue,
@@ -47,8 +48,10 @@ from sop_node import (
     parse_periphery_terms,
     parse_edge_participants,
     parse_aperture_support,
+    parse_correlation_cell,
     parse_directive,
     parse_faculty_field,
+    parse_fold_leg,
     parse_pants_leg,
     parse_periphery_run_frame,
     parse_reflection_consumption,
@@ -907,6 +910,40 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("E:adjoins:focal_cell_aperture", graph_rendered)
         self.assertIn("E:navigates:leg_aperture", graph_rendered)
         self.assertIn("N:outside:hyperbolic_map_boundary", graph_rendered)
+
+    def test_seven_fold_pants_frame_ranks_central_triad_and_fold_legs(self) -> None:
+        frame = build_seven_fold_pants_frame(
+            frame_id="test_seven_fold_frame",
+            subject_surface="seven-fold frame runtime selection",
+            purpose="rank visible correlations and preserve folded periphery",
+            shared_boundary="visible subject surface",
+            correlations=(
+                parse_correlation_cell("topology|Topology map runtime|13|5|high|events/periphery_stream/topology.hg.sop|1"),
+                parse_correlation_cell("central_triad|Central triad heat order|12|4|high|platform/SevenFoldPantsCorrelationFrame.sop|0"),
+                parse_correlation_cell("outside|Hidden geometry boundary|10|5|high|platform/SevenFoldPantsCorrelationFrame.sop|0"),
+                parse_correlation_cell("corridor|Corridor navigator|8|5|medium|platform/HyperbolicCorridorNavigator.sop|1"),
+                parse_correlation_cell("dimension|Dimensional probe|7|4|medium|platform/PeripheryDimensionalProbe.sop|0"),
+            ),
+            fold_legs=(
+                parse_fold_leg("leg_corridor|corridor|points_to_corridor|8|medium|platform/HyperbolicCorridorNavigator.sop|topology|corridor|correlation only"),
+                parse_fold_leg("leg_dimension|dimension|preserves_dimension|7|medium|platform/PeripheryDimensionalProbe.sop|central_triad|dimension|not proof"),
+            ),
+        )
+        rendered = frame.render()
+        graph = frame.to_hypergraph()
+        graph_rendered = graph.render()
+
+        self.assertTrue(frame.ready)
+        self.assertTrue(graph.ready)
+        self.assertEqual([cell.cell_id for cell in frame.top_three_correlations], ["topology", "central_triad", "outside"])
+        self.assertEqual(frame.used_capacity, 2)
+        self.assertIn("+ [central_correlation_triad] is topology, central_triad, outside", rendered)
+        self.assertIn("seven_fold_capacity] is used=2 max=7", rendered)
+        self.assertIn("E:maps:test_seven_fold_frame", graph_rendered)
+        self.assertIn("E:weighs:test_seven_fold_frame_central_triad", graph_rendered)
+        self.assertIn("E:folds:leg_corridor", graph_rendered)
+        self.assertIn("E:orbits:leg_corridor", graph_rendered)
+        self.assertIn("N:outside:seven_fold_boundary", graph_rendered)
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")
