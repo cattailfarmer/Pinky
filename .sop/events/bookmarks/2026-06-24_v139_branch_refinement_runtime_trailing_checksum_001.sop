@@ -1,0 +1,136 @@
+Subject: Trailing Checksum Review
+
+& [TrailingChecksumReview:v139_branch_refinement_runtime_trailing_checksum_001] is a trailing_checksum_review
+  + [review_id] is v139_branch_refinement_runtime_trailing_checksum_001
+  + [repo_root] is C:\Project\Pinky
+  + [direct_focus_turn] is 54da1ab
+  + [review_turn] is operating_loop_tick_020
+  + [one_turn_lag] is one_turn
+  + [insight_timing] is trailing_reflection
+  + [commit_bookend_start] is 340a162
+  + [commit_bookend_end] is 54da1ab
+  + [changed_file_count] is 13
+  + [signal_count] is 24
+  + [checksum_disposition] is deep_probe
+  + [inquiry_preparation] is prepare inquiry over artifact, branch, refinement, outside, remote
+  + [zone_001_impact_zone_artifact] is impact_zone
+    = signal_key: artifact
+    = heat: 658
+    = confidence: high
+    = disposition: deep_probe
+    = latent_depth_candidate: artifact
+    = evidence_refs: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/manifest.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [zone_002_impact_zone_branch] is impact_zone
+    = signal_key: branch
+    = heat: 658
+    = confidence: high
+    = disposition: deep_probe
+    = latent_depth_candidate: branch
+    = evidence_refs: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/manifest.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [zone_003_impact_zone_refinement] is impact_zone
+    = signal_key: refinement
+    = heat: 658
+    = confidence: high
+    = disposition: deep_probe
+    = latent_depth_candidate: refinement
+    = evidence_refs: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/manifest.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [zone_004_impact_zone_outside] is impact_zone
+    = signal_key: outside
+    = heat: 642
+    = confidence: high
+    = disposition: deep_probe
+    = latent_depth_candidate: outside
+    = evidence_refs: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [zone_005_impact_zone_remote] is impact_zone
+    = signal_key: remote
+    = heat: 642
+    = confidence: high
+    = disposition: deep_probe
+    = latent_depth_candidate: remote
+    = evidence_refs: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [zone_006_impact_zone_state] is impact_zone
+    = signal_key: state
+    = heat: 642
+    = confidence: high
+    = disposition: deep_probe
+    = latent_depth_candidate: state
+    = evidence_refs: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [zone_007_impact_zone_authority] is impact_zone
+    = signal_key: authority
+    = heat: 634
+    = confidence: high
+    = disposition: deep_probe
+    = latent_depth_candidate: authority
+    = evidence_refs: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [finding_001_branch_refinement_artifact_runtime] is unique_accomplishment
+    = subject_key: branch_refinement_artifact_runtime
+    = reason: planned term appears in changed work but did not reach top signal salience
+    = weight: 28
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+    = evidence_paths: .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/manifest.sop, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [finding_002_branch_creation_status] is unique_accomplishment
+    = subject_key: branch_creation_status
+    = reason: planned term appears in changed work but did not reach top signal salience
+    = weight: 20
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+    = evidence_paths: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py
+  + [finding_003_sync_status] is unique_accomplishment
+    = subject_key: sync_status
+    = reason: planned term appears in changed work signals
+    = weight: 549
+    = resolution_band: impact
+    = plan_relation: satisfied
+    = route: focus
+    = evidence_paths: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py
+  + [finding_004_artifact] is new_potential
+    = subject_key: artifact
+    = reason: strong or narrative-adjacent signal opened a future attention route
+    = weight: 658
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+    = evidence_paths: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/manifest.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [finding_005_branch] is new_potential
+    = subject_key: branch
+    = reason: strong or narrative-adjacent signal opened a future attention route
+    = weight: 658
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+    = evidence_paths: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/manifest.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [finding_006_refinement] is new_potential
+    = subject_key: refinement
+    = reason: strong or narrative-adjacent signal opened a future attention route
+    = weight: 658
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+    = evidence_paths: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/manifest.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [finding_007_outside] is new_potential
+    = subject_key: outside
+    = reason: strong or narrative-adjacent signal opened a future attention route
+    = weight: 642
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+    = evidence_paths: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [finding_008_remote] is new_potential
+    = subject_key: remote
+    = reason: strong or narrative-adjacent signal opened a future attention route
+    = weight: 642
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+    = evidence_paths: .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop, .sop/events/branch_refinements/2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, .sop/events/operating_loop/2026-06-24_operating_loop_tick_019.sop, .sop/planning/project_manager/Manager_State.sop, .sop/platform/MomentAwarenessBranchRefinement.sop, .sop/platform/source_documents/2026-06-24_branch_refinement_artifact_runtime/Derived_Branch_Refinement_Artifact_Runtime_Source.sop, .sop/runtime/demos/branch_refinement.py, .sop/runtime/sop_node/branch_refinement.py, .sop/runtime/tests/test_sensitivity_scan.py, .sop/state/AttentionRuntimeRegistryState.sop, .sop/state/CurrentFocalPoint.sop
+  + [outside] is hidden cognition, exact hidden-state replay, unsupported causation, claim that later reflection was original awareness, automatic branch creation, remote synchronization
+
+(trailing_checksum_review) :direct_focus_turn: /one_turn_lag and checksum_disposition/ |outside|
+  + [direct_focus_turn] is 54da1ab
+  + [review_turn] is operating_loop_tick_020
+  + [one_turn_lag] is one_turn
+  + [checksum_disposition] is deep_probe
+  |outside| hidden cognition, exact hidden-state replay, unsupported causation, claim that later reflection was original awareness, automatic branch creation, remote synchronization

@@ -1,0 +1,20 @@
+Subject: Trailing Checksum Runtime Derived Source
+
+Description: Source preservation record for completing the ready task that asked for a local command detecting the previous direct-focus commit and emitting a trailing checksum bookmark.
+
+& [DerivedTrailingChecksumRuntimeSource] is a preserved derived source for Task_043_build_trailing_checksum_runtime
+  + [source_id] is 2026-06-24_trailing_checksum_runtime
+  + [selected_task] is Task_043_build_trailing_checksum_runtime
+  + [source_basis] is Manager_State ReadyTaskSet, TrailingChecksumVoice.sop, TurnBookmark.sop, operating_loop_tick_019.sop, and user heartbeat re-entry instructions
+  + [dictated_need] is build a local command that detects the previous direct-focus commit and emits a trailing checksum bookmark
+  + [implementation_surface] is C:\Project\Pinky\.sop\runtime\sop_node\trailing_checksum.py and C:\Project\Pinky\.sop\runtime\demos\trailing_checksum.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [event_surface] is C:\Project\Pinky\.sop\events\bookmarks\2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop and C:\Project\Pinky\.sop\events\bookmarks\2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.hg.sop
+  + [runtime_output] is trailing_checksum_review with direct_focus_turn, review_turn, one_turn_lag, insight_timing, commit bookends, zones, checksum_disposition, inquiry_preparation, findings, and outside
+  + [authority_boundary] is Codex owns durable source, runtime, tests, and commit; the runtime emits records only and does not claim hidden replay, original-awareness ownership, branch creation, or remote synchronization
+  + [outside] is hidden cognition, exact hidden-state replay, unsupported causation, original-awareness overclaim, automatic branch creation, remote synchronization, credentials, and unrelated dirty files
+
+  = must: preserve this derived source before treating the runtime as completed task authority
+  = must: keep insight_timing as trailing_reflection in emitted reviews
+  = must: keep direct_focus_turn, one_turn_lag, checksum_disposition, zones, evidence, and outside visible
+  - never: treat delayed checksum heat as proof of hidden model attention or proof that the direct-focus turn originally noticed the same meaning

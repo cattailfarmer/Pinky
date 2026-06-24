@@ -32,6 +32,7 @@ from sop_node import (
     build_sensitivity_scan,
     build_sensitivity_scan_from_changes,
     build_task_frame_launch_queue,
+    build_trailing_checksum_review,
     build_turn_bookmark_from_scan,
     build_inference_state_trace,
     build_operating_loop_tick,
@@ -39,6 +40,7 @@ from sop_node import (
     build_viewfinder_snapshot,
     classify_layer,
     create_turn_spool,
+    detect_direct_focus_bookends,
     parse_branch_refinement_finding,
     parse_periphery_terms,
     parse_edge_participants,
@@ -752,6 +754,68 @@ class SensitivityScanTests(unittest.TestCase):
     def test_branch_refinement_finding_requires_minimal_fields(self) -> None:
         with self.assertRaises(ValueError):
             parse_branch_refinement_finding("too|short|only")
+
+    def test_trailing_checksum_review_detects_bookends_and_zones(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            subprocess.run(["git", "-C", str(root), "init", "-b", "main"], check=True, capture_output=True)
+            platform = root / ".sop" / "platform"
+            platform.mkdir(parents=True)
+            subject = platform / "TrailingChecksumProbe.sop"
+            subject.write_text(
+                "Subject: Probe\n\n& [Probe] is initial attention checksum\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "-C", str(root), "add", ".sop"], check=True, capture_output=True)
+            subprocess.run(
+                ["git", "-C", str(root), "-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-m", "seed"],
+                check=True,
+                capture_output=True,
+            )
+            subject.write_text(
+                "\n".join(
+                    (
+                        "Subject: Probe",
+                        "",
+                        "& [Probe] is trailing checksum attention review",
+                        "  + [hot_zone] is checksum runtime",
+                        "  + [latent_depth_candidate] is delayed review",
+                        "  + [outside] is without hidden replay",
+                    )
+                ),
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "-C", str(root), "add", ".sop"], check=True, capture_output=True)
+            subprocess.run(
+                ["git", "-C", str(root), "-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-m", "direct focus"],
+                check=True,
+                capture_output=True,
+            )
+
+            start_ref, end_ref = detect_direct_focus_bookends(root)
+            review = build_trailing_checksum_review(
+                root,
+                review_id="test_trailing_checksum_review",
+                planned_terms=("checksum runtime",),
+                narrative_terms=("latent depth candidate",),
+                review_turn="test_review_turn",
+            )
+            rendered = review.render()
+            graph = review.to_hypergraph()
+            graph_rendered = graph.render()
+
+        self.assertTrue(review.ready)
+        self.assertTrue(graph.ready)
+        self.assertEqual(review.commit_bookend_start, start_ref)
+        self.assertEqual(review.commit_bookend_end, end_ref)
+        self.assertEqual(review.one_turn_lag, "one_turn")
+        self.assertTrue(review.zones)
+        self.assertNotIn("without", {zone.signal_key for zone in review.zones})
+        self.assertIn("+ [direct_focus_turn] is", rendered)
+        self.assertIn("+ [checksum_disposition] is", rendered)
+        self.assertIn("trailing_reflection", rendered)
+        self.assertIn("E:trails:", graph_rendered)
+        self.assertIn("E:checksums:test_trailing_checksum_review", graph_rendered)
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")

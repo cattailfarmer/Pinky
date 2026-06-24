@@ -1,0 +1,16 @@
+Subject: Trailing Checksum Runtime Source Manifest
+
+Description: Source preservation manifest for the trailing checksum runtime.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_trailing_checksum_runtime
+  + [source_file] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_trailing_checksum_runtime\Derived_Trailing_Checksum_Runtime_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\TrailingChecksumVoice.sop
+  + [runtime_surface] is C:\Project\Pinky\.sop\runtime\sop_node\trailing_checksum.py
+  + [demo_surface] is C:\Project\Pinky\.sop\runtime\demos\trailing_checksum.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [event_surface] is C:\Project\Pinky\.sop\events\bookmarks\2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop
+  + [governance] is source_before_canonical_and_runtime_completion
+  + [status] is runtime_integrated
+
+  = must: keep the derived source available for future reinterpretation

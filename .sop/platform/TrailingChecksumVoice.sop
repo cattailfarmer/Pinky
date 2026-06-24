@@ -12,6 +12,10 @@ Description: One-turn-later backward-facing review cadence for detecting latent 
 @ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
 @ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_trailing_checksum_runtime\Derived_Trailing_Checksum_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\trailing_checksum.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\trailing_checksum.py
+@ [source] C:\Project\Pinky\.sop\events\bookmarks\2026-06-24_v139_branch_refinement_runtime_trailing_checksum_001.sop
 
 & [TrailingChecksumVoice] is the backward-facing review attention pattern that runs one turn after direct focus attention
   + [pattern_role] is one_turn_lag_attention_checksum
@@ -20,6 +24,8 @@ Description: One-turn-later backward-facing review cadence for detecting latent 
   + [one_turn_lag] is the required delay between direct_focus_turn and backward_facing_review_commit
   + [backward_facing_review_commit] is the commit produced by review_turn that records checksum findings, correlations, hot zones, warmth zones, latent depth candidates, and outside
   + [trailing_checksum_voice] is the attention voice that catches important meaning whose weight became visible only after direct focus finished
+  + [trailing_checksum_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\trailing_checksum.py for detecting direct-focus commit bookends and emitting trailing_checksum_review records
+  + [trailing_checksum_demo] is C:\Project\Pinky\.sop\runtime\demos\trailing_checksum.py for command-line SOP and SOP-HG review emission
   + [checksum_frame] is the commit bookend, focal state, source record, periphery record, manager state, tests, and generated index surface under review
   + [observed_greater_meaning] is a subject, relation, fault, opportunity, or purpose whose importance exceeds what direct_focus_turn explicitly realized
   + [warmth_zone] is a moderate correlation area that should remain available as periphery, tracker, or later scan material
@@ -38,6 +44,8 @@ Description: One-turn-later backward-facing review cadence for detecting latent 
   = must: identify checksum_frame before judging importance
   = must: use TurnBookmark to compare direct_focus_turn against its source, plan, state, and realized outputs
   = must: use ChangelogCorrelationWeightNet and AttentionWeightScale to distinguish warmth_zone from hot_zone
+  = must: require runtime-emitted trailing_checksum_review records to expose direct_focus_turn, one_turn_lag, insight_timing, checksum_disposition, zones, evidence, and outside
+  = must: treat trailing_checksum_runtime output as delayed review evidence, not hidden-state access or original-awareness proof
   = must: preserve warmth_zone as periphery unless recurrence, load, or user direction requires escalation
   = must: route hot_zone through Caution and Wisdom before durable focus promotion
   = must: route self_reflective hot_zone or impact_zone through SecurityHonestyGovernance before claim, action, identity, or proof promotion

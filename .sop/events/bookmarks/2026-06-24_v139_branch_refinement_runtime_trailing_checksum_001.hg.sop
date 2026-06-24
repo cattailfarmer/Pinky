@@ -1,0 +1,94 @@
+Subject: v139_branch_refinement_runtime_trailing_checksum_001 Trailing Checksum Review
+
+& [Graph:v139_branch_refinement_runtime_trailing_checksum_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG trailing-checksum-review
+  = base_ref: 340a162
+  = head_ref: 54da1ab
+  = one_turn_lag: one_turn
+  = checksum_disposition: deep_probe
+
+  + [N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001] is v139_branch_refinement_runtime_trailing_checksum_001
+    = checksum_disposition: deep_probe
+    = one_turn_lag: one_turn
+  + [N:event:54da1ab] is 54da1ab
+  + [N:event:operating_loop_tick_020] is operating_loop_tick_020
+  + [N:commit:340a162] is 340a162
+  + [N:commit:54da1ab] is 54da1ab
+  + [N:policy:deep_probe] is deep_probe
+  + [N:outside:trailing_checksum_boundary] is hidden cognition, exact hidden-state replay, unsupported causation, claim that later reflection was original awareness, automatic branch creation, remote synchronization
+  + [N:zone:impact_zone_artifact] is impact_zone
+    = signal_key: artifact
+    = heat: 658
+    = confidence: high
+  + [N:signal:artifact] is artifact
+  + [N:finding:artifact] is artifact
+    = disposition: deep_probe
+  + [N:zone:impact_zone_branch] is impact_zone
+    = signal_key: branch
+    = heat: 658
+    = confidence: high
+  + [N:signal:branch] is branch
+  + [N:finding:branch] is branch
+    = disposition: deep_probe
+  + [N:zone:impact_zone_refinement] is impact_zone
+    = signal_key: refinement
+    = heat: 658
+    = confidence: high
+  + [N:signal:refinement] is refinement
+  + [N:finding:refinement] is refinement
+    = disposition: deep_probe
+  + [N:zone:impact_zone_outside] is impact_zone
+    = signal_key: outside
+    = heat: 642
+    = confidence: high
+  + [N:signal:outside] is outside
+  + [N:finding:outside] is outside
+    = disposition: deep_probe
+  + [N:zone:impact_zone_remote] is impact_zone
+    = signal_key: remote
+    = heat: 642
+    = confidence: high
+  + [N:signal:remote] is remote
+  + [N:finding:remote] is remote
+    = disposition: deep_probe
+  + [N:zone:impact_zone_state] is impact_zone
+    = signal_key: state
+    = heat: 642
+    = confidence: high
+  + [N:signal:state] is state
+  + [N:finding:state] is state
+    = disposition: deep_probe
+  + [N:zone:impact_zone_authority] is impact_zone
+    = signal_key: authority
+    = heat: 634
+    = confidence: high
+  + [N:signal:authority] is authority
+  + [N:finding:authority] is authority
+    = disposition: deep_probe
+
+/ [E:span:v139_branch_refinement_runtime_trailing_checksum_001] -(span; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; start=N:commit:340a162; end=N:commit:54da1ab)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:trails:54da1ab] -(trails; direct_focus=N:event:54da1ab; review=N:event:operating_loop_tick_020; lag=one_turn)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:checksums:v139_branch_refinement_runtime_trailing_checksum_001] -(checksums; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; direct_focus=N:event:54da1ab; disposition=N:policy:deep_probe)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:bounds:v139_branch_refinement_runtime_trailing_checksum_001] -(bounds; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; outside=N:outside:trailing_checksum_boundary)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:heats:impact_zone_artifact] -(heats; zone=N:zone:impact_zone_artifact; signal=N:signal:artifact; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; weight=658)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:inquires:artifact] -(inquires; finding=N:finding:artifact; disposition=N:policy:deep_probe; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:heats:impact_zone_branch] -(heats; zone=N:zone:impact_zone_branch; signal=N:signal:branch; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; weight=658)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:inquires:branch] -(inquires; finding=N:finding:branch; disposition=N:policy:deep_probe; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:heats:impact_zone_refinement] -(heats; zone=N:zone:impact_zone_refinement; signal=N:signal:refinement; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; weight=658)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:inquires:refinement] -(inquires; finding=N:finding:refinement; disposition=N:policy:deep_probe; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:heats:impact_zone_outside] -(heats; zone=N:zone:impact_zone_outside; signal=N:signal:outside; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; weight=642)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:inquires:outside] -(inquires; finding=N:finding:outside; disposition=N:policy:deep_probe; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:heats:impact_zone_remote] -(heats; zone=N:zone:impact_zone_remote; signal=N:signal:remote; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; weight=642)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:inquires:remote] -(inquires; finding=N:finding:remote; disposition=N:policy:deep_probe; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:heats:impact_zone_state] -(heats; zone=N:zone:impact_zone_state; signal=N:signal:state; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; weight=642)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:inquires:state] -(inquires; finding=N:finding:state; disposition=N:policy:deep_probe; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:heats:impact_zone_authority] -(heats; zone=N:zone:impact_zone_authority; signal=N:signal:authority; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001; weight=634)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+/ [E:inquires:authority] -(inquires; finding=N:finding:authority; disposition=N:policy:deep_probe; review=N:bookmark:v139_branch_refinement_runtime_trailing_checksum_001)> [Graph:v139_branch_refinement_runtime_trailing_checksum_001]
+
+- outside: hidden cognition
+- outside: exact hidden-state replay
+- outside: unsupported causation
+- outside: claim that later reflection was original awareness
+- outside: automatic branch creation
+- outside: remote synchronization
