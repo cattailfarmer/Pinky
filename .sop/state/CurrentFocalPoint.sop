@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is pressure impact ThinkAbout pilot candidate inspection
+  + [focus_subject] is pressure impact ThinkAbout record drafting
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the first synthesis-backed real-use pilot queue is ready for inspection but not launch, so the next movement should verify gates and decide whether to run it
-  + [inside] is 2026-06-24_operating_loop_tick_015.sop, 2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop, 2026-06-24_pressure_impact_thinkabout_prompt_016.sop, lm_studio_worker_readiness_synthesis_20260624_016.sop, LMStudioWorkerFunctionalLane.sop, LMStudioAgentBenchmark.sop, TaskFrameLaunchQueue.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when clock_state is running and candidate execution remains scratch-isolated, non-mutating, proposal-only, Codex-reviewed, full-latch validated, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, self-integration, or unrelated dirty files
-  + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, unvalidated future tasks, automatic launch, launched status, and continuing after explicit stop
+  + [right_hemisphere_draw] is the pilot produced one accepted local proposal after task-fit correction; the next movement should convert that proposal into a Codex-authored ThinkAbout record without treating the worker as integration authority
+  + [inside] is 2026-06-24_operating_loop_tick_016.sop, 2026-06-24_pressure_impact_thinkabout_review_016.sop, 2026-06-24_pressure_impact_thinkabout_result_016_retry_001.sop, 2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop, LMStudioWorkerFunctionalLane.sop, LMStudioAgentBenchmark.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when clock_state is running and drafting remains Codex-authored, source-cited, validator-informed, proposal-aware, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, self-integration, direct trust, or unrelated dirty files
+  + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_015.sop
-  + [open_question] is whether to launch pressure_impact_thinkabout_016 through scratch isolation and validator gates
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_016.sop
+  + [open_question] is how to draft the deeper ThinkAbout record from accepted worker proposal while preserving Codex authority and task-fit caution
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -23,6 +23,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat boundary_delineation, outside_preservation, and task_frame_routing validation scores as three family signals only
   = must: treat all six task-family validations as scratch-isolated non-mutating proposal evidence only
   = must: require the six-family readiness synthesis latch set for the next pilot queue
+  = must: treat pressure_impact_thinkabout_016 retry_001 as proposal evidence only until Codex drafts and validates a record
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration
   = must: emit or update an operating-loop tick after meaningful completed work so the next step stays visible

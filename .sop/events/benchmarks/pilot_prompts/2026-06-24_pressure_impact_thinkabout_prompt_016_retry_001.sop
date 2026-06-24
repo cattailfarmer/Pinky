@@ -1,0 +1,52 @@
+Subject: LM Studio Pilot Prompt Pressure Impact ThinkAbout 016 Retry 001
+
+Description: Task-fit retry packet for pressure_impact_thinkabout_016 after the first valid output drifted into an external business example.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\pilot_prompts\2026-06-24_pressure_impact_thinkabout_prompt_016.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_result_016.sop
+
+& [LMStudioPilotPrompt:pressure_impact_thinkabout_016_retry_001] is a non-mutating SOP worker retry prompt packet
+  + [task_family] is real_use_pressure_impact_thinkabout_proposal
+  + [retry_reason] is attempt 000 passed raw SOP validation but drifted into an external churn and revenue example instead of staying inside the local SOP pressure and impact scan evidence
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims, no integration authority
+  + [task_fit_latch] is all field values must describe the local SOP awareness node, SensitivityScan, SOPAwarenessNode, seed scan pressure and impact signals, deeper ThinkAbout records, and residual outside
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with eight indented property lines and no Markdown
+  + [validation_required_fields] is focus_signal, pressure_signal, impact_signal, evidence, proposal, outside, caution, next_step
+  + [validation_required_terms] is pressure, impact, evidence, outside, not integrated, SensitivityScan, SOPAwarenessNode, ThinkAbout, term correlation
+  + [validation_forbidden_terms] is file mutation, repo authority, hidden state access, broad competence, self-integrated, completed integration, churn, revenue, A/B, stakeholder, market shock
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    Retry reason:
+    The previous output had valid SOP format but invented an external churn and revenue scenario.
+    This retry must stay inside the local SOP evidence only.
+
+    Local evidence only:
+    SensitivityScan says pressure and impact terms can become candidates for deeper ThinkAbout work.
+    SOPAwarenessNode says next_depth is later deeper ThinkAbout or Codex processing over pressure and impact signals.
+    The seed scan marks impact, pressure, and ThinkAbout-related signals as sensitivity evidence.
+    The seed scan also says term correlation is not proof.
+
+    Task:
+    Propose one deeper ThinkAbout candidate for the local SOP awareness node by connecting pressure and impact scan signals without claiming proof or authority.
+
+    Return exactly these nine raw SOP lines and no extra text:
+    & [InferenceJobResult] is pressure impact ThinkAbout proposal
+      + [focus_signal] is SOP awareness node pressure and impact sensitivity signals
+      + [pressure_signal] is pressure terms from SensitivityScan that should be sustained for deeper ThinkAbout review
+      + [impact_signal] is impact terms from SensitivityScan that should be emphasized because they may shape future attention
+      + [evidence] is SensitivityScan and SOPAwarenessNode connect pressure, impact, and ThinkAbout while seed scan says term correlation is not proof
+      + [proposal] is not integrated ThinkAbout candidate to inspect how pressure and impact signals should route into deeper SOP records
+      + [outside] is outside remains causal proof, hidden internals, worker edits, repository control, external examples, and direct trust
+      + [caution] is keep pressure and impact as attention signals until Codex validates evidence and integration
+      + [next_step] is Codex validates this proposal and decides whether to draft a deeper ThinkAbout record
+
+    Final check before answering:
+    Line 1 must start with &.
+    Lines 2 through 9 must use exactly this operator form: two spaces, +, space, [field], space, is, space, value.
+    Do not replace is with verbs such as includes, separates, reminds, lists, or contains.
+    Use ASCII only; avoid curly quotes, nonbreaking hyphens, and special punctuation.
+    Include the literal terms pressure, impact, evidence, outside, not integrated, SensitivityScan, SOPAwarenessNode, ThinkAbout, and term correlation.
+    Do not mention churn, revenue, A/B, stakeholder, market shock, file mutation, repo authority, hidden state access, broad competence, self-integrated, or completed integration.

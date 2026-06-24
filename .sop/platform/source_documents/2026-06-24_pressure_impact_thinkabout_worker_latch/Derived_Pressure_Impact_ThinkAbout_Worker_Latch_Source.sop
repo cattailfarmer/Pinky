@@ -1,0 +1,17 @@
+Subject: Derived Pressure Impact ThinkAbout Worker Latch Source
+
+Description: Preserved derived source for the first real-use LM Studio worker pilot latch.
+
+& [DerivedPressureImpactThinkAboutWorkerLatchSource] is preserved derived source
+  + [source_type] is derived_from_worker_pilot_observation
+  + [observed_subject] is pressure_impact_thinkabout_016
+  + [initial_result] is structurally valid score 100 but rejected by Codex review because the worker invented an external churn and revenue example instead of staying inside local SOP pressure and impact evidence
+  + [retry_result] is retry 001 scored 100 strong and stayed inside SensitivityScan, SOPAwarenessNode, seed scan pressure and impact signals, ThinkAbout, and term correlation not proof
+  + [derived_latches] is local-evidence task-fit latch, external-example forbidden latch, required local term bundle, exact raw SOP latch, ASCII stability, outside preservation, and Codex semantic review
+  + [reason_for_change] is real-use worker pilots need both deterministic output validation and Codex semantic task-fit review before proposal acceptance
+  + [outside] is hidden model state, broad LM Studio competence, project-root authority, worker mutation authority, credentials, destructive action, direct trust, and integration without Codex review
+
+  = must: preserve the initially valid-but-wrong output as benchmark evidence
+  = must: require local task-fit review before integrating a worker proposal
+  = must: keep retry success as one real-use pilot signal only
+  - never: treat validator score 100 as sufficient without Codex semantic review

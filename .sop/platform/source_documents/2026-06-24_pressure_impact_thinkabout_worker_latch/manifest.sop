@@ -1,0 +1,12 @@
+Subject: Pressure Impact ThinkAbout Worker Latch Source Manifest
+
+Description: Source preservation manifest for the pressure impact ThinkAbout worker latch.
+
+& [PressureImpactThinkAboutWorkerLatchSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pressure_impact_thinkabout_worker_latch\Derived_Pressure_Impact_ThinkAbout_Worker_Latch_Source.sop
+  + [target_contracts] is LMStudioAgentBenchmark.sop, LMStudioWorkerFunctionalLane.sop, TaskFrameLaunchQueue.sop, and lmstudio_limited_worker_pilot_queue_001.sop
+  + [event_record] is C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop
+  + [derived_terms] is task_fit_latch, local_evidence_required_term_bundle, external_example_forbidden_latch, and Codex semantic review
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when auditing the first real-use LM Studio pilot

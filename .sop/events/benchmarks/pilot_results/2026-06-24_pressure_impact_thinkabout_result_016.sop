@@ -1,0 +1,9 @@
+& [InferenceJobResult] is pressure impact ThinkAbout proposal
+  + [focus_signal] is potential feedback loop between user churn (pressure) and revenue decline (impact)
+  + [pressure_signal] is high churn rate during product release cycle
+  + [impact_signal] is subsequent drop in monthly recurring revenue
+  + [evidence] is SensitivityScan flagged pressure/impact correlation, but no causal proof
+  + [proposal] is investigate causality via controlled A/B test on release timing
+  + [outside] is no evidence of external market shock affecting both signals
+  + [caution] is not integrated yet; requires validation before action
+  + [next_step] is design experimental protocol and obtain stakeholder approval
