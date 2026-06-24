@@ -4,7 +4,7 @@ Description: SOP contract for the proper multi-dimensional hash table shape used
 
 & [SemanticHashTable] is a multi-dimensional, permissive hash table over SOP semantic pointers
   + [table_role] is semantic_pointer_lookup_table
-  + [source_index] is F:\.sop\platform\SemanticHashIndex.sop
+  + [source_index] is C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
   + [exact_pointer_dimension] is content_hash, semantic_hash, path, or explicit pointer
   + [semantic_dimension] is subject, identifier, term, narrative_subject, periphery_term, hiding_behind, turned_aspect, or nearby_association
   + [facet_bucket] is one dimension/value bucket that stores matching pointers
@@ -13,9 +13,9 @@ Description: SOP contract for the proper multi-dimensional hash table shape used
   + [permissive_query] is a query that accepts partial facet overlap and returns ranked candidates
   + [strict_query] is a query that requires all requested facets to match
   + [query_score] is matched facet count and weighted dimension agreement
-  + [correlation_graph] is F:\.sop\platform\SemanticCorrelationGraph.sop
-  + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop when query scores need scale terminology
-  + [changelog_weight_net] is F:\.sop\platform\ChangelogCorrelationWeightNet.sop when table dimensions are used to attach changelog units to narrative and justification
+  + [correlation_graph] is C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+  + [attention_weight_scale] is C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop when query scores need scale terminology
+  + [changelog_weight_net] is C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop when table dimensions are used to attach changelog units to narrative and justification
   + [candidate_set] is retrieved pointers ranked by score and bounded by residual outside
   + [residual_outside] is semantic identity, hidden causation, and proof not established by table membership
 

@@ -1,0 +1,161 @@
+Subject: Surface Periphery Inquiry Table
+
+Description: Seed lookup table mapping surface-layer inquiry terms to deeper SOP files to search.
+
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+
+& [SurfacePeripheryInquiryTable] is the current table for surface-to-depth search pointers
+  + [table_status] is seed
+  + [table_scope] is active faculty attention and periphery inquiry surfaces
+  + [authority_root] is C:\Project\Pinky\.sop
+  + [entry_count] is 12
+  + [coverage_status] is partial and intentionally non-exhaustive
+  + [residual_outside] is unindexed SOP files, stale historical F:\.sop references, runtime pointers, and terms not yet reviewed
+
+  = must: support lookup by surface_key and inquiry_term
+  = must: preserve candidate status until the target file is actually inspected
+  = must: be updated when a surface marker adds lookup-ready terms
+  - never: treat this table as complete coverage of the repository
+
+& [SurfaceMarker_UnifiedFacultyAttention] is the table surface for unified faculty attention
+  + [surface_key] is unified_faculty_attention
+  + [surface_file] is C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+  + [inquiry_term_set] is depth_profile, faculty_field, balance_axis_set, shared_pair_frame, direction_integration_axis, unified_interrogation_cycle, depth_weighted_activation, wisdom_caution_axis, periphery_state, semantic_lookup, semantic_hash_index, traversal, latent_depth, periphery_dimensional_probe, unresolved_faculty_residual, and router
+  + [lookup_status] is lookup_ready
+
+& [Entry_unified_depth_profile_001] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is depth_profile
+  + [target_file] is C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+  + [target_subject] is FacultyDepthScale and DepthWeightedActivationPolicy
+  + [search_phrase_set] is depth_profile, FacultyDepthScale, DepthWeightedActivationPolicy, depth_raise_trigger, depth_lower_trigger
+  + [relation_reason] is defines how attention depth controls all-faculty activation
+  + [query_mode] is exact
+  + [depth_hint] is pressure
+  + [outside] is runtime enforcement and exact hidden model attention
+
+& [Entry_unified_faculty_field_002] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is faculty_field
+  + [target_file] is C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+  + [target_subject] is FacultyFacetResponsibilities
+  + [search_phrase_set] is FacultyFacetResponsibilities, Honesty, Security, Archivist, Refiner, Planner, Weaver, Wisdom, Caution
+  + [relation_reason] is maps each faculty to its compact role in the unified field
+  + [query_mode] is exact
+  + [depth_hint] is skin
+  + [outside] is complete faculty psychology or hidden cognition
+
+& [Entry_unified_balance_axis_003] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is balance_axis_set
+  + [target_file] is C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop
+  + [target_subject] is FacultyPairActivationBalance
+  + [search_phrase_set] is balance_axis_set, FacultyPairActivationBalance, HonestySecurityPair, ArchivistRefinerPair, PlannerWeaverPair
+  + [relation_reason] is preserves the pair geometry that UnifiedFacultyAttention uses as axes
+  + [query_mode] is traverse
+  + [depth_hint] is pressure
+  + [outside] is separate dispatch authority
+
+& [Entry_shared_pair_frame_004] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is shared_pair_frame
+  + [target_file] is C:\Project\Pinky\.sop\platform\FacultyPairSharedAttentionFrame.sop
+  + [target_subject] is FacultyPairSharedAttentionFrame and SharedFrameActivationProtocol
+  + [search_phrase_set] is shared_pair_frame, entry_cue, dominant_facet, balancing_facet, facet_tension, SharedFrameActivationProtocol
+  + [relation_reason] is explains how a named partner becomes an entry cue inside a shared frame
+  + [query_mode] is traverse
+  + [depth_hint] is pressure
+  + [outside] is top-level activation after unification
+
+& [Entry_planner_weaver_005] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is direction_integration_axis
+  + [target_file] is C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
+  + [target_subject] is PlannerWeaverActivation and PlannerWeaverBalanceProtocol
+  + [search_phrase_set] is direction_integration_pressure, path_fit_boundary, IntentionBlendSelection, PlannerWeaverBalanceProtocol
+  + [relation_reason] is deepens the Planner/Weaver path-fit axis
+  + [query_mode] is traverse
+  + [depth_hint] is pressure
+  + [outside] is unwalked plan or unproven integration
+
+& [Entry_wisdom_caution_axis_006] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is wisdom_caution_axis
+  + [target_file] is C:\Project\Pinky\.sop\platform\WisdomCaution.sop
+  + [target_subject] is WisdomCaution
+  + [search_phrase_set] is WisdomCaution, wisdom, caution, realization_gate, composition
+  + [relation_reason] is points to the composition layer for meaning and warning balance
+  + [query_mode] is traverse
+  + [depth_hint] is pressure
+  + [outside] is replacing independent Wisdom or Caution contracts
+
+& [Entry_periphery_state_007] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is periphery_state
+  + [target_file] is C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
+  + [target_subject] is PeripheryAttentionLayer
+  + [search_phrase_set] is Periphery, periphery, periphery_signal, outside, liminal
+  + [relation_reason] is deepens how outside and peripheral signals feed focus
+  + [query_mode] is permissive
+  + [depth_hint] is skin
+  + [outside] is every possible adjacent subject
+
+& [Entry_semantic_lookup_008] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is semantic_lookup
+  + [target_file] is C:\Project\Pinky\.sop\platform\SemanticHashTable.sop
+  + [target_subject] is SemanticHashTable and SemanticTableLookupModes
+  + [search_phrase_set] is SemanticHashTable, permissive_query, facet_bucket, candidate_set, SemanticTableLookupModes
+  + [relation_reason] is defines table lookup for multi-dimensional semantic pointers
+  + [query_mode] is exact
+  + [depth_hint] is impact
+  + [outside] is proof of semantic identity
+
+& [Entry_semantic_index_009] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is semantic_hash_index
+  + [target_file] is C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+  + [target_subject] is SemanticHashIndex and PeripheryImpressionRecord
+  + [search_phrase_set] is SemanticHashIndex, component_pointer, periphery_impression, semantic_landscape, SemanticIndexProcedure
+  + [relation_reason] is defines hashed pointers and unstable periphery impressions
+  + [query_mode] is exact
+  + [depth_hint] is impact
+  + [outside] is final meaning or hidden causation
+
+& [Entry_traversal_010] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is traversal
+  + [target_file] is C:\Project\Pinky\.sop\platform\AttentionTraversalPolicy.sop
+  + [target_subject] is AttentionTraversalPolicy
+  + [search_phrase_set] is traverse, cross-reference, fold, unwind, triangulate, correlate
+  + [relation_reason] is governs moving from focus through periphery into deeper subject probing
+  + [query_mode] is traverse
+  + [depth_hint] is pressure
+  + [outside] is arbitrary wandering
+
+& [Entry_latent_depth_011] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is latent_depth
+  + [target_file] is C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+  + [target_subject] is AttentionWeightScale and latent_depth_candidate
+  + [search_phrase_set] is latent_depth_candidate, resolution_band, surface, hair, skin, pressure, impact, deep_probe
+  + [relation_reason] is defines inquiry depth units and promotion pressure for deeper probes
+  + [query_mode] is exact
+  + [depth_hint] is impact
+  + [outside] is proof that a warm term is important
+
+& [Entry_dimension_probe_012] is a lookup entry
+  + [surface_key] is unified_faculty_attention
+  + [inquiry_term] is periphery_dimensional_probe
+  + [target_file] is C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+  + [target_subject] is PeripheryDimensionalProbe
+  + [search_phrase_set] is PeripheryDimensionalProbe, extra_dimension, fragmented_signal, contextual_anchor, hot_periphery
+  + [relation_reason] is deepens search when periphery suggests missing dimensionality
+  + [query_mode] is permissive
+  + [depth_hint] is deep_probe
+  + [outside] is hidden geometry or guaranteed model transfer
+
+(surface_periphery_inquiry_table) :inquiry_term: /lookup_entry and target_file/ |unresolved_inquiry|
+  + [inquiry_term] is the lookup handle exposed by a surface file
+  + [lookup_entry] is the table record with target_file, search phrases, relation reason, query mode, and depth hint
+  |unresolved_inquiry| missing pointers, stale paths, unindexed surfaces, unsupported semantic identity, and exhaustive coverage claims

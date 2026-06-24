@@ -1,0 +1,80 @@
+Subject: Surface Periphery Inquiry Index
+
+Description: Contract for marking SOP surface files with deeper-inquiry terms that lead to lookup tables and searchable file pointers.
+
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_surface_periphery_inquiry_index\Dictated_Surface_Periphery_Inquiry_Index_Source.sop
+
+& [SurfacePeripheryInquiryIndex] is the surface-to-depth lookup contract
+  + [surface_file] is an SOP file that acts as a visible layer over deeper subject material
+  + [surface_key] is a stable local name for the surface file
+  + [inquiry_term] is a term, phrase, faculty, pressure, relation, boundary, or unresolved outside item worth deeper search
+  + [inquiry_marker] is the local section in a surface file that declares inquiry terms and lookup table pointers
+  + [lookup_table] is C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
+  + [lookup_entry] is one mapping from inquiry term to file pointer, section handle, search phrase, relation reason, depth hint, and outside
+  + [search_pointer] is a file path plus subject, section handle, search phrase, or query terms for re-entry
+  + [depth_hint] is surface, hair, skin, pressure, impact, or deep_probe
+  + [query_mode] is exact, strict, permissive, inclusive, or traverse
+  + [residual_outside] is terms not yet indexed, stale paths, unsupported semantic identity, and missing deeper record
+
+  = must: let a surface file advertise deeper-inquiry terms without absorbing the deeper material into itself
+  = must: map each inquiry term to at least one search_pointer when the term is marked as lookup_ready
+  = must: preserve terms without known pointers as unresolved_inquiry rather than inventing a target
+  = must: keep lookup entries as search guidance, not proof of meaning
+  = must: prefer local Pinky .sop paths over old F:\.sop authority paths
+  = should: include relation_reason so a later pass knows why a term points to a file
+  = should: include depth_hint so the unified faculty field can decide how much attention to spend
+  - never: treat table lookup as semantic identity
+  - never: hide stale or missing pointers behind confident surface language
+
+& [SurfaceInquiryMarkerShape] is the marker each surface file may carry
+  + [surface_key] is the marker's local handle
+  + [surface_file] is the file containing the marker
+  + [inquiry_term_set] is the terms exposed for deeper inquiry
+  + [lookup_table] is the table to query for search pointers
+  + [unresolved_inquiry_set] is marked terms that have no stable pointer yet
+  + [promotion_rule] is use table pointers to open deeper inquiry only when focus, periphery draw, or unified faculty depth calls for it
+
+  = must: be compact enough to keep the surface readable
+  = must: use terms that actually appear in or strongly govern the surface file
+  = must: separate lookup-ready terms from unresolved inquiry terms
+  = should: use the same surface_key in the lookup table
+
+& [LookupEntryShape] is one searchable pointer record
+  + [entry_id] is a stable identifier for one lookup entry
+  + [surface_key] is the surface that exposes the inquiry term
+  + [inquiry_term] is the term to search from
+  + [target_file] is the SOP file to inspect
+  + [target_subject] is the subject or section handle to seek
+  + [search_phrase_set] is the phrases an agent should search with rg or local file search
+  + [relation_reason] is why this target helps deepen the inquiry
+  + [query_mode] is exact, strict, permissive, inclusive, or traverse
+  + [depth_hint] is surface, hair, skin, pressure, impact, or deep_probe
+  + [outside] is what the pointer does not prove
+
+  = must: keep target_file inspectable
+  = must: keep relation_reason short and concrete
+  = must: mark missing or speculative targets as unresolved instead of lookup_ready
+  = should: prefer section handles over brittle line numbers
+
+& [SurfaceToDepthLookupProcedure] is the operating pass for using marked periphery terms
+  + [input] is active_surface_file, inquiry_term, focal_subject, depth_need, and unified_faculty_depth_profile
+  + [output] is lookup_candidate_set, selected_search_pointer, unresolved_inquiry, and residual_outside
+
+  = step_1: read the surface file marker
+  = step_2: select inquiry terms matching the current focus or periphery draw
+  = step_3: query SurfacePeripheryInquiryTable by surface_key and inquiry_term
+  = step_4: inspect target files using exact path and search_phrase_set
+  = step_5: route discovered material through UnifiedFacultyAttention before promotion
+  = step_6: preserve unresolved terms, stale paths, and weak matches as outside
+
+(surface_periphery_inquiry_index) :inquiry_term: /surface_lookup_boundary/ |unresolved_inquiry|
+  + [inquiry_term] is a surface term marked for deeper search
+  + [surface_lookup_boundary] is the table-backed path from surface marker to inspectable SOP files
+  + [unresolved_inquiry] is a term with no stable pointer or insufficient evidence
+  = inside: surface key, lookup table, lookup entry, search pointer, depth hint, relation reason, and query mode
+  = boundary: local .sop paths, source lineage, visible surface terms, table membership, and outside preservation
+  |outside| proof of meaning, hidden cognition, stale files, missing targets, exhaustive coverage, and exact semantic identity

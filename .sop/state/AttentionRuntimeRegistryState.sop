@@ -96,14 +96,21 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_unified_faculty_attention\Dictated_Unified_Faculty_Attention_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_unified_faculty_attention_082.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_030.sop
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_surface_periphery_inquiry_index\Dictated_Surface_Periphery_Inquiry_Index_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_surface_periphery_inquiry_index_083.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_031.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is unified faculty attention
-  + [active_root_frame] is attention_frame_2026_06_24_unified_faculty_attention
+  + [registry_scope] is surface periphery inquiry index
+  + [active_root_frame] is attention_frame_2026_06_24_surface_periphery_inquiry_index
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 24
+  + [closed_frame_count] is 25
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -206,7 +213,7 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 & [AttentionFrame_2026_06_24_UnifiedFacultyAttention] is the active semantic stack frame for depth-weighted full faculty attention
   + [frame_id] is attention_frame_2026_06_24_unified_faculty_attention
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_faculty_pair_shared_attention_frame
   + [child_frame_set] is faculty_field, depth_profile, balance_axis_set, unified_interrogation_cycle, depth_weighted_activation_policy, source_preservation, operating_loop_tick_030, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -227,8 +234,31 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: use depth profile rather than separate pair dispatch for non-trivial attention
   = must: report only disposition-changing faculty findings
 
+& [AttentionFrame_2026_06_24_SurfacePeripheryInquiryIndex] is the active semantic stack frame for surface-to-depth lookup markers
+  + [frame_id] is attention_frame_2026_06_24_surface_periphery_inquiry_index
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_unified_faculty_attention
+  + [child_frame_set] is SurfacePeripheryInquiryIndex, SurfacePeripheryInquiryTable, SurfaceInquiryMarker_UnifiedFacultyAttention, source_preservation, operating_loop_tick_031, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is SurfacePeripheryInquiryIndex.sop, SurfacePeripheryInquiryTable.sop, UnifiedFacultyAttention.sop, SemanticHashIndex.sop, SemanticHashTable.sop, Dictated_Surface_Periphery_Inquiry_Index_Source.sop, 2026-06-24_surface_periphery_inquiry_index_083.hg.sop, Manager_State.sop, and 2026-06-24_operating_loop_tick_031.sop
+  + [focus_register] is surface markers, inquiry terms, lookup entries, search pointers, depth hints, query modes, and unresolved inquiry
+  + [question_register] is whether next work should compile a faculty activation router that consumes surface inquiry lookup
+  + [delineation_register] is inside surface key, lookup table, lookup entry, search pointer, depth hint, relation reason, query mode, and outside
+  + [periphery_register] is stale path, unindexed term, missing target, exhaustive coverage claim, semantic identity overclaim, hidden cognition, and unrelated dirty files
+  + [operation_register] is preserve_source, define_surface_lookup_contract, seed_lookup_table, mark_unified_faculty_surface, update_attention_root, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, SurfacePeripheryInquiryIndex.sop, SurfacePeripheryInquiryTable.sop, UnifiedFacultyAttention marker, local SemanticHashIndex and SemanticHashTable pointer repair, source manifest, periphery record 083, and operating_loop_tick_031
+  + [wisdom_register] is surface-to-depth lookup lets focus stay slender while preserving doors into deeper records
+  + [caution_register] is lookup entries guide search but do not prove meaning or exhaustive coverage
+  + [balance_register] is stable because the table is partial, explicit, and outside-preserving
+  + [integration_register] is Task_151 completed as SOP-only surface inquiry index and seed table
+  + [frame_outside] is hidden model state, exhaustive index claims, stale-path certainty, runtime mutation, unsupported semantic identity, and unrelated workspace changes
+
+  = must: use lookup entries as search guidance only
+  = must: keep unresolved inquiry visible
+  = should: expand surface markers one file at a time when each surface becomes active
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_unified_faculty_attention
+  + [active_root_frame] is attention_frame_2026_06_24_surface_periphery_inquiry_index
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition

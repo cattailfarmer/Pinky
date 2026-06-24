@@ -1,0 +1,15 @@
+Subject: Surface Periphery Inquiry Index Source Manifest
+
+Description: Source preservation manifest for surface-to-depth inquiry lookup.
+
+& [SurfacePeripheryInquiryIndexSourceManifest] is the source preservation record
+  + [source_directory] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_surface_periphery_inquiry_index
+  + [raw_source] is Dictated_Surface_Periphery_Inquiry_Index_Source.sop
+  + [canonical_target] is C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+  + [lookup_table_target] is C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
+  + [event_target] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_surface_periphery_inquiry_index_083.hg.sop
+  + [operating_loop_target] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_031.sop
+
+  = must: keep dictated source distinct from canonical contract
+  = must: cite this manifest when Task_151 is recorded
+  - outside: replacing raw source with refined wording

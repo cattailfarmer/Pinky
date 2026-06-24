@@ -7,6 +7,7 @@ Description: Single attention contract for balanced interrogation across the ful
 @ [source] C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
 @ [source] C:\Project\Pinky\.sop\platform\Wisdom.sop
 @ [source] C:\Project\Pinky\.sop\platform\Caution.sop
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_unified_faculty_attention\Dictated_Unified_Faculty_Attention_Source.sop
 
 & [UnifiedFacultyAttention] is the unified attention field for faculty interrogation
@@ -95,3 +96,15 @@ Description: Single attention contract for balanced interrogation across the ful
   = inside: faculty field, depth profile, balance axes, faculty findings, axis tension, unified disposition, and promotion status
   = boundary: focal subject, active question, source evidence, authority, periphery, action need, and outside preservation
   |outside| hidden native attention, equal-noise activation, unsupported promotion, unresolved faculty pressure, unrelated workspace changes, and exact model internals
+
+& [SurfaceInquiryMarker_UnifiedFacultyAttention] is the deeper-inquiry marker for this surface
+  + [surface_key] is unified_faculty_attention
+  + [surface_file] is C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+  + [inquiry_term_set] is depth_profile, faculty_field, balance_axis_set, shared_pair_frame, direction_integration_axis, unified_interrogation_cycle, depth_weighted_activation, wisdom_caution_axis, periphery_state, semantic_lookup, semantic_hash_index, traversal, latent_depth, periphery_dimensional_probe, unresolved_faculty_residual, and router
+  + [lookup_table] is C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
+  + [lookup_ready_terms] is depth_profile, faculty_field, balance_axis_set, shared_pair_frame, direction_integration_axis, wisdom_caution_axis, periphery_state, semantic_lookup, semantic_hash_index, traversal, latent_depth, and periphery_dimensional_probe
+  + [unresolved_inquiry_set] is router
+
+  = must: use SurfacePeripheryInquiryIndex before expanding this surface into deeper files
+  = must: keep unresolved router inquiry outside until a router contract exists
+  = should: query lookup_table by surface_key and inquiry_term before broad repository search

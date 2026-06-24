@@ -1,0 +1,13 @@
+Subject: Dictated Surface Periphery Inquiry Index Source
+
+Description: Raw user-directed source preserved before canonical refinement.
+
+& [DictatedSurfacePeripheryInquiryIndexSource] is the preserved user direction
+  + [source_time] is 2026-06-24
+  + [source_authority] is user dictated direction in the Pinky .sop project
+  + [raw_direction] is encode the periphery of whatever layer is marked with terms for deeper inquiry into the SOP framework, so each SOP file that is the surface to deeper layering has terms that lead to a table lookup for files to search.
+
+  = must: preserve this source separately from canonical refinement
+  = must: define a surface marker that points from visible SOP files into deeper inquiry lookup tables
+  = must: keep lookup results as search and re-entry pointers, not proof
+  - outside: Python runtime changes, exhaustive indexing claims, hidden model internals, and unrelated workspace changes

@@ -1,0 +1,32 @@
+Subject: Surface Periphery Inquiry Index Realization
+
+Description: SOP-HG record for marking surface SOP files with terms that lead to deeper lookup tables and files to search.
+
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_surface_periphery_inquiry_index\Dictated_Surface_Periphery_Inquiry_Index_Source.sop
+
+& [SOPHypergraphRecord] is surface_periphery_inquiry_index_083
+  + [record_type] is periphery_realization
+  + [focus_subject] is surface periphery inquiry index
+  + [inside] is surface marker, inquiry term, lookup table, lookup entry, search pointer, depth hint, query mode, and unresolved inquiry
+  + [boundary] is Pinky .sop authority, local file paths, source preservation, visible terms, table membership, and no runtime mutation
+  + [outside] is proof of meaning, exhaustive coverage, stale paths, exact semantic identity, hidden cognition, and unrelated workspace changes
+
+  = realization: SOP surface files need compact inquiry markers that route periphery terms into lookup tables instead of carrying all deeper layers in-context
+  = authority_repair: active SemanticHashIndex and SemanticHashTable pointers now name C:\Project\Pinky\.sop as the authority root for this local system
+  = caution: lookup is re-entry guidance, not proof, and stale paths must stay outside
+  = wisdom: surface-to-depth lookup lets attention stay slender while preserving doors into deeper records
+
+/ [user_direction] -(PreservedAs)> [DictatedSurfacePeripheryInquiryIndexSource], [source_preservation]
+/ [SurfacePeripheryInquiryIndex] -(Defines)> [SurfaceInquiryMarkerShape], [LookupEntryShape], [SurfaceToDepthLookupProcedure]
+/ [UnifiedFacultyAttention] -(Marks)> [SurfaceMarker_UnifiedFacultyAttention], [SurfacePeripheryInquiryTable]
+/ [SurfacePeripheryInquiryTable] -(MapsTerm)> [depth_profile], [UnifiedFacultyAttention.sop]
+/ [SurfacePeripheryInquiryTable] -(MapsTerm)> [semantic_lookup], [SemanticHashTable.sop]
+/ [SurfacePeripheryInquiryTable] -(MapsTerm)> [traversal], [AttentionTraversalPolicy.sop]
+/ [SurfacePeripheryInquiryTable] -(MapsTerm)> [latent_depth], [AttentionWeightScale.sop]
+
+(surface_periphery_inquiry_index_realization) :surface_term: /lookup_table and search_pointer/ |unresolved_inquiry|
+  + [surface_term] is a visible SOP term marked for deeper inquiry
+  + [lookup_table] is the table of file pointers and search phrases
+  |unresolved_inquiry| unindexed term, stale file, weak pointer, unsupported meaning, and exhaustive coverage claim

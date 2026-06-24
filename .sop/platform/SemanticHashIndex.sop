@@ -4,12 +4,12 @@ Description: SOP contract for hashed pointers into SOP components and their unst
 
 & [SemanticHashIndex] is the hashed index that digests SOP components into pointer records and revisable semantic surfaces
   + [index_role] is unstable_semantic_awareness_index
-  + [repo_root] is F:\.sop
-  + [periphery_repository] is F:\.sop\platform\PeripheryRepository.sop
+  + [repo_root] is C:\Project\Pinky\.sop
+  + [periphery_repository] is C:\Project\Pinky\.sop\platform\PeripheryRepository.sop
   + [component_pointer] is a stable path, content hash, semantic hash, subject, and identifier set for one SOP component
   + [content_hash] is a SHA-256 digest of the exact component content
   + [semantic_hash] is a SHA-256 digest of the extracted subject, identifiers, and term set
-  + [semantic_hash_table] is F:\.sop\platform\SemanticHashTable.sop
+  + [semantic_hash_table] is C:\Project\Pinky\.sop\platform\SemanticHashTable.sop
   + [semantic_landscape] is the component subject, identifiers, extracted terms, and peripheral impressions
   + [unstable_semantic_awareness] is revisable inference at the edge where association is noticed before proof
   + [periphery_impression] is an out-of-focus point of potential interest with relation back to narrative
