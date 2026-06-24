@@ -1,0 +1,113 @@
+Subject: Turn Bookmark
+
+Description: On-demand repo-framed reflection utility for comparing work snapshots against planned specifications and recording missed work, mistakes, accomplishments, and new potentials.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-23_attention_weight_scale_turn_bookmark\Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+@ [source] F:\.sop\platform\RepoFirstInternalScan.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\ChangelogCorrelationWeightNet.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_commit_integrity_reflection\Dictated_Commit_Integrity_Reflection_Source.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+
+& [TurnBookmark] is an on-demand utility for recording a frame-by-frame repo reflection over a work turn
+  + [pattern_role] is commit_snapshot_reflection_bookmark
+  + [version_a] is the prior commit, ref, file state, or starting snapshot
+  + [version_b] is the new commit, ref, file state, or ending snapshot
+  + [snapshot_frame] is version_a to version_b as the bounded work interval
+  + [planned_specification] is the user directive, source document, manager slice, focal point, or acceptance plan expected to guide the work
+  + [change_log] is diff stat, name-status, numstat, changed file content, and generated scan output
+  + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop
+  + [changelog_weight_net] is F:\.sop\platform\ChangelogCorrelationWeightNet.sop
+  + [repo_first_scan] is F:\.sop\platform\RepoFirstInternalScan.sop
+  + [state_trace] is F:\.sop\platform\InferenceStateTrace.sop
+  + [missed_work] is planned or implied work not represented by sufficient change evidence
+  + [mistake] is contradiction, boundary error, generated artifact inflation, unsupported claim, stale tracker, or work that violates plan
+  + [unique_accomplishment] is a completed result, useful structure, or proof that exceeded routine expectation
+  + [new_potential] is a newly visible future capability, slice, or association opened by the work
+  + [reentry_candidate] is a bookmark finding strong enough to justify reconstructing the past inference frame
+  + [branch_refinement_candidate] is a reentry_candidate strong enough to justify isolated branch refinement before merging interpretation into main
+  + [commit_integrity_review] is the before-after reflection that confirms source preservation, purpose fit, justified changes, realized outputs, residual outside, tests, and stable purpose for a commit frame
+  + [trailing_checksum_review] is the one-turn-later backward-facing review from TrailingChecksumVoice that searches the previous direct-focus turn for hot zones, warmth zones, and latent depth candidates
+  + [stable_purpose] is the condition where changed files, source, periphery, review findings, tests, and manager state support one coherent purpose without unresolved contradiction
+  + [post_commit_repair] is a follow-up bookmark or commit created when commit_integrity_review was not recorded in the original commit frame
+  + [bookmark_record] is the SOP or SOP-HG artifact emitted by the utility
+  + [outside] is hidden motive, private activations, uninspected files, semantic proof, and causal truth not established by repo evidence
+
+  ? [use_when: the user asks to bookmark a turn, review a turn, compare work to plan, or inspect what was missed across a commit frame]
+    = activate [TurnBookmark]
+
+  = must: identify version_a and version_b before interpretation
+  = must: collect change_log before narrative judgment
+  = must: compare change_log against planned_specification and focal point terms
+  = must: use attention_weight_scale to calibrate low-resolution versus high-resolution findings
+  = must: use changelog_weight_net when subject attachment depends on narrative and justification
+  = must: route reentry_candidate findings to state_trace when exact semantic shape of the moment matters
+  = must: route branch_refinement_candidate findings to MomentAwarenessBranchRefinement when deeper inspection should not immediately alter main awareness history
+  = must: run commit_integrity_review when the user asks whether a turn commit preserved periphery, review analysis, justification, realization, and stable purpose
+  = must: run trailing_checksum_review one turn after direct focus attention unless the user explicitly redirects away from review
+  = must: name post_commit_repair when the integrity reflection is added after the commit being reviewed
+  = must: classify findings as missed_work, mistake, unique_accomplishment, new_potential, or outside
+  = must: cite the changed files, source documents, tests, or scan records behind each finding
+  = must: preserve unsupported but interesting signals in periphery rather than calling them completed work
+  = should: emit tracker or focal-point update when a missed_work or mistake finding needs future attention
+  - never: let narrative admiration hide missed work
+  - never: treat diff size as accomplishment without plan or support comparison
+  - never: call a potential an implemented result
+
+& [TurnBookmarkOrder] is the canonical on-demand bookmark sequence
+  + [step_001_bookend] is name version_a and version_b
+  + [step_002_diff] is collect stat, name-status, numstat, and changed SOP surfaces
+  + [step_003_plan] is gather planned_specification, source documents, focal point, and manager slice
+  + [step_004_concordance] is build an index and concordance of terms with citations
+  + [step_005_weight_scale] is calibrate signals by orientation, heat, confidence, and resolution_band
+  + [step_006_compare] is compare weighted signals to planned_specification
+  + [step_007_findings] is classify missed_work, mistake, unique_accomplishment, new_potential, and outside
+  + [step_008_commit_integrity] is confirm source preservation, justified change path, realized outputs, residual outside, tests, and stable_purpose
+  + [step_009_trailing_checksum] is classify cold zones, warmth zones, hot zones, latent depth candidates, and checksum disposition when review is one-turn-lagged
+  + [step_010_routes] is route follow-ups into tracker, focus, periphery, branch_refinement, deep_probe, or manager state
+  + [step_011_reentry] is emit or reference state_trace when the bookmark needs high-definition moment reconstruction
+  + [step_012_record] is emit bookmark_record and cite evidence
+
+  = must: run step_001 through step_007 for any durable turn bookmark
+  = must: run step_008 when the bookmark is a commit integrity review
+  = must: run step_009 when the bookmark is a trailing checksum review
+  = must: record skipped steps when a quick bookmark is requested
+
+& [TurnBookmarkFinding] is one classified realization from a turn bookmark
+  + [finding_kind] is missed_work, mistake, unique_accomplishment, new_potential, or outside
+  + [subject] is the subject or term under review
+  + [weight_vector] is the orientation-weight signal behind the finding
+  + [resolution_band] is surface, hair, skin, pressure, impact, or deep_probe
+  + [evidence] is changed file, source document, test result, scan record, or narrative anchor
+  + [plan_relation] is satisfied, partial, missing, contradictory, surprising, or opened
+  + [route] is close, track, focus, periphery, state_trace, branch_refinement, caution, wisdom, manager_task, or outside
+
+  = must: cite evidence for every non-outside finding
+  = must: preserve plan_relation separately from signal heat
+  = must: use missed_work when planned terms have insufficient evidence
+  = must: use mistake when evidence contradicts plan, boundaries, tests, or caution
+  = must: use unique_accomplishment only for completed or supported results
+  = must: use new_potential for future capability opened but not yet completed
+
+& [TurnBookmarkRecord] is the SOP-HG shape for a bookmark
+  + [bookmark_node] is N:bookmark:<bookmark_id>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [plan_node] is N:source:<planned_specification_key>
+  + [signal_node] is N:signal:<signal_key>
+  + [finding_node] is N:finding:<finding_key>
+  + [outside_node] is N:outside:turn_bookmark_boundary
+  + [span_edge] is E:span:<bookmark_id>
+  + [compare_edge] is E:compares:<bookmark_id>
+  + [weigh_edge] is E:weighs:<signal_key>
+  + [realize_edge] is E:realizes:<finding_key>
+  + [boundary_edge] is E:bounds:<bookmark_id>
+
+  = must: connect findings to bookends, plan, and evidence
+  = must: show finding_kind, plan_relation, resolution_band, and route
+  = must: show stable_purpose when the record is a commit_integrity_review
+
+/ [version_a], [version_b] -(SnapshotFrame)> [change_log]
+* [change_log], [planned_specification], [attention_weight_scale], [changelog_weight_net], [outside] -(TurnBookmarking)> [bookmark_record]

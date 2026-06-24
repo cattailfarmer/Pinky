@@ -1,0 +1,14 @@
+Subject: Focal Point Layer Source Manifest
+
+Description: Source preservation manifest for focal point layer.
+
+& [FocalPointLayerSourceManifest] is the source document set for focal point attention
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_focal_point_layer\Dictated_Focal_Point_Layer_Source.sop
+  + [canonical_contract] is F:\.sop\platform\FocalPoint.sop
+  + [focus_layer] is F:\.sop\platform\attention_layers\Focus.sop
+  + [tracker_contract] is F:\.sop\platform\AttentionTracker.sop
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_focal_point_layer.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_focal_point_layer_scan.hg.sop
+
+  = must: preserve the distinction between periphery tracking and focal point selection
+  = must: keep focal point authority in SOP files, not runtime helpers

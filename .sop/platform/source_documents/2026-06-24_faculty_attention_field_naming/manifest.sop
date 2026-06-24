@@ -1,0 +1,14 @@
+Subject: Faculty Attention Field Naming Source Manifest
+
+Description: Source preservation manifest for the faculty attention field naming specification.
+
+& [FacultyAttentionFieldNamingSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_faculty_attention_field_naming\Dictated_Faculty_Attention_Field_Naming_Source.sop
+  + [canonical_target] is F:\.sop\platform\FacultyAttentionFieldNaming.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_faculty_attention_field_naming_034.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_local_identity_consumption_trailing_checksum_033.hg.sop
+  + [derived_terms] is faculty_attention_field_naming, field_noun, focus_feature, feature_account, honesty_field_claim_distinction, security_field_assignment_safe_boundary_line, field_name_collision
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, Delineation, LocalIdentityConsumption, AttentionKernelCompiler, SecurityHonestyGovernance
+
+  = must: preserve raw source before treating the canonical target as process authority
+  = must: cite this manifest when faculty field names are audited

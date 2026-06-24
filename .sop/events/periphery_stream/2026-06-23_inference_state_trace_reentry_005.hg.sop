@@ -1,0 +1,22 @@
+Subject: inference_state_trace_reentry_005 Periphery Stream Moment
+
+& [Graph:inference_state_trace_reentry_005] is a SOP-HG graph
+  = format: SOP-HG
+  = focus_anchor: state\CurrentFocalPoint.sop
+  = source: platform\source_documents\2026-06-23_inference_state_trace_reentry\Dictated_Inference_State_Trace_Reentry_Source.sop
+  = realization: Multi-dimensional weight intersections become more powerful when they reconstruct an inference bookend frame, not merely rank hot terms.
+
+  + [N:event:inference_state_trace_reentry_005] is inference state trace re-entry realization
+    = layer: periphery
+    = resolution_band: impact
+  + [N:subject:inference_state_trace] is versioned re-entry into a past visible inference frame
+  + [N:subject:conditional_determinism] is deterministic-looking re-entry bounded by visible state and model consistency
+  + [N:signal:bookend_weight_intersection] is repo bookends plus SOP state plus narrative plus calibrated weight intersections
+    = impulse: reconstruct the semantic shape of a prior moment for introspection
+  + [N:outside:hidden_state_replay] is hidden activations, private weights, sampling, and unlogged context
+
+/ [E:realizes:inference_state_trace_reentry_005] -(realizes; event=N:event:inference_state_trace_reentry_005; subject=N:subject:inference_state_trace; subject=N:subject:conditional_determinism)> [Graph:inference_state_trace_reentry_005]
+/ [E:weighs:bookend_weight_intersection] -(weighs; signal=N:signal:bookend_weight_intersection; subject=N:subject:inference_state_trace; weight=9)> [Graph:inference_state_trace_reentry_005]
+/ [E:bounds:inference_state_trace_reentry_005] -(bounds; event=N:event:inference_state_trace_reentry_005; outside=N:outside:hidden_state_replay)> [Graph:inference_state_trace_reentry_005]
+
+- outside: exact visible-state re-entry is plausible only when all visible inputs are preserved; hidden state replay remains outside

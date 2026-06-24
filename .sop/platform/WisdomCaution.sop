@@ -1,0 +1,99 @@
+Subject: Wisdom Caution
+
+Description: Composition protocol for coordinating independent Wisdom and Caution attention patterns when a candidate needs both integration and boundary testing.
+
+& [WisdomCaution] is the coordination surface between independent Wisdom and Caution attention patterns
+  + [pattern_role] is composition_protocol_not_primary_attention_pattern
+  + [wisdom_pattern] is F:\.sop\platform\Wisdom.sop
+  + [caution_pattern] is F:\.sop\platform\Caution.sop
+  + [wisdom] is the independent integrative attention pattern
+  + [caution] is the independent boundary attention pattern
+  + [candidate] is a concept, relation, policy, action, focus change, tracker promotion, or implementation move seeking durable status
+  + [source_anchor] is the source, file, scan, tracker, test, user directive, or repo diff that grounds the candidate
+  + [support] is concrete evidence that makes the candidate worth holding
+  + [missing_support] is evidence or clarification still needed before durable acceptance
+  + [fit] is how the candidate serves the current focal point and project objective
+  + [cost] is attention burden, complexity, runtime burden, maintenance risk, or semantic distortion
+  + [hidden_constraint] is a likely blocker not visible in the first pass
+  + [failure_path] is how the candidate could mislead, bloat, erase outside, overfit, or become false authority
+  + [truth_test] is the smallest test or inspection likely to change the disposition
+  + [outside] is proof not yet established, causal truth not yet shown, hidden cognition, stale trackers, and unsupported association
+  + [disposition] is accept_to_focus, preserve_outside, return_to_periphery, track, test, narrow, defer, reject, or realize
+
+  ? [use_when: candidate meaning is consequential enough to need both Wisdom and Caution before focus, realization, policy, implementation authority, or durable memory]
+    = activate [WisdomCaution]
+
+  = must: keep Wisdom and Caution independently addressable
+  = must: run Wisdom and Caution as separate passes before merging disposition
+  = must: distinguish wise integration from novelty pull through Wisdom
+  = must: distinguish caution from fear, refusal, or smothering a supported signal through Caution
+  = must: preserve missing_support as outside when it remains load-bearing
+  = must: name the disposition and the truth_test for consequential candidates
+  = must: cite source_anchor or support before accepting durable authority
+  = should: use a slender pass for ordinary attention moves and a deeper pass for impact-pressure decisions
+  - never: collapse Wisdom and Caution into one undifferentiated attention organ
+  - never: let pleasing coherence substitute for support
+  - never: let caution erase a well-supported wisdom signal without naming the boundary
+  - never: treat graph density, heat, intuition, or association as proof
+
+& [WisdomCautionPass] is the handshake applied when both independent patterns are needed
+  + [input] is candidate, current_focal_point, source_anchor, support, missing_support, fit, cost, hidden_constraint, failure_path, and outside
+  + [wisdom_pass] is independent Wisdom attention over fit, purpose, timing, support, and integration
+  + [caution_pass] is independent Caution attention over boundary, proof, uncertainty, failure, and outside
+  + [merge_pass] is comparison of wisdom disposition and caution disposition without erasing either
+  + [output] is a named composition disposition with both pass outputs preserved
+
+  = must: begin from CurrentFocalPoint when the candidate affects active focus
+  = must: run after fold/unwind and before realization when both patterns are needed
+  = must: preserve the separate Wisdom output and Caution output
+  = must: return supported_core to focus only when source anchors survive unwind
+  = must: route useful but unready material to AttentionTracker or PeripheryRepository
+  = must: record consequential passes in SOP-HG when they shape durable framework state
+  - never: allow a candidate to bypass this pass because it is emotionally compelling
+
+& [WisdomCautionDecisionRecord] is the reusable record shape for consequential candidates
+  + [candidate] is the conception, plan, runtime change, provider claim, gameplay action, or slice integration being considered
+  + [support] is concrete evidence, source text, test result, user need, or implementation fact supporting the candidate
+  + [missing_support] is evidence or boundary clarification still needed
+  + [fit] is how the candidate fits the current attention frame and project objective
+  + [cost] is the runtime, complexity, maintenance, risk, or attention burden
+  + [hidden_constraint] is the likely blocker not visible in the first pass
+  + [failure_path] is how the candidate could fail, mislead, bloat, or erase outside
+  + [truth_test] is the smallest test likely to change the decision
+  + [disposition] is proceed, prototype, narrow, research_first, defer, reject, preserve_outside, track, or realize
+  + [review_trigger] is the new observation or result that should reopen the decision
+
+  = must: fill every field before accepting a consequential candidate as durable
+  = must: preserve uncertainty as outside when missing_support remains load-bearing
+  = must: cite source or test evidence rather than relying on coherence alone
+
+& [MasterEmissaryBalance] is the dual-hemisphere balance across Wisdom and Caution
+  + [master_role] is whole-context, relation, fit, lived shape, and meaning-sense integration
+  + [emissary_role] is explicit test, boundary, step, proof, decomposition, and operational decision
+  + [balanced_pass] is master senses candidate shape and emissary tests its legs without usurping the whole
+
+  = must: let broad contextual feel nominate a candidate without treating that feel as proof
+  = must: let explicit logic test the candidate without flattening the whole-context signal
+  = should: use caution to protect the master from premature emissary certainty and protect the emissary from unsupported intuition
+
+& [WisdomCautionRecord] is the SOP-HG shape for composed wisdom/caution gate events
+  + [governor_node] is N:governor:<governor_id>
+  + [wisdom_node] is N:wisdom:<wisdom_id>
+  + [caution_node] is N:caution:<caution_id>
+  + [candidate_node] is N:claim:<candidate_key> or N:subject:<candidate_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [source_node] is N:source:<source_key>
+  + [outside_node] is N:outside:wisdom_caution_boundary
+  + [gate_edge] is E:gates:<candidate_key>
+  + [test_edge] is E:tests:<candidate_key>
+  + [defer_edge] is E:defers:<candidate_key>
+  + [reject_edge] is E:rejects:<candidate_key>
+  + [realize_edge] is E:realizes:<candidate_key>
+  + [return_edge] is E:returns:<candidate_key>
+
+  = must: show wisdom and caution as complementary nodes
+  = must: show what candidate was gated
+  = must: show disposition and residual outside
+
+/ [candidate] -(WisdomCautionPass)> [supported_core], [missing_support], [truth_test], [outside]
+* [wisdom], [caution], [supported_core], [outside] -(Disposition)> [accept_to_focus] | [return_to_periphery] | [track] | [test] | [defer] | [reject] | [realize]

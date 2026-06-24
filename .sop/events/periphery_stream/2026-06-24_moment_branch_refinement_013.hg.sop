@@ -1,0 +1,40 @@
+Subject: Moment Branch Refinement Periphery Realization 013
+
+Description: Periphery-stream realization that turn moments can be reconstructed between commits and refined on isolated branches before selected merge into main awareness.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_moment_branch_refinement\Dictated_Moment_Branch_Refinement_Source.sop
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\RepoFirstInternalScan.sop
+
+& [Graph:2026-06-24_moment_branch_refinement_013] is a SOP-HG graph
+  + [N:event:2026-06-24_moment_branch_refinement_013] is moment branch refinement realization
+    = recorded_on: 2026-06-24
+    = event_kind: periphery_stream_realization
+  + [N:focus:moment_branch_refinement] is branch-isolated deeper inspection of reconstructed turn moments
+  + [N:commit:bookend_start] is commit frame start for investigated moment
+  + [N:commit:bookend_end] is commit frame end for investigated moment
+  + [N:narrative:turn_moment_trace] is narrative and state awareness around the investigated moment
+  + [N:state:framework_state] is SOP state, focal point, source docs, manager state, and generated records active around the moment
+  + [N:reentry:moment_reconstruction] is evidence-bounded reconstruction of a turn moment
+  + [N:branch:refinement_branch] is isolated branch for refining that reconstructed moment
+  + [N:artifact:branch_refinement_artifact] is SOP-HG artifact containing debug inference, findings, evidence, and outside
+  + [N:policy:branch_selection_gate] is review gate selecting merge_candidate, revise, preserve_periphery, reject, or outside
+  + [N:finding:later_refinement_boundary] is later insight must not be recast as original awareness
+  + [N:outside:higher_level_sync_unconfigured] is common GitHub remote, credentials, branch policy, and merge policy not configured
+
+  / [E:span:moment_branch_refinement_013] -(span; start=N:commit:bookend_start; end=N:commit:bookend_end; focus=N:focus:moment_branch_refinement)> [Graph:2026-06-24_moment_branch_refinement_013]
+    = insight: every turn moment can be treated as a reconstructable frame between commit bookends
+  / [E:reconstructs:turn_moment_frame] -(reconstructs; narrative=N:narrative:turn_moment_trace; state=N:state:framework_state; reentry=N:reentry:moment_reconstruction)> [Graph:2026-06-24_moment_branch_refinement_013]
+    = method: narrative and state awareness guide re-entry while repo bookends constrain evidence
+  / [E:branches:moment_refinement] -(branches; reentry=N:reentry:moment_reconstruction; branch=N:branch:refinement_branch; artifact=N:artifact:branch_refinement_artifact)> [Graph:2026-06-24_moment_branch_refinement_013]
+    = boundary: the deeper inspection happens off the main awareness line until selected
+  / [E:selects:branch_refinement_artifact] -(selects; artifact=N:artifact:branch_refinement_artifact; gate=N:policy:branch_selection_gate; finding=N:finding:later_refinement_boundary)> [Graph:2026-06-24_moment_branch_refinement_013]
+    = result: selected refinements may merge; unselected refinements remain periphery or outside
+  / [E:blocks:higher_level_sync] -(blocks; branch=N:branch:refinement_branch; outside=N:outside:higher_level_sync_unconfigured)> [Graph:2026-06-24_moment_branch_refinement_013]
+    = blocker: remote synchronization is described but not configured
+
+  = realization: a branch can hold a deeper interpretation of a past moment without corrupting the main record of what was originally present.
+  = next_runtime: build a local command that accepts commit bookends and emits a branch_refinement_artifact.
+  - outside: this record does not create a remote, push branches, or prove hidden inference state.

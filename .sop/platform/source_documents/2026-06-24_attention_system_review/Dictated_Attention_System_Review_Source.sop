@@ -1,0 +1,11 @@
+Subject: Dictated Attention System Review Source
+
+Description: Preserved user source requesting active tracking, inspection, tracing, review, reflection, inspiration, capability assessment, and next direction.
+
+& [DictatedSource] is preserved raw direction
+  + [date] is 2026-06-24
+  + [source_kind] is user_dictation
+  + [raw_text] is "I was hoping you would be able to start tracking and inspecting and tracing and walking back and forth throughout the system in review and reflection and drawing inspiration, what is it capable of and what is it doing and what should we reach for next?"
+
+  = must: preserve this source separately from canonical interpretation
+  - never: overwrite raw_text with refined specification

@@ -1,0 +1,11 @@
+Subject: Hypergraph Record Format Source Manifest
+
+Description: Source preservation manifest for SOP-HG.
+
+& [HypergraphRecordFormatSourceManifest] is the source document set for SOP Hypergraph Record format
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_hypergraph_record_format\Dictated_Hypergraph_Record_Format_Source.sop
+  + [format_contract] is F:\.sop\platform\SOPHypergraphRecord.sop
+  + [example_record] is F:\.sop\platform\examples\SeedSensitivityScan.hg.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\hypergraph.py
+
+  = must: treat SOP-HG as a profile of SOP, not a new ungoverned language

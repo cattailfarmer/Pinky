@@ -1,0 +1,27 @@
+Subject: RGB Delineation Correction Trailing Checksum 067
+
+Description: One-turn-later reflection on commit 2fc44d1, finding that separating RGB delineation from mutation requires a distinct photonic mutation frame layer.
+
+@ [source_commit] 2fc44d1 Correct RGB encoding to delineation basis
+@ [source] F:\.sop\platform\SOPRGBSemanticEncoding.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_photonic_mutation_frames\Dictated_Photonic_Mutation_Frames_Source.sop
+
+& [RGBDelineationCorrectionTrailingChecksum067] is the trailing checksum for the prior RGB correction frame
+  + [reviewed_focus] is RGB attention delineation correction
+  + [prior_inside] is red as attended inside, green as delineating boundary, blue as outside residual/periphery, and operation separation law
+  + [striking_delta] is the correction separated mutation from RGB but did not yet name the place where mutation belongs in the photonic stream
+  + [hot_zone] is photonic image frames should be treated as mutation frames: each frame records or implies change over a delineated subject surface
+  + [warm_zone] is RGB delineation remains the setup field that selects subject, boundary, and outside before mutation is interpreted
+  + [latent_depth] is frame-to-frame mutation needs before state, after state, operator, invariant, trace, and loss fields
+  + [correction] is add a photonic mutation frame contract and wire SOPPhotonicFrameStream to it
+  + [next_focus_candidate] is SOP photonic mutation frame
+  + [balance_state] is stable if delineation setup and mutation frame are orthogonal but composable
+
+  = must: treat this checksum as backward-facing reflection on the prior commit
+  = must: keep mutation out of RGB primitive terms while giving mutation its own frame language
+  - outside: hidden activations, exact video replay, untraced mutation, and mutation inferred from delineation alone
+
+/ [SOPRGBSemanticEncoding], [SOPPhotonicFrameStream], [SOPOpticalTransformAlgebra] -(RevealsMutationLayer)> [SOPPhotonicMutationFrame], [mutation_outside]
+* [delineation_setup], [mutation_frame], [frame_delta] -(SeparatesSetupFromChange)> [photonic_frame_stream], [mutation_outside]

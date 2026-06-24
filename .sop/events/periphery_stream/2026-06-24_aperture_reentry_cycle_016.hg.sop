@@ -1,0 +1,42 @@
+Subject: Aperture Reentry Cycle Periphery Realization
+
+Description: SOP-HG event record for the moment attention opening and closing became an explicit re-entry cycle for second-pass narrative and subject declarations.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_aperture_reentry_cycle\Dictated_Aperture_Reentry_Cycle_Source.sop
+@ [source] F:\.sop\platform\ApertureReentryCycle.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\attention_layers\NarrativeDigestion.sop
+@ [source] F:\.sop\state\CurrentFocalPoint.sop
+
+& [Graph:2026-06-24_aperture_reentry_cycle_016] is a SOP-HG graph
+  + [N:event:2026-06-24_aperture_reentry_cycle_016] is aperture re-entry cycle realization
+    = role: direct_focus_turn
+  + [N:focus:aperture_reentry_cycle] is aperture reentry cycle
+  + [N:periphery:support_draw] is periphery support that justifies opening attention
+  + [N:aperture:depth_adjustment] is opened attention width selected by purpose, risk, support, and boundary
+  + [N:subject:relation_survey] is subject relations surveyed during the open pass
+  + [N:term:deepening_pass] is deeper inference over relations, supports, and narrative traces
+  + [N:reentry:springboard] is compact packet produced by closing the aperture
+  + [N:narrative:second_pass] is second-pass narrative formed after re-entry
+  + [N:subject:declaration_pass] is subject declarations updated after second-pass narrative
+  + [N:outside:aperture_reentry_boundary] is hidden activations, unsupported causation, arbitrary association, prompt bloat, and claims that aperture movement proves internal attention state
+
+  / [E:opens:aperture_reentry_cycle_016] -(opens; focus=N:focus:aperture_reentry_cycle; support=N:periphery:support_draw; aperture=N:aperture:depth_adjustment; weight=draw)> [Graph:2026-06-24_aperture_reentry_cycle_016]
+    = realization: attention may open toward periphery only when support_draw justifies a wider survey
+  / [E:probes:relation_survey_016] -(probes; aperture=N:aperture:depth_adjustment; subject=N:subject:relation_survey; term=N:term:deepening_pass; outside=N:outside:aperture_reentry_boundary; weight=heat)> [Graph:2026-06-24_aperture_reentry_cycle_016]
+    = realization: periphery zoom is useful when it surveys subject relations and support legs without losing return anchor
+  / [E:closes:aperture_reentry_cycle_016] -(closes; aperture=N:aperture:depth_adjustment; reentry=N:reentry:springboard; outside=N:outside:aperture_reentry_boundary; weight=containment)> [Graph:2026-06-24_aperture_reentry_cycle_016]
+    = realization: close_pass converts widened attention into a compact re-entry shape instead of leaving focus flooded
+  / [E:springboards:springboard_016] -(springboards; reentry=N:reentry:springboard; narrative=N:narrative:second_pass; subject=N:subject:declaration_pass; weight=salience)> [Graph:2026-06-24_aperture_reentry_cycle_016]
+    = realization: the springboard is the bridge from deepened perception to a second pass of narrative and subject declarations
+  / [E:digests:second_pass_016] -(digests; narrative=N:narrative:second_pass; focus=N:focus:aperture_reentry_cycle; outside=N:outside:aperture_reentry_boundary; weight=trace)> [Graph:2026-06-24_aperture_reentry_cycle_016]
+    = realization: second-pass narrative is downstream of closed re-entry and must preserve the first-pass source
+  / [E:defines:subject_declaration_pass_016] -(defines; subject=N:subject:declaration_pass; focus=N:focus:aperture_reentry_cycle; outside=N:outside:aperture_reentry_boundary; weight=trace)> [Graph:2026-06-24_aperture_reentry_cycle_016]
+    = realization: subject declarations name the new attention elements and relation boundaries after re-entry
+  / [E:bounds:aperture_reentry_cycle_016] -(bounds; focus=N:focus:aperture_reentry_cycle; outside=N:outside:aperture_reentry_boundary; weight=caution)> [Graph:2026-06-24_aperture_reentry_cycle_016]
+    = realization: aperture control is not proof of hidden model internals and should remain bounded by visible source, narrative, and repo state
+
+  = inside: ApertureReentryCycle.sop, FocusZoom.sop, AttentionTraversalPolicy.sop, NarrativeDigestion.sop, FocalPoint.sop, CurrentFocalPoint.sop
+  = boundary: support_draw is required before opening, and close_pass is required before durable narrative or subject declarations
+  = outside: direct hidden activation access, KV-cache proof, unbounded periphery, unsupported causal claims, and stale first-pass rewriting

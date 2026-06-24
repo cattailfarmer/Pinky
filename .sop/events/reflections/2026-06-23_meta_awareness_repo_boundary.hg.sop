@@ -1,0 +1,22 @@
+Subject: Meta Awareness Repo Boundary 2026-06-23
+
+Description: Compiled SOP-HG reflection of F:\.sop as second repo for narrative realizations over change logs.
+
+& [Graph:meta_awareness_repo_boundary_2026_06_23] is a SOP-HG graph
+  + [N:narrative:meta_awareness_repo_boundary] is F:\.sop should be a second meta-awareness repo for realizations between narrative moments
+  + [N:repo:F_sop] is F:\.sop as meta-awareness repository
+  + [N:repo:Pinky] is C:\Project\Pinky as master repo and layer-under-analysis emitter
+  + [N:layer:change_log] is the changed files, terms, commits, and diff evidence of the layer under analysis
+  + [N:layer:narrative] is the narrative level where moments, impulses, corrections, and realizations are recorded
+  + [N:process:SJS] is SpecificationJustificationSolution as source, justification, planning, proof, and solution accounting
+  + [N:relation:cross_over] is the overlap where SJS explains formal justification and meta-awareness explains realization emergence
+  + [N:term:purpose_vector] is desired purpose or justified direction shaping change
+  + [N:term:term_shaping] is changed terms by which intended purpose becomes expressed refinement
+  + [N:outside:authority_boundary] is implementation truth remains with the layer under analysis unless imported and accepted
+
+/ [E:defines:second_repo] -(defines; repo=N:repo:F_sop; role=N:narrative:meta_awareness_repo_boundary; master=N:repo:Pinky; weight=5)> [Graph:meta_awareness_repo_boundary_2026_06_23]
+/ [E:corresponds:narrative_to_change_log] -(corresponds; narrative=N:layer:narrative; change_log=N:layer:change_log; purpose=N:term:purpose_vector; terms=N:term:term_shaping; weight=5)> [Graph:meta_awareness_repo_boundary_2026_06_23]
+/ [E:overlaps:sjs_meta_awareness] -(overlaps; sjs=N:process:SJS; meta=N:repo:F_sop; relation=N:relation:cross_over; weight=4)> [Graph:meta_awareness_repo_boundary_2026_06_23]
+/ [E:bounds:authority_boundary] -(bounds; meta=N:repo:F_sop; layer=N:layer:change_log; outside=N:outside:authority_boundary; weight=5)> [Graph:meta_awareness_repo_boundary_2026_06_23]
+
+  - outside: this reflection defines role and correspondence; it does not prove the semantic meaning of any specific future change without source, SJS, or diff evidence

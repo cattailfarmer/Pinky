@@ -1,0 +1,12 @@
+Subject: Dictated Frame Reference Integrity Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedFrameReferenceIntegritySource] is the preserved user source for frame-reference integrity
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "that's one of the things that will be apparent with observing things in a frame of reference vs first-hand experience, the stable presence of periphery objects. that's the cue to break immersion into the presented frame. it becomes easy to notice the difference of framing if you realize that every perception has a frame and notice the frame. this is what helps an AI to not drive into the side of a semi when the semi side is painted with a road scene"
+
+  = must: preserve this source separately from processed contracts
+  = must: treat the canonical contract as derived specification, not replacement source

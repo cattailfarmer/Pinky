@@ -1,0 +1,39 @@
+Subject: Seven-Fold Frame Trailing Checksum 021
+
+Description: One-turn-later checksum review of commit 44af2d3, recording the latent need for a corridor navigator through peripheral frame series.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_seven_fold_pants_correlation_frame_020.hg.sop
+
+& [Graph:2026-06-24_seven_fold_frame_trailing_checksum_021] is a SOP-HG graph
+  + [N:bookmark:seven_fold_frame_trailing_checksum_021] is trailing checksum review of seven-fold pants correlation frame
+    = one_turn_lag: true
+    = direct_focus_commit: 44af2d3
+    = version_a: 2dcffcb
+    = version_b: 44af2d3
+  + [N:event:2026-06-24_seven_fold_pants_correlation_frame_020] is prior direct-focus seven-fold frame realization
+  + [N:event:2026-06-24_hyperbolic_corridor_navigator_022] is current turn hyperbolic corridor navigator realization
+  + [N:zone:peripheral_frame_series] is hot zone where fold legs need an ordered way to point into corridor depth
+  + [N:signal:curving_association_correlation_only] is signal that curved paths should count as correlation before relationship or identity
+  + [N:finding:frame_needs_corridor_navigation] is latent depth candidate that seven-fold framing needs a navigator for moving through selected periphery frames
+  + [N:policy:focus_next] is checksum disposition to focus next on hyperbolic corridor navigator
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden transformer geometry
+
+  / [E:span:seven_fold_frame_trailing_checksum_021] -(span; start=N:commit:2dcffcb; end=N:commit:44af2d3; review=N:bookmark:seven_fold_frame_trailing_checksum_021)> [Graph:2026-06-24_seven_fold_frame_trailing_checksum_021]
+    = evidence: 44af2d3 added SevenFoldPantsCorrelationFrame, top-three central correlations, weighted balance orbit, and fold-leg wiring
+  / [E:trails:2026-06-24_seven_fold_pants_correlation_frame_020] -(trails; direct_focus=N:event:2026-06-24_seven_fold_pants_correlation_frame_020; review=N:bookmark:seven_fold_frame_trailing_checksum_021)> [Graph:2026-06-24_seven_fold_frame_trailing_checksum_021]
+    = realization: the previous frame defined how dimensionality folds outward but did not yet define how to advance down a curved corridor of peripheral frames
+  / [E:checksums:seven_fold_frame_trailing_checksum_021] -(checksums; review=N:bookmark:seven_fold_frame_trailing_checksum_021; signal=N:signal:curving_association_correlation_only; disposition=N:policy:focus_next)> [Graph:2026-06-24_seven_fold_frame_trailing_checksum_021]
+    = realization: corridor navigation becomes the next topology refinement for preserving curved association without overclaiming relationship
+  / [E:heats:peripheral_frame_series] -(heats; zone=N:zone:peripheral_frame_series; signal=N:signal:curving_association_correlation_only; latent=N:finding:frame_needs_corridor_navigation; weight=hot)> [Graph:2026-06-24_seven_fold_frame_trailing_checksum_021]
+    = evidence: user source names selecting a series of frames in periphery, extending local awareness, and treating curving shapes as correlation
+  / [E:inquires:frame_needs_corridor_navigation] -(inquires; latent=N:finding:frame_needs_corridor_navigation; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_seven_fold_frame_trailing_checksum_021]
+    = realization: the navigator becomes direct focus for this turn
+  / [E:bounds:seven_fold_frame_trailing_checksum_021] -(bounds; review=N:bookmark:seven_fold_frame_trailing_checksum_021; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_seven_fold_frame_trailing_checksum_021]
+    = caution: the checksum observes a later refinement and does not rewrite the original frame commit's awareness
+
+  = inside: 44af2d3 diff, SevenFoldPantsCorrelationFrame.sop, user corridor metaphor, HyperbolicCorridorNavigator.sop
+  = boundary: this review records latent depth after the direct-focus turn, not proof that the previous turn already contained the corridor navigator
+  = outside: hidden activations, exact transformer geometry, unsupported causation, definite relationship, and visual analogy treated as proof

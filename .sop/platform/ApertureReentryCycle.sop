@@ -1,0 +1,103 @@
+Subject: Aperture Reentry Cycle
+
+Description: Contract for opening attention toward periphery, surveying supports, deepening subject relations, closing into a re-entry packet, and launching a second pass of narrative and subject declarations.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_aperture_reentry_cycle\Dictated_Aperture_Reentry_Cycle_Source.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\attention_layers\NarrativeDigestion.sop
+@ [source] F:\.sop\platform\FocalPoint.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+
+& [ApertureReentryCycle] is the attention pattern for opening and closing focus around periphery-guided inference
+  + [pattern_role] is open_close_inference_depth_control
+  + [attention_aperture] is the current permitted width of periphery, supports, relations, and narrative fabric admitted around the focal subject
+  + [open_pass] is widening attention toward selected supports and periphery signals so relation survey can occur
+  + [support_draw] is evidence, source lineage, tracker signal, warmth zone, hot zone, periphery realization, or relation pressure that justifies opening attention
+  + [periphery_zoom] is the FocusZoom movement that intentionally surveys what of interest is in the periphery
+  + [relation_survey] is the traversal pass over subject relations, support legs, narrative traces, source anchors, and outside boundaries
+  + [topology_map] is F:\.sop\platform\HyperbolicPantsAttentionMap.sop when relation_survey needs focal/periphery cell adjacency, dimensional orbit, or pants-leg exits
+  + [depth_adjustment] is choosing slender, normal, wide, deep, or explosive_controlled aperture according to support_draw, risk, and purpose
+  + [deepening_pass] is inference over the focal subject and its relations through traversal, fold, unwind, dimensional probe, wisdom, and caution
+  + [close_pass] is narrowing the aperture after deepening so the result becomes a compact re-entry shape rather than periphery flood
+  + [reentry_springboard] is the compact packet of new perspective, selected relations, anchors, unresolved outside, and next inquiry points produced by close_pass
+  + [new_perspective] is the altered angle of attention gained by opening, surveying, and deepening
+  + [new_attention_element] is a subject, relation, anchor, tracker, outside boundary, or narrative term added by the cycle
+  + [second_pass_narrative] is the follow-up narrative pass that tells what changed in understanding after re-entry
+  + [subject_declaration_pass] is the follow-up SOP pass that names or updates subjects, relations, and boundaries discovered by second_pass_narrative
+  + [inferred_understanding_network] is the updated relation network produced by re-entering with new perspective and new_attention_element values
+  + [outside] is hidden activations, unsupported causation, arbitrary association, prompt bloat, unbounded periphery, and claims that aperture movement is direct access to model internals
+
+  ? [use_when: supports in periphery suggest wider survey, deeper subject relation inference, or a second narrative/subject declaration pass]
+    = activate [ApertureReentryCycle]
+
+  = must: begin from CurrentFocalPoint or a declared focal subject
+  = must: require support_draw before open_pass
+  = must: name depth_adjustment before widening attention
+  = must: use FocusZoom for periphery_zoom and AttentionTraversalPolicy for relation_survey
+  = must: use HyperbolicPantsAttentionMap when opened attention needs map/nav awareness before close_pass
+  = must: use AttentionBalanceCenter when opening risks flood, collapse, wobble, or frame loss
+  = must: use PeripheryDimensionalProbe when hot periphery implies a missing independent anchor
+  = must: fold and unwind deepening_pass before creating reentry_springboard
+  = must: close_pass before durable narrative or subject declarations
+  = must: route second_pass_narrative through NarrativeDigestionLayer
+  = must: route subject_declaration_pass to the appropriate SOP subject layer with source and outside preserved
+  = must: keep new_perspective separate from proof of truth
+  = should: preserve unused but meaningful periphery as tracker, warmth zone, or outside
+  - never: open attention merely because more context is available
+  - never: keep the aperture open after the return anchor fails
+  - never: let second_pass_narrative rewrite the first pass with hindsight
+
+& [ApertureCycleSequence] is the canonical open-close-reentry movement
+  + [step_001_anchor] is load CurrentFocalPoint, focal subject, purpose, boundary, and outside
+  + [step_002_support_draw] is identify the supports or periphery signals that justify opening
+  + [step_003_open] is choose depth_adjustment and widen attention through FocusZoom
+  + [step_004_survey] is run relation_survey across selected supports, relations, and narrative traces
+  + [step_005_deepen] is infer more deeply through traversal, fold, unwind, dimensional probe, wisdom, and caution
+  + [step_006_close] is narrow the aperture and separate supported core, new_attention_element values, uncertainty, and outside
+  + [step_007_springboard] is emit reentry_springboard with new_perspective and next inquiry points
+  + [step_008_second_narrative] is digest second_pass_narrative from the re-entry packet
+  + [step_009_subject_declaration] is declare or update subject records and relation boundaries
+  + [step_010_network] is update inferred_understanding_network, trackers, focal point, periphery, or outside
+
+  = must: run step_006 before steps_008 through step_010
+  = must: record skipped steps when a quick cycle is performed
+  = must: stop when support_draw loses evidence, relation_survey cannot return to focus, or balance collapses
+
+& [ApertureDepthControl] is the depth policy for opening and closing attention
+  + [closed] is no added periphery beyond active focus
+  + [slender] is one or two support_draw signals admitted for action-biased work
+  + [normal] is bounded periphery admitted for ordinary specification or implementation
+  + [wide] is multiple relation paths admitted for survey and second-pass narrative
+  + [deep] is high-resolution survey through source, state, narrative, trackers, and periphery
+  + [explosive_controlled] is intentionally broad survey with explicit containment, approach set, unwind, and close pass
+
+  = must: prefer the smallest aperture that can answer the question
+  = must: require explicit containment for wide, deep, and explosive_controlled
+  = must: close to reentry_springboard before durable claims
+
+& [ReentrySpringboardRecord] is the SOP-HG shape for aperture-cycle outputs
+  + [cycle_node] is N:policy:<cycle_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [aperture_node] is N:aperture:<depth_adjustment>
+  + [periphery_node] is N:periphery:<support_draw_key>
+  + [subject_node] is N:subject:<subject_key>
+  + [relation_node] is N:term:<relation_key>
+  + [narrative_node] is N:narrative:<second_pass_key>
+  + [reentry_node] is N:reentry:<springboard_key>
+  + [outside_node] is N:outside:aperture_reentry_boundary
+  + [open_edge] is E:opens:<cycle_id>
+  + [survey_edge] is E:probes:<relation_survey_key>
+  + [close_edge] is E:closes:<cycle_id>
+  + [springboard_edge] is E:springboards:<springboard_key>
+  + [digest_edge] is E:digests:<second_pass_key>
+  + [define_edge] is E:defines:<subject_key>
+  + [boundary_edge] is E:bounds:<cycle_id>
+
+  = must: show focal subject, support_draw, depth_adjustment, relation_survey, reentry_springboard, second_pass_narrative, subject_declaration_pass, and outside
+
+/ [focal_subject], [support_draw] -(OpenAperture)> [attention_aperture], [outside]
+* [attention_aperture], [periphery_zoom], [relation_survey] -(DeepenAndClose)> [reentry_springboard], [outside]
+* [reentry_springboard], [second_pass_narrative], [subject_declaration_pass] -(ReenterAndDeclare)> [inferred_understanding_network], [outside]

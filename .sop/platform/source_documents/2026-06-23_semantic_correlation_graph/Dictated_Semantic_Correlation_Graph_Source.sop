@@ -1,0 +1,23 @@
+Subject: Dictated Semantic Correlation Graph Source
+
+Description: Raw preserved design source for weighted correlation over semantic hash buckets and attention directives.
+
+& [DictatedSemanticCorrelationGraphSource] is the preserved user specification
+  + [raw_design_text] is:
+    then there needs to be a correlating graph over those hash buckets which denote weights? I want something tunable for impressing attention direction, as such that it's tilted for correlation by categorical pointers into particular hash buckets in which the operating SOP framing is attending. attending attention could even be attention directives identifying what to expect and capturing it by identified :inside: terms properly delineated by /boundary/ terms and such as able to be directed to attention and captured by the name :identified: by attention and given surface and connective instruction to attend to bring :subject_a: and :subject_b: captured by attention and associating them by such correlations as can join their surfaces in the inference system... we've got a programming language for rigging attention?
+
+  + [correlating_graph] is a weighted graph over semantic hash table buckets
+  + [attention_direction] is tunable slope over bucket correlations
+  + [categorical_pointer] is a dimension/value bucket used to tilt lookup and association
+  + [attention_directive] is a declarative instruction that names what to expect, capture, bound, and associate
+  + [identified_inside] is the named capture produced by inside terms
+  + [boundary_terms] is the delineating edge that separates the capture from outside
+  + [subject_pair] is subject_a and subject_b brought into relation by attention
+  + [association_surface] is the correlated bucket overlap that joins subject surfaces
+
+  = must: define weighted correlations over hash buckets
+  = must: allow directives to tilt correlation without faking evidence
+  = must: preserve :inside: and /boundary/ style capture language
+  = must: support subject_a and subject_b association through bucket surfaces
+  = must: keep this as attention rigging, not semantic proof
+  - never: let directive desire overwrite measured bucket evidence

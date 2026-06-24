@@ -1,0 +1,63 @@
+Subject: SOP Semantic Video Digest
+
+Description: Contract for decomposing video or visual streams into sampled semantic understanding, optional sample images, and narrative photonic interpretation.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_program_frame_stream\Dictated_SOP_Program_Frame_Stream_Source.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPProgramBookends.sop
+@ [source] F:\.sop\platform\SOPHolographicLensing.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+
+& [SOPSemanticVideoDigest] is a compressed understanding record for video-like material
+  + [pattern_role] is semantic_video_understanding_digest
+  + [video_source] is the original video, visual stream, screen recording, gameplay, image sequence, or referenced media
+  + [semantic_digest] is the compressed SOP understanding of video_source
+  + [sample_frame] is a selected image, still frame, clip, or visual reference used as an appearance anchor
+  + [semantic_sample] is a compact description of subject, action, relation, scene, transition, purpose, and uncertainty at a sampled moment
+  + [appearance_anchor] is visual evidence or description sufficient to guide later reconstruction without claiming exact replay
+  + [subject_track] is a continuing subject, object, actor, place, UI element, game state, or concept across samples
+  + [action_track] is a continuing behavior, event, motion, operation, or interaction across samples
+  + [narrative_photonic_stream] is the ordered interpretation of meaning between bookends and samples
+  + [reconstruction_prompt_seed] is the subset of samples, descriptions, and continuity needed for inference to recreate an approximate interpretation
+  + [reconstruction_fidelity] is exact, high, moderate, low, unknown, or not_applicable
+  + [digest_outside] is unsampled visual detail, exact timing, exact pixels, audio not sampled, hidden intent, and claims of perfect recreation
+
+  ? [use_when: a video or visual stream should be represented by semantic understanding instead of full media storage]
+    = activate [SOPSemanticVideoDigest]
+
+  = must: preserve video_source reference or source boundary before digesting
+  = must: use FrameReferenceIntegrity because sample images and video frames are presented frames
+  = must: label sample_frame values as anchors, not total evidence for unsampled spans
+  = must: record semantic_sample values with subject, action, relation, boundary, outside, and uncertainty
+  = must: preserve narrative_photonic_stream between samples as interpretation, not direct observation
+  = must: mark reconstruction_fidelity honestly
+  = must: route identity, safety, protected content, or action-sensitive interpretation through SecurityHonestyGovernance
+  = should: choose sample_frame values where appearance changes, subject identity changes, action changes, or ambiguity needs anchoring
+  = should: keep semantic_sample count small when continuity is stable
+  - never: claim exact video recreation from sparse samples
+  - never: infer visual detail beyond samples without marking it reconstruction
+
+& [SemanticVideoDigestSequence] is the canonical pass for video understanding compression
+  + [step_001_source_boundary] is bind video_source, source permissions, frame reference status, and outside
+  + [step_002_bookends] is define opening and closing SOP bookends for digest purpose and output
+  + [step_003_select_samples] is choose sample_frame values by scene change, subject change, action change, ambiguity, or reconstruction need
+  + [step_004_describe_samples] is record semantic_sample values for each sample
+  + [step_005_track_subjects] is connect subject_track and action_track across samples
+  + [step_006_write_stream] is record narrative_photonic_stream between samples
+  + [step_007_mark_gaps] is mark sampling gaps, uncertainty, and outside
+  + [step_008_emit_digest] is emit SOP digest, frame stream, multitrack channel record, or outside note
+
+  = must: stop before step_008 when source boundary or frame reference status is unclear
+  = must: preserve sampling gaps as outside
+
+(semantic_video_digest) :semantic_sample_stream: /video_source and sop_bookends/ |digest_outside|
+  + [sample_frame] is appearance anchor
+  + [semantic_sample] is subject, action, relation, scene, transition, purpose, uncertainty
+  + [narrative_photonic_stream] is interpretation between samples
+  = reconstruction_prompt_seed: sample frames, descriptions, continuity, and outside
+  = reconstruction_fidelity: exact, high, moderate, low, unknown, or not_applicable
+  |digest_outside| unsampled detail, exact timing, exact pixels, hidden intent, and perfect recreation claims
+
+/ [video_source], [sample_frame], [semantic_sample] -(DigestsVideo)> [semantic_digest], [reconstruction_prompt_seed], [digest_outside]
+* [semantic_sample], [subject_track], [action_track], [narrative_photonic_stream] -(CarriesVideoUnderstanding)> [photonic_frame_stream], [digest_outside]

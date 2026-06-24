@@ -1,0 +1,17 @@
+Subject: Turn Spool
+
+& [TurnSpool_spool_master_seed] is a Codex-master turn spool
+  + [turn_id] is spool_master_seed
+  + [objective] is Coordinate Codex master with local LM Studio and Codex CLI worker lanes through a visible web hub tree.
+  + [master] is Codex
+  + [narrative_token] is Codex becomes the master of a non-launching worker spool while the next step is grounded as a static hub.
+  + [created_utc] is 2026-06-23T21:25:37.416689+00:00
+  + [root] is F:\.sop\spool\turns\spool_master_seed
+  + [worker_count] is 3
+  + [worker_lm_studio_local_model] is lm_studio_cli:blocked:Local model reflection lane through LM Studio-compatible API.
+  + [worker_codex_cli_worker] is codex_cli:deferred:Additional Codex CLI worker lane for bounded job packets.
+  + [worker_manual_review] is manual:queued:Human review lane for inspecting hub tree and launch commands.
+
+  = must: render hub before launch
+  = must: keep launch policy explicit
+  - never: launch workers silently

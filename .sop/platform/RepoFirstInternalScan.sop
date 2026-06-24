@@ -1,0 +1,76 @@
+Subject: Repo First Internal Scan
+
+Description: Attention contract for internal scans led by Git bookends and change logs, with narrative as interpretive guidance.
+
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+
+& [RepoFirstInternalScan] is the attention pattern for scanning internal work from version A to version B
+  + [pattern_role] is repo_delta_led_internal_scan
+  + [version_a] is the old commit, ref, file state, or bookend before the work
+  + [version_b] is the new commit, ref, file state, or bookend after the work
+  + [commit_frame] is version_a to version_b as the hard boundary of work done
+  + [change_log_bridge] is the diff, name-status list, stat, file statuses, and generated scan records connecting the versions
+  + [narrative_guidance] is user intent, focal point, source documents, realization stream, and conversation trace used to interpret oddities
+  + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop for calibrating signal units, resolution, and probe depth
+  + [weight_net] is F:\.sop\platform\ChangelogCorrelationWeightNet.sop for attaching changelog units to subject matter through narrative and justification weights
+  + [turn_bookmark] is F:\.sop\platform\TurnBookmark.sop for on-demand comparison of commit snapshots against planned specifications
+  + [state_trace] is F:\.sop\platform\InferenceStateTrace.sop for reconstructing an investigated inference frame from versioned SOP state
+  + [moment_branch_refinement] is F:\.sop\platform\MomentAwarenessBranchRefinement.sop for isolating deeper inspection of a reconstructed moment on a branch
+  + [oddity] is a mismatch, unexpected file, missing support, surprising addition, deletion, rename, generated artifact, or semantic pressure in the delta
+  + [mapping_pass] is the process of explaining how each meaningful oddity belongs to source, implementation, generated view, tracker, scan, or outside
+  + [outside] is hidden cognition, unstated motive, uninspected files, unproven causation, and narrative claims not grounded in the delta
+
+  ? [use_when: a reflective scan, internal scan, self-focus scan, or periphery realization studies work already committed or staged]
+    = activate [RepoFirstInternalScan]
+
+  = must: identify version_a and version_b before inferring meaning
+  = must: read the change_log_bridge before writing narrative conclusions
+  = must: classify changed files by role before assigning intent
+  = must: use attention_weight_scale when a signal needs low-resolution, high-resolution, or deep-probe framing
+  = must: use weight_net when subject attachment depends on weighted correlation across changelog, narrative, and justification terms
+  = must: use turn_bookmark when the scan must produce missed-work, mistake, accomplishment, or new-potential findings
+  = must: use state_trace when the scan must place attention back into a past logged recall frame
+  = must: use moment_branch_refinement when a high-pressure or high-impact finding needs branch-isolated debug inference before main-line adoption
+  = must: use narrative_guidance to map oddities, not to replace evidence
+  = must: preserve unresolved oddities as outside or follow-up trackers
+  = should: cite commit hash, diff stat, name-status, and relevant source documents
+  - never: let narrative outrun the repo delta
+  - never: infer motive, hidden cognition, or causal truth from diff shape alone
+  - never: flatten generated artifacts and source-authored contracts into the same evidential weight
+
+& [RepoFirstScanOrder] is the canonical scan sequence
+  + [step_001_bookend] is name version_a and version_b
+  + [step_002_stat] is inspect diff stat for blast radius and scale
+  + [step_003_name_status] is inspect added, modified, deleted, renamed, and generated files
+  + [step_004_role_classification] is classify each changed file as source, canonical contract, generated graph, runtime helper, test, state, tracker, proposal, or outside
+  + [step_005_weight_net] is compute weighted subject attachments from change units, semantic buckets, narrative terms, and justification terms
+  + [step_006_weight_scale] is calibrate signal units, resolution bands, confidence, and scan depth
+  + [step_007_narrative_map] is use narrative and focal records to explain why the role changes happened
+  + [step_008_plan_comparison] is compare weighted signals against planned specification when a turn bookmark is requested
+  + [step_009_state_trace] is reconstruct framework_state and logged_recall when inference re-entry is requested
+  + [step_010_branch_route] is route selected reconstructed moments to branch refinement when deeper inspection should be isolated
+  + [step_011_oddity_route] is preserve any mismatch as tracker, periphery stream moment, caution boundary, branch refinement candidate, or outside
+  + [step_012_realization] is write the internal scan realization after evidence and oddities are mapped
+
+  = must: run in order unless the user explicitly asks for a quick narrative-only summary
+  = must: show which step was skipped if time or scope prevents completion
+
+& [RepoFirstScanRecord] is the SOP-HG shape for repo-first internal scans
+  + [event_node] is N:event:<scan_id>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [diff_node] is N:source:<diff_key>
+  + [narrative_node] is N:narrative:<narrative_key>
+  + [oddity_node] is N:observation:<oddity_key>
+  + [outside_node] is N:outside:repo_first_scan_boundary
+  + [span_edge] is E:span:<scan_id>
+  + [changed_edge] is E:changed:<scan_id>
+  + [classify_edge] is E:classifies:<file_role>
+  + [explain_edge] is E:explains:<oddity_key>
+  + [boundary_edge] is E:bounds:<scan_id>
+
+  = must: keep bookends explicit
+  = must: separate evidence, narrative, oddity, and outside nodes
+
+/ [version_a], [version_b] -(CommitFrame)> [change_log_bridge]
+* [change_log_bridge], [narrative_guidance], [oddities], [outside] -(RepoFirstInternalScan)> [realization]

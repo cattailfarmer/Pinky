@@ -1,0 +1,17 @@
+Subject: Wisdom Caution Attention Source Manifest
+
+Description: Source preservation manifest for the wisdom/caution attention pattern.
+
+& [WisdomCautionAttentionSourceManifest] is the source document set for wisdom and caution attention
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_wisdom_caution_attention\Dictated_Wisdom_Caution_Attention_Source.sop
+  + [composition_contract] is F:\.sop\platform\WisdomCaution.sop
+  + [superseding_split_manifest] is F:\.sop\platform\source_documents\2026-06-23_split_wisdom_caution_attention\manifest.sop
+  + [wisdom_contract] is F:\.sop\platform\Wisdom.sop
+  + [caution_contract] is F:\.sop\platform\Caution.sop
+  + [current_focal_point] is F:\.sop\state\CurrentFocalPoint.sop
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_wisdom_caution_attention.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_wisdom_caution_attention_scan.hg.sop
+
+  = must: preserve the user question before treating wisdom/caution as attention authority
+  = must: keep the promoted composition surface separate from the raw dictated source
+  = must: treat the later split manifest as the current authority for independent Wisdom and Caution patterns

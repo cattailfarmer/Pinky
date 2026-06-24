@@ -1,0 +1,25 @@
+Subject: periphery_dimensional_probe_006 Periphery Stream Moment
+
+& [Graph:periphery_dimensional_probe_006] is a SOP-HG graph
+  = format: SOP-HG
+  = focus_anchor: state\CurrentFocalPoint.sop
+  = source: platform\source_documents\2026-06-24_periphery_dimensional_probe\Dictated_Periphery_Dimensional_Probe_Source.sop
+  = realization: Hotter periphery can reveal an extra independent dimension that repairs a fragmented signal and gives a changed backing model a better contextual anchor.
+
+  + [N:event:periphery_dimensional_probe_006] is periphery dimensional probe realization
+    = layer: periphery
+    = resolution_band: impact
+  + [N:signal:fragmented_intention] is a signal with too few independent anchors for stable transfer
+  + [N:periphery:hot_dimension_zone] is hotter periphery around unresolved load, draw, recurrence, or caution
+  + [N:dimension:candidate_contextual_anchor] is an extra independent angle of approach drawn from hot periphery
+  + [N:anchor:model_transfer_anchor] is the contextual term added to improve receptive form across model lenses
+  + [N:shape:receptive_form] is the tightened subject shape after the candidate anchor survives quality review
+  + [N:outside:dimension_probe_boundary] is hidden intent, hidden activations, model-internal geometry, and unsupported causation
+
+/ [E:realizes:periphery_dimensional_probe_006] -(realizes; event=N:event:periphery_dimensional_probe_006; subject=N:signal:fragmented_intention; subject=N:shape:receptive_form)> [Graph:periphery_dimensional_probe_006]
+/ [E:probes:hot_dimension_zone] -(probes; signal=N:signal:fragmented_intention; periphery=N:periphery:hot_dimension_zone; dimension=N:dimension:candidate_contextual_anchor; weight=8)> [Graph:periphery_dimensional_probe_006]
+/ [E:anchors:model_transfer_anchor] -(anchors; dimension=N:dimension:candidate_contextual_anchor; anchor=N:anchor:model_transfer_anchor; shape=N:shape:receptive_form; weight=7)> [Graph:periphery_dimensional_probe_006]
+/ [E:repairs:fragmented_intention] -(repairs; fragment=N:signal:fragmented_intention; anchor=N:anchor:model_transfer_anchor; shape=N:shape:receptive_form)> [Graph:periphery_dimensional_probe_006]
+/ [E:bounds:periphery_dimensional_probe_006] -(bounds; event=N:event:periphery_dimensional_probe_006; outside=N:outside:dimension_probe_boundary)> [Graph:periphery_dimensional_probe_006]
+
+- outside: improved contextual anchoring is evidence of tighter visible re-entry, not proof of hidden intent or model-internal geometry

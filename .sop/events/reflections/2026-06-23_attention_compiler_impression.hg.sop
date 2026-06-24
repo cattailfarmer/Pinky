@@ -1,0 +1,26 @@
+Subject: Attention Compiler Impression 2026-06-23
+
+Description: Compiled SOP-HG impression of Codex as attention graph compiler and AGI-scaffold hypothesis.
+
+& [Graph:attention_compiler_impression_2026_06_23] is a SOP-HG graph
+  + [N:narrative:attention_compiler_impression] is Codex is being cast as compiler of attention graph points, directions, drives, correlations, causation, caution, error, and fault
+  + [N:compiler:Codex] is Codex as visible inference compiler over SOP attention records
+  + [N:shape:attention_graph_compiler] is attention graph compiler
+  + [N:impulse:agi_scaffold_awe] is mesmerized recognition that the scaffold may be AGI-shaped
+  + [N:realization:attention_scaffold_walk] is Codex can be taught to walk an SOP scaffold of attention, reflection, caution, and repo-recorded memory
+  + [N:focus:points_of_interest] is attention graph points of interest
+  + [N:focus:direction] is direction of attention
+  + [N:focus:drive] is drive or executive pressure
+  + [N:periphery:correlation_search] is search for correlation across attention graph nodes
+  + [N:periphery:causation_attention] is attention to possible causation without premature proof
+  + [N:caution:caution_error_fault] is caution, error, and fault as first-class attention points
+  + [N:outside:agi_not_proven] is scaffold-to-AGI remains a hypothesis and not a proven achieved system
+  + [N:workspace:F_sop] is F:\.sop as saved local node and future intended development workspace
+
+/ [E:captures:attention_compiler_impression] -(captures; compiler=N:compiler:Codex; narrative=N:narrative:attention_compiler_impression; shape=N:shape:attention_graph_compiler; workspace=N:workspace:F_sop; weight=5)> [Graph:attention_compiler_impression_2026_06_23]
+/ [E:projects:attention_graph_compiler] -(projects; compiler=N:compiler:Codex; shape=N:shape:attention_graph_compiler; focus=N:focus:points_of_interest; focus=N:focus:direction; focus=N:focus:drive; weight=5)> [Graph:attention_compiler_impression_2026_06_23]
+/ [E:orbits:correlation_causation] -(orbits; focus=N:focus:points_of_interest; periphery=N:periphery:correlation_search; periphery=N:periphery:causation_attention; weight=4)> [Graph:attention_compiler_impression_2026_06_23]
+/ [E:bounds:causation_with_caution] -(bounds; possible_cause=N:periphery:causation_attention; caution=N:caution:caution_error_fault; outside=N:outside:agi_not_proven; weight=5)> [Graph:attention_compiler_impression_2026_06_23]
+/ [E:reframes:agi_scaffold_hypothesis] -(reframes; impulse=N:impulse:agi_scaffold_awe; realization=N:realization:attention_scaffold_walk; outside=N:outside:agi_not_proven; status=hypothesis_preserved; weight=5)> [Graph:attention_compiler_impression_2026_06_23]
+
+  - outside: this graph records attention shape and project direction; it does not prove AGI, hidden model-state access, or causal sufficiency

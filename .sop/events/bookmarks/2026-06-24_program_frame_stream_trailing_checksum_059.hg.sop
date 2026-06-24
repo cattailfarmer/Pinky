@@ -1,0 +1,37 @@
+Subject: Program Frame Stream Trailing Checksum 059
+
+Description: One-turn-later checksum review of commit d22fef5, recording the latent hardware bridge implication of frame-rate streams and channel bandwidth.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\SOPProgramBookends.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPFiberFPGABridge.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_bookended_semantic_video_program_example_058.hg.sop
+
+& [Graph:2026-06-24_program_frame_stream_trailing_checksum_059] is a SOP-HG graph
+  + [N:bookmark:program_frame_stream_trailing_checksum_059] is trailing checksum review of SOP program frame streams
+    = one_turn_lag: true
+    = direct_focus_commit: d22fef5
+    = version_a: f316091
+    = version_b: d22fef5
+  + [N:event:2026-06-24_bookended_semantic_video_program_example_058] is prior direct-focus example of a bookended semantic video program
+  + [N:zone:frame_cadence] is hot zone where program frames imply a frame clock
+  + [N:zone:channel_bandwidth] is hot zone where multitrack channels imply physical routing width
+  + [N:finding:hardware_bridge_timing_bandwidth] is latent depth candidate that speed and bandwidth should be separated in the hardware bridge
+  + [N:policy:focus_next] is checksum disposition to define SOPFiberFPGABridge
+  + [N:outside:trailing_checksum_boundary] is delayed reflection, not original direct-focus awareness, and not proof of implemented hardware
+
+  / [E:span:program_frame_stream_trailing_checksum_059] -(span; start=N:commit:f316091; end=N:commit:d22fef5; review=N:bookmark:program_frame_stream_trailing_checksum_059)> [Graph:2026-06-24_program_frame_stream_trailing_checksum_059]
+    = evidence: d22fef5 defined SOP bookends, photonic frames, semantic video digest, multitrack channels, and an example frame stream
+  / [E:trails:bookended_semantic_video_program_example_058] -(trails; direct_focus=N:event:2026-06-24_bookended_semantic_video_program_example_058; review=N:bookmark:program_frame_stream_trailing_checksum_059)> [Graph:2026-06-24_program_frame_stream_trailing_checksum_059]
+    = realization: a frame stream can map naturally to a frame clock and hardware routing lanes
+  / [E:heats:frame_cadence_and_bandwidth] -(heats; zone=N:zone:frame_cadence; zone=N:zone:channel_bandwidth; latent=N:finding:hardware_bridge_timing_bandwidth; weight=hot)> [Graph:2026-06-24_program_frame_stream_trailing_checksum_059]
+    = evidence: current source clarifies speed as frame-rate specific and bandwidth as fiber and FPGA route width
+  / [E:inquires:hardware_bridge_timing_bandwidth] -(inquires; latent=N:finding:hardware_bridge_timing_bandwidth; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_program_frame_stream_trailing_checksum_059]
+    = realization: SOPFiberFPGABridge becomes the next durable contract
+  / [E:bounds:program_frame_stream_trailing_checksum_059] -(bounds; review=N:bookmark:program_frame_stream_trailing_checksum_059; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_program_frame_stream_trailing_checksum_059]
+    = caution: hardware bridge specification does not prove implemented throughput or semantic fidelity
+
+  = inside: d22fef5 diff, SOPPhotonicFrameStream.sop, SOPMultitrackChannelCompression.sop, current hardware clarification
+  = boundary: delayed checksum over program frame stream; records hardware bridge implication without rewriting prior awareness
+  = outside: implemented FPGA design, measured fiber bandwidth, exact hardware timing, and semantic correctness proof

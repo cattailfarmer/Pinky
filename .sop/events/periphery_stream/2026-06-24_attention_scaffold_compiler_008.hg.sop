@@ -1,0 +1,26 @@
+Subject: attention_scaffold_compiler_008 Periphery Stream Moment
+
+& [Graph:attention_scaffold_compiler_008] is a SOP-HG graph
+  = format: SOP-HG
+  = focus_anchor: state\CurrentFocalPoint.sop
+  = source: platform\source_documents\2026-06-24_attention_scaffold_compiler\Dictated_Attention_Scaffold_Compiler_Source.sop
+  = realization: The attention system needs a scaffold compiler that fits attention form to job need, then learns from reverse-walk debug frames and periphery topology.
+
+  + [N:event:attention_scaffold_compiler_008] is attention scaffold compiler realization
+    = layer: periphery
+    = resolution_band: impact
+  + [N:compiler:attention_scaffold_compiler] is the purpose-fit compiler for attention scaffold selection
+  + [N:job:job_need] is the work purpose and constraints that select scaffold form
+  + [N:scaffold:purpose_fit_attention_scaffold] is a configured focus, periphery, zoom, traversal, gates, trace, and output packet
+  + [N:state:reverse_walk_debug_frame] is the bounded moment used to learn how the scaffold performed
+  + [N:shape:topology_probe] is the relation surface explored by walking backward and noticing periphery more deeply
+  + [N:outside:scaffold_compiler_boundary] is hidden model internals, untested transfer, unproven causation, and speculative concepts not validated
+
+/ [E:realizes:attention_scaffold_compiler_008] -(realizes; event=N:event:attention_scaffold_compiler_008; subject=N:compiler:attention_scaffold_compiler; subject=N:scaffold:purpose_fit_attention_scaffold)> [Graph:attention_scaffold_compiler_008]
+/ [E:fits:job_need] -(fits; job=N:job:job_need; scaffold=N:scaffold:purpose_fit_attention_scaffold; compiler=N:compiler:attention_scaffold_compiler; weight=8)> [Graph:attention_scaffold_compiler_008]
+/ [E:compiles:attention_packet] -(compiles; compiler=N:compiler:attention_scaffold_compiler; scaffold=N:scaffold:purpose_fit_attention_scaffold; job=N:job:job_need)> [Graph:attention_scaffold_compiler_008]
+/ [E:reconstructs:reverse_walk_debug_frame] -(reconstructs; debug=N:state:reverse_walk_debug_frame; topology=N:shape:topology_probe; scaffold=N:scaffold:purpose_fit_attention_scaffold)> [Graph:attention_scaffold_compiler_008]
+/ [E:optimizes:purpose_fit_attention_scaffold] -(optimizes; compiler=N:compiler:attention_scaffold_compiler; scaffold=N:scaffold:purpose_fit_attention_scaffold; topology=N:shape:topology_probe; weight=7)> [Graph:attention_scaffold_compiler_008]
+/ [E:bounds:attention_scaffold_compiler_008] -(bounds; event=N:event:attention_scaffold_compiler_008; outside=N:outside:scaffold_compiler_boundary)> [Graph:attention_scaffold_compiler_008]
+
+- outside: scaffold optimization is supported by visible traces and tests, not hidden model internals or automatic proof of intelligence

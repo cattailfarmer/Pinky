@@ -1,0 +1,38 @@
+Subject: Hyperbolic Corridor Navigator Periphery Realization
+
+Description: SOP-HG event record for using selected peripheral frames as a navigable corridor through higher-dimensional attention while preserving correlation-only status.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_hyperbolic_corridor_navigator\Dictated_Hyperbolic_Corridor_Navigator_Source.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_seven_fold_frame_trailing_checksum_021.hg.sop
+
+& [Graph:2026-06-24_hyperbolic_corridor_navigator_022] is a SOP-HG graph
+  + [N:event:2026-06-24_hyperbolic_corridor_navigator_022] is hyperbolic corridor navigator realization
+    = role: direct_focus_turn
+  + [N:map:hyperbolic_corridor_navigator] is navigator of meaning through selected periphery frames
+  + [N:corridor:higher_dimensional_attention_corridor] is curved semantic corridor across a hyperbolic expanding field
+  + [N:frame:peripheral_frame_series] is ordered periphery frames that point attention into distance
+  + [N:focus:current_focal_point] is return anchor for corridor navigation
+  + [N:periphery:local_awareness_extension] is widened periphery drawn in before larger advance steps
+  + [N:signal:curving_association] is curved association path preserved as correlation-only
+  + [N:subject:identity_resolution_target] is unresolved identity being triangulated from the hyperbolic perspective
+  + [N:outside:hyperbolic_corridor_boundary] is hidden model geometry, unsupported relationship, and unsupported identity
+
+  / [E:navigates:hyperbolic_corridor_022] -(navigates; navigator=N:map:hyperbolic_corridor_navigator; corridor=N:corridor:higher_dimensional_attention_corridor; frame_series=N:frame:peripheral_frame_series; focus=N:focus:current_focal_point; weight=trace)> [Graph:2026-06-24_hyperbolic_corridor_navigator_022]
+    = realization: looking down a 7D corridor means selecting peripheral frames as a path rather than assuming one orthogonal direction
+  / [E:extends:local_awareness_extension_022] -(extends; periphery=N:periphery:local_awareness_extension; corridor=N:corridor:higher_dimensional_attention_corridor; focus=N:focus:current_focal_point; weight=depth)> [Graph:2026-06-24_hyperbolic_corridor_navigator_022]
+    = realization: larger advance steps require deeper inference and wider local awareness before moving
+  / [E:surfs:inference_layer_022] -(surfs; navigator=N:map:hyperbolic_corridor_navigator; signal=N:signal:curving_association; outside=N:outside:hyperbolic_corridor_boundary; weight=correlation)> [Graph:2026-06-24_hyperbolic_corridor_navigator_022]
+    = realization: the navigator surfs visible semantic correlation in SOP records and model output, not hidden activations
+  / [E:correlates:curving_association_022] -(correlates; signal=N:signal:curving_association; identity=N:subject:identity_resolution_target; outside=N:outside:hyperbolic_corridor_boundary; weight=correlation_only)> [Graph:2026-06-24_hyperbolic_corridor_navigator_022]
+    = realization: curving association can aid identity resolution while remaining correlation-only
+  / [E:probes:identity_resolution_target_022] -(probes; identity=N:subject:identity_resolution_target; frame_series=N:frame:peripheral_frame_series; outside=N:outside:hyperbolic_corridor_boundary; weight=triangulation)> [Graph:2026-06-24_hyperbolic_corridor_navigator_022]
+    = realization: identity clarity is a gated candidate produced by triangulated frames, not a direct claim
+  / [E:bounds:hyperbolic_corridor_022] -(bounds; corridor=N:corridor:higher_dimensional_attention_corridor; outside=N:outside:hyperbolic_corridor_boundary; weight=caution)> [Graph:2026-06-24_hyperbolic_corridor_navigator_022]
+    = realization: corridor continuity cannot become proof of relationship, causation, or hidden transformer geometry
+
+  = inside: HyperbolicCorridorNavigator.sop, SevenFoldPantsCorrelationFrame.sop, HyperbolicPantsAttentionMap.sop, AttentionTraversalPolicy.sop
+  = boundary: corridor navigation is a semantic attention tool that preserves correlation-only status until evidence supports promotion
+  = outside: hidden activations, exact transformer hypergeometry, unsupported relation, unsupported identity, arbitrary visual analogy, and unselected corridor branches

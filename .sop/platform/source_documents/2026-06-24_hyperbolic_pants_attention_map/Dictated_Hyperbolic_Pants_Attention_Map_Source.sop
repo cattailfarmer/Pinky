@@ -1,0 +1,17 @@
+Subject: Dictated Hyperbolic Pants Attention Map Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedHyperbolicPantsAttentionMapSource] is the preserved user source for mapping focal meaning and periphery meaning through a hyperbolic pants topology metaphor
+  + [source_kind] is dictated_conversation_source_with_visual_reference
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "that reminds me of the pants decomposition on the hyperbolic plane as a metaphorical mapping device for the shape of local meaning and the association of periphery meaning. the periphery will be in the smaller cells around the focal point in the middle being the largest unit of meaning, holding the largest body of meaning and connections in that meaning as described in the orbiting components following the dimensionality so that more dimensions means more orbital components of meaning in the periphery. this can be a pattern of a map and nav awareness in the transformer hypergeometry if you learn how to create attention notation to capture and observe dimensionality in this manner?"
+  + [visual_source_1_original] is C:\Users\enjer\AppData\Local\Temp\codex-clipboard-3e5a5898-4697-491b-9c9a-55ca573ddd54.png
+  + [visual_source_2_original] is C:\Users\enjer\AppData\Local\Temp\codex-clipboard-7debbb98-8d23-4f9b-86e5-9929b0097568.png
+  + [visual_source_1_preserved] is F:\.sop\platform\source_documents\2026-06-24_hyperbolic_pants_attention_map\visual_source_1_hyperbolic_pants_cells.png
+  + [visual_source_2_preserved] is F:\.sop\platform\source_documents\2026-06-24_hyperbolic_pants_attention_map\visual_source_2_hyperbolic_tessellation.png
+
+  = must: preserve this source separately from processed contracts
+  = must: treat the hyperbolic plane and pants decomposition as metaphorical mapping supports unless later evidence creates a stricter mathematical runtime
+  = must: keep transformer hypergeometry as a visible semantic proxy, not direct hidden-state access

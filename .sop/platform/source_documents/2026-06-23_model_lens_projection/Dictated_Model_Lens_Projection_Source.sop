@@ -1,0 +1,19 @@
+Subject: Dictated Model Lens Projection Source
+
+Description: Raw preserved source for the scaffold-as-lens and exchangeable LLM projection concept.
+
+& [DictatedModelLensProjection] is preserved user source
+  + [dictation] is:
+    the scaffold is a lens into the LLM, and the LLM can be exchangeable. use a different model for a different eye on the lens. the LLM is projected like a hologram in the concept space and tested for coherence and new inspirations or insight or critiques, etc.
+
+  + [scaffold_lens] is the SOP attention scaffold used as the stable lens into model behavior
+  + [exchangeable_llm] is any model selected to look through or project through the scaffold lens
+  + [different_eye] is the comparative perspective gained by swapping models
+  + [hologram_projection] is the metaphor for a model casting a concept-space projection through the scaffold
+  + [projection_tests] is coherence, inspiration, insight, critique, contradiction, caution, and fault detection
+  + [boundary] is model projection as comparative evidence and inspiration, not direct proof or hidden-state access
+
+  = must: preserve the model-as-eye metaphor as source impulse
+  = must: distinguish scaffold lens from exchangeable model projection
+  = must: test projections for coherence, insight, critique, caution, and fault
+  - never: treat one model projection as final truth without comparison or evidence

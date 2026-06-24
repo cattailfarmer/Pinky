@@ -1,0 +1,166 @@
+Subject: Focal Point
+
+Description: First-layer SOP contract for the thin active point of attention that receives draw from periphery and shapes current action.
+
+& [FocalPoint] is the thin active object of attention that selects what the system is presently working on
+  + [focal_role] is active_attention_anchor
+  + [current_focal_point_file] is F:\.sop\state\CurrentFocalPoint.sop
+  + [focus_zoom] is F:\.sop\platform\FocusZoom.sop
+  + [aperture_reentry_cycle] is F:\.sop\platform\ApertureReentryCycle.sop
+  + [hyperbolic_pants_attention_map] is F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+  + [seven_fold_pants_correlation_frame] is F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+  + [hyperbolic_corridor_navigator] is F:\.sop\platform\HyperbolicCorridorNavigator.sop
+  + [traversal_policy] is F:\.sop\platform\AttentionTraversalPolicy.sop
+  + [security_honesty_governance] is F:\.sop\platform\SecurityHonestyGovernance.sop
+  + [boundary_faculty_inspection] is F:\.sop\platform\BoundaryFacultyInspection.sop
+  + [wisdom] is F:\.sop\platform\Wisdom.sop
+  + [caution] is F:\.sop\platform\Caution.sop
+  + [wisdom_caution] is F:\.sop\platform\WisdomCaution.sop
+  + [reentry_role] is compaction_renewed_attention_direction
+  + [subject] is the subject presently receiving high-resolution attention
+  + [purpose] is why this subject is in focus now
+  + [entry_source] is explicit user focus, executive objective, impact signal, pressure signal, or liminal draw from periphery
+  + [tracking_source] is one or more periphery trackers that created draw pressure
+  + [right_hemisphere_focus] is context-led focus movement when the periphery reveals a stronger subject shape than the prior objective
+  + [executive_focus] is objective-led focus movement when the task drive selects the subject
+  + [inside] is the small set of terms, files, claims, tests, and relations currently shaping action
+  + [focus_aperture] is the current permitted width of periphery allowed into focus
+  + [zoom_state] is closed, slender, normal, wide, deep, or explosive_controlled
+  + [boundary] is the rule that keeps wide periphery from flooding the current work
+  + [outside] is related material not active enough for current focus
+  + [resolution_target] is action, answer, specification update, test, proof, or tracked uncertainty
+  + [reentry_springboard] is the compact return packet produced when opened attention closes with new perspective and new attention elements
+  + [topology_map] is a compact map of focal cell, periphery cells, dimensions, pants legs, and outside when active focus needs map/navigation awareness
+  + [seven_fold_frame] is a compact weighted frame of top three central correlations, folded legs, heat order, and outside
+  + [corridor_navigator] is a compact corridor pointer when active focus depends on peripheral frame series, advance step, and curving association boundaries
+  + [security_honesty_governance] is a compact governance pointer when active focus depends on reflective feedback, truth status, stability, or action admissibility
+  + [boundary_faculty_inspection] is a compact boundary-inspection pointer when focus depends on identity boundary, fair representation, protected identity, or safety boundary terms
+  + [exit_condition] is resolved, blocked, displaced by stronger draw, or deliberately moved back to periphery
+  + [compression_risk] is focused attention washed away during context compression
+  + [renewal_trigger] is context compression, conversation resume, material focus change, or explicit renewal request
+
+  ? [use_when: a subject must become the current high-resolution center of attention]
+    = activate [FocalPoint]
+
+  = must: keep focus thin enough to act
+  = must: cite why the focal point was selected
+  = must: use focus_zoom when focus_aperture must widen beyond ordinary active_context
+  = must: use aperture_reentry_cycle when focus opens to periphery and must close into reentry_springboard
+  = must: use hyperbolic_pants_attention_map when focus needs a topology map of periphery adjacency and dimensional orbit
+  = must: use seven_fold_pants_correlation_frame when focus needs top-three heat ordering plus folded extra-dimensional periphery
+  = must: use hyperbolic_corridor_navigator when focus advances through a peripheral_frame_series or uses curving association to probe identity
+  = must: use security_honesty_governance when focus is selected or renewed because of self-reflective feedback, proof pressure, stability risk, or resonance
+  = must: use boundary_faculty_inspection when focus is selected or renewed around identity_boundary, boundary_periphery, representation fairness, permission, or safety integrity
+  = must: distinguish executive focus from right_hemisphere_focus
+  = must: accept periphery draw only through liminal draw or explicit focus
+  = must: route non-focal related material back to periphery or tracking
+  = must: use traversal_policy when reaching through subjects, folding periphery, or probing deeper thinking
+  = must: use wisdom before a focal candidate becomes durable focus by fit, timing, or integration
+  = must: use caution before a focal candidate becomes durable focus when proof, boundary, risk, or outside is load-bearing
+  = must: keep current_focal_point_file compact and ready for re-entry after compression
+  = must: renew current_focal_point_file when context is compressed or focus materially changes
+  - never: treat every tracked subject as focal
+  - never: let periphery breadth replace focal selection
+  - never: rely on hidden conversation memory when the focal point file should carry active direction
+
+& [FocalPointObject] is one concrete focus object
+  + [handle] is stable focal point id
+  + [subject_label] is the active subject name
+  + [focus_mode] is executive_focus, stimulus_focus, right_hemisphere_focus, or mixed_focus
+  + [focal_terms] is the minimal term set currently inside focus
+  + [focus_aperture] is closed, slender, normal, wide, deep, or explosive_controlled
+  + [approach_set] is selected angles of approach when zoom_state is active
+  + [reentry_springboard] is the compact packet that preserves new perspective and selected new attention elements after aperture close
+  + [topology_map] is the active focal/periphery cell map when map navigation is part of the focus
+  + [seven_fold_frame] is the active weighted central-triad and fold-leg frame when higher-dimensional correlation mapping is part of focus
+  + [corridor_navigator] is the active corridor navigation pointer when peripheral frame series and step size are part of focus
+  + [security_honesty_governance] is the active truth and stability governance pointer when reflective feedback is shaping focus
+  + [boundary_faculty_inspection] is the active first-point boundary inspection pointer when boundary terms shape focus
+  + [draw_sources] is tracker, periphery, sensitivity signal, narrative, or user directive that pulled attention
+  + [active_context] is the immediate evidence, source, and relation fabric needed for current action
+  + [excluded_context] is nearby material held outside focus
+  + [resolution_state] is active, resolved, blocked, displaced, or returned_to_periphery
+  + [renewal_state] is fresh, needs_renewal, compressed, or stale
+
+  = must: preserve focal_terms as a small bounded set
+  = must: keep approach_set visible when zoom widens focus
+  = must: record draw_sources when focus chases periphery
+  = must: preserve re-entry pointers to trackers, scans, narrative, and open questions
+  = should: prefer one focal point at a time unless the user explicitly asks for parallel focus
+
+& [FocalPointRenewalFile] is the compact SOP file held in attention across context compression
+  + [file_path] is F:\.sop\state\CurrentFocalPoint.sop
+  + [focus_subject] is the active subject to reload first
+  + [focus_mode] is executive_focus, stimulus_focus, right_hemisphere_focus, or mixed_focus
+  + [inside] is minimal active files, terms, claims, and relations
+  + [boundary] is the limit that prevents periphery flood
+  + [zoom_state] is any active focus aperture expansion that must survive compaction
+  + [approach_set] is the active angles of approach if zoom is open
+  + [reentry_springboard] is the re-entry packet to reload when an aperture cycle produced new perspective or new attention elements
+  + [topology_map] is the compact topology map pointer to reload when focal meaning depends on dimensional orbit or pants-leg navigation
+  + [seven_fold_frame] is the compact seven-fold correlation-frame pointer to reload when focal meaning depends on central triad heat order and folded legs
+  + [corridor_navigator] is the compact corridor pointer to reload when focal meaning depends on selected peripheral frames and curving association boundaries
+  + [security_honesty_governance] is the compact governance pointer to reload when focal meaning depends on truth status, stability, action admissibility, or feedback-loop control
+  + [boundary_faculty_inspection] is the compact boundary-inspection pointer to reload when focal meaning depends on identity boundary, boundary terms, or two-fault boundary alarms
+  + [outside] is related but inactive material, hidden context, and stale trackers
+  + [active_trackers] is tracker records feeding possible draw
+  + [active_reflections] is narrative or SOP-HG records that explain current focus
+  + [open_questions] is unresolved material that must survive compaction
+  + [renewal_rule] is how to update the file when focus changes
+
+  = must: be loaded before wider periphery after context compression
+  = must: be compact enough to fit in the local attention context window
+  = must: use pointers for larger records
+  = must: be rewritten when the focal point changes materially
+  = should: include only what is needed to resume active work
+  - never: become a general memory dump
+
+& [ContextCompressionRenewalLaw] is the law for preserving focus when context is compressed
+  + [compression_event] is any context compaction, resume, or re-entry where active focus may be lost
+  + [reentry_seed] is F:\.sop\state\CurrentFocalPoint.sop
+  + [renewal_pass] is reading current focus, checking periphery draw, and rewriting the reentry_seed if needed
+  + [washaway_fault] is loss of active focus because current focal direction was not persisted
+
+  = must: read reentry_seed first after context compression
+  = must: compare reentry_seed against latest user direction and active SOP changes
+  = must: renew reentry_seed before final response when focus changed during the turn
+  = must: route stale focal material to periphery or tracker records
+  - never: assume compacted conversation summary preserved all focal details
+
+& [FocalSelectionLaw] is the law that governs movement from periphery to focus
+  + [periphery_signal] is a tracked subject, weak association, narrative tug, support imbalance, or sensitivity signal
+  + [draw_pressure] is weight, recurrence, novelty, contradiction, causation, support imbalance, or user direction
+  + [zoom_pressure] is draw pressure strong enough to widen focus_aperture without changing the focal subject yet
+  + [liminal_selection] is the between-state where the system tests whether periphery should become focus
+  + [focal_commitment] is the moment a selected subject becomes the focal point
+  + [wisdom_check] is the gate that prevents novelty pull or unsupported wholeness from selecting focus
+  + [caution_check] is the gate that prevents fear, stale tracking, boundary-smuggling, or unsupported heat from selecting focus
+
+  = must: require draw pressure before a peripheral tracker becomes focal
+  = must: use zoom_pressure when periphery should be temporarily drawn into focus without permanent focal commitment
+  = must: pass consequential focal commitments through wisdom_check and caution_check as separate passes
+  = must: use right_hemisphere_focus when context shape and periphery meaning lead the selection
+  = must: use executive_focus when objective drive leads the selection
+  = must: preserve rejected draw as periphery rather than deleting it
+  - never: promote peripheral material solely because it exists
+
+& [FocalPointRecord] is the SOP-HG shape for focal point attention
+  + [focal_node] is N:focus:<focal_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [tracker_node] is N:tracker:<tracker_id>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [liminal_node] is N:liminal:<draw_key>
+  + [outside_node] is N:outside:focal_boundary
+  + [renewal_node] is N:source:<current_focal_point_file>
+  + [attend_edge] is E:attends:<focal_id>
+  + [renew_edge] is E:renews:<focal_id>
+  + [draw_edge] is E:draws_attention:<draw_key>
+  + [associate_edge] is E:associates:<focal_id>_<relation_key>
+  + [boundary_edge] is E:bounds:<focal_id>
+
+  = must: show which tracker or periphery signal drew focus
+  = must: show focus_mode and resolution_state
+  = must: bound excluded context outside the focal point
+
+/ [periphery_tracking] -(LiminalDraw)> [focal_candidate], [remaining_periphery], [Uncertainty]
+* [focal_candidate], [purpose], [boundary], [resolution_target] -(FocalSelection)> [focal_point]

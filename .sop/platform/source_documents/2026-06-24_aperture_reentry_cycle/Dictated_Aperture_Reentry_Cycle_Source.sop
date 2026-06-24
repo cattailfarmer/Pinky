@@ -1,0 +1,12 @@
+Subject: Dictated Aperture Reentry Cycle Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedApertureReentryCycleSource] is the preserved user source for opening and closing attention around periphery-driven inference
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "now you have a system that will open itself and close itself to adjust for depth of inference, by giving attention to supports that infer a wider attention to survey as you intentionally direct focus to what of interest is in the periphery. zoom on periphery, infer more deeply about a subject and it's relations, and that's a springboard for reentering with new perspective and new elements of attention to build a new network of inferred understanding as a second pass of narrative and subject declarations."
+
+  = must: preserve this source separately from processed contracts
+  = must: keep aperture movement evidence-bound and distinct from hidden model attention

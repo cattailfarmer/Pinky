@@ -1,0 +1,35 @@
+Subject: Attention Layer Index
+
+Description: Index of independent SOP files composing local attention over SOP-HG.
+
+& [AttentionLayerIndex] is the inspectable attention-layer set
+  + [focus] is F:\.sop\platform\attention_layers\Focus.sop
+  + [focal_point] is F:\.sop\platform\FocalPoint.sop
+  + [attention_traversal_policy] is F:\.sop\platform\AttentionTraversalPolicy.sop
+  + [periphery] is F:\.sop\platform\attention_layers\Periphery.sop
+  + [attention_tracker] is F:\.sop\platform\AttentionTracker.sop
+  + [periphery_repository] is F:\.sop\platform\PeripheryRepository.sop
+  + [support_balance] is F:\.sop\platform\CarriedSupportBalance.sop
+  + [liminal_draw] is F:\.sop\platform\attention_layers\LiminalDraw.sop
+  + [narrative_digestion] is F:\.sop\platform\attention_layers\NarrativeDigestion.sop
+  + [relation_contracts] is F:\.sop\platform\attention_layers\RelationContracts.sop
+
+/ [focus] -(draws_from)> [periphery]
+/ [focal_point] -(anchors)> [focus]
+/ [attention_traversal_policy] -(governs)> [focal_point]
+/ [attention_traversal_policy] -(draws_from)> [periphery]
+/ [attention_tracker] -(orbits)> [periphery]
+/ [attention_tracker] -(draws_toward)> [focal_point]
+/ [periphery] -(feeds)> [liminal_draw]
+/ [attention_traversal_policy] -(folds_unwinds)> [liminal_draw]
+/ [periphery] -(persists_to)> [periphery_repository]
+/ [support_balance] -(audits)> [periphery]
+/ [liminal_draw] -(selects)> [focal_point]
+/ [narrative_digestion] -(writes_to)> [subject_layer]
+
+  = must: keep each attention layer independently inspectable
+  = must: correlate layers through SOP-HG relation edges
+  = must: use attention traversal policy when probing through relations beyond the focal surface
+  = must: keep tracking in periphery until liminal draw selects a focal point
+  = must: expire unreaffirmed tracking before it becomes hidden persistent focus
+  = must: audit carried support when a support does not appear natively in periphery

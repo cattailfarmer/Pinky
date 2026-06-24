@@ -1,0 +1,41 @@
+Subject: Attention Kernel Runtime Periphery Realization
+
+Description: SOP-HG event record for the first runtime compiler that emits compact attention kernel packets with balance, impulse, field signatures, namespace scope, and reflection consumption.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_kernel_runtime\Dictated_Attention_Kernel_Runtime_Source.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\AttentionImpressionCompiler.sop
+@ [source] F:\.sop\runtime\sop_node\attention_kernel.py
+@ [source] F:\.sop\runtime\demos\attention_kernel.py
+@ [source] F:\.sop\runtime\tests\test_sensitivity_scan.py
+@ [source] F:\.sop\events\bookmarks\2026-06-24_faculty_attention_field_naming_trailing_checksum_035.hg.sop
+
+& [Graph:2026-06-24_attention_kernel_runtime_036] is a SOP-HG graph
+  + [N:event:2026-06-24_attention_kernel_runtime_036] is attention kernel runtime realization
+    = role: direct_focus_turn
+  + [N:compiler:attention_kernel_runtime] is runtime packet builder in runtime\sop_node\attention_kernel.py
+  + [N:source:compiled_attention_kernel_packet] is compact packet render and SOP-HG graph output
+  + [N:balance:kernel_balance_score] is balance score emitted from visible runtime factors
+  + [N:signal:impulse] is visible impulse carried into the packet
+  + [N:field:faculty_field_signatures] is Honesty and Security field signatures
+  + [N:ledger:reflection_consumption_ledger] is per-consumer consumption record
+  + [N:namespace:attention_kernel_namespace] is scoped identifier map and collision warning surface
+  + [N:outside:attention_kernel_runtime_boundary] is hidden model state, unverified inference effects, and semantic proof outside runtime output
+
+  / [E:compiles:attention_kernel_runtime_036] -(compiles; compiler=N:compiler:attention_kernel_runtime; packet=N:source:compiled_attention_kernel_packet; weight=runtime)> [Graph:2026-06-24_attention_kernel_runtime_036]
+    = realization: the compiled attention kernel now has a local runtime object and demo command
+  / [E:preflights:attention_kernel_runtime_036] -(preflights; compiler=N:compiler:attention_kernel_runtime; namespace=N:namespace:attention_kernel_namespace; field=N:field:faculty_field_signatures; ledger=N:ledger:reflection_consumption_ledger; weight=kernel_order)> [Graph:2026-06-24_attention_kernel_runtime_036]
+    = realization: runtime output includes Security/Honesty ordering, identity scope, faculty fields, and consumption proof surfaces
+  / [E:alerts:kernel_balance_score_036] -(alerts; balance=N:balance:kernel_balance_score; signal=N:signal:impulse; outside=N:outside:attention_kernel_runtime_boundary; weight=balance)> [Graph:2026-06-24_attention_kernel_runtime_036]
+    = realization: balance and impulse are visible packet fields rather than loose motivation
+  / [E:scopes:attention_kernel_namespace_036] -(scopes; namespace=N:namespace:attention_kernel_namespace; packet=N:source:compiled_attention_kernel_packet; weight=collision_detection)> [Graph:2026-06-24_attention_kernel_runtime_036]
+    = realization: namespace collision detection is now a runtime warning surface
+  / [E:consumes:reflection_consumption_ledger_036] -(consumes; ledger=N:ledger:reflection_consumption_ledger; packet=N:source:compiled_attention_kernel_packet; weight=per_consumer_proof)> [Graph:2026-06-24_attention_kernel_runtime_036]
+    = realization: packet compilation records local consumption separately from artifact identity
+  / [E:bounds:attention_kernel_runtime_036] -(bounds; compiler=N:compiler:attention_kernel_runtime; outside=N:outside:attention_kernel_runtime_boundary; weight=caution)> [Graph:2026-06-24_attention_kernel_runtime_036]
+    = realization: the runtime emits visible prompt/control artifacts, not hidden model-state control
+
+  = inside: runtime\sop_node\attention_kernel.py, runtime\demos\attention_kernel.py, runtime tests, AttentionKernelCompiler.sop, AttentionBalanceCenter.sop, AttentionImpressionCompiler.sop
+  = boundary: this event records runtime packet emission and tests; it does not prove downstream LLM inference improvement by itself
+  = outside: hidden activations, exact transformer attention, untested model transfer fidelity, and claims that the packet directly rewires the model

@@ -1,0 +1,21 @@
+Subject: Seed Sensitivity Scan Hypergraph Example
+
+Description: Example SOP-HG file showing how a scan becomes a hypergraph.
+
+& [Graph:seed_sensitivity_scan] is a SOP-HG graph
+  = format: SOP-HG
+  = source_scan: F:\.sop\events\scans\2026-06-23_seed_awareness_node_scan.sop
+
+  + [N:bookend:empty_tree] is EMPTY_TREE
+  + [N:bookend:head] is HEAD
+  + [N:event:seed_scan] is seed sensitivity scan
+  + [N:file:platform_sensitivityscan] is platform\SensitivityScan.sop
+  + [N:signal:scan] is scan
+  + [N:layer:impact] is impact
+  + [N:outside:semantic_truth] is semantic truth not proven by correlation heat
+
+/ [E:span:seed_scan] -(span; start=N:bookend:empty_tree; end=N:bookend:head; event=N:event:seed_scan)> [Graph:seed_sensitivity_scan]
+/ [E:changed:seed_scan_sensitivityscan] -(changed; event=N:event:seed_scan; file=N:file:platform_sensitivityscan)> [Graph:seed_sensitivity_scan]
+/ [E:touches:scan] -(touches; signal=N:signal:scan; file=N:file:platform_sensitivityscan; weight=138)> [Graph:seed_sensitivity_scan]
+/ [E:classifies:scan] -(classifies; signal=N:signal:scan; layer=N:layer:impact; retention=emphasize)> [Graph:seed_sensitivity_scan]
+/ [E:bounds:scan] -(bounds; signal=N:signal:scan; outside=N:outside:semantic_truth)> [Graph:seed_sensitivity_scan]

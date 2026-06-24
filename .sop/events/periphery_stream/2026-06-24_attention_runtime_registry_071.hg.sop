@@ -1,0 +1,25 @@
+Subject: Attention Runtime Registry 071
+
+Description: Periphery-stream realization that focus refinement needs a visible semantic runtime registry like stack frames for attention.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_runtime_registry\Dictated_Attention_Runtime_Registry_Source.sop
+@ [source] F:\.sop\platform\FocusResolutionRefinement.sop
+@ [source] F:\.sop\platform\AttentionRuntimeRegistry.sop
+
+& [AttentionRuntimeRegistry071] is the realized semantic-stack-frame registry
+  + [moment] is focus refinement needs a live registry that tracks active attention like program stack frames, but in semantic attention terms
+  + [focus] is attention runtime registry
+  + [inside] is attention_stack_frame, semantic_register_set, parent_frame, child_frame_set, return_anchor, frame_operation, frame_state, frame_trace, and frame_outside
+  + [boundary] is visible SOP state approximation for attention, not hidden LLM internals or native hard-coded stack frames
+  + [outside] is hidden activations, exact transformer attention, model weights, executable runtime implementation, and untracked cognition
+  + [wisdom] is the registry fits because focus needs inspectable live state to prevent drift, stale frames, and lost returns
+  + [caution] is the registry must not overclaim access to internal model state; it records visible semantic state only
+  + [balance] is improved because push, return, close, and outside preservation reduce focus leaks and periphery flood
+  + [next_step] is use the registry with FocusResolutionRefinement to keep a live current attention runtime state frame
+
+  = must: keep frame state visible and semantic
+  = must: close or return frames rather than leaving them stale
+  = should: use the registry as the running substrate for focus_quality and integration_receipt work
+
+/ [focus_refinement], [attention_stack_frame], [semantic_register_set] -(CreatesRegistry)> [AttentionRuntimeRegistry], [frame_outside]
+* [Wisdom], [Caution], [return_anchor], [integration_receipt] -(StabilizesRuntimeAttention)> [focus_quality], [understanding_delta], [outside]

@@ -1,0 +1,14 @@
+Subject: Security Honesty Resonance Governance Source Manifest
+
+Description: Source preservation manifest for the Security/Honesty resonance governance specification.
+
+& [SecurityHonestyResonanceGovernanceSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_security_honesty_resonance_governance\Dictated_Security_Honesty_Resonance_Governance_Source.sop
+  + [canonical_target] is F:\.sop\platform\SecurityHonestyGovernance.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_security_honesty_resonance_governance_024.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_corridor_navigator_trailing_checksum_023.hg.sop
+  + [derived_terms] is security_honesty_governance, honesty_faculty, security_faculty, resonance_governor, feedback_loop_guard, claim_evidence_gate, admissible_reflection, convergent_override
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, Delineation, AttentionBalanceCenter, TrailingChecksumVoice, HyperbolicCorridorNavigator
+
+  = must: preserve raw source before treating the canonical target as process authority
+  = must: keep the canonical target self-contained in F:\.sop rather than depending on old framework links

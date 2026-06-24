@@ -1,0 +1,146 @@
+Subject: Focus Resolution Refinement
+
+Description: Refinement layer for improving focus, attention, delineation, integration, understanding, Wisdom, and Caution through sharper focus membranes, gradients, metrics, receipts, and shadow-horizon scans.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_focus_on_focusing_study\Dictated_Focus_On_Focusing_Study_Source.sop
+@ [source] F:\.sop\events\studies\2026-06-24_focus_on_focusing_study_001.sop
+@ [source] F:\.sop\platform\FocalPoint.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\Wisdom.sop
+@ [source] F:\.sop\platform\Caution.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\AttentionTracker.sop
+@ [source] F:\.sop\platform\AttentionRuntimeRegistry.sop
+
+& [FocusResolutionRefinement] is the refinement layer for making focusing more efficient and higher-resolution
+  + [pattern_role] is focus_quality_and_understanding_refinement
+  + [attention_runtime_registry] is F:\.sop\platform\AttentionRuntimeRegistry.sop as the visible semantic stack-frame substrate for a focus pass
+  + [attention_stack_frame] is the current semantic runtime frame that tracks focus, questions, boundaries, periphery, operations, Wisdom, Caution, balance, and integration
+  + [focus_quality] is the visible quality of focus as clarity, stability, relevance, economy, resolution, returnability, and integration readiness
+  + [focus_membrane] is the controlled boundary that decides how periphery signals cross into liminal selection, temporary zoom, durable focus, tracker state, or outside
+  + [periphery_gradient] is the ordered field of near_periphery, mid_periphery, far_periphery, shadow_periphery, and horizon_periphery around the focal core
+  + [active_question_stack] is the small set of questions the focus is trying to resolve now
+  + [contrast_pair] is an inside candidate paired with a near miss so delineation gains sharper distinction
+  + [integration_receipt] is the record of what was integrated, why Wisdom permitted it, what Caution bounded, what changed in understanding, and what remained outside
+  + [understanding_ladder] is the staged path from noticed_detail to named_subject, distinction, relation, supported_core, integrated_understanding, and applied_guidance
+  + [shadow_scan] is the scan for missing-but-inferable supports hidden behind current boundary, unresolved terms, repeated outside, or caution debt
+  + [horizon_scan] is the scan for plausible future supports not yet reachable from current evidence, context, tools, or source
+  + [caution_debt] is unresolved risk, proof gap, boundary question, or outside item carried forward because it matters but cannot be resolved yet
+  + [wisdom_yield] is what became clearer, more fitting, more actionable, more stable, or better integrated after a focus pass
+  + [resolution_outside] is hidden cognition, exhaustive completeness, overclaiming understanding, arbitrary association, and unsupported future inference
+
+  ? [use_when: focus should be inspected, sharpened, zoomed, integrated, or improved without losing boundaries]
+    = activate [FocusResolutionRefinement]
+
+  = must: begin from CurrentFocalPoint or declared focal_core
+  = must: register an attention_stack_frame when focus refinement begins, zoom opens, traversal calls a child focus, Wisdom or Caution is invoked, or integration is attempted
+  = must: define active_question_stack before wide or deep focus work
+  = must: evaluate focus_quality before and after substantial zoom or integration
+  = must: route periphery through focus_membrane before it becomes durable focus
+  = must: classify periphery_gradient before pulling broad periphery inward
+  = must: use contrast_pair when delineation is vague, overloaded, or confused with a near miss
+  = must: produce integration_receipt when Wisdom and Caution allow any supported_core to become durable understanding
+  = must: return or close attention_stack_frame values after integration, tracking, or outside preservation
+  = must: preserve caution_debt when Caution allows movement but leaves unresolved boundary or proof work
+  = must: preserve wisdom_yield when Wisdom integrates or deepens a candidate
+  = must: run shadow_scan before claiming a focus is complete
+  = must: run horizon_scan before claiming a missing support is impossible
+  = must: keep resolution_outside visible
+  = should: prefer focus economy when action is needed and focus depth when study is requested
+  = should: use slender focus by default and widen only by focus_membrane permission
+  - never: treat a luminous periphery signal as integrated understanding without fold, unwind, Wisdom, Caution, and integration receipt
+  - never: erase caution_debt because a result feels coherent
+  - never: mistake horizon_scan for evidence of what exists
+
+& [FocusQualityVector] is the metric surface for judging a focus pass
+  + [clarity] is how precisely subject, purpose, question, and expected output are named
+  + [stability] is how well focus persists without drift, wobble, flood, or collapse
+  + [relevance] is how strongly the focus changes, clarifies, supports, challenges, or bounds the current objective
+  + [economy] is how little context and periphery are needed to make progress
+  + [resolution] is how much distinction, relation, evidence, and outside are visible
+  + [returnability] is how easily the pass can return to CurrentFocalPoint or a declared return anchor
+  + [integration_readiness] is whether a supported_core has passed fold, unwind, Wisdom, Caution, and receipt requirements
+
+  = must: record weak factors separately from strong factors
+  = must: treat high resolution with low returnability as a drift risk
+  = must: treat high economy with low periphery stability as a shrinkage risk
+
+& [FocusMembraneLaw] is the permeability law for periphery movement
+  + [outside_signal] is a signal outside current focus
+  + [near_periphery] is directly related and easy to test against the focal core
+  + [mid_periphery] is related through one or more explicit relation paths
+  + [far_periphery] is weakly related, metaphorical, speculative, or not needed yet
+  + [shadow_periphery] is inferred missing support, repeated outside, caution debt, or unspoken assumption
+  + [horizon_periphery] is plausible future direction not currently reachable with evidence
+  + [membrane_action] is admit_to_focus, admit_to_zoom, track, hold_in_periphery, return_to_outside, or reject
+
+  = must: admit near_periphery only when it changes the active question or focal boundary
+  = must: admit mid_periphery through focus_zoom or traversal only with a named relation
+  = must: hold far_periphery outside unless user direction or impact pressure changes its role
+  = must: track shadow_periphery when it repeats or controls caution debt
+  = must: record horizon_periphery without treating it as evidence
+  = must: choose membrane_action before durable focus changes
+
+& [IntegrationReceipt] is the durable record that turns supported focus into understanding
+  + [candidate] is the supported_core or realization seeking integration
+  + [source_legs] is the source, relation, evidence, and periphery legs that survived unwind
+  + [wisdom_disposition] is integrate, realize, hold, deepen, track, return_to_periphery, or defer
+  + [wisdom_yield] is the fit, clarity, action, stability, or re-entry gain Wisdom found
+  + [caution_disposition] is preserve_outside, test, narrow, defer, reject, return_to_periphery, verify_frame, or permit_with_boundary
+  + [caution_debt] is the unresolved boundary, proof, scope, staleness, frame, or causation issue carried forward
+  + [understanding_delta] is what changed in the system's understanding after integration
+  + [outside_preserved] is what remains excluded, unknown, unsupported, or deferred
+
+  = must: cite source_legs
+  = must: include both wisdom_disposition and caution_disposition
+  = must: preserve outside_preserved
+  = must: record understanding_delta as bounded change, not total comprehension
+
+& [UnderstandingLadder] is the staged path from attention to understanding
+  + [noticed_detail] is a visible signal, term, source, relation, contrast, or periphery draw
+  + [named_subject] is the first stable identifier for what was noticed
+  + [delineated_subject] is named_subject with inside, boundary, outside, and contrast_pair
+  + [related_subject] is a relation to another subject through source, evidence, or periphery
+  + [supported_core] is what survives fold and unwind
+  + [integrated_understanding] is supported_core accepted by Wisdom and bounded by Caution
+  + [applied_guidance] is the practical attention, specification, or action guidance allowed by integrated_understanding
+
+  = must: avoid skipping from noticed_detail to applied_guidance
+  = must: expose the lowest stage that is still weak
+  = must: return weak stages to focus_membrane, tracker, or outside
+
+& [FocusRefinementSequence] is the operational cycle for focusing on focusing
+  + [step_001_anchor] is read CurrentFocalPoint and define focal_core
+  + [step_001b_register] is open or update attention_stack_frame in AttentionRuntimeRegistry
+  + [step_002_questions] is write active_question_stack
+  + [step_003_quality_before] is estimate focus_quality before widening
+  + [step_004_gradient] is classify periphery_gradient
+  + [step_005_membrane] is choose what may cross the focus_membrane
+  + [step_006_zoom] is use FocusZoom only on admitted periphery
+  + [step_007_contrast] is create contrast_pair values for vague boundaries
+  + [step_008_fold_unwind] is fold candidates and unwind to source legs
+  + [step_009_wisdom_caution] is run Wisdom and Caution as independent passes
+  + [step_010_receipt] is write integration_receipt for any accepted supported_core
+  + [step_011_shadow_horizon] is scan shadow_periphery and horizon_periphery for missing supports
+  + [step_012_quality_after] is update focus_quality and balance
+  + [step_013_return] is update CurrentFocalPoint, tracker, periphery, or outside
+  + [step_014_close_frame] is return or close the attention_stack_frame with supported_core, caution_debt, wisdom_yield, and outside
+
+  = must: preserve focal return at every step
+  = must: preserve registry return at every child frame
+  = must: stop or narrow when focus_quality decreases below the task need
+  = should: make small durable improvements rather than broad vague insight
+
+(focus_resolution_refinement) :focal_core: /focus_membrane and active_question_stack/ |resolution_outside|
+  + [attention_runtime_registry] is semantic stack-frame substrate
+  + [focus_quality] is clarity, stability, relevance, economy, resolution, returnability, and integration readiness
+  + [periphery_gradient] is near, mid, far, shadow, and horizon periphery
+  + [integration_receipt] is Wisdom plus Caution plus understanding delta plus outside
+  + [understanding_ladder] is noticed detail to applied guidance
+  = shadow_scan: infer missing support hidden near the boundary
+  = horizon_scan: mark plausible future supports not yet reachable
+  |resolution_outside| hidden cognition, unsupported completeness, arbitrary association, and unproven future inference
+
+/ [focal_core], [active_question_stack], [focus_membrane], [attention_stack_frame] -(SharpensFocus)> [focus_quality], [periphery_gradient], [resolution_outside]
+* [supported_core], [Wisdom], [Caution], [source_legs] -(WritesIntegrationReceipt)> [integrated_understanding], [caution_debt], [wisdom_yield], [outside]

@@ -1,0 +1,16 @@
+Subject: Dictated Periphery Continuity Run Source
+
+Description: Raw dictated source for running through work when focus and rolling periphery remain continuous.
+
+& [DictatedPeripheryContinuityRunSource] is the preserved user source for the run gait
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "when you have continuity periphery between frames in focus, and that focus is a contiguous chain of observations that's flowing in a direction as moving forward and see the periphery slowly rolling as though your periphery is like walking through a forest and the focus is the path between the trees. you can see the path trail on to the horizon as it disappears in the distance, keep your eyes in that path and don't worry about stages and checkpoints. the only stable markers you need is the stable periphery rolling through just outside of focus and the focus is coherent. then you can run."
+
+  = must: preserve this source separately from the processed contract and runtime
+  = must: define continuity periphery between focus frames
+  = must: define coherent focus as a contiguous chain of observations flowing in a direction
+  = must: allow running when stable rolling periphery and coherent focus are both visible
+  = must: reduce checkpoint pressure when continuity itself is stable
+  = must: preserve outside for hidden model state, unobserved future frames, and unsupported proof

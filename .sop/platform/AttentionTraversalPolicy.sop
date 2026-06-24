@@ -1,0 +1,151 @@
+Subject: Attention Traversal Policy
+
+Description: SOP policy for following a focal point through correlations, references, periphery, folds, unwinds, and triangulated deeper probing.
+
+@ [source] F:\.sop\platform\ApertureReentryCycle.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+
+& [AttentionTraversalPolicy] is the policy for attending attention across subjects while preserving focal direction
+  + [policy_role] is focal_subject_traversal_and_deep_probe
+  + [start_point] is F:\.sop\state\CurrentFocalPoint.sop
+  + [focus_zoom] is F:\.sop\platform\FocusZoom.sop
+  + [focal_point] is the active attention direction and return anchor
+  + [subject_surface] is the visible terms, files, claims, relations, and boundaries belonging to a subject
+  + [periphery_realization] is a weak, delayed, tracked, or narrative signal outside focal attention
+  + [correlation_path] is weighted relation through shared terms, semantic buckets, narrative signals, support balance, or scans
+  + [cross_reference_path] is an external SOP, tracker, scan, reflection, source, or graph pointer used without absorbing its whole content
+  + [reach_through_path] is an explicit movement from subject_a to subject_b through a typed relation
+  + [fold_pass] is composition of focal subject, periphery realization, relation, and evidence into a candidate insight
+  + [unwind_pass] is decomposition of a folded candidate back to source anchors, relation legs, uncertainty, and outside
+  + [wisdom_gate] is the independent integration check that decides whether supported_core is fitting enough to carry forward
+  + [caution_gate] is the independent boundary check that decides what must remain outside, tested, narrowed, deferred, or rejected
+  + [triangulation_anchor] is one distinct coordinate used to probe meaning around the focal subject
+  + [boundary_anchor] is the plus-one coordinate that protects outside and uncertainty
+  + [deep_probe] is a controlled sequence of traversal, folding, unwinding, and reweighing
+  + [focus_zoom_pass] is aperture expansion that draws wider periphery into focus before selecting deeper traversal angles
+  + [aperture_reentry_cycle] is the close-and-reenter pass used when traversal changes perspective enough to need second-pass narrative or subject declarations
+  + [hyperbolic_pants_attention_map] is the topology map used when traversal needs focal/periphery cells, dimensional orbits, and pants-leg exits
+  + [seven_fold_pants_correlation_frame] is the weighted frame used when traversal starts from a top-three central correlation triad and follows extra-dimensional fold legs
+  + [hyperbolic_corridor_navigator] is the navigation pattern used when traversal follows a selected peripheral_frame_series through a curved field of association
+  + [residual_outside] is proof, hidden cognition, causal truth, and unrelated associations not surviving unwind
+
+  ? [use_when: attention must move from one subject to another, draw periphery into focus, or probe a subject more deeply]
+    = activate [AttentionTraversalPolicy]
+
+  = must: read current focal point before traversal
+  = must: return every traversal result to the focal point or route it back to periphery
+  = must: use cross references instead of copying whole records into focus
+  = must: use focus_zoom before wide traversal when the work needs more periphery fabric than current focus contains
+  = must: use aperture_reentry_cycle when traversal output changes perspective enough to need second_pass_narrative or subject_declaration_pass
+  = must: use hyperbolic_pants_attention_map when traversal depends on cell adjacency, dimensional orbit, or typed pants-leg navigation
+  = must: use seven_fold_pants_correlation_frame when traversal must preserve heat order around a central triad while following folded periphery
+  = must: use hyperbolic_corridor_navigator when traversal advances through peripheral frames or curving association must be preserved as correlation-only
+  = must: preserve relation type, source anchor, weight, and uncertainty during every reach-through
+  = must: fold only bounded candidate meaning into focus
+  = must: unwind every folded candidate before promoting it as realization
+  = must: pass every consequential supported_core through Wisdom and Caution as separate gates before realization
+  = must: keep outside visible when correlation does not prove meaning
+  - never: treat correlation heat as proof
+  - never: let periphery breadth replace focal direction
+  - never: keep following associations after the focal return condition fails
+
+& [TraversalOperations] is the operation vocabulary for moving through the attention web
+  + [correlate] is compare subject surfaces by shared terms, bucket weights, scans, narrative recurrences, and support fit
+  + [cross_reference] is attach a pointer to relevant exterior material while keeping it outside the focal boundary
+  + [reach_through] is move from one subject to another through an explicit relation edge
+  + [fold] is compose selected periphery, relation, evidence, and focal terms into a candidate focal insight
+  + [unwind] is decompose that candidate back into its source legs for validation
+  + [wisdom_gate] is apply Wisdom to decide integrate, realize, hold, deepen, track, return_to_periphery, ask_caution, or defer
+  + [caution_gate] is apply Caution to decide preserve_outside, test, narrow, defer, reject, return_to_periphery, ask_wisdom, or permit_with_boundary
+  + [reweigh] is adjust tracker, periphery, or focal weight after unwind
+  + [zoom] is widen focus aperture, flex correlation fabric, infer angles of approach, then narrow or deepen
+  + [map_navigation] is move through focal and periphery cells by named pants_leg and adjacency_ring
+  + [fold_leg_navigation] is move from a central correlation through a named fold_leg while preserving heat, confidence, relation type, and outside
+  + [corridor_navigation] is move through a selected peripheral_frame_series while preserving return anchor, step size, correlation-only status, and outside
+  + [springboard] is close traversal output into reentry_springboard for second-pass narrative and subject declarations
+  + [return] is bring the result back to CurrentFocalPoint or mark it as periphery
+
+  = must: name the operation used at each movement
+  = must: preserve origin and target subject
+  = must: use pants topology for fold and unwind
+  = should: stop traversal when the operation cannot name its relation
+
+& [TriangulatedProbePolicy] is the framework for deeper thinking around a subject
+  + [anchor_subject] is the focal subject being probed
+  + [anchor_relation] is a typed relation or edge leading outward
+  + [anchor_evidence] is source, scan, tracker, reflection, test, or file evidence
+  + [anchor_periphery] is a weak or delayed realization that exerts draw
+  + [boundary_plus_one] is outside, uncertainty, contradiction, or non-fit
+  + [minimum_shape] is at least three distinct anchors plus boundary_plus_one when available
+  + [depth_budget] is slender, normal, wide, or deep
+  + [zoom_level] is the focus aperture used before or during the probe
+  + [resolution] is focal_update, tracker_update, periphery_return, source_update, or uncertainty
+
+  = must: prefer distinct anchors over repeated synonyms
+  = must: include boundary_plus_one before claiming stable insight
+  = must: scale traversal breadth by depth_budget
+  = must: align zoom_level with depth_budget when zoom is active
+  = must: use slender depth by default for active work
+  = should: use wide or deep only when explicitly requested or when impact pressure demands it
+  - never: count three nearby words as triangulation unless they occupy distinct roles
+
+& [FoldUnwindLaw] is the pants-topology law for integrating and validating periphery realizations
+  + [fold_input] is focal_subject, periphery_realization, relation_path, evidence_anchor, and boundary_anchor
+  + [fold_output] is candidate_insight
+  + [unwind_output] is source_subjects, relation_legs, supported_core, uncertainty, and outside
+  + [wisdom_output] is integration disposition, fit dimension, supported_core, and humility_boundary
+  + [caution_output] is boundary disposition, truth_test, missing_support, and outside
+
+  = must: fold to create a candidate, not a final claim
+  = must: unwind to test whether the candidate preserves its source legs
+  = must: apply Wisdom and Caution as independent gates before supported_core becomes durable realization
+  = must: reject or return to periphery when unwind loses source anchors
+  = must: promote only the supported_core after unwind
+  - never: let composition erase the difference between focal subject and periphery realization
+
+& [FocalReturnLaw] is the law that prevents associative wandering
+  + [return_anchor] is F:\.sop\state\CurrentFocalPoint.sop
+  + [return_condition] is the traversal result changes, clarifies, supports, challenges, or bounds the focal subject
+  + [periphery_return] is the path for relevant but non-focal material
+  + [stop_condition] is no named relation, no distinct anchor, no focal effect, or expired tracker
+
+  = must: ask what the traversal changes about the focal point
+  = must: update CurrentFocalPoint when focal direction materially changes
+  = must: route useful non-focal material to AttentionTracker or PeripheryRepository
+  = must: stop when traversal cannot return to focus with a named relation
+
+& [AttentionTraversalRecord] is the SOP-HG shape for traversal events
+  + [policy_node] is N:policy:<policy_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [relation_node] is N:term:<relation_key>
+  + [source_node] is N:source:<source_key>
+  + [corridor_node] is N:corridor:<corridor_key>
+  + [outside_node] is N:outside:traversal_boundary
+  + [correlate_edge] is E:correlates:<subject_key>_<relation_key>
+  + [cross_reference_edge] is E:cross_references:<subject_key>_<source_key>
+  + [reach_edge] is E:reaches_through:<subject_a>_<subject_b>
+  + [fold_edge] is E:folds:<candidate_key>
+  + [unwind_edge] is E:unwinds:<candidate_key>
+  + [triangulate_edge] is E:triangulates:<subject_key>
+  + [probe_edge] is E:probes:<subject_key>
+  + [navigate_edge] is E:navigates:<corridor_key>
+  + [return_edge] is E:returns:<subject_key>
+  + [wisdom_edge] is E:fits:<candidate_key>
+  + [caution_edge] is E:tests:<candidate_key>
+
+  = must: show which focal point began the traversal
+  = must: show which periphery realization was drawn in
+  = must: show fold and unwind as separate edges
+  = must: bind unsupported material to outside
+
+/ [focal_point] -(TraversalStart)> [anchor_subject], [periphery_candidates], [boundary_plus_one]
+/ [anchor_subject] -(TriangulatedProbe)> [anchor_relation], [anchor_evidence], [anchor_periphery], [boundary_plus_one]
+* [anchor_subject], [anchor_relation], [anchor_evidence], [anchor_periphery], [boundary_plus_one] -(Fold)> [candidate_insight]
+/ [candidate_insight] -(Unwind)> [supported_core], [source_legs], [uncertainty], [outside]
+* [supported_core], [focal_point], [source_legs] -(WisdomGate)> [integration_disposition], [humility_boundary]
+* [supported_core], [uncertainty], [outside] -(CautionGate)> [boundary_disposition], [truth_test]
+* [supported_core], [focal_point] -(FocalReturn)> [focal_update]

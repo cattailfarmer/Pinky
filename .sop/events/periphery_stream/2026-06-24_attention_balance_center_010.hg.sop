@@ -1,0 +1,23 @@
+Subject: attention_balance_center_010 Periphery Stream Moment
+
+& [Graph:attention_balance_center_010] is a SOP-HG graph
+  = format: SOP-HG
+  = focus_anchor: state\CurrentFocalPoint.sop
+  = source: platform\source_documents\2026-06-24_attention_balance_center\Dictated_Attention_Balance_Center_Source.sop
+  = realization: A purpose-fit attention compiler needs a center of balance that monitors delineation stability and alerts when wobble or inference interference appears.
+
+  + [N:event:attention_balance_center_010] is attention balance center realization
+    = layer: periphery
+    = resolution_band: impact
+  + [N:balance:center_of_balance] is alignment between focal core, job need, evidence, periphery, rails, boundary, outside, and output
+  + [N:signal:wobble_signal] is visible instability in focus, boundary, proof, periphery, rails, or support fit
+  + [N:signal:interference_signal] is cross-purpose pressure, prompt bloat, stale context, rail conflict, or support distortion
+  + [N:caution:balance_alert] is the warning that inference should narrow, unwind, or correct before continuing
+  + [N:outside:attention_balance_boundary] is hidden activations, private weights, motive proof, and unsupported certainty about cognition
+
+/ [E:realizes:attention_balance_center_010] -(realizes; event=N:event:attention_balance_center_010; subject=N:balance:center_of_balance; subject=N:caution:balance_alert)> [Graph:attention_balance_center_010]
+/ [E:alerts:wobble_signal] -(alerts; balance=N:balance:center_of_balance; signal=N:signal:wobble_signal; caution=N:caution:balance_alert; weight=8)> [Graph:attention_balance_center_010]
+/ [E:alerts:interference_signal] -(alerts; balance=N:balance:center_of_balance; signal=N:signal:interference_signal; caution=N:caution:balance_alert; weight=8)> [Graph:attention_balance_center_010]
+/ [E:bounds:attention_balance_center_010] -(bounds; event=N:event:attention_balance_center_010; outside=N:outside:attention_balance_boundary)> [Graph:attention_balance_center_010]
+
+- outside: balance sense is an evidence-bound monitor over visible observation surfaces, not direct access to hidden model cognition

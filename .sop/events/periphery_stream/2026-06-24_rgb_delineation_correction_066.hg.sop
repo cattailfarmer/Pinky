@@ -1,0 +1,25 @@
+Subject: RGB Delineation Correction Realization 066
+
+Description: Periphery-stream realization that RGB should encode attention and delineation, while mutations belong to transform layers.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_rgb_delineation_correction\Dictated_RGB_Delineation_Correction_Source.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_rgb_semantic_encoding_trailing_checksum_065.hg.sop
+@ [source] F:\.sop\platform\SOPRGBSemanticEncoding.sop
+
+& [RGBDelineationCorrectionRealization066] is the corrected color-basis frame
+  + [moment] is inside, boundary, and outside are the attention frame; they are not mutations, actions, or operators
+  + [focus] is RGB attention delineation correction
+  + [correction] is red means attended inside, green means delineating boundary, and blue means outside residual or periphery
+  + [periphery] is operation overlays, transform algebra, route tables, relation edges, and round-trip fidelity
+  + [boundary] is RGB maps the delineation state of a subject; mutations must be explicitly represented as transforms over that state
+  + [outside] is action pressure, transformation pressure, output pressure, direct mutation encoding, and color-only proof
+  + [impulse] is sharpen the RGB language so it can cleanly translate SOP attention frames without smuggling operation semantics
+  + [balance] is improved because the color plane and the transform plane are now distinct
+  + [next_step] is define operation overlays separately if optical programs need color-coded mutations over delineated frames
+
+  = must: keep RGB primitive axes limited to attention/delineation
+  = must: route transforms through SOPOpticalTransformAlgebra
+  = should: use relation_color_edge to encode a relation's inside, boundary, and outside rather than a mutation force
+
+/ [attention_frame], [rgb_signal], [delineation_boundary] -(MapsDelineation)> [color_point], [color_outside]
+* [transform_expression], [rgb_signal], [operation_overlay] -(StaysSeparateFrom)> [RGBPrimitiveBasis], [operation_overlay_outside]

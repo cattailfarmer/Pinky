@@ -1,0 +1,26 @@
+Subject: Split Wisdom Caution Attention Reflection
+
+Description: SOP-HG reflection for splitting wisdom and caution into independent attention patterns.
+
+& [Graph:split_wisdom_caution_attention_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG split-wisdom-caution
+
+  + [N:wisdom:wisdom_attention_pattern] is Wisdom as independent integrative attention
+  + [N:caution:caution_attention_pattern] is Caution as independent boundary attention
+  + [N:governor:wisdom_caution_composition] is WisdomCaution as composition protocol only
+  + [N:focus:current_focal_point] is CurrentFocalPoint
+    = focus_subject: split wisdom and caution into independent attention patterns
+  + [N:claim:split_wisdom_and_caution] is wisdom and caution need separate attention organs
+  + [N:source:platform_Wisdom_sop] is platform\Wisdom.sop
+  + [N:source:platform_Caution_sop] is platform\Caution.sop
+  + [N:source:platform_WisdomCaution_sop] is platform\WisdomCaution.sop
+  + [N:outside:merged_pattern_blur] is loss of distinction between integration and boundary if both are collapsed
+
+/ [E:defines:wisdom_attention_pattern] -(defines; wisdom=N:wisdom:wisdom_attention_pattern; source=N:source:platform_Wisdom_sop; candidate=N:claim:split_wisdom_and_caution)> [Graph:split_wisdom_caution_attention_2026_06_23]
+/ [E:defines:caution_attention_pattern] -(defines; caution=N:caution:caution_attention_pattern; source=N:source:platform_Caution_sop; candidate=N:claim:split_wisdom_and_caution)> [Graph:split_wisdom_caution_attention_2026_06_23]
+/ [E:bounds:merged_pattern_blur] -(bounds; caution=N:caution:caution_attention_pattern; outside=N:outside:merged_pattern_blur; candidate=N:claim:split_wisdom_and_caution)> [Graph:split_wisdom_caution_attention_2026_06_23]
+/ [E:fits:composition_protocol] -(fits; wisdom=N:wisdom:wisdom_attention_pattern; caution=N:caution:caution_attention_pattern; governor=N:governor:wisdom_caution_composition)> [Graph:split_wisdom_caution_attention_2026_06_23]
+/ [E:returns:split_patterns_to_focus] -(returns; focus=N:focus:current_focal_point; wisdom=N:wisdom:wisdom_attention_pattern; caution=N:caution:caution_attention_pattern; result=focal_update)> [Graph:split_wisdom_caution_attention_2026_06_23]
+
+- outside: the split improves attention structure but does not prove hidden cognition, causal truth, or model-internal states

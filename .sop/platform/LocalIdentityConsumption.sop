@@ -1,0 +1,128 @@
+Subject: Local Identity Consumption
+
+Description: Contract for local identity law, reflection consumption tracking, foreign snapshots, and scoped names across layered attention instructions.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_local_identity_consumption\Dictated_Local_Identity_Consumption_Source.sop
+@ [source] F:\.sop\platform\SOPAwarenessNode.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\PeripheryRepository.sop
+@ [source] F:\.sop\platform\SOPHypergraphRecord.sop
+
+& [LocalIdentityConsumption] is the identity and consumption layer for layered attention instructions
+  + [pattern_role] is local_identity_and_reflection_consumption_governance
+  + [root_identity_law] is only the local node can self-identify its durable local identity; non-local identity is imported as a foreign_state_snapshot
+  + [local_node] is the SOP node whose repo, files, commits, events, and runtime records are inside the current operating boundary
+  + [local_node_identity] is the current node identity proven by node_root, repo history, file path, current commit, and applicable node contract
+  + [durable_local_identity] is an identity claim authored, stored, and bookended inside the local node with proof
+  + [foreign_node] is any external system, worker, repo, model lane, thread, remote, or imported artifact not inside local_node
+  + [foreign_state_snapshot] is a bounded representation of foreign_node state consumed by local_node without becoming local identity
+  + [reflection_artifact] is a SOP, SOP-HG, narrative, diff review, model output, worker result, or attention packet that can be consumed by one or more systems
+  + [reflection_consumption] is a recorded act of reading, importing, applying, compiling, quoting, or using a reflection_artifact
+  + [reflection_consumption_ledger] is the periphery-carry record of which system consumed which reflection, with local_status, proof, scope, and disposition
+  + [consumer_system] is the local node, foreign node, model lane, worker, thread, or attention layer consuming a reflection_artifact
+  + [consumption_proof] is a commit hash, file path, event id, source digest, run id, signed record, user directive, or other visible evidence for the consumption claim
+  + [local_status] is local_identity, local_consumption, foreign_snapshot, foreign_claim, contested, unresolved, or outside
+  + [periphery_carry] is the contextual record that travels with a consumed reflection naming origin, consumer, proof, scope, and unresolved identity outside
+  + [attention_namespace] is the scoped naming surface that prevents pattern identities from colliding across layered instruction sets
+  + [scoped_attention_identifier] is <node_scope>::<contract_scope>::<pattern_scope>::<role_scope>::<stable_id>
+  + [faculty_field_signature] is the field name, boundary name, and residual name from FacultyAttentionFieldNaming under a scoped attention identifier
+  + [shared_label] is a human-readable label that may repeat only when the scoped_attention_identifier remains unique
+  + [namespace_collision_fault] is two or more instruction layers using the same effective identifier for different intended focus, role, subject, or authority
+  + [collision_disposition] is disambiguate, qualify, rename, route_to_periphery, block_promotion, or outside
+  + [outside] is hidden origin state, unproven consumption, unsourced foreign identity, ambiguous naming, unresolved collision, and identity claims outside local proof
+
+  ? [use_when: layered attention instructions share context, a reflection can be consumed by multiple systems, an identity is claimed as local, or names may collide across patterns]
+    = activate [LocalIdentityConsumption]
+
+  = must: apply root_identity_law before durable identity promotion
+  = must: let the local node self-identify only through visible local proof
+  = must: treat any non-local system state as foreign_state_snapshot unless a local record is created for the local consumption event
+  = must: allow multiple consumer_system values to consume the same reflection_artifact
+  = must: distinguish the identity of the consumed artifact from the identity of each local consumption event
+  = must: record consumer_system, reflection_artifact, origin, local_status, consumption_proof, and disposition in reflection_consumption_ledger when consumption becomes durable
+  = must: carry foreign_state_snapshot status in periphery_carry when imported reflections influence focus
+  = must: require scoped_attention_identifier values for executable or kernel-level pattern identities
+  = must: scope faculty_field_signature values when field names are authority-bearing in a compiled attention packet
+  = must: allow repeated shared_label values only as labels, never as authority-bearing identifiers
+  = must: detect namespace_collision_fault before compiling layered attention instructions into one packet
+  = must: route naming collisions through SecurityHonestyGovernance and BoundaryFacultyInspection when collision affects identity, action, source, file, or safety boundaries
+  = should: prefer disambiguating names by scope over inventing unrelated vocabulary
+  - never: let a foreign snapshot call itself local inside this node
+  - never: let one system's consumption prove another system consumed the same reflection
+  - never: use shared names as durable identity when multiple pattern scopes are active
+  - never: promote a blended attention identity when namespace collision remains unresolved
+
+& [RootIdentityLaw] is the local durable identity law
+  + [identity_claim] is a claim that a subject, reflection, node, event, or system state is local
+  + [local_proof] is node_root, repo identity, file path, commit, event record, runtime output, or user directive inside local_node
+  + [foreign_snapshot_boundary] is the boundary that keeps non-local state representational rather than locally self-identifying
+  + [identity_disposition] is local_identity, local_consumption_only, foreign_snapshot, contested, unresolved, rejected, or outside
+
+  = must: require local_proof before identity_disposition becomes local_identity
+  = must: classify imported worker, model, thread, remote, or external repo state as foreign_snapshot
+  = must: allow local_consumption_only when this node locally records that it consumed a foreign snapshot
+  = must: keep foreign_snapshot_boundary visible in periphery_carry
+
+& [ReflectionConsumptionLedger] is the ledger pattern for who consumed which reflection
+  + [ledger_id] is the stable record id
+  + [reflection_artifact] is the artifact being consumed
+  + [origin_system] is the system that authored or emitted the artifact
+  + [consumer_system] is the system consuming the artifact
+  + [consumption_mode] is read, imported, compiled, cited, acted_on, rejected, routed_to_periphery, or outside
+  + [consumption_proof] is the evidence for the consumption claim
+  + [local_status] is local_identity, local_consumption, foreign_snapshot, foreign_claim, contested, unresolved, or outside
+  + [periphery_carry] is origin, consumer, proof, scope, boundary, unresolved identity, and downstream influence
+
+  = must: support many consumer_system values per reflection_artifact
+  = must: record proof per consumer_system rather than globally
+  = must: keep local_consumption separate from local_identity of the consumed artifact
+  = should: emit periphery_carry when a consumed reflection affects later focus or packet compilation
+
+& [AttentionNamespaceLaw] is the naming law for layered attention patterns
+  + [attention_namespace] is the active namespace map for a compiled packet or inference operation
+  + [node_scope] is local node id or imported foreign snapshot id
+  + [contract_scope] is the SOP contract providing the pattern
+  + [pattern_scope] is the named attention pattern instance
+  + [role_scope] is the role inside that pattern, such as focus, boundary, outside, honesty, security, source, or action
+  + [field_scope] is the faculty-specific field noun when the pattern uses FacultyAttentionFieldNaming
+  + [stable_id] is the unique suffix generated from source path, event id, content hash, or explicit identifier
+  + [namespace_check] is the pass that detects repeated effective identifiers, shared authority labels, and blended scope
+
+  = must: compose scoped_attention_identifier from node_scope, contract_scope, pattern_scope, role_scope, and stable_id
+  = should: include field_scope when a faculty_field_signature is active
+  = must: keep shared_label separate from scoped_attention_identifier
+  = must: run namespace_check before AttentionKernelCompiler emits a compiled_attention_kernel
+  = must: disambiguate or block any namespace_collision_fault before durable focus or action
+
+& [LocalIdentityConsumptionRecord] is the SOP-HG shape for local identity and reflection consumption
+  + [ledger_node] is N:ledger:<ledger_id>
+  + [local_node] is N:identity:<local_node_key>
+  + [origin_node] is N:identity:<origin_system_key>
+  + [consumer_node] is N:identity:<consumer_system_key>
+  + [reflection_node] is N:reflection:<reflection_artifact_key>
+  + [snapshot_node] is N:snapshot:<foreign_snapshot_key>
+  + [namespace_node] is N:namespace:<namespace_key>
+  + [collision_node] is N:signal:<namespace_collision_key>
+  + [outside_node] is N:outside:local_identity_consumption_boundary
+  + [consume_edge] is E:consumes:<ledger_id>
+  + [local_edge] is E:claims_local:<identity_claim_key>
+  + [snapshot_edge] is E:snapshots:<foreign_snapshot_key>
+  + [scope_edge] is E:scopes:<namespace_key>
+  + [disambiguate_edge] is E:disambiguates:<collision_key>
+  + [boundary_edge] is E:bounds:<ledger_id>
+
+  = must: show origin_system, consumer_system, reflection_artifact, local_status, consumption_proof, scoped identifiers, collision status, and outside
+
+(local_identity_consumption) :durable_local_identity: /root_identity_law/ |foreign_state_snapshot|
+  + [reflection_consumption_ledger:<id>] is the durable record of which system consumed which reflection
+    = consumer_system: local node, foreign node, worker, model lane, thread, or attention layer
+    = local_status: local_identity, local_consumption, foreign_snapshot, foreign_claim, contested, unresolved, or outside
+    = consumption_proof: commit, event, source digest, run id, file path, or explicit directive
+  + [scoped_attention_identifier:<id>] is node_scope::contract_scope::pattern_scope::role_scope::stable_id
+    = shared_label: optional human-readable label
+    = collision_disposition: disambiguate, qualify, rename, route_to_periphery, block_promotion, or outside
+  = root_identity_law: only local_node can self-identify durable_local_identity; anything not local is a foreign_state_snapshot until locally consumed and proven as local_consumption
+  - outside: hidden origin state, unsourced foreign identity, unproven consumption, namespace collision, blended focus, and non-local claims of local identity

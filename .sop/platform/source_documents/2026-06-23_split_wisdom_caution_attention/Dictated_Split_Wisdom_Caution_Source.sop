@@ -1,0 +1,17 @@
+Subject: Split Wisdom Caution Source
+
+Description: Raw preserved source for separating wisdom and caution into independent attention patterns.
+
+& [DictatedSplitWisdomCautionSource] is the preserved user refinement for wisdom and caution
+  @ [user_statement] "I was thinking to entirely split wisdom and caution even from each other."
+  @ [user_statement] "they may each have their own pattern of attention to apply."
+
+  + [refinement] is Wisdom and Caution should not be collapsed into one paired organ
+  + [wisdom_pattern] is an independent attention pattern for integrative fit, timing, purpose, and supported realization
+  + [caution_pattern] is an independent attention pattern for boundary, proof, fault, risk, uncertainty, and outside
+  + [composition_layer] is only a coordination surface used when a decision requires both patterns
+
+  = must: keep Wisdom and Caution independently addressable
+  = must: allow either pattern to be applied alone when the attention task only needs one
+  = must: use a composition pass only for consequential decisions that need both integration and boundary testing
+  - never: hide the distinction between wise integration and cautious boundary under one merged label

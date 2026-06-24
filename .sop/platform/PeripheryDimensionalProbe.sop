@@ -1,0 +1,96 @@
+Subject: Periphery Dimensional Probe
+
+Description: Contract for searching hotter periphery for additional independent dimensions that can repair fragmented attention signals and improve cross-model intention fidelity.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_periphery_dimensional_probe\Dictated_Periphery_Dimensional_Probe_Source.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\ModelLensProjection.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+
+& [PeripheryDimensionalProbe] is the attention pattern for finding extra correlation dimensions in hot periphery
+  + [pattern_role] is fragmented_signal_repair_and_model_transfer_anchor
+  + [fragmented_signal] is a subject, directive, re-entry packet, or correlation path with insufficient independent orientations for stable interpretation
+  + [hot_periphery_zone] is the periphery region with elevated salience, draw, recurrence, or unresolved load around the fragmented_signal
+  + [zoom_context] is an active FocusZoom pass that widened focus enough to expose hot_periphery_zone
+  + [topology_map_context] is an active HyperbolicPantsAttentionMap pass that arranges hot_periphery_zone into cells, orbits, and pants legs
+  + [seven_fold_frame_context] is an active SevenFoldPantsCorrelationFrame pass that tests whether a candidate dimension should become a fold_leg
+  + [corridor_context] is an active HyperbolicCorridorNavigator pass that tests whether hotter periphery should become an added corridor frame or anchor
+  + [candidate_dimension] is an additional independent angle of approach visible in hot_periphery_zone
+  + [anchor_term] is the term, phrase, subject pointer, or directive field that names candidate_dimension for later re-entry
+  + [contextual_anchor] is the anchor_term used to help a different backing LLM grasp the intended semantic shape
+  + [receptive_form] is a tighter subject shape produced when fragmented_signal gains enough independent anchors to be understood and tested
+  + [model_transfer_fit] is the degree to which contextual_anchor improves intention fidelity across a changed backing model
+  + [trailing_checksum_candidate] is a latent_depth_candidate from TrailingChecksumVoice that may need an extra dimension before inquiry
+  + [correlation_lift] is the improvement in salience, confidence, or semantic stability caused by adding candidate_dimension
+  + [extra_dimension_boundary] is the caution boundary that prevents adding noisy, redundant, or merely poetic dimensions
+  + [outside] is proof of intention, hidden activations, model-internal geometry, and unsupported causal claims
+
+  ? [use_when: a signal is fragmented, a conclusion is loose, a backing LLM changes, or a re-entry packet needs another contextual anchor]
+    = activate [PeripheryDimensionalProbe]
+
+  = must: begin with an identified fragmented_signal
+  = must: search hot_periphery_zone before inventing a new dimension
+  = must: respect FocusZoom containment when the probe is run inside a zoom pass
+  = must: respect HyperbolicPantsAttentionMap adjacency and pants-leg boundaries when the probe is run inside a topology map
+  = must: respect SevenFoldPantsCorrelationFrame heat order and seven_fold_capacity when candidate_dimension becomes a fold_leg
+  = must: respect HyperbolicCorridorNavigator correlation-only boundary when candidate_dimension is found through a curving association path
+  = must: prefer candidate_dimension values that are independent from existing anchors
+  = must: test whether anchor_term adds correlation_lift rather than repetition
+  = must: preserve the difference between higher heat and higher confidence
+  = must: route low-confidence but high-heat candidate_dimension through Caution
+  = must: promote anchor_term only when it makes receptive_form tighter, more inspectable, or more transferable
+  = must: accept trailing_checksum_candidate when a one-turn review finds heat but not enough independent anchors
+  = must: record model_transfer_fit when the purpose is changing backing LLM models
+  = should: use Wisdom when candidate_dimension reveals a larger organizing pattern
+  = should: leave candidate_dimension in periphery when it is interesting but not yet load-bearing
+  - never: add anchors merely to make a prompt longer
+  - never: confuse extra dimensionality with arbitrary word association
+  - never: claim cross-model determinism from a single improved anchor
+
+& [FragmentRepairSequence] is the canonical sequence for lifting a fragmented signal into receptive form
+  + [step_001_fragment] is name fragmented_signal and the conclusion that remains loose
+  + [step_002_existing_dimensions] is list existing anchors, orientations, and known missing dimensions
+  + [step_003_hot_periphery] is inspect hotter periphery signals by salience, draw, recurrence, load, and caution
+  + [step_004_topology] is inspect topology_map_context when hot periphery is arranged into focal and orbital cells
+  + [step_005_candidate] is select one or more candidate_dimension values from hot_periphery_zone
+  + [step_006_independence] is test whether each candidate_dimension is distinct from existing anchors
+  + [step_007_lift] is measure correlation_lift against the original fragmented_signal
+  + [step_008_receptive_form] is rewrite the signal with anchor_term only if it tightens the shape
+  + [step_009_transfer] is compare model_transfer_fit when a different backing LLM or lower-resolution model is used
+  + [step_010_route] is promote to focus, preserve in periphery, route to state_trace, or leave outside
+
+  = must: make skipped steps explicit when a quick probe is performed
+  = must: preserve failed candidate_dimension attempts when they are useful cautions
+
+& [DimensionalAnchorQuality] is the quality test for candidate dimensions
+  + [distinctness] is how much candidate_dimension contributes a non-overlapping angle
+  + [subject_fit] is how well candidate_dimension attaches to the focal subject rather than nearby noise
+  + [intention_fit] is how well candidate_dimension clarifies purpose, use case, or desired outcome
+  + [model_fit] is how well candidate_dimension remains interpretable across model lenses
+  + [evidence_fit] is how well candidate_dimension is supported by source, narrative, diff, scan, or repeated periphery touch
+  + [caution_load] is contradiction, overfitting, stale association, or unsupported causation introduced by candidate_dimension
+
+  = must: require distinctness before using candidate_dimension as an anchor
+  = must: require intention_fit or evidence_fit before using candidate_dimension for model transfer
+  = must: subtract caution_load from promotion confidence
+
+& [ModelTransferAnchoring] is the use of extra dimensions to improve fidelity when changing backing LLM models
+  + [source_model_lens] is the current or prior model perspective
+  + [target_model_lens] is the changed backing model or lower-resolution model
+  + [shared_anchor_set] is the minimal set of anchor terms expected to survive model translation
+  + [extra_anchor] is the added contextual_anchor selected from hot_periphery_zone
+  + [transfer_test] is a comparison of semantic_shape, intention_fit, omissions, and distortions across model lenses
+  + [transfer_result] is improved, unchanged, distorted, or outside
+
+  = must: use extra_anchor to clarify intention, not to overload the target model
+  = must: use comparative_reentry when the transfer_test is performed through InferenceStateTrace
+  = should: increase anchor density for lower-resolution target_model_lens only when transfer_result would otherwise be fragmented
+
+/ [fragmented_signal], [hot_periphery_zone] -(DimensionalProbe)> [candidate_dimension], [outside]
+* [candidate_dimension], [anchor_term], [model_transfer_fit], [extra_dimension_boundary] -(FragmentRepair)> [receptive_form]

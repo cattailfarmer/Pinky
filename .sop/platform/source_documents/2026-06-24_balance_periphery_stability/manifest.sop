@@ -1,0 +1,13 @@
+Subject: Balance Periphery Stability Source Manifest
+
+Description: Source preservation manifest for the periphery stability balance metric refinement.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_balance_periphery_stability
+  + [source_file] is F:\.sop\platform\source_documents\2026-06-24_balance_periphery_stability\Dictated_Balance_Periphery_Stability_Source.sop
+  + [canonical_contract] is F:\.sop\platform\AttentionBalanceCenter.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_balance_periphery_stability_011.hg.sop
+  + [governance] is source_before_canonical
+  + [status] is canonicalized
+
+  = must: keep the dictated source available for future reinterpretation

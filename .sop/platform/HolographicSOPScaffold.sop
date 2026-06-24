@@ -1,0 +1,91 @@
+Subject: Holographic SOP Scaffold
+
+Description: Reusable attention scaffold for organizing SOP semantic signals into a hologram, perceiving it through SOP lensing, and emitting a traced SOP realization.
+
+@ [source] F:\.sop\platform\SOPHolographicLensing.sop
+@ [source] F:\.sop\platform\SOPOpticalChain.sop
+@ [source] F:\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+
+& [HolographicSOPScaffold] is the first reusable scaffold for semantic hologram work
+  + [pattern_role] is reusable_holographic_sop_attention_scaffold
+  + [scaffold_profile] is holographic_sop_scaffold
+  + [job_need] is project meaning from organized SOP signals and reconstruct it through a declared SOP lens
+  + [signal_set] is source_signal, focus_signal, periphery_signal, boundary_signal, evidence_signal, caution_signal, output_signal
+  + [source_signal] is raw source and preserved dictated input
+  + [focus_signal] is active subject, purpose, and inside surface
+  + [periphery_signal] is nearby associations, warmth zones, hot zones, and latent depth candidates
+  + [boundary_signal] is delineation, outside, local identity, and frame reference
+  + [evidence_signal] is repo diff, source reference, test, trace, or cited record support
+  + [caution_signal] is uncertainty, proof limits, physical-constraint outside, and hallucinated coherence risk
+  + [output_signal] is candidate SOP contract, SOP-HG event, focal update, manager task, or outside note
+  + [lens_set] is SOPHolographicLensing, SOPOpticalChain, FrameReferenceIntegrity, SecurityHonestyGovernance, BoundaryFacultyInspection, and AttentionBalanceCenter
+  + [channel_vocabulary] is F:\.sop\platform\SOPColorChannelVocabulary.sop
+  + [transform_algebra] is F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+  + [invariant_set] is source_preservation, boundary_integrity, outside_preservation, proof_status_integrity, local_identity_scope, reconstruction_trace_required, balance_required
+  + [projection_rule] is combine signal_set into semantic_hologram only after each signal has source, channel, boundary, outside, and proof status
+  + [perception_rule] is interpret semantic_hologram only through lens_set and record reconstruction_trace
+  + [promotion_rule] is promote holographic_perception to realization only after invariant_set passes
+  + [outside] is missing trace, unsupported proof, physical photonic hardware, hidden activation, collapsed periphery, and unbounded resonance
+
+  ? [use_when: a concept needs whole-form projection from SOP signals and traced reconstruction into SOP output]
+    = activate [HolographicSOPScaffold]
+
+  = must: collect signal_set before projection
+  = must: channelize signal_set through SOPColorChannelVocabulary before projection
+  = must: apply SOPOpticalTransformAlgebra when signal_set is bent, recolored, split, gated, amplified, attenuated, interfered, lensed, recombined, emitted, or compared
+  = must: apply lens_set in named order when the result affects truth, identity, boundary, safety, or proof
+  = must: preserve invariant_set across projection, perception, and output
+  = must: keep caution_signal visible when coherence feels stronger than evidence
+  = must: emit reconstruction_trace as part of every promoted realization
+  = must: route failed invariant_set values to outside or periphery, not output certainty
+  = should: stay compact enough to become a compiled attention kernel packet
+  = should: use periphery_signal to invite insight without letting it flood focus
+  - never: use holographic wholeness as a replacement for source or evidence
+  - never: promote an output_signal when source_signal or boundary_signal is missing
+
+& [HolographicSOPScaffoldSequence] is the reusable pass
+  + [step_001_source] is preserve source_signal and current focal state
+  + [step_002_channelize] is name focus_signal, periphery_signal, boundary_signal, evidence_signal, caution_signal, and output_signal
+  + [step_003_lens] is bind SOPHolographicLensing and SOPOpticalChain as the projection and output lenses
+  + [step_004_project] is compose semantic_hologram from signal_set
+  + [step_005_perceive] is derive holographic_perception through lens_set
+  + [step_006_trace] is record reconstruction_trace with input signals, gates, invariants, and output path
+  + [step_007_govern] is run SecurityHonestyGovernance, BoundaryFacultyInspection, and AttentionBalanceCenter as needed
+  + [step_008_emit] is emit SOP contract, SOP-HG event, focal update, manager task, or outside note
+  + [step_009_checksum] is prepare the next trailing checksum for delayed heat review
+
+  = must: stop at step_006 when reconstruction_trace is absent
+  = must: stop at step_007 when truth, identity, safety, or proof gates fail
+  = must: record skipped steps in output_signal when a quick pass is used
+
+& [HolographicSOPScaffoldPacket] is the compact packet shape for turn entry
+  + [profile] is holographic_sop_scaffold
+  + [focus] is current subject and purpose
+  + [signals] is source_signal, focus_signal, periphery_signal, boundary_signal, evidence_signal, caution_signal, output_signal
+  + [lenses] is SOPHolographicLensing, SOPOpticalChain, FrameReferenceIntegrity, SecurityHonestyGovernance, BoundaryFacultyInspection, AttentionBalanceCenter
+  + [invariants] is source_preservation, boundary_integrity, outside_preservation, proof_status_integrity, local_identity_scope, reconstruction_trace_required, balance_required
+  + [output] is SOP contract, SOP-HG event, focal update, manager task, or outside note
+
+  = must: be short enough for in-context use
+  = must: cite richer records instead of absorbing them
+
+(holographic_sop_scaffold) :signal_set: /lens_set and invariant_set/ |outside|
+  + [source_signal] is preserved raw source
+  + [focus_signal] is active subject and purpose
+  + [periphery_signal] is warmth, heat, and latent depth
+  + [boundary_signal] is inside, boundary, outside, local identity, and frame reference
+  + [evidence_signal] is repo, source, trace, test, or cited record support
+  + [caution_signal] is uncertainty and proof limit
+  + [output_signal] is candidate SOP output
+  = lens_set: SOPHolographicLensing, SOPOpticalChain, FrameReferenceIntegrity, SecurityHonestyGovernance, BoundaryFacultyInspection, AttentionBalanceCenter
+  = invariant: source_preservation, boundary_integrity, outside_preservation, proof_status_integrity, local_identity_scope, reconstruction_trace_required, balance_required
+  |outside| missing trace, unsupported proof, physical photonic hardware, hidden activation, and unbounded resonance
+
+/ [signal_set], [lens_set] -(ProjectsScaffold)> [semantic_hologram], [holographic_perception], [reconstruction_trace]
+* [reconstruction_trace], [invariant_set], [output_signal] -(PromotesOrBounds)> [realization], [outside]

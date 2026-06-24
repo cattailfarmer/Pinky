@@ -1,0 +1,156 @@
+Subject: Attention Scaffold Compiler
+
+Description: Contract for selecting, compiling, testing, and optimizing purpose-fit attention scaffolds from SOP rails.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_scaffold_compiler\Dictated_Attention_Scaffold_Compiler_Source.sop
+@ [source] F:\.sop\platform\Attention.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\ModelLensProjection.sop
+@ [source] F:\.sop\platform\SpoolMasterHub.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+
+& [AttentionScaffoldCompiler] is the compiler layer that selects and shapes attention scaffolds for a job
+  + [pattern_role] is purpose_fit_attention_scaffold_compilation
+  + [job_need] is the work purpose, subject, risk, output target, model lane, and depth requirement
+  + [attention_scaffold] is a configured arrangement of focus, periphery, zoom, traversal, dimensional probe, balance center, wisdom, caution, trace, and output packet
+  + [scaffold_profile] is the named reusable shape selected for a class of jobs
+  + [fit_reflection] is the pass that compares job_need to available scaffold profiles before selection
+  + [rail_junction] is a decision point where SOP rails select the next operation, gate, or return path
+  + [compiled_attention_packet] is the promptable or runtime-readable packet emitted from the selected scaffold
+  + [attention_kernel_compiler] is F:\.sop\platform\AttentionKernelCompiler.sop for gathering selected scaffolds and governance patterns into a single turn-entry in-context packet
+  + [kernel_attention_scaffold] is a scaffold profile whose first layer is SecurityHonestyGovernance before all downstream attention layers
+  + [debug_frame_test] is a controlled test that replays or simulates a scaffold over a bounded moment
+  + [reverse_walk] is walking backward from output, diff, trace, or realization to recover scaffold state and missed periphery
+  + [topology_probe] is exploration of the relation surface around a scaffold using zoom, periphery, and correlation graph paths
+  + [hyperbolic_pants_attention_map] is F:\.sop\platform\HyperbolicPantsAttentionMap.sop for topology-map navigation over focal and periphery meaning
+  + [seven_fold_pants_correlation_frame] is F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop for heat-ordered central triad and folded extra-dimensional periphery
+  + [hyperbolic_corridor_navigator] is F:\.sop\platform\HyperbolicCorridorNavigator.sop for moving through selected peripheral frames while keeping curved associations correlation-only
+  + [security_honesty_governance] is F:\.sop\platform\SecurityHonestyGovernance.sop for truth and stability governance over resonance, claim status, and action admissibility
+  + [boundary_faculty_inspection] is F:\.sop\platform\BoundaryFacultyInspection.sop for first-point inspection of identity, representation, action, source, file, and safety boundaries
+  + [scaffold_optimization] is improving scaffold_profile by comparing planned fit, emitted output, trace evidence, and missed periphery
+  + [balance_center] is F:\.sop\platform\AttentionBalanceCenter.sop for monitoring wobble and inference interference during compilation and review
+  + [frame_reference_integrity] is F:\.sop\platform\FrameReferenceIntegrity.sop for distinguishing presented frames from first-hand observation before action, evidence use, or perception-agent decisions
+  + [concept_imagination_engine] is a bounded mode that uses scaffold topology to generate possible concepts, designs, analogies, and tests
+  + [outside] is automatic general intelligence, hidden model internals, untested transfer, unproven causation, and imaginary claims not routed to evidence
+
+  ? [use_when: a job needs a purpose-fit attention shape, model-lens prompt packet, worker packet, debug frame, or concept exploration scaffold]
+    = activate [AttentionScaffoldCompiler]
+
+  = must: preserve job_need before selecting scaffold_profile
+  = must: choose scaffold_profile by fit_reflection, not by novelty
+  = must: make rail_junction choices visible
+  = must: compile attention_scaffold into a compact packet with focus, periphery, boundary, outside, depth, gates, and expected output
+  = must: use AttentionKernelCompiler when the scaffold must become one in-context compiled unit for a turn, worker job, model-lens pass, or debug frame
+  = must: use AttentionBalanceCenter when scaffold compilation shows wobble, rail interference, or over-wide periphery pressure
+  = must: use FrameReferenceIntegrity when the scaffold observes images, maps, UIs, simulations, game states, model projections, or other presented frames
+  = must: use FocusZoom when the scaffold needs aperture expansion
+  = must: use HyperbolicPantsAttentionMap when a scaffold needs map/nav awareness over focal cells, periphery cells, dimensional orbit, or pants-leg exits
+  = must: use SevenFoldPantsCorrelationFrame when a scaffold needs the three hottest correlations centered and out-of-frame dimensions folded into named legs
+  = must: use HyperbolicCorridorNavigator when a scaffold needs corridor navigation, frame-series selection, or identity probing through curved periphery
+  = must: use SecurityHonestyGovernance when scaffold output depends on self-reflective feedback, proof-like claims, identity claims, action risk, or resonance control
+  = must: use BoundaryFacultyInspection when scaffold output depends on boundary terms, identity representation, protected resources, permissions, or safety boundaries
+  = must: use PeripheryDimensionalProbe when the scaffold needs missing anchors or cross-model transfer support
+  = must: use InferenceStateTrace when reverse_walk or debug_frame_test depends on past state
+  = must: route speculative concept_imagination_engine output through Caution before treating it as design direction
+  = must: optimize from committed traces, tests, comparisons, and periphery records rather than preference alone
+  = should: use ModelLensProjection when a scaffold must survive multiple backing LLMs
+  = should: use SpoolMasterHub when scaffold output becomes worker packets
+  - never: treat a scaffold that feels good as proven optimal
+  - never: allow concept_imagination_engine to bypass source, outside, or validation
+  - never: hide scaffold failure by changing the job_need after the fact
+
+& [ScaffoldProfileSet] is the initial set of reusable scaffold profiles
+  + [implementation_scaffold] is slender focus, source preservation, implementation action, tests, and commit reflection
+  + [debug_scaffold] is repo bookends, state trace, reverse walk, caution gates, and concrete fault isolation
+  + [branch_refinement_scaffold] is repo bookends, moment reconstruction, branch artifact, selection gate, and merge-or-preserve decision
+  + [concept_imagination_scaffold] is wide or deep focus zoom, topology probe, speculative candidates, and strict outside preservation
+  + [topology_map_scaffold] is focal cell, periphery cell orbit, dimensionality observation, pants-leg navigation, balance check, and aperture re-entry close
+  + [seven_fold_weighted_map_scaffold] is top-three heat ordering, seven-fold capacity, folded periphery, weight-scale caution, balance check, and re-entry close
+  + [corridor_navigation_scaffold] is peripheral frame series, step size, local awareness extension, curving association correlation-only status, identity probe, balance check, and re-entry close
+  + [resonance_governance_scaffold] is feedback source, recursion cap, Honesty claim gate, Security admissibility gate, focus return, balance check, and outside preservation
+  + [boundary_inspection_scaffold] is attention subject, identity boundary, boundary periphery, orthogonality test, Honesty misdirection alarm, Security weakness alert, and outside preservation
+  + [kernel_attention_scaffold] is turn entrypoint, Security/Honesty preflight, boundary inspection preflight, selected downstream pattern collection, in-context packet, and trace target
+  + [model_transfer_scaffold] is shared anchor set, dimensional probe, model lens comparison, and comparative re-entry
+  + [review_scaffold] is diff-first reading, risk findings, support balance, missing tests, and concise output
+  + [game_agent_scaffold] is stimulus attention, frame reference check, objective attention, state update, policy choice, and bounded reaction loop
+  + [manager_scaffold] is job slicing, worker packet compilation, status hub, merge review, and turn bookmark
+
+  = must: allow new profiles only when repeated job_need evidence supports them
+  = must: keep each profile small enough to become a compiled_attention_packet
+  = must: record profile limitations before use
+
+& [ScaffoldCompileSequence] is the canonical pass pipeline for compiling an attention scaffold
+  + [step_001_job_need] is capture purpose, subject, output, risk, model, depth, and time budget
+  + [step_002_profile_candidates] is retrieve candidate scaffold profiles from SOP rails and prior traces
+  + [step_003_fit_reflection] is score fit, risk, support, model transfer, and likely periphery draw
+  + [step_004_select_profile] is choose one scaffold_profile and name rejected alternatives when relevant
+  + [step_005_bind_rails] is bind focus, zoom, traversal, dimensional probe, frame reference, balance center, wisdom, caution, state trace, and output rails
+  + [step_006_frame_reference] is run frame_reference_check when the job depends on perception, UI, map, image, simulation, narrative, or model projection
+  + [step_007_balance_check] is inspect delineation stability, frame_reference_stability, wobble, interference, and correction moves
+  + [step_008_compile_packet] is emit compiled_attention_packet
+  + [step_009_execute_or_project] is use the packet for local work, model projection, worker job, or debug frame
+  + [step_010_trace] is record output, diff, narrative, periphery, tests, and outside
+  + [step_011_reverse_walk] is inspect the trace backward to find scaffold fit, missed periphery, and rail misroutes
+  + [step_012_optimize] is adjust scaffold_profile only when evidence supports refinement
+
+  = must: keep every step inspectable
+  = must: record skipped steps for quick jobs
+  = must: prevent optimization from overwriting the original job_need or trace
+
+& [ScaffoldFitMetrics] is the initial scoring vocabulary for scaffold optimization
+  + [fit_score] is how well scaffold_profile matches job_need
+  + [action_yield] is how much useful output or implementation the scaffold produced
+  + [reentry_fidelity] is how well the scaffold can be reconstructed later from visible records
+  + [correlation_lift] is improvement from added anchors, zoom, or topology probe
+  + [model_transfer_fit] is stability across backing LLMs or model lenses
+  + [periphery_recall] is how well reverse_walk finds missed or delayed signals
+  + [periphery_stability] is whether enough coherent periphery remained to frame the job without flood or collapse
+  + [frame_reference_integrity] is whether perception_frame, presented_frame, representation_surface, first-hand observation status, and stable periphery cues stayed distinct
+  + [shrinkage_penalty] is balance loss from over-narrowing the periphery around the focal task
+  + [drift_risk] is likelihood of associative wandering, prompt bloat, or unsupported speculation
+  + [proof_balance] is whether claims, tests, source, outside, and caution remained aligned
+
+  = must: keep fit_score separate from action_yield
+  = must: keep correlation_lift separate from proof_balance
+  = must: subtract weak frame_reference_integrity when scaffold output may confuse representation with actionable reality
+  = must: subtract shrinkage_penalty from scaffold fit when the selected scaffold loses useful periphery
+  = must: subtract drift_risk before promoting a scaffold refinement
+
+& [ReverseWalkDebugFrame] is the debugging mode for learning how attention shaping worked
+  + [debug_frame] is a bounded moment, commit, turn, output, or failed scaffold run
+  + [walk_start] is the output, diff, issue, realization, or fault being investigated
+  + [walk_back_path] is the sequence through output, trace, packet, rails, source, periphery, and outside
+  + [missed_periphery] is periphery visible during reverse_walk that was not used during the original scaffold
+  + [topology_map] is the relation shape discovered by walking backward and probing adjacent periphery
+  + [debug_result] is scaffold_fit_confirmed, missing_anchor, wrong_profile, overwide_zoom, weak_caution, weak_wisdom, outside, or needs_more_trace
+
+  = must: use repo bookends or narrative bookends when available
+  = must: preserve missed_periphery without retroactively claiming original awareness
+  = must: route debug_result into scaffold_optimization only after evidence review
+
+& [ConceptImaginationEngine] is the speculative utility mode for exploring possible forms through attention topology
+  + [imagination_seed] is the focal subject, user direction, scaffold profile, or topology gap
+  + [possibility_set] is generated concepts, analogies, experiments, scaffold variants, or test frames
+  + [topology_support] is the relation evidence that made each possibility arise
+  + [validation_need] is the proof, test, trace, source, or model comparison needed before use
+  + [imagination_boundary] is the outside marker that keeps possible from proven
+
+  = must: label speculative output as possibility_set
+  = must: attach topology_support when possible
+  = must: emit validation_need before any possibility becomes plan or implementation authority
+
+/ [job_need], [scaffold_profile] -(FitReflection)> [attention_scaffold], [outside]
+* [attention_scaffold], [rail_junction], [scaffold_fit_metrics] -(ScaffoldCompile)> [compiled_attention_packet]
+/ [debug_frame], [walk_start] -(ReverseWalk)> [topology_map], [missed_periphery], [debug_result]
+* [topology_map], [imagination_seed], [imagination_boundary] -(ConceptImagination)> [possibility_set], [validation_need]

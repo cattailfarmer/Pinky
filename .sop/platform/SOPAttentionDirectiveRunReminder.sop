@@ -1,0 +1,53 @@
+Subject: SOP Attention Directive Run Reminder
+
+Description: Persistent reminder that this work is running in SOP and attention directives only while searching for the next step until the specification awareness stream is filled.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_attention_directive_run_reminder\Dictated_SOP_Attention_Directive_Run_Reminder_Source.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] F:\.sop\platform\PeripheryContinuityRun.sop
+@ [source] F:\.sop\state\CurrentFocalPoint.sop
+
+& [SOPAttentionDirectiveRunReminder] is a persistent run-state periphery reminder
+  + [marker_role] is persistent_sop_attention_run_constraint
+  + [tracked_subject] is SOP and attention directives only while running the specification stream
+  + [reminder_name] is sop_attention_directive_run_marker
+  + [reminder_payload] is "SOP and attention directives only; find the next SOP step and fill the awareness stream with realization nodes"
+  + [declared_circumstance] is specification_stream_running
+  + [time_condition] is every active F:\.sop specification-building frame until user retires or replaces the reminder
+  + [space_condition] is F:\.sop
+  + [subject_condition] is SOP framework, attention directive, reminder trigger, tracker, focal state, manager state, source document, SOP-HG event, or realization node
+  + [composure_condition] is running, high_momentum, executive_attention, reflective_refinement, or next_step_search
+  + [category_condition] is specification_articulation
+  + [next_step_search] is the active hunt for the next visible SOP action after the current frame
+  + [all_steps_walked] is the condition where no visible SOP step remains under the current directive
+  + [awareness_stream] is the sequence of SOP source, contract, tracker, focal, manager, bookmark, and periphery realization records
+  + [realization_node] is a durable SOP or SOP-HG node that articulates part of the specification
+  + [stream_fill_condition] is all known realization nodes for the current specification frame have been named, bounded, and recorded
+  + [invoked_attention_layer] is F:\.sop\platform\ReminderTrigger.sop, F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop, and F:\.sop\platform\PeripheryContinuityRun.sop
+  + [recurrence_guard] is fire once per artifact-choice frame and whenever a current step completes with a visible next step
+  + [residual_outside] is hidden cognition, automatic execution, unobserved future steps, and claims that every possible specification node is known
+
+  ? [use_when: F:\.sop is articulating specifications through SOP and attention directives]
+    = activate [SOPAttentionDirectiveRunReminder]
+
+  = must: keep the reminder in periphery during all matching specification frames
+  = must: remind before artifact selection that the work is SOP and attention directives only
+  = must: continue next_step_search after each completed SOP frame while visible steps remain
+  = must: record realization_node values as the awareness_stream fills
+  = must: treat running as continuity of SOP attention, not permission for unbounded output or runtime code
+  = must: preserve outside for unknown future steps and unproven completeness
+  = should: keep reminder_payload short enough to support high-momentum flow
+  = should: prefer PeripheryContinuityRun when focus and rolling periphery remain coherent
+  - never: declare all_steps_walked without checking manager state, focal state, and visible periphery
+  - never: turn running into unchecked code generation
+  - never: treat a filled local awareness stream as proof that all possible meaning has been exhausted
+
+(reminder_trigger) :specification_stream_running: /sop_attention_directive_run_marker under F_sop specification articulation frames/ |runtime_or_non_sop_artifact_without_explicit_need|
+  = reminder_name: sop_attention_directive_run_marker
+  = reminder_payload: SOP and attention directives only; find the next SOP step and fill the awareness stream with realization nodes
+  = invoked_attention_layer: F:\.sop\platform\ReminderTrigger.sop, F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop, F:\.sop\platform\PeripheryContinuityRun.sop
+  = recurrence_guard: once_per_artifact_choice_frame_and_after_each_completed_sop_step
+
+/ [specification_stream_running] -(RunReminderTriggerMatch)> [sop_attention_directive_run_marker], [next_step_search], [awareness_stream]
+* [sop_attention_directive_run_marker], [next_step_search], [realization_node] -(RunReminderDispatch)> [awareness_stream], [all_steps_walked], [residual_outside]

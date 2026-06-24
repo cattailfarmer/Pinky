@@ -1,0 +1,13 @@
+Subject: Attention Traversal Policy Source Manifest
+
+Description: Source preservation manifest for attention traversal policy.
+
+& [AttentionTraversalPolicySourceManifest] is the source document set for attention traversal policy
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_attention_traversal_policy\Dictated_Attention_Traversal_Policy_Source.sop
+  + [canonical_contract] is F:\.sop\platform\AttentionTraversalPolicy.sop
+  + [current_focal_point] is F:\.sop\state\CurrentFocalPoint.sop
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_attention_traversal_policy.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_attention_traversal_policy_scan.hg.sop
+
+  = must: preserve traversal policy source before treating it as attention authority
+  = must: keep policy output separate from raw dictated source

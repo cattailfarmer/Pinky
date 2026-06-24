@@ -1,0 +1,14 @@
+Subject: Hyperbolic Corridor Navigator Source Manifest
+
+Description: Source preservation manifest for the hyperbolic corridor navigator specification.
+
+& [HyperbolicCorridorNavigatorSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_hyperbolic_corridor_navigator\Dictated_Hyperbolic_Corridor_Navigator_Source.sop
+  + [canonical_target] is F:\.sop\platform\HyperbolicCorridorNavigator.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_hyperbolic_corridor_navigator_022.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_seven_fold_frame_trailing_checksum_021.hg.sop
+  + [derived_terms] is hyperbolic_corridor_navigator, peripheral_frame_series, corridor_frame, hyperbolic_expanding_field, curving_association, correlated_point_of_attention, identity_resolution_target, inference_surf
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, Delineation, SevenFoldPantsCorrelationFrame, HyperbolicPantsAttentionMap, AttentionTraversalPolicy, ApertureReentryCycle, AttentionBalanceCenter
+
+  = must: preserve raw source before treating the canonical target as process authority
+  = must: cite this manifest when corridor navigation behavior is audited

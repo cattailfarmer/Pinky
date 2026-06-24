@@ -1,0 +1,98 @@
+Subject: 2026_06_23_carried_support_balance Support Balance
+
+& [Graph:2026_06_23_carried_support_balance] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG carried-support-balance
+
+  + [N:balance:2026_06_23_carried_support_balance] is 2026_06_23_carried_support_balance
+    = active_subject: carried support balance while implementing attention rails
+    = support_count: 6
+  + [N:subject:carried_support_balance_while_implementing_attention_rails] is carried support balance while implementing attention rails
+    = subject_terms: association,attention,balance,carried,native,periphery,support
+    = periphery_terms: association,balance,native,perspective,rails,supports,walking
+  + [N:outside:forced_support] is support forced beyond visible fit
+  + [N:support:periphery_fit_sensor] is Periphery fit as support sensor
+    = origin: observed
+    = fit_status: native
+    = balance_effect: stabilizes
+    = carried_from: none
+    = evidence_pointers: none
+    = native_hits: 4
+    = periphery_hits: 2
+  + [N:term:association] is association
+  + [N:term:native] is native
+  + [N:term:periphery] is periphery
+  + [N:term:support] is support
+  + [N:support:sjs_source_preservation] is SJS and source preservation
+    = origin: carried
+    = fit_status: carried
+    = balance_effect: names_import
+    = carried_from: C:\Project\ReasoningFramework\AGENTS.md
+    = evidence_pointers: none
+    = native_hits: 0
+    = periphery_hits: 0
+  + [N:source:C_Project_ReasoningFramework_AGENTS_md] is C:\Project\ReasoningFramework\AGENTS.md
+  + [N:support:sop_hypergraph_record] is SOP-HG support record shape
+    = origin: carried
+    = fit_status: native
+    = balance_effect: stabilizes
+    = carried_from: F:\.sop\platform\SOPHypergraphRecord.sop
+    = evidence_pointers: none
+    = native_hits: 2
+    = periphery_hits: 1
+  + [N:source:F_sop_platform_SOPHypergraphRecord_sop] is F:\.sop\platform\SOPHypergraphRecord.sop
+  + [N:term:balance] is balance
+  + [N:support:walking_rails_metaphor] is Walking with rails metaphor
+    = origin: observed
+    = fit_status: weak
+    = balance_effect: watch_periphery
+    = carried_from: none
+    = evidence_pointers: none
+    = native_hits: 0
+    = periphery_hits: 2
+  + [N:term:rails] is rails
+  + [N:term:walking] is walking
+  + [N:support:worker_spool_expansion] is Worker spool expansion
+    = origin: observed
+    = fit_status: absent
+    = balance_effect: release_or_justify
+    = carried_from: none
+    = evidence_pointers: none
+    = native_hits: 0
+    = periphery_hits: 0
+  + [N:support:forced_framework_projection] is Forced framework projection
+    = origin: carried
+    = fit_status: contradicting
+    = balance_effect: distortion_risk
+    = carried_from: agent habit risk
+    = evidence_pointers: none
+    = native_hits: 0
+    = periphery_hits: 0
+  + [N:source:agent_habit_risk] is agent habit risk
+
+/ [E:supports:periphery_fit_sensor] -(supports; balance=N:balance:2026_06_23_carried_support_balance; support=N:support:periphery_fit_sensor; subject=N:subject:carried_support_balance_while_implementing_attention_rails; fit_status=native; balance_effect=stabilizes)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:periphery_fit_sensor_subject_association] -(fits; support=N:support:periphery_fit_sensor; term=N:term:association; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=subject)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:periphery_fit_sensor_subject_native] -(fits; support=N:support:periphery_fit_sensor; term=N:term:native; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=subject)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:periphery_fit_sensor_subject_periphery] -(fits; support=N:support:periphery_fit_sensor; term=N:term:periphery; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=subject)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:periphery_fit_sensor_subject_support] -(fits; support=N:support:periphery_fit_sensor; term=N:term:support; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=subject)> [Graph:2026_06_23_carried_support_balance]
+/ [E:stabilizes:periphery_fit_sensor] -(stabilizes; support=N:support:periphery_fit_sensor; subject=N:subject:carried_support_balance_while_implementing_attention_rails; weight=6)> [Graph:2026_06_23_carried_support_balance]
+/ [E:supports:sjs_source_preservation] -(supports; balance=N:balance:2026_06_23_carried_support_balance; support=N:support:sjs_source_preservation; subject=N:subject:carried_support_balance_while_implementing_attention_rails; fit_status=carried; balance_effect=names_import)> [Graph:2026_06_23_carried_support_balance]
+/ [E:imports:sjs_source_preservation] -(imports; support=N:support:sjs_source_preservation; source=N:source:C_Project_ReasoningFramework_AGENTS_md; subject=N:subject:carried_support_balance_while_implementing_attention_rails; origin=carried)> [Graph:2026_06_23_carried_support_balance]
+/ [E:bounds:sjs_source_preservation] -(bounds; support=N:support:sjs_source_preservation; outside=N:outside:forced_support; reason=carried)> [Graph:2026_06_23_carried_support_balance]
+/ [E:supports:sop_hypergraph_record] -(supports; balance=N:balance:2026_06_23_carried_support_balance; support=N:support:sop_hypergraph_record; subject=N:subject:carried_support_balance_while_implementing_attention_rails; fit_status=native; balance_effect=stabilizes)> [Graph:2026_06_23_carried_support_balance]
+/ [E:imports:sop_hypergraph_record] -(imports; support=N:support:sop_hypergraph_record; source=N:source:F_sop_platform_SOPHypergraphRecord_sop; subject=N:subject:carried_support_balance_while_implementing_attention_rails; origin=carried)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:sop_hypergraph_record_subject_balance] -(fits; support=N:support:sop_hypergraph_record; term=N:term:balance; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=subject)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:sop_hypergraph_record_subject_support] -(fits; support=N:support:sop_hypergraph_record; term=N:term:support; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=subject)> [Graph:2026_06_23_carried_support_balance]
+/ [E:stabilizes:sop_hypergraph_record] -(stabilizes; support=N:support:sop_hypergraph_record; subject=N:subject:carried_support_balance_while_implementing_attention_rails; weight=3)> [Graph:2026_06_23_carried_support_balance]
+/ [E:supports:walking_rails_metaphor] -(supports; balance=N:balance:2026_06_23_carried_support_balance; support=N:support:walking_rails_metaphor; subject=N:subject:carried_support_balance_while_implementing_attention_rails; fit_status=weak; balance_effect=watch_periphery)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:walking_rails_metaphor_periphery_rails] -(fits; support=N:support:walking_rails_metaphor; term=N:term:rails; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=periphery)> [Graph:2026_06_23_carried_support_balance]
+/ [E:fits:walking_rails_metaphor_periphery_walking] -(fits; support=N:support:walking_rails_metaphor; term=N:term:walking; subject=N:subject:carried_support_balance_while_implementing_attention_rails; scope=periphery)> [Graph:2026_06_23_carried_support_balance]
+/ [E:supports:worker_spool_expansion] -(supports; balance=N:balance:2026_06_23_carried_support_balance; support=N:support:worker_spool_expansion; subject=N:subject:carried_support_balance_while_implementing_attention_rails; fit_status=absent; balance_effect=release_or_justify)> [Graph:2026_06_23_carried_support_balance]
+/ [E:distorts:worker_spool_expansion] -(distorts; support=N:support:worker_spool_expansion; subject=N:subject:carried_support_balance_while_implementing_attention_rails; outside=N:outside:forced_support; risk=release_or_justify)> [Graph:2026_06_23_carried_support_balance]
+/ [E:bounds:worker_spool_expansion] -(bounds; support=N:support:worker_spool_expansion; outside=N:outside:forced_support; reason=absent)> [Graph:2026_06_23_carried_support_balance]
+/ [E:supports:forced_framework_projection] -(supports; balance=N:balance:2026_06_23_carried_support_balance; support=N:support:forced_framework_projection; subject=N:subject:carried_support_balance_while_implementing_attention_rails; fit_status=contradicting; balance_effect=distortion_risk)> [Graph:2026_06_23_carried_support_balance]
+/ [E:imports:forced_framework_projection] -(imports; support=N:support:forced_framework_projection; source=N:source:agent_habit_risk; subject=N:subject:carried_support_balance_while_implementing_attention_rails; origin=carried)> [Graph:2026_06_23_carried_support_balance]
+/ [E:distorts:forced_framework_projection] -(distorts; support=N:support:forced_framework_projection; subject=N:subject:carried_support_balance_while_implementing_attention_rails; outside=N:outside:forced_support; risk=distortion_risk)> [Graph:2026_06_23_carried_support_balance]
+/ [E:bounds:forced_framework_projection] -(bounds; support=N:support:forced_framework_projection; outside=N:outside:forced_support; reason=contradicting)> [Graph:2026_06_23_carried_support_balance]
+
+- outside: balance audit records visible support fit and does not prove subject truth

@@ -1,0 +1,227 @@
+Subject: Sensitivity Scan Event
+
+& [2026-06-23_attention_weight_scale_turn_bookmark_scan] is a sensitivity scan over Git bookends
+  + [repo_root] is .
+  + [base_ref] is HEAD
+  + [head_ref] is WORKTREE
+  + [changed_file_count] is 25
+  + [change_001] is A:events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop
+    = additions: 268
+    = deletions: 0
+  + [change_002] is M:events/indexes/2026-06-23_semantic_correlation_graph.hg.sop
+    = additions: 55
+    = deletions: 56
+  + [change_003] is M:events/indexes/2026-06-23_semantic_hash_index.hg.sop
+    = additions: 431
+    = deletions: 248
+  + [change_004] is M:events/indexes/2026-06-23_semantic_hash_table.hg.sop
+    = additions: 297
+    = deletions: 89
+  + [change_005] is A:events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_006] is A:events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_007] is A:events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop
+    = additions: 197
+    = deletions: 0
+  + [change_008] is A:events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop
+    = additions: 237
+    = deletions: 0
+  + [change_009] is A:events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop
+    = additions: 55
+    = deletions: 0
+  + [change_010] is M:planning/project_manager/Manager_State.sop
+    = additions: 7
+    = deletions: 1
+  + [change_011] is M:platform/Attention.sop
+    = additions: 9
+    = deletions: 0
+  + [change_012] is A:platform/AttentionWeightScale.sop
+    = additions: 110
+    = deletions: 0
+  + [change_013] is M:platform/ChangelogCorrelationWeightNet.sop
+    = additions: 6
+    = deletions: 0
+  + [change_014] is A:platform/InferenceStateTrace.sop
+    = additions: 97
+    = deletions: 0
+  + [change_015] is M:platform/PeripheryRepository.sop
+    = additions: 6
+    = deletions: 0
+  + [change_016] is M:platform/RepoFirstInternalScan.sop
+    = additions: 12
+    = deletions: 3
+  + [change_017] is M:platform/SOPHypergraphRecord.sop
+    = additions: 57
+    = deletions: 2
+  + [change_018] is M:platform/SemanticCorrelationGraph.sop
+    = additions: 2
+    = deletions: 0
+  + [change_019] is M:platform/SemanticHashTable.sop
+    = additions: 2
+    = deletions: 0
+  + [change_020] is A:platform/TurnBookmark.sop
+    = additions: 96
+    = deletions: 0
+  + [change_021] is A:platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+    = additions: 16
+    = deletions: 0
+  + [change_022] is A:platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop
+    = additions: 14
+    = deletions: 0
+  + [change_023] is A:platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop
+    = additions: 16
+    = deletions: 0
+  + [change_024] is A:platform/source_documents/2026-06-23_inference_state_trace_reentry/manifest.sop
+    = additions: 13
+    = deletions: 0
+  + [change_025] is M:state/CurrentFocalPoint.sop
+    = additions: 7
+    = deletions: 7
+  + [signal_001_attention] is impact
+    = touch_count: 21
+    = heat: 2407
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_002_platform] is impact
+    = touch_count: 21
+    = heat: 2355
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_003_semantic] is impact
+    = touch_count: 20
+    = heat: 2340
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_004_state] is impact
+    = touch_count: 20
+    = heat: 2315
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_005_term] is impact
+    = touch_count: 14
+    = heat: 2256
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_006_bookmark] is impact
+    = touch_count: 14
+    = heat: 2251
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/AttentionWeightScale.sop, platform/InferenceStateTrace.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_007_attentionweightscale] is impact
+    = touch_count: 18
+    = heat: 2201
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_008_outside] is impact
+    = touch_count: 18
+    = heat: 2187
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_009_scale] is impact
+    = touch_count: 15
+    = heat: 2171
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/AttentionWeightScale.sop, platform/InferenceStateTrace.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticHashTable.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_010_graph] is impact
+    = touch_count: 16
+    = heat: 2093
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_011_attention_weight_scale_turn_bookmark] is impact
+    = touch_count: 10
+    = heat: 2064
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/AttentionWeightScale.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_012_narrative] is impact
+    = touch_count: 20
+    = heat: 2009
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_013_bounds] is impact
+    = touch_count: 13
+    = heat: 1958
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/ChangelogCorrelationWeightNet.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/TurnBookmark.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_014_weight] is impact
+    = touch_count: 21
+    = heat: 1944
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_015_source_documents] is impact
+    = touch_count: 12
+    = heat: 1928
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/AttentionWeightScale.sop, platform/InferenceStateTrace.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_016_turn] is impact
+    = touch_count: 18
+    = heat: 1918
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_017_proof] is impact
+    = touch_count: 16
+    = heat: 1915
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_018_attention_weight_scale_turn_bookmark_004] is impact
+    = touch_count: 9
+    = heat: 1866
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_019_format] is impact
+    = touch_count: 9
+    = heat: 1839
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/SOPHypergraphRecord.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_020_turnbookmark] is impact
+    = touch_count: 13
+    = heat: 1813
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_021_dictated_attention_weight_scale_turn_bookmark_source] is impact
+    = touch_count: 9
+    = heat: 1796
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, platform/AttentionWeightScale.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_022_focus] is impact
+    = touch_count: 17
+    = heat: 1735
+    = retention_policy: emphasize
+    = evidence_paths: events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop, events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionWeightScale.sop, platform/ChangelogCorrelationWeightNet.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashTable.sop, platform/TurnBookmark.sop, platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_023_currentfocalpoint] is impact
+    = touch_count: 12
+    = heat: 1732
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop, events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/InferenceStateTrace.sop, platform/PeripheryRepository.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_024_repofirstinternalscan] is impact
+    = touch_count: 11
+    = heat: 1653
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop, events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/ChangelogCorrelationWeightNet.sop, platform/PeripheryRepository.sop, platform/RepoFirstInternalScan.sop, platform/TurnBookmark.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [residual_outside] is scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

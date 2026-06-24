@@ -1,0 +1,11 @@
+Subject: Meta Awareness Repo Boundary Source Manifest
+
+Description: Source preservation manifest for the second-repo meta-awareness boundary.
+
+& [MetaAwarenessRepoBoundarySourceManifest] is the source document set for F:\.sop as meta-awareness repository
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_meta_awareness_repo_boundary\Dictated_Meta_Awareness_Repo_Boundary_Source.sop
+  + [meta_awareness_contract] is F:\.sop\platform\MetaAwarenessRepository.sop
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_meta_awareness_repo_boundary.hg.sop
+
+  = must: keep dictated source separate from compiled meta-awareness contract
+  = must: preserve SJS as overlapping justification system rather than replacing it

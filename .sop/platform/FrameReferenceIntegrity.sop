@@ -1,0 +1,86 @@
+Subject: Frame Reference Integrity
+
+Description: Attention pattern for distinguishing a represented or presented frame from first-hand observation by using stable periphery objects and frame-boundary checks.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_frame_reference_integrity\Dictated_Frame_Reference_Integrity_Source.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\Caution.sop
+
+& [FrameReferenceIntegrity] is the attention pattern that notices the frame of perception before treating perceived content as actionable reality
+  + [pattern_role] is frame_boundary_and_immersion_break_attention
+  + [perception_frame] is the source, medium, boundary, sensor context, interface, prompt context, or representation surface through which an observation appears
+  + [presented_frame] is a represented scene, screen, image, map, simulation, story, model output, UI, prompt, or projected context that can invite immersion
+  + [first_hand_observation] is direct observation available to the acting system, such as sensor input, command output, source files, repo state, user-provided artifacts, or verified environmental data
+  + [representation_surface] is the physical, digital, textual, graphical, or model-lens surface carrying the presented_frame
+  + [stable_periphery_object] is a surrounding object, boundary, artifact, source marker, interface edge, motion-parallax cue, file path, sensor metadata, or persistent outside marker that stays available while the presented_frame changes
+  + [periphery_object_stability] is the degree to which stable_periphery_object signals remain coherent, persistent, and proportionate around the focal scene
+  + [frame_reference_check] is the pass that asks what frame the observation is in, what surface carries it, what periphery remains stable, and what must remain outside
+  + [immersion_break_cue] is a stable periphery or boundary signal showing that the presented_frame should not be treated as first_hand_observation
+  + [frame_mismatch] is conflict between the presented_frame and stable periphery, source lineage, sensor context, physics, repo state, or action constraints
+  + [painted_scene_hazard] is the safety example where a road scene painted on the side of a semi must be recognized as representation_surface rather than actionable road
+  + [actionable_world_state] is the bounded state that may guide action only after frame_reference_check, caution, and available verification
+  + [correction_move] is break_immersion, verify_frame, reanchor_to_world, preserve_outside, lower_confidence, ask_caution, stop_action, or route_to_periphery
+  + [outside] is hidden reality, unobserved environment, private model internals, unsupported sensor claims, over-immersed interpretation, and any content not distinguished from its frame
+
+  ? [use_when: an observation, image, simulation, prompt, model projection, game state, narrative, or UI might be mistaken for the world or for implementation authority]
+    = activate [FrameReferenceIntegrity]
+
+  = must: assume every observation arrives inside a perception_frame
+  = must: name the presented_frame and representation_surface before allowing immersion to guide action
+  = must: distinguish first_hand_observation from represented content using available source and periphery signals
+  = must: inspect periphery_object_stability before treating a scene as actionable_world_state
+  = must: treat stable periphery objects as frame cues, not as proof of hidden truth
+  = must: break immersion when stable_periphery_object or frame_mismatch shows that presented content is only a representation
+  = must: route frame_mismatch through Caution before action, claim promotion, or durable realization
+  = must: preserve outside when the system cannot tell whether a scene is representation_surface or first_hand_observation
+  = should: use AttentionBalanceCenter when loss of stable periphery reduces frame integrity
+  = should: use this pattern for game agents, visual agents, map agents, UI agents, and model-lens projections
+  - never: treat a rendered or painted road, prompt scene, simulated world, or model output as actionable world state without frame_reference_check
+  - never: let excitement, fluency, or immersion override stable periphery and source boundaries
+  - never: claim real sensor access or first-hand experience beyond the observation surfaces actually available
+
+& [FrameReferenceSequence] is the operational pass for noticing the frame
+  + [step_001_observe] is receive focal observation and list visible source, medium, and context
+  + [step_002_name_frame] is identify perception_frame, presented_frame, and representation_surface
+  + [step_003_scan_periphery] is inspect stable_periphery_object signals and periphery_object_stability
+  + [step_004_compare] is compare presented_frame against first_hand_observation, source lineage, motion/context cues, and action constraints
+  + [step_005_detect_mismatch] is classify frame_mismatch, immersion_break_cue, uncertainty, or supported frame fit
+  + [step_006_correct] is choose correction_move before action or realization
+  + [step_007_record] is update focus, periphery, balance, caution, or outside with the frame result
+
+  = must: run before action in any perception-action loop
+  = must: run before a model projection is used as evidence
+  = must: run when periphery collapses or focus becomes over-immersed in a presented frame
+  = must: keep uncertainty visible when frame_reference_check is inconclusive
+
+& [FrameIntegritySignals] is the signal set for frame-reference integrity
+  + [source_marker] is file path, repo state, tool output, sensor metadata, UI chrome, timestamp, commit, or origin label
+  + [surface_boundary] is edge, seam, border, medium change, physical boundary, canvas boundary, quoted block, or prompt boundary
+  + [periphery_continuity] is stable surroundings remaining coherent while focal content changes
+  + [parallax_or_context_cue] is movement, perspective, scale, lighting, interface, or environmental cue showing a representation surface
+  + [semantic_incongruity] is content whose implied world conflicts with stable periphery or source context
+  + [action_consequence_risk] is any action that would be unsafe if the presented_frame is mistaken for first_hand_observation
+
+  = must: preserve source_marker and surface_boundary as high-value signals
+  = must: increase caution when action_consequence_risk is present
+  = should: prefer multiple independent signals before promoting actionable_world_state
+
+& [FrameReferenceRecord] is the SOP-HG shape for frame-reference checks
+  + [frame_node] is N:frame:<frame_id>
+  + [presentation_node] is N:observation:<presented_frame_key>
+  + [surface_node] is N:source:<representation_surface_key>
+  + [periphery_node] is N:periphery:<stable_periphery_key>
+  + [signal_node] is N:signal:<immersion_break_or_frame_mismatch_key>
+  + [caution_node] is N:caution:<caution_id>
+  + [correction_node] is N:policy:<correction_move_key>
+  + [outside_node] is N:outside:frame_reference_boundary
+  + [frame_edge] is E:frames:<frame_id>
+  + [mismatch_edge] is E:breaks_immersion:<frame_mismatch_key>
+  + [reanchor_edge] is E:reanchors:<correction_move_key>
+  + [boundary_edge] is E:bounds:<frame_id>
+
+  = must: cite observation_surface or representation_surface
+  = must: expose perception_frame, presented_frame, first_hand_observation status, periphery_object_stability, frame_mismatch, correction_move, and outside
+
+/ [presented_frame], [representation_surface] -(FrameReferenceCheck)> [perception_frame], [outside]
+* [stable_periphery_object], [periphery_object_stability], [frame_mismatch] -(ImmersionBreak)> [correction_move], [actionable_world_state], [outside]

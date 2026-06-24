@@ -1,0 +1,12 @@
+Subject: Focal Point Renewal Source Manifest
+
+Description: Source preservation manifest for focal point renewal after context compression.
+
+& [FocalPointRenewalSourceManifest] is the source document set for focal point renewal
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_focal_point_renewal\Dictated_Focal_Point_Renewal_Source.sop
+  + [updated_contract] is F:\.sop\platform\FocalPoint.sop
+  + [current_focal_point] is F:\.sop\state\CurrentFocalPoint.sop
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_focal_point_renewal.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_focal_point_renewal_scan.hg.sop
+
+  = must: preserve focal point renewal as a context-compression recovery requirement

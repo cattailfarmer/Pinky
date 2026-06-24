@@ -1,0 +1,15 @@
+Subject: Dictated SOP Optical Chain Source
+
+Description: Raw dictated source for expressing SOP as an optical chain, color graph, and semantic transform stream.
+
+& [DictatedSOPOpticalChainSource] is the preserved user source for the SOP optical-chain idea
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "now I'm starting to think this SOP structure could be expressed as a shape of optics, with a .SOP layer at both ends of the optical chain, and transforms could be applied over that by just changing the optical stream, bending it or changing a point of color, as such that the SOP layout could be translated into a color graph and mutations applied mid-stream by logic fabric in-stream. then we have turned SOP into a photonic computing paradigm"
+
+  = must: preserve this source separately from the processed contract
+  = must: express SOP as an optical chain with SOP layers at both ends
+  = must: define color graph translation as a semantic representation of SOP structure
+  = must: define mid-stream transform, bend, recolor, and logic-fabric mutation as inspectable operations
+  = must: keep photonic computing language bounded as a semantic paradigm unless physical hardware is separately specified

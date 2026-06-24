@@ -1,0 +1,14 @@
+Subject: Thread Return Non Photonic Focus Source Manifest
+
+Description: Manifest for the source directive returning this thread to the pre-photonic SOP awareness task.
+
+& [ThreadReturnNonPhotonicFocusSourceManifest] is the source-preservation manifest
+  + [source_folder] is F:\.sop\platform\source_documents\2026-06-24_thread_return_non_photonic_focus
+  + [raw_source] is F:\.sop\platform\source_documents\2026-06-24_thread_return_non_photonic_focus\Dictated_Thread_Return_Non_Photonic_Focus_Source.sop
+  + [focal_target] is F:\.sop\state\CurrentFocalPoint.sop
+  + [event_target] is F:\.sop\events\periphery_stream\2026-06-24_thread_return_to_awareness_stream_069.hg.sop
+  + [source_boundary] is user directive to move this thread focus, not to revert repository history
+  + [source_outside] is photonic continuation, commit reversal, and runtime implementation
+
+  = must: keep raw_source unchanged after focal renewal
+  = must: cite raw_source from event_target

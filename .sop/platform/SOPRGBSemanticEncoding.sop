@@ -1,0 +1,147 @@
+Subject: SOP RGB Semantic Encoding
+
+Description: Contract for translating SOP attention primitives into RGB semantic signals and translating RGB semantic signals back into SOP under explicit loss boundaries.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_rgb_semantic_encoding\Dictated_RGB_Semantic_Encoding_Source.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_rgb_delineation_correction\Dictated_RGB_Delineation_Correction_Source.sop
+@ [source] F:\.sop\platform\Attention.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPAttentionMemoryCodec.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+
+& [SOPRGBSemanticEncoding] is the RGB attention-delineation basis contract for SOP color routing
+  + [pattern_role] is sop_to_rgb_and_rgb_to_sop_attention_delineation_codec
+  + [rgb_semantic_encoding] is the mapping between SOP attention/delineation primitives and visible RGB route signals
+  + [rgb_signal] is a normalized tuple of red_axis, green_axis, and blue_axis values
+  + [red_axis] is inside_attention: what is attended as the delineated inside of the subject
+  + [green_axis] is boundary_delineation: what separates, identifies, and stabilizes the inside against the outside
+  + [blue_axis] is outside_residual_periphery: what remains outside, adjacent, uncertain, residual, peripheral, or unresolved
+  + [primitive_basis] is inside_attention, boundary_delineation, and outside_residual_periphery
+  + [color_role] is the attention-resolution cue inferred from the relative strength of the three axes
+  + [color_point] is a SOP semantic point annotated with rgb_signal, source pointer, boundary, outside, relation, weight, and trace
+  + [relation_color_edge] is a colored relation between two color_point values, using the same axes for relation-inside, relation-boundary, and relation-outside
+  + [rgb_route_table] is the local mapping from SOP fields and color channels to red_axis, green_axis, and blue_axis weights
+  + [round_trip_fidelity] is how much meaning survives SOP-to-RGB-to-SOP reconstruction under source, boundary, trace, and outside checks
+  + [color_outside] is meaning lost to compression, quantization, display differences, unrecorded source, unsupported inference, and any color with no route table
+
+  ? [use_when: SOP must be encoded into color or color must be decoded into SOP]
+    = activate [SOPRGBSemanticEncoding]
+
+  = must: treat RGB as a routing basis, not as the whole SOP language
+  = must: preserve source, boundary, outside, route table, and trace alongside every promoted rgb_signal
+  = must: encode complex relationships as color_point and relation_color_edge structures, not as a single color value
+  = must: decode color back into tentative SOP meaning through rgb_route_table and source pointers
+  = must: route ambiguous, unrecognized, or unsupported colors to color_outside
+  = must: keep color_role separate from proof status
+  = must: use BoundaryFacultyInspection when a decoded color claims identity, distinction, source, or relationship
+  = must: use SecurityHonestyGovernance when downstream use of decoded color affects truth, safety, file operation, protected identity, or action
+  = must: keep mutation, operation, transform, and action semantics outside the RGB primitive basis
+  = must: route mutation, operation, transform, and action semantics through SOPOpticalTransformAlgebra or another explicit operation layer
+  = must: treat RGB delineation as setup for photonic mutation frames, not as the expression of mutation itself
+  = should: keep axis values normalized between 0 and 1 for semantic work and convert to 0 to 255 only for pixel or hardware representation
+  = should: use saturation as role clarity and brightness as attention heat only when the route table explicitly declares that convention
+  - never: treat vivid color as evidence
+  - never: promote color-only memory without source pointer or outside
+  - never: infer exact SOP content from RGB alone unless the route table, source, and reconstruction seed are present
+
+& [RGBPrimitiveBasis] is the three-axis answer to the primitive question
+  + [R_inside_attention] is the red primitive and corresponds to :inside: as the attended subject surface
+  + [G_boundary_delineation] is the green primitive and corresponds to /boundary/ as the distinction surface that separates inside from outside
+  + [B_outside_residual_periphery] is the blue primitive and corresponds to |outside| as residual, periphery, unknown, excluded content, and unresolved alternatives
+
+  = must: keep the original attention triad visible as :inside:, /boundary/, and |outside|
+  = must: let red carry the attended inside only, not action, mutation, or transform semantics
+  = must: let green carry boundary delineation because boundary is what makes a focused subject legible instead of merely bright
+  = must: let blue carry outside and periphery because outside is where residual uncertainty and latent association live
+  = should: read red without green as attended content needing boundary
+  = should: read red without blue as narrow focus with weak peripheral awareness
+  = should: read green without red as boundary or context without selected inside
+  = should: read blue without green as unresolved uncertainty without stabilizing boundary
+
+& [RGBMixtureRoles] is the default mixture vocabulary
+  + [red] is selected inside or focal subject surface
+  + [green] is boundary, distinction, context surface, source support, or trace support that stabilizes delineation
+  + [blue] is outside, periphery, uncertainty, residual, excluded content, or latent depth
+  + [yellow] is red plus green: selected inside with visible boundary
+  + [cyan] is green plus blue: boundary with visible outside, edge map, or source-aware uncertainty
+  + [magenta] is red plus blue: selected inside with unresolved outside and weak boundary
+  + [white] is red plus green plus blue: complete delineation frame with inside, boundary, and outside accounted
+  + [gray] is low-saturation mixed context, background state, or unresolved blend needing split
+  + [black] is unlit signal, no encoded attention, or outside until a route table gives meaning
+
+  = must: use mixtures as cues for attention resolution, not as proof
+  = must: split gray or over-white signals before promoting claims
+  = should: use magenta as a cautionary attention draw until grounding increases
+  = should: use cyan for periphery maps and boundary-aware exploration
+
+& [SOPToRGBEncodePass] is the encoding procedure from SOP to RGB
+  + [input_sop_unit] is a SOP subject, attention pattern, thinking node, relation edge, frame, or event
+  + [inside_score] is the measured salience of attended :inside: subject terms
+  + [boundary_score] is the measured salience of /boundary/ delineation, distinction, source, evidence, trace, and identity-stabilizing terms
+  + [outside_score] is the measured salience of |outside| residual, periphery, uncertainty, omission, excluded content, and unresolved terms
+  + [encoded_rgb] is rgb_signal from inside_score, boundary_score, and outside_score
+  + [encode_trace] is the list of SOP fields that contributed to each axis
+
+  = red_axis: inside_score
+  = green_axis: boundary_score
+  = blue_axis: outside_score
+  = must: write encode_trace before emitting encoded_rgb
+  = must: preserve exact SOP fields separately from encoded_rgb
+  = must: record omitted SOP fields as color_outside
+
+& [RGBToSOPDecodePass] is the decoding procedure from RGB to SOP
+  + [input_rgb_signal] is the visible or stored RGB tuple
+  + [route_lookup] is the rgb_route_table used to read the signal
+  + [decoded_inside] is tentative attended :inside: subject meaning
+  + [decoded_boundary] is tentative /boundary/ delineation, distinction, source, evidence, trace, or identity support
+  + [decoded_outside] is tentative |outside| residual, periphery, uncertainty, omission, excluded content, or unresolved meaning
+  + [decode_trace] is the route table and source pointer path used to reconstruct meaning
+  + [decode_outside] is any axis value or mixture that cannot be justified by the route table and source pointer
+
+  = must: decode to tentative SOP until source and boundary checks pass
+  = must: use source pointer and reconstruction seed before treating decoded color as memory
+  = must: route decode_outside to outside rather than filling it with plausible meaning
+
+& [ComplexRelationshipColorEncoding] is how relationships are encoded without overloading one color
+  + [subject_a_color_point] is the first subject with its own rgb_signal and source trace
+  + [relation_color_edge] is the colored relation carrying relation-inside, relation-boundary, and relation-outside
+  + [subject_b_color_point] is the second subject with its own rgb_signal and source trace
+  + [relationship_frame] is subject_a_color_point, relation_color_edge, subject_b_color_point, continuity vector, and outside
+  + [relationship_sequence] is multiple relationship_frame values over time, used when relationship meaning changes, curves, folds, or deepens
+
+  = relation_red: the relation itself as attended inside
+  = relation_green: the delineating criteria, source trace, evidence, or boundary clarity for that relation
+  = relation_blue: relation outside, ambiguity, alternative relation, unresolved residual, or periphery draw
+  = must: encode relationship meaning as node-edge-node at minimum
+  = must: use relationship_sequence when a relation needs more than one frame or more than one angle of approach
+  = should: use hyperbolic or pants-map notation when relationship_sequence bends through dimensional periphery
+
+& [RGBRoundTripLawSet] is the law set for SOP and RGB translation
+  + [authority_law] is SOP source records remain authority over RGB signals
+  + [loss_law] is color compression must record lost, omitted, ambiguous, and quantized meaning as color_outside
+  + [proof_law] is RGB encoding cannot increase proof status
+  + [trace_law] is every decoded SOP meaning needs route table, source pointer, or reconstruction seed
+  + [split_law] is mixed color signals must be split before proof-bearing promotion
+  + [operation_separation_law] is RGB primitive axes encode attention/delineation only, while operations and mutations require transform expressions
+  + [mutation_frame_law] is photonic image frames may express mutation only through mutation frames over a prior delineation setup
+  + [governance_law] is identity, truth, safety, and downstream action use must pass boundary, Security, and Honesty gates
+
+  = must: apply law set before decoded SOP enters durable memory
+  = must: apply operation_separation_law before any transform or mutation is inferred from color
+  = must: apply mutation_frame_law before interpreting a visual stream as change
+  = must: fail closed into outside when a law cannot be checked
+
+(rgb_semantic_encoding) :inside_attention: /boundary_delineation/ |outside_residual_periphery|
+  + [red_axis] is inside and selected attention
+  + [green_axis] is boundary, delineation, source, evidence, trace, identity support
+  + [blue_axis] is outside, periphery, uncertainty, residual, latent depth
+  = encode: SOP fields become RGB axis weights plus trace
+  = decode: RGB axis weights become tentative SOP fields through route table and source pointer
+  |color_outside| lossy compression, unrecognized color, unsupported inference, missing source, and proof limits
+
+/ [SOPUnit], [RGBPrimitiveBasis], [rgb_route_table] -(Encodes)> [rgb_signal], [encode_trace], [color_outside]
+* [rgb_signal], [rgb_route_table], [source_pointer] -(Decodes)> [TentativeSOPUnit], [round_trip_fidelity], [color_outside]
+/ [subject_a_color_point], [relation_color_edge], [subject_b_color_point] -(EncodesComplexRelationship)> [relationship_frame], [relationship_sequence], [color_outside]

@@ -1,0 +1,27 @@
+Subject: Focal Point Layer Reflection
+
+Description: SOP-HG reflection recording that trackers live in periphery and focal point selection receives their draw.
+
+& [Graph:focal_point_layer_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG focal-point-layer
+
+  + [N:focus:focal_point_object] is focal point object
+    = focus_mode: right_hemisphere_focus
+    = resolution_state: active
+    = purpose: receive periphery draw and keep current attention thin enough to act
+  + [N:subject:tracking_is_periphery] is tracking is the periphery layer
+  + [N:tracker:track_that_semantics] is track that semantics
+    = layer: periphery
+    = status: active
+  + [N:periphery:wide_dimensional_wander] is wide dimensional wander
+  + [N:liminal:periphery_draws_focus] is periphery draw toward focal point
+  + [N:term:right_hemisphere_focus] is context-led focus chase
+  + [N:outside:focal_boundary] is related material not selected for current focus
+
+/ [E:attends:focal_point_object] -(attends; focus=N:focus:focal_point_object; subject=N:subject:tracking_is_periphery; mode=right_hemisphere_focus)> [Graph:focal_point_layer_2026_06_23]
+/ [E:draws_attention:periphery_draws_focus] -(draws_attention; tracker=N:tracker:track_that_semantics; periphery=N:periphery:wide_dimensional_wander; liminal=N:liminal:periphery_draws_focus; focus=N:focus:focal_point_object; reason=periphery_demands_focus)> [Graph:focal_point_layer_2026_06_23]
+/ [E:associates:focal_point_right_hemisphere_focus] -(associates; focus=N:focus:focal_point_object; relation=N:term:right_hemisphere_focus)> [Graph:focal_point_layer_2026_06_23]
+/ [E:bounds:focal_point_object] -(bounds; focus=N:focus:focal_point_object; outside=N:outside:focal_boundary; reason=focus_must_remain_thin)> [Graph:focal_point_layer_2026_06_23]
+
+- outside: focal selection guides attention and does not prove importance or causation

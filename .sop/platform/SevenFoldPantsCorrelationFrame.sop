@@ -1,0 +1,117 @@
+Subject: Seven-Fold Pants Correlation Frame
+
+Description: Contract for mapping higher-dimensional subject surfaces with three heat-ordered central correlations and folded pants legs for extra dimensionality.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_seven_fold_pants_correlation_frame\Dictated_Seven_Fold_Pants_Correlation_Frame_Source.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\ChangelogCorrelationWeightNet.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+
+& [SevenFoldPantsCorrelationFrame] is the weighted topology profile for higher-dimensional focal attention
+  + [pattern_role] is heat_ordered_higher_dimensional_pants_frame
+  + [subject_surface_frame] is the current focused SOP subject surface whose visible terms, relations, sources, and periphery signals are being mapped
+  + [perception_slice] is the ordinary 2D-oriented frame of attention, like looking down a corridor in 3D space
+  + [higher_dimensional_curve] is meaning that cannot stay inside perception_slice without losing relation structure
+  + [curve_out_of_frame] is the signal that a relation or dimension leaves the current frame and needs a fold_leg
+  + [fold_leg] is an added pants leg that carries extra dimensionality out of the flat frame while preserving relation type, anchor, heat, and outside
+  + [seven_fold_capacity] is a bounded profile that allows up to seven named fold or adjacency legs in a single map pass
+  + [central_correlation_triad] is the three largest correlations held in immediate focus for the current subject_surface_frame
+  + [top_three_correlations] is the heat-ordered set of three correlation cells selected for central focus
+  + [central_anchor] is one of the top_three_correlations used to orient surrounding relationship scatter
+  + [heat_ordered_cell] is any cell sized or ranked by visible heat, salience, or weighted correlation within the current subject surface
+  + [weighted_balance_orbit] is the arrangement of related cells around the central_correlation_triad according to heat, relation role, source support, and caution load
+  + [relationship_scatter] is the surrounding distribution of related periphery cells around the three central anchors
+  + [correlation_heat_map] is the visible ordering surface from AttentionWeightScale or ChangelogCorrelationWeightNet
+  + [immediate_focus] is the central high-resolution area containing the top_three_correlations and their shared boundary
+  + [folded_periphery] is periphery carried through fold_leg paths rather than flattened into immediate_focus
+  + [hyperbolic_corridor_navigator] is F:\.sop\platform\HyperbolicCorridorNavigator.sop when fold legs become an ordered route through peripheral frames
+  + [outside] is hidden geometry, direct transformer activations, unsupported heat, arbitrary tessellation aesthetics, and unmeasured dimensions
+
+  ? [use_when: higher-dimensional meaning curves out of the current frame, or a topology map needs the three largest correlations centered and weighted periphery folded around them]
+    = activate [SevenFoldPantsCorrelationFrame]
+
+  = must: begin from a declared subject_surface_frame and focal boundary
+  = must: compute or estimate correlation_heat_map before selecting central_correlation_triad
+  = must: keep heat, salience, confidence, and proof separate
+  = must: select top_three_correlations by visible heat within the current subject surface, then review caution load before durable use
+  = must: keep top_three_correlations in immediate_focus only while they share a meaningful boundary
+  = must: use fold_leg when higher_dimensional_curve would otherwise flatten or erase relation structure
+  = must: name relation type, source anchor, heat, confidence, and outside for each fold_leg
+  = must: keep seven_fold_capacity as a bounded profile, not a universal dimensional claim
+  = must: scatter relationships around central_anchor values by weighted_balance_orbit, not by arbitrary visual symmetry
+  = must: use HyperbolicPantsAttentionMap for cell, orbit, adjacency, and pants-leg notation
+  = must: use AttentionTraversalPolicy when navigating from a central anchor through a fold_leg
+  = must: use HyperbolicCorridorNavigator when multiple fold_leg or periphery frames point attention forward into a higher-dimensional corridor
+  = must: use PeripheryDimensionalProbe when an extra fold_leg might represent a missing independent dimension
+  = must: use AttentionBalanceCenter when central triad dominance causes periphery collapse or periphery flood
+  = should: use FocusZoom to widen or narrow the frame before changing central_correlation_triad
+  = should: preserve folded_periphery when it is meaningful but not central
+  - never: treat the top three correlations as truth merely because they are hot
+  - never: add fold_leg values merely to reach seven
+  - never: let visual size replace visible weight accounting
+
+& [SevenFoldFrameNotation] is the notation shape for weighted higher-dimensional pants framing
+  + [frame_declaration] is (subject_surface_frame) :central_correlation_triad: /shared_boundary/ |outside|
+  + [central_anchor_declaration] is + [central_anchor:<rank>] is heat_ordered_cell with heat, salience, confidence, and source anchor
+  + [fold_leg_declaration] is = fold_leg:<n> -> <target_cell> by <relation_type> with heat=<value> confidence=<band>
+  + [scatter_declaration] is = scatter: <related_cell> around <central_anchor> by weighted_balance_orbit
+  + [capacity_declaration] is = seven_fold_capacity: used=<n> max=7
+  + [outside_declaration] is - outside: unsupported heat, hidden geometry, unmeasured dimensions, and arbitrary visual analogy
+
+  = must: record central anchors before fold legs
+  = must: keep folded relationships traceable to one or more central_anchor values
+  = must: preserve outside when fold capacity is exceeded or under-supported
+
+& [SevenFoldFrameSequence] is the canonical pass for building the frame
+  + [step_001_subject] is name subject_surface_frame, purpose, shared boundary, and outside
+  + [step_002_heat_map] is collect correlation_heat_map from visible terms, sources, scans, and weighted surfaces
+  + [step_003_triad] is select top_three_correlations and record heat, salience, confidence, and caution load
+  + [step_004_slice] is define perception_slice and immediate_focus around the central_correlation_triad
+  + [step_005_curve] is identify higher_dimensional_curve values that leave perception_slice
+  + [step_006_fold] is add fold_leg paths for extra dimensionality up to seven_fold_capacity
+  + [step_007_scatter] is arrange relationship_scatter around central anchors through weighted_balance_orbit
+  + [step_007b_corridor] is use HyperbolicCorridorNavigator when folded periphery becomes a peripheral_frame_series for forward navigation
+  + [step_008_probe] is run PeripheryDimensionalProbe for ambiguous or overloaded fold legs
+  + [step_009_balance] is run AttentionBalanceCenter for periphery collapse, flood, or central-triad overdominance
+  + [step_010_close] is return to HyperbolicPantsAttentionMap, ApertureReentryCycle, tracker, or outside
+
+  = must: record skipped steps when a quick profile is used
+  = must: stop adding fold legs when relation type or source anchor cannot be named
+  = must: route high-heat low-confidence legs through Caution before use
+
+& [SevenFoldPantsFrameRecord] is the SOP-HG shape for weighted higher-dimensional pants framing
+  + [frame_node] is N:map:<frame_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [central_cell_node] is N:cell:<central_rank_key>
+  + [fold_leg_node] is N:leg:<fold_leg_key>
+  + [orbit_node] is N:orbit:<weighted_balance_key>
+  + [signal_node] is N:signal:<heat_key>
+  + [dimension_node] is N:dimension:<dimension_key>
+  + [outside_node] is N:outside:seven_fold_boundary
+  + [map_edge] is E:maps:<frame_id>
+  + [weigh_edge] is E:weighs:<central_rank_key>
+  + [fold_edge] is E:folds:<fold_leg_key>
+  + [orbit_edge] is E:orbits:<weighted_balance_key>
+  + [boundary_edge] is E:bounds:<frame_id>
+
+  = must: show subject surface, top three central cells, heat order, fold legs, weighted balance orbit, and outside
+  = must: keep frame topology separate from proof of semantic truth
+
+(subject_surface_frame) :central_correlation_triad: /shared_boundary/ |outside|
+  + [central_anchor:1] is heat_ordered_cell
+    = heat: highest_visible_heat
+    = confidence: declared_band
+  + [central_anchor:2] is heat_ordered_cell
+    = heat: second_visible_heat
+    = confidence: declared_band
+  + [central_anchor:3] is heat_ordered_cell
+    = heat: third_visible_heat
+    = confidence: declared_band
+  = seven_fold_capacity: used=<n> max=7
+  = fold_leg:<n> -> <target_cell> by <relation_type> with heat=<value> confidence=<band>
+  - outside: hidden geometry, unsupported heat, unmeasured dimensions

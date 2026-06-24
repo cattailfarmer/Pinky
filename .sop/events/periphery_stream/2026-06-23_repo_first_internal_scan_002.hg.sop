@@ -1,0 +1,30 @@
+Subject: Repo First Internal Scan 002
+
+Description: Periphery-stream realization that repo bookends and diffs must lead internal scan, with narrative guiding oddity mapping.
+
+& [Graph:repo_first_internal_scan_002_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG repo-first-internal-scan
+  = stream_key: periphery_stream
+  = moment_index: 002
+
+  + [N:event:repo_first_internal_scan_002] is repo-first internal scan correction
+  + [N:commit:1c3c068] is version A before self-focus periphery stream
+  + [N:commit:8826e68] is version B after self-focus periphery stream
+  + [N:source:git_show_stat_8826e68] is git show --stat --summary HEAD
+    = file_count: 104
+    = additions: 12414
+    = deletions: 5
+  + [N:narrative:repo_first_correction] is narrative guides mapping of oddities after repo evidence is read
+  + [N:observation:generated_artifact_weight] is generated indexes and scans dominate line count and need different evidential weight than source contracts
+  + [N:observation:self_focus_records] is self-focus stream records are small but semantically load-bearing
+  + [N:outside:hidden_motive] is hidden cognition, unstated motive, and causal truth outside the repo delta
+
+/ [E:span:repo_first_internal_scan_002] -(span; start=N:commit:1c3c068; end=N:commit:8826e68; event=N:event:repo_first_internal_scan_002)> [Graph:repo_first_internal_scan_002_2026_06_23]
+/ [E:changed:self_focus_commit_delta] -(changed; event=N:event:repo_first_internal_scan_002; diff=N:source:git_show_stat_8826e68; files=104; additions=12414; deletions=5)> [Graph:repo_first_internal_scan_002_2026_06_23]
+/ [E:classifies:generated_artifact_weight] -(classifies; event=N:event:repo_first_internal_scan_002; observation=N:observation:generated_artifact_weight; role=generated_views_need_lower_authority_weight)> [Graph:repo_first_internal_scan_002_2026_06_23]
+/ [E:classifies:self_focus_records] -(classifies; event=N:event:repo_first_internal_scan_002; observation=N:observation:self_focus_records; role=semantic_core_records)> [Graph:repo_first_internal_scan_002_2026_06_23]
+/ [E:explains:repo_first_correction] -(explains; narrative=N:narrative:repo_first_correction; observation=N:observation:generated_artifact_weight; observation=N:observation:self_focus_records)> [Graph:repo_first_internal_scan_002_2026_06_23]
+/ [E:bounds:repo_first_boundary] -(bounds; event=N:event:repo_first_internal_scan_002; outside=N:outside:hidden_motive)> [Graph:repo_first_internal_scan_002_2026_06_23]
+
+- realization: A good internal scan begins with the commit frame and change log bridge; narrative then helps explain oddities in the version difference without replacing the evidence.

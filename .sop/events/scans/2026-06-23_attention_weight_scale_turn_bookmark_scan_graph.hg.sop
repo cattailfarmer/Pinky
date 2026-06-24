@@ -1,0 +1,287 @@
+Subject: 2026-06-23_attention_weight_scale_turn_bookmark_scan Hypergraph
+
+& [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan] is a SOP-HG graph
+  = format: SOP-HG
+  = source_scan_id: 2026-06-23_attention_weight_scale_turn_bookmark_scan
+  = base_ref: HEAD
+  = head_ref: WORKTREE
+
+  + [N:bookend:HEAD] is HEAD
+  + [N:bookend:WORKTREE] is WORKTREE
+  + [N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan] is 2026-06-23_attention_weight_scale_turn_bookmark_scan
+  + [N:outside:semantic_truth] is semantic truth not proven by correlation heat
+  + [N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop] is events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop
+    = status: A
+    = additions: 268
+    = deletions: 0
+  + [N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop] is events/indexes/2026-06-23_semantic_correlation_graph.hg.sop
+    = status: M
+    = additions: 55
+    = deletions: 56
+  + [N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop] is events/indexes/2026-06-23_semantic_hash_index.hg.sop
+    = status: M
+    = additions: 431
+    = deletions: 248
+  + [N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop] is events/indexes/2026-06-23_semantic_hash_table.hg.sop
+    = status: M
+    = additions: 297
+    = deletions: 89
+  + [N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop] is events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop
+    = status: A
+    = additions: 22
+    = deletions: 0
+  + [N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop] is events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop
+    = status: A
+    = additions: 22
+    = deletions: 0
+  + [N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop] is events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan.hg.sop
+    = status: A
+    = additions: 197
+    = deletions: 0
+  + [N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop] is events/scans/2026-06-23_attention_weight_scale_turn_bookmark_scan_graph.hg.sop
+    = status: A
+    = additions: 237
+    = deletions: 0
+  + [N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop] is events/state_traces/2026-06-23_inference_state_trace_reentry.hg.sop
+    = status: A
+    = additions: 55
+    = deletions: 0
+  + [N:file:planning_project_manager_Manager_State_sop] is planning/project_manager/Manager_State.sop
+    = status: M
+    = additions: 7
+    = deletions: 1
+  + [N:file:platform_Attention_sop] is platform/Attention.sop
+    = status: M
+    = additions: 9
+    = deletions: 0
+  + [N:file:platform_AttentionWeightScale_sop] is platform/AttentionWeightScale.sop
+    = status: A
+    = additions: 110
+    = deletions: 0
+  + [N:file:platform_ChangelogCorrelationWeightNet_sop] is platform/ChangelogCorrelationWeightNet.sop
+    = status: M
+    = additions: 6
+    = deletions: 0
+  + [N:file:platform_InferenceStateTrace_sop] is platform/InferenceStateTrace.sop
+    = status: A
+    = additions: 97
+    = deletions: 0
+  + [N:file:platform_PeripheryRepository_sop] is platform/PeripheryRepository.sop
+    = status: M
+    = additions: 6
+    = deletions: 0
+  + [N:file:platform_RepoFirstInternalScan_sop] is platform/RepoFirstInternalScan.sop
+    = status: M
+    = additions: 12
+    = deletions: 3
+  + [N:file:platform_SOPHypergraphRecord_sop] is platform/SOPHypergraphRecord.sop
+    = status: M
+    = additions: 57
+    = deletions: 2
+  + [N:file:platform_SemanticCorrelationGraph_sop] is platform/SemanticCorrelationGraph.sop
+    = status: M
+    = additions: 2
+    = deletions: 0
+  + [N:file:platform_SemanticHashTable_sop] is platform/SemanticHashTable.sop
+    = status: M
+    = additions: 2
+    = deletions: 0
+  + [N:file:platform_TurnBookmark_sop] is platform/TurnBookmark.sop
+    = status: A
+    = additions: 96
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop] is platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+    = status: A
+    = additions: 16
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop] is platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/manifest.sop
+    = status: A
+    = additions: 14
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop] is platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop
+    = status: A
+    = additions: 16
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_manifest_sop] is platform/source_documents/2026-06-23_inference_state_trace_reentry/manifest.sop
+    = status: A
+    = additions: 13
+    = deletions: 0
+  + [N:file:state_CurrentFocalPoint_sop] is state/CurrentFocalPoint.sop
+    = status: M
+    = additions: 7
+    = deletions: 7
+  + [N:signal:attention] is attention
+    = touch_count: 21
+    = heat: 2407
+  + [N:layer:impact] is impact
+    = retention_policy: emphasize
+  + [N:signal:platform] is platform
+    = touch_count: 21
+    = heat: 2355
+  + [N:signal:semantic] is semantic
+    = touch_count: 20
+    = heat: 2340
+  + [N:signal:state] is state
+    = touch_count: 20
+    = heat: 2315
+  + [N:signal:term] is term
+    = touch_count: 14
+    = heat: 2256
+  + [N:signal:bookmark] is bookmark
+    = touch_count: 14
+    = heat: 2251
+  + [N:signal:attentionweightscale] is attentionweightscale
+    = touch_count: 18
+    = heat: 2201
+  + [N:signal:outside] is outside
+    = touch_count: 18
+    = heat: 2187
+  + [N:signal:scale] is scale
+    = touch_count: 15
+    = heat: 2171
+  + [N:signal:graph] is graph
+    = touch_count: 16
+    = heat: 2093
+  + [N:signal:attention_weight_scale_turn_bookmark] is attention_weight_scale_turn_bookmark
+    = touch_count: 10
+    = heat: 2064
+  + [N:signal:narrative] is narrative
+    = touch_count: 20
+    = heat: 2009
+  + [N:signal:bounds] is bounds
+    = touch_count: 13
+    = heat: 1958
+  + [N:signal:weight] is weight
+    = touch_count: 21
+    = heat: 1944
+  + [N:signal:source_documents] is source_documents
+    = touch_count: 12
+    = heat: 1928
+  + [N:signal:turn] is turn
+    = touch_count: 18
+    = heat: 1918
+  + [N:signal:proof] is proof
+    = touch_count: 16
+    = heat: 1915
+  + [N:signal:attention_weight_scale_turn_bookmark_004] is attention_weight_scale_turn_bookmark_004
+    = touch_count: 9
+    = heat: 1866
+  + [N:signal:format] is format
+    = touch_count: 9
+    = heat: 1839
+  + [N:signal:turnbookmark] is turnbookmark
+    = touch_count: 13
+    = heat: 1813
+  + [N:signal:dictated_attention_weight_scale_turn_bookmark_source] is dictated_attention_weight_scale_turn_bookmark_source
+    = touch_count: 9
+    = heat: 1796
+  + [N:signal:focus] is focus
+    = touch_count: 17
+    = heat: 1735
+  + [N:signal:currentfocalpoint] is currentfocalpoint
+    = touch_count: 12
+    = heat: 1732
+  + [N:signal:repofirstinternalscan] is repofirstinternalscan
+    = touch_count: 11
+    = heat: 1653
+
+/ [E:span:2026_06_23_attention_weight_scale_turn_bookmark_scan] -(span; start=N:bookend:HEAD; end=N:bookend:WORKTREE; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_001] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_002] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_003] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_004] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_005] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_006] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_007] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_008] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_009] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_010] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:planning_project_manager_Manager_State_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_011] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_Attention_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_012] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_AttentionWeightScale_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_013] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_ChangelogCorrelationWeightNet_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_014] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_InferenceStateTrace_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_015] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_PeripheryRepository_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_016] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_RepoFirstInternalScan_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_017] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_SOPHypergraphRecord_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_018] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_SemanticCorrelationGraph_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_019] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_SemanticHashTable_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_020] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_TurnBookmark_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_021] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_022] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_023] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_024] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_manifest_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:changed:2026_06_23_attention_weight_scale_turn_bookmark_scan_025] -(changed; event=N:event:2026_06_23_attention_weight_scale_turn_bookmark_scan; file=N:file:state_CurrentFocalPoint_sop)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:attention] -(touches; signal=N:signal:attention; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:state_CurrentFocalPoint_sop; weight=2407)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:attention] -(classifies; signal=N:signal:attention; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:attention] -(bounds; signal=N:signal:attention; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:platform] -(touches; signal=N:signal:platform; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_manifest_sop; weight=2355)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:platform] -(classifies; signal=N:signal:platform; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:platform] -(bounds; signal=N:signal:platform; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:semantic] -(touches; signal=N:signal:semantic; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop; file=N:file:state_CurrentFocalPoint_sop; weight=2340)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:semantic] -(classifies; signal=N:signal:semantic; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:semantic] -(bounds; signal=N:signal:semantic; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:state] -(touches; signal=N:signal:state; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_manifest_sop; file=N:file:state_CurrentFocalPoint_sop; weight=2315)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:state] -(classifies; signal=N:signal:state; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:state] -(bounds; signal=N:signal:state; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:term] -(touches; signal=N:signal:term; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; weight=2256)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:term] -(classifies; signal=N:signal:term; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:term] -(bounds; signal=N:signal:term; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:bookmark] -(touches; signal=N:signal:bookmark; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; weight=2251)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:bookmark] -(classifies; signal=N:signal:bookmark; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:bookmark] -(bounds; signal=N:signal:bookmark; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:attentionweightscale] -(touches; signal=N:signal:attentionweightscale; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:state_CurrentFocalPoint_sop; weight=2201)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:attentionweightscale] -(classifies; signal=N:signal:attentionweightscale; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:attentionweightscale] -(bounds; signal=N:signal:attentionweightscale; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:outside] -(touches; signal=N:signal:outside; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:state_CurrentFocalPoint_sop; weight=2187)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:outside] -(classifies; signal=N:signal:outside; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:outside] -(bounds; signal=N:signal:outside; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:scale] -(touches; signal=N:signal:scale; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:state_CurrentFocalPoint_sop; weight=2171)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:scale] -(classifies; signal=N:signal:scale; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:scale] -(bounds; signal=N:signal:scale; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:graph] -(touches; signal=N:signal:graph; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop; weight=2093)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:graph] -(classifies; signal=N:signal:graph; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:graph] -(bounds; signal=N:signal:graph; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:attention_weight_scale_turn_bookmark] -(touches; signal=N:signal:attention_weight_scale_turn_bookmark; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; weight=2064)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:attention_weight_scale_turn_bookmark] -(classifies; signal=N:signal:attention_weight_scale_turn_bookmark; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:attention_weight_scale_turn_bookmark] -(bounds; signal=N:signal:attention_weight_scale_turn_bookmark; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:narrative] -(touches; signal=N:signal:narrative; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop; file=N:file:state_CurrentFocalPoint_sop; weight=2009)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:narrative] -(classifies; signal=N:signal:narrative; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:narrative] -(bounds; signal=N:signal:narrative; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:bounds] -(touches; signal=N:signal:bounds; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_TurnBookmark_sop; weight=1958)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:bounds] -(classifies; signal=N:signal:bounds; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:bounds] -(bounds; signal=N:signal:bounds; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:weight] -(touches; signal=N:signal:weight; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1944)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:weight] -(classifies; signal=N:signal:weight; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:weight] -(bounds; signal=N:signal:weight; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:source_documents] -(touches; signal=N:signal:source_documents; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_manifest_sop; weight=1928)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:source_documents] -(classifies; signal=N:signal:source_documents; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:source_documents] -(bounds; signal=N:signal:source_documents; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:turn] -(touches; signal=N:signal:turn; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1918)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:turn] -(classifies; signal=N:signal:turn; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:turn] -(bounds; signal=N:signal:turn; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:proof] -(touches; signal=N:signal:proof; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1915)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:proof] -(classifies; signal=N:signal:proof; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:proof] -(bounds; signal=N:signal:proof; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:attention_weight_scale_turn_bookmark_004] -(touches; signal=N:signal:attention_weight_scale_turn_bookmark_004; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1866)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:attention_weight_scale_turn_bookmark_004] -(classifies; signal=N:signal:attention_weight_scale_turn_bookmark_004; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:attention_weight_scale_turn_bookmark_004] -(bounds; signal=N:signal:attention_weight_scale_turn_bookmark_004; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:format] -(touches; signal=N:signal:format; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; weight=1839)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:format] -(classifies; signal=N:signal:format; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:format] -(bounds; signal=N:signal:format; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:turnbookmark] -(touches; signal=N:signal:turnbookmark; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1813)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:turnbookmark] -(classifies; signal=N:signal:turnbookmark; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:turnbookmark] -(bounds; signal=N:signal:turnbookmark; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:dictated_attention_weight_scale_turn_bookmark_source] -(touches; signal=N:signal:dictated_attention_weight_scale_turn_bookmark_source; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_manifest_sop; weight=1796)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:dictated_attention_weight_scale_turn_bookmark_source] -(classifies; signal=N:signal:dictated_attention_weight_scale_turn_bookmark_source; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:dictated_attention_weight_scale_turn_bookmark_source] -(bounds; signal=N:signal:dictated_attention_weight_scale_turn_bookmark_source; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:focus] -(touches; signal=N:signal:focus; file=N:file:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_correlation_graph_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_AttentionWeightScale_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_SemanticCorrelationGraph_sop; file=N:file:platform_SemanticHashTable_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1735)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:focus] -(classifies; signal=N:signal:focus; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:focus] -(bounds; signal=N:signal:focus; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:currentfocalpoint] -(touches; signal=N:signal:currentfocalpoint; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop; file=N:file:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:events_state_traces_2026_06_23_inference_state_trace_reentry_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_InferenceStateTrace_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1732)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:currentfocalpoint] -(classifies; signal=N:signal:currentfocalpoint; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:currentfocalpoint] -(bounds; signal=N:signal:currentfocalpoint; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:touches:repofirstinternalscan] -(touches; signal=N:signal:repofirstinternalscan; file=N:file:events_indexes_2026_06_23_semantic_hash_index_hg_sop; file=N:file:events_indexes_2026_06_23_semantic_hash_table_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_hg_sop; file=N:file:events_scans_2026_06_23_attention_weight_scale_turn_bookmark_scan_graph_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_ChangelogCorrelationWeightNet_sop; file=N:file:platform_PeripheryRepository_sop; file=N:file:platform_RepoFirstInternalScan_sop; file=N:file:platform_TurnBookmark_sop; file=N:file:state_CurrentFocalPoint_sop; weight=1653)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:classifies:repofirstinternalscan] -(classifies; signal=N:signal:repofirstinternalscan; layer=N:layer:impact; retention=emphasize)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+/ [E:bounds:repofirstinternalscan] -(bounds; signal=N:signal:repofirstinternalscan; outside=N:outside:semantic_truth)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark_scan]
+
+- outside: scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

@@ -1,0 +1,12 @@
+Subject: Repo First Internal Scan Source Manifest
+
+Description: Source preservation manifest for the repo-first internal scan contract.
+
+& [RepoFirstInternalScanSourceManifest] is the source document set for repo-first internal scan
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_repo_first_internal_scan\Dictated_Repo_First_Internal_Scan_Source.sop
+  + [canonical_contract] is F:\.sop\platform\RepoFirstInternalScan.sop
+  + [periphery_stream_record] is F:\.sop\events\periphery_stream\2026-06-23_repo_first_internal_scan_002.hg.sop
+  + [prior_commit] is 8826e68 Start self-focus periphery stream
+
+  = must: preserve repo-first correction before treating it as scan authority
+  = must: keep source, canonical contract, and periphery realization separate

@@ -1,0 +1,70 @@
+Subject: SOP Photonic Frame Stream
+
+Description: Contract for encoding a SOP program body as a series of high-density semantic color-point frames.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_program_frame_stream\Dictated_SOP_Program_Frame_Stream_Source.sop
+@ [source] F:\.sop\platform\SOPProgramBookends.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPRGBSemanticEncoding.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\SOPPhotonicMutationFrame.sop
+@ [source] F:\.sop\platform\SOPHolographicLensing.sop
+@ [source] F:\.sop\platform\HolographicAttentionKernelPacket.sop
+
+& [SOPPhotonicFrameStream] is the semantic video-like body of a SOP program
+  + [pattern_role] is high_density_semantic_color_frame_stream
+  + [photonic_frame_stream] is an ordered sequence of photonic_frame values interpreted between SOP program bookends
+  + [photonic_frame] is one compressed moment of semantic state made of color_point values, continuity hints, and reconstruction trace
+  + [mutation_frame] is a photonic_frame read as frame-to-frame mutation over a delineated subject surface
+  + [delineation_setup] is the inside, boundary, outside, source, and trace that establish what a mutation_frame is allowed to describe
+  + [frame_delta] is the difference from prior photonic frame to current photonic frame when the stream expresses mutation
+  + [color_point] is a high-density semantic point with channel, subject, relation, weight, boundary, outside, and optional sample reference
+  + [frame_index] is the ordered position of a photonic_frame in the stream
+  + [frame_density] is the amount of meaning carried per frame by color_point values and continuity rules
+  + [continuity_vector] is the compressed relation from previous frame to current frame
+  + [interaction_vector] is the possible user, model, branch, or state input that can alter the next frame interpretation
+  + [reconstruction_seed] is the minimal set of color points, sample references, and narrative traces needed to recreate an approximate understanding
+  + [sampling_gap] is a span of unrecorded detail bridged by continuity_vector and outside
+  + [frame_outside] is unsampled detail, exact original media, hidden activations, and claims of perfect reconstruction
+
+  ? [use_when: a SOP program body should be stored as dense semantic frames rather than full narrative expansion]
+    = activate [SOPPhotonicFrameStream]
+
+  = must: define frame_index and continuity_vector for every frame after the first
+  = must: give each color_point a channel from SOPColorChannelVocabulary
+  = must: use SOPRGBSemanticEncoding for delineation_setup when RGB signals identify inside, boundary, and outside
+  = must: use SOPPhotonicMutationFrame when image frames or photonic frames express mutation, frame_delta, or state change
+  = must: trace any transform over color_point values through SOPOpticalTransformAlgebra
+  = must: record sampling_gap as outside rather than pretending detail was stored
+  = must: keep reconstruction_seed separate from exact replay
+  = must: preserve interaction_vector when the frame is interactive
+  = should: keep frame_density high by choosing meaning-bearing points rather than verbose restatement
+  - never: treat omitted frames as observed
+  - never: infer exact visuals or events unless sample references and narrative support them
+
+& [PhotonicFrameNotation] is the notation for one compressed semantic frame
+  + [frame_header] is & [photonic_frame:<frame_id>] is <frame_purpose>
+  + [index_line] is = frame_index: <n>
+  + [point_line] is + [color_point:<id>] is <channel subject relation weight boundary outside>
+  + [mutation_line] is = frame_delta: <prior_to_current_change> when the frame expresses mutation
+  + [continuity_line] is = continuity_vector: <prior_frame_relation>
+  + [interaction_line] is = interaction_vector: <allowed_input_or_state_change>
+  + [sample_line] is @ [sample] <path_or_reference>
+  + [outside_line] is - outside: <unsampled_or_unproven_detail>
+
+  = must: include outside_line when a frame is sampled or compressed
+  = must: cite sample_line only when a sample image, media excerpt, or source record exists
+  = must: include mutation_line or cite SOPPhotonicMutationFrame when the frame is a mutation frame
+
+(photonic_frame_stream) :color_point_sequence: /program_bookends and continuity_rule/ |frame_outside|
+  + [photonic_frame] is compressed semantic moment
+  + [mutation_frame] is frame-to-frame mutation over a delineated setup
+  + [color_point] is high-density channelized meaning point
+  = continuity_vector: relation from prior frame
+  = frame_delta: mutation from prior frame when applicable
+  = reconstruction_seed: color points, samples, descriptions, and narrative trace
+  |frame_outside| unsampled detail, exact replay, hidden activation, and unsupported reconstruction
+
+/ [photonic_frame], [color_point], [continuity_vector] -(CarriesFrameMeaning)> [program_state], [reconstruction_seed], [frame_outside]
+* [interaction_vector], [program_state], [control_loop] -(SelectsNextFrame)> [photonic_frame], [program_cursor], [frame_outside]
+/ [delineation_setup], [photonic_frame], [frame_delta] -(CarriesMutation)> [mutation_frame], [mutation_trace], [mutation_outside]

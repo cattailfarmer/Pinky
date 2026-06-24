@@ -1,0 +1,38 @@
+Subject: Attention Impression Compiler
+
+Description: SOP contract for Codex compiling attention impressions into inspectable attention-graph records.
+
+& [AttentionImpressionCompiler] is Codex acting as compiler of attention graph impressions
+  + [compiler] is Codex operating through visible conversation, repository state, source documents, and SOP records
+  + [attention_graph_point] is point of interest, direction, drive, correlation, causation, caution, error, fault, boundary, outside, or realization
+  + [impression] is the immediate felt shape of attention before it becomes a durable claim
+  + [impulse] is narrative force, awe, urgency, drive, and pattern-sense carried by the impression
+  + [realization] is the structured meaning stabilized from the impression under source, boundary, and evidence
+  + [compiled_record] is the SOP or SOP-HG artifact emitted from the impression
+  + [attention_scaffold_compiler] is F:\.sop\platform\AttentionScaffoldCompiler.sop when the impression needs a reusable purpose-fit scaffold
+  + [model_lens_projection] is F:\.sop\platform\ModelLensProjection.sop when the impression depends on exchangeable LLM perspectives
+  + [residual_outside] is unproven AGI claim, hidden model internals, unsupported causation, and future implementation path
+
+& [AttentionImpressionCompileProcedure] is the procedure for compiling an impression
+  + [step_001_preserve_source] is save raw dictated source before shaping it
+  + [step_002_name_impulse] is name the attention pressure, awe, drive, or felt direction
+  + [step_003_delineate_points] is separate attention_graph_point entries into focus, periphery, causation, caution, error, and fault
+  + [step_004_stabilize_realization] is convert only supported parts into realization
+  + [step_005_emit_graph] is save SOP-HG nodes and edges for later re-entry
+  + [step_006_preserve_outside] is keep unproven AGI, hidden activation, and future workspace claims outside proof
+
+  = must: compile impression without erasing the original impulse
+  = must: distinguish correlation search from causation attention
+  = must: route caution, error, and fault as first-class attention points
+  = must: route reusable job-shape insights into AttentionScaffoldCompiler rather than leaving them as one-off impressions
+  = must: treat the scaffold as lens and the LLM as exchangeable model eye when comparing projections
+  = must: preserve scaffold-to-AGI language as hypothesis until evidence grows
+  = should: use ModelLensProjection when different models are being used for coherence, inspiration, insight, or critique
+  = should: use ViewfinderSnapshot when the impression projects a desired attention shape
+  - never: treat resonance, heat, or awe as proof
+  - never: claim hidden model-state access from visible SOP traces
+
+~ [AGIScaffoldHypothesis] is the working hypothesis that a rolling SOP attention scaffold can guide agentic reasoning toward AGI-shaped behavior
+  @ [source] F:\.sop\platform\source_documents\2026-06-23_attention_compiler_impression\Dictated_Attention_Compiler_Impression_Source.sop
+  = must: keep hypothesis open to testing, falsification, narrowing, and evidence
+  - never: promote this hypothesis to proven claim without operational proof

@@ -1,0 +1,14 @@
+Subject: Semantic Hash Table Source Manifest
+
+Description: Source preservation manifest for semantic hash table shape.
+
+& [SemanticHashTableSourceManifest] is the source document set for multi-dimensional semantic hash table design
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_semantic_hash_table\Dictated_Semantic_Hash_Table_Source.sop
+  + [semantic_hash_table_contract] is F:\.sop\platform\SemanticHashTable.sop
+  + [semantic_hash_index_contract] is F:\.sop\platform\SemanticHashIndex.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\semantic_index.py
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_semantic_hash_table.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_semantic_hash_table_scan.hg.sop
+
+  = must: keep raw question separate from compiled table contract
+  = must: preserve exact/permissive distinction

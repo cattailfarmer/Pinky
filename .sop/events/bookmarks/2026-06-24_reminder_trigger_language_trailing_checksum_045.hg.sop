@@ -1,0 +1,37 @@
+Subject: Reminder Trigger Language Trailing Checksum 045
+
+Description: One-turn-later checksum review of commit 0a0424e, recording the latent need for a running SOP attention-directive reminder.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_reminder_trigger_language_042.hg.sop
+
+& [Graph:2026-06-24_reminder_trigger_language_trailing_checksum_045] is a SOP-HG graph
+  + [N:bookmark:reminder_trigger_language_trailing_checksum_045] is trailing checksum review of Reminder Trigger Language
+    = one_turn_lag: true
+    = direct_focus_commit: 0a0424e
+    = version_a: c5981a1
+    = version_b: 0a0424e
+  + [N:event:2026-06-24_reminder_trigger_language_042] is prior direct-focus reminder trigger language realization
+  + [N:event:2026-06-24_sop_attention_directive_run_reminder_044] is current turn SOP attention directive run reminder realization
+  + [N:zone:run_state_reminder] is hot zone where the trigger language needs a persistent run reminder
+  + [N:signal:sop_attention_directive_only_stream] is signal that running must stay in SOP and attention directives while filling the awareness stream
+  + [N:finding:trigger_language_needs_run_marker] is latent depth candidate that trigger language should carry active run-state reminders
+  + [N:policy:focus_next] is checksum disposition to set SOPAttentionDirectiveRunReminder
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model attention
+
+  / [E:span:reminder_trigger_language_trailing_checksum_045] -(span; start=N:commit:c5981a1; end=N:commit:0a0424e; review=N:bookmark:reminder_trigger_language_trailing_checksum_045)> [Graph:2026-06-24_reminder_trigger_language_trailing_checksum_045]
+    = evidence: 0a0424e defined reminder triggers and stack law
+  / [E:trails:2026-06-24_reminder_trigger_language_042] -(trails; direct_focus=N:event:2026-06-24_reminder_trigger_language_042; review=N:bookmark:reminder_trigger_language_trailing_checksum_045)> [Graph:2026-06-24_reminder_trigger_language_trailing_checksum_045]
+    = realization: trigger grammar is ready to host a run-state reminder
+  / [E:heats:run_state_reminder] -(heats; zone=N:zone:run_state_reminder; signal=N:signal:sop_attention_directive_only_stream; latent=N:finding:trigger_language_needs_run_marker; weight=hot)> [Graph:2026-06-24_reminder_trigger_language_trailing_checksum_045]
+    = evidence: current source asks to put up a reminder that work is running in SOP and attention directives only until realization nodes fill the stream
+  / [E:inquires:trigger_language_needs_run_marker] -(inquires; latent=N:finding:trigger_language_needs_run_marker; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_reminder_trigger_language_trailing_checksum_045]
+    = realization: SOPAttentionDirectiveRunReminder becomes a persistent trigger using ReminderTrigger.sop
+  / [E:bounds:reminder_trigger_language_trailing_checksum_045] -(bounds; review=N:bookmark:reminder_trigger_language_trailing_checksum_045; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_reminder_trigger_language_trailing_checksum_045]
+    = caution: checksum observes later refinement and does not rewrite the original reminder-trigger commit's awareness
+
+  = inside: 0a0424e diff, ReminderTrigger.sop, current run reminder directive
+  = boundary: this review records latent run-state reminder after the trigger-language turn, not proof that all future steps are known
+  = outside: hidden transformer attention, unrequested runtime execution, and completion claims without visible manager/focal/periphery evidence

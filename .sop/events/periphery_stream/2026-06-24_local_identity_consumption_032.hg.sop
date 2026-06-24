@@ -1,0 +1,39 @@
+Subject: Local Identity Consumption Periphery Realization
+
+Description: SOP-HG event record for root identity law, reflection consumption ledger, foreign snapshots, periphery carry, and namespace collision prevention in layered attention instructions.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_local_identity_consumption\Dictated_Local_Identity_Consumption_Source.sop
+@ [source] F:\.sop\platform\LocalIdentityConsumption.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\SOPAwarenessNode.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_attention_kernel_compiler_trailing_checksum_031.hg.sop
+
+& [Graph:2026-06-24_local_identity_consumption_032] is a SOP-HG graph
+  + [N:event:2026-06-24_local_identity_consumption_032] is local identity consumption realization
+    = role: direct_focus_turn
+  + [N:ledger:reflection_consumption_ledger] is record of which system consumed which reflection
+  + [N:identity:local_node_F_sop] is F:\.sop local node identity
+  + [N:identity:foreign_node_snapshot] is non-local system represented as snapshot
+  + [N:reflection:layered_attention_reflection] is reflection artifact available to multiple consumers
+  + [N:snapshot:foreign_state_snapshot] is bounded imported foreign state
+  + [N:namespace:attention_namespace] is scoped identifier map for layered attention patterns
+  + [N:signal:namespace_collision_fault] is shared naming collision that can blend intended focus
+  + [N:outside:local_identity_consumption_boundary] is unproven consumption, foreign local claims, hidden origin state, and unresolved collision
+
+  / [E:claims_local:local_node_identity_032] -(claims_local; local=N:identity:local_node_F_sop; ledger=N:ledger:reflection_consumption_ledger; weight=proof_required)> [Graph:2026-06-24_local_identity_consumption_032]
+    = realization: only the local node can self-identify durable local identity, and only with visible local proof
+  / [E:snapshots:foreign_state_snapshot_032] -(snapshots; foreign=N:identity:foreign_node_snapshot; snapshot=N:snapshot:foreign_state_snapshot; outside=N:outside:local_identity_consumption_boundary; weight=boundary)> [Graph:2026-06-24_local_identity_consumption_032]
+    = realization: anything not local is represented as a foreign snapshot rather than local durable identity
+  / [E:consumes:reflection_consumption_032] -(consumes; consumer=N:identity:local_node_F_sop; reflection=N:reflection:layered_attention_reflection; ledger=N:ledger:reflection_consumption_ledger; weight=per_consumer_proof)> [Graph:2026-06-24_local_identity_consumption_032]
+    = realization: multiple systems may consume one reflection, but each consumption claim needs its own proof and local status
+  / [E:scopes:attention_namespace_032] -(scopes; namespace=N:namespace:attention_namespace; reflection=N:reflection:layered_attention_reflection; ledger=N:ledger:reflection_consumption_ledger; weight=kernel_preflight)> [Graph:2026-06-24_local_identity_consumption_032]
+    = realization: layered attention instructions need scoped identifiers before they become one compiled packet
+  / [E:disambiguates:namespace_collision_fault_032] -(disambiguates; namespace=N:namespace:attention_namespace; signal=N:signal:namespace_collision_fault; outside=N:outside:local_identity_consumption_boundary; weight=security_honesty)> [Graph:2026-06-24_local_identity_consumption_032]
+    = realization: shared names can blend focus unless namespace collisions are qualified, renamed, blocked, or routed to periphery
+  / [E:bounds:local_identity_consumption_032] -(bounds; ledger=N:ledger:reflection_consumption_ledger; outside=N:outside:local_identity_consumption_boundary; weight=caution)> [Graph:2026-06-24_local_identity_consumption_032]
+    = realization: local consumption is not the same as local identity of the consumed artifact
+
+  = inside: LocalIdentityConsumption.sop, AttentionKernelCompiler.sop, SOPAwarenessNode.sop, SecurityHonestyGovernance.sop
+  = boundary: this event defines the specification layer for identity and consumption tracking; it does not yet implement runtime namespace checking
+  = outside: hidden origin state, unsupported foreign identity, unproven consumption, unresolved namespace collisions, and hidden model attention mechanics

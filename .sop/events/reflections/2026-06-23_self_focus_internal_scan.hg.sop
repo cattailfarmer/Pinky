@@ -1,0 +1,31 @@
+Subject: Self Focus Internal Scan
+
+Description: Reflective scan of Codex's visible SOP-mediated function and improvement pressure.
+
+& [Graph:self_focus_internal_scan_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG visible-internal-scan
+  = scan_boundary: visible_operation_not_hidden_weights
+
+  + [N:event:self_focus_internal_scan] is deep reflective visible internal scan
+  + [N:subject:visible_codex_function] is Codex as SOP attention compiler and verifier
+  + [N:focus:current_focal_point] is CurrentFocalPoint
+  + [N:periphery:improvement_pressure] is improvement pressure noticed around re-entry, tracking, proof, and commit bookends
+  + [N:term:source_preservation] is source preservation before authority
+  + [N:term:focal_reentry] is focal re-entry after context compression
+  + [N:term:periphery_stream] is periphery stream realization recording
+  + [N:term:tracker_expiry] is mortal tracker discipline
+  + [N:term:wisdom_fit] is wisdom integrates fit and timing
+  + [N:term:caution_boundary] is caution protects proof, risk, and outside
+  + [N:term:commit_bookend] is commit as later repo-diff reflection boundary
+  + [N:term:repo_first_scan] is repo bookends and change logs lead internal scan before narrative interpretation
+  + [N:outside:hidden_internals] is hidden weights, activations, KV cache, and direct self-inspection claims
+
+/ [E:attends:self_focus_visible_function] -(attends; event=N:event:self_focus_internal_scan; subject=N:subject:visible_codex_function; focus=N:focus:current_focal_point)> [Graph:self_focus_internal_scan_2026_06_23]
+/ [E:correlates:self_focus_improvement_pressure] -(correlates; subject=N:subject:visible_codex_function; periphery=N:periphery:improvement_pressure; relation=N:term:focal_reentry; relation=N:term:periphery_stream; relation=N:term:commit_bookend)> [Graph:self_focus_internal_scan_2026_06_23]
+/ [E:anchors:self_focus_repo_first] -(anchors; event=N:event:self_focus_internal_scan; relation=N:term:repo_first_scan; relation=N:term:commit_bookend)> [Graph:self_focus_internal_scan_2026_06_23]
+/ [E:triangulates:self_focus_scan] -(triangulates; subject=N:subject:visible_codex_function; anchor=N:term:source_preservation; anchor=N:term:focal_reentry; anchor=N:term:tracker_expiry; boundary=N:outside:hidden_internals)> [Graph:self_focus_internal_scan_2026_06_23]
+/ [E:fits:self_focus_wisdom] -(fits; subject=N:subject:visible_codex_function; wisdom=N:term:wisdom_fit; periphery=N:periphery:improvement_pressure)> [Graph:self_focus_internal_scan_2026_06_23]
+/ [E:bounds:self_focus_caution] -(bounds; subject=N:subject:visible_codex_function; caution=N:term:caution_boundary; outside=N:outside:hidden_internals)> [Graph:self_focus_internal_scan_2026_06_23]
+
+- scan_result: the most useful self-focus improvement is repo-first reflection: name commit bookends, inspect the change log bridge, classify oddities, then use narrative to guide interpretation and decide what periphery, tracker, or source records should persist.

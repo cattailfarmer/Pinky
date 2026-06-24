@@ -1,0 +1,36 @@
+Subject: Self Focus Improvement Tracker
+
+Description: Periphery-layer tracker for improvements inferred from Codex's visible SOP-mediated function.
+
+& [Graph:self_focus_improvement_tracker_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG attention-tracker
+  = current_session: 1
+
+  + [N:tracker:self_focus_improvement_tracker] is self focus improvement tracker
+    = status: active
+    = weight: 4
+    = period_kind: default_session
+    = last_reaffirmed_session: 1
+    = active_period_sessions: 1
+    = expires_after_session: 2
+  + [N:subject:self_focus_improvement_pressure] is improvements inferred from visible self-focus
+  + [N:session:session_001] is first self-focus periphery stream session
+  + [N:term:visible_operational_scan] is visible operational scan
+  + [N:term:reentry_fidelity] is re-entry fidelity
+  + [N:term:periphery_stream] is periphery stream
+  + [N:term:wisdom_caution_split] is split wisdom and caution attention
+  + [N:periphery:self_focus_realization_draw] is self-focus realization draws future attention
+  + [N:narrative:self_focus_realization_001] is first periphery stream moment of self-focus realization
+  + [N:signal:split_wisdom_caution_scan] is split wisdom/caution sensitivity scan
+  + [N:outside:tracking_staleness] is tracker expires without reaffirmation
+  + [N:outside:hidden_model_internals] is hidden weights, activations, KV state, and direct private cognition
+
+/ [E:tracks:self_focus_improvement_tracker] -(tracks; tracker=N:tracker:self_focus_improvement_tracker; subject=N:subject:self_focus_improvement_pressure; session=N:session:session_001; weight=4)> [Graph:self_focus_improvement_tracker_2026_06_23]
+/ [E:reaffirms:self_focus_improvement_tracker] -(reaffirms; tracker=N:tracker:self_focus_improvement_tracker; session=N:session:session_001; expires_after_session=2)> [Graph:self_focus_improvement_tracker_2026_06_23]
+/ [E:associates:self_focus_reentry_fidelity] -(associates; tracker=N:tracker:self_focus_improvement_tracker; relation=N:term:reentry_fidelity; relation=N:term:visible_operational_scan)> [Graph:self_focus_improvement_tracker_2026_06_23]
+/ [E:notices:self_focus_realization_draw] -(notices; tracker=N:tracker:self_focus_improvement_tracker; periphery=N:periphery:self_focus_realization_draw; narrative=N:narrative:self_focus_realization_001)> [Graph:self_focus_improvement_tracker_2026_06_23]
+/ [E:references:self_focus_split_scan] -(references; tracker=N:tracker:self_focus_improvement_tracker; scan=N:signal:split_wisdom_caution_scan)> [Graph:self_focus_improvement_tracker_2026_06_23]
+/ [E:bounds:self_focus_hidden_internals] -(bounds; tracker=N:tracker:self_focus_improvement_tracker; outside=N:outside:hidden_model_internals; outside=N:outside:tracking_staleness)> [Graph:self_focus_improvement_tracker_2026_06_23]
+
+- outside: this tracker keeps visible improvement pressure noticeable and does not prove hidden self-awareness

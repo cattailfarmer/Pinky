@@ -1,0 +1,33 @@
+Subject: Periphery Continuity Run Realization
+
+Description: SOP-HG event record for shifting from step-balanced walking to continuity-based running when focus is coherent and stable periphery rolls between frames.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_periphery_continuity_run\Dictated_Periphery_Continuity_Run_Source.sop
+@ [source] F:\.sop\platform\PeripheryContinuityRun.sop
+@ [source] F:\.sop\platform\StepBalanceWalk.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\runtime\sop_node\periphery_continuity_run.py
+@ [source] F:\.sop\runtime\demos\periphery_continuity_run.py
+
+& [Graph:2026-06-24_periphery_continuity_run_039] is a SOP-HG graph
+  + [N:event:2026-06-24_periphery_continuity_run_039] is periphery continuity run realization
+    = role: direct_focus_turn
+  + [N:focus:focus_path] is coherent chain of observations flowing forward
+  + [N:periphery:rolling_periphery] is stable markers moving just outside focus
+  + [N:horizon:path_horizon] is visible continuation of the focus path
+  + [N:runtime:periphery_continuity_run] is runtime builder in runtime\sop_node\periphery_continuity_run.py
+  + [N:policy:reduce_checkpoint_pressure] is policy to run when continuity itself is stable
+  + [N:outside:periphery_continuity_boundary] is hidden model state, unobserved future frames, and unsupported proof
+
+  / [E:realizes:periphery_continuity_run_039] -(realizes; event=N:event:2026-06-24_periphery_continuity_run_039; focus=N:focus:focus_path; periphery=N:periphery:rolling_periphery; runtime=N:runtime:periphery_continuity_run; weight=runtime)> [Graph:2026-06-24_periphery_continuity_run_039]
+    = realization: stable rolling periphery can become the marker that permits higher momentum
+  / [E:rolls:rolling_periphery_039] -(rolls; periphery=N:periphery:rolling_periphery; focus=N:focus:focus_path; horizon=N:horizon:path_horizon; weight=continuity)> [Graph:2026-06-24_periphery_continuity_run_039]
+    = realization: the path between the trees replaces stage/checkpoint language while continuity remains visible
+  / [E:reduces:checkpoint_pressure_039] -(reduces; policy=N:policy:reduce_checkpoint_pressure; focus=N:focus:focus_path; periphery=N:periphery:rolling_periphery; weight=run)> [Graph:2026-06-24_periphery_continuity_run_039]
+    = realization: running is authorized by coherent focus plus stable rolling periphery, not by excitement or speed alone
+  / [E:bounds:periphery_continuity_run_039] -(bounds; runtime=N:runtime:periphery_continuity_run; outside=N:outside:periphery_continuity_boundary; weight=caution)> [Graph:2026-06-24_periphery_continuity_run_039]
+    = realization: continuity run records visible path/periphery coherence, not hidden-state introspection
+
+  = inside: PeripheryContinuityRun.sop, periphery_continuity_run.py, demo, tests, StepBalanceWalk.sop, AttentionBalanceCenter.sop
+  = boundary: this event records a visible run gait and continuity measurement, not proof that future frames are already known
+  = outside: hidden activations, exact model attention, unobserved future frames, and speed treated as evidence

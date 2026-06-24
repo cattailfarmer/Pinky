@@ -1,0 +1,139 @@
+Subject: Attention Balance Center
+
+Description: Contract for monitoring attention posture, delineation stability, wobble, and inference interference while traversing the SOP system.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_balance_center\Dictated_Attention_Balance_Center_Source.sop
+@ [source] F:\.sop\platform\CarriedSupportBalance.sop
+@ [source] F:\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\Caution.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_balance_periphery_stability\Dictated_Balance_Periphery_Stability_Source.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+
+& [AttentionBalanceCenter] is the live stability monitor for subject-oriented attention work
+  + [pattern_role] is inference_posture_balance_monitor
+  + [center_of_balance] is the current alignment between focal_core, job_need, evidence, periphery draw, scaffold rails, boundary, outside, and expected output
+  + [balance_metric] is an evidence-bound score or qualitative estimate of frame stability with separate visible factors
+  + [balance_score] is stable, watch, reduced, wobbling, interfered, overloaded, or outside
+  + [balance_posture] is the visible stance of attention while tracking, inspecting, tracing, and walking through the system
+  + [delineation_stability] is how well inside, boundary, outside, and return anchor remain distinct while attention moves
+  + [periphery_stability] is how well the periphery remains coherent, available, and proportionate enough to frame focal attention
+  + [frame_reference_stability] is how well stable periphery, source markers, and representation surfaces keep the perception frame distinct from the presented frame
+  + [immersion_break_cue] is a stable periphery or boundary signal from FrameReferenceIntegrity that requires breaking immersion into a presented frame
+  + [frame_mismatch] is conflict between presented content and stable periphery, source lineage, sensor context, action constraints, or available observation surface
+  + [periphery_shrinkage] is loss of relevant periphery, outside markers, weak signals, or alternate angles below what the job_need requires
+  + [shrinkage_penalty] is balance reduction caused by periphery_shrinkage or over-narrow focus
+  + [observation_surface] is visible repo state, SOP contracts, source records, scans, traces, generated packets, outputs, tests, and conversation directives
+  + [wobble_signal] is a noticed instability in focus, boundary, source fit, proof balance, periphery pressure, or rail selection
+  + [interference_signal] is cross-purpose pressure, prompt bloat, stale context, contradictory rails, over-wide zoom, or carried support distortion affecting inference
+  + [resonance_signal] is self-reflective feedback, luminous correlation, proof inflation, or commit-log heat amplifying attention beyond evidence
+  + [security_honesty_governance] is F:\.sop\platform\SecurityHonestyGovernance.sop when balance signals involve truth status, action admissibility, recursion, or runaway feedback
+  + [boundary_faculty_inspection] is F:\.sop\platform\BoundaryFacultyInspection.sop when balance signals arise at the boundary of identity, representation, permission, or protected work
+  + [balance_alert] is a visible warning emitted when wobble_signal or interference_signal threatens the scaffold result
+  + [correction_move] is narrow, pause, unwind, return_to_focus, route_to_periphery, ask_caution, ask_wisdom, ask_security_honesty, cap_resonance, lower_zoom, switch_scaffold, verify_frame, break_immersion, reanchor_to_world, stop_action, or preserve_outside
+  + [settled_state] is stable, watch, wobbling, interfered, overloaded, or outside
+  + [outside] is hidden activations, private weights, direct internal-state access, motive proof, and unsupported certainty about cognition
+
+  ? [use_when: attention is compiling, zooming, reverse-walking, debugging, model-transfer testing, or concept-imagining]
+    = activate [AttentionBalanceCenter]
+
+  = must: base balance on observation_surface, not hidden activations
+  = must: monitor delineation_stability while attention moves
+  = must: include periphery_stability in balance_metric
+  = must: include frame_reference_stability when work depends on perception, UI, map, image, simulation, narrative, or model projection
+  = must: reduce balance_score when relevant periphery shrinks below the needs of focal_core, job_need, or zoom_level
+  = must: reduce balance_score when frame_mismatch or immersion_break_cue is present
+  = must: distinguish healthy narrowing from periphery_shrinkage
+  = must: emit balance_alert before wobble becomes a false claim, drift, or overloaded packet
+  = must: distinguish wobble_signal from ordinary uncertainty
+  = must: distinguish interference_signal from useful periphery draw
+  = must: route serious wobble through Caution before continuing
+  = must: route resonance_signal through SecurityHonestyGovernance before durable claim, action, identity, or scaffold optimization
+  = must: route boundary_wobble, proof_wobble, support_distortion, or security boundary weakness through BoundaryFacultyInspection when the fault sits at identity_boundary
+  = must: use CarriedSupportBalance when interference comes from imported rails, metaphors, or supports
+  = must: record correction_move when balance_alert changes the work path
+  = should: treat a stable center_of_balance as permission to continue, not proof of truth
+  = should: preserve a small stable periphery frame even during slender focus
+  = should: treat stable periphery objects as cues to frame integrity, not guarantees of truth
+  = should: preserve low-level watch signals for later review when they repeat
+  - never: claim direct access to hidden model attention, weights, or activations
+  - never: ignore wobble because the concept feels exciting
+  - never: let balance monitoring become a vague mood report without cited observation_surface
+
+& [BalanceSignalSet] is the vocabulary for visible balance signals
+  + [focus_wobble] is the focal subject starts changing without explicit selection
+  + [boundary_wobble] is inside, boundary, and outside begin to blur
+  + [proof_wobble] is confidence rises faster than evidence, tests, or source support
+  + [periphery_flood] is too many peripheral associations enter focus without approach selection
+  + [periphery_collapse] is relevant periphery shrinks so far that focus loses frame, alternatives, outside markers, or useful contrast
+  + [frame_thinning] is the periphery becomes too sparse to support comparison, caution, or angle selection
+  + [frame_reference_wobble] is the perception frame, presented frame, and representation surface begin to blur
+  + [immersion_capture] is the presented frame feels actionable while stable periphery or source markers show it is only represented
+  + [rail_interference] is two SOP rails pull toward incompatible operations without a named junction
+  + [support_distortion] is carried support begins to masquerade as native subject evidence
+  + [boundary_misdirection] is a non-orthogonal boundary term tilts representation away from truthful identity
+  + [boundary_weakness] is a porous or weakened boundary term threatens integrity, permission, privacy, protected work, or safe action
+  + [model_lens_interference] is model-specific phrasing changes the scaffold shape rather than only viewing through it
+  + [resonance_loop] is self-reflective feedback increases heat without new evidence, return anchor, or recursion cap
+  + [proof_inflation] is confidence rises from repetition, fluency, or feedback heat instead of source, test, or support
+  + [runtime_gap] is a concept depends on a command or packet that does not yet exist
+
+  = must: classify balance_alert by one or more visible signals
+  = must: preserve runtime_gap as implementation need rather than conceptual failure
+
+& [BalanceMetric] is the metric contract for center-of-balance assessment
+  + [positive_factor_delineation] is clear inside, boundary, outside, and return anchor
+  + [positive_factor_periphery] is stable periphery frame with relevant outside markers and alternate angles preserved
+  + [positive_factor_frame_reference] is perception_frame, presented_frame, representation_surface, stable periphery, and first-hand observation status are separately visible
+  + [positive_factor_proof] is confidence aligned to source, evidence, tests, and caution
+  + [positive_factor_rail] is scaffold rails selected without unresolved conflict
+  + [penalty_wobble] is any focus, boundary, proof, support, or model-lens instability
+  + [penalty_interference] is cross-purpose pressure, stale context, prompt bloat, or rail conflict
+  + [penalty_shrinkage] is periphery_collapse or frame_thinning caused by over-narrow focus
+  + [penalty_flood] is periphery_flood caused by over-wide focus
+  + [penalty_frame_mismatch] is loss of balance caused by treating a presented frame as first-hand observation or actionable reality
+
+  = must: expose positive factors and penalties separately before assigning balance_score
+  = must: subtract penalty_shrinkage when useful periphery is lost
+  = must: subtract penalty_flood when periphery overwhelms focus
+  = must: subtract penalty_frame_mismatch before action, durable realization, or model-projection evidence use
+  = must: treat stable periphery as evidence of frame balance, not as proof of truth
+  = should: prefer a proportionate periphery frame over maximal periphery or minimal periphery
+
+& [BalanceCheckSequence] is the operational sequence for checking attention balance
+  + [step_001_anchor] is name focal_core, job_need, scaffold_profile, and expected output
+  + [step_002_delineate] is check inside, boundary, outside, and return anchor
+  + [step_003_measure_periphery] is inspect periphery_stability, periphery_shrinkage, periphery_flood, and frame_thinning
+  + [step_004_frame_reference] is inspect perception_frame, presented_frame, representation_surface, stable periphery objects, and possible frame_mismatch
+  + [step_005_scan_wobble] is inspect focus, proof, periphery, frame reference, rails, support, model lens, and runtime gaps
+  + [step_005b_resonance] is inspect resonance_signal and route to SecurityHonestyGovernance when self-reflective feedback amplifies heat
+  + [step_006_score] is assign balance_score from visible factors and penalties
+  + [step_007_alert] is emit balance_alert when a signal threatens inference
+  + [step_008_correct] is choose correction_move and update focus, periphery, scaffold, trace, or outside
+  + [step_009_settle] is record settled_state and whether work may continue
+
+  = must: run before durable scaffold optimization
+  = must: run during wide, deep, or explosive_controlled zoom
+  = must: run when focus is narrowed aggressively enough to risk periphery_collapse
+  = must: run during reverse_walk when later insight may be mistaken for original awareness
+
+& [BalanceAlertRecord] is the SOP-HG shape for balance warnings
+  + [balance_node] is N:balance:<balance_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [scaffold_node] is N:scaffold:<profile_key>
+  + [signal_node] is N:signal:<wobble_or_interference_key>
+  + [caution_node] is N:caution:<caution_id>
+  + [correction_node] is N:policy:<correction_move_key>
+  + [outside_node] is N:outside:attention_balance_boundary
+  + [alert_edge] is E:alerts:<balance_id>
+  + [stabilize_edge] is E:stabilizes:<correction_move_key>
+  + [boundary_edge] is E:bounds:<balance_id>
+
+  = must: cite observation_surface
+  = must: expose balance_score, periphery_stability, frame_reference_stability, shrinkage_penalty, frame_mismatch, settled_state, and correction_move
+
+/ [center_of_balance] -(BalanceCheck)> [wobble_signal], [interference_signal], [outside]
+* [delineation_stability], [periphery_stability], [frame_reference_stability], [shrinkage_penalty], [frame_mismatch], [wobble_signal], [interference_signal], [correction_move], [outside] -(BalanceAlert)> [balance_score], [settled_state]

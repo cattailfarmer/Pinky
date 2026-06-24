@@ -1,0 +1,26 @@
+Subject: Periphery Attention Layer
+
+Description: Available surrounding attention field around focus.
+
+& [PeripheryAttentionLayer] is the surrounding field of relevant but non-focal nodes
+  + [layer_key] is periphery
+  + [node_role] is N:periphery:<subject_key>
+  + [edge_role] is E:orbits:<frame_id>
+  + [scope] is related nodes with enough relevance to remain available
+  + [repo_layer] is F:\.sop\platform\PeripheryRepository.sop when peripheral attention persists across turns
+  + [tracker_layer] is F:\.sop\platform\AttentionTracker.sop when a peripheral subject must remain noticeable across frames
+  + [focal_point_layer] is F:\.sop\platform\FocalPoint.sop when periphery creates enough draw to chase focus
+  + [traversal_policy] is F:\.sop\platform\AttentionTraversalPolicy.sop when periphery is folded into focal probing
+  + [support_balance_layer] is F:\.sop\platform\CarriedSupportBalance.sop when support fit needs audit
+  + [entry_condition] is shared subject layer, recent narrative weight, or correlation with focus
+  + [exit_condition] is fades, is promoted by draw, or is archived into subject layer
+
+  = must: stay available without crowding focus
+  = must: preserve why the node is peripheral
+  = must: keep tracking as peripheral attention until liminal draw selects a focal point
+  = must: let traversal_policy fold and unwind periphery realizations before promotion
+  = must: feed tracker periphery only when the subject was explicitly marked for later attention
+  = must: let focus chase periphery when contextual draw demands right_hemisphere_focus
+  = must: route slow cross-turn background realizations to PeripheryRepository
+  = must: report when a carried support fails to appear in periphery so it remains imported rather than native
+  - never: promote periphery without liminal draw or explicit focus

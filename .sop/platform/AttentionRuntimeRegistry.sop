@@ -1,0 +1,108 @@
+Subject: Attention Runtime Registry
+
+Description: Semantic runtime registry for tracking active attention like inspectable stack frames over focus, periphery, Wisdom, Caution, and integration.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_runtime_registry\Dictated_Attention_Runtime_Registry_Source.sop
+@ [source] F:\.sop\platform\FocusResolutionRefinement.sop
+@ [source] F:\.sop\platform\FocalPoint.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\Wisdom.sop
+@ [source] F:\.sop\platform\Caution.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\RepoFirstInternalScan.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+
+& [AttentionRuntimeRegistry] is the visible semantic stack-frame registry for active attention
+  + [pattern_role] is semantic_attention_runtime_registry
+  + [attention_runtime_registry] is the ordered registry of active, suspended, returned, integrated, and closed attention frames
+  + [attention_stack_frame] is one visible semantic frame of attention with focus, purpose, questions, boundary, periphery, operation, gates, and return state
+  + [frame_id] is the stable identifier for an attention_stack_frame
+  + [parent_frame] is the attention_stack_frame that called, opened, zoomed, or delegated into this frame
+  + [child_frame_set] is frames opened from this frame for zoom, traversal, caution, wisdom, source lookup, or integration
+  + [return_anchor] is CurrentFocalPoint, parent_frame, source record, manager task, or event that receives the frame's result
+  + [semantic_register_set] is the visible register set for focus_subject, active_question_stack, inside, boundary, outside, periphery_gradient, operation, evidence, Wisdom, Caution, balance, and integration receipt
+  + [frame_operation] is enter_focus, push_zoom, call_traversal, call_wisdom, call_caution, integrate, track, return_to_parent, close_frame, or preserve_outside
+  + [frame_state] is active, suspended, returned, integrated, closed, blocked, or outside
+  + [frame_trace] is the source, event, diff, tracker, or contract path showing why the frame exists and what changed
+  + [frame_outside] is hidden cognition, untracked attention, expired frame, unsupported inference, and any model-internal state not visible in SOP
+
+  ? [use_when: active attention needs a visible stack-frame-like registry for focus, zoom, traversal, Wisdom, Caution, integration, or return]
+    = activate [AttentionRuntimeRegistry]
+
+  = must: represent attention frames semantically rather than as hard-coded language stack frames
+  = must: treat the registry as visible state approximation, not hidden LLM runtime access
+  = must: create or update an attention_stack_frame when focus materially changes, zoom opens, traversal calls another subject, Wisdom or Caution is invoked, or integration is attempted
+  = must: preserve parent_frame and return_anchor for every child_frame
+  = must: keep semantic_register_set compact enough to inspect
+  = must: close or return frames instead of leaving stale active state
+  = must: route unclosed or stale frames to frame_outside or tracker records
+  = must: record Wisdom and Caution calls as separate frame operations before integration
+  = must: attach integration_receipt when a supported_core becomes durable understanding
+  = must: preserve caution_debt and outside after frame close
+  = should: keep one primary active frame unless parallel focus is explicitly requested
+  = should: use frame_trace to make repo-first reflection able to reconstruct the frame later
+  - never: claim the registry is the model's actual hidden runtime stack
+  - never: let child_frame_set grow without return anchors
+  - never: integrate a frame result without fold, unwind, Wisdom, Caution, and receipt when consequence is durable
+
+& [SemanticRegisterSet] is the attention-specific register set for one frame
+  + [focus_register] is focus_subject, purpose, focus_mode, focal_terms, and resolution_target
+  + [question_register] is active_question_stack and current_question
+  + [delineation_register] is inside, boundary, outside, contrast_pair, and unresolved boundary terms
+  + [periphery_register] is periphery_gradient, draw_sources, tracker links, shadow_scan, and horizon_scan
+  + [operation_register] is frame_operation, traversal_operation, zoom_level, approach_set, and current step
+  + [evidence_register] is source_legs, repo diff, event, tracker, test, or source document
+  + [wisdom_register] is wisdom_disposition, wisdom_yield, fit dimension, and humility_boundary
+  + [caution_register] is caution_disposition, caution_debt, truth_test, failure_path, and outside_preserved
+  + [balance_register] is focus_quality, balance_score, wobble_signal, correction_move, and settled_state
+  + [integration_register] is supported_core, integration_receipt, understanding_delta, and return value
+
+  = must: keep each register visible enough for debugging and compact enough for reentry
+  = must: leave unused registers empty or outside rather than inventing contents
+  = should: snapshot only changed registers when frame size matters
+
+& [AttentionFrameLifecycle] is the push-return lifecycle for semantic attention frames
+  + [enter_focus] is create a root or renewed frame from CurrentFocalPoint and user direction
+  + [push_zoom] is create a child frame when periphery enters temporary focus through FocusZoom
+  + [call_traversal] is create a child frame when attention reaches into another subject, source, or relation path
+  + [call_wisdom] is create or update a Wisdom frame for integration fit
+  + [call_caution] is create or update a Caution frame for boundary and proof protection
+  + [integrate] is write integration_receipt and understanding_delta when Wisdom and Caution permit
+  + [track] is route unresolved but important signal to AttentionTracker or periphery
+  + [return_to_parent] is return supported_core, caution_debt, wisdom_yield, and outside to parent_frame
+  + [close_frame] is mark a frame closed with settled_state and return record
+  + [preserve_outside] is bind unresolved, unsupported, hidden, or out-of-scope material to frame_outside
+
+  = must: preserve return_to_parent or preserve_outside before close_frame
+  = must: prevent multiple active root frames unless explicitly declared
+  = must: record blocked frames with reason and next possible truth_test
+
+& [AttentionRuntimeRegistryRecord] is the SOP-HG shape for registry events
+  + [registry_node] is N:registry:<registry_id>
+  + [frame_node] is N:attention_frame:<frame_id>
+  + [parent_node] is N:attention_frame:<parent_frame_id>
+  + [focus_node] is N:focus:<focus_id>
+  + [question_node] is N:question:<question_id>
+  + [wisdom_node] is N:wisdom:<wisdom_id>
+  + [caution_node] is N:caution:<caution_id>
+  + [receipt_node] is N:integration_receipt:<receipt_id>
+  + [outside_node] is N:outside:attention_runtime_registry
+  + [push_edge] is E:pushes:<frame_id>
+  + [call_edge] is E:calls:<child_frame_id>
+  + [return_edge] is E:returns:<frame_id>
+  + [close_edge] is E:closes:<frame_id>
+  + [outside_edge] is E:preserves_outside:<frame_id>
+
+  = must: show parent, child, return, and close relations when material
+  = must: cite frame_trace and frame_outside
+
+(attention_runtime_registry) :attention_stack_frame: /semantic_register_set and return_anchor/ |frame_outside|
+  + [attention_stack_frame] is visible semantic frame of active attention
+  + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
+  + [frame_operation] is enter, push, call, integrate, track, return, close, or preserve outside
+  = lifecycle: enter_focus, push_zoom, call_traversal, call_wisdom, call_caution, integrate, track, return_to_parent, close_frame
+  |frame_outside| hidden model state, untracked attention, stale frames, unsupported inference
+
+/ [CurrentFocalPoint], [attention_stack_frame], [semantic_register_set] -(RegistersAttention)> [frame_state], [return_anchor], [frame_outside]
+* [child_frame_set], [Wisdom], [Caution], [integration_receipt] -(ReturnsFrameResult)> [supported_core], [caution_debt], [wisdom_yield], [outside]

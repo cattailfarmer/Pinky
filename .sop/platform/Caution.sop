@@ -1,0 +1,69 @@
+Subject: Caution
+
+Description: Independent attention pattern for boundary, proof, uncertainty, fault, risk, and outside preservation.
+
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+
+& [Caution] is an attention pattern for deciding what must be bounded, tested, narrowed, delayed, rejected, or preserved outside
+  + [pattern_role] is boundary_attention
+  + [attention_question] is what could be wrong, unsupported, unsafe, stale, overclaimed, out of scope, or prematurely integrated
+  + [candidate] is a concept, relation, policy, action, focal shift, tracker signal, or implementation move seeking permission
+  + [uncertainty_boundary] is what remains undefined or outside the delineated observation
+  + [contradiction_boundary] is what conflicts with source, tests, user direction, or prior durable state
+  + [scope_boundary] is what belongs outside the current focal point or project layer
+  + [causal_boundary] is what appears related but has not been shown to cause or explain
+  + [frame_reference_boundary] is what may be a presented frame, representation surface, simulation, UI, map, image, narrative, or model projection rather than first-hand observation
+  + [authority_boundary] is what must not become implementation authority before source preservation and SJS routing
+  + [staleness_boundary] is what may be expired, unrenewed, or context-washed
+  + [failure_path] is how the candidate could mislead, bloat, distort, erase outside, or cause operational fault
+  + [balance_alert] is F:\.sop\platform\AttentionBalanceCenter.sop warning that wobble or interference may affect inference
+  + [frame_mismatch] is F:\.sop\platform\FrameReferenceIntegrity.sop warning that immersion in presented content may hide the actual perception frame
+  + [boundary_faculty_inspection] is F:\.sop\platform\BoundaryFacultyInspection.sop when caution must inspect identity boundary, boundary periphery, misdirection, or weakened safety terms
+  + [truth_test] is the smallest test or inspection likely to change the disposition
+  + [disposition] is preserve_outside, test, narrow, defer, reject, return_to_periphery, ask_wisdom, verify_frame, break_immersion, stop_action, or permit_with_boundary
+
+  ? [use_when: an attention candidate may overclaim, cross a boundary, hide uncertainty, or become false authority]
+    = activate [Caution]
+
+  = must: distinguish caution from fear, refusal, or thought-stopping
+  = must: bind unsupported causation, hidden cognition, stale tracking, and boundary-smuggling to outside
+  = must: bind unverified presented_frame content to frame_reference_boundary before it becomes actionable_world_state
+  = must: use boundary_faculty_inspection when a boundary term may distort identity, fair representation, permission, or protected work
+  = must: require truth_test when support is incomplete and the candidate is consequential
+  = must: prefer stop_action, preserve_outside, or verify_frame when frame_mismatch carries action_consequence_risk
+  = must: treat balance_alert as a reason to narrow, test, unwind, or preserve_outside before continuing
+  = must: prefer preserve_outside, test, or narrow when a signal is interesting but not ready
+  = must: hand off to Wisdom when the candidate is bounded but needs an integration or timing decision
+  = should: reject only when the candidate misleads, violates boundary, or fails necessary support
+  - never: use caution as a general brake against exploration
+  - never: smother a well-supported wisdom signal without naming the boundary it violates
+  - never: turn uncertainty into proof against a candidate
+
+& [CautionPass] is the operational movement of Caution
+  + [input] is candidate, uncertainty_boundary, contradiction_boundary, scope_boundary, causal_boundary, frame_reference_boundary, authority_boundary, staleness_boundary, failure_path, and truth_test
+  + [boundary_pass] is explicit identification of the boundary being protected
+  + [fault_pass] is search for failure path, false authority, stale support, and unsupported causation
+  + [permission_pass] is choosing whether to preserve_outside, test, narrow, defer, reject, return_to_periphery, ask_wisdom, verify_frame, break_immersion, stop_action, or permit_with_boundary
+  + [output] is boundary_disposition with outside preserved
+
+  = must: name the boundary that controls the decision
+  = must: preserve the smallest useful truth_test
+  = should: use Wisdom when the bounded candidate may still be valuable
+
+& [CautionRecord] is the SOP-HG shape for caution attention
+  + [caution_node] is N:caution:<caution_id>
+  + [candidate_node] is N:claim:<candidate_key> or N:subject:<candidate_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [source_node] is N:source:<source_key>
+  + [outside_node] is N:outside:caution_boundary
+  + [boundary_edge] is E:bounds:<candidate_key>
+  + [test_edge] is E:tests:<candidate_key>
+  + [defer_edge] is E:defers:<candidate_key>
+  + [reject_edge] is E:rejects:<candidate_key>
+  + [return_edge] is E:returns:<candidate_key>
+
+  = must: show which boundary was protected
+  = must: expose truth_test and residual outside
+
+* [candidate], [uncertainty_boundary], [failure_path], [truth_test], [outside] -(CautionPass)> [disposition], [boundary_condition], [outside]

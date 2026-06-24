@@ -1,0 +1,18 @@
+Subject: Liminal Draw Layer
+
+Description: Between-focus layer where periphery relates to focus by correlation or causation.
+
+& [LiminalDrawLayer] is the between-focus layer that explains attention movement
+  + [layer_key] is liminal_draw
+  + [node_role] is N:liminal:<relation_key>
+  + [edge_role] is E:draws_attention:<relation_key>
+  + [traversal_policy] is F:\.sop\platform\AttentionTraversalPolicy.sop when periphery must fold and unwind before focus
+  + [correlation_draw] is periphery becomes relevant through shared features or repeated touch
+  + [causal_draw] is periphery becomes relevant because it changes, blocks, enables, or explains focus
+  + [stage_draw] is relation appears between operation steps, stages, or internal reflection moments
+
+  = must: name whether draw is correlation, causation, or both
+  = must: use traversal_policy when draw requires cross-reference, fold, unwind, or triangulated probe
+  = must: preserve uncertainty when causation is only hypothesized
+  = should: promote pressure and impact draw candidates into focus review
+  - never: call correlation causation without support

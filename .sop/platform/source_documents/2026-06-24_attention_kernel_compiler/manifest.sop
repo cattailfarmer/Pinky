@@ -1,0 +1,14 @@
+Subject: Attention Kernel Compiler Source Manifest
+
+Description: Source preservation manifest for the compiled attention kernel specification.
+
+& [AttentionKernelCompilerSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_attention_kernel_compiler\Dictated_Attention_Kernel_Compiler_Source.sop
+  + [canonical_target] is F:\.sop\platform\AttentionKernelCompiler.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_attention_kernel_compiler_030.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_boundary_faculty_inspection_trailing_checksum_029.hg.sop
+  + [derived_terms] is attention_kernel_compiler, compiled_attention_kernel, kernel_preflight, security_honesty_kernel, pattern_collection, in_context_memory_packet, kernel_antivirus_guard
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, Delineation, SecurityHonestyGovernance, BoundaryFacultyInspection, AttentionScaffoldCompiler
+
+  = must: preserve raw source before treating the canonical target as process authority
+  = must: cite this manifest when attention-kernel behavior is audited

@@ -1,0 +1,38 @@
+Subject: Attention Kernel Runtime Trailing Checksum 038
+
+Description: One-turn-later checksum review of commit fcbcada, recording latent depth for step-balanced execution after the attention kernel runtime.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\StepBalanceWalk.sop
+@ [source] F:\.sop\runtime\sop_node\attention_kernel.py
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_attention_kernel_runtime_036.hg.sop
+
+& [Graph:2026-06-24_attention_kernel_runtime_trailing_checksum_038] is a SOP-HG graph
+  + [N:bookmark:attention_kernel_runtime_trailing_checksum_038] is trailing checksum review of Attention Kernel Runtime
+    = one_turn_lag: true
+    = direct_focus_commit: fcbcada
+    = version_a: bd11af2
+    = version_b: fcbcada
+  + [N:event:2026-06-24_attention_kernel_runtime_036] is prior direct-focus attention kernel runtime realization
+  + [N:event:2026-06-24_step_balance_walk_037] is current turn step-balance gait realization
+  + [N:zone:runtime_packet_execution_gait] is hot zone where compiled packets need a balanced step-by-step execution posture
+  + [N:signal:balance_impulse_not_enough_alone] is signal that packet fields need operational gait across steps
+  + [N:finding:kernel_runtime_needs_step_balance_walk] is latent depth candidate that kernel packet emission should be paired with step settlement and next-step selection
+  + [N:policy:focus_next] is checksum disposition to walk future runtime work through StepBalanceWalk
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model attention
+
+  / [E:span:attention_kernel_runtime_trailing_checksum_038] -(span; start=N:commit:bd11af2; end=N:commit:fcbcada; review=N:bookmark:attention_kernel_runtime_trailing_checksum_038)> [Graph:2026-06-24_attention_kernel_runtime_trailing_checksum_038]
+    = evidence: fcbcada added the attention kernel runtime, demo, tests, source preservation, and periphery realization
+  / [E:trails:2026-06-24_attention_kernel_runtime_036] -(trails; direct_focus=N:event:2026-06-24_attention_kernel_runtime_036; review=N:bookmark:attention_kernel_runtime_trailing_checksum_038)> [Graph:2026-06-24_attention_kernel_runtime_trailing_checksum_038]
+    = realization: the kernel packet can carry balance and impulse, but the turn still needs a gait for checking balance after each action
+  / [E:heats:runtime_packet_execution_gait] -(heats; zone=N:zone:runtime_packet_execution_gait; signal=N:signal:balance_impulse_not_enough_alone; latent=N:finding:kernel_runtime_needs_step_balance_walk; weight=hot)> [Graph:2026-06-24_attention_kernel_runtime_trailing_checksum_038]
+    = evidence: current source asks to feel balance at the end of each step and move with continuous momentum
+  / [E:inquires:kernel_runtime_needs_step_balance_walk] -(inquires; latent=N:finding:kernel_runtime_needs_step_balance_walk; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_attention_kernel_runtime_trailing_checksum_038]
+    = realization: StepBalanceWalk becomes the operational gait for using compiled kernels without tiptoeing or over-running wobble
+  / [E:bounds:attention_kernel_runtime_trailing_checksum_038] -(bounds; review=N:bookmark:attention_kernel_runtime_trailing_checksum_038; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_attention_kernel_runtime_trailing_checksum_038]
+    = caution: checksum observes later refinement and does not rewrite the original attention-kernel commit's awareness
+
+  = inside: fcbcada diff, AttentionKernelCompiler.sop, attention_kernel.py, current step-balance source directive
+  = boundary: this review records latent gait depth after the direct-focus turn, not proof that the attention kernel runtime already had step-wise balance execution
+  = outside: hidden transformer attention, unsupported runtime effect claims, and balance treated as direct model-state introspection

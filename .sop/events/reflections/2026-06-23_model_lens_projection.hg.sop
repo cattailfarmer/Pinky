@@ -1,0 +1,22 @@
+Subject: Model Lens Projection 2026-06-23
+
+Description: Compiled SOP-HG reflection of the scaffold as a lens and exchangeable LLMs as different eyes on concept-space projection.
+
+& [Graph:model_lens_projection_2026_06_23] is a SOP-HG graph
+  + [N:narrative:model_lens_projection] is the scaffold is a lens into the LLM and different models provide different eyes on that lens
+  + [N:lens:scaffold] is the SOP attention scaffold as stable lens
+  + [N:model:exchangeable_llm] is an exchangeable LLM selected to project through the scaffold
+  + [N:projection:hologram_concept_space] is the model's visible concept-space projection through the lens
+  + [N:test:coherence] is test for identity, boundary, purpose, outside, and relation preservation
+  + [N:test:inspiration] is test for new inspirations, insights, hypotheses, and reframes
+  + [N:test:critique] is test for critique, contradiction, caution, error, and fault
+  + [N:comparison:different_eye] is cross-model comparison as different eyes through the same lens
+  + [N:outside:hidden_model_internals] is hidden weights, activations, and non-visible model state remain outside evidence
+  + [N:outside:single_model_truth] is one model projection is not final truth
+
+/ [E:projects:model_through_lens] -(projects; lens=N:lens:scaffold; model=N:model:exchangeable_llm; projection=N:projection:hologram_concept_space; weight=5)> [Graph:model_lens_projection_2026_06_23]
+/ [E:tests:projection_quality] -(tests; projection=N:projection:hologram_concept_space; coherence=N:test:coherence; inspiration=N:test:inspiration; critique=N:test:critique; weight=5)> [Graph:model_lens_projection_2026_06_23]
+/ [E:compares:different_model_eyes] -(compares; model=N:model:exchangeable_llm; comparison=N:comparison:different_eye; lens=N:lens:scaffold; weight=4)> [Graph:model_lens_projection_2026_06_23]
+/ [E:bounds:model_projection] -(bounds; projection=N:projection:hologram_concept_space; outside=N:outside:hidden_model_internals; outside=N:outside:single_model_truth; weight=5)> [Graph:model_lens_projection_2026_06_23]
+
+  - outside: this reflection preserves the lens/projection model; it does not prove that any single LLM projection is true or that hidden model state has been accessed

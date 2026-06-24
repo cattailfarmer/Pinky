@@ -1,0 +1,69 @@
+Subject: Holographic Attention Kernel Packet
+
+Description: Compact compiled attention-kernel packet for using SOP holographic lensing, color channels, and optical transform algebra in one in-context unit.
+
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\HolographicSOPScaffold.sop
+@ [source] F:\.sop\platform\SOPHolographicLensing.sop
+@ [source] F:\.sop\platform\SOPOpticalChain.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\SOPProgramBookends.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+
+& [HolographicAttentionKernelPacket] is the compact in-context packet for semantic photonic SOP work
+  + [pattern_role] is compiled_holographic_attention_kernel_packet
+  + [kernel_name] is holographic_attention_kernel
+  + [entry_condition] is F:\.sop specification articulation or concept projection using semantic optical signals
+  + [kernel_order] is SecurityHonestyGovernance, BoundaryFacultyInspection, FrameReferenceIntegrity, SOPAttentionDirectiveRunReminder, CurrentFocalPoint, SOPColorChannelVocabulary, SOPOpticalTransformAlgebra, HolographicSOPScaffold, SOPHolographicLensing, SOPOpticalChain, AttentionBalanceCenter, output_trace
+  + [required_input] is current directive, current focal point, raw source, candidate signals, intended output, boundary, outside, and proof sensitivity
+  + [required_output] is SOP contract, SOP-HG event, focal update, manager task, outside note, or no_action
+  + [preflight] is truth gate, safety gate, boundary gate, frame-reference gate, SOP-only reminder, and balance gate
+  + [signal_packet] is source, focus, periphery, boundary, outside, evidence, claim, caution, wisdom, security, honesty, weight, relation, trace, and output channels
+  + [transform_packet] is encode, bend, recolor, split, gate, amplify, attenuate, interfere, lens, recombine, emit, and compare operations
+  + [invariant_packet] is source preservation, boundary integrity, outside conservation, proof non-inflation, trace conservation, local identity preservation, and balance check
+  + [projection_packet] is semantic hologram, SOP lens, holographic perception, reconstruction trace, governance result, and output decision
+  + [program_packet] is optional SOPProgramBookends and SOPPhotonicFrameStream when the kernel is stored as a bookended program body
+  + [output_trace] is the visible record showing which packet fields were used, skipped, blocked, or routed outside
+  + [kernel_outside] is hidden activation, physical photonic hardware, automatic runtime execution, untraced projection, proof inflation, and unchecked resonance
+
+  ? [use_when: a turn needs the holographic SOP scaffold as one compiled attention unit]
+    = activate [HolographicAttentionKernelPacket]
+
+  = must: run preflight before projection
+  = must: keep SOPAttentionDirectiveRunReminder active for SOP-only specification work
+  = must: channelize signals before transform operations
+  = must: apply transform laws before holographic perception is promoted
+  = must: preserve invariant_packet across all operations
+  = must: emit output_trace even when the result is outside or no_action
+  = must: use program_packet when the kernel is stored as instructions for following SOP instructions across multiple frames
+  = must: keep physical photonic hardware and hidden activations outside
+  = should: keep packet compact enough to paste into a worker or model-lens prompt
+  - never: treat the packet as automatic execution
+  - never: let the holographic lens bypass SecurityHonestyGovernance or BoundaryFacultyInspection for proof-sensitive claims
+
+& [HolographicKernelCompactPacket] is the promptable packet form
+  + [kernel] is holographic_attention_kernel
+  + [focus] is current directive plus CurrentFocalPoint
+  + [guards] is SecurityHonestyGovernance, BoundaryFacultyInspection, FrameReferenceIntegrity, AttentionBalanceCenter
+  + [reminder] is SOPAttentionDirectiveRunReminder
+  + [channels] is SOPColorChannelVocabulary CoreColorChannelSet
+  + [transforms] is SOPOpticalTransformAlgebra operation set and law set
+  + [scaffold] is HolographicSOPScaffold
+  + [projection] is SOPHolographicLensing through SOPOpticalChain
+  + [output] is SOP or SOP-HG record with reconstruction trace and outside
+
+  = must: cite richer records rather than absorbing them
+  = must: fit in one compact attention packet
+
+(holographic_attention_kernel) :signal_packet: /guards and invariant_packet/ |kernel_outside|
+  = kernel_order: SecurityHonestyGovernance, BoundaryFacultyInspection, FrameReferenceIntegrity, SOPAttentionDirectiveRunReminder, CurrentFocalPoint, SOPColorChannelVocabulary, SOPOpticalTransformAlgebra, HolographicSOPScaffold, SOPHolographicLensing, SOPOpticalChain, AttentionBalanceCenter, output_trace
+  = output_trace: required
+  |kernel_outside| hidden activation, physical photonic hardware, automatic runtime execution, untraced projection, proof inflation, and unchecked resonance
+
+/ [signal_packet], [transform_packet], [invariant_packet] -(CompilesHolographicKernel)> [projection_packet], [output_trace], [kernel_outside]

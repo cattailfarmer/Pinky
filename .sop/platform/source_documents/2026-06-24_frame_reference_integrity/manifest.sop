@@ -1,0 +1,12 @@
+Subject: Frame Reference Integrity Source Manifest
+
+Description: Source preservation manifest for the frame-reference integrity specification.
+
+& [FrameReferenceIntegritySourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_frame_reference_integrity\Dictated_Frame_Reference_Integrity_Source.sop
+  + [canonical_target] is F:\.sop\platform\FrameReferenceIntegrity.sop
+  + [derived_terms] is perception_frame, presented_frame, first_hand_observation, stable_periphery_object, periphery_object_stability, immersion_break_cue, frame_reference_check, frame_mismatch, painted_scene_hazard
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, SJS, Delineation, ProjectNarrativeSurface
+
+  = must: preserve raw source before treating the canonical target as implementation authority
+  = must: cite this manifest when later reflection walks the source-to-contract change

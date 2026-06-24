@@ -1,0 +1,25 @@
+Subject: RGB Semantic Encoding Realization 064
+
+Description: Periphery-stream realization that RGB can encode SOP's attention triad as resolving axes for color-routed memory and optical instruction streams.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_rgb_semantic_encoding\Dictated_RGB_Semantic_Encoding_Source.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_attention_memory_codec_trailing_checksum_063.hg.sop
+@ [source] F:\.sop\platform\SOPRGBSemanticEncoding.sop
+
+& [RGBSemanticEncodingRealization064] is the realized color-basis frame
+  + [moment] is RGB becomes useful when red, green, and blue are treated as SOP resolving axes rather than decorative color labels
+  + [focus] is SOP RGB semantic encoding
+  + [primitive_answer] is red maps to inside/focus/impulse, green maps to boundary/grounding, and blue maps to outside/periphery/uncertainty
+  + [periphery] is relationship color edges, node-edge-node frames, round-trip fidelity, color loss, route tables, and visual attention anchors
+  + [boundary] is RGB is an inspectable routing layer over SOP, not a replacement for source, proof, or canonical records
+  + [outside] is exact color science, display calibration, hidden perception, complete semantic preservation, and color-only proof
+  + [impulse] is make color carry enough cues to guide resolution back into SOP without pretending color stores all meaning
+  + [balance] is stable because complex relationships are encoded as colored structures and sequences, not overloaded single colors
+  + [next_step] is define a concrete color-point packet or study-store sample using the RGB basis
+
+  = must: keep color_role separate from proof status
+  = must: preserve color_outside as the loss boundary for compression
+  = should: use the RGB basis in SOPAttentionMemoryCodec route colors and future thinking-node examples
+
+/ [inside_focus_impulse], [boundary_grounding], [outside_periphery_uncertainty] -(FormsRGBBasis)> [rgb_signal], [color_role], [color_outside]
+* [color_point], [relation_color_edge], [relationship_sequence] -(CarriesComplexMeaning)> [thinking_node], [semantic_reentry], [round_trip_fidelity]

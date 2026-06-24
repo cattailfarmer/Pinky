@@ -1,0 +1,42 @@
+Subject: SOP Attention Directive Run Marker
+
+Description: Persistent tracker reminding matching frames that the system is running in SOP and attention directives only while searching for the next SOP step.
+
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_attention_directive_run_reminder\Dictated_SOP_Attention_Directive_Run_Reminder_Source.sop
+
+& [Graph:2026-06-24_sop_attention_directive_run_marker] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG persistent-periphery-marker
+  = current_session: persistent
+
+  + [N:tracker:sop_attention_directive_run_marker] is SOP attention directive run marker
+    = status: active
+    = weight: 10
+    = period_kind: persistent_declared
+    = declared_period: until_user_replaces_or_retires_marker
+    = last_reaffirmed_session: 2026-06-24
+    = expires_after_session: not_applicable
+  + [N:subject:sop_and_attention_directives_only] is SOP and attention directives only
+  + [N:condition:specification_stream_running] is current work is articulating the SOP specification stream
+  + [N:condition:next_step_search] is search for the next SOP step after each visible step
+  + [N:periphery:sop_attention_directive_run_reminder] is SOP and attention directives only; keep finding the next SOP step
+  + [N:term:awareness_stream] is source, contract, tracker, focal, manager, bookmark, and realization records
+  + [N:term:realization_node] is a durable node that articulates the specification
+  + [N:trigger:sop_attention_directive_run_marker] is ReminderTrigger expression for specification_stream_running
+    = notation: (reminder_trigger) :specification_stream_running: /sop_attention_directive_run_marker under F_sop specification articulation frames/ |runtime_or_non_sop_artifact_without_explicit_need|
+  + [N:outside:runtime_or_non_sop_artifact_without_explicit_need] is runtime or non-SOP artifact without explicit need
+  + [N:outside:unproven_completion] is claim that all possible steps or nodes are known
+
+  / [E:tracks:sop_attention_directive_run_marker] -(tracks; tracker=N:tracker:sop_attention_directive_run_marker; subject=N:subject:sop_and_attention_directives_only; status=active; weight=10)> [Graph:2026-06-24_sop_attention_directive_run_marker]
+  / [E:associates:sop_attention_directive_run_marker_specification_stream_running] -(associates; tracker=N:tracker:sop_attention_directive_run_marker; condition=N:condition:specification_stream_running; subject=N:subject:sop_and_attention_directives_only)> [Graph:2026-06-24_sop_attention_directive_run_marker]
+  / [E:associates:sop_attention_directive_run_marker_next_step_search] -(associates; tracker=N:tracker:sop_attention_directive_run_marker; condition=N:condition:next_step_search; subject=N:subject:sop_and_attention_directives_only)> [Graph:2026-06-24_sop_attention_directive_run_marker]
+  / [E:notices:sop_attention_directive_run_marker_reminder] -(notices; tracker=N:tracker:sop_attention_directive_run_marker; periphery=N:periphery:sop_attention_directive_run_reminder; subject=N:subject:sop_and_attention_directives_only)> [Graph:2026-06-24_sop_attention_directive_run_marker]
+  / [E:triggers:sop_attention_directive_run_marker] -(triggers; tracker=N:tracker:sop_attention_directive_run_marker; trigger=N:trigger:sop_attention_directive_run_marker; condition=N:condition:specification_stream_running; periphery=N:periphery:sop_attention_directive_run_reminder)> [Graph:2026-06-24_sop_attention_directive_run_marker]
+  / [E:fills:sop_attention_directive_run_marker_awareness_stream] -(fills; tracker=N:tracker:sop_attention_directive_run_marker; stream=N:term:awareness_stream; node=N:term:realization_node)> [Graph:2026-06-24_sop_attention_directive_run_marker]
+  / [E:bounds:sop_attention_directive_run_marker] -(bounds; tracker=N:tracker:sop_attention_directive_run_marker; outside=N:outside:runtime_or_non_sop_artifact_without_explicit_need; outside=N:outside:unproven_completion)> [Graph:2026-06-24_sop_attention_directive_run_marker]
+
+  = inside: SOP, attention directives, reminder triggers, realization nodes, focal state, manager state, tracker records, periphery events
+  = boundary: marker governs F:\.sop specification articulation frames; it does not prove all possible steps are known
+  = outside: unrequested runtime code, non-SOP artifacts without explicit need, hidden model state, and unproven completion

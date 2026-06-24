@@ -1,0 +1,37 @@
+Subject: Attention Kernel Compiler Trailing Checksum 031
+
+Description: One-turn-later checksum review of commit 23a2b61, recording the latent need for local identity, reflection consumption, and scoped attention names inside compiled kernels.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\LocalIdentityConsumption.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_attention_kernel_compiler_030.hg.sop
+
+& [Graph:2026-06-24_attention_kernel_compiler_trailing_checksum_031] is a SOP-HG graph
+  + [N:bookmark:attention_kernel_compiler_trailing_checksum_031] is trailing checksum review of Attention Kernel Compiler
+    = one_turn_lag: true
+    = direct_focus_commit: 23a2b61
+    = version_a: 39ec977
+    = version_b: 23a2b61
+  + [N:event:2026-06-24_attention_kernel_compiler_030] is prior direct-focus attention kernel compiler realization
+  + [N:event:2026-06-24_local_identity_consumption_032] is current turn local identity consumption realization
+  + [N:zone:layered_attention_identity_scope] is hot zone where compiled kernels need scoped identities and consumption records
+  + [N:signal:shared_attention_names_blend_focus] is signal that shared identifiers across layers can blend intended focus
+  + [N:finding:kernel_needs_identity_consumption_layer] is latent depth candidate that kernel packets need root identity law and reflection consumption ledger
+  + [N:policy:focus_next] is checksum disposition to focus next on LocalIdentityConsumption
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model control
+
+  / [E:span:attention_kernel_compiler_trailing_checksum_031] -(span; start=N:commit:39ec977; end=N:commit:23a2b61; review=N:bookmark:attention_kernel_compiler_trailing_checksum_031)> [Graph:2026-06-24_attention_kernel_compiler_trailing_checksum_031]
+    = evidence: 23a2b61 added AttentionKernelCompiler and the compiled in-context packet shape
+  / [E:trails:2026-06-24_attention_kernel_compiler_030] -(trails; direct_focus=N:event:2026-06-24_attention_kernel_compiler_030; review=N:bookmark:attention_kernel_compiler_trailing_checksum_031)> [Graph:2026-06-24_attention_kernel_compiler_trailing_checksum_031]
+    = realization: the prior kernel layer defined ordered pattern compilation but did not yet define local identity, foreign snapshots, or consumption proof
+  / [E:heats:layered_attention_identity_scope] -(heats; zone=N:zone:layered_attention_identity_scope; signal=N:signal:shared_attention_names_blend_focus; latent=N:finding:kernel_needs_identity_consumption_layer; weight=hot)> [Graph:2026-06-24_attention_kernel_compiler_trailing_checksum_031]
+    = evidence: user source asks whether layered contracts can blend attention unpredictably when shared naming is used
+  / [E:inquires:kernel_needs_identity_consumption_layer] -(inquires; latent=N:finding:kernel_needs_identity_consumption_layer; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_attention_kernel_compiler_trailing_checksum_031]
+    = realization: LocalIdentityConsumption becomes direct focus for this turn
+  / [E:bounds:attention_kernel_compiler_trailing_checksum_031] -(bounds; review=N:bookmark:attention_kernel_compiler_trailing_checksum_031; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_attention_kernel_compiler_trailing_checksum_031]
+    = caution: checksum observes later refinement and does not rewrite the original kernel compiler commit's awareness
+
+  = inside: 23a2b61 diff, AttentionKernelCompiler.sop, user local identity source, layered naming collision concern
+  = boundary: this review records latent identity-scope depth after the direct-focus turn, not proof that the prior turn already contained the identity layer
+  = outside: hidden activations, exact transformer geometry, unsupported local identity, unproven consumption, and namespace metaphor treated as proof

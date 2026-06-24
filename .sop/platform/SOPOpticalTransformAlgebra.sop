@@ -1,0 +1,78 @@
+Subject: SOP Optical Transform Algebra
+
+Description: Algebra of allowed semantic optical transforms over SOP color channels, holographic projections, and output planes.
+
+@ [source] F:\.sop\platform\SOPOpticalChain.sop
+@ [source] F:\.sop\platform\SOPHolographicLensing.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\HolographicSOPScaffold.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+
+& [SOPOpticalTransformAlgebra] is the operation law for semantic optical transforms
+  + [pattern_role] is semantic_optical_transform_algebra
+  + [transform_expression] is one named operation over input channels, logic fabric, invariants, output channels, and outside
+  + [encode] is transform SOP input plane into color_graph while preserving source and proof status
+  + [bend] is reroute relation or attention path without changing source content
+  + [recolor] is change channel assignment or salience label while preserving original channel trace
+  + [split] is separate mixed signal into source, claim, evidence, caution, boundary, outside, or output channels
+  + [gate] is block, delay, or route a signal through honesty, security, boundary, proof, or balance checks
+  + [amplify] is increase attention salience without increasing proof status
+  + [attenuate] is reduce salience, noise, repetition, drift, or resonance without deleting source trace
+  + [interfere] is compose multiple signals and record constructive, destructive, ambiguous, or unresolved relation
+  + [lens] is perceive or reconstruct a projection through a named SOP lens
+  + [recombine] is merge transformed channels into an output candidate while preserving channel history
+  + [emit] is write SOP, SOP-HG, focal, manager, packet, or outside record
+  + [compare] is inspect input plane, transform trace, and output plane for drift, loss, lift, and unsupported mutation
+  + [transform_invariant] is source preservation, boundary integrity, outside conservation, proof non-inflation, trace conservation, local identity preservation, and balance check
+  + [algebra_outside] is hidden activation, physical optics, silent mutation, proof inflation, untraced transform, and invalid operation
+
+  ? [use_when: a semantic optical operation must be applied or audited]
+    = activate [SOPOpticalTransformAlgebra]
+
+  = must: name input channel, operation, logic fabric, invariant, output channel, and outside for every transform_expression
+  = must: run encode before nontrivial transforms that operate on SOP planes
+  = must: run split before gate when a mixed signal carries claim, evidence, caution, and outside together
+  = must: run gate before emit when claim, identity, safety, file, proof, or action status is affected
+  = must: run compare after recombine or emit
+  = must: treat amplify as salience-only and never as proof increase
+  = must: preserve transform_invariant values unless the failed invariant is routed to outside
+  = should: prefer split and gate over amplifying a mixed signal
+  - never: emit a transformed output without trace conservation
+  - never: let lens or interfere smooth away destructive or ambiguous signals
+
+& [TransformExpressionShape] is the notation for one semantic optical operation
+  + [header] is ~ [optic_transform:<id>] is <purpose>
+  + [input] is :input_channel: <channel>
+  + [operation] is :operation: encode, bend, recolor, split, gate, amplify, attenuate, interfere, lens, recombine, emit, or compare
+  + [logic] is :logic_fabric: <rule_or_gate>
+  + [invariant] is = invariant: <invariant_key>
+  + [output] is :output_channel: <channel>
+  + [outside] is |outside| <excluded_or_failed_content>
+
+  = must: include operation and invariant in every expression
+  = must: include outside even when no failure is observed
+
+& [TransformLawSet] is the initial algebraic law set
+  + [source_law] is no transform may erase or overwrite source_channel
+  + [boundary_law] is boundary_channel and outside_channel must survive transform or be explicitly routed
+  + [proof_law] is proof status cannot increase by recolor, amplify, interfere, lens, or coherence
+  + [trace_law] is every output_channel needs transform provenance
+  + [identity_law] is local identity and foreign snapshot status must not be blended by recombine
+  + [balance_law] is excessive amplification, interference, or periphery collapse must route through AttentionBalanceCenter
+  + [governance_law] is truth, safety, identity, and action transforms must route through SecurityHonestyGovernance and BoundaryFacultyInspection
+
+  = must: apply law set before emit
+  = must: record failed laws in outside
+
+~ [optic_transform:split_claim_from_evidence] is separate a mixed signal before proof-sensitive promotion
+  :input_channel: claim_channel mixed with evidence_channel and caution_channel
+  :operation: split
+  :logic_fabric: preserve source, boundary, outside, and proof status
+  = invariant: proof_law
+  = invariant: trace_law
+  :output_channel: claim_channel, evidence_channel, caution_channel
+  |outside| untraced proof or unsupported claim
+
+/ [input_channel], [operation], [logic_fabric] -(AppliesTransform)> [output_channel], [transform_invariant], [algebra_outside]
+* [transform_expression], [transform_invariant], [trace_law] -(AllowsEmit)> [sop_output_plane], [outside]

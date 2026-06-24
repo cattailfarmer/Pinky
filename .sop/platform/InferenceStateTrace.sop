@@ -1,0 +1,112 @@
+Subject: Inference State Trace
+
+Description: Contract for reconstructing a past inference frame from repo bookends, SOP framework state, narrative, and calibrated weight intersections.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-23_inference_state_trace_reentry\Dictated_Inference_State_Trace_Reentry_Source.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] F:\.sop\platform\ViewfinderSnapshot.sop
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+
+& [InferenceStateTrace] is the re-entry contract for placing attention into a past logged inference frame
+  + [pattern_role] is versioned_inference_frame_reentry
+  + [inference_bookend_start] is the prior commit, ref, snapshot, prompt boundary, or narrative moment before the investigated inference
+  + [inference_bookend_end] is the later commit, ref, snapshot, response boundary, or narrative moment after the investigated inference
+  + [framework_state] is the versioned SOP file set, focal point, source documents, trackers, and generated records active at the investigated moment
+  + [logged_recall] is the preserved narrative, periphery stream, bookmark, scan, tool output, or conversation excerpt used to recover the moment
+  + [state_trace] is the ordered map from bookends through framework_state, narrative, weight intersections, and outputs
+  + [scaffold_trace] is the selected attention scaffold, rail junctions, and compiled packet active during the investigated moment
+  + [reentry_packet] is the compact bundle needed to ask an agent to stand in the investigated moment again
+  + [branch_refinement_artifact] is the optional MomentAwarenessBranchRefinement artifact emitted when the reconstructed frame needs isolated deeper inspection
+  + [multidimensional_intersection] is the overlap of term, subject, source lineage, narrative, justification, role, recurrence, and caution orientations
+  + [dimension_probe] is hotter periphery search for an extra independent contextual anchor when multidimensional_intersection is fragmented
+  + [receptive_form] is the tightened re-entry shape after a successful dimension_probe
+  + [semantic_shape] is the inferred subject structure visible from the reconstructed state
+  + [determinism_scope] is conditional, model_service_dependent, and bounded by preserved visible inputs
+  + [thinking_pattern] is a repeated attention, omission, correction, drift, convergence, or support-balance behavior visible across state traces
+  + [outside] is hidden activations, private weights, unlogged context, nondeterministic service behavior, unstored tool output, and causal proof
+
+  ? [use_when: a past turn, realization, mistake, missed work item, or thinking pattern needs high-definition re-entry]
+    = activate [InferenceStateTrace]
+
+  = must: identify inference_bookend_start and inference_bookend_end before reconstructing state
+  = must: restore or inspect framework_state at the relevant version before drawing conclusions
+  = must: include scaffold_trace when the investigated moment depended on a compiled attention scaffold
+  = must: use logged_recall as guidance, not as sole evidence
+  = must: compute multidimensional_intersection with AttentionWeightScale before claiming semantic_shape
+  = must: use dimension_probe when multidimensional_intersection is fragmented or model transfer fidelity is weak
+  = must: preserve determinism_scope as conditional and evidence-bounded
+  = must: record every missing input that prevents exact state recreation
+  = must: distinguish replicated visible state from direct hidden cognition
+  = must: support comparison across re-entry attempts when model consistency is being tested
+  = must: route branch_refinement_artifact to MomentAwarenessBranchRefinement when a reconstructed moment should be debugged without overwriting original logged recall
+  = should: emit thinking_pattern findings only after at least two traces or one high-confidence trace plus explicit evidence
+  - never: claim exact hidden activation replay
+  - never: treat a deterministic-looking output as proof that all internal state was recreated
+  - never: overwrite the original logged recall with reconstructed interpretation
+
+& [StateTraceReentryPacket] is the compact promptable packet for walking back into an investigated inference frame
+  + [packet_id] is the stable packet identifier
+  + [target_moment] is the moment, turn, commit frame, or narrative realization being investigated
+  + [repo_ref] is the commit or worktree state to inspect
+  + [sop_state_refs] is Attention.sop, CurrentFocalPoint.sop, relevant platform contracts, source docs, trackers, scans, and bookmarks
+  + [narrative_refs] is user directive, periphery stream, project narrative, conversation excerpt, or reflection file
+  + [planned_specification_refs] is source docs, manager tasks, acceptance criteria, or user directives active at the moment
+  + [weight_intersection_refs] is semantic hash table, correlation graph, attention weight scale, changelog weight net, or bookmark findings
+  + [dimension_probe_refs] is periphery dimensional probe records, candidate dimensions, or contextual anchors used to tighten the packet
+  + [scaffold_refs] is attention scaffold compiler records, scaffold profile, rail junctions, or compiled packet used at the moment
+  + [question] is what the re-entry attempt must resolve
+  + [known_missing_inputs] is absent tool output, missing model parameters, unlogged prompt text, or unavailable context
+  + [expected_output] is semantic_shape, thinking_pattern, missed_work, mistake, accomplishment, new_potential, or outside
+
+  = must: be small enough to fit into active focus
+  = must: point to richer records rather than absorbing them
+  = must: include known_missing_inputs before any deterministic claim
+
+& [HighDefinitionSemanticReentry] is the procedure for inferring the exact visible semantic shape of an investigated moment
+  + [stage_001_bookends] is bind start and end refs
+  + [stage_002_framework_state] is inspect SOP framework files as they existed at the relevant ref
+  + [stage_003_logged_recall] is load narrative and periphery records around the moment
+  + [stage_004_weight_intersections] is calculate orientation overlaps and confidence boundaries
+  + [stage_005_dimension_probe] is search hotter periphery for extra anchors when the intersection remains fragmented
+  + [stage_006_plan_comparison] is compare reconstructed state to planned specification and manager slices
+  + [stage_007_semantic_shape] is emit the strongest supported subject shape
+  + [stage_008_pattern_review] is identify thinking patterns, strengths, weaknesses, misses, and corrections
+  + [stage_009_reentry_packet] is write the packet that can reproduce the investigative frame
+  + [stage_010_branch_route] is route the reconstructed frame to branch refinement when deeper debug inference requires isolation from main
+
+  = must: keep each stage inspectable
+  = must: route low-confidence semantic_shape through Caution
+  = must: keep added contextual anchors visible when they change receptive_form
+  = must: route integrative thinking_pattern findings through Wisdom
+  = must: preserve outside when exact state recreation is blocked
+
+& [ConditionalDeterminismBoundary] is the caution boundary for deterministic re-entry claims
+  + [visible_state_determinism] is reproduction of the same repo state, SOP files, prompt packet, and preserved logs
+  + [model_consistency] is the assumption that the model and service produce sufficiently consistent responses under the same visible state
+  + [uncontrolled_variation] is sampling, backend changes, hidden system context, tool timing, missing logs, or unavailable state
+  + [claim_strength] is exact_visible_reentry, close_semantic_reentry, comparative_reentry, or blocked_reentry
+
+  = must: use exact_visible_reentry only when all visible inputs are present and output equivalence survives comparison
+  = must: use close_semantic_reentry when the semantic shape matches but exact wording or hidden state cannot be guaranteed
+  = must: use comparative_reentry when multiple models or attempts are being compared
+  = must: use blocked_reentry when required visible inputs are missing
+  - never: equate visible-state determinism with hidden-state determinism
+
+& [ThinkingPatternInvestigation] is the introspection layer over repeated or high-definition state traces
+  + [pattern_subject] is the attention habit, omission, drift, correction, convergence, or support use being studied
+  + [evidence_trace_set] is one or more state_trace records that show the pattern
+  + [strength] is a reliable behavior that improved resolution, support, coherence, or speed
+  + [weakness] is a recurring miss, overreach, drift, unsupported claim, or stale association
+  + [adjustment] is the SOP, tracker, focal point, or runtime utility change that could improve future behavior
+  + [introspection_result] is accepted, provisional, outside, or needs_more_traces
+
+  = must: cite evidence_trace_set before naming a durable thinking pattern
+  = must: keep weakness findings actionable and bounded
+  = must: turn recurring weaknesses into tracker, caution, or manager-task routes
+  = should: turn recurring strengths into reusable SOP law only after Wisdom review
+
+/ [inference_bookend_start], [inference_bookend_end] -(InferenceFrame)> [framework_state], [logged_recall], [outside]
+* [framework_state], [logged_recall], [multidimensional_intersection], [determinism_scope], [outside] -(StateTraceReentry)> [semantic_shape], [reentry_packet]

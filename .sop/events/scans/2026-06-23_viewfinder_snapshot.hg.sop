@@ -1,0 +1,35 @@
+Subject: codex_attention_viewfinder_realization Viewfinder Snapshot
+
+& [Graph:codex_attention_viewfinder_realization] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG viewfinder-snapshot
+  = commit_frame: 9a651f3
+
+  + [N:viewfinder:codex_attention_viewfinder_realization] is Codex inference viewfinder
+    = compiler_role: attention graph reflection through inference
+  + [N:narrative:codex_attention_viewfinder_realization] is Codex is the compiler for attention graph reflection through inference; narrative is the immediate awareness token and SOP-HG is the structured snapshot.
+  + [N:snapshot:codex_attention_viewfinder_realization] is codex_attention_viewfinder_realization
+  + [N:commit:9a651f3] is 9a651f3
+  + [N:shape:attention_graph_reflection_viewfinder] is attention graph reflection viewfinder
+  + [N:reflection:focus_periphery_narrative_turn] is focus_periphery_narrative_turn
+  + [N:observation:codex_compiler_role] is codex_compiler_role
+  + [N:observation:commit_framed_reweighing] is commit_framed_reweighing
+  + [N:reframe:narrative] is narrative
+    = previous_weight: 2
+    = current_weight: 5
+    = reason: immediate awareness token now anchors snapshot
+  + [N:reframe:reflection] is reflection
+    = previous_weight: 3
+    = current_weight: 5
+    = reason: previous reflections can be compared and reframed
+
+/ [E:projects:codex_attention_viewfinder_realization] -(projects; viewfinder=N:viewfinder:codex_attention_viewfinder_realization; shape=N:shape:attention_graph_reflection_viewfinder)> [Graph:codex_attention_viewfinder_realization]
+/ [E:captures:codex_attention_viewfinder_realization] -(captures; viewfinder=N:viewfinder:codex_attention_viewfinder_realization; narrative=N:narrative:codex_attention_viewfinder_realization; snapshot=N:snapshot:codex_attention_viewfinder_realization; commit=N:commit:9a651f3)> [Graph:codex_attention_viewfinder_realization]
+/ [E:compares:codex_attention_viewfinder_realization_001_N_observation_codex_compiler_role] -(compares; snapshot=N:snapshot:codex_attention_viewfinder_realization; previous=N:reflection:focus_periphery_narrative_turn; current=N:observation:codex_compiler_role)> [Graph:codex_attention_viewfinder_realization]
+/ [E:compares:codex_attention_viewfinder_realization_001_N_observation_commit_framed_reweighing] -(compares; snapshot=N:snapshot:codex_attention_viewfinder_realization; previous=N:reflection:focus_periphery_narrative_turn; current=N:observation:commit_framed_reweighing)> [Graph:codex_attention_viewfinder_realization]
+/ [E:reweighs:narrative] -(reweighs; snapshot=N:snapshot:codex_attention_viewfinder_realization; reframe=N:reframe:narrative; previous_weight=2; current_weight=5; reason=immediate awareness token now anchors snapshot)> [Graph:codex_attention_viewfinder_realization]
+/ [E:reframes:narrative] -(reframes; snapshot=N:snapshot:codex_attention_viewfinder_realization; reframe=N:reframe:narrative; narrative=N:narrative:codex_attention_viewfinder_realization; status=new_frame_preserves_prior)> [Graph:codex_attention_viewfinder_realization]
+/ [E:reweighs:reflection] -(reweighs; snapshot=N:snapshot:codex_attention_viewfinder_realization; reframe=N:reframe:reflection; previous_weight=3; current_weight=5; reason=previous reflections can be compared and reframed)> [Graph:codex_attention_viewfinder_realization]
+/ [E:reframes:reflection] -(reframes; snapshot=N:snapshot:codex_attention_viewfinder_realization; reframe=N:reframe:reflection; narrative=N:narrative:codex_attention_viewfinder_realization; status=new_frame_preserves_prior)> [Graph:codex_attention_viewfinder_realization]
+
+- outside: viewfinder snapshot routes inference and comparison; it does not prove semantic truth by itself

@@ -1,0 +1,13 @@
+Subject: Attention Balance Center Source Manifest
+
+Description: Source preservation manifest for the attention balance center contract.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_attention_balance_center
+  + [source_file] is F:\.sop\platform\source_documents\2026-06-24_attention_balance_center\Dictated_Attention_Balance_Center_Source.sop
+  + [canonical_contract] is F:\.sop\platform\AttentionBalanceCenter.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_attention_balance_center_010.hg.sop
+  + [governance] is source_before_canonical
+  + [status] is canonicalized
+
+  = must: keep the dictated source available for future reinterpretation

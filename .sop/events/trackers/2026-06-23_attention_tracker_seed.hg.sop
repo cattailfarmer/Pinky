@@ -1,0 +1,93 @@
+Subject: 2026_06_23_attention_tracker_seed Attention Tracking
+
+& [Graph:2026_06_23_attention_tracker_seed] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG attention-tracking
+
+  + [N:tracker:2026_06_23_attention_tracker_seed] is 2026_06_23_attention_tracker_seed
+    = current_session: 2
+    = tracked_count: 3
+  + [N:session:2] is session 2
+  + [N:outside:tracking_staleness] is tracking that has expired or lacks reaffirmation
+  + [N:tracker:track_that_semantics] is track_that_semantics
+    = subject: track that means attach an attention handle
+    = reason: User clarified that tracking records being, relations, periphery, narrative, scan, and nearby correlations.
+    = status: active
+    = weight: 6
+    = period_kind: default_session
+    = active_period_sessions: 1
+    = last_reaffirmed_session: 2
+    = expires_after_session: 3
+  + [N:subject:track_that_means_attach_an_attention_handle] is track that means attach an attention handle
+    = native_context: attention handle,tracked subject,session expiry
+  + [N:term:narrative_layer] is narrative layer
+  + [N:term:sensitivity_scan] is sensitivity scan
+  + [N:term:semantic_correlation_graph] is semantic correlation graph
+  + [N:term:support_balance] is support balance
+  + [N:periphery:changelog_review] is changelog review
+  + [N:periphery:debug_surface] is debug surface
+  + [N:periphery:nearby_correlations] is nearby correlations
+  + [N:source:current_user_clarification] is current user clarification
+  + [N:source:events_scans_2026_06_23_attention_tracking_scan_hg_sop] is events/scans/2026-06-23_attention_tracking_scan.hg.sop
+  + [N:source:platform_AttentionTracker_sop] is platform/AttentionTracker.sop
+  + [N:source:runtime_sop_node_attention_tracker_py] is runtime/sop_node/attention_tracker.py
+  + [N:tracker:unreaffirmed_worker_spool] is unreaffirmed_worker_spool
+    = subject: worker spool expansion while tracking support balance
+    = reason: Useful nearby idea, but not reaffirmed for the active tracking subject.
+    = status: expired
+    = weight: 0
+    = period_kind: default_session
+    = active_period_sessions: 1
+    = last_reaffirmed_session: 0
+    = expires_after_session: 1
+  + [N:subject:worker_spool_expansion_while_tracking_support_balance] is worker spool expansion while tracking support balance
+    = native_context: worker spool
+  + [N:term:spool_master_hub] is spool master hub
+  + [N:periphery:repo_terminal] is repo terminal
+  + [N:periphery:manager_hub] is manager hub
+  + [N:source:platform_SpoolMasterHub_sop] is platform/SpoolMasterHub.sop
+  + [N:tracker:declared_period_changelog_review] is declared_period_changelog_review
+    = subject: commit changelog review as tracking update source
+    = reason: Declared longer watch because tracker updates should integrate with future commit-diff reflection.
+    = status: active
+    = weight: 5
+    = period_kind: declared_period
+    = active_period_sessions: 4
+    = last_reaffirmed_session: 0
+    = expires_after_session: 4
+  + [N:subject:commit_changelog_review_as_tracking_update_source] is commit changelog review as tracking update source
+    = native_context: commit diff,bookend reflection
+  + [N:term:meta_awareness_repository] is meta-awareness repository
+  + [N:periphery:narrative_state] is narrative state
+  + [N:periphery:tracked_subject_updates] is tracked subject updates
+  + [N:source:events_scans_2026_06_23_carried_support_balance_scan_hg_sop] is events/scans/2026-06-23_carried_support_balance_scan.hg.sop
+
+/ [E:tracks:track_that_semantics] -(tracks; record=N:tracker:2026_06_23_attention_tracker_seed; tracker=N:tracker:track_that_semantics; subject=N:subject:track_that_means_attach_an_attention_handle; session=N:session:2; status=active; weight=6)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:reaffirms:track_that_semantics] -(reaffirms; tracker=N:tracker:track_that_semantics; session=N:session:2; expires_after_session=3)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:associates:track_that_semantics_narrative_layer] -(associates; tracker=N:tracker:track_that_semantics; subject=N:subject:track_that_means_attach_an_attention_handle; relation=N:term:narrative_layer)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:associates:track_that_semantics_sensitivity_scan] -(associates; tracker=N:tracker:track_that_semantics; subject=N:subject:track_that_means_attach_an_attention_handle; relation=N:term:sensitivity_scan)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:associates:track_that_semantics_semantic_correlation_graph] -(associates; tracker=N:tracker:track_that_semantics; subject=N:subject:track_that_means_attach_an_attention_handle; relation=N:term:semantic_correlation_graph)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:associates:track_that_semantics_support_balance] -(associates; tracker=N:tracker:track_that_semantics; subject=N:subject:track_that_means_attach_an_attention_handle; relation=N:term:support_balance)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:notices:track_that_semantics_changelog_review] -(notices; tracker=N:tracker:track_that_semantics; periphery=N:periphery:changelog_review; subject=N:subject:track_that_means_attach_an_attention_handle)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:notices:track_that_semantics_debug_surface] -(notices; tracker=N:tracker:track_that_semantics; periphery=N:periphery:debug_surface; subject=N:subject:track_that_means_attach_an_attention_handle)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:notices:track_that_semantics_nearby_correlations] -(notices; tracker=N:tracker:track_that_semantics; periphery=N:periphery:nearby_correlations; subject=N:subject:track_that_means_attach_an_attention_handle)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:references:track_that_semantics_current_user_clarification] -(references; tracker=N:tracker:track_that_semantics; source=N:source:current_user_clarification)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:references:track_that_semantics_events_scans_2026_06_23_attention_tracking_scan_hg_sop] -(references; tracker=N:tracker:track_that_semantics; source=N:source:events_scans_2026_06_23_attention_tracking_scan_hg_sop)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:references:track_that_semantics_platform_AttentionTracker_sop] -(references; tracker=N:tracker:track_that_semantics; source=N:source:platform_AttentionTracker_sop)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:references:track_that_semantics_runtime_sop_node_attention_tracker_py] -(references; tracker=N:tracker:track_that_semantics; source=N:source:runtime_sop_node_attention_tracker_py)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:bounds:track_that_semantics] -(bounds; tracker=N:tracker:track_that_semantics; outside=N:outside:tracking_staleness; status=active; open_questions=how tracker reaffirmation should be surfaced in future manager turns)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:tracks:unreaffirmed_worker_spool] -(tracks; record=N:tracker:2026_06_23_attention_tracker_seed; tracker=N:tracker:unreaffirmed_worker_spool; subject=N:subject:worker_spool_expansion_while_tracking_support_balance; session=N:session:2; status=expired; weight=0)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:expires:unreaffirmed_worker_spool] -(expires; tracker=N:tracker:unreaffirmed_worker_spool; outside=N:outside:tracking_staleness; expired_after_session=1)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:associates:unreaffirmed_worker_spool_spool_master_hub] -(associates; tracker=N:tracker:unreaffirmed_worker_spool; subject=N:subject:worker_spool_expansion_while_tracking_support_balance; relation=N:term:spool_master_hub)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:notices:unreaffirmed_worker_spool_repo_terminal] -(notices; tracker=N:tracker:unreaffirmed_worker_spool; periphery=N:periphery:repo_terminal; subject=N:subject:worker_spool_expansion_while_tracking_support_balance)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:notices:unreaffirmed_worker_spool_manager_hub] -(notices; tracker=N:tracker:unreaffirmed_worker_spool; periphery=N:periphery:manager_hub; subject=N:subject:worker_spool_expansion_while_tracking_support_balance)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:references:unreaffirmed_worker_spool_platform_SpoolMasterHub_sop] -(references; tracker=N:tracker:unreaffirmed_worker_spool; source=N:source:platform_SpoolMasterHub_sop)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:bounds:unreaffirmed_worker_spool] -(bounds; tracker=N:tracker:unreaffirmed_worker_spool; outside=N:outside:tracking_staleness; status=expired; open_questions=none)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:tracks:declared_period_changelog_review] -(tracks; record=N:tracker:2026_06_23_attention_tracker_seed; tracker=N:tracker:declared_period_changelog_review; subject=N:subject:commit_changelog_review_as_tracking_update_source; session=N:session:2; status=active; weight=5)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:associates:declared_period_changelog_review_sensitivity_scan] -(associates; tracker=N:tracker:declared_period_changelog_review; subject=N:subject:commit_changelog_review_as_tracking_update_source; relation=N:term:sensitivity_scan)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:associates:declared_period_changelog_review_meta_awareness_repository] -(associates; tracker=N:tracker:declared_period_changelog_review; subject=N:subject:commit_changelog_review_as_tracking_update_source; relation=N:term:meta_awareness_repository)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:notices:declared_period_changelog_review_narrative_state] -(notices; tracker=N:tracker:declared_period_changelog_review; periphery=N:periphery:narrative_state; subject=N:subject:commit_changelog_review_as_tracking_update_source)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:notices:declared_period_changelog_review_tracked_subject_updates] -(notices; tracker=N:tracker:declared_period_changelog_review; periphery=N:periphery:tracked_subject_updates; subject=N:subject:commit_changelog_review_as_tracking_update_source)> [Graph:2026_06_23_attention_tracker_seed]
+/ [E:references:declared_period_changelog_review_events_scans_2026_06_23_carried_support_balance_scan_hg_sop] -(references; tracker=N:tracker:declared_period_changelog_review; source=N:source:events_scans_2026_06_23_carried_support_balance_scan_hg_sop)> [Graph:2026_06_23_attention_tracker_seed]
+
+- outside: tracked subjects are attention impulses, not proof of importance

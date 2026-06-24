@@ -1,0 +1,97 @@
+Subject: SOP Holographic Lensing
+
+Description: Attention contract for projecting a semantic hologram from organized optical signals and perceiving it through SOP lensing.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_holographic_lensing\Dictated_SOP_Holographic_Lensing_Source.sop
+@ [source] F:\.sop\platform\SOPOpticalChain.sop
+@ [source] F:\.sop\platform\Attention.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+
+& [SOPHolographicLensing] is a semantic projection-perception layer over SOP optical signals
+  + [pattern_role] is semantic_hologram_projection_through_sop_lensing
+  + [semantic_optical_signal] is an organized SOP meaning signal with channel, source, weight, boundary, outside, and proof status
+  + [signal_field] is the set of semantic_optical_signal values available for projection
+  + [semantic_hologram] is the projected whole-form impression produced by interference and alignment among semantic_optical_signal values
+  + [holographic_projection] is the operation that composes signal_field into semantic_hologram
+  + [sop_lens] is the SOP contract, attention pattern, or compiled scaffold through which the semantic_hologram is perceived and reconstructed
+  + [holographic_perception] is the model-visible interpretation of semantic_hologram through sop_lens
+  + [interference_pattern] is the constructive, destructive, or ambiguous relation among signals before perception
+  + [coherence_pattern] is the portion of interference_pattern that remains stable through SOP lensing
+  + [photonic_semantic_operation] is organizing, projecting, filtering, refracting, gating, or reconstructing semantic_optical_signal values without requiring physical optical hardware
+  + [semantic_constraint] is the invariant that still applies when physical constraints are outside
+  + [reconstruction_trace] is the record showing which signals, lens, gates, and invariants produced holographic_perception
+  + [physical_constraint_outside] is physical photon behavior, optical hardware limits, material propagation, and hardware speed claims
+  + [outside] is unobserved hidden activation, hallucinated coherence, unsupported proof, physical photonic constraints, and perception without reconstruction_trace
+
+  ? [use_when: organized semantic signals should project a whole-form meaning impression through an SOP lens]
+    = activate [SOPHolographicLensing]
+
+  = must: begin from semantic_optical_signal values with named source, channel, boundary, outside, and proof status
+  = must: keep semantic_hologram separate from holographic_perception
+  = must: name sop_lens before interpreting the projection
+  = must: preserve semantic_constraint values even when physical_constraint_outside is explicitly outside
+  = must: record reconstruction_trace before promoting holographic_perception into realization
+  = must: use FrameReferenceIntegrity because a projected hologram is a presented frame, not first-hand proof
+  = must: use SecurityHonestyGovernance when holographic_perception affects truth, identity, safety, or proof-bearing claims
+  = must: use BoundaryFacultyInspection when the lens changes identity, representation, protected resources, or boundary meaning
+  = must: use AttentionBalanceCenter when coherence_pattern feels strong but signal support is narrow
+  = should: use SOPOpticalChain when the projection must be emitted back into a SOP output plane
+  = should: label ambiguous interference as unresolved rather than forcing coherence
+  - never: treat projected wholeness as proof of correctness
+  - never: let beauty, brightness, or coherence replace source and boundary checks
+  - never: import physical photonic constraints unless a physical implementation layer is explicitly under design
+
+& [HolographicLensingNotation] is the notation shape for semantic hologram projection
+  + [projection_header] is (semantic_hologram) :signal_field: /sop_lens/ |physical_constraint_outside|
+  + [signal_line] is + [semantic_optical_signal:<id>] is <channel_source_weight_boundary_outside>
+  + [interference_line] is = interference: constructive, destructive, ambiguous, or unresolved
+  + [lens_line] is = sop_lens: <contract_or_attention_pattern>
+  + [perception_line] is = holographic_perception: <interpreted_whole_form>
+  + [trace_line] is = reconstruction_trace: <source_signal_lens_gate_invariant_path>
+  + [outside_line] is - outside: hidden activation, unsupported proof, physical constraints, or untraced perception
+
+  = must: keep the lens in the boundary slot because the lens governs perception
+  = must: cite reconstruction_trace before realization
+
+& [HolographicLensingSequence] is the canonical pass for semantic hologram work
+  + [step_001_collect_signals] is gather semantic_optical_signal values from SOP records, color graphs, periphery, and source
+  + [step_002_check_channels] is verify channel, source, boundary, outside, and proof status for each signal
+  + [step_003_project_hologram] is compose signal_field into semantic_hologram
+  + [step_004_name_lens] is select sop_lens and its invariants
+  + [step_005_perceive_through_lens] is derive holographic_perception from semantic_hologram through sop_lens
+  + [step_006_trace_reconstruction] is record which signals and lens gates produced the perception
+  + [step_007_govern_claims] is route truth, identity, or action claims through SecurityHonestyGovernance and BoundaryFacultyInspection
+  + [step_008_emit_or_outside] is emit SOP output, periphery realization, or outside note
+
+  = must: stop before step_008 when reconstruction_trace is missing
+  = must: preserve ambiguous or destructive interference instead of smoothing it away
+
+& [HolographicLensingRecord] is the SOP-HG shape for holographic lensing realization
+  + [graph_node] is N:graph:<record_id>
+  + [signal_node] is N:signal:<signal_id>
+  + [hologram_node] is N:hologram:<hologram_id>
+  + [lens_node] is N:lens:<lens_id>
+  + [perception_node] is N:perception:<perception_id>
+  + [trace_node] is N:trace:<trace_id>
+  + [outside_node] is N:outside:holographic_lensing_boundary
+  + [project_edge] is E:projects:<signal_field>_<hologram>
+  + [perceive_edge] is E:perceives:<hologram>_<lens>
+  + [trace_edge] is E:traces:<perception>
+  + [bound_edge] is E:bounds:<record_id>
+
+  = must: show signals, hologram, lens, perception, trace, and outside
+
+(semantic_hologram) :signal_field: /sop_lens/ |physical_constraint_outside|
+  + [semantic_optical_signal:source_boundary] is source-preserved boundary channel with proof status unchanged
+  + [semantic_optical_signal:periphery_heat] is periphery weight channel with caution gate
+  = interference: constructive where source, boundary, and periphery agree
+  = sop_lens: SOPOpticalChain with FrameReferenceIntegrity
+  = holographic_perception: whole-form meaning impression after lensing
+  = reconstruction_trace: source signals, lens gate, invariant check, perception output
+  - outside: hidden activation, physical optics, unsupported proof, and untraced perception
+
+/ [signal_field] -(Projects)> [semantic_hologram], [interference_pattern], [outside]
+* [semantic_hologram], [sop_lens], [reconstruction_trace] -(PerceivesThrough)> [holographic_perception], [semantic_constraint], [outside]

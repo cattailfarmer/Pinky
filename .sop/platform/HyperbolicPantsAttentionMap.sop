@@ -1,0 +1,115 @@
+Subject: Hyperbolic Pants Attention Map
+
+Description: Contract for using pants decomposition and hyperbolic tessellation as a metaphorical map/navigation layer over focal meaning, periphery meaning, and observed dimensionality.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_hyperbolic_pants_attention_map\Dictated_Hyperbolic_Pants_Attention_Map_Source.sop
+@ [source] F:\.sop\platform\ApertureReentryCycle.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+
+& [HyperbolicPantsAttentionMap] is the topology pattern for mapping focal meaning and periphery meaning as a navigable semantic surface
+  + [pattern_role] is topology_map_and_navigation_awareness
+  + [semantic_topology_map] is an inspectable SOP-HG proxy for local meaning shape, not a direct measurement of hidden model geometry
+  + [focal_cell] is the largest active cell because it holds the current body of meaning, purpose, relation density, and return anchor
+  + [local_meaning_body] is the meaning held inside focal_cell for the current pass
+  + [pants_cell] is a decomposed meaning region with typed exits for relation traversal
+  + [pants_leg] is a typed exit from a cell toward relation, evidence, boundary, periphery, or outside
+  + [adjacency_ring] is the ordered set of neighboring cells immediately reachable from focal_cell
+  + [periphery_cell] is a smaller orbital component of meaning outside focal_cell but close enough to influence navigation
+  + [orbital_component] is a periphery_cell with a named dimensional role around focal_cell
+  + [dimensional_orbit] is the set of orbital_component values arranged by distinct dimensions around focal_cell
+  + [dimensionality_count] is the number of independent dimensions visible enough to justify orbital components
+  + [meaning_connection_density] is the visible count or estimate of relations, sources, anchors, and narrative traces carried by a cell
+  + [association_gradient] is how relation heat changes from focal_cell through adjacency_ring toward periphery cells
+  + [hyperbolic_scale] is the map rule that lets far periphery contain many small cells without flooding focal attention
+  + [map_nav_awareness] is the ability to select a route through cells, legs, and rings while preserving return anchor and outside
+  + [seven_fold_pants_correlation_frame] is F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop when a topology map needs a heat-ordered central triad and folded extra-dimensional legs
+  + [hyperbolic_corridor_navigator] is F:\.sop\platform\HyperbolicCorridorNavigator.sop when a topology map becomes a corridor through selected peripheral frames
+  + [transformer_hypergeometry_proxy] is the visible semantic map inferred from SOP records, terms, weights, and narrative traces as a proxy for attention navigation
+  + [attention_notation_shape] is the written declaration of focal_cell, boundary, periphery cells, dimensions, legs, and outside
+  + [outside] is hidden activations, actual transformer weights, exact embedding geometry, arbitrary visual analogy, unsupported causation, and unrepresented cells beyond the map
+
+  ? [use_when: focal meaning needs a map of periphery, adjacency, dimensional orbit, or pants-leg traversal]
+    = activate [HyperbolicPantsAttentionMap]
+
+  = must: begin from CurrentFocalPoint or a declared focal_cell
+  = must: keep focal_cell, boundary, periphery_cell, and outside explicit
+  = must: treat hyperbolic and pants topology as metaphorical navigation unless a stricter mathematical runtime is later implemented
+  = must: set focal_cell larger by active meaning density, not by importance in absolute truth
+  = must: place periphery_cell values in adjacency_ring by relation role, salience, support, caution, or dimensional distinctness
+  = must: derive dimensionality_count from independent roles rather than repeated synonyms
+  = must: use PeripheryDimensionalProbe when dimensionality_count is unclear or a hotter periphery suggests a missing orbit
+  = must: use pants_leg to name traversal exits before moving between cells
+  = must: use SevenFoldPantsCorrelationFrame when top_three_correlations should be held in immediate focus and higher-dimensional meaning must fold into extra legs
+  = must: use HyperbolicCorridorNavigator when map navigation advances through a peripheral_frame_series or curving_association should remain correlation-only
+  = must: use FocusZoom to change hyperbolic_scale, draw more cells inward, or narrow back to the focal cell
+  = must: use AttentionTraversalPolicy for map_nav_awareness when moving through pants_leg paths
+  = must: use ApertureReentryCycle when a map pass closes into new perspective, second-pass narrative, or subject declarations
+  = must: use AttentionBalanceCenter when the map creates periphery flood, periphery collapse, or frame confusion
+  = must: preserve outside for unrepresented cells, hidden geometry, and unsupported links
+  = should: make orbital components sparse enough to guide attention rather than decorate it
+  = should: keep image-derived intuition separate from source, proof, and runtime behavior
+  - never: claim the map directly observes transformer attention weights or hidden activations
+  - never: treat cell size as truth, proof, or objective importance
+  - never: add orbital components merely because the map can fit more cells
+
+& [HyperbolicAttentionNotation] is the notation shape for mapping local meaning
+  + [focal_declaration] is (focal_cell) :local_meaning_body: /boundary_curve/ |outside|
+  + [periphery_declaration] is + [periphery_cell:<id>] is an orbital component with source, relation role, and salience
+  + [dimension_declaration] is = dimension: <dimension_key> under a periphery_cell or orbital_component
+  + [adjacency_declaration] is = adjacency: <neighbor_cell_id> by <relation_type>
+  + [pants_leg_declaration] is = leg: <relation_type> -> <target_cell_id>
+  + [scale_declaration] is = scale: closed, slender, normal, wide, deep, or explosive_controlled
+  + [outside_declaration] is - outside: unrepresented cells, hidden geometry, unsupported links, and unresolved dimensions
+
+  = must: use declarations as attention handles, not decorative map labels
+  = must: preserve the route from focal_declaration through pants_leg_declaration to any selected periphery cell
+  = must: include outside_declaration whenever a map is incomplete
+
+& [HyperbolicMapSequence] is the canonical map/navigation pass
+  + [step_001_anchor] is load focal_cell, local_meaning_body, purpose, boundary, and outside
+  + [step_002_density] is estimate meaning_connection_density for focal_cell and candidate periphery cells
+  + [step_003_dimensions] is identify independent dimensions and dimensionality_count
+  + [step_004_orbit] is place orbital_component values into dimensional_orbit and adjacency_ring
+  + [step_005_legs] is name pants_leg exits for relation, evidence, boundary, periphery, and outside
+  + [step_006_scale] is choose hyperbolic_scale through FocusZoom
+  + [step_007_navigate] is traverse selected pants_leg paths while preserving return anchor
+  + [step_007b_corridor] is use HyperbolicCorridorNavigator when selected periphery frames point into a curved corridor
+  + [step_008_probe] is run PeripheryDimensionalProbe when missing or extra dimensions are suspected
+  + [step_009_close] is close map pass through ApertureReentryCycle when new perspective must persist
+  + [step_010_record] is emit SOP-HG map, tracker, scaffold update, subject declaration, or outside note
+
+  = must: record skipped steps when a quick map is used
+  = must: stop navigation when a selected leg cannot name its relation
+  = must: keep cell topology and proof status separate
+
+& [HyperbolicPantsMapRecord] is the SOP-HG shape for topology-map attention
+  + [map_node] is N:map:<map_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [focal_cell_node] is N:cell:<focal_cell_id>
+  + [periphery_cell_node] is N:cell:<periphery_cell_id>
+  + [orbit_node] is N:orbit:<dimension_key>
+  + [dimension_node] is N:dimension:<dimension_key>
+  + [leg_node] is N:leg:<relation_type>
+  + [outside_node] is N:outside:hyperbolic_map_boundary
+  + [map_edge] is E:maps:<map_id>
+  + [contain_edge] is E:contains:<focal_cell_id>
+  + [orbit_edge] is E:orbits:<dimension_key>
+  + [adjacency_edge] is E:adjoins:<cell_a>_<cell_b>
+  + [navigate_edge] is E:navigates:<leg_key>
+  + [boundary_edge] is E:bounds:<map_id>
+
+  = must: show focal_cell, periphery cells, dimensional_orbit, pants legs, scale, and outside
+  = must: keep transformer_hypergeometry_proxy separate from direct hidden-state access
+
+(focal_cell) :local_meaning_body: /boundary_curve/ |outside|
+  + [periphery_cell:dimension_key] is orbital_component
+    = dimension: dimension_key
+    = adjacency: focal_cell by relation_type
+    = leg: relation_type -> target_cell
+    - outside: unrepresented cells and hidden geometry

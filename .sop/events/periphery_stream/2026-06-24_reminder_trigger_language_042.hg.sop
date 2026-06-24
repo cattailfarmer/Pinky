@@ -1,0 +1,30 @@
+Subject: Reminder Trigger Language Realization
+
+Description: SOP-HG event record for defining reminder triggers as SOP attention primitives that invoke other attention layers under declared circumstances.
+
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_reminder_trigger_language\Dictated_Reminder_Trigger_Language_Source.sop
+
+& [Graph:2026-06-24_reminder_trigger_language_042] is a SOP-HG graph
+  + [N:event:2026-06-24_reminder_trigger_language_042] is reminder trigger language realization
+    = role: direct_focus_turn
+  + [N:trigger:reminder_trigger] is conditional reminder attention primitive
+  + [N:condition:declared_circumstance] is time, space, subject, composure, category, and frame matching
+  + [N:layer:invoked_attention_layer] is attention layer called by a matched reminder
+  + [N:policy:trigger_stack] is ordered interaction of reminders and downstream attention layers
+  + [N:policy:recurrence_guard] is loop and over-trigger prevention
+  + [N:outside:reminder_trigger_boundary] is hidden attention mechanics, nonmatching frames, and unsupported activation
+
+  / [E:realizes:reminder_trigger_language_042] -(realizes; event=N:event:2026-06-24_reminder_trigger_language_042; trigger=N:trigger:reminder_trigger; condition=N:condition:declared_circumstance; weight=language)> [Graph:2026-06-24_reminder_trigger_language_042]
+    = realization: reminders become programmable SOP attention primitives with declared circumstances
+  / [E:invokes:reminder_trigger_language_042] -(invokes; trigger=N:trigger:reminder_trigger; layer=N:layer:invoked_attention_layer; stack=N:policy:trigger_stack; weight=weaving)> [Graph:2026-06-24_reminder_trigger_language_042]
+    = realization: matched reminders can call other attention layers while remaining periphery unless promoted
+  / [E:guards:recurrence_guard_042] -(guards; trigger=N:trigger:reminder_trigger; guard=N:policy:recurrence_guard; outside=N:outside:reminder_trigger_boundary; weight=caution)> [Graph:2026-06-24_reminder_trigger_language_042]
+    = realization: trigger stacking needs loop guards and local identity scope
+  / [E:bounds:reminder_trigger_language_042] -(bounds; event=N:event:2026-06-24_reminder_trigger_language_042; outside=N:outside:reminder_trigger_boundary; weight=outside)> [Graph:2026-06-24_reminder_trigger_language_042]
+    = realization: reminder triggers are visible SOP dispatch records, not hidden model-state enforcement
+
+  = inside: ReminderTrigger.sop, BuildEnvironmentPeripheryMarker.sop, source preservation, current focal state
+  = boundary: this event defines SOP trigger language and attention-layer dispatch; it does not implement runtime scheduling or hidden attention control
+  = outside: hidden activations, automatic execution, nonmatching frames, and runtime enforcement not explicitly requested

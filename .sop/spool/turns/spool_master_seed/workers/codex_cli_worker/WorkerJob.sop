@@ -1,0 +1,13 @@
+Subject: Worker Job
+
+& [WorkerJob_codex_cli_worker] is a turn-spool worker record
+  + [worker_id] is codex_cli_worker
+  + [lane] is codex_cli
+  + [objective] is Additional Codex CLI worker lane for bounded job packets.
+  + [status] is deferred
+  + [prompt_packet] is prompt.md
+  + [launch_command] is deferred: explicit launch policy required
+  + [result_file] is result.sop
+  + [attention_frame] is none
+  = must: inspect launch_command before execution
+  - never: infer completion from launch alone

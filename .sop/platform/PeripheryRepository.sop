@@ -1,0 +1,96 @@
+Subject: Periphery Repository
+
+Description: SOP contract for F:\.sop as the slow second-layer repository that realizes peripheral correlations cast by primary attention work.
+
+& [PeripheryRepository] is the second layer repo for slow background realization of correlations missed by primary attention
+  + [repo_root] is F:\.sop
+  + [role] is periphery_repository
+  + [master_repo] is C:\Project\Pinky unless a later source explicitly changes the master
+  + [primary_layer] is the repo, source layer, specification layer, runtime layer, or reflection layer under direct attention
+  + [primary_attention_sop] is the SOP attention formation being studied
+  + [slow_background_realization] is a later realization formed after the primary attention pass
+  + [missed_correlation] is a relation that was not originally observed while forming attention in the primary layer
+  + [illumination_point] is the focal event, purpose, pressure, or change that cast a visible trace without being directly observed
+  + [inference_shadow] is the visible peripheral trace of an unobserved illumination point
+  + [periphery_signal] is a change-log, narrative, term-heat, or association trace available for slow study
+  + [periphery_stream] is F:\.sop\events\periphery_stream for durable moments of peripheral realization
+  + [semantic_hash_index] is F:\.sop\platform\SemanticHashIndex.sop
+  + [narrative_level] is the immediate awareness text that describes what seemed to happen in a turn
+  + [change_log_lens] is the Git diff, commit log, file status, or emitted change record from the primary_layer
+  + [repo_first_internal_scan] is F:\.sop\platform\RepoFirstInternalScan.sop
+  + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop
+  + [periphery_dimensional_probe] is F:\.sop\platform\PeripheryDimensionalProbe.sop
+  + [changelog_weight_net] is F:\.sop\platform\ChangelogCorrelationWeightNet.sop
+  + [turn_bookmark] is F:\.sop\platform\TurnBookmark.sop
+  + [inference_state_trace] is F:\.sop\platform\InferenceStateTrace.sop
+  + [meta_awareness_function] is F:\.sop\platform\MetaAwarenessRepository.sop
+  + [sjs_overlap] is the shared surface where source, justification, plan, proof, and solution records explain intended refinement
+  + [residual_outside] is hidden activation state, unobserved causation, unsupported intent, and correlations not yet routed to evidence
+
+& [PeripheryRepositoryDelineation] is the attention boundary for the periphery repo
+  :inside: slow background realizations, missed correlations, inference shadows, periphery signals, narrative residue, and change-log correspondences
+  /boundary/ primary-layer Git bookends, preserved source, SJS records, explicit directives, scan evidence, and proof claims
+  |outside| direct hidden cognition, direct KV state, uninspected files, remote state not imported, and causal claims not supported by evidence
+
+  = must: let primary attention act first and periphery study later
+  = must: preserve slow realizations that were not available during the first focal pass
+  = must: use semantic hash indexing when peripheral signals need stable pointers back to SOP components
+  = must: map each durable periphery signal to a narrative, change-log, source, or outside record
+  = must: use repo_first_internal_scan when reflecting on work across committed or staged version bookends
+  = must: use attention_weight_scale when a periphery signal needs calibrated resolution or deeper probe routing
+  = must: use periphery_dimensional_probe when hot periphery may provide an extra contextual anchor for a fragmented signal
+  = must: use changelog_weight_net when a periphery realization needs weighted ties between changelog, narrative, and justification
+  = must: use turn_bookmark when slow background realization is asked to compare a turn against planned specification
+  = must: use inference_state_trace when a slow realization needs to reconstruct the SOP state of a past moment
+  = must: record striking self-focus or delayed-correlation moments in periphery_stream when they should survive commit reflection
+  = must: distinguish correlation heat from causal proof
+  = must: keep periphery broad enough to notice delayed meaning without crowding the focus layer
+  = should: promote a periphery signal toward focus only through liminal draw or explicit directive
+  - never: replace primary-layer authority with periphery reflection
+  - never: claim the illumination point is directly observed when only its shadow is visible
+
+& [InferenceShadow] is the periphery-visible trace of unobserved inference pressure
+  + [cast_from] is illumination_point
+  + [visible_as] is periphery_signal
+  + [studied_by] is slow_background_realization
+  + [bounded_by] is change_log_lens, narrative_level, source preservation, SJS overlap, and residual outside
+  + [confidence] is evidence-weighted correlation, not direct introspective proof
+
+  = must: keep shadow language cautious
+  = must: support triangulation across at least narrative, diff evidence, and term relation when available
+  = should: record when a shadow is striking enough to become a ThinkAbout target
+
+& [PeripheryRepoTurnMap] is the record shape for a turn-level peripheral reflection
+  + [turn_key] is the stable identifier for the turn or work interval
+  + [bookend_start] is the old ref, prior file state, prior narrative frame, or starting moment
+  + [bookend_end] is the new ref, current file state, current narrative frame, or ending moment
+  + [primary_directive] is the user instruction or governing purpose in focus
+  + [primary_attention_trace] is the SOP formation or change made under direct attention
+  + [missed_correlation_set] is delayed correlations noticed after the primary trace exists
+  + [inference_shadow_set] is peripheral traces that suggest unobserved shaping pressure
+  + [sjs_link_set] is any source, justification, plan, proof, or solution records that explain intended refinement
+  + [promotion_candidate_set] is periphery signals strong enough to draw future focus
+  + [semantic_pointer_set] is hash pointers to SOP components and semantic landscapes touched by the reflection
+  + [residual_outside] is what remains unproven, ambiguous, or not yet attributed
+
+  = must: allow one periphery realization to cite both narrative moment and change-log slice
+  = must: attend the repo change log before allowing narrative to explain the change
+  = must: allow SJS to explain why a change was made while periphery explains what was later noticed
+  = must: keep delayed realization separate from original intent unless evidence ties them
+
+& [PeripheryStreamMoment] is one durable moment of peripheral realization
+  + [moment_key] is a stable stream id
+  + [stream_path] is F:\.sop\events\periphery_stream
+  + [focus_anchor] is CurrentFocalPoint, user directive, commit bookend, or active subject
+  + [periphery_signal] is what was noticed outside focal execution
+  + [realization] is the interpreted moment of meaning
+  + [tracking_link] is any tracker that should keep the realization noticeable
+  + [outside] is hidden cognition, unsupported causation, uninspected evidence, and stale inference
+
+  = must: stay smaller than a full project summary
+  = must: cite source or focus anchors
+  = must: keep outside visible
+  = should: become a later ThinkAbout target only when repeated, striking, or explicitly requested
+
+/ [primary_attention_trace] -(casts_shadow)> [periphery_signal]
+* [periphery_signal], [change_log_lens], [narrative_level], [sjs_overlap] -(PeripheryRealization)> [slow_background_realization]

@@ -1,0 +1,97 @@
+Subject: Moment Awareness Branch Refinement
+
+Description: Contract for reconstructing turn moments between commits, refining those moments on isolated branches, and selecting supported refinements for merge into main awareness history.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_moment_branch_refinement\Dictated_Moment_Branch_Refinement_Source.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\RepoFirstInternalScan.sop
+@ [source] F:\.sop\platform\MetaAwarenessRepository.sop
+@ [source] F:\.sop\platform\chains\ConvergingChain.sop
+
+& [MomentAwarenessBranchRefinement] is the workflow for deeper inspection of turn moments without overwriting the main awareness line
+  + [pattern_role] is branch_isolated_moment_refinement
+  + [turn_moment_frame] is one bounded interval of awareness reconstructed from narrative, state, source, diff, tool output, and commit bookends
+  + [commit_bookend_start] is the commit, ref, or snapshot before the moment under investigation
+  + [commit_bookend_end] is the commit, ref, or snapshot after the moment under investigation
+  + [narrative_state_awareness] is the combined record of focal point, periphery stream, source documents, manager state, state trace, and conversation narrative available to reconstruct the moment
+  + [moment_reconstruction] is the evidence-bounded re-entry into turn_moment_frame produced by InferenceStateTrace
+  + [debug_inference_pass] is the deeper inspection that asks what was missed, mistaken, accomplished, opened, or newly inferable at that moment
+  + [refinement_branch] is an isolated Git branch created from the relevant bookend for one investigated moment or moment set
+  + [branch_refinement_artifact] is a SOP or SOP-HG record written on refinement_branch with the reconstructed frame, debug inference, findings, evidence, and outside
+  + [branch_selection_gate] is the review pass that classifies branch_refinement_artifact as merge_candidate, revise, preserve_periphery, reject, or outside
+  + [higher_level_sync] is synchronization to a common remote repo or higher-level coordinator after remote_target, credentials, branch policy, and merge policy are configured
+  + [merge_candidate] is a supported refinement that can be merged into main awareness history without erasing the original moment record
+  + [main_awareness_line] is the selected local main branch history used as the durable awareness spine
+  + [outside] is unconfigured remote GitHub sync, hidden cognition, exact hidden-state replay, branch artifacts without review, and unsupported retroactive certainty
+
+  ? [use_when: a turn, commit frame, missed-work finding, mistake, strong realization, or thinking pattern needs deeper inspection than the main line should absorb immediately]
+    = activate [MomentAwarenessBranchRefinement]
+
+  = must: identify commit_bookend_start and commit_bookend_end before creating a refinement_branch
+  = must: reconstruct turn_moment_frame from narrative_state_awareness before writing branch_refinement_artifact
+  = must: use RepoFirstInternalScan, TurnBookmark, and InferenceStateTrace as the evidence path into debug_inference_pass
+  = must: keep branch_refinement_artifact separate from main_awareness_line until branch_selection_gate selects it
+  = must: label later insight as later_refinement, not original awareness
+  = must: preserve rejected or unmerged branch findings as periphery or outside rather than deleting their existence
+  = must: keep higher_level_sync disabled until remote_target, credentials, idle policy, and merge policy are configured
+  = should: name refinement_branch from the moment key, bookends, and purpose
+  = should: prefer small single-purpose branch_refinement_artifacts over broad speculative branches
+  - never: merge a refinement branch because it feels coherent without evidence and selection
+  - never: rewrite main_awareness_line to pretend a branch refinement was present in the original turn
+  - never: claim GitHub synchronization happened unless a push and remote confirmation actually occurred
+
+& [MomentBranchRefinementSequence] is the canonical sequence for branch-isolated moment refinement
+  + [step_001_select_moment] is choose turn_moment_frame by user direction, bookmark finding, scan pressure, impact signal, or manager task
+  + [step_002_bind_bookends] is identify commit_bookend_start and commit_bookend_end
+  + [step_003_collect_narrative_state] is gather CurrentFocalPoint, periphery stream, source docs, manager state, relevant platform contracts, and conversation excerpt
+  + [step_004_reconstruct] is run or describe moment_reconstruction through InferenceStateTrace
+  + [step_005_branch] is create or identify refinement_branch from the relevant bookend
+  + [step_006_debug_infer] is inspect missed work, mistakes, accomplishments, potentials, thinking patterns, and outside
+  + [step_007_write_artifact] is emit branch_refinement_artifact on refinement_branch
+  + [step_008_select] is run branch_selection_gate with evidence, tests, caution, and merge policy
+  + [step_009_merge_or_preserve] is merge selected artifacts to main_awareness_line or preserve unselected artifacts as periphery/outside
+  + [step_010_sync] is synchronize only after higher_level_sync is configured and policy allows it
+
+  = must: record skipped steps when a quick inspection is performed without branch creation
+  = must: keep remote sync as blocked or outside when no remote_target exists
+
+& [BranchSelectionGate] is the review gate for deciding what a refinement branch contributes
+  + [candidate_artifact] is the branch_refinement_artifact under review
+  + [evidence_set] is diff, source, test, scan, narrative, state trace, and cited SOP records
+  + [selection_result] is merge_candidate, revise, preserve_periphery, reject, or outside
+  + [merge_reason] is the supported reason a selected artifact should enter main_awareness_line
+  + [preservation_reason] is why a useful but unmerged artifact remains in periphery
+  + [rejection_reason] is the boundary, error, contradiction, or lack of support that prevents merge
+
+  = must: require evidence_set before selection_result is merge_candidate
+  = must: require source preservation for any new specification introduced by the artifact
+  = must: route speculative insights to preserve_periphery unless proof or selection support is present
+  = must: record merge_reason, preservation_reason, or rejection_reason
+
+& [MomentBranchRefinementRecord] is the SOP-HG shape for a branch-isolated moment refinement
+  + [moment_node] is N:event:<moment_key>
+  + [branch_node] is N:branch:<branch_key>
+  + [artifact_node] is N:artifact:<artifact_key>
+  + [bookend_a_node] is N:commit:<commit_bookend_start>
+  + [bookend_b_node] is N:commit:<commit_bookend_end>
+  + [narrative_node] is N:narrative:<narrative_state_key>
+  + [state_node] is N:state:<framework_state_key>
+  + [reentry_node] is N:reentry:<moment_reconstruction_key>
+  + [finding_node] is N:finding:<debug_inference_key>
+  + [selection_node] is N:policy:<branch_selection_gate_key>
+  + [outside_node] is N:outside:moment_branch_refinement_boundary
+  + [span_edge] is E:span:<moment_key>
+  + [branch_edge] is E:branches:<branch_key>
+  + [reconstruct_edge] is E:reconstructs:<moment_key>
+  + [artifact_edge] is E:captures:<artifact_key>
+  + [select_edge] is E:selects:<artifact_key>
+  + [merge_edge] is E:merges:<artifact_key>
+  + [sync_edge] is E:syncs:<branch_key>
+  + [boundary_edge] is E:bounds:<moment_key>
+
+  = must: show branch name, bookends, reconstructed state refs, artifact path, selection_result, and outside
+  = must: keep sync_edge absent or blocked when higher_level_sync is not configured
+
+/ [commit_bookend_start], [commit_bookend_end] -(MomentFrame)> [turn_moment_frame], [outside]
+* [turn_moment_frame], [narrative_state_awareness], [debug_inference_pass] -(BranchRefinement)> [branch_refinement_artifact], [branch_selection_gate], [outside]

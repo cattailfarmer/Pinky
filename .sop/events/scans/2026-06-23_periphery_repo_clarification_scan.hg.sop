@@ -1,0 +1,224 @@
+Subject: Sensitivity Scan Event
+
+& [SensitivityScan_20260623T220356Z] is a sensitivity scan over Git bookends
+  + [repo_root] is F:\.sop
+  + [base_ref] is HEAD
+  + [head_ref] is WORKTREE
+  + [changed_file_count] is 24
+  + [change_001] is A:events/reflections/2026-06-23_attention_compiler_impression.hg.sop
+    = additions: 26
+    = deletions: 0
+  + [change_002] is A:events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_003] is A:events/reflections/2026-06-23_model_lens_projection.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_004] is A:events/reflections/2026-06-23_periphery_repo_clarification.hg.sop
+    = additions: 24
+    = deletions: 0
+  + [change_005] is A:events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop
+    = additions: 170
+    = deletions: 0
+  + [change_006] is A:events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop
+    = additions: 200
+    = deletions: 0
+  + [change_007] is A:events/scans/2026-06-23_model_lens_projection_scan.hg.sop
+    = additions: 185
+    = deletions: 0
+  + [change_008] is M:planning/project_manager/Manager_State.sop
+    = additions: 9
+    = deletions: 1
+  + [change_009] is M:platform/Attention.sop
+    = additions: 12
+    = deletions: 0
+  + [change_010] is A:platform/AttentionImpressionCompiler.sop
+    = additions: 36
+    = deletions: 0
+  + [change_011] is A:platform/MetaAwarenessRepository.sop
+    = additions: 56
+    = deletions: 0
+  + [change_012] is A:platform/ModelLensProjection.sop
+    = additions: 37
+    = deletions: 0
+  + [change_013] is A:platform/PeripheryRepository.sop
+    = additions: 64
+    = deletions: 0
+  + [change_014] is M:platform/SOPHypergraphRecord.sop
+    = additions: 2
+    = deletions: 2
+  + [change_015] is M:platform/attention_layers/Index.sop
+    = additions: 2
+    = deletions: 0
+  + [change_016] is M:platform/attention_layers/Periphery.sop
+    = additions: 2
+    = deletions: 0
+  + [change_017] is A:platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop
+    = additions: 18
+    = deletions: 0
+  + [change_018] is A:platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop
+    = additions: 11
+    = deletions: 0
+  + [change_019] is A:platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop
+    = additions: 20
+    = deletions: 0
+  + [change_020] is A:platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop
+    = additions: 11
+    = deletions: 0
+  + [change_021] is A:platform/source_documents/2026-06-23_model_lens_projection/Dictated_Model_Lens_Projection_Source.sop
+    = additions: 19
+    = deletions: 0
+  + [change_022] is A:platform/source_documents/2026-06-23_model_lens_projection/manifest.sop
+    = additions: 11
+    = deletions: 0
+  + [change_023] is A:platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = additions: 21
+    = deletions: 0
+  + [change_024] is A:platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop
+    = additions: 13
+    = deletions: 0
+  + [signal_001_attention] is impact
+    = touch_count: 18
+    = heat: 915
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_model_lens_projection.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/MetaAwarenessRepository.sop, platform/ModelLensProjection.sop, platform/PeripheryRepository.sop, platform/attention_layers/Index.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/Dictated_Model_Lens_Projection_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_002_proof] is impact
+    = touch_count: 16
+    = heat: 905
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/MetaAwarenessRepository.sop, platform/ModelLensProjection.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop, platform/source_documents/2026-06-23_model_lens_projection/Dictated_Model_Lens_Projection_Source.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_003_narrative] is impact
+    = touch_count: 16
+    = heat: 874
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_model_lens_projection.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_004_correlation] is impact
+    = touch_count: 12
+    = heat: 806
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/AttentionImpressionCompiler.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_005_platform] is impact
+    = touch_count: 14
+    = heat: 783
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/attention_layers/Index.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_006_pressure] is impact
+    = touch_count: 10
+    = heat: 756
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/AttentionImpressionCompiler.sop, platform/PeripheryRepository.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_007_residual_outside] is impact
+    = touch_count: 7
+    = heat: 748
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/AttentionImpressionCompiler.sop, platform/MetaAwarenessRepository.sop, platform/ModelLensProjection.sop, platform/PeripheryRepository.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_008_over] is impact
+    = touch_count: 10
+    = heat: 704
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/MetaAwarenessRepository.sop, platform/attention_layers/Index.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_009_heat] is impact
+    = touch_count: 8
+    = heat: 704
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/AttentionImpressionCompiler.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_010_term] is impact
+    = touch_count: 7
+    = heat: 701
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_011_git] is impact
+    = touch_count: 7
+    = heat: 689
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_012_why] is impact
+    = touch_count: 7
+    = heat: 689
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/Attention.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/attention_layers/Periphery.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_013_signal] is impact
+    = touch_count: 7
+    = heat: 684
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/ModelLensProjection.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_014_bookends] is impact
+    = touch_count: 6
+    = heat: 679
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_015_claim] is impact
+    = touch_count: 7
+    = heat: 677
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/AttentionImpressionCompiler.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_016_repo_root] is impact
+    = touch_count: 5
+    = heat: 675
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_017_truth] is impact
+    = touch_count: 7
+    = heat: 674
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_model_lens_projection.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/MetaAwarenessRepository.sop, platform/source_documents/2026-06-23_model_lens_projection/Dictated_Model_Lens_Projection_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_018_event] is impact
+    = touch_count: 7
+    = heat: 668
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_019_changed] is impact
+    = touch_count: 7
+    = heat: 657
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/MetaAwarenessRepository.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_020_terms] is impact
+    = touch_count: 6
+    = heat: 653
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/MetaAwarenessRepository.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_021_attention_compiler_impression] is impact
+    = touch_count: 7
+    = heat: 638
+    = retention_policy: emphasize
+    = evidence_paths: events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/AttentionImpressionCompiler.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_022_source_documents] is impact
+    = touch_count: 8
+    = heat: 637
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, platform/AttentionImpressionCompiler.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_023_scan] is impact
+    = touch_count: 6
+    = heat: 633
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_024_attentionimpressioncompiler] is impact
+    = touch_count: 7
+    = heat: 624
+    = retention_policy: emphasize
+    = evidence_paths: events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [residual_outside] is scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

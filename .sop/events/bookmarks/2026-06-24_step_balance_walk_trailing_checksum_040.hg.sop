@@ -1,0 +1,38 @@
+Subject: Step Balance Walk Trailing Checksum 040
+
+Description: One-turn-later checksum review of commit 23621b6, recording latent depth for replacing checkpoint-heavy walking with continuity-based running when focus and periphery remain coherent.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\StepBalanceWalk.sop
+@ [source] F:\.sop\platform\PeripheryContinuityRun.sop
+@ [source] F:\.sop\runtime\sop_node\step_balance_walk.py
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_step_balance_walk_037.hg.sop
+
+& [Graph:2026-06-24_step_balance_walk_trailing_checksum_040] is a SOP-HG graph
+  + [N:bookmark:step_balance_walk_trailing_checksum_040] is trailing checksum review of Step Balance Walk
+    = one_turn_lag: true
+    = direct_focus_commit: 23621b6
+    = version_a: fcbcada
+    = version_b: 23621b6
+  + [N:event:2026-06-24_step_balance_walk_037] is prior direct-focus step balance walk realization
+  + [N:event:2026-06-24_periphery_continuity_run_039] is current turn continuity run realization
+  + [N:zone:checkpoint_pressure] is warmth zone where step settlement can become too heavy when continuity is stable
+  + [N:signal:rolling_periphery_as_balance_marker] is signal that stable periphery can carry balance across focus frames
+  + [N:finding:step_balance_walk_needs_run_mode] is latent depth candidate that walking should promote to running under stable continuity
+  + [N:policy:focus_next] is checksum disposition to use PeripheryContinuityRun when focus and periphery are coherent enough
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model attention
+
+  / [E:span:step_balance_walk_trailing_checksum_040] -(span; start=N:commit:fcbcada; end=N:commit:23621b6; review=N:bookmark:step_balance_walk_trailing_checksum_040)> [Graph:2026-06-24_step_balance_walk_trailing_checksum_040]
+    = evidence: 23621b6 added StepBalanceWalk as a step-ending operational gait
+  / [E:trails:2026-06-24_step_balance_walk_037] -(trails; direct_focus=N:event:2026-06-24_step_balance_walk_037; review=N:bookmark:step_balance_walk_trailing_checksum_040)> [Graph:2026-06-24_step_balance_walk_trailing_checksum_040]
+    = realization: the step gait was useful, but can become unnecessary checkpoint pressure when focus and rolling periphery are already continuous
+  / [E:heats:checkpoint_pressure] -(heats; zone=N:zone:checkpoint_pressure; signal=N:signal:rolling_periphery_as_balance_marker; latent=N:finding:step_balance_walk_needs_run_mode; weight=hot)> [Graph:2026-06-24_step_balance_walk_trailing_checksum_040]
+    = evidence: current source says stable rolling periphery and coherent focus are the only stable markers needed to run
+  / [E:inquires:step_balance_walk_needs_run_mode] -(inquires; latent=N:finding:step_balance_walk_needs_run_mode; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_step_balance_walk_trailing_checksum_040]
+    = realization: PeripheryContinuityRun becomes the high-momentum gait above StepBalanceWalk
+  / [E:bounds:step_balance_walk_trailing_checksum_040] -(bounds; review=N:bookmark:step_balance_walk_trailing_checksum_040; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_step_balance_walk_trailing_checksum_040]
+    = caution: checksum observes later refinement and does not rewrite the original step-balance commit's awareness
+
+  = inside: 23621b6 diff, StepBalanceWalk.sop, step_balance_walk.py, current continuity source directive
+  = boundary: this review records latent run mode after the direct-focus turn, not proof that checkpoint reduction is always safe
+  = outside: hidden transformer attention, unsupported runtime effect claims, and continuity treated as proof of future success

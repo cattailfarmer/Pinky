@@ -1,0 +1,40 @@
+Subject: Faculty Attention Field Naming Periphery Realization
+
+Description: SOP-HG event record for naming custom attention faculty fields by the feature each faculty accounts for.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_faculty_attention_field_naming\Dictated_Faculty_Attention_Field_Naming_Source.sop
+@ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\LocalIdentityConsumption.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_local_identity_consumption_trailing_checksum_033.hg.sop
+
+& [Graph:2026-06-24_faculty_attention_field_naming_034] is a SOP-HG graph
+  + [N:event:2026-06-24_faculty_attention_field_naming_034] is faculty attention field naming realization
+    = role: direct_focus_turn
+  + [N:field:honesty_claim_distinction] is Honesty field signature :claim: /distinction/ |uncertainty|
+  + [N:field:security_assignment_safe_boundary_line] is Security field signature :assignment: /safe_boundary_line/ |risk|
+  + [N:governor:honesty_faculty] is truth and fair-representation faculty
+  + [N:governor:security_faculty] is safety and integrity faculty
+  + [N:term:truth_feature_account] is Honesty accounts for truth status, support separation, contradiction, and fair representation
+  + [N:term:safety_feature_account] is Security accounts for assignments, permissions, protected work, and safe operation
+  + [N:namespace:faculty_field_namespace] is scoped identifier map for faculty fields
+  + [N:signal:field_name_collision] is unscoped shared field name that may blend faculty focus
+  + [N:outside:faculty_field_naming_boundary] is unresolved field mapping, generic placeholders, and hidden model mechanics
+
+  / [E:names:honesty_claim_distinction_034] -(names; system=N:governor:honesty_faculty; field=N:field:honesty_claim_distinction; namespace=N:namespace:faculty_field_namespace; weight=truth)> [Graph:2026-06-24_faculty_attention_field_naming_034]
+    = realization: Honesty should focus a claim field under a distinction boundary rather than generic attention placeholders
+  / [E:accounts_for:truth_feature_account_034] -(accounts_for; system=N:governor:honesty_faculty; feature=N:term:truth_feature_account; field=N:field:honesty_claim_distinction; weight=feature_account)> [Graph:2026-06-24_faculty_attention_field_naming_034]
+    = realization: the field name should name what the faculty accounts for
+  / [E:names:security_assignment_safe_boundary_line_034] -(names; system=N:governor:security_faculty; field=N:field:security_assignment_safe_boundary_line; namespace=N:namespace:faculty_field_namespace; weight=safety)> [Graph:2026-06-24_faculty_attention_field_naming_034]
+    = realization: Security should focus an assignment field under a safe boundary line rather than generic attention placeholders
+  / [E:accounts_for:safety_feature_account_034] -(accounts_for; system=N:governor:security_faculty; feature=N:term:safety_feature_account; field=N:field:security_assignment_safe_boundary_line; weight=feature_account)> [Graph:2026-06-24_faculty_attention_field_naming_034]
+    = realization: Security's field naming should expose action, permission, and boundary accountability
+  / [E:scopes:faculty_field_namespace_034] -(scopes; namespace=N:namespace:faculty_field_namespace; field=N:field:honesty_claim_distinction; field=N:field:security_assignment_safe_boundary_line; weight=collision_prevention)> [Graph:2026-06-24_faculty_attention_field_naming_034]
+    = realization: faculty field signatures must pass through LocalIdentityConsumption scope before kernel compilation
+  / [E:bounds:faculty_attention_field_naming_034] -(bounds; namespace=N:namespace:faculty_field_namespace; collision=N:signal:field_name_collision; outside=N:outside:faculty_field_naming_boundary; weight=caution)> [Graph:2026-06-24_faculty_attention_field_naming_034]
+    = realization: unresolved or unscoped field naming remains outside rather than blending faculty attention
+
+  = inside: FacultyAttentionFieldNaming.sop, AttentionKernelCompiler.sop, LocalIdentityConsumption.sop, SecurityHonestyGovernance.sop
+  = boundary: this event defines the specification layer for faculty field naming; it does not yet implement runtime field-signature generation
+  = outside: hidden transformer attention, unsupported faculty mapping, unresolved field collisions, and generic placeholders used as durable identity

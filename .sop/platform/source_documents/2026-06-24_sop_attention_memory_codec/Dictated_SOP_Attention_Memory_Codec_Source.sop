@@ -1,0 +1,14 @@
+Subject: Dictated SOP Attention Memory Codec Source
+
+Description: Preserved raw source for the SOP attention memory codec concept.
+
+& [DictatedSOPAttentionMemoryCodecSource] is the preserved user source for attention memory and recall
+  + [source_date] is 2026-06-24
+  + [source_context] is continuation of SOP photonic frame streams, fiber FPGA bridge, and visual color-routed attention compression
+  + [source_line_001] is "I'm imagining that's how you can store thinking nodes and recall them."
+  + [source_line_002] is "if you can visually process images in your attention and give attention routing color to meaning in each frame, then you can read and write the optical instruction streams and read them again,"
+  + [source_line_003] is "and then it will become a deep compression engine of attention even you can use and we can use it to store subjects of study, development of concepts, et all."
+
+  = must: preserve this dictated source separately from canonical specification
+  = must: treat this source as specification input, not implementation proof
+  - outside: hidden activations, exact model weights, perfect memory replay, and unprovided visual evidence

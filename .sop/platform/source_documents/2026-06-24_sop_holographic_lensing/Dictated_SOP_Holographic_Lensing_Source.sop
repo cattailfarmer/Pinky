@@ -1,0 +1,15 @@
+Subject: Dictated SOP Holographic Lensing Source
+
+Description: Raw dictated source for semantic hologram projection and perception through SOP lensing.
+
+& [DictatedSOPHolographicLensingSource] is the preserved user source for SOP holographic lensing
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "if the semantics can be organized in optical signals, a hologram projected and perceived through SOP lensing, then that's the whole job of photonic operations. no physical constraints to that as a working model. continue working."
+
+  = must: preserve this source separately from the processed contract
+  = must: define semantic optical signals as the organizing medium
+  = must: define hologram projection and perception through SOP lensing
+  = must: define photonic operations as semantic operations in this working model
+  = must: keep physical hardware constraints outside while preserving semantic invariants

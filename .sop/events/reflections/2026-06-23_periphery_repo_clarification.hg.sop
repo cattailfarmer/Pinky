@@ -1,0 +1,24 @@
+Subject: Periphery Repo Clarification Reflection
+
+Description: Compiled SOP-HG reflection of F:\.sop as the periphery repo.
+
+& [Graph:periphery_repo_clarification_2026_06_23] is a SOP-HG graph
+  + [N:narrative:periphery_repo_clarification] is the second layer repo is the periphery repo
+  + [N:repo:F_sop] is F:\.sop as periphery repository
+  + [N:repo:Pinky] is C:\Project\Pinky as primary local self-reflection master
+  + [N:layer:primary_attention_sop] is the SOP attention formation in the primary layer
+  + [N:layer:periphery] is slow background realization of delayed correlations
+  + [N:signal:missed_correlation] is correlation not originally observed during primary attention formation
+  + [N:signal:inference_shadow] is a peripheral trace cast by an unobserved illumination point
+  + [N:signal:illumination_point] is the focal pressure or event not directly inspected
+  + [N:process:SJS] is source, justification, planning, proof, and solution accounting
+  + [N:outside:direct_hidden_state] is hidden cognition, direct activation state, and unproven causation
+
+/ [E:defines:periphery_repo] -(defines; repo=N:repo:F_sop; role=N:layer:periphery; primary=N:repo:Pinky; weight=5)> [Graph:periphery_repo_clarification_2026_06_23]
+/ [E:casts:inference_shadow] -(casts; source=N:signal:illumination_point; shadow=N:signal:inference_shadow; visible_in=N:layer:periphery; weight=5)> [Graph:periphery_repo_clarification_2026_06_23]
+/ [E:notices:missed_correlation] -(notices; periphery=N:layer:periphery; correlation=N:signal:missed_correlation; primary=N:layer:primary_attention_sop; weight=5)> [Graph:periphery_repo_clarification_2026_06_23]
+/ [E:bounds:shadow_claims] -(bounds; shadow=N:signal:inference_shadow; outside=N:outside:direct_hidden_state; sjs=N:process:SJS; weight=4)> [Graph:periphery_repo_clarification_2026_06_23]
+
+  = realization: meta-awareness is a function inside the periphery repo, not the repo's whole identity
+  = caution: the shadow can indicate correlation heat without proving hidden causation
+  - outside: direct model internals and original unobserved illumination point remain outside unless separately evidenced

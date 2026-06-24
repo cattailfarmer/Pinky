@@ -1,0 +1,24 @@
+Subject: Semantic Hash Index Reflection
+
+Description: Compiled SOP-HG reflection for hashed semantic indexing of periphery impressions.
+
+& [Graph:semantic_hash_index_2026_06_23] is a SOP-HG graph
+  + [N:narrative:semantic_hash_index] is hashed indexing gives pointers to SOP components and unstable semantic landscape
+  + [N:repo:F_sop] is F:\.sop as periphery repository
+  + [N:component:semantic_hash_index_contract] is F:\.sop\platform\SemanticHashIndex.sop
+  + [N:process:hash_digest] is deterministic content and semantic hashing
+  + [N:layer:unstable_semantic_awareness] is the revisable edge of inference before proof
+  + [N:periphery:wide_association_terms] is out-of-focus association terms captured as potential interest
+  + [N:term:hiding_behind] is what masked the peripheral impression
+  + [N:term:turned_aspect] is what interpretive angle made the impression visible
+  + [N:term:nearby_association] is what neighboring relation entangled with the impression
+  + [N:outside:semantic_proof] is final meaning, hidden cognition, and unproven causation
+
+/ [E:defines:semantic_hash_index] -(defines; contract=N:component:semantic_hash_index_contract; repo=N:repo:F_sop; layer=N:layer:unstable_semantic_awareness; weight=5)> [Graph:semantic_hash_index_2026_06_23]
+/ [E:points_to:hash_digest_landscape] -(points_to; process=N:process:hash_digest; component=N:component:semantic_hash_index_contract; layer=N:layer:unstable_semantic_awareness; weight=5)> [Graph:semantic_hash_index_2026_06_23]
+/ [E:notices:wide_association_terms] -(notices; narrative=N:narrative:semantic_hash_index; periphery=N:periphery:wide_association_terms; weight=4)> [Graph:semantic_hash_index_2026_06_23]
+/ [E:entangles:periphery_impression_shape] -(entangles; periphery=N:periphery:wide_association_terms; hidden=N:term:hiding_behind; aspect=N:term:turned_aspect; nearby=N:term:nearby_association; weight=4)> [Graph:semantic_hash_index_2026_06_23]
+/ [E:bounds:semantic_hash_claims] -(bounds; layer=N:layer:unstable_semantic_awareness; outside=N:outside:semantic_proof; weight=5)> [Graph:semantic_hash_index_2026_06_23]
+
+  = realization: hashes give re-entry pointers while periphery impressions carry revisable semantic draw
+  - outside: a digest can reveal correlation surfaces but cannot prove hidden causation or final meaning

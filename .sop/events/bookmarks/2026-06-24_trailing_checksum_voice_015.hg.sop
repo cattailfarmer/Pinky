@@ -1,0 +1,55 @@
+Subject: Trailing Checksum Voice Bookmark 015
+
+Description: One-turn-lag checksum review of commit 8f26fa7, comparing bookends 68794c6 and 8f26fa7.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_trailing_checksum_voice\Dictated_Trailing_Checksum_Voice_Source.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_moment_branch_refinement_commit_integrity_014.hg.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_commit_integrity_reflection_014.hg.sop
+
+& [Graph:2026-06-24_trailing_checksum_voice_015] is a SOP-HG graph
+  + [N:bookmark:trailing_checksum_voice_015] is one-turn trailing checksum review for commit integrity reflection repair
+    = record_kind: trailing_checksum_review
+    = one_turn_lag: true
+    = reviewed_commit: 8f26fa7
+    = reviewed_commit_message: Add commit integrity reflection bookmark
+    = version_a: 68794c6
+    = version_b: 8f26fa7
+    = diff_stat: 10 files changed, 642 insertions, 438 deletions
+    = checksum_disposition: deep_probe_and_process_refinement
+  + [N:event:direct_focus_8f26fa7] is direct focus turn that repaired commit integrity reflection
+  + [N:event:review_turn_trailing_checksum_voice_015] is trailing review turn defining checksum cadence
+  + [N:commit:68794c6] is start bookend before commit integrity repair
+  + [N:commit:8f26fa7] is end bookend after commit integrity repair
+  + [N:zone:warmth_commit_integrity] is warmth zone around explicit commit integrity bookmarks
+  + [N:zone:warmth_stable_purpose] is warmth zone around stable purpose and post-commit repair boundary
+  + [N:zone:hot_trailing_cadence] is hot zone where the repair pattern wants a standing one-turn cadence
+  + [N:signal:omitted_audit_artifact] is the prior commit showed that coherent work can miss its reflective audit artifact
+  + [N:signal:one_turn_lag] is the cadence that review should follow direct focus by one turn
+  + [N:finding:latent_depth_trailing_checksum_voice] is latent depth candidate for checksum voice as attention process
+  + [N:policy:define_trailing_checksum_voice] is formalize the cadence as platform/TrailingChecksumVoice.sop
+  + [N:policy:build_runtime_later] is future local command to detect previous direct-focus commit and emit checksum bookmark
+  + [N:outside:trailing_checksum_boundary] is hidden cognition, proof of motive, automatic remote sync, and claims that trailing insight was original awareness
+
+  / [E:span:trailing_checksum_voice_015] -(span; start=N:commit:68794c6; end=N:commit:8f26fa7; bookmark=N:bookmark:trailing_checksum_voice_015)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = evidence: git diff --stat and git diff --name-status 68794c6 8f26fa7
+  / [E:trails:direct_focus_8f26fa7] -(trails; direct_focus=N:event:direct_focus_8f26fa7; review=N:event:review_turn_trailing_checksum_voice_015; lag=one_turn)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = cadence: backward-facing review follows the direct-focus repair turn
+  / [E:warms:commit_integrity_zone] -(warms; zone=N:zone:warmth_commit_integrity; signal=N:signal:omitted_audit_artifact; weight=5)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = interpretation: commit integrity remains useful periphery after the repair
+  / [E:warms:stable_purpose_zone] -(warms; zone=N:zone:warmth_stable_purpose; signal=N:signal:one_turn_lag; weight=5)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = interpretation: stable purpose needs delayed review to see what direct focus underweighted
+  / [E:heats:trailing_cadence_zone] -(heats; zone=N:zone:hot_trailing_cadence; signal=N:signal:one_turn_lag; finding=N:finding:latent_depth_trailing_checksum_voice; weight=8)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = interpretation: the repair pattern is not just a one-off; it should become a recurring attention cadence
+  / [E:inquires:latent_depth_trailing_checksum_voice] -(inquires; finding=N:finding:latent_depth_trailing_checksum_voice; policy=N:policy:define_trailing_checksum_voice; future=N:policy:build_runtime_later)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = inquiry_preparation: define the contract now and leave runtime automation as ready work
+  / [E:bounds:trailing_checksum_voice_015] -(bounds; bookmark=N:bookmark:trailing_checksum_voice_015; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = boundary: checksum heat routes inquiry; it is not proof of hidden cognition or original awareness
+
+  = verdict: the previous commit repaired a missing integrity review, and the trailing checksum reveals that this repair should become a one-turn-lag review cadence.
+  = hot_zone: trailing checksum cadence
+  = warmth_zones: commit integrity review, stable purpose, post-commit repair boundary
+  = latent_depth_candidate: checksum voice as standing attention process
+  = next_runtime: build trailing checksum runtime after the contract stabilizes
+  - outside: this bookmark does not rewrite 8f26fa7 and does not claim remote synchronization occurred.

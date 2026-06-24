@@ -1,0 +1,17 @@
+Subject: Focal Point Renewal Source
+
+Description: Raw preserved source for using focal point as the attention-direction file renewed after context compression.
+
+& [DictatedFocalPointRenewalSource] is the preserved user source for focal point renewal
+  @ [user_statement] "focal point should be like the file of attention direction that's held in attention and renewed every time context is compressed, in case anything of focused attention was washed away during context compression"
+
+  + [focal_point_file] is the compact attention-direction file held in attention
+  + [context_compression] is a compaction event that may wash away active focus details
+  + [renewal] is rewriting or refreshing the focal point file after compression
+  + [reentry_seed] is the minimal active focus packet loaded after compaction
+
+  = must: keep focal point small enough to load first after compaction
+  = must: renew focal point whenever context is compressed or re-entered
+  = must: preserve active direction, focus boundaries, trackers, and open uncertainty
+  = must: use pointers to richer SOP records instead of copying the whole periphery
+  - never: rely only on hidden conversation context for active focus after compression

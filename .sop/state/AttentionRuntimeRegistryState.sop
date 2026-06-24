@@ -1,0 +1,56 @@
+Subject: Current Attention Runtime Registry State
+
+Description: Live semantic stack-frame registry for the current focus pass.
+
+@ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+@ [source] C:\Project\Pinky\.sop\platform\FocusResolutionRefinement.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_attention_runtime_registry_071.hg.sop
+
+& [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
+  + [registry_status] is active
+  + [registry_scope] is current non-photonic focus refinement pass for C:\Project\Pinky\.sop
+  + [active_root_frame] is attention_frame_2026_06_24_focus_resolution_runtime_001
+  + [active_frame_count] is 1
+  + [suspended_frame_count] is 0
+  + [closed_frame_count] is 0
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [registry_outside] is hidden activations, exact transformer attention, model weights, executable runtime stack, and untracked cognition
+
+  = must: update this state when focus materially changes
+  = must: open child frames for zoom, traversal, Wisdom, Caution, or integration attempts
+  = must: preserve return anchors before closing or suspending frames
+  = must: keep the registry semantic and visible, not native-runtime or hidden-state based
+  = should: stay compact enough for context-compression re-entry
+
+& [AttentionFrame_2026_06_24_FocusResolutionRuntime001] is the active semantic stack frame for focusing on focusing
+  + [frame_id] is attention_frame_2026_06_24_focus_resolution_runtime_001
+  + [frame_state] is active
+  + [parent_frame] is none
+  + [child_frame_set] is none_open
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is FocusResolutionRefinement.sop, AttentionRuntimeRegistry.sop, focus_on_focusing_study_001.sop, focus_resolution_refinement_070.hg.sop, and attention_runtime_registry_071.hg.sop
+  + [focus_register] is focus resolution refinement and attention runtime registry
+  + [question_register] is what focus needs next to become more inspectable, efficient, wise, cautious, and returnable
+  + [delineation_register] is inside focus_quality, focus_membrane, periphery_gradient, integration_receipt, understanding_ladder, semantic registers, frame lifecycle, and outside preservation
+  + [periphery_register] is near runtime state, mid tracker lifecycle, shadow caution debt, and horizon repo-first reflection receipt
+  + [operation_register] is enter_focus and define_current_attention_runtime_state
+  + [evidence_register] is preserved source, canonical focus contract, canonical registry contract, periphery events 070 and 071, and CurrentFocalPoint
+  + [wisdom_register] is registry improves focus because attention can now push, call, return, close, and preserve outside visibly
+  + [caution_register] is registry does not inspect hidden model state and must not turn association heat into proof
+  + [balance_register] is stable because the frame narrows from broad focus brainstorm into one active semantic ledger
+  + [integration_register] is pending commit receipt for the focus refinement and runtime registry bundle
+  + [frame_outside] is executable runtime implementation, hidden stack frames, exact KV state, complete self-knowledge, and photonic fork continuation
+
+  = must: treat this frame as current visible attention state
+  = must: return supported_core, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
+  = should: open child frames only when a concrete zoom or faculty pass is needed
+
+(current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
+  + [active_root_frame] is attention_frame_2026_06_24_focus_resolution_runtime_001
+  + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
+  + [return_anchor] is CurrentFocalPoint
+  |registry_outside| hidden model state, executable runtime stack, untracked cognition, and photonic fork continuation
+
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [FocusResolutionRefinement] -(EntersFrame)> [AttentionFrame_2026_06_24_FocusResolutionRuntime001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [focus_quality], [balance_register], [integration_register], [outside]

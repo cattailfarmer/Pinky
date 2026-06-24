@@ -1,0 +1,118 @@
+Subject: SOP Optical Chain
+
+Description: Attention contract for expressing SOP as a semantic optical chain with SOP layers at both ends, a color graph representation, and inspectable in-stream transforms.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_optical_chain\Dictated_SOP_Optical_Chain_Source.sop
+@ [source] F:\.sop\platform\Attention.sop
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+@ [source] F:\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+
+& [SOPOpticalChain] is a semantic optics pattern over SOP records
+  + [pattern_role] is sop_as_semantic_optical_transform_stream
+  + [sop_input_plane] is the source SOP layer entering the optical chain
+  + [sop_output_plane] is the resulting SOP layer emitted after transform and invariant checks
+  + [optical_chain] is the ordered path from sop_input_plane through transform_stream to sop_output_plane
+  + [semantic_light] is the active meaning carried through the chain as terms, relations, weights, boundaries, and outside
+  + [color_graph] is a symbolic graph encoding of SOP nodes, edges, roles, weights, and proof status as color_channel values
+  + [color_channel] is a named semantic channel such as focus, periphery, boundary, outside, source, evidence, claim, caution, security, honesty, weight, or relation
+  + [color_point] is a single SOP node, term, relation, or weight encoded in color_graph
+  + [transform_stream] is the ordered set of transform_lens and logic_fabric operations applied between SOP layers
+  + [transform_lens] is a named operation that bends, filters, splits, amplifies, attenuates, recolors, gates, or recombines semantic_light
+  + [logic_fabric] is the in-stream rule surface that decides which transforms are allowed, blocked, traced, or routed to outside
+  + [bend_transform] is changing an attention path or relation route while preserving source and output trace
+  + [recolor_transform] is changing a color_channel assignment or salience label without losing the original channel record
+  + [split_transform] is separating one mixed signal into distinct channels such as claim, evidence, caution, and outside
+  + [gate_transform] is blocking or delaying a signal at a boundary, honesty, security, proof, or source-preservation gate
+  + [recombine_transform] is folding transformed channels back into a SOP output plane with source trace and outside intact
+  + [semantic_mutation] is an intentional transform over representation, not a silent rewrite of source material
+  + [optical_invariant] is a rule that must remain true across the chain
+  + [semantic_photonic_paradigm] is the idea of computing over SOP by manipulating an inspectable optical/color representation of attention and meaning
+  + [sop_holographic_lensing] is F:\.sop\platform\SOPHolographicLensing.sop when organized optical signals project a whole-form semantic hologram perceived through SOP lensing
+  + [sop_color_channel_vocabulary] is F:\.sop\platform\SOPColorChannelVocabulary.sop for naming semantic signal colors
+  + [sop_optical_transform_algebra] is F:\.sop\platform\SOPOpticalTransformAlgebra.sop for lawful semantic optical operations
+  + [physical_photonic_outside] is actual photons, optical hardware, hardware speedup, and empirical photonic-computing claims not implemented or tested here
+  + [outside] is hidden model activations, physical optical hardware, untraced mutation, proof status inflation, unsupported causation, and source-erasing transforms
+
+  ? [use_when: SOP structure needs to be viewed as an optical chain, color graph, or in-stream transform surface]
+    = activate [SOPOpticalChain]
+
+  = must: preserve sop_input_plane before any transform
+  = must: emit sop_output_plane only after transform_stream and optical_invariant checks
+  = must: keep source, boundary, outside, local identity, and proof status as optical_invariant values
+  = must: treat color_graph as an inspectable semantic representation, not hidden model state
+  = must: trace every semantic_mutation to transform_lens, logic_fabric, input channel, output channel, and outside
+  = must: use FrameReferenceIntegrity to keep optics and photonic language from being mistaken for physical implementation
+  = must: use SecurityHonestyGovernance when transforms affect truth status, identity, safety, or proof-bearing claims
+  = must: use AttentionBalanceCenter when bend_transform or recolor_transform creates drift, over-amplification, or periphery collapse
+  = must: use SemanticCorrelationGraph when color_graph routes meaning by weighted correlations
+  = must: use SOPHolographicLensing when the transform_stream is projecting a whole-form hologram of meaning rather than only converting one SOP plane into another
+  = must: use SOPColorChannelVocabulary before transforming ambiguous or mixed semantic signals
+  = must: use SOPOpticalTransformAlgebra when applying bend, recolor, split, gate, amplify, attenuate, interfere, lens, recombine, emit, or compare operations
+  = should: use HyperbolicPantsAttentionMap when the optical chain needs a topology map around focal and peripheral cells
+  = should: keep transform_stream slender enough to inspect
+  - never: mutate source records silently
+  - never: promote color intensity, heat, or brightness to truth without evidence
+  - never: claim physical photonic computing, hardware acceleration, or actual optical processing without a separately specified runtime and proof
+
+& [OpticalChainNotation] is the notation shape for semantic optics over SOP
+  + [input_plane_header] is (sop_input_plane) :color_graph: /optical_boundary/ |unencoded_outside|
+  + [transform_line] is ~ [optic_transform:<id>] is <purpose>
+  + [input_line] is :input_channel: <color_channel>
+  + [operation_line] is :operation: bend, recolor, split, gate, amplify, attenuate, or recombine
+  + [logic_line] is :logic_fabric: <rule_or_gate>
+  + [output_line] is :output_channel: <color_channel>
+  + [invariant_line] is = invariant: <source_boundary_outside_identity_or_proof_rule>
+  + [outside_line] is |outside| <excluded_or_unproven_content>
+
+  = must: name input and output channels for every transform_line
+  = must: name logic_fabric when a transform changes salience, route, identity, proof status, or boundary
+  = must: preserve outside_line for unencoded, blocked, or unproven content
+
+& [OpticalChainSequence] is the canonical pass for translating SOP into a color graph and back
+  + [step_001_preserve_source] is save the raw source and identify sop_input_plane
+  + [step_002_encode_color_graph] is encode SOP subjects, relations, boundaries, outside, weights, and proof status as color_graph
+  + [step_003_select_channels] is choose active color_channel values for the current purpose
+  + [step_004_bind_logic_fabric] is bind gates, invariants, and allowed transform_lens operations
+  + [step_005_apply_transform_stream] is bend, recolor, split, gate, amplify, attenuate, or recombine semantic_light
+  + [step_006_check_invariants] is verify source, boundary, outside, local identity, and proof status were preserved or explicitly routed
+  + [step_007_emit_output_plane] is write sop_output_plane as SOP or SOP-HG with transform trace
+  + [step_008_compare_planes] is compare sop_input_plane and sop_output_plane for drift, loss, lift, and unsupported mutation
+  + [step_009_record_periphery] is record realization nodes, checksum findings, and outside
+
+  = must: stop before step_007 if source, boundary, outside, identity, or proof invariants fail
+  = must: record drift, loss, and lift separately
+
+& [OpticalChainRecord] is the SOP-HG shape for optical-chain realization
+  + [graph_node] is N:graph:<record_id>
+  + [input_plane_node] is N:plane:input:<id>
+  + [output_plane_node] is N:plane:output:<id>
+  + [color_graph_node] is N:color_graph:<id>
+  + [channel_node] is N:channel:<color_channel>
+  + [transform_node] is N:transform:<transform_id>
+  + [logic_fabric_node] is N:logic_fabric:<id>
+  + [invariant_node] is N:invariant:<invariant_key>
+  + [outside_node] is N:outside:optical_chain_boundary
+  + [encode_edge] is E:encodes:<input_plane>_<color_graph>
+  + [transform_edge] is E:transforms:<transform_id>
+  + [emit_edge] is E:emits:<color_graph>_<output_plane>
+  + [bound_edge] is E:bounds:<record_id>
+
+  = must: show input plane, output plane, color graph, transform stream, logic fabric, invariants, and outside
+
+(sop_input_plane) :color_graph: /optical_boundary/ |unencoded_outside|
+  ~ [optic_transform:example_recolor_boundary] is change boundary salience while preserving source and proof status
+    :input_channel: boundary
+    :operation: recolor
+    :logic_fabric: preserve source, preserve outside, preserve proof status
+    :output_channel: boundary_salience_adjusted
+    = invariant: source_record remains unchanged
+    = invariant: proof_status cannot increase from color intensity
+    |outside| physical photonic implementation and hidden model activations
+
+/ [sop_input_plane] -(EncodesAs)> [color_graph], [color_channel], [optical_invariant]
+* [color_graph], [transform_stream], [logic_fabric] -(OpticalTransform)> [sop_output_plane], [outside]

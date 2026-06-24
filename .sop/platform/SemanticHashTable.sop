@@ -1,0 +1,63 @@
+Subject: Semantic Hash Table
+
+Description: SOP contract for the proper multi-dimensional hash table shape used by semantic hash indexing.
+
+& [SemanticHashTable] is a multi-dimensional, permissive hash table over SOP semantic pointers
+  + [table_role] is semantic_pointer_lookup_table
+  + [source_index] is F:\.sop\platform\SemanticHashIndex.sop
+  + [exact_pointer_dimension] is content_hash, semantic_hash, path, or explicit pointer
+  + [semantic_dimension] is subject, identifier, term, narrative_subject, periphery_term, hiding_behind, turned_aspect, or nearby_association
+  + [facet_bucket] is one dimension/value bucket that stores matching pointers
+  + [component_entry] is one SOP component pointer with exact and semantic dimensions
+  + [impression_entry] is one periphery impression pointer with unstable semantic dimensions
+  + [permissive_query] is a query that accepts partial facet overlap and returns ranked candidates
+  + [strict_query] is a query that requires all requested facets to match
+  + [query_score] is matched facet count and weighted dimension agreement
+  + [correlation_graph] is F:\.sop\platform\SemanticCorrelationGraph.sop
+  + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop when query scores need scale terminology
+  + [changelog_weight_net] is F:\.sop\platform\ChangelogCorrelationWeightNet.sop when table dimensions are used to attach changelog units to narrative and justification
+  + [candidate_set] is retrieved pointers ranked by score and bounded by residual outside
+  + [residual_outside] is semantic identity, hidden causation, and proof not established by table membership
+
+& [SemanticHashTableDelineation] is the boundary between exact identity and permissive semantic address
+  :inside: exact pointers, facet buckets, query modes, matched dimensions, ranked candidate sets, and evidence pointers
+  /boundary/ hash algorithm, normalized dimensions, source index, bucket membership, and query rules
+  |outside| final meaning, causation, hidden cognition, and any identity claim not supported by exact hash equality
+
+  = must: keep content_hash equality as exact content identity
+  = must: keep semantic_hash equality as exact equality of the normalized semantic surface, not final meaning
+  = must: allow permissive query to retrieve candidates from partial dimensions
+  = must: report matched dimensions so the reason for retrieval is inspectable
+  = must: rank permissive results without calling them proven
+  = must: support correlation graphs that weight relationships between facet buckets
+  = must: route query_score interpretation through attention_weight_scale when scale, depth, or promotion matters
+  = must: support changelog_weight_net as a higher-order overlay without treating bucket membership as proof
+  = must: avoid self-amplifying generated index artifacts unless explicitly requested
+  = should: use wider association terms as weak but useful semantic dimensions
+  - never: let a broad term bucket imply exact semantic identity
+
+& [SemanticTableKeyShape] is the multi-dimensional key shape
+  + [primary_pointer] is H:component:<content_hash_prefix> or H:impression:<impression_hash_prefix>
+  + [exact_keys] is path, content_hash, semantic_hash, and pointer
+  + [subject_keys] is subject and narrative_subject
+  + [identifier_keys] is SOP identifiers and bracketed subjects
+  + [term_keys] is extracted terms, periphery_term, hiding_behind, turned_aspect, and nearby_association
+  + [evidence_keys] is evidence pointers, source index, scan events, and bookends
+  + [stability_keys] is unstable, recurring, promoted, or retired
+
+  = must: allow one entry to live in many buckets
+  = must: allow one query to use any subset of dimensions
+  = must: keep weak dimensions lower confidence than exact dimensions
+
+& [SemanticTableLookupModes] is the allowed query behavior
+  + [exact_mode] is require one exact pointer dimension and return only direct matches
+  + [strict_mode] is require every requested dimension to match
+  + [permissive_mode] is return records matching any requested dimension, ranked by score
+  + [inclusive_mode] is permissive_mode with low threshold and visible outside warnings
+
+  = must: default to permissive for exploratory periphery work
+  = must: use exact mode when acting on a file or component
+  = should: use strict mode when promoting periphery into focus
+
+/ [query] -(intersects)> [facet_bucket]
+* [facet_bucket], [query_score], [matched_dimension_set] -(retrieves)> [candidate_set]

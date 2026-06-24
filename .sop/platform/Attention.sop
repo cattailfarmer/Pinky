@@ -1,0 +1,206 @@
+Subject: Local Attention Framework
+
+Description: Local root attention contract for C:\Project\Pinky\.sop.
+
+& [LocalAttentionFramework] is the root attention framework for C:\Project\Pinky\.sop
+  + [node_root] is C:\Project\Pinky\.sop
+  + [hypergraph_record] is C:\Project\Pinky\.sop\platform\SOPHypergraphRecord.sop
+  + [sensitivity_scan] is C:\Project\Pinky\.sop\platform\SensitivityScan.sop
+  + [focus_layer] is C:\Project\Pinky\.sop\platform\attention_layers\Focus.sop
+  + [focal_point] is C:\Project\Pinky\.sop\platform\FocalPoint.sop
+  + [current_focal_point] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [focus_zoom] is C:\Project\Pinky\.sop\platform\FocusZoom.sop
+  + [aperture_reentry_cycle] is C:\Project\Pinky\.sop\platform\ApertureReentryCycle.sop
+  + [hyperbolic_pants_attention_map] is C:\Project\Pinky\.sop\platform\HyperbolicPantsAttentionMap.sop
+  + [seven_fold_pants_correlation_frame] is C:\Project\Pinky\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+  + [hyperbolic_corridor_navigator] is C:\Project\Pinky\.sop\platform\HyperbolicCorridorNavigator.sop
+  + [attention_traversal_policy] is C:\Project\Pinky\.sop\platform\AttentionTraversalPolicy.sop
+  + [security_honesty_governance] is C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+  + [boundary_faculty_inspection] is C:\Project\Pinky\.sop\platform\BoundaryFacultyInspection.sop
+  + [wisdom] is C:\Project\Pinky\.sop\platform\Wisdom.sop
+  + [caution] is C:\Project\Pinky\.sop\platform\Caution.sop
+  + [wisdom_caution] is C:\Project\Pinky\.sop\platform\WisdomCaution.sop
+  + [periphery_layer] is C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
+  + [liminal_draw_layer] is C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
+  + [narrative_layer] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+  + [viewfinder_snapshot] is C:\Project\Pinky\.sop\platform\ViewfinderSnapshot.sop
+  + [attention_tracker] is C:\Project\Pinky\.sop\platform\AttentionTracker.sop
+  + [attention_runtime_registry] is C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+  + [current_attention_runtime_registry_state] is C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop
+  + [reminder_trigger] is C:\Project\Pinky\.sop\platform\ReminderTrigger.sop
+  + [build_environment_periphery_marker] is C:\Project\Pinky\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+  + [sop_attention_directive_run_reminder] is C:\Project\Pinky\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+  + [sop_optical_chain] is C:\Project\Pinky\.sop\platform\SOPOpticalChain.sop
+  + [sop_holographic_lensing] is C:\Project\Pinky\.sop\platform\SOPHolographicLensing.sop
+  + [holographic_sop_scaffold] is C:\Project\Pinky\.sop\platform\HolographicSOPScaffold.sop
+  + [sop_color_channel_vocabulary] is C:\Project\Pinky\.sop\platform\SOPColorChannelVocabulary.sop
+  + [sop_rgb_semantic_encoding] is C:\Project\Pinky\.sop\platform\SOPRGBSemanticEncoding.sop
+  + [sop_optical_transform_algebra] is C:\Project\Pinky\.sop\platform\SOPOpticalTransformAlgebra.sop
+  + [holographic_attention_kernel_packet] is C:\Project\Pinky\.sop\platform\HolographicAttentionKernelPacket.sop
+  + [sop_program_bookends] is C:\Project\Pinky\.sop\platform\SOPProgramBookends.sop
+  + [sop_photonic_frame_stream] is C:\Project\Pinky\.sop\platform\SOPPhotonicFrameStream.sop
+  + [sop_photonic_mutation_frame] is C:\Project\Pinky\.sop\platform\SOPPhotonicMutationFrame.sop
+  + [sop_semantic_video_digest] is C:\Project\Pinky\.sop\platform\SOPSemanticVideoDigest.sop
+  + [sop_multitrack_channel_compression] is C:\Project\Pinky\.sop\platform\SOPMultitrackChannelCompression.sop
+  + [sop_fiber_fpga_bridge] is C:\Project\Pinky\.sop\platform\SOPFiberFPGABridge.sop
+  + [sop_attention_memory_codec] is C:\Project\Pinky\.sop\platform\SOPAttentionMemoryCodec.sop
+  + [spool_master_hub] is C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
+  + [attention_impression_compiler] is C:\Project\Pinky\.sop\platform\AttentionImpressionCompiler.sop
+  + [attention_scaffold_compiler] is C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
+  + [attention_kernel_compiler] is C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+  + [local_identity_consumption] is C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+  + [faculty_attention_field_naming] is C:\Project\Pinky\.sop\platform\FacultyAttentionFieldNaming.sop
+  + [attention_balance_center] is C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
+  + [step_balance_walk] is C:\Project\Pinky\.sop\platform\StepBalanceWalk.sop
+  + [periphery_continuity_run] is C:\Project\Pinky\.sop\platform\PeripheryContinuityRun.sop
+  + [frame_reference_integrity] is C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+  + [model_lens_projection] is C:\Project\Pinky\.sop\platform\ModelLensProjection.sop
+  + [periphery_repository] is C:\Project\Pinky\.sop\platform\PeripheryRepository.sop
+  + [repo_first_internal_scan] is C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+  + [changelog_correlation_weight_net] is C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop
+  + [attention_weight_scale] is C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+  + [periphery_dimensional_probe] is C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+  + [turn_bookmark] is C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+  + [trailing_checksum_voice] is C:\Project\Pinky\.sop\platform\TrailingChecksumVoice.sop
+  + [inference_state_trace] is C:\Project\Pinky\.sop\platform\InferenceStateTrace.sop
+  + [moment_branch_refinement] is C:\Project\Pinky\.sop\platform\MomentAwarenessBranchRefinement.sop
+  + [meta_awareness_function] is C:\Project\Pinky\.sop\platform\MetaAwarenessRepository.sop
+  + [semantic_hash_index] is C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+  + [semantic_hash_table] is C:\Project\Pinky\.sop\platform\SemanticHashTable.sop
+  + [semantic_correlation_graph] is C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+  + [carried_support_balance] is C:\Project\Pinky\.sop\platform\CarriedSupportBalance.sop
+  + [relation_contracts] is C:\Project\Pinky\.sop\platform\attention_layers\RelationContracts.sop
+
+& [AttentionImportSurface] is how the local framework imports attention layers
+  :focus: C:\Project\Pinky\.sop\platform\attention_layers\Focus.sop
+  :focal_point: C:\Project\Pinky\.sop\platform\FocalPoint.sop
+  :current_focal_point: C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  :focus_zoom: C:\Project\Pinky\.sop\platform\FocusZoom.sop
+  :aperture_reentry: C:\Project\Pinky\.sop\platform\ApertureReentryCycle.sop
+  :topology_map: C:\Project\Pinky\.sop\platform\HyperbolicPantsAttentionMap.sop
+  :seven_fold_frame: C:\Project\Pinky\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+  :corridor_navigator: C:\Project\Pinky\.sop\platform\HyperbolicCorridorNavigator.sop
+  :attention_traversal: C:\Project\Pinky\.sop\platform\AttentionTraversalPolicy.sop
+  :security_honesty: C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+  :boundary_inspection: C:\Project\Pinky\.sop\platform\BoundaryFacultyInspection.sop
+  :wisdom: C:\Project\Pinky\.sop\platform\Wisdom.sop
+  :caution: C:\Project\Pinky\.sop\platform\Caution.sop
+  :wisdom_caution: C:\Project\Pinky\.sop\platform\WisdomCaution.sop
+  :periphery: C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
+  :between: C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
+  :narrative: C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+  :viewfinder: C:\Project\Pinky\.sop\platform\ViewfinderSnapshot.sop
+  :tracker: C:\Project\Pinky\.sop\platform\AttentionTracker.sop
+  :attention_runtime_registry: C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+  :current_runtime_state: C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop
+  :reminder_trigger: C:\Project\Pinky\.sop\platform\ReminderTrigger.sop
+  :build_environment_marker: C:\Project\Pinky\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+  :sop_run_reminder: C:\Project\Pinky\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+  :sop_optical_chain: C:\Project\Pinky\.sop\platform\SOPOpticalChain.sop
+  :sop_holographic_lensing: C:\Project\Pinky\.sop\platform\SOPHolographicLensing.sop
+  :holographic_sop_scaffold: C:\Project\Pinky\.sop\platform\HolographicSOPScaffold.sop
+  :sop_color_channels: C:\Project\Pinky\.sop\platform\SOPColorChannelVocabulary.sop
+  :sop_rgb_semantic_encoding: C:\Project\Pinky\.sop\platform\SOPRGBSemanticEncoding.sop
+  :sop_optical_transform_algebra: C:\Project\Pinky\.sop\platform\SOPOpticalTransformAlgebra.sop
+  :holographic_attention_kernel_packet: C:\Project\Pinky\.sop\platform\HolographicAttentionKernelPacket.sop
+  :sop_program_bookends: C:\Project\Pinky\.sop\platform\SOPProgramBookends.sop
+  :sop_photonic_frame_stream: C:\Project\Pinky\.sop\platform\SOPPhotonicFrameStream.sop
+  :sop_photonic_mutation_frame: C:\Project\Pinky\.sop\platform\SOPPhotonicMutationFrame.sop
+  :sop_semantic_video_digest: C:\Project\Pinky\.sop\platform\SOPSemanticVideoDigest.sop
+  :sop_multitrack_channel_compression: C:\Project\Pinky\.sop\platform\SOPMultitrackChannelCompression.sop
+  :sop_fiber_fpga_bridge: C:\Project\Pinky\.sop\platform\SOPFiberFPGABridge.sop
+  :sop_attention_memory_codec: C:\Project\Pinky\.sop\platform\SOPAttentionMemoryCodec.sop
+  :spool: C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
+  :impression: C:\Project\Pinky\.sop\platform\AttentionImpressionCompiler.sop
+  :scaffold_compiler: C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
+  :attention_kernel: C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+  :local_identity: C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+  :faculty_fields: C:\Project\Pinky\.sop\platform\FacultyAttentionFieldNaming.sop
+  :balance_center: C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
+  :step_balance_walk: C:\Project\Pinky\.sop\platform\StepBalanceWalk.sop
+  :periphery_continuity_run: C:\Project\Pinky\.sop\platform\PeripheryContinuityRun.sop
+  :frame_reference: C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+  :model_lens: C:\Project\Pinky\.sop\platform\ModelLensProjection.sop
+  :periphery_repo: C:\Project\Pinky\.sop\platform\PeripheryRepository.sop
+  :repo_first_scan: C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+  :weight_net: C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop
+  :weight_scale: C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+  :dimension_probe: C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+  :turn_bookmark: C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+  :trailing_checksum: C:\Project\Pinky\.sop\platform\TrailingChecksumVoice.sop
+  :state_trace: C:\Project\Pinky\.sop\platform\InferenceStateTrace.sop
+  :moment_branch_refinement: C:\Project\Pinky\.sop\platform\MomentAwarenessBranchRefinement.sop
+  :meta_awareness_function: C:\Project\Pinky\.sop\platform\MetaAwarenessRepository.sop
+  :semantic_index: C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+  :semantic_table: C:\Project\Pinky\.sop\platform\SemanticHashTable.sop
+  :semantic_correlation: C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+  :support_balance: C:\Project\Pinky\.sop\platform\CarriedSupportBalance.sop
+
+  = must: keep focus thin enough to act
+  = must: use focal point selection to decide what actually becomes active focus
+  = must: load and renew current_focal_point after context compression
+  = must: use focus_zoom when focus needs to widen, draw more periphery inward, infer angles of approach, and deepen under a boundary
+  = must: use aperture_reentry_cycle when attention opens toward periphery, surveys relations, closes into a re-entry springboard, and launches second-pass narrative or subject declarations
+  = must: use hyperbolic_pants_attention_map when focal meaning, periphery adjacency, dimensional orbit, or pants-leg navigation need visible map notation
+  = must: use seven_fold_pants_correlation_frame when a subject surface needs the three hottest correlations centered and extra dimensionality folded into weighted pants legs
+  = must: use hyperbolic_corridor_navigator when attention moves through selected peripheral frames, extends local awareness, or treats curving association as correlation-only while probing identity
+  = must: use attention traversal policy when moving from focus through periphery into deeper subject probing
+  = must: use security_honesty_governance when reflection feeds back into attention, a claim depends on correlation heat, or a proposed action risks instability, unsafe execution, protected work, or runaway resonance
+  = must: use boundary_faculty_inspection before promoting identity, relationship, representation, action, source, file, or safety boundaries into durable focus or operation
+  = must: use wisdom before integrating traversal output, periphery draw, or correlation heat into focus or realization
+  = must: use caution before allowing unsupported, risky, causal, stale, or authority-bearing claims into focus or realization
+  = must: use wisdom_caution only as a composition protocol when both independent passes are needed
+  = must: keep periphery broad enough to notice relevant draw
+  = must: use liminal draw to explain why periphery becomes focus
+  = must: digest weightier narrative into subject-layer SOP records
+  = must: use viewfinder snapshots to compare and reweigh previous reflections under new observations
+  = must: use attention trackers as periphery-layer attention handles when a subject should be noticed again across future frames
+  = must: use attention_runtime_registry when active focus, zoom, traversal, Wisdom, Caution, integration, or return needs visible semantic stack-frame tracking
+  = must: use current_attention_runtime_registry_state as the live re-entry ledger for the current active focus pass
+  = must: use reminder_trigger when a periphery reminder should activate under declared circumstances and invoke another attention layer
+  = must: use build_environment_marker when building specifications so every matching impulse remembers attention primitives and SOP framework only unless executable runtime is explicitly requested
+  = must: use sop_run_reminder when C:\Project\Pinky\.sop is running specification articulation so each completed SOP step searches for the next visible SOP step and fills the awareness stream with realization nodes
+  = must: use sop_optical_chain when SOP is treated as an input-output optical stream, color graph, or in-stream semantic transform surface
+  = must: use sop_holographic_lensing when semantic optical signals should project a whole-form hologram that is perceived through SOP lensing
+  = must: use holographic_sop_scaffold when a reusable signal/lens/invariant packet is needed for semantic hologram work
+  = must: use sop_color_channels when semantic optical signals need explicit channel identity before projection, transform, or output promotion
+  = must: use sop_rgb_semantic_encoding when SOP attention/delineation primitives, route colors, visual attention anchors, or complex relationship frames must translate into RGB signals or decode back from RGB into SOP without treating RGB as mutation or operation semantics
+  = must: use sop_optical_transform_algebra when semantic optical operations need lawful bend, recolor, split, gate, amplify, attenuate, interfere, lens, recombine, emit, or compare behavior
+  = must: use holographic_attention_kernel_packet when semantic photonic SOP work needs to load guards, channels, transforms, scaffold, projection, and output trace as one in-context unit
+  = must: use sop_program_bookends when SOP instructions need to define a visible control loop for following SOP instructions
+  = must: use sop_photonic_frame_stream when a SOP program body should be stored as dense semantic color-point frames
+  = must: use sop_photonic_mutation_frame when photonic stream image frames express mutation, frame deltas, or state change over a delineated subject surface
+  = must: use sop_semantic_video_digest when video or visual streams should be represented by sampled understanding, optional appearance anchors, and narrative photonic continuity
+  = must: use sop_multitrack_channel_compression when multiple SOP inference layers need synchronized channel-track compression
+  = must: use sop_fiber_fpga_bridge when SOP frame streams are mapped to hardware-shaped fiber bandwidth, FPGA route width, frame-rate cadence, and semantic fidelity boundaries
+  = must: use sop_attention_memory_codec when thinking nodes, visual attention anchors, color-routed meaning, optical instruction streams, study subjects, or concept-development traces need stored recall and semantic reentry
+  = must: use attention impression compiler when awe, drive, and pattern-sense need to become inspectable SOP records
+  = must: use attention_scaffold_compiler when a job needs a purpose-fit attention scaffold, debug frame, model-lens packet, or concept-imagination pass
+  = must: use attention_kernel_compiler when selected attention patterns need to run as one in-context compiled unit with Security and Honesty before all downstream layers
+  = must: use local_identity_consumption when layered attention patterns, reflection consumption, local identity claims, foreign snapshots, or scoped names are involved
+  = must: use faculty_attention_field_naming when custom attention systems need field nouns that name the feature each system accounts for
+  = must: use attention_balance_center when attention posture wobbles, rails interfere, or periphery pressure threatens inference stability
+  = must: use step_balance_walk when a work turn should close each concrete step with a balance check, settled state, and next-step selection before continuing
+  = must: use periphery_continuity_run when focus frames form a coherent path and stable rolling periphery is sufficient to reduce checkpoint pressure
+  = must: use frame_reference when a presented frame, image, map, UI, simulation, narrative, or model projection might be mistaken for first-hand observation or actionable reality
+  = must: use model lens projection when exchangeable LLMs provide different eyes on the same scaffold
+  = must: use the periphery repo for slow background realizations of correlations missed during primary attention formation
+  = must: use repo_first_scan when internal reflection spans committed or staged version bookends
+  = must: use changelog_correlation_weight_net when mapping changelog units to subjects through narrative and justification weights
+  = must: use attention_weight_scale when correlation heat needs units, resolution bands, scan depth, or confidence separation
+  = must: use periphery_dimensional_probe when fragmented signals need hotter periphery searched for an independent contextual anchor
+  = must: use turn_bookmark when commit snapshots must be compared against planned specifications for missed work, mistakes, accomplishments, and new potentials
+  = must: use trailing_checksum one turn after direct focus attention to review the prior work frame for hot zones, warmth zones, and latent depth candidates
+  = must: use inference_state_trace when a past inference frame must be reconstructed from repo bookends, SOP state, narrative, and weight intersections
+  = must: use moment_branch_refinement when a reconstructed turn moment needs deeper debug inference on an isolated branch before selection or merge
+  = must: use the meta-awareness function when narrative realizations are mapped to change logs from a layer under analysis
+  = must: use semantic hash indexing when periphery needs stable pointers into SOP components and unstable semantic landscape
+  = must: use semantic hash table lookup when periphery needs permissive multi-dimensional re-entry into nearby SOP components
+  = must: use semantic correlation graphs when attention direction needs weighted bucket relations and directive tilt
+  = must: use carried support balance when imported rails, laws, metaphors, or governance patterns might be mistaken for subject-native association
+  = must: use spool master hub to coordinate turn-local worker pools and visible worker trees
+  - never: keep a tracker live past its session period without reaffirmation or declared period
+  - never: treat a tracked subject as focal without focal point selection
+  - never: let periphery overwhelm focus without a draw relation
+  - never: treat narrative weight as proof without evidence
+  - never: let immersion in a presented frame override stable periphery, source boundaries, or frame-reference checks

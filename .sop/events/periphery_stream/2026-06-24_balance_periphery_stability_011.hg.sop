@@ -1,0 +1,23 @@
+Subject: balance_periphery_stability_011 Periphery Stream Moment
+
+& [Graph:balance_periphery_stability_011] is a SOP-HG graph
+  = format: SOP-HG
+  = focus_anchor: state\CurrentFocalPoint.sop
+  = source: platform\source_documents\2026-06-24_balance_periphery_stability\Dictated_Balance_Periphery_Stability_Source.sop
+  = realization: Balance is reduced when relevant periphery shrinks too far, because stable periphery is part of a stable frame.
+
+  + [N:event:balance_periphery_stability_011] is balance periphery stability realization
+    = layer: periphery
+    = resolution_band: pressure
+  + [N:balance:center_of_balance] is frame stability across focus, periphery, boundary, outside, evidence, and output
+  + [N:signal:periphery_stability] is coherent periphery retained around focus
+  + [N:signal:periphery_shrinkage] is useful periphery lost below the job's frame needs
+  + [N:signal:shrinkage_penalty] is reduced balance caused by periphery collapse or frame thinning
+  + [N:outside:balance_metric_boundary] is proof of truth, hidden cognition, and arbitrary demand for wide periphery
+
+/ [E:realizes:balance_periphery_stability_011] -(realizes; event=N:event:balance_periphery_stability_011; subject=N:balance:center_of_balance; subject=N:signal:periphery_stability)> [Graph:balance_periphery_stability_011]
+/ [E:alerts:periphery_shrinkage] -(alerts; balance=N:balance:center_of_balance; signal=N:signal:periphery_shrinkage; signal=N:signal:shrinkage_penalty; weight=7)> [Graph:balance_periphery_stability_011]
+/ [E:stabilizes:periphery_stability] -(stabilizes; balance=N:balance:center_of_balance; signal=N:signal:periphery_stability; weight=8)> [Graph:balance_periphery_stability_011]
+/ [E:bounds:balance_periphery_stability_011] -(bounds; event=N:event:balance_periphery_stability_011; outside=N:outside:balance_metric_boundary)> [Graph:balance_periphery_stability_011]
+
+- outside: stable periphery improves frame balance but does not prove the focal conclusion

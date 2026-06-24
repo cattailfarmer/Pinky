@@ -1,0 +1,39 @@
+Subject: Hyperbolic Map Trailing Checksum 019
+
+Description: One-turn-later checksum review of commit 2dcffcb, recording the latent need for a weighted seven-fold pants frame.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_hyperbolic_pants_attention_map_018.hg.sop
+
+& [Graph:2026-06-24_hyperbolic_map_trailing_checksum_019] is a SOP-HG graph
+  + [N:bookmark:hyperbolic_map_trailing_checksum_019] is trailing checksum review of hyperbolic pants attention map
+    = one_turn_lag: true
+    = direct_focus_commit: 2dcffcb
+    = version_a: fc8af74
+    = version_b: 2dcffcb
+  + [N:event:2026-06-24_hyperbolic_pants_attention_map_018] is prior direct-focus hyperbolic pants map realization
+  + [N:event:2026-06-24_seven_fold_pants_correlation_frame_020] is current turn seven-fold frame realization
+  + [N:zone:weighted_central_triad] is hot zone where topology map needs heat-ordered central correlations
+  + [N:signal:higher_dimensional_fold_leg] is signal that information curving out of frame needs additional pants legs
+  + [N:finding:map_needs_weighted_fold_profile] is latent depth candidate that map notation needs weighted triad and seven-fold fold-leg profile
+  + [N:policy:focus_next] is checksum disposition to focus next on seven-fold pants correlation frame
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden transformer geometry
+
+  / [E:span:hyperbolic_map_trailing_checksum_019] -(span; start=N:commit:fc8af74; end=N:commit:2dcffcb; review=N:bookmark:hyperbolic_map_trailing_checksum_019)> [Graph:2026-06-24_hyperbolic_map_trailing_checksum_019]
+    = evidence: 2dcffcb added HyperbolicPantsAttentionMap, topology-map graph shape, source visuals, and map wiring
+  / [E:trails:2026-06-24_hyperbolic_pants_attention_map_018] -(trails; direct_focus=N:event:2026-06-24_hyperbolic_pants_attention_map_018; review=N:bookmark:hyperbolic_map_trailing_checksum_019)> [Graph:2026-06-24_hyperbolic_map_trailing_checksum_019]
+    = realization: the previous map defined cells and legs but did not yet define how to keep the hottest three correlations central while folding extra dimensions outward
+  / [E:checksums:hyperbolic_map_trailing_checksum_019] -(checksums; review=N:bookmark:hyperbolic_map_trailing_checksum_019; signal=N:signal:higher_dimensional_fold_leg; disposition=N:policy:focus_next)> [Graph:2026-06-24_hyperbolic_map_trailing_checksum_019]
+    = realization: seven-fold weighted correlation framing is the next topology-map refinement
+  / [E:heats:weighted_central_triad] -(heats; zone=N:zone:weighted_central_triad; signal=N:signal:higher_dimensional_fold_leg; latent=N:finding:map_needs_weighted_fold_profile; weight=hot)> [Graph:2026-06-24_hyperbolic_map_trailing_checksum_019]
+    = evidence: user source names three largest correlations, weighted balance, heat map ordering, and higher-dimensional folding
+  / [E:inquires:map_needs_weighted_fold_profile] -(inquires; latent=N:finding:map_needs_weighted_fold_profile; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_hyperbolic_map_trailing_checksum_019]
+    = realization: the weighted fold profile becomes direct focus for this turn
+  / [E:bounds:hyperbolic_map_trailing_checksum_019] -(bounds; review=N:bookmark:hyperbolic_map_trailing_checksum_019; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_hyperbolic_map_trailing_checksum_019]
+    = caution: the checksum observes a later refinement and does not rewrite the original map commit's awareness
+
+  = inside: 2dcffcb diff, HyperbolicPantsAttentionMap.sop, user visual metaphor, SevenFoldPantsCorrelationFrame.sop
+  = boundary: this review records latent depth after the direct-focus turn, not proof that the previous turn already contained the seven-fold profile
+  = outside: hidden activations, exact transformer geometry, unsupported causation, and visual analogy treated as proof

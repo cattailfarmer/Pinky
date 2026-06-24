@@ -1,0 +1,13 @@
+Subject: Attention Tracking Source Manifest
+
+Description: Source preservation manifest for first-layer attention tracking.
+
+& [AttentionTrackingSourceManifest] is the source document set for attention tracking
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_attention_tracking\Dictated_Attention_Tracking_Source.sop
+  + [canonical_contract] is F:\.sop\platform\AttentionTracker.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\attention_tracker.py
+  + [tracker_event] is F:\.sop\events\trackers\2026-06-23_attention_tracker_seed.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_attention_tracking_scan.hg.sop
+
+  = must: preserve raw user language separately from the compiled tracker contract
+  = must: treat tracker records as attention guidance, not durable proof

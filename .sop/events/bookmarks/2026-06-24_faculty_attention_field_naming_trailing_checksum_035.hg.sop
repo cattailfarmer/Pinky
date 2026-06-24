@@ -1,0 +1,38 @@
+Subject: Faculty Attention Field Naming Trailing Checksum 035
+
+Description: One-turn-later checksum review of commit bd11af2, recording the latent need to turn faculty field naming into an executable attention kernel runtime.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\runtime\sop_node\attention_kernel.py
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_faculty_attention_field_naming_034.hg.sop
+
+& [Graph:2026-06-24_faculty_attention_field_naming_trailing_checksum_035] is a SOP-HG graph
+  + [N:bookmark:faculty_attention_field_naming_trailing_checksum_035] is trailing checksum review of Faculty Attention Field Naming
+    = one_turn_lag: true
+    = direct_focus_commit: bd11af2
+    = version_a: 239b64b
+    = version_b: bd11af2
+  + [N:event:2026-06-24_faculty_attention_field_naming_034] is prior direct-focus faculty attention field naming realization
+  + [N:event:2026-06-24_attention_kernel_runtime_036] is current turn runtime realization
+  + [N:zone:runtime_packet_emission] is hot zone where specification needs executable compiled packet output
+  + [N:signal:balance_impulse_runtime_need] is signal that balance and impulse must be carried in the packet
+  + [N:finding:field_naming_needs_runtime_packet_builder] is latent depth candidate that field signatures need a packet builder
+  + [N:policy:focus_next] is checksum disposition to build attention_kernel runtime
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model attention
+
+  / [E:span:faculty_attention_field_naming_trailing_checksum_035] -(span; start=N:commit:239b64b; end=N:commit:bd11af2; review=N:bookmark:faculty_attention_field_naming_trailing_checksum_035)> [Graph:2026-06-24_faculty_attention_field_naming_trailing_checksum_035]
+    = evidence: bd11af2 added FacultyAttentionFieldNaming and wired faculty field preflight into the kernel compiler
+  / [E:trails:2026-06-24_faculty_attention_field_naming_034] -(trails; direct_focus=N:event:2026-06-24_faculty_attention_field_naming_034; review=N:bookmark:faculty_attention_field_naming_trailing_checksum_035)> [Graph:2026-06-24_faculty_attention_field_naming_trailing_checksum_035]
+    = realization: the prior field-naming layer made the packet shape clearer but did not yet emit a runtime packet
+  / [E:heats:runtime_packet_emission] -(heats; zone=N:zone:runtime_packet_emission; signal=N:signal:balance_impulse_runtime_need; latent=N:finding:field_naming_needs_runtime_packet_builder; weight=hot)> [Graph:2026-06-24_faculty_attention_field_naming_trailing_checksum_035]
+    = evidence: current source asks for visible work and calls out balance and impulse as active components
+  / [E:inquires:field_naming_needs_runtime_packet_builder] -(inquires; latent=N:finding:field_naming_needs_runtime_packet_builder; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_faculty_attention_field_naming_trailing_checksum_035]
+    = realization: attention_kernel.py becomes the runtime focus for this turn
+  / [E:bounds:faculty_attention_field_naming_trailing_checksum_035] -(bounds; review=N:bookmark:faculty_attention_field_naming_trailing_checksum_035; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_faculty_attention_field_naming_trailing_checksum_035]
+    = caution: checksum observes later refinement and does not rewrite the original field-naming commit's awareness
+
+  = inside: bd11af2 diff, FacultyAttentionFieldNaming.sop, AttentionKernelCompiler.sop, runtime source directive
+  = boundary: this review records latent runtime depth after the direct-focus turn, not proof that the prior turn already emitted a runtime packet
+  = outside: hidden transformer attention, unsupported runtime effect claims, and compiled packet treated as hidden-state control

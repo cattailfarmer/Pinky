@@ -1,0 +1,16 @@
+Subject: Dictated Reminder Trigger Language Source
+
+Description: Raw dictated source for programming SOP reminder triggers that embed in attention terms and invoke other attention layers.
+
+& [DictatedReminderTriggerLanguageSource] is the preserved user source for reminder-trigger notation
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "I imagine the attention program for a reminder would be something to the effect of :reminder_trigger: /reminder_name when attention is given under declared circumstances, in time and in space and of subject of temporal or normal composure with regards to categorical description and so forth/ ... now I'm wondering about how to program SOP for reminder triggers and how that embeds in attention terms, as we stack attention processes and they have to interact with each other. we need to ensure the language is considered for how it can be used to weave the layers of attention direction together, so reminders are triggers for other attention layers."
+
+  = must: preserve this source separately from the processed trigger language
+  = must: define reminder triggers as SOP attention primitives
+  = must: support declared circumstances across time, space, subject, composure, category, and attention frame
+  = must: define how triggers embed in attention terms and invoke other attention layers
+  = must: define stacking and interaction boundaries so reminders weave layers without uncontrolled recursion
+  = must: stay SOP-only unless executable behavior is explicitly requested

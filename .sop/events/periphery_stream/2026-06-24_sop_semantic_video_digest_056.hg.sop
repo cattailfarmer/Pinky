@@ -1,0 +1,28 @@
+Subject: SOP Semantic Video Digest Realization
+
+Description: SOP-HG event record for decomposing video into semantic samples, optional appearance anchors, and narrative photonic interpretation.
+
+@ [source] F:\.sop\platform\SOPSemanticVideoDigest.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+
+& [Graph:2026-06-24_sop_semantic_video_digest_056] is a SOP-HG graph
+  + [N:event:2026-06-24_sop_semantic_video_digest_056] is SOP semantic video digest realization
+    = role: direct_focus_continuation
+  + [N:source:video_source] is original video or visual stream boundary
+  + [N:sample:sample_frame] is appearance anchor
+  + [N:sample:semantic_sample] is compact meaning sample
+  + [N:stream:narrative_photonic_stream] is interpretation between samples
+  + [N:seed:reconstruction_prompt_seed] is minimal reconstruction support
+  + [N:outside:digest_boundary] is unsampled detail, exact pixels, exact timing, hidden intent, and perfect recreation claims
+
+  / [E:defines:semantic_video_digest_056] -(defines; event=N:event:2026-06-24_sop_semantic_video_digest_056; source=N:source:video_source; sample=N:sample:semantic_sample; stream=N:stream:narrative_photonic_stream)> [Graph:2026-06-24_sop_semantic_video_digest_056]
+    = realization: video can be compressed to sampled understanding plus continuity
+  / [E:anchors:reconstruction_seed_056] -(anchors; sample=N:sample:sample_frame; seed=N:seed:reconstruction_prompt_seed; outside=N:outside:digest_boundary)> [Graph:2026-06-24_sop_semantic_video_digest_056]
+    = realization: sample images demonstrate appearance and support reconstruction without proving unsampled detail
+  / [E:bounds:digest_boundary_056] -(bounds; source=N:source:video_source; outside=N:outside:digest_boundary)> [Graph:2026-06-24_sop_semantic_video_digest_056]
+    = caution: semantic digest is understanding compression, not exact video storage
+
+  = inside: SOPSemanticVideoDigest.sop, sample frames, semantic samples, narrative photonic stream, reconstruction seed
+  = boundary: compressed semantic understanding of presented media
+  = outside: unsampled detail, exact pixels, exact timing, hidden intent, and perfect recreation claims

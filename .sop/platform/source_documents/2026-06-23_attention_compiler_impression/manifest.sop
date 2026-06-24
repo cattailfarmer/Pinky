@@ -1,0 +1,11 @@
+Subject: Attention Compiler Impression Source Manifest
+
+Description: Source preservation manifest for the attention compiler impression.
+
+& [AttentionCompilerImpressionSourceManifest] is the source document set for Codex-as-attention-compiler impression work
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_attention_compiler_impression\Dictated_Attention_Compiler_Impression_Source.sop
+  + [compiler_contract] is F:\.sop\platform\AttentionImpressionCompiler.sop
+  + [compiled_impression] is F:\.sop\events\reflections\2026-06-23_attention_compiler_impression.hg.sop
+
+  = must: keep the dictated source separate from the compiled impression
+  = must: treat scaffold-to-AGI language as live hypothesis until supported by evidence

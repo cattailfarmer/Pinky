@@ -1,0 +1,48 @@
+Subject: Viewfinder Snapshot
+
+Description: SOP-HG contract for structured attention graph reflection snapshots compiled through inference.
+
+& [ViewfinderSnapshot] is a structured SOP-HG capture of a projected attention shape
+  + [compiler] is Codex or another inference processor compiling the attention graph reflection
+  + [viewfinder] is the projected desired shape of attention
+  + [narrative_token] is the immediate awareness description that starts the snapshot
+  + [snapshot_graph] is the SOP-HG record emitted from the projection
+  + [commit_frame] is the Git commit, tag, or worktree ref anchoring the snapshot
+  + [previous_reflection] is an older snapshot, scan, or realization frame used for comparison
+  + [current_observation] is a new noticed detail, scan signal, or narrative token
+  + [reweighing] is a changed weight assignment under new observation
+  + [reframing] is a changed realization framing under comparison
+  + [residual_outside] is meaning not proven by the snapshot
+
+& [ViewfinderSnapshotProcedure] is the capture and comparison routine
+  + [step_001_name_narrative_token] is write the immediate awareness token
+  + [step_002_project_shape] is name the desired attention shape to view through
+  + [step_003_compile_snapshot] is let inference produce a structured SOP-HG snapshot
+  + [step_004_attach_commit_frame] is cite commit, tag, or worktree frame references
+  + [step_005_compare_reflections] is compare prior reflections to current observations
+  + [step_006_reweigh] is adjust attention weight under new observation
+  + [step_007_reframe] is update realization framing without erasing prior frames
+  + [step_008_preserve_outside] is mark unresolved truth, unsupported causation, and hidden inference state
+
+  = must: every snapshot has a narrative token and commit frame
+  = must: previous reflection and current observation remain separately addressable
+  = must: reweighing changes attention weight, not proof status
+  = must: reframing creates a new frame rather than overwriting the old frame
+  - never: claim hidden activations or private chain-of-thought as evidence
+
+& [ViewfinderSOPHGShape] is the graph profile
+  + [viewfinder_node] is N:viewfinder:<snapshot_id>
+  + [narrative_node] is N:narrative:<snapshot_id>
+  + [snapshot_node] is N:snapshot:<snapshot_id>
+  + [commit_node] is N:commit:<ref>
+  + [shape_node] is N:shape:<desired_shape>
+  + [reflection_node] is N:reflection:<prior_reflection>
+  + [observation_node] is N:observation:<current_observation>
+  + [reframe_node] is N:reframe:<subject_key>
+  + [project_edge] is E:projects:<snapshot_id>
+  + [capture_edge] is E:captures:<snapshot_id>
+  + [compare_edge] is E:compares:<snapshot_id>
+  + [reweigh_edge] is E:reweighs:<subject_key>
+  + [reframe_edge] is E:reframes:<subject_key>
+
+  = must: represent narrative, shape, commit, reflection, observation, reweighing, and reframe as inspectable graph parts

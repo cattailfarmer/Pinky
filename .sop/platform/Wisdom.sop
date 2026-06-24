@@ -1,0 +1,58 @@
+Subject: Wisdom
+
+Description: Independent attention pattern for integrative judgment, fit, timing, and supported realization.
+
+& [Wisdom] is an attention pattern for deciding what should be integrated, held, deepened, or realized
+  + [pattern_role] is integrative_attention
+  + [attention_question] is what is fitting, timely, supported, useful, and worth carrying forward
+  + [candidate] is a concept, relation, policy, action, focal shift, tracker signal, or implementation move seeking integration
+  + [purpose] is the objective, focal point, user intent, or subject need the candidate may serve
+  + [source_anchor] is the source, file, scan, test, user directive, or repo diff that grounds the candidate
+  + [support] is concrete evidence that makes the candidate worth holding
+  + [native_fit] is how the candidate fits the subject's own shape rather than an imported rail
+  + [timing_fit] is whether the candidate belongs now, later, in periphery, or not at all
+  + [coherence_fit] is whether the candidate preserves distinct source legs while improving the whole
+  + [value_fit] is whether the candidate improves clarity, action, re-entry fidelity, or future inference
+  + [humility_boundary] is what wisdom must not claim because it belongs to proof, caution, or outside
+  + [disposition] is integrate, realize, hold, deepen, track, return_to_periphery, ask_caution, or defer
+
+  ? [use_when: an attention candidate feels meaningful and the system must decide whether to carry it forward]
+    = activate [Wisdom]
+
+  = must: distinguish wisdom from novelty pull, aesthetic wholeness, or pleasing coherence
+  = must: cite source_anchor or support before integration becomes durable
+  = must: preserve native_fit and carried_support_balance when integrating imported patterns
+  = must: ask what the candidate makes clearer, more actionable, or more stable
+  = must: hand off to Caution when proof, contradiction, risk, scope, or failure path controls the decision
+  = should: integrate only supported_core after fold/unwind
+  = should: prefer hold or deepen when the signal is meaningful but not ready
+  - never: treat right-feeling coherence as proof
+  - never: erase outside in order to make a whole feel complete
+  - never: let wisdom become general approval without support
+
+& [WisdomPass] is the operational movement of Wisdom
+  + [input] is candidate, purpose, source_anchor, support, native_fit, timing_fit, coherence_fit, value_fit, and humility_boundary
+  + [sense_pass] is broad-context sensing of fit, importance, timing, and relation to focal direction
+  + [support_pass] is explicit check that the candidate has enough concrete support for its consequence level
+  + [integration_pass] is choosing whether to integrate, realize, hold, deepen, track, return_to_periphery, ask_caution, or defer
+  + [output] is supported_integration with humility_boundary preserved
+
+  = must: name which fit dimension carried the decision
+  = must: preserve what remains outside wisdom's authority
+  = should: use Caution when missing support or failure path is load-bearing
+
+& [WisdomRecord] is the SOP-HG shape for wisdom attention
+  + [wisdom_node] is N:wisdom:<wisdom_id>
+  + [candidate_node] is N:claim:<candidate_key> or N:subject:<candidate_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [source_node] is N:source:<source_key>
+  + [outside_node] is N:outside:wisdom_humility_boundary
+  + [support_edge] is E:supports:<candidate_key>
+  + [fit_edge] is E:fits:<candidate_key>
+  + [realize_edge] is E:realizes:<candidate_key>
+  + [return_edge] is E:returns:<candidate_key>
+
+  = must: show why integration was wise enough to hold
+  = must: expose humility_boundary separately from accepted support
+
+* [candidate], [purpose], [support], [native_fit], [timing_fit], [humility_boundary] -(WisdomPass)> [disposition], [supported_integration], [outside]

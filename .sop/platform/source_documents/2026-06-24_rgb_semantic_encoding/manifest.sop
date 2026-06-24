@@ -1,0 +1,14 @@
+Subject: RGB Semantic Encoding Source Manifest
+
+Description: Manifest for preserved source feeding the RGB semantic encoding contract.
+
+& [RGBSemanticEncodingSourceManifest] is the source-preservation manifest
+  + [source_folder] is F:\.sop\platform\source_documents\2026-06-24_rgb_semantic_encoding
+  + [raw_source] is F:\.sop\platform\source_documents\2026-06-24_rgb_semantic_encoding\Dictated_RGB_Semantic_Encoding_Source.sop
+  + [canonical_target] is F:\.sop\platform\SOPRGBSemanticEncoding.sop
+  + [event_target] is F:\.sop\events\periphery_stream\2026-06-24_rgb_semantic_encoding_064.hg.sop
+  + [source_boundary] is raw user language preserved before canonical SOP processing
+  + [source_outside] is runtime implementation, color calibration, hardware proof, and complete semantic compression proof
+
+  = must: keep raw_source unchanged after canonical processing
+  = must: cite raw_source from canonical_target

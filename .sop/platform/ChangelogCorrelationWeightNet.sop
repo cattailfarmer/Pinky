@@ -1,0 +1,106 @@
+Subject: Changelog Correlation Weight Net
+
+Description: Data contract for weighted correlations that attach changelog units to subject matter through narrative and justification evidence.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+
+& [ChangelogCorrelationWeightNet] is a weighted hypergraph overlay that maps repo change units to subject attention through narrative and justification terms
+  + [pattern_role] is repo_delta_subject_attention_weighting
+  + [repo_scan] is F:\.sop\platform\RepoFirstInternalScan.sop
+  + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop
+  + [semantic_hash_table] is F:\.sop\platform\SemanticHashTable.sop
+  + [semantic_correlation_graph] is F:\.sop\platform\SemanticCorrelationGraph.sop
+  + [index_concordance] is the cited term-use structure that counts terms, source locations, and file roles before weighting
+  + [version_a] is the old commit, ref, or file state
+  + [version_b] is the new commit, ref, or file state
+  + [change_unit] is a file, hunk, generated artifact, source record, runtime helper, test, state file, tracker, proposal, or deletion in the changelog
+  + [subject_indication] is a subject, term, identifier, file role, source path, semantic bucket, or narrative pointer that suggests what the change attends
+  + [narrative_term] is a user directive, focal point term, periphery stream term, proposal term, or realization term used to interpret the change
+  + [justification_term] is source preservation, SJS support, proposal support, test proof, acceptance check, or explicit reason that explains why the change belongs
+  + [weighted_correlation] is the vector-valued relation between change_unit, subject_indication, narrative_term, and justification_term
+  + [attention_result] is the ranked subject attention surface produced by the net
+  + [trailing_zone_result] is a cold_zone, warmth_zone, hot_zone, or latent_depth_candidate classification produced when the net is used by TrailingChecksumVoice
+  + [outside] is hidden motive, causal truth, unsupported narrative, uninspected file content, and correlation not tied to evidence
+
+  ? [use_when: repo-first scan needs to infer what subjects a changelog attends and why those changes were justified]
+    = activate [ChangelogCorrelationWeightNet]
+
+  = must: build from commit bookends and changelog units before narrative interpretation
+  = must: build index_concordance before computing total heat
+  = must: use attention_weight_scale to name citation, touch, trace, pulse, chord, heat, salience, draw, and load
+  = must: expose the weight vector for every meaningful subject attachment
+  = must: keep justification_weight separate from narrative_weight and lexical_weight
+  = must: penalize generated artifacts when they dominate line count without being semantic core
+  = must: preserve unsupported but interesting associations as outside or periphery, not proof
+  = must: expose trailing_zone_result when the net supports a one-turn trailing checksum review
+  = should: produce a ranked attention surface for later Wisdom/Caution review
+  - never: call a high-weight attachment proven motive
+  - never: hide the dimensions that created the total weight
+  - never: let generated index size overwhelm source, contract, or justification records
+
+& [WeightVector] is the data shape for one weighted subject attachment
+  + [lexical_weight] is overlap between change terms and subject or narrative terms
+  + [subject_weight] is match strength for explicit subject, identifier, path, or semantic bucket
+  + [role_weight] is strength from file role such as source, canonical contract, runtime helper, test, tracker, state, generated graph, or proposal
+  + [proximity_weight] is closeness in commit frame, file path, hunk neighborhood, or source manifest
+  + [source_lineage_weight] is support from preserved source documents, manifests, or SJS lineage
+  + [justification_weight] is support from explicit reasons, acceptance checks, tests, proposals, or proof records
+  + [narrative_weight] is interpretive support from focal point, periphery stream, user directive, or narrative realization
+  + [recurrence_weight] is repeated appearance across commits, scans, trackers, or reflections
+  + [change_intensity_weight] is blast-radius signal from additions, deletions, file count, or hunk count
+  + [caution_penalty] is reduction for contradiction, stale tracker, unsupported causation, or missing proof
+  + [generated_artifact_penalty] is reduction when generated views inflate line count without adding primary semantic authority
+  + [staleness_penalty] is reduction when the signal is old, expired, or not reaffirmed
+  + [total_weight] is positive weights minus penalties
+  + [confidence] is low, medium, or high according to evidence diversity and boundary checks
+  + [resolution_band] is surface, hair, skin, pressure, impact, or deep_probe according to AttentionWeightScale
+
+  = must: store positive weights and penalties separately
+  = must: keep total_weight reproducible from visible dimensions
+  = must: keep confidence separate from heat
+  = must: keep resolution_band separate from total_weight
+  = should: require at least two evidence dimensions before promotion from periphery to focus
+
+& [WeightNetDimensions] is the multi-dimensional hashmap surface used by the net
+  + [change_dimensions] is commit, path, file_role, operation, hunk_terms, additions, deletions, generated_status, and semantic_hash
+  + [subject_dimensions] is subject, identifier, term, bucket, source manifest, tracker, proposal, and focal point
+  + [narrative_dimensions] is user directive, current focal point, periphery stream moment, narrative reflection, and realization phrase
+  + [justification_dimensions] is source document, SJS record, acceptance check, test result, proof route, proposal evidence, and support balance
+  + [boundary_dimensions] is outside, missing support, caution boundary, generated artifact, stale signal, and uninspected content
+
+  = must: allow one change_unit to occupy many dimensions
+  = must: allow one subject to be attached by multiple independent paths
+  = must: preserve matched_dimension_set for every attachment
+
+& [WeightNetRecord] is the SOP-HG shape for one net realization
+  + [net_node] is N:net:<net_id>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [change_node] is N:file:<path_key> or N:source:<change_key>
+  + [subject_node] is N:subject:<subject_key>
+  + [narrative_node] is N:narrative:<narrative_key>
+  + [justification_node] is N:source:<justification_key> or N:claim:<justification_key>
+  + [weight_node] is N:signal:<weight_vector_key>
+  + [outside_node] is N:outside:weight_net_boundary
+  + [span_edge] is E:span:<net_id>
+  + [changed_edge] is E:changed:<change_key>
+  + [correlation_edge] is E:correlates:<change_key>_<subject_key>
+  + [support_edge] is E:supports:<subject_key>
+  + [explain_edge] is E:explains:<subject_key>
+  + [boundary_edge] is E:bounds:<net_id>
+
+  = must: show bookends, change unit, subject, narrative, justification, and weight vector
+  = must: bind unsupported correlations to outside
+
+& [WeightNetPromotionLaw] is how the net influences attention
+  + [periphery_result] is a weighted correlation with insufficient evidence diversity, uncertain justification, or active caution penalty
+  + [focus_candidate] is a weighted correlation with strong evidence diversity, clear narrative guidance, and explicit justification support
+  + [wisdom_route] is F:\.sop\platform\Wisdom.sop when a high-weight attachment may be meaningful to integrate
+  + [caution_route] is F:\.sop\platform\Caution.sop when the attachment may overclaim, hide uncertainty, or confuse generated views with source authority
+
+  = must: route high-weight focus candidates through Wisdom and Caution before durable realization
+  = must: route unresolved or single-dimension signals to periphery
+  = must: preserve generated-artifact inflation as an oddity when line count misrepresents semantic authority
+
+/ [version_a], [version_b] -(CommitFrame)> [change_unit]
+* [change_unit], [subject_indication], [narrative_term], [justification_term], [weight_vector], [outside] -(ChangelogCorrelationWeight)> [attention_result]

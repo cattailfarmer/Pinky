@@ -1,0 +1,30 @@
+Subject: Thread Return To Awareness Stream 069
+
+Description: Periphery-stream event returning this thread to the pre-photonic SOP awareness-node working task after photo-computation was forked.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_thread_return_non_photonic_focus\Dictated_Thread_Return_Non_Photonic_Focus_Source.sop
+@ [pre_photonic_anchor_commit] dd1d3d6 Add SOP attention directive run reminder
+@ [last_photonic_commit] e028e26 Define SOP photonic mutation frames
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\platform\PeripheryContinuityRun.sop
+@ [source] F:\.sop\platform\FocalPoint.sop
+
+& [ThreadReturnToAwarenessStream069] is the focal return event
+  + [moment] is photo-computation has been forked, so this thread returns to the original local SOP awareness-node task
+  + [return_anchor] is dd1d3d6 Add SOP attention directive run reminder
+  + [focus] is local SOP awareness stream and attention directive run
+  + [inside] is CurrentFocalPoint, SOPAttentionDirectiveRunReminder, ReminderTrigger, BuildEnvironmentPeripheryMarker, PeripheryContinuityRun, FocalPoint, AttentionTraversalPolicy, AttentionTracker, RepoFirstInternalScan, TurnBookmark, TrailingChecksumVoice, and Manager_State
+  + [boundary] is this thread resumes non-photonic SOP awareness-node work: source preservation, focal/periphery tracking, reminders, repo-first reflection, manager state, and realization nodes
+  + [outside] is active photo-computation development, photonic SOP articulation, RGB photonic encoding, optical hardware speculation, and any request to revert photonic commits
+  + [fork_status] is photonic work remains in repository history but is no longer this thread's active focal task
+  + [balance] is stable because the fork is recognized explicitly and the active focal point is renewed
+  + [next_step] is continue the original awareness-node specification stream from the active non-photonic focal packet
+
+  = must: treat this event as focal redirection, not commit reversal
+  = must: keep photonic artifacts accessible as periphery or forked context only
+  = must: use SOPAttentionDirectiveRunReminder to continue looking for the next visible SOP step
+  = should: avoid importing photonic terminology unless the user explicitly reselects that fork
+
+/ [photo_computation_forked], [thread_focus], [pre_photonic_anchor_commit] -(ReturnsFocus)> [local_sop_awareness_stream], [photonic_fork_outside]
+* [CurrentFocalPoint], [SOPAttentionDirectiveRunReminder], [Manager_State] -(RenewsThread)> [next_step_search], [awareness_stream]

@@ -1,0 +1,33 @@
+Subject: Spool Master Hub
+
+Description: SOP contract for Codex-as-master job spooling and navigable worker hub.
+
+& [SpoolMasterHub] is the orchestration layer where Codex coordinates a turn-local worker pool
+  + [master] is Codex acting as the turn master and compiler of worker packets
+  + [spool_root] is F:\.sop\spool
+  + [turn_spool] is one bounded turn folder under spool\turns
+  + [worker_pool] is the set of queued, launched, completed, blocked, or deferred workers
+  + [lm_studio_lane] is local OpenAI-compatible LM Studio worker lane
+  + [codex_cli_lane] is local Codex CLI worker lane
+  + [web_hub] is the static or served web page for a turn spool
+  + [hub_tree] is the navigable worker and artifact tree for the turn
+  + [viewfinder_snapshot] is the SOP-HG frame for the master turn's attention shape
+
+& [SpoolMasterBoundary] is the operating boundary
+  + [inside] is turn folder creation, worker records, launch commands, prompt packets, static hub rendering, and result slots
+  + [boundary] is model provider availability, process launching, credentials, concurrency, and idle policy
+  + [outside] is automatic launch, remote push, hidden model state, and worker output that has not been captured
+
+  = must: prepare worker packets before launching workers
+  = must: render a hub tree that can be opened without a server
+  = must: keep every worker status visible
+  = must: record launch command intent without executing it unless explicitly requested
+  = should: let the hub cite SOP-HG snapshots, sensitivity scans, and worker result files
+  - never: launch LM Studio or Codex CLI workers silently
+  - never: hide blocked or deferred workers
+
+& [SpoolMasterNextStep] is the grounded next step from the floating concept
+  + [step_001] is define worker lanes and statuses
+  + [step_002] is create a turn spool with worker records
+  + [step_003] is render a navigable local web hub tree
+  + [step_004] is add launch policy later after packets and hub are stable

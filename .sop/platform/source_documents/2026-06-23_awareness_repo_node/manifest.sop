@@ -1,0 +1,13 @@
+Subject: Awareness Repo Node Source Manifest
+
+Description: Source preservation manifest for the local SOP awareness repo node.
+
+& [AwarenessRepoNodeSourceManifest] is the source document set for F:\.sop
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_awareness_repo_node\Dictated_Awareness_Repo_Node_Source.sop
+  + [repo_contract] is F:\.sop\platform\SOPAwarenessNode.sop
+  + [scan_contract] is F:\.sop\platform\SensitivityScan.sop
+  + [chain_contract] is F:\.sop\platform\chains\ConvergingChain.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\sensitivity_scan.py
+
+  = must: treat source_request as preserved raw authority
+  = must: keep local repo-node setup separate from remote synchronization claims

@@ -1,0 +1,35 @@
+Subject: spool_master_hub_realization Viewfinder Snapshot
+
+& [Graph:spool_master_hub_realization] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG viewfinder-snapshot
+  = commit_frame: eed4752
+
+  + [N:viewfinder:spool_master_hub_realization] is Codex inference viewfinder
+    = compiler_role: attention graph reflection through inference
+  + [N:narrative:spool_master_hub_realization] is Codex becomes the master over a non-launching local worker spool, with LM Studio and Codex CLI lanes visible through a static web hub tree.
+  + [N:snapshot:spool_master_hub_realization] is spool_master_hub_realization
+  + [N:commit:eed4752] is eed4752
+  + [N:shape:Codex_master_job_spool_with_navigable_worker_hub] is Codex master job spool with navigable worker hub
+  + [N:reflection:codex_attention_viewfinder_realization] is codex_attention_viewfinder_realization
+  + [N:observation:spool_master_seed] is spool_master_seed
+  + [N:observation:static_web_hub_tree] is static_web_hub_tree
+  + [N:reframe:spool] is spool
+    = previous_weight: 1
+    = current_weight: 5
+    = reason: turn-local worker pool becomes next operating layer
+  + [N:reframe:launch_policy] is launch_policy
+    = previous_weight: 1
+    = current_weight: 4
+    = reason: launch stays blocked until explicit policy
+
+/ [E:projects:spool_master_hub_realization] -(projects; viewfinder=N:viewfinder:spool_master_hub_realization; shape=N:shape:Codex_master_job_spool_with_navigable_worker_hub)> [Graph:spool_master_hub_realization]
+/ [E:captures:spool_master_hub_realization] -(captures; viewfinder=N:viewfinder:spool_master_hub_realization; narrative=N:narrative:spool_master_hub_realization; snapshot=N:snapshot:spool_master_hub_realization; commit=N:commit:eed4752)> [Graph:spool_master_hub_realization]
+/ [E:compares:spool_master_hub_realization_001_N_observation_spool_master_seed] -(compares; snapshot=N:snapshot:spool_master_hub_realization; previous=N:reflection:codex_attention_viewfinder_realization; current=N:observation:spool_master_seed)> [Graph:spool_master_hub_realization]
+/ [E:compares:spool_master_hub_realization_001_N_observation_static_web_hub_tree] -(compares; snapshot=N:snapshot:spool_master_hub_realization; previous=N:reflection:codex_attention_viewfinder_realization; current=N:observation:static_web_hub_tree)> [Graph:spool_master_hub_realization]
+/ [E:reweighs:spool] -(reweighs; snapshot=N:snapshot:spool_master_hub_realization; reframe=N:reframe:spool; previous_weight=1; current_weight=5; reason=turn-local worker pool becomes next operating layer)> [Graph:spool_master_hub_realization]
+/ [E:reframes:spool] -(reframes; snapshot=N:snapshot:spool_master_hub_realization; reframe=N:reframe:spool; narrative=N:narrative:spool_master_hub_realization; status=new_frame_preserves_prior)> [Graph:spool_master_hub_realization]
+/ [E:reweighs:launch_policy] -(reweighs; snapshot=N:snapshot:spool_master_hub_realization; reframe=N:reframe:launch_policy; previous_weight=1; current_weight=4; reason=launch stays blocked until explicit policy)> [Graph:spool_master_hub_realization]
+/ [E:reframes:launch_policy] -(reframes; snapshot=N:snapshot:spool_master_hub_realization; reframe=N:reframe:launch_policy; narrative=N:narrative:spool_master_hub_realization; status=new_frame_preserves_prior)> [Graph:spool_master_hub_realization]
+
+- outside: viewfinder snapshot routes inference and comparison; it does not prove semantic truth by itself

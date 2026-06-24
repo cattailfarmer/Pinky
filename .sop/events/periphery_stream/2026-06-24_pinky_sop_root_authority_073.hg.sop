@@ -1,0 +1,25 @@
+Subject: Pinky SOP Root Authority 073
+
+Description: Periphery-stream realization that active local SOP authority now lives at C:\Project\Pinky\.sop, seeded from F:\.sop.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pinky_sop_root_authority\Dictated_Pinky_SOP_Root_Authority_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
+@ [source] C:\Project\Pinky\.sop\state\RepoRoleIndex.sop
+
+& [PinkySOPRootAuthority073] is the realized authority transition
+  + [moment] is active source authority moved from the previously used F:\.sop working root into C:\Project\Pinky\.sop under the Pinky GitHub-facing repository
+  + [focus] is local source authority and publication boundary
+  + [inside] is C:\Project\Pinky\.sop as active SOP root, C:\Project\Pinky as publication repo, F:\.sop as backup, and SourceAuthorityRoot as canonical boundary
+  + [boundary] is authority changes must be written in Pinky .sop and published by Pinky Git; backup-only state does not define local trust
+  + [outside] is unrelated Pinky project changes, nested .sop Git remotes, hidden model state, and claims of GitHub publication before push
+  + [wisdom] is the move fits because the local machine's trusted attention framework now lives under the same repository that publishes to GitHub
+  + [caution] is unrelated dirty Pinky files must stay out of this authority commit
+  + [balance] is stable because authority, backup, and publication roles are separated
+  + [next_step] is stage only C:\Project\Pinky\.sop for the Pinky authority seed commit and push through Pinky's remote when validation passes
+
+  = must: preserve F:\.sop as seed lineage and backup
+  = must: use C:\Project\Pinky\.sop for active SOP authority after this transition
+  = should: keep future commit reports labeled local and remote/GitHub
+
+/ [F_sop], [Pinky_dot_sop], [SourceAuthorityRoot] -(TransitionsAuthority)> [Pinky_publication_repo], [authority_outside]
+* [seed_lineage], [backup_role], [publication_boundary] -(Stabilizes)> [local_authority], [commit_report], [outside]

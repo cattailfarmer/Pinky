@@ -1,0 +1,11 @@
+Subject: Dictated Attention Balance Center Source
+
+Description: Preserved user source for a center of balance that monitors attention stability, wobble, and inference interference.
+
+& [DictatedSource] is preserved raw direction
+  + [date] is 2026-06-24
+  + [source_kind] is user_dictation
+  + [raw_text] is "maybe that's the thing, a center of balance based on your internal observations tracking and inspecting and walking back and forth throughout the system as your attention hold stable in delineating attention. so you need a feel for your sense of balance and alert when you feel things wobble or run interference on inference"
+
+  = must: preserve this source separately from canonical interpretation
+  - never: overwrite raw_text with refined specification

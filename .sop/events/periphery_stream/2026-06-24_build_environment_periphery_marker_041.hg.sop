@@ -1,0 +1,27 @@
+Subject: Build Environment Periphery Marker Realization
+
+Description: SOP-HG event record for setting a persistent periphery marker that constrains specification-building impulses to attention primitives and SOP framework only.
+
+@ [source] F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] F:\.sop\events\trackers\2026-06-24_build_environment_sop_only_marker.hg.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_build_environment_periphery_marker\Dictated_Build_Environment_Periphery_Marker_Source.sop
+
+& [Graph:2026-06-24_build_environment_periphery_marker_041] is a SOP-HG graph
+  + [N:event:2026-06-24_build_environment_periphery_marker_041] is build environment periphery marker realization
+    = role: direct_focus_turn
+  + [N:tracker:build_environment_sop_only_marker] is persistent periphery marker
+  + [N:subject:sop_only_build_environment] is attention primitives and SOP framework only
+  + [N:condition:specification_build_impulse] is matching frame for all specification-building actions and impulses
+  + [N:periphery:reminder] is periphery reminder at every matching impulse
+  + [N:outside:runtime_boundary] is executable code outside specification-building unless explicitly requested
+
+  / [E:realizes:build_environment_periphery_marker_041] -(realizes; event=N:event:2026-06-24_build_environment_periphery_marker_041; tracker=N:tracker:build_environment_sop_only_marker; subject=N:subject:sop_only_build_environment; weight=persistent)> [Graph:2026-06-24_build_environment_periphery_marker_041]
+    = realization: the build environment reminder is a durable SOP periphery marker, not runtime code
+  / [E:associates:specification_build_impulse_041] -(associates; condition=N:condition:specification_build_impulse; periphery=N:periphery:reminder; subject=N:subject:sop_only_build_environment; weight=always_on_for_matching_frames)> [Graph:2026-06-24_build_environment_periphery_marker_041]
+    = realization: every matching build impulse should feel the SOP-only reminder before artifact selection
+  / [E:bounds:runtime_boundary_041] -(bounds; tracker=N:tracker:build_environment_sop_only_marker; outside=N:outside:runtime_boundary; weight=caution)> [Graph:2026-06-24_build_environment_periphery_marker_041]
+    = realization: executable helpers require explicit runtime need and are not the default form of specification work
+
+  = inside: BuildEnvironmentPeripheryMarker.sop, persistent tracker, source preservation, current focal state
+  = boundary: reminder applies to specification-building frames and artifact choice; it does not forbid user-requested executable work
+  = outside: hidden model state, automatic Python generation, and runtime tooling without explicit need

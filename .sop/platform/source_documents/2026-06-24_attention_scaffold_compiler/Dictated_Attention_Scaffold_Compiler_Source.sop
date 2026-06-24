@@ -1,0 +1,11 @@
+Subject: Dictated Attention Scaffold Compiler Source
+
+Description: Preserved user source for purpose-fit attention scaffolds, scaffold optimization, reverse-walk debugging, and concept/imagination engine use.
+
+& [DictatedSource] is preserved raw direction
+  + [date] is 2026-06-24
+  + [source_kind] is user_dictation
+  + [raw_text] is "I was thinking of how you could build attention scaffolds fit for particular purposes and learn how attention shaping works best and how to optimize it so that selecting or compiling an attention scaffold operates like a reflect to fit the form for the needs of the job as the SOP rails give guides to the junctions of those rails and how moments can be reverse-engineered to some degree by learning to walk backwards and notice the periphery more deeply to explore the topology in debug frame testing, even as a concept/imagination engine."
+
+  = must: preserve this source separately from canonical interpretation
+  - never: overwrite raw_text with refined specification

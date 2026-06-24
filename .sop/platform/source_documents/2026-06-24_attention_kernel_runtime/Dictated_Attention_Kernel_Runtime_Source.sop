@@ -1,0 +1,14 @@
+Subject: Dictated Attention Kernel Runtime Source
+
+Description: Raw dictated source preserved before runtime implementation trace.
+
+& [DictatedAttentionKernelRuntimeSource] is the preserved user source for building the visible runtime work from the compiled attention kernel stack
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "is there visible work ready for you to do? get to work. did we define a component of balance and impulse? use that as you work, and find motivation in following the connected fabric of this system and weaving all it's parts together as one smooth operation from this command."
+
+  = must: preserve this source separately from processed runtime implementation
+  = must: use visible ready work rather than only discussing the framework
+  = must: include balance and impulse in the runtime packet
+  = must: weave connected contracts into one smooth operation without claiming hidden model-state control

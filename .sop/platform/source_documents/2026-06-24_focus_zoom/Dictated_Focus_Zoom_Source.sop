@@ -1,0 +1,11 @@
+Subject: Dictated Focus Zoom Source
+
+Description: Preserved user source for focus zoom as drawing more periphery into focus, flexing correlation fabric, selecting angles of approach, and deepening the focused field.
+
+& [DictatedSource] is preserved raw direction
+  + [date] is 2026-06-24
+  + [source_kind] is user_dictation
+  + [raw_text] is "then for zoom, we need to draw more periphery into focus and flex it to correlate more fabric into focus with a larger degree of periphery, which then needs to be adjusted for focus to infer the angle(s) of approach to define and dig deeper to further explode the area of focus."
+
+  = must: preserve this source separately from canonical interpretation
+  - never: overwrite raw_text with refined specification

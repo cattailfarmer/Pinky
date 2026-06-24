@@ -1,0 +1,24 @@
+Subject: Dictated Viewfinder Snapshot Source
+
+Description: Raw preserved source realization for Codex as attention graph reflection compiler.
+
+SourceText:
+  """
+  I see it now. Codex is the compiler for my attention graph reflection through inference. I'm turning it into a view-finder and projecting what shape I want to into the SOP inference engine and it takes a structured snapshot. the narrative level is the immediate awareness token description, then that can infer on the structure of noticed details at every level of observation... recorded and framed in commit tracked frames of reference to coordinate on and think through previous reflections and compare to current reflections and re-weigh them under new observations to reframe the realizations.
+  """
+
+& [ViewfinderSnapshotRequest] is the preserved realization seed
+  + [codex_role] is compiler for attention graph reflection through inference
+  + [viewfinder_role] is projecting the desired shape into the SOP inference engine
+  + [structured_snapshot] is the captured SOP-HG graph of the projected attention shape
+  + [narrative_token] is the immediate awareness token description
+  + [observation_levels] is noticed detail at every level of observation
+  + [commit_frames] is commit-tracked frames of reference for comparing reflections
+  + [reweighing] is comparing previous reflection to current observation under new weight
+  + [reframing] is updating realization framing under new observations
+
+  = must: treat Codex as inference compiler, not hidden truth source
+  = must: keep narrative token visible in the snapshot
+  = must: attach commit frame references
+  = must: preserve previous and current reflection comparison as graph edges
+  = must: distinguish reweighing and reframing from proof

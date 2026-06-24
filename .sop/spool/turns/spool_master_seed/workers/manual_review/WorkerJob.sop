@@ -1,0 +1,13 @@
+Subject: Worker Job
+
+& [WorkerJob_manual_review] is a turn-spool worker record
+  + [worker_id] is manual_review
+  + [lane] is manual
+  + [objective] is Human review lane for inspecting hub tree and launch commands.
+  + [status] is queued
+  + [prompt_packet] is prompt.md
+  + [launch_command] is not configured
+  + [result_file] is result.sop
+  + [attention_frame] is none
+  = must: inspect launch_command before execution
+  - never: infer completion from launch alone

@@ -1,0 +1,26 @@
+Subject: Attention Memory Codec Trailing Checksum 063
+
+Description: One-turn-later reflection on commit f71e254, finding that the attention memory codec needs an explicit SOP-to-color and color-to-SOP encoding basis.
+
+@ [source_commit] f71e254 Define SOP attention memory codec
+@ [source] F:\.sop\platform\SOPAttentionMemoryCodec.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+
+& [AttentionMemoryCodecTrailingChecksum063] is the trailing checksum for the prior direct-focus frame
+  + [reviewed_focus] is SOP attention memory codec
+  + [prior_inside] is thinking_node, attention_route_color, visual_attention_anchor, optical_instruction_stream, write_pass, read_pass, recall_key, semantic_reentry, recall_fidelity
+  + [striking_delta] is the codec names route colors but does not yet define how SOP primitives become color values and how color values reconstruct SOP primitives
+  + [hot_zone] is RGB can become a compact resolving basis if it maps to inside, boundary, and outside as attention axes
+  + [warm_zone] is complex meaning should use colored nodes, colored relation edges, frame sequences, and source pointers rather than a single overloaded color
+  + [latent_depth] is round-trip SOP-to-color-to-SOP fidelity needs explicit loss, quantization, outside, and proof boundaries
+  + [correction] is do not let color appear to be truth; color routes attention and resolution cues while SOP records preserve authority
+  + [next_focus_candidate] is SOP RGB semantic encoding
+  + [balance_state] is stable if color is treated as a lossy routing layer over SOP records, not as a replacement for source or proof
+
+  = must: treat this checksum as backward-facing reflection on the previous commit
+  = must: route the next direct focus toward an RGB semantic encoding contract
+  - outside: exact physical color behavior, display calibration, hidden model perception, and complete semantic losslessness
+
+/ [SOPAttentionMemoryCodec], [attention_route_color], [SOPColorChannelVocabulary] -(RevealsEncodingNeed)> [SOPRGBSemanticEncoding], [color_outside]
+* [trailing_checksum], [round_trip_fidelity], [proof_non_inflation] -(GuardsColorMeaning)> [semantic_reentry], [color_outside]

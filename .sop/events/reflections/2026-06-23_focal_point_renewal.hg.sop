@@ -1,0 +1,23 @@
+Subject: Focal Point Renewal Reflection
+
+Description: SOP-HG reflection recording focal point as compaction-renewed attention direction.
+
+& [Graph:focal_point_renewal_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG focal-point-renewal
+
+  + [N:focus:current_focal_point] is current focal point
+    = focus_mode: mixed_focus
+    = renewal_state: fresh
+    = purpose: preserve active direction through context compression
+  + [N:source:state_CurrentFocalPoint_sop] is state\CurrentFocalPoint.sop
+  + [N:subject:context_compression] is context compression
+  + [N:tracker:track_that_semantics] is active tracker feeding focal direction
+  + [N:outside:focal_boundary] is wide periphery and hidden context outside compact re-entry seed
+
+/ [E:attends:current_focal_point] -(attends; focus=N:focus:current_focal_point; subject=N:subject:context_compression; mode=mixed_focus)> [Graph:focal_point_renewal_2026_06_23]
+/ [E:renews:current_focal_point] -(renews; focus=N:focus:current_focal_point; source=N:source:state_CurrentFocalPoint_sop; trigger=context_compression_or_focus_change)> [Graph:focal_point_renewal_2026_06_23]
+/ [E:draws_attention:tracker_to_current_focal_point] -(draws_attention; tracker=N:tracker:track_that_semantics; focus=N:focus:current_focal_point; reason=tracking_context_must_survive_compaction)> [Graph:focal_point_renewal_2026_06_23]
+/ [E:bounds:current_focal_point] -(bounds; focus=N:focus:current_focal_point; outside=N:outside:focal_boundary; reason=compact_reentry_seed_not_memory_dump)> [Graph:focal_point_renewal_2026_06_23]
+
+- outside: current focal point preserves attention direction, not complete project memory

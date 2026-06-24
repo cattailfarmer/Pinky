@@ -1,0 +1,14 @@
+Subject: Commit Integrity Reflection Source Manifest
+
+Description: Source preservation manifest for the commit integrity reflection refinement.
+
+& [CommitIntegrityReflectionSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_commit_integrity_reflection\Dictated_Commit_Integrity_Reflection_Source.sop
+  + [canonical_target] is F:\.sop\platform\TurnBookmark.sop
+  + [bookmark_record] is F:\.sop\events\bookmarks\2026-06-24_moment_branch_refinement_commit_integrity_014.hg.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_commit_integrity_reflection_014.hg.sop
+  + [derived_terms] is commit_integrity_review, stable_purpose, before_after_commit_reflection, post_commit_repair
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, SJS, RepoFirstInternalScan, TurnBookmark, ProjectNarrativeSurface
+
+  = must: preserve raw source before treating the TurnBookmark refinement as process authority
+  = must: cite the bookmark record when answering whether a commit had integrity reflection

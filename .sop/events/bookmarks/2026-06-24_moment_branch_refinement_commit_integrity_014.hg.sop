@@ -1,0 +1,59 @@
+Subject: Moment Branch Refinement Commit Integrity Bookmark 014
+
+Description: TurnBookmark commit-integrity review for commit 68794c6, comparing bookends 97caa79 and 68794c6.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_commit_integrity_reflection\Dictated_Commit_Integrity_Reflection_Source.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_moment_branch_refinement\Dictated_Moment_Branch_Refinement_Source.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_moment_branch_refinement_013.hg.sop
+
+& [Graph:2026-06-24_moment_branch_refinement_commit_integrity_014] is a SOP-HG graph
+  + [N:bookmark:moment_branch_refinement_commit_integrity_014] is commit integrity review for moment branch refinement workflow
+    = record_kind: commit_integrity_review
+    = reviewed_commit: 68794c6
+    = reviewed_commit_message: Add moment branch refinement workflow
+    = version_a: 97caa79
+    = version_b: 68794c6
+    = diff_stat: 18 files changed, 942 insertions, 597 deletions
+    = stable_purpose: stable_with_post_commit_repair
+  + [N:commit:97caa79] is start bookend before moment branch refinement
+  + [N:commit:68794c6] is end bookend after moment branch refinement
+  + [N:source:dictated_moment_branch_refinement] is preserved user source for reconstructing turn moments and branch artifacts
+  + [N:source:moment_branch_refinement_contract] is platform/MomentAwarenessBranchRefinement.sop
+  + [N:source:periphery_realization_013] is events/periphery_stream/2026-06-24_moment_branch_refinement_013.hg.sop
+  + [N:source:focal_state] is state/CurrentFocalPoint.sop
+  + [N:source:manager_state] is planning/project_manager/Manager_State.sop
+  + [N:signal:source_preservation] is raw source and manifest were added before canonical authority
+  + [N:signal:canonical_contract] is branch-isolated moment refinement workflow was defined
+  + [N:signal:integration_path] is Attention, TurnBookmark, InferenceStateTrace, RepoFirstInternalScan, MetaAwarenessRepository, ConvergingChain, SOPAwarenessNode, AttentionScaffoldCompiler, and SOP-HG were updated
+  + [N:signal:realization_record] is periphery stream moment 013 recorded the conceptual realization
+  + [N:signal:index_refresh] is semantic indexes were regenerated for the new terms
+  + [N:finding:unique_accomplishment] is the commit turned the directive into source, canonical workflow, graph schema, state, manager route, and indexed lookup surface
+  + [N:finding:new_potential] is local branch_refinement_artifact runtime became a ready task
+  + [N:finding:missed_work] is a dedicated commit_integrity_review artifact was not included inside 68794c6
+  + [N:finding:outside_remote_sync] is higher-level GitHub synchronization remains blocked and unconfigured
+  + [N:policy:post_commit_repair] is this bookmark repairs the missing integrity reflection without rewriting history
+  + [N:outside:commit_integrity_boundary] is hidden cognition, exact hidden-state replay, unconfigured remote sync, and claims that later reflection was original awareness
+
+  / [E:span:moment_branch_refinement_commit_integrity_014] -(span; start=N:commit:97caa79; end=N:commit:68794c6; bookmark=N:bookmark:moment_branch_refinement_commit_integrity_014)> [Graph:2026-06-24_moment_branch_refinement_commit_integrity_014]
+    = evidence: git diff --stat and git diff --name-status 97caa79 68794c6
+  / [E:compares:moment_branch_refinement_plan] -(compares; source=N:source:dictated_moment_branch_refinement; contract=N:source:moment_branch_refinement_contract; finding=N:finding:unique_accomplishment)> [Graph:2026-06-24_moment_branch_refinement_commit_integrity_014]
+    = plan_relation: satisfied
+    = justification: the source requested moment reconstruction, branch artifacts, selection, and higher-level sync boundaries; the contract defines those terms and keeps sync blocked
+  / [E:realizes:periphery_and_state_path] -(realizes; periphery=N:source:periphery_realization_013; focal=N:source:focal_state; manager=N:source:manager_state; finding=N:finding:unique_accomplishment)> [Graph:2026-06-24_moment_branch_refinement_commit_integrity_014]
+    = plan_relation: satisfied
+    = justification: periphery, current focus, and manager state all point at the same branch-refinement purpose
+  / [E:weighs:stable_purpose] -(weighs; source=N:signal:source_preservation; contract=N:signal:canonical_contract; integration=N:signal:integration_path; realization=N:signal:realization_record; index=N:signal:index_refresh; weight=8)> [Graph:2026-06-24_moment_branch_refinement_commit_integrity_014]
+    = stable_purpose: all durable non-generated changes support one coherent workflow
+  / [E:misses:commit_integrity_artifact] -(misses; finding=N:finding:missed_work; policy=N:policy:post_commit_repair; outside=N:outside:commit_integrity_boundary)> [Graph:2026-06-24_moment_branch_refinement_commit_integrity_014]
+    = plan_relation: partial
+    = correction: this follow-up bookmark records the missing review instead of pretending it was already inside 68794c6
+  / [E:blocks:remote_sync] -(blocks; finding=N:finding:outside_remote_sync; outside=N:outside:commit_integrity_boundary)> [Graph:2026-06-24_moment_branch_refinement_commit_integrity_014]
+    = blocker: no common remote target, credentials, branch protection policy, or merge selection policy configured
+
+  = verdict: 68794c6 had stable purpose and useful commit integrity, but lacked a dedicated before-after integrity bookmark inside the commit.
+  = repair_status: repaired_by_follow_up_commit_candidate
+  = tests_observed: python -m unittest discover runtime\tests passed 14 tests before 68794c6 was committed
+  = diff_check_observed: staged git diff --check was clean before 68794c6 was committed
+  - outside: this bookmark does not amend 68794c6 and does not claim remote synchronization occurred.

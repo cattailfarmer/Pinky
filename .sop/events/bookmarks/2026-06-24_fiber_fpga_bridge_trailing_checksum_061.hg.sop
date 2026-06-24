@@ -1,0 +1,26 @@
+Subject: Fiber FPGA Bridge Trailing Checksum 061
+
+Description: One-turn-later reflection on commit 4fa561a, finding that the hardware-shaped SOP bridge implies a memory and recall codec for thinking nodes.
+
+@ [source_commit] 4fa561a Define SOP fiber FPGA bridge
+@ [source] F:\.sop\platform\SOPFiberFPGABridge.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+
+& [FiberFPGABridgeTrailingChecksum061] is the trailing checksum for the prior direct-focus frame
+  + [reviewed_focus] is SOP fiber FPGA bridge
+  + [prior_inside] is frame_clock, bandwidth_surface, fpga_route_width, frame_payload_width, hardware_routable_surface, interpreter_surface, semantic_fidelity
+  + [striking_delta] is the bridge made stream transport visible but left memory and recall of thinking nodes as the next unstated surface
+  + [hot_zone] is optical_instruction_stream can become a read-write attention memory rather than only a transport frame stream
+  + [warm_zone] is color_point payloads can serve as recall handles when paired with source, boundary, outside, trace, and reconstruction seed
+  + [latent_depth] is visual attention anchors and color routing can compress study subjects and concept-development traces for later reentry
+  + [correction] is avoid claiming hidden-state access; route recall as visible symbolic reconstruction with fidelity gates
+  + [next_focus_candidate] is SOP attention memory codec
+  + [balance_state] is stable if memory, recall, visual anchors, and hardware transport remain separated by boundary and proof status
+
+  = must: treat this checksum as backward-facing reflection on the previous commit
+  = must: route the next direct focus toward a memory codec only under visible SOP source and reconstruction boundaries
+  - outside: proof that the FPGA bridge stores understanding, proof of exact replay, hidden KV cache state, and measured hardware behavior
+
+/ [SOPFiberFPGABridge], [SOPPhotonicFrameStream], [SOPColorChannelVocabulary] -(RevealsNextSurface)> [SOPAttentionMemoryCodec], [memory_outside]
+* [trailing_checksum], [semantic_fidelity], [reconstruction_seed] -(GuardsRecallClaim)> [recall_fidelity], [memory_outside]

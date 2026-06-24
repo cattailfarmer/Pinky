@@ -1,0 +1,13 @@
+Subject: Worker Job
+
+& [WorkerJob_lm_studio_local_model] is a turn-spool worker record
+  + [worker_id] is lm_studio_local_model
+  + [lane] is lm_studio_cli
+  + [objective] is Local model reflection lane through LM Studio-compatible API.
+  + [status] is blocked
+  + [prompt_packet] is prompt.md
+  + [launch_command] is blocked: LM Studio launch policy not configured
+  + [result_file] is result.sop
+  + [attention_frame] is none
+  = must: inspect launch_command before execution
+  - never: infer completion from launch alone

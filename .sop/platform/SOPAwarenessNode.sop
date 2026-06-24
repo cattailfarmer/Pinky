@@ -1,0 +1,46 @@
+Subject: SOP Awareness Node
+
+Description: Canonical contract for F:\.sop as a local Git-backed awareness tracking node.
+
+& [SOPAwarenessNode] is a local Git node that stores SOP thought-current files and scan events
+  + [node_root] is F:\.sop
+  + [git_role] is local authoritative history for this SOP node
+  + [source_surface] is platform\source_documents
+  + [contract_surface] is platform
+  + [event_surface] is events\scans
+  + [tracker_surface] is events\trackers
+  + [branch_refinement_surface] is branch-local SOP or SOP-HG artifacts governed by F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+  + [state_surface] is state
+  + [runtime_surface] is runtime\sop_node
+  + [chain_surface] is platform\chains
+  + [hypergraph_format] is F:\.sop\platform\SOPHypergraphRecord.sop
+  + [local_identity_consumption] is F:\.sop\platform\LocalIdentityConsumption.sop
+  + [remote_surface] is unconfigured until a remote is explicitly added
+
+& [NodeBoundary] is the operating boundary for this local node
+  + [inside] is local SOP files, Git commits, diff scans, chain chunks, branch refinement artifacts, and emitted scan records
+  + [boundary] is remote configuration, idle detection, push policy, and credential safety
+  + [outside] is automatic GitHub push without remote policy, hidden model internals, and semantic truth not supported by evidence
+
+  = must: keep local Git history clean enough for back-propagating scan
+  = must: emit scan records as inspectable SOP
+  = must: keep remote sync disabled until a remote and idle policy are configured
+  - never: push to GitHub merely because files changed
+  - never: treat correlation intensity as proof
+
+& [AwarenessTrackingNode] is the runtime role that digests recent SOP changes
+  + [input] is Git diff metadata and changed SOP content
+  + [process] is sensitivity scan over changed files, terms, touch counts, and heat
+  + [output] is a scan SOP record with bookends, changed files, signals, and residual outside
+  + [graph_output] is an optional SOP-HG graph record connecting bookends, events, files, signals, layers, and outside nodes
+  + [tracked_subject_output] is an optional SOP-HG tracker record connecting subjects, sessions, narrative, scans, periphery, and expiry
+  + [current_focal_point] is state\CurrentFocalPoint.sop as the compact re-entry seed after context compression
+  + [runtime_helper] is code that manages SOP files but does not itself become durable attention
+  + [local_context_attention] is unpersisted attention held only in the active context window
+  + [next_depth] is later deeper ThinkAbout or Codex processing over pressure and impact signals
+
+  = must: keep durable tracking in SOP files
+  = must: use LocalIdentityConsumption before promoting a local identity claim, importing foreign state, or recording durable reflection consumption
+  = must: keep current focal direction in the state surface for compaction re-entry
+  = must: use runtime helpers to manage, inspect, and render SOP records
+  = should: leave short-lived directions in local context unless explicitly tracked

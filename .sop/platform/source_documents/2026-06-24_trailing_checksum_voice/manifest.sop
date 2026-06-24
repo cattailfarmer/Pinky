@@ -1,0 +1,14 @@
+Subject: Trailing Checksum Voice Source Manifest
+
+Description: Source preservation manifest for the trailing checksum voice specification.
+
+& [TrailingChecksumVoiceSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_trailing_checksum_voice\Dictated_Trailing_Checksum_Voice_Source.sop
+  + [canonical_target] is F:\.sop\platform\TrailingChecksumVoice.sop
+  + [bookmark_record] is F:\.sop\events\bookmarks\2026-06-24_trailing_checksum_voice_015.hg.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_trailing_checksum_voice_015.hg.sop
+  + [derived_terms] is trailing_checksum_voice, one_turn_lag, direct_focus_turn, backward_facing_review_commit, hot_zone, warmth_zone, latent_depth_candidate
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, TurnBookmark, RepoFirstInternalScan, ChangelogCorrelationWeightNet, AttentionWeightScale, PeripheryDimensionalProbe
+
+  = must: preserve raw source before treating the canonical target as process authority
+  = must: cite this manifest when future trailing checksum reviews are audited

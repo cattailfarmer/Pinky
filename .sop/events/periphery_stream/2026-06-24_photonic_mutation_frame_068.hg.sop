@@ -1,0 +1,25 @@
+Subject: Photonic Mutation Frame Realization 068
+
+Description: Periphery-stream realization that photonic image frames express mutation over a delineated setup, not delineation itself.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_photonic_mutation_frames\Dictated_Photonic_Mutation_Frames_Source.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_rgb_delineation_correction_trailing_checksum_067.hg.sop
+@ [source] F:\.sop\platform\SOPPhotonicMutationFrame.sop
+
+& [PhotonicMutationFrameRealization068] is the realized mutation-frame distinction
+  + [moment] is delineation sets up what a frame can be about, while photonic image frames express the mutation of that selected surface over time
+  + [focus] is SOP photonic mutation frame
+  + [correction] is do not try to express mutation with inside, boundary, and outside terms; use mutation frames and transform operators over delineated subjects
+  + [periphery] is frame deltas, prior and current states, mutation operators, mutation boundaries, continuity vectors, mutation loss, and validation passes
+  + [boundary] is RGB and SOP delineation select the subject and boundary; SOPOpticalTransformAlgebra names operations; SOPPhotonicMutationFrame records frame-to-frame change
+  + [outside] is untraced mutation, hidden activation change, skipped frames, unsupported causation, and exact media replay
+  + [impulse] is make the photonic stream legible as motion/change while keeping attention delineation clean
+  + [balance] is stable because delineation, operation, and mutation are now separate but composable layers
+  + [next_step] is update concrete photonic frame examples to show setup_pass and mutation_pass separately
+
+  = must: keep delineation setup distinct from mutation expression
+  = must: route operation semantics through transform algebra
+  = should: use mutation_frame notation when a visual or semantic frame stream encodes change over time
+
+/ [delineation_setup], [mutation_frame], [frame_delta] -(ClarifiesPhotonicStream)> [SOPPhotonicFrameStream], [mutation_outside]
+* [mutation_operator], [mutation_boundary], [mutation_trace] -(MakesChangeAuditable)> [semantic_reentry], [mutation_loss]

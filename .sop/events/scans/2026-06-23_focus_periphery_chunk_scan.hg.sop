@@ -1,0 +1,227 @@
+Subject: SensitivityScan_20260623T211057Z Hypergraph
+
+& [Graph:SensitivityScan_20260623T211057Z] is a SOP-HG graph
+  = format: SOP-HG
+  = source_scan_id: SensitivityScan_20260623T211057Z
+  = base_ref: HEAD
+  = head_ref: WORKTREE
+
+  + [N:bookend:HEAD] is HEAD
+  + [N:bookend:WORKTREE] is WORKTREE
+  + [N:event:SensitivityScan_20260623T211057Z] is SensitivityScan_20260623T211057Z
+  + [N:outside:semantic_truth] is semantic truth not proven by correlation heat
+  + [N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop] is events/scans/2026-06-23_focus_periphery_attention_frame.hg.sop
+    = status: A
+    = additions: 50
+    = deletions: 0
+  + [N:file:planning_project_manager_Manager_State_sop] is planning/project_manager/Manager_State.sop
+    = status: M
+    = additions: 3
+    = deletions: 1
+  + [N:file:platform_Attention_sop] is platform/Attention.sop
+    = status: A
+    = additions: 26
+    = deletions: 0
+  + [N:file:platform_SOPHypergraphRecord_sop] is platform/SOPHypergraphRecord.sop
+    = status: M
+    = additions: 16
+    = deletions: 2
+  + [N:file:platform_attention_layers_Focus_sop] is platform/attention_layers/Focus.sop
+    = status: A
+    = additions: 15
+    = deletions: 0
+  + [N:file:platform_attention_layers_Index_sop] is platform/attention_layers/Index.sop
+    = status: A
+    = additions: 18
+    = deletions: 0
+  + [N:file:platform_attention_layers_LiminalDraw_sop] is platform/attention_layers/LiminalDraw.sop
+    = status: A
+    = additions: 16
+    = deletions: 0
+  + [N:file:platform_attention_layers_NarrativeDigestion_sop] is platform/attention_layers/NarrativeDigestion.sop
+    = status: A
+    = additions: 17
+    = deletions: 0
+  + [N:file:platform_attention_layers_Periphery_sop] is platform/attention_layers/Periphery.sop
+    = status: A
+    = additions: 15
+    = deletions: 0
+  + [N:file:platform_attention_layers_RelationContracts_sop] is platform/attention_layers/RelationContracts.sop
+    = status: A
+    = additions: 23
+    = deletions: 0
+  + [N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop] is platform/examples/FocusPeripheryAttentionFrame.hg.sop
+    = status: A
+    = additions: 28
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop] is platform/source_documents/2026-06-23_focus_periphery_attention/Dictated_Focus_Periphery_Attention_Source.sop
+    = status: A
+    = additions: 24
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_focus_periphery_attention_manifest_sop] is platform/source_documents/2026-06-23_focus_periphery_attention/manifest.sop
+    = status: A
+    = additions: 12
+    = deletions: 0
+  + [N:signal:periphery] is periphery
+    = touch_count: 13
+    = heat: 266
+  + [N:layer:impact] is impact
+    = retention_policy: emphasize
+  + [N:signal:layer] is layer
+    = touch_count: 12
+    = heat: 262
+  + [N:signal:focus] is focus
+    = touch_count: 12
+    = heat: 249
+  + [N:signal:attention] is attention
+    = touch_count: 11
+    = heat: 231
+  + [N:signal:narrative] is narrative
+    = touch_count: 9
+    = heat: 205
+  + [N:signal:draw] is draw
+    = touch_count: 9
+    = heat: 195
+  + [N:signal:correlation] is correlation
+    = touch_count: 7
+    = heat: 174
+  + [N:signal:evidence] is evidence
+    = touch_count: 7
+    = heat: 166
+  + [N:signal:causal] is causal
+    = touch_count: 6
+    = heat: 160
+  + [N:signal:weight] is weight
+    = touch_count: 6
+    = heat: 160
+  + [N:signal:explicit] is explicit
+    = touch_count: 6
+    = heat: 148
+  + [N:signal:digestion] is digestion
+    = touch_count: 6
+    = heat: 146
+  + [N:signal:causation] is causation
+    = touch_count: 5
+    = heat: 141
+  + [N:signal:layers] is layers
+    = touch_count: 6
+    = heat: 140
+  + [N:signal:available] is available
+    = touch_count: 5
+    = heat: 140
+  + [N:signal:digests] is digests
+    = touch_count: 5
+    = heat: 136
+  + [N:signal:outside] is outside
+    = touch_count: 5
+    = heat: 136
+  + [N:signal:draws_attention] is draws_attention
+    = touch_count: 5
+    = heat: 135
+  + [N:signal:related] is related
+    = touch_count: 5
+    = heat: 132
+  + [N:signal:relation] is relation
+    = touch_count: 6
+    = heat: 125
+  + [N:signal:causes] is causes
+    = touch_count: 4
+    = heat: 119
+  + [N:signal:correlates] is correlates
+    = touch_count: 4
+    = heat: 119
+  + [N:signal:hypothesis] is hypothesis
+    = touch_count: 4
+    = heat: 119
+  + [N:signal:weightier] is weightier
+    = touch_count: 4
+    = heat: 117
+
+/ [E:span:SensitivityScan_20260623T211057Z] -(span; start=N:bookend:HEAD; end=N:bookend:WORKTREE; event=N:event:SensitivityScan_20260623T211057Z)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_001] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_002] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:planning_project_manager_Manager_State_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_003] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_Attention_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_004] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_SOPHypergraphRecord_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_005] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_attention_layers_Focus_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_006] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_attention_layers_Index_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_007] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_attention_layers_LiminalDraw_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_008] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_attention_layers_NarrativeDigestion_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_009] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_attention_layers_Periphery_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_010] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_attention_layers_RelationContracts_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_011] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_012] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:changed:SensitivityScan_20260623T211057Z_013] -(changed; event=N:event:SensitivityScan_20260623T211057Z; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_manifest_sop)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:periphery] -(touches; signal=N:signal:periphery; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_Focus_sop; file=N:file:platform_attention_layers_Index_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_manifest_sop; weight=266)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:periphery] -(classifies; signal=N:signal:periphery; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:periphery] -(bounds; signal=N:signal:periphery; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:layer] -(touches; signal=N:signal:layer; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_Focus_sop; file=N:file:platform_attention_layers_Index_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_manifest_sop; weight=262)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:layer] -(classifies; signal=N:signal:layer; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:layer] -(bounds; signal=N:signal:layer; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:focus] -(touches; signal=N:signal:focus; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_Focus_sop; file=N:file:platform_attention_layers_Index_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_manifest_sop; weight=249)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:focus] -(classifies; signal=N:signal:focus; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:focus] -(bounds; signal=N:signal:focus; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:attention] -(touches; signal=N:signal:attention; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_attention_layers_Focus_sop; file=N:file:platform_attention_layers_Index_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_manifest_sop; weight=231)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:attention] -(classifies; signal=N:signal:attention; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:attention] -(bounds; signal=N:signal:attention; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:narrative] -(touches; signal=N:signal:narrative; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=205)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:narrative] -(classifies; signal=N:signal:narrative; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:narrative] -(bounds; signal=N:signal:narrative; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:draw] -(touches; signal=N:signal:draw; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_attention_layers_Focus_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=195)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:draw] -(classifies; signal=N:signal:draw; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:draw] -(bounds; signal=N:signal:draw; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:correlation] -(touches; signal=N:signal:correlation; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=174)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:correlation] -(classifies; signal=N:signal:correlation; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:correlation] -(bounds; signal=N:signal:correlation; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:evidence] -(touches; signal=N:signal:evidence; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=166)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:evidence] -(classifies; signal=N:signal:evidence; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:evidence] -(bounds; signal=N:signal:evidence; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:causal] -(touches; signal=N:signal:causal; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=160)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:causal] -(classifies; signal=N:signal:causal; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:causal] -(bounds; signal=N:signal:causal; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:weight] -(touches; signal=N:signal:weight; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=160)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:weight] -(classifies; signal=N:signal:weight; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:weight] -(bounds; signal=N:signal:weight; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:explicit] -(touches; signal=N:signal:explicit; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_attention_layers_Focus_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=148)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:explicit] -(classifies; signal=N:signal:explicit; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:explicit] -(bounds; signal=N:signal:explicit; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:digestion] -(touches; signal=N:signal:digestion; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=146)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:digestion] -(classifies; signal=N:signal:digestion; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:digestion] -(bounds; signal=N:signal:digestion; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:causation] -(touches; signal=N:signal:causation; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=141)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:causation] -(classifies; signal=N:signal:causation; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:causation] -(bounds; signal=N:signal:causation; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:layers] -(touches; signal=N:signal:layers; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_Index_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=140)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:layers] -(classifies; signal=N:signal:layers; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:layers] -(bounds; signal=N:signal:layers; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:available] -(touches; signal=N:signal:available; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=140)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:available] -(classifies; signal=N:signal:available; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:available] -(bounds; signal=N:signal:available; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:digests] -(touches; signal=N:signal:digests; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=136)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:digests] -(classifies; signal=N:signal:digests; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:digests] -(bounds; signal=N:signal:digests; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:outside] -(touches; signal=N:signal:outside; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=136)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:outside] -(classifies; signal=N:signal:outside; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:outside] -(bounds; signal=N:signal:outside; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:draws_attention] -(touches; signal=N:signal:draws_attention; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=135)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:draws_attention] -(classifies; signal=N:signal:draws_attention; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:draws_attention] -(bounds; signal=N:signal:draws_attention; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:related] -(touches; signal=N:signal:related; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_attention_layers_Focus_sop; file=N:file:platform_attention_layers_Periphery_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=132)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:related] -(classifies; signal=N:signal:related; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:related] -(bounds; signal=N:signal:related; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:relation] -(touches; signal=N:signal:relation; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_Index_sop; file=N:file:platform_attention_layers_LiminalDraw_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=125)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:relation] -(classifies; signal=N:signal:relation; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:relation] -(bounds; signal=N:signal:relation; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:causes] -(touches; signal=N:signal:causes; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=119)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:causes] -(classifies; signal=N:signal:causes; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:causes] -(bounds; signal=N:signal:causes; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:correlates] -(touches; signal=N:signal:correlates; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=119)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:correlates] -(classifies; signal=N:signal:correlates; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:correlates] -(bounds; signal=N:signal:correlates; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:hypothesis] -(touches; signal=N:signal:hypothesis; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_attention_layers_RelationContracts_sop; file=N:file:platform_examples_FocusPeripheryAttentionFrame_hg_sop; weight=119)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:hypothesis] -(classifies; signal=N:signal:hypothesis; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:hypothesis] -(bounds; signal=N:signal:hypothesis; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:touches:weightier] -(touches; signal=N:signal:weightier; file=N:file:events_scans_2026_06_23_focus_periphery_attention_frame_hg_sop; file=N:file:platform_Attention_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_focus_periphery_attention_Dictated_Focus_Periphery_Attention_Source_sop; weight=117)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:classifies:weightier] -(classifies; signal=N:signal:weightier; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211057Z]
+/ [E:bounds:weightier] -(bounds; signal=N:signal:weightier; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211057Z]
+
+- outside: scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

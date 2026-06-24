@@ -1,0 +1,12 @@
+Subject: Periphery Dimensional Probe Source Manifest
+
+Description: Source preservation manifest for the periphery dimensional probe contract.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_periphery_dimensional_probe
+  + [source_file] is F:\.sop\platform\source_documents\2026-06-24_periphery_dimensional_probe\Dictated_Periphery_Dimensional_Probe_Source.sop
+  + [canonical_contract] is F:\.sop\platform\PeripheryDimensionalProbe.sop
+  + [governance] is source_before_canonical
+  + [status] is canonicalized
+
+  = must: keep the dictated source available for future reinterpretation

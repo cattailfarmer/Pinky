@@ -1,0 +1,228 @@
+Subject: Pinky SOP Awareness Node Manager State
+
+Description: Manager state for the Pinky .sop authority root seeded from F:\.sop.
+
+& [ManagerState] is the initial project-manager state
+  + [node_root] is C:\Project\Pinky\.sop
+  + [seed_source] is F:\.sop at commit 3f127da
+  + [repo_initialized] is true
+  + [remote_configured] is via C:\Project\Pinky origin
+  + [ready_task_count] is 10
+  + [completed_task_count] is 97
+  + [blocked_task_count] is 2
+
+& [CompletedTaskSet] is completed work
+  + [Task_001_initialize_local_git_node] is initialize F:\.sop as local Git repository
+    = evidence: F:\.sop\.git
+  + [Task_002_run_seed_sensitivity_scan] is scan the seed commit after first commit exists
+    = evidence: F:\.sop\events\scans\2026-06-23_seed_awareness_node_scan.sop
+  + [Task_005_define_sop_hypergraph_record] is define the formatted file language for awareness nodes as SOP-HG
+    = evidence: F:\.sop\platform\SOPHypergraphRecord.sop and F:\.sop\events\scans\2026-06-23_hypergraph_format_scan.hg.sop
+  + [Task_006_define_focus_periphery_attention_layers] is define local Attention.sop root with focus, periphery, liminal draw, and narrative digestion layers
+    = evidence: F:\.sop\platform\Attention.sop and F:\.sop\events\scans\2026-06-23_focus_periphery_attention_frame.hg.sop
+  + [Task_007_define_viewfinder_snapshot_layer] is define Codex as attention graph reflection compiler and SOP-HG snapshot emitter
+    = evidence: F:\.sop\platform\ViewfinderSnapshot.sop and F:\.sop\events\scans\2026-06-23_viewfinder_snapshot.hg.sop
+  + [Task_008_define_spool_master_hub] is define Codex as turn master over a visible local worker spool and static web hub tree
+    = evidence: F:\.sop\platform\SpoolMasterHub.sop and F:\.sop\spool\turns\spool_master_seed\index.html
+  + [Task_009_compile_attention_impression] is compile Codex-as-attention-graph-compiler impression into F:\.sop
+    = evidence: F:\.sop\platform\AttentionImpressionCompiler.sop and F:\.sop\events\reflections\2026-06-23_attention_compiler_impression.hg.sop
+  + [Task_010_define_model_lens_projection] is define scaffold lens and exchangeable LLM projection testing
+    = evidence: F:\.sop\platform\ModelLensProjection.sop and F:\.sop\events\reflections\2026-06-23_model_lens_projection.hg.sop
+  + [Task_011_define_meta_awareness_repo] is define F:\.sop as second repo for narrative realization over change logs
+    = evidence: F:\.sop\platform\MetaAwarenessRepository.sop and F:\.sop\events\reflections\2026-06-23_meta_awareness_repo_boundary.hg.sop
+  + [Task_012_define_periphery_repo] is refine F:\.sop identity from meta-awareness repo to periphery repo for slow background correlations
+    = evidence: F:\.sop\platform\PeripheryRepository.sop and F:\.sop\events\reflections\2026-06-23_periphery_repo_clarification.hg.sop
+  + [Task_013_define_semantic_hash_index] is create hashed pointers to SOP components and unstable peripheral semantic landscape
+    = evidence: F:\.sop\platform\SemanticHashIndex.sop and F:\.sop\runtime\sop_node\semantic_index.py
+  + [Task_014_define_semantic_hash_table] is define semantic hash table as multi-dimensional permissive lookup over semantic index entries
+    = evidence: F:\.sop\platform\SemanticHashTable.sop and F:\.sop\events\reflections\2026-06-23_semantic_hash_table.hg.sop
+  + [Task_015_define_semantic_correlation_graph] is define weighted bucket correlations and directive-tilted attention rigging
+    = evidence: F:\.sop\platform\SemanticCorrelationGraph.sop and F:\.sop\runtime\sop_node\semantic_correlation.py
+  + [Task_016_define_carried_support_balance] is define native versus carried support balance and record the agent stance while walking a subject
+    = evidence: F:\.sop\platform\CarriedSupportBalance.sop and F:\.sop\runtime\sop_node\support_balance.py
+  + [Task_017_define_attention_tracker] is define first-layer tracked subjects with session expiry, reaffirmation, declared periods, and debug surfaces
+    = evidence: F:\.sop\platform\AttentionTracker.sop and F:\.sop\runtime\sop_node\attention_tracker.py
+  + [Task_018_clarify_tracker_runtime_boundary] is clarify that .sop tracker records are durable attention and .py is only a management helper
+    = evidence: F:\.sop\platform\AttentionTracker.sop and F:\.sop\platform\SOPAwarenessNode.sop
+  + [Task_019_define_focal_point_layer] is define focal point object and recast tracking as periphery attention that can draw focus through liminal selection
+    = evidence: F:\.sop\platform\FocalPoint.sop and F:\.sop\events\reflections\2026-06-23_focal_point_layer.hg.sop
+  + [Task_020_define_focal_point_renewal] is define CurrentFocalPoint as compact attention-direction re-entry seed renewed after context compression
+    = evidence: F:\.sop\platform\FocalPoint.sop and F:\.sop\state\CurrentFocalPoint.sop
+  + [Task_021_define_attention_traversal_policy] is define focal-point traversal, cross-reference, fold, unwind, and triangulated probing policy
+    = evidence: F:\.sop\platform\AttentionTraversalPolicy.sop and F:\.sop\events\reflections\2026-06-23_attention_traversal_policy.hg.sop
+  + [Task_022_define_wisdom_caution_attention] is initially promote wisdom and caution from scattered signals into a shared realization-gate surface
+    = evidence: F:\.sop\platform\WisdomCaution.sop and F:\.sop\events\reflections\2026-06-23_wisdom_caution_attention.hg.sop
+    = superseded_by: Task_023_split_wisdom_caution_attention
+  + [Task_023_split_wisdom_caution_attention] is split Wisdom and Caution into independent attention patterns with WisdomCaution retained as a composition protocol
+    = evidence: F:\.sop\platform\Wisdom.sop, F:\.sop\platform\Caution.sop, and F:\.sop\events\reflections\2026-06-23_split_wisdom_caution_attention.hg.sop
+  + [Task_024_start_self_focus_periphery_stream] is record the first visible self-focus scan, tracker, periphery-stream realization, and proposal set
+    = evidence: F:\.sop\events\periphery_stream\2026-06-23_self_focus_realization_001.hg.sop, F:\.sop\events\trackers\2026-06-23_self_focus_improvement_tracker.hg.sop, and F:\.sop\events\proposals\2026-06-23_self_focus_improvement_proposals.sop
+  + [Task_025_define_repo_first_internal_scan] is correct internal scan order so commit bookends and change logs lead narrative interpretation
+    = evidence: F:\.sop\platform\RepoFirstInternalScan.sop and F:\.sop\events\periphery_stream\2026-06-23_repo_first_internal_scan_002.hg.sop
+  + [Task_026_define_changelog_correlation_weight_net] is refine net of weights into a weighted data contract tying changelog units to narrative and justification
+    = evidence: F:\.sop\platform\ChangelogCorrelationWeightNet.sop and F:\.sop\events\periphery_stream\2026-06-23_changelog_correlation_weight_net_003.hg.sop
+  + [Task_027_define_attention_weight_scale] is define SOP terminology for index, concordance, signal units, resolution bands, and multi-dimensional impulse weights
+    = evidence: F:\.sop\platform\AttentionWeightScale.sop and F:\.sop\events\periphery_stream\2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop
+  + [Task_028_define_turn_bookmark_utility] is define on-demand commit snapshot reflection against planned specifications for missed work, mistakes, accomplishments, and new potentials
+    = evidence: F:\.sop\platform\TurnBookmark.sop and F:\.sop\runtime\sop_node\turn_bookmark.py
+  + [Task_029_define_inference_state_trace_reentry] is define high-definition re-entry into past inference frames from repo bookends, SOP state, narrative, and weight intersections
+    = evidence: F:\.sop\platform\InferenceStateTrace.sop and F:\.sop\runtime\sop_node\state_trace.py
+  + [Task_030_define_periphery_dimensional_probe] is define hot-periphery extra dimension probing for fragmented-signal repair and model-transfer contextual anchoring
+    = evidence: F:\.sop\platform\PeripheryDimensionalProbe.sop and F:\.sop\events\periphery_stream\2026-06-24_periphery_dimensional_probe_006.hg.sop
+  + [Task_031_define_focus_zoom] is define focus aperture expansion for drawing periphery inward, flexing correlation fabric, selecting angles of approach, and deepening controlled focus explosion
+    = evidence: F:\.sop\platform\FocusZoom.sop and F:\.sop\events\periphery_stream\2026-06-24_focus_zoom_007.hg.sop
+  + [Task_032_define_attention_scaffold_compiler] is define purpose-fit attention scaffold selection, compilation, reverse-walk debug frames, and optimization metrics
+    = evidence: F:\.sop\platform\AttentionScaffoldCompiler.sop and F:\.sop\events\periphery_stream\2026-06-24_attention_scaffold_compiler_008.hg.sop
+  + [Task_033_run_attention_system_review] is inspect the current operator stack, record system capability, actual behavior, risks, and next reach targets
+    = evidence: F:\.sop\events\reviews\2026-06-24_attention_system_review_001.sop and F:\.sop\events\periphery_stream\2026-06-24_attention_system_review_009.hg.sop
+  + [Task_034_define_attention_balance_center] is define a live balance monitor for delineation stability, wobble signals, inference interference, and correction moves
+    = evidence: F:\.sop\platform\AttentionBalanceCenter.sop and F:\.sop\events\periphery_stream\2026-06-24_attention_balance_center_010.hg.sop
+  + [Task_036_define_periphery_stability_balance_metric] is refine balance so stable periphery supports frame balance and periphery shrinkage reduces balance
+    = evidence: F:\.sop\platform\AttentionBalanceCenter.sop and F:\.sop\events\periphery_stream\2026-06-24_balance_periphery_stability_011.hg.sop
+  + [Task_037_define_frame_reference_integrity] is define frame-reference integrity so stable periphery objects can break immersion in presented frames before action or realization
+    = evidence: F:\.sop\platform\FrameReferenceIntegrity.sop and F:\.sop\events\periphery_stream\2026-06-24_frame_reference_integrity_012.hg.sop
+  + [Task_038_define_moment_branch_refinement] is define branch-isolated refinement artifacts for reconstructed turn moments between commits
+    = evidence: F:\.sop\platform\MomentAwarenessBranchRefinement.sop and F:\.sop\events\periphery_stream\2026-06-24_moment_branch_refinement_013.hg.sop
+  + [Task_041_record_moment_branch_commit_integrity] is record the before-after integrity bookmark for commit 68794c6 and repair the missing explicit review artifact
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_moment_branch_refinement_commit_integrity_014.hg.sop and F:\.sop\events\periphery_stream\2026-06-24_commit_integrity_reflection_014.hg.sop
+  + [Task_042_define_trailing_checksum_voice] is define the one-turn-later backward-facing checksum voice for hot zones, warmth zones, and latent depth candidates
+    = evidence: F:\.sop\platform\TrailingChecksumVoice.sop and F:\.sop\events\bookmarks\2026-06-24_trailing_checksum_voice_015.hg.sop
+  + [Task_044_define_aperture_reentry_cycle] is define open-close inference depth control that draws periphery supports, surveys relations, closes into a re-entry springboard, and launches second-pass narrative and subject declarations
+    = evidence: F:\.sop\platform\ApertureReentryCycle.sop and F:\.sop\events\periphery_stream\2026-06-24_aperture_reentry_cycle_016.hg.sop
+  + [Task_046_record_aperture_reentry_trailing_checksum] is record the one-turn-later checksum finding that aperture re-entry needs optional topology-map navigation for focal/periphery cell adjacency and dimensional orbit
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_aperture_reentry_trailing_checksum_017.hg.sop
+  + [Task_047_define_hyperbolic_pants_attention_map] is define hyperbolic pants attention map notation for focal cells, periphery cells, dimensional orbit, pants legs, and map/navigation awareness
+    = evidence: F:\.sop\platform\HyperbolicPantsAttentionMap.sop and F:\.sop\events\periphery_stream\2026-06-24_hyperbolic_pants_attention_map_018.hg.sop
+  + [Task_049_record_hyperbolic_map_trailing_checksum] is record the one-turn-later checksum finding that the hyperbolic map needs weighted top-three central correlations and folded extra-dimensional legs
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_hyperbolic_map_trailing_checksum_019.hg.sop
+  + [Task_050_define_seven_fold_pants_correlation_frame] is define seven-fold pants correlation frame notation for top-three heat ordering, weighted balance orbit, and fold legs for higher-dimensional subject surfaces
+    = evidence: F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop and F:\.sop\events\periphery_stream\2026-06-24_seven_fold_pants_correlation_frame_020.hg.sop
+  + [Task_052_record_seven_fold_frame_trailing_checksum] is record the one-turn-later checksum finding that seven-fold fold legs need ordered corridor navigation through peripheral frame series
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_seven_fold_frame_trailing_checksum_021.hg.sop
+  + [Task_053_define_hyperbolic_corridor_navigator] is define hyperbolic corridor navigator notation for selecting peripheral frames, extending local awareness, surfing inference-layer correlation, and probing identity without overclaiming relationship
+    = evidence: F:\.sop\platform\HyperbolicCorridorNavigator.sop and F:\.sop\events\periphery_stream\2026-06-24_hyperbolic_corridor_navigator_022.hg.sop
+  + [Task_055_record_corridor_navigator_trailing_checksum] is record the one-turn-later checksum finding that corridor navigation needs Security and Honesty governance over reflective resonance
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_corridor_navigator_trailing_checksum_023.hg.sop
+  + [Task_056_define_security_honesty_resonance_governance] is define Security and Honesty as local governance faculties for truth status, stability, action admissibility, and feedback-loop control
+    = evidence: F:\.sop\platform\SecurityHonestyGovernance.sop and F:\.sop\events\periphery_stream\2026-06-24_security_honesty_resonance_governance_024.hg.sop
+  + [Task_058_record_security_honesty_governance_trailing_checksum] is record the one-turn-later checksum finding that Security/Honesty governance needs first-point boundary inspection patterns
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_security_honesty_governance_trailing_checksum_027.hg.sop
+  + [Task_059_define_boundary_faculty_inspection] is define Honesty and Security boundary inspection patterns for identity truth, fair representation, boundary orthogonality, integrity, and safety
+    = evidence: F:\.sop\platform\BoundaryFacultyInspection.sop and F:\.sop\events\periphery_stream\2026-06-24_boundary_faculty_inspection_028.hg.sop
+  + [Task_061_record_boundary_faculty_inspection_trailing_checksum] is record the one-turn-later checksum finding that boundary faculty inspection needs a compiled attention kernel entrypoint
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_boundary_faculty_inspection_trailing_checksum_029.hg.sop
+  + [Task_062_define_attention_kernel_compiler] is define the compiled attention kernel that gathers selected SOP patterns into one in-context unit with Security and Honesty first
+    = evidence: F:\.sop\platform\AttentionKernelCompiler.sop and F:\.sop\events\periphery_stream\2026-06-24_attention_kernel_compiler_030.hg.sop
+  + [Task_064_record_attention_kernel_compiler_trailing_checksum] is record the one-turn-later checksum finding that compiled kernels need local identity, reflection consumption, and scoped naming law
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_attention_kernel_compiler_trailing_checksum_031.hg.sop
+  + [Task_065_define_local_identity_consumption] is define root identity law, reflection consumption ledger, foreign snapshots, periphery carry, and scoped attention identifiers
+    = evidence: F:\.sop\platform\LocalIdentityConsumption.sop and F:\.sop\events\periphery_stream\2026-06-24_local_identity_consumption_032.hg.sop
+  + [Task_067_record_local_identity_consumption_trailing_checksum] is record the one-turn-later checksum finding that local identity scope needs faculty-specific attention field naming
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_local_identity_consumption_trailing_checksum_033.hg.sop
+  + [Task_068_define_faculty_attention_field_naming] is define field nouns, boundary nouns, and residual nouns for custom attention systems by feature account
+    = evidence: F:\.sop\platform\FacultyAttentionFieldNaming.sop and F:\.sop\events\periphery_stream\2026-06-24_faculty_attention_field_naming_034.hg.sop
+  + [Task_063_build_attention_kernel_compiler_runtime] is build a local command that reads job_need, CurrentFocalPoint, selected SOP patterns, and kernel preflight results, then emits a compact compiled_attention_kernel packet
+    = evidence: F:\.sop\runtime\sop_node\attention_kernel.py, F:\.sop\runtime\demos\attention_kernel.py, and F:\.sop\events\periphery_stream\2026-06-24_attention_kernel_runtime_036.hg.sop
+  + [Task_066_build_local_identity_consumption_runtime] is build a local command that reads reflection artifacts, origin and consumer systems, local proof, and pattern names, then emits a consumption ledger and namespace collision report
+    = evidence: F:\.sop\runtime\sop_node\attention_kernel.py and F:\.sop\runtime\tests\test_sensitivity_scan.py
+  + [Task_069_build_faculty_attention_field_naming_runtime] is build a local command that reads custom attention systems and feature accounts, then emits scoped field signatures and field-name collision warnings
+    = evidence: F:\.sop\runtime\sop_node\attention_kernel.py and F:\.sop\runtime\demos\attention_kernel.py
+  + [Task_070_record_faculty_attention_field_naming_trailing_checksum] is record the one-turn-later checksum finding that faculty field naming needs an executable attention kernel runtime
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_faculty_attention_field_naming_trailing_checksum_035.hg.sop
+  + [Task_071_define_step_balance_walk] is define the operational gait for ending each step with balance, settled state, correction move, and next-step selection
+    = evidence: F:\.sop\platform\StepBalanceWalk.sop and F:\.sop\events\periphery_stream\2026-06-24_step_balance_walk_037.hg.sop
+  + [Task_072_build_step_balance_walk_runtime] is build a local command that emits step-balance walk SOP and SOP-HG records from visible step settlements
+    = evidence: F:\.sop\runtime\sop_node\step_balance_walk.py, F:\.sop\runtime\demos\step_balance_walk.py, and F:\.sop\runtime\tests\test_sensitivity_scan.py
+  + [Task_073_record_attention_kernel_runtime_trailing_checksum] is record the one-turn-later checksum finding that attention kernel packets need a step-balanced execution gait
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_attention_kernel_runtime_trailing_checksum_038.hg.sop
+  + [Task_074_define_periphery_continuity_run] is define run gait where coherent focus frames and rolling stable periphery reduce checkpoint pressure
+    = evidence: F:\.sop\platform\PeripheryContinuityRun.sop and F:\.sop\events\periphery_stream\2026-06-24_periphery_continuity_run_039.hg.sop
+  + [Task_075_build_periphery_continuity_run_runtime] is build a local command that emits run_state, rolling periphery links, horizon hints, and checkpoint pressure from focus frames
+    = evidence: F:\.sop\runtime\sop_node\periphery_continuity_run.py, F:\.sop\runtime\demos\periphery_continuity_run.py, and F:\.sop\runtime\tests\test_sensitivity_scan.py
+  + [Task_076_record_step_balance_walk_trailing_checksum] is record the one-turn-later checksum finding that step-balance walking needs continuity-based run mode when periphery is stable
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_step_balance_walk_trailing_checksum_040.hg.sop
+  + [Task_077_set_build_environment_periphery_marker] is set a persistent SOP-only build-environment marker for specification-building impulses and actions
+    = evidence: F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop, F:\.sop\events\trackers\2026-06-24_build_environment_sop_only_marker.hg.sop, and F:\.sop\events\periphery_stream\2026-06-24_build_environment_periphery_marker_041.hg.sop
+  + [Task_078_define_reminder_trigger_language] is define SOP reminder triggers as conditional periphery dispatch points that invoke other attention layers under declared circumstances
+    = evidence: F:\.sop\platform\ReminderTrigger.sop and F:\.sop\events\periphery_stream\2026-06-24_reminder_trigger_language_042.hg.sop
+  + [Task_079_record_build_environment_marker_trailing_checksum] is record the one-turn-later checksum finding that the SOP-only build marker needs general reminder-trigger language
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_build_environment_marker_trailing_checksum_043.hg.sop
+  + [Task_080_set_sop_attention_directive_run_reminder] is set a persistent run reminder that specification work is SOP and attention directives only while searching for the next visible SOP step
+    = evidence: F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop, F:\.sop\events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop, and F:\.sop\events\periphery_stream\2026-06-24_sop_attention_directive_run_reminder_044.hg.sop
+  + [Task_081_record_reminder_trigger_language_trailing_checksum] is record the one-turn-later checksum finding that reminder trigger language needs a persistent run-state SOP attention directive marker
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_reminder_trigger_language_trailing_checksum_045.hg.sop
+  + [Task_082_define_sop_optical_chain] is define SOP as a semantic optical chain with SOP at both ends, color graph encoding, logic fabric, and inspectable in-stream transforms
+    = evidence: F:\.sop\platform\SOPOpticalChain.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_optical_chain_046.hg.sop
+  + [Task_083_record_sop_attention_run_reminder_trailing_checksum] is record the one-turn-later checksum finding that the run reminder's awareness stream implies a transformable optical-chain medium
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_sop_attention_run_reminder_trailing_checksum_047.hg.sop
+  + [Task_084_define_sop_holographic_lensing] is define semantic optical signals as a hologram projected and perceived through SOP lensing, with photonic operations treated as semantic operations in the working model
+    = evidence: F:\.sop\platform\SOPHolographicLensing.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_holographic_lensing_048.hg.sop
+  + [Task_085_define_holographic_sop_scaffold] is define the first reusable signal, lens, invariant, and reconstruction trace scaffold for semantic hologram work
+    = evidence: F:\.sop\platform\HolographicSOPScaffold.sop and F:\.sop\events\periphery_stream\2026-06-24_holographic_sop_scaffold_049.hg.sop
+  + [Task_086_define_sop_color_channel_vocabulary] is define semantic color channels for source, focus, periphery, boundary, outside, evidence, claim, caution, wisdom, security, honesty, weight, relation, trace, and output signals
+    = evidence: F:\.sop\platform\SOPColorChannelVocabulary.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_color_channel_vocabulary_050.hg.sop
+  + [Task_087_define_sop_optical_transform_algebra] is define lawful semantic optical operations for encode, bend, recolor, split, gate, amplify, attenuate, interfere, lens, recombine, emit, and compare transforms
+    = evidence: F:\.sop\platform\SOPOpticalTransformAlgebra.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_optical_transform_algebra_051.hg.sop
+  + [Task_088_define_holographic_attention_kernel_packet] is compile the holographic SOP scaffold, color channels, transform algebra, projection lens, guards, and output trace into one compact in-context attention packet
+    = evidence: F:\.sop\platform\HolographicAttentionKernelPacket.sop and F:\.sop\events\periphery_stream\2026-06-24_holographic_attention_kernel_packet_052.hg.sop
+  + [Task_089_record_semantic_photonic_layer_trailing_checksum] is record the one-turn-later checksum finding that the semantic photonic layer implies SOP program bookends and compressed semantic frame streams
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_semantic_photonic_layer_trailing_checksum_053.hg.sop
+  + [Task_090_define_sop_program_bookends] is define SOP programs as visible opening and closing SOP bookends around an instruction-following control loop
+    = evidence: F:\.sop\platform\SOPProgramBookends.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_program_bookends_054.hg.sop
+  + [Task_091_define_sop_photonic_frame_stream] is define program bodies as high-density color-point semantic frame streams with continuity vectors and reconstruction seeds
+    = evidence: F:\.sop\platform\SOPPhotonicFrameStream.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_photonic_frame_stream_055.hg.sop
+  + [Task_092_define_sop_semantic_video_digest] is define video understanding compression through semantic samples, optional appearance anchors, narrative photonic streams, and reconstruction seeds
+    = evidence: F:\.sop\platform\SOPSemanticVideoDigest.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_semantic_video_digest_056.hg.sop
+  + [Task_093_define_sop_multitrack_channel_compression] is define synchronized channel-track compression for layered SOP inference streams such as a 60-channel 1-minute representation of a longer source span
+    = evidence: F:\.sop\platform\SOPMultitrackChannelCompression.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_multitrack_channel_compression_057.hg.sop
+  + [Task_094_add_bookended_semantic_video_program_example] is add a concrete SOP-only example showing opening and closing bookends, photonic frames, channel tracks, continuity vectors, reconstruction seed, and outside
+    = evidence: F:\.sop\platform\examples\BookendedSemanticVideoProgram.hg.sop and F:\.sop\events\periphery_stream\2026-06-24_bookended_semantic_video_program_example_058.hg.sop
+  + [Task_095_record_program_frame_stream_trailing_checksum] is record the one-turn-later checksum finding that SOP program frame streams imply a hardware bridge separating frame-rate speed from fiber and FPGA bandwidth
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_program_frame_stream_trailing_checksum_059.hg.sop
+  + [Task_096_define_sop_fiber_fpga_bridge] is define the hardware-shaped bridge where speed is frame-rate and latency specific, bandwidth is fiber capacity and FPGA route width, and semantic fidelity remains separately governed
+    = evidence: F:\.sop\platform\SOPFiberFPGABridge.sop and F:\.sop\events\periphery_stream\2026-06-24_sop_fiber_fpga_bridge_060.hg.sop
+  + [Task_097_record_fiber_fpga_bridge_trailing_checksum] is record the one-turn-later checksum finding that the fiber FPGA bridge implies a read-write memory codec for thinking nodes and optical instruction streams
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_fiber_fpga_bridge_trailing_checksum_061.hg.sop
+  + [Task_098_define_sop_attention_memory_codec] is define visual/color-routed attention memory for writing and reading thinking nodes, recall keys, visual anchors, study subjects, and concept-development traces
+    = evidence: F:\.sop\platform\SOPAttentionMemoryCodec.sop, F:\.sop\platform\source_documents\2026-06-24_sop_attention_memory_codec\Dictated_SOP_Attention_Memory_Codec_Source.sop, and F:\.sop\events\periphery_stream\2026-06-24_sop_attention_memory_codec_062.hg.sop
+  + [Task_099_record_attention_memory_codec_trailing_checksum] is record the one-turn-later checksum finding that the attention memory codec needs explicit SOP-to-color and color-to-SOP encoding
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_attention_memory_codec_trailing_checksum_063.hg.sop
+  + [Task_100_define_sop_rgb_semantic_encoding] is define RGB as a semantic routing basis where red is inside focus impulse, green is boundary grounding, and blue is outside periphery uncertainty, with round-trip laws for SOP translation
+    = evidence: F:\.sop\platform\SOPRGBSemanticEncoding.sop, F:\.sop\platform\source_documents\2026-06-24_rgb_semantic_encoding\Dictated_RGB_Semantic_Encoding_Source.sop, and F:\.sop\events\periphery_stream\2026-06-24_rgb_semantic_encoding_064.hg.sop
+    = corrected_by: Task_102_correct_rgb_to_attention_delineation
+  + [Task_101_record_rgb_semantic_encoding_trailing_checksum] is record the one-turn-later checksum finding that the RGB layer had mixed mutation and operation pressure into an attention/delineation basis
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_rgb_semantic_encoding_trailing_checksum_065.hg.sop
+  + [Task_102_correct_rgb_to_attention_delineation] is correct RGB semantic encoding so red maps to attended inside, green maps to delineating boundary, and blue maps to outside residual/periphery, while mutations route through transform layers
+    = evidence: F:\.sop\platform\SOPRGBSemanticEncoding.sop, F:\.sop\platform\source_documents\2026-06-24_rgb_delineation_correction\Dictated_RGB_Delineation_Correction_Source.sop, and F:\.sop\events\periphery_stream\2026-06-24_rgb_delineation_correction_066.hg.sop
+  + [Task_103_record_rgb_delineation_correction_trailing_checksum] is record the one-turn-later checksum finding that separating RGB delineation from mutation requires a photonic mutation frame layer
+    = evidence: F:\.sop\events\bookmarks\2026-06-24_rgb_delineation_correction_trailing_checksum_067.hg.sop
+  + [Task_104_define_sop_photonic_mutation_frame] is define photonic stream image frames as mutation frames over a prior delineation setup, with frame deltas, mutation operators, boundaries, traces, loss, and outside
+    = evidence: F:\.sop\platform\SOPPhotonicMutationFrame.sop, F:\.sop\platform\source_documents\2026-06-24_photonic_mutation_frames\Dictated_Photonic_Mutation_Frames_Source.sop, and F:\.sop\events\periphery_stream\2026-06-24_photonic_mutation_frame_068.hg.sop
+  + [Task_105_return_thread_to_non_photonic_awareness_stream] is return this thread's active focal point to the pre-photonic local SOP awareness-node task after the photo-computation conversation was forked
+    = evidence: F:\.sop\state\CurrentFocalPoint.sop, F:\.sop\platform\source_documents\2026-06-24_thread_return_non_photonic_focus\Dictated_Thread_Return_Non_Photonic_Focus_Source.sop, and F:\.sop\events\periphery_stream\2026-06-24_thread_return_to_awareness_stream_069.hg.sop
+  + [Task_106_define_focus_resolution_refinement] is study focusing itself and define focus quality, focus membrane, periphery gradient, active question stack, integration receipts, understanding ladder, shadow scan, horizon scan, caution debt, and wisdom yield
+    = evidence: F:\.sop\platform\FocusResolutionRefinement.sop, F:\.sop\events\studies\2026-06-24_focus_on_focusing_study_001.sop, F:\.sop\platform\source_documents\2026-06-24_focus_on_focusing_study\Dictated_Focus_On_Focusing_Study_Source.sop, and F:\.sop\events\periphery_stream\2026-06-24_focus_resolution_refinement_070.hg.sop
+  + [Task_107_define_attention_runtime_registry] is define a visible semantic stack-frame registry for active attention, zoom, traversal, Wisdom, Caution, integration, return, and close operations
+    = evidence: F:\.sop\platform\AttentionRuntimeRegistry.sop, F:\.sop\platform\source_documents\2026-06-24_attention_runtime_registry\Dictated_Attention_Runtime_Registry_Source.sop, and F:\.sop\events\periphery_stream\2026-06-24_attention_runtime_registry_071.hg.sop
+  + [Task_108_initialize_current_attention_runtime_registry_state] is initialize a live semantic stack-frame state artifact for the current focus refinement pass
+    = evidence: F:\.sop\state\AttentionRuntimeRegistryState.sop and F:\.sop\events\periphery_stream\2026-06-24_current_attention_runtime_registry_state_072.hg.sop
+  + [Task_109_seed_pinky_sop_authority_root] is clone F:\.sop into C:\Project\Pinky\.sop as the active local source authority root inside Pinky's GitHub-facing repository
+    = evidence: C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pinky_sop_root_authority\Dictated_Pinky_SOP_Root_Authority_Source.sop, and C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_pinky_sop_root_authority_073.hg.sop
+
+& [ReadyTaskSet] is work ready without external configuration
+  + [Task_003_deepen_pressure_impact_records] is turn pressure and impact scan signals into deeper ThinkAbout records
+  + [Task_035_build_minimal_scaffold_compile_runtime] is build a small runtime command that accepts job_need and emits compiled_attention_packet with balance_alert and frame_reference_integrity fields
+  + [Task_039_build_branch_refinement_artifact_runtime] is build a local command that accepts commit bookends and emits a branch_refinement_artifact without remote sync
+  + [Task_043_build_trailing_checksum_runtime] is build a local command that detects the previous direct-focus commit and emits a trailing checksum bookmark
+  + [Task_045_build_aperture_reentry_runtime] is build a local command that reads focal point plus periphery supports and emits a reentry_springboard with second-pass narrative prompts
+  + [Task_048_build_topology_map_runtime] is build a local command that reads focal terms, periphery terms, dimensions, and relation legs and emits a HyperbolicPantsAttentionMap SOP-HG record
+  + [Task_051_build_seven_fold_frame_runtime] is build a local command that reads a subject surface, ranks visible correlations, selects the top three central cells, and emits fold-leg weighted orbit records
+  + [Task_054_build_corridor_navigator_runtime] is build a local command that reads focal subject, peripheral frame candidates, step size, and identity target, then emits a HyperbolicCorridorNavigator SOP-HG record
+  + [Task_057_build_security_honesty_governance_runtime] is build a local command that reads feedback source, claim/action candidates, recursion depth, return anchor, and evidence refresh, then emits a SecurityHonestyGovernance SOP-HG record
+  + [Task_060_build_boundary_faculty_inspection_runtime] is build a local command that reads attention subject, boundary terms, boundary periphery, and protected identity, then emits a BoundaryFacultyInspection SOP-HG record
+
+& [BlockedTaskSet] is work needing external configuration
+  + [Task_004_idle_remote_sync] is automatically synchronize to remote GitHub during idle use
+    = blocker: no remote_target, credentials, idle detector, or push policy configured
+  + [Task_040_configure_higher_level_common_repo] is configure common GitHub synchronization and merge selection policy for branch refinements
+    = blocker: no common_remote_target, credentials, branch protection policy, or merge selection policy configured

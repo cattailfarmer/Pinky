@@ -1,0 +1,96 @@
+Subject: SOP Photonic Mutation Frame
+
+Description: Contract for interpreting photonic stream image frames as mutation frames over a delineated attention setup.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_photonic_mutation_frames\Dictated_Photonic_Mutation_Frames_Source.sop
+@ [source] F:\.sop\platform\SOPRGBSemanticEncoding.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPAttentionMemoryCodec.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+
+& [SOPPhotonicMutationFrame] is the mutation layer for photonic image frame streams
+  + [pattern_role] is photonic_frame_mutation_semantics
+  + [delineation_setup] is the attention frame that names subject_inside, subject_boundary, subject_outside, source, and trace before mutation is read
+  + [mutation_frame] is one photonic image frame interpreted as a state of change over a delineated subject surface
+  + [frame_delta] is the difference from prior_frame_state to current_frame_state under a named or inferred mutation_operator
+  + [prior_frame_state] is the state of the delineated subject surface before the current mutation frame
+  + [current_frame_state] is the state of the delineated subject surface in the current mutation frame
+  + [mutation_operator] is the operation, transform, transition, update, movement, recomposition, or state-change relation that explains frame_delta
+  + [mutation_operand] is the delineated subject surface acted upon or changed by mutation_operator
+  + [mutation_boundary] is the invariant, limit, protected identity, or allowed-change boundary that mutation must respect
+  + [mutation_trace] is the visible source, frame index, transform expression, continuity vector, and evidence path supporting the mutation reading
+  + [mutation_loss] is the detail lost, compressed, sampled away, or unsupported when reading mutation from image frames
+  + [mutation_outside] is mutation not visible, not traced, not supported, outside the delineation, or not expressible from the current stream
+
+  ? [use_when: photonic stream frames or image frames need to be interpreted as mutation rather than static delineation]
+    = activate [SOPPhotonicMutationFrame]
+
+  = must: use delineation_setup before reading mutation
+  = must: keep delineation terms from being used as mutation terms
+  = must: express mutation through frame_delta, mutation_operator, mutation_operand, mutation_boundary, mutation_trace, and mutation_loss
+  = must: use SOPRGBSemanticEncoding only to identify the attention/delineation setup for the mutation
+  = must: use SOPOpticalTransformAlgebra to name, gate, compare, and trace mutation_operator
+  = must: preserve prior_frame_state and current_frame_state when frame_delta is promoted
+  = must: route unsupported or inferred mutation to mutation_outside unless trace and boundary are sufficient
+  = must: use BoundaryFacultyInspection when mutation changes identity, relationship, source, or protected boundary
+  = must: use SecurityHonestyGovernance when mutation claims affect truth, safety, protected state, or downstream action
+  = should: encode mutation frames as frame-to-frame deltas rather than repeated full state when compression is desired
+  = should: store mutation_loss explicitly so reconstruction does not pretend to know omitted motion
+  - never: infer mutation from delineation alone
+  - never: let RGB inside/boundary/outside terms stand in for mutation_operator
+  - never: treat visual continuity as proof of causation without a relation trace
+
+& [DelineationMutationComposition] is how attention setup and mutation frames compose
+  + [setup_pass] is create delineation_setup from :inside:, /boundary/, |outside|, source, and trace
+  + [mutation_pass] is read frame_delta over mutation_operand using prior_frame_state, current_frame_state, and mutation_operator
+  + [validation_pass] is compare mutation_boundary, mutation_trace, mutation_loss, and mutation_outside before promotion
+  + [composition_result] is a mutation_frame that can be stored in SOPPhotonicFrameStream or SOPAttentionMemoryCodec
+
+  = setup_pass: RGB or SOP delineation selects what is being changed
+  = mutation_pass: photonic frame sequence records how the selected subject changes
+  = validation_pass: transform algebra and governance decide whether the mutation reading can be promoted
+  = must: keep setup_pass and mutation_pass separable for debugging
+
+& [MutationFrameNotation] is the notation for one photonic mutation frame
+  + [frame_header] is & [mutation_frame:<frame_id>] is <mutation_purpose>
+  + [setup_line] is :delineation_setup: <inside> /<boundary>/ |<outside>|
+  + [prior_line] is = prior_frame_state: <state_before>
+  + [current_line] is = current_frame_state: <state_after_or_current>
+  + [delta_line] is = frame_delta: <difference>
+  + [operator_line] is :mutation_operator: <operation_or_transition>
+  + [operand_line] is :mutation_operand: <delineated_subject_surface>
+  + [boundary_line] is /mutation_boundary/ <invariant_or_allowed_change>
+  + [trace_line] is = mutation_trace: <source_frame_transform_continuity>
+  + [loss_line] is |mutation_loss| <compressed_or_omitted_detail>
+  + [outside_line] is |mutation_outside| <unsupported_or_unread_change>
+
+  = must: include setup_line, delta_line, operator_line, trace_line, and outside_line
+  = must: mark operator_line as inferred when not explicitly specified
+
+& [MutationFrameSequence] is the stream-level reading of mutation
+  + [mutation_sequence] is ordered mutation_frame values over time
+  + [continuity_rule] is how one mutation_frame connects to the next
+  + [state_carry] is what survives unchanged across frames
+  + [state_change] is what changes across frames
+  + [emergent_change] is a pattern of mutation visible only across multiple frames
+  + [sequence_outside] is skipped frames, omitted deltas, missing source, unsupported causation, and unobserved intermediate states
+
+  = must: distinguish state_carry from state_change
+  = must: record skipped or compressed deltas in sequence_outside
+  = should: use emergent_change only after multiple mutation_frame values support it
+
+(photonic_mutation_frame) :mutation_operand: /mutation_boundary and operator_trace/ |mutation_outside|
+  + [delineation_setup] is attention setup for what can be mutated
+  + [mutation_frame] is image-frame state change over the setup
+  + [frame_delta] is difference between prior and current frame states
+  + [mutation_operator] is the transform or transition explaining the delta
+  = setup_pass: delineate subject before mutation
+  = mutation_pass: read frame-to-frame change
+  = validation_pass: check boundary, trace, loss, and outside
+  |mutation_outside| unsupported, unobserved, untraced, or noncausal change
+
+/ [delineation_setup], [prior_frame_state], [current_frame_state] -(FramesMutation)> [frame_delta], [mutation_operator], [mutation_outside]
+* [SOPRGBSemanticEncoding], [SOPOpticalTransformAlgebra], [SOPPhotonicFrameStream] -(ComposesSetupAndMutation)> [mutation_frame], [mutation_sequence], [mutation_loss]

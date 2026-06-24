@@ -1,0 +1,22 @@
+Subject: attention_weight_scale_turn_bookmark_004 Periphery Stream Moment
+
+& [Graph:attention_weight_scale_turn_bookmark_004] is a SOP-HG graph
+  = format: SOP-HG
+  = focus_anchor: state\CurrentFocalPoint.sop
+  = source: platform\source_documents\2026-06-23_attention_weight_scale_turn_bookmark\Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+  = realization: A net of weights needs a calibrated scale vocabulary and a turn bookmark utility that compares commit snapshots against planned specification.
+
+  + [N:event:attention_weight_scale_turn_bookmark_004] is attention weight scale and turn bookmark realization
+    = layer: periphery
+    = resolution_band: pressure
+  + [N:subject:attention_weight_scale] is calibrated signal strength terminology
+  + [N:subject:turn_bookmark] is on-demand repo-framed reflection utility
+  + [N:signal:index_concordance_weight_node] is index plus concordance plus multi-dimensional weight node
+    = impulse: terms need cited counts and orientation weights
+  + [N:outside:turn_bookmark_boundary] is hidden cognition and causal proof outside repo evidence
+
+/ [E:realizes:attention_weight_scale_turn_bookmark_004] -(realizes; event=N:event:attention_weight_scale_turn_bookmark_004; subject=N:subject:attention_weight_scale; subject=N:subject:turn_bookmark)> [Graph:attention_weight_scale_turn_bookmark_004]
+/ [E:weighs:index_concordance_weight_node] -(weighs; signal=N:signal:index_concordance_weight_node; subject=N:subject:attention_weight_scale; weight=8)> [Graph:attention_weight_scale_turn_bookmark_004]
+/ [E:bounds:attention_weight_scale_turn_bookmark_004] -(bounds; event=N:event:attention_weight_scale_turn_bookmark_004; outside=N:outside:turn_bookmark_boundary)> [Graph:attention_weight_scale_turn_bookmark_004]
+
+- outside: the bookmark utility can compare visible repo and plan evidence, not direct hidden cognition

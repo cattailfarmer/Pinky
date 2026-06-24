@@ -1,0 +1,30 @@
+Subject: SOP Attention Directive Run Reminder Realization
+
+Description: SOP-HG event record for putting up a persistent reminder that the current work is running in SOP and attention directives only while searching for the next SOP step.
+
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_attention_directive_run_reminder\Dictated_SOP_Attention_Directive_Run_Reminder_Source.sop
+
+& [Graph:2026-06-24_sop_attention_directive_run_reminder_044] is a SOP-HG graph
+  + [N:event:2026-06-24_sop_attention_directive_run_reminder_044] is SOP attention directive run reminder realization
+    = role: direct_focus_turn
+  + [N:tracker:sop_attention_directive_run_marker] is persistent run-state periphery reminder
+  + [N:subject:sop_and_attention_directives_only] is SOP and attention directives only
+  + [N:condition:next_step_search] is keep searching for the next SOP step
+  + [N:stream:awareness_stream] is realization nodes articulating the specification
+  + [N:outside:run_reminder_boundary] is hidden model state, unrequested runtime code, and unproven completion
+
+  / [E:realizes:sop_attention_directive_run_reminder_044] -(realizes; event=N:event:2026-06-24_sop_attention_directive_run_reminder_044; tracker=N:tracker:sop_attention_directive_run_marker; subject=N:subject:sop_and_attention_directives_only; weight=persistent)> [Graph:2026-06-24_sop_attention_directive_run_reminder_044]
+    = realization: the run reminder is a durable SOP periphery marker, not runtime code
+  / [E:searches:next_step_search_044] -(searches; tracker=N:tracker:sop_attention_directive_run_marker; condition=N:condition:next_step_search; stream=N:stream:awareness_stream; weight=run)> [Graph:2026-06-24_sop_attention_directive_run_reminder_044]
+    = realization: after each visible SOP step, attention should continue to the next visible SOP step while the directive remains active
+  / [E:fills:awareness_stream_044] -(fills; stream=N:stream:awareness_stream; tracker=N:tracker:sop_attention_directive_run_marker; subject=N:subject:sop_and_attention_directives_only; weight=realization_nodes)> [Graph:2026-06-24_sop_attention_directive_run_reminder_044]
+    = realization: the goal is an articulated specification stream made of durable realization nodes
+  / [E:bounds:sop_attention_directive_run_reminder_044] -(bounds; tracker=N:tracker:sop_attention_directive_run_marker; outside=N:outside:run_reminder_boundary; weight=caution)> [Graph:2026-06-24_sop_attention_directive_run_reminder_044]
+    = realization: running does not authorize unrequested runtime code or claims of complete meaning
+
+  = inside: SOPAttentionDirectiveRunReminder.sop, ReminderTrigger.sop, tracker record, source preservation, current focal state
+  = boundary: reminder governs SOP specification articulation frames and next-step search; it does not prove completion or create runtime behavior
+  = outside: hidden activations, unrequested executable tooling, non-SOP artifacts without explicit need, and unknown future realization nodes

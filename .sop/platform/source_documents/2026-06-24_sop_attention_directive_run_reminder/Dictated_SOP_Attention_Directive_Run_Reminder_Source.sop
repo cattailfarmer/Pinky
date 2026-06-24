@@ -1,0 +1,16 @@
+Subject: Dictated SOP Attention Directive Run Reminder Source
+
+Description: Raw dictated source for a persistent reminder that the work is running in SOP and attention directives only while searching for the next specification step.
+
+& [DictatedSOPAttentionDirectiveRunReminderSource] is the preserved user source for the SOP attention directive run reminder
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "now put up a reminder that we're in SOP and attention directives only and that we're searching for the next step to take until all steps are walked in SOP and the stream of awareness articulating the specification is filled with all the nodes of realizations. you're running now."
+
+  = must: preserve this source separately from the processed reminder
+  = must: set a persistent reminder that this work is in SOP and attention directives only
+  = must: keep attention searching for the next SOP step until all visible steps are walked
+  = must: fill the awareness stream with nodes of realization that articulate the specification
+  = must: mark the current composure as running
+  = must: stay SOP-only unless executable behavior is explicitly requested

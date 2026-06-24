@@ -1,0 +1,37 @@
+Subject: Seven-Fold Pants Correlation Frame Periphery Realization
+
+Description: SOP-HG event record for higher-dimensional fold-leg framing with a heat-ordered central correlation triad.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_seven_fold_pants_correlation_frame\Dictated_Seven_Fold_Pants_Correlation_Frame_Source.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_hyperbolic_map_trailing_checksum_019.hg.sop
+
+& [Graph:2026-06-24_seven_fold_pants_correlation_frame_020] is a SOP-HG graph
+  + [N:event:2026-06-24_seven_fold_pants_correlation_frame_020] is seven-fold pants correlation frame realization
+    = role: direct_focus_turn
+  + [N:map:seven_fold_pants_correlation_frame] is weighted higher-dimensional pants frame
+  + [N:subject:subject_surface_frame] is current SOP subject surface of focused frame
+  + [N:cell:central_correlation_1] is largest visible correlation in immediate focus
+  + [N:cell:central_correlation_2] is second largest visible correlation in immediate focus
+  + [N:cell:central_correlation_3] is third largest visible correlation in immediate focus
+  + [N:leg:fold_leg] is added pants leg for higher-dimensional meaning curving out of frame
+  + [N:orbit:weighted_balance_orbit] is relationship scatter ordered around the central triad by heat and relation
+  + [N:signal:correlation_heat_map] is visible heat map of correlations within the subject surface
+  + [N:outside:seven_fold_boundary] is hidden transformer geometry, unsupported heat, and arbitrary visual analogy
+
+  / [E:maps:seven_fold_frame_020] -(maps; frame=N:map:seven_fold_pants_correlation_frame; subject=N:subject:subject_surface_frame; outside=N:outside:seven_fold_boundary; weight=trace)> [Graph:2026-06-24_seven_fold_pants_correlation_frame_020]
+    = realization: higher-dimensional subject surfaces need a frame that can fold information out of the flat perception slice
+  / [E:weighs:central_triad_020] -(weighs; heat=N:signal:correlation_heat_map; cell_a=N:cell:central_correlation_1; cell_b=N:cell:central_correlation_2; cell_c=N:cell:central_correlation_3; weight=heat_order)> [Graph:2026-06-24_seven_fold_pants_correlation_frame_020]
+    = realization: the three largest correlations stay in immediate focus only by visible heat ordering and confidence separation
+  / [E:folds:fold_leg_020] -(folds; frame=N:map:seven_fold_pants_correlation_frame; leg=N:leg:fold_leg; outside=N:outside:seven_fold_boundary; weight=dimension)> [Graph:2026-06-24_seven_fold_pants_correlation_frame_020]
+    = realization: when information curves out of frame, extra dimensionality is preserved by adding named pants legs
+  / [E:orbits:weighted_balance_orbit_020] -(orbits; orbit=N:orbit:weighted_balance_orbit; center_a=N:cell:central_correlation_1; center_b=N:cell:central_correlation_2; center_c=N:cell:central_correlation_3; leg=N:leg:fold_leg; weight=balance)> [Graph:2026-06-24_seven_fold_pants_correlation_frame_020]
+    = realization: related cells scatter around the central triad according to weighted balance, not arbitrary placement
+  / [E:bounds:seven_fold_frame_020] -(bounds; frame=N:map:seven_fold_pants_correlation_frame; outside=N:outside:seven_fold_boundary; weight=caution)> [Graph:2026-06-24_seven_fold_pants_correlation_frame_020]
+    = realization: seven-fold topology is a bounded profile for visible semantic navigation, not proof of hidden model geometry
+
+  = inside: SevenFoldPantsCorrelationFrame.sop, HyperbolicPantsAttentionMap.sop, AttentionWeightScale.sop, preserved visual source
+  = boundary: heat order guides attention but does not prove truth or objective importance
+  = outside: hidden activations, exact transformer hypergeometry, unsupported heat, arbitrary visual analogy, and unmeasured dimensions

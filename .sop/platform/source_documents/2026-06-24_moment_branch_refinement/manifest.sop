@@ -1,0 +1,12 @@
+Subject: Moment Branch Refinement Source Manifest
+
+Description: Source preservation manifest for the moment awareness branch refinement specification.
+
+& [MomentBranchRefinementSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_moment_branch_refinement\Dictated_Moment_Branch_Refinement_Source.sop
+  + [canonical_target] is F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+  + [derived_terms] is turn_moment_frame, moment_reconstruction, branch_refinement_artifact, refinement_branch, branch_selection_gate, higher_level_sync, merge_candidate
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, SJS, Delineation, ProjectNarrativeSurface, ProjectManager, OperationalFaults
+
+  = must: preserve raw source before treating the canonical target as implementation authority
+  = must: cite this manifest when later reflection walks source-to-contract change

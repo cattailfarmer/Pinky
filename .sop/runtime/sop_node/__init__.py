@@ -1,0 +1,177 @@
+"""Runtime surfaces for the local SOP awareness node."""
+
+from .sensitivity_scan import (
+    DiffFileChange,
+    SensitivityScan,
+    SensitivitySignal,
+    build_sensitivity_scan,
+    build_sensitivity_scan_from_changes,
+    classify_layer,
+    write_scan,
+)
+from .hypergraph import (
+    HypergraphEdge,
+    HypergraphNode,
+    HypergraphRecord,
+    parse_edge_participants,
+    scan_to_hypergraph,
+)
+from .attention_layers import (
+    AttentionFrame,
+    AttentionPoint,
+    AttentionRelation,
+    build_attention_frame,
+)
+from .viewfinder import (
+    Reweighing,
+    ViewfinderSnapshot,
+    build_viewfinder_snapshot,
+    parse_reweighing,
+)
+from .spool import (
+    TurnSpool,
+    WorkerJob,
+    create_turn_spool,
+    default_workers,
+    render_hub,
+)
+from .semantic_index import (
+    PeripheryImpression,
+    SemanticComponent,
+    SemanticHashIndex,
+    build_semantic_component,
+    build_semantic_hash_index,
+)
+from .semantic_table import (
+    SemanticHashTable,
+    SemanticLookupResult,
+    SemanticTableEntry,
+    build_semantic_hash_table,
+)
+from .semantic_correlation import (
+    AttentionDirective,
+    BucketCorrelation,
+    SemanticCorrelationGraph,
+    build_semantic_correlation_graph,
+    parse_directive,
+)
+from .support_balance import (
+    SupportBalance,
+    SupportObservation,
+    SupportProbe,
+    build_support_balance,
+    parse_support_probe,
+)
+from .attention_tracker import (
+    AttentionTrackingRecord,
+    TrackedSubject,
+    build_attention_tracking_record,
+    parse_tracked_subject,
+)
+from .turn_bookmark import (
+    DEFAULT_BOOKMARK_PATHSPECS,
+    TurnBookmark,
+    TurnBookmarkFinding,
+    build_turn_bookmark,
+    build_turn_bookmark_from_scan,
+)
+from .state_trace import (
+    InferenceStateTrace,
+    build_inference_state_trace,
+)
+from .attention_kernel import (
+    CompiledAttentionKernel,
+    FacultyFieldSignature,
+    ReflectionConsumption,
+    build_attention_kernel_packet,
+    default_faculty_fields,
+    parse_faculty_field,
+    parse_reflection_consumption,
+)
+from .step_balance_walk import (
+    StepBalanceObservation,
+    StepBalanceWalk,
+    build_step_balance_walk,
+    parse_step_balance_observation,
+)
+from .periphery_continuity_run import (
+    PeripheryContinuityLink,
+    PeripheryContinuityRun,
+    PeripheryRunFrame,
+    build_periphery_continuity_run,
+    parse_periphery_run_frame,
+)
+
+__all__ = [
+    "AttentionFrame",
+    "CompiledAttentionKernel",
+    "AttentionDirective",
+    "AttentionPoint",
+    "AttentionRelation",
+    "AttentionTrackingRecord",
+    "BucketCorrelation",
+    "DiffFileChange",
+    "DEFAULT_BOOKMARK_PATHSPECS",
+    "HypergraphEdge",
+    "HypergraphNode",
+    "HypergraphRecord",
+    "InferenceStateTrace",
+    "FacultyFieldSignature",
+    "Reweighing",
+    "PeripheryImpression",
+    "PeripheryContinuityLink",
+    "PeripheryContinuityRun",
+    "PeripheryRunFrame",
+    "ReflectionConsumption",
+    "SemanticComponent",
+    "SemanticHashIndex",
+    "SemanticHashTable",
+    "SemanticLookupResult",
+    "SemanticTableEntry",
+    "SemanticCorrelationGraph",
+    "SensitivityScan",
+    "SensitivitySignal",
+    "StepBalanceObservation",
+    "StepBalanceWalk",
+    "SupportBalance",
+    "SupportObservation",
+    "SupportProbe",
+    "TurnSpool",
+    "TurnBookmark",
+    "TurnBookmarkFinding",
+    "TrackedSubject",
+    "ViewfinderSnapshot",
+    "WorkerJob",
+    "build_sensitivity_scan",
+    "build_sensitivity_scan_from_changes",
+    "build_attention_frame",
+    "build_attention_kernel_packet",
+    "build_periphery_continuity_run",
+    "build_step_balance_walk",
+    "build_semantic_component",
+    "build_semantic_hash_index",
+    "build_semantic_hash_table",
+    "build_semantic_correlation_graph",
+    "build_support_balance",
+    "build_attention_tracking_record",
+    "build_turn_bookmark",
+    "build_turn_bookmark_from_scan",
+    "build_inference_state_trace",
+    "build_viewfinder_snapshot",
+    "classify_layer",
+    "create_turn_spool",
+    "default_workers",
+    "default_faculty_fields",
+    "parse_edge_participants",
+    "parse_directive",
+    "parse_faculty_field",
+    "parse_periphery_run_frame",
+    "parse_reweighing",
+    "parse_reflection_consumption",
+    "parse_support_probe",
+    "parse_step_balance_observation",
+    "parse_tracked_subject",
+    "render_hub",
+    "scan_to_hypergraph",
+    "write_scan",
+]

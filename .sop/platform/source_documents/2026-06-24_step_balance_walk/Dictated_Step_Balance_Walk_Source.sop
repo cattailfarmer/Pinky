@@ -1,0 +1,15 @@
+Subject: Dictated Step Balance Walk Source
+
+Description: Raw dictated source for turning balance into a step-ending operational gait.
+
+& [DictatedStepBalanceWalkSource] is the preserved user source for a continuous balanced work gait
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "I want for you to feel your balance at the end of each step and look for the next step. don't tiptoe through the project, but walk it in a continuous flow of momentum in balance."
+
+  = must: preserve this source separately from the processed contract and runtime
+  = must: check balance at the end of each concrete step
+  = must: name the next step after settling balance
+  = must: preserve continuous momentum without ignoring wobble, boundary, or proof limits
+  = must: keep balance grounded in visible observation surfaces, not hidden model state

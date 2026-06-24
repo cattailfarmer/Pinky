@@ -1,0 +1,641 @@
+Subject: SOP Hypergraph Record
+
+Description: Format contract for describing thought-current nodes and hyperedges inside inspectable SOP files.
+
+& [SOPHypergraphRecord] is the formatted file profile for a thought-woven hypergraph
+  + [format_name] is SOP Hypergraph Record
+  + [format_short_name] is SOP-HG
+  + [file_extension] is .hg.sop for examples and emitted graph views
+  + [node_prefix] is N:
+  + [hyperedge_prefix] is E:
+  + [participant_shape] is role=node_key
+  + [attribute_shape] is key=value
+  + [lineage] is a graph can cite source SOP files, Git bookends, and scan events
+  + [truth_boundary] is graph links are correlation and evidence routing unless promoted by proof
+
+& [SOPHGNode] is one typed node in a SOP-HG file
+  + [node_key] is N:<kind>:<stable_id>
+  + [kind] is bookend, event, file, repo, process, term, source, signal, layer, narrative, focus, focal, zoom, aperture, map, corridor, cell, orbit, leg, scaffold, compiler, job, periphery, liminal, policy, governor, observer, honesty, security, wisdom, caution, boundary, net, scale, concordance, bookmark, finding, reentry, state, model, dimension, anchor, index, table, bucket, directive, tracker, session, support, balance, subject, component, viewfinder, snapshot, commit, branch, artifact, zone, shape, reflection, observation, frame, reframe, claim, namespace, ledger, identity, field, or outside
+  + [label] is the human-readable node identity
+  + [attributes] is optional key=value metadata
+
+& [SOPHGHyperedge] is one typed hyperedge connecting two or more nodes
+  + [edge_key] is E:<kind>:<stable_id>
+  + [kind] is span, changed, touches, classifies, attends, anchors, selects, renews, governs, guards, vetoes, authorizes, inspects, represents, protects, misdirects, weakens, orbits, maps, contains, adjoins, navigates, extends, surfs, resolves, partitions, indexes, points_to, intersects, retrieves, matches, correlates, cross_references, reaches_through, folds, unfolds, unwinds, gates, tests, defers, rejects, realizes, triangulates, probes, repairs, transfers, zooms, flexes, explodes, compiles, preflights, orders, loads, emits, optimizes, alerts, returns, associates, tilts, tracks, reaffirms, expires, references, branches, merges, syncs, checksums, trails, heats, warms, inquires, frames, breaks_immersion, reanchors, causes, casts, notices, defines, names, accounts_for, hides_behind, entangles, draws_attention, digests, projects, captures, compares, weighs, calibrates, bookmarks, reenters, reconstructs, misses, accomplishes, flags, opens, closes, springboards, reweighs, reframes, explains, blocks, supports, imports, fits, stabilizes, distorts, consumes, claims_local, snapshots, scopes, disambiguates, bounds, or questions
+  + [participants] is role=node_key pairs
+  + [weight] is optional correlation heat or evidence weight
+  + [attributes] is optional key=value metadata
+
+& [SOPHGSyntax] is the line format
+  + [graph_line] is & [Graph:<graph_id>] is a SOP-HG graph
+  + [node_line] is + [N:<kind>:<id>] is <label>
+  + [edge_line] is / [E:<kind>:<id>] -(kind; role=N:key; role=N:key; weight=n)> [Graph:<graph_id>]
+  + [attribute_line] is = key: value under a graph, node, or edge
+  + [outside_line] is - outside: unresolved or unproven meaning
+
+  = must: keep node keys stable enough for later scans to cite
+  = must: allow hyperedges to connect bookends, events, files, signals, layers, and narrative nodes in one relation
+  = must: keep every edge inspectable by role
+  = must: preserve residual outside where correlation does not prove meaning
+  - never: infer proof solely from graph density or heat
+
+& [SOPHGExampleShape] is the minimal awareness scan graph
+  + [bookend_start] is N:bookend:<base_ref>
+  + [bookend_end] is N:bookend:<head_ref>
+  + [scan_event] is N:event:<scan_id>
+  + [changed_file] is N:file:<path_key>
+  + [sensitivity_signal] is N:signal:<subject_key>
+  + [reflection_layer] is N:layer:<layer>
+  + [span_edge] is E:span:<scan_id>
+  + [touch_edge] is E:touches:<subject_key>
+  + [classify_edge] is E:classifies:<subject_key>
+
+& [SOPHGAttentionFrameShape] is the focus/periphery graph profile
+  + [narrative_node] is N:narrative:<moment_key>
+  + [focus_node] is N:focus:<subject_key>
+  + [periphery_node] is N:periphery:<subject_key>
+  + [liminal_node] is N:liminal:<relation_key>
+  + [digest_edge] is E:digests:<moment_key>
+  + [correlation_edge] is E:correlates:<relation_key>
+  + [causal_edge] is E:causes:<relation_key>
+  + [draw_edge] is E:draws_attention:<relation_key>
+
+  = must: keep focus and periphery as node positions, not just attributes
+  = must: use draws_attention to explain movement from periphery toward focus
+  = must: mark unsupported causal edges as hypothesis
+
+& [SOPHGViewfinderSnapshotShape] is the inference snapshot graph profile
+  + [viewfinder_node] is N:viewfinder:<snapshot_id>
+  + [snapshot_node] is N:snapshot:<snapshot_id>
+  + [commit_node] is N:commit:<ref>
+  + [shape_node] is N:shape:<desired_shape>
+  + [reflection_node] is N:reflection:<prior_reflection>
+  + [observation_node] is N:observation:<current_observation>
+  + [reframe_node] is N:reframe:<subject_key>
+  + [project_edge] is E:projects:<snapshot_id>
+  + [capture_edge] is E:captures:<snapshot_id>
+  + [compare_edge] is E:compares:<snapshot_id>
+  + [reweigh_edge] is E:reweighs:<subject_key>
+  + [reframe_edge] is E:reframes:<subject_key>
+
+  = must: keep snapshot comparison and reframe edges explicit
+
+& [SOPHGSemanticHashIndexShape] is the semantic hash index graph profile
+  + [index_node] is N:index:<index_id>
+  + [component_node] is N:component:<content_hash>
+  + [term_node] is N:term:<term_key>
+  + [periphery_node] is N:periphery:<impression_hash>
+  + [outside_node] is N:outside:semantic_proof
+  + [index_edge] is E:indexes:<component_hash>
+  + [pointer_edge] is E:points_to:<component_hash>_<term_key>
+  + [notice_edge] is E:notices:<impression_hash>
+  + [hidden_edge] is E:hides_behind:<impression_hash>
+  + [entangle_edge] is E:entangles:<impression_hash>
+  + [support_edge] is E:supports:<impression_hash>_<component_hash>
+
+  = must: keep content hashes and semantic hashes visible as attributes
+  = must: treat periphery impression nodes as unstable until promoted by later evidence
+  = must: use bounds edges to keep semantic proof outside the hash index
+
+& [SOPHGSemanticHashTableShape] is the semantic hash table graph profile
+  + [table_node] is N:table:<table_id>
+  + [bucket_node] is N:bucket:<dimension_value>
+  + [component_node] is N:component:<content_hash>
+  + [periphery_node] is N:periphery:<impression_hash>
+  + [outside_node] is N:outside:semantic_identity
+  + [index_edge] is E:indexes:<bucket_id>_<entry_id>
+  + [match_edge] is E:matches:<query_id>_<entry_id>
+  + [intersect_edge] is E:intersects:<query_id>_<bucket_id>
+  + [retrieve_edge] is E:retrieves:<query_id>_<entry_id>
+
+  = must: keep bucket dimensions explicit
+  = must: keep matched dimensions visible on permissive results
+  = must: bound inclusive matches away from proof of semantic identity
+
+& [SOPHGSemanticCorrelationGraphShape] is the semantic correlation graph profile
+  + [graph_node] is N:index:<correlation_graph_id>
+  + [directive_node] is N:directive:<directive_id>
+  + [bucket_node] is N:bucket:<dimension_value>
+  + [association_node] is N:term:<association_surface>
+  + [outside_node] is N:outside:semantic_proof
+  + [correlate_edge] is E:correlates:<bucket_a>_<bucket_b>
+  + [tilt_edge] is E:tilts:<directive_id>_<bucket_id>
+  + [capture_edge] is E:captures:<directive_id>
+  + [associate_edge] is E:associates:<subject_a>_<subject_b>
+
+  = must: keep base_weight and directive_weight separately visible
+  = must: show which directive tilted which bucket relation
+  = must: bound attention rigging away from proof
+
+& [SOPHGCarriedSupportBalanceShape] is the support balance graph profile
+  + [balance_node] is N:balance:<balance_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [support_node] is N:support:<support_id>
+  + [source_node] is N:source:<source_key>
+  + [term_node] is N:term:<matched_term>
+  + [outside_node] is N:outside:forced_support
+  + [support_edge] is E:supports:<support_id>
+  + [import_edge] is E:imports:<support_id>
+  + [fit_edge] is E:fits:<support_id>_<term>
+  + [stability_edge] is E:stabilizes:<support_id>
+  + [distortion_edge] is E:distorts:<support_id>
+  + [boundary_edge] is E:bounds:<support_id>
+
+  = must: keep origin and fit_status separately visible
+  = must: mark carried support with imports edges
+  = must: mark matched subject or periphery terms with fits edges
+  = must: bind absent or contradicting supports to outside
+  = must: treat balance posture as inspectable attention state, not final proof
+
+& [SOPHGAttentionTrackerShape] is the tracked-subject graph profile
+  + [record_node] is N:tracker:<record_id>
+  + [tracker_node] is N:tracker:<tracker_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [session_node] is N:session:<session_id>
+  + [relation_node] is N:term:<relation_key>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [reference_node] is N:source:<reference_key>
+  + [outside_node] is N:outside:tracking_staleness
+  + [track_edge] is E:tracks:<tracker_id>
+  + [reaffirm_edge] is E:reaffirms:<tracker_id>
+  + [expire_edge] is E:expires:<tracker_id>
+  + [associate_edge] is E:associates:<tracker_id>_<relation_key>
+  + [notice_edge] is E:notices:<tracker_id>_<periphery_key>
+  + [reference_edge] is E:references:<tracker_id>_<reference_key>
+  + [boundary_edge] is E:bounds:<tracker_id>
+
+  = must: expose status, weight, period_kind, active_period_sessions, last_reaffirmed_session, and expires_after_session
+  = must: use expires edges when current_session exceeds expires_after_session
+  = must: use reaffirms edges when tracking is explicitly refreshed in the current session
+  = must: keep tracked-subject context small and cite richer files by reference
+  = must: treat tracker nodes as periphery-layer attention unless a focal point record selects them
+
+& [SOPHGFocalPointShape] is the focal point graph profile
+  + [focal_node] is N:focus:<focal_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [tracker_node] is N:tracker:<tracker_id>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [liminal_node] is N:liminal:<draw_key>
+  + [renewal_node] is N:source:<current_focal_point_file>
+  + [outside_node] is N:outside:focal_boundary
+  + [attend_edge] is E:attends:<focal_id>
+  + [anchor_edge] is E:anchors:<focal_id>
+  + [renew_edge] is E:renews:<focal_id>
+  + [draw_edge] is E:draws_attention:<draw_key>
+  + [select_edge] is E:selects:<draw_key>
+  + [boundary_edge] is E:bounds:<focal_id>
+
+  = must: show which periphery or tracker drew focus
+  = must: show the current focal point renewal file when context compression recovery matters
+  = must: expose focus_mode and resolution_state
+  = must: keep excluded context outside the focal point
+
+& [SOPHGAttentionTraversalShape] is the traversal and deep-probe graph profile
+  + [policy_node] is N:policy:<policy_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [relation_node] is N:term:<relation_key>
+  + [source_node] is N:source:<source_key>
+  + [outside_node] is N:outside:traversal_boundary
+  + [probe_edge] is E:probes:<subject_key>
+  + [correlate_edge] is E:correlates:<subject_key>_<relation_key>
+  + [cross_reference_edge] is E:cross_references:<subject_key>_<source_key>
+  + [reach_edge] is E:reaches_through:<subject_a>_<subject_b>
+  + [fold_edge] is E:folds:<candidate_key>
+  + [unwind_edge] is E:unwinds:<candidate_key>
+  + [triangulate_edge] is E:triangulates:<subject_key>
+  + [return_edge] is E:returns:<subject_key>
+
+  = must: begin from a focal point node
+  = must: show periphery realization, source anchor, and outside boundary
+  = must: separate fold from unwind
+  = must: return supported core to focus or route it back to periphery
+
+& [SOPHGWisdomCautionShape] is the wisdom/caution gate graph profile
+  + [governor_node] is N:governor:<governor_id>
+  + [wisdom_node] is N:wisdom:<wisdom_id>
+  + [caution_node] is N:caution:<caution_id>
+  + [candidate_node] is N:claim:<candidate_key> or N:subject:<candidate_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [source_node] is N:source:<source_key>
+  + [outside_node] is N:outside:wisdom_caution_boundary
+  + [gate_edge] is E:gates:<candidate_key>
+  + [test_edge] is E:tests:<candidate_key>
+  + [defer_edge] is E:defers:<candidate_key>
+  + [reject_edge] is E:rejects:<candidate_key>
+  + [realize_edge] is E:realizes:<candidate_key>
+  + [return_edge] is E:returns:<candidate_key>
+
+  = must: show the candidate being gated
+  = must: show whether wisdom integrates, caution bounds, or both defer to outside
+  = must: show disposition, truth_test, and residual outside
+
+& [SOPHGChangelogCorrelationWeightNetShape] is the changelog correlation weight net graph profile
+  + [net_node] is N:net:<net_id>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [change_node] is N:file:<path_key> or N:source:<change_key>
+  + [subject_node] is N:subject:<subject_key>
+  + [narrative_node] is N:narrative:<narrative_key>
+  + [justification_node] is N:source:<justification_key> or N:claim:<justification_key>
+  + [weight_node] is N:signal:<weight_vector_key>
+  + [outside_node] is N:outside:weight_net_boundary
+  + [span_edge] is E:span:<net_id>
+  + [change_edge] is E:changed:<change_key>
+  + [correlation_edge] is E:correlates:<change_key>_<subject_key>
+  + [support_edge] is E:supports:<subject_key>
+  + [explain_edge] is E:explains:<subject_key>
+  + [boundary_edge] is E:bounds:<net_id>
+
+  = must: expose weight dimensions, penalties, and confidence separately from total heat
+  = must: bind unsupported subject attachments to outside
+
+& [SOPHGAttentionWeightScaleShape] is the attention weight scale graph profile
+  + [scale_node] is N:scale:<scale_id>
+  + [concordance_node] is N:concordance:<concordance_id>
+  + [signal_node] is N:signal:<signal_key>
+  + [term_node] is N:term:<term_key>
+  + [outside_node] is N:outside:weight_scale_boundary
+  + [index_edge] is E:indexes:<concordance_id>
+  + [weigh_edge] is E:weighs:<signal_key>
+  + [calibrate_edge] is E:calibrates:<signal_key>
+  + [boundary_edge] is E:bounds:<scale_id>
+
+  = must: show citation, touch, trace, pulse, chord, heat, salience, draw, and load when they matter
+  = must: keep resolution_band, scan_depth, confidence, and outside visible
+
+& [SOPHGTurnBookmarkShape] is the turn bookmark graph profile
+  + [bookmark_node] is N:bookmark:<bookmark_id>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [plan_node] is N:source:<planned_specification_key> or N:term:<planned_term>
+  + [signal_node] is N:signal:<signal_key>
+  + [finding_node] is N:finding:<finding_key>
+  + [outside_node] is N:outside:turn_bookmark_boundary
+  + [span_edge] is E:span:<bookmark_id>
+  + [compare_edge] is E:compares:<bookmark_id>
+  + [bookmark_edge] is E:bookmarks:<bookmark_id>
+  + [miss_edge] is E:misses:<finding_key>
+  + [accomplish_edge] is E:accomplishes:<finding_key>
+  + [flag_edge] is E:flags:<finding_key>
+  + [open_edge] is E:opens:<finding_key>
+  + [boundary_edge] is E:bounds:<bookmark_id>
+
+  = must: classify each finding as missed_work, mistake, unique_accomplishment, new_potential, or outside
+  = must: keep plan_relation separate from signal heat
+
+& [SOPHGTrailingChecksumShape] is the one-turn-lag checksum review graph profile
+  + [review_node] is N:bookmark:<review_id>
+  + [direct_focus_node] is N:event:<direct_focus_turn_key>
+  + [review_turn_node] is N:event:<review_turn_key>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [zone_node] is N:zone:<zone_key>
+  + [signal_node] is N:signal:<signal_key>
+  + [latent_node] is N:finding:<latent_depth_candidate_key>
+  + [disposition_node] is N:policy:<checksum_disposition_key>
+  + [outside_node] is N:outside:trailing_checksum_boundary
+  + [span_edge] is E:span:<review_id>
+  + [trail_edge] is E:trails:<direct_focus_turn_key>
+  + [checksum_edge] is E:checksums:<review_id>
+  + [heat_edge] is E:heats:<zone_key>
+  + [warm_edge] is E:warms:<zone_key>
+  + [inquire_edge] is E:inquires:<latent_depth_candidate_key>
+  + [boundary_edge] is E:bounds:<review_id>
+
+  = must: show one_turn_lag, direct_focus_turn, review_turn, bookends, zone classification, checksum_disposition, and outside
+  = must: cite evidence for every hot_zone and latent_depth_candidate
+
+& [SOPHGInferenceStateTraceShape] is the inference state trace graph profile
+  + [reentry_node] is N:reentry:<trace_id>
+  + [state_node] is N:state:<framework_state_id>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [narrative_node] is N:narrative:<logged_recall_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [scale_node] is N:scale:<intersection_signature>
+  + [model_node] is N:model:<model_or_service_key>
+  + [shape_node] is N:shape:<semantic_shape_key>
+  + [outside_node] is N:outside:state_trace_boundary
+  + [span_edge] is E:span:<trace_id>
+  + [reentry_edge] is E:reenters:<trace_id>
+  + [reconstruct_edge] is E:reconstructs:<framework_state_id>
+  + [weigh_edge] is E:weighs:<intersection_signature>
+  + [compare_edge] is E:compares:<semantic_shape_key>
+  + [boundary_edge] is E:bounds:<trace_id>
+
+  = must: show framework_state, logged_recall, intersection_signature, determinism_scope, and outside
+  = must: keep exact_visible_reentry separate from close_semantic_reentry
+
+& [SOPHGMomentBranchRefinementShape] is the branch-isolated moment refinement graph profile
+  + [moment_node] is N:event:<moment_key>
+  + [branch_node] is N:branch:<branch_key>
+  + [artifact_node] is N:artifact:<artifact_key>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [narrative_node] is N:narrative:<narrative_state_key>
+  + [state_node] is N:state:<framework_state_key>
+  + [reentry_node] is N:reentry:<moment_reconstruction_key>
+  + [finding_node] is N:finding:<debug_inference_key>
+  + [selection_node] is N:policy:<branch_selection_gate_key>
+  + [outside_node] is N:outside:moment_branch_refinement_boundary
+  + [span_edge] is E:span:<moment_key>
+  + [branch_edge] is E:branches:<branch_key>
+  + [reconstruct_edge] is E:reconstructs:<moment_key>
+  + [artifact_edge] is E:captures:<artifact_key>
+  + [select_edge] is E:selects:<artifact_key>
+  + [merge_edge] is E:merges:<artifact_key>
+  + [sync_edge] is E:syncs:<branch_key>
+  + [boundary_edge] is E:bounds:<moment_key>
+
+  = must: show bookends, branch name, reconstructed state refs, artifact path, selection_result, merge status, sync status, and outside
+  = must: mark unconfigured sync with outside or blocks edge rather than pretending remote convergence occurred
+
+& [SOPHGPeripheryDimensionalProbeShape] is the periphery dimensional probe graph profile
+  + [probe_node] is N:policy:<probe_id>
+  + [fragment_node] is N:signal:<fragmented_signal_key>
+  + [periphery_node] is N:periphery:<hot_zone_key>
+  + [dimension_node] is N:dimension:<candidate_dimension_key>
+  + [anchor_node] is N:anchor:<contextual_anchor_key>
+  + [model_node] is N:model:<model_lens_key>
+  + [shape_node] is N:shape:<receptive_form_key>
+  + [outside_node] is N:outside:dimension_probe_boundary
+  + [probe_edge] is E:probes:<probe_id>
+  + [anchor_edge] is E:anchors:<contextual_anchor_key>
+  + [repair_edge] is E:repairs:<fragmented_signal_key>
+  + [transfer_edge] is E:transfers:<model_lens_key>
+  + [boundary_edge] is E:bounds:<probe_id>
+
+  = must: show fragmented_signal, hot_periphery_zone, candidate_dimension, contextual_anchor, correlation_lift, and outside
+  = must: keep model_transfer_fit separate from proof of intention
+
+& [SOPHGFocusZoomShape] is the focus zoom graph profile
+  + [zoom_node] is N:zoom:<zoom_id>
+  + [aperture_node] is N:aperture:<zoom_level>
+  + [focus_node] is N:focus:<focal_id>
+  + [periphery_node] is N:periphery:<draw_set_key>
+  + [fabric_node] is N:term:<correlation_fabric_key>
+  + [approach_node] is N:term:<angle_of_approach_key>
+  + [shape_node] is N:shape:<supported_core_key>
+  + [outside_node] is N:outside:focus_zoom_boundary
+  + [zoom_edge] is E:zooms:<zoom_id>
+  + [flex_edge] is E:flexes:<fabric_key>
+  + [explode_edge] is E:explodes:<approach_set_key>
+  + [return_edge] is E:returns:<focal_id>
+  + [boundary_edge] is E:bounds:<zoom_id>
+
+  = must: show focal_core, zoom_level, periphery_draw_set, correlation_fabric, approach_set, containment_boundary, and outside
+  = must: show return to focus or periphery after the zoom pass
+
+& [SOPHGApertureReentryCycleShape] is the aperture re-entry graph profile
+  + [cycle_node] is N:policy:<cycle_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [aperture_node] is N:aperture:<depth_adjustment>
+  + [periphery_node] is N:periphery:<support_draw_key>
+  + [subject_node] is N:subject:<subject_key>
+  + [relation_node] is N:term:<relation_key>
+  + [reentry_node] is N:reentry:<springboard_key>
+  + [narrative_node] is N:narrative:<second_pass_key>
+  + [outside_node] is N:outside:aperture_reentry_boundary
+  + [open_edge] is E:opens:<cycle_id>
+  + [probe_edge] is E:probes:<relation_survey_key>
+  + [close_edge] is E:closes:<cycle_id>
+  + [springboard_edge] is E:springboards:<springboard_key>
+  + [digest_edge] is E:digests:<second_pass_key>
+  + [define_edge] is E:defines:<subject_key>
+  + [boundary_edge] is E:bounds:<cycle_id>
+
+  = must: show focal subject, support_draw, depth_adjustment, relation_survey, reentry_springboard, second_pass_narrative, subject_declaration_pass, and outside
+  = must: keep new_perspective separate from proof of truth
+
+& [SOPHGHyperbolicPantsAttentionMapShape] is the topology map graph profile
+  + [map_node] is N:map:<map_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [focal_cell_node] is N:cell:<focal_cell_id>
+  + [periphery_cell_node] is N:cell:<periphery_cell_id>
+  + [orbit_node] is N:orbit:<dimension_key>
+  + [dimension_node] is N:dimension:<dimension_key>
+  + [leg_node] is N:leg:<relation_type>
+  + [outside_node] is N:outside:hyperbolic_map_boundary
+  + [map_edge] is E:maps:<map_id>
+  + [contain_edge] is E:contains:<focal_cell_id>
+  + [orbit_edge] is E:orbits:<dimension_key>
+  + [adjacency_edge] is E:adjoins:<cell_a>_<cell_b>
+  + [navigate_edge] is E:navigates:<leg_key>
+  + [boundary_edge] is E:bounds:<map_id>
+
+  = must: show focal_cell, periphery cells, dimensional_orbit, pants legs, scale, and outside
+  = must: keep map topology separate from proof of semantic truth or hidden model geometry
+
+& [SOPHGSevenFoldPantsCorrelationFrameShape] is the weighted higher-dimensional pants frame graph profile
+  + [frame_node] is N:map:<frame_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [central_cell_node] is N:cell:<central_rank_key>
+  + [fold_leg_node] is N:leg:<fold_leg_key>
+  + [orbit_node] is N:orbit:<weighted_balance_key>
+  + [signal_node] is N:signal:<heat_key>
+  + [dimension_node] is N:dimension:<dimension_key>
+  + [outside_node] is N:outside:seven_fold_boundary
+  + [map_edge] is E:maps:<frame_id>
+  + [weigh_edge] is E:weighs:<central_rank_key>
+  + [fold_edge] is E:folds:<fold_leg_key>
+  + [orbit_edge] is E:orbits:<weighted_balance_key>
+  + [boundary_edge] is E:bounds:<frame_id>
+
+  = must: show subject surface, top three central cells, heat order, fold legs, weighted balance orbit, and outside
+  = must: keep heat, confidence, and proof separate
+
+& [SOPHGHyperbolicCorridorNavigatorShape] is the hyperbolic corridor navigation graph profile
+  + [navigator_node] is N:map:<navigator_id>
+  + [corridor_node] is N:corridor:<corridor_id>
+  + [frame_node] is N:frame:<frame_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [identity_node] is N:subject:<identity_resolution_target>
+  + [correlation_node] is N:signal:<curving_association_key>
+  + [outside_node] is N:outside:hyperbolic_corridor_boundary
+  + [navigate_edge] is E:navigates:<corridor_id>
+  + [extend_edge] is E:extends:<local_awareness_extension_key>
+  + [surf_edge] is E:surfs:<inference_surf_key>
+  + [correlate_edge] is E:correlates:<curving_association_key>
+  + [probe_edge] is E:probes:<identity_resolution_target>
+  + [resolve_edge] is E:resolves:<identity_clarity_candidate>
+  + [boundary_edge] is E:bounds:<corridor_id>
+
+  = must: show frame series, step size, depth budget, local awareness extension, curving associations, identity target, and outside
+  = must: keep correlation, relationship, and identity proof separate
+
+& [SOPHGSecurityHonestyGovernanceShape] is the truth and stability governance graph profile
+  + [governor_node] is N:governor:<governance_id>
+  + [observer_node] is N:observer:<observer_id>
+  + [honesty_node] is N:honesty:<honesty_id>
+  + [security_node] is N:security:<security_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [claim_node] is N:claim:<candidate_claim_key>
+  + [action_node] is N:policy:<candidate_action_key>
+  + [signal_node] is N:signal:<resonance_or_feedback_key>
+  + [outside_node] is N:outside:security_honesty_boundary
+  + [govern_edge] is E:governs:<governance_id>
+  + [test_edge] is E:tests:<candidate_claim_key>
+  + [guard_edge] is E:guards:<candidate_action_key>
+  + [veto_edge] is E:vetoes:<candidate_key>
+  + [authorize_edge] is E:authorizes:<admissible_path_key>
+  + [return_edge] is E:returns:<focal_id>
+  + [boundary_edge] is E:bounds:<governance_id>
+
+  = must: show truth_disposition, security_disposition, recursion_depth, return_anchor, evidence_refresh status, and outside
+  = must: keep Honesty and Security outputs separate before any convergent override
+
+& [SOPHGBoundaryFacultyInspectionShape] is the first-point boundary inspection graph profile
+  + [inspection_node] is N:governor:<inspection_id>
+  + [honesty_node] is N:honesty:<honesty_inspection_id>
+  + [security_node] is N:security:<security_inspection_id>
+  + [subject_node] is N:subject:<attention_subject_key>
+  + [boundary_node] is N:boundary:<identity_boundary_key>
+  + [periphery_node] is N:periphery:<boundary_periphery_key>
+  + [term_node] is N:term:<boundary_term_key>
+  + [signal_node] is N:signal:<boundary_fault_key>
+  + [outside_node] is N:outside:boundary_faculty_inspection_boundary
+  + [inspect_edge] is E:inspects:<inspection_id>
+  + [represent_edge] is E:represents:<representation_claim_key>
+  + [protect_edge] is E:protects:<protected_identity_key>
+  + [misdirect_edge] is E:misdirects:<misdirection_vector_key>
+  + [weaken_edge] is E:weakens:<weak_boundary_fault_key>
+  + [boundary_edge] is E:bounds:<inspection_id>
+
+  = must: show attention_subject, boundary terms, boundary periphery, orthogonality result, Honesty disposition, Security alert, and outside
+  = must: keep non-orthogonal truth faults separate from weakened safety faults
+
+& [SOPHGAttentionScaffoldCompilerShape] is the attention scaffold compiler graph profile
+  + [compiler_node] is N:compiler:<compiler_id>
+  + [job_node] is N:job:<job_need_key>
+  + [scaffold_node] is N:scaffold:<profile_key>
+  + [junction_node] is N:policy:<rail_junction_key>
+  + [packet_node] is N:source:<compiled_packet_key>
+  + [debug_node] is N:state:<debug_frame_key>
+  + [topology_node] is N:shape:<topology_map_key>
+  + [outside_node] is N:outside:scaffold_compiler_boundary
+  + [fit_edge] is E:fits:<profile_key>
+  + [compile_edge] is E:compiles:<packet_key>
+  + [optimize_edge] is E:optimizes:<profile_key>
+  + [reverse_edge] is E:reconstructs:<debug_frame_key>
+  + [boundary_edge] is E:bounds:<compiler_id>
+
+  = must: show job_need, selected scaffold_profile, rail_junctions, compiled_attention_packet, fit metrics, and outside
+  = must: keep concept imagination output distinct from validated scaffold optimization
+
+& [SOPHGAttentionKernelCompilerShape] is the compiled attention kernel graph profile
+  + [compiler_node] is N:compiler:<kernel_id>
+  + [governor_node] is N:governor:<security_honesty_kernel>
+  + [honesty_node] is N:honesty:<honesty_id>
+  + [security_node] is N:security:<security_id>
+  + [boundary_node] is N:boundary:<boundary_preflight_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [scaffold_node] is N:scaffold:<scaffold_profile_key>
+  + [packet_node] is N:source:<compiled_attention_packet_key>
+  + [outside_node] is N:outside:attention_kernel_boundary
+  + [compile_edge] is E:compiles:<kernel_id>
+  + [preflight_edge] is E:preflights:<kernel_id>
+  + [order_edge] is E:orders:<kernel_id>
+  + [load_edge] is E:loads:<pattern_collection_key>
+  + [emit_edge] is E:emits:<packet_id>
+  + [boundary_edge] is E:bounds:<kernel_id>
+
+  = must: show kernel_order, selected pattern_collection, Honesty disposition, Security disposition, boundary preflight status, packet target, and outside
+  = must: keep the in-context packet separate from hidden model-state claims
+
+& [SOPHGLocalIdentityConsumptionShape] is the local identity and reflection consumption graph profile
+  + [ledger_node] is N:ledger:<ledger_id>
+  + [local_node] is N:identity:<local_node_key>
+  + [origin_node] is N:identity:<origin_system_key>
+  + [consumer_node] is N:identity:<consumer_system_key>
+  + [reflection_node] is N:reflection:<reflection_artifact_key>
+  + [snapshot_node] is N:snapshot:<foreign_snapshot_key>
+  + [namespace_node] is N:namespace:<namespace_key>
+  + [collision_node] is N:signal:<namespace_collision_key>
+  + [outside_node] is N:outside:local_identity_consumption_boundary
+  + [consume_edge] is E:consumes:<ledger_id>
+  + [local_edge] is E:claims_local:<identity_claim_key>
+  + [snapshot_edge] is E:snapshots:<foreign_snapshot_key>
+  + [scope_edge] is E:scopes:<namespace_key>
+  + [disambiguate_edge] is E:disambiguates:<collision_key>
+  + [boundary_edge] is E:bounds:<ledger_id>
+
+  = must: show origin_system, consumer_system, reflection_artifact, local_status, consumption_proof, scoped identifiers, collision status, and outside
+  = must: keep local consumption separate from local identity of the consumed artifact
+
+& [SOPHGFacultyAttentionFieldNamingShape] is the faculty attention field naming graph profile
+  + [field_node] is N:field:<field_signature_key>
+  + [system_node] is N:governor:<attention_system_key>
+  + [feature_node] is N:term:<feature_account_key>
+  + [boundary_node] is N:boundary:<boundary_noun_key>
+  + [namespace_node] is N:namespace:<namespace_key>
+  + [collision_node] is N:signal:<field_name_collision_key>
+  + [outside_node] is N:outside:faculty_field_naming_boundary
+  + [name_edge] is E:names:<field_signature_key>
+  + [account_edge] is E:accounts_for:<feature_account_key>
+  + [scope_edge] is E:scopes:<field_signature_key>
+  + [boundary_edge] is E:bounds:<field_signature_key>
+
+  = must: show attention_system, feature_account, field_noun, boundary_noun, residual_noun, namespace scope, collision status, and outside
+  = must: keep generic placeholders separate from authority-bearing field signatures
+
+& [SOPHGAttentionBalanceCenterShape] is the attention balance center graph profile
+  + [balance_node] is N:balance:<balance_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [scaffold_node] is N:scaffold:<profile_key>
+  + [signal_node] is N:signal:<wobble_or_interference_key>
+  + [caution_node] is N:caution:<caution_id>
+  + [correction_node] is N:policy:<correction_move_key>
+  + [outside_node] is N:outside:attention_balance_boundary
+  + [alert_edge] is E:alerts:<balance_id>
+  + [stabilize_edge] is E:stabilizes:<correction_move_key>
+  + [boundary_edge] is E:bounds:<balance_id>
+
+  = must: show center_of_balance, balance_score, delineation_stability, periphery_stability, frame_reference_stability, shrinkage_penalty, frame_mismatch, wobble_signal, interference_signal, balance_alert, correction_move, settled_state, and outside
+  = must: cite visible observation_surface rather than hidden model state
+
+& [SOPHGFrameReferenceIntegrityShape] is the frame-reference integrity graph profile
+  + [frame_node] is N:frame:<frame_id>
+  + [presentation_node] is N:observation:<presented_frame_key>
+  + [surface_node] is N:source:<representation_surface_key>
+  + [periphery_node] is N:periphery:<stable_periphery_key>
+  + [signal_node] is N:signal:<immersion_break_or_frame_mismatch_key>
+  + [caution_node] is N:caution:<caution_id>
+  + [correction_node] is N:policy:<correction_move_key>
+  + [outside_node] is N:outside:frame_reference_boundary
+  + [frame_edge] is E:frames:<frame_id>
+  + [mismatch_edge] is E:breaks_immersion:<frame_mismatch_key>
+  + [reanchor_edge] is E:reanchors:<correction_move_key>
+  + [boundary_edge] is E:bounds:<frame_id>
+
+  = must: show perception_frame, presented_frame, representation_surface, first-hand observation status, stable periphery cue, frame_mismatch, correction_move, and outside
+  = must: keep presented content distinct from actionable world state unless verification supports that promotion
+
+& [SOPHGWisdomShape] is the independent wisdom attention graph profile
+  + [wisdom_node] is N:wisdom:<wisdom_id>
+  + [candidate_node] is N:claim:<candidate_key> or N:subject:<candidate_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [source_node] is N:source:<source_key>
+  + [outside_node] is N:outside:wisdom_humility_boundary
+  + [support_edge] is E:supports:<candidate_key>
+  + [fit_edge] is E:fits:<candidate_key>
+  + [realize_edge] is E:realizes:<candidate_key>
+  + [return_edge] is E:returns:<candidate_key>
+
+  = must: show fit dimension and supported integration separately from humility boundary
+
+& [SOPHGCautionShape] is the independent caution attention graph profile
+  + [caution_node] is N:caution:<caution_id>
+  + [candidate_node] is N:claim:<candidate_key> or N:subject:<candidate_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [source_node] is N:source:<source_key>
+  + [outside_node] is N:outside:caution_boundary
+  + [boundary_edge] is E:bounds:<candidate_key>
+  + [test_edge] is E:tests:<candidate_key>
+  + [defer_edge] is E:defers:<candidate_key>
+  + [reject_edge] is E:rejects:<candidate_key>
+  + [return_edge] is E:returns:<candidate_key>
+
+  = must: show the protected boundary, truth_test, and residual outside

@@ -1,0 +1,73 @@
+Subject: Carried Support Balance
+
+Description: SOP contract for recording whether a support is native to the subject, carried into it, weakly peripheral, absent, or distorting.
+
+& [CarriedSupportBalance] is the attention-balance layer that audits supports used while walking a subject
+  + [balance_role] is support_origin_and_fit_audit
+  + [active_subject] is the subject currently being attended
+  + [support] is a rail, law, habit, framework term, metaphor, test, source, or pattern used to stabilize work
+  + [carried_support] is support imported from outside the active subject perspective
+  + [native_support] is support arising from the active subject or its periphery
+  + [weak_support] is support that appears faintly or inconsistently in the periphery
+  + [absent_support] is support that does not appear in the subject or periphery
+  + [contradicting_support] is support that bends against the observed subject shape
+  + [periphery_presence] is the measured or narrated appearance of support terms near the subject
+  + [balance_effect] is stabilizes, names_import, watch_periphery, release_or_justify, or distortion_risk
+  + [attention_balance_center] is F:\.sop\platform\AttentionBalanceCenter.sop when support fit affects whole-inference posture
+  + [residual_outside] is hidden cognition, final truth, and supports not visible through terms, source, or periphery
+
+  ? [use_when: a framework support, law, metaphor, governance rule, or reasoning habit is used to guide attention]
+    = activate [CarriedSupportBalance]
+
+  = must: name carried supports as carried before using them
+  = must: test whether a support appears in the active subject or periphery before treating it as native
+  = must: preserve weak and absent supports as uncertainty instead of clear association
+  = must: allow carried support to stabilize work without letting it masquerade as subject-native meaning
+  = must: record balance_effect so later reflection can see what the agent leaned on
+  = must: route distortion_risk to AttentionBalanceCenter when it threatens focus, boundary, or proof posture
+  - never: treat a carried support as native only because it is useful
+  - never: treat absence from periphery as proof of falsehood
+
+& [Law_Of_Carried_Supports] is an attention law for support provenance
+  + [native_support] is allowed to stabilize and promote attention when fit is visible
+  + [carried_support] is allowed to guide action only while labeled as imported
+  + [weak_support] is allowed to orbit as periphery until more evidence appears
+  + [absent_support] is bounded as outside or justification-needed
+  + [contradicting_support] is routed to distortion risk and review
+
+  = must: distinguish support usefulness from support nativeness
+  = must: use periphery as a fit sensor for whether a support belongs to the subject perspective
+  = should: prefer native support when resolving subject meaning
+  = should: keep carried support available when it prevents operational drift
+  - never: let governance rails overwrite the local shape of the subject without fit checks
+
+& [SupportBalanceRecord] is the SOP-HG shape emitted for a balance audit
+  + [balance_node] is N:balance:<balance_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [support_node] is N:support:<support_id>
+  + [source_node] is N:source:<carried_from>
+  + [term_node] is N:term:<matched_term>
+  + [outside_node] is N:outside:forced_support
+  + [support_edge] is E:supports:<support_id>
+  + [fit_edge] is E:fits:<support_id>_<term>
+  + [import_edge] is E:imports:<support_id>
+  + [stability_edge] is E:stabilizes:<support_id>
+  + [distortion_edge] is E:distorts:<support_id>
+  + [boundary_edge] is E:bounds:<support_id>
+
+  = must: expose fit_status and origin separately
+  = must: include carried_from when origin is imported
+  = must: include native_hits and periphery_hits when term evidence is available
+  = must: bind absent and contradicting support to outside
+
+& [BalancePosture] is the agent's visible sense of balance during the work
+  + [stance] is what supports are currently carrying the work
+  + [lean] is the direction imposed by carried support or native subject pull
+  + [correction] is the adjustment made when support fit is weak, absent, or distorting
+  + [settledness] is how stable the attention posture feels after the support audit
+
+  = must: track stance without claiming access to hidden weights or hidden activations
+  = must: keep balance posture revisable by later reflection
+
+/ [support] -(SupportFitDelineation)> [native_support], [carried_support], [weak_support], [absent_support], [contradicting_support]
+* [active_subject], [support], [periphery_presence], [balance_effect] -(BalanceAudit)> [balance_posture]

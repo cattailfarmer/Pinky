@@ -1,0 +1,72 @@
+Subject: Build Environment Periphery Marker
+
+Description: Persistent periphery marker that reminds every matching specification-building frame that the build environment is attention primitives and SOP framework only.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_build_environment_periphery_marker\Dictated_Build_Environment_Periphery_Marker_Source.sop
+@ [source] F:\.sop\platform\AttentionTracker.sop
+@ [source] F:\.sop\platform\AttentionImpressionCompiler.sop
+@ [source] F:\.sop\platform\Attention.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+
+& [BuildEnvironmentPeripheryMarker] is a persistent reminder attached to specification-building impulses
+  + [marker_role] is persistent_periphery_build_constraint
+  + [tracked_subject] is SOP-only build environment for specification work
+  + [marker_text] is build specifications with attention primitives and SOP framework only
+  + [matching_frame] is any action, impulse, focal frame, periphery draw, tracker update, source preservation, contract definition, SOP-HG event, or manager update whose purpose is building specifications
+  + [nonmatching_frame] is explicit execution work, tests, shell inspection, Git bookkeeping, or runtime tooling only when the user has directly requested executable behavior
+  + [build_condition] is attention_primitives_and_sop_framework_only
+  + [runtime_boundary] is Python or other executable code remains outside specification-building unless explicitly requested as runtime tooling
+  + [periphery_reminder] is the marker's low-friction reminder before creating or changing build artifacts
+  + [impulse_hook] is every build impulse must read this marker before choosing artifact form
+  + [action_hook] is every specification-building action must keep the output in SOP unless execution is explicitly required
+  + [reminder_trigger_language] is F:\.sop\platform\ReminderTrigger.sop
+  + [declared_period] is persistent_until_user_replaces_or_retires_marker
+  + [residual_outside] is hidden cognition, unobserved future frames, and executable tooling not explicitly requested
+
+  ? [use_when: building specifications, attention layers, SOP contracts, source documents, trackers, focal records, narrative events, or manager state]
+    = activate [BuildEnvironmentPeripheryMarker]
+
+  = must: associate with every matching_frame
+  = must: express matching through ReminderTrigger when composing with other attention layers
+  = must: remind before acting on every specification_build_impulse
+  = must: prefer SOP contracts, SOP-HG records, tracker records, source documents, and focal/manager state updates
+  = must: treat runtime code as outside unless the user explicitly asks for executable tooling or proof requires a local command
+  = must: preserve the marker in periphery rather than making it the only focus
+  = must: keep the reminder persistent until explicitly retired or replaced
+  = should: let the reminder reduce accidental code creation
+  = should: allow shell and Git inspection as workspace operation, not as specification artifact
+  - never: create a Python runtime merely because an attention idea is clear
+  - never: confuse executable helper code with the attention primitive or SOP framework itself
+  - never: let the marker block explicitly requested runtime execution; instead, mark that request as outside normal specification-building
+
+& [MarkerAssociationLaw] is the frame matching law for this persistent marker
+  + [frame_match] is true when purpose includes build specification, define contract, record attention, preserve source, update tracker, update focal state, update manager state, write SOP-HG event, or shape an attention primitive
+  + [frame_reminder] is "SOP-only build environment: attention primitives and SOP framework first"
+  + [artifact_choice] is SOP source, SOP contract, SOP-HG event, tracker, focal state, or manager state
+  + [outside_choice] is runtime code, tests, generated executable helpers, or unsupported hidden model claims
+
+  = must: evaluate frame_match before selecting artifact_choice
+  = must: attach frame_reminder to matched frames as periphery, not proof
+  = must: route outside_choice through explicit user request or runtime-boundary justification
+
+(reminder_trigger) :specification_build_impulse: /build_environment_sop_only_marker under specification-building frames/ |runtime_code_without_explicit_need|
+  = reminder_name: build_environment_sop_only_marker
+  = reminder_payload: SOP-only build environment: attention primitives and SOP framework first
+  = invoked_attention_layer: F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+  = recurrence_guard: once_per_matching_artifact_choice_frame
+
+& [PersistentMarkerRecord] is the SOP-HG shape for this marker
+  + [marker_node] is N:tracker:<marker_id>
+  + [subject_node] is N:subject:sop_only_build_environment
+  + [condition_node] is N:condition:specification_build_impulse
+  + [reminder_node] is N:periphery:sop_only_build_environment
+  + [boundary_node] is N:outside:runtime_boundary
+  + [track_edge] is E:tracks:<marker_id>
+  + [associate_edge] is E:associates:<marker_id>_<condition>
+  + [notice_edge] is E:notices:<marker_id>_<reminder>
+  + [bound_edge] is E:bounds:<marker_id>
+
+  = must: expose declared_period, matching_frame, build_condition, runtime_boundary, and reminder_text
+
+/ [specification_build_impulse] -(BuildEnvironmentMarkerMatch)> [matching_frame], [periphery_reminder], [runtime_boundary]
+* [matching_frame], [impulse_hook], [action_hook] -(PersistentPeripheryReminder)> [build_condition], [artifact_choice], [residual_outside]

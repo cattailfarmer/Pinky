@@ -1,0 +1,115 @@
+Subject: 2026-06-23_semantic_correlation_graph Semantic Correlation Graph
+
+& [Graph:2026_06_23_semantic_correlation_graph] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG semantic-correlation-graph
+
+  + [N:index:2026_06_23_semantic_correlation_graph] is 2026-06-23_semantic_correlation_graph
+    = correlation_count: 32
+  + [N:outside:semantic_proof] is semantic proof not established by attention direction graph
+  + [N:directive:attention_rigging_seed] is Capture directive-shaped attention over semantic bucket correlations.
+    = identified: attention_rigging
+    = inside: attention,directive,correlation
+    = boundary: proof,outside
+    = subject_a: semantic_hash_table
+    = subject_b: attention_directive
+    = boost: 4
+  + [N:bucket:term_outside] is term:outside
+    = dimension: term
+    = value: outside
+  + [N:bucket:term_directive] is term:directive
+    = dimension: term
+    = value: directive
+  + [N:bucket:term_semantic_hash_table] is term:semantic_hash_table
+    = dimension: term
+    = value: semantic_hash_table
+  + [N:bucket:term_attention_directive] is term:attention_directive
+    = dimension: term
+    = value: attention_directive
+  + [N:bucket:term_proof] is term:proof
+    = dimension: term
+    = value: proof
+  + [N:bucket:subject_semantic_hash_table] is subject:semantic_hash_table
+    = dimension: subject
+    = value: semantic_hash_table
+  + [N:bucket:term_correlation] is term:correlation
+    = dimension: term
+    = value: correlation
+  + [N:bucket:subject_attention_directive] is subject:attention_directive
+    = dimension: subject
+    = value: attention_directive
+  + [N:bucket:term_semantic] is term:semantic
+    = dimension: term
+    = value: semantic
+  + [N:bucket:term_periphery] is term:periphery
+    = dimension: term
+    = value: periphery
+  + [N:bucket:term_attention] is term:attention
+    = dimension: term
+    = value: attention
+  + [N:term:attention_rigging_association_surface] is attention_rigging association surface
+  + [N:bucket:term_platform] is term:platform
+    = dimension: term
+    = value: platform
+  + [N:bucket:term_source_documents] is term:source_documents
+    = dimension: term
+    = value: source_documents
+  + [N:bucket:term_focus] is term:focus
+    = dimension: term
+    = value: focus
+  + [N:bucket:term_narrative] is term:narrative
+    = dimension: term
+    = value: narrative
+  + [N:bucket:term_boundary] is term:boundary
+    = dimension: term
+    = value: boundary
+  + [N:bucket:term_state] is term:state
+    = dimension: term
+    = value: state
+
+/ [E:tilts:attention_rigging_seed_term_outside] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_outside; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_directive] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_directive; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_semantic_hash_table] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_semantic_hash_table; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_attention_directive] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_attention_directive; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_proof] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_proof; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_subject_semantic_hash_table] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:subject_semantic_hash_table; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_correlation] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_correlation; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_subject_attention_directive] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:subject_attention_directive; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_semantic] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_semantic; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_periphery] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_periphery; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:tilts:attention_rigging_seed_term_attention] -(tilts; directive=N:directive:attention_rigging_seed; bucket=N:bucket:term_attention; boost=4)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:captures:attention_rigging_seed] -(captures; directive=N:directive:attention_rigging_seed; outside=N:outside:semantic_proof; identified=attention_rigging; inside=attention,directive,correlation; boundary=proof,outside)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_attention_term_outside] -(correlates; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_outside; base_weight=582; directive_weight=8; total_weight=590; shared_count=97)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_attention_term_outside] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_outside; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=590)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_platform_term_source_documents] -(correlates; bucket_a=N:bucket:term_platform; bucket_b=N:bucket:term_source_documents; base_weight=588; directive_weight=0; total_weight=588; shared_count=98)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_attention_term_periphery] -(correlates; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_periphery; base_weight=576; directive_weight=8; total_weight=584; shared_count=96)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_attention_term_periphery] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_periphery; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=584)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_attention_term_platform] -(correlates; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_platform; base_weight=576; directive_weight=4; total_weight=580; shared_count=96)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_attention_term_platform] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_platform; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=580)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_periphery_term_platform] -(correlates; bucket_a=N:bucket:term_periphery; bucket_b=N:bucket:term_platform; base_weight=558; directive_weight=4; total_weight=562; shared_count=93)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_periphery_term_platform] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_periphery; bucket_b=N:bucket:term_platform; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=562)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_outside_term_periphery] -(correlates; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_periphery; base_weight=528; directive_weight=8; total_weight=536; shared_count=88)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_outside_term_periphery] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_periphery; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=536)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_outside_term_platform] -(correlates; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_platform; base_weight=528; directive_weight=4; total_weight=532; shared_count=88)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_outside_term_platform] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_platform; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=532)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_outside_term_proof] -(correlates; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_proof; base_weight=492; directive_weight=8; total_weight=500; shared_count=82)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_outside_term_proof] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_proof; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=500)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_focus_term_periphery] -(correlates; bucket_a=N:bucket:term_focus; bucket_b=N:bucket:term_periphery; base_weight=492; directive_weight=4; total_weight=496; shared_count=82)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_focus_term_periphery] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_focus; bucket_b=N:bucket:term_periphery; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=496)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_attention_term_proof] -(correlates; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_proof; base_weight=486; directive_weight=8; total_weight=494; shared_count=81)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_attention_term_proof] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_proof; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=494)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_narrative_term_outside] -(correlates; bucket_a=N:bucket:term_narrative; bucket_b=N:bucket:term_outside; base_weight=486; directive_weight=4; total_weight=490; shared_count=81)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_narrative_term_outside] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_narrative; bucket_b=N:bucket:term_outside; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=490)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_attention_term_focus] -(correlates; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_focus; base_weight=474; directive_weight=4; total_weight=478; shared_count=79)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_attention_term_focus] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_focus; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=478)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_attention_term_narrative] -(correlates; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_narrative; base_weight=450; directive_weight=4; total_weight=454; shared_count=75)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_attention_term_narrative] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_attention; bucket_b=N:bucket:term_narrative; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=454)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_boundary_term_outside] -(correlates; bucket_a=N:bucket:term_boundary; bucket_b=N:bucket:term_outside; base_weight=444; directive_weight=4; total_weight=448; shared_count=74)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_boundary_term_outside] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_boundary; bucket_b=N:bucket:term_outside; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=448)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_outside_term_state] -(correlates; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_state; base_weight=438; directive_weight=4; total_weight=442; shared_count=73)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_outside_term_state] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_outside; bucket_b=N:bucket:term_state; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=442)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:correlates:term_platform_term_proof] -(correlates; bucket_a=N:bucket:term_platform; bucket_b=N:bucket:term_proof; base_weight=438; directive_weight=4; total_weight=442; shared_count=73)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:associates:attention_rigging_seed_term_platform_term_proof] -(associates; directive=N:directive:attention_rigging_seed; bucket_a=N:bucket:term_platform; bucket_b=N:bucket:term_proof; surface=N:term:attention_rigging_association_surface; subject_a=semantic_hash_table; subject_b=attention_directive; total_weight=442)> [Graph:2026_06_23_semantic_correlation_graph]
+/ [E:bounds:2026_06_23_semantic_correlation_graph] -(bounds; graph=N:index:2026_06_23_semantic_correlation_graph; outside=N:outside:semantic_proof)> [Graph:2026_06_23_semantic_correlation_graph]
+
+- outside: weighted bucket correlation directs attention and does not prove meaning

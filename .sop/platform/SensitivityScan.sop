@@ -1,0 +1,42 @@
+Subject: Sensitivity Scan
+
+Description: SOP contract for scanning repository bookends into thought-current correlation depth.
+
+& [SensitivityScanProgram] is a scan that walks SOP changes between Git bookends
+  + [start_bookend] is the older commit, tag, empty tree, major update ref, or prior chunk
+  + [end_bookend] is the newer commit, tag, HEAD, or WORKTREE
+  + [diff_report] is changed SOP file status and line-stat evidence
+  + [thought_current] is the set of changed SOP files in the span
+  + [correlation_terms] is shared terms found across changed SOP files
+  + [touch_count] is how many changed files or moments touch a subject term
+  + [heat] is touch plus line-change pressure
+  + [reflection_layer] is surface, hair, skin, pressure, or impact
+  + [scan_record] is the emitted SOP event under events\scans
+  + [hypergraph_record] is the optional SOP-HG graph view under events\scans
+
+& [SensitivityScanProcedure] is the deterministic procedure
+  + [step_001_select_bookends] is choose base and head refs
+  + [step_002_collect_diff] is gather name-status and numstat for SOP files
+  + [step_003_extract_terms] is extract terms from changed SOP paths and available content
+  + [step_004_measure_touch] is count how many changed files touch each term
+  + [step_005_measure_heat] is add line-change pressure to touch
+  + [step_006_classify_depth] is route each term through reflection layers
+  + [step_007_emit_scan] is write an inspectable SOP scan record
+  + [step_008_emit_hypergraph] is optionally write a SOP-HG graph of bookends, files, signals, layers, and outside
+  + [step_009_preserve_outside] is name what cannot be inferred from diff evidence
+
+  = must: use Git bookends as the event boundary
+  = must: prefer changed SOP files over memory when describing what changed
+  = must: mark semantic why as narrative inference unless supported by source text
+  = should: use pressure and impact terms as candidates for deeper ThinkAbout work
+  = should: emit SOP-HG when the user needs to inspect the scan as a hypergraph
+  - never: call an idle sync successful unless a push actually occurred
+
+& [SensitivitySignal] is one term or subject touched during a scan
+  + [subject_key] is the term or subject under sensitivity
+  + [touch_count] is the changed-file touch count
+  + [heat] is the weighted line-change signal
+  + [layer] is surface, hair, skin, pressure, or impact
+  + [retention_policy] is fade, notice, triangulate, sustain, or emphasize
+  + [evidence_paths] is the changed SOP files touching the subject
+  + [residual_outside] is meaning not proven by the scan

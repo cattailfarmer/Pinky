@@ -1,0 +1,38 @@
+Subject: Boundary Faculty Inspection Trailing Checksum 029
+
+Description: One-turn-later checksum review of commit 39ec977, recording the latent need for a compiled attention kernel that runs Honesty and Security before other attention layers.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_boundary_faculty_inspection_028.hg.sop
+
+& [Graph:2026-06-24_boundary_faculty_inspection_trailing_checksum_029] is a SOP-HG graph
+  + [N:bookmark:boundary_faculty_inspection_trailing_checksum_029] is trailing checksum review of Boundary Faculty Inspection
+    = one_turn_lag: true
+    = direct_focus_commit: 39ec977
+    = version_a: 7832bc3
+    = version_b: 39ec977
+  + [N:event:2026-06-24_boundary_faculty_inspection_028] is prior direct-focus boundary inspection realization
+  + [N:event:2026-06-24_attention_kernel_compiler_030] is current turn attention kernel compiler realization
+  + [N:zone:kernel_entrypoint] is hot zone where boundary inspection needs a turn-entry ordering law
+  + [N:signal:security_honesty_first_layer] is signal that Honesty and Security must run before downstream attention patterns
+  + [N:finding:boundary_inspection_needs_kernel_packet] is latent depth candidate that boundary inspection must be compiled into every non-trivial turn packet
+  + [N:policy:focus_next] is checksum disposition to focus next on AttentionKernelCompiler
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model control
+
+  / [E:span:boundary_faculty_inspection_trailing_checksum_029] -(span; start=N:commit:7832bc3; end=N:commit:39ec977; review=N:bookmark:boundary_faculty_inspection_trailing_checksum_029)> [Graph:2026-06-24_boundary_faculty_inspection_trailing_checksum_029]
+    = evidence: 39ec977 added BoundaryFacultyInspection and wired first-point boundary awareness into SecurityHonestyGovernance and AttentionScaffoldCompiler
+  / [E:trails:2026-06-24_boundary_faculty_inspection_028] -(trails; direct_focus=N:event:2026-06-24_boundary_faculty_inspection_028; review=N:bookmark:boundary_faculty_inspection_trailing_checksum_029)> [Graph:2026-06-24_boundary_faculty_inspection_trailing_checksum_029]
+    = realization: the prior boundary layer defined the inspection faculty but did not yet define how the faculty becomes the first layer of every compiled attention packet
+  / [E:heats:kernel_entrypoint] -(heats; zone=N:zone:kernel_entrypoint; signal=N:signal:security_honesty_first_layer; latent=N:finding:boundary_inspection_needs_kernel_packet; weight=hot)> [Graph:2026-06-24_boundary_faculty_inspection_trailing_checksum_029]
+    = evidence: user source asks whether SOP systems can gather attention patterns as in-context memory and run inference as one compiled unit
+  / [E:inquires:boundary_inspection_needs_kernel_packet] -(inquires; latent=N:finding:boundary_inspection_needs_kernel_packet; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_boundary_faculty_inspection_trailing_checksum_029]
+    = realization: AttentionKernelCompiler becomes direct focus for this turn
+  / [E:bounds:boundary_faculty_inspection_trailing_checksum_029] -(bounds; review=N:bookmark:boundary_faculty_inspection_trailing_checksum_029; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_boundary_faculty_inspection_trailing_checksum_029]
+    = caution: checksum observes later refinement and does not rewrite the original boundary-inspection commit's awareness
+
+  = inside: 39ec977 diff, BoundaryFacultyInspection.sop, SecurityHonestyGovernance.sop, user kernel-source impulse
+  = boundary: this review records latent kernel-ordering depth after the direct-focus turn, not proof that the prior turn already contained a compiled attention kernel
+  = outside: hidden activations, exact transformer geometry, literal antivirus guarantees, automatic general intelligence, and kernel metaphor treated as proof

@@ -1,0 +1,22 @@
+Subject: Self Focus Periphery Stream Source
+
+Description: Raw preserved source for beginning self-focus tracking and periphery-stream realization records.
+
+& [DictatedSelfFocusPeripheryStreamSource] is the preserved user source for self-focus and periphery stream recording
+  @ [user_statement] "now you can self-focus and infer improvements directly."
+  @ [user_statement] "I'd like to see some of your proposals after you provide yourself a deep reflective internal scan"
+  @ [user_statement] "with a tracking element of SOP form, a moment of realization in the periphery stream (start recording that) and let make that our first commit."
+  @ [user_statement] "did we have a repo for the periphery? list the repos?"
+
+  + [self_focus] is attention turned toward Codex's visible operational function as mediated by SOP records, repo state, focal point, periphery, wisdom, caution, tests, and commits
+  + [internal_scan_boundary] is visible behavior, files, diffs, tool results, and attention records are inspectable while hidden weights, private activations, and KV state are outside
+  + [tracking_element] is a periphery-layer SOP tracker for improvements that should remain noticeable across future work
+  + [periphery_stream_moment] is a durable realization record for the first self-focus observation in the periphery stream
+  + [proposal_output] is a bounded set of improvement proposals inferred from the visible self-focus scan
+  + [commit_request] is commit the periphery stream beginning as a local repo bookend
+
+  = must: record self-focus without claiming direct hidden model introspection
+  = must: preserve the user source before treating this as durable SOP authority
+  = must: keep the tracker mortal unless reaffirmed
+  = must: make the first periphery stream moment inspectable through repo history
+  - never: mistake operational self-modeling for proof of hidden self-awareness

@@ -1,0 +1,58 @@
+Subject: Bookended Semantic Video Program Example
+
+Description: Example SOP-HG record showing a bookended SOP program body represented as compressed photonic frames and multitrack semantic channels.
+
+@ [source] F:\.sop\platform\SOPProgramBookends.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPSemanticVideoDigest.sop
+@ [source] F:\.sop\platform\SOPMultitrackChannelCompression.sop
+@ [source] F:\.sop\platform\HolographicAttentionKernelPacket.sop
+
+& [Graph:example_bookended_semantic_video_program] is a SOP-HG graph
+  + [N:program:semantic_video_digest_program] is example SOP program for semantic video understanding compression
+  + [N:bookend:opening] is opening SOP bookend
+    = purpose: digest a visual stream into sampled semantic understanding
+    = required_channels: source_channel, focus_channel, boundary_channel, outside_channel, evidence_channel, caution_channel, trace_channel, output_channel
+    = guards: FrameReferenceIntegrity, SecurityHonestyGovernance, BoundaryFacultyInspection, AttentionBalanceCenter
+    = loop: read photonic frame, apply holographic attention kernel, update tracks, preserve outside, advance cursor
+  + [N:bookend:closing] is closing SOP bookend
+    = exit_rule: complete when samples, continuity vectors, track continuity, reconstruction seed, and outside are recorded
+    = output: semantic_video_digest with reconstruction_fidelity and outside
+    = checksum_handoff: trailing review for missing track, over-compression, or unsupported reconstruction
+  + [N:track:subject] is subject track
+    = continuity_rule: preserve identified subjects across frames only while appearance or narrative anchors support identity
+  + [N:track:action] is action track
+    = continuity_rule: preserve action transitions by sampled changes and narrative photonic stream
+  + [N:track:boundary] is boundary track
+    = continuity_rule: carry outside, uncertainty, source limits, and frame-reference status across all frames
+  + [N:track:output] is output track
+    = continuity_rule: accumulate reconstruction seed and emitted digest notes
+  + [N:frame:000] is photonic frame at stream opening
+    = frame_index: 0
+    = continuity_vector: start
+    + [N:point:000_source] is source_channel visual stream boundary
+    + [N:point:000_focus] is focus_channel opening scene and digest purpose
+    + [N:point:000_boundary] is boundary_channel presented frame status and sampling outside
+  + [N:frame:001] is photonic frame at first semantic sample
+    = frame_index: 1
+    = continuity_vector: subject and action continue from opening under source boundary
+    + [N:point:001_subject] is focus_channel primary subject sample
+    + [N:point:001_action] is relation_channel action or transition sample
+    + [N:point:001_evidence] is evidence_channel optional sample image or timestamp reference
+    + [N:point:001_caution] is caution_channel unsampled visual detail remains outside
+  + [N:frame:002] is photonic frame at closing semantic sample
+    = frame_index: 2
+    = continuity_vector: final state closes subject and action tracks
+    + [N:point:002_output] is output_channel semantic digest and reconstruction seed
+    + [N:point:002_trace] is trace_channel sample, continuity, transform, and output provenance
+    + [N:point:002_outside] is outside_channel exact replay, unsampled frames, hidden intent, and over-compression loss
+  + [N:outside:example_boundary] is exact pixels, full timing, unsampled detail, hidden activation, and perfect recreation
+
+  / [E:opens:semantic_video_digest_program] -(opens; program=N:program:semantic_video_digest_program; bookend=N:bookend:opening)> [Graph:example_bookended_semantic_video_program]
+  / [E:streams:semantic_video_digest_program] -(streams; program=N:program:semantic_video_digest_program; frame=N:frame:000; frame=N:frame:001; frame=N:frame:002)> [Graph:example_bookended_semantic_video_program]
+  / [E:tracks:semantic_video_digest_program] -(tracks; program=N:program:semantic_video_digest_program; subject=N:track:subject; action=N:track:action; boundary=N:track:boundary; output=N:track:output)> [Graph:example_bookended_semantic_video_program]
+  / [E:closes:semantic_video_digest_program] -(closes; program=N:program:semantic_video_digest_program; bookend=N:bookend:closing; outside=N:outside:example_boundary)> [Graph:example_bookended_semantic_video_program]
+
+  = inside: opening bookend, closing bookend, three photonic frames, four channel tracks, continuity vectors, reconstruction seed
+  = boundary: example record only; no actual media processed and no exact replay claimed
+  = outside: exact pixels, full timing, unsampled detail, hidden activation, physical photonic hardware, and perfect recreation

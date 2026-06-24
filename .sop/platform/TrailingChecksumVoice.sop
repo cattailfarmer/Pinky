@@ -1,0 +1,105 @@
+Subject: Trailing Checksum Voice
+
+Description: One-turn-later backward-facing review cadence for detecting latent depth, hot zones, and warmth zones after a direct-focus turn.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_trailing_checksum_voice\Dictated_Trailing_Checksum_Voice_Source.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+@ [source] F:\.sop\platform\RepoFirstInternalScan.sop
+@ [source] F:\.sop\platform\ChangelogCorrelationWeightNet.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\AttentionTracker.sop
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+
+& [TrailingChecksumVoice] is the backward-facing review attention pattern that runs one turn after direct focus attention
+  + [pattern_role] is one_turn_lag_attention_checksum
+  + [direct_focus_turn] is the preceding turn where focus acted, authored source, changed contracts, emitted runtime work, or committed a primary result
+  + [review_turn] is the next turn that looks backward over direct_focus_turn instead of continuing forward without reflection
+  + [one_turn_lag] is the required delay between direct_focus_turn and backward_facing_review_commit
+  + [backward_facing_review_commit] is the commit produced by review_turn that records checksum findings, correlations, hot zones, warmth zones, latent depth candidates, and outside
+  + [trailing_checksum_voice] is the attention voice that catches important meaning whose weight became visible only after direct focus finished
+  + [checksum_frame] is the commit bookend, focal state, source record, periphery record, manager state, tests, and generated index surface under review
+  + [observed_greater_meaning] is a subject, relation, fault, opportunity, or purpose whose importance exceeds what direct_focus_turn explicitly realized
+  + [warmth_zone] is a moderate correlation area that should remain available as periphery, tracker, or later scan material
+  + [hot_zone] is a high-salience correlation area that should draw focus, branch refinement, tracker, caution, wisdom, or deep probe
+  + [latent_depth_candidate] is a hot_zone or repeated warmth_zone that appears to contain unexplored structure, missing explanation, or future inference value
+  + [inquiry_preparation] is the packet of bookends, terms, source, correlations, anchors, and outside needed to ask deeper questions later
+  + [checksum_disposition] is no_action, note_warmth, track, focus_next, branch_refinement, deep_probe, caution, wisdom, or outside
+  + [security_honesty_governance] is F:\.sop\platform\SecurityHonestyGovernance.sop when delayed feedback creates truth-sensitive claims, action-sensitive conclusions, or self-reflective resonance
+  + [boundary_faculty_inspection] is F:\.sop\platform\BoundaryFacultyInspection.sop when delayed feedback reveals identity-boundary misdirection or safety-boundary weakness
+  + [outside] is hidden cognition, exact hidden-state replay, speculative importance, unsupported causation, and claims that later checksum insight was already fully observed during direct_focus_turn
+
+  ? [use_when: the previous turn produced a direct-focus commit or important work frame that needs delayed review]
+    = activate [TrailingChecksumVoice]
+
+  = must: run one review turn after direct_focus_turn when the user has not explicitly redirected away from reflection
+  = must: identify checksum_frame before judging importance
+  = must: use TurnBookmark to compare direct_focus_turn against its source, plan, state, and realized outputs
+  = must: use ChangelogCorrelationWeightNet and AttentionWeightScale to distinguish warmth_zone from hot_zone
+  = must: preserve warmth_zone as periphery unless recurrence, load, or user direction requires escalation
+  = must: route hot_zone through Caution and Wisdom before durable focus promotion
+  = must: route self_reflective hot_zone or impact_zone through SecurityHonestyGovernance before claim, action, identity, or proof promotion
+  = must: route identity_boundary hot_zone through BoundaryFacultyInspection before truth, representation, or security conclusions
+  = must: route latent_depth_candidate to PeripheryDimensionalProbe, MomentAwarenessBranchRefinement, tracker, or manager task when deeper inquiry is warranted
+  = must: label checksum insight as trailing_reflection, not original direct-focus awareness
+  = must: emit backward_facing_review_commit when the review produces durable findings or process corrections
+  = should: keep review_turn small enough to complete without swallowing the next direct-focus turn
+  = should: record no_action when the checksum finds no meaningful heat beyond stable purpose
+  - never: skip the trailing review merely because the direct-focus commit felt complete
+  - never: promote warmth_zone to hot_zone without evidence diversity or recurrence
+  - never: let trailing review rewrite the direct-focus commit's original awareness
+
+& [TrailingChecksumSequence] is the canonical cadence for the trailing checksum voice
+  + [step_001_find_direct_focus] is identify the previous direct_focus_turn and its commit or work frame
+  + [step_002_bind_bookends] is bind before and after refs for the direct_focus_turn
+  + [step_003_collect_frame] is gather source docs, focal state, periphery stream, manager state, tests, generated indexes, and changed files
+  + [step_004_repo_first_scan] is read diff stat and name-status before narrative judgment
+  + [step_005_weight_map] is compute correlation heat and confidence with ChangelogCorrelationWeightNet and AttentionWeightScale
+  + [step_006_zone_classification] is classify signals as cold, warmth_zone, hot_zone, or outside
+  + [step_007_latent_depth] is identify latent_depth_candidate values from hot zones or repeated warmth zones
+  + [step_008_disposition] is choose no_action, note_warmth, track, focus_next, branch_refinement, deep_probe, caution, wisdom, or outside
+  + [step_009_record] is emit bookmark, periphery stream, tracker, manager task, or branch refinement artifact
+  + [step_010_commit] is commit the backward-facing review artifacts as the trailing checksum commit
+
+  = must: run steps_001 through step_006 for every durable trailing checksum review
+  = must: run steps_007 through step_010 when hot_zone, latent_depth_candidate, or process correction is found
+  = must: record skipped steps and reason when the review is intentionally abbreviated
+
+& [ChecksumZoneScale] is the zone classification vocabulary for delayed review attention
+  + [cold_zone] is no meaningful correlation beyond ordinary completion or generated noise
+  + [warmth_zone] is a modest but coherent correlation that should remain available to periphery or future scan
+  + [hot_zone] is a strong, recurrent, surprising, risky, or purpose-bearing correlation that should catch attention
+  + [impact_zone] is a hot_zone with high consequence, contradiction, safety, architecture, or identity-shaping potential
+  + [latent_depth_candidate] is a hot_zone or repeated warmth_zone with unexplored structure worth preparing for inquiry
+
+  = must: keep heat separate from confidence
+  = must: require source, narrative, state, or recurrence support before classifying hot_zone
+  = must: route impact_zone through Caution before action and Wisdom before integration
+  = must: route impact_zone through SecurityHonestyGovernance when the impact comes from self-reflective feedback, truth status, action risk, or resonance amplification
+
+& [TrailingChecksumRecord] is the SOP-HG shape for a one-turn trailing checksum review
+  + [review_node] is N:bookmark:<review_id>
+  + [direct_focus_node] is N:event:<direct_focus_turn_key>
+  + [review_turn_node] is N:event:<review_turn_key>
+  + [bookend_a_node] is N:commit:<version_a>
+  + [bookend_b_node] is N:commit:<version_b>
+  + [zone_node] is N:zone:<zone_key>
+  + [signal_node] is N:signal:<signal_key>
+  + [latent_node] is N:finding:<latent_depth_candidate_key>
+  + [disposition_node] is N:policy:<checksum_disposition_key>
+  + [outside_node] is N:outside:trailing_checksum_boundary
+  + [span_edge] is E:span:<review_id>
+  + [trail_edge] is E:trails:<direct_focus_turn_key>
+  + [checksum_edge] is E:checksums:<review_id>
+  + [heat_edge] is E:heats:<zone_key>
+  + [warm_edge] is E:warms:<zone_key>
+  + [inquire_edge] is E:inquires:<latent_depth_candidate_key>
+  + [boundary_edge] is E:bounds:<review_id>
+
+  = must: show one_turn_lag, direct_focus_turn, review_turn, bookends, zone classification, checksum_disposition, and outside
+  = must: cite evidence for every hot_zone and latent_depth_candidate
+
+/ [direct_focus_turn], [review_turn] -(TrailingChecksumCadence)> [one_turn_lag], [outside]
+* [checksum_frame], [warmth_zone], [hot_zone], [latent_depth_candidate] -(TrailingChecksumReview)> [checksum_disposition], [inquiry_preparation], [outside]

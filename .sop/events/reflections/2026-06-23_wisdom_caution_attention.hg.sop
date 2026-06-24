@@ -1,0 +1,26 @@
+Subject: Wisdom Caution Attention Reflection
+
+Description: SOP-HG reflection for promoting wisdom and caution into a paired realization gate.
+
+& [Graph:wisdom_caution_attention_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG wisdom-caution-gate
+
+  + [N:governor:wisdom_caution] is WisdomCaution
+  + [N:wisdom:integrative_judgment] is wisdom as support, fit, timing, shape, and value integration
+  + [N:caution:boundary_judgment] is caution as uncertainty, contradiction, scope, causation, authority, and staleness boundary
+  + [N:focus:current_focal_point] is CurrentFocalPoint
+    = focus_subject: wisdom/caution attention pattern for gating realization
+  + [N:claim:promote_wisdom_caution_pattern] is wisdom and caution should be a first-layer attention pattern
+  + [N:source:platform_WisdomCaution_sop] is platform\WisdomCaution.sop
+  + [N:source:pinky_slice_10] is C:\Project\Pinky\AttentionFramework\planning\project_manager\slices\Slice_10_Wisdom_Caution_Governance.sop
+  + [N:outside:wisdom_caution_boundary] is proof, hidden cognition, unsupported heat, and untested causal truth outside the gate
+
+/ [E:gates:promote_wisdom_caution_pattern] -(gates; governor=N:governor:wisdom_caution; candidate=N:claim:promote_wisdom_caution_pattern; focus=N:focus:current_focal_point)> [Graph:wisdom_caution_attention_2026_06_23]
+/ [E:supports:wisdom_caution_source] -(supports; wisdom=N:wisdom:integrative_judgment; caution=N:caution:boundary_judgment; source=N:source:platform_WisdomCaution_sop; carried_source=N:source:pinky_slice_10)> [Graph:wisdom_caution_attention_2026_06_23]
+/ [E:tests:wisdom_caution_candidate] -(tests; caution=N:caution:boundary_judgment; candidate=N:claim:promote_wisdom_caution_pattern; truth_test=use_before_realization)> [Graph:wisdom_caution_attention_2026_06_23]
+/ [E:realizes:wisdom_caution_pattern] -(realizes; wisdom=N:wisdom:integrative_judgment; candidate=N:claim:promote_wisdom_caution_pattern; disposition=realize)> [Graph:wisdom_caution_attention_2026_06_23]
+/ [E:bounds:wisdom_caution_boundary] -(bounds; caution=N:caution:boundary_judgment; outside=N:outside:wisdom_caution_boundary; candidate=N:claim:promote_wisdom_caution_pattern)> [Graph:wisdom_caution_attention_2026_06_23]
+/ [E:returns:wisdom_caution_to_focus] -(returns; governor=N:governor:wisdom_caution; focus=N:focus:current_focal_point; result=focal_update)> [Graph:wisdom_caution_attention_2026_06_23]
+
+- outside: the pattern governs attention realization and does not prove hidden cognition, causal truth, or model-internal states

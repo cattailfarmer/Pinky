@@ -1,0 +1,29 @@
+Subject: Repo Role Index
+
+Description: Local Git repository role map for Pinky .sop authority and backup.
+
+& [RepoRoleIndex] is the local repository role map for the attention/periphery system
+  + [primary_workspace_repo] is C:\Project\Pinky
+    = role: GitHub-facing repository and master workspace context
+    = note: multi-project workspace root; the active SOP authority lives under C:\Project\Pinky\.sop
+  + [active_sop_authority_root] is C:\Project\Pinky\.sop
+    = role: local source authority, awareness stream, tracker root, reflection index, and publication payload through Pinky Git
+    = seed_source: F:\.sop at commit 3f127da
+  + [backup_repo] is F:\.sop
+    = role: local backup, seed snapshot, and comparative satellite
+    = note: backup-only state does not define local truth unless imported into C:\Project\Pinky\.sop
+  + [nested_repo] is C:\Project\Pinky\home-workspace
+    = role: nested_project_repo
+    = note: separate repository under Pinky; do not absorb into .sop commits unless explicitly selected
+  + [nested_repo] is C:\Project\Pinky\stable-diffusion-v2-1-base
+    = role: nested_external_or_model_repo
+    = note: separate repository under Pinky; likely external/model material and not part of the SOP authority root
+
+  = must: use C:\Project\Pinky\.sop for active SOP authority work
+  = must: publish through C:\Project\Pinky Git when remote publication is requested
+  = must: treat C:\Project\Pinky as master workspace context, not as a single project identity
+  = must: keep nested repositories separate from .sop commit reflection
+  = must: treat F:\.sop as backup/reference unless explicitly promoted again
+  = should: update this index when new local Git repos are discovered or roles change
+  - never: stage nested repo content into a parent repo by accident
+  - never: let backup-only state override Pinky .sop local authority

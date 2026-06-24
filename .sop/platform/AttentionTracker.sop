@@ -1,0 +1,126 @@
+Subject: Attention Tracker
+
+Description: Periphery-layer SOP contract for attaching expiring attention handles to subjects that may later draw focus.
+
+& [AttentionTracker] is the periphery-layer attention file for subjects that should remain noticeable across frames
+  + [tracker_role] is transient_periphery_attention_handle
+  + [authority_layer] is the .sop tracker record, not the Python runtime
+  + [focal_target] is F:\.sop\platform\FocalPoint.sop when tracking creates enough draw to become focus
+  + [tracked_subject] is the subject, detail, support, relation, concern, or opportunity being kept noticeable
+  + [track_reason] is why attention attached to the subject
+  + [current_weight] is the impulse strength for noticing the subject during inference
+  + [native_context] is context that belongs directly to the tracked subject
+  + [periphery_context] is nearby weak or emerging associations that may draw later focal point selection
+  + [relation_context] is related subjects, supports, contradictions, causes, constraints, and open questions
+  + [narrative_refs] is narrative moments where the subject mattered
+  + [scan_refs] is sensitivity scans or Git bookends where the subject appears
+  + [debug_surface] is source anchors, inspection paths, status, open uncertainty, and evidence pointers
+  + [runtime_manager] is optional Python code that creates, expires, validates, or renders tracker SOP files
+  + [local_context_attention] is an unpersisted direction held only in the current Codex context window
+  + [default_period_sessions] is 1
+  + [declared_period_sessions] is optional override for how many sessions tracking may survive without reaffirmation
+  + [last_reaffirmed_session] is the most recent session index where the tracker was explicitly reaffirmed
+  + [expires_after_session] is last_reaffirmed_session plus the active period
+  + [residual_outside] is hidden cognition, final truth, and stale associations not reaffirmed by evidence
+
+  ? [use_when: the phrase track that, keep an eye on that, watch this, or an equivalent directive marks a subject for later noticing]
+    = activate [AttentionTracker]
+
+  = must: create a tracker with handle, reason, weight, context, relations, periphery, narrative, scan, and debug pointers
+  = must: remain periphery-layer attention until liminal draw selects a focal point
+  = must: expire default tracking after one unreaffirmed session
+  = must: preserve declared period when the user or contract explicitly states one
+  = must: lower or expire stale tracking instead of letting it silently dominate inference
+  = must: make reaffirmation explicit when a tracked subject should remain live
+  = must: treat .sop tracker files as the durable tracking layer
+  = must: treat .py code as a management and inspection surface, not attention authority
+  = should: keep a direction in local context only when long-term tracking is not requested
+  - never: treat tracking as proof that the subject is important
+  - never: treat tracking as focus without a FocalPoint selection
+  - never: carry a tracker indefinitely without declared period or reaffirmation
+  - never: treat Python code itself as persistent Codex attention
+
+& [TrackerRuntimeBoundary] is the boundary between durable attention and runtime maintenance
+  + [durable_attention] is .sop tracker records loaded into Codex context or inspected by the repo terminal
+  + [runtime_helper] is .py code that manages tracker lifecycle, graph output, tests, and generated views
+  + [context_window_attention] is temporary instruction pressure that expires with the active conversation context
+  + [promotion_condition] is an explicit track directive, declared period, or source-preserved specification requiring persistence
+
+  = must: persist only durable tracking in SOP files
+  = must: let runtime helpers mutate or render SOP records only under SOP authority
+  = must: leave untracked local attention in the context window
+  = must: make promotion from context attention to SOP tracking explicit
+  - never: confuse executable maintenance code with the subject's tracked attention state
+
+& [TrackedSubject] is one subject with an attached attention tracker
+  + [handle] is stable tracker id
+  + [subject_label] is human-readable subject identity
+  + [status] is active, expiring, expired, or blocked
+  + [weight] is integer notice pressure
+  + [period_kind] is default_session or declared_period
+  + [relations] is immediate coordination fabric for the subject
+  + [periphery] is weak or nearby signal fabric
+  + [debug] is inspection, source, scan, and narrative surface
+
+  = must: stay small enough for fast re-entry
+  = should: include only enough context to coordinate future inference
+  = should: cite richer SOP files instead of duplicating them
+  = should: point to FocalPoint only when draw pressure asks for active attention
+
+& [TrackerToFocalPoint] is the promotion path from periphery tracking to focal attention
+  + [tracker] is a periphery attention handle
+  + [draw_pressure] is recurrence, contradiction, causal pressure, user direction, support imbalance, or high sensitivity heat
+  + [liminal_draw] is the between-state where promotion is tested
+  + [focal_point] is the active attention object selected after draw survives boundary checks
+
+  = must: route tracked subjects through liminal draw before focus
+  = must: preserve unpromoted trackers in periphery
+  = must: let right_hemisphere_focus chase periphery when context shape demands it
+  - never: promote a tracker by existence alone
+
+& [TrackingExpiryLaw] is the law that keeps tracking mortal
+  + [default_tracking] is live through one session after last reaffirmation
+  + [unreaffirmed_tracking] is expiring when the current session equals expires_after_session
+  + [expired_tracking] is outside active attention when current session exceeds expires_after_session
+  + [declared_tracking] is governed by declared_period_sessions
+  + [reaffirmed_tracking] resets last_reaffirmed_session and recalculates expiry
+
+  = must: default to session-scoped tracking when no period is declared
+  = must: require explicit reaffirmation to keep default tracking alive
+  = must: record expiration status visibly in the tracker graph
+  = should: decay weight as a tracker approaches expiry
+
+& [AttentionTrackingDebugSurface] is the inspection surface attached to a tracker
+  + [source_anchor] is where the tracking directive came from
+  + [last_seen] is the latest session, narrative, scan, or commit frame where the subject appeared
+  + [nearby_associations] is correlation fabric tied to subject terms
+  + [support_balance] is native, carried, weak, absent, or contradicting support state when relevant
+  + [open_questions] is uncertainty that remains attached to the tracker
+  + [inspection_paths] is SOP files, generated graphs, tests, or scans to open when investigating
+
+  = must: include enough debug material to understand why the tracker exists
+  = must: keep uncertainty and outside visible
+
+& [AttentionTrackerRecord] is the SOP-HG shape emitted for tracked subjects
+  + [tracker_node] is N:tracker:<tracker_id>
+  + [subject_node] is N:subject:<subject_key>
+  + [session_node] is N:session:<session_id>
+  + [relation_node] is N:term:<relation_key>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [narrative_node] is N:narrative:<narrative_key>
+  + [scan_node] is N:signal:<scan_key>
+  + [outside_node] is N:outside:tracking_staleness
+  + [track_edge] is E:tracks:<tracker_id>
+  + [reaffirm_edge] is E:reaffirms:<tracker_id>
+  + [expire_edge] is E:expires:<tracker_id>
+  + [associate_edge] is E:associates:<tracker_id>_<relation_key>
+  + [notice_edge] is E:notices:<tracker_id>_<periphery_key>
+  + [reference_edge] is E:references:<tracker_id>_<reference_key>
+  + [boundary_edge] is E:bounds:<tracker_id>
+
+  = must: expose current_session, last_reaffirmed_session, active_period_sessions, expires_after_session, status, and weight
+  = must: route expired trackers to outside
+  = must: keep relation and periphery context as coordination fabric, not proof
+
+/ [track_that_directive] -(TrackingDelineation)> [tracked_subject], [periphery_context], [debug_surface], [expiry_law], [Uncertainty]
+* [tracked_subject], [relations], [periphery_context], [narrative_refs], [scan_refs], [expiry_law] -(TrackingRecord)> [attention_tracker]

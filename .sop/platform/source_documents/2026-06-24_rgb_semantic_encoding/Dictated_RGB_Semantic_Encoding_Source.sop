@@ -1,0 +1,17 @@
+Subject: Dictated RGB Semantic Encoding Source
+
+Description: Preserved raw source for translating SOP into color and color back into SOP.
+
+& [DictatedRGBSemanticEncodingSource] is the preserved user source for RGB semantic encoding
+  + [source_date] is 2026-06-24
+  + [source_context] is continuation of SOP attention memory codec, optical instruction streams, and visual color-routed meaning
+  + [source_line_001] is "how to encode the complex relationship in color?"
+  + [source_line_002] is "that's what we need to pay attention to now I think."
+  + [source_line_003] is "we need a way of translating SOP into color and color into SOP..."
+  + [source_line_004] is "do RGB signals each stand for a type of primitive in SOP?"
+  + [source_line_005] is "the color needs to carry a few cues about how to resolve the information."
+  + [source_line_006] is "are there 3 primitive types to SOP that can each correlate to R, G, or B signals?"
+
+  = must: preserve this dictated source separately from canonical specification
+  = must: treat the question as a design constraint, not as a settled encoding
+  - outside: exact perceptual color science, hardware encoding, and proof that RGB alone preserves all SOP meaning

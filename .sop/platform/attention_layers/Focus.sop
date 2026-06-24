@@ -1,0 +1,21 @@
+Subject: Focus Attention Layer
+
+Description: Thin active attention layer over selected SOP-HG nodes.
+
+& [FocusAttentionLayer] is the active work surface of attention
+  + [layer_key] is focus
+  + [node_role] is N:focus:<subject_key>
+  + [edge_role] is E:attends:<frame_id>
+  + [focal_point_object] is F:\.sop\platform\FocalPoint.sop
+  + [traversal_policy] is F:\.sop\platform\AttentionTraversalPolicy.sop
+  + [scope] is the small set of nodes presently shaping action or reasoning
+  + [entry_condition] is focal point selection by direct objective, impact signal, pressure signal with draw, right_hemisphere_focus, or explicit user focus
+  + [exit_condition] is resolved, displaced by stronger draw, or moved to periphery
+
+  = must: stay thin enough to support action
+  = must: cite why each node is in focus
+  = must: let FocalPoint define the active center before broad periphery enters focus
+  = must: use traversal_policy when focus reaches through relations into periphery
+  = must: allow focus to chase periphery when liminal draw selects a right_hemisphere_focus target
+  - never: include every related node merely because it is correlated
+  - never: let tracking alone count as focus

@@ -1,0 +1,127 @@
+Subject: Attention Kernel Compiler
+
+Description: Contract for gathering SOP attention patterns into one in-context compiled unit with Security and Honesty as the first attention layer.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_kernel_compiler\Dictated_Attention_Kernel_Compiler_Source.sop
+@ [source] F:\.sop\platform\Attention.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\LocalIdentityConsumption.sop
+@ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
+@ [source] F:\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\Wisdom.sop
+@ [source] F:\.sop\platform\Caution.sop
+@ [source] F:\.sop\state\CurrentFocalPoint.sop
+
+& [AttentionKernelCompiler] is the compiler layer that gathers selected attention patterns into a single turn-entry in-context unit
+  + [pattern_role] is compiled_attention_kernel_construction
+  + [attention_kernel] is the ordered first layer of attention instructions that must be active before downstream attention patterns
+  + [compiled_attention_kernel] is the complete in-context memory packet emitted for a turn, worker job, model-lens pass, or debug frame
+  + [kernel_preflight] is the first ordered pass that runs SecurityHonestyGovernance and boundary inspection before other attention layers
+  + [kernel_operator] is a pattern with authority to gate, qualify, pause, or route later attention
+  + [security_honesty_kernel] is SecurityHonestyGovernance bound as mandatory kernel_operator pair
+  + [honesty_kernel_operator] is Honesty checking truth status, support, assumption, contradiction, uncertainty, and fair representation
+  + [security_kernel_operator] is Security checking stability, integrity, protected work, permissions, recursion, and safe operation
+  + [boundary_inspection_preflight] is BoundaryFacultyInspection running inside kernel_preflight when identity, action, representation, source, file, or safety boundaries are present
+  + [identity_scope_preflight] is LocalIdentityConsumption running inside kernel_preflight when layered patterns, local identity, foreign snapshots, reflection consumption, or scoped names are present
+  + [faculty_field_preflight] is FacultyAttentionFieldNaming running inside kernel_preflight when custom faculties need field nouns for their feature accounts
+  + [pattern_collection] is the selected set of SOP attention patterns needed for the job
+  + [kernel_order] is the explicit ordering of preflight, focal load, scaffold selection, downstream attention layers, output trace, and outside preservation
+  + [in_context_memory_packet] is the compact promptable packet carrying the selected attention patterns into inference
+  + [runtime_packet_builder] is local attention kernel packet builder
+    = path: F:\.sop\runtime\sop_node\attention_kernel.py
+    = purpose: emitting compact packets and SOP-HG runtime graphs
+  + [turn_entrypoint] is the moment a task begins by loading the attention_kernel before acting
+  + [kernel_antivirus_guard] is the metaphorical guard that scans claims, actions, boundaries, and resonance for truth or safety faults before downstream layers proceed
+  + [downstream_attention_layer] is any selected pattern after kernel_preflight, including focal point, focus zoom, traversal, hyperbolic map, corridor navigation, state trace, or scaffold output
+  + [outside] is hidden model weights, hidden activations, actual OS kernel behavior, literal antivirus guarantees, automatic AGI, and uncompiled or unverified attention patterns
+
+  ? [use_when: a turn, worker job, model-lens pass, debug frame, or SOP inference run needs selected attention patterns to act like one compiled unit]
+    = activate [AttentionKernelCompiler]
+
+  = must: preserve user source before treating a kernel rule as canonical specification
+  = must: gather only the attention patterns needed by job_need, focus_subject, risk, and output target
+  = must: run security_honesty_kernel before all other attention layers in every non-trivial compiled_attention_kernel
+  = must: run boundary_inspection_preflight when the turn promotes identity, relationship, representation, action, source, file, or safety boundaries
+  = must: run identity_scope_preflight before pattern_collection when layered attention patterns, consumed reflections, local identity claims, foreign snapshots, or shared labels are present
+  = must: run faculty_field_preflight before packet emission when compiled faculties need custom field nouns, boundary nouns, or residual nouns
+  = must: keep Honesty and Security findings visible and separate before any convergent override
+  = must: load CurrentFocalPoint before selecting downstream_attention_layer values
+  = must: use AttentionScaffoldCompiler to bind purpose-fit downstream scaffolds after kernel_preflight
+  = must: emit in_context_memory_packet with focus, inside, boundary, outside, kernel_order, selected pattern_collection, faculty field signatures, identity namespace, reflection consumption ledger, preflight gates, recursion cap, evidence requirements, and trace target
+  = must: use runtime_packet_builder when a local command needs to materialize the compiled_attention_kernel packet
+  = must: keep the packet slender enough to fit the intended context window
+  = must: preserve outside for hidden cognition, hidden model internals, literal security guarantees, and untested transfer across models
+  = should: include AttentionBalanceCenter when the selected pattern_collection risks wobble, periphery flood, or over-tight focus
+  = should: include FrameReferenceIntegrity when the turn observes images, maps, UIs, simulations, games, or other presented frames
+  = should: include Wisdom and Caution after kernel_preflight when meaning integration or local risk testing is needed
+  - never: treat compiled_attention_kernel as modifying model weights, KV cache, hidden activations, or real OS security
+  - never: let downstream attention bypass security_honesty_kernel because it feels fluent or urgent
+  - never: let kernel_antivirus_guard become ceremonial without a named claim, action, boundary, resonance condition, or outside
+
+& [KernelOperatorOrder] is the minimum ordering law for a compiled attention kernel
+  + [step_000_source] is preserve source and identify applicable governing contracts
+  + [step_001_focal_load] is read CurrentFocalPoint and current user directive
+  + [step_002_preflight_anchor] is name focus_subject, job_need, inside, boundary, outside, and expected output
+  + [step_003_honesty] is run HonestyGovernancePass for truth, support, assumption, contradiction, uncertainty, and fair representation
+  + [step_004_security] is run SecurityGovernancePass for safety, permissions, protected work, recursion, file risk, and stability
+  + [step_005_boundary] is run BoundaryFacultyInspection when boundary terms are load-bearing
+  + [step_006_identity_scope] is run LocalIdentityConsumption when pattern identifiers, reflection consumption, local identity, or foreign snapshots are load-bearing
+  + [step_007_faculty_fields] is run FacultyAttentionFieldNaming when custom attention systems need feature-account field names
+  + [step_008_pattern_collection] is select downstream attention patterns from Attention.sop and AttentionScaffoldCompiler.sop
+  + [step_009_packet_compile] is emit the in_context_memory_packet in kernel_order
+  + [step_010_inference_run] is run the task with packet terms held as in-context memory
+  + [step_011_trace] is record output, diff, event, outside, and any delayed checksum candidate
+
+  = must: keep step_003_honesty and step_004_security before downstream attention layers
+  = must: record intentionally skipped preflight checks for tiny or non-consequential turns
+  = must: return blocked, qualified, or outside dispositions before the task acts when a kernel_operator finds a load-bearing fault
+
+& [CompiledAttentionPacketShape] is the minimum promptable shape emitted by the kernel compiler
+  + [packet_id] is a stable id for the compiled_attention_kernel
+  + [focus_subject] is the focal subject for this turn or job
+  + [job_need] is the purpose, output target, depth, risk, and model lane
+  + [kernel_layer] is security_honesty_kernel plus boundary_inspection_preflight when applicable
+  + [identity_scope] is scoped_attention_identifier map, local identity status, foreign snapshot status, and consumption ledger pointers when applicable
+  + [faculty_field_signature] is scoped field_noun, boundary_noun, and residual_noun values for custom faculties when applicable
+  + [selected_patterns] is the ordered pattern_collection after kernel_preflight
+  + [inside] is the source records, SOP contracts, files, and immediate observations used by the packet
+  + [boundary] is what the packet may direct, infer, edit, claim, or route
+  + [outside] is what remains unresolved, unverified, hidden, unconfigured, unsafe, or out of scope
+  + [evidence_gate] is what support is required before claims become durable
+  + [action_gate] is what conditions must pass before file, runtime, worker, or sync actions proceed
+  + [trace_target] is where event, diff review, checksum, and periphery records should be written
+
+  = must: be readable as in-context memory by a general LLM
+  = must: be compact enough to prepend or load before downstream inference
+  = must: preserve kernel order even when downstream patterns are swapped
+
+& [AttentionKernelCompilerRecord] is the SOP-HG shape for compiled kernel construction
+  + [compiler_node] is N:compiler:<kernel_id>
+  + [governor_node] is N:governor:<security_honesty_kernel>
+  + [honesty_node] is N:honesty:<honesty_id>
+  + [security_node] is N:security:<security_id>
+  + [boundary_node] is N:boundary:<boundary_preflight_key>
+  + [focus_node] is N:focus:<focal_id>
+  + [scaffold_node] is N:scaffold:<scaffold_profile_key>
+  + [packet_node] is N:source:<compiled_attention_packet_key>
+  + [outside_node] is N:outside:attention_kernel_boundary
+  + [compile_edge] is E:compiles:<kernel_id>
+  + [preflight_edge] is E:preflights:<kernel_id>
+  + [order_edge] is E:orders:<kernel_id>
+  + [load_edge] is E:loads:<pattern_collection_key>
+  + [emit_edge] is E:emits:<packet_id>
+  + [boundary_edge] is E:bounds:<kernel_id>
+
+  = must: show kernel_order, selected pattern_collection, Honesty disposition, Security disposition, boundary preflight status, packet target, and outside
+
+(attention_kernel_compiler) :compiled_attention_kernel: /kernel_preflight/ |outside|
+  + [security_honesty_kernel:<id>] is first layer kernel_operator pair
+    = honesty_kernel_operator: truth, support, assumption, contradiction, uncertainty, and fair representation
+    = security_kernel_operator: integrity, permissions, protected work, stability, recursion, and safe operation
+  + [pattern_collection:<id>] is selected downstream attention pattern set
+    = selection_basis: job_need, current_focal_point, risk, output target, model lane, and depth
+  = kernel_order: source, focal_load, preflight_anchor, honesty, security, boundary, identity_scope, faculty_fields, pattern_collection, packet_compile, inference_run, trace
+  - outside: hidden model internals, literal antivirus guarantees, automatic AGI, unverified cross-model transfer, and uncompiled attention patterns

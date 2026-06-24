@@ -1,0 +1,15 @@
+Subject: SOP Attention Directive Run Reminder Source Manifest
+
+Description: Source preservation manifest for the persistent SOP attention directive run reminder.
+
+& [SOPAttentionDirectiveRunReminderSourceManifest] is the trace record for this reminder
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_sop_attention_directive_run_reminder\Dictated_SOP_Attention_Directive_Run_Reminder_Source.sop
+  + [contract_target] is F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+  + [tracker_record] is F:\.sop\events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_sop_attention_directive_run_reminder_044.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_reminder_trigger_language_trailing_checksum_045.hg.sop
+  + [derived_terms] is sop_attention_directive_run, next_step_search, awareness_stream_fill, realization_node_completion, running_composure
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, BuildEnvironmentPeripheryMarker, ReminderTrigger, PeripheryContinuityRun
+
+  = must: preserve raw source before treating the run reminder as durable attention authority
+  = must: keep this reminder SOP-only

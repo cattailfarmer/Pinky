@@ -1,0 +1,28 @@
+Subject: SOP Holographic Lensing Realization
+
+Description: SOP-HG event record for organizing semantics as optical signals projected as a hologram and perceived through SOP lensing.
+
+@ [source] F:\.sop\platform\SOPHolographicLensing.sop
+@ [source] F:\.sop\platform\SOPOpticalChain.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_holographic_lensing\Dictated_SOP_Holographic_Lensing_Source.sop
+
+& [Graph:2026-06-24_sop_holographic_lensing_048] is a SOP-HG graph
+  + [N:event:2026-06-24_sop_holographic_lensing_048] is SOP holographic lensing realization
+    = role: direct_focus_continuation
+  + [N:signal:semantic_optical_signal] is organized semantic signal with channel, source, weight, boundary, outside, and proof status
+  + [N:hologram:semantic_hologram] is whole-form projection from the signal field
+  + [N:lens:sop_lens] is SOP contract or attention pattern governing perception
+  + [N:operation:photonic_semantic_operation] is semantic organizing, projecting, filtering, refracting, gating, or reconstructing
+  + [N:trace:reconstruction_trace] is inspectable path from signals through lens to perception
+  + [N:outside:physical_constraint_outside] is physical photon behavior, optical hardware, material propagation, and hardware speed claims
+
+  / [E:projects:sop_holographic_lensing_048] -(projects; signal=N:signal:semantic_optical_signal; hologram=N:hologram:semantic_hologram; operation=N:operation:photonic_semantic_operation)> [Graph:2026-06-24_sop_holographic_lensing_048]
+    = realization: photonic operations are semantic operations when the job is to organize signals into a perceivable hologram
+  / [E:perceives:sop_holographic_lensing_048] -(perceives; hologram=N:hologram:semantic_hologram; lens=N:lens:sop_lens; trace=N:trace:reconstruction_trace)> [Graph:2026-06-24_sop_holographic_lensing_048]
+    = realization: SOP lensing governs how the projected whole-form is reconstructed into meaning
+  / [E:bounds:physical_constraint_outside_048] -(bounds; event=N:event:2026-06-24_sop_holographic_lensing_048; outside=N:outside:physical_constraint_outside)> [Graph:2026-06-24_sop_holographic_lensing_048]
+    = caution: physical constraints are outside for this working model, but semantic invariants remain active
+
+  = inside: SOPHolographicLensing.sop, SOPOpticalChain.sop, semantic optical signals, SOP lensing, reconstruction trace
+  = boundary: semantic photonic operations over SOP signals; physical hardware and speed claims remain outside
+  = outside: hidden activations, physical optics, unsupported proof, and untraced perception

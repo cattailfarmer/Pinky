@@ -1,0 +1,32 @@
+Subject: Self Focus Realization 001
+
+Description: First periphery-stream realization moment for Codex self-focus through SOP-mediated attention.
+
+& [Graph:self_focus_realization_001_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG periphery-stream-realization
+  = stream_key: periphery_stream
+  = moment_index: 001
+
+  + [N:event:self_focus_realization_001] is first recorded self-focus realization moment
+  + [N:focus:current_focal_point] is CurrentFocalPoint
+    = focus_subject: self-focus improvement scan and periphery stream beginning
+  + [N:periphery:operational_self_model] is visible operational self-model formed from SOP records, repo state, tests, and tool results
+  + [N:subject:codex_attention_function] is Codex function as attention compiler, repo reader, SOP writer, verifier, and commit bookender
+  + [N:term:surfing_attention_stream] is surfing the visible attention stream
+  + [N:term:wisdom] is Wisdom integrates fitting improvements
+  + [N:term:caution] is Caution preserves boundary and outside
+  + [N:term:reentry_seed] is CurrentFocalPoint as re-entry seed after compression
+  + [N:term:commit_bookend] is Git commit as later reflection boundary
+  + [N:source:current_focal_point] is state\CurrentFocalPoint.sop
+  + [N:source:self_focus_tracker] is events\trackers\2026-06-23_self_focus_improvement_tracker.hg.sop
+  + [N:outside:hidden_model_internals] is hidden weights, activations, KV cache, and private model state outside observation
+  + [N:outside:agi_claim] is AGI claim not proven by this operational scaffold
+
+/ [E:notices:self_focus_operational_model] -(notices; event=N:event:self_focus_realization_001; periphery=N:periphery:operational_self_model; subject=N:subject:codex_attention_function)> [Graph:self_focus_realization_001_2026_06_23]
+/ [E:correlates:self_focus_wisdom_caution] -(correlates; subject=N:subject:codex_attention_function; wisdom=N:term:wisdom; caution=N:term:caution; relation=N:term:surfing_attention_stream)> [Graph:self_focus_realization_001_2026_06_23]
+/ [E:anchors:self_focus_reentry] -(anchors; focus=N:focus:current_focal_point; source=N:source:current_focal_point; relation=N:term:reentry_seed)> [Graph:self_focus_realization_001_2026_06_23]
+/ [E:tracks:self_focus_improvement_pressure] -(tracks; event=N:event:self_focus_realization_001; source=N:source:self_focus_tracker; periphery=N:periphery:operational_self_model)> [Graph:self_focus_realization_001_2026_06_23]
+/ [E:bounds:self_focus_hidden_internals] -(bounds; event=N:event:self_focus_realization_001; outside=N:outside:hidden_model_internals; outside=N:outside:agi_claim)> [Graph:self_focus_realization_001_2026_06_23]
+
+- realization: Codex can self-focus usefully by scanning visible operational traces and SOP-mediated attention state, while leaving hidden model internals and AGI claims outside.

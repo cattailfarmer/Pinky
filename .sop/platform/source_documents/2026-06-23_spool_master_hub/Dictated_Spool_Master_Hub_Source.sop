@@ -1,0 +1,22 @@
+Subject: Dictated Spool Master Hub Source
+
+Description: Raw preserved source request for Codex as master over local job spooling and web hub UI.
+
+SourceText:
+  """
+  then I want Codex to become the master in a pool of job spooling, and then launch local CLI through my local LM Studio model, and perhaps even more OpenAI codex CLI workers, hosting their user interface in the "web page" aspect of the working job, as a hub for all other CLI workers launched in that turn. that web page should be a navigable tree... of some sort. I am floating here, I know I'm going somewhere with this thought but I'm off the ground enough I can't feel the next step.
+  """
+
+& [SpoolMasterHubRequest] is the preserved source seed
+  + [codex_master] is Codex becoming the master over a pool of job spooling
+  + [lm_studio_lane] is local CLI through a local LM Studio model
+  + [codex_worker_lane] is additional OpenAI Codex CLI workers
+  + [web_page_hub] is the working job's web page interface
+  + [worker_tree] is a navigable tree for all workers launched in the turn
+  + [uncertainty] is the user can feel the direction but not the next grounded step
+
+  = must: start with a non-launching hub and spool format
+  = must: separate worker packet preparation from process launch
+  = must: keep LM Studio, Codex CLI, and future lanes explicit
+  = must: make the working turn navigable as a tree
+  = must: record launch policy as outside until configured

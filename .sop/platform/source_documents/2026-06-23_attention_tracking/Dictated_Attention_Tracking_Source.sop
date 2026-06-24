@@ -1,0 +1,20 @@
+Subject: Attention Tracking Source
+
+Description: Raw preserved source for first-layer attention tracking and default session expiry.
+
+& [DictatedAttentionTrackingSource] is the preserved user source for tracked subjects
+  @ [user_statement] "by 'track that' it now means to attend to that detail, record it's being and it's relations and periphery, the narrative and scan for nearby relevant correlations to tie in more fabric."
+  @ [user_statement] "perhaps just enough correlating information to coordinate on that thing as to track it, and give it weight to notice during inference and feel such impulse as to notice and add narrative about state of tracked subjects and their immediate context."
+  @ [user_statement] "tracking should expire after a session without reaffirming it, unless it's period is declared. so that tracking will probably need to be a first-layer SOP file."
+
+  + [track_that] is an attention command that attaches a temporary tracker to a subject
+  + [tracked_subject] is a subject with enough context, relations, periphery, narrative, and scan references to be noticed again
+  + [default_expiry] is after one unreaffirmed session
+  + [declared_period] is an explicit tracking lifetime that overrides default expiry
+  + [debug_surface] is source, relations, periphery, scan, narrative, and inspection pointers
+
+  = must: make tracking first-layer enough to guide attention directly
+  = must: keep tracking temporary unless reaffirmed or period-declared
+  = must: record enough nearby context to coordinate future inference
+  = must: connect tracking to changelog review, scans, narrative, and periphery without making it identical to any one of them
+  - never: let old tracking silently become permanent attention weight

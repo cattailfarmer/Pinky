@@ -1,0 +1,13 @@
+Subject: Attention System Review Source Manifest
+
+Description: Source preservation manifest for the first attention system review walk.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_attention_system_review
+  + [source_file] is F:\.sop\platform\source_documents\2026-06-24_attention_system_review\Dictated_Attention_System_Review_Source.sop
+  + [review_record] is F:\.sop\events\reviews\2026-06-24_attention_system_review_001.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_attention_system_review_009.hg.sop
+  + [governance] is source_before_reflection
+  + [status] is reflected
+
+  = must: keep the dictated source available for future reinterpretation

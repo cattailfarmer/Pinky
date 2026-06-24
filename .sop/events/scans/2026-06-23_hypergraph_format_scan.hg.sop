@@ -1,0 +1,184 @@
+Subject: SensitivityScan_20260623T205139Z Hypergraph
+
+& [Graph:SensitivityScan_20260623T205139Z] is a SOP-HG graph
+  = format: SOP-HG
+  = source_scan_id: SensitivityScan_20260623T205139Z
+  = base_ref: sop-major-seed
+  = head_ref: WORKTREE
+
+  + [N:bookend:sop_major_seed] is sop-major-seed
+  + [N:bookend:WORKTREE] is WORKTREE
+  + [N:event:SensitivityScan_20260623T205139Z] is SensitivityScan_20260623T205139Z
+  + [N:outside:semantic_truth] is semantic truth not proven by correlation heat
+  + [N:file:platform_SOPHypergraphRecord_sop] is platform/SOPHypergraphRecord.sop
+    = status: A
+    = additions: 51
+    = deletions: 0
+  + [N:file:platform_examples_SeedSensitivityScan_hg_sop] is platform/examples/SeedSensitivityScan.hg.sop
+    = status: A
+    = additions: 21
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop] is platform/source_documents/2026-06-23_hypergraph_record_format/Dictated_Hypergraph_Record_Format_Source.sop
+    = status: A
+    = additions: 19
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_hypergraph_record_format_manifest_sop] is platform/source_documents/2026-06-23_hypergraph_record_format/manifest.sop
+    = status: A
+    = additions: 11
+    = deletions: 0
+  + [N:signal:format] is format
+    = touch_count: 4
+    = heat: 102
+  + [N:layer:impact] is impact
+    = retention_policy: emphasize
+  + [N:signal:hypergraph] is hypergraph
+    = touch_count: 4
+    = heat: 102
+  + [N:signal:changed] is changed
+    = touch_count: 3
+    = heat: 91
+  + [N:layer:pressure] is pressure
+    = retention_policy: sustain
+  + [N:signal:correlation] is correlation
+    = touch_count: 3
+    = heat: 91
+  + [N:signal:file] is file
+    = touch_count: 3
+    = heat: 91
+  + [N:signal:record] is record
+    = touch_count: 3
+    = heat: 81
+  + [N:signal:bookend] is bookend
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:classifies] is classifies
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:event] is event
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:events] is events
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:graph] is graph
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:heat] is heat
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:layer] is layer
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:outside] is outside
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:scan] is scan
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:scans] is scans
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:signal] is signal
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:span] is span
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:touches] is touches
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:weight] is weight
+    = touch_count: 2
+    = heat: 72
+  + [N:signal:awareness] is awareness
+    = touch_count: 2
+    = heat: 70
+  + [N:signal:bookends] is bookends
+    = touch_count: 2
+    = heat: 70
+  + [N:signal:can] is can
+    = touch_count: 2
+    = heat: 70
+  + [N:signal:connecting] is connecting
+    = touch_count: 2
+    = heat: 70
+
+/ [E:span:SensitivityScan_20260623T205139Z] -(span; start=N:bookend:sop_major_seed; end=N:bookend:WORKTREE; event=N:event:SensitivityScan_20260623T205139Z)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:changed:SensitivityScan_20260623T205139Z_001] -(changed; event=N:event:SensitivityScan_20260623T205139Z; file=N:file:platform_SOPHypergraphRecord_sop)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:changed:SensitivityScan_20260623T205139Z_002] -(changed; event=N:event:SensitivityScan_20260623T205139Z; file=N:file:platform_examples_SeedSensitivityScan_hg_sop)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:changed:SensitivityScan_20260623T205139Z_003] -(changed; event=N:event:SensitivityScan_20260623T205139Z; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:changed:SensitivityScan_20260623T205139Z_004] -(changed; event=N:event:SensitivityScan_20260623T205139Z; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_manifest_sop)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:format] -(touches; signal=N:signal:format; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_manifest_sop; weight=102)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:format] -(classifies; signal=N:signal:format; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:format] -(bounds; signal=N:signal:format; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:hypergraph] -(touches; signal=N:signal:hypergraph; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_manifest_sop; weight=102)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:hypergraph] -(classifies; signal=N:signal:hypergraph; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:hypergraph] -(bounds; signal=N:signal:hypergraph; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:changed] -(touches; signal=N:signal:changed; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; weight=91)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:changed] -(classifies; signal=N:signal:changed; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:changed] -(bounds; signal=N:signal:changed; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:correlation] -(touches; signal=N:signal:correlation; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; weight=91)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:correlation] -(classifies; signal=N:signal:correlation; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:correlation] -(bounds; signal=N:signal:correlation; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:file] -(touches; signal=N:signal:file; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; weight=91)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:file] -(classifies; signal=N:signal:file; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:file] -(bounds; signal=N:signal:file; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:record] -(touches; signal=N:signal:record; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_manifest_sop; weight=81)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:record] -(classifies; signal=N:signal:record; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:record] -(bounds; signal=N:signal:record; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:bookend] -(touches; signal=N:signal:bookend; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:bookend] -(classifies; signal=N:signal:bookend; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:bookend] -(bounds; signal=N:signal:bookend; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:classifies] -(touches; signal=N:signal:classifies; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:classifies] -(classifies; signal=N:signal:classifies; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:classifies] -(bounds; signal=N:signal:classifies; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:event] -(touches; signal=N:signal:event; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:event] -(classifies; signal=N:signal:event; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:event] -(bounds; signal=N:signal:event; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:events] -(touches; signal=N:signal:events; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:events] -(classifies; signal=N:signal:events; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:events] -(bounds; signal=N:signal:events; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:graph] -(touches; signal=N:signal:graph; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:graph] -(classifies; signal=N:signal:graph; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:graph] -(bounds; signal=N:signal:graph; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:heat] -(touches; signal=N:signal:heat; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:heat] -(classifies; signal=N:signal:heat; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:heat] -(bounds; signal=N:signal:heat; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:layer] -(touches; signal=N:signal:layer; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:layer] -(classifies; signal=N:signal:layer; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:layer] -(bounds; signal=N:signal:layer; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:outside] -(touches; signal=N:signal:outside; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:outside] -(classifies; signal=N:signal:outside; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:outside] -(bounds; signal=N:signal:outside; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:scan] -(touches; signal=N:signal:scan; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:scan] -(classifies; signal=N:signal:scan; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:scan] -(bounds; signal=N:signal:scan; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:scans] -(touches; signal=N:signal:scans; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:scans] -(classifies; signal=N:signal:scans; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:scans] -(bounds; signal=N:signal:scans; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:signal] -(touches; signal=N:signal:signal; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:signal] -(classifies; signal=N:signal:signal; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:signal] -(bounds; signal=N:signal:signal; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:span] -(touches; signal=N:signal:span; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:span] -(classifies; signal=N:signal:span; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:span] -(bounds; signal=N:signal:span; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:touches] -(touches; signal=N:signal:touches; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:touches] -(classifies; signal=N:signal:touches; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:touches] -(bounds; signal=N:signal:touches; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:weight] -(touches; signal=N:signal:weight; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_examples_SeedSensitivityScan_hg_sop; weight=72)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:weight] -(classifies; signal=N:signal:weight; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:weight] -(bounds; signal=N:signal:weight; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:awareness] -(touches; signal=N:signal:awareness; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; weight=70)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:awareness] -(classifies; signal=N:signal:awareness; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:awareness] -(bounds; signal=N:signal:awareness; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:bookends] -(touches; signal=N:signal:bookends; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; weight=70)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:bookends] -(classifies; signal=N:signal:bookends; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:bookends] -(bounds; signal=N:signal:bookends; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:can] -(touches; signal=N:signal:can; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; weight=70)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:can] -(classifies; signal=N:signal:can; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:can] -(bounds; signal=N:signal:can; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:touches:connecting] -(touches; signal=N:signal:connecting; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_source_documents_2026_06_23_hypergraph_record_format_Dictated_Hypergraph_Record_Format_Source_sop; weight=70)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:classifies:connecting] -(classifies; signal=N:signal:connecting; layer=N:layer:pressure; retention=sustain)> [Graph:SensitivityScan_20260623T205139Z]
+/ [E:bounds:connecting] -(bounds; signal=N:signal:connecting; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T205139Z]
+
+- outside: scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

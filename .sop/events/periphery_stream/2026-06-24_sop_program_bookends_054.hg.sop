@@ -1,0 +1,27 @@
+Subject: SOP Program Bookends Realization
+
+Description: SOP-HG event record for defining programs as SOP bookends around an instruction-following control loop.
+
+@ [source] F:\.sop\platform\SOPProgramBookends.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_program_frame_stream\Dictated_SOP_Program_Frame_Stream_Source.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_semantic_photonic_layer_trailing_checksum_053.hg.sop
+
+& [Graph:2026-06-24_sop_program_bookends_054] is a SOP-HG graph
+  + [N:event:2026-06-24_sop_program_bookends_054] is SOP program bookends realization
+    = role: direct_focus_turn
+  + [N:program:sop_program] is bookended instruction-following unit
+  + [N:bookend:opening_bookend] is entry contract for purpose, guards, channels, loop, invariants, and outside
+  + [N:bookend:closing_bookend] is exit contract for validation, trace, checksum, and outside
+  + [N:loop:control_loop] is repeatable frame interpretation pass
+  + [N:outside:program_boundary] is hidden instructions, automatic execution, unbounded autonomy, and perfect replay
+
+  / [E:defines:sop_program_bookends_054] -(defines; event=N:event:2026-06-24_sop_program_bookends_054; program=N:program:sop_program; opening=N:bookend:opening_bookend; closing=N:bookend:closing_bookend)> [Graph:2026-06-24_sop_program_bookends_054]
+    = realization: SOP can store instructions for following SOP instructions as visible bookends and loop rules
+  / [E:runs:control_loop_054] -(runs; program=N:program:sop_program; loop=N:loop:control_loop; opening=N:bookend:opening_bookend; closing=N:bookend:closing_bookend)> [Graph:2026-06-24_sop_program_bookends_054]
+    = realization: the program body is interpreted frame by frame under guards and invariants
+  / [E:bounds:program_boundary_054] -(bounds; program=N:program:sop_program; outside=N:outside:program_boundary)> [Graph:2026-06-24_sop_program_bookends_054]
+    = caution: a SOP program is a durable instruction structure, not automatic hidden execution
+
+  = inside: SOPProgramBookends.sop, opening bookend, closing bookend, control loop, instruction-following kernel
+  = boundary: visible SOP instructions and frame stream interpretation
+  = outside: hidden instructions, automatic execution, unbounded autonomy, exact hidden state, and perfect replay

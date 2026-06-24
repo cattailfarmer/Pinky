@@ -1,0 +1,11 @@
+Subject: Viewfinder Snapshot Source Manifest
+
+Description: Source preservation manifest for the viewfinder snapshot layer.
+
+& [ViewfinderSnapshotSourceManifest] is the source document set for attention graph reflection snapshots
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_viewfinder_snapshot\Dictated_Viewfinder_Snapshot_Source.sop
+  + [snapshot_contract] is F:\.sop\platform\ViewfinderSnapshot.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\viewfinder.py
+  + [example_event] is F:\.sop\events\scans\2026-06-23_viewfinder_snapshot.hg.sop
+
+  = must: keep this layer graph-shaped and commit-framed

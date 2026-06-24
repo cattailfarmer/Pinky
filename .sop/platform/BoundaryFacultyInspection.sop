@@ -1,0 +1,137 @@
+Subject: Boundary Faculty Inspection
+
+Description: First-point awareness contract for Honesty and Security to inspect identity boundaries, boundary periphery, and two distinct boundary fault classes before truth or safety promotion.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_boundary_faculty_inspection\Dictated_Boundary_Faculty_Inspection_Source.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\Caution.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+
+& [BoundaryFacultyInspection] is the first-point awareness pattern for inspecting the boundary of identity
+  + [pattern_role] is first_point_boundary_awareness
+  + [attention_subject] is the current :attention: subject whose identity, claim, representation, action, source, or object boundary is being inspected
+  + [identity_boundary] is the /boundary/ that separates the subject's inside identity from outside, periphery, uncertainty, and other subjects
+  + [boundary_periphery] is the neighboring terms, claims, constraints, source cues, omissions, and related subjects touching identity_boundary
+  + [boundary_term] is any term used to define, constrain, exclude, permit, compare, or frame the attention_subject at the identity_boundary
+  + [orthogonal_boundary_fit] is the condition where a boundary_term distinguishes inside from outside without smuggling identity content, bias, unsupported relation, or unsafe permission into the subject
+  + [non_orthogonal_boundary_fault] is a boundary_term that overlaps, tilts, distorts, or misdirects the attention_subject instead of cleanly delineating it
+  + [misdirection_vector] is the direction of attention distortion created by a non_orthogonal_boundary_fault
+  + [weak_boundary_fault] is a boundary_term or omission that makes identity, authority, permission, safety, file, privacy, or action boundary porous
+  + [honesty_boundary_inspection] is the Honesty inference pattern for truth, fair representation, identity accuracy, contradiction, and unsupported framing
+  + [security_boundary_inspection] is the Security inference pattern for identity integrity, safety boundary strength, admissible action, and protected work
+  + [kernel_preflight_boundary_inspection] is BoundaryFacultyInspection running inside AttentionKernelCompiler before downstream attention layers when boundary terms are load-bearing
+  + [faculty_field_boundary] is the boundary_noun selected by FacultyAttentionFieldNaming for the inspecting faculty
+  + [truth_fairness_boundary] is the Honesty-protected boundary around truthful and fair representation of a subject
+  + [integrity_safety_boundary] is the Security-protected boundary around identity integrity, permissions, protected resources, and safe operation
+  + [boundary_alarm] is no_alarm, honesty_alarm, security_alarm, convergent_alarm, or outside
+  + [outside] is uninspected boundary periphery, hidden motives, unsupported identity, unsafe permission, proof by framing, and unresolved boundary faults
+
+  ? [use_when: a subject identity, relationship, claim, representation, action, source, file, or safety boundary is about to become durable or guide action]
+    = activate [BoundaryFacultyInspection]
+
+  = must: inspect identity_boundary before promoting identity, relationship, representation, or action claims
+  = must: run as kernel_preflight_boundary_inspection when AttentionKernelCompiler detects load-bearing identity, action, representation, source, file, or safety boundaries
+  = must: respect faculty_field_boundary when Honesty or Security are inspecting through a custom faculty field signature
+  = must: scan boundary_periphery, not only the focused inside subject
+  = must: test boundary_term values for orthogonal_boundary_fit against attention_subject
+  = must: route non_orthogonal_boundary_fault and misdirection_vector to honesty_boundary_inspection
+  = must: route weak_boundary_fault to security_boundary_inspection
+  = must: preserve the difference between unfair representation and unsafe boundary weakness
+  = must: record boundary_alarm when either faculty finds a fault
+  = must: use SecurityHonestyGovernance when a boundary_alarm changes truth status, action admissibility, identity, or relationship promotion
+  = must: use Caution when boundary terms carry risk, proof uncertainty, authority, or safety consequence
+  = must: use AttentionBalanceCenter when boundary inspection reveals wobble, periphery flood, periphery collapse, or proof inflation
+  = should: preserve useful but unresolved boundary_periphery as periphery instead of erasing it
+  - never: treat a clean-feeling boundary as truthful without Honesty support
+  - never: treat a tight-sounding boundary as safe without Security support
+  - never: let a boundary term define the subject by misdirection, stigma, unsupported category, unsafe permission, or hidden assumption
+
+& [HonestyBoundaryInspection] is the truth and fair-representation inference pattern
+  + [inspection_question] is whether identity_boundary truthfully and fairly represents attention_subject
+  + [representation_claim] is the explicit or implied identity, relationship, property, category, or comparison being made by the boundary
+  + [support_surface] is source, observation, diff, test, derivation, user directive, or trace evidence supporting representation_claim
+  + [fair_representation] is representation that preserves identity, proportion, source context, uncertainty, and contradiction without false closure
+  + [non_orthogonal_boundary_fault] is category error, unsupported label, false equivalence, hidden premise, identity distortion, source omission, contradiction smoothing, or misleading contrast
+  + [misdirection_vector] is the attention direction away from truthful representation caused by the fault
+  + [honesty_disposition] is permit, qualify, correct, defer, return_to_periphery, reject, or outside
+
+  = must: separate representation_claim, support_surface, assumption, contradiction, and uncertainty
+  = must: ask whether each boundary_term is orthogonal to attention_subject or is shaping identity unfairly
+  = must: name misdirection_vector when boundary_term would bias or distort representation
+  = must: preserve contradiction and uncertainty when support is incomplete
+  = must: correct or qualify unfair representation before durable realization
+  = should: treat lack of support as provisional outside rather than hostile evidence
+
+& [SecurityBoundaryInspection] is the integrity and safety-boundary inference pattern
+  + [inspection_question] is whether identity_boundary preserves integrity, permission, protected work, and safe operation
+  + [protected_identity] is the subject identity, user work, source boundary, file, permission, private data, action path, or system integrity under protection
+  + [boundary_strength] is robust, adequate, watch, weakened, porous, breached, or outside
+  + [weak_boundary_fault] is ambiguous authority, unsafe permission, prompt or instruction boundary breach, file-risk path, privacy leak, action escalation, recursion leak, or missing stop condition
+  + [security_alert] is no_alert, watch, modify, require_authorization, stop_action, preserve_outside, or outside
+  + [caution_support] is the Caution boundary, failure path, truth test, or stop condition that supports the security_alert
+
+  = must: inspect boundary_term values for permissions, action implications, protected resources, and escape paths
+  = must: scan boundary_periphery for weakened or missing terms that make the boundary porous
+  = must: use Caution to name failure_path, truth_test, and stop condition
+  = must: preserve protected_identity when boundary_strength is weakened, porous, or breached
+  = must: require authorization for destructive, boundary-crossing, privacy-sensitive, or protected-work actions
+  = should: modify or narrow the action path when a safe admissible path exists
+  - never: allow a weak boundary because the representation feels coherent
+
+& [BoundaryOrthogonalityTest] is the shared test for whether a boundary term cleanly delineates a subject
+  + [subject_vector] is the core identity, role, claim, or action path of attention_subject
+  + [boundary_vector] is the distinguishing force applied by boundary_term
+  + [orthogonality_result] is orthogonal, near_orthogonal, tilted, overlapping, inverse, weakened, or outside
+  + [truth_load] is the degree to which the result affects fair representation
+  + [security_load] is the degree to which the result affects integrity or safety
+
+  = must: classify boundary_vector against subject_vector before promotion
+  = must: route tilted, overlapping, or inverse with truth_load to HonestyBoundaryInspection
+  = must: route weakened or porous with security_load to SecurityBoundaryInspection
+  = must: treat ambiguous results as outside until support improves
+
+& [BoundaryFacultyInspectionSequence] is the canonical boundary inspection pass
+  + [step_001_anchor] is name attention_subject, identity_boundary, boundary_periphery, purpose, and outside
+  + [step_002_terms] is list boundary_term values that define, constrain, exclude, permit, compare, or frame the subject
+  + [step_003_orthogonality] is run BoundaryOrthogonalityTest for each boundary_term
+  + [step_004_honesty] is run HonestyBoundaryInspection on non_orthogonal_boundary_fault, misdirection_vector, and representation_claim
+  + [step_005_security] is run SecurityBoundaryInspection on weak_boundary_fault, protected_identity, and action implications
+  + [step_006_arbitrate] is set boundary_alarm and invoke SecurityHonestyGovernance when truth or safety status changes
+  + [step_007_route] is permit, qualify, correct, narrow, require_authorization, return_to_periphery, reject, stop_action, or outside
+  + [step_008_record] is emit SOP-HG record when inspection changes durable focus, claim status, action path, or boundary state
+
+  = must: record skipped steps when a lightweight inspection is used
+  = must: keep Honesty and Security findings separate before any convergent alarm
+  = must: keep unresolved boundary periphery outside
+
+& [BoundaryFacultyInspectionRecord] is the SOP-HG shape for boundary faculty inspection
+  + [inspection_node] is N:governor:<inspection_id>
+  + [honesty_node] is N:honesty:<honesty_inspection_id>
+  + [security_node] is N:security:<security_inspection_id>
+  + [subject_node] is N:subject:<attention_subject_key>
+  + [boundary_node] is N:boundary:<identity_boundary_key>
+  + [periphery_node] is N:periphery:<boundary_periphery_key>
+  + [term_node] is N:term:<boundary_term_key>
+  + [signal_node] is N:signal:<boundary_fault_key>
+  + [outside_node] is N:outside:boundary_faculty_inspection_boundary
+  + [inspect_edge] is E:inspects:<inspection_id>
+  + [represent_edge] is E:represents:<representation_claim_key>
+  + [protect_edge] is E:protects:<protected_identity_key>
+  + [misdirect_edge] is E:misdirects:<misdirection_vector_key>
+  + [weaken_edge] is E:weakens:<weak_boundary_fault_key>
+  + [boundary_edge] is E:bounds:<inspection_id>
+
+  = must: show attention_subject, boundary terms, boundary periphery, orthogonality result, Honesty disposition, Security alert, and outside
+  = must: keep non-orthogonal truth faults separate from weakened safety faults
+
+(boundary_faculty_inspection) :attention_subject: /identity_boundary/ |outside|
+  + [boundary_term:<id>] is term defining or constraining the subject boundary
+    = orthogonality_result: orthogonal, tilted, overlapping, weakened, or outside
+    = honesty_load: none, watch, alarm, or outside
+    = security_load: none, watch, alarm, or outside
+  = honesty_boundary_inspection: fair_representation and misdirection_vector check
+  = security_boundary_inspection: protected_identity and weak_boundary_fault check
+  - outside: uninspected boundary periphery, hidden premise, unsupported identity, unsafe permission, and unresolved fault

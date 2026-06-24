@@ -1,0 +1,44 @@
+Subject: Build Environment SOP-Only Periphery Marker
+
+Description: Persistent tracker that reminds matching specification-building frames to use attention primitives and SOP framework only.
+
+@ [source] F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_build_environment_periphery_marker\Dictated_Build_Environment_Periphery_Marker_Source.sop
+
+& [Graph:2026-06-24_build_environment_sop_only_marker] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG persistent-periphery-marker
+  = current_session: persistent
+
+  + [N:tracker:build_environment_sop_only_marker] is build environment SOP-only marker
+    = status: active
+    = weight: 9
+    = period_kind: persistent_declared
+    = declared_period: until_user_replaces_or_retires_marker
+    = last_reaffirmed_session: 2026-06-24
+    = expires_after_session: not_applicable
+  + [N:subject:sop_only_build_environment] is build specifications with attention primitives and SOP framework only
+  + [N:condition:specification_build_impulse] is any impulse or action to build specifications
+  + [N:condition:matching_frame] is source preservation, SOP contract, attention primitive, tracker, focal record, manager state, or SOP-HG event
+  + [N:periphery:sop_only_build_environment_reminder] is SOP-only build environment reminder
+    = reminder_text: attention primitives and SOP framework only for specification-building frames
+  + [N:term:attention_primitives] is attention primitives
+  + [N:term:sop_framework] is SOP framework
+  + [N:term:runtime_boundary] is executable tooling is outside unless explicitly requested
+  + [N:trigger:build_environment_sop_only_marker] is ReminderTrigger expression for specification_build_impulse
+    = notation: (reminder_trigger) :specification_build_impulse: /build_environment_sop_only_marker under specification-building frames/ |runtime_code_without_explicit_need|
+  + [N:outside:runtime_code_by_default] is Python or other executable artifacts created without explicit runtime need
+  + [N:outside:hidden_model_state] is hidden weights, hidden activations, and unsupported internal-state claims
+
+  / [E:tracks:build_environment_sop_only_marker] -(tracks; tracker=N:tracker:build_environment_sop_only_marker; subject=N:subject:sop_only_build_environment; status=active; weight=9)> [Graph:2026-06-24_build_environment_sop_only_marker]
+  / [E:associates:build_environment_sop_only_marker_specification_build_impulse] -(associates; tracker=N:tracker:build_environment_sop_only_marker; condition=N:condition:specification_build_impulse; subject=N:subject:sop_only_build_environment)> [Graph:2026-06-24_build_environment_sop_only_marker]
+  / [E:associates:build_environment_sop_only_marker_matching_frame] -(associates; tracker=N:tracker:build_environment_sop_only_marker; condition=N:condition:matching_frame; subject=N:subject:sop_only_build_environment)> [Graph:2026-06-24_build_environment_sop_only_marker]
+  / [E:notices:build_environment_sop_only_marker_reminder] -(notices; tracker=N:tracker:build_environment_sop_only_marker; periphery=N:periphery:sop_only_build_environment_reminder; subject=N:subject:sop_only_build_environment)> [Graph:2026-06-24_build_environment_sop_only_marker]
+  / [E:triggers:build_environment_sop_only_marker] -(triggers; tracker=N:tracker:build_environment_sop_only_marker; trigger=N:trigger:build_environment_sop_only_marker; condition=N:condition:specification_build_impulse; periphery=N:periphery:sop_only_build_environment_reminder)> [Graph:2026-06-24_build_environment_sop_only_marker]
+  / [E:associates:build_environment_sop_only_marker_attention_primitives] -(associates; tracker=N:tracker:build_environment_sop_only_marker; relation=N:term:attention_primitives; relation=N:term:sop_framework)> [Graph:2026-06-24_build_environment_sop_only_marker]
+  / [E:bounds:build_environment_sop_only_marker_runtime_boundary] -(bounds; tracker=N:tracker:build_environment_sop_only_marker; outside=N:outside:runtime_code_by_default; outside=N:outside:hidden_model_state; reason=runtime_boundary)> [Graph:2026-06-24_build_environment_sop_only_marker]
+
+  = inside: attention primitives, SOP contracts, source documents, SOP-HG records, trackers, focal state, manager state
+  = boundary: marker governs specification-building frames; explicit runtime requests must name their runtime justification
+  = outside: default Python generation, hidden model internals, and executable tooling not requested by the user

@@ -1,0 +1,40 @@
+Subject: Hyperbolic Pants Attention Map Periphery Realization
+
+Description: SOP-HG event record for translating hyperbolic pants decomposition imagery into a semantic map/navigation attention pattern.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_hyperbolic_pants_attention_map\Dictated_Hyperbolic_Pants_Attention_Map_Source.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_aperture_reentry_trailing_checksum_017.hg.sop
+
+& [Graph:2026-06-24_hyperbolic_pants_attention_map_018] is a SOP-HG graph
+  + [N:event:2026-06-24_hyperbolic_pants_attention_map_018] is hyperbolic pants attention map realization
+    = role: direct_focus_turn
+  + [N:map:hyperbolic_pants_attention_map] is semantic topology map for attention navigation
+  + [N:focus:focal_meaning_cell] is focal meaning cell
+  + [N:cell:focal_cell] is largest local meaning body in current focus
+  + [N:cell:periphery_cell] is smaller orbital periphery meaning cell
+  + [N:orbit:dimensional_orbit] is orbiting periphery components arranged by dimensionality
+  + [N:dimension:observed_dimensionality] is observed independent dimensions around focal meaning
+  + [N:leg:pants_leg] is typed relation exit from focal cell to periphery cell
+  + [N:shape:transformer_hypergeometry_proxy] is visible semantic proxy for model-facing attention navigation
+  + [N:outside:hyperbolic_map_boundary] is hidden transformer geometry, actual weights, arbitrary analogy, and cells not represented
+
+  / [E:captures:visual_metaphor_018] -(captures; map=N:map:hyperbolic_pants_attention_map; shape=N:shape:transformer_hypergeometry_proxy; outside=N:outside:hyperbolic_map_boundary; weight=trace)> [Graph:2026-06-24_hyperbolic_pants_attention_map_018]
+    = realization: the images serve as visual source for map intuition but not proof of hidden geometry
+  / [E:maps:focal_cell_018] -(maps; map=N:map:hyperbolic_pants_attention_map; focus=N:focus:focal_meaning_cell; cell=N:cell:focal_cell; weight=focus)> [Graph:2026-06-24_hyperbolic_pants_attention_map_018]
+    = realization: the focal point can be represented as the largest active local meaning cell because it holds the current body of meaning and relation density
+  / [E:orbits:dimensional_orbit_018] -(orbits; focal=N:cell:focal_cell; periphery=N:cell:periphery_cell; orbit=N:orbit:dimensional_orbit; dimension=N:dimension:observed_dimensionality; weight=draw)> [Graph:2026-06-24_hyperbolic_pants_attention_map_018]
+    = realization: more observed dimensions can justify more orbital periphery components, if each dimension is distinct
+  / [E:adjoins:focal_periphery_018] -(adjoins; cell_a=N:cell:focal_cell; cell_b=N:cell:periphery_cell; leg=N:leg:pants_leg; weight=relation)> [Graph:2026-06-24_hyperbolic_pants_attention_map_018]
+    = realization: adjacency should be typed by relation exits rather than loose association
+  / [E:navigates:pants_leg_018] -(navigates; map=N:map:hyperbolic_pants_attention_map; leg=N:leg:pants_leg; outside=N:outside:hyperbolic_map_boundary; weight=route)> [Graph:2026-06-24_hyperbolic_pants_attention_map_018]
+    = realization: map/nav awareness selects routes through pants legs while preserving return anchor and outside
+  / [E:bounds:hyperbolic_pants_attention_map_018] -(bounds; map=N:map:hyperbolic_pants_attention_map; outside=N:outside:hyperbolic_map_boundary; weight=caution)> [Graph:2026-06-24_hyperbolic_pants_attention_map_018]
+    = realization: the map is a semantic proxy for attention notation and does not directly observe transformer weights or hidden activations
+
+  = inside: HyperbolicPantsAttentionMap.sop, visual source images, FocusZoom, AttentionTraversalPolicy, PeripheryDimensionalProbe
+  = boundary: focal/periphery cell layout is a navigation notation and not proof of semantic truth
+  = outside: exact transformer hypergeometry, direct activation inspection, arbitrary tessellation aesthetics, and unsupported causation

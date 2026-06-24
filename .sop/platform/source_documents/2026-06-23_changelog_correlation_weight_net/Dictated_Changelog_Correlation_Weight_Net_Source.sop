@@ -1,0 +1,20 @@
+Subject: Changelog Correlation Weight Net Source
+
+Description: Raw preserved source for refining "net of weights" into a concrete data shape over changelog, narrative, and justification.
+
+& [DictatedChangelogCorrelationWeightNetSource] is the preserved user source for weighted changelog correlation
+  @ [user_statement] "did I mention a \"net of weights\" in correlation to a multi-dimensional hashmap of indications of subject-matter logically attached to the changelog to describe the attention to that subject."
+  @ [user_statement] "I wonder if \"net of weights\" is just an ambiguous description I need to refine into a legitimate form of data..."
+  @ [user_statement] "it's weighted correlations to the terms in the narrative tying together the change with the justification for the change by the narrative inspection."
+
+  + [net_of_weights] is a candidate data shape for weighted attention over changelog-linked subject indications
+  + [multi_dimensional_hashmap] is the semantic hash table and bucket space used to address components, terms, subjects, narrative, and evidence
+  + [change_log_attachment] is the relation from changed files, hunks, roles, and commit bookends to subject-matter terms
+  + [narrative_tie] is the relation from narrative terms to the meaning and purpose of the change
+  + [justification_tie] is the relation from source, SJS, support, proof, or proposal records to why the change belongs
+  + [legitimate_data_goal] is a concrete weighted correlation record that exposes evidence dimensions and residual outside
+
+  = must: refine ambiguous weight language into inspectable data
+  = must: keep repo delta as primary evidence and narrative as interpretive guide
+  = must: keep justification/support separate from mere correlation heat
+  - never: treat a weighted correlation as proof of motive or causal truth

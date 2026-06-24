@@ -1,0 +1,14 @@
+Subject: Attention Weight Scale And Turn Bookmark Source Manifest
+
+Description: Source preservation manifest for the attention weight scale and turn bookmark slice.
+
+& [AttentionWeightScaleTurnBookmarkSourceManifest] is the source preservation manifest
+  + [source_document] is F:\.sop\platform\source_documents\2026-06-23_attention_weight_scale_turn_bookmark\Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+  + [canonical_attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop
+  + [canonical_turn_bookmark] is F:\.sop\platform\TurnBookmark.sop
+  + [source_status] is preserved
+  + [sjs_status] is canonicalized_without_full_signature
+  + [lineage] is dictated source to attention weight scale and turn bookmark contracts
+
+  = must: keep source_document separate from canonical derived artifacts
+  = must: route future high-authority implementation claims through full SJS signature processing

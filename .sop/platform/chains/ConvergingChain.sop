@@ -1,0 +1,30 @@
+Subject: Converging Chain
+
+Description: SOP contract for chunked local synchronization and later remote convergence.
+
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+
+& [ConvergingChain] is the local sequence of awareness chunks that can converge with a remote history
+  + [local_node] is F:\.sop
+  + [chunk] is a bounded commit or scan span
+  + [major_bookend] is a durable synchronization anchor such as a tag, remote push, or release point
+  + [minor_bookend] is a local commit or scan event inside a major span
+  + [branch_refinement_queue] is local refinement branches and artifacts waiting for selection, merge, preservation, or rejection
+  + [idle_sync_policy] is unconfigured
+  + [remote_target] is none
+
+& [ChunkSyncPolicy] is the future synchronization policy
+  + [detect_idle] is notice a sustained low-use window before remote push
+  + [scan_before_push] is run SensitivityScan from last major_bookend to HEAD
+  + [review_branch_refinements] is process branch_refinement_queue before pushing selected main-line changes
+  + [review_pressure_impact] is inspect pressure and impact scan records before push
+  + [push_remote] is push only when remote_target and credentials are configured
+  + [record_result] is write success or failure as SOP event
+
+  = must: local commit chunks can exist without remote sync
+  = must: local branch refinement can exist without remote sync
+  = must: remote synchronization remains disabled until explicitly configured
+  = must: use scan records as chunk meaning, not just commit hashes
+  = must: merge selected branch refinements locally before representing them as main-line awareness
+  - never: push during active work without explicit policy
+  - never: hide failed or skipped sync

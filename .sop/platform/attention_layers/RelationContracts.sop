@@ -1,0 +1,23 @@
+Subject: Attention Relation Contracts
+
+Description: Typed relation contracts for focus, periphery, correlation, causation, and narrative digestion.
+
+& [AttentionRelationContracts] is the relation vocabulary for SOP-HG attention movement
+  + [attends] is focus directly attends a node
+  + [orbits] is periphery keeps a node available around focus
+  + [correlates] is two or more nodes share features, terms, pressure, or heat
+  + [causes] is one node changes, enables, blocks, or explains another with evidence
+  + [draws_attention] is a periphery node gains enough relation weight to pull toward focus
+  + [digests] is narrative is written into a subject layer
+  + [bounds] is outside constrains what the relation cannot prove
+
+& [CorrelationVsCausationBoundary] is the rule separating association from cause
+  + [correlation] is shared depth, shared terms, repeated touch, or proximity in a thought-current
+  + [causation] is supported change relation, enabling relation, blocking relation, or explicit reason relation
+  + [hypothesis] is possible causation without enough evidence
+  + [outside] is unsupported causal story
+
+  = must: record correlation and causation as different edge kinds
+  = must: label causal hypotheses before evidence is sufficient
+  = must: allow one hyperedge to carry both correlation and causal roles when evidence supports both
+  - never: promote association into cause by heat alone

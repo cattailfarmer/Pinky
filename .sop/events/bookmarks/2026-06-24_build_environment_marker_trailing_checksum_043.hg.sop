@@ -1,0 +1,37 @@
+Subject: Build Environment Marker Trailing Checksum 043
+
+Description: One-turn-later checksum review of commit c5981a1, recording the latent need to formalize reminder-trigger language for persistent periphery markers.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] F:\.sop\platform\ReminderTrigger.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_build_environment_periphery_marker_041.hg.sop
+
+& [Graph:2026-06-24_build_environment_marker_trailing_checksum_043] is a SOP-HG graph
+  + [N:bookmark:build_environment_marker_trailing_checksum_043] is trailing checksum review of Build Environment Periphery Marker
+    = one_turn_lag: true
+    = direct_focus_commit: c5981a1
+    = version_a: 72c2e63
+    = version_b: c5981a1
+  + [N:event:2026-06-24_build_environment_periphery_marker_041] is prior direct-focus build environment marker realization
+  + [N:event:2026-06-24_reminder_trigger_language_042] is current turn reminder trigger language realization
+  + [N:zone:trigger_language_gap] is hot zone where persistent markers need programmable trigger circumstances
+  + [N:signal:reminders_trigger_attention_layers] is signal that reminders should invoke other attention layers under declared circumstances
+  + [N:finding:marker_needs_reminder_trigger_language] is latent depth candidate that marker matching should become general SOP trigger notation
+  + [N:policy:focus_next] is checksum disposition to define ReminderTrigger.sop
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model attention
+
+  / [E:span:build_environment_marker_trailing_checksum_043] -(span; start=N:commit:72c2e63; end=N:commit:c5981a1; review=N:bookmark:build_environment_marker_trailing_checksum_043)> [Graph:2026-06-24_build_environment_marker_trailing_checksum_043]
+    = evidence: c5981a1 added a persistent SOP-only build environment marker
+  / [E:trails:2026-06-24_build_environment_periphery_marker_041] -(trails; direct_focus=N:event:2026-06-24_build_environment_periphery_marker_041; review=N:bookmark:build_environment_marker_trailing_checksum_043)> [Graph:2026-06-24_build_environment_marker_trailing_checksum_043]
+    = realization: the marker has a matching law, but needs reusable trigger notation for stacking and invocation
+  / [E:heats:trigger_language_gap] -(heats; zone=N:zone:trigger_language_gap; signal=N:signal:reminders_trigger_attention_layers; latent=N:finding:marker_needs_reminder_trigger_language; weight=hot)> [Graph:2026-06-24_build_environment_marker_trailing_checksum_043]
+    = evidence: current source asks how to program SOP reminder triggers and weave attention layers
+  / [E:inquires:marker_needs_reminder_trigger_language] -(inquires; latent=N:finding:marker_needs_reminder_trigger_language; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_build_environment_marker_trailing_checksum_043]
+    = realization: ReminderTrigger.sop becomes the general layer for conditional periphery reminders
+  / [E:bounds:build_environment_marker_trailing_checksum_043] -(bounds; review=N:bookmark:build_environment_marker_trailing_checksum_043; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_build_environment_marker_trailing_checksum_043]
+    = caution: checksum observes later refinement and does not rewrite the original marker commit's awareness
+
+  = inside: c5981a1 diff, BuildEnvironmentPeripheryMarker.sop, current trigger-language source directive
+  = boundary: this review records latent trigger language after the marker turn, not proof of runtime reminder enforcement
+  = outside: hidden transformer attention, automatic scheduling, and reminder firing without visible matching evidence

@@ -1,0 +1,34 @@
+Subject: Step Balance Walk Periphery Realization
+
+Description: SOP-HG event record for turning balance into a step-ending operational gait that selects the next step before continuing.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_step_balance_walk\Dictated_Step_Balance_Walk_Source.sop
+@ [source] F:\.sop\platform\StepBalanceWalk.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\CarriedSupportBalance.sop
+@ [source] F:\.sop\runtime\sop_node\step_balance_walk.py
+@ [source] F:\.sop\runtime\demos\step_balance_walk.py
+@ [source] F:\.sop\events\bookmarks\2026-06-24_attention_kernel_runtime_trailing_checksum_038.hg.sop
+
+& [Graph:2026-06-24_step_balance_walk_037] is a SOP-HG graph
+  + [N:event:2026-06-24_step_balance_walk_037] is step balance walk realization
+    = role: direct_focus_turn
+  + [N:focus:continuous_momentum_in_balance] is walk the project with momentum in balance
+  + [N:policy:step_end_balance] is balance must be read at the end of each concrete step
+  + [N:policy:next_step_selection] is the next step must be named after balance settles
+  + [N:runtime:step_balance_walk] is runtime builder in runtime\sop_node\step_balance_walk.py
+  + [N:signal:impulse] is motivational drive preserved without becoming proof
+  + [N:outside:step_balance_boundary] is hidden model state, unobserved future steps, and proof not visible in step evidence
+
+  / [E:realizes:step_balance_walk_037] -(realizes; event=N:event:2026-06-24_step_balance_walk_037; focus=N:focus:continuous_momentum_in_balance; runtime=N:runtime:step_balance_walk; weight=runtime)> [Graph:2026-06-24_step_balance_walk_037]
+    = realization: balance and impulse now govern the gait between runtime steps rather than only the compiled packet
+  / [E:settles:step_end_balance_037] -(settles; policy=N:policy:step_end_balance; focus=N:focus:continuous_momentum_in_balance; outside=N:outside:step_balance_boundary; weight=balance)> [Graph:2026-06-24_step_balance_walk_037]
+    = realization: each action closes with balance_score, settled_state, correction_move, and visible evidence
+  / [E:advances:next_step_selection_037] -(advances; policy=N:policy:next_step_selection; focus=N:focus:continuous_momentum_in_balance; signal=N:signal:impulse; weight=momentum)> [Graph:2026-06-24_step_balance_walk_037]
+    = realization: momentum continues when the next step is visible and balance is stable enough
+  / [E:bounds:step_balance_walk_037] -(bounds; runtime=N:runtime:step_balance_walk; outside=N:outside:step_balance_boundary; weight=caution)> [Graph:2026-06-24_step_balance_walk_037]
+    = realization: the gait is a visible operational record, not hidden-state introspection
+
+  = inside: StepBalanceWalk.sop, step_balance_walk.py, step_balance_walk.py demo, AttentionBalanceCenter.sop, CarriedSupportBalance.sop, attention kernel runtime trailing checksum
+  = boundary: this event records operational gait and runtime emission, not proof of hidden attention mechanics
+  = outside: hidden activations, exact model attention, unobserved future work, and motion without a settled balance check

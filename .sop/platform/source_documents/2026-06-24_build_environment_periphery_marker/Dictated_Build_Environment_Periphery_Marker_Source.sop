@@ -1,0 +1,16 @@
+Subject: Dictated Build Environment Periphery Marker Source
+
+Description: Raw dictated source for a persistent periphery reminder constraining specification-building work to attention primitives and SOP framework.
+
+& [DictatedBuildEnvironmentPeripheryMarkerSource] is the preserved user source for the SOP-only build-environment marker
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "set it as a persistent periphery marker as a reminder, a reminder that associates with every frame that matches the constraint given for the context of the reminder, that the build environment is attention primitives and SOP framework only. the periphery will remind you at every impulse about what the build conditions are. tie the reminder to all actions and impulses to build the specifications."
+
+  = must: preserve this source separately from the processed marker contract
+  = must: create a persistent periphery marker
+  = must: associate the reminder with every matching specification-building frame
+  = must: remind at every build impulse that the build environment is attention primitives and SOP framework only
+  = must: tie the reminder to actions and impulses that build specifications
+  = must: avoid adding runtime code for this marker

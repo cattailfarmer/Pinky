@@ -1,0 +1,20 @@
+Subject: Focal Point Layer Source
+
+Description: Raw preserved source for distinguishing periphery tracking from focal point attention.
+
+& [DictatedFocalPointLayerSource] is the preserved user source for the focal point layer
+  @ [user_statement] "and tracking is the periphery layer... we also need a focal layer."
+  @ [user_statement] "what we've been describing has been a wide system with lots of dimensions to wander, but we haven't defined a focal point object?"
+  @ [user_statement] "that's actually where tracking needs to attend to."
+  @ [user_statement] "Periphery needs attention as well, and I think it's fair that we built the periphery first, because focus should chase the periphery when attention demands right-hemisphere focus."
+
+  + [tracking_layer] is peripheral attention, not the focal object itself
+  + [focal_point] is the thin active object that receives draw from periphery and shapes current action
+  + [right_hemisphere_focus] is context-led focus selection when periphery carries enough meaning pressure to redirect attention
+  + [liminal_draw] is the transition path from periphery tracking to focal point
+
+  = must: define focal point as distinct from tracking
+  = must: keep tracking in periphery unless draw promotes it
+  = must: let focus chase periphery when right-hemisphere contextual attention demands it
+  = must: keep focal attention thin enough to act
+  - never: let wide tracking become focus without a focal point selection

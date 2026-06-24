@@ -1,0 +1,17 @@
+Subject: Tracker Runtime Boundary Source
+
+Description: Raw preserved source for clarifying that Python is a tracker manager, not the attention layer itself.
+
+& [DictatedTrackerRuntimeBoundarySource] is the preserved user source for tracker runtime boundaries
+  @ [user_statement] "writing it in .py? does that work as a layer of attention in codex?"
+  @ [user_statement] "this is about managing your .sop files for tracking long term, otherwise just hold the directions for attention in local attention context window."
+
+  + [sop_attention_layer] is the durable attention authority stored in .sop files
+  + [python_runtime] is a local compiler, renderer, expiry checker, and maintenance helper for .sop records
+  + [long_term_tracking] is tracking written to .sop tracker records
+  + [local_attention_context] is temporary directions held only in the active context window
+
+  = must: treat .sop tracker records as the long-term attention layer
+  = must: treat .py as management code that updates or renders the .sop layer
+  = must: keep temporary attention directions in local context unless they are explicitly tracked
+  - never: treat Python code itself as Codex persistent attention

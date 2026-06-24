@@ -1,0 +1,14 @@
+Subject: Pinky SOP Root Authority Source Manifest
+
+Description: Manifest for preserved source that moves active SOP authority to C:\Project\Pinky\.sop.
+
+& [PinkySOPRootAuthoritySourceManifest] is the source-preservation manifest
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pinky_sop_root_authority
+  + [raw_source] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pinky_sop_root_authority\Dictated_Pinky_SOP_Root_Authority_Source.sop
+  + [canonical_target] is C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
+  + [event_target] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_pinky_sop_root_authority_073.hg.sop
+  + [source_boundary] is Pinky .sop becomes active source authority after seeding from F:\.sop
+  + [source_outside] is unrelated Pinky project changes, nested .sop Git remote, and backup-only state
+
+  = must: keep raw_source unchanged after canonical processing
+  = must: cite raw_source from canonical_target

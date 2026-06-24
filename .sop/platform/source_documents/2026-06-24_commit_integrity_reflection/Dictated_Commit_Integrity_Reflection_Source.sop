@@ -1,0 +1,12 @@
+Subject: Dictated Commit Integrity Reflection Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedCommitIntegrityReflectionSource] is the preserved user source for commit integrity reflection
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "did you commit with that turn? and the periphery and review analysis of the differences between before/after commit was reflected on, justified, and realized as part of the new commit, ensuring commit integrity and ensuring stable purpose?"
+
+  = must: preserve this source separately from processed contracts
+  = must: distinguish actual committed artifacts from implied reflection

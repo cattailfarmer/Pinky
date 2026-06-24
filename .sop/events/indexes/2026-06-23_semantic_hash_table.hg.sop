@@ -1,0 +1,427 @@
+Subject: 2026-06-23_semantic_hash_table_table Semantic Hash Table
+
+& [Graph:2026_06_23_semantic_hash_table_table] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG semantic-hash-table
+
+  + [N:table:2026_06_23_semantic_hash_table_table] is 2026-06-23_semantic_hash_table_table
+    = entry_count: 199
+    = bucket_count: 11738
+  + [N:outside:semantic_identity] is semantic identity not proven by inclusive table match
+  + [N:component:130e6886eba22d3c] is platform/AttentionTraversalPolicy.sop
+    = pointer: H:component:130e6886eba22d3c
+    = kind: component
+    = dimension_count: 582
+  + [N:bucket:kind_component] is kind:component
+    = dimension: kind
+    = value: component
+  + [N:bucket:pointer_h_component_130e6886eba22d3c] is pointer:h:component:130e6886eba22d3c
+    = dimension: pointer
+    = value: h:component:130e6886eba22d3c
+  + [N:bucket:path_platform_attentiontraversalpolicy_sop] is path:platform/attentiontraversalpolicy.sop
+    = dimension: path
+    = value: platform/attentiontraversalpolicy.sop
+  + [N:bucket:subject_attention_traversal_policy] is subject:attention_traversal_policy
+    = dimension: subject
+    = value: attention_traversal_policy
+  + [N:bucket:term_central] is term:central
+    = dimension: term
+    = value: central
+  + [N:bucket:term_correlation] is term:correlation
+    = dimension: term
+    = value: correlation
+  + [N:bucket:term_dimension] is term:dimension
+    = dimension: term
+    = value: dimension
+  + [N:bucket:term_fold] is term:fold
+    = dimension: term
+    = value: fold
+  + [N:bucket:term_heat] is term:heat
+    = dimension: term
+    = value: heat
+  + [N:bucket:term_leg] is term:leg
+    = dimension: term
+    = value: leg
+  + [N:bucket:term_seven] is term:seven
+    = dimension: term
+    = value: seven
+  + [N:component:143a18fb741fad60] is platform/FocusZoom.sop
+    = pointer: H:component:143a18fb741fad60
+    = kind: component
+    = dimension_count: 491
+  + [N:bucket:pointer_h_component_143a18fb741fad60] is pointer:h:component:143a18fb741fad60
+    = dimension: pointer
+    = value: h:component:143a18fb741fad60
+  + [N:bucket:path_platform_focuszoom_sop] is path:platform/focuszoom.sop
+    = dimension: path
+    = value: platform/focuszoom.sop
+  + [N:bucket:subject_focus_zoom] is subject:focus_zoom
+    = dimension: subject
+    = value: focus_zoom
+  + [N:component:4d90a0a092b004fe] is platform/SevenFoldPantsCorrelationFrame.sop
+    = pointer: H:component:4d90a0a092b004fe
+    = kind: component
+    = dimension_count: 412
+  + [N:bucket:pointer_h_component_4d90a0a092b004fe] is pointer:h:component:4d90a0a092b004fe
+    = dimension: pointer
+    = value: h:component:4d90a0a092b004fe
+  + [N:bucket:path_platform_sevenfoldpantscorrelationframe_sop] is path:platform/sevenfoldpantscorrelationframe.sop
+    = dimension: path
+    = value: platform/sevenfoldpantscorrelationframe.sop
+  + [N:bucket:subject_seven_fold_pants_correlation_frame] is subject:seven-fold_pants_correlation_frame
+    = dimension: subject
+    = value: seven-fold_pants_correlation_frame
+  + [N:component:705baf3794434688] is events/periphery_stream/2026-06-24_seven_fold_pants_correlation_frame_020.hg.sop
+    = pointer: H:component:705baf3794434688
+    = kind: component
+    = dimension_count: 182
+  + [N:bucket:pointer_h_component_705baf3794434688] is pointer:h:component:705baf3794434688
+    = dimension: pointer
+    = value: h:component:705baf3794434688
+  + [N:bucket:path_events_periphery_stream_2026_06_24_seven_fold_pants_correlation_frame_020_hg_sop] is path:events/periphery_stream/2026-06-24_seven_fold_pants_correlation_frame_020.hg.sop
+    = dimension: path
+    = value: events/periphery_stream/2026-06-24_seven_fold_pants_correlation_frame_020.hg.sop
+  + [N:bucket:subject_seven_fold_pants_correlation_frame_periphery_realization] is subject:seven-fold_pants_correlation_frame_periphery_realization
+    = dimension: subject
+    = value: seven-fold_pants_correlation_frame_periphery_realization
+  + [N:component:8ccf91518b16e17d] is platform/HyperbolicPantsAttentionMap.sop
+    = pointer: H:component:8ccf91518b16e17d
+    = kind: component
+    = dimension_count: 451
+  + [N:bucket:pointer_h_component_8ccf91518b16e17d] is pointer:h:component:8ccf91518b16e17d
+    = dimension: pointer
+    = value: h:component:8ccf91518b16e17d
+  + [N:bucket:path_platform_hyperbolicpantsattentionmap_sop] is path:platform/hyperbolicpantsattentionmap.sop
+    = dimension: path
+    = value: platform/hyperbolicpantsattentionmap.sop
+  + [N:bucket:subject_hyperbolic_pants_attention_map] is subject:hyperbolic_pants_attention_map
+    = dimension: subject
+    = value: hyperbolic_pants_attention_map
+  + [N:component:e6fca0a892088a93] is planning/project_manager/Manager_State.sop
+    = pointer: H:component:e6fca0a892088a93
+    = kind: component
+    = dimension_count: 663
+  + [N:bucket:pointer_h_component_e6fca0a892088a93] is pointer:h:component:e6fca0a892088a93
+    = dimension: pointer
+    = value: h:component:e6fca0a892088a93
+  + [N:bucket:path_planning_project_manager_manager_state_sop] is path:planning/project_manager/manager_state.sop
+    = dimension: path
+    = value: planning/project_manager/manager_state.sop
+  + [N:bucket:subject_sop_awareness_node_manager_state] is subject:sop_awareness_node_manager_state
+    = dimension: subject
+    = value: sop_awareness_node_manager_state
+  + [N:component:1f170f77856c5b58] is platform/PeripheryDimensionalProbe.sop
+    = pointer: H:component:1f170f77856c5b58
+    = kind: component
+    = dimension_count: 432
+  + [N:bucket:pointer_h_component_1f170f77856c5b58] is pointer:h:component:1f170f77856c5b58
+    = dimension: pointer
+    = value: h:component:1f170f77856c5b58
+  + [N:bucket:path_platform_peripherydimensionalprobe_sop] is path:platform/peripherydimensionalprobe.sop
+    = dimension: path
+    = value: platform/peripherydimensionalprobe.sop
+  + [N:bucket:subject_periphery_dimensional_probe] is subject:periphery_dimensional_probe
+    = dimension: subject
+    = value: periphery_dimensional_probe
+  + [N:component:380159a56967a5df] is events/bookmarks/2026-06-24_hyperbolic_map_trailing_checksum_019.hg.sop
+    = pointer: H:component:380159a56967a5df
+    = kind: component
+    = dimension_count: 184
+  + [N:bucket:pointer_h_component_380159a56967a5df] is pointer:h:component:380159a56967a5df
+    = dimension: pointer
+    = value: h:component:380159a56967a5df
+  + [N:bucket:path_events_bookmarks_2026_06_24_hyperbolic_map_trailing_checksum_019_hg_sop] is path:events/bookmarks/2026-06-24_hyperbolic_map_trailing_checksum_019.hg.sop
+    = dimension: path
+    = value: events/bookmarks/2026-06-24_hyperbolic_map_trailing_checksum_019.hg.sop
+  + [N:bucket:subject_hyperbolic_map_trailing_checksum_019] is subject:hyperbolic_map_trailing_checksum_019
+    = dimension: subject
+    = value: hyperbolic_map_trailing_checksum_019
+  + [N:component:4bea7b9a0a117c6a] is platform/FocalPoint.sop
+    = pointer: H:component:4bea7b9a0a117c6a
+    = kind: component
+    = dimension_count: 568
+  + [N:bucket:pointer_h_component_4bea7b9a0a117c6a] is pointer:h:component:4bea7b9a0a117c6a
+    = dimension: pointer
+    = value: h:component:4bea7b9a0a117c6a
+  + [N:bucket:path_platform_focalpoint_sop] is path:platform/focalpoint.sop
+    = dimension: path
+    = value: platform/focalpoint.sop
+  + [N:bucket:subject_focal_point] is subject:focal_point
+    = dimension: subject
+    = value: focal_point
+  + [N:component:53e6a0df29eaefad] is platform/AttentionScaffoldCompiler.sop
+    = pointer: H:component:53e6a0df29eaefad
+    = kind: component
+    = dimension_count: 647
+  + [N:bucket:pointer_h_component_53e6a0df29eaefad] is pointer:h:component:53e6a0df29eaefad
+    = dimension: pointer
+    = value: h:component:53e6a0df29eaefad
+  + [N:bucket:path_platform_attentionscaffoldcompiler_sop] is path:platform/attentionscaffoldcompiler.sop
+    = dimension: path
+    = value: platform/attentionscaffoldcompiler.sop
+  + [N:bucket:subject_attention_scaffold_compiler] is subject:attention_scaffold_compiler
+    = dimension: subject
+    = value: attention_scaffold_compiler
+  + [N:component:5489007f656ab553] is platform/SOPHypergraphRecord.sop
+    = pointer: H:component:5489007f656ab553
+    = kind: component
+    = dimension_count: 1187
+  + [N:bucket:pointer_h_component_5489007f656ab553] is pointer:h:component:5489007f656ab553
+    = dimension: pointer
+    = value: h:component:5489007f656ab553
+  + [N:bucket:path_platform_sophypergraphrecord_sop] is path:platform/sophypergraphrecord.sop
+    = dimension: path
+    = value: platform/sophypergraphrecord.sop
+  + [N:bucket:subject_sop_hypergraph_record] is subject:sop_hypergraph_record
+    = dimension: subject
+    = value: sop_hypergraph_record
+  + [N:component:9cc537e9d09231ef] is platform/Attention.sop
+    = pointer: H:component:9cc537e9d09231ef
+    = kind: component
+    = dimension_count: 474
+  + [N:bucket:pointer_h_component_9cc537e9d09231ef] is pointer:h:component:9cc537e9d09231ef
+    = dimension: pointer
+    = value: h:component:9cc537e9d09231ef
+  + [N:bucket:path_platform_attention_sop] is path:platform/attention.sop
+    = dimension: path
+    = value: platform/attention.sop
+  + [N:bucket:subject_local_attention_framework] is subject:local_attention_framework
+    = dimension: subject
+    = value: local_attention_framework
+  + [N:query:2026_06_23_semantic_hash_table_table_permissive] is permissive lookup
+    = term: central
+    = term: correlation
+    = term: dimension
+    = term: fold
+    = term: heat
+    = term: leg
+    = term: seven
+
+/ [E:indexes:kind_component_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_130e6886eba22d3c_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_130e6886eba22d3c; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_attentiontraversalpolicy_sop_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_attentiontraversalpolicy_sop; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_attention_traversal_policy_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_attention_traversal_policy; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_130e6886eba22d3c] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:130e6886eba22d3c)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_130e6886eba22d3c] -(bounds; entry=N:component:130e6886eba22d3c; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_143a18fb741fad60_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_143a18fb741fad60; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_focuszoom_sop_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_focuszoom_sop; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_focus_zoom_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_focus_zoom; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_143a18fb741fad60] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:143a18fb741fad60)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_143a18fb741fad60] -(bounds; entry=N:component:143a18fb741fad60; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_4d90a0a092b004fe_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_4d90a0a092b004fe; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_sevenfoldpantscorrelationframe_sop_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_sevenfoldpantscorrelationframe_sop; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_seven_fold_pants_correlation_frame_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_seven_fold_pants_correlation_frame; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_4d90a0a092b004fe] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:4d90a0a092b004fe)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_4d90a0a092b004fe] -(bounds; entry=N:component:4d90a0a092b004fe; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_705baf3794434688_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_705baf3794434688; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_events_periphery_stream_2026_06_24_seven_fold_pants_correlation_frame_020_hg_sop_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_events_periphery_stream_2026_06_24_seven_fold_pants_correlation_frame_020_hg_sop; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_seven_fold_pants_correlation_frame_periphery_realization_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_seven_fold_pants_correlation_frame_periphery_realization; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_705baf3794434688] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:705baf3794434688)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_705baf3794434688] -(bounds; entry=N:component:705baf3794434688; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_8ccf91518b16e17d_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_8ccf91518b16e17d; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_hyperbolicpantsattentionmap_sop_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_hyperbolicpantsattentionmap_sop; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_hyperbolic_pants_attention_map_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_hyperbolic_pants_attention_map; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_8ccf91518b16e17d] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:8ccf91518b16e17d)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_8ccf91518b16e17d] -(bounds; entry=N:component:8ccf91518b16e17d; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_e6fca0a892088a93_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_e6fca0a892088a93; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_planning_project_manager_manager_state_sop_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_planning_project_manager_manager_state_sop; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_sop_awareness_node_manager_state_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_sop_awareness_node_manager_state; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_e6fca0a892088a93] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:e6fca0a892088a93)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_e6fca0a892088a93] -(bounds; entry=N:component:e6fca0a892088a93; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_1f170f77856c5b58_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_1f170f77856c5b58; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_peripherydimensionalprobe_sop_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_peripherydimensionalprobe_sop; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_periphery_dimensional_probe_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_periphery_dimensional_probe; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_1f170f77856c5b58] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:1f170f77856c5b58)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_1f170f77856c5b58] -(bounds; entry=N:component:1f170f77856c5b58; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_380159a56967a5df_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_380159a56967a5df; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_events_bookmarks_2026_06_24_hyperbolic_map_trailing_checksum_019_hg_sop_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_events_bookmarks_2026_06_24_hyperbolic_map_trailing_checksum_019_hg_sop; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_hyperbolic_map_trailing_checksum_019_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_hyperbolic_map_trailing_checksum_019; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_380159a56967a5df] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:380159a56967a5df)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_380159a56967a5df] -(bounds; entry=N:component:380159a56967a5df; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_4bea7b9a0a117c6a_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_4bea7b9a0a117c6a; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_focalpoint_sop_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_focalpoint_sop; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_focal_point_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_focal_point; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_4bea7b9a0a117c6a] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:4bea7b9a0a117c6a)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_4bea7b9a0a117c6a] -(bounds; entry=N:component:4bea7b9a0a117c6a; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_53e6a0df29eaefad_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_53e6a0df29eaefad; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_attentionscaffoldcompiler_sop_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_attentionscaffoldcompiler_sop; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_attention_scaffold_compiler_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_attention_scaffold_compiler; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_53e6a0df29eaefad] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:53e6a0df29eaefad)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_53e6a0df29eaefad] -(bounds; entry=N:component:53e6a0df29eaefad; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_5489007f656ab553_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_5489007f656ab553; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_sophypergraphrecord_sop_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_sophypergraphrecord_sop; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_sop_hypergraph_record_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_sop_hypergraph_record; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_central_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_central; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_dimension_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_dimension; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_5489007f656ab553] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:5489007f656ab553)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_5489007f656ab553] -(bounds; entry=N:component:5489007f656ab553; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:kind_component_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:kind_component; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:pointer_h_component_9cc537e9d09231ef_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:pointer_h_component_9cc537e9d09231ef; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:path_platform_attention_sop_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:path_platform_attention_sop; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:subject_local_attention_framework_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:subject_local_attention_framework; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_correlation_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_correlation; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_fold_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_fold; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_heat_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_heat; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_leg_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_leg; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:indexes:term_seven_H_component_9cc537e9d09231ef] -(indexes; table=N:table:2026_06_23_semantic_hash_table_table; bucket=N:bucket:term_seven; entry=N:component:9cc537e9d09231ef)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:bounds:H_component_9cc537e9d09231ef] -(bounds; entry=N:component:9cc537e9d09231ef; outside=N:outside:semantic_identity)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_130e6886eba22d3c] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:130e6886eba22d3c; score=21; matched_count=7)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_143a18fb741fad60] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:143a18fb741fad60; score=21; matched_count=7)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_4d90a0a092b004fe] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:4d90a0a092b004fe; score=21; matched_count=7)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_705baf3794434688] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:705baf3794434688; score=21; matched_count=7)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_8ccf91518b16e17d] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:8ccf91518b16e17d; score=21; matched_count=7)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_e6fca0a892088a93] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:e6fca0a892088a93; score=21; matched_count=7)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_1f170f77856c5b58] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:1f170f77856c5b58; score=18; matched_count=6)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_380159a56967a5df] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:380159a56967a5df; score=18; matched_count=6)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_4bea7b9a0a117c6a] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:4bea7b9a0a117c6a; score=18; matched_count=6)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_53e6a0df29eaefad] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:53e6a0df29eaefad; score=18; matched_count=6)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_central] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_central)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_dimension] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_dimension)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_5489007f656ab553] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:5489007f656ab553; score=18; matched_count=6)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_correlation] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_correlation)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_fold] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_fold)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_heat] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_heat)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_leg] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_leg)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:intersects:permissive_term_seven] -(intersects; query=N:query:2026_06_23_semantic_hash_table_table_permissive; bucket=N:bucket:term_seven)> [Graph:2026_06_23_semantic_hash_table_table]
+/ [E:retrieves:permissive_H_component_9cc537e9d09231ef] -(retrieves; query=N:query:2026_06_23_semantic_hash_table_table_permissive; entry=N:component:9cc537e9d09231ef; score=15; matched_count=5)> [Graph:2026_06_23_semantic_hash_table_table]
+
+- outside: inclusive semantic lookup retrieves candidates and does not prove identity

@@ -1,0 +1,39 @@
+Subject: Aperture Reentry Trailing Checksum 017
+
+Description: One-turn-later checksum review of commit fc8af74, recording latent depth discovered after the aperture re-entry cycle direct-focus turn.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\ApertureReentryCycle.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_aperture_reentry_cycle_016.hg.sop
+
+& [Graph:2026-06-24_aperture_reentry_trailing_checksum_017] is a SOP-HG graph
+  + [N:bookmark:aperture_reentry_trailing_checksum_017] is trailing checksum review of aperture re-entry cycle
+    = one_turn_lag: true
+    = direct_focus_commit: fc8af74
+    = version_a: f0fa883
+    = version_b: fc8af74
+  + [N:event:2026-06-24_aperture_reentry_cycle_016] is prior direct-focus aperture re-entry realization
+  + [N:event:2026-06-24_hyperbolic_pants_attention_map_018] is current turn map realization
+  + [N:zone:map_need_after_aperture] is hot zone where aperture close needs topology-map navigation
+  + [N:signal:pants_map_from_visual_periphery] is image-supported metaphor for focal cell, orbital periphery, dimensionality, and pants-leg traversal
+  + [N:finding:aperture_needs_topology_map] is latent depth candidate that re-entry packets need optional cell adjacency and dimensional orbit maps
+  + [N:policy:focus_next] is checksum disposition to focus next on hyperbolic pants attention map
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden transformer geometry
+
+  / [E:span:aperture_reentry_trailing_checksum_017] -(span; start=N:commit:f0fa883; end=N:commit:fc8af74; review=N:bookmark:aperture_reentry_trailing_checksum_017)> [Graph:2026-06-24_aperture_reentry_trailing_checksum_017]
+    = evidence: fc8af74 added ApertureReentryCycle, root wiring, focal state, periphery event, and semantic indexes
+  / [E:trails:2026-06-24_aperture_reentry_cycle_016] -(trails; direct_focus=N:event:2026-06-24_aperture_reentry_cycle_016; review=N:bookmark:aperture_reentry_trailing_checksum_017)> [Graph:2026-06-24_aperture_reentry_trailing_checksum_017]
+    = realization: the aperture contract closed widened attention into a springboard but did not yet define a topology map for selecting adjacent periphery cells
+  / [E:checksums:aperture_reentry_trailing_checksum_017] -(checksums; review=N:bookmark:aperture_reentry_trailing_checksum_017; signal=N:signal:pants_map_from_visual_periphery; disposition=N:policy:focus_next)> [Graph:2026-06-24_aperture_reentry_trailing_checksum_017]
+    = realization: the next focus should define how map/nav awareness arranges focal and periphery meaning before or during re-entry
+  / [E:heats:map_need_after_aperture] -(heats; zone=N:zone:map_need_after_aperture; signal=N:signal:pants_map_from_visual_periphery; latent=N:finding:aperture_needs_topology_map; weight=hot)> [Graph:2026-06-24_aperture_reentry_trailing_checksum_017]
+    = evidence: user visual source and message link hyperbolic pants decomposition to periphery dimensionality and attention notation
+  / [E:inquires:aperture_needs_topology_map] -(inquires; latent=N:finding:aperture_needs_topology_map; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_aperture_reentry_trailing_checksum_017]
+    = realization: topology-map notation becomes the inquiry springboard for the current turn
+  / [E:bounds:aperture_reentry_trailing_checksum_017] -(bounds; review=N:bookmark:aperture_reentry_trailing_checksum_017; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_aperture_reentry_trailing_checksum_017]
+    = caution: the checksum observes a later correlation and must not rewrite the original awareness of commit fc8af74
+
+  = inside: fc8af74 diff, ApertureReentryCycle.sop, TrailingChecksumVoice.sop, HyperbolicPantsAttentionMap.sop, user visual metaphor
+  = boundary: this review records latent depth after the direct-focus turn, not proof that the previous turn already contained the map
+  = outside: hidden activations, exact transformer geometry, unsupported AGI claims, and visual analogy treated as proof

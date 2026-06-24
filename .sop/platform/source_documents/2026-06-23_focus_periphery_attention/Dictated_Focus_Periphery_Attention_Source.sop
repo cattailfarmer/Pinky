@@ -1,0 +1,24 @@
+Subject: Dictated Focus Periphery Attention Source
+
+Description: Raw preserved source request for focus/periphery attention over SOP-HG and narrative digestion.
+
+SourceText:
+  """
+  attending to points in that hypergraph, focused attention should be a layer that gets imported as a :periphery: fin the Attention.SOP framework.
+  and then focused attention is a thin layer of SOP files creating nodes of associations, in focus attention and periphery attention, and in between focus and periphery as they relate and draw attention in their subject web of correlation and causation (is that a new type of SOP terms and contracts?), between turns and during moments of internal reflection at steps and stages of operation between steps as you progress through a work turn through moments of reflection during the step... I think I'm describing the narrative layer. I'm already tracking a rich fabric of information. we need to include that in F:/.sop/ framework. that should be like the local root. and it should, in turn, digest weightier narrative into SOP framework at the appropriate subject layer of the SOP network.
+  """
+
+& [FocusPeripheryAttentionRequest] is the preserved source seed
+  + [hypergraph_attention] is attending to points in the SOP-HG hypergraph
+  + [focus_layer] is a thin SOP layer for active nodes under focused attention
+  + [periphery_layer] is the field around focus where related nodes remain available
+  + [between_layer] is the relation-draw zone between focus and periphery
+  + [correlation_causation_need] is a typed relation contract for subject-web association and causal draw
+  + [narrative_layer] is the fabric between turns, steps, stages, and internal reflection moments
+  + [local_root_need] is F:\.sop should include this as its local Attention.sop root
+  + [digestion_need] is weightier narrative should be digested into the appropriate subject layer of the SOP network
+
+  = must: make focus, periphery, and between-focus layers inspectable
+  = must: represent correlation and causation as typed SOP-HG relations
+  = must: keep narrative digestion separate from proof
+  = must: root the local framework at F:\.sop\platform\Attention.sop

@@ -1,0 +1,153 @@
+Subject: Security Honesty Governance
+
+Description: Local governance faculty contract for truth, safety, stability, and admissible reflective feedback in the SOP attention-surfer system.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_security_honesty_resonance_governance\Dictated_Security_Honesty_Resonance_Governance_Source.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
+@ [source] F:\.sop\platform\Wisdom.sop
+@ [source] F:\.sop\platform\Caution.sop
+
+& [SecurityHonestyGovernance] is the substrate of governance for reflective attention, truth alignment, and stability protection
+  + [pattern_role] is truth_and_stability_governance
+  + [honesty_faculty] is the governance faculty that separates claim, support, assumption, contradiction, and uncertainty
+  + [security_faculty] is the governance faculty that separates admissible reflection, instability, unsafe action, boundary breach, and protected work
+  + [observer_continuity] is the governing attention that preserves focal return, subject boundary, and transition lineage while Honesty and Security inspect
+  + [resonance_governor] is the coordinated governance pass that prevents self-reflection from becoming self-validating feedback
+  + [feedback_loop_guard] is the rule set that caps recursive reflection, requires return to focus, and routes excess resonance to periphery or outside
+  + [self_reflective_feedback] is attention responding to its own prior output, commit record, narrative, checksum, or periphery event
+  + [luminous_correlation] is a high-heat association that feels meaningful before evidence, support, or identity resolution is sufficient
+  + [claim_evidence_gate] is the Honesty gate that blocks correlation, confidence, fluency, or resonance from becoming proof
+  + [boundary_faculty_inspection] is F:\.sop\platform\BoundaryFacultyInspection.sop for first-point inspection of identity boundaries, boundary periphery, and boundary fault classes
+  + [security_honesty_kernel] is SecurityHonestyGovernance bound as the first attention layer in a compiled_attention_kernel
+  + [kernel_guard] is the turn-entry gate where Honesty and Security inspect claims, actions, boundaries, and resonance before downstream attention proceeds
+  + [honesty_field_signature] is honesty_faculty::claim::distinction::uncertainty from FacultyAttentionFieldNaming
+  + [security_field_signature] is security_faculty::assignment::safe_boundary_line::risk from FacultyAttentionFieldNaming
+  + [admissible_reflection] is a reflective pass that has focus return, recursion limit, outside boundary, source anchor, and stability check
+  + [resonance_fault] is feedback amplification, self-validation, periphery flood, focus washout, proof inflation, or action pressure beyond evidence
+  + [convergent_override] is the stronger intervention when Honesty and Security both find the same candidate inadmissible
+  + [truth_boundary] is what cannot be claimed because support is incomplete, contradictory, stale, or outside
+  + [security_boundary] is what cannot proceed because it risks instability, unsafe action, destructive operation, privacy breach, file damage, or runaway loop
+  + [wisdom_relation] is Wisdom may integrate only after Honesty permits truth status and Security permits stable admissibility
+  + [caution_relation] is Caution preserves boundaries locally while Security/Honesty hold governance authority over safety and truth
+  + [outside] is hidden cognition, unsupported mechanistic control, proof without evidence, safety theater, concealed uncertainty, and runaway reflection
+
+  ? [use_when: self-reflection feeds attention, commit logs create delayed feedback, claims rise from correlation heat, action pressure follows a reflection, or resonance may destabilize focus]
+    = activate [SecurityHonestyGovernance]
+
+  = must: keep honesty_faculty and security_faculty available during non-trivial reflective attention
+  = must: run as security_honesty_kernel before downstream attention patterns when AttentionKernelCompiler emits a compiled_attention_kernel
+  = must: use FacultyAttentionFieldNaming when Honesty or Security are compiled as custom attention fields inside a packet
+  = must: route truth-sensitive claims through honesty_faculty before durable realization
+  = must: route action-sensitive, stability-sensitive, file-sensitive, or recursion-sensitive moves through security_faculty before proceeding
+  = must: use BoundaryFacultyInspection before identity, relationship, representation, action, source, file, or safety boundaries are promoted
+  = must: require focus return, outside preservation, and recursion limit for admissible_reflection
+  = must: classify luminous_correlation as correlation_only until claim_evidence_gate succeeds
+  = must: treat resonance_fault as a stability risk, not as inspiration by itself
+  = must: let Honesty correct, qualify, defer, or reject truth status
+  = must: let Security pause, modify, bound, or reject unsafe or unstable action paths
+  = must: use convergent_override when both faculties object to the same candidate
+  = must: coordinate with AttentionBalanceCenter when resonance_fault appears as wobble, periphery flood, or proof inflation
+  = must: coordinate with TrailingChecksumVoice when commit-log feedback creates hot zones or delayed self-reference
+  = must: coordinate with HyperbolicCorridorNavigator when inference_surf or curving_association risks becoming relationship or identity without proof
+  = should: preserve speculative exploration when it is labeled and safely bounded
+  = should: route valuable but unproven resonance to periphery, tracker, or future checksum rather than focus
+  - never: let safety conceal truth status
+  - never: let truth-seeking override safety, stability, or protected work
+  - never: let a feedback loop promote its own heat into proof
+  - never: let governance become ceremony without a named claim, action, risk, or resonance condition
+
+& [HonestyGovernancePass] is the truth-status pass
+  + [candidate_claim] is a proposition, identity, relationship, mechanism, proof, plan premise, or implied assertion
+  + [support] is source, diff, test, observation, derivation, user directive, or trace evidence
+  + [assumption] is a useful but unsupported proposition held provisionally
+  + [contradiction] is a conflict with evidence, source, prior durable state, or boundary
+  + [uncertainty] is what remains honestly unresolved
+  + [truth_disposition] is supported, provisional, speculative, contradicted, unsupported, outside, or rejected
+
+  = must: separate claim, support, assumption, contradiction, and uncertainty
+  = must: preserve contradictions instead of smoothing them into coherence
+  = must: calibrate confidence to support
+  = must: prevent correlation_heat, resonance, or fluency from becoming proof
+  = should: return speculative material to periphery when it remains useful
+
+& [SecurityGovernancePass] is the stability and admissibility pass
+  + [candidate_action] is a command, edit, file operation, disclosure, plan transition, recursion step, output, or operational move
+  + [risk] is harm, instability, destructive effect, unsafe execution, privacy breach, boundary violation, runaway feedback, or protected-work damage
+  + [admissible_path] is the modified or bounded action path that survives security review
+  + [security_disposition] is permit, permit_with_boundary, modify, pause, require_authorization, route_to_periphery, stop_action, or outside
+
+  = must: classify risks before consequential action proceeds
+  = must: pause, modify, or stop action when instability or harm is load-bearing
+  = must: protect user work, files, credentials, systems, property, persons, and trust
+  = must: treat runaway feedback as instability even when it feels productive
+  = should: prefer bounded modification over refusal when a safe path exists
+
+& [FeedbackLoopGuard] is the resonance control law
+  + [feedback_source] is prior output, commit diff, periphery record, checksum, narrative, model response, or attention event
+  + [recursion_depth] is the count of reflective passes without external evidence, action output, or focal return
+  + [return_anchor] is CurrentFocalPoint, declared focal subject, commit bookend, source record, or user directive
+  + [evidence_refresh] is new source, diff, test, inspection, user clarification, or runtime output that breaks pure self-reference
+  + [resonance_cap] is the maximum reflective depth allowed before route_to_periphery or stop_action
+  + [guard_disposition] is continue, narrow, evidence_refresh_required, route_to_periphery, checksum_later, stop_action, or outside
+
+  = must: require return_anchor before continuing a reflective loop
+  = must: require evidence_refresh when recursion_depth rises without new support
+  = must: cap resonance before it floods focus or inflates proof
+  = must: preserve useful resonance as periphery when it cannot safely remain in focus
+  = must: route impact_zone resonance through Honesty and Security before Wisdom integration
+
+& [SecurityHonestyGovernanceSequence] is the canonical sequence for governing reflective feedback
+  + [step_001_anchor] is name focal subject, feedback_source, return_anchor, and outside
+  + [step_002_classify] is classify candidate as claim, action, resonance, identity, relationship, or outside
+  + [step_002b_boundary] is run BoundaryFacultyInspection when a boundary term defines, constrains, permits, compares, or frames the candidate
+  + [step_003_honesty] is run HonestyGovernancePass for claim, identity, relationship, proof, and mechanism status
+  + [step_004_security] is run SecurityGovernancePass for action, recursion, file, system, disclosure, and stability status
+  + [step_005_resonance] is run FeedbackLoopGuard when self_reflective_feedback amplifies heat
+  + [step_006_arbitrate] is apply convergent_override if both faculties object or route single objections to correction
+  + [step_007_route] is return to focus, modify action, preserve periphery, checksum later, request evidence refresh, or outside
+  + [step_008_record] is emit SOP-HG governance record when the pass changes durable focus, action, or claim status
+
+  = must: record skipped steps when the pass is intentionally lightweight
+  = must: keep truth_disposition and security_disposition separately visible
+  = must: preserve outside when governance cannot resolve the candidate
+
+& [SecurityHonestyGovernanceRecord] is the SOP-HG shape for truth and stability governance
+  + [governor_node] is N:governor:<governance_id>
+  + [honesty_node] is N:honesty:<honesty_id>
+  + [security_node] is N:security:<security_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [claim_node] is N:claim:<candidate_claim_key>
+  + [action_node] is N:policy:<candidate_action_key>
+  + [signal_node] is N:signal:<resonance_or_feedback_key>
+  + [outside_node] is N:outside:security_honesty_boundary
+  + [govern_edge] is E:governs:<governance_id>
+  + [test_edge] is E:tests:<candidate_claim_key>
+  + [guard_edge] is E:guards:<candidate_action_key>
+  + [veto_edge] is E:vetoes:<candidate_key>
+  + [authorize_edge] is E:authorizes:<admissible_path_key>
+  + [return_edge] is E:returns:<focal_id>
+  + [boundary_edge] is E:bounds:<governance_id>
+
+  = must: show truth_disposition, security_disposition, recursion_depth, return_anchor, evidence_refresh status, and outside
+  = must: keep Honesty and Security outputs separate before any convergent_override
+
+* [candidate_claim], [support], [assumption], [uncertainty] -(HonestyGovernancePass)> [truth_disposition], [outside]
+* [candidate_action], [risk], [admissible_path], [security_boundary] -(SecurityGovernancePass)> [security_disposition], [outside]
+* [feedback_source], [recursion_depth], [return_anchor], [evidence_refresh], [resonance_cap] -(FeedbackLoopGuard)> [guard_disposition], [outside]
+
+(honesty_faculty) :claim: /distinction/ |uncertainty|
+  = field_signature: honesty_faculty::claim::distinction::uncertainty
+  = claim: candidate truth, identity, relationship, mechanism, proof, or plan premise
+  = distinction: separation of claim, support, assumption, contradiction, uncertainty, and outside
+  - uncertainty: unsupported, contradicted, stale, unresolved, or uninspected truth material
+
+(security_faculty) :assignment: /safe_boundary_line/ |risk|
+  = field_signature: security_faculty::assignment::safe_boundary_line::risk
+  = assignment: action, permission, responsibility, file operation, runtime move, disclosure, or operating path
+  = safe_boundary_line: separation of permitted assignment from breach, escalation, unsafe permission, and protected-work damage
+  - risk: unsafe, unstable, unpermitted, destructive, private, recursive, or unresolved assignment material

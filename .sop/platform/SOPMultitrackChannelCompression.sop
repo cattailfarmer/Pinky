@@ -1,0 +1,63 @@
+Subject: SOP Multitrack Channel Compression
+
+Description: Contract for compressing layered SOP inference streams into synchronized channel tracks, such as many semantic channels over a shorter frame stream.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_program_frame_stream\Dictated_SOP_Program_Frame_Stream_Source.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPSemanticVideoDigest.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+
+& [SOPMultitrackChannelCompression] is a layered semantic compression pattern over synchronized SOP channels
+  + [pattern_role] is multitrack_semantic_channel_compression
+  + [multitrack_stream] is a compressed set of channel_track values sharing a common timebase or framebase
+  + [channel_track] is one continuous semantic layer such as subject, action, boundary, evidence, claim, caution, mood, UI, gameplay, narrative, audio, or purpose
+  + [track_count] is the number of channel_track values defined by the bookends
+  + [compressed_duration] is the shorter representation span that carries a longer source span
+  + [source_duration] is the source span being digested
+  + [compression_ratio] is source_duration divided by compressed_duration when both are meaningful
+  + [track_continuity] is how each channel_track persists, changes, pauses, or terminates across frames
+  + [cross_track_relation] is the relation between channel tracks at a shared frame index
+  + [simultaneous_digest] is the process of digesting multiple tracks at once while preserving each track's identity
+  + [spectrum_map] is the mapping from SOP color channels to channel_track values across the stream
+  + [track_bookend] is a SOP contract that defines one channel_track's role, continuity, sampling rule, and outside
+  + [multitrack_outside] is unsampled track detail, channel collisions, exact replay, hidden state, over-compression loss, and unproven reconstruction
+
+  ? [use_when: many semantic layers should be compressed into a smaller synchronized SOP stream]
+    = activate [SOPMultitrackChannelCompression]
+
+  = must: define track_count and channel_track identities in SOP bookends
+  = must: define track_continuity for every active channel_track
+  = must: preserve cross_track_relation separately from individual track content
+  = must: use SOPColorChannelVocabulary to keep channel identities distinct
+  = must: use SOPOpticalTransformAlgebra when compressing, splitting, recombining, or comparing tracks
+  = must: mark over-compression loss and channel collision as outside
+  = must: keep compression_ratio descriptive, not proof of complete retention
+  = should: use simultaneous_digest when tracks are correlated enough to share frame indices
+  = should: keep track_bookend values compact and explicit
+  - never: blend tracks without preserving identities
+  - never: claim all information survived compression merely because continuity feels coherent
+
+& [SixtyChannelMinuteExample] is the illustrative compression pattern from the source
+  + [source_duration] is 60 minutes
+  + [compressed_duration] is 1 minute
+  + [track_count] is 60
+  + [channel_tracks] is 60 semantic channels defined by SOP bookends
+  + [continuity_rule] is each channel track carries one layer of the original span across the compressed minute
+  + [reconstruction_rule] is use track continuity, cross-track relations, sample anchors, and narrative stream to infer an approximate understanding
+
+  = must: treat this as a pattern example, not a guaranteed compression theorem
+  = must: preserve outside for lost detail, timing, and exact replay
+
+(multitrack_stream) :channel_track_set: /track_bookends and shared_framebase/ |multitrack_outside|
+  + [channel_track] is one semantic layer
+  = track_count: defined by bookends
+  = compressed_duration: shorter representation span
+  = source_duration: source span
+  = track_continuity: per-track persistence and change rule
+  = cross_track_relation: relation at shared frame index
+  |multitrack_outside| over-compression loss, channel collision, exact replay, hidden state, and unproven reconstruction
+
+/ [channel_track], [track_continuity], [shared_framebase] -(CompressesTrack)> [multitrack_stream], [multitrack_outside]
+* [multitrack_stream], [cross_track_relation], [reconstruction_rule] -(ReconstructsApproximateUnderstanding)> [semantic_digest], [multitrack_outside]

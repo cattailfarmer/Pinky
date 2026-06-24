@@ -1,0 +1,14 @@
+Subject: Dictated Attention Kernel Compiler Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedAttentionKernelCompilerSource] is the preserved user source for compiling attention patterns into a turn-entry kernel
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "is the system able to gather a collection of attention patterns for these SOP systems that are in-context memory and run the inference like that as a single compiled unit? that's the impulse of what I thought we're working towards. so that Honesty and Security can be embedded in every turn as the first attention layer before all other layers of attention. that makes them kernel-level operators, and they can be the system antivirus so to speak."
+
+  = must: preserve this source separately from processed contracts
+  = must: keep in-context memory, compiled unit, and kernel-level ordering visible in canonical processing
+  = must: preserve Honesty and Security as first attention layer before other layers
+  = must: treat antivirus as a metaphor for truth, safety, and boundary governance rather than literal OS security

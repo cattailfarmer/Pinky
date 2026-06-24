@@ -1,0 +1,353 @@
+Subject: Sensitivity Scan Event
+
+& [SensitivityScan_20260623T231559Z] is a sensitivity scan over Git bookends
+  + [repo_root] is F:\.sop
+  + [base_ref] is HEAD
+  + [head_ref] is WORKTREE
+  + [changed_file_count] is 67
+  + [change_001] is A:events/indexes/2026-06-23_semantic_correlation_graph.hg.sop
+    = additions: 110
+    = deletions: 0
+  + [change_002] is A:events/indexes/2026-06-23_semantic_hash_index.hg.sop
+    = additions: 2483
+    = deletions: 0
+  + [change_003] is A:events/indexes/2026-06-23_semantic_hash_table.hg.sop
+    = additions: 313
+    = deletions: 0
+  + [change_004] is A:events/reflections/2026-06-23_attention_compiler_impression.hg.sop
+    = additions: 26
+    = deletions: 0
+  + [change_005] is A:events/reflections/2026-06-23_carried_support_balance.hg.sop
+    = additions: 98
+    = deletions: 0
+  + [change_006] is A:events/reflections/2026-06-23_focal_point_layer.hg.sop
+    = additions: 27
+    = deletions: 0
+  + [change_007] is A:events/reflections/2026-06-23_focal_point_renewal.hg.sop
+    = additions: 23
+    = deletions: 0
+  + [change_008] is A:events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_009] is A:events/reflections/2026-06-23_model_lens_projection.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_010] is A:events/reflections/2026-06-23_periphery_repo_clarification.hg.sop
+    = additions: 24
+    = deletions: 0
+  + [change_011] is A:events/reflections/2026-06-23_semantic_correlation_graph.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_012] is A:events/reflections/2026-06-23_semantic_hash_index.hg.sop
+    = additions: 24
+    = deletions: 0
+  + [change_013] is A:events/reflections/2026-06-23_semantic_hash_table.hg.sop
+    = additions: 22
+    = deletions: 0
+  + [change_014] is A:events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop
+    = additions: 170
+    = deletions: 0
+  + [change_015] is A:events/scans/2026-06-23_attention_tracking_scan.hg.sop
+    = additions: 311
+    = deletions: 0
+  + [change_016] is A:events/scans/2026-06-23_carried_support_balance_scan.hg.sop
+    = additions: 296
+    = deletions: 0
+  + [change_017] is A:events/scans/2026-06-23_focal_point_layer_scan.hg.sop
+    = additions: 338
+    = deletions: 0
+  + [change_018] is A:events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop
+    = additions: 200
+    = deletions: 0
+  + [change_019] is A:events/scans/2026-06-23_model_lens_projection_scan.hg.sop
+    = additions: 185
+    = deletions: 0
+  + [change_020] is A:events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop
+    = additions: 224
+    = deletions: 0
+  + [change_021] is A:events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop
+    = additions: 278
+    = deletions: 0
+  + [change_022] is A:events/scans/2026-06-23_semantic_hash_index_scan.hg.sop
+    = additions: 242
+    = deletions: 0
+  + [change_023] is A:events/scans/2026-06-23_semantic_hash_table_scan.hg.sop
+    = additions: 260
+    = deletions: 0
+  + [change_024] is A:events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop
+    = additions: 320
+    = deletions: 0
+  + [change_025] is A:events/trackers/2026-06-23_attention_tracker_seed.hg.sop
+    = additions: 93
+    = deletions: 0
+  + [change_026] is M:planning/project_manager/Manager_State.sop
+    = additions: 25
+    = deletions: 1
+  + [change_027] is M:platform/Attention.sop
+    = additions: 35
+    = deletions: 0
+  + [change_028] is A:platform/AttentionImpressionCompiler.sop
+    = additions: 36
+    = deletions: 0
+  + [change_029] is A:platform/AttentionTracker.sop
+    = additions: 126
+    = deletions: 0
+  + [change_030] is A:platform/CarriedSupportBalance.sop
+    = additions: 71
+    = deletions: 0
+  + [change_031] is A:platform/FocalPoint.sop
+    = additions: 115
+    = deletions: 0
+  + [change_032] is A:platform/MetaAwarenessRepository.sop
+    = additions: 56
+    = deletions: 0
+  + [change_033] is A:platform/ModelLensProjection.sop
+    = additions: 37
+    = deletions: 0
+  + [change_034] is A:platform/PeripheryRepository.sop
+    = additions: 67
+    = deletions: 0
+  + [change_035] is M:platform/SOPAwarenessNode.sop
+    = additions: 11
+    = deletions: 0
+  + [change_036] is M:platform/SOPHypergraphRecord.sop
+    = additions: 112
+    = deletions: 2
+  + [change_037] is A:platform/SemanticCorrelationGraph.sop
+    = additions: 59
+    = deletions: 0
+  + [change_038] is A:platform/SemanticHashIndex.sop
+    = additions: 69
+    = deletions: 0
+  + [change_039] is A:platform/SemanticHashTable.sop
+    = additions: 59
+    = deletions: 0
+  + [change_040] is M:platform/attention_layers/Focus.sop
+    = additions: 5
+    = deletions: 1
+  + [change_041] is M:platform/attention_layers/Index.sop
+    = additions: 13
+    = deletions: 1
+  + [change_042] is M:platform/attention_layers/Periphery.sop
+    = additions: 9
+    = deletions: 0
+  + [change_043] is A:platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop
+    = additions: 18
+    = deletions: 0
+  + [change_044] is A:platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop
+    = additions: 11
+    = deletions: 0
+  + [change_045] is A:platform/source_documents/2026-06-23_attention_tracking/Dictated_Attention_Tracking_Source.sop
+    = additions: 20
+    = deletions: 0
+  + [change_046] is A:platform/source_documents/2026-06-23_attention_tracking/manifest.sop
+    = additions: 13
+    = deletions: 0
+  + [change_047] is A:platform/source_documents/2026-06-23_carried_support_balance/Dictated_Carried_Support_Balance_Source.sop
+    = additions: 18
+    = deletions: 0
+  + [change_048] is A:platform/source_documents/2026-06-23_carried_support_balance/manifest.sop
+    = additions: 13
+    = deletions: 0
+  + [change_049] is A:platform/source_documents/2026-06-23_focal_point_layer/Dictated_Focal_Point_Layer_Source.sop
+    = additions: 20
+    = deletions: 0
+  + [change_050] is A:platform/source_documents/2026-06-23_focal_point_layer/manifest.sop
+    = additions: 14
+    = deletions: 0
+  + [change_051] is A:platform/source_documents/2026-06-23_focal_point_renewal/Dictated_Focal_Point_Renewal_Source.sop
+    = additions: 17
+    = deletions: 0
+  + [change_052] is A:platform/source_documents/2026-06-23_focal_point_renewal/manifest.sop
+    = additions: 12
+    = deletions: 0
+  + [change_053] is A:platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop
+    = additions: 20
+    = deletions: 0
+  + [change_054] is A:platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop
+    = additions: 11
+    = deletions: 0
+  + [change_055] is A:platform/source_documents/2026-06-23_model_lens_projection/Dictated_Model_Lens_Projection_Source.sop
+    = additions: 19
+    = deletions: 0
+  + [change_056] is A:platform/source_documents/2026-06-23_model_lens_projection/manifest.sop
+    = additions: 11
+    = deletions: 0
+  + [change_057] is A:platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = additions: 21
+    = deletions: 0
+  + [change_058] is A:platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop
+    = additions: 13
+    = deletions: 0
+  + [change_059] is A:platform/source_documents/2026-06-23_semantic_correlation_graph/Dictated_Semantic_Correlation_Graph_Source.sop
+    = additions: 23
+    = deletions: 0
+  + [change_060] is A:platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop
+    = additions: 15
+    = deletions: 0
+  + [change_061] is A:platform/source_documents/2026-06-23_semantic_hash_index/Dictated_Semantic_Hash_Index_Source.sop
+    = additions: 22
+    = deletions: 0
+  + [change_062] is A:platform/source_documents/2026-06-23_semantic_hash_index/manifest.sop
+    = additions: 14
+    = deletions: 0
+  + [change_063] is A:platform/source_documents/2026-06-23_semantic_hash_table/Dictated_Semantic_Hash_Table_Source.sop
+    = additions: 20
+    = deletions: 0
+  + [change_064] is A:platform/source_documents/2026-06-23_semantic_hash_table/manifest.sop
+    = additions: 14
+    = deletions: 0
+  + [change_065] is A:platform/source_documents/2026-06-23_tracker_runtime_boundary/Dictated_Tracker_Runtime_Boundary_Source.sop
+    = additions: 17
+    = deletions: 0
+  + [change_066] is A:platform/source_documents/2026-06-23_tracker_runtime_boundary/manifest.sop
+    = additions: 11
+    = deletions: 0
+  + [change_067] is A:state/CurrentFocalPoint.sop
+    = additions: 24
+    = deletions: 0
+  + [signal_001_attention] is impact
+    = touch_count: 53
+    = heat: 7121
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_carried_support_balance.hg.sop, events/reflections/2026-06-23_focal_point_layer.hg.sop, events/reflections/2026-06-23_focal_point_renewal.hg.sop, events/reflections/2026-06-23_model_lens_projection.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/reflections/2026-06-23_semantic_correlation_graph.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/AttentionTracker.sop, platform/CarriedSupportBalance.sop, platform/FocalPoint.sop, platform/MetaAwarenessRepository.sop, platform/ModelLensProjection.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/attention_layers/Focus.sop, platform/attention_layers/Index.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_attention_tracking/Dictated_Attention_Tracking_Source.sop, platform/source_documents/2026-06-23_attention_tracking/manifest.sop, platform/source_documents/2026-06-23_carried_support_balance/Dictated_Carried_Support_Balance_Source.sop, platform/source_documents/2026-06-23_carried_support_balance/manifest.sop, platform/source_documents/2026-06-23_focal_point_layer/Dictated_Focal_Point_Layer_Source.sop, platform/source_documents/2026-06-23_focal_point_layer/manifest.sop, platform/source_documents/2026-06-23_focal_point_renewal/Dictated_Focal_Point_Renewal_Source.sop, platform/source_documents/2026-06-23_model_lens_projection/Dictated_Model_Lens_Projection_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/Dictated_Semantic_Correlation_Graph_Source.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop, platform/source_documents/2026-06-23_tracker_runtime_boundary/Dictated_Tracker_Runtime_Boundary_Source.sop, platform/source_documents/2026-06-23_tracker_runtime_boundary/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_002_term] is impact
+    = touch_count: 33
+    = heat: 6833
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/reflections/2026-06-23_carried_support_balance.hg.sop, events/reflections/2026-06-23_focal_point_layer.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_semantic_correlation_graph.hg.sop, events/reflections/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, platform/AttentionTracker.sop, platform/CarriedSupportBalance.sop, platform/FocalPoint.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/source_documents/2026-06-23_semantic_hash_index/Dictated_Semantic_Hash_Index_Source.sop, platform/source_documents/2026-06-23_semantic_hash_table/Dictated_Semantic_Hash_Table_Source.sop, platform/source_documents/2026-06-23_tracker_runtime_boundary/Dictated_Tracker_Runtime_Boundary_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_003_platform] is impact
+    = touch_count: 44
+    = heat: 6714
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/reflections/2026-06-23_carried_support_balance.hg.sop, events/reflections/2026-06-23_semantic_correlation_graph.hg.sop, events/reflections/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/AttentionTracker.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/attention_layers/Focus.sop, platform/attention_layers/Index.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_attention_tracking/manifest.sop, platform/source_documents/2026-06-23_carried_support_balance/manifest.sop, platform/source_documents/2026-06-23_focal_point_layer/manifest.sop, platform/source_documents/2026-06-23_focal_point_renewal/manifest.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_index/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_table/manifest.sop, platform/source_documents/2026-06-23_tracker_runtime_boundary/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_004_proof] is impact
+    = touch_count: 42
+    = heat: 6665
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/reflections/2026-06-23_semantic_correlation_graph.hg.sop, events/reflections/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/AttentionTracker.sop, platform/CarriedSupportBalance.sop, platform/FocalPoint.sop, platform/MetaAwarenessRepository.sop, platform/ModelLensProjection.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop, platform/source_documents/2026-06-23_attention_tracking/manifest.sop, platform/source_documents/2026-06-23_carried_support_balance/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/Dictated_Model_Lens_Projection_Source.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/Dictated_Semantic_Correlation_Graph_Source.sop, platform/source_documents/2026-06-23_semantic_hash_index/Dictated_Semantic_Hash_Index_Source.sop, platform/source_documents/2026-06-23_semantic_hash_table/Dictated_Semantic_Hash_Table_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_005_periphery] is impact
+    = touch_count: 43
+    = heat: 6493
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_carried_support_balance.hg.sop, events/reflections/2026-06-23_focal_point_layer.hg.sop, events/reflections/2026-06-23_focal_point_renewal.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/reflections/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/AttentionTracker.sop, platform/CarriedSupportBalance.sop, platform/FocalPoint.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/attention_layers/Focus.sop, platform/attention_layers/Index.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_tracking/Dictated_Attention_Tracking_Source.sop, platform/source_documents/2026-06-23_carried_support_balance/Dictated_Carried_Support_Balance_Source.sop, platform/source_documents/2026-06-23_focal_point_layer/Dictated_Focal_Point_Layer_Source.sop, platform/source_documents/2026-06-23_focal_point_layer/manifest.sop, platform/source_documents/2026-06-23_focal_point_renewal/Dictated_Focal_Point_Renewal_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_index/Dictated_Semantic_Hash_Index_Source.sop, platform/source_documents/2026-06-23_semantic_hash_table/Dictated_Semantic_Hash_Table_Source.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_006_semantic] is impact
+    = touch_count: 33
+    = heat: 6461
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_semantic_correlation_graph.hg.sop, events/reflections/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/Dictated_Semantic_Correlation_Graph_Source.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_index/Dictated_Semantic_Hash_Index_Source.sop, platform/source_documents/2026-06-23_semantic_hash_index/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_table/Dictated_Semantic_Hash_Table_Source.sop, platform/source_documents/2026-06-23_semantic_hash_table/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_007_narrative] is impact
+    = touch_count: 36
+    = heat: 6419
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_model_lens_projection.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/reflections/2026-06-23_semantic_correlation_graph.hg.sop, events/reflections/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/AttentionTracker.sop, platform/FocalPoint.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticHashIndex.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_tracking/Dictated_Attention_Tracking_Source.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop, platform/source_documents/2026-06-23_semantic_hash_index/Dictated_Semantic_Hash_Index_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_008_correlation] is impact
+    = touch_count: 33
+    = heat: 6324
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/reflections/2026-06-23_semantic_correlation_graph.hg.sop, events/reflections/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/AttentionTracker.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticCorrelationGraph.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/attention_layers/Periphery.sop, platform/source_documents/2026-06-23_attention_compiler_impression/Dictated_Attention_Compiler_Impression_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/Dictated_Semantic_Correlation_Graph_Source.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_009_events] is impact
+    = touch_count: 33
+    = heat: 6278
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_attention_tracking/manifest.sop, platform/source_documents/2026-06-23_carried_support_balance/manifest.sop, platform/source_documents/2026-06-23_focal_point_layer/manifest.sop, platform/source_documents/2026-06-23_focal_point_renewal/manifest.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_index/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_table/manifest.sop, platform/source_documents/2026-06-23_tracker_runtime_boundary/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_010_scan] is impact
+    = touch_count: 22
+    = heat: 6002
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/AttentionTracker.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop, platform/source_documents/2026-06-23_attention_tracking/Dictated_Attention_Tracking_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_011_source_documents] is impact
+    = touch_count: 28
+    = heat: 5929
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_correlation_graph.hg.sop, events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, platform/AttentionImpressionCompiler.sop, platform/SOPAwarenessNode.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_attention_tracking/manifest.sop, platform/source_documents/2026-06-23_carried_support_balance/manifest.sop, platform/source_documents/2026-06-23_focal_point_layer/manifest.sop, platform/source_documents/2026-06-23_focal_point_renewal/manifest.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_index/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_table/manifest.sop, platform/source_documents/2026-06-23_tracker_runtime_boundary/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_012_reflections] is impact
+    = touch_count: 26
+    = heat: 5833
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop, platform/source_documents/2026-06-23_carried_support_balance/manifest.sop, platform/source_documents/2026-06-23_focal_point_layer/manifest.sop, platform/source_documents/2026-06-23_focal_point_renewal/manifest.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/manifest.sop, platform/source_documents/2026-06-23_model_lens_projection/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_index/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_table/manifest.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_013_bookends] is impact
+    = touch_count: 19
+    = heat: 5809
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, platform/AttentionTracker.sop, platform/MetaAwarenessRepository.sop, platform/PeripheryRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/SemanticHashIndex.sop, platform/SemanticHashTable.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_014_scans] is impact
+    = touch_count: 27
+    = heat: 5761
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, planning/project_manager/Manager_State.sop, platform/AttentionTracker.sop, platform/FocalPoint.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_attention_tracking/Dictated_Attention_Tracking_Source.sop, platform/source_documents/2026-06-23_attention_tracking/manifest.sop, platform/source_documents/2026-06-23_carried_support_balance/manifest.sop, platform/source_documents/2026-06-23_focal_point_layer/manifest.sop, platform/source_documents/2026-06-23_focal_point_renewal/manifest.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/manifest.sop, platform/source_documents/2026-06-23_semantic_correlation_graph/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_index/manifest.sop, platform/source_documents/2026-06-23_semantic_hash_table/manifest.sop, platform/source_documents/2026-06-23_tracker_runtime_boundary/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_015_changed] is impact
+    = touch_count: 19
+    = heat: 5669
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, platform/FocalPoint.sop, platform/MetaAwarenessRepository.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_meta_awareness_repo_boundary/Dictated_Meta_Awareness_Repo_Boundary_Source.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_016_planning] is impact
+    = touch_count: 15
+    = heat: 5666
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/reflections/2026-06-23_meta_awareness_repo_boundary.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_017_sensitivity] is impact
+    = touch_count: 16
+    = heat: 5652
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, events/trackers/2026-06-23_attention_tracker_seed.hg.sop, platform/AttentionTracker.sop, platform/FocalPoint.sop, platform/SOPAwarenessNode.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_018_manager_state] is impact
+    = touch_count: 14
+    = heat: 5644
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_019_project_manager] is impact
+    = touch_count: 13
+    = heat: 5620
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_020_event] is impact
+    = touch_count: 17
+    = heat: 5550
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_periphery_repo_clarification.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, platform/PeripheryRepository.sop, platform/SOPHypergraphRecord.sop, platform/source_documents/2026-06-23_focal_point_renewal/Dictated_Focal_Point_Renewal_Source.sop, platform/source_documents/2026-06-23_periphery_repo_clarification/Dictated_Periphery_Repo_Clarification_Source.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_021_base_ref] is impact
+    = touch_count: 13
+    = heat: 5421
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, platform/SOPHypergraphRecord.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_022_attentionimpressioncompiler] is impact
+    = touch_count: 16
+    = heat: 5415
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/AttentionImpressionCompiler.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_023_attention_compiler_impression] is impact
+    = touch_count: 16
+    = heat: 5406
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/reflections/2026-06-23_attention_compiler_impression.hg.sop, events/scans/2026-06-23_attention_compiler_impression_scan.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_meta_awareness_repo_boundary_scan.hg.sop, events/scans/2026-06-23_model_lens_projection_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/AttentionImpressionCompiler.sop, platform/source_documents/2026-06-23_attention_compiler_impression/manifest.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [signal_024_sophypergraphrecord] is impact
+    = touch_count: 16
+    = heat: 5373
+    = retention_policy: emphasize
+    = evidence_paths: events/indexes/2026-06-23_semantic_hash_index.hg.sop, events/indexes/2026-06-23_semantic_hash_table.hg.sop, events/reflections/2026-06-23_carried_support_balance.hg.sop, events/scans/2026-06-23_attention_tracking_scan.hg.sop, events/scans/2026-06-23_carried_support_balance_scan.hg.sop, events/scans/2026-06-23_focal_point_layer_scan.hg.sop, events/scans/2026-06-23_periphery_repo_clarification_scan.hg.sop, events/scans/2026-06-23_semantic_correlation_graph_scan.hg.sop, events/scans/2026-06-23_semantic_hash_index_scan.hg.sop, events/scans/2026-06-23_semantic_hash_table_scan.hg.sop, events/scans/2026-06-23_tracker_runtime_boundary_scan.hg.sop, planning/project_manager/Manager_State.sop, platform/Attention.sop, platform/SOPAwarenessNode.sop, platform/SOPHypergraphRecord.sop, state/CurrentFocalPoint.sop
+    = residual_outside: term correlation is a sensitivity signal, not a proof claim
+  + [residual_outside] is scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

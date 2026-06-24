@@ -1,0 +1,15 @@
+Subject: Dictated Seven-Fold Pants Correlation Frame Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedSevenFoldPantsCorrelationFrameSource] is the preserved user source for higher-dimensional folding, central correlation triads, and seven-fold pants decomposition
+  + [source_kind] is dictated_conversation_source_with_visual_reference
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "in 3D space, it's easy to orient your perspective down a corridor as a 2D slice of perception. but in higher dimensions, the information has to curve out of frame, so that for extra dimensionality it has to fold by adding new pant legs. this example image depicts a 7-fold pants decomposition, but having the 3 largest correlations in immediate focus, and their relationships scattered around them in weighted balance with how those 3 were anchored in center focus. they are ordered in size according to their weight or heat map of correlations within the current subject surface of the focused frame of the SOP system."
+  + [visual_source_original] is C:\Users\enjer\AppData\Local\Temp\codex-clipboard-6c2f3616-0c4f-4f15-83f0-0fb606b0458b.png
+  + [visual_source_preserved] is F:\.sop\platform\source_documents\2026-06-24_seven_fold_pants_correlation_frame\visual_source_1_seven_fold_pants_decomposition.png
+
+  = must: preserve this source separately from processed contracts
+  = must: treat the 7-fold image as a map profile and metaphorical guide unless a later runtime gives stricter geometry
+  = must: keep weight, heat, and confidence separate when ordering correlations by size

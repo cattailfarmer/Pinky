@@ -1,0 +1,16 @@
+Subject: Dictated SOP Fiber FPGA Bridge Source
+
+Description: Raw dictated source for clarifying SOP hardware speed as frame-rate specific and bandwidth as fiber and FPGA routing width.
+
+& [DictatedSOPFiberFPGABridgeSource] is the preserved user source for the fiber FPGA bridge clarification
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_context] is response to the distinction that light-speed is transport/routing while semantic reasoning still depends on interpreter or compiled logic
+  + [source_text] is "ok it's frame-rate specific as far as speed, but the bandwidth is as wide as the fiber can hold and the FPGA can route."
+
+  = must: preserve this source separately from the processed contract
+  = must: define speed by frame rate, frame period, pipeline latency, and interpreter cadence
+  = must: define bandwidth by fiber capacity and FPGA routing width
+  = must: keep semantic interpretation and semantic fidelity separate from raw hardware throughput
+  = must: treat hardware bridge design as specification until physical implementation and measurement exist

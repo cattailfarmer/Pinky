@@ -1,0 +1,14 @@
+Subject: Dictated Attention Runtime Registry Source
+
+Description: Preserved raw source for a semantic runtime registry of attention stack frames.
+
+& [DictatedAttentionRuntimeRegistrySource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is refinement of the focus-on-focusing study after identifying membranes, gradients, metrics, and Wisdom/Caution handshakes
+  + [source_line_001] is "yes, you need the \"runtime\" registry of attention that tracks like a program stack frame,"
+  + [source_line_002] is "as is fitting for attention to semantics and structure in the LLM as opposed to the shape of stack frames in hard-coded languages."
+
+  = must: preserve this source separately from canonical registry contract
+  = must: define stack-frame-like attention tracking in semantic terms, not hard-coded language terms
+  = must: keep the registry visible and inspectable rather than claiming hidden LLM stack access
+  - outside: hidden activations, model weights, exact transformer attention, native runtime stack frames, and executable runtime implementation

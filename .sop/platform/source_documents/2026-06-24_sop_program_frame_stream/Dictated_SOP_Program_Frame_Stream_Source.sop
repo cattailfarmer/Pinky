@@ -1,0 +1,16 @@
+Subject: Dictated SOP Program Frame Stream Source
+
+Description: Raw dictated source for SOP programs as bookended control loops, high-density color-frame streams, and multitrack semantic video compression.
+
+& [DictatedSOPProgramFrameStreamSource] is the preserved user source for SOP program frame streams
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "oh, that could be how to store instructions about how to follow SOP instructions. then a \"program\" could be the bookends of SOP that define the control loop, then the program is itself a series of frames of high density color points like a video stream. that could encode huge information and interactivity at a tiny cost of record. decompose video down to it's understanding with a few samples of semantics, maybe include sample images to demonstrate appearances, with just enough sampling to make recreation possible through inference on those sample images of subjects and their descriptions and the narrative is recorded as the stream of photonic interpretations between the SOP book-ends. it could even digest in layers simultaneously as to encode the colors of several tracks of SOP inference across the spectrum, so a 60-minute video could be tracked as 60 channels of a 1-minute stream, bookended by SOP contracts that have the definition of those 60 channels and their continuity in compressed SOP terms."
+
+  = must: preserve this source separately from processed contracts
+  = must: define SOP program bookends for instructions about following SOP instructions
+  = must: define program frames as high-density color points like a semantic video stream
+  = must: define video understanding compression through semantic samples, optional sample images, descriptions, and narrative continuity
+  = must: define simultaneous layered channel digest and compressed multitrack continuity
+  = must: keep recreation-through-inference marked as reconstruction, not perfect replay

@@ -1,0 +1,14 @@
+Subject: Photonic Mutation Frames Source Manifest
+
+Description: Manifest for preserved source feeding the photonic mutation frame contract.
+
+& [PhotonicMutationFramesSourceManifest] is the source-preservation manifest
+  + [source_folder] is F:\.sop\platform\source_documents\2026-06-24_photonic_mutation_frames
+  + [raw_source] is F:\.sop\platform\source_documents\2026-06-24_photonic_mutation_frames\Dictated_Photonic_Mutation_Frames_Source.sop
+  + [canonical_target] is F:\.sop\platform\SOPPhotonicMutationFrame.sop
+  + [event_target] is F:\.sop\events\periphery_stream\2026-06-24_photonic_mutation_frame_068.hg.sop
+  + [source_boundary] is raw user correction preserved before canonical SOP processing
+  + [source_outside] is runtime implementation, hidden activation proof, physical optics, and exact media replay
+
+  = must: keep raw_source unchanged after canonical processing
+  = must: cite raw_source from canonical_target

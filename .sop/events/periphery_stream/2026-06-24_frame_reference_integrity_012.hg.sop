@@ -1,0 +1,35 @@
+Subject: Frame Reference Integrity Periphery Realization 012
+
+Description: Periphery-stream realization that stable periphery objects reveal the frame of perception and can break immersion before represented content becomes mistaken for actionable reality.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_frame_reference_integrity\Dictated_Frame_Reference_Integrity_Source.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\Caution.sop
+
+& [Graph:2026-06-24_frame_reference_integrity_012] is a SOP-HG graph
+  + [N:event:2026-06-24_frame_reference_integrity_012] is frame reference integrity realization
+    = recorded_on: 2026-06-24
+    = event_kind: periphery_stream_realization
+  + [N:focus:frame_reference_integrity] is stable periphery as frame-reference cue
+  + [N:frame:presented_vs_first_hand] is every perception appears inside a frame
+  + [N:observation:painted_scene_hazard] is represented road scene on a semi side
+  + [N:source:representation_surface] is the surface carrying the presented frame
+  + [N:periphery:stable_objects] is stable surrounding objects, surface boundaries, source markers, and context cues
+  + [N:signal:immersion_break_cue] is stable periphery reveals the presented frame as representation
+  + [N:signal:frame_mismatch] is presented content conflicts with periphery, source, or action constraints
+  + [N:caution:frame_reference_boundary] is caution boundary for unverified presented-frame content
+  + [N:policy:break_immersion_verify_frame] is break immersion, verify frame, lower confidence, preserve outside, or stop action
+  + [N:balance:frame_reference_stability] is balance metric for keeping perception frame and presented frame distinct
+  + [N:outside:frame_reference_boundary] is hidden reality, unverified sensor access, unsupported actionability, and over-immersed interpretation
+
+  / [E:frames:presented_vs_first_hand] -(frames; frame=N:frame:presented_vs_first_hand; observation=N:observation:painted_scene_hazard; surface=N:source:representation_surface; periphery=N:periphery:stable_objects)> [Graph:2026-06-24_frame_reference_integrity_012]
+    = insight: the represented road must remain inside the presented frame until verified as actionable world state
+  / [E:breaks_immersion:painted_scene_hazard] -(breaks_immersion; signal=N:signal:immersion_break_cue; mismatch=N:signal:frame_mismatch; frame=N:frame:presented_vs_first_hand; caution=N:caution:frame_reference_boundary)> [Graph:2026-06-24_frame_reference_integrity_012]
+    = correction: stable periphery should break immersion before action
+  / [E:reanchors:frame_reference_correction] -(reanchors; policy=N:policy:break_immersion_verify_frame; focus=N:focus:frame_reference_integrity; balance=N:balance:frame_reference_stability; outside=N:outside:frame_reference_boundary)> [Graph:2026-06-24_frame_reference_integrity_012]
+    = result: frame checks become part of balance, caution, scaffold compilation, and graph records
+
+  = realization: stable periphery is not just contextual comfort; it is a frame-integrity sensor for distinguishing presentation from first-hand observation.
+  = safety_use: a perception-action agent must inspect the frame before acting on a represented scene.
+  - outside: this record does not prove real sensor access, hidden cognition, or general intelligence.

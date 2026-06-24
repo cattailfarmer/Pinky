@@ -1,0 +1,69 @@
+Subject: Semantic Hash Index
+
+Description: SOP contract for hashed pointers into SOP components and their unstable peripheral semantic landscape.
+
+& [SemanticHashIndex] is the hashed index that digests SOP components into pointer records and revisable semantic surfaces
+  + [index_role] is unstable_semantic_awareness_index
+  + [repo_root] is F:\.sop
+  + [periphery_repository] is F:\.sop\platform\PeripheryRepository.sop
+  + [component_pointer] is a stable path, content hash, semantic hash, subject, and identifier set for one SOP component
+  + [content_hash] is a SHA-256 digest of the exact component content
+  + [semantic_hash] is a SHA-256 digest of the extracted subject, identifiers, and term set
+  + [semantic_hash_table] is F:\.sop\platform\SemanticHashTable.sop
+  + [semantic_landscape] is the component subject, identifiers, extracted terms, and peripheral impressions
+  + [unstable_semantic_awareness] is revisable inference at the edge where association is noticed before proof
+  + [periphery_impression] is an out-of-focus point of potential interest with relation back to narrative
+  + [narrative_subject] is the subject or moment the peripheral impression relates back to
+  + [hiding_behind] is the apparent subject, component, term, or pressure that masked the peripheral point
+  + [turned_aspect] is the interpretive angle that caused the impression to become visible
+  + [nearby_association] is the neighboring term or component entangled with the peripheral impression
+  + [pointer_graph] is a SOP-HG record that connects hashes, components, terms, and impressions
+  + [generated_index_exclusion] is events\indexes skipped by default to prevent recursive self-index amplification
+  + [residual_outside] is meaning not proven by hashes, term extraction, or correlation heat
+
+& [HashedPointerDelineation] is the boundary of a semantic hash pointer
+  :inside: path, content hash, semantic hash, subject, identifiers, extracted terms, and direct component evidence
+  /boundary/ deterministic hashing, source text, file path, extraction rules, and scan bookends
+  |outside| final meaning, hidden cognition, unobserved causation, and semantic claims not supported by evidence
+
+  = must: use hashes as pointers into SOP evidence
+  = must: keep content hash and semantic hash separate
+  = must: allow a later digest to supersede the semantic landscape without erasing prior records
+  = must: avoid recursively indexing generated index artifacts unless explicitly requested
+  = must: treat extracted terms as association candidates, not final ontology
+  = should: retain enough path and subject context for humans and agents to re-enter the component
+  = should: populate the SemanticHashTable when inclusive lookup across dimensions is needed
+  - never: treat hash equality as semantic identity unless the hashed input class is identical
+
+& [PeripheryImpressionRecord] is the unstable semantic note produced from wider association terms
+  + [impression_hash] is a SHA-256 digest of narrative subject, peripheral term, relation, hidden surface, turned aspect, nearby association, and evidence pointers
+  + [periphery_term] is the out-of-focus term of potential interest
+  + [relation_back] is how the term appears to relate to the narrative subject
+  + [hiding_behind] is what the term seemed masked by
+  + [turned_aspect] is what angle made it visible
+  + [nearby_association] is what neighboring association entangled with it
+  + [evidence_pointer_set] is component pointers or scan events supporting the impression
+  + [weight] is correlation heat or subjective draw, not proof
+  + [stability] is unstable, recurring, promoted, or retired
+
+  = must: identify why the peripheral term seemed interesting
+  = must: record the relation back to narrative when known
+  = must: mark the record unstable until repeated evidence or explicit focus promotes it
+  = should: route recurring impressions into ThinkAbout or focus promotion
+  - never: hide residual uncertainty behind hash precision
+
+& [SemanticIndexProcedure] is the deterministic indexing routine
+  + [step_001_collect_components] is select SOP files or component slices to digest
+  + [step_002_hash_content] is compute content hashes
+  + [step_003_extract_landscape] is extract subject, identifiers, and terms
+  + [step_004_hash_semantic_surface] is compute semantic hashes over normalized landscape fields
+  + [step_005_record_periphery_impressions] is attach wider association terms and relation-back notes
+  + [step_006_emit_pointer_graph] is render SOP-HG nodes and edges for index, components, terms, and impressions
+  + [step_007_preserve_outside] is name semantic claims not proven by the digest
+
+  = must: be deterministic for the same input text and extraction rules
+  = must: keep unstable inference inspectable and revisable
+  = should: use the periphery repo to store slow background index records
+
+/ [component_pointer] -(points_to)> [semantic_landscape]
+* [narrative_subject], [periphery_term], [hiding_behind], [turned_aspect], [nearby_association] -(PeripheryImpression)> [periphery_impression]

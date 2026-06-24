@@ -1,0 +1,17 @@
+Subject: Step Balance Walk Source Manifest
+
+Description: Source preservation manifest for the step balance walk contract and runtime.
+
+& [StepBalanceWalkSourceManifest] is the trace record for this work
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_step_balance_walk\Dictated_Step_Balance_Walk_Source.sop
+  + [contract_target] is F:\.sop\platform\StepBalanceWalk.sop
+  + [runtime_target] is F:\.sop\runtime\sop_node\step_balance_walk.py
+  + [demo_target] is F:\.sop\runtime\demos\step_balance_walk.py
+  + [test_target] is F:\.sop\runtime\tests\test_sensitivity_scan.py
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_step_balance_walk_037.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_attention_kernel_runtime_trailing_checksum_038.hg.sop
+  + [derived_terms] is step_balance_walk, step_settlement, next_step_selection, continuous_momentum, balance_gate, correction_stride
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, AttentionBalanceCenter, CarriedSupportBalance, AttentionImpressionCompiler
+
+  = must: preserve raw source before treating the gait as implementation authority
+  = must: cite this manifest when auditing the step-balance runtime

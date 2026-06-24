@@ -1,0 +1,11 @@
+Subject: Model Lens Projection Source Manifest
+
+Description: Source preservation manifest for scaffold lens and exchangeable LLM projection.
+
+& [ModelLensProjectionSourceManifest] is the source document set for model lens projection
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_model_lens_projection\Dictated_Model_Lens_Projection_Source.sop
+  + [projection_contract] is F:\.sop\platform\ModelLensProjection.sop
+  + [compiled_projection] is F:\.sop\events\reflections\2026-06-23_model_lens_projection.hg.sop
+
+  = must: keep source impulse separate from compiled projection
+  = must: treat model projections as comparative outputs, not as direct proof

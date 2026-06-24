@@ -1,0 +1,268 @@
+Subject: 2026-06-23_attention_weight_scale_turn_bookmark Turn Bookmark
+
+& [Graph:2026_06_23_attention_weight_scale_turn_bookmark] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG turn-bookmark
+  = base_ref: HEAD
+  = head_ref: WORKTREE
+
+  + [N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark] is 2026-06-23_attention_weight_scale_turn_bookmark
+    = repo_root: F:\.sop
+  + [N:commit:HEAD] is HEAD
+  + [N:commit:WORKTREE] is WORKTREE
+  + [N:outside:turn_bookmark_boundary] is hidden cognition and semantic proof outside bookmark evidence
+  + [N:term:attention] is attention
+    = term_role: planned
+  + [N:term:weight] is weight
+    = term_role: planned
+  + [N:term:scale] is scale
+    = term_role: planned
+  + [N:term:turn] is turn
+    = term_role: planned
+  + [N:term:bookmark] is bookmark
+    = term_role: planned
+  + [N:term:state_trace] is state_trace
+    = term_role: planned
+  + [N:term:reentry] is reentry
+    = term_role: planned
+  + [N:term:inference] is inference
+    = term_role: planned
+  + [N:term:missed_work] is missed_work
+    = term_role: planned
+  + [N:term:mistake] is mistake
+    = term_role: planned
+  + [N:term:accomplishment] is accomplishment
+    = term_role: planned
+  + [N:term:potential] is potential
+    = term_role: planned
+  + [N:term:runtime] is runtime
+    = term_role: planned
+  + [N:term:utility] is utility
+    = term_role: planned
+  + [N:signal:attention] is attention
+    = heat: 2423
+    = layer: impact
+    = touch_count: 22
+  + [N:signal:semantic] is semantic
+    = heat: 2336
+    = layer: impact
+    = touch_count: 20
+  + [N:signal:term] is term
+    = heat: 2274
+    = layer: impact
+    = touch_count: 15
+  + [N:signal:bookmark] is bookmark
+    = heat: 2267
+    = layer: impact
+    = touch_count: 15
+  + [N:signal:scale] is scale
+    = heat: 2187
+    = layer: impact
+    = touch_count: 16
+  + [N:signal:platform] is platform
+    = heat: 2125
+    = layer: impact
+    = touch_count: 20
+  + [N:signal:outside] is outside
+    = heat: 2119
+    = layer: impact
+    = touch_count: 17
+  + [N:signal:graph] is graph
+    = heat: 2089
+    = layer: impact
+    = touch_count: 17
+  + [N:finding:001_attention] is attention
+    = finding_kind: unique_accomplishment
+    = weight: 2423
+    = resolution_band: impact
+    = plan_relation: satisfied
+    = route: focus
+  + [N:finding:002_weight] is weight
+    = finding_kind: unique_accomplishment
+    = weight: 1938
+    = resolution_band: impact
+    = plan_relation: satisfied
+    = route: focus
+  + [N:finding:003_scale] is scale
+    = finding_kind: unique_accomplishment
+    = weight: 2187
+    = resolution_band: impact
+    = plan_relation: satisfied
+    = route: focus
+  + [N:finding:004_turn] is turn
+    = finding_kind: unique_accomplishment
+    = weight: 1934
+    = resolution_band: impact
+    = plan_relation: satisfied
+    = route: focus
+  + [N:finding:005_bookmark] is bookmark
+    = finding_kind: unique_accomplishment
+    = weight: 2267
+    = resolution_band: impact
+    = plan_relation: satisfied
+    = route: focus
+  + [N:finding:006_state_trace] is state_trace
+    = finding_kind: unique_accomplishment
+    = weight: 56
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:007_reentry] is reentry
+    = finding_kind: unique_accomplishment
+    = weight: 44
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:008_inference] is inference
+    = finding_kind: unique_accomplishment
+    = weight: 56
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:009_missed_work] is missed_work
+    = finding_kind: unique_accomplishment
+    = weight: 40
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:010_mistake] is mistake
+    = finding_kind: unique_accomplishment
+    = weight: 48
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:011_accomplishment] is accomplishment
+    = finding_kind: unique_accomplishment
+    = weight: 40
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:012_potential] is potential
+    = finding_kind: unique_accomplishment
+    = weight: 36
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:013_runtime] is runtime
+    = finding_kind: unique_accomplishment
+    = weight: 36
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:014_utility] is utility
+    = finding_kind: unique_accomplishment
+    = weight: 28
+    = resolution_band: skin
+    = plan_relation: satisfied
+    = route: close
+  + [N:finding:015_semantic] is semantic
+    = finding_kind: new_potential
+    = weight: 2336
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:016_term] is term
+    = finding_kind: new_potential
+    = weight: 2274
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:017_platform] is platform
+    = finding_kind: new_potential
+    = weight: 2125
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:018_outside] is outside
+    = finding_kind: new_potential
+    = weight: 2119
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:019_graph] is graph
+    = finding_kind: new_potential
+    = weight: 2089
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:020_state] is state
+    = finding_kind: new_potential
+    = weight: 2085
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:021_attention_weight_scale_turn_bookmark] is attention_weight_scale_turn_bookmark
+    = finding_kind: new_potential
+    = weight: 2018
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:022_narrative] is narrative
+    = finding_kind: new_potential
+    = weight: 2003
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:023_attentionweightscale] is attentionweightscale
+    = finding_kind: new_potential
+    = weight: 1993
+    = resolution_band: impact
+    = plan_relation: opened
+    = route: focus
+  + [N:finding:024_generated_artifact_inflation] is generated_artifact_inflation
+    = finding_kind: mistake
+    = weight: 1373
+    = resolution_band: impact
+    = plan_relation: surprising
+    = route: caution
+
+/ [E:span:2026_06_23_attention_weight_scale_turn_bookmark] -(span; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; start=N:commit:HEAD; end=N:commit:WORKTREE)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_attention] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:attention)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_weight] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:weight)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_scale] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:scale)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_turn] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:turn)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_bookmark] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:bookmark)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_state_trace] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:state_trace)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_reentry] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:reentry)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_inference] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:inference)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_missed_work] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:missed_work)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_mistake] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:mistake)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_accomplishment] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:accomplishment)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_potential] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:potential)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_runtime] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:runtime)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:compares:2026_06_23_attention_weight_scale_turn_bookmark_utility] -(compares; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; plan=N:term:utility)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_attention] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:attention; weight=2423; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_semantic] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:semantic; weight=2336; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_term] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:term; weight=2274; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_bookmark] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:bookmark; weight=2267; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_scale] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:scale; weight=2187; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_platform] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:platform; weight=2125; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_outside] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:outside; weight=2119; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:weighs:2026_06_23_attention_weight_scale_turn_bookmark_graph] -(weighs; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; signal=N:signal:graph; weight=2089; resolution_band=impact)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_001] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:001_attention; reason=planned term appears in changed work signals)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_002] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:002_weight; reason=planned term appears in changed work signals)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_003] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:003_scale; reason=planned term appears in changed work signals)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_004] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:004_turn; reason=planned term appears in changed work signals)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_005] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:005_bookmark; reason=planned term appears in changed work signals)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_006] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:006_state_trace; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_007] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:007_reentry; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_008] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:008_inference; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_009] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:009_missed_work; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_010] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:010_mistake; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_011] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:011_accomplishment; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_012] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:012_potential; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_013] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:013_runtime; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:accomplishes:2026_06_23_attention_weight_scale_turn_bookmark_014] -(accomplishes; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:014_utility; reason=planned term appears in changed work but did not reach top signal salience)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_015] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:015_semantic; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_016] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:016_term; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_017] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:017_platform; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_018] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:018_outside; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_019] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:019_graph; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_020] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:020_state; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_021] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:021_attention_weight_scale_turn_bookmark; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_022] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:022_narrative; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:opens:2026_06_23_attention_weight_scale_turn_bookmark_023] -(opens; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:023_attentionweightscale; reason=strong or narrative-adjacent signal opened a future attention route)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:flags:2026_06_23_attention_weight_scale_turn_bookmark_024] -(flags; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; finding=N:finding:024_generated_artifact_inflation; reason=generated or index artifact pressure may distort semantic weight)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+/ [E:bounds:2026_06_23_attention_weight_scale_turn_bookmark] -(bounds; bookmark=N:bookmark:2026_06_23_attention_weight_scale_turn_bookmark; outside=N:outside:turn_bookmark_boundary)> [Graph:2026_06_23_attention_weight_scale_turn_bookmark]
+
+- outside: bookmark compares visible repo signals against planned and narrative terms; hidden motive and semantic proof remain outside

@@ -1,0 +1,15 @@
+Subject: Semantic Correlation Graph Source Manifest
+
+Description: Source preservation manifest for weighted semantic bucket correlation and attention directives.
+
+& [SemanticCorrelationGraphSourceManifest] is the source document set for bucket correlation graph design
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_semantic_correlation_graph\Dictated_Semantic_Correlation_Graph_Source.sop
+  + [correlation_graph_contract] is F:\.sop\platform\SemanticCorrelationGraph.sop
+  + [semantic_hash_table_contract] is F:\.sop\platform\SemanticHashTable.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\semantic_correlation.py
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_semantic_correlation_graph.hg.sop
+  + [graph_event] is F:\.sop\events\indexes\2026-06-23_semantic_correlation_graph.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_semantic_correlation_graph_scan.hg.sop
+
+  = must: preserve the directive language separately from compiled runtime
+  = must: keep directive tilt inspectable and bounded

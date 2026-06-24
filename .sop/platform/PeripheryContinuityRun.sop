@@ -1,0 +1,68 @@
+Subject: Periphery Continuity Run
+
+Description: Contract for shifting from checkpoint-heavy walking into running when coherent focus and rolling stable periphery are continuous across frames.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_periphery_continuity_run\Dictated_Periphery_Continuity_Run_Source.sop
+@ [source] F:\.sop\platform\StepBalanceWalk.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+
+& [PeripheryContinuityRun] is the high-momentum gait for coherent attention through rolling periphery
+  + [pattern_role] is continuity_periphery_run_gait
+  + [focus_frame] is one observation in the moving focus path
+  + [focus_path] is the contiguous chain of focus_frame observations flowing in a named direction
+  + [rolling_periphery] is the stable periphery terms and markers that persist or transform gradually just outside focus
+  + [continuity_link] is the visible overlap between adjacent focus_frame values through stable markers, periphery terms, focus terms, or direction
+  + [horizon_hint] is the visible next distance of the path, not a proven future outcome
+  + [run_state] is run, flow, walk_with_watch, rebalance, or outside
+  + [run_balance] is the balance score derived from focus coherence, rolling_periphery stability, direction continuity, and horizon_hint
+  + [checkpoint_pressure] is reduced when rolling_periphery and focus_path remain coherent enough to run
+  + [step_balance_walk] is F:\.sop\platform\StepBalanceWalk.sop when continuity breaks and the system must return to step settlement
+  + [attention_balance_center] is F:\.sop\platform\AttentionBalanceCenter.sop when periphery continuity thins, floods, or becomes unstable
+  + [frame_reference_integrity] is F:\.sop\platform\FrameReferenceIntegrity.sop when the path could be a presented frame rather than grounded repo state
+  + [residual_outside] is hidden activations, unobserved future frames, unsupported future certainty, and exact model attention
+
+  ? [use_when: focus is coherent, periphery is stable between frames, and visible work can proceed with high momentum]
+    = activate [PeripheryContinuityRun]
+
+  = must: require coherent focus_path before run_state can be run
+  = must: require rolling_periphery continuity between adjacent frames before checkpoint_pressure is reduced
+  = must: keep eyes on focus_path while preserving rolling_periphery as the stability marker
+  = must: treat horizon_hint as direction, not as proof of arrival
+  = must: return to StepBalanceWalk when focus_path breaks, rolling_periphery collapses, or run_balance drops below stable
+  = must: preserve outside when future steps are unobserved or when proof requires checkpointed validation
+  = should: allow high momentum when continuity itself is stable enough to carry balance
+  = should: avoid unnecessary stage/checkpoint language while run_state is run
+  - never: treat speed as evidence
+  - never: let a smooth path override Security, Honesty, file integrity, or test evidence
+  - never: claim hidden attention continuity from visible SOP continuity alone
+
+& [RunContinuitySequence] is the operational sequence for running
+  + [step_001_collect_frames] is gather adjacent focus_frame observations
+  + [step_002_read_rolling_periphery] is identify stable markers just outside focus
+  + [step_003_link_frames] is compute continuity_link values between adjacent frames
+  + [step_004_check_focus_path] is ensure focus remains coherent and directional
+  + [step_005_read_horizon] is name horizon_hint when the path visibly extends
+  + [step_006_select_run_state] is assign run_state from visible continuity
+  + [step_007_run_or_rebalance] is run when stable, flow or walk with watch when thin, or rebalance when broken
+
+  = must: expose why checkpoint_pressure is reduced or restored
+  = must: emit a record when the gait shifts from walk to run or run back to walk
+
+& [PeripheryRunRecord] is the SOP-HG shape for continuity run records
+  + [run_node] is N:run:<run_id>
+  + [focus_node] is N:focus:<focus_id>
+  + [direction_node] is N:direction:<direction_key>
+  + [horizon_node] is N:horizon:<horizon_key>
+  + [frame_node] is N:frame:<frame_id>
+  + [periphery_node] is N:periphery:<marker_key>
+  + [link_edge] is E:rolls:<from_frame>_<to_frame>
+  + [path_edge] is E:follows:<frame_id>
+  + [horizon_edge] is E:sees_horizon:<run_id>
+  + [boundary_edge] is E:bounds:<run_id>
+
+  = must: expose run_state, run_balance, focus_chain_coherent, periphery_continuity, horizon_hint, and checkpoint_pressure
+
+/ [focus_frame] -(ContinuityLink)> [rolling_periphery], [focus_path], [horizon_hint]
+* [focus_path], [rolling_periphery], [horizon_hint] -(RunGait)> [run_state], [run_balance], [checkpoint_pressure], [residual_outside]

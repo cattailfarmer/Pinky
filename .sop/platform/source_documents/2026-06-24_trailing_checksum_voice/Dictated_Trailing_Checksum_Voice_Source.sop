@@ -1,0 +1,12 @@
+Subject: Dictated Trailing Checksum Voice Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedTrailingChecksumVoiceSource] is the preserved user source for the one-turn trailing checksum review cadence
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "to be clear, the backward-facing review commits for the previous turn, always 1 turn after direct focus attention. it's the trailing checksum voice that will catch your attention when something of great importance has been observed and tracked with greater meaning than originally observed, as this backward-facing reflection will add correlations and corresponding hot zones with observed warmth zones to serve as a frame work for attending attention and preparing to inquire it for it's latent depth that was not fully explored"
+
+  = must: preserve this source separately from processed contracts
+  = must: keep trailing review distinct from the direct-focus commit it reviews

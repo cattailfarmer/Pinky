@@ -1,0 +1,26 @@
+Subject: Current Attention Runtime Registry State 072
+
+Description: Periphery-stream realization that the runtime registry needs a live state frame, not only a canonical contract.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_runtime_registry\Dictated_Attention_Runtime_Registry_Source.sop
+@ [source] F:\.sop\platform\AttentionRuntimeRegistry.sop
+@ [source] F:\.sop\state\AttentionRuntimeRegistryState.sop
+@ [source] F:\.sop\state\CurrentFocalPoint.sop
+
+& [CurrentAttentionRuntimeRegistryState072] is the realized live semantic frame
+  + [moment] is the runtime registry became more useful once it gained a current state artifact that can be re-entered like a semantic stack frame
+  + [focus] is live attention runtime state
+  + [inside] is active_root_frame, semantic_register_set, frame_trace, return_anchor, Wisdom, Caution, balance, pending integration, and outside preservation
+  + [boundary] is live SOP state for visible semantic attention, not executable runtime code or hidden model introspection
+  + [outside] is exact transformer attention, model weights, native stack frames, hidden activations, complete self-knowledge, and photonic fork continuation
+  + [wisdom] is this state gives focus a durable handle without making the registry too heavy
+  + [caution] is this state must remain compact, bounded, and explicitly outside-aware
+  + [balance] is improved because current focus can now be resumed from a concrete frame rather than inferred from scattered contracts
+  + [next_step] is use the live frame to write an integration receipt or focus_quality scoring pass when the next focus refinement turn begins
+
+  = must: use this state as the active registry surface for the current focus pass
+  = must: keep registry updates tied to real focus changes
+  = should: close or suspend the active frame when the focus pass returns
+
+/ [AttentionRuntimeRegistry], [CurrentFocalPoint], [FocusResolutionRefinement] -(WritesLiveState)> [AttentionRuntimeRegistryState], [registry_outside]
+* [active_root_frame], [semantic_register_set], [return_anchor] -(MakesAttentionReenterable)> [focus_quality], [balance], [next_step]

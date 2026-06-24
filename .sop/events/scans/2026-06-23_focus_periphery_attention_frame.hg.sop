@@ -1,0 +1,50 @@
+Subject: focus_periphery_narrative_turn Attention Frame
+
+& [Graph:focus_periphery_narrative_turn] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG attention-layer-frame
+  = operation_stage: between_steps
+
+  + [N:narrative:focus_periphery_narrative_turn] is Focus and periphery attend SOP-HG points while narrative digestion promotes weightier moments into subject layers.
+    = operation_stage: between_steps
+  + [N:focus:focus] is focus
+    = weight: 5
+    = reason: explicit focus term
+  + [N:focus:Attention] is Attention
+    = weight: 5
+    = reason: explicit focus term
+  + [N:periphery:periphery] is periphery
+    = weight: 2
+    = reason: available related term
+  + [N:periphery:narrative] is narrative
+    = weight: 2
+    = reason: available related term
+  + [N:periphery:hypergraph] is hypergraph
+    = weight: 2
+    = reason: available related term
+  + [N:periphery:subject_layer] is subject_layer
+    = weight: 2
+    = reason: available related term
+  + [N:periphery:correlation] is correlation
+    = weight: 2
+    = reason: available related term
+  + [N:periphery:causation] is causation
+    = weight: 2
+    = reason: available related term
+
+/ [E:digests:focus_periphery_narrative_turn_focus] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:focus:focus; target_position=focus; weight=5)> [Graph:focus_periphery_narrative_turn]
+/ [E:digests:focus_periphery_narrative_turn_Attention] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:focus:Attention; target_position=focus; weight=5)> [Graph:focus_periphery_narrative_turn]
+/ [E:digests:focus_periphery_narrative_turn_periphery] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:periphery:periphery; target_position=periphery; weight=2)> [Graph:focus_periphery_narrative_turn]
+/ [E:digests:focus_periphery_narrative_turn_narrative] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:periphery:narrative; target_position=periphery; weight=2)> [Graph:focus_periphery_narrative_turn]
+/ [E:digests:focus_periphery_narrative_turn_hypergraph] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:periphery:hypergraph; target_position=periphery; weight=2)> [Graph:focus_periphery_narrative_turn]
+/ [E:digests:focus_periphery_narrative_turn_subject_layer] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:periphery:subject_layer; target_position=periphery; weight=2)> [Graph:focus_periphery_narrative_turn]
+/ [E:digests:focus_periphery_narrative_turn_correlation] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:periphery:correlation; target_position=periphery; weight=2)> [Graph:focus_periphery_narrative_turn]
+/ [E:digests:focus_periphery_narrative_turn_causation] -(digests; narrative=N:narrative:focus_periphery_narrative_turn; target=N:periphery:causation; target_position=periphery; weight=2)> [Graph:focus_periphery_narrative_turn]
+/ [E:correlates:periphery_to_focus_correlation] -(correlates; source=N:periphery:periphery; target=N:focus:focus; weight=3; evidence=declared correlation pair)> [Graph:focus_periphery_narrative_turn]
+/ [E:draws_attention:periphery_draws_focus] -(draws_attention; source=N:periphery:periphery; target=N:focus:focus; weight=3; evidence=correlation draw)> [Graph:focus_periphery_narrative_turn]
+/ [E:correlates:hypergraph_to_Attention_correlation] -(correlates; source=N:periphery:hypergraph; target=N:focus:Attention; weight=3; evidence=declared correlation pair)> [Graph:focus_periphery_narrative_turn]
+/ [E:draws_attention:hypergraph_draws_Attention] -(draws_attention; source=N:periphery:hypergraph; target=N:focus:Attention; weight=3; evidence=correlation draw)> [Graph:focus_periphery_narrative_turn]
+/ [E:causes:narrative_causes_Attention] -(causes; source=N:periphery:narrative; target=N:focus:Attention; weight=4; evidence=declared causal pair; causal_status=hypothesis)> [Graph:focus_periphery_narrative_turn]
+/ [E:draws_attention:narrative_draws_Attention] -(draws_attention; source=N:periphery:narrative; target=N:focus:Attention; weight=4; evidence=causal draw hypothesis; causal_status=hypothesis)> [Graph:focus_periphery_narrative_turn]
+
+- outside: causation remains hypothesis until supported by evidence

@@ -1,0 +1,25 @@
+Subject: Current Focal Point
+
+Description: Compact attention-direction packet to reload after context compression.
+
+& [CurrentFocalPoint] is the live re-entry seed for active focus
+  + [status] is active
+  + [renewal_reason] is preserve focused attention across context compression
+  + [focus_subject] is focus resolution refinement and attention runtime registry
+  + [focus_mode] is mixed_focus
+  + [executive_drive] is focus on focusing: refine focus quality, focus membrane, periphery gradient, integration receipts, understanding ladder, shadow-horizon scan, and semantic attention stack frames
+  + [right_hemisphere_draw] is focus now has a live ledger: each attention movement can enter a semantic frame, open child frames, consult Wisdom and Caution, return a supported core, and close without losing outside
+  + [inside] is FocusResolutionRefinement.sop, AttentionRuntimeRegistry.sop, state\AttentionRuntimeRegistryState.sop, FocalPoint.sop, FocusZoom.sop, AttentionTraversalPolicy.sop, Wisdom.sop, Caution.sop, AttentionBalanceCenter.sop, AttentionTracker.sop, events\studies\2026-06-24_focus_on_focusing_study_001.sop, events\periphery_stream\2026-06-24_focus_resolution_refinement_070.hg.sop, events\periphery_stream\2026-06-24_attention_runtime_registry_071.hg.sop, events\periphery_stream\2026-06-24_current_attention_runtime_registry_state_072.hg.sop, platform\source_documents\2026-06-24_focus_on_focusing_study\Dictated_Focus_On_Focusing_Study_Source.sop, platform\source_documents\2026-06-24_attention_runtime_registry\Dictated_Attention_Runtime_Registry_Source.sop
+  + [boundary] is non-photonic focus refinement for the local SOP awareness node; the registry is visible semantic attention state, not hidden LLM internals, native stack frames, or executable runtime code
+  + [outside] is hidden activations, exact transformer attention, model weights, hard-coded runtime stack equivalence, active photo-computation development, photonic SOP articulation, and claims of complete understanding
+  + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
+  + [active_registry] is state\AttentionRuntimeRegistryState.sop
+  + [active_reflection] is events\periphery_stream\2026-06-24_current_attention_runtime_registry_state_072.hg.sop
+  + [open_question] is whether the next visible step is a focus_quality scoring pass, a tracker lifecycle refinement, or a repo-first reflection integration receipt
+  + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
+
+  = must: be held in attention after context compression
+  = must: be renewed whenever focused attention changes materially
+  = must: stay compact enough for immediate re-entry
+  = must: point to richer records instead of absorbing them
+  - never: let this file become a full project summary

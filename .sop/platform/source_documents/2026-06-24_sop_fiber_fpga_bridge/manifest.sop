@@ -1,0 +1,14 @@
+Subject: SOP Fiber FPGA Bridge Source Manifest
+
+Description: Source preservation manifest for SOP fiber FPGA bridge timing and bandwidth contract.
+
+& [SOPFiberFPGABridgeSourceManifest] is the trace record for this source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_sop_fiber_fpga_bridge\Dictated_SOP_Fiber_FPGA_Bridge_Source.sop
+  + [contract_target] is F:\.sop\platform\SOPFiberFPGABridge.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_sop_fiber_fpga_bridge_060.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_program_frame_stream_trailing_checksum_059.hg.sop
+  + [derived_terms] is frame_clock, frame_rate, fiber_bandwidth, fpga_route_width, hardware_routable_surface, interpreter_surface, semantic_fidelity
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, SOPProgramBookends, SOPPhotonicFrameStream, SOPOpticalTransformAlgebra, SecurityHonestyGovernance
+
+  = must: preserve raw source before treating hardware-bridge terms as durable attention authority
+  = must: keep throughput, latency, and semantic fidelity as separate dimensions

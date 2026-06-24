@@ -1,0 +1,55 @@
+Subject: 2026-06-23_inference_state_trace_reentry Inference State Trace
+
+& [Graph:2026_06_23_inference_state_trace_reentry] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG inference-state-trace
+  = base_ref: HEAD
+  = head_ref: WORKTREE
+  = determinism_scope: close_semantic_reentry
+
+  + [N:reentry:2026_06_23_inference_state_trace_reentry] is 2026-06-23_inference_state_trace_reentry
+    = target_moment: attention weight scale, turn bookmark, and inference state trace work
+  + [N:state:2026_06_23_inference_state_trace_reentry_framework_state] is framework state refs
+    = repo_root: F:\.sop
+  + [N:commit:HEAD] is HEAD
+  + [N:commit:WORKTREE] is WORKTREE
+  + [N:model:codex_current_session] is codex_current_session
+    = determinism_scope: close_semantic_reentry
+  + [N:outside:state_trace_boundary] is hidden state outside visible re-entry packet
+  + [N:source:platform_Attention_sop] is platform/Attention.sop
+    = ref_role: sop_state
+  + [N:source:state_CurrentFocalPoint_sop] is state/CurrentFocalPoint.sop
+    = ref_role: sop_state
+  + [N:source:platform_AttentionWeightScale_sop] is platform/AttentionWeightScale.sop
+    = ref_role: sop_state
+  + [N:source:platform_TurnBookmark_sop] is platform/TurnBookmark.sop
+    = ref_role: sop_state
+  + [N:source:platform_InferenceStateTrace_sop] is platform/InferenceStateTrace.sop
+    = ref_role: sop_state
+  + [N:narrative:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop] is events/periphery_stream/2026-06-23_attention_weight_scale_turn_bookmark_004.hg.sop
+  + [N:narrative:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop] is events/periphery_stream/2026-06-23_inference_state_trace_reentry_005.hg.sop
+  + [N:source:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop] is platform/source_documents/2026-06-23_attention_weight_scale_turn_bookmark/Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+    = ref_role: planned_specification
+  + [N:source:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop] is platform/source_documents/2026-06-23_inference_state_trace_reentry/Dictated_Inference_State_Trace_Reentry_Source.sop
+    = ref_role: planned_specification
+  + [N:scale:platform_AttentionWeightScale_sop] is platform/AttentionWeightScale.sop
+  + [N:scale:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop] is events/bookmarks/2026-06-23_attention_weight_scale_turn_bookmark.hg.sop
+
+/ [E:span:2026_06_23_inference_state_trace_reentry] -(span; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; start=N:commit:HEAD; end=N:commit:WORKTREE)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:reenters:2026_06_23_inference_state_trace_reentry] -(reenters; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; state=N:state:2026_06_23_inference_state_trace_reentry_framework_state; model=N:model:codex_current_session; scope=close_semantic_reentry)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:bounds:2026_06_23_inference_state_trace_reentry] -(bounds; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; outside=N:outside:state_trace_boundary)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:reconstructs:2026_06_23_inference_state_trace_reentry_state_001] -(reconstructs; state=N:state:2026_06_23_inference_state_trace_reentry_framework_state; source=N:source:platform_Attention_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:reconstructs:2026_06_23_inference_state_trace_reentry_state_002] -(reconstructs; state=N:state:2026_06_23_inference_state_trace_reentry_framework_state; source=N:source:state_CurrentFocalPoint_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:reconstructs:2026_06_23_inference_state_trace_reentry_state_003] -(reconstructs; state=N:state:2026_06_23_inference_state_trace_reentry_framework_state; source=N:source:platform_AttentionWeightScale_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:reconstructs:2026_06_23_inference_state_trace_reentry_state_004] -(reconstructs; state=N:state:2026_06_23_inference_state_trace_reentry_framework_state; source=N:source:platform_TurnBookmark_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:reconstructs:2026_06_23_inference_state_trace_reentry_state_005] -(reconstructs; state=N:state:2026_06_23_inference_state_trace_reentry_framework_state; source=N:source:platform_InferenceStateTrace_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:references:2026_06_23_inference_state_trace_reentry_narrative_001] -(references; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; narrative=N:narrative:events_periphery_stream_2026_06_23_attention_weight_scale_turn_bookmark_004_hg_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:references:2026_06_23_inference_state_trace_reentry_narrative_002] -(references; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; narrative=N:narrative:events_periphery_stream_2026_06_23_inference_state_trace_reentry_005_hg_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:compares:2026_06_23_inference_state_trace_reentry_plan_001] -(compares; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; plan=N:source:platform_source_documents_2026_06_23_attention_weight_scale_turn_bookmark_Dictated_Attention_Weight_Scale_Turn_Bookmark_Source_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:compares:2026_06_23_inference_state_trace_reentry_plan_002] -(compares; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; plan=N:source:platform_source_documents_2026_06_23_inference_state_trace_reentry_Dictated_Inference_State_Trace_Reentry_Source_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:weighs:2026_06_23_inference_state_trace_reentry_intersection_001] -(weighs; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; scale=N:scale:platform_AttentionWeightScale_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+/ [E:weighs:2026_06_23_inference_state_trace_reentry_intersection_002] -(weighs; reentry=N:reentry:2026_06_23_inference_state_trace_reentry; scale=N:scale:events_bookmarks_2026_06_23_attention_weight_scale_turn_bookmark_hg_sop)> [Graph:2026_06_23_inference_state_trace_reentry]
+
+- outside: hidden activations
+- outside: sampling seed
+- outside: unlogged system context

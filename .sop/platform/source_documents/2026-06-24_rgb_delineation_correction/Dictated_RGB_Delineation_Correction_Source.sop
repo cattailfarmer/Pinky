@@ -1,0 +1,12 @@
+Subject: Dictated RGB Delineation Correction Source
+
+Description: Preserved raw correction that RGB inside, boundary, and outside are attention/delineation fields, not mutation fields.
+
+& [DictatedRGBDelineationCorrectionSource] is the preserved user correction
+  + [source_date] is 2026-06-24
+  + [source_context] is correction to SOP RGB semantic encoding after initial RGB basis overmixed attention, action, and transform pressure
+  + [source_line_001] is "but the inside, boundary, and outside are about attention, delineation, not mutations."
+
+  = must: preserve this correction separately from canonical amendments
+  = must: treat this correction as authoritative over the RGB primitive basis
+  - outside: mutation semantics, transform operations, action semantics, and any claim that RGB axes directly encode operations

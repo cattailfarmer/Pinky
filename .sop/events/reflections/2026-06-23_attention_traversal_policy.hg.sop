@@ -1,0 +1,28 @@
+Subject: Attention Traversal Policy Reflection
+
+Description: SOP-HG reflection for focal traversal, periphery draw, triangulation, fold, and unwind.
+
+& [Graph:attention_traversal_policy_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG attention-traversal-policy
+
+  + [N:policy:attention_traversal_policy] is AttentionTraversalPolicy
+  + [N:focus:current_focal_point] is CurrentFocalPoint
+    = focus_subject: attention traversal policy for deeper probing
+  + [N:subject:focal_point] is focal point
+  + [N:periphery:periphery_realizations] is periphery realizations
+  + [N:term:triangulated_probe] is triangulated probe
+  + [N:term:fold_unwind] is fold and unwind
+  + [N:source:platform_AttentionTraversalPolicy_sop] is platform\AttentionTraversalPolicy.sop
+  + [N:outside:traversal_boundary] is proof and unrelated association outside traversal
+
+/ [E:probes:focal_point] -(probes; policy=N:policy:attention_traversal_policy; focus=N:focus:current_focal_point; subject=N:subject:focal_point)> [Graph:attention_traversal_policy_2026_06_23]
+/ [E:correlates:focal_point_triangulated_probe] -(correlates; subject=N:subject:focal_point; relation=N:term:triangulated_probe; periphery=N:periphery:periphery_realizations)> [Graph:attention_traversal_policy_2026_06_23]
+/ [E:cross_references:focal_point_AttentionTraversalPolicy] -(cross_references; subject=N:subject:focal_point; source=N:source:platform_AttentionTraversalPolicy_sop)> [Graph:attention_traversal_policy_2026_06_23]
+/ [E:reaches_through:focal_point_periphery_realizations] -(reaches_through; from=N:subject:focal_point; through=N:term:triangulated_probe; to=N:periphery:periphery_realizations)> [Graph:attention_traversal_policy_2026_06_23]
+/ [E:folds:periphery_into_focal_candidate] -(folds; focus=N:focus:current_focal_point; subject=N:subject:focal_point; periphery=N:periphery:periphery_realizations; relation=N:term:fold_unwind)> [Graph:attention_traversal_policy_2026_06_23]
+/ [E:unwinds:periphery_into_focal_candidate] -(unwinds; relation=N:term:fold_unwind; outside=N:outside:traversal_boundary; result=supported_core_plus_uncertainty)> [Graph:attention_traversal_policy_2026_06_23]
+/ [E:triangulates:focal_point] -(triangulates; subject=N:subject:focal_point; relation=N:term:triangulated_probe; source=N:source:platform_AttentionTraversalPolicy_sop; outside=N:outside:traversal_boundary)> [Graph:attention_traversal_policy_2026_06_23]
+/ [E:returns:focal_point] -(returns; focus=N:focus:current_focal_point; subject=N:subject:focal_point; result=focal_update)> [Graph:attention_traversal_policy_2026_06_23]
+
+- outside: traversal policy guides attention movement and does not prove meaning or causation

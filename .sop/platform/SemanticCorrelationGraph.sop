@@ -1,0 +1,69 @@
+Subject: Semantic Correlation Graph
+
+Description: SOP contract for weighted correlations over semantic hash buckets and tunable attention directives.
+
+& [SemanticCorrelationGraph] is a weighted graph over semantic hash table buckets that can be tilted by attention directives
+  + [graph_role] is attention_direction_correlation_graph
+  + [source_table] is F:\.sop\platform\SemanticHashTable.sop
+  + [bucket_node] is one semantic table bucket by dimension and value
+  + [bucket_correlation] is weighted overlap, adjacency, or directive-tuned relation between buckets
+  + [base_weight] is measured overlap between buckets before directive tilt
+  + [directive_weight] is additional attention slope introduced by an attention directive
+  + [total_weight] is base_weight plus directive_weight
+  + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop for naming units and resolution bands when graph weights are interpreted
+  + [periphery_dimensional_probe] is F:\.sop\platform\PeripheryDimensionalProbe.sop when hot periphery suggests another independent anchor dimension
+  + [attention_directive] is a named instruction that expects, captures, bounds, and associates subjects
+  + [changelog_weight_net] is F:\.sop\platform\ChangelogCorrelationWeightNet.sop when weighted bucket relations are attached to repo change units and narrative justification
+  + [identified_capture] is the directive name for the captured :inside: surface
+  + [inside_terms] is terms expected inside the capture
+  + [boundary_terms] is terms that define the /boundary/ around the capture
+  + [subject_a] is the first subject surface brought into attention
+  + [subject_b] is the second subject surface brought into attention
+  + [association_surface] is the weighted bucket path joining subject_a and subject_b
+  + [residual_outside] is semantic proof, hidden causation, and any unmeasured association not supported by bucket evidence
+
+& [AttentionDirectiveLanguage] is the small language for rigging attention direction
+  + [directive_line] is & [AttentionDirective:<id>] is <purpose>
+  + [identified_line] is :identified: <capture_name>
+  + [inside_line] is :inside: <term>, <term>, ...
+  + [boundary_line] is /boundary/ <term>, <term>, ...
+  + [subject_a_line] is :subject_a: <term or pointer>
+  + [subject_b_line] is :subject_b: <term or pointer>
+  + [tilt_line] is :tilt: <dimension>:<value>, <dimension>:<value>, ...
+  + [probe_dimension_line] is :probe_dimension: <fragmented_signal>, <hot_periphery_zone>, <candidate_dimension>
+  + [anchor_line] is :anchor: <contextual_anchor>
+  + [outside_line] is |outside| <unproven or excluded meaning>
+
+  = must: use directives to make attention expectations explicit
+  = must: treat :inside: as capture candidates and /boundary/ as separation terms
+  = must: use :subject_a: and :subject_b: to request association over bucket surfaces
+  = must: keep :tilt: as extra direction, not evidence replacement
+  = must: use :probe_dimension: only when a fragmented signal needs hotter periphery searched for independent anchors
+  = must: use :anchor: to name a contextual anchor, not to prove the conclusion
+  - never: promote directive output to proof without independent support
+
+& [CorrelationWeightPolicy] is how weights are interpreted
+  + [shared_entry_weight] is weight from bucket overlap in semantic table entries
+  + [dimension_weight] is stronger for exact dimensions, moderate for subjects, weaker for terms and peripheral associations
+  + [directive_boost] is a bounded boost when a bucket matches inside, boundary, subject, or tilt dimensions
+  + [boundary_penalty] is optional caution when a boundary bucket is the only bridge
+  + [promotion_threshold] is a configurable total_weight above which a bucket relation can become a focus candidate
+
+  = must: expose base_weight and directive_weight separately
+  = must: use attention_weight_scale when total_weight must become salience, draw, load, or probe depth
+  = must: use periphery_dimensional_probe when a bucket relation is hot but fragmented and might gain receptive form through another dimension
+  = must: hand repo-delta subject attachment to changelog_weight_net when narrative and justification dimensions are load-bearing
+  = must: allow tuning without changing the underlying table
+  = should: prefer correlations that join distinct subject surfaces through shared or nearby terms
+
+& [AttentionRiggingBoundary] is the boundary of the programming-language claim
+  :inside: directives, captured terms, bucket correlations, weights, subject association paths, and promotion candidates
+  /boundary/ semantic table buckets, measured overlap, explicit directive fields, source SOP, and graph output
+  |outside| proof of meaning, hidden cognition, causal truth, and associations not visible through the table
+
+  = must: call this attention rigging only within evidence boundaries
+  = must: show which directive tilted which bucket relation
+  - never: hide uncertainty behind confident correlation language
+
+/ [attention_directive] -(tilts)> [bucket_correlation]
+* [subject_a], [subject_b], [bucket_correlation], [total_weight] -(AttentionAssociation)> [association_surface]

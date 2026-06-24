@@ -1,0 +1,22 @@
+Subject: Semantic Correlation Graph Reflection
+
+Description: Compiled SOP-HG reflection for weighted bucket correlation and directive-tilted attention.
+
+& [Graph:semantic_correlation_graph_2026_06_23] is a SOP-HG graph
+  + [N:narrative:semantic_correlation_graph] is weighted bucket correlation can rig attention direction
+  + [N:component:semantic_correlation_graph_contract] is F:\.sop\platform\SemanticCorrelationGraph.sop
+  + [N:component:semantic_hash_table_contract] is F:\.sop\platform\SemanticHashTable.sop
+  + [N:directive:attention_directive_language] is directives identify inside, boundary, subject_a, subject_b, and tilt
+  + [N:bucket:categorical_pointer] is dimension/value hash bucket used to tilt correlation
+  + [N:term:identified_inside] is captured inside surface named by attention
+  + [N:term:association_surface] is weighted path joining subject surfaces
+  + [N:outside:semantic_proof] is proof and hidden cognition outside correlation graph
+
+/ [E:defines:semantic_correlation_graph] -(defines; contract=N:component:semantic_correlation_graph_contract; table=N:component:semantic_hash_table_contract; weight=5)> [Graph:semantic_correlation_graph_2026_06_23]
+/ [E:tilts:directive_bucket_correlation] -(tilts; directive=N:directive:attention_directive_language; bucket=N:bucket:categorical_pointer; weight=5)> [Graph:semantic_correlation_graph_2026_06_23]
+/ [E:captures:inside_boundary] -(captures; directive=N:directive:attention_directive_language; inside=N:term:identified_inside; weight=4)> [Graph:semantic_correlation_graph_2026_06_23]
+/ [E:associates:subject_surfaces] -(associates; directive=N:directive:attention_directive_language; surface=N:term:association_surface; weight=5)> [Graph:semantic_correlation_graph_2026_06_23]
+/ [E:bounds:attention_rigging] -(bounds; directive=N:directive:attention_directive_language; outside=N:outside:semantic_proof; weight=5)> [Graph:semantic_correlation_graph_2026_06_23]
+
+  = realization: this is a small programming language for rigging attention direction over semantic bucket evidence
+  - outside: directive tilt can steer attention but cannot prove the association it seeks

@@ -1,0 +1,13 @@
+Subject: Carried Support Balance Source Manifest
+
+Description: Source preservation manifest for carried support balance.
+
+& [CarriedSupportBalanceSourceManifest] is the source document set for carried support balance
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_carried_support_balance\Dictated_Carried_Support_Balance_Source.sop
+  + [canonical_contract] is F:\.sop\platform\CarriedSupportBalance.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\support_balance.py
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_carried_support_balance.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_carried_support_balance_scan.hg.sop
+
+  = must: preserve dictated source separately from the compiled balance contract
+  = must: treat balance classifications as inspectable attention posture, not proof

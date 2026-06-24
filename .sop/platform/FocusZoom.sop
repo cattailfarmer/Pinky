@@ -1,0 +1,119 @@
+Subject: Focus Zoom
+
+Description: Contract for widening focus aperture, drawing periphery into focus, flexing correlation fabric, selecting angles of approach, and deepening a controlled focus explosion.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_focus_zoom\Dictated_Focus_Zoom_Source.sop
+@ [source] F:\.sop\platform\FocalPoint.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\ApertureReentryCycle.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+
+& [FocusZoom] is the attention pattern for controlled focus aperture expansion
+  + [pattern_role] is focus_aperture_expansion_and_deepening
+  + [focal_core] is the current subject, purpose, boundary, and return condition held in focus
+  + [focus_aperture] is the permitted width of periphery drawn into focal processing
+  + [zoom_level] is slender, normal, wide, deep, or explosive_controlled
+  + [periphery_draw_set] is the selected periphery signals allowed into the zoom pass
+  + [stable_periphery_frame] is the bounded periphery retained around focus so zoom can compare, contrast, and preserve outside
+  + [frame_integrity_anchor] is the perception_frame and stable periphery cues retained so zoom does not mistake a presented frame for first-hand observation
+  + [correlation_fabric] is the widened set of relations, source anchors, bucket paths, narrative traces, and tracker signals flexed around focal_core
+  + [fabric_flex] is the temporary adjustment of relation weights and candidate groupings to reveal stronger angles of approach
+  + [angle_of_approach] is one distinct probe direction inferred from correlation_fabric
+  + [approach_set] is the selected angles used to dig deeper without losing focal return
+  + [focus_explosion] is the controlled expansion of the area of focus through approach_set
+  + [aperture_reentry_cycle] is F:\.sop\platform\ApertureReentryCycle.sop when zoom must close into a re-entry springboard for a second pass
+  + [topology_map] is F:\.sop\platform\HyperbolicPantsAttentionMap.sop when zoom needs focal/periphery cells, dimensional orbit, or pants-leg navigation
+  + [seven_fold_frame] is F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop when zoom needs top-three heat ordering and fold legs for extra dimensionality
+  + [corridor_navigator] is F:\.sop\platform\HyperbolicCorridorNavigator.sop when zoom extends local awareness enough to advance through selected peripheral frames
+  + [containment_boundary] is the rule that keeps zoom from becoming associative wandering
+  + [outside] is unrelated periphery, unproven causation, hidden cognition, arbitrary association, and over-wide context
+
+  ? [use_when: the focal subject needs a wider field, more periphery fabric, inferred angles of approach, or deeper controlled exploration]
+    = activate [FocusZoom]
+
+  = must: begin from CurrentFocalPoint or a declared focal_core
+  = must: name zoom_level before drawing additional periphery
+  = must: select periphery_draw_set by salience, draw, recurrence, load, caution, or user direction
+  = must: preserve stable_periphery_frame when narrowing after zoom
+  = must: preserve frame_integrity_anchor when zooming into images, maps, UIs, simulations, narratives, model projections, or other presented frames
+  = must: flex correlation_fabric temporarily before changing focal_core
+  = must: infer angle_of_approach from distinct fabric relations, not repeated synonyms
+  = must: use HyperbolicPantsAttentionMap when widened periphery needs a navigable cell topology instead of a flat list
+  = must: use SevenFoldPantsCorrelationFrame when a widened subject surface needs the three hottest correlations centered before adding folded periphery legs
+  = must: use HyperbolicCorridorNavigator when the zoom pass chooses a peripheral_frame_series for a larger advance step
+  = must: route candidate missing dimensions through PeripheryDimensionalProbe
+  = must: choose approach_set before focus_explosion
+  = must: preserve containment_boundary and focal return condition during every zoom pass
+  = must: narrow or unwind the zoom before making durable claims
+  = must: route zoom results to ApertureReentryCycle when they need second_pass_narrative or subject_declaration_pass
+  = must: ask AttentionBalanceCenter to reduce balance when narrowing collapses useful periphery
+  = must: ask FrameReferenceIntegrity to break immersion when zoom reveals a frame_mismatch
+  = should: use slender or normal zoom by default during implementation work
+  = should: use wide, deep, or explosive_controlled only when the user asks for deeper thinking or impact pressure justifies it
+  - never: let widened periphery replace focal direction
+  - never: call a larger context window a better conclusion by itself
+  - never: explode focus without a return anchor and boundary
+
+& [ZoomApertureScale] is the qualitative scale for focus aperture
+  + [slender] is minimal periphery, one or two draw signals, action-biased
+  + [normal] is bounded periphery, several draw signals, ordinary specification or implementation work
+  + [wide] is expanded periphery, multiple correlation paths, useful for conceptual weaving
+  + [deep] is high-resolution exploration through source, state, narrative, and periphery
+  + [explosive_controlled] is intentionally broad focus expansion with explicit containment, approach_set, and unwind
+
+  = must: record why zoom moves above normal
+  = must: attach containment_boundary to wide, deep, and explosive_controlled zoom
+  = must: return unused periphery to periphery_repository, tracker, or outside
+
+& [ZoomSequence] is the canonical order for focus zoom
+  + [step_001_anchor] is load focal_core and containment_boundary
+  + [step_002_aperture] is declare zoom_level and focus_aperture
+  + [step_003_draw] is draw periphery_draw_set into temporary focal consideration
+  + [step_004_flex] is flex correlation_fabric by relation, evidence, narrative, weight, and caution
+  + [step_005_map] is arrange focal cell, periphery cells, dimensional orbit, and pants legs when topology_map is active
+  + [step_006_seven_fold] is select central correlation triad and folded legs when seven_fold_frame is active
+  + [step_006b_corridor] is select peripheral_frame_series and advance_step when corridor_navigator is active
+  + [step_007_angles] is infer angle_of_approach candidates from distinct fabric relations
+  + [step_008_select] is choose approach_set by fit, salience, support, and boundary
+  + [step_009_explode] is expand focus only along approach_set
+  + [step_010_probe] is dig deeper through traversal, dimensional probe, topology map, seven-fold frame, or state trace as needed
+  + [step_011_unwind] is decompose the zoom result back to source legs, supported core, uncertainty, and outside
+  + [step_012_close] is close aperture into a reentry_springboard when new perspective or new attention elements must survive
+  + [step_013_balance] is check whether periphery remained stable or shrank too far
+  + [step_014_return] is update focal_core, route leftovers, or close the zoom
+
+  = must: keep periphery_draw_set temporary until step_014
+  = must: use FoldUnwindLaw before durable realization
+  = must: route over-wide material back outside rather than stuffing it into focus
+
+& [AngleOfApproachSelection] is the rule for choosing directions after zoom flex
+  + [approach_candidate] is a relation, dimension, narrative trace, support imbalance, contradiction, source lineage, or model-lens difference
+  + [distinct_role] is the independent role that makes approach_candidate useful
+  + [depth_promise] is the expected gain from probing that angle
+  + [focus_fit] is how directly the candidate changes, clarifies, supports, challenges, or bounds focal_core
+  + [risk_load] is the chance of drift, overfitting, unsupported causation, or context bloat
+
+  = must: prefer candidates with distinct_role and focus_fit
+  = must: subtract risk_load before selecting approach_set
+  = must: keep unused candidates visible as periphery rather than erasing them
+
+& [FocusExplosionBoundary] is the containment rule for expanding the focus area
+  + [allowed_expansion] is approach_set plus cited source anchors and selected periphery_draw_set
+  + [return_anchor] is CurrentFocalPoint or declared focal_core
+  + [unwind_requirement] is source legs, relation legs, supported core, uncertainty, and outside
+  + [stop_condition] is no focal effect, no distinct angle, no source anchor, excessive risk_load, or broken return_anchor
+
+  = must: stop expansion when stop_condition is reached
+  = must: preserve outside throughout expansion
+  = must: turn successful expansion into focal update, tracker update, state trace, source update, or periphery record
+
+/ [focal_core], [focus_aperture] -(ZoomAperture)> [periphery_draw_set], [outside]
+* [periphery_draw_set], [correlation_fabric], [containment_boundary] -(ZoomFlex)> [angle_of_approach]
+* [approach_set], [focal_core], [containment_boundary] -(FocusExplosion)> [supported_core], [outside]

@@ -1,0 +1,37 @@
+Subject: Local Identity Consumption Trailing Checksum 033
+
+Description: One-turn-later checksum review of commit 239b64b, recording the latent need for faculty-specific attention field names inside scoped compiled kernels.
+
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\LocalIdentityConsumption.sop
+@ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
+@ [source] F:\.sop\events\periphery_stream\2026-06-24_local_identity_consumption_032.hg.sop
+
+& [Graph:2026-06-24_local_identity_consumption_trailing_checksum_033] is a SOP-HG graph
+  + [N:bookmark:local_identity_consumption_trailing_checksum_033] is trailing checksum review of Local Identity Consumption
+    = one_turn_lag: true
+    = direct_focus_commit: 239b64b
+    = version_a: 23a2b61
+    = version_b: 239b64b
+  + [N:event:2026-06-24_local_identity_consumption_032] is prior direct-focus local identity consumption realization
+  + [N:event:2026-06-24_faculty_attention_field_naming_034] is current turn faculty attention field naming realization
+  + [N:zone:faculty_field_noun_scope] is hot zone where scoped identifiers need purpose-specific field nouns
+  + [N:signal:field_names_account_for_faculty_features] is signal that field names should denote the feature each faculty governs
+  + [N:finding:identity_scope_needs_field_naming_law] is latent depth candidate that scoped names need faculty field signatures
+  + [N:policy:focus_next] is checksum disposition to focus next on FacultyAttentionFieldNaming
+  + [N:outside:trailing_checksum_boundary] is later reflection, not original direct-focus awareness, and not proof of hidden model attention
+
+  / [E:span:local_identity_consumption_trailing_checksum_033] -(span; start=N:commit:23a2b61; end=N:commit:239b64b; review=N:bookmark:local_identity_consumption_trailing_checksum_033)> [Graph:2026-06-24_local_identity_consumption_trailing_checksum_033]
+    = evidence: 239b64b added LocalIdentityConsumption, scoped_attention_identifier, and namespace collision checks
+  / [E:trails:2026-06-24_local_identity_consumption_032] -(trails; direct_focus=N:event:2026-06-24_local_identity_consumption_032; review=N:bookmark:local_identity_consumption_trailing_checksum_033)> [Graph:2026-06-24_local_identity_consumption_trailing_checksum_033]
+    = realization: the prior identity layer scoped names but did not yet say each faculty must name its focused field by what it accounts for
+  / [E:heats:faculty_field_noun_scope] -(heats; zone=N:zone:faculty_field_noun_scope; signal=N:signal:field_names_account_for_faculty_features; latent=N:finding:identity_scope_needs_field_naming_law; weight=hot)> [Graph:2026-06-24_local_identity_consumption_trailing_checksum_033]
+    = evidence: user source names Honesty :claim: /distinction/ and Security :assignment: /safe_boundary_line/
+  / [E:inquires:identity_scope_needs_field_naming_law] -(inquires; latent=N:finding:identity_scope_needs_field_naming_law; disposition=N:policy:focus_next; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_local_identity_consumption_trailing_checksum_033]
+    = realization: FacultyAttentionFieldNaming becomes direct focus for this turn
+  / [E:bounds:local_identity_consumption_trailing_checksum_033] -(bounds; review=N:bookmark:local_identity_consumption_trailing_checksum_033; outside=N:outside:trailing_checksum_boundary)> [Graph:2026-06-24_local_identity_consumption_trailing_checksum_033]
+    = caution: checksum observes later refinement and does not rewrite the original local identity commit's awareness
+
+  = inside: 239b64b diff, LocalIdentityConsumption.sop, user faculty field source, attention field naming concern
+  = boundary: this review records latent field-naming depth after the direct-focus turn, not proof that the prior turn already contained faculty field signatures
+  = outside: hidden transformer attention, unsupported field mapping, unresolved naming collision, and faculty naming treated as proof of model internals

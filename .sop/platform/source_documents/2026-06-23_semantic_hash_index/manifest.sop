@@ -1,0 +1,14 @@
+Subject: Semantic Hash Index Source Manifest
+
+Description: Source preservation manifest for semantic hash indexing.
+
+& [SemanticHashIndexSourceManifest] is the source document set for hashed semantic indexing
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_semantic_hash_index\Dictated_Semantic_Hash_Index_Source.sop
+  + [semantic_hash_index_contract] is F:\.sop\platform\SemanticHashIndex.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\semantic_index.py
+  + [compiled_reflection] is F:\.sop\events\reflections\2026-06-23_semantic_hash_index.hg.sop
+  + [index_event] is F:\.sop\events\indexes\2026-06-23_semantic_hash_index.hg.sop
+  + [scan_record] is F:\.sop\events\scans\2026-06-23_semantic_hash_index_scan.hg.sop
+
+  = must: keep dictated source separate from contract and runtime surface
+  = must: preserve the unstable/revisable boundary of semantic awareness

@@ -1,0 +1,12 @@
+Subject: Focus Periphery Attention Source Manifest
+
+Description: Source preservation manifest for local attention layer root.
+
+& [FocusPeripheryAttentionSourceManifest] is the source document set for focus/periphery attention
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_focus_periphery_attention\Dictated_Focus_Periphery_Attention_Source.sop
+  + [attention_root] is F:\.sop\platform\Attention.sop
+  + [layer_index] is F:\.sop\platform\attention_layers\Index.sop
+  + [relation_contracts] is F:\.sop\platform\attention_layers\RelationContracts.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\attention_layers.py
+
+  = must: treat this as the local root attention import surface

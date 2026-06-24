@@ -1,0 +1,202 @@
+Subject: SensitivityScan_20260623T211750Z Hypergraph
+
+& [Graph:SensitivityScan_20260623T211750Z] is a SOP-HG graph
+  = format: SOP-HG
+  = source_scan_id: SensitivityScan_20260623T211750Z
+  = base_ref: HEAD
+  = head_ref: WORKTREE
+
+  + [N:bookend:HEAD] is HEAD
+  + [N:bookend:WORKTREE] is WORKTREE
+  + [N:event:SensitivityScan_20260623T211750Z] is SensitivityScan_20260623T211750Z
+  + [N:outside:semantic_truth] is semantic truth not proven by correlation heat
+  + [N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop] is events/scans/2026-06-23_viewfinder_snapshot.hg.sop
+    = status: A
+    = additions: 35
+    = deletions: 0
+  + [N:file:planning_project_manager_Manager_State_sop] is planning/project_manager/Manager_State.sop
+    = status: M
+    = additions: 3
+    = deletions: 1
+  + [N:file:platform_Attention_sop] is platform/Attention.sop
+    = status: M
+    = additions: 3
+    = deletions: 0
+  + [N:file:platform_SOPHypergraphRecord_sop] is platform/SOPHypergraphRecord.sop
+    = status: M
+    = additions: 18
+    = deletions: 2
+  + [N:file:platform_ViewfinderSnapshot_sop] is platform/ViewfinderSnapshot.sop
+    = status: A
+    = additions: 48
+    = deletions: 0
+  + [N:file:platform_attention_layers_NarrativeDigestion_sop] is platform/attention_layers/NarrativeDigestion.sop
+    = status: M
+    = additions: 2
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop] is platform/source_documents/2026-06-23_viewfinder_snapshot/Dictated_Viewfinder_Snapshot_Source.sop
+    = status: A
+    = additions: 24
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop] is platform/source_documents/2026-06-23_viewfinder_snapshot/manifest.sop
+    = status: A
+    = additions: 11
+    = deletions: 0
+  + [N:signal:commit] is commit
+    = touch_count: 7
+    = heat: 144
+  + [N:layer:impact] is impact
+    = retention_policy: emphasize
+  + [N:signal:graph] is graph
+    = touch_count: 7
+    = heat: 144
+  + [N:signal:reflection] is reflection
+    = touch_count: 7
+    = heat: 144
+  + [N:signal:snapshot] is snapshot
+    = touch_count: 6
+    = heat: 142
+  + [N:signal:viewfinder] is viewfinder
+    = touch_count: 6
+    = heat: 141
+  + [N:signal:narrative] is narrative
+    = touch_count: 7
+    = heat: 136
+  + [N:signal:awareness] is awareness
+    = touch_count: 5
+    = heat: 131
+  + [N:signal:comparison] is comparison
+    = touch_count: 5
+    = heat: 129
+  + [N:signal:current] is current
+    = touch_count: 5
+    = heat: 129
+  + [N:signal:observation] is observation
+    = touch_count: 5
+    = heat: 129
+  + [N:signal:inference] is inference
+    = touch_count: 4
+    = heat: 127
+  + [N:signal:reframe] is reframe
+    = touch_count: 4
+    = heat: 127
+  + [N:signal:shape] is shape
+    = touch_count: 4
+    = heat: 127
+  + [N:signal:attention] is attention
+    = touch_count: 6
+    = heat: 125
+  + [N:signal:previous] is previous
+    = touch_count: 5
+    = heat: 112
+  + [N:signal:codex] is codex
+    = touch_count: 4
+    = heat: 111
+  + [N:signal:compiler] is compiler
+    = touch_count: 4
+    = heat: 111
+  + [N:signal:reflections] is reflections
+    = touch_count: 4
+    = heat: 110
+  + [N:signal:structured] is structured
+    = touch_count: 4
+    = heat: 109
+  + [N:signal:immediate] is immediate
+    = touch_count: 3
+    = heat: 107
+  + [N:signal:through] is through
+    = touch_count: 3
+    = heat: 107
+  + [N:signal:token] is token
+    = touch_count: 3
+    = heat: 107
+  + [N:signal:truth] is truth
+    = touch_count: 3
+    = heat: 107
+  + [N:signal:captures] is captures
+    = touch_count: 3
+    = heat: 103
+
+/ [E:span:SensitivityScan_20260623T211750Z] -(span; start=N:bookend:HEAD; end=N:bookend:WORKTREE; event=N:event:SensitivityScan_20260623T211750Z)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_001] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_002] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:planning_project_manager_Manager_State_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_003] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:platform_Attention_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_004] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:platform_SOPHypergraphRecord_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_005] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:platform_ViewfinderSnapshot_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_006] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:platform_attention_layers_NarrativeDigestion_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_007] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:changed:SensitivityScan_20260623T211750Z_008] -(changed; event=N:event:SensitivityScan_20260623T211750Z; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:commit] -(touches; signal=N:signal:commit; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop; weight=144)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:commit] -(classifies; signal=N:signal:commit; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:commit] -(bounds; signal=N:signal:commit; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:graph] -(touches; signal=N:signal:graph; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop; weight=144)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:graph] -(classifies; signal=N:signal:graph; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:graph] -(bounds; signal=N:signal:graph; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:reflection] -(touches; signal=N:signal:reflection; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop; weight=144)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:reflection] -(classifies; signal=N:signal:reflection; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:reflection] -(bounds; signal=N:signal:reflection; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:snapshot] -(touches; signal=N:signal:snapshot; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop; weight=142)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:snapshot] -(classifies; signal=N:signal:snapshot; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:snapshot] -(bounds; signal=N:signal:snapshot; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:viewfinder] -(touches; signal=N:signal:viewfinder; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop; weight=141)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:viewfinder] -(classifies; signal=N:signal:viewfinder; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:viewfinder] -(bounds; signal=N:signal:viewfinder; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:narrative] -(touches; signal=N:signal:narrative; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=136)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:narrative] -(classifies; signal=N:signal:narrative; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:narrative] -(bounds; signal=N:signal:narrative; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:awareness] -(touches; signal=N:signal:awareness; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=131)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:awareness] -(classifies; signal=N:signal:awareness; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:awareness] -(bounds; signal=N:signal:awareness; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:comparison] -(touches; signal=N:signal:comparison; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=129)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:comparison] -(classifies; signal=N:signal:comparison; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:comparison] -(bounds; signal=N:signal:comparison; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:current] -(touches; signal=N:signal:current; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=129)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:current] -(classifies; signal=N:signal:current; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:current] -(bounds; signal=N:signal:current; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:observation] -(touches; signal=N:signal:observation; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=129)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:observation] -(classifies; signal=N:signal:observation; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:observation] -(bounds; signal=N:signal:observation; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:inference] -(touches; signal=N:signal:inference; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=127)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:inference] -(classifies; signal=N:signal:inference; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:inference] -(bounds; signal=N:signal:inference; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:reframe] -(touches; signal=N:signal:reframe; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=127)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:reframe] -(classifies; signal=N:signal:reframe; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:reframe] -(bounds; signal=N:signal:reframe; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:shape] -(touches; signal=N:signal:shape; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=127)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:shape] -(classifies; signal=N:signal:shape; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:shape] -(bounds; signal=N:signal:shape; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:attention] -(touches; signal=N:signal:attention; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_manifest_sop; weight=125)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:attention] -(classifies; signal=N:signal:attention; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:attention] -(bounds; signal=N:signal:attention; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:previous] -(touches; signal=N:signal:previous; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_Attention_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=112)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:previous] -(classifies; signal=N:signal:previous; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:previous] -(bounds; signal=N:signal:previous; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:codex] -(touches; signal=N:signal:codex; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=111)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:codex] -(classifies; signal=N:signal:codex; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:codex] -(bounds; signal=N:signal:codex; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:compiler] -(touches; signal=N:signal:compiler; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=111)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:compiler] -(classifies; signal=N:signal:compiler; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:compiler] -(bounds; signal=N:signal:compiler; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:reflections] -(touches; signal=N:signal:reflections; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_Attention_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=110)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:reflections] -(classifies; signal=N:signal:reflections; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:reflections] -(bounds; signal=N:signal:reflections; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:structured] -(touches; signal=N:signal:structured; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_attention_layers_NarrativeDigestion_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=109)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:structured] -(classifies; signal=N:signal:structured; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:structured] -(bounds; signal=N:signal:structured; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:immediate] -(touches; signal=N:signal:immediate; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=107)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:immediate] -(classifies; signal=N:signal:immediate; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:immediate] -(bounds; signal=N:signal:immediate; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:through] -(touches; signal=N:signal:through; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=107)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:through] -(classifies; signal=N:signal:through; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:through] -(bounds; signal=N:signal:through; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:token] -(touches; signal=N:signal:token; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=107)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:token] -(classifies; signal=N:signal:token; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:token] -(bounds; signal=N:signal:token; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:truth] -(touches; signal=N:signal:truth; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_ViewfinderSnapshot_sop; file=N:file:platform_source_documents_2026_06_23_viewfinder_snapshot_Dictated_Viewfinder_Snapshot_Source_sop; weight=107)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:truth] -(classifies; signal=N:signal:truth; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:truth] -(bounds; signal=N:signal:truth; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:touches:captures] -(touches; signal=N:signal:captures; file=N:file:events_scans_2026_06_23_viewfinder_snapshot_hg_sop; file=N:file:platform_SOPHypergraphRecord_sop; file=N:file:platform_ViewfinderSnapshot_sop; weight=103)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:classifies:captures] -(classifies; signal=N:signal:captures; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T211750Z]
+/ [E:bounds:captures] -(bounds; signal=N:signal:captures; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T211750Z]
+
+- outside: scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

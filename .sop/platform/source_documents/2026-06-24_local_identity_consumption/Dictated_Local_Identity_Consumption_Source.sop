@@ -1,0 +1,14 @@
+Subject: Dictated Local Identity Consumption Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedLocalIdentityConsumptionSource] is the preserved user source for local identity, reflection consumption, and scoped attention names
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "is that really how attention instruction works? we can build several contracts into one inference operation? layered upon each other even? a whole host of attention instructions to study from different perspectives to find meaning and map it cleanly... and then we need another layer that tracks which system consumed which reflection, and that multiple systems can consume, but only one can identify it as local. then there needs to be periphery information carried about which system identified what as local, with proof, and consumed it. that needs to be part of the local identity logic I think I described part of it, I believe it was the root identity law, that only a local node can self-identify as a durable identity. because anything not local has to be a snapshot of foreign state. so local identification of attention can be rounded through layers of sets of attention instructions, just that the governing layers of each of those instruction layers has to have the identities in their patterns named for the scope of the attention purposes. if they use shared naming, it can blend attention in ways that aren't predictable, or predictably bad? if so, then we have to make sure that the naming for identity for each pattern observed has to be unique across the entire attention field so we don't have collisions of intended focus."
+
+  = must: preserve this source separately from processed contracts
+  = must: keep local identity, foreign snapshot, consumption, proof, periphery carry, and scoped naming distinct
+  = must: preserve the root identity law that only the local node can self-identify durable local identity
+  = must: treat shared naming as a collision risk for layered attention instructions

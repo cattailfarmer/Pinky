@@ -1,0 +1,14 @@
+Subject: Dictated Faculty Attention Field Naming Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedFacultyAttentionFieldNamingSource] is the preserved user source for naming faculty attention fields by the feature each system accounts for
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "oh, each of the attention systems that compile custom attention for the purpose of like Honesty and Security should name the field of focused attention as the noun for which feature that system accounts for. so the Honesty system isn't interested in the :claim: and the /distinction/ for the terminology, and security would be interested in :assignment: and the /safe boundary line/"
+
+  = must: preserve this source separately from processed contracts
+  = must: keep faculty-specific field nouns distinct from generic attention placeholders
+  = must: preserve Honesty claim/distinction and Security assignment/safe-boundary-line as initial field examples
+  = must: treat each field noun as scoped to the faculty and purpose that accounts for it

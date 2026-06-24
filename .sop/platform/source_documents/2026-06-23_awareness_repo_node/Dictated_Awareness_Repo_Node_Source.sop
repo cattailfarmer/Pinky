@@ -1,0 +1,22 @@
+Subject: Dictated Awareness Repo Node Source
+
+Description: Raw preserved source request for a local SOP repo node, converging chain sync, and sensitivity scanning.
+
+SourceText:
+  """
+  F:\.sop let's start by making this folder a repo git node in a converging chain that synchs in chunks, as to like automatically internally synchronize an update to remote github repo in moments of noticed idle use. as if writing an awareness tracking node that digests recent updated SOP files and thinks about them more deeply, giving a back-propagating scan of the moments going back to the last major github update by checking the repo diffs in between events to denote bookends for chain of event considerations, by which you can measure the work done between these bookends as it tracked the files changed and tracks the narrative as to why, and activating whatever correlations that arose in that tracked moment in SOP files.... I'm wondering if what I'm describing could be a kind of sensitivity scan program that can walk a thought-woven web of depths of correlations... I'm describing things I don't have enough language or direction on in order to complete the vision...
+  """
+
+& [AwarenessRepoNodeRequest] is the preserved source seed
+  + [repo_node] is F:\.sop as a local Git-backed SOP awareness node
+  + [converging_chain] is a sequence of chunked local updates that can later converge with a remote
+  + [idle_sync] is future synchronization during noticed idle use
+  + [bookend_scan] is a diff walk from the last major update to the current event
+  + [thought_current] is the stream of changed SOP files and narrative reasons between bookends
+  + [sensitivity_scan] is a program that walks depth of correlations across those changes
+  + [unclear_language] is the admitted outside where the vision needs more vocabulary and direction
+
+  = must: start locally before remote automation
+  = must: use Git diffs as event bookends
+  = must: preserve narrative and correlation signals as inspectable SOP
+  = must: label idle GitHub sync as unconfigured until a remote and policy exist

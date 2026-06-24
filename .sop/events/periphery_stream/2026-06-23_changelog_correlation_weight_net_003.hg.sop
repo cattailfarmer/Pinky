@@ -1,0 +1,28 @@
+Subject: Changelog Correlation Weight Net 003
+
+Description: Periphery-stream realization that "net of weights" becomes a weighted data overlay tying changelog units to narrative and justification.
+
+& [Graph:changelog_correlation_weight_net_003_2026_06_23] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG changelog-correlation-weight-net
+  = stream_key: periphery_stream
+  = moment_index: 003
+
+  + [N:event:changelog_correlation_weight_net_003] is net of weights formalized as data
+  + [N:net:changelog_correlation_weight_net] is weighted net over changelog, narrative, and justification
+  + [N:commit:48a1ad4] is version A before changelog correlation weight net
+  + [N:commit:WORKTREE] is version B worktree containing changelog correlation weight net
+  + [N:subject:repo_first_internal_scan] is subject attended by the changelog
+  + [N:narrative:net_of_weights_refinement] is narrative phrase refining ambiguous weight language into data
+  + [N:source:platform_ChangelogCorrelationWeightNet_sop] is platform\ChangelogCorrelationWeightNet.sop
+  + [N:source:repo_first_internal_scan] is platform\RepoFirstInternalScan.sop
+  + [N:signal:weight_vector_shape] is lexical, subject, role, proximity, lineage, justification, narrative, recurrence, intensity, and penalty dimensions
+  + [N:outside:weight_net_boundary] is hidden motive, causal truth, unsupported narrative, and uninspected file content
+
+/ [E:span:changelog_correlation_weight_net_003] -(span; start=N:commit:48a1ad4; end=N:commit:WORKTREE; event=N:event:changelog_correlation_weight_net_003)> [Graph:changelog_correlation_weight_net_003_2026_06_23]
+/ [E:defines:changelog_correlation_weight_net] -(defines; event=N:event:changelog_correlation_weight_net_003; net=N:net:changelog_correlation_weight_net; source=N:source:platform_ChangelogCorrelationWeightNet_sop)> [Graph:changelog_correlation_weight_net_003_2026_06_23]
+/ [E:correlates:repo_first_weight_net] -(correlates; net=N:net:changelog_correlation_weight_net; subject=N:subject:repo_first_internal_scan; narrative=N:narrative:net_of_weights_refinement; weight=N:signal:weight_vector_shape)> [Graph:changelog_correlation_weight_net_003_2026_06_23]
+/ [E:supports:repo_first_weight_net] -(supports; subject=N:subject:repo_first_internal_scan; source=N:source:repo_first_internal_scan; source=N:source:platform_ChangelogCorrelationWeightNet_sop)> [Graph:changelog_correlation_weight_net_003_2026_06_23]
+/ [E:bounds:weight_net_boundary] -(bounds; net=N:net:changelog_correlation_weight_net; outside=N:outside:weight_net_boundary)> [Graph:changelog_correlation_weight_net_003_2026_06_23]
+
+- realization: "Net of weights" is best refined as an inspectable weighted hypergraph over change units, narrative terms, and justification/support terms, with penalties and outside preserved.

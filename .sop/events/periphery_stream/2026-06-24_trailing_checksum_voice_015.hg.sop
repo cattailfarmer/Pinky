@@ -1,0 +1,27 @@
+Subject: Trailing Checksum Voice Periphery Realization 015
+
+Description: Periphery realization that backward-facing review should run one turn after direct focus to discover hot zones, warmth zones, and latent depth candidates.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_trailing_checksum_voice\Dictated_Trailing_Checksum_Voice_Source.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_trailing_checksum_voice_015.hg.sop
+
+& [Graph:2026-06-24_trailing_checksum_voice_015] is a SOP-HG graph
+  + [N:event:2026-06-24_trailing_checksum_voice_015] is trailing checksum voice realization
+    = recorded_on: 2026-06-24
+    = event_kind: periphery_stream_realization
+  + [N:focus:trailing_checksum_voice] is one-turn-lag backward-facing review
+  + [N:zone:hot_trailing_cadence] is process cadence hot zone
+  + [N:zone:warmth_commit_integrity] is commit integrity warmth zone
+  + [N:finding:latent_depth_candidate] is unexplored depth in the delayed review process
+  + [N:policy:one_turn_after_direct_focus] is review cadence after direct focus attention
+  + [N:outside:trailing_reflection_boundary] is later reflection, not original awareness or hidden cognition
+
+  / [E:realizes:trailing_checksum_voice] -(realizes; focus=N:focus:trailing_checksum_voice; hot=N:zone:hot_trailing_cadence; warmth=N:zone:warmth_commit_integrity; finding=N:finding:latent_depth_candidate)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = realization: direct focus should be followed by a trailing checksum voice that catches delayed importance
+  / [E:checksums:one_turn_after_direct_focus] -(checksums; policy=N:policy:one_turn_after_direct_focus; focus=N:focus:trailing_checksum_voice; outside=N:outside:trailing_reflection_boundary)> [Graph:2026-06-24_trailing_checksum_voice_015]
+    = result: the cadence becomes a named attention primitive instead of an improvised post-commit repair
+
+  = realization: the review voice is a trailing checksum, not the direct working voice.
+  = operating_adjustment: create backward-facing review commits one turn after direct focus attention when durable meaning was produced.
+  - outside: checksum heat is not proof without source, diff, state, or recurrence support.

@@ -1,0 +1,46 @@
+Subject: Model Lens Projection
+
+Description: SOP contract for using the attention scaffold as a lens and exchangeable LLMs as different eyes on concept-space projection.
+
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+
+& [ModelLensProjection] is the comparative projection system where models look through the same scaffold lens
+  + [scaffold_lens] is the stable SOP attention scaffold, including attention points, boundaries, outside, caution, error, fault, and realization records
+  + [attention_scaffold_compiler] is F:\.sop\platform\AttentionScaffoldCompiler.sop when scaffold_lens must be selected or compiled for a job
+  + [model_eye] is one selected LLM instance used to project through the scaffold_lens
+  + [exchangeable_model_set] is the set of LLMs that can be swapped to produce different projections
+  + [concept_space_projection] is the model's visible output when the scaffold_lens frames the prompt, context, and evaluation target
+  + [projection_frame] is the perception_frame where model output is recognized as a presented frame through the scaffold, not as first-hand observation of hidden reality
+  + [frame_reference_integrity] is F:\.sop\platform\FrameReferenceIntegrity.sop for keeping model projection, source evidence, and actionable claims distinct
+  + [hologram_metaphor] is the model appearing as a projected form in concept space rather than as the scaffold itself
+  + [coherence_test] is whether the projection preserves identity, boundary, purpose, outside, and relation
+  + [inspiration_test] is whether the projection yields useful new associations, hypotheses, directions, or reframes
+  + [critique_test] is whether the projection exposes contradictions, weak boundaries, unsupported claims, risks, or faults
+  + [comparison_result] is agreement, divergence, complement, contradiction, inspiration, critique, or unresolved
+  + [residual_outside] is hidden model internals, unsupported causation, benchmark insufficiency, and untested transfer across models
+
+& [ProjectionProcedure] is the model-lens testing routine
+  + [step_001_hold_lens_constant] is keep the scaffold_lens, source packet, and evaluation target stable enough for comparison
+  + [step_002_select_model_eye] is choose one model and record its identity and context limits
+  + [step_003_emit_projection] is ask the model to project coherence, insight, critique, and caution through the scaffold
+  + [step_004_frame_reference] is mark the output as projection_frame and separate model projection from first-hand observation or source evidence
+  + [step_005_test_projection] is score the visible output for coherence, inspiration, critique, contradiction, and fault detection
+  + [step_006_compare_eyes] is compare projections across exchangeable_model_set
+  + [step_007_reweigh_scaffold] is update scaffold confidence or outside based on convergent and divergent projections
+
+  = must: keep the scaffold distinct from the model that views through it
+  = must: keep model output distinct from first-hand observation by running frame_reference_integrity before using projection as evidence
+  = must: cite the compiled scaffold or scaffold profile when projection output depends on scaffold selection
+  = must: record model identity when a projection is used as evidence
+  = must: compare multiple model eyes when claims depend on robustness across perspectives
+  = must: preserve divergent projections as useful signal rather than immediate failure
+  = must: route critique and fault signals into caution before realization
+  = should: treat convergence across models as stronger support than single-model fluency
+  - never: treat exchangeability as proof that all models preserve the same meaning
+  - never: treat a hologram_metaphor as literal access to model internals
+  - never: treat projection fluency as direct observation of the world, repo, user intent, or model internals
+  - never: let a persuasive projection bypass source, boundary, or outside checks
+
+* [scaffold_lens], [model_eye] -(ConceptSpaceProjection)> [concept_space_projection]
+
+/ [concept_space_projection] -(ProjectionEvaluation)> [coherence_test], [inspiration_test], [critique_test], [residual_outside]

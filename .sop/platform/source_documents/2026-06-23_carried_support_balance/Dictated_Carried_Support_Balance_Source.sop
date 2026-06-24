@@ -1,0 +1,18 @@
+Subject: Carried Support Balance Source
+
+Description: Raw preserved source for distinguishing native support from carried support during attention work.
+
+& [DictatedCarriedSupportBalanceSource] is the preserved user source for carried support balance
+  @ [user_statement] "the danger about rails will be about learning how to walk, paying attention to the supports you carry with you and be aware when they don't come up much in the periphery of a subject because that means it's not so native to that perspective, that's not a clear association."
+  @ [user_request] "track that suggestion, and implement it, and track your sense of balance as it were"
+
+  + [carried_support] is a support brought into the subject by the agent, framework, habit, or governance layer
+  + [native_support] is a support that arises from the subject field or its periphery
+  + [periphery_fit] is the visible sign that a support belongs to the current subject perspective
+  + [balance_sense] is the recorded stance of which supports are stabilizing, imported, weak, absent, or distorting
+
+  = must: name carried supports before using them as if they were native to the subject
+  = must: treat low periphery presence as weak or absent association
+  = must: preserve the distinction between useful imported guidance and subject-native meaning
+  = must: record the agent's visible balance posture during the work turn
+  - never: promote a carried support to native association without fit evidence

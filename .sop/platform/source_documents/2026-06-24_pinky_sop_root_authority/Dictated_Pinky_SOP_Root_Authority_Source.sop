@@ -1,0 +1,20 @@
+Subject: Dictated Pinky SOP Root Authority Source
+
+Description: Preserved user directive for moving SOP source authority into C:\Project\Pinky\.sop.
+
+& [DictatedPinkySOPRootAuthoritySource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is correction of the earlier F:\.sop authority assumption and selection of a Pinky-local root
+  + [source_line_001] is "this would be a fine point to start a new source authority on Pinky and make it the root, cloning from F:\.sop\"
+  + [source_line_002] is "make it C:\Project\Pinky\.sop\"
+  + [source_line_003] is "the local machine's local attention framework is the only legitimate authority for local trust"
+  + [active_root] is C:\Project\Pinky\.sop
+  + [seed_source] is F:\.sop
+  + [publication_repo] is C:\Project\Pinky
+  + [backup_role] is F:\.sop as local backup, seed snapshot, and satellite
+
+  = must: preserve this source separately from canonical authority records
+  = must: make C:\Project\Pinky\.sop the active local SOP authority root
+  = must: treat F:\.sop as backup/reference unless explicitly promoted again
+  = must: publish through the Pinky repository rather than a nested .sop Git repository
+  - outside: backup-only authority, nested .sop remote, hidden model state, and unreviewed unrelated Pinky project changes

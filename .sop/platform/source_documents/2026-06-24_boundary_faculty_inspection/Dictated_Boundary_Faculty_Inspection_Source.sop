@@ -1,0 +1,13 @@
+Subject: Dictated Boundary Faculty Inspection Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedBoundaryFacultyInspectionSource] is the preserved user source for Honesty and Security boundary inspection patterns
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "security and honesty might even have their own inference patterns that have express logic for how to inspect the boundary of identity to ensure truth and fair representation in the case of the Honesty faculty, and to ensure integrity of identity and safety boundaries with caution in the case of the Security faculty. those are 2 particular faults in the delineation at the boundary, representing two forms of boundary violations. so they would capture attention and inspect the /boundary/ and periphery of that boundary and those subjects in :attention:, to ensure that elements defined in the boundary are both orthogonal to the subjects, which is the vector of misdirection if it's not orthogonal to alarm for lack of honesty or truth, or that boundary is weakened by terms that would raise a security alert... I think that's a powerful and important first point of awareness to ensure the system's true and safe operations."
+
+  = must: preserve this source separately from processed contracts
+  = must: keep Honesty and Security boundary faults distinct in canonical processing
+  = must: preserve the attention notation terms :attention: and /boundary/ as meaningful source terms

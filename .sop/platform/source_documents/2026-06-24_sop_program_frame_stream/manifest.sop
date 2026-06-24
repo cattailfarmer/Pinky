@@ -1,0 +1,20 @@
+Subject: SOP Program Frame Stream Source Manifest
+
+Description: Source preservation manifest for SOP program bookends, frame streams, and multitrack semantic video compression.
+
+& [SOPProgramFrameStreamSourceManifest] is the trace record for this source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_sop_program_frame_stream\Dictated_SOP_Program_Frame_Stream_Source.sop
+  + [bookend_contract] is F:\.sop\platform\SOPProgramBookends.sop
+  + [frame_stream_contract] is F:\.sop\platform\SOPPhotonicFrameStream.sop
+  + [video_digest_contract] is F:\.sop\platform\SOPSemanticVideoDigest.sop
+  + [multitrack_contract] is F:\.sop\platform\SOPMultitrackChannelCompression.sop
+  + [bookend_event] is F:\.sop\events\periphery_stream\2026-06-24_sop_program_bookends_054.hg.sop
+  + [frame_event] is F:\.sop\events\periphery_stream\2026-06-24_sop_photonic_frame_stream_055.hg.sop
+  + [video_event] is F:\.sop\events\periphery_stream\2026-06-24_sop_semantic_video_digest_056.hg.sop
+  + [multitrack_event] is F:\.sop\events\periphery_stream\2026-06-24_sop_multitrack_channel_compression_057.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_semantic_photonic_layer_trailing_checksum_053.hg.sop
+  + [derived_terms] is sop_program_bookends, control_loop, photonic_frame, color_point, semantic_video_digest, sample_frame, reconstruction_seed, multitrack_channel_compression
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, HolographicAttentionKernelPacket, SOPOpticalTransformAlgebra, FrameReferenceIntegrity
+
+  = must: preserve raw source before treating program-frame terms as durable attention authority
+  = must: keep compressed video semantics bounded as reconstruction support, not exact replay proof

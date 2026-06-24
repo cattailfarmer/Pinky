@@ -1,0 +1,17 @@
+Subject: Web Hub Tree
+
+Description: SOP contract for a navigable web page hub over one turn spool.
+
+& [WebHubTree] is the local browser-facing tree of a turn spool
+  + [index_html] is the root web page for the turn spool
+  + [tree_root] is the turn objective and master status
+  + [worker_nodes] is the visible list of workers grouped by lane and status
+  + [artifact_nodes] is links to prompts, SOP-HG frames, result files, and scan records
+  + [status_badges] is queued, ready, launched, completed, blocked, failed, or deferred
+  + [navigation] is a tree that can expand from turn to lane to worker to artifact
+
+  = must: render as static HTML first
+  = must: keep paths local and relative to the turn folder
+  = must: make blocked and deferred states visible
+  = should: later become a served UI only after static hub is useful
+  - never: require internet or remote GitHub for local hub inspection

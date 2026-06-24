@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>spool_master_seed Spool Hub</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; margin: 2rem; color: #20242a; background: #f7f7f4; }
+    main { max-width: 980px; margin: 0 auto; }
+    h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+    .meta { color: #5b626d; margin-bottom: 1.5rem; }
+    .tree { background: #fff; border: 1px solid #d8d8d0; padding: 1rem 1.25rem; border-radius: 6px; }
+    ul { line-height: 1.7; }
+    details { margin: .4rem 0; }
+    summary { cursor: pointer; }
+    .badge { display: inline-block; min-width: 5.5rem; text-align: center; border-radius: 999px; padding: .1rem .45rem; font-size: .78rem; margin-right: .4rem; background: #e4e7eb; }
+    .queued { background: #e7edf7; }
+    .launch_ready { background: #e7f5e8; }
+    .blocked, .failed { background: #f8e1df; }
+    .completed { background: #dff4ea; }
+    .deferred { background: #eee8f7; }
+    .lane { color: #6a4a00; font-size: .86rem; }
+    code { background: #f0f0ea; padding: .1rem .25rem; border-radius: 3px; }
+    a { color: #245f9c; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>spool_master_seed Spool Hub</h1>
+  <div class="meta">Master: Codex | Created: 2026-06-23T21:25:37.416689+00:00</div>
+  <section class="tree">
+    <h2>Turn</h2>
+    <p>Coordinate Codex master with local LM Studio and Codex CLI worker lanes through a visible web hub tree.</p>
+    <p><strong>Narrative token:</strong> Codex becomes the master of a non-launching worker spool while the next step is grounded as a static hub.</p>
+    <h2>Worker Tree</h2>
+    <ul>
+      <li>
+<details open><summary><span class="badge blocked">blocked</span> lm_studio_local_model <span class="lane">lm_studio_cli</span></summary>
+<ul>
+<li><strong>Objective:</strong> Local model reflection lane through LM Studio-compatible API.</li>
+<li><a href="workers/lm_studio_local_model/WorkerJob.sop">WorkerJob.sop</a></li>
+<li><a href="workers/lm_studio_local_model/prompt.md">Prompt packet</a></li>
+<li>Launch command: <code>blocked: LM Studio launch policy not configured</code></li>
+<li>Result slot: <code>result.sop</code></li>
+</ul>
+</details>
+</li><li>
+<details open><summary><span class="badge deferred">deferred</span> codex_cli_worker <span class="lane">codex_cli</span></summary>
+<ul>
+<li><strong>Objective:</strong> Additional Codex CLI worker lane for bounded job packets.</li>
+<li><a href="workers/codex_cli_worker/WorkerJob.sop">WorkerJob.sop</a></li>
+<li><a href="workers/codex_cli_worker/prompt.md">Prompt packet</a></li>
+<li>Launch command: <code>deferred: explicit launch policy required</code></li>
+<li>Result slot: <code>result.sop</code></li>
+</ul>
+</details>
+</li><li>
+<details open><summary><span class="badge queued">queued</span> manual_review <span class="lane">manual</span></summary>
+<ul>
+<li><strong>Objective:</strong> Human review lane for inspecting hub tree and launch commands.</li>
+<li><a href="workers/manual_review/WorkerJob.sop">WorkerJob.sop</a></li>
+<li><a href="workers/manual_review/prompt.md">Prompt packet</a></li>
+<li>Launch command: <code>not configured</code></li>
+<li>Result slot: <code>result.sop</code></li>
+</ul>
+</details>
+</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

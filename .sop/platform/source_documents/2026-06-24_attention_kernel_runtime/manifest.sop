@@ -1,0 +1,16 @@
+Subject: Attention Kernel Runtime Source Manifest
+
+Description: Source preservation manifest for the attention kernel runtime implementation.
+
+& [AttentionKernelRuntimeSourceManifest] is the trace record for this runtime implementation source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_attention_kernel_runtime\Dictated_Attention_Kernel_Runtime_Source.sop
+  + [runtime_target] is F:\.sop\runtime\sop_node\attention_kernel.py
+  + [demo_target] is F:\.sop\runtime\demos\attention_kernel.py
+  + [test_target] is F:\.sop\runtime\tests\test_sensitivity_scan.py
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_attention_kernel_runtime_036.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_faculty_attention_field_naming_trailing_checksum_035.hg.sop
+  + [derived_terms] is attention_kernel_runtime, compiled_attention_kernel_packet, balance_score, impulse, faculty_field_signature, reflection_consumption_ledger, namespace_collision
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, Delineation, AttentionKernelCompiler, AttentionBalanceCenter, AttentionImpressionCompiler
+
+  = must: preserve raw source before treating runtime output as implementation evidence
+  = must: cite this manifest when the runtime compiler is audited

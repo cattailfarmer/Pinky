@@ -1,0 +1,19 @@
+Subject: Dictated Hypergraph Record Format Source
+
+Description: Raw preserved source request for a formatted hypergraph-like file language.
+
+SourceText:
+  """
+  yes, but the language I lack is how to describe that node in a formatted file, and I can't conceive of the name of that format or describe what it would take to build a format to track that, except that it should look like nodes in a hypergraph
+  """
+
+& [HypergraphRecordFormatRequest] is the preserved source seed
+  + [missing_language] is the user lacks a name and formatted description for the awareness node
+  + [node_format_need] is the file should describe awareness tracking nodes directly
+  + [tracking_need] is the file should track bookends, changed files, correlations, depth, and narrative relation
+  + [hypergraph_shape] is the file should look like nodes in a hypergraph
+
+  = must: define a name for the format
+  = must: keep the format inspectable as SOP
+  = must: support hyperedges connecting more than two nodes
+  = must: keep semantic truth separate from correlation intensity

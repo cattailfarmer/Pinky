@@ -1,0 +1,14 @@
+Subject: Dictated Photonic Mutation Frames Source
+
+Description: Preserved raw source for the distinction between delineation setup and photonic mutation frames.
+
+& [DictatedPhotonicMutationFramesSource] is the preserved user correction
+  + [source_date] is 2026-06-24
+  + [source_context] is correction after RGB was limited to attention/delineation and before defining how image frames express mutation
+  + [source_line_001] is "my point was that the photonic stream, the image frames, are frames of mutation."
+  + [source_line_002] is "so delineation is setup for this mutation, but you can't express the mutation by delineation terms."
+
+  = must: preserve this source separately from canonical specification
+  = must: treat photonic image frames as mutation frames over a prior delineation setup
+  = must: keep delineation terms from being used as mutation terms
+  - outside: runtime implementation, physical photonics, exact video compression, and untraced mutation claims

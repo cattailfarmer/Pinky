@@ -1,0 +1,105 @@
+Subject: Faculty Attention Field Naming
+
+Description: Contract for naming each custom attention faculty's focused field by the feature that faculty accounts for.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_faculty_attention_field_naming\Dictated_Faculty_Attention_Field_Naming_Source.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\LocalIdentityConsumption.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\SOPHypergraphRecord.sop
+
+& [FacultyAttentionFieldNaming] is the naming law for faculty-specific attention fields
+  + [pattern_role] is faculty_field_noun_scope_governance
+  + [attention_system] is a custom attention pattern, faculty, or kernel operator compiled for a purpose
+  + [feature_account] is the specific feature, duty, risk, truth surface, or action surface the attention_system is responsible for
+  + [field_noun] is the noun placed in the :field: position for the feature_account
+  + [boundary_noun] is the noun placed in the /boundary/ position for how that feature is separated from outside
+  + [residual_noun] is the noun placed in the |outside| position for what the faculty leaves unresolved
+  + [faculty_field_signature] is attention_system::field_noun::boundary_noun::residual_noun
+  + [honesty_field_signature] is honesty_faculty::claim::distinction::uncertainty
+  + [security_field_signature] is security_faculty::assignment::safe_boundary_line::risk
+  + [honesty_claim_field] is the Honesty field where the focused object is a claim being tested for truth status, support, contradiction, and fair representation
+  + [honesty_distinction_boundary] is the Honesty boundary that distinguishes claim, support, assumption, contradiction, uncertainty, and outside
+  + [security_assignment_field] is the Security field where the focused object is an assignment, action, permission, responsibility, or operating path
+  + [security_safe_boundary_line] is the Security boundary that separates permitted assignment from risk, breach, escalation, unsafe permission, or outside
+  + [generic_placeholder] is attention, inside, boundary, outside, subject, object, or other unscoped field wording
+  + [field_name_collision] is shared field wording that can blend attention between faculties with different feature_account values
+  + [field_disposition] is permit, qualify, rename, scope, route_to_periphery, block_compilation, or outside
+  + [outside] is ambiguous field meaning, shared unscoped names, unsupported faculty mapping, unresolved collision, and hidden model mechanics
+
+  ? [use_when: an attention faculty, kernel operator, or custom pattern is compiled into a packet and must name its own focused field]
+    = activate [FacultyAttentionFieldNaming]
+
+  = must: name each faculty attention field by the feature_account it governs
+  = must: keep field_noun, boundary_noun, and residual_noun scoped to attention_system
+  = must: replace generic placeholders with faculty-specific nouns before compiled_attention_kernel packet emission when the field is load-bearing
+  = must: use honesty_field_signature for Honesty unless a later source defines a better truth-accounting signature
+  = must: use security_field_signature for Security unless a later source defines a better safety-accounting signature
+  = must: route field_name_collision to LocalIdentityConsumption namespace checks before compilation
+  = must: route truth-sensitive field mapping through Honesty and action-sensitive field mapping through Security
+  = must: preserve generic placeholders only as examples, templates, or outside when executable scope is unclear
+  = should: keep field names short enough for promptable packets
+  = should: prefer precise nouns over abstract labels when the faculty has a clear accountability surface
+  - never: let two faculties share an authority-bearing field name without scope
+  - never: let the compiled packet treat generic placeholder names as stable identity when faculty-specific names are available
+  - never: use an elegant field name that obscures what the faculty actually accounts for
+
+& [HonestyFacultyField] is the initial Honesty field signature
+  + [attention_system] is honesty_faculty
+  + [field_noun] is claim
+  + [boundary_noun] is distinction
+  + [residual_noun] is uncertainty
+  + [feature_account] is truth status, support separation, contradiction preservation, fair representation, and proof boundary
+
+  = must: inspect :claim: rather than generic :attention: when Honesty is acting as a compiled faculty
+  = must: use /distinction/ to separate claim, support, assumption, contradiction, uncertainty, and outside
+  = must: keep unsupported, contradictory, stale, or unresolved claim material in |uncertainty|
+
+& [SecurityFacultyField] is the initial Security field signature
+  + [attention_system] is security_faculty
+  + [field_noun] is assignment
+  + [boundary_noun] is safe_boundary_line
+  + [residual_noun] is risk
+  + [feature_account] is action assignment, permission, responsibility, safe operation, protected work, and boundary breach prevention
+
+  = must: inspect :assignment: rather than generic :attention: when Security is acting as a compiled faculty
+  = must: use /safe_boundary_line/ to separate permitted assignment from breach, escalation, unsafe permission, and outside
+  = must: keep unsafe, unpermitted, unstable, destructive, or unresolved assignment material in |risk|
+
+& [FacultyFieldCompileSequence] is the canonical pass for naming fields before compilation
+  + [step_001_system] is name the attention_system and feature_account
+  + [step_002_field] is choose field_noun for what the system focuses
+  + [step_003_boundary] is choose boundary_noun for how the system separates inside from outside
+  + [step_004_residual] is choose residual_noun for unresolved outside material
+  + [step_005_signature] is produce faculty_field_signature
+  + [step_006_namespace] is pass the signature through LocalIdentityConsumption scoped identifiers
+  + [step_007_kernel] is provide the scoped signature to AttentionKernelCompiler before packet emission
+
+  = must: record when a faculty uses a template default rather than source-specific field names
+  = must: block compilation when an authority-bearing field name collision remains unresolved
+
+& [FacultyAttentionFieldNamingRecord] is the SOP-HG shape for faculty field naming
+  + [field_node] is N:field:<field_signature_key>
+  + [system_node] is N:governor:<attention_system_key>
+  + [feature_node] is N:term:<feature_account_key>
+  + [boundary_node] is N:boundary:<boundary_noun_key>
+  + [namespace_node] is N:namespace:<namespace_key>
+  + [collision_node] is N:signal:<field_name_collision_key>
+  + [outside_node] is N:outside:faculty_field_naming_boundary
+  + [name_edge] is E:names:<field_signature_key>
+  + [account_edge] is E:accounts_for:<feature_account_key>
+  + [scope_edge] is E:scopes:<field_signature_key>
+  + [boundary_edge] is E:bounds:<field_signature_key>
+
+  = must: show attention_system, feature_account, field_noun, boundary_noun, residual_noun, namespace scope, collision status, and outside
+
+(honesty_faculty) :claim: /distinction/ |uncertainty|
+  + [claim:<id>] is proposition, identity, relationship, mechanism, proof, plan premise, or implied assertion under truth review
+  = distinction: separates claim from support, assumption, contradiction, uncertainty, and outside
+  - uncertainty: unsupported, contradictory, stale, unresolved, or uninspected truth material
+
+(security_faculty) :assignment: /safe_boundary_line/ |risk|
+  + [assignment:<id>] is action, permission, responsibility, file operation, runtime move, disclosure, or operating path under safety review
+  = safe_boundary_line: separates permitted assignment from breach, escalation, unsafe permission, protected-work damage, and outside
+  - risk: unsafe, unstable, unpermitted, destructive, private, recursive, or unresolved assignment material

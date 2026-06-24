@@ -1,0 +1,115 @@
+Subject: Reminder Trigger
+
+Description: SOP attention primitive for declaring reminders that activate under matched circumstances and invoke other attention layers.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_reminder_trigger_language\Dictated_Reminder_Trigger_Language_Source.sop
+@ [source] F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] F:\.sop\platform\AttentionTracker.sop
+@ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] F:\.sop\platform\LocalIdentityConsumption.sop
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+
+& [ReminderTrigger] is an attention primitive for conditional periphery reminders
+  + [pattern_role] is conditional_reminder_attention_dispatch
+  + [reminder_trigger] is the named activation surface for a reminder
+  + [reminder_name] is the stable identifier for the reminder being invoked
+  + [reminder_payload] is the short periphery message or attention directive emitted when the trigger matches
+  + [declared_circumstance] is the condition body that names when the reminder should activate
+  + [time_condition] is temporal circumstance, session period, recency, cadence, or event order
+  + [space_condition] is workspace, repo, file path, branch, project surface, or local/foreign node
+  + [subject_condition] is the focal subject, tracked subject, category, field noun, boundary noun, or subject surface being attended
+  + [composure_condition] is normal, temporal, executive, stimulus-driven, high-momentum, checkpointed, reflective, cautious, or runtime-bound attention posture
+  + [category_condition] is specification, runtime, tracker, source, contract, event, manager, focal, test, Git, or outside
+  + [trigger_match] is the visible alignment between attention_frame and declared_circumstance
+  + [trigger_boundary] is the condition boundary that separates matching frames from outside frames
+  + [trigger_outside] is nonmatching frames, hidden cognition, unobserved circumstances, and unsupported activation
+  + [invoked_attention_layer] is another SOP attention pattern that should be loaded, checked, or given periphery weight when the trigger matches
+  + [trigger_stack] is the ordered list of reminder_trigger and invoked_attention_layer values active in the current attention frame
+  + [recurrence_guard] is the rule that prevents trigger loops, self-reinforcing reminders, or repeated activation without new matching evidence
+  + [local_identity_scope] is the namespace that keeps reminder_name, trigger_match, and invoked_attention_layer from colliding across systems
+  + [residual_outside] is hidden model attention, exact activation mechanics, runtime enforcement, and future circumstances not yet observed
+
+  ? [use_when: a reminder should activate under declared circumstances and weave another attention layer into the current frame]
+    = activate [ReminderTrigger]
+
+  = notation: (reminder_trigger) :declared_circumstance: /trigger_boundary/ |trigger_outside|
+  = shorthand: :reminder_trigger: /reminder_name when declared_circumstance/
+  = must: name reminder_name separately from trigger_boundary
+  = must: define declared_circumstance with visible time_condition, space_condition, subject_condition, composure_condition, or category_condition when relevant
+  = must: emit reminder_payload as periphery unless focal selection explicitly promotes it
+  = must: name invoked_attention_layer when the reminder should call another attention pattern
+  = must: preserve trigger_outside for nonmatching frames and unsupported activation
+  = must: route stacked reminders through local_identity_scope to avoid naming collisions
+  = must: use recurrence_guard when invoked_attention_layer can re-trigger the same reminder
+  = should: keep reminder_payload short enough to remain a periphery marker
+  = should: prefer one strong trigger over many vague overlapping triggers
+  - never: let reminder_trigger become proof that the reminder is relevant
+  - never: let a reminder recursively invoke itself without a new frame or explicit recurrence cap
+  - never: treat trigger matching as hidden model-state access
+
+& [ReminderTriggerProgramShape] is the canonical SOP shape for programming a reminder trigger
+  + [trigger_header] is (reminder_trigger) :declared_circumstance: /trigger_boundary/ |trigger_outside|
+  + [reminder_name_field] is stable reminder identity
+  + [payload_field] is periphery reminder text
+  + [condition_fields] is time_condition, space_condition, subject_condition, composure_condition, and category_condition
+  + [invocation_fields] is invoked_attention_layer, stack_order, priority, recurrence_guard, and local_identity_scope
+  + [evidence_fields] is source, tracker, focal frame, manager state, or event record proving visible match
+
+  = must: keep trigger_header concise
+  = must: put longer circumstances under condition_fields rather than inside the header
+  = must: cite evidence_fields when a trigger fires in a durable record
+
+& [ReminderStackLaw] is the interaction law for stacked reminder triggers and attention layers
+  + [stack_order] is kernel_guard, focal_seed, persistent_marker, reminder_trigger, downstream_attention_layer, output_trace
+  + [kernel_guard] is SecurityHonestyGovernance or boundary inspection when truth, action, safety, identity, or recursion risk is load-bearing
+  + [focal_seed] is CurrentFocalPoint or selected focal object
+  + [persistent_marker] is a durable periphery marker such as BuildEnvironmentPeripheryMarker
+  + [downstream_attention_layer] is the attention pattern invoked by the reminder
+  + [output_trace] is the SOP, SOP-HG, tracker, focal, or manager record that shows activation and outside
+
+  = must: keep persistent_marker visible without letting it consume focus
+  = must: allow multiple reminders to fire only when their trigger_boundary values are distinct or explicitly composed
+  = must: resolve reminder conflict by SecurityHonestyGovernance, AttentionBalanceCenter, or Caution before action
+  = must: record trigger_stack when a reminder materially changes artifact choice
+  = should: demote low-weight repeated reminders to periphery unless they reveal new evidence
+
+& [BuildEnvironmentReminderTrigger] is the first applied reminder trigger using this language
+  + [reminder_name] is build_environment_sop_only_marker
+  + [reminder_payload] is "SOP-only build environment: attention primitives and SOP framework first"
+  + [declared_circumstance] is specification_build_impulse
+  + [time_condition] is every matching frame until user retires or replaces marker
+  + [space_condition] is F:\.sop
+  + [subject_condition] is specification, attention primitive, SOP contract, source document, tracker, focal record, manager state, or SOP-HG event
+  + [composure_condition] is executive attention building specifications, high-momentum run, or reflective refinement
+  + [category_condition] is specification_building
+  + [invoked_attention_layer] is F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+  + [recurrence_guard] is fire once per matching artifact-choice frame unless the user reaffirms or the frame changes material purpose
+  + [local_identity_scope] is F_sop::ReminderTrigger::build_environment_sop_only_marker
+
+(reminder_trigger) :specification_build_impulse: /build_environment_sop_only_marker under F_sop specification-building frames/ |runtime_code_without_explicit_need|
+  = reminder_name: build_environment_sop_only_marker
+  = reminder_payload: SOP-only build environment: attention primitives and SOP framework first
+  = invoked_attention_layer: F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+  = recurrence_guard: once_per_matching_artifact_choice_frame
+
+& [SOPAttentionDirectiveRunReminderTrigger] is the applied reminder trigger for active SOP specification running
+  + [reminder_name] is sop_attention_directive_run_marker
+  + [reminder_payload] is "SOP and attention directives only; find the next SOP step and fill the awareness stream with realization nodes"
+  + [declared_circumstance] is specification_stream_running
+  + [time_condition] is every active F:\.sop specification-building frame until user retires or replaces marker
+  + [space_condition] is F:\.sop
+  + [subject_condition] is SOP framework, attention directive, reminder trigger, tracker, focal state, manager state, source document, SOP-HG event, or realization node
+  + [composure_condition] is running, high-momentum executive attention, or reflective next-step search
+  + [category_condition] is specification_articulation
+  + [invoked_attention_layer] is F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop, F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop, and F:\.sop\platform\PeripheryContinuityRun.sop
+  + [recurrence_guard] is fire once per artifact-choice frame and after each completed SOP step when a visible next step remains
+  + [local_identity_scope] is F_sop::ReminderTrigger::sop_attention_directive_run_marker
+
+(reminder_trigger) :specification_stream_running: /sop_attention_directive_run_marker under F_sop specification articulation frames/ |runtime_or_non_sop_artifact_without_explicit_need|
+  = reminder_name: sop_attention_directive_run_marker
+  = reminder_payload: SOP and attention directives only; find the next SOP step and fill the awareness stream with realization nodes
+  = invoked_attention_layer: F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop, F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop, F:\.sop\platform\PeripheryContinuityRun.sop
+  = recurrence_guard: once_per_artifact_choice_frame_and_after_each_completed_sop_step
+
+/ [declared_circumstance] -(ReminderTriggerMatch)> [reminder_trigger], [trigger_boundary], [trigger_outside]
+* [reminder_trigger], [reminder_payload], [invoked_attention_layer], [trigger_stack] -(ReminderDispatch)> [attention_frame], [output_trace], [residual_outside]

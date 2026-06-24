@@ -1,0 +1,133 @@
+Subject: Attention Weight Scale
+
+Description: Terminology and data contract for calibrated signal strength across correlation, concordance, and attention-weight vectors.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-23_attention_weight_scale_turn_bookmark\Dictated_Attention_Weight_Scale_Turn_Bookmark_Source.sop
+@ [source] F:\.sop\platform\ChangelogCorrelationWeightNet.sop
+@ [source] F:\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+
+& [AttentionWeightScale] is the scale vocabulary for measuring correlation signal strength in an activated attention graph
+  + [pattern_role] is calibrated_attention_signal_scale
+  + [index_surface] is the retrieval structure that lists terms, buckets, subjects, files, citations, and pointers
+  + [concordance_surface] is the cited use record that counts where and how a term appears
+  + [weight_node] is a multi-dimensional signal node that stores orientation weights, penalties, resolution, and confidence
+  + [orientation] is one angle of approach used to weigh the signal
+  + [impulse] is the direction and strength with which a weighted signal draws attention
+  + [signal_strength] is the weighted value of one orientation before promotion
+  + [heat] is the aggregate signal after orientation weights and penalties are combined
+  + [salience] is heat adjusted by confidence, evidence diversity, and caution
+  + [resolution_band] is surface, hair, skin, pressure, impact, or deep_probe
+  + [scan_depth] is the amount of source, diff, narrative, and periphery inspection performed
+  + [scan_width] is the number of candidate terms, files, buckets, and periphery associations considered
+  + [focus_aperture] is the current zoom width used to admit periphery into focus
+  + [intersection_signature] is the visible shape of multiple orientations agreeing around a subject in a given state frame
+  + [top_three_correlations] is the three highest visible heat cells selected for immediate focus in SevenFoldPantsCorrelationFrame
+  + [heat_ordered_cell] is a cell ranked or sized by visible heat while keeping salience, confidence, and proof separate
+  + [extra_dimension_candidate] is a periphery-discovered orientation that may tighten a fragmented signal
+  + [contextual_anchor] is the term or pointer selected from extra_dimension_candidate to improve re-entry or model transfer
+  + [outside] is semantic truth, causal proof, hidden cognition, and unsupported motive
+
+  ? [use_when: a correlation graph, hash table, changelog weight net, or turn bookmark needs calibrated signal terminology]
+    = activate [AttentionWeightScale]
+
+  = must: treat the index as retrieval and citation, not proof
+  = must: treat the concordance as counted use with source references
+  = must: store each orientation weight separately before total heat
+  = must: preserve intersection_signature when weights are used for state trace re-entry
+  = must: use PeripheryDimensionalProbe when intersection_signature is too fragmented for stable conclusion
+  = must: expose resolution_band and scan_depth with every durable high-salience signal
+  = must: expose focus_aperture when a weight decision depends on widened periphery
+  = must: expose heat_ordered_cell and top_three_correlations when a seven-fold pants frame uses size or centrality to guide attention
+  = must: distinguish signal strength from confidence
+  = must: allow low-resolution scans when the purpose is quick orientation
+  = must: allow high-resolution scans when missed work, mistakes, or consequential decisions are plausible
+  = must: route high-salience low-confidence signals through Caution before focus promotion
+  - never: hide a weak evidence base behind large heat
+  - never: collapse count, confidence, proof, and impulse into one number
+
+& [ScaleUnitVocabulary] is the terminology for weight scale units
+  + [citation] is one source location where a term, subject, or signal is used
+  + [touch] is one counted citation that contacts the active subject
+  + [trace] is one cited touch with file role, line neighborhood, or source lineage context
+  + [pulse] is one orientation-specific unit of signal strength
+  + [strand] is repeated pulse evidence along one orientation
+  + [chord] is agreement across two or more independent orientations
+  + [heat] is the summed strength of pulses and chords after penalties
+  + [salience] is heat that survives confidence and caution review
+  + [draw] is salience strong enough to pull periphery toward focus
+  + [load] is salience strong enough to require planning, proof, or correction before closure
+  + [warmth_zone] is a trailing checksum region with modest but coherent salience that should remain available to periphery or future scan
+  + [hot_zone] is a trailing checksum region with high salience, recurrence, surprise, risk, or purpose-bearing load that should catch attention
+  + [latent_depth_candidate] is a hot_zone or repeated warmth_zone with unexplored structure worth preparing for inquiry
+
+  = must: use citation and touch for counting
+  = must: use pulse and strand for one-dimensional signal
+  = must: use chord when multiple orientations agree
+  = must: use draw when a periphery signal wants focus
+  = must: use load when the signal creates obligation or risk
+  = must: keep warmth_zone and hot_zone separate from proof of truth
+
+& [ResolutionBandScale] is the default qualitative scale for attention signal resolution
+  + [surface] is visible but too weak or uncited to preserve beyond immediate narration
+  + [hair] is one cited touch or weak heat that should be noticed
+  + [skin] is two or more touches, a small chord, or moderate heat that should be triangulated
+  + [pressure] is four to ten touches, strong chord, or sustained heat that should be reviewed and possibly tracked
+  + [impact] is broad, intense, surprising, risky, or highly recurrent signal that should be emphasized and inspected
+  + [deep_probe] is an explicit high-resolution scan mode for missed work, mistakes, or high-consequence uncertainty
+  + [reentry] is a high-definition scan mode for reconstructing a past inference frame from versioned state
+
+  = must: inherit surface, hair, skin, pressure, and impact from sensitivity scan language
+  = must: reserve deep_probe for intentional wider periphery search
+  = must: reserve reentry for state trace work with explicit bookends, logs, and determinism boundary
+  = should: record the reason when escalating from pressure to impact or deep_probe
+
+& [OrientationWeightVector] is the standard vector shape for signal orientations
+  + [lexical_orientation] is word and phrase overlap
+  + [subject_orientation] is explicit subject, identifier, bracketed term, or semantic bucket fit
+  + [role_orientation] is file role, artifact role, or workflow role fit
+  + [source_lineage_orientation] is preserved source, manifest, SJS, or provenance support
+  + [narrative_orientation] is focal point, user directive, periphery stream, or realization support
+  + [justification_orientation] is reason, test, proof, acceptance, or support-balance fit
+  + [recurrence_orientation] is repeated appearance across frames, commits, files, or reflections
+  + [intensity_orientation] is additions, deletions, hunk count, blast radius, or suddenness
+  + [periphery_orientation] is nearby association, hidden-behind term, turned aspect, or missed-focus candidate
+  + [state_orientation] is framework state, commit bookend, focal point, and logged recall fit
+  + [intention_orientation] is purpose, desired outcome, use case, or directive fit
+  + [model_lens_orientation] is consistency of interpretation across backing LLMs or model perspectives
+  + [caution_orientation] is contradiction, unsupported causation, generated artifact inflation, stale tracker, or missing proof
+
+  = must: keep caution_orientation as penalty or gate, not ordinary positive heat
+  = must: keep justification_orientation separate from narrative_orientation
+  = must: keep model_lens_orientation separate from proof of correctness
+  = must: require at least one source or justification orientation before claiming a durable work finding
+
+& [ProbeDepthPolicy] is the rule for choosing low-resolution or high-resolution scan depth
+  + [low_resolution_scan] is index plus concordance plus shallow weight vectors
+  + [medium_resolution_scan] is low_resolution_scan plus role classification and narrative comparison
+  + [high_resolution_scan] is medium_resolution_scan plus plan/spec comparison, support balance, and missed-focus search
+  + [deep_probe_scan] is high_resolution_scan plus widened periphery, oddity review, and Wisdom/Caution gates
+  + [dimension_probe_scan] is high_resolution_scan plus hotter periphery search for independent contextual anchors
+  + [reentry_scan] is high_resolution_scan plus framework_state reconstruction and logged_recall comparison
+
+  ? [when: purpose is orientation or quick re-entry]
+    = may: use low_resolution_scan
+
+  ? [when: purpose is turn bookmark, missed work review, mistake review, or high consequence]
+    = must: use high_resolution_scan or explicitly record why depth was limited
+
+  ? [when: a strong signal has low confidence or high caution]
+    = must: escalate to deep_probe_scan or preserve as outside
+
+  ? [when: a fragmented signal might be repaired by a hotter periphery dimension]
+    = must: use dimension_probe_scan and record whether contextual_anchor improved receptive_form
+
+  ? [when: purpose is past inference frame reconstruction]
+    = must: use reentry_scan and preserve determinism_scope
+
+/ [index_surface] -(ConcordanceCounting)> [citation], [touch], [trace]
+* [touch], [orientation_weight_vector], [resolution_band], [confidence], [outside] -(AttentionWeightScaling)> [salience]

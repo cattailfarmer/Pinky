@@ -1,0 +1,72 @@
+Subject: SOP Color Channel Vocabulary
+
+Description: Semantic color-channel vocabulary for SOP optical chains, holographic lensing, and reusable holographic scaffolds.
+
+@ [source] F:\.sop\platform\SOPOpticalChain.sop
+@ [source] F:\.sop\platform\SOPHolographicLensing.sop
+@ [source] F:\.sop\platform\HolographicSOPScaffold.sop
+@ [source] F:\.sop\platform\AttentionWeightScale.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+
+& [SOPColorChannelVocabulary] is the channel language for semantic optics over SOP
+  + [pattern_role] is semantic_color_channel_vocabulary
+  + [color_channel] is a named semantic band that carries one kind of SOP signal through optical-chain, holographic, or scaffold passes
+  + [source_channel] is preserved raw source, source document, cited record, or origin trace
+  + [focus_channel] is active subject, purpose, inside surface, or current focal packet
+  + [periphery_channel] is nearby association, warmth zone, hot zone, latent depth, or draw signal
+  + [boundary_channel] is delineation, exclusion, local identity, frame reference, and protected boundary
+  + [outside_channel] is unknown, unsupported, excluded, unobserved, unproven, or deferred content
+  + [evidence_channel] is source support, repo diff, test result, trace, citation, or visible record
+  + [claim_channel] is proposed meaning, inference, hypothesis, realization, or action-bearing statement
+  + [caution_channel] is uncertainty, risk, proof limit, drift, resonance, or boundary weakness
+  + [wisdom_channel] is integration fitness, meaning balance, proportion, and purpose alignment
+  + [security_channel] is integrity, permission, protected resource, identity safety, and action boundary
+  + [honesty_channel] is truth status, fair representation, source fidelity, and non-misdirection
+  + [weight_channel] is heat, salience, confidence, support, load, or probe depth from AttentionWeightScale
+  + [relation_channel] is association, causation candidate, adjacency, transform path, or graph edge
+  + [trace_channel] is reconstruction path, transform provenance, lens path, or output justification
+  + [output_channel] is candidate SOP contract, SOP-HG event, manager task, focal update, packet, or outside note
+  + [channel_mixing] is combining channels under a named transform while preserving original channel records
+  + [channel_separation] is splitting a mixed signal into distinct channels before proof, boundary, or output promotion
+  + [channel_outside] is any signal whose channel, source, boundary, proof status, or trace cannot be named
+
+  ? [use_when: SOP optical or holographic work needs explicit signal color channels]
+    = activate [SOPColorChannelVocabulary]
+
+  = must: name at least source_channel, focus_channel, boundary_channel, outside_channel, and output_channel for every promoted optical pass
+  = must: include evidence_channel before promoting claim_channel to realization
+  = must: include caution_channel when coherence, heat, novelty, or self-reference is load-bearing
+  = must: route security_channel and honesty_channel through their governance faculties when identity, safety, truth, or action are involved
+  = must: keep weight_channel separate from evidence_channel and claim_channel
+  = must: keep trace_channel separate from evidence_channel unless the trace itself is the evidence
+  = must: route channel_outside to outside rather than guessing a color
+  = should: keep channel sets sparse enough to inspect
+  - never: let color_channel assignment increase proof status by itself
+  - never: erase original channel assignment during channel_mixing or channel_separation
+
+& [CoreColorChannelSet] is the default reusable channel set
+  + [required_minimum] is source_channel, focus_channel, boundary_channel, outside_channel, output_channel
+  + [proof_sensitive] is evidence_channel, claim_channel, honesty_channel, trace_channel
+  + [risk_sensitive] is caution_channel, security_channel, boundary_channel, outside_channel
+  + [meaning_navigation] is periphery_channel, relation_channel, weight_channel, wisdom_channel
+  + [promotion_path] is source_channel, focus_channel, boundary_channel, evidence_channel, claim_channel, trace_channel, output_channel
+
+  = must: use required_minimum for every SOP optical operation
+  = must: use proof_sensitive when claims become durable realization
+  = must: use risk_sensitive when action, identity, file, safety, or system integrity is affected
+  = must: use meaning_navigation when exploring periphery, topology, or holographic projection
+
+(color_graph) :color_channel_set: /channel_boundary/ |channel_outside|
+  + [source_channel] is preserved origin signal
+  + [focus_channel] is active subject signal
+  + [periphery_channel] is association and latent depth signal
+  + [boundary_channel] is delineation and identity signal
+  + [outside_channel] is unknown or excluded signal
+  + [evidence_channel] is visible support signal
+  + [claim_channel] is proposed meaning signal
+  + [caution_channel] is uncertainty and risk signal
+  + [output_channel] is emitted SOP signal
+
+/ [color_channel], [channel_boundary] -(Colors)> [semantic_optical_signal], [channel_outside]
+* [channel_mixing], [channel_separation], [trace_channel] -(PreservesChannelHistory)> [output_channel], [outside_channel]

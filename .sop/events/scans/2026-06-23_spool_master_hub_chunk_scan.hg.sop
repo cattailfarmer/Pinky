@@ -1,0 +1,222 @@
+Subject: SensitivityScan_20260623T212548Z Hypergraph
+
+& [Graph:SensitivityScan_20260623T212548Z] is a SOP-HG graph
+  = format: SOP-HG
+  = source_scan_id: SensitivityScan_20260623T212548Z
+  = base_ref: HEAD
+  = head_ref: WORKTREE
+
+  + [N:bookend:HEAD] is HEAD
+  + [N:bookend:WORKTREE] is WORKTREE
+  + [N:event:SensitivityScan_20260623T212548Z] is SensitivityScan_20260623T212548Z
+  + [N:outside:semantic_truth] is semantic truth not proven by correlation heat
+  + [N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop] is events/scans/2026-06-23_spool_master_hub_snapshot.hg.sop
+    = status: A
+    = additions: 35
+    = deletions: 0
+  + [N:file:planning_project_manager_Manager_State_sop] is planning/project_manager/Manager_State.sop
+    = status: M
+    = additions: 3
+    = deletions: 1
+  + [N:file:platform_Attention_sop] is platform/Attention.sop
+    = status: M
+    = additions: 3
+    = deletions: 0
+  + [N:file:platform_SpoolMasterHub_sop] is platform/SpoolMasterHub.sop
+    = status: A
+    = additions: 33
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop] is platform/source_documents/2026-06-23_spool_master_hub/Dictated_Spool_Master_Hub_Source.sop
+    = status: A
+    = additions: 22
+    = deletions: 0
+  + [N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop] is platform/source_documents/2026-06-23_spool_master_hub/manifest.sop
+    = status: A
+    = additions: 12
+    = deletions: 0
+  + [N:file:platform_spool_WebHubTree_sop] is platform/spool/WebHubTree.sop
+    = status: A
+    = additions: 17
+    = deletions: 0
+  + [N:file:platform_spool_WorkerLanes_sop] is platform/spool/WorkerLanes.sop
+    = status: A
+    = additions: 23
+    = deletions: 0
+  + [N:file:spool_turns_spool_master_seed_TurnSpool_sop] is spool/turns/spool_master_seed/TurnSpool.sop
+    = status: A
+    = additions: 17
+    = deletions: 0
+  + [N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop] is spool/turns/spool_master_seed/workers/codex_cli_worker/WorkerJob.sop
+    = status: A
+    = additions: 13
+    = deletions: 0
+  + [N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop] is spool/turns/spool_master_seed/workers/lm_studio_local_model/WorkerJob.sop
+    = status: A
+    = additions: 13
+    = deletions: 0
+  + [N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop] is spool/turns/spool_master_seed/workers/manual_review/WorkerJob.sop
+    = status: A
+    = additions: 13
+    = deletions: 0
+  + [N:signal:spool] is spool
+    = touch_count: 12
+    = heat: 205
+  + [N:layer:impact] is impact
+    = retention_policy: emphasize
+  + [N:signal:turn] is turn
+    = touch_count: 11
+    = heat: 193
+  + [N:signal:worker] is worker
+    = touch_count: 11
+    = heat: 193
+  + [N:signal:job] is job
+    = touch_count: 9
+    = heat: 181
+  + [N:signal:policy] is policy
+    = touch_count: 9
+    = heat: 172
+  + [N:signal:launch] is launch
+    = touch_count: 8
+    = heat: 169
+  + [N:signal:local] is local
+    = touch_count: 9
+    = heat: 167
+  + [N:signal:tree] is tree
+    = touch_count: 8
+    = heat: 164
+  + [N:signal:hub] is hub
+    = touch_count: 9
+    = heat: 156
+  + [N:signal:codex] is codex
+    = touch_count: 7
+    = heat: 147
+  + [N:signal:status] is status
+    = touch_count: 7
+    = heat: 147
+  + [N:signal:master] is master
+    = touch_count: 8
+    = heat: 143
+  + [N:signal:cli] is cli
+    = touch_count: 6
+    = heat: 143
+  + [N:signal:studio] is studio
+    = touch_count: 6
+    = heat: 143
+  + [N:signal:launching] is launching
+    = touch_count: 6
+    = heat: 142
+  + [N:signal:web] is web
+    = touch_count: 7
+    = heat: 140
+  + [N:signal:blocked] is blocked
+    = touch_count: 6
+    = heat: 138
+  + [N:signal:lanes] is lanes
+    = touch_count: 5
+    = heat: 130
+  + [N:signal:lane] is lane
+    = touch_count: 7
+    = heat: 129
+  + [N:signal:outside] is outside
+    = touch_count: 4
+    = heat: 113
+  + [N:signal:before] is before
+    = touch_count: 6
+    = heat: 112
+  + [N:signal:result] is result
+    = touch_count: 6
+    = heat: 112
+  + [N:signal:visible] is visible
+    = touch_count: 6
+    = heat: 109
+  + [N:signal:navigable] is navigable
+    = touch_count: 4
+    = heat: 107
+
+/ [E:span:SensitivityScan_20260623T212548Z] -(span; start=N:bookend:HEAD; end=N:bookend:WORKTREE; event=N:event:SensitivityScan_20260623T212548Z)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_001] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_002] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:planning_project_manager_Manager_State_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_003] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:platform_Attention_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_004] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:platform_SpoolMasterHub_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_005] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_006] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_007] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:platform_spool_WebHubTree_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_008] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:platform_spool_WorkerLanes_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_009] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_010] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_011] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:changed:SensitivityScan_20260623T212548Z_012] -(changed; event=N:event:SensitivityScan_20260623T212548Z; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:spool] -(touches; signal=N:signal:spool; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=205)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:spool] -(classifies; signal=N:signal:spool; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:spool] -(bounds; signal=N:signal:spool; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:turn] -(touches; signal=N:signal:turn; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=193)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:turn] -(classifies; signal=N:signal:turn; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:turn] -(bounds; signal=N:signal:turn; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:worker] -(touches; signal=N:signal:worker; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=193)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:worker] -(classifies; signal=N:signal:worker; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:worker] -(bounds; signal=N:signal:worker; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:job] -(touches; signal=N:signal:job; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=181)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:job] -(classifies; signal=N:signal:job; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:job] -(bounds; signal=N:signal:job; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:policy] -(touches; signal=N:signal:policy; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; weight=172)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:policy] -(classifies; signal=N:signal:policy; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:policy] -(bounds; signal=N:signal:policy; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:launch] -(touches; signal=N:signal:launch; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=169)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:launch] -(classifies; signal=N:signal:launch; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:launch] -(bounds; signal=N:signal:launch; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:local] -(touches; signal=N:signal:local; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; weight=167)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:local] -(classifies; signal=N:signal:local; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:local] -(bounds; signal=N:signal:local; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:tree] -(touches; signal=N:signal:tree; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=164)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:tree] -(classifies; signal=N:signal:tree; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:tree] -(bounds; signal=N:signal:tree; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:hub] -(touches; signal=N:signal:hub; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=156)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:hub] -(classifies; signal=N:signal:hub; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:hub] -(bounds; signal=N:signal:hub; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:codex] -(touches; signal=N:signal:codex; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; weight=147)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:codex] -(classifies; signal=N:signal:codex; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:codex] -(bounds; signal=N:signal:codex; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:status] -(touches; signal=N:signal:status; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=147)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:status] -(classifies; signal=N:signal:status; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:status] -(bounds; signal=N:signal:status; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:master] -(touches; signal=N:signal:master; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; weight=143)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:master] -(classifies; signal=N:signal:master; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:master] -(bounds; signal=N:signal:master; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:cli] -(touches; signal=N:signal:cli; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; weight=143)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:cli] -(classifies; signal=N:signal:cli; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:cli] -(bounds; signal=N:signal:cli; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:studio] -(touches; signal=N:signal:studio; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; weight=143)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:studio] -(classifies; signal=N:signal:studio; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:studio] -(bounds; signal=N:signal:studio; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:launching] -(touches; signal=N:signal:launching; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; weight=142)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:launching] -(classifies; signal=N:signal:launching; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:launching] -(bounds; signal=N:signal:launching; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:web] -(touches; signal=N:signal:web; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_manifest_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; weight=140)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:web] -(classifies; signal=N:signal:web; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:web] -(bounds; signal=N:signal:web; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:blocked] -(touches; signal=N:signal:blocked; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; weight=138)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:blocked] -(classifies; signal=N:signal:blocked; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:blocked] -(bounds; signal=N:signal:blocked; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:lanes] -(touches; signal=N:signal:lanes; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; weight=130)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:lanes] -(classifies; signal=N:signal:lanes; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:lanes] -(bounds; signal=N:signal:lanes; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:lane] -(touches; signal=N:signal:lane; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=129)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:lane] -(classifies; signal=N:signal:lane; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:lane] -(bounds; signal=N:signal:lane; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:outside] -(touches; signal=N:signal:outside; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WorkerLanes_sop; weight=113)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:outside] -(classifies; signal=N:signal:outside; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:outside] -(bounds; signal=N:signal:outside; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:before] -(touches; signal=N:signal:before; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=112)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:before] -(classifies; signal=N:signal:before; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:before] -(bounds; signal=N:signal:before; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:result] -(touches; signal=N:signal:result; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:platform_spool_WorkerLanes_sop; file=N:file:spool_turns_spool_master_seed_workers_codex_cli_worker_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_lm_studio_local_model_WorkerJob_sop; file=N:file:spool_turns_spool_master_seed_workers_manual_review_WorkerJob_sop; weight=112)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:result] -(classifies; signal=N:signal:result; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:result] -(bounds; signal=N:signal:result; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:visible] -(touches; signal=N:signal:visible; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:planning_project_manager_Manager_State_sop; file=N:file:platform_Attention_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_spool_WebHubTree_sop; file=N:file:spool_turns_spool_master_seed_TurnSpool_sop; weight=109)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:visible] -(classifies; signal=N:signal:visible; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:visible] -(bounds; signal=N:signal:visible; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:touches:navigable] -(touches; signal=N:signal:navigable; file=N:file:events_scans_2026_06_23_spool_master_hub_snapshot_hg_sop; file=N:file:platform_SpoolMasterHub_sop; file=N:file:platform_source_documents_2026_06_23_spool_master_hub_Dictated_Spool_Master_Hub_Source_sop; file=N:file:platform_spool_WebHubTree_sop; weight=107)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:classifies:navigable] -(classifies; signal=N:signal:navigable; layer=N:layer:impact; retention=emphasize)> [Graph:SensitivityScan_20260623T212548Z]
+/ [E:bounds:navigable] -(bounds; signal=N:signal:navigable; outside=N:outside:semantic_truth)> [Graph:SensitivityScan_20260623T212548Z]
+
+- outside: scan measures changed SOP paths, terms, and line pressure; narrative why and semantic truth require deeper review

@@ -1,0 +1,22 @@
+Subject: Semantic Hash Table Reflection
+
+Description: Compiled SOP-HG reflection for the semantic hash table as a multi-dimensional permissive keyspace.
+
+& [Graph:semantic_hash_table_2026_06_23] is a SOP-HG graph
+  + [N:narrative:semantic_hash_table] is a semantic hash table is a multi-dimensional permissive keyspace
+  + [N:component:semantic_hash_table_contract] is F:\.sop\platform\SemanticHashTable.sop
+  + [N:component:semantic_hash_index_contract] is F:\.sop\platform\SemanticHashIndex.sop
+  + [N:process:exact_lookup] is content hash, semantic hash, path, or pointer lookup
+  + [N:process:permissive_lookup] is partial facet overlap returning ranked candidates
+  + [N:term:multi_dimensional_key] is many independent dimensions addressing the same semantic neighborhood
+  + [N:term:facet_bucket] is one dimension/value bucket storing pointers
+  + [N:term:candidate_set] is ranked results with matched dimensions
+  + [N:outside:semantic_identity] is meaning and identity not proven by inclusive match
+
+/ [E:defines:semantic_hash_table] -(defines; contract=N:component:semantic_hash_table_contract; index=N:component:semantic_hash_index_contract; weight=5)> [Graph:semantic_hash_table_2026_06_23]
+/ [E:intersects:query_buckets] -(intersects; query=N:process:permissive_lookup; bucket=N:term:facet_bucket; result=N:term:candidate_set; weight=5)> [Graph:semantic_hash_table_2026_06_23]
+/ [E:distinguishes:exact_from_permissive] -(distinguishes; exact=N:process:exact_lookup; permissive=N:process:permissive_lookup; outside=N:outside:semantic_identity; weight=5)> [Graph:semantic_hash_table_2026_06_23]
+/ [E:bounds:inclusive_use] -(bounds; process=N:process:permissive_lookup; outside=N:outside:semantic_identity; weight=5)> [Graph:semantic_hash_table_2026_06_23]
+
+  = realization: the useful table is not a single hash map but a bucketed multi-index with ranked inclusive retrieval
+  - outside: broad bucket overlap is candidate evidence only, not semantic proof

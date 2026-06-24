@@ -1,0 +1,14 @@
+Subject: Build Environment Periphery Marker Source Manifest
+
+Description: Source preservation manifest for the SOP-only build-environment periphery marker.
+
+& [BuildEnvironmentPeripheryMarkerSourceManifest] is the trace record for this marker
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_build_environment_periphery_marker\Dictated_Build_Environment_Periphery_Marker_Source.sop
+  + [contract_target] is F:\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+  + [tracker_record] is F:\.sop\events\trackers\2026-06-24_build_environment_sop_only_marker.hg.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_build_environment_periphery_marker_041.hg.sop
+  + [derived_terms] is persistent_periphery_marker, sop_only_build_environment, specification_build_impulse, matching_frame, runtime_boundary
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, AttentionTracker, AttentionImpressionCompiler
+
+  = must: preserve raw source before treating the marker as durable attention authority
+  = must: keep this marker SOP-only

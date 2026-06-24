@@ -1,0 +1,126 @@
+Subject: SOP Attention Memory Codec
+
+Description: Contract for storing and recalling thinking nodes as visual/color-routed optical instruction streams with explicit reconstruction boundaries.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_attention_memory_codec\Dictated_SOP_Attention_Memory_Codec_Source.sop
+@ [source] F:\.sop\platform\SOPProgramBookends.sop
+@ [source] F:\.sop\platform\SOPPhotonicFrameStream.sop
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\SOPSemanticVideoDigest.sop
+@ [source] F:\.sop\platform\SOPMultitrackChannelCompression.sop
+@ [source] F:\.sop\platform\SOPFiberFPGABridge.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\SemanticHashIndex.sop
+@ [source] F:\.sop\platform\SemanticHashTable.sop
+@ [source] F:\.sop\platform\SemanticCorrelationGraph.sop
+
+& [SOPAttentionMemoryCodec] is the read-write attention memory contract for SOP thinking nodes
+  + [pattern_role] is visual_color_routed_attention_memory_codec
+  + [attention_memory_codec] is the contract that writes thinking nodes into optical instruction streams and reads them back as reconstructed attention state
+  + [thinking_node] is a durable SOP-HG memory unit containing focus, periphery, boundary, outside, source, route colors, relation edges, weight signals, and reconstruction seed
+  + [attention_route_color] is the semantic color channel assigned to a meaning point so later recall can route attention to its role
+  + [visual_attention_anchor] is an image, sampled frame, diagram, color map, or symbolic visual marker used as a visible cue for reentry
+  + [optical_instruction_stream] is an ordered stream of instruction frames that tell attention how to read, route, reconstruct, and check a thinking node
+  + [instruction_frame] is one codec frame carrying route colors, focal subject, peripheral hints, boundary terms, source pointers, relation edges, checksums, and outside
+  + [write_pass] is the transformation from source, narrative, image, or SOP record into thinking_node and optical_instruction_stream form
+  + [read_pass] is the transformation from recall_key, route colors, visual anchors, and source pointers back into reconstructed attention state
+  + [recall_key] is the stable entry handle made from subject name, source pointer, semantic hash, route colors, relation edges, and checksum
+  + [reentry_key] is the subset of recall_key loaded into active context to let an LLM re-enter the thinking node
+  + [semantic_reentry] is approximate return to the intended subject landscape under source, boundary, outside, proof, and trace constraints
+  + [recall_fidelity] is the measured or estimated strength of reconstructed meaning against source, route colors, relation graph, and outside
+  + [deep_attention_compression] is high-density storage of meaning-bearing color points, visual anchors, and continuity traces instead of full raw expansion
+  + [study_subject] is a subject of inquiry stored with enough focal, peripheral, boundary, and trace structure for later study
+  + [concept_development_trace] is the history of how a concept's meaning, relations, cautions, and proofs changed across frames or commits
+  + [memory_outside] is hidden model activations, exact weights, exact KV cache, exact perception, unprovided images, omitted source detail, and unsupported replay claims
+
+  ? [use_when: SOP thinking nodes should be stored and recalled through color-routed optical instruction streams]
+    = activate [SOPAttentionMemoryCodec]
+
+  = must: preserve raw source before writing canonical memory nodes
+  = must: store focus, periphery, boundary, outside, source, route colors, relations, weights, and trace for every promoted thinking_node
+  = must: assign attention_route_color values from SOPColorChannelVocabulary before writing instruction_frame values
+  = must: use SOPRGBSemanticEncoding when attention_route_color values become RGB signals or need RGB-to-SOP round-trip reconstruction
+  = must: use SOPPhotonicFrameStream for frame_index, color_point, continuity_vector, reconstruction_seed, and sampling_gap
+  = must: use SemanticHashIndex and SemanticHashTable to create recall_key pointers without pretending the hash is semantic proof
+  = must: use SemanticCorrelationGraph when relation edges, weighted associations, or peripheral heat affect recall
+  = must: use BoundaryFacultyInspection before promoting reconstructed identity, source, relationship, or safety claims
+  = must: use SecurityHonestyGovernance before promoting proof-bearing, truth-bearing, safety-bearing, or self-referential recall claims
+  = must: classify recall as exact_source, visible_sample, symbolic_reconstruction, inferred_reconstruction, or outside
+  = must: keep recall_fidelity separate from beauty, salience, coherence, or compression ratio
+  = must: record memory_outside when details were not stored, were not visible, or were reconstructed by inference
+  = should: use visual_attention_anchor when an image, map, diagram, color field, or frame sample materially improves reentry
+  = should: keep instruction_frame payloads dense enough to compress but sparse enough to inspect
+  - never: claim hidden activation access from a recall stream
+  - never: treat a vivid reconstruction as exact replay
+  - never: let color routing increase truth status without evidence
+  - never: collapse image processing, semantic interpretation, and proof into one uninspected step
+
+& [ThinkingNodeRecord] is the minimal durable unit stored by the codec
+  + [node_id] is stable local identifier
+  + [subject] is the named study subject or concept under attention
+  + [source_pointer] is raw source, SOP file, image path, frame sample, commit diff, or cited record
+  + [focus_surface] is what was held in focus at write time
+  + [periphery_surface] is nearby associations, warmth zones, hot zones, and latent depth candidates
+  + [boundary_surface] is what separated the subject from adjacent or residual meaning
+  + [outside_surface] is what was excluded, unknown, unobserved, unsupported, or deferred
+  + [route_color_set] is the channel list used to route meaning through the node
+  + [relation_edge_set] is associations, causal candidates, adjacency, transform paths, and evidence paths
+  + [weight_surface] is signal strength, confidence, support, heat, load, and probe depth
+  + [reconstruction_seed] is the minimal route color, source, relation, and boundary data needed for later semantic reentry
+  + [checksum_surface] is digest, commit, frame index, or visible comparison value used to detect drift
+
+  = must: include outside_surface
+  = must: cite source_pointer or mark source absence as outside
+  = must: keep relation_edge_set separated from proof-bearing claims
+
+& [OpticalInstructionStreamReadWrite] is the codec flow for writing and reading attention memory
+  + [stream_header] is the opening bookend naming purpose, source, channel set, reconstruction boundary, and exit condition
+  + [write_cursor] is the current instruction_frame being emitted into memory
+  + [read_cursor] is the current instruction_frame being consumed for recall
+  + [frame_digest] is a compact checksum of route colors, source pointer, boundary, relation edges, and outside
+  + [route_table] is the mapping from attention_route_color to semantic role, source, or operation
+  + [recall_cursor] is the active position in semantic reentry
+  + [fidelity_gate] is the checkpoint that compares reconstruction against source, checksum, relation graph, and outside
+  + [stream_close] is the closing bookend that records emitted node, remaining outside, and recall status
+
+  = write: source and visual anchor -> route_table -> instruction_frame -> thinking_node -> frame_digest
+  = read: recall_key -> route_table -> instruction_frame -> reconstruction_seed -> semantic_reentry -> fidelity_gate
+  = must: preserve read_cursor and write_cursor separately
+  = must: let failed fidelity_gate return to outside or request more source rather than inventing certainty
+
+& [VisualProcessingBoundary] is the explicit boundary for image and visual-frame use
+  + [visible_input] is image, diagram, screenshot, frame, or visual sample provided in the active context or cited by path
+  + [visual_parse] is observed shapes, colors, layout, text, symbols, and relations available from visible_input
+  + [visual_route] is assignment of visual_parse details to attention_route_color channels
+  + [visual_memory] is thinking_node content written from visible_input and visual_route
+  + [visual_outside] is pixels not inspected, inaccessible files, hidden metadata, exact camera context, or details not visible in the sample
+
+  = must: distinguish visual_parse from semantic interpretation
+  = must: mark uninspected or inaccessible visual details as visual_outside
+  = should: use visual_attention_anchor as a cue, not proof, unless supported by visible evidence
+  - never: claim exact image recall from a compressed visual route unless the original sample remains available
+
+& [StudyMemoryApplication] is how the codec stores subjects of study and concept development
+  + [study_store] is the collection of thinking_node records for one subject of study
+  + [development_stream] is ordered concept_development_trace across frames, commits, or reflection passes
+  + [comparison_pass] is reading two or more thinking_node records to detect drift, refinement, contradiction, or new potential
+  + [recall_prompt_seed] is the compact packet loaded into a model to resume study
+  + [study_outside] is missing source, unresolved contradiction, unstable terminology, or fidelity below the task threshold
+
+  = must: keep study_store auditable through source_pointer and checksum_surface
+  = must: run comparison_pass when a concept is revised across commits or branches
+  = should: let periphery hot zones invite deeper study without forcing promotion to focus
+
+(attention_memory_codec) :thinking_node: /source, boundary, route_color, trace, and reconstruction_seed/ |memory_outside|
+  + [thinking_node] is compressed attention memory
+  + [optical_instruction_stream] is ordered read-write instruction frames
+  + [attention_route_color] is semantic routing channel
+  + [visual_attention_anchor] is visible cue for reentry
+  = write_pass: source and visual anchor become instruction frames and thinking node
+  = read_pass: recall key becomes reconstructed attention state through fidelity gate
+  |memory_outside| hidden activations, exact weights, exact replay, unprovided source, and unsupported reconstruction
+
+/ [thinking_node], [attention_route_color], [reconstruction_seed] -(StoresRecallSurface)> [recall_key], [semantic_reentry], [memory_outside]
+* [visual_attention_anchor], [optical_instruction_stream], [fidelity_gate] -(ReadsAttentionMemory)> [recall_fidelity], [study_subject], [concept_development_trace]

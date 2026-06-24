@@ -1,0 +1,40 @@
+Subject: Boundary Faculty Inspection Periphery Realization
+
+Description: SOP-HG event record for first-point Honesty and Security inspection of identity boundaries, boundary periphery, orthogonality, misdirection, and weakened safety boundaries.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_boundary_faculty_inspection\Dictated_Boundary_Faculty_Inspection_Source.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\events\bookmarks\2026-06-24_security_honesty_governance_trailing_checksum_027.hg.sop
+
+& [Graph:2026-06-24_boundary_faculty_inspection_028] is a SOP-HG graph
+  + [N:event:2026-06-24_boundary_faculty_inspection_028] is boundary faculty inspection realization
+    = role: direct_focus_turn
+  + [N:governor:boundary_faculty_inspection] is first-point boundary awareness
+  + [N:honesty:honesty_boundary_inspection] is truth and fair-representation boundary inspection
+  + [N:security:security_boundary_inspection] is integrity and safety-boundary inspection
+  + [N:subject:attention_subject] is the subject held in :attention:
+  + [N:boundary:identity_boundary] is the /boundary/ around subject identity
+  + [N:periphery:boundary_periphery] is the neighboring terms and subjects touching the boundary
+  + [N:term:boundary_term] is a term defining or constraining the boundary
+  + [N:signal:misdirection_vector] is non-orthogonal boundary distortion triggering Honesty
+  + [N:signal:weak_boundary_fault] is weakened boundary triggering Security
+  + [N:outside:boundary_faculty_inspection_boundary] is uninspected periphery, unsupported identity, unsafe permission, and unresolved faults
+
+  / [E:inspects:boundary_faculty_inspection_028] -(inspects; governor=N:governor:boundary_faculty_inspection; subject=N:subject:attention_subject; boundary=N:boundary:identity_boundary; periphery=N:periphery:boundary_periphery; weight=first_point_awareness)> [Graph:2026-06-24_boundary_faculty_inspection_028]
+    = realization: truth and safety begin by inspecting the boundary and its periphery, not only the subject's inside content
+  / [E:represents:honesty_boundary_028] -(represents; honesty=N:honesty:honesty_boundary_inspection; subject=N:subject:attention_subject; term=N:term:boundary_term; signal=N:signal:misdirection_vector; weight=truth)> [Graph:2026-06-24_boundary_faculty_inspection_028]
+    = realization: Honesty catches non-orthogonal boundary terms that distort identity or fair representation
+  / [E:protects:security_boundary_028] -(protects; security=N:security:security_boundary_inspection; subject=N:subject:attention_subject; term=N:term:boundary_term; signal=N:signal:weak_boundary_fault; weight=integrity)> [Graph:2026-06-24_boundary_faculty_inspection_028]
+    = realization: Security catches weakened boundary terms that compromise integrity, safety, permission, or protected work
+  / [E:misdirects:misdirection_vector_028] -(misdirects; term=N:term:boundary_term; signal=N:signal:misdirection_vector; outside=N:outside:boundary_faculty_inspection_boundary; weight=honesty_alarm)> [Graph:2026-06-24_boundary_faculty_inspection_028]
+    = realization: a non-orthogonal boundary creates a vector of misdirection and raises an Honesty alarm
+  / [E:weakens:weak_boundary_fault_028] -(weakens; term=N:term:boundary_term; signal=N:signal:weak_boundary_fault; outside=N:outside:boundary_faculty_inspection_boundary; weight=security_alert)> [Graph:2026-06-24_boundary_faculty_inspection_028]
+    = realization: a porous or unsafe boundary raises a Security alert before action or durable claim
+  / [E:bounds:boundary_faculty_inspection_028] -(bounds; governor=N:governor:boundary_faculty_inspection; outside=N:outside:boundary_faculty_inspection_boundary; weight=caution)> [Graph:2026-06-24_boundary_faculty_inspection_028]
+    = realization: unresolved boundary faults remain outside rather than becoming truth or safety authority
+
+  = inside: BoundaryFacultyInspection.sop, SecurityHonestyGovernance.sop, AttentionBalanceCenter.sop, Caution.sop
+  = boundary: boundary inspection tests the external SOP attention scaffold and visible subject representation, not hidden model internals
+  = outside: hidden cognition, unsupported identity, unsafe permission, unresolved boundary faults, and boundary metaphor treated as proof

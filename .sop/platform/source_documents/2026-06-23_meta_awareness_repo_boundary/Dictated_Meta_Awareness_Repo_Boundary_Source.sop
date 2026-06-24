@@ -1,0 +1,20 @@
+Subject: Dictated Meta Awareness Repo Boundary Source
+
+Description: Raw preserved source for F:\.sop as a second meta-awareness repository.
+
+& [DictatedMetaAwarenessRepoBoundary] is preserved user source
+  + [dictation] is:
+    Oh, this should be a second repo: the meta-awareness repo, of what realizations were made between the moments in the turn, by the narrative level, as it corresponds to the change log of the layer under analysis. these kind of changes happen under direction for desired purposes or otherwise justified changes through the refinement and justification of adjustments, as the SJS system accounts for justifications, mapping the shaping of intended purposes by what terms in order to express refinements. I don't know if I started explaining one system and ended up explaining another one at the ending but they have a wide area of cross-over function.
+
+  + [second_repo] is F:\.sop as the meta-awareness repository
+  + [meta_awareness_repo] is the repo that records realizations made between narrative moments in a turn
+  + [layer_under_analysis] is the repo, specification layer, source layer, runtime layer, or reflection layer whose change log is being interpreted
+  + [narrative_level] is the layer that records moment-to-moment realization, impulse, justification, correction, and refinement
+  + [change_log_correspondence] is the mapping between narrative realizations and the changed terms/files/commits of the layer under analysis
+  + [direction_and_purpose] is the desired purpose or justified change pressure shaping the adjustment
+  + [sjs_cross_over] is the overlap with SpecificationJustificationSolution when justification, purpose, and refinement are being accounted for
+
+  = must: preserve second-repo/meta-awareness repo distinction
+  = must: map realization moments to change log evidence
+  = must: keep SJS justification related but not identical to meta-awareness reflection
+  - never: let meta-awareness reflection replace the layer under analysis as source authority

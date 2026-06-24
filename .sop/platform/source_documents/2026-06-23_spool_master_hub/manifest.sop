@@ -1,0 +1,12 @@
+Subject: Spool Master Hub Source Manifest
+
+Description: Source preservation manifest for job spool master and web hub.
+
+& [SpoolMasterHubSourceManifest] is the source document set for the Spool Master Hub layer
+  + [source_request] is F:\.sop\platform\source_documents\2026-06-23_spool_master_hub\Dictated_Spool_Master_Hub_Source.sop
+  + [spool_contract] is F:\.sop\platform\SpoolMasterHub.sop
+  + [worker_contract] is F:\.sop\platform\spool\WorkerLanes.sop
+  + [hub_contract] is F:\.sop\platform\spool\WebHubTree.sop
+  + [runtime_surface] is F:\.sop\runtime\sop_node\spool.py
+
+  = must: treat launching as future explicit policy, not seed behavior

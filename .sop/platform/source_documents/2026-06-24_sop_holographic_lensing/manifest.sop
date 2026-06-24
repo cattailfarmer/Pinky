@@ -1,0 +1,13 @@
+Subject: SOP Holographic Lensing Source Manifest
+
+Description: Source preservation manifest for semantic hologram projection through SOP lensing.
+
+& [SOPHolographicLensingSourceManifest] is the trace record for this source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_sop_holographic_lensing\Dictated_SOP_Holographic_Lensing_Source.sop
+  + [contract_target] is F:\.sop\platform\SOPHolographicLensing.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_sop_holographic_lensing_048.hg.sop
+  + [derived_terms] is semantic_optical_signal, semantic_hologram, sop_lens, holographic_projection, holographic_perception, photonic_semantic_operation
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, SOPOpticalChain, FrameReferenceIntegrity, SecurityHonestyGovernance
+
+  = must: preserve raw source before treating holographic lensing terms as durable attention authority
+  = must: keep the model semantic and inspectable even when physical constraints are outside

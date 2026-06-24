@@ -1,0 +1,27 @@
+Subject: RGB Semantic Encoding Trailing Checksum 065
+
+Description: One-turn-later reflection on commit 564e16e, finding that RGB semantic encoding wrongly mixed mutation and operation pressure into an attention/delineation basis.
+
+@ [source_commit] 564e16e Define SOP RGB semantic encoding
+@ [source] F:\.sop\platform\SOPRGBSemanticEncoding.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\source_documents\2026-06-24_rgb_delineation_correction\Dictated_RGB_Delineation_Correction_Source.sop
+
+& [RGBSemanticEncodingTrailingChecksum065] is the trailing checksum for the prior RGB encoding frame
+  + [reviewed_focus] is SOP RGB semantic encoding
+  + [prior_inside] is RGB primitive basis, RGB mixture roles, SOP-to-RGB encode pass, RGB-to-SOP decode pass, and complex relationship color encoding
+  + [observed_fault] is red_axis carried impulse, claim, action, transformation pressure, and output pressure, which blurred attention delineation with mutation and operation semantics
+  + [corrected_boundary] is RGB axes encode attention/delineation only: inside attention, boundary delineation, and outside residual/periphery
+  + [hot_zone] is the distinction between color as a delineation map and transform algebra as the mutation/operator surface
+  + [warm_zone] is complex relationships still need color-point and relation-edge structures, but the edge color should encode the relation's inside, boundary, and outside, not relation mutation force
+  + [latent_depth] is future optical programs may overlay operations as separate transform expressions over delineated RGB frames
+  + [correction] is update SOPRGBSemanticEncoding so mutation, action, transformation, and output pressure are not primitive RGB axis meanings
+  + [next_focus_candidate] is RGB attention delineation correction
+  + [balance_state] is restored when delineation and operation layers remain orthogonal
+
+  = must: treat this checksum as backward-facing correction of the previous commit
+  = must: keep mutation and operation semantics in SOPOpticalTransformAlgebra or another explicit operation layer
+  - outside: direct operation encoding in RGB primitives, color-only proof, and untraced mutation
+
+/ [SOPRGBSemanticEncoding], [SOPOpticalTransformAlgebra], [delineation_correction] -(SeparatesLayers)> [attention_delineation_rgb], [operation_overlay_outside]
+* [inside_attention], [boundary_delineation], [outside_residual] -(CorrectsRGBBasis)> [rgb_signal], [color_outside]

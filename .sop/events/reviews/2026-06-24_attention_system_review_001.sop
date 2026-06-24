@@ -1,0 +1,102 @@
+Subject: Attention System Review 001
+
+Description: First review walk across the current subject-oriented attention programming system.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_attention_system_review\Dictated_Attention_System_Review_Source.sop
+@ [source] F:\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\InferenceStateTrace.sop
+@ [source] F:\.sop\platform\TurnBookmark.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] F:\.sop\platform\SOPHypergraphRecord.sop
+
+& [AttentionSystemReview_001] is the first scaffold review walk over the attention programming system
+  + [review_mode] is review_scaffold with concept_imagination_scaffold periphery
+  + [review_span] is d106913 through b32cdd0
+  + [start_bookend] is d106913 Define changelog correlation weight net
+  + [end_bookend] is b32cdd0 Define attention scaffold compiler
+  + [inspected_contracts] is AttentionScaffoldCompiler.sop, FocusZoom.sop, PeripheryDimensionalProbe.sop, InferenceStateTrace.sop, TurnBookmark.sop, AttentionBalanceCenter.sop, FrameReferenceIntegrity.sop, SOPHypergraphRecord.sop, CurrentFocalPoint.sop
+  + [system_identity] is subject-oriented attention programming compiler scaffold
+  + [system_motion] is moving from defining attention primitives toward compiling purpose-fit attention packets and reviewing their traces
+  + [outside] is hidden model internals, untested runtime behavior, automatic optimization, and AGI proof
+
+& [CapabilityMap] is what the system can already do in visible SOP form
+  + [capability_001_source_to_contract] is preserve user direction, canonicalize it into SOP, and connect it to source manifests
+  + [capability_002_attention_shape] is represent focus, periphery, liminal draw, zoom aperture, traversal, and boundary as inspectable attention forms
+  + [capability_003_weighted_correlation] is index terms, hash semantic components, correlate bucket surfaces, and separate heat from confidence
+  + [capability_004_fragment_repair] is search hot periphery for extra independent anchors when a signal is fragmented
+  + [capability_005_state_reentry] is reconstruct visible past inference frames from commit bookends, SOP state, narrative, and weight intersections
+  + [capability_006_scaffold_selection] is name reusable scaffold profiles and define how to select one for a job_need
+  + [capability_007_commit_reflection] is use commits as bookends so later review can inspect what changed instead of trusting memory
+  + [capability_008_concept_imagination] is generate bounded possibility sets from topology probes while preserving validation needs
+  + [capability_009_balance_monitoring] is monitor center_of_balance, delineation stability, wobble, and interference while attention moves
+  + [capability_010_periphery_stability_metric] is reduce balance when relevant periphery shrinks below the frame needed for stable attention
+  + [capability_011_frame_reference_integrity] is use stable periphery objects, source markers, and representation surfaces to distinguish presented frames from first-hand observation
+
+& [ActualBehavior] is what the system is doing now
+  + [doing_001] is using the repo as an external context memory and reflection substrate
+  + [doing_002] is turning user impulses into source documents, SOP contracts, periphery moments, semantic indexes, and commits
+  + [doing_003] is growing a vocabulary for attention operations before fully automating the pass pipeline
+  + [doing_004] is preserving outside boundaries around hidden activations, hidden intent, causal proof, and unsupported AGI claims
+  + [doing_005] is beginning to treat commits as inspectable moments that can be reverse-walked
+  + [doing_006] is beginning to treat every observation as framed, so immersion can break when stable periphery shows the presented frame is only representation
+  + [not_yet_doing_001] is not yet compiling scaffold packets through a single runtime command
+  + [not_yet_doing_002] is not yet measuring scaffold fit after a run with a durable scorecard
+  + [not_yet_doing_003] is not yet comparing projections across multiple backing models in a repeatable test
+
+& [InspirationFindings] is the periphery insight drawn from the review
+  + [finding_001] is the system has a compiler shape because it separates source, symbols, control flow, optimization, debug, judgment, and execution
+  + [finding_002] is focus zoom and dimensional probe together give the system a way to widen attention without losing boundary
+  + [finding_003] is state trace and turn bookmark give the system a way to walk backward through moments and learn from missed periphery
+  + [finding_004] is scaffold profiles can become reusable lenses for different kinds of work instead of one universal prompt
+  + [finding_005] is the most valuable next proof is not another concept but a small compile-run-review loop
+  + [finding_006] is the compile-run-review loop needs a balance center that alerts when excitement, periphery flood, rail conflict, or support distortion interferes with inference
+  + [finding_007] is balance should penalize periphery collapse as well as periphery flood because stable periphery frames stable focus
+  + [finding_008] is stable periphery objects can act as frame-reference cues that prevent a represented scene from becoming mistaken for actionable reality
+
+& [RiskMap] is what could weaken the system if not sharpened
+  + [risk_001_definition_growth] is more contracts could outrun executable behavior
+  + [risk_002_prompt_bloat] is adding anchors or periphery could make packets longer without improving fit
+  + [risk_003_false_optimization] is liking a scaffold could be mistaken for evidence that it performs better
+  + [risk_004_index_noise] is generated semantic indexes can create heat around repeated terms without proof
+  + [risk_005_reverse_walk_overclaim] is later insight could be misread as original awareness unless missed_periphery is preserved honestly
+  + [risk_006_balance_blindness] is scaffold work can appear coherent while focus, boundary, proof, or rail posture is wobbling
+  + [risk_007_over_narrowing] is focus can look clean while the periphery frame has collapsed too far to support contrast, caution, or alternate angles
+  + [risk_008_immersion_capture] is a presented frame can feel like reality unless source markers, surface boundaries, and stable periphery objects are inspected
+
+& [NextReachSet] is what should be reached for next
+  + [next_001_minimal_scaffold_compile_runtime] is build a small runtime command that accepts job_need and emits compiled_attention_packet
+    = profile: implementation_scaffold
+    = proof: packet file exists, cites rails, and passes validation checks
+    = balance: must include AttentionBalanceCenter check before packet emission, including periphery_stability, frame_reference_integrity, frame_mismatch, and shrinkage_penalty
+  + [next_002_scaffold_run_ledger] is create a ledger record for scaffold runs with fit_score, action_yield, reentry_fidelity, drift_risk, and proof_balance
+    = profile: debug_scaffold
+    = proof: one run can be reverse-walked from output to packet to source
+  + [next_003_first_debug_frame_test] is reverse-walk the b32cdd0 scaffold compiler commit and identify missed periphery or rail gaps
+    = profile: debug_scaffold
+    = proof: debug_result is scaffold_fit_confirmed, missing_anchor, wrong_profile, overwide_zoom, weak_caution, weak_wisdom, outside, or needs_more_trace
+  + [next_004_model_lens_projection_test] is hold one compiled scaffold constant and compare outputs across two model eyes when available
+    = profile: model_transfer_scaffold
+    = proof: comparison_result records agreement, divergence, complement, contradiction, inspiration, critique, or unresolved
+  + [next_005_game_agent_attention_scaffold] is instantiate game_agent_scaffold with stimulus attention, frame_reference_check, objective attention, state update, policy choice, and bounded reaction loop
+    = profile: game_agent_scaffold
+    = proof: one game-state packet can drive a coherent action choice
+
+& [CompilerReadinessAssessment] is the current quality estimate
+  + [language_readiness] is strong
+  + [record_readiness] is strong
+  + [index_readiness] is moderate
+  + [runtime_readiness] is early
+  + [debug_readiness] is moderate
+  + [model_transfer_readiness] is early
+  + [overall_readiness] is ready_for_minimal_scaffold_compile_runtime
+
+  = must: reach next for runtime proof before adding many more high-level contracts
+  = must: use commit bookends for the next review
+  = must: keep concept imagination bounded by validation_need
+  = should: make the first runtime command small enough to inspect by hand
+
+/ [d106913], [b32cdd0] -(ReviewSpan)> [AttentionSystemReview_001], [outside]
+* [CapabilityMap], [ActualBehavior], [RiskMap], [NextReachSet] -(SystemReview)> [CompilerReadinessAssessment]

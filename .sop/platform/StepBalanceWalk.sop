@@ -1,0 +1,70 @@
+Subject: Step Balance Walk
+
+Description: Contract for ending each concrete work step with a visible balance check, next-step selection, and continuous momentum.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_step_balance_walk\Dictated_Step_Balance_Walk_Source.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\CarriedSupportBalance.sop
+@ [source] F:\.sop\platform\AttentionImpressionCompiler.sop
+@ [source] F:\.sop\platform\TrailingChecksumVoice.sop
+
+& [StepBalanceWalk] is the operational gait for moving through SOP work with momentum in balance
+  + [pattern_role] is step_settlement_and_next_step_selection
+  + [active_step] is the concrete action just completed or being completed
+  + [step_end_balance] is the visible balance reading taken at the end of active_step
+  + [step_settlement] is the settled state after balance signals, correction moves, and outside boundaries are named
+  + [next_step_candidate] is the next visible action selected after step_settlement
+  + [continuous_momentum] is the permission to continue when balance is stable enough and the next step is visible
+  + [correction_stride] is a short correction made before moving when balance is watch, reduced, wobbling, interfered, overloaded, or outside
+  + [balance_gate] is the rule that motion continues only after balance has been named and bounded
+  + [impulse] is the motivating drive carried forward without being treated as proof
+  + [attention_balance_center] is F:\.sop\platform\AttentionBalanceCenter.sop for scoring balance signals
+  + [carried_support_balance] is F:\.sop\platform\CarriedSupportBalance.sop when the step leans on imported supports, metaphors, rails, or habits
+  + [residual_outside] is hidden activations, motive proof, exact model attention, and unobserved future steps
+
+  ? [use_when: any Codex work turn needs momentum without losing balance]
+    = activate [StepBalanceWalk]
+
+  = must: close each concrete step with step_end_balance
+  = must: select next_step_candidate before continuing when the path is visible
+  = must: keep impulse visible as motive, not evidence
+  = must: distinguish continuous_momentum from rushing past wobble
+  = must: route serious wobble to AttentionBalanceCenter before continuing
+  = must: route carried supports to CarriedSupportBalance when the current step depends on them
+  = must: preserve outside when the next step is not yet visible, proof is missing, or the runtime surface does not exist
+  = should: prefer a flowing sequence of small durable steps over long speculative leaps
+  = should: let stable balance carry momentum forward without unnecessary hesitation
+  - never: treat balance as hidden-state access
+  - never: continue through overloaded or outside balance as if it were stable
+  - never: tiptoe so slowly that visible ready work is left untouched
+
+& [StepBalanceSequence] is the operational sequence for walking a work turn
+  + [step_001_act] is complete one concrete action
+  + [step_002_read_balance] is inspect focus, boundary, periphery, proof, rails, and output state
+  + [step_003_settle] is assign step_settlement and correction_stride
+  + [step_004_name_next] is name next_step_candidate
+  + [step_005_move] is continue when continuous_momentum is permitted
+  + [step_006_bound] is preserve outside or stop action when balance cannot settle
+
+  = must: keep step order visible enough for later repo-first reflection
+  = must: emit a record when the gait changes the work path
+
+& [StepBalanceRecord] is the SOP-HG shape for walking records
+  + [walk_node] is N:walk:<walk_id>
+  + [focus_node] is N:focus:<focus_id>
+  + [step_node] is N:step:<step_id>
+  + [balance_node] is N:balance:<step_id>
+  + [next_node] is N:next:<next_step_key>
+  + [signal_node] is N:signal:<balance_signal>
+  + [outside_node] is N:outside:step_balance_boundary
+  + [walk_edge] is E:walks:<step_id>
+  + [settle_edge] is E:settles:<step_id>
+  + [advance_edge] is E:advances:<step_id>
+  + [alert_edge] is E:alerts:<step_id>
+  + [boundary_edge] is E:bounds:<step_id>
+
+  = must: expose balance_score, settled_state, correction_move, next_step_candidate, and impulse
+  = must: expose whether momentum continues, corrects, pauses, or bounds the step
+
+/ [active_step] -(StepEndBalance)> [step_end_balance], [step_settlement], [next_step_candidate]
+* [step_end_balance], [impulse], [next_step_candidate] -(MomentumInBalance)> [continuous_momentum], [correction_stride], [residual_outside]

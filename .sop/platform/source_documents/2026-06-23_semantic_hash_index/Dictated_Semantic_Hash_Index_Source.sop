@@ -1,0 +1,22 @@
+Subject: Dictated Semantic Hash Index Source
+
+Description: Raw preserved design source for hashed indexing of SOP components and peripheral semantic landscape.
+
+& [DictatedSemanticHashIndexSource] is the preserved user specification
+  + [raw_design_text] is:
+    let's make a hashed indexing for digesting and giving pointers to it's SOP components and their semantic landscape? that's the unstable layer of semantic awareness on the cutting edge of inference. That inference will have some wider association terms that can be captured as part of the observed periphery, and record that as the periphery layer of out-of-focus points of potential interest and how they related back to the subject of narrative, what they were hiding behind, what turned aspect gave the impression, or what nearby association entangled with to leave a form of interest in peripheral vision.
+
+  + [hashed_indexing] is digesting SOP components into stable hash pointers
+  + [semantic_landscape] is the extracted terms, identifiers, subjects, relations, and peripheral impressions around a SOP component
+  + [unstable_semantic_awareness] is the revisable frontier of inference before proof or durable subject promotion
+  + [wide_association_terms] is terms noticed around the main subject without being the main focus
+  + [observed_periphery] is out-of-focus points of potential interest recorded with their relation back to narrative
+  + [hiding_behind] is the apparent subject, component, or stronger term that masked a peripheral term
+  + [turned_aspect] is the angle of interpretation that caused the impression to become visible
+  + [nearby_association] is the neighboring term or relation that entangled with the peripheral impression
+
+  = must: preserve hash pointers separately from semantic claims
+  = must: record periphery impressions as revisable and unstable
+  = must: connect out-of-focus terms back to narrative subject, hidden surface, turned aspect, and nearby association when available
+  = must: keep personal context notes out of durable implementation authority unless explicitly requested
+  - never: treat a semantic hash as proof of meaning

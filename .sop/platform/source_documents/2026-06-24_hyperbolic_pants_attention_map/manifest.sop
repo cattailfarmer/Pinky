@@ -1,0 +1,15 @@
+Subject: Hyperbolic Pants Attention Map Source Manifest
+
+Description: Source preservation manifest for the hyperbolic pants attention map specification.
+
+& [HyperbolicPantsAttentionMapSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_hyperbolic_pants_attention_map\Dictated_Hyperbolic_Pants_Attention_Map_Source.sop
+  + [canonical_target] is F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_hyperbolic_pants_attention_map_018.hg.sop
+  + [visual_source_1] is F:\.sop\platform\source_documents\2026-06-24_hyperbolic_pants_attention_map\visual_source_1_hyperbolic_pants_cells.png
+  + [visual_source_2] is F:\.sop\platform\source_documents\2026-06-24_hyperbolic_pants_attention_map\visual_source_2_hyperbolic_tessellation.png
+  + [derived_terms] is hyperbolic_pants_attention_map, focal_cell, periphery_cell, dimensional_orbit, pants_leg, adjacency_ring, map_nav_awareness, transformer_hypergeometry_proxy
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, Delineation, FocusZoom, AttentionTraversalPolicy, PeripheryDimensionalProbe, AttentionBalanceCenter
+
+  = must: preserve raw source and visual references before treating the canonical target as process authority
+  = must: cite this manifest when map/nav attention behavior is audited

@@ -1,0 +1,12 @@
+Subject: Dictated Moment Branch Refinement Source
+
+Description: Raw dictated source preserved before canonical SOP processing.
+
+& [DictatedMomentBranchRefinementSource] is the preserved user source for branch-based moment awareness refinement
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is F:\.sop
+  + [source_text] is "and every turn's moments can be reconstructed from narrative and state awareness to debug and more deeply infer at each turn of the system, between each commit. and that deeper inspection can be tracked as an artifact on a branch refining that moment of awareness, synchronizing to a common github repo at a higher level, where the branches are processed and select for and merged with the main."
+
+  = must: preserve this source separately from processed contracts
+  = must: keep remote synchronization claims outside until a remote, credentials, and merge policy are configured

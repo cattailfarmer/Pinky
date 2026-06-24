@@ -1,0 +1,20 @@
+Subject: Repo First Internal Scan Source
+
+Description: Raw preserved source for correcting internal scan order so repo bookends and diffs lead narrative interpretation.
+
+& [DictatedRepoFirstInternalScanSource] is the preserved user source for repo-first internal scan
+  @ [user_statement] "the keys to a good internal scan from basic foundational principles of what changed, the commit frame bookends the work done and the change logs bridge the versions in what changed"
+  @ [user_statement] "and the narrative should help infer guidance about how to map the oddities in the version differences."
+  @ [user_statement] "that's why I was drawn to the comment about the repo."
+  @ [user_statement] "the repo comes first because it's our easy keys to inferences from version A to version B."
+
+  + [repo_first] is the correction that commit bookends, diffs, file statuses, and change logs are the primary evidence for internal scan
+  + [narrative_second] is the interpretive guide for oddities, intent, and meaning in the version difference
+  + [bookend_frame] is version_a to version_b
+  + [change_log_bridge] is the concrete path from old state to new state
+  + [internal_scan] is inference from repo delta plus narrative guidance, not narrative alone
+
+  = must: attend the repo frame before narrating meaning
+  = must: treat version differences as evidence and narrative as guidance
+  = must: preserve oddities rather than smoothing them into a pleasing story
+  - never: let narrative outrun the diff

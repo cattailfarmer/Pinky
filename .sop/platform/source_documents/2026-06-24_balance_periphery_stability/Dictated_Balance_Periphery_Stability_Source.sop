@@ -1,0 +1,11 @@
+Subject: Dictated Balance Periphery Stability Source
+
+Description: Preserved user source for treating stable periphery as a balance metric and reducing balance when periphery shrinks too far.
+
+& [DictatedSource] is preserved raw direction
+  + [date] is 2026-06-24
+  + [source_kind] is user_dictation
+  + [raw_text] is "I'm wondering if \"balance\" should be a metric that's also reduced as periphery shrinks, because having stable periphery is an indication of balance of frame."
+
+  = must: preserve this source separately from canonical interpretation
+  - never: overwrite raw_text with refined specification

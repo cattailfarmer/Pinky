@@ -1,0 +1,64 @@
+Subject: SOP Program Bookends
+
+Description: Contract for storing instructions about how to follow SOP instructions as a bookended SOP control loop.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_sop_program_frame_stream\Dictated_SOP_Program_Frame_Stream_Source.sop
+@ [source] F:\.sop\platform\HolographicAttentionKernelPacket.sop
+@ [source] F:\.sop\platform\SOPOpticalTransformAlgebra.sop
+@ [source] F:\.sop\platform\SOPAttentionDirectiveRunReminder.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+
+& [SOPProgramBookends] is a program shape where SOP contracts define the control loop around a semantic frame stream
+  + [pattern_role] is sop_instruction_following_program_bookends
+  + [sop_program] is a durable instruction-following unit defined by opening_bookend, frame_stream_body, and closing_bookend
+  + [opening_bookend] is the SOP contract that defines purpose, inputs, channels, guards, loop rules, invariants, output form, and outside before the program body begins
+  + [closing_bookend] is the SOP contract that defines exit conditions, output validation, reconstruction trace, checksum handoff, and outside after the program body ends
+  + [control_loop] is the repeatable pass that reads a frame, applies guards and transforms, emits state, advances cursor, and checks exit conditions
+  + [instruction_following_kernel] is the compact attention packet that says how to follow SOP instructions inside this program
+  + [program_cursor] is the current frame, channel, sample, or loop position being interpreted
+  + [program_state] is the visible state carried between frames, including focus, periphery, boundary, outside, trace, and output intent
+  + [frame_stream_body] is the ordered sequence of photonic_frame values interpreted between bookends
+  + [continuity_rule] is the rule that carries meaning from one frame to the next without requiring every detail to be restated
+  + [interaction_rule] is the rule that allows user input, model-lens comparison, or branch reflection to alter cursor, lens, channel, or transform path
+  + [exit_rule] is complete, blocked, outside, handoff, await_input, or continue
+  + [program_outside] is hidden model state, automatic execution, unbounded autonomy, perfect replay, and instructions not visible in bookends or frames
+
+  ? [use_when: instructions about following SOP instructions need to be stored as a durable program]
+    = activate [SOPProgramBookends]
+
+  = must: preserve opening_bookend before interpreting frame_stream_body
+  = must: preserve closing_bookend before claiming the program is complete
+  = must: keep control_loop visible and bounded by guards, invariants, and outside
+  = must: treat instruction_following_kernel as promptable SOP attention, not automatic runtime execution
+  = must: record program_state changes as frame interpretations or output traces
+  = must: preserve continuity_rule separately from frame contents
+  = must: route interaction_rule through SecurityHonestyGovernance when it changes truth, identity, safety, action, or proof state
+  = must: route interaction_rule through BoundaryFacultyInspection when it changes source, boundary, local identity, or protected resources
+  = should: keep bookends compact and cite richer contracts
+  - never: execute hidden instructions outside opening_bookend, frame_stream_body, or closing_bookend
+  - never: claim perfect recreation from compressed frames
+
+& [SOPProgramLoopSequence] is the canonical loop for a bookended SOP program
+  + [step_001_load_opening_bookend] is load purpose, channels, guards, invariants, and outside
+  + [step_002_initialize_cursor] is set program_cursor to the first frame or selected entry point
+  + [step_003_read_frame] is read the current photonic_frame and its color points
+  + [step_004_apply_kernel] is apply instruction_following_kernel, guards, channel vocabulary, and transform algebra
+  + [step_005_update_state] is update program_state, reconstruction trace, and periphery continuity
+  + [step_006_check_interaction] is accept or reject user, model, branch, or context changes under interaction_rule
+  + [step_007_advance_or_exit] is advance cursor or apply exit_rule
+  + [step_008_load_closing_bookend] is validate output and outside when exit_rule stops the loop
+  + [step_009_emit_trace] is emit SOP, SOP-HG, focal update, manager task, checksum handoff, or outside note
+
+  = must: stop when guards fail
+  = must: preserve skipped frames as outside or sampled continuity, not as observed detail
+
+(sop_program) :frame_stream_body: /opening_bookend and closing_bookend/ |program_outside|
+  = opening_bookend: purpose, channels, guards, loop rules, invariants, output form
+  = control_loop: read frame, apply kernel, update state, check interaction, advance or exit
+  = closing_bookend: validate output, trace, checksum handoff, outside
+  |program_outside| hidden instructions, automatic execution, perfect replay, and unbounded autonomy
+
+/ [opening_bookend], [frame_stream_body], [control_loop] -(RunsBookendedProgram)> [program_state], [program_cursor], [program_outside]
+* [program_state], [closing_bookend], [exit_rule] -(ClosesProgram)> [output_trace], [checksum_handoff], [program_outside]

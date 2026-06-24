@@ -1,0 +1,15 @@
+Subject: Seven-Fold Pants Correlation Frame Source Manifest
+
+Description: Source preservation manifest for the seven-fold pants correlation frame specification.
+
+& [SevenFoldPantsCorrelationFrameSourceManifest] is the trace record for this specification source
+  + [source_record] is F:\.sop\platform\source_documents\2026-06-24_seven_fold_pants_correlation_frame\Dictated_Seven_Fold_Pants_Correlation_Frame_Source.sop
+  + [canonical_target] is F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+  + [periphery_record] is F:\.sop\events\periphery_stream\2026-06-24_seven_fold_pants_correlation_frame_020.hg.sop
+  + [checksum_record] is F:\.sop\events\bookmarks\2026-06-24_hyperbolic_map_trailing_checksum_019.hg.sop
+  + [visual_source] is F:\.sop\platform\source_documents\2026-06-24_seven_fold_pants_correlation_frame\visual_source_1_seven_fold_pants_decomposition.png
+  + [derived_terms] is seven_fold_pants_correlation_frame, central_correlation_triad, top_three_correlations, fold_leg, curve_out_of_frame, weighted_balance_orbit, heat_ordered_cell, subject_surface_frame
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, Delineation, HyperbolicPantsAttentionMap, AttentionWeightScale, FocusZoom, AttentionTraversalPolicy
+
+  = must: preserve raw source and visual reference before treating the canonical target as process authority
+  = must: cite this manifest when seven-fold correlation-frame behavior is audited

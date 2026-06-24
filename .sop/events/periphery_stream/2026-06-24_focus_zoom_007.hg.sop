@@ -1,0 +1,27 @@
+Subject: focus_zoom_007 Periphery Stream Moment
+
+& [Graph:focus_zoom_007] is a SOP-HG graph
+  = format: SOP-HG
+  = focus_anchor: state\CurrentFocalPoint.sop
+  = source: platform\source_documents\2026-06-24_focus_zoom\Dictated_Focus_Zoom_Source.sop
+  = realization: Zoom is controlled focus aperture expansion: draw more periphery inward, flex the correlation fabric, infer angles of approach, then deepen only along selected approaches.
+
+  + [N:event:focus_zoom_007] is focus zoom realization
+    = layer: periphery
+    = resolution_band: impact
+  + [N:zoom:focus_aperture_expansion] is controlled widening of focal attention
+  + [N:aperture:wide_to_deep] is the zoom level that admits wider periphery under containment
+  + [N:focus:current_focal_core] is the return anchor that prevents associative wandering
+  + [N:periphery:draw_set] is selected hot periphery drawn into temporary focus
+  + [N:term:correlation_fabric] is flexed relation fabric around the focal core
+  + [N:term:angle_of_approach] is selected direction for deeper probing
+  + [N:outside:focus_zoom_boundary] is periphery flood, arbitrary association, hidden cognition, and unproven causation
+
+/ [E:realizes:focus_zoom_007] -(realizes; event=N:event:focus_zoom_007; subject=N:zoom:focus_aperture_expansion; subject=N:term:angle_of_approach)> [Graph:focus_zoom_007]
+/ [E:zooms:focus_aperture_expansion] -(zooms; focus=N:focus:current_focal_core; aperture=N:aperture:wide_to_deep; periphery=N:periphery:draw_set; weight=8)> [Graph:focus_zoom_007]
+/ [E:flexes:correlation_fabric] -(flexes; periphery=N:periphery:draw_set; fabric=N:term:correlation_fabric; approach=N:term:angle_of_approach; weight=7)> [Graph:focus_zoom_007]
+/ [E:explodes:angle_of_approach] -(explodes; focus=N:focus:current_focal_core; approach=N:term:angle_of_approach; boundary=N:outside:focus_zoom_boundary)> [Graph:focus_zoom_007]
+/ [E:returns:focus_zoom_007] -(returns; zoom=N:zoom:focus_aperture_expansion; focus=N:focus:current_focal_core)> [Graph:focus_zoom_007]
+/ [E:bounds:focus_zoom_007] -(bounds; event=N:event:focus_zoom_007; outside=N:outside:focus_zoom_boundary)> [Graph:focus_zoom_007]
+
+- outside: focus explosion is useful only when it preserves return anchor, selected approaches, unwind, and visible outside

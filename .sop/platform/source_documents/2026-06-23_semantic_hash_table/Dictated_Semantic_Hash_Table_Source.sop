@@ -1,0 +1,20 @@
+Subject: Dictated Semantic Hash Table Source
+
+Description: Raw preserved design source for a permissive multi-dimensional semantic hash table.
+
+& [DictatedSemanticHashTableSource] is the preserved user specification
+  + [raw_design_text] is:
+    semantic hash table... isn't that basically a multi-dimensional key with permissive/inclusive use? or am I thinking of it too deeply for what it is? should we make the proper shape of hash table for this purpose?
+
+  + [semantic_hash_table] is a multi-dimensional key table over content, semantic, subject, identifier, term, and periphery-impression dimensions
+  + [multi_dimensional_key] is a composite address made of many independent lookup dimensions
+  + [permissive_lookup] is inclusive retrieval where partial overlap can return candidates with ranked confidence
+  + [exact_lookup] is retrieval by content hash, semantic hash, path, or pointer where precision is expected
+  + [inclusive_use] is allowing uncertain or incomplete semantic coordinates to find nearby records without claiming identity
+  + [proper_shape] is separate exact pointers, facet buckets, query modes, ranked matches, and explicit outside boundaries
+
+  = must: define the hash table as multi-dimensional rather than a single hash slot
+  = must: preserve permissive lookup as candidate retrieval, not proof
+  = must: distinguish exact content identity from inclusive semantic neighborhood
+  = must: connect the table to SemanticHashIndex records
+  - never: let permissive matches overwrite exact pointer identity

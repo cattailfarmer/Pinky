@@ -1,0 +1,28 @@
+Subject: SOP Color Channel Vocabulary Realization
+
+Description: SOP-HG event record for defining semantic color channels for SOP optical and holographic work.
+
+@ [source] F:\.sop\platform\SOPColorChannelVocabulary.sop
+@ [source] F:\.sop\platform\SOPOpticalChain.sop
+@ [source] F:\.sop\platform\HolographicSOPScaffold.sop
+
+& [Graph:2026-06-24_sop_color_channel_vocabulary_050] is a SOP-HG graph
+  + [N:event:2026-06-24_sop_color_channel_vocabulary_050] is SOP color channel vocabulary realization
+    = role: direct_focus_continuation
+  + [N:vocabulary:sop_color_channel_vocabulary] is channel language for semantic optics over SOP
+  + [N:set:required_minimum] is source, focus, boundary, outside, and output channels
+  + [N:set:proof_sensitive] is evidence, claim, honesty, and trace channels
+  + [N:set:risk_sensitive] is caution, security, boundary, and outside channels
+  + [N:set:meaning_navigation] is periphery, relation, weight, and wisdom channels
+  + [N:outside:channel_boundary] is unnamed, unsupported, untraced, or unbounded signal color
+
+  / [E:defines:sop_color_channel_vocabulary_050] -(defines; event=N:event:2026-06-24_sop_color_channel_vocabulary_050; vocabulary=N:vocabulary:sop_color_channel_vocabulary; minimum=N:set:required_minimum)> [Graph:2026-06-24_sop_color_channel_vocabulary_050]
+    = realization: SOP optical work now has explicit channels for signal organization
+  / [E:guards:proof_and_risk_channels_050] -(guards; vocabulary=N:vocabulary:sop_color_channel_vocabulary; proof=N:set:proof_sensitive; risk=N:set:risk_sensitive)> [Graph:2026-06-24_sop_color_channel_vocabulary_050]
+    = realization: color channels cannot raise proof status without evidence, trace, honesty, and caution
+  / [E:bounds:channel_boundary_050] -(bounds; vocabulary=N:vocabulary:sop_color_channel_vocabulary; outside=N:outside:channel_boundary)> [Graph:2026-06-24_sop_color_channel_vocabulary_050]
+    = caution: unnamed or unsupported signal colors remain outside
+
+  = inside: SOPColorChannelVocabulary.sop, required channels, proof-sensitive channels, risk-sensitive channels, meaning-navigation channels
+  = boundary: symbolic semantic color channels for SOP work; not hidden activation color or physical light
+  = outside: unnamed channels, unsupported proof, hidden activations, and physical optics

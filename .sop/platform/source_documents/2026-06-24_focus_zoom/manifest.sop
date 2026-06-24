@@ -1,0 +1,12 @@
+Subject: Focus Zoom Source Manifest
+
+Description: Source preservation manifest for the focus zoom contract.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_focus_zoom
+  + [source_file] is F:\.sop\platform\source_documents\2026-06-24_focus_zoom\Dictated_Focus_Zoom_Source.sop
+  + [canonical_contract] is F:\.sop\platform\FocusZoom.sop
+  + [governance] is source_before_canonical
+  + [status] is canonicalized
+
+  = must: keep the dictated source available for future reinterpretation

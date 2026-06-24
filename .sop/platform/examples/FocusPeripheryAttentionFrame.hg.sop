@@ -1,0 +1,28 @@
+Subject: Focus Periphery Attention Frame Example
+
+Description: Example SOP-HG frame for focus, periphery, liminal draw, and narrative digestion.
+
+& [Graph:focus_periphery_attention_example] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG attention-layer-frame
+  = operation_stage: between_steps
+
+  + [N:narrative:moment_focus_periphery] is periphery draws focus through correlation and causal hypothesis
+    = operation_stage: between_steps
+  + [N:focus:focus] is focus
+    = weight: 5
+    = reason: explicit focus term
+  + [N:periphery:periphery] is periphery
+    = weight: 2
+    = reason: available related term
+  + [N:periphery:narrative] is narrative
+    = weight: 2
+    = reason: available related term
+
+/ [E:digests:moment_focus_periphery_focus] -(digests; narrative=N:narrative:moment_focus_periphery; target=N:focus:focus; target_position=focus; weight=5)> [Graph:focus_periphery_attention_example]
+/ [E:orbits:moment_focus_periphery_periphery] -(orbits; narrative=N:narrative:moment_focus_periphery; target=N:periphery:periphery; target_position=periphery; weight=2)> [Graph:focus_periphery_attention_example]
+/ [E:correlates:periphery_to_focus] -(correlates; source=N:periphery:periphery; target=N:focus:focus; weight=3)> [Graph:focus_periphery_attention_example]
+/ [E:draws_attention:periphery_draws_focus] -(draws_attention; source=N:periphery:periphery; target=N:focus:focus; weight=3)> [Graph:focus_periphery_attention_example]
+/ [E:causes:narrative_causes_focus] -(causes; source=N:periphery:narrative; target=N:focus:focus; weight=4; causal_status=hypothesis)> [Graph:focus_periphery_attention_example]
+
+- outside: causation remains hypothesis until supported by evidence

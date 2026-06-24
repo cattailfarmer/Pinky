@@ -1,0 +1,63 @@
+Subject: Meta Awareness Repository Function
+
+Description: SOP contract for the meta-awareness function inside the F:\.sop periphery repository.
+
+@ [source] F:\.sop\platform\MomentAwarenessBranchRefinement.sop
+
+& [MetaAwarenessRepository] is the meta-awareness function of the periphery repository that records awareness about realization between moments
+  + [repo_root] is F:\.sop
+  + [periphery_repository] is F:\.sop\platform\PeripheryRepository.sop
+  + [role] is meta_awareness_function
+  + [master_repo] is C:\Project\Pinky unless a later source explicitly changes the master
+  + [layer_under_analysis] is the repo, source layer, specification layer, runtime layer, or reflection layer whose changes are being studied
+  + [change_log] is the Git diff, commit log, file status, or emitted change record from the layer_under_analysis
+  + [narrative_moment] is one moment of attention, impulse, correction, justification, or realization during a turn
+  + [between_moments] is the interval where attention moved, meaning shifted, or a realization formed
+  + [realization_record] is the structured meaning extracted from narrative_moment and change_log correspondence
+  + [moment_branch_refinement] is F:\.sop\platform\MomentAwarenessBranchRefinement.sop for branch-isolated refinement of a reconstructed narrative moment
+  + [branch_refinement_artifact] is a deeper inspection record that remains isolated until selected for main awareness history
+  + [purpose_vector] is the desired purpose, direction, or justified adjustment that shaped the change
+  + [term_shaping] is the set of terms whose meaning, weighting, boundary, or relation changed while expressing refinement
+  + [justification_surface] is SJS, source preservation, tests, evidence, user directive, or design rationale supporting the adjustment
+  + [cross_over_surface] is the wide overlap between meta-awareness reflection and SJS justification
+  + [periphery_repo_role] is slow background realization of correlations not originally observed in primary attention formation
+  + [residual_outside] is unsupported intent, uninspected diff content, hidden model state, and causation not proven by correlation
+
+& [MetaAwarenessBoundary] is the boundary between primary-layer authority and periphery meta-awareness reflection
+  + [inside] is narrative realization over change logs, term shaping, purpose vectors, and justification links
+  + [boundary] is source preservation, repo bookends, SJS records, tests, proof claims, and explicit user directives
+  + [outside] is implementation truth that belongs to the layer_under_analysis, remote state not imported, hidden cognition, and unsupported causal claims
+
+  = must: record realizations made between narrative moments in a turn
+  = must: correspond each durable realization to change_log evidence or explicit outside
+  = must: allow deep moment refinements to live on branches before selection and merge
+  = must: distinguish desired purpose from justified change and observed result
+  = must: remain subordinate to PeripheryRepository for repo identity
+  = must: preserve SJS records as justification evidence when they exist
+  = must: preserve term_shaping when intended purpose is expressed through changed terms
+  = should: treat SJS and meta-awareness as overlapping systems with different authority
+  - never: treat meta-awareness reflection as proof of implementation correctness
+  - never: overwrite source or SJS justification with narrative realization
+  - never: infer causation from change adjacency without caution and evidence
+
+& [MetaAwarenessTurnMap] is the record shape for one turn-level reflection
+  + [turn_key] is the stable identifier for the turn or work interval
+  + [bookend_start] is old ref, prior file state, prior narrative frame, or starting moment
+  + [bookend_end] is new ref, current file state, current narrative frame, or ending moment
+  + [observed_directive] is the user instruction or governing purpose
+  + [moment_set] is ordered narrative moments inside the turn
+  + [change_log_slice] is the subset of changes corresponding to the turn
+  + [realization_set] is the realizations that formed between moments
+  + [branch_refinement_set] is optional branch_refinement_artifacts that deepen one or more moments without rewriting the original turn map
+  + [sjs_link_set] is any source, justification, plan, proof, or solution records that explain intended refinement
+  + [term_refinement_map] is terms whose meaning or weighting changed while shaping the purpose
+  + [residual_outside] is what remains unproven, ambiguous, or not yet attributed
+
+  = must: allow a realization to cite both narrative moment and change_log_slice
+  = must: allow SJS justification to explain why a change was made
+  = must: allow meta-awareness to notice how a realization emerged, even when SJS explains the formal justification
+  = must: keep branch_refinement_set separate from main realization_set until branch_selection_gate selects it
+
+/ [turn_interval] -(MetaAwarenessDelineation)> [narrative_moment_set], [change_log_slice], [sjs_link_set], [outside]
+
+* [narrative_moment_set], [change_log_slice], [purpose_vector], [term_refinement_map] -(MetaAwarenessRealization)> [realization_record]

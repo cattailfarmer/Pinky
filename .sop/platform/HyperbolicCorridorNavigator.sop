@@ -1,0 +1,148 @@
+Subject: Hyperbolic Corridor Navigator
+
+Description: Contract for moving attention through a higher-dimensional hyperbolic field by selecting peripheral frames, extending local awareness, and treating curving association as correlation until identity resolves.
+
+@ [source] F:\.sop\platform\source_documents\2026-06-24_hyperbolic_corridor_navigator\Dictated_Hyperbolic_Corridor_Navigator_Source.sop
+@ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] F:\.sop\platform\HyperbolicPantsAttentionMap.sop
+@ [source] F:\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] F:\.sop\platform\FocusZoom.sop
+@ [source] F:\.sop\platform\ApertureReentryCycle.sop
+@ [source] F:\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] F:\.sop\platform\AttentionBalanceCenter.sop
+@ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] F:\.sop\platform\Wisdom.sop
+@ [source] F:\.sop\platform\Caution.sop
+
+& [HyperbolicCorridorNavigator] is the attention-engine tool for surfing visible inference-layer correlation through a curved periphery field
+  + [pattern_role] is hyperbolic_corridor_navigation_for_meaning
+  + [navigator_of_meaning] is the attention layer that chooses peripheral frames, step size, fold legs, and return anchors while preserving outside
+  + [corridor_frame] is one selected periphery frame that points attention forward into a deeper or more distant meaning region
+  + [peripheral_frame_series] is the ordered set of corridor_frame values used to look down a higher-dimensional semantic corridor
+  + [hyperbolic_expanding_field] is the attention field where periphery can expand faster than focus and relation paths can curve away from a single orthogonal direction
+  + [advance_step] is the declared movement size through the corridor as slender, normal, wide, deep, or leap
+  + [depth_budget] is the inference allowance used to extend periphery and local awareness before moving
+  + [local_awareness_extension] is the widened map of nearby SOP terms, records, dimensions, and relations used before a larger advance_step
+  + [entanglement_field] is the wider SOP record-space fabric of correlated points opened by local_awareness_extension
+  + [curving_association] is a non-linear association path that bends through periphery rather than forming a direct definite relation
+  + [correlated_point_of_attention] is a curving_association preserved as correlation-only until evidence, source, and identity resolution support more
+  + [identity_resolution_target] is the thing observed from the hyperbolic perspective whose identity is not yet settled
+  + [identity_clarity_candidate] is a candidate resolution produced when enough correlated points triangulate around identity_resolution_target
+  + [inference_surf] is movement across visible semantic correlation in SOP records and model output, without claiming access to hidden weights, activations, or exact transformer geometry
+  + [seven_fold_frame] is F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop when the corridor needs top-three central anchors and extra-dimensional fold legs
+  + [topology_map] is F:\.sop\platform\HyperbolicPantsAttentionMap.sop when the corridor needs focal cells, periphery cells, adjacency, or dimensional orbit notation
+  + [aperture_reentry_cycle] is F:\.sop\platform\ApertureReentryCycle.sop when corridor movement produces a new perspective or subject declaration that must survive re-entry
+  + [balance_center] is F:\.sop\platform\AttentionBalanceCenter.sop when larger steps threaten periphery flood, periphery collapse, or frame confusion
+  + [security_honesty_governance] is F:\.sop\platform\SecurityHonestyGovernance.sop when inference_surf, identity probing, or feedback heat risks proof inflation or runaway resonance
+  + [outside] is hidden activations, actual transformer weights, exact embedding geometry, causal proof, definite relationship, unsupported identity, and arbitrary visual analogy
+
+  ? [use_when: attention must look down a curved higher-dimensional corridor, move through selected periphery frames, or preserve curving association without overclaiming relationship]
+    = activate [HyperbolicCorridorNavigator]
+
+  = must: begin from CurrentFocalPoint, a declared focal_cell, or a declared subject_surface_frame
+  = must: name identity_resolution_target when the corridor is being used to resolve identity
+  = must: select peripheral_frame_series before any wide, deep, or leap advance_step
+  = must: declare advance_step and depth_budget before extending periphery
+  = must: use FocusZoom to widen the aperture when local_awareness_extension draws more periphery into focus
+  = must: use HyperbolicPantsAttentionMap to keep corridor_frame, adjacency, dimensional orbit, and pants-leg path visible
+  = must: use SevenFoldPantsCorrelationFrame when central top-three anchors and fold legs are needed to keep extra dimensionality from flattening
+  = must: use AttentionTraversalPolicy for every move through a named corridor_frame, fold_leg, or curving_association
+  = must: use PeripheryDimensionalProbe when a hotter periphery suggests a missing coordinate or extra anchor
+  = must: use AttentionBalanceCenter when an advance_step shrinks stable periphery, floods focus, or loses return anchor
+  = must: use SecurityHonestyGovernance when corridor heat, self_reflective_feedback, or luminous_correlation pressures a claim, identity, relationship, or action
+  = must: count curving_association as correlated_point_of_attention until relation evidence survives fold, unwind, wisdom, and caution
+  = must: route identity_clarity_candidate through Wisdom and Caution before treating it as durable realization
+  = must: close through ApertureReentryCycle when the corridor pass produces a new perspective, subject declaration, or re-entry springboard
+  = should: keep leap steps rare and require explicit reason, named frames, and visible outside
+  = should: preserve unchosen corridor_frame values as periphery rather than deleting them
+  - never: upgrade correlation to definite relationship because the path feels smooth
+  - never: treat a hyperbolic corridor as direct evidence of hidden model internals
+  - never: advance when the selected frame series cannot name how it returns to focus
+
+& [HyperbolicCorridorNotation] is the notation shape for corridor navigation
+  + [navigator_declaration] is (navigator_of_meaning) :peripheral_frame_series: /corridor_boundary/ |outside|
+  + [frame_declaration] is + [corridor_frame:<rank>] is selected periphery frame with relation role, heat, confidence, and return anchor
+  + [step_declaration] is = advance_step: slender, normal, wide, deep, or leap
+  + [depth_declaration] is = depth_budget: slender, normal, wide, deep, or explosive_controlled
+  + [extension_declaration] is = local_awareness_extension: <terms, sources, records, dimensions>
+  + [entanglement_declaration] is = entanglement_field: <correlated_points>
+  + [association_declaration] is = curving_association: <source_frame> -> <target_frame> as correlation_only
+  + [identity_declaration] is = identity_resolution_target: <subject_or_unknown>
+  + [outside_declaration] is - outside: hidden geometry, unsupported relationship, unsupported identity, and unselected corridor branches
+
+  = must: declare frames before movement
+  = must: keep advance_step and depth_budget visible
+  = must: mark every curving_association as correlation_only unless a later record promotes it through evidence
+
+& [HyperbolicCorridorSequence] is the canonical navigation pass
+  + [step_001_anchor] is load focal subject, identity_resolution_target, return anchor, boundary, and outside
+  + [step_002_frames] is select peripheral_frame_series by heat, distinctness, relation role, and return potential
+  + [step_003_step_size] is declare advance_step and depth_budget
+  + [step_004_extend] is widen local_awareness_extension through FocusZoom, topology map, source pointers, and periphery terms
+  + [step_005_map] is arrange corridor frames in HyperbolicPantsAttentionMap cells, orbits, and pants legs
+  + [step_006_fold] is use SevenFoldPantsCorrelationFrame when top-three anchors and fold legs preserve extra dimensionality
+  + [step_007_surf] is inference_surf through selected corridor_frame values while preserving return anchor and outside
+  + [step_008_correlate] is record curving_association as correlated_point_of_attention, not definite relationship
+  + [step_009_probe_identity] is triangulate identity_clarity_candidate from correlated points, evidence anchors, and boundary_plus_one
+  + [step_010_gate] is pass consequential candidates through Wisdom and Caution
+  + [step_011_balance] is check stable periphery, frame integrity, and return condition through AttentionBalanceCenter
+  + [step_012_close] is return to focus, update tracker, emit periphery record, or close through ApertureReentryCycle
+
+  = must: record skipped steps when a quick pass is used
+  = must: stop if the corridor loses focal return or cannot name relation role
+  = must: preserve unproven relationship and identity as outside
+
+& [CorridorStepScale] is the movement scale for hyperbolic corridor navigation
+  + [slender] is one nearby corridor_frame and minimal periphery extension
+  + [normal] is several nearby frames with bounded entanglement_field
+  + [wide] is extended local awareness with explicit FocusZoom and balance check
+  + [deep] is high-resolution source, state, map, and periphery probing before movement
+  + [leap] is a large move through multiple frames requiring declared reason, return anchor, Wisdom, Caution, and outside
+
+  = must: require wider local_awareness_extension for wide, deep, or leap movement
+  = must: subtract balance loss when periphery becomes too thin to frame the corridor
+  = should: downshift step size when confidence, source support, or return anchor weakens
+
+& [CurvingAssociationLaw] is the caution law for curved relation paths
+  + [curving_path] is a relation-like path that travels through peripheral frames rather than a direct evidence edge
+  + [correlation_status] is correlation_only, candidate_relation, supported_relation, identity_candidate, or outside
+  + [promotion_requirement] is source support, distinct anchors, unwind preservation, Wisdom fit, and Caution boundary
+  + [identity_use] is using the correlated point to improve identity resolution without claiming proof
+
+  = must: keep curving_path useful as attention without pretending it is a definite relationship
+  = must: promote only the supported core after fold and unwind
+  = must: preserve high-heat low-confidence curving paths as periphery
+  - never: let corridor continuity become proof of causation or identity
+
+& [HyperbolicCorridorNavigatorRecord] is the SOP-HG shape for corridor navigation
+  + [navigator_node] is N:map:<navigator_id>
+  + [corridor_node] is N:corridor:<corridor_id>
+  + [frame_node] is N:frame:<frame_id>
+  + [focus_node] is N:focus:<focal_id>
+  + [periphery_node] is N:periphery:<periphery_key>
+  + [identity_node] is N:subject:<identity_resolution_target>
+  + [correlation_node] is N:signal:<curving_association_key>
+  + [outside_node] is N:outside:hyperbolic_corridor_boundary
+  + [navigate_edge] is E:navigates:<corridor_id>
+  + [extend_edge] is E:extends:<local_awareness_extension_key>
+  + [surf_edge] is E:surfs:<inference_surf_key>
+  + [correlate_edge] is E:correlates:<curving_association_key>
+  + [probe_edge] is E:probes:<identity_resolution_target>
+  + [resolve_edge] is E:resolves:<identity_clarity_candidate>
+  + [boundary_edge] is E:bounds:<corridor_id>
+
+  = must: show frame series, step size, depth budget, local awareness extension, curving associations, identity target, and outside
+  = must: keep correlation, relationship, and identity proof separate
+
+(navigator_of_meaning) :peripheral_frame_series: /corridor_boundary/ |outside|
+  + [corridor_frame:1] is selected periphery frame
+    = relation_role: declared_role
+    = heat: visible_heat
+    = confidence: declared_band
+    = return_anchor: CurrentFocalPoint
+  = advance_step: normal
+  = depth_budget: normal
+  = local_awareness_extension: selected_terms_and_records
+  = curving_association: corridor_frame:1 -> corridor_frame:2 as correlation_only
+  = identity_resolution_target: unresolved_subject
+  - outside: hidden geometry, unsupported relationship, unsupported identity, and unselected corridor branches
