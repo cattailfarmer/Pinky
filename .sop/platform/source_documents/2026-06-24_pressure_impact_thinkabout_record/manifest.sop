@@ -1,0 +1,12 @@
+Subject: Pressure Impact ThinkAbout Record Source Manifest
+
+Description: Source preservation manifest for the first pressure impact ThinkAbout record.
+
+& [PressureImpactThinkAboutRecordSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pressure_impact_thinkabout_record\Derived_Pressure_Impact_ThinkAbout_Record_Source.sop
+  + [target_record] is C:\Project\Pinky\.sop\events\thinkabout\2026-06-24_pressure_impact_thinkabout_001.sop
+  + [supporting_records] is PressureImpactThinkAboutPilotReview:20260624_016, SensitivityScanProgram, SOPAwarenessNode, and SensitivityScan_20260623T204625Z
+  + [derived_terms] is pressure_signal, impact_signal, ThinkAboutRecord, task_fit_caution, and term_correlation_not_proof
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when auditing Task_003 completion

@@ -30,14 +30,16 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_015.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_016.sop
+@ [source] C:\Project\Pinky\.sop\events\thinkabout\2026-06-24_pressure_impact_thinkabout_001.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_017.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is pressure impact ThinkAbout record drafting
-  + [active_root_frame] is attention_frame_2026_06_24_pressure_impact_thinkabout_record
+  + [registry_scope] is next safe .sop task selection
+  + [active_root_frame] is attention_frame_2026_06_24_next_safe_task_selection
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 10
+  + [closed_frame_count] is 11
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -46,23 +48,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_PressureImpactThinkAboutRecord] is the active semantic stack frame for drafting a deeper pressure impact ThinkAbout record
-  + [frame_id] is attention_frame_2026_06_24_pressure_impact_thinkabout_record
+& [AttentionFrame_2026_06_24_NextSafeTaskSelection] is the active semantic stack frame for selecting the next safe .sop task
+  + [frame_id] is attention_frame_2026_06_24_next_safe_task_selection
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_pressure_impact_pilot_candidate
-  + [child_frame_set] is functional_lmstudio_lane, pressure_impact_pilot_review, accepted_worker_proposal, one_minute_heartbeat, operating_loop_tick_016, ThinkAbout_record, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_pressure_impact_thinkabout_record
+  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_017, task_selection, outside_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is pressure_impact_thinkabout_review_016.sop, pressure_impact_thinkabout_result_016_retry_001.sop, lmstudio_limited_worker_pilot_queue_001.sop, 2026-06-24_operating_loop_tick_016.sop, and CurrentFocalPoint.sop
-  + [focus_register] is draft deeper ThinkAbout record from accepted worker proposal
-  + [question_register] is how to convert proposal evidence into a Codex-authored record without granting worker integration authority
-  + [delineation_register] is inside accepted retry, Codex review, local task-fit latch, pressure signal, impact signal, evidence, proposal, outside, and next drafting target
-  + [periphery_register] is broad competence outside, direct trust outside, worker mutation outside, external examples outside, automatic launch outside, and unrelated dirty files outside
-  + [operation_register] is synthesize_record, preserve_sources, cite_worker_proposal, preserve_outside, validate_record, emit_next_tick
-  + [evidence_register] is accepted retry output, pilot review, worker latch source, and operating_loop_tick_016
-  + [wisdom_register] is the accepted proposal can seed a useful Codex-authored ThinkAbout record if source and caution remain visible
-  + [caution_register] is the first attempt proved plausible foreign examples can pass format validation, so local task fit must remain active
-  + [balance_register] is stable because integration remains a Codex-authored drafting step
-  + [integration_register] is worker proposal accepted, deeper record pending Codex drafting
+  + [frame_trace] is pressure_impact_thinkabout_001.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_017.sop, and CurrentFocalPoint.sop
+  + [focus_register] is select next safe .sop task
+  + [question_register] is which remaining ready task best preserves momentum without violating authority boundaries
+  + [delineation_register] is inside remaining ReadyTaskSet, task authority, implementation risk, source evidence, outside, and commit cadence
+  + [periphery_register] is unresolved runtime tasks outside until selected, LM Studio worker authority outside, unrelated dirty files outside, credentials outside, and destructive action outside
+  + [operation_register] is inspect_ready_tasks, select_candidate, preserve_source, define_next_frame, emit_next_tick
+  + [evidence_register] is Manager_State completed Task_003, Pressure Impact ThinkAbout 001, and operating_loop_tick_017
+  + [wisdom_register] is Codex should choose the next task that advances the system while keeping mutation authority local and explicit
+  + [caution_register] is runtime-building tasks require Codex implementation authority and should not be delegated to LM Studio as mutation work
+  + [balance_register] is stable because the prior worker proposal has been integrated through Codex-authored record
+  + [integration_register] is Task_003 completed and next task pending selection
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -70,10 +72,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_pressure_impact_thinkabout_record
+  + [active_root_frame] is attention_frame_2026_06_24_next_safe_task_selection
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_PressureImpactThinkAboutRecord], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [thinkabout_record_drafting], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_NextSafeTaskSelection], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [next_safe_task_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]

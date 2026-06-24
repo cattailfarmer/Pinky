@@ -1,0 +1,18 @@
+Subject: Derived Pressure Impact ThinkAbout Record Source
+
+Description: Preserved derived source for drafting the first pressure impact ThinkAbout record under Codex authority.
+
+& [DerivedPressureImpactThinkAboutRecordSource] is preserved derived source
+  + [source_type] is codex_integration_from_worker_proposal_and_local_sop_evidence
+  + [observed_subject] is pressure impact ThinkAbout record drafting
+  + [worker_proposal] is C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_result_016_retry_001.sop
+  + [codex_review] is C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop
+  + [local_evidence] is SensitivityScan.sop, SOPAwarenessNode.sop, and 2026-06-23_seed_awareness_node_scan.sop
+  + [integration_disposition] is Codex-authored integration of an accepted worker proposal into a durable ThinkAbout record
+  + [reason_for_change] is Task_003 asked to deepen pressure and impact scan signals into ThinkAbout records
+  + [outside] is causal proof, hidden model state, worker authorship authority, direct trust, external examples, repo mutation by worker, and broad LM Studio competence
+
+  = must: treat the worker proposal as cited input, not as authoring authority
+  = must: preserve the task-fit caution from attempt 000
+  = must: keep pressure and impact as attention signals unless evidence upgrades them
+  - never: treat term correlation as proof

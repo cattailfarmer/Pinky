@@ -1,0 +1,28 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_017] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_017
+  + [focus_subject] is pressure impact ThinkAbout record drafting
+  + [completed_step] is drafted Pressure Impact ThinkAbout 001 under Codex authority from accepted worker proposal evidence, preserved task-fit caution, and completed Task_003
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is select the next safe .sop task from the remaining ReadyTaskSet under Codex authority
+  + [created_utc] is 2026-06-24T21:16:00Z
+  + [evidence_refs] is .sop\events\thinkabout\2026-06-24_pressure_impact_thinkabout_001.sop, .sop\platform\source_documents\2026-06-24_pressure_impact_thinkabout_record\Derived_Pressure_Impact_ThinkAbout_Record_Source.sop, .sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop, and .sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_result_016_retry_001.sop
+  + [outside] is broad LM Studio competence, project-root authority, worker mutation, hidden model state, direct trust of worker output, automatic launch, destructive action, credentials, unsupervised PC control, unresolved runtime tasks, and unrelated dirty files
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve Codex authority over durable integration
+  = must: preserve outside before scheduling next_step
+  - never: treat worker proposal as durable record without Codex-authored integration
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_017
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is select the next safe .sop task from the remaining ReadyTaskSet
+  |outside| broad LM Studio competence, project-root authority, worker mutation, hidden model state, direct trust, automatic launch, destructive action, credentials, unsupervised PC control, unresolved runtime tasks, and unrelated dirty files
