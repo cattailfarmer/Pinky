@@ -7,6 +7,7 @@ Description: Contract for booting local SOP workers with authority hierarchy and
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\platform\ControlledExplosionReadiness.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_delineation_worker_latch\Derived_Boundary_Delineation_Worker_Latch_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_outside_preservation_worker_latch\Derived_Outside_Preservation_Worker_Latch_Source.sop
 
 & [SOPWorkerBootPacket] is the intent-context boot layer for local SOP workers
   + [pattern_role] is local_worker_intent_context_boot
@@ -23,6 +24,7 @@ Description: Contract for booting local SOP workers with authority hierarchy and
   + [intent_context_fidelity] is whether the output keeps local_law, intent_anchor, inside, boundary, outside, caution, and next_step aligned to the packet
   + [exact_format_latch] is the requirement that exact-schema tasks return raw SOP lines only, without Markdown bullets, bolding, headings, commentary, or colon-form substitutions
   + [property_line_latch] is the requirement that every property line use the exact operator form + [field] is value, with the literal word is after the bracketed field name
+  + [required_term_bundle_latch] is the requirement that validator-critical literal terms remain present together when a task depends on exact term evidence
   + [negative_inside_rule] is the requirement that explicitly excluded frameworks may appear only in outside, never inside, boundary, inference, caution, or next_step as governing material
   + [boot_self_check] is the worker naming local_law, outside_context, forbidden_substitution, and output_duty before writing the answer or internally applying those checks when exact schema forbids extra fields
   + [boot_outside] is hidden model state, unprovided repository contents, unrelated project rails, generic domain examples, and worker authority claims
@@ -38,6 +40,7 @@ Description: Contract for booting local SOP workers with authority hierarchy and
   = must: score substitution_fault separately from syntax compliance
   = must: enforce exact_format_latch when a benchmark says "exactly this schema and no extra text"
   = must: enforce property_line_latch when raw SOP property lines are required
+  = must: enforce required_term_bundle_latch when required literal terms are load-bearing validation evidence
   = must: enforce negative_inside_rule when a prompt explicitly names frameworks or rails as outside
   = must: treat exact schema compliance without intent_context_fidelity as weak or failed for framework comprehension
   = should: use a self-check field when the output schema allows it
@@ -53,7 +56,8 @@ Description: Contract for booting local SOP workers with authority hierarchy and
   + [substitution_fault] is schema compliance with wrong governing inside
   + [exact_format_latch] is raw SOP lines only when exact schema is required
   + [property_line_latch] is every property line must be + [field] is value
+  + [required_term_bundle_latch] is validator-critical literal terms must remain present together
   |boot_outside| hidden state, unprovided repo contents, unrelated project rails, generic examples, and worker authority claims
 
 / [SOPLanguagePrimerForLocalAgents], [SOPWorkerBootPacket], [LMStudioAgentBenchmark] -(Boots)> [intent_context_fidelity], [task_content_authority], [boot_outside]
-* [intent_anchor], [local_law], [output_duty], [exact_format_latch], [property_line_latch] -(Prevents)> [substitution_fault], [context_gravity], [hollow_form], [operator_substitution]
+* [intent_anchor], [local_law], [output_duty], [exact_format_latch], [property_line_latch], [required_term_bundle_latch] -(Prevents)> [substitution_fault], [context_gravity], [hollow_form], [operator_substitution], [literal_term_drop]

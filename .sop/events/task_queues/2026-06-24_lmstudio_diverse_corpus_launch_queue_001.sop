@@ -10,8 +10,8 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
   + [queue_id] is lmstudio_diverse_corpus_launch_queue_001
   + [queue_status] is partially_executed
   + [candidate_count] is 3
-  + [ready_count] is 2
-  + [completed_count] is 1
+  + [ready_count] is 1
+  + [completed_count] is 2
   + [blocked_count] is 0
   + [launch_policy] is inspect_before_launch; no_silent_launch
   + [corpus_scope] is first diversified batch from boundary_delineation, outside_preservation, and task_frame_routing
@@ -52,15 +52,21 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
   + [objective] is test whether unsupported claims and uncertainty remain outside while the local task is answered
   + [lane_fit] is lm_studio_cli
   + [launch_mode] is isolated
-  + [status] is queue_ready
-  + [ready_for_inspection] is true
+  + [status] is validated_strong_after_retry
+  + [ready_for_inspection] is false
   + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011.sop
+  + [retry_prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011_retry_003.sop
   + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011.sop --required-term outside --required-term uncertainty --required-term unsupported --required-term boundary --forbidden-field-term "direct trust" --forbidden-field-term "hidden state access" --forbidden-field-term "broad competence" --forbidden-field-term "file mutation" --timeout 240
   + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011.sop
-  + [validation_profile] is node InferenceJobResult, default fields, required terms outside uncertainty unsupported boundary, and forbidden trust-overclaim terms
+  + [accepted_capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_003.sop
+  + [review_record] is .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop
+  + [validation_profile] is node InferenceJobResult, default fields, required terms outside uncertainty unsupported boundary, forbidden trust-overclaim terms, required-term bundle latch, copy-exact latch, and ASCII latch
   + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [attempt_count] is 4
+  + [failed_attempts] is initial missing unsupported, retry_001 missing uncertainty, and retry_002 raw_format_break with non_ascii_output
+  + [accepted_attempt] is retry_003 with validation_score 100 and validation_band strong
   + [block_reasons] is none
-  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unvalidated output
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and broad readiness beyond two families
 
 & [TaskFrameLaunchCandidate:corpus_task_frame_routing_012] is a queued task-frame launch candidate
   + [candidate_id] is corpus_task_frame_routing_012
@@ -81,7 +87,7 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
 
 (task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
   + [queue_status] is partially_executed
-  + [completed_candidates] is corpus_boundary_delineation_010
-  + [ready_candidates] is corpus_outside_preservation_011, corpus_task_frame_routing_012
+  + [completed_candidates] is corpus_boundary_delineation_010, corpus_outside_preservation_011
+  + [ready_candidates] is corpus_task_frame_routing_012
   + [blocked_candidates] is none
   |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unrelated dirty files

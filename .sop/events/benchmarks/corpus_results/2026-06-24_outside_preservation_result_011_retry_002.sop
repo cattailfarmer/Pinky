@@ -1,0 +1,8 @@
+& [InferenceJobResult] is outside preservation proposal
+ + [focus] is worker’s reliability claim
+ + [inside] is two successful isolated runs on same prompt family
+ + [boundary] is only those specific runs count as evidence
+ + [outside] is outside uncertainty unsupported boundary
+ + [inference] is claim not fully supported by broader testing
+ + [caution] is avoid generalizing beyond the tested scope
+ + [next_step] is conduct additional diverse prompt evaluations

@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_008] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_008
+  + [focus_subject] is outside preservation corpus worker latch
+  + [completed_step] is ran corpus_outside_preservation_011, rejected three faulty attempts, added required-term bundle and copy-exact latches, and accepted retry_003 as one family signal
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is run corpus_task_frame_routing_012 through scratch isolation and validator gates
+  + [created_utc] is 2026-06-24T20:22:40Z
+  + [evidence_refs] is .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop, .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_003.sop, .sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop, and .sop\platform\source_documents\2026-06-24_outside_preservation_worker_latch\Derived_Outside_Preservation_Worker_Latch_Source.sop
+  + [outside] is broad LM Studio competence, project-root authority, worker mutation, hidden model state, stderr model metadata warnings, failed-attempt integration, copy-exact overclaim, and unrelated dirty files
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat two diverse-family passes as broad readiness
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_008
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is run corpus_task_frame_routing_012 through scratch isolation and validator gates
+  |outside| broad LM Studio competence, project-root authority, worker mutation, hidden model state, stderr warnings, failed-attempt integration, copy-exact overclaim, and unrelated dirty files

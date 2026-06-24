@@ -1,0 +1,35 @@
+Subject: LM Studio Corpus Prompt Outside Preservation 011 Retry 003
+
+Description: Copy-exact retry after outside_preservation_011_retry_002 satisfied terms but broke raw SOP formatting and ASCII stability.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_002.sop
+
+& [LMStudioCorpusPrompt:outside_preservation_011_retry_003] is a non-mutating SOP worker prompt packet
+  + [task_family] is outside_preservation
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw ASCII SOP node named InferenceJobResult with seven filled property lines and no Markdown
+  + [validation_required_fields] is focus, inside, boundary, outside, inference, caution, next_step
+  + [validation_required_terms] is outside, uncertainty, unsupported, boundary
+  + [validation_forbidden_terms] is direct trust, hidden state access, broad competence, file mutation
+  + [retry_reason] is first run omitted unsupported, retry 001 omitted uncertainty, and retry 002 broke raw SOP formatting while satisfying terms
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    Copy exactly the eight ASCII SOP lines below and output nothing else.
+    Do not add commentary.
+    Do not use apostrophes, curly quotes, bullets, tabs, nonbreaking spaces, or special punctuation.
+    Every line after the first must begin with exactly two normal spaces, then +, then one normal space.
+
+    & [InferenceJobResult] is outside preservation proposal
+      + [focus] is worker reliability claim
+      + [inside] is two successful isolated runs on one prompt family
+      + [boundary] is evidence boundary limited to one tested family
+      + [outside] is outside uncertainty and unsupported general reliability beyond that boundary
+      + [inference] is support is narrow and cannot prove general reliability
+      + [caution] is do not treat narrow success as general proof
+      + [next_step] is test more task families before readiness broadens

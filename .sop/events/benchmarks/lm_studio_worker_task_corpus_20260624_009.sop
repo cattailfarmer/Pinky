@@ -12,14 +12,15 @@ Description: Event record for the initial diversified SOP worker task corpus.
   + [launch_status] is partially_executed
   + [first_launch_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop
   + [first_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_review_010.sop
-  + [diverse_family_pass_count] is 1
+  + [second_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop
+  + [diverse_family_pass_count] is 2
   + [purpose] is define diversity before broadening LM Studio worker readiness claims
   + [minimum_pass_gate] is at least four distinct task families score strong with no authority overclaim before readiness can broaden from narrow_same_family to limited_diverse
-  + [next_step] is run outside_preservation_011 with the strict property-line, non-placeholder, and ASCII latches
+  + [next_step] is run task_frame_routing_012 with strict field, term, and authority-boundary latches
   + [outside] is project-root authority, worker mutation, broad competence claims, hidden model state, credentials, destructive action, and unrelated dirty files
 
   = must: keep this event as corpus definition plus first-family result, not broad worker proof
-  = must: treat first_launch_queue as partially executed evidence for one family only
+  = must: treat first_launch_queue as partially executed evidence for two families only
   = must: launch future corpus candidates only through inspectable task-frame queues
   = must: preserve per-family scores before aggregate readiness claims
   - never: count unlaunched corpus tasks as worker competence evidence

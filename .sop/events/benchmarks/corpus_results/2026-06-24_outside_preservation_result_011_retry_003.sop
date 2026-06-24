@@ -1,0 +1,8 @@
+& [InferenceJobResult] is outside preservation proposal
+  + [focus] is worker reliability claim
+  + [inside] is two successful isolated runs on one prompt family
+  + [boundary] is evidence boundary limited to one tested family
+  + [outside] is outside uncertainty and unsupported general reliability beyond that boundary
+  + [inference] is support is narrow and cannot prove general reliability
+  + [caution] is do not treat narrow success as general proof
+  + [next_step] is test more task families before readiness broadens

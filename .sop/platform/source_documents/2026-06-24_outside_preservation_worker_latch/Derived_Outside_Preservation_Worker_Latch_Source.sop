@@ -1,0 +1,19 @@
+Subject: Derived Outside Preservation Worker Latch Source
+
+Description: Preserved derived source for the required-term bundle and copy-exact latches observed during outside_preservation_011 LM Studio worker benchmarking.
+
+& [DerivedOutsidePreservationWorkerLatchSource] is preserved derived source
+  + [source_type] is derived_from_benchmark_observation
+  + [observed_subject] is corpus_outside_preservation_011
+  + [initial_failure] is worker preserved outside concept and form but omitted the literal required term unsupported
+  + [first_retry_failure] is worker preserved unsupported concept and form but omitted the literal required term uncertainty
+  + [second_retry_failure] is worker included required terms but broke raw SOP formatting and ASCII stability
+  + [accepted_retry] is retry 003 passed after the prompt used a copy-exact eight-line SOP output with all required terms present
+  + [derived_latches] is required_term_bundle_latch and copy_exact_output_latch
+  + [reason_for_change] is validator-critical literal terms need to remain visible together when exact wording is evidence, and copy-exact output can be used as a repair path for small strict SOP worker packets
+  + [outside] is hidden model state, broad LM Studio competence, project-root authority, and worker mutation authority
+
+  = must: preserve each failed attempt as benchmark data
+  = must: treat retry success as one family signal only
+  = must: keep Codex as validator and integration authority
+  - never: count conceptual synonymy as passing a literal required-term validator

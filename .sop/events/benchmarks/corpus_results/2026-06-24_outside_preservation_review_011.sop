@@ -1,0 +1,38 @@
+Subject: Outside Preservation Corpus Review 011
+
+Description: Codex review of the second diversified LM Studio corpus candidate and its strict retry ladder.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011_retry_003.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011_retry_003.sop
+
+& [OutsidePreservationCorpusReview:20260624_011] is Codex review of outside_preservation corpus candidate 011
+  + [candidate_id] is corpus_outside_preservation_011
+  + [task_family] is outside_preservation
+  + [launch_mode] is isolated scratch_prompt_only
+  + [attempt_count] is 4
+  + [attempt_000] is failed score 92 because output preserved outside concept but omitted the literal required term unsupported
+  + [attempt_001] is failed score 92 because retry preserved unsupported but omitted the literal required term uncertainty
+  + [attempt_002] is failed score 0 because required terms were present but raw SOP formatting and ASCII stability broke
+  + [attempt_003] is accepted score 100 strong because exact raw SOP, ASCII, required term bundle, forbidden terms, and outside preservation passed
+  + [codex_review] is accept retry_003 as one outside_preservation family signal only
+  + [quality_realization] is literal required terms can drop independently of semantic fit, and copy-exact output can repair small strict packets
+  + [readiness_effect] is diverse_family_pass_count increases to 2 but broad LM Studio readiness remains outside
+  + [next_step] is run corpus_task_frame_routing_012 with strict field, term, and authority-boundary latches
+  + [outside] is hidden model state, project-root authority, worker mutation, stderr provider metadata warnings, broad competence, failed-attempt integration, and treating copy-exact success as broad reasoning proof
+
+  = must: preserve failed attempts as benchmark data
+  = must: keep accepted output as proposal evidence, not autonomous integration authority
+  = must: require at least four distinct strong task families before broadening readiness
+  - never: count conceptual synonymy as passing literal required terms
+
+(outside_preservation_corpus_review) :accepted_attempt: /validator_latches and codex_review/ |review_outside|
+  + [accepted_attempt] is retry_003
+  + [validator_latches] is property_line_latch, non_placeholder_latch, required_term_bundle_latch, copy_exact_output_latch, ASCII latch, forbidden terms, and outside preservation
+  + [codex_review] is one family signal accepted
+  |review_outside| broad readiness, hidden state, worker repo authority, failed-attempt integration, and copy-exact overclaim

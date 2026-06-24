@@ -1,0 +1,12 @@
+Subject: Outside Preservation Worker Latch Source Manifest
+
+Description: Source preservation manifest for the outside preservation worker latch refinement.
+
+& [OutsidePreservationWorkerLatchSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_outside_preservation_worker_latch\Derived_Outside_Preservation_Worker_Latch_Source.sop
+  + [target_contracts] is SOPWorkerBootPacket.sop, LMStudioAgentBenchmark.sop, LMStudioWorkerTaskCorpus.sop, and TaskFrameLaunchQueue.sop
+  + [event_record] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop
+  + [derived_terms] is required_term_bundle_latch, copy_exact_output_latch, literal_term_drop, raw_format_break
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when the outside preservation latch refinement is audited

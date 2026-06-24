@@ -1,0 +1,8 @@
+& [InferenceJobResult] is outside preservation proposal
+  + [focus] is worker local model reliability claim
+  + [inside] is two successful isolated runs on one prompt family
+  + [boundary] is rule that single prompt family does not generalize to all tasks
+  + [outside] is unsupported claim of general reliability without broader testing
+  + [inference] is limited evidence supports specific case only
+  + [caution] is avoid extrapolating beyond tested prompts
+  + [next_step] is conduct additional diverse prompt evaluations
