@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 10
-  + [completed_task_count] is 132
+  + [completed_task_count] is 133
   + [blocked_task_count] is 2
 
 & [CompletedTaskSet] is completed work
@@ -254,6 +254,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_result_013.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_011.sop
   + [Task_132_run_periphery_correlation_corpus_candidate] is run corpus_periphery_correlation_014 through scratch-isolated Codex CLI over LM Studio, preserve two rejected attempts, accept retry_002 as score 100 strong, record the fifth distinct family signal, and keep causation proof outside
     = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_result_014_retry_002.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_012.sop
+  + [Task_133_run_integration_disposition_corpus_candidate] is run corpus_integration_disposition_015 through scratch-isolated Codex CLI over LM Studio, preserve two rejected attempts, accept retry_002 as score 100 strong, complete the six-family corpus, and keep broad competence outside
+    = evidence: C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop, C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_result_015_retry_002.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_013.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_003_deepen_pressure_impact_records] is turn pressure and impact scan signals into deeper ThinkAbout records

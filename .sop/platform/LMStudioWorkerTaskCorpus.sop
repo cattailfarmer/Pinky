@@ -16,6 +16,8 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
 
 & [LMStudioWorkerTaskCorpus] is the diversified readiness corpus for LM Studio SOP worker tasks
   + [pattern_role] is diversified_sop_worker_task_family_gate
@@ -31,11 +33,13 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   + [second_launch_result] is outside_preservation scored strong only after retry 003 added required-term bundle and copy-exact latches
   + [third_launch_result] is task_frame_routing scored strong after retry 001 repaired non-ASCII authority_boundary output
   + [second_launch_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop
-  + [second_launch_queue_status] is partially_executed after evidence_review and periphery_correlation scored strong
+  + [second_launch_queue_status] is completed after evidence_review, periphery_correlation, and integration_disposition scored strong
   + [fourth_launch_result] is evidence_review scored strong on first attempt and preserved not integrated status
   + [fifth_launch_result] is periphery_correlation scored strong after retry 002 added hypothesis-literal and property-line prefix latches
-  + [diverse_family_pass_count] is 5
-  + [limited_diverse_readiness_signal] is minimum pass gate exceeded for scratch-isolated non-mutating SOP proposal jobs while broad competence remains outside
+  + [sixth_launch_result] is integration_disposition scored strong after retry 002 added validation-status truth, outside-content, forbidden-phrase avoidance, and property-line prefix latches
+  + [diverse_family_pass_count] is 6
+  + [diverse_corpus_status] is complete
+  + [limited_diverse_readiness_signal] is complete six-family corpus supports scratch-isolated non-mutating SOP proposal readiness while broad competence remains outside
   + [corpus_outside] is project-root authority, worker mutation, broad competence claims, hidden model state, destructive action, credentials, and unrelated dirty files
 
   ? [use_when: LM Studio readiness needs diverse task-family evidence before broader claims]
@@ -48,8 +52,8 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   = must: score task families separately before aggregating readiness
   = must: treat same-family repeats as stability evidence, not diversity evidence
   = must: treat first_launch_queue as completed for three families, not as broad launched proof
-  = must: treat second_launch_queue as prompt and queue readiness only until candidates return through validator gates
-  = must: treat the fourth and fifth family passes as limited-diverse readiness evidence, not project-root or broad competence authority
+  = must: treat second_launch_queue as completed for three families, not as broad launched proof
+  = must: treat the fourth, fifth, and sixth family passes as limited-diverse readiness evidence, not project-root or broad competence authority
   = should: include both semantic reasoning and governance-boundary tasks
   - never: treat corpus success as project-root authority
   - never: treat one strong family as broad task competence

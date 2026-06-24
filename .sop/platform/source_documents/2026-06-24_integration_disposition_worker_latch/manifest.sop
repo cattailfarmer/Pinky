@@ -1,0 +1,12 @@
+Subject: Integration Disposition Worker Latch Source Manifest
+
+Description: Source preservation manifest for the integration disposition worker latch refinement.
+
+& [IntegrationDispositionWorkerLatchSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
+  + [target_contracts] is LMStudioAgentBenchmark.sop, LMStudioWorkerFunctionalLane.sop, LMStudioWorkerTaskCorpus.sop, and lmstudio_diverse_corpus_launch_queue_002.sop
+  + [event_record] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
+  + [derived_terms] is validation_status_truth_latch, outside_content_latch, forbidden_phrase_avoidance_latch, property_line_prefix_latch, and sixth_family_signal
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when auditing the integration-disposition retry ladder

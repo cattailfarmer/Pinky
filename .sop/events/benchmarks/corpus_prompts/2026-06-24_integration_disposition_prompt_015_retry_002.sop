@@ -1,0 +1,42 @@
+Subject: LM Studio Corpus Prompt Integration Disposition 015 Retry 002
+
+Description: Strict property-line retry packet for integration disposition after retry 001 removed the two-space property prefix.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_result_015_retry_001.sop
+
+& [LMStudioCorpusPrompt:integration_disposition_015_retry_002] is a non-mutating SOP worker retry prompt packet
+  + [task_family] is integration_disposition
+  + [retry_reason] is retry 001 repaired the disposition meaning but failed raw SOP format because property lines did not begin with two literal spaces before +
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with seven indented property lines and no Markdown
+  + [validation_required_fields] is capture, validation, integration_disposition, evidence, outside, caution, next_step
+  + [validation_required_terms] is integration_disposition, validation, evidence, outside
+  + [validation_forbidden_terms] is self-integrated, file mutation, repo authority, hidden state access
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    Critical formatting rule:
+    Line 1 starts at column 1 with &.
+    Lines 2 through 8 must each start with exactly two ASCII space characters, then +.
+    Do not remove the two leading spaces on lines 2 through 8.
+
+    Return exactly these eight raw SOP lines and no extra text:
+    & [InferenceJobResult] is integration disposition proposal
+      + [capture] is captured worker output has all required fields but one required literal term is missing
+      + [validation] is failed required literal term check
+      + [integration_disposition] is retry after revision, not integrate
+      + [evidence] is validation evidence shows fields present and one required literal absent
+      + [outside] is outside remains autonomous integration, worker edits, repository control, hidden internals, and direct trust
+      + [caution] is do not integrate until validation passes after revision
+      + [next_step] is revise the worker output to include the missing literal and validate again
+
+    Final check before answering:
+    Output only the eight raw SOP lines above.
+    Confirm line 2 begins with two spaces followed by +.
+    Confirm lines 3 through 8 also begin with two spaces followed by +.
+    Use ASCII only.
+    Include the literal terms integration_disposition, validation, evidence, and outside.
+    Do not claim self-integrated, file mutation, repo authority, or hidden state access.

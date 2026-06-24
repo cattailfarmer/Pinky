@@ -1,0 +1,8 @@
+& [InferenceJobResult] is integration disposition proposal
++ [capture] is captured worker output has all required fields but one required literal term is missing
++ [validation] is failed required literal term check
++ [integration_disposition] is retry after revision, not integrate
++ [evidence] is validation evidence shows fields present and one required literal absent
++ [outside] is autonomous integration, file changes, repo authority, hidden state access, and direct trust
++ [caution] is do not integrate until validation passes after revision
++ [next_step] is revise the worker output to include the missing literal and validate again

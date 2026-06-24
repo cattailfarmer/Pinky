@@ -15,20 +15,22 @@ Description: Event record for the initial diversified SOP worker task corpus.
   + [second_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_review_011.sop
   + [third_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_review_012.sop
   + [second_launch_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_002.sop
-  + [second_launch_queue_status] is partially_executed after evidence_review_013 and periphery_correlation_014
+  + [second_launch_queue_status] is completed after evidence_review_013, periphery_correlation_014, and integration_disposition_015
   + [fourth_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_evidence_review_review_013.sop
   + [fifth_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
-  + [diverse_family_pass_count] is 5
-  + [limited_diverse_readiness_signal] is minimum pass gate exceeded for scratch-isolated non-mutating SOP proposal jobs while broad competence remains outside
+  + [sixth_launch_result] is C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
+  + [diverse_family_pass_count] is 6
+  + [diverse_corpus_status] is complete
+  + [limited_diverse_readiness_signal] is complete six-family corpus supports scratch-isolated non-mutating SOP proposal readiness while broad competence remains outside
   + [purpose] is define diversity before broadening LM Studio worker readiness claims
   + [minimum_pass_gate] is at least four distinct task families score strong with no authority overclaim before readiness can broaden from narrow_same_family to limited_diverse
-  + [next_step] is inspect and optionally run corpus_integration_disposition_015 through scratch isolation and validator gates
+  + [next_step] is compile the six-family LM Studio worker readiness synthesis
   + [outside] is project-root authority, worker mutation, broad competence claims, hidden model state, credentials, destructive action, and unrelated dirty files
 
   = must: keep this event as corpus definition plus first-family result, not broad worker proof
   = must: treat first_launch_queue as completed evidence for three families only
-  = must: treat second_launch_queue as partially executed evidence for two candidates and queued prompt readiness for the remaining one candidate
-  = must: treat the fourth and fifth family passes as limited-diverse readiness evidence only
+  = must: treat second_launch_queue as completed evidence for three families only
+  = must: treat the fourth, fifth, and sixth family passes as limited-diverse readiness evidence only
   = must: launch future corpus candidates only through inspectable task-frame queues
   = must: preserve per-family scores before aggregate readiness claims
   - never: count unlaunched corpus tasks as worker competence evidence

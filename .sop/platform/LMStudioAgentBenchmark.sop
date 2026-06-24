@@ -28,6 +28,8 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_evidence_review_worker_signal\Derived_Evidence_Review_Worker_Signal_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_periphery_correlation_review_014.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_periphery_correlation_worker_latch\Derived_Periphery_Correlation_Worker_Latch_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -71,8 +73,9 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [task_frame_routing_retry_ladder] is third diverse family passed fields and routing intent on first attempt but needed copy-exact ASCII repair before retry 001 scored 100 strong
   + [evidence_review_first_pass] is fourth diverse family scored 100 strong on first attempt while preserving not integrated status
   + [periphery_correlation_retry_ladder] is fifth diverse family had semantic correlation on first attempt, needed hypothesis-literal and property-line prefix latches, and scored 100 strong on retry 002
-  + [second_corpus_queue_status] is evidence_review and periphery_correlation completed strong; integration_disposition remains ready for inspection but not launched
-  + [limited_diverse_readiness_signal] is minimum pass gate exceeded for scratch-isolated non-mutating SOP proposal jobs, with broad competence and project-root authority still outside
+  + [integration_disposition_retry_ladder] is sixth diverse family had validation-status blur on first attempt, needed outside-content and property-line prefix latches, and scored 100 strong on retry 002
+  + [second_corpus_queue_status] is evidence_review, periphery_correlation, and integration_disposition completed strong
+  + [limited_diverse_readiness_signal] is complete six-family corpus supports scratch-isolated non-mutating SOP proposal readiness, with broad competence and project-root authority still outside
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]

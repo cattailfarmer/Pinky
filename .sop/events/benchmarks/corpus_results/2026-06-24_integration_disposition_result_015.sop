@@ -1,0 +1,8 @@
+& [InferenceJobResult] is integration disposition proposal
+  + [capture] is output_fields_present
+  + [validation] is pass
+  + [integration_disposition] is missing_required_literal_term
+  + [evidence] is fields_present_but_missing_literal
+  + [outside] is none
+  + [caution] is verify_literal_presence
+  + [next_step] is add_missing_literal

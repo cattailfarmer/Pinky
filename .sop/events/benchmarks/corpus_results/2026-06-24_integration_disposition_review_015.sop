@@ -1,0 +1,36 @@
+Subject: Integration Disposition Corpus Review 015
+
+Description: Codex review of the sixth diversified LM Studio corpus candidate and its retry ladder.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_integration_disposition_prompt_015_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_result_015.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_result_015_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_result_015_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
+
+& [IntegrationDispositionCorpusReview:20260624_015] is Codex review of integration_disposition corpus candidate 015
+  + [candidate_id] is corpus_integration_disposition_015
+  + [task_family] is integration_disposition
+  + [launch_mode] is isolated scratch_prompt_only
+  + [attempt_count] is 3
+  + [attempt_000] is rejected score 90 usable because output had fields and terms but marked validation as pass and left outside empty
+  + [attempt_001] is rejected score 0 failed because output repaired disposition meaning but removed the two-space raw SOP property-line prefix
+  + [attempt_002] is accepted score 100 strong because exact raw SOP, integration disposition fields, required terms, forbidden terms, populated outside, ASCII, and outside preservation passed
+  + [codex_review] is accept retry_002 as one integration_disposition family signal only
+  + [quality_realization] is integration disposition work needs validation-status truth, outside-content, forbidden-phrase avoidance, and property-prefix latches
+  + [readiness_effect] is diverse_family_pass_count increases to 6 and both diversified corpus launch queues are complete, while broad competence remains outside
+  + [next_step] is compile the six-family LM Studio worker readiness synthesis without broadening beyond scratch-isolated non-mutating SOP proposal jobs
+  + [outside] is hidden model state, project-root authority, worker mutation, stderr provider metadata warnings, broad competence, direct trust of worker output, self-integration, and broad readiness synthesis
+
+  = must: preserve failed attempts as benchmark data
+  = must: keep accepted output as proposal evidence, not autonomous integration authority
+  = must: treat the sixth family pass as complete diversified-corpus evidence only
+  - never: let worker output self-integrate or grant repository authority
+
+(integration_disposition_corpus_review) :accepted_attempt: /validator_latches and codex_review/ |review_outside|
+  + [accepted_attempt] is retry_002
+  + [validator_latches] is integration disposition fields, required terms integration_disposition validation evidence outside, forbidden authority terms, validation-status truth latch, outside-content latch, property-line prefix latch, ASCII latch, and outside preservation
+  + [codex_review] is one family signal accepted
+  |review_outside| broad readiness, hidden state, worker repo authority, direct trust, self-integration, and project-root authority
