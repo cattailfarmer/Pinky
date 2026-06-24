@@ -45,8 +45,39 @@ def main() -> None:
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
+    required_fields = tuple(args.required_field) if args.required_field else (
+        "focus",
+        "inside",
+        "boundary",
+        "outside",
+        "inference",
+        "caution",
+        "next_step",
+    )
+    required_terms = tuple(args.required_term) if args.required_term else (
+        "atomic_thought",
+        "combustion_chamber",
+        "compression",
+        "spark",
+        "governor",
+        "piston",
+        "exhaust",
+        "cooling",
+    )
+    forbidden_field_terms = tuple(args.forbidden_field_term) if args.forbidden_field_term else (
+        "AGENTS.md",
+        "SJS",
+        "SpecificationGovernance",
+        "generic governance",
+    )
     if args.validate_output:
-        validation = validate_sop_worker_output(Path(args.validate_output).read_text(encoding="utf-8"))
+        validation = validate_sop_worker_output(
+            Path(args.validate_output).read_text(encoding="utf-8"),
+            expected_node=args.expected_node,
+            required_fields=required_fields,
+            required_terms=required_terms,
+            forbidden_field_terms=forbidden_field_terms,
+        )
         print(validation.render(Path(args.validate_output).stem))
         raise SystemExit(0 if validation.valid else 2)
 
@@ -64,31 +95,9 @@ def main() -> None:
             codex_executable=args.codex_executable,
             timeout=args.timeout,
             expected_node=args.expected_node,
-            required_fields=tuple(args.required_field) if args.required_field else (
-                "focus",
-                "inside",
-                "boundary",
-                "outside",
-                "inference",
-                "caution",
-                "next_step",
-            ),
-            required_terms=tuple(args.required_term) if args.required_term else (
-                "atomic_thought",
-                "combustion_chamber",
-                "compression",
-                "spark",
-                "governor",
-                "piston",
-                "exhaust",
-                "cooling",
-            ),
-            forbidden_field_terms=tuple(args.forbidden_field_term) if args.forbidden_field_term else (
-                "AGENTS.md",
-                "SJS",
-                "SpecificationGovernance",
-                "generic governance",
-            ),
+            required_fields=required_fields,
+            required_terms=required_terms,
+            forbidden_field_terms=forbidden_field_terms,
         )
         print(worker_run.render())
         raise SystemExit(0 if worker_run.functional else 2)

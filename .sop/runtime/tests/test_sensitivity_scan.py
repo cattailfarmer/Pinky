@@ -823,6 +823,51 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertFalse(validation.valid)
         self.assertIn("inside:AGENTS.md", validation.forbidden_field_hits)
 
+    def test_sop_worker_validation_rejects_placeholder_fields(self) -> None:
+        output = "\n".join(
+            (
+                "& [InferenceJobResult] is boundary delineation proposal",
+                "  + [focus] is ...",
+                "  + [inside] is ...",
+                "  + [boundary] is ...",
+                "  + [outside] is ...",
+                "  + [inference] is ...",
+                "  + [caution] is ...",
+                "  + [next_step] is ...",
+            )
+        )
+
+        validation = lm_bench.validate_sop_worker_output(
+            output,
+            required_terms=("focus", "boundary", "outside", "caution"),
+        )
+
+        self.assertFalse(validation.valid)
+        self.assertIn("focus", validation.empty_fields)
+        self.assertIn("next_step", validation.empty_fields)
+
+    def test_sop_worker_validation_rejects_non_ascii_output(self) -> None:
+        output = "\n".join(
+            (
+                "& [InferenceJobResult] is boundary delineation proposal",
+                "  + [focus] is local worker proposals",
+                "  + [inside] is non-mutating SOP suggestions by the worker",
+                "  + [boundary] is Codex retains integration authority",
+                "  + [outside] is any changes to repository state",
+                "  + [inference] is the worker's SOP is advisory only",
+                "  + [caution] is do not apply without Codex approval",
+                "  + [next_step] is review and integrate through Codex workflow",
+            )
+        ).replace("worker's", "worker\u2019s")
+
+        validation = lm_bench.validate_sop_worker_output(
+            output,
+            required_terms=("focus", "boundary", "outside", "caution"),
+        )
+
+        self.assertFalse(validation.valid)
+        self.assertIn("non_ascii_output", validation.format_errors)
+
     def test_sop_worker_validation_rejects_markdown_format(self) -> None:
         output = "\n".join(
             (

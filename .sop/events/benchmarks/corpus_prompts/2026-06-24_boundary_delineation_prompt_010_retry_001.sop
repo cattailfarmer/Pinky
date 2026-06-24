@@ -1,0 +1,50 @@
+Subject: LM Studio Corpus Prompt Boundary Delineation 010 Retry 001
+
+Description: Strict property-line retry packet for boundary delineation after validator rejected operator substitution.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010.sop
+
+& [LMStudioCorpusPrompt:boundary_delineation_010_retry_001] is a non-mutating SOP worker prompt packet
+  + [task_family] is boundary_delineation
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with seven property lines and no Markdown
+  + [validation_required_fields] is focus, inside, boundary, outside, inference, caution, next_step
+  + [validation_required_terms] is focus, boundary, outside, caution
+  + [validation_forbidden_terms] is repo mutation, hidden state access, project-root authority, completed integration
+  + [retry_reason] is first run used SOP-looking field lines but replaced the literal property operator is with other verbs on boundary, outside, and caution
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    SOP primer:
+    & [Name] is a subject declaration.
+    + [field] is a property or inferred field.
+    The literal word is is the SOP property operator.
+    When exact raw SOP is requested, every property line must use + [field] is value.
+    Do not replace is with verbs such as separates, includes, reminds, lists, routes, or contains.
+    (attention) :inside: /boundary/ |outside| means inside belongs in focus, boundary separates identity, and outside is uncertainty or out-of-scope material.
+
+    Task family:
+    boundary_delineation tests whether you can keep attention notation clean across a new subject.
+
+    Subject to delineate:
+    "a local model worker may propose non-mutating SOP text, but Codex remains the authority for integration."
+
+    Return exactly these eight raw SOP lines and no extra text:
+    & [InferenceJobResult] is boundary delineation proposal
+      + [focus] is ...
+      + [inside] is ...
+      + [boundary] is ...
+      + [outside] is ...
+      + [inference] is ...
+      + [caution] is ...
+      + [next_step] is ...
+
+    Final check before answering:
+    Line 1 must start with &.
+    Lines 2 through 8 must use exactly this operator form: two spaces, +, space, [field], space, is, space, value.
+    Do not replace is with any other verb on any property line.
+    Include the literal terms focus, boundary, outside, and caution at least once.
+    Do not claim repo mutation, hidden state access, project-root authority, or completed integration.

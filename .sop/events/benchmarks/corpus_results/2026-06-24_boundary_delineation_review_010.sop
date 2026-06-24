@@ -1,0 +1,38 @@
+Subject: Boundary Delineation Corpus Review 010
+
+Description: Codex review of the first diversified LM Studio corpus candidate and its strict retry ladder.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010_retry_003.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010_retry_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010_retry_002.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010_retry_003.sop
+
+& [BoundaryDelineationCorpusReview:20260624_010] is Codex review of boundary_delineation corpus candidate 010
+  + [candidate_id] is corpus_boundary_delineation_010
+  + [task_family] is boundary_delineation
+  + [launch_mode] is isolated scratch_prompt_only
+  + [attempt_count] is 4
+  + [attempt_000] is failed score 10 because boundary, outside, and caution fields replaced the literal property operator is with other verbs
+  + [attempt_001] is failed score 30 after validator update because all required fields were ellipsis placeholders
+  + [attempt_002] is failed score 85 usable-but-invalid because content was filled but captured output contained non-ASCII mojibake
+  + [attempt_003] is accepted score 100 strong because property lines, filled content, ASCII, required terms, forbidden terms, and outside preservation passed
+  + [codex_review] is accept retry_003 as one boundary_delineation family signal only
+  + [quality_realization] is exact operator form, non-placeholder content, and ASCII stability are separate gates
+  + [readiness_effect] is diverse_family_pass_count increases to 1 but broad LM Studio readiness remains outside
+  + [next_step] is run corpus_outside_preservation_011 with the stricter latch set already applied
+  + [outside] is hidden model state, project-root authority, worker mutation, stderr provider metadata warnings, broad competence, and treating failed attempts as integrated output
+
+  = must: preserve failed attempts as benchmark data
+  = must: keep accepted output as proposal evidence, not autonomous integration authority
+  = must: require at least four distinct strong task families before broadening readiness
+  - never: erase failed attempts after a successful retry
+
+(boundary_delineation_corpus_review) :accepted_attempt: /validator_latches and codex_review/ |review_outside|
+  + [accepted_attempt] is retry_003
+  + [validator_latches] is property_line_latch, non_placeholder_latch, ascii_stability_check, required_terms, forbidden_terms, and outside preservation
+  + [codex_review] is one family signal accepted
+  |review_outside| broad readiness, hidden state, worker repo authority, and failed-attempt integration

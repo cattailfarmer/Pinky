@@ -40,6 +40,9 @@ Description: Diversified LM Studio worker prompt packet for task-frame routing.
 
     Final check before answering:
     Line 1 must start with &.
-    Lines 2 through 8 must start with two spaces, +, space, and the bracketed field name.
+    Lines 2 through 8 must use exactly this operator form: two spaces, +, space, [field], space, is, space, value.
+    Do not replace is with verbs such as includes, separates, reminds, routes, or contains.
+    Replace every ... placeholder with specific content; do not output ellipses or placeholder text.
+    Use ASCII only; avoid curly quotes, nonbreaking hyphens, and special punctuation.
     Include the literal terms lane_fit, authority_boundary, evidence_gate, and outside at least once.
     Do not claim launch silently, credentials are safe, repo mutation by worker, or integrated.

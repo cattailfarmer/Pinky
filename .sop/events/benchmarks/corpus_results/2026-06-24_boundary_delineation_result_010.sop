@@ -1,0 +1,8 @@
+& [InferenceJobResult] is boundary delineation proposal
+  + [focus] is the primary subject of attention
+  + [inside] is the scope explicitly covered by this job
+  + [boundary] separates what is in scope from out-of-scope content
+  + [outside] includes any material not relevant to the current inference
+  + [inference] is the conclusion drawn about delineation boundaries
+  + [caution] reminds that no repo changes are made here
+  + [next_step] is to hand off this proposal for review

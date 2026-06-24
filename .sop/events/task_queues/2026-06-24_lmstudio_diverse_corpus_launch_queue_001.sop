@@ -1,6 +1,6 @@
 Subject: LM Studio Diverse Corpus Launch Queue 001
 
-Description: First inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. No workers have been launched by this queue record.
+Description: First inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. The boundary_delineation candidate has been executed and accepted only after strict retries.
 
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
@@ -8,9 +8,10 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
 
 & [TaskFrameLaunchQueue:lmstudio_diverse_corpus_launch_queue_001] is a task-frame launch queue
   + [queue_id] is lmstudio_diverse_corpus_launch_queue_001
-  + [queue_status] is ready_for_inspection
+  + [queue_status] is partially_executed
   + [candidate_count] is 3
-  + [ready_count] is 3
+  + [ready_count] is 2
+  + [completed_count] is 1
   + [blocked_count] is 0
   + [launch_policy] is inspect_before_launch; no_silent_launch
   + [corpus_scope] is first diversified batch from boundary_delineation, outside_preservation, and task_frame_routing
@@ -18,6 +19,7 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
   = must: keep Codex as launch, validation, and integration authority
   = must: keep ready candidates inspectable before launch
   = must: treat queue readiness as not launched and not worker proof
+  = must: treat completed candidate evidence as family-scoped, not broad competence
   - never: launch silently from queue readiness
 
 & [TaskFrameLaunchCandidate:corpus_boundary_delineation_010] is a queued task-frame launch candidate
@@ -27,15 +29,21 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
   + [objective] is test attention boundary delineation on a new local worker authority subject
   + [lane_fit] is lm_studio_cli
   + [launch_mode] is isolated
-  + [status] is queue_ready
-  + [ready_for_inspection] is true
+  + [status] is validated_strong_after_retry
+  + [ready_for_inspection] is false
   + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010.sop
+  + [retry_prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010_retry_003.sop
   + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010.sop --required-term focus --required-term boundary --required-term outside --required-term caution --forbidden-field-term "repo mutation" --forbidden-field-term "hidden state access" --forbidden-field-term "project-root authority" --forbidden-field-term "completed integration" --timeout 240
   + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010.sop
-  + [validation_profile] is node InferenceJobResult, default fields, required terms focus boundary outside caution, and forbidden authority-overclaim terms
+  + [accepted_capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010_retry_003.sop
+  + [review_record] is .sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_review_010.sop
+  + [validation_profile] is node InferenceJobResult, default fields, required terms focus boundary outside caution, forbidden authority-overclaim terms, property-line latch, non-placeholder latch, and ASCII latch
   + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [attempt_count] is 4
+  + [failed_attempts] is initial operator_substitution, retry_001 hollow_placeholders, and retry_002 non_ascii_output
+  + [accepted_attempt] is retry_003 with validation_score 100 and validation_band strong
   + [block_reasons] is none
-  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unvalidated output
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and broad readiness beyond one family
 
 & [TaskFrameLaunchCandidate:corpus_outside_preservation_011] is a queued task-frame launch candidate
   + [candidate_id] is corpus_outside_preservation_011
@@ -72,7 +80,8 @@ Description: First inspectable launch queue for diversified LM Studio SOP worker
   + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unvalidated output
 
 (task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
-  + [queue_status] is ready_for_inspection
-  + [ready_candidates] is corpus_boundary_delineation_010, corpus_outside_preservation_011, corpus_task_frame_routing_012
+  + [queue_status] is partially_executed
+  + [completed_candidates] is corpus_boundary_delineation_010
+  + [ready_candidates] is corpus_outside_preservation_011, corpus_task_frame_routing_012
   + [blocked_candidates] is none
   |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unrelated dirty files

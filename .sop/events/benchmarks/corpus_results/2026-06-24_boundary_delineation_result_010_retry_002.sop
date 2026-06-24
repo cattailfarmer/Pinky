@@ -1,0 +1,8 @@
+& [InferenceJobResult] is boundary delineation proposal
+  + [focus] is local worker proposals
+  + [inside] is non‑mutating SOP suggestions by the worker
+  + [boundary] is Codex retains integration authority
+  + [outside] is any changes to repository state
+  + [inference] is the worker’s SOP is advisory only
+  + [caution] is do not apply without Codex approval
+  + [next_step] is review and integrate through Codex workflow

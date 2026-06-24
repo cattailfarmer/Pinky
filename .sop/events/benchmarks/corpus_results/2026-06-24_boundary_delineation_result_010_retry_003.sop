@@ -1,0 +1,8 @@
+& [InferenceJobResult] is boundary delineation proposal
+  + [focus] is local model worker proposals
+  + [inside] is non-mutating SOP content
+  + [boundary] is authority separation rule
+  + [outside] is integration decisions beyond scope
+  + [inference] is Codex retains control
+  + [caution] is avoid autonomous code changes
+  + [next_step] is submit SOP for review

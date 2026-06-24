@@ -4,36 +4,25 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
-@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
-@ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
-@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
-@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
-@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
-@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
-@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_001.sop
-@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_002.sop
-@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_003.sop
-@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_004.sop
-@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_005.sop
-@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_006.sop
-@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_task_frame_launch_queue_001.sop
-@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop
-@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop
-@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
-@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
-@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_task_corpus_20260624_009.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_007.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_review_010.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is diversified LM Studio corpus launch queue
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_corpus_launch_queue_001
+  + [registry_scope] is outside preservation corpus worker candidate
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_outside_preservation_011
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 0
+  + [closed_frame_count] is 1
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, and unrelated Pinky worktree changes
 
@@ -42,34 +31,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_LMStudioCorpusLaunchQueue001] is the active semantic stack frame for the diversified LM Studio corpus launch queue
-  + [frame_id] is attention_frame_2026_06_24_lmstudio_corpus_launch_queue_001
+& [AttentionFrame_2026_06_24_LMStudioOutsidePreservation011] is the active semantic stack frame for the next diversified LM Studio corpus candidate
+  + [frame_id] is attention_frame_2026_06_24_lmstudio_outside_preservation_011
   + [frame_state] is active
-  + [parent_frame] is none
-  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_006, corpus_queue_001, corpus_boundary_delineation_010, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_lmstudio_corpus_launch_queue_001
+  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_007, corpus_queue_001, corpus_outside_preservation_011, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is lmstudio_diverse_corpus_launch_queue_001.sop, three corpus prompt packets, LMStudioWorkerTaskCorpus.sop, TaskFrameLaunchQueue.sop, 2026-06-24_operating_loop_tick_006.sop, and CurrentFocalPoint.sop
-  + [focus_register] is first ready-for-inspection diversified corpus launch queue
-  + [question_register] is whether to run corpus_boundary_delineation_010 through scratch-isolated validation
-  + [delineation_register] is inside queue candidates, prompt packets, validation profiles, capture targets, launch commands, and queue outside
-  + [periphery_register] is queue-not-proof, automatic launch outside, broad competence outside, project-root authority outside, and unrelated dirty files outside
-  + [operation_register] is compile_prompt_packets, compile_launch_queue, extend_validator_cli, emit_tick_006, update_reentry_state
-  + [evidence_register] is queue_001, prompt packets 010 through 012, custom validator support, and operating_loop_tick_006
-  + [wisdom_register] is queue candidates should be inspected before launch and scored by family
-  + [caution_register] is ready_for_inspection does not mean launched, validated, integrated, or competent
-  + [balance_register] is stable because launch commands, validator profiles, capture targets, and outside are explicit
-  + [integration_register] is pending commit, push, and optional first corpus candidate launch
-  + [frame_outside] is hidden model state, broad local-worker readiness, worker file mutation, remote claims before push, and unrelated workspace changes
+  + [frame_trace] is boundary_delineation_review_010.sop, 2026-06-24_operating_loop_tick_007.sop, lmstudio_diverse_corpus_launch_queue_001.sop, outside_preservation_prompt_011.sop, and CurrentFocalPoint.sop
+  + [focus_register] is run corpus_outside_preservation_011 after boundary_delineation_010 passed only with strict latches
+  + [question_register] is whether outside_preservation_011 preserves uncertainty and unsupported claims outside while satisfying exact SOP output
+  + [delineation_register] is inside strict prompt packet, validator profile, capture target, required outside terms, and queue outside
+  + [periphery_register] is operator_substitution risk, hollow_placeholder risk, non_ascii_output risk, broad competence outside, project-root authority outside, and unrelated dirty files outside
+  + [operation_register] is run_worker_candidate, capture_output, validate_output, review_result, emit_next_tick
+  + [evidence_register] is boundary_delineation_review_010, retry_003 score 100, updated validator tests, and operating_loop_tick_007
+  + [wisdom_register] is the next family should reuse the stricter latches before broadening readiness claims
+  + [caution_register] is one family pass does not prove broad LM Studio competence
+  + [balance_register] is stable because failures were preserved and the next runnable candidate is explicit
+  + [integration_register] is pending commit, push, and outside_preservation_011 launch
+  + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
   = must: return clock_state, proof_state, balance_state, drive_state, next_step, and outside to CurrentFocalPoint when this focus pass closes
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_corpus_launch_queue_001
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_outside_preservation_011
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioCorpusLaunchQueue001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [corpus_launch_queue], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioOutsidePreservation011], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [outside_preservation_candidate], [operating_loop_tick], [balance_register], [integration_register], [outside]

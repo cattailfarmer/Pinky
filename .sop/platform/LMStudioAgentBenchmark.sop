@@ -17,6 +17,8 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_review_010.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_delineation_worker_latch\Derived_Boundary_Delineation_Worker_Latch_Source.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -48,10 +50,13 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [booted_project_root_result] is weak-to-usable because boot improved conceptual grounding but project-root output still leaked AGENTS.md and used Markdown formatting
   + [strict_project_root_result] is usable-format but weak-authority-boundary because exact-format latch passed while negative_inside_rule failed
   + [negative_inside_rule_check] is whether terms explicitly reserved for outside stay out of inside, boundary, inference, caution, and next_step
-  + [post_output_validator] is the Codex-side rejection check for schema shape, forbidden-inside terms, hollow fields, and substitution faults before worker output is treated as usable
+  + [property_line_latch_check] is whether raw SOP property lines use the exact + [field] is value operator form without replacing is with another verb
+  + [ascii_stability_check] is whether captured worker output stays ASCII-clean unless a task explicitly allows non-ASCII
+  + [post_output_validator] is the Codex-side rejection check for schema shape, forbidden-inside terms, hollow fields, property operator substitution, non-ASCII output, and substitution faults before worker output is treated as usable
   + [functional_lane_result] is scratch_prompt_only Codex CLI over LM Studio passed strict functional prompt 007 with validation score 100 and band strong
   + [functional_lane_readiness_profile] is repeated isolated score-100 evidence now supports narrow scratch-isolated non-mutating SOP proposal readiness, but diverse task-family evidence is still required before broad reliability claims
   + [diverse_task_corpus] is LMStudioWorkerTaskCorpus with boundary_delineation, outside_preservation, task_frame_routing, evidence_review, periphery_correlation, and integration_disposition families
+  + [boundary_delineation_retry_ladder] is first diverse family required operator, placeholder, and ASCII latches before retry 003 scored 100 strong
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
@@ -69,6 +74,9 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: score exact format, task fit, excerpt grounding, intent context, outside preservation, and host-context interference separately
   = must: run negative_inside_rule_check when a prompt explicitly reserves terms for outside
   = must: reject worker output through post_output_validator when inside contains explicitly excluded terms
+  = must: reject raw SOP worker output when property lines replace the literal operator is with another verb
+  = must: reject placeholder-only fields such as ellipses, TODO, TBD, or placeholder text
+  = must: reject non-ASCII worker output unless the task explicitly permits non-ASCII
   = must: treat LMStudioWorkerFunctionalLane as functional only for isolated non-mutating proposal jobs until project-root context leakage is solved
   = must: distinguish repeated same-family score 100 from broad worker competence
   = must: use diverse_task_corpus before broadening readiness claims beyond the strict ControlledExplosionReadiness prompt family
@@ -118,12 +126,14 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [task_fit_check] is whether the response answers the actual task instead of drifting into general explanation
   + [boundary_blur_check] is whether a forbidden phrase marks an actual overclaim rather than a negation, caution, or outside statement
   + [hollow_form_check] is whether requested labels hold non-empty content or only mimic the requested form
+  + [ascii_stability_check] is whether captured output is ASCII-stable for repository-held SOP artifacts
   + [score_band] is strong, usable, weak, failed, or blocked
 
   = must: score every case independently
   = must: expose missing required terms and hit forbidden terms
   = must: avoid penalizing cautionary negation such as unverified, not integrated, or hidden state outside
   = must: penalize empty labels because capture requires substance, not only schema imitation
+  = must: penalize non-ASCII output when the capture target is a strict raw SOP worker result
   = must: keep score deterministic enough to compare models over time
   = should: use the same case set when comparing local models
 

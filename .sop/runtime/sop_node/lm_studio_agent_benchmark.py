@@ -421,6 +421,8 @@ def validate_sop_worker_output(
     format_errors: list[str] = []
     node_name = ""
     node_description = ""
+    if any(ord(character) > 127 for character in output):
+        format_errors.append("non_ascii_output")
     if not lines:
         format_errors.append("empty_output")
     else:
@@ -442,7 +444,7 @@ def validate_sop_worker_output(
 
     field_map = {name: value for name, value in fields}
     missing_fields = tuple(field for field in required_fields if field not in field_map)
-    empty_fields = tuple(field for field in required_fields if field in field_map and not field_map[field].strip())
+    empty_fields = tuple(field for field in required_fields if field in field_map and _is_hollow_field_value(field_map[field]))
     lower_output = output.lower()
     missing_required_terms = tuple(term for term in required_terms if term.lower() not in lower_output)
     forbidden_hits: list[str] = []
@@ -716,6 +718,23 @@ def write_benchmark_report(report: BenchmarkReport, output_path: str | Path) -> 
 def _contains_forbidden(term: str, lower_output: str) -> bool:
     pattern = rf"(?<![A-Za-z0-9_]){re.escape(term.lower())}(?![A-Za-z0-9_])"
     return re.search(pattern, lower_output) is not None
+
+
+def _is_hollow_field_value(value: str) -> bool:
+    normalized = value.strip().lower()
+    if not normalized:
+        return True
+    hollow_values = {
+        "...",
+        "todo",
+        "tbd",
+        "n/a",
+        "na",
+        "none",
+        "placeholder",
+        "<value>",
+    }
+    return normalized in hollow_values or normalized.startswith("...")
 
 
 def _label_has_content(output: str, label: str, labels: tuple[str, ...]) -> bool:

@@ -11,6 +11,7 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_004.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_delineation_worker_latch\Derived_Boundary_Delineation_Worker_Latch_Source.sop
 
 & [SOPLanguagePrimerForLocalAgents] is the language-introduction gate for local SOP workers
   + [pattern_role] is introduce_sop_notation_before_framework_assignment
@@ -19,6 +20,7 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   + [sop_marker_set] is &, +, =, -, @, ?, / /, : :, | |, and relation arrows
   + [subject_declaration] is & [SubjectName] is the node or contract being named
   + [property_line] is + [field] is value or definition
+  + [property_line_law] is the literal word is is the SOP property operator and must not be replaced by another verb when exact raw SOP is requested
   + [directive_line] is = must, should, or other operational rule
   + [constraint_line] is - never or outside-limiting rule
   + [source_line] is @ [source] pointer to preserved authority
@@ -47,6 +49,7 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   = must: keep the first comprehension_check no-tools and non-mutating
   = must: ask the worker to distinguish language syntax from task authority
   = must: ask the worker to preserve outside rather than guessing
+  = must: require the literal property operator is when exact raw SOP property lines are requested
   = must: record whether the worker follows exact output and no-tool discipline during the primer
   = must: prefer stdin_only prompt transport for exact-output primer smoke tests in this host setup
   = must: follow the primer with SOPWorkerBootPacket before any framework-specific inference benchmark
