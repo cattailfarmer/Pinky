@@ -1,0 +1,17 @@
+Subject: Dictated SOP Worker Boot Intent Anchor Source
+
+Description: Preserved source directive for adding a boot layer that teaches local workers how to hold SOP intent context before benchmark work.
+
+& [DictatedSOPWorkerBootIntentAnchorSource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after a same-packet SOP inference benchmark showed a local LM Studio-backed Codex worker could match schema while drifting away from the provided framework excerpt
+  + [source_line_001] is "did it not understand the objectives in SOP? that sounds like a fundamental mistake of missing intent context."
+  + [source_line_002] is "if it's not cleanly reading and writing SOP and following it's clearly outlined intentions, then it's probably a matter of having booted it with enough instructions to function."
+  + [active_root] is C:\Project\Pinky\.sop
+  + [desired_output] is a SOP worker boot packet that teaches authority hierarchy, intent anchoring, context boundaries, substitution avoidance, and self-check before local worker benchmark tasks
+
+  = must: preserve this source separately from boot packet, prompt packets, worker outputs, and comparison reports
+  = must: treat intent-context fidelity as a first-class benchmark dimension
+  = must: distinguish SOP syntax comprehension from task-authority comprehension
+  = must: test whether explicit boot instructions reduce project-rail or generic-domain substitution
+  - outside: hidden model state, broad local-worker readiness, repo mutation authority, and treating one booted pass as durable worker competence

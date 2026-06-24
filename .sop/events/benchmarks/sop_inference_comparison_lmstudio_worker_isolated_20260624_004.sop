@@ -1,0 +1,8 @@
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is the specific high-energy SOP idea under consideration, e.g., a proposed feature or process that could generate significant value but also carries risk.
+  + [inside] is the set of internally sourced facts, assumptions, and evidence that directly support evaluating this idea-such as data from prior experiments, stakeholder feedback, or technical feasibility studies.
+  + [boundary] is the explicit scope that defines what counts as part of the evaluation: the organizational units involved, the time horizon, regulatory constraints, and any policy limits that must not be crossed during analysis.
+  + [outside] is everything else that might influence the decision but lies beyond the current focus-market volatility, competitor moves, unverified rumors, or long-term strategic shifts.
+  + [inference] is the judgment produced by applying the ControlledExplosionReadiness framework: a determination of whether the idea has met the criteria for safe expansion (e.g., sufficient evidence in *inside*, clear boundaries, and manageable risk) or if it should be held back or refined.
+  + [caution] lists the specific risks or uncertainties that still need to be addressed before expansion-such as missing data points, potential compliance gaps, or resource constraints.
+  + [next_step] is the actionable recommendation: e.g., "Proceed with a limited pilot under the defined boundary and monitor key metrics; if thresholds are met, scale up," or "Gather additional evidence on X before reconsidering."

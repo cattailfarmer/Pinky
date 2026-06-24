@@ -5,21 +5,22 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is primed Codex CLI LM Studio worker passed minimal no-tools SOP smoke
+  + [focus_subject] is booted and strict-boot SOP worker comparison for LM Studio-backed local workers
   + [focus_mode] is mixed_focus
-  + [executive_drive] is use the successful primer-first stdin_only smoke test to define the next local-worker readiness gate: primer comprehension schema, then tiny framework excerpt, then non-mutating task
-  + [right_hemisphere_draw] is the worker failed when started mid-language but passed when the SOP marker language was introduced and the prompt transport was clean
-  + [inside] is SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop, events\benchmarks\codex_cli_lmstudio_smoke_20260624_002.sop, platform\source_documents\2026-06-24_primed_codex_cli_lmstudio_smoke_retry\Dictated_Primed_Codex_CLI_LMStudio_Smoke_Retry_Source.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is minimal no-tools exact-output smoke pass only; it is not broad framework competence, repo authority, or multi-step task readiness
-  + [outside] is hidden model state, broad worker readiness, framework competence beyond the primer smoke, unsupervised worker authority, file mutation, and unrelated Pinky worktree changes
+  + [executive_drive] is turn the local worker lane from syntax smoke into measured framework inference by using primer, boot packet, same-packet benchmark, Codex review, and isolated/project-root comparison
+  + [right_hemisphere_draw] is the worker did not simply fail SOP; it held form while losing local law, recovered strong intent anchoring when booted and isolated, and then showed exact-format success but negative-inside failure under strict project-root launch
+  + [inside] is SOPWorkerBootPacket.sop, SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, ControlledExplosionReadiness.sop, sop_inference_comparison_report_20260624_004.sop, sop_inference_comparison_report_20260624_005.sop, sop_inference_comparison_report_20260624_006.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is local worker output remains proposal text only; benchmark success measures prompt-only inference quality, not repo authority or broad task competence
+  + [outside] is hidden model state, unsupervised worker action, mutation authority, broad worker readiness, AGENTS.md leakage into task content, and unrelated Pinky worktree changes
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
-  + [open_question] is how to build the next primer comprehension schema and tiny framework-excerpt test without giving repo authority
+  + [active_reflection] is events\benchmarks\sop_inference_comparison_report_20260624_006.sop
+  + [open_question] is whether a host-context fence or validator can let project-root local workers preserve task-local law without moving the benchmark to scratch isolation
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
-  = must: be renewed whenever focused attention changes materially
-  = must: stay compact enough for immediate re-entry
+  = must: keep primer, boot, benchmark, and Codex review distinct
+  = must: treat booted isolated worker success as usable prompt-only evidence
+  = must: treat project-root worker AGENTS.md leakage and negative-inside failure as host-context interference until fixed
   = must: point to richer records instead of absorbing them
   - never: let this file become a full project summary

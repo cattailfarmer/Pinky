@@ -1,0 +1,8 @@
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is a new high-energy SOP idea for a project within C:\Project\Pinky.
+  + [inside] is the framework's SpecificationGovernance chain: raw source specification, SourceSpecificationPreservation, SJS processing, canonical specification, justification, planning, and solution records-all confined to the selected project.
+  + [boundary] is the limits set by the AGENTS.md rules: the idea must be scoped to a single named project; it cannot cross-project or overwrite raw source; it must pass through SJS before any implementation authority.
+  + [outside] is any content that falls outside the selected project, unrelated source documents, or prior code artifacts not yet processed by SJS.
+  + [inference] is that the idea is ready for controlled expansion only if: (1) the raw specification has been saved and preserved; (2) it has been fed through SJS to produce a canonical version; (3) justification and planning have been documented; and (4) no immediate code generation has occurred.
+  + [caution] is to avoid jumping straight to implementation, ensure traceable source preservation, respect dual-hemisphere thinking, and maintain the scope defined by SpecificationGovernance.
+  + [next_step] is: confirm the working project name, locate or create its raw specification file in the workspace, run it through SJS, document justification/planning, then trigger the next phase of controlled expansion.

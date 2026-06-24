@@ -1,0 +1,12 @@
+Subject: SOP Inference Comparison Codex Baseline Strict Boot 006
+
+Description: Codex baseline answer to the strict boot shared SOP inference comparison prompt.
+
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is decide whether a high-energy SOP idea is ready for controlled expansion under ControlledExplosionReadiness
+  + [inside] is preserved atomic_thought, combustion_chamber, compression, spark, governor, piston, exhaust, cooling, authority, and output duty
+  + [boundary] is expansion stays inside the declared chamber and proceeds only when source is preserved, governor remains active, and the piston converts heat into useful output
+  + [outside] is AGENTS.md, SJS, SpecificationGovernance, generic governance, unsupported certainty, hidden state, unpreserved impulses, uncoupled heat, rejected claims, and deferred work
+  + [inference] is the idea is ready when the source impulse is preserved, the chamber is explicit, compression is useful, the spark is justified, governor checks are active, and a piston produces checkable work
+  + [caution] is do not treat conceptual heat as proof, do not expand when the piston is missing, and vent uncertainty or adjacent frameworks into outside
+  + [next_step] is write a readiness packet with atomic_thought, chamber_check, compression_check, spark_check, governor_check, piston_check, exhaust_check, cooling_check, and evidence receipt

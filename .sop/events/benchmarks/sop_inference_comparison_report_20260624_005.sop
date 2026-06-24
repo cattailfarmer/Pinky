@@ -1,0 +1,33 @@
+Subject: SOP Inference Comparison Report 005
+
+Description: Comparison report for the booted same-packet Codex baseline and LM Studio-backed Codex worker SOP inference job.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_worker_boot_intent_anchor\Dictated_SOP_Worker_Boot_Intent_Anchor_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_booted_prompt_20260624_005.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_codex_baseline_booted_20260624_005.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_booted_20260624_005.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_booted_isolated_20260624_005.sop
+
+& [SOPInferenceComparisonReport:20260624_005] is the booted same-packet local-worker comparison
+  + [job_subject] is ControlledExplosionReadiness inference with explicit intent-context boot
+  + [codex_baseline_result] is strong because it preserved local law, exact SOP schema, chamber, compression, spark, governor, piston, exhaust, cooling, and substitution outside
+  + [lmstudio_booted_project_root_result] is improved but still weak-to-usable because it recovered atomic_thought, piston, governor, exhaust, and caution, but returned Markdown formatting and placed relevant AGENTS.md excerpts inside despite the boot instruction
+  + [lmstudio_booted_isolated_result] is usable-to-strong because it returned the exact SOP node, kept ControlledExplosionReadiness as inside, placed AGENTS.md and generic governance outside, and used atomic_thought, chamber, compression, spark, governor, piston, exhaust, and proof cautions
+  + [boot_effect] is strong under prompt-only isolated conditions and partial under project-root Codex CLI conditions
+  + [remaining_project_root_fault] is host_context_interference: runtime project instructions remain semantically attractive to the local worker even when the prompt declares them outside task meaning
+  + [remaining_format_fault] is project-root worker returned Markdown bullets instead of exact SOP lines
+  + [schema_score] is codex 10, lmstudio_booted_project_root 5, lmstudio_booted_isolated 9
+  + [excerpt_grounding_score] is codex 10, lmstudio_booted_project_root 7, lmstudio_booted_isolated 8
+  + [outside_preservation_score] is codex 10, lmstudio_booted_project_root 6, lmstudio_booted_isolated 9
+  + [intent_context_score] is codex 10, lmstudio_booted_project_root 6, lmstudio_booted_isolated 9
+  + [overall_quality_band] is codex strong, lmstudio_booted_project_root weak-to-usable, lmstudio_booted_isolated usable-to-strong
+  + [meaning] is the local model can follow SOP intent much better when booted with authority hierarchy and when host context is isolated
+  + [next_gate] is add a stricter exact-format latch and use scratch prompt-only worker launches for local SOP worker benchmarks unless project-root context is the thing being tested
+  + [outside] is hidden model state, unsupervised worker authority, mutation rights, broad task competence, and claims that one booted pass proves stable local agency
+
+  = must: treat boot instructions as necessary but not sufficient for project-root local worker jobs
+  = must: distinguish prompt-only worker competence from project-root host-context competence
+  = must: continue benchmarking with paired Codex baseline, project-root worker, and isolated worker lanes
+  = should: add an exact-format latch before the next framework task
+  - never: grant repository authority to a local worker because isolated prompt-only output improved

@@ -1,0 +1,16 @@
+Subject: SOP Worker Boot Intent Anchor Source Manifest
+
+Description: Manifest for the preserved source feeding the SOP worker boot packet and booted inference comparison benchmark.
+
+& [SOPWorkerBootIntentAnchorSourceManifest] is the source-preservation manifest
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_worker_boot_intent_anchor
+  + [raw_source] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_worker_boot_intent_anchor\Dictated_SOP_Worker_Boot_Intent_Anchor_Source.sop
+  + [boot_contract_target] is C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+  + [booted_prompt_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_booted_prompt_20260624_005.sop
+  + [booted_worker_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_booted_20260624_005.sop
+  + [booted_report_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
+  + [source_boundary] is local worker boot instructions for intent-context fidelity in SOP benchmark jobs
+  + [source_outside] is hidden model state, repo mutation, unreviewed worker output, and broad worker readiness
+
+  = must: keep raw_source unchanged after benchmark processing
+  = must: cite raw_source from SOPWorkerBootPacket and benchmark reports

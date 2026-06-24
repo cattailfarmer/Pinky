@@ -3,55 +3,56 @@ Subject: Current Attention Runtime Registry State
 Description: Live semantic stack-frame registry for the current focus pass.
 
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
-@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-@ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is current primed Codex CLI LM Studio minimal smoke pass and next-readiness gate
-  + [active_root_frame] is attention_frame_2026_06_24_codex_cli_lmstudio_primer_smoke_001
+  + [registry_scope] is booted SOP inference comparison for LM Studio-backed local worker readiness
+  + [active_root_frame] is attention_frame_2026_06_24_booted_lmstudio_inference_comparison_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [registry_outside] is hidden activations, exact transformer attention, model weights, unprimed framework assignment, syntax mimicry without content, unsupervised worker action, and unrelated Pinky worktree changes
+  + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, and unrelated Pinky worktree changes
 
   = must: update this state when focus materially changes
-  = must: open child frames for primer comprehension, framework excerpt, non-mutating task, capture, scoring, or commit receipt
   = must: preserve return anchors before closing or suspending frames
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_CodexCLILMStudioPrimerSmoke001] is the active semantic stack frame for primed local-worker smoke testing
-  + [frame_id] is attention_frame_2026_06_24_codex_cli_lmstudio_primer_smoke_001
+& [AttentionFrame_2026_06_24_BootedLMStudioInferenceComparison001] is the active semantic stack frame for booted local-worker inference comparison
+  + [frame_id] is attention_frame_2026_06_24_booted_lmstudio_inference_comparison_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is passed_minimal_smoke, prompt_transport, next_comprehension_schema, framework_excerpt, commit_receipt
+  + [child_frame_set] is unbooted_comparison, boot_packet_definition, booted_project_root_run, booted_isolated_run, strict_project_root_run, codex_review, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, codex_cli_lmstudio_primer_smoke_20260624_003.sop, and CurrentFocalPoint.sop
-  + [focus_register] is primed nested Codex CLI over LM Studio passed minimal no-tools exact-output smoke
-  + [question_register] is how to move from minimal primer smoke to primer comprehension and tiny framework-excerpt competence without granting repo authority
-  + [delineation_register] is inside primer packet, stdin_only transport, exact captured line, no tool attempt, context fit, next comprehension schema, and outside
-  + [periphery_register] is near previous SpecificationGovernance substitution, mid transport tail artifact, shadow broad readiness overclaim, and horizon tiny framework excerpt
-  + [operation_register] is run_primed_smoke, verify_last_message, record_pass, update_primer_gate, and commit_receipt
-  + [evidence_register] is captured_last_message & [CodexCLILMStudioSmoke] is ready, event 003, primer contract, and commit receipt
-  + [wisdom_register] is SOP language introduction plus clean stdin transport can turn a failing local-provider smoke into a passing minimal worker signal
-  + [caution_register] is one exact-output smoke pass is not framework competence, multi-step task readiness, or repo authority
-  + [balance_register] is stable because the pass is narrow, non-mutating, captured, and still keeps broader readiness outside
-  + [integration_register] is pending final validation and commit receipt
-  + [frame_outside] is hidden model state, broad worker readiness, framework competence beyond primer smoke, unsupervised worker authority, file mutation, and unrelated Pinky worktree changes
+  + [frame_trace] is SOPWorkerBootPacket.sop, SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, sop_inference_comparison_report_20260624_004.sop, sop_inference_comparison_report_20260624_005.sop, and sop_inference_comparison_report_20260624_006.sop
+  + [focus_register] is local worker intent-context fidelity under ControlledExplosionReadiness
+  + [question_register] is whether local LM Studio-backed Codex can perform the same SOP inference job as Codex when booted with authority hierarchy and local law
+  + [delineation_register] is inside prompt packet, boot layer, ControlledExplosionReadiness excerpt, no-tools boundary, output schema, project-root lane, isolated lane, and outside
+  + [periphery_register] is syntax compliance, AGENTS.md leakage, generic governance drift, exact-format improvement, negative-inside failure, host-context interference, and next host-context fence
+  + [operation_register] is create_boot_packet, run_same_packet_baseline, run_project_root_worker, run_isolated_worker, run_strict_project_root_worker, compare_outputs, score_fidelity, update_contracts
+  + [evidence_register] is benchmark report 004, benchmark report 005, booted worker outputs, baseline outputs, and source-preserved user directives
+  + [wisdom_register] is local worker failure should be divided into syntax, intent, grounding, outside, format, and launch-surface causes before judging model fitness
+  + [caution_register] is booted isolated success and strict project-root format success do not grant repo authority, broad competence, or unsupervised worker action
+  + [balance_register] is stable because all worker jobs were non-mutating, captured, scored, and kept under Codex review
+  + [integration_register] is pending validation, commit, push, and future exact-format latch
+  + [frame_outside] is hidden model state, broad local-worker readiness, worker file mutation, remote claims before push, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
-  = must: return primer_smoke_result, next_comprehension_schema, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
-  = should: open child frames only when a concrete primer, scoring, or worker-profile pass is needed
+  = must: return intent_context_fidelity, host_context_interference, negative_inside_failure, boot_effect, and next_gate to CurrentFocalPoint when this focus pass closes
+  = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_codex_cli_lmstudio_primer_smoke_001
+  + [active_root_frame] is attention_frame_2026_06_24_booted_lmstudio_inference_comparison_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
-  |registry_outside| hidden model state, executable runtime stack, unprimed framework assignment, syntax mimicry without content, unrelated dirty files, and untracked cognition
+  |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SOPLanguagePrimerForLocalAgents] -(EntersFrame)> [AttentionFrame_2026_06_24_CodexCLILMStudioPrimerSmoke001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [codex_cli_lmstudio_primer_smoke], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SOPWorkerBootPacket] -(EntersFrame)> [AttentionFrame_2026_06_24_BootedLMStudioInferenceComparison001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [booted_worker_comparison], [balance_register], [integration_register], [outside]

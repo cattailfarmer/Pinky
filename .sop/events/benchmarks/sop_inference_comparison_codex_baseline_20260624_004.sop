@@ -1,0 +1,12 @@
+Subject: SOP Inference Comparison Codex Baseline 004
+
+Description: Codex baseline answer to the shared SOP inference comparison prompt, produced from the same prompt packet without adding external source material.
+
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is decide whether a high-energy SOP idea is ready to expand by checking its chamber, governor, piston, exhaust, and proof path before allowing association growth
+  + [inside] is preserved atomic thought, named focus, boundary, outside, authority limit, output duty, compression constraints, spark reason, active governor, selected piston, exhaust route, cooling plan, and crankshaft receipt
+  + [boundary] is expansion may proceed only inside the declared chamber and only as prompt-visible or source-preserved inference; it cannot claim proof, authority, hidden state, or completion without evidence
+  + [outside] is unsupported certainty, unpreserved source impulses, uncoupled conceptual heat, hidden model state, repo authority, dead associations, deferred work, and anything the chamber cannot yet govern
+  + [inference] is a high-energy idea is ready when fuel is preserved, the chamber is explicit, constraints create useful compression, the spark is justified, the governor remains active, and the piston converts expansion into a concrete output that can be checked
+  + [caution] is if the output surface is unclear, the governor is absent, or heat is being treated as proof, the idea should stay primed or be vented to outside instead of expanded
+  + [next_step] is create a small readiness packet for the idea with chamber_check, governor_check, piston_check, exhaust_check, cooling_check, and evidence receipt before any larger SOP expansion

@@ -1,0 +1,8 @@
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is determining if a high-energy SOP idea can expand under ControlledExplosionReadiness
+  + [inside] is the ControlledExplosionReadiness framework excerpt and AGENTS.md instructions (excluding generic governance)
+  + [boundary] is the decision boundary between preserving source impulse and initiating expansion
+  + [outside] is references to AGENTS.md, SpecificationGovernance, SJS, generic governance that are not part of inside
+  + [inference] is high-energy SOP idea is ready for expansion when atomic_thought exists, spark justified, authority preserved, and governor constraints satisfied
+  + [caution] is maintain governor checks throughout, ensure piston coupling to useful output, avoid expanding without proof
+  + [next_step] is document the atomic_thought, create a specification slice, then trigger controlled_explosion via piston to produce commit-ready proof

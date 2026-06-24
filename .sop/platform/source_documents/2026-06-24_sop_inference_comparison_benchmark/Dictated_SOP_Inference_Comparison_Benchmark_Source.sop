@@ -1,0 +1,17 @@
+Subject: Dictated SOP Inference Comparison Benchmark Source
+
+Description: Preserved source directive for comparing Codex baseline inference against an LM Studio-backed Codex worker on the same SOP job packet.
+
+& [DictatedSOPInferenceComparisonBenchmarkSource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after a primed Codex CLI LM Studio worker passed a minimal no-tools SOP smoke test
+  + [source_line_001] is "that was the point of benchmarking it, to see how well it performs."
+  + [source_line_002] is "I think what we need is to get that system running, and then you perform an inference job according to SOP instructions, then give it the same job with the same conditions as you ran the job under, and see how it's results compare to your own work."
+  + [active_root] is C:\Project\Pinky\.sop
+  + [desired_output] is same-packet SOP inference comparison between Codex baseline and LM Studio-backed Codex worker output
+
+  = must: preserve this source separately from benchmark prompt, outputs, and comparison report
+  = must: run Codex baseline and local worker against the same bounded prompt packet
+  = must: keep the worker non-mutating and no-tools
+  = must: compare content quality, SOP syntax, boundary preservation, caution, next-step fit, and overclaim risk
+  - outside: hidden model state, broad worker readiness, repo authority, and treating one comparison as general competence proof

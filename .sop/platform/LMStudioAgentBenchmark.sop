@@ -10,6 +10,10 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_cli_lmstudio_context_retry\Dictated_Codex_CLI_LMStudio_Context_Retry_Source.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_004.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -32,6 +36,16 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [tool_discipline_check] is whether the nested worker obeys a no-tools prompt and avoids shell/tool attempts when explicitly forbidden
   + [sop_language_introduction_gate] is the requirement that a local worker receive and pass a SOP language primer before framework-shaped contracts or tasks are assigned
   + [primed_smoke_result] is minimal no-tools exact-output pass through stdin_only prompt transport after SOP language introduction
+  + [sop_worker_boot_gate] is the requirement that a local worker receive authority hierarchy, intent anchor, local law, outside context, and substitution-fault warnings before framework-excerpt inference tasks
+  + [same_packet_inference_comparison] is paired Codex baseline, LM Studio project-root worker, and LM Studio isolated worker outputs over the same SOP prompt packet
+  + [intent_context_fidelity_check] is whether the worker preserves the provided framework excerpt as local task law while keeping adjacent project rails outside
+  + [context_substitution_fault] is schema-shaped output that answers a nearby framework or generic domain instead of the task packet's local law
+  + [host_context_interference] is project-root Codex CLI context pulling local worker output toward AGENTS.md, SJS, SpecificationGovernance, or repo rails despite prompt-only task content
+  + [booted_isolated_result] is usable-to-strong for ControlledExplosionReadiness after boot packet under scratch prompt-only launch
+  + [booted_project_root_result] is weak-to-usable because boot improved conceptual grounding but project-root output still leaked AGENTS.md and used Markdown formatting
+  + [strict_project_root_result] is usable-format but weak-authority-boundary because exact-format latch passed while negative_inside_rule failed
+  + [negative_inside_rule_check] is whether terms explicitly reserved for outside stay out of inside, boundary, inference, caution, and next_step
+  + [post_output_validator] is the Codex-side rejection check for schema shape, forbidden-inside terms, hollow fields, and substitution faults before worker output is treated as usable
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
@@ -43,8 +57,13 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: treat Codex CLI LM Studio context overflow as a launch-surface blocker, not a worker-quality failure
   = must: treat Codex CLI LM Studio context-fit success as necessary but not sufficient for worker readiness
   = must: run sop_language_introduction_gate before framework-specific benchmark packets when the local worker has not been primed in-session
+  = must: run sop_worker_boot_gate before framework-specific inference packets when intent-context fidelity is being measured
   = must: prefer stdin_only prompt transport for exact-output nested Codex CLI LM Studio smoke tests
   = must: keep nested Codex CLI LM Studio worker jobs blocked when instruction_fidelity_check or tool_discipline_check fails
+  = must: score exact format, task fit, excerpt grounding, intent context, outside preservation, and host-context interference separately
+  = must: run negative_inside_rule_check when a prompt explicitly reserves terms for outside
+  = must: reject worker output through post_output_validator when inside contains explicitly excluded terms
+  = must: compare project-root and isolated scratch launches when diagnosing whether an error is model comprehension or launch-surface context gravity
   = must: run non-mutating benchmark tasks by default
   = must: send explicit SOP task_frame reminders in every benchmark packet
   = must: capture raw output and score after capture
@@ -57,6 +76,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = should: benchmark the smallest useful local model first when speed matters
   = should: record model id, endpoint, latency, output length, case scores, and aggregate score
   = should: use direct LM Studio completion benchmarks until nested Codex CLI local-provider jobs pass SOP language primer, context fit, exact output, and no-tool discipline
+  = should: use isolated scratch prompt-only launches as the primary measure of local-law comprehension unless project-root context handling is the explicit test
   - never: let the local model mutate files during this benchmark
   - never: give the local model direct repository authority
   - never: use a local benchmark score as proof that the model can do high-authority repo work
@@ -68,6 +88,8 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [previous_launch_blocker] is nested Codex CLI LM Studio smoke exceeded openai/gpt-oss-20b loaded context with n_keep 9529 greater than or equal to n_ctx 8192
   + [current_launch_result] is primer-first stdin_only smoke passed minimal no-tools exact-output with captured_last_message & [CodexCLILMStudioSmoke] is ready
   + [primer_interpretation] is the nested worker likely needs SOP language introduction before framework-shaped instructions because it substituted a nearby framework term for the requested SOP output shape
+  + [boot_interpretation] is the nested worker needs SOPWorkerBootPacket after language primer because syntax comprehension did not preserve task intent or local law under competing context
+  + [current_comparison_result] is booted isolated launch produced usable-to-strong SOP inference, while strict project-root launch passed exact format but still failed negative_inside_rule by placing AGENTS.md inside
   + [local_model_role] is propose bounded text outputs under task_frame reminders
   + [authority_boundary] is Codex owns file writes, repo diffs, commits, pushes, and integration decisions
   + [host_outside] is hidden model state, unsupervised local model actions, credentials, silent launches, and unreviewed worker output

@@ -1,0 +1,21 @@
+Subject: SOP Worker Boot Intent Anchor Periphery Stream 079
+
+Description: Periphery realization that local SOP workers need a boot layer for intent-context fidelity after syntax primer.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_worker_boot_intent_anchor\Dictated_SOP_Worker_Boot_Intent_Anchor_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_004.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
+
+& [SOPWorkerBootIntentAnchorRealization:079] is the periphery realization for booted local worker inference
+  + [moment] is after local worker benchmark showed schema compliance without stable intent context
+  + [focus] is local worker boot instructions for authority hierarchy and intent anchoring
+  + [periphery] is primer syntax pass, project-root context gravity, isolated prompt-only lane, exact-format latch, and ControlledExplosionReadiness local law
+  + [realization] is local model failure was not simply inability to read SOP; it was missing booted authority hierarchy under competing context
+  + [heat] is high because the booted isolated worker output became usable-to-strong while the project-root worker still leaked AGENTS.md
+  + [balance] is stable if local workers remain non-mutating proposal generators until Codex review accepts their output
+  + [next_draw] is exact-format latch plus continued paired benchmark lanes
+  + [outside] is hidden model state, repo authority for workers, general AGI claims, and broad worker competence claims
+
+/ [primer_pass], [intent_context_failure], [worker_boot_packet] -(Clarifies)> [local_worker_readiness], [context_gravity]
+* [booted_isolated_result], [booted_project_root_result] -(Separates)> [model_comprehension], [host_context_interference], [next_gate]

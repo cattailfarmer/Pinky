@@ -1,0 +1,17 @@
+Subject: SOP Inference Comparison Benchmark Source Manifest
+
+Description: Manifest for preserved source feeding the same-packet SOP inference comparison benchmark.
+
+& [SOPInferenceComparisonBenchmarkSourceManifest] is the source-preservation manifest
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_inference_comparison_benchmark
+  + [raw_source] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_inference_comparison_benchmark\Dictated_SOP_Inference_Comparison_Benchmark_Source.sop
+  + [prompt_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_prompt_20260624_004.sop
+  + [baseline_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_codex_baseline_20260624_004.sop
+  + [worker_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_20260624_004.sop
+  + [isolated_worker_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_isolated_20260624_004.sop
+  + [report_target] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_004.sop
+  + [source_boundary] is same-packet no-tools SOP inference comparison
+  + [source_outside] is hidden state, repo mutation, broad worker readiness, and authority transfer
+
+  = must: keep raw_source unchanged after benchmark processing
+  = must: cite raw_source from comparison report

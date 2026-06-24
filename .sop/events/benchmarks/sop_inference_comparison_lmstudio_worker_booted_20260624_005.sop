@@ -1,0 +1,9 @@
+**& [InferenceJobResult] is controlled explosion readiness inference**
+
+- **+ [focus]**: The specific SOP idea or proposal that the user wishes to expand.
+- **+ [inside]**: All source material that directly informs the idea (e.g., raw specification, relevant AGENTS.md excerpts, and any other documentation the user has supplied).
+- **+ [boundary]**: The limits set by the framework-only the atomic_thought and its immediate context are allowed to seed expansion; anything outside this scope must be treated as external or deferred.
+- **+ [outside]**: Any assumptions, higher-level governance rules, generic business practices, or unrelated frameworks that were not explicitly provided in the prompt. These are vented into exhaust for later review but do not influence the current decision.
+- **+ [inference]**: A judgment stating whether the idea meets the conditions of *ControlledExplosionReadiness*-i.e., it has a clear atomic_thought, sufficient evidence gates, and an identified piston that turns expansion into useful output (e.g., a concrete deliverable or next action). If these criteria are satisfied, the idea is deemed ready for controlled expansion; otherwise it is not.
+- **+ [caution]**: Explicit reminders to maintain governor checks-Wisdom, Caution, Security, Honesty, Evidence, Balance, and FrameReference-throughout the process, ensuring that no conceptual heat becomes proof and that expansion only proceeds when coupled to a useful piston.
+- **+ [next_step]**: If ready, initiate controlled_explosion by generating associations tied to the identified piston (e.g., draft a specification slice or outline a benchmark). If not ready, recommend gathering additional source material or clarifying the atomic_thought before attempting expansion.

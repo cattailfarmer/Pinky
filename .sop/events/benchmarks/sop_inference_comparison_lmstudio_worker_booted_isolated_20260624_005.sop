@@ -1,0 +1,8 @@
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is the high-energy SOP idea under consideration
+  + [inside] is the framework excerpt "ControlledExplosionReadiness" and the task instructions that define how to apply it
+  + [boundary] is the limits set by the prompt: only the provided primer, boot layer, framework excerpt, task, and expected schema may be used; no external frameworks or tools are allowed
+  + [outside] is any mention of other frameworks, AGENTS.md, generic governance models, or hidden-state claims that fall outside this prompt's scope
+  + [inference] is that the readiness to expand depends on: (1) identifying a clear atomic thought that can seed expansion; (2) ensuring the combustion chamber holds all relevant focus, boundary, and authority before ignition; (3) applying compression constraints from source authority and evidence gates; (4) verifying that a spark-an executive justification-is present; (5) executing controlled explosion while keeping the governor active, coupling to a piston for useful output, and venting exhaust into outside or deferred work
+  + [caution] is to maintain Wisdom, Caution, Security, Honesty, Evidence, Balance, and FrameReference checks throughout, avoid treating conceptual heat as proof, and refrain from expanding when the piston is uncoupled from useful output
+  + [next_step] is to evaluate any proposed SOP idea against these criteria, document the atomic thought, confirm boundary compliance, identify a spark justification, and plan for controlled expansion that produces a tangible power stroke while preserving all governance checks.

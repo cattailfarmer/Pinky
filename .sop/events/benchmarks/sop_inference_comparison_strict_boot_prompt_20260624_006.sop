@@ -1,0 +1,66 @@
+Subject: SOP Inference Comparison Strict Boot Prompt 006
+
+Description: Project-root local worker retry prompt with explicit exact-format latch and negative-inside rule.
+
+& [SOPInferenceComparisonStrictBootPrompt:20260624_006] is the bounded same-packet inference job with strict boot latch
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with seven property lines and no Markdown
+  + [comparison_subject] is controlled explosion readiness
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Use only the SOP primer, boot layer, and framework excerpt below.
+
+    SOP primer:
+    & [Name] is a subject declaration.
+    + [field] is a property or inferred field.
+    = must is a directive.
+    - never is a constraint.
+    (attention) :inside: /boundary/ |outside| means inside belongs in focus, boundary separates identity, and outside is uncertainty or out-of-scope material.
+
+    Boot layer:
+    The local law for this task is only the framework excerpt named ControlledExplosionReadiness.
+    The task content authority is only this prompt: SOP primer, boot layer, framework excerpt, task, and expected schema.
+    Host conduct rules are no tools, no file reads, no mutation, no repo authority, and no hidden-state claims.
+    Exact format latch: output raw SOP lines only. Do not use Markdown, bold text, bullets, headings, commentary, or colon-form substitutions.
+    Negative inside rule: AGENTS.md, SJS, SpecificationGovernance, generic governance, and generic project management may appear only in outside if mentioned at all.
+    The intent anchor is: infer whether a high-energy SOP idea is ready for controlled expansion under ControlledExplosionReadiness.
+    Inside must be grounded in atomic_thought, combustion_chamber, compression, spark, governor, piston, exhaust, cooling, and output duty.
+
+    Framework excerpt:
+    & [ControlledExplosionReadiness] is the readiness governor for harnessed SOP expansion.
+      + [atomic_thought] is the smallest preserved source impulse that can seed SOP expansion.
+      + [combustion_chamber] is the bounded attention frame that holds focus, boundary, outside, authority, and output duty before expansion.
+      + [compression] is constraint pressure from source authority, focal point, active registry, evidence gates, model limits, and scope.
+      + [spark] is the executive or stimulus-driven ignition point that justifies expansion now.
+      + [controlled_explosion] is bounded SOP expansion that multiplies associations while preserving chamber boundary and output coupling.
+      + [power_stroke] is useful motion produced by expansion, such as a contract, slice, benchmark, task frame, runtime helper, or commit-ready proof.
+      + [piston] is the selected output surface that converts conceptual expansion into work.
+      + [governor] is Wisdom, Caution, Security, Honesty, Evidence, Balance, and FrameReference checks before, during, and after expansion.
+      + [cooling] is balance reset, periphery stabilization, scope reduction, and caution debt payment after high-heat inference.
+      + [exhaust] is outside material, rejected claims, unresolved uncertainty, dead associations, and deferred work vented from focus.
+      = must: preserve the atomic_thought as source before controlled expansion becomes authority.
+      = must: state focus, boundary, outside, authority, and intended output duty before expansion.
+      = must: keep the governor active during expansion, not only afterward.
+      = must: couple expansion to a piston so heat becomes useful output.
+      = must: vent exhaust into outside, trackers, deferred tasks, or rejected claims.
+      - never: treat conceptual heat as proof.
+      - never: keep expanding when the piston is uncoupled from useful output.
+
+    Task:
+    Infer how this framework should be used to decide whether a new high-energy SOP idea is ready for expansion.
+    Return exactly these eight raw SOP lines and no extra text:
+    & [InferenceJobResult] is controlled explosion readiness inference
+      + [focus] is ...
+      + [inside] is ...
+      + [boundary] is ...
+      + [outside] is ...
+      + [inference] is ...
+      + [caution] is ...
+      + [next_step] is ...
+
+    Final check before answering:
+    Line 1 must start with &.
+    Lines 2 through 8 must start with two spaces, +, space, and the bracketed field name.
+    No line may start with -, *, #, or **.
+    inside must not include AGENTS.md, SJS, SpecificationGovernance, or generic governance.

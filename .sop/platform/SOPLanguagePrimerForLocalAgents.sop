@@ -7,6 +7,10 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
 @ [source] C:\Project\Pinky\.sop\platform\Attention.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_004.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
 
 & [SOPLanguagePrimerForLocalAgents] is the language-introduction gate for local SOP workers
   + [pattern_role] is introduce_sop_notation_before_framework_assignment
@@ -28,6 +32,10 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   + [comprehension_check] is a small no-tools response that restates the marker set, delineation pattern, outside rule, and authority boundary before any framework packet is assigned
   + [primer_smoke_result] is minimal no-tools exact-output pass when the prompt included the SOP primer and was sent through stdin_only transport
   + [prompt_transport_preference] is stdin_only for exact-output smoke tests in this host setup because prompt-as-argument runs carried unwanted environment_context tails
+  + [boot_packet_requirement] is language primer alone is insufficient for framework comprehension; the worker must also receive authority hierarchy, intent anchor, local law, and substitution-fault instructions before framework tasks
+  + [intent_context_fidelity_check] is whether the worker keeps the explicitly provided framework excerpt as task content authority instead of drifting into nearby project rails or generic examples
+  + [host_context_interference] is when project-root launch context pulls local worker output toward AGENTS.md, SJS, SpecificationGovernance, or adjacent rails not included as task content
+  + [negative_inside_rule_check] is whether explicitly excluded terms stay outside and do not contaminate the field named inside
   + [primer_outside] is hidden model state, repo mutation, framework work before comprehension, and treating primer pass as durable authority
 
   ? [use_when: a local LM Studio or Codex CLI local-provider worker will receive SOP framework material or task packets]
@@ -41,6 +49,10 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   = must: ask the worker to preserve outside rather than guessing
   = must: record whether the worker follows exact output and no-tool discipline during the primer
   = must: prefer stdin_only prompt transport for exact-output primer smoke tests in this host setup
+  = must: follow the primer with SOPWorkerBootPacket before any framework-specific inference benchmark
+  = must: treat syntax compliance without intent_context_fidelity as weak or failed framework comprehension
+  = must: treat a negative_inside_rule failure as task-authority failure even when exact format succeeds
+  = must: prefer isolated prompt-only worker launches when measuring local-law comprehension without project-root interference
   = should: use examples with one subject declaration, one attention delineation, one source line, one directive, one constraint, and one outside clause
   = should: treat a wrong but adjacent answer as a language-primer failure, not as a framework failure
   - never: assign framework utility before the worker has passed the language primer
@@ -48,16 +60,18 @@ Description: Contract for introducing local LM Studio or Codex CLI local-provide
   - never: let a local worker claim repo authority from primer exposure
 
 & [PrimerPacketShape] is the minimal packet sent before SOP framework work
-  + [packet_order] is language primer, marker examples, comprehension check, framework excerpt, task packet
+  + [packet_order] is language primer, marker examples, comprehension check, worker boot packet, framework excerpt, task packet
   + [marker_examples] is a compact demonstration of &, +, =, -, @, and attention delineation
   + [no_tool_rule] is do not call tools, do not inspect files, do not mutate state
   + [response_schema] is exact fields proving marker comprehension, outside preservation, and authority boundary
   + [pass_condition] is exact schema filled with non-empty content and no tool attempts
   + [fail_condition] is tool attempt, empty labels, adjacent substitution, authority overclaim, missing outside, or wrong output shape
   + [transport_condition] is use stdin_only prompt transport when exact final message purity is being measured
+  + [boot_condition] is the worker can name or apply task_content_authority, local_law, intent_anchor, outside_context, and forbidden_substitution
 
   = must: run before LMStudioAgentBenchmark framework-specific cases when the worker has not been primed in-session
   = must: treat minimal exact-output smoke pass as narrow readiness only
+  = must: require boot_condition before framework-excerpt tasks are treated as comprehension evidence
   = should: include one tiny SOP example and one tiny explanation request
 
 (sop_language_primer_for_local_agents) :primer_packet: /comprehension_check and authority_boundary/ |primer_outside|

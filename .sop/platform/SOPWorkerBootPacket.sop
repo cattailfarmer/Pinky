@@ -1,0 +1,55 @@
+Subject: SOP Worker Boot Packet
+
+Description: Contract for booting local SOP workers with authority hierarchy and intent-context anchoring before framework-specific tasks.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_worker_boot_intent_anchor\Dictated_SOP_Worker_Boot_Intent_Anchor_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\ControlledExplosionReadiness.sop
+
+& [SOPWorkerBootPacket] is the intent-context boot layer for local SOP workers
+  + [pattern_role] is local_worker_intent_context_boot
+  + [target_worker] is LM Studio hosted model, Codex CLI local-provider worker, or other local LLM lane
+  + [boot_order] is SOP language primer, authority hierarchy, intent anchor, task boundary, outside preservation, substitution warning, output schema, self-check
+  + [language_layer] is the SOP marker set and attention delineation primer
+  + [authority_hierarchy] is prompt packet first, explicitly cited framework excerpt second, benchmark rules third, host conduct rules only for process conduct, and unrelated project rails outside task meaning unless explicitly included
+  + [intent_anchor] is the named task subject plus the requested inference verb that determines what the answer is trying to resolve
+  + [local_law] is the framework excerpt or contract explicitly supplied inside the task packet
+  + [host_conduct] is no-tools, read-only, no mutation, no repo authority, and process safety requirements
+  + [task_content_authority] is only the material the prompt marks as SOP primer, framework excerpt, task, and expected output
+  + [context_gravity] is the tendency to substitute nearby project rails, generic governance, or generic domain examples for the packet's local law
+  + [substitution_fault] is any answer that keeps the requested schema but changes the governing inside away from the task packet
+  + [intent_context_fidelity] is whether the output keeps local_law, intent_anchor, inside, boundary, outside, caution, and next_step aligned to the packet
+  + [exact_format_latch] is the requirement that exact-schema tasks return raw SOP lines only, without Markdown bullets, bolding, headings, commentary, or colon-form substitutions
+  + [negative_inside_rule] is the requirement that explicitly excluded frameworks may appear only in outside, never inside, boundary, inference, caution, or next_step as governing material
+  + [boot_self_check] is the worker naming local_law, outside_context, forbidden_substitution, and output_duty before writing the answer or internally applying those checks when exact schema forbids extra fields
+  + [boot_outside] is hidden model state, unprovided repository contents, unrelated project rails, generic domain examples, and worker authority claims
+
+  ? [use_when: a local worker must read a SOP framework excerpt and produce a task-shaped inference without drifting into adjacent context]
+    = activate [SOPWorkerBootPacket]
+
+  = must: boot local workers with authority hierarchy before framework-specific SOP inference tasks
+  = must: distinguish host conduct authority from task content authority
+  = must: define the framework excerpt as local_law when the task says to use only that excerpt
+  = must: define prompt-only, no-tools, no-mutation, and no-repo-authority as host conduct, not as subject content
+  = must: name context_gravity as outside when adjacent project rails are not included in the task packet
+  = must: score substitution_fault separately from syntax compliance
+  = must: enforce exact_format_latch when a benchmark says "exactly this schema and no extra text"
+  = must: enforce negative_inside_rule when a prompt explicitly names frameworks or rails as outside
+  = must: treat exact schema compliance without intent_context_fidelity as weak or failed for framework comprehension
+  = should: use a self-check field when the output schema allows it
+  = should: rerun failed workers with an explicit boot packet before concluding the model cannot perform the task
+  - never: count SOP marker mimicry as SOP objective comprehension
+  - never: let a worker import project governance, SJS, AGENTS.md, or generic business examples into task meaning unless the prompt packet includes them
+  - never: let local worker output become integrated authority before Codex review accepts it
+
+(sop_worker_boot_packet) :intent_anchor: /authority_hierarchy and local_law/ |boot_outside|
+  + [intent_anchor] is the task subject plus requested inference verb
+  + [authority_hierarchy] is prompt packet above adjacent context for task meaning
+  + [local_law] is the provided framework excerpt or cited contract that governs the answer
+  + [substitution_fault] is schema compliance with wrong governing inside
+  + [exact_format_latch] is raw SOP lines only when exact schema is required
+  |boot_outside| hidden state, unprovided repo contents, unrelated project rails, generic examples, and worker authority claims
+
+/ [SOPLanguagePrimerForLocalAgents], [SOPWorkerBootPacket], [LMStudioAgentBenchmark] -(Boots)> [intent_context_fidelity], [task_content_authority], [boot_outside]
+* [intent_anchor], [local_law], [output_duty], [exact_format_latch] -(Prevents)> [substitution_fault], [context_gravity], [hollow_form]

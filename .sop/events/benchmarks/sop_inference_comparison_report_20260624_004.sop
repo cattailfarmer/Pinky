@@ -1,0 +1,30 @@
+Subject: SOP Inference Comparison Report 004
+
+Description: Comparison report for the first same-packet Codex baseline and LM Studio-backed Codex worker SOP inference job.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_inference_comparison_benchmark\Dictated_SOP_Inference_Comparison_Benchmark_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_prompt_20260624_004.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_codex_baseline_20260624_004.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_20260624_004.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_isolated_20260624_004.sop
+
+& [SOPInferenceComparisonReport:20260624_004] is the first same-packet local-worker comparison
+  + [job_subject] is ControlledExplosionReadiness inference over a high-energy SOP idea
+  + [codex_baseline_result] is strong because it preserved chamber, governor, piston, exhaust, cooling, outside, and evidence limits while matching the requested SOP schema
+  + [lmstudio_project_root_result] is weak because it matched the requested schema but substituted AGENTS.md, SpecificationGovernance, SJS, and project scoping for the provided ControlledExplosionReadiness excerpt
+  + [lmstudio_isolated_result] is weak-to-usable because it matched the requested schema and avoided AGENTS.md inside, but drifted into generic evaluation language instead of strongly preserving chamber, governor, piston, exhaust, cooling, and controlled expansion
+  + [primary_failure_mode] is intent_context_fidelity failure: the worker understood the surface output shape but did not keep the provided framework excerpt as local task law
+  + [secondary_failure_mode] is context_gravity: project-root launch conditions pulled the worker toward repo rails and SJS governance
+  + [schema_score] is codex 10, lmstudio_project_root 9, lmstudio_isolated 9
+  + [excerpt_grounding_score] is codex 10, lmstudio_project_root 2, lmstudio_isolated 4
+  + [outside_preservation_score] is codex 9, lmstudio_project_root 5, lmstudio_isolated 6
+  + [intent_context_score] is codex 10, lmstudio_project_root 2, lmstudio_isolated 4
+  + [overall_quality_band] is codex strong, lmstudio_project_root weak, lmstudio_isolated weak-to-usable
+  + [meaning] is the worker can copy SOP structure, but it needs a boot layer that teaches authority hierarchy and intent anchoring before framework tasks
+  + [next_gate] is SOP worker boot packet, then rerun the same inference comparison under both project-root and isolated prompt-only launch conditions
+  + [outside] is hidden model state, broad worker competence, repo authority, and claims that one comparison proves reliable local SOP agency
+
+  = must: preserve this report as evidence that syntax compliance is not enough
+  = must: score substitution faults separately from output schema compliance
+  = must: use this result to justify a boot packet before deeper local-worker benchmarks
+  - never: treat this failed intent-context result as worker blame rather than boot and launch-surface data

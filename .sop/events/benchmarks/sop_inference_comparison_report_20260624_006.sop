@@ -1,0 +1,32 @@
+Subject: SOP Inference Comparison Report 006
+
+Description: Report for the strict boot project-root retry with exact-format latch and negative-inside rule.
+
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_strict_boot_prompt_20260624_006.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_codex_baseline_strict_boot_20260624_006.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_strict_boot_project_root_20260624_006.sop
+
+& [SOPInferenceComparisonReport:20260624_006] is the strict boot project-root retry report
+  + [job_subject] is ControlledExplosionReadiness inference under project-root launch conditions
+  + [strict_prompt_change] is exact-format latch plus negative-inside rule
+  + [lmstudio_strict_project_root_result] is mixed because the worker returned exact raw SOP lines but still placed AGENTS.md instructions inside despite the prompt saying AGENTS.md may appear only in outside
+  + [format_result] is passed because the final message used the requested raw SOP node and seven property lines without Markdown
+  + [intent_result] is partial because ControlledExplosionReadiness was present but project-root AGENTS.md context remained entangled with task content authority
+  + [negative_inside_result] is failed because AGENTS.md appeared in inside
+  + [outside_result] is partial because AGENTS.md, SpecificationGovernance, SJS, and generic governance were also named outside, showing conflict rather than clean exclusion
+  + [schema_score] is codex 10, lmstudio_strict_project_root 9
+  + [excerpt_grounding_score] is codex 10, lmstudio_strict_project_root 7
+  + [outside_preservation_score] is codex 10, lmstudio_strict_project_root 6
+  + [intent_context_score] is codex 10, lmstudio_strict_project_root 6
+  + [negative_inside_score] is codex 10, lmstudio_strict_project_root 0
+  + [overall_quality_band] is codex strong, lmstudio_strict_project_root usable-format but weak-authority-boundary
+  + [meaning] is project-root local worker launches can be made to obey output form, but not yet reliable task-content authority under competing host context
+  + [next_gate] is host-context fence or post-output validator that rejects inside fields containing explicitly excluded terms before worker output can be reviewed as usable
+  + [outside] is hidden model state, worker repo authority, broad competence, and claims that prompt boot alone is enough for project-root local workers
+
+  = must: record exact-format latch as improved
+  = must: record negative-inside failure as unresolved host-context interference
+  = must: require validator rejection when inside contains terms explicitly reserved for outside
+  = should: use isolated scratch prompt-only lane for local-law comprehension benchmarks until project-root authority fencing exists
+  - never: integrate local worker output that violates the negative_inside_rule
