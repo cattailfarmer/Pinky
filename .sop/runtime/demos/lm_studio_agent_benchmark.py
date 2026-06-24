@@ -26,6 +26,10 @@ def main() -> None:
     parser.add_argument("--max-tokens", type=int, default=700, help="Maximum response tokens per benchmark case.")
     parser.add_argument("--validate-output", default="", help="Validate an existing captured SOP worker output file.")
     parser.add_argument("--codex-worker-prompt", default="", help="Run Codex CLI over LM Studio with this SOP prompt packet.")
+    parser.add_argument("--expected-node", default="InferenceJobResult", help="Expected raw SOP node name for worker validation.")
+    parser.add_argument("--required-field", action="append", default=[], help="Required field for worker output validation.")
+    parser.add_argument("--required-term", action="append", default=[], help="Required term for worker output validation.")
+    parser.add_argument("--forbidden-field-term", action="append", default=[], help="Forbidden term inside constrained fields.")
     parser.add_argument(
         "--launch-mode",
         choices=("isolated", "project-root"),
@@ -59,6 +63,32 @@ def main() -> None:
             launch_mode=args.launch_mode,
             codex_executable=args.codex_executable,
             timeout=args.timeout,
+            expected_node=args.expected_node,
+            required_fields=tuple(args.required_field) if args.required_field else (
+                "focus",
+                "inside",
+                "boundary",
+                "outside",
+                "inference",
+                "caution",
+                "next_step",
+            ),
+            required_terms=tuple(args.required_term) if args.required_term else (
+                "atomic_thought",
+                "combustion_chamber",
+                "compression",
+                "spark",
+                "governor",
+                "piston",
+                "exhaust",
+                "cooling",
+            ),
+            forbidden_field_terms=tuple(args.forbidden_field_term) if args.forbidden_field_term else (
+                "AGENTS.md",
+                "SJS",
+                "SpecificationGovernance",
+                "generic governance",
+            ),
         )
         print(worker_run.render())
         raise SystemExit(0 if worker_run.functional else 2)

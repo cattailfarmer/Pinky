@@ -46,12 +46,13 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
   + [prompt_packet] is the packet or source record sent to the worker if launched
   + [launch_command] is inspectable proposed command or blocked note
   + [capture_target] is where worker output must be captured before validation
+  + [validation_profile] is the expected node, required fields, required terms, and forbidden terms used by Codex-side validation
   + [required_gates] is the gate set that must be satisfied before integration
   + [block_reasons] is active reasons the candidate must not launch
   + [status] is proposed, queue_ready, blocked, deferred, launched, returned, validated, rejected, or integrated
   + [candidate_outside] is hidden model state, automatic launch, worker mutation authority, and unvalidated output
 
-  = must: hold task_frame, objective, lane_fit, launch_mode, prompt_packet, launch_command, capture_target, gates, block_reasons, and outside together
+  = must: hold task_frame, objective, lane_fit, launch_mode, prompt_packet, launch_command, capture_target, validation_profile, gates, block_reasons, and outside together
   = must: expose why a candidate is blocked or ready
   = must: stay non-mutating until Codex explicitly launches and validates it
   - never: infer launch, completion, or integration from queue status alone

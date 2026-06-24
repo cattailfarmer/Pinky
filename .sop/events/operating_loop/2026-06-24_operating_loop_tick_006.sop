@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_006] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_006
+  + [focus_subject] is diversified LM Studio corpus launch queue
+  + [completed_step] is compiled first diversified task-frame launch queue candidates for three LMStudioWorkerTaskCorpus families without launching workers
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is inspect and optionally run first diversified corpus candidate corpus_boundary_delineation_010
+  + [created_utc] is 2026-06-24T20:04:25Z
+  + [evidence_refs] is .sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop, .sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010.sop, .sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011.sop, .sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012.sop
+  + [outside] is queue candidates are not launched worker proof, automatic launch remains outside, broad LM Studio competence remains outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat commit, proof, or report as evidence that the clock stopped
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_006
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is inspect and optionally run first diversified corpus candidate corpus_boundary_delineation_010
+  |outside| queue candidates are not launched worker proof, automatic launch remains outside, broad LM Studio competence remains outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside

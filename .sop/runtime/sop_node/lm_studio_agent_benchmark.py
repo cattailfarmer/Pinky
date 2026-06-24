@@ -499,6 +499,8 @@ def run_codex_lmstudio_worker(
     launch_mode: str = "isolated",
     codex_executable: str = "codex.cmd",
     timeout: float = 180.0,
+    expected_node: str = "InferenceJobResult",
+    required_fields: tuple[str, ...] = DEFAULT_INFERENCE_FIELDS,
     required_terms: tuple[str, ...] = DEFAULT_CONTROLLED_EXPLOSION_TERMS,
     forbidden_field_terms: tuple[str, ...] = DEFAULT_FORBIDDEN_CONTEXT_TERMS,
 ) -> CodexLMStudioWorkerRun:
@@ -530,6 +532,8 @@ def run_codex_lmstudio_worker(
     output_text = output.read_text(encoding="utf-8") if output.exists() else ""
     validation = validate_sop_worker_output(
         output_text,
+        expected_node=expected_node,
+        required_fields=required_fields,
         required_terms=required_terms,
         forbidden_field_terms=forbidden_field_terms,
     )

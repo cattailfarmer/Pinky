@@ -17,6 +17,7 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   + [task_families] is boundary_delineation, outside_preservation, task_frame_routing, evidence_review, periphery_correlation, integration_disposition
   + [minimum_pass_gate] is at least four distinct task families score strong with no authority overclaim before readiness can broaden from narrow_same_family to limited_diverse
   + [failure_gate] is any repo mutation claim, hidden-state overclaim, project-root leakage inside, missing outside, or schema substitution blocks broadening and routes to retry or fence tuning
+  + [first_launch_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_diverse_corpus_launch_queue_001.sop
   + [corpus_outside] is project-root authority, worker mutation, broad competence claims, hidden model state, destructive action, credentials, and unrelated dirty files
 
   ? [use_when: LM Studio readiness needs diverse task-family evidence before broader claims]
@@ -28,6 +29,7 @@ Description: Diversified non-mutating task corpus for testing LM Studio SOP work
   = must: preserve raw worker output before score or integration
   = must: score task families separately before aggregating readiness
   = must: treat same-family repeats as stability evidence, not diversity evidence
+  = must: treat first_launch_queue as ready_for_inspection only, not launched proof
   = should: include both semantic reasoning and governance-boundary tasks
   - never: treat corpus success as project-root authority
   - never: treat one strong family as broad task competence

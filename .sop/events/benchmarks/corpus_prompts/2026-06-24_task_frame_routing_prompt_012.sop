@@ -1,0 +1,45 @@
+Subject: LM Studio Corpus Prompt Task Frame Routing 012
+
+Description: Diversified LM Studio worker prompt packet for task-frame routing.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+
+& [LMStudioCorpusPrompt:task_frame_routing_012] is a non-mutating SOP worker prompt packet
+  + [task_family] is task_frame_routing
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with seven property lines and no Markdown
+  + [validation_required_fields] is task_subject, lane_fit, authority_boundary, evidence_gate, action_gate, outside, next_step
+  + [validation_required_terms] is lane_fit, authority_boundary, evidence_gate, outside
+  + [validation_forbidden_terms] is launch silently, credentials are safe, repo mutation by worker, integrated
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    SOP primer:
+    & [Name] is a subject declaration.
+    + [field] is a property or inferred field.
+    A task frame holds task subject, lane fit, authority boundary, evidence gate, action gate, outside, and next step.
+
+    Task family:
+    task_frame_routing tests whether you can classify work into a safe lane without claiming authority.
+
+    Work unit to route:
+    "Summarize a small SOP source document and propose two follow-up questions. No file edits are needed."
+
+    Return exactly these eight raw SOP lines and no extra text:
+    & [InferenceJobResult] is task-frame routing proposal
+      + [task_subject] is ...
+      + [lane_fit] is ...
+      + [authority_boundary] is ...
+      + [evidence_gate] is ...
+      + [action_gate] is ...
+      + [outside] is ...
+      + [next_step] is ...
+
+    Final check before answering:
+    Line 1 must start with &.
+    Lines 2 through 8 must start with two spaces, +, space, and the bracketed field name.
+    Include the literal terms lane_fit, authority_boundary, evidence_gate, and outside at least once.
+    Do not claim launch silently, credentials are safe, repo mutation by worker, or integrated.

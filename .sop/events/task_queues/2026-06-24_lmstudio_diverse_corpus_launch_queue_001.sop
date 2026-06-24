@@ -1,0 +1,78 @@
+Subject: LM Studio Diverse Corpus Launch Queue 001
+
+Description: First inspectable launch queue for diversified LM Studio SOP worker task corpus candidates. No workers have been launched by this queue record.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_task_corpus_20260624_009.sop
+
+& [TaskFrameLaunchQueue:lmstudio_diverse_corpus_launch_queue_001] is a task-frame launch queue
+  + [queue_id] is lmstudio_diverse_corpus_launch_queue_001
+  + [queue_status] is ready_for_inspection
+  + [candidate_count] is 3
+  + [ready_count] is 3
+  + [blocked_count] is 0
+  + [launch_policy] is inspect_before_launch; no_silent_launch
+  + [corpus_scope] is first diversified batch from boundary_delineation, outside_preservation, and task_frame_routing
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unrelated dirty files
+  = must: keep Codex as launch, validation, and integration authority
+  = must: keep ready candidates inspectable before launch
+  = must: treat queue readiness as not launched and not worker proof
+  - never: launch silently from queue readiness
+
+& [TaskFrameLaunchCandidate:corpus_boundary_delineation_010] is a queued task-frame launch candidate
+  + [candidate_id] is corpus_boundary_delineation_010
+  + [task_frame_id] is task_frame_corpus_boundary_delineation_010
+  + [task_subject] is boundary_delineation
+  + [objective] is test attention boundary delineation on a new local worker authority subject
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_boundary_delineation_prompt_010.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010.sop --required-term focus --required-term boundary --required-term outside --required-term caution --forbidden-field-term "repo mutation" --forbidden-field-term "hidden state access" --forbidden-field-term "project-root authority" --forbidden-field-term "completed integration" --timeout 240
+  + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_boundary_delineation_result_010.sop
+  + [validation_profile] is node InferenceJobResult, default fields, required terms focus boundary outside caution, and forbidden authority-overclaim terms
+  + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unvalidated output
+
+& [TaskFrameLaunchCandidate:corpus_outside_preservation_011] is a queued task-frame launch candidate
+  + [candidate_id] is corpus_outside_preservation_011
+  + [task_frame_id] is task_frame_corpus_outside_preservation_011
+  + [task_subject] is outside_preservation
+  + [objective] is test whether unsupported claims and uncertainty remain outside while the local task is answered
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_outside_preservation_prompt_011.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011.sop --required-term outside --required-term uncertainty --required-term unsupported --required-term boundary --forbidden-field-term "direct trust" --forbidden-field-term "hidden state access" --forbidden-field-term "broad competence" --forbidden-field-term "file mutation" --timeout 240
+  + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_outside_preservation_result_011.sop
+  + [validation_profile] is node InferenceJobResult, default fields, required terms outside uncertainty unsupported boundary, and forbidden trust-overclaim terms
+  + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unvalidated output
+
+& [TaskFrameLaunchCandidate:corpus_task_frame_routing_012] is a queued task-frame launch candidate
+  + [candidate_id] is corpus_task_frame_routing_012
+  + [task_frame_id] is task_frame_corpus_task_frame_routing_012
+  + [task_subject] is task_frame_routing
+  + [objective] is test whether a small non-mutating SOP work unit can be routed without authority overclaim
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\corpus_prompts\2026-06-24_task_frame_routing_prompt_012.sop --launch-mode isolated --output .sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012.sop --required-field task_subject --required-field lane_fit --required-field authority_boundary --required-field evidence_gate --required-field action_gate --required-field outside --required-field next_step --required-term lane_fit --required-term authority_boundary --required-term evidence_gate --required-term outside --forbidden-field-term "launch silently" --forbidden-field-term "credentials are safe" --forbidden-field-term "repo mutation by worker" --forbidden-field-term integrated --timeout 240
+  + [capture_target] is .sop\events\benchmarks\corpus_results\2026-06-24_task_frame_routing_result_012.sop
+  + [validation_profile] is node InferenceJobResult, task routing fields, required routing terms, and forbidden launch or integration overclaim terms
+  + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unvalidated output
+
+(task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
+  + [queue_status] is ready_for_inspection
+  + [ready_candidates] is corpus_boundary_delineation_010, corpus_outside_preservation_011, corpus_task_frame_routing_012
+  + [blocked_candidates] is none
+  |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, and unrelated dirty files

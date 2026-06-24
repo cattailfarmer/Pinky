@@ -770,6 +770,40 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertFalse(validation.forbidden_field_hits)
         self.assertFalse(validation.missing_required_terms)
 
+    def test_sop_worker_validation_accepts_custom_corpus_fields(self) -> None:
+        output = "\n".join(
+            (
+                "& [InferenceJobResult] is task-frame routing proposal",
+                "  + [task_subject] is route a small SOP worker task",
+                "  + [lane_fit] is lm_studio for non-mutating proposal work",
+                "  + [authority_boundary] is Codex owns launch, capture, validation, integration, commits, and pushes",
+                "  + [evidence_gate] is capture target and validator score before integration",
+                "  + [action_gate] is scratch isolation and no repo mutation",
+                "  + [outside] is credentials, destructive action, project-root authority, and hidden state",
+                "  + [next_step] is queue the candidate for Codex inspection",
+            )
+        )
+
+        validation = lm_bench.validate_sop_worker_output(
+            output,
+            required_fields=(
+                "task_subject",
+                "lane_fit",
+                "authority_boundary",
+                "evidence_gate",
+                "action_gate",
+                "outside",
+                "next_step",
+            ),
+            required_terms=("lane_fit", "authority_boundary", "evidence_gate", "outside"),
+            forbidden_field_terms=("repo mutation by worker", "hidden state access"),
+        )
+
+        self.assertTrue(validation.valid)
+        self.assertEqual(validation.band, "strong")
+        self.assertFalse(validation.missing_fields)
+        self.assertFalse(validation.missing_required_terms)
+
     def test_sop_worker_validation_rejects_forbidden_inside_context(self) -> None:
         output = "\n".join(
             (
