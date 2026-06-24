@@ -31,6 +31,7 @@ from sop_node import (
     build_attention_tracking_record,
     build_hyperbolic_pants_topology_map,
     build_hyperbolic_corridor_navigation,
+    build_security_honesty_governance_record,
     build_lmstudio_task_frame_candidate,
     build_seven_fold_pants_frame,
     build_sensitivity_scan,
@@ -49,11 +50,14 @@ from sop_node import (
     parse_periphery_terms,
     parse_edge_participants,
     parse_aperture_support,
+    parse_candidate_action,
+    parse_candidate_claim,
     parse_correlation_cell,
     parse_corridor_frame,
     parse_curving_association,
     parse_directive,
     parse_faculty_field,
+    parse_feedback_signal,
     parse_fold_leg,
     parse_pants_leg,
     parse_periphery_run_frame,
@@ -996,6 +1000,48 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("candidate_status: candidate_not_proof", graph_rendered)
         self.assertIn("proof_status=candidate_not_proof", graph_rendered)
         self.assertIn("N:outside:hyperbolic_corridor_boundary", graph_rendered)
+
+    def test_security_honesty_governance_separates_truth_security_and_feedback_guard(self) -> None:
+        governance = build_security_honesty_governance_record(
+            governance_id="test_security_honesty_governance",
+            focal_subject="security honesty governance runtime selection",
+            return_anchor="CurrentFocalPoint",
+            claims=(
+                parse_candidate_claim(
+                    "luminous_correlation|corridor heat proves Security/Honesty is required|none|corridor heat suggests next focus|none|proof remains outside|speculative"
+                ),
+                parse_candidate_claim(
+                    "test_support|runtime emits checked governance records|unit test and generated SOP-HG graph|none|none|hidden model state remains outside|supported"
+                ),
+            ),
+            actions=(
+                parse_candidate_action(
+                    "emit_runtime|emit a Codex-owned SOP-HG governance record|runtime helper authority drift|SOP authority with tests and source packet|permit_with_boundary"
+                ),
+            ),
+            feedback=(
+                parse_feedback_signal(
+                    "commit_feedback|commit diff and tick create reflective feedback|1|CurrentFocalPoint|unit test and generated graph|self_reflective_feedback|continue|2"
+                ),
+            ),
+        )
+        rendered = governance.render()
+        graph = governance.to_hypergraph()
+        graph_rendered = graph.render()
+
+        self.assertTrue(governance.ready)
+        self.assertTrue(graph.ready)
+        self.assertFalse(governance.convergent_override)
+        self.assertIn("+ [truth_summary] is luminous_correlation:speculative, test_support:supported", rendered)
+        self.assertIn("+ [security_summary] is emit_runtime:permit_with_boundary", rendered)
+        self.assertIn("+ [guard_summary] is commit_feedback:continue", rendered)
+        self.assertIn("E:governs:test_security_honesty_governance", graph_rendered)
+        self.assertIn("E:tests:luminous_correlation", graph_rendered)
+        self.assertIn("E:guards:emit_runtime", graph_rendered)
+        self.assertIn("E:guards:commit_feedback", graph_rendered)
+        self.assertIn("E:authorizes:SOP_authority_with_tests_and_source_packet", graph_rendered)
+        self.assertIn("E:returns:security_honesty_governance_runtime_selection", graph_rendered)
+        self.assertIn("N:outside:security_honesty_boundary", graph_rendered)
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")

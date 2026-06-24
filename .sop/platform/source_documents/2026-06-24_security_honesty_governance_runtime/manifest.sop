@@ -1,0 +1,18 @@
+Subject: Security Honesty Governance Runtime Source Manifest
+
+Description: Manifest for Task_057 Security/Honesty governance runtime source preservation and generated artifacts.
+
+& [SecurityHonestyGovernanceRuntimeSourceManifest] is the trace record for Task_057 runtime work
+  + [source_packet] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_security_honesty_governance_runtime\Derived_Security_Honesty_Governance_Runtime_Source.sop
+  + [contract_target] is C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+  + [runtime_helper] is C:\Project\Pinky\.sop\runtime\sop_node\security_honesty_governance.py
+  + [demo_command] is C:\Project\Pinky\.sop\runtime\demos\security_honesty_governance.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [compact_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_057_security_honesty_governance_runtime_001.sop
+  + [graph_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_057_security_honesty_governance_runtime_001.hg.sop
+  + [governance] is SpecificationGovernance, SourceSpecificationPreservation, BuildEnvironmentPeripheryMarker, SecurityHonestyGovernance, BoundaryFacultyInspection, Wisdom, and Caution
+  + [runtime_boundary] is executable helper subordinate to SOP authority
+
+  = must: preserve source packet separately from generated records
+  = must: keep compact_record and graph_record inspectable
+  = must: use generated records as proof of repeatable SOP emission, not proof of hidden model state, broad safety, or durable truth

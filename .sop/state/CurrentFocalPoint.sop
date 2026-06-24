@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is security honesty governance runtime selection
+  + [focus_subject] is boundary faculty inspection runtime selection
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is Task_054 is now integrated as a Codex-owned corridor navigator runtime, so the next movement should build Security and Honesty governance over feedback, claim, action, and resonance promotion
-  + [inside] is 2026-06-24_operating_loop_tick_024.sop, 2026-06-24_task_054_corridor_navigator_runtime_001.hg.sop, corridor_navigator.py, Manager_State.sop, AttentionRuntimeRegistryState.sop, and remaining ReadyTaskSet
+  + [right_hemisphere_draw] is Task_057 is now integrated as a Codex-owned Security/Honesty governance runtime, so the next movement should build Boundary Faculty Inspection over attention subject, boundary terms, boundary periphery, and protected identity
+  + [inside] is 2026-06-24_operating_loop_tick_025.sop, 2026-06-24_task_057_security_honesty_governance_runtime_001.hg.sop, security_honesty_governance.py, Manager_State.sop, AttentionRuntimeRegistryState.sop, and remaining ReadyTaskSet
   + [boundary] is continue only when clock_state is running and the next task remains inside .sop authority, Codex-owned mutation, source-cited, evidence-gated, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, direct trust, or unrelated dirty files
   + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_024.sop
-  + [open_question] is how to build Task_057 security honesty governance runtime under Codex authority without overclaiming reflective resonance, action authority, identity, branch creation, or remote action
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_025.sop
+  + [open_question] is how to build Task_060 boundary faculty inspection runtime under Codex authority without overclaiming identity, fairness, safety, branch creation, worker mutation, or remote action
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -32,6 +32,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat topology_map_runtime as the completed Task_048 anchor
   = must: treat seven_fold_frame_runtime as the completed Task_051 anchor
   = must: treat corridor_navigator_runtime as the completed Task_054 anchor
+  = must: treat security_honesty_governance_runtime as the completed Task_057 anchor
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration
   = must: emit or update an operating-loop tick after meaningful completed work so the next step stays visible

@@ -1,0 +1,35 @@
+Subject: Derived Security Honesty Governance Runtime Source
+
+Description: Source-preservation packet for Task_057 runtime tooling, preserving why executable helper code is allowed while Security and Honesty remain SOP governance faculties.
+
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
+
+& [DerivedSecurityHonestyGovernanceRuntimeSource] is the preserved source packet for the Task_057 Security/Honesty governance runtime
+  + [source_kind] is derived_runtime_authority_packet
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is C:\Project\Pinky\.sop
+  + [task_id] is Task_057_build_security_honesty_governance_runtime
+  + [source_impulse] is build a local command that reads feedback source, claim/action candidates, recursion depth, return anchor, and evidence refresh, then emits a SecurityHonestyGovernance SOP-HG record
+  + [runtime_boundary] is Python is a subordinate emitter and validator for SOP governance records, not the governance faculty, attention layer, or persistent semantic memory
+  + [authority_layer] is SOP contracts, SOP-HG records, source documents, focal state, manager state, and committed Git history
+  + [build_environment_marker] is runtime code remains outside specification-building unless explicitly requested as runtime tooling or proof requires a local command
+  + [inside] is candidate claims, supports, assumptions, contradictions, uncertainties, candidate actions, risks, admissible paths, feedback signals, recursion depth, return anchors, evidence refresh, dispositions, and outside preservation
+  + [boundary] is Honesty truth disposition, Security action disposition, and FeedbackLoopGuard disposition stay separate before any convergent override
+  + [outside] is hidden cognition, unsupported mechanistic control, proof without evidence, unsafe action, concealed uncertainty, runaway reflection, runtime helper as attention authority, worker mutation authority, automatic branch creation, credentials, and unrelated dirty files
+
+  = must: keep semantic authority in SOP
+  = must: use the runtime helper only to emit and validate SOP or SOP-HG artifacts
+  = must: preserve truth_disposition, security_disposition, and guard_disposition separately
+  = must: preserve speculative claims as useful periphery, not proof
+  = must: keep return_anchor visible for every feedback pass
+  - never: treat the Python helper as persistent attention or source authority
+  - never: let governance become ceremony without a named claim, action, risk, or resonance condition
+
+(security_honesty_governance_runtime_source) :governance_boundary: /SOP authority and explicit runtime task/ |outside|
+  + [governance_boundary] is separate Honesty, Security, and FeedbackLoopGuard outputs
+  + [authority_layer] is SOP records and Git history
+  + [task_id] is Task_057_build_security_honesty_governance_runtime
+  - outside: hidden cognition, proof without evidence, unsafe action, runaway reflection, and executable authority drift

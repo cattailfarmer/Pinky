@@ -11,6 +11,9 @@ Description: Local governance faculty contract for truth, safety, stability, and
 @ [source] F:\.sop\platform\FacultyAttentionFieldNaming.sop
 @ [source] F:\.sop\platform\Wisdom.sop
 @ [source] F:\.sop\platform\Caution.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_security_honesty_governance_runtime\Derived_Security_Honesty_Governance_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\security_honesty_governance.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_057_security_honesty_governance_runtime_001.hg.sop
 
 & [SecurityHonestyGovernance] is the substrate of governance for reflective attention, truth alignment, and stability protection
   + [pattern_role] is truth_and_stability_governance
@@ -135,6 +138,23 @@ Description: Local governance faculty contract for truth, safety, stability, and
 
   = must: show truth_disposition, security_disposition, recursion_depth, return_anchor, evidence_refresh status, and outside
   = must: keep Honesty and Security outputs separate before any convergent_override
+
+& [SecurityHonestyGovernanceRuntime] is the subordinate runtime helper for repeatable governance record emission
+  + [runtime_role] is SOP_record_emitter_and_validator
+  + [runtime_helper] is C:\Project\Pinky\.sop\runtime\sop_node\security_honesty_governance.py
+  + [demo_command] is C:\Project\Pinky\.sop\runtime\demos\security_honesty_governance.py
+  + [source_packet] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_security_honesty_governance_runtime\Derived_Security_Honesty_Governance_Runtime_Source.sop
+  + [compact_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_057_security_honesty_governance_runtime_001.sop
+  + [graph_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_057_security_honesty_governance_runtime_001.hg.sop
+  + [authority_layer] is this SOP contract, source packet, generated SOP records, tests, and committed Git history
+  + [runtime_boundary] is Python is not persistent attention, not hidden inference, not truth authority, and not safety authority
+  + [proof_surface] is unit tests plus generated SOP-HG edges showing governs, tests, guards, authorizes, returns, and bounds
+
+  = must: keep truth_disposition, security_disposition, and guard_disposition separately visible
+  = must: preserve speculative claims as speculative even when they are useful for focus
+  = must: preserve runtime emission as permit_with_boundary when tests and source packet are present
+  = must: treat generated records as repeatable SOP emission proof, not broad safety proof or hidden-state proof
+  - never: let runtime helper code outrank SOP authority
 
 * [candidate_claim], [support], [assumption], [uncertainty] -(HonestyGovernancePass)> [truth_disposition], [outside]
 * [candidate_action], [risk], [admissible_path], [security_boundary] -(SecurityGovernancePass)> [security_disposition], [outside]
