@@ -5,24 +5,24 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is validated LM Studio launch result over task-frame launch queue
+  + [focus_subject] is LM Studio worker readiness profile integration
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the launch membrane worked: the worker produced a score 100 proposal, but proposal validation still remains distinct from integration authority
-  + [inside] is TaskFrameLaunchQueue.sop, LMStudioWorkerFunctionalLane.sop, 2026-06-24_lmstudio_next_probe_result_001.sop, sop_inference_comparison_lmstudio_next_probe_20260624_008.sop, 2026-06-24_operating_loop_tick_003.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when clock_state is running and integration stays Codex-reviewed; pause or block on user stop, credentials, destructive action, missing authority, project-root LM Studio authority, or unrelated dirty files
+  + [right_hemisphere_draw] is repeated score 100 isolated evidence strengthens the narrow lane, but same-family repetition must not masquerade as broad competence
+  + [inside] is LMStudioWorkerFunctionalLane.sop, LMStudioAgentBenchmark.sop, lm_studio_worker_readiness_profile_20260624_008.sop, 2026-06-24_lmstudio_next_probe_result_001.sop, 2026-06-24_operating_loop_tick_004.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when clock_state is running and readiness claims stay narrow; pause or block on user stop, credentials, destructive action, missing authority, project-root LM Studio authority, broad competence claims, or unrelated dirty files
   + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_003.sop
-  + [open_question] is whether to integrate validated LM Studio proposal evidence into LMStudioWorkerFunctionalLane readiness profile
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_004.sop
+  + [open_question] is how to define a diversified LM Studio SOP worker task corpus before broadening readiness claims
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
   = must: keep primer, boot, benchmark, and Codex review distinct
   = must: treat functional prompt 007 validation score 100 as readiness for isolated non-mutating proposal jobs
   = must: treat project-root worker AGENTS.md leakage and negative-inside failure as host-context interference until fixed
-  = must: treat validated worker output as proposal until Codex records integration disposition
+  = must: treat readiness_profile as narrow until diverse task-family evidence exists
   = must: require validator acceptance before task narrative integration
   = must: emit or update an operating-loop tick after meaningful completed work so the next step stays visible
   = must: point to richer records instead of absorbing them

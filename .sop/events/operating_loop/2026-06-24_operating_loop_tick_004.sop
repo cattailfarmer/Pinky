@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_004] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_004
+  + [focus_subject] is LM Studio worker readiness profile integration
+  + [completed_step] is integrated validated lmstudio_next_probe_001 as narrow readiness evidence for scratch-isolated non-mutating SOP proposal jobs
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is define diversified LM Studio SOP worker task corpus before broadening readiness claims
+  + [created_utc] is 2026-06-24T19:54:35Z
+  + [evidence_refs] is .sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop, .sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop, validation:two_isolated_score_100_same_family
+  + [outside] is broad LM Studio competence remains outside, project-root LM Studio authority remains outside, worker mutation authority remains outside, unrelated dirty files remain outside
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat commit, proof, or report as evidence that the clock stopped
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_004
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is define diversified LM Studio SOP worker task corpus before broadening readiness claims
+  |outside| broad LM Studio competence remains outside, project-root LM Studio authority remains outside, worker mutation authority remains outside, unrelated dirty files remain outside

@@ -49,6 +49,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [negative_inside_rule_check] is whether terms explicitly reserved for outside stay out of inside, boundary, inference, caution, and next_step
   + [post_output_validator] is the Codex-side rejection check for schema shape, forbidden-inside terms, hollow fields, and substitution faults before worker output is treated as usable
   + [functional_lane_result] is scratch_prompt_only Codex CLI over LM Studio passed strict functional prompt 007 with validation score 100 and band strong
+  + [functional_lane_readiness_profile] is repeated isolated score-100 evidence now supports narrow scratch-isolated non-mutating SOP proposal readiness, but diverse task-family evidence is still required before broad reliability claims
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
@@ -67,6 +68,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: run negative_inside_rule_check when a prompt explicitly reserves terms for outside
   = must: reject worker output through post_output_validator when inside contains explicitly excluded terms
   = must: treat LMStudioWorkerFunctionalLane as functional only for isolated non-mutating proposal jobs until project-root context leakage is solved
+  = must: distinguish repeated same-family score 100 from broad worker competence
   = must: compare project-root and isolated scratch launches when diagnosing whether an error is model comprehension or launch-surface context gravity
   = must: run non-mutating benchmark tasks by default
   = must: send explicit SOP task_frame reminders in every benchmark packet

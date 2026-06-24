@@ -7,6 +7,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
 
 & [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
   + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
@@ -22,7 +23,11 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [rejected_output] is captured worker text that fails validator and becomes evidence for retry, fence tuning, or block
   + [spool_record] is the visible worker tree record containing prompt reference, launch command, result file, validation state, and authority boundary
   + [launch_queue_candidate] is a TaskFrameLaunchQueue candidate that is ready_for_inspection before Codex decides whether to launch
+  + [readiness_profile] is scratch-isolated, prompt-only, non-mutating SOP proposal readiness with repeated Codex-validated score 100 evidence on the strict ControlledExplosionReadiness prompt family
+  + [readiness_evidence_count] is 2 isolated score-100 strong validations
+  + [readiness_profile_record] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
   + [functional_definition] is a local worker can complete a non-mutating booted SOP inference job in scratch_prompt_only mode, produce exact SOP output, pass validator, and return captured proposal text for Codex review
+  + [next_readiness_gate] is diversify SOP worker task families before raising the lane beyond narrow readiness
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
   + [lane_outside] is repo mutation by worker, direct trust of worker output, hidden model state, credentials, broad competence, and project-root authority until fenced
 
@@ -37,9 +42,11 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   = must: preserve rejected output as benchmark evidence rather than silently repairing it
   = must: record functional worker runs in a spool record when task orchestration or future re-entry matters
   = must: keep accepted output as proposal text until Codex review integrates it
+  = must: treat readiness_profile as narrow until diverse task-family evidence exists
   = should: retry with stricter boot only when failure suggests prompt ambiguity rather than model incapacity
   - never: grant file mutation or repo authority to LM Studio worker output
   - never: call the lane fully functional for project-root jobs while AGENTS.md leakage remains
+  - never: treat repeated same-family validation score 100 as broad competence proof
 
 (lm_studio_worker_functional_lane) :prompt_packet: /boot_packet and validator/ |lane_outside|
   + [prompt_packet] is primer plus boot plus local law plus exact schema

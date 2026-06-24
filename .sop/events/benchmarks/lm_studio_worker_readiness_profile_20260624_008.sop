@@ -1,0 +1,35 @@
+Subject: LM Studio Worker Readiness Profile 008
+
+Description: Codex-reviewed integration of repeated isolated LM Studio worker evidence into the functional lane readiness profile.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+
+& [LMStudioWorkerReadinessProfile:20260624_008] is the integrated readiness profile for the LM Studio worker lane
+  + [lane] is Codex CLI over LM Studio local provider
+  + [integration_disposition] is integrate_as_narrow_readiness_evidence
+  + [ready_surface] is scratch-isolated, prompt-only, non-mutating SOP proposal jobs with exact output schema and Codex-side validation
+  + [evidence_count] is 2 isolated score-100 strong validations on the strict ControlledExplosionReadiness prompt family
+  + [latest_candidate] is lmstudio_next_probe_001
+  + [latest_result] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop
+  + [latest_output] is C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
+  + [latest_validation_score] is 100
+  + [latest_validation_band] is strong
+  + [codex_review] is accepted as repeated evidence that the launch queue, scratch isolation, capture target, exact schema, and validator gates can produce usable local-worker proposal text
+  + [readiness_limits] is repeated evidence covers one strict prompt family, not broad task competence, project-root authority, file mutation, or hidden model awareness
+  + [next_gate] is diversify the worker task corpus with additional SOP proposal tasks before raising the lane beyond narrow readiness
+  + [outside] is project-root LM Studio authority, worker mutation authority, broad competence claims, hidden model state, stderr/model metadata warnings, and unsupervised launch
+
+  = must: use this profile as evidence for isolated proposal jobs only
+  = must: keep Codex review between validated proposal output and task narrative integration
+  = must: require diverse task-family evidence before calling the lane broadly reliable
+  = must: keep project-root mode diagnostic until host-context leakage is solved
+  - never: treat repeated same-family score 100 as proof of broad competence
+
+(lm_studio_worker_readiness_profile) :ready_surface: /evidence_count and readiness_limits/ |profile_outside|
+  + [ready_surface] is scratch-isolated prompt-only non-mutating SOP proposal jobs
+  + [evidence_count] is 2 isolated score-100 strong validations
+  + [readiness_limits] is one strict prompt family and Codex-side validation required
+  |profile_outside| project-root authority, worker mutation, broad competence, hidden state, stderr warnings, and unsupervised launch
