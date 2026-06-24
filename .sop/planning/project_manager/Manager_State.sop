@@ -7,8 +7,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [seed_source] is F:\.sop at commit 3f127da
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
-  + [ready_task_count] is 9
-  + [completed_task_count] is 137
+  + [ready_task_count] is 8
+  + [completed_task_count] is 138
   + [blocked_task_count] is 2
 
 & [CompletedTaskSet] is completed work
@@ -264,9 +264,10 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop, C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_result_016_retry_001.sop, C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pressure_impact_thinkabout_worker_latch\Derived_Pressure_Impact_ThinkAbout_Worker_Latch_Source.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_016.sop
   + [Task_137_complete_pressure_impact_thinkabout_record] is complete Task_003 by drafting Pressure Impact ThinkAbout 001 as a Codex-authored deeper ThinkAbout record from local scan evidence and accepted worker proposal input
     = evidence: C:\Project\Pinky\.sop\events\thinkabout\2026-06-24_pressure_impact_thinkabout_001.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pressure_impact_thinkabout_record\Derived_Pressure_Impact_ThinkAbout_Record_Source.sop, C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_017.sop
+  + [Task_138_build_minimal_scaffold_compile_runtime] is build a small runtime command that accepts job_need and emits compiled_attention_packet with balance_alert and frame_reference_integrity fields
+    = evidence: C:\Project\Pinky\.sop\runtime\sop_node\scaffold_compile.py, C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py, C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py, C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop, C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.hg.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_minimal_scaffold_compile_runtime\Derived_Minimal_Scaffold_Compile_Runtime_Source.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_018.sop
 
 & [ReadyTaskSet] is work ready without external configuration
-  + [Task_035_build_minimal_scaffold_compile_runtime] is build a small runtime command that accepts job_need and emits compiled_attention_packet with balance_alert and frame_reference_integrity fields
   + [Task_039_build_branch_refinement_artifact_runtime] is build a local command that accepts commit bookends and emits a branch_refinement_artifact without remote sync
   + [Task_043_build_trailing_checksum_runtime] is build a local command that detects the previous direct-focus commit and emits a trailing checksum bookmark
   + [Task_045_build_aperture_reentry_runtime] is build a local command that reads focal point plus periphery supports and emits a reentry_springboard with second-pass narrative prompts

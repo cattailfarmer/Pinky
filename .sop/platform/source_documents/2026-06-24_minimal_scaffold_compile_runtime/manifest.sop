@@ -1,0 +1,16 @@
+Subject: Minimal Scaffold Compile Runtime Source Manifest
+
+Description: Source preservation manifest for the minimal scaffold compile runtime.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_minimal_scaffold_compile_runtime
+  + [source_file] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_minimal_scaffold_compile_runtime\Derived_Minimal_Scaffold_Compile_Runtime_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
+  + [runtime_surface] is C:\Project\Pinky\.sop\runtime\sop_node\scaffold_compile.py
+  + [demo_surface] is C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [event_surface] is C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop
+  + [governance] is source_before_canonical_and_runtime_completion
+  + [status] is runtime_integrated
+
+  = must: keep the derived source available for future reinterpretation

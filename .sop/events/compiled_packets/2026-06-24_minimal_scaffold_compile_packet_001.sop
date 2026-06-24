@@ -1,0 +1,27 @@
+Subject: Compiled Attention Packet
+
+& [CompiledAttentionPacket:minimal_scaffold_compile_runtime_001] is a compiled_attention_packet
+  + [packet_id] is minimal_scaffold_compile_runtime_001
+  + [job_need] is build a minimal runtime command that accepts job_need and emits compiled_attention_packet with balance_alert and frame_reference_integrity fields
+  + [scaffold_profile] is implementation_scaffold
+  + [fit_score] is 3
+  + [matched_terms] is runtime, build, command
+  + [focus] is build minimal runtime command that accepts job_need emits
+  + [periphery] is source evidence, tests, outside markers, frame reference, balance center
+  + [boundary] is codex owns execution; packet remains guidance until output target compiled attention packet SOP record is produced and reviewed
+  + [outside] is hidden model state, unvalidated scaffold optimization, automatic worker launch, proof beyond cited sources
+  + [depth] is slender
+  + [gates] is source_preservation, outside_preservation, balance_check, frame_reference_check, validation_check, codex_review
+  + [expected_output] is compiled attention packet SOP record
+  + [balance_score] is stable
+  + [balance_alert] is none
+  + [frame_reference_integrity] is not_required
+  + [rail_junctions] is capture_job_need, select_scaffold_profile, bind_boundary_and_outside, check_balance, check_frame_reference, emit_packet
+  + [source_refs] is .sop/platform/AttentionScaffoldCompiler.sop, .sop/platform/AttentionBalanceCenter.sop, .sop/platform/FrameReferenceIntegrity.sop
+
+(compiled_attention_packet) :job_need: /scaffold_profile and gates/ |outside|
+  + [job_need] is build a minimal runtime command that accepts job_need and emits compiled_attention_packet with balance_alert and frame_reference_integrity fields
+  + [scaffold_profile] is implementation_scaffold
+  + [balance_alert] is none
+  + [frame_reference_integrity] is not_required
+  |outside| hidden model state, unvalidated scaffold optimization, automatic worker launch, proof beyond cited sources

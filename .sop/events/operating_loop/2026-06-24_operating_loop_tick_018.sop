@@ -1,0 +1,28 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after completing the minimal scaffold compile runtime.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_018] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_018
+  + [focus_subject] is minimal scaffold compile runtime
+  + [completed_step] is built and tested Task_035 as a Codex-owned runtime command that emits compiled_attention_packet records with balance_alert and frame_reference_integrity fields
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is build Task_039 branch refinement artifact runtime under Codex authority, preserving remote sync and worker mutation outside
+  + [created_utc] is 2026-06-24T21:26:09Z
+  + [evidence_refs] is .sop\runtime\sop_node\scaffold_compile.py, .sop\runtime\demos\scaffold_compile.py, .sop\runtime\tests\test_sensitivity_scan.py, .sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop, .sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.hg.sop, and .sop\platform\source_documents\2026-06-24_minimal_scaffold_compile_runtime\Derived_Minimal_Scaffold_Compile_Runtime_Source.sop
+  + [outside] is automatic worker launch, hidden model state, unvalidated scaffold optimization, broad LM Studio competence, project-root LM Studio authority, remote sync, credentials, destructive action, and unrelated dirty files
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve Codex authority over durable integration
+  = must: preserve outside before scheduling next_step
+  - never: treat runtime packet emission as proof that all scaffold profiles are optimized
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_018
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is build Task_039 branch refinement artifact runtime
+  |outside| hidden model state, worker mutation authority, automatic launch, remote sync credentials, destructive action, and unrelated dirty files

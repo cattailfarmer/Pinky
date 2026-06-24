@@ -32,14 +32,19 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_016.sop
 @ [source] C:\Project\Pinky\.sop\events\thinkabout\2026-06-24_pressure_impact_thinkabout_001.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_017.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\scaffold_compile.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py
+@ [source] C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop
+@ [source] C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_018.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is next safe .sop task selection
-  + [active_root_frame] is attention_frame_2026_06_24_next_safe_task_selection
+  + [registry_scope] is branch refinement artifact runtime selection
+  + [active_root_frame] is attention_frame_2026_06_24_branch_refinement_artifact_runtime_selection
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 11
+  + [closed_frame_count] is 12
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -48,23 +53,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_NextSafeTaskSelection] is the active semantic stack frame for selecting the next safe .sop task
-  + [frame_id] is attention_frame_2026_06_24_next_safe_task_selection
+& [AttentionFrame_2026_06_24_BranchRefinementArtifactRuntimeSelection] is the active semantic stack frame for selecting and building the branch refinement artifact runtime
+  + [frame_id] is attention_frame_2026_06_24_branch_refinement_artifact_runtime_selection
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_pressure_impact_thinkabout_record
-  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_017, task_selection, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_minimal_scaffold_compile_runtime
+  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_018, Task_039, branch_refinement_artifact, outside_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is pressure_impact_thinkabout_001.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_017.sop, and CurrentFocalPoint.sop
-  + [focus_register] is select next safe .sop task
-  + [question_register] is which remaining ready task best preserves momentum without violating authority boundaries
-  + [delineation_register] is inside remaining ReadyTaskSet, task authority, implementation risk, source evidence, outside, and commit cadence
-  + [periphery_register] is unresolved runtime tasks outside until selected, LM Studio worker authority outside, unrelated dirty files outside, credentials outside, and destructive action outside
-  + [operation_register] is inspect_ready_tasks, select_candidate, preserve_source, define_next_frame, emit_next_tick
-  + [evidence_register] is Manager_State completed Task_003, Pressure Impact ThinkAbout 001, and operating_loop_tick_017
-  + [wisdom_register] is Codex should choose the next task that advances the system while keeping mutation authority local and explicit
-  + [caution_register] is runtime-building tasks require Codex implementation authority and should not be delegated to LM Studio as mutation work
-  + [balance_register] is stable because the prior worker proposal has been integrated through Codex-authored record
-  + [integration_register] is Task_003 completed and next task pending selection
+  + [frame_trace] is scaffold_compile.py, 2026-06-24_minimal_scaffold_compile_packet_001.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_018.sop, and CurrentFocalPoint.sop
+  + [focus_register] is build Task_039 branch_refinement_artifact runtime
+  + [question_register] is how to emit a branch_refinement_artifact from commit bookends without remote sync
+  + [delineation_register] is inside remaining ReadyTaskSet, Task_039, local command, commit bookends, branch artifact record, source evidence, outside, and commit cadence
+  + [periphery_register] is remote sync outside, higher-level common repo outside, LM Studio worker authority outside, unrelated dirty files outside, credentials outside, and destructive action outside
+  + [operation_register] is inspect_branch_refinement_contracts, preserve_source, build_runtime, add_tests, emit_artifact, validate, commit, push, emit_next_tick
+  + [evidence_register] is Manager_State completed Task_138, minimal scaffold compile packet, scaffold runtime tests, and operating_loop_tick_018
+  + [wisdom_register] is Codex should convert the next ready runtime into a small local artifact emitter that improves future turn reconstruction
+  + [caution_register] is branch refinement runtime must not imply remote sync, common-repo merge policy, or automatic branch mutation without explicit authority
+  + [balance_register] is stable because Task_035 completed with tests and outside preserved
+  + [integration_register] is Task_035 completed and Task_039 selected as next runtime task
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -72,10 +77,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_next_safe_task_selection
+  + [active_root_frame] is attention_frame_2026_06_24_branch_refinement_artifact_runtime_selection
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_NextSafeTaskSelection], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [next_safe_task_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_BranchRefinementArtifactRuntimeSelection], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [branch_refinement_artifact_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]

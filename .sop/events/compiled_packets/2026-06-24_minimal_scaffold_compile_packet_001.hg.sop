@@ -1,0 +1,38 @@
+Subject: minimal_scaffold_compile_runtime_001 Compiled Attention Packet
+
+& [Graph:minimal_scaffold_compile_runtime_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG compiled-attention-packet
+  = scaffold_profile: implementation_scaffold
+  = balance_score: stable
+
+  + [N:packet:minimal_scaffold_compile_runtime_001] is minimal_scaffold_compile_runtime_001
+    = scaffold_profile: implementation_scaffold
+    = fit_score: 3
+  + [N:job:minimal_scaffold_compile_runtime_001] is build a minimal runtime command that accepts job_need and emits compiled_attention_packet with balance_alert and frame_reference_integrity fields
+  + [N:scaffold:implementation_scaffold] is implementation_scaffold
+  + [N:balance:minimal_scaffold_compile_runtime_001] is stable
+    = balance_alert: none
+  + [N:frame_reference:minimal_scaffold_compile_runtime_001] is not_required
+  + [N:outside:scaffold_compile_boundary] is hidden model state, unvalidated scaffold optimization, automatic worker launch, proof beyond cited sources
+  + [N:gate:source_preservation] is source_preservation
+  + [N:gate:outside_preservation] is outside_preservation
+  + [N:gate:balance_check] is balance_check
+  + [N:gate:frame_reference_check] is frame_reference_check
+  + [N:gate:validation_check] is validation_check
+  + [N:gate:codex_review] is codex_review
+
+/ [E:compiles:minimal_scaffold_compile_runtime_001] -(compiles; job=N:job:minimal_scaffold_compile_runtime_001; profile=N:scaffold:implementation_scaffold; packet=N:packet:minimal_scaffold_compile_runtime_001; fit_score=3)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:checks_balance:minimal_scaffold_compile_runtime_001] -(checks_balance; packet=N:packet:minimal_scaffold_compile_runtime_001; balance=N:balance:minimal_scaffold_compile_runtime_001; outside=N:outside:scaffold_compile_boundary)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:checks_frame:minimal_scaffold_compile_runtime_001] -(checks_frame; packet=N:packet:minimal_scaffold_compile_runtime_001; frame_reference=N:frame_reference:minimal_scaffold_compile_runtime_001; outside=N:outside:scaffold_compile_boundary)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:gates:minimal_scaffold_compile_runtime_001_source_preservation] -(gates; packet=N:packet:minimal_scaffold_compile_runtime_001; gate=N:gate:source_preservation)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:gates:minimal_scaffold_compile_runtime_001_outside_preservation] -(gates; packet=N:packet:minimal_scaffold_compile_runtime_001; gate=N:gate:outside_preservation)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:gates:minimal_scaffold_compile_runtime_001_balance_check] -(gates; packet=N:packet:minimal_scaffold_compile_runtime_001; gate=N:gate:balance_check)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:gates:minimal_scaffold_compile_runtime_001_frame_reference_check] -(gates; packet=N:packet:minimal_scaffold_compile_runtime_001; gate=N:gate:frame_reference_check)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:gates:minimal_scaffold_compile_runtime_001_validation_check] -(gates; packet=N:packet:minimal_scaffold_compile_runtime_001; gate=N:gate:validation_check)> [Graph:minimal_scaffold_compile_runtime_001]
+/ [E:gates:minimal_scaffold_compile_runtime_001_codex_review] -(gates; packet=N:packet:minimal_scaffold_compile_runtime_001; gate=N:gate:codex_review)> [Graph:minimal_scaffold_compile_runtime_001]
+
+- outside: hidden model state
+- outside: unvalidated scaffold optimization
+- outside: automatic worker launch
+- outside: proof beyond cited sources

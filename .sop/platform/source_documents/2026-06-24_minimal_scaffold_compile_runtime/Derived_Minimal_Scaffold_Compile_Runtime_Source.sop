@@ -1,0 +1,21 @@
+Subject: Minimal Scaffold Compile Runtime Derived Source
+
+Description: Source preservation record for completing the ready task that asked for a small runtime command accepting job_need and emitting a compiled_attention_packet with balance_alert and frame_reference_integrity.
+
+& [DerivedMinimalScaffoldCompileRuntimeSource] is a preserved derived source for Task_035_build_minimal_scaffold_compile_runtime
+  + [source_id] is 2026-06-24_minimal_scaffold_compile_runtime
+  + [selected_task] is Task_035_build_minimal_scaffold_compile_runtime
+  + [source_basis] is Manager_State ReadyTaskSet, AttentionScaffoldCompiler.sop, AttentionBalanceCenter.sop, FrameReferenceIntegrity.sop, operating_loop_tick_017.sop, and user heartbeat re-entry instructions
+  + [dictated_need] is build a small runtime command that accepts job_need and emits compiled_attention_packet with balance_alert and frame_reference_integrity fields
+  + [implementation_surface] is C:\Project\Pinky\.sop\runtime\sop_node\scaffold_compile.py and C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [event_surface] is C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop and C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.hg.sop
+  + [runtime_output] is compiled_attention_packet with selected scaffold_profile, matched_terms, focus, periphery, boundary, outside, gates, expected_output, balance_alert, frame_reference_integrity, and rail_junctions
+  + [proof_plan] is unit tests, demo packet emission, diff check, ASCII check, commit, and push
+  + [authority_boundary] is Codex owns durable source, runtime, tests, and commit; LM Studio workers remain outside mutation authority
+  + [outside] is automatic worker launch, hidden model state, proof beyond visible tests, scaffold optimality claims, and unrelated dirty files
+
+  = must: preserve this derived source before treating the runtime as completed task authority
+  = must: keep compiled packet output inspectable as SOP
+  = must: keep balance_alert and frame_reference_integrity visible in every emitted packet
+  - never: treat the emitted packet as proof of scaffold optimality without later reverse-walk evidence

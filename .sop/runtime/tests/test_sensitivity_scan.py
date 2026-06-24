@@ -19,6 +19,7 @@ from sop_node import (
     SupportProbe,
     build_attention_frame,
     build_attention_kernel_packet,
+    build_compiled_attention_packet,
     build_step_balance_walk,
     build_semantic_component,
     build_semantic_hash_index,
@@ -37,6 +38,7 @@ from sop_node import (
     build_viewfinder_snapshot,
     classify_layer,
     create_turn_spool,
+    parse_periphery_terms,
     parse_edge_participants,
     parse_directive,
     parse_faculty_field,
@@ -46,6 +48,7 @@ from sop_node import (
     parse_step_balance_observation,
     parse_tracked_subject,
     scan_to_hypergraph,
+    select_scaffold_profile,
 )
 
 
@@ -669,6 +672,47 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertEqual(continuity_run.periphery_continuity, "broken")
         self.assertEqual(continuity_run.run_state, "rebalance")
         self.assertEqual(continuity_run.run_balance, "wobbling")
+
+    def test_scaffold_compile_selects_runtime_packet_and_balance_alert(self) -> None:
+        packet = build_compiled_attention_packet(
+            packet_id="test_minimal_scaffold_compile",
+            job_need="build runtime command with tests and commit evidence",
+            output_target="compiled attention packet SOP record",
+            periphery_terms=parse_periphery_terms("source evidence, tests, outside markers"),
+            source_refs=("platform/AttentionScaffoldCompiler.sop",),
+        )
+        rendered = packet.render()
+
+        self.assertTrue(packet.ready)
+        self.assertEqual(select_scaffold_profile(packet.job_need).scaffold_profile, "implementation_scaffold")
+        self.assertEqual(packet.scaffold_profile, "implementation_scaffold")
+        self.assertEqual(packet.balance_score, "stable")
+        self.assertEqual(packet.balance_alert, "none")
+        self.assertEqual(packet.frame_reference_integrity, "not_required")
+        self.assertIn("& [CompiledAttentionPacket:test_minimal_scaffold_compile]", rendered)
+        self.assertIn("(compiled_attention_packet)", rendered)
+        self.assertIn("+ [balance_alert] is none", rendered)
+        self.assertIn("+ [frame_reference_integrity] is not_required", rendered)
+
+    def test_scaffold_compile_flags_frame_reference_and_risk(self) -> None:
+        packet = build_compiled_attention_packet(
+            packet_id="test_scaffold_compile_frame_risk",
+            job_need="inspect boundary identity permission security honesty in a game ui simulation for authority proof risk",
+            output_target="scaffold risk review",
+            periphery_terms=parse_periphery_terms("presented frame, source marker"),
+        )
+        graph = packet.to_hypergraph()
+        rendered_graph = graph.render()
+
+        self.assertTrue(packet.ready)
+        self.assertEqual(packet.scaffold_profile, "boundary_inspection_scaffold")
+        self.assertEqual(packet.balance_score, "watch")
+        self.assertEqual(packet.balance_alert, "proof_or_authority_pressure")
+        self.assertEqual(packet.frame_reference_integrity, "required_and_supported")
+        self.assertTrue(graph.ready)
+        self.assertIn("N:frame_reference:test_scaffold_compile_frame_risk", rendered_graph)
+        self.assertIn("E:checks_balance:test_scaffold_compile_frame_risk", rendered_graph)
+        self.assertIn("E:checks_frame:test_scaffold_compile_frame_risk", rendered_graph)
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")

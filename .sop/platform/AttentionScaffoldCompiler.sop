@@ -19,6 +19,10 @@ Description: Contract for selecting, compiling, testing, and optimizing purpose-
 @ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
 @ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_minimal_scaffold_compile_runtime\Derived_Minimal_Scaffold_Compile_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\scaffold_compile.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py
+@ [source] C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop
 
 & [AttentionScaffoldCompiler] is the compiler layer that selects and shapes attention scaffolds for a job
   + [pattern_role] is purpose_fit_attention_scaffold_compilation
@@ -28,6 +32,9 @@ Description: Contract for selecting, compiling, testing, and optimizing purpose-
   + [fit_reflection] is the pass that compares job_need to available scaffold profiles before selection
   + [rail_junction] is a decision point where SOP rails select the next operation, gate, or return path
   + [compiled_attention_packet] is the promptable or runtime-readable packet emitted from the selected scaffold
+  + [minimal_scaffold_compile_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\scaffold_compile.py for selecting a scaffold profile and emitting a compact compiled_attention_packet
+  + [scaffold_compile_demo] is C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py for command-line packet and SOP-HG graph emission
+  + [minimal_compile_packet_event] is C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop as the first emitted packet proof
   + [attention_kernel_compiler] is F:\.sop\platform\AttentionKernelCompiler.sop for gathering selected scaffolds and governance patterns into a single turn-entry in-context packet
   + [kernel_attention_scaffold] is a scaffold profile whose first layer is SecurityHonestyGovernance before all downstream attention layers
   + [debug_frame_test] is a controlled test that replays or simulates a scaffold over a bounded moment
@@ -51,6 +58,8 @@ Description: Contract for selecting, compiling, testing, and optimizing purpose-
   = must: choose scaffold_profile by fit_reflection, not by novelty
   = must: make rail_junction choices visible
   = must: compile attention_scaffold into a compact packet with focus, periphery, boundary, outside, depth, gates, and expected output
+  = must: require runtime-emitted compiled_attention_packet records to expose balance_alert and frame_reference_integrity
+  = must: treat minimal_scaffold_compile_runtime output as guidance until tests, demo output, and Codex review validate it
   = must: use AttentionKernelCompiler when the scaffold must become one in-context compiled unit for a turn, worker job, model-lens pass, or debug frame
   = must: use AttentionBalanceCenter when scaffold compilation shows wobble, rail interference, or over-wide periphery pressure
   = must: use FrameReferenceIntegrity when the scaffold observes images, maps, UIs, simulations, game states, model projections, or other presented frames

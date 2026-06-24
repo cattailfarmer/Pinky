@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is next safe .sop task selection
+  + [focus_subject] is branch refinement artifact runtime selection
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is Task_003 is now integrated as a Codex-authored ThinkAbout record, so the next movement should select a remaining ready task with the same authority discipline
-  + [inside] is 2026-06-24_operating_loop_tick_017.sop, 2026-06-24_pressure_impact_thinkabout_001.sop, Manager_State.sop, AttentionRuntimeRegistryState.sop, and remaining ReadyTaskSet
+  + [right_hemisphere_draw] is Task_035 is now integrated as a Codex-owned scaffold compile runtime, so the next movement should build the adjacent branch-refinement artifact runtime from remaining ready tasks
+  + [inside] is 2026-06-24_operating_loop_tick_018.sop, 2026-06-24_minimal_scaffold_compile_packet_001.sop, scaffold_compile.py, Manager_State.sop, AttentionRuntimeRegistryState.sop, and remaining ReadyTaskSet
   + [boundary] is continue only when clock_state is running and the next task remains inside .sop authority, Codex-owned mutation, source-cited, evidence-gated, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, direct trust, or unrelated dirty files
   + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_017.sop
-  + [open_question] is which remaining ReadyTaskSet task should be selected next under Codex authority
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_018.sop
+  + [open_question] is how to build Task_039 branch_refinement_artifact runtime under Codex authority without remote sync or worker mutation
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -25,6 +25,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: require the six-family readiness synthesis latch set for the next pilot queue
   = must: treat pressure_impact_thinkabout_016 retry_001 as proposal evidence only until Codex drafts and validates a record
   = must: treat Pressure Impact ThinkAbout 001 as the completed Task_003 anchor
+  = must: treat minimal_scaffold_compile_runtime as the completed Task_035 anchor
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration
   = must: emit or update an operating-loop tick after meaningful completed work so the next step stays visible

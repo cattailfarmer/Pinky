@@ -101,6 +101,15 @@ from .periphery_continuity_run import (
     build_periphery_continuity_run,
     parse_periphery_run_frame,
 )
+from .scaffold_compile import (
+    CompiledAttentionPacket,
+    ScaffoldFit,
+    assess_balance,
+    assess_frame_reference_integrity,
+    build_compiled_attention_packet,
+    parse_periphery_terms,
+    select_scaffold_profile,
+)
 from .lm_studio_agent_benchmark import (
     DEFAULT_ENDPOINT as DEFAULT_LM_STUDIO_ENDPOINT,
     BenchmarkCase,
@@ -136,6 +145,7 @@ from .task_frame_launch_queue import (
 __all__ = [
     "AttentionFrame",
     "CompiledAttentionKernel",
+    "CompiledAttentionPacket",
     "AttentionDirective",
     "AttentionPoint",
     "AttentionRelation",
@@ -161,6 +171,7 @@ __all__ = [
     "PeripheryRunFrame",
     "OperatingLoopTick",
     "ReflectionConsumption",
+    "ScaffoldFit",
     "SemanticComponent",
     "SemanticHashIndex",
     "SemanticHashTable",
@@ -187,6 +198,7 @@ __all__ = [
     "build_sensitivity_scan_from_changes",
     "build_attention_frame",
     "build_attention_kernel_packet",
+    "build_compiled_attention_packet",
     "build_codex_lmstudio_command",
     "build_lmstudio_task_frame_candidate",
     "build_operating_loop_tick",
@@ -212,6 +224,7 @@ __all__ = [
     "parse_directive",
     "parse_faculty_field",
     "parse_periphery_run_frame",
+    "parse_periphery_terms",
     "parse_reweighing",
     "parse_reflection_consumption",
     "parse_support_probe",
@@ -225,6 +238,9 @@ __all__ = [
     "scan_to_hypergraph",
     "score_output",
     "validate_sop_worker_output",
+    "assess_balance",
+    "assess_frame_reference_integrity",
+    "select_scaffold_profile",
     "list_lm_studio_models",
     "write_scan",
     "write_benchmark_report",
