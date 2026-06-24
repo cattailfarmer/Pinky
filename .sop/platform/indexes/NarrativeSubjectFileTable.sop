@@ -9,7 +9,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 7
+  + [subject_count] is 8
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -88,6 +88,16 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is skin
   + [coverage_status] is partial
   + [outside] is old F:\.sop authority, unrelated worktree files, credentials, and remote sync policy
+
+& [Subject_narrative_led_subject_inquiry] is a narrative subject entry
+  + [subject_key] is narrative_led_subject_inquiry
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_narrative_led_subject_inquiry_085.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop, C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop, C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop, C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_033.sop
+  + [relation_reason_set] is subject inquiry layer, narrative lead source, subject file lookup, seed subject table, surface/depth bridge, governance review, and current loop tick
+  + [search_phrase_set] is SubjectInquiryLayer, narrative_lead, inspection_queue, file_interest_set, relation_reason, surface_inquiry_bridge, semantic_fallback
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is proof before inspection, exhaustive repository search, hidden cognition, runtime mutation, and stale-path certainty
 
 (narrative_subject_file_table) :subject_key: /file_interest_set and relation_reason/ |unindexed_subject|
   + [subject_key] is the normalized narrative handle

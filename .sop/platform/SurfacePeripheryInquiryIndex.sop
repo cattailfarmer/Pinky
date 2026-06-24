@@ -6,6 +6,7 @@ Description: Contract for marking SOP surface files with deeper-inquiry terms th
 @ [source] C:\Project\Pinky\.sop\platform\SemanticHashTable.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionTraversalPolicy.sop
 @ [source] C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
 @ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_surface_periphery_inquiry_index\Dictated_Surface_Periphery_Inquiry_Index_Source.sop
 
@@ -27,6 +28,7 @@ Description: Contract for marking SOP surface files with deeper-inquiry terms th
   = must: keep lookup entries as search guidance, not proof of meaning
   = must: prefer local Pinky .sop paths over old F:\.sop authority paths
   = must: use NarrativeSubjectFileIndex when the inquiry begins from a narrated subject rather than from a visible surface term
+  = must: receive active file surfaces from SubjectInquiry when narrative-led subject following selects files to inspect
   = should: include relation_reason so a later pass knows why a term points to a file
   = should: include depth_hint so the unified faculty field can decide how much attention to spend
   - never: treat table lookup as semantic identity

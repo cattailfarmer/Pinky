@@ -1,0 +1,86 @@
+Subject: Subject Inquiry Layer
+
+Description: Attention layer that follows a narrated subject into an evidence-gated file inspection queue.
+
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_led_subject_inquiry\Dictated_Narrative_Led_Subject_Inquiry_Source.sop
+
+& [SubjectInquiryLayer] is the narrative-led file inspection layer
+  + [layer_key] is subject_inquiry
+  + [input] is narrated_subject, narrative_subject_key, purpose_question, depth_need, periphery_draw, and active_runtime_frame
+  + [narrative_lead] is the narrative signal that says which subject should be followed
+  + [subject_file_index] is C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+  + [subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+  + [inspection_queue] is the ordered files of interest selected for subject re-entry
+  + [inspection_reason] is why each queued file is relevant to the subject
+  + [inspection_depth] is the depth hint for how much attention to spend per file
+  + [surface_inquiry_bridge] is C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+  + [semantic_fallback] is C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+  + [output] is selected_file_set, skipped_file_set, deeper_inquiry_terms, unresolved_subjects, and residual_outside
+
+  = must: let NarrativeDigestion lead which subject is being followed
+  = must: query NarrativeSubjectFileTable before broad repository search
+  = must: build inspection_queue from files_of_interest, relation reasons, depth hints, and current purpose
+  = must: inspect selected files as evidence surfaces before promoting subject claims
+  = must: route active file surfaces through SurfacePeripheryInquiryIndex when deeper terms need search pointers
+  = must: use SemanticHashIndex only as fallback or bridge when the narrative subject table is missing or incomplete
+  = must: preserve skipped files, stale paths, weak relations, and missing targets as outside
+  = must: run selected findings through UnifiedFacultyAttention before integration
+  = should: prefer directly cited files before inferred support files
+  = should: keep inspection_queue slender enough to fit active focus
+  - never: treat narrative heat alone as file authority
+  - never: claim that a queued file proves the subject before inspection
+  - never: perform runtime mutation from subject inquiry alone
+
+& [SubjectInquiryInspectionQueueShape] is the queue shape for following a subject
+  + [subject_key] is the normalized subject being followed
+  + [purpose_question] is why the subject is being inspected now
+  + [queue_entry] is one file plus relation reason, search phrases, depth hint, and inspection status
+  + [inspection_status] is pending, inspected, skipped, stale, unresolved, or outside
+  + [promotion_status] is unpromoted, evidence_supported, needs_surface_lookup, needs_semantic_fallback, or rejected
+  + [outside] is what the queue does not prove
+
+  = must: keep every queue entry tied to a subject key
+  = must: include a reason before opening or promoting a file
+  = must: preserve skipped and rejected entries rather than erasing them
+  = should: mark high-depth entries for surface lookup instead of loading every related file
+
+& [NarrativeLedSubjectInquiryProcedure] is the operating procedure
+  + [input] is narrative_surface, narrated_subject, purpose_question, and depth_need
+  + [output] is inspection_queue, selected_file_set, deeper_inquiry_request_set, unresolved_subject_set, and residual_outside
+
+  = step_1: receive narrated_subject from NarrativeDigestion or the current focal point
+  = step_2: normalize narrated_subject into narrative_subject_key
+  = step_3: query NarrativeSubjectFileTable for file_interest_set and relation_reason_set
+  = step_4: rank file interests by direct citation, purpose fit, depth hint, freshness, and current boundary
+  = step_5: build a slender inspection_queue with pending statuses and outside limits
+  = step_6: inspect selected files using listed search phrases and relation reasons
+  = step_7: when an inspected file exposes inquiry terms, route those terms through SurfacePeripheryInquiryIndex
+  = step_8: when the table is missing or weak, route a bounded fallback query through SemanticHashIndex
+  = step_9: report evidence-supported findings, rejected findings, skipped files, and unresolved subjects separately
+  = step_10: return findings to NarrativeDigestion for durable narrative or subject-layer promotion only after governance review
+
+& [SubjectInquiryActivationPattern] is the activation smell for this layer
+  + [activation_cue] is a question asking where to inspect, what files follow a subject, how to re-enter a narrated subject, or which files support a narrative subject
+  + [dominant_pressure] is Archivist plus Refiner, with Planner and Weaver deciding queue order and bridge fit
+  + [honesty_security_gate] is required when file authority, stale path, source claim, or action readiness is implied
+  + [balance_signal] is stable when narrative lead, file interest reason, and inspection status remain distinct
+  + [wobble_signal] is narrative heat being mistaken for evidence or a broad repository search replacing table-backed selection
+
+  = must: activate when narrative asks which files to inspect for a subject
+  = must: keep subject selection, file selection, and claim promotion as separate moments
+  = should: lower depth when the inspection queue is too broad for focus
+
+(subject_inquiry) :subject_key: /inspection_queue and evidence_surface/ |unresolved_subject|
+  + [subject_key] is the normalized narrative subject to follow
+  + [inspection_queue] is the ordered files of interest selected by table lookup and purpose fit
+  + [evidence_surface] is the inspected file content, surface marker, search phrase result, or relation reason
+  + [unresolved_subject] is a subject without enough reliable file-interest mapping or inspection support
+  = inside: narrative lead, subject key, file interest, relation reason, search phrase, depth hint, inspection status, and surface inquiry bridge
+  = boundary: local Pinky .sop authority, source preservation, table membership, evidence surface, governance review, and outside preservation
+  |outside| proof before inspection, exhaustive repository search, hidden cognition, stale-path certainty, runtime mutation, and unrelated workspace changes

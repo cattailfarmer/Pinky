@@ -3,6 +3,7 @@ Subject: Narrative Digestion Layer
 Description: Layer that turns weightier narrative moments into subject-layer SOP network records.
 
 @ [source] F:\.sop\platform\ApertureReentryCycle.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
 @ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
 
@@ -17,6 +18,7 @@ Description: Layer that turns weightier narrative moments into subject-layer SOP
   + [subject_layer_target] is the appropriate SOP subject layer where the narrative should persist
   + [output] is a subject-layer SOP record, SOP-HG graph, or residual outside note
   + [viewfinder_snapshot] is a structured capture when narrative needs commit-framed comparison, reweighing, and reframing
+  + [subject_inquiry_layer] is C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
   + [narrative_subject_file_index] is C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
   + [narrative_subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   + [subject_file_interest_set] is the files of interest attached to narrated subjects for re-entry and deeper inquiry
@@ -24,6 +26,7 @@ Description: Layer that turns weightier narrative moments into subject-layer SOP
   = must: digest weightier narrative into durable SOP only when it changes project understanding
   = must: digest second_pass_narrative only after the aperture cycle has closed into a reentry_springboard
   = must: route subject_declaration_pass to subject-layer records without overwriting preserved source or first-pass narrative
+  = must: lead subject_inquiry_layer when a narrated subject needs file inspection before promotion
   = must: use narrative_subject_file_index when a narrative subject needs files of interest for future re-entry
   = must: preserve subject_file_interest_set as guidance, not authority or proof of meaning
   = must: preserve lighter narrative as periphery or scan trace
@@ -34,11 +37,12 @@ Description: Layer that turns weightier narrative moments into subject-layer SOP
 & [NarrativeSubjectFileMarker_NarrativeDigestion] is the subject-file marker for this narrative surface
   + [narrative_surface_key] is narrative_digestion
   + [narrative_surface_file] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
-  + [subject_key_set] is narrative_digestion, narrative_subject_file_index, viewfinder_snapshot, aperture_reentry_cycle, repo_first_internal_scan, trailing_checksum_voice, operating_loop_tick, and subject_declaration_pass
+  + [subject_key_set] is narrative_digestion, narrative_subject_file_index, narrative_led_subject_inquiry, viewfinder_snapshot, aperture_reentry_cycle, repo_first_internal_scan, trailing_checksum_voice, operating_loop_tick, and subject_declaration_pass
   + [subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
-  + [lookup_ready_subject_set] is narrative_digestion, narrative_subject_file_index, attention_runtime_registry, surface_periphery_inquiry_index, unified_faculty_attention, semantic_reentry_lookup, and local_sop_authority
+  + [lookup_ready_subject_set] is narrative_digestion, narrative_subject_file_index, narrative_led_subject_inquiry, attention_runtime_registry, surface_periphery_inquiry_index, unified_faculty_attention, semantic_reentry_lookup, and local_sop_authority
   + [unresolved_subject_set] is subject_declaration_pass and second_pass_narrative_router
 
+  = must: lead SubjectInquiry when a lookup-ready subject needs file inspection
   = must: query NarrativeSubjectFileTable before broad repository search when a narrated subject needs file-interest re-entry
   = must: keep unresolved_subject_set visible until stronger file-interest mapping exists
   = should: use SurfacePeripheryInquiryIndex after the subject file set is selected and deeper terms need search pointers

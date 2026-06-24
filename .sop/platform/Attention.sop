@@ -23,6 +23,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [periphery_layer] is C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
   + [liminal_draw_layer] is C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
   + [narrative_layer] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+  + [subject_inquiry_layer] is C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
   + [narrative_subject_file_index] is C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
   + [narrative_subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   + [viewfinder_snapshot] is C:\Project\Pinky\.sop\platform\ViewfinderSnapshot.sop
@@ -102,6 +103,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :periphery: C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
   :between: C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
   :narrative: C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+  :subject_inquiry: C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
   :narrative_subject_index: C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
   :narrative_subject_table: C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   :viewfinder: C:\Project\Pinky\.sop\platform\ViewfinderSnapshot.sop
@@ -179,6 +181,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: keep periphery broad enough to notice relevant draw
   = must: use liminal draw to explain why periphery becomes focus
   = must: digest weightier narrative into subject-layer SOP records
+  = must: use subject_inquiry_layer when narrative names a subject and attention needs to find which files to inspect before promotion
   = must: use viewfinder snapshots to compare and reweigh previous reflections under new observations
   = must: use attention trackers as periphery-layer attention handles when a subject should be noticed again across future frames
   = must: use attention_runtime_registry when active focus, zoom, traversal, Wisdom, Caution, integration, or return needs visible semantic stack-frame tracking

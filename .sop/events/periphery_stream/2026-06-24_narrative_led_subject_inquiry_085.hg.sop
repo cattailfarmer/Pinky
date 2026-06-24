@@ -1,0 +1,30 @@
+Subject: Narrative Led Subject Inquiry Realization
+
+Description: SOP-HG record for making narrative lead subject inquiry into file inspection.
+
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_led_subject_inquiry\Dictated_Narrative_Led_Subject_Inquiry_Source.sop
+
+& [SOPHypergraphRecord] is narrative_led_subject_inquiry_085
+  + [record_type] is periphery_realization
+  + [focus_subject] is narrative led subject inquiry
+  + [inside] is narrative lead, subject key, subject file table, inspection queue, relation reason, depth hint, surface inquiry bridge, and unresolved subject
+  + [boundary] is Pinky .sop authority, source preservation, table-backed file selection, evidence-gated inspection, and no runtime mutation
+  + [outside] is narrative heat as proof, exhaustive repository search, hidden cognition, stale-path certainty, worker mutation, and unrelated workspace changes
+
+  = realization: narrative should choose the subject to follow, while SubjectInquiry chooses which files to inspect and SurfacePeripheryInquiry opens deeper term paths after a file surface is active
+  = distinction: narrative lead, file inspection queue, surface lookup, semantic fallback, and claim promotion are separate moments
+  = caution: a file in the queue is not evidence until inspected, and an inspected surface is not final authority until governed
+  = wisdom: this bridge makes subject following walkable, auditable, and slender enough for active focus
+
+/ [NarrativeDigestion] -(Leads)> [SubjectInquiryLayer], [narrated_subject]
+/ [SubjectInquiryLayer] -(Queries)> [NarrativeSubjectFileTable], [file_interest_set]
+/ [SubjectInquiryLayer] -(Builds)> [inspection_queue], [relation_reason], [depth_hint]
+/ [inspection_queue] -(Activates)> [SurfacePeripheryInquiryIndex], [deeper_inquiry_terms]
+/ [SubjectInquiryLayer] -(FallsBackTo)> [SemanticHashIndex], [bounded_semantic_fallback]
+
+(narrative_led_subject_inquiry_realization) :subject_key: /inspection_queue and surface_bridge/ |unresolved_subject|
+  + [subject_key] is the narrative subject being followed
+  + [inspection_queue] is the selected files of interest and reasons
+  |unresolved_subject| missing table entry, stale file, weak relation, broad search pressure, and unsupported promotion

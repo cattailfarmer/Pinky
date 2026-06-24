@@ -108,14 +108,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_narrative_subject_file_index_084.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_032.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_led_subject_inquiry\Dictated_Narrative_Led_Subject_Inquiry_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_narrative_led_subject_inquiry_085.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_033.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is narrative subject file index
-  + [active_root_frame] is attention_frame_2026_06_24_narrative_subject_file_index
+  + [registry_scope] is narrative led subject inquiry
+  + [active_root_frame] is attention_frame_2026_06_24_narrative_led_subject_inquiry
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 26
+  + [closed_frame_count] is 27
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -264,7 +268,7 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 & [AttentionFrame_2026_06_24_NarrativeSubjectFileIndex] is the active semantic stack frame for narrative-subject file-interest lookup
   + [frame_id] is attention_frame_2026_06_24_narrative_subject_file_index
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_surface_periphery_inquiry_index
   + [child_frame_set] is NarrativeSubjectFileIndex, NarrativeSubjectFileTable, NarrativeSubjectFileMarker_NarrativeDigestion, source_preservation, operating_loop_tick_032, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -285,8 +289,31 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat file_interest_set as guidance only
   = should: connect selected files to SurfacePeripheryInquiryIndex when deeper terms need lookup
 
+& [AttentionFrame_2026_06_24_NarrativeLedSubjectInquiry] is the active semantic stack frame for narrative-led subject inquiry
+  + [frame_id] is attention_frame_2026_06_24_narrative_led_subject_inquiry
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_narrative_subject_file_index
+  + [child_frame_set] is SubjectInquiryLayer, NarrativeSubjectFileIndex, SurfacePeripheryInquiryIndex, source_preservation, operating_loop_tick_033, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is SubjectInquiry.sop, NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, NarrativeDigestion.sop, SurfacePeripheryInquiryIndex.sop, Dictated_Narrative_Led_Subject_Inquiry_Source.sop, 2026-06-24_narrative_led_subject_inquiry_085.hg.sop, Manager_State.sop, and 2026-06-24_operating_loop_tick_033.sop
+  + [focus_register] is narrative lead, subject key, file inspection queue, relation reason, search phrase, depth hint, surface inquiry bridge, semantic fallback, and unresolved subject
+  + [question_register] is whether next work should compile a small inspection queue example or router that consumes SubjectInquiry with UnifiedFacultyAttention
+  + [delineation_register] is inside narrative lead, subject key, inspection queue, evidence surface, file relation, depth hint, inspection status, promotion status, and outside
+  + [periphery_register] is narrative heat as proof, broad repository search pressure, stale path, weak relation, semantic identity overclaim, hidden cognition, worker mutation, and unrelated dirty files
+  + [operation_register] is preserve_source, define_subject_inquiry_layer, wire_narrative_to_subject_inquiry, update_attention_root, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, SubjectInquiry.sop, NarrativeSubjectFileIndex bridge, SurfacePeripheryInquiryIndex bridge, source manifest, periphery record 085, and operating_loop_tick_033
+  + [wisdom_register] is subject following is now a walkable sequence: narrative lead, table-backed file selection, inspection, deeper lookup, and governed promotion
+  + [caution_register] is narrative heat and queued files are not proof until inspection and governance review
+  + [balance_register] is stable because subject selection, file selection, inspection, and promotion are separated
+  + [integration_register] is Task_153 completed as SOP-only SubjectInquiry layer and narrative-led bridge
+  + [frame_outside] is hidden model state, exhaustive repository search, stale-path certainty, runtime mutation, unsupported semantic identity, and unrelated workspace changes
+
+  = must: let narrative lead subject selection
+  = must: let SubjectInquiry select files to inspect
+  = must: let SurfacePeripheryInquiry handle deeper terms only after a file surface is active
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_narrative_subject_file_index
+  + [active_root_frame] is attention_frame_2026_06_24_narrative_led_subject_inquiry
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition

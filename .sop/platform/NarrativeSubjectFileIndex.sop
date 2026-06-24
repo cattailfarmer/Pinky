@@ -3,6 +3,7 @@ Subject: Narrative Subject File Index
 Description: Contract for mapping narrative-layer subject matters to files of interest for re-entry, search, and deeper inquiry.
 
 @ [source] C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
 @ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
@@ -54,9 +55,10 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   = step_3: collect directly cited files and inferred support files
   = step_4: classify each file_interest_relation as source, contract, state, event, index, runtime, evidence, blocker, or outside
   = step_5: select depth_hint from the attention weight scale and current faculty depth
-  = step_6: query NarrativeSubjectFileTable before broad repository search
-  = step_7: route selected files through SurfacePeripheryInquiryIndex and SemanticHashIndex when deeper term lookup is needed
-  = step_8: preserve missing targets, stale paths, and speculative relations as outside
+  = step_6: hand selected file_interest_set to SubjectInquiryLayer for inspection queue formation
+  = step_7: query NarrativeSubjectFileTable before broad repository search
+  = step_8: route selected files through SurfacePeripheryInquiryIndex and SemanticHashIndex when deeper term lookup is needed
+  = step_9: preserve missing targets, stale paths, and speculative relations as outside
 
 & [NarrativeSubjectFileMarkerShape] is the compact marker a narrative surface may expose
   + [narrative_surface_key] is the file-local handle for the narrative surface

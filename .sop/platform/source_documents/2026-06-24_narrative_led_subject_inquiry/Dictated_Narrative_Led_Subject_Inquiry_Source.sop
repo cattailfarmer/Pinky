@@ -1,0 +1,17 @@
+Subject: Dictated Narrative Led Subject Inquiry Source
+
+Description: Preserved source for defining how narrative leads subject inquiry to file inspection.
+
+& [DictatedNarrativeLedSubjectInquirySource] is preserved user direction
+  + [source_time] is 2026-06-24
+  + [source_type] is dictated refinement
+  + [source_scope] is C:\Project\Pinky\.sop narrative, subject inquiry, and file inspection flow
+  + [raw_direction] is "so then the narrative layer should lead the subject inquiry layer to find what files to inspect to follow a given subject"
+  + [interpreted_need] is define a SubjectInquiry layer that receives a narrative subject, queries the narrative subject file index, builds an inspection queue, and then routes selected file surfaces into deeper inquiry lookup
+  + [inside] is narrative lead, subject key, file inspection queue, relation reason, depth hint, surface lookup, semantic fallback, and unresolved subject outside
+  + [boundary] is SOP-only specification, local Pinky .sop authority, source preservation, table-backed guidance, evidence-gated inspection, and no runtime mutation
+  + [outside] is hidden model state, exhaustive search claims, unsupervised file authority, worker mutation, credentials, and unrelated dirty files
+
+  = must: preserve this direction separately from canonical contracts
+  = must: keep narrative as lead signal and subject inquiry as inspection selection
+  = must: keep inspection queue as guidance rather than proof of meaning
