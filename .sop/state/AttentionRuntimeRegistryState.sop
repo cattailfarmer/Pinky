@@ -52,14 +52,19 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_045_aperture_reentry_runtime_001.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_045_aperture_reentry_runtime_001.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_021.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\topology_map.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\topology_map.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_048_topology_map_runtime_001.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_048_topology_map_runtime_001.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_022.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is topology map runtime selection
-  + [active_root_frame] is attention_frame_2026_06_24_topology_map_runtime_selection
+  + [registry_scope] is seven-fold frame runtime selection
+  + [active_root_frame] is attention_frame_2026_06_24_seven_fold_frame_runtime_selection
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 15
+  + [closed_frame_count] is 16
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -68,23 +73,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_TopologyMapRuntimeSelection] is the active semantic stack frame for selecting and building the topology map runtime
-  + [frame_id] is attention_frame_2026_06_24_topology_map_runtime_selection
+& [AttentionFrame_2026_06_24_SevenFoldFrameRuntimeSelection] is the active semantic stack frame for selecting and building the seven-fold frame runtime
+  + [frame_id] is attention_frame_2026_06_24_seven_fold_frame_runtime_selection
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_aperture_reentry_runtime
-  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_021, Task_048, topology_map_runtime, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_topology_map_runtime
+  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_022, Task_051, seven_fold_frame_runtime, outside_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is aperture_reentry.py, 2026-06-24_task_045_aperture_reentry_runtime_001.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_021.sop, and CurrentFocalPoint.sop
-  + [focus_register] is build Task_048 topology map runtime
-  + [question_register] is how to read focal terms, periphery terms, dimensions, and relation legs and emit a HyperbolicPantsAttentionMap SOP-HG record
-  + [delineation_register] is inside remaining ReadyTaskSet, Task_048, focal terms, periphery terms, dimensions, relation legs, topology map, source evidence, outside, and commit cadence
+  + [frame_trace] is topology_map.py, 2026-06-24_task_048_topology_map_runtime_001.hg.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_022.sop, and CurrentFocalPoint.sop
+  + [focus_register] is build Task_051 seven-fold frame runtime
+  + [question_register] is how to read a subject surface, rank visible correlations, select top three central cells, and emit fold-leg weighted orbit records
+  + [delineation_register] is inside remaining ReadyTaskSet, Task_051, subject surface, correlation ranking, central triad, fold legs, weighted orbit, source evidence, outside, and commit cadence
   + [periphery_register] is worker mutation outside, branch creation outside, remote sync outside, hidden-state replay outside, unrelated dirty files outside, credentials outside, and destructive action outside
-  + [operation_register] is inspect_hyperbolic_pants_attention_map_contracts, preserve_source, build_runtime, add_tests, emit_topology_map, validate, commit, push, emit_next_tick
-  + [evidence_register] is Manager_State completed Task_141, aperture reentry springboard, aperture reentry runtime tests, and operating_loop_tick_021
-  + [wisdom_register] is Codex should add topology map runtime as the next bridge from reentry springboard into navigable focal/periphery cells
-  + [caution_register] is topology map runtime must not overclaim transformer geometry or convert correlation adjacency into proof of causal relationship
-  + [balance_register] is stable because Task_045 completed with tests and close-pass boundaries visible
-  + [integration_register] is Task_045 completed and Task_048 selected as next runtime task
+  + [operation_register] is inspect_seven_fold_pants_correlation_frame_contracts, preserve_source, build_runtime, add_tests, emit_seven_fold_frame, validate, commit, push, emit_next_tick
+  + [evidence_register] is Manager_State completed Task_142, topology map runtime, generated topology map graph, and operating_loop_tick_022
+  + [wisdom_register] is Codex should add seven-fold frame runtime as the next bridge from sparse topology cells into top-three heat ordering and fold-leg weighted orbit records
+  + [caution_register] is seven-fold frame runtime must not treat weighted central correlations as proof of truth or exact transformer geometry
+  + [balance_register] is stable because Task_048 completed with tests and semantic-proxy boundaries visible
+  + [integration_register] is Task_048 completed and Task_051 selected as next runtime task
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -92,10 +97,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_topology_map_runtime_selection
+  + [active_root_frame] is attention_frame_2026_06_24_seven_fold_frame_runtime_selection
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_TopologyMapRuntimeSelection], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [topology_map_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_SevenFoldFrameRuntimeSelection], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [seven_fold_frame_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]

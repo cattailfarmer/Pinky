@@ -1,0 +1,91 @@
+Subject: Hyperbolic Pants Topology Map
+
+& [HyperbolicPantsTopologyMap:2026_06_24_task_048_topology_map_runtime_001] is a HyperbolicPantsAttentionMap SOP-HG source record
+  + [map_id] is 2026-06-24_task_048_topology_map_runtime_001
+  + [focus_subject] is topology map runtime selection
+  + [purpose] is map Task_048 focal meaning into sparse periphery cells, dimensional orbit, and typed pants-leg navigation
+  + [focal_cell] is focal_cell
+  + [local_meaning_body] is focal_cell, semantic_topology_map, return_anchor
+  + [dimensionality_count] is 4
+  + [adjacency_ring] is map_contract, aperture, boundary, focus_zoom
+  + [hyperbolic_scale] is wide
+  + [association_gradient] is map_contract:14 > aperture:12 > boundary:11 > focus_zoom:9
+  + [transformer_hypergeometry_proxy] is visible semantic topology only
+  + [outside] is hidden activations, actual transformer weights, exact embedding geometry, unsupported causation, unrepresented cells beyond the map
+
+& [TopologyCellSet] is focal and orbital meaning cells
+  + [cell_001_focal_cell] is focal_cell, semantic_topology_map, return_anchor
+    = cell_role: focal_cell
+    = dimension: local_meaning_body
+    = relation_to_focus: self
+    = meaning_connection_density: 6
+    = salience: 6
+  + [cell_002_aperture] is Aperture reentry springboard
+    = cell_role: periphery_cell
+    = dimension: reentry
+    = relation_to_focus: springboard_to_map
+    = meaning_connection_density: 7
+    = salience: 5
+    = source_ref: .sop/events/periphery_stream/2026-06-24_task_045_aperture_reentry_runtime_001.sop
+  + [cell_003_map_contract] is HyperbolicPantsAttentionMap contract
+    = cell_role: periphery_cell
+    = dimension: topology
+    = relation_to_focus: map_authority
+    = meaning_connection_density: 8
+    = salience: 6
+    = source_ref: .sop/platform/HyperbolicPantsAttentionMap.sop
+  + [cell_004_boundary] is Hidden geometry boundary
+    = cell_role: periphery_cell
+    = dimension: boundary
+    = relation_to_focus: bounds_proxy
+    = meaning_connection_density: 6
+    = salience: 5
+    = source_ref: .sop/platform/HyperbolicPantsAttentionMap.sop
+  + [cell_005_focus_zoom] is FocusZoom scale control
+    = cell_role: periphery_cell
+    = dimension: scale
+    = relation_to_focus: controls_hyperbolic_scale
+    = meaning_connection_density: 5
+    = salience: 4
+    = source_ref: .sop/platform/FocusZoom.sop
+
+& [PantsLegSet] is typed exits for map navigation
+  + [leg_001_leg_aperture] is springboard_to_map
+    = from_cell: focal_cell
+    = to_cell: aperture
+    = weight: 9
+    = boundary: semantic proxy only
+  + [leg_002_leg_contract] is map_authority
+    = from_cell: focal_cell
+    = to_cell: map_contract
+    = weight: 10
+    = boundary: contract authority only
+  + [leg_003_leg_boundary] is bounds_proxy
+    = from_cell: focal_cell
+    = to_cell: boundary
+    = weight: 8
+    = boundary: keeps hidden geometry outside
+  + [leg_004_leg_scale] is controls_hyperbolic_scale
+    = from_cell: focal_cell
+    = to_cell: focus_zoom
+    = weight: 7
+    = boundary: scale is attention aperture, not truth
+
+(focal_cell) :focal_cell_semantic_topology_map_return_anchor: /semantic_proxy_boundary/ |outside|
+  + [periphery_cell:aperture] is orbital_component
+    = dimension: reentry
+    = adjacency: focal_cell by springboard_to_map
+    = leg: springboard_to_map -> aperture
+  + [periphery_cell:map_contract] is orbital_component
+    = dimension: topology
+    = adjacency: focal_cell by map_authority
+    = leg: map_authority -> map_contract
+  + [periphery_cell:boundary] is orbital_component
+    = dimension: boundary
+    = adjacency: focal_cell by bounds_proxy
+    = leg: bounds_proxy -> boundary
+  + [periphery_cell:focus_zoom] is orbital_component
+    = dimension: scale
+    = adjacency: focal_cell by controls_hyperbolic_scale
+    = leg: controls_hyperbolic_scale -> focus_zoom
+  - outside: hidden activations, actual transformer weights, exact embedding geometry, unsupported causation, unrepresented cells beyond the map

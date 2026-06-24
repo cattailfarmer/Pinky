@@ -29,6 +29,7 @@ from sop_node import (
     build_semantic_correlation_graph,
     build_support_balance,
     build_attention_tracking_record,
+    build_hyperbolic_pants_topology_map,
     build_lmstudio_task_frame_candidate,
     build_sensitivity_scan,
     build_sensitivity_scan_from_changes,
@@ -48,10 +49,12 @@ from sop_node import (
     parse_aperture_support,
     parse_directive,
     parse_faculty_field,
+    parse_pants_leg,
     parse_periphery_run_frame,
     parse_reflection_consumption,
     parse_support_probe,
     parse_step_balance_observation,
+    parse_topology_cell,
     parse_tracked_subject,
     scan_to_hypergraph,
     select_scaffold_profile,
@@ -870,6 +873,40 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("E:opens:test_aperture_reentry_springboard", graph_rendered)
         self.assertIn("E:closes:test_aperture_reentry_springboard", graph_rendered)
         self.assertIn("E:springboards:test_aperture_reentry_springboard", graph_rendered)
+
+    def test_hyperbolic_pants_topology_map_emits_cells_orbit_and_navigation(self) -> None:
+        topology_map = build_hyperbolic_pants_topology_map(
+            map_id="test_topology_map",
+            focus_subject="topology map runtime selection",
+            focal_terms=("focal_cell", "semantic_topology_map", "return_anchor"),
+            periphery_cells=(
+                parse_topology_cell("aperture|Aperture reentry springboard|reentry|springboard_to_map|7|5|events/periphery_stream/aperture.sop"),
+                parse_topology_cell("boundary|Outside boundary|boundary|bounds_proxy|5|4|platform/HyperbolicPantsAttentionMap.sop"),
+                parse_topology_cell("dimension|Dimensional orbit|dimension|orbits_focus|4|4|platform/PeripheryDimensionalProbe.sop"),
+            ),
+            pants_legs=(
+                parse_pants_leg("leg_aperture|focal_cell|aperture|springboard_to_map|9|semantic proxy only"),
+                parse_pants_leg("leg_boundary|focal_cell|boundary|bounds_proxy|8|keeps hidden geometry outside"),
+                parse_pants_leg("leg_dimension|focal_cell|dimension|orbits_focus|7|distinct dimensions only"),
+            ),
+            purpose="map focal meaning and sparse periphery for navigation",
+        )
+        rendered = topology_map.render()
+        graph = topology_map.to_hypergraph()
+        graph_rendered = graph.render()
+
+        self.assertTrue(topology_map.ready)
+        self.assertTrue(graph.ready)
+        self.assertEqual(topology_map.dimensionality_count, 3)
+        self.assertEqual(topology_map.scale, "normal")
+        self.assertIn("+ [adjacency_ring] is aperture, boundary, dimension", rendered)
+        self.assertIn("transformer_hypergeometry_proxy] is visible semantic topology only", rendered)
+        self.assertIn("E:maps:test_topology_map", graph_rendered)
+        self.assertIn("E:contains:focal_cell", graph_rendered)
+        self.assertIn("E:orbits:reentry", graph_rendered)
+        self.assertIn("E:adjoins:focal_cell_aperture", graph_rendered)
+        self.assertIn("E:navigates:leg_aperture", graph_rendered)
+        self.assertIn("N:outside:hyperbolic_map_boundary", graph_rendered)
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")

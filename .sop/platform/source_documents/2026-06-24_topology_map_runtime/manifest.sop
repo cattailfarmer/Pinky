@@ -1,0 +1,14 @@
+Subject: Topology Map Runtime Source Manifest
+
+Description: Manifest for Task_048 topology map runtime source preservation.
+
+& [TopologyMapRuntimeSourceManifest] is the source preservation manifest for Task_048
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_topology_map_runtime
+  + [canonical_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\topology_map.py
+  + [demo_command] is C:\Project\Pinky\.sop\runtime\demos\topology_map.py
+  + [generated_map] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_048_topology_map_runtime_001.sop
+  + [generated_graph] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_048_topology_map_runtime_001.hg.sop
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [status] is runtime_integrated
+
+  = must: keep the derived source available for future reinterpretation

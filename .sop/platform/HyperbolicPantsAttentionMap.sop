@@ -11,6 +11,10 @@ Description: Contract for using pants decomposition and hyperbolic tessellation 
 @ [source] F:\.sop\platform\AttentionScaffoldCompiler.sop
 @ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
 @ [source] F:\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_topology_map_runtime\Derived_Topology_Map_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\topology_map.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\topology_map.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_048_topology_map_runtime_001.hg.sop
 
 & [HyperbolicPantsAttentionMap] is the topology pattern for mapping focal meaning and periphery meaning as a navigable semantic surface
   + [pattern_role] is topology_map_and_navigation_awareness
@@ -28,6 +32,8 @@ Description: Contract for using pants decomposition and hyperbolic tessellation 
   + [association_gradient] is how relation heat changes from focal_cell through adjacency_ring toward periphery cells
   + [hyperbolic_scale] is the map rule that lets far periphery contain many small cells without flooding focal attention
   + [map_nav_awareness] is the ability to select a route through cells, legs, and rings while preserving return anchor and outside
+  + [topology_map_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\topology_map.py for reading focal terms, periphery cells, dimensions, and relation legs and emitting a HyperbolicPantsAttentionMap SOP-HG record
+  + [topology_map_demo] is C:\Project\Pinky\.sop\runtime\demos\topology_map.py for command-line compact or SOP-HG topology map emission
   + [seven_fold_pants_correlation_frame] is F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop when a topology map needs a heat-ordered central triad and folded extra-dimensional legs
   + [hyperbolic_corridor_navigator] is F:\.sop\platform\HyperbolicCorridorNavigator.sop when a topology map becomes a corridor through selected peripheral frames
   + [transformer_hypergeometry_proxy] is the visible semantic map inferred from SOP records, terms, weights, and narrative traces as a proxy for attention navigation

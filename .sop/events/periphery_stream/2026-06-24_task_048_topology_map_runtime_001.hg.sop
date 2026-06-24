@@ -1,0 +1,85 @@
+Subject: 2026-06-24_task_048_topology_map_runtime_001 Hyperbolic Pants Topology Map
+
+& [Graph:2026_06_24_task_048_topology_map_runtime_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG hyperbolic-pants-topology-map
+  = focus_subject: topology map runtime selection
+  = scale: wide
+  = dimensionality_count: 4
+
+  + [N:map:2026_06_24_task_048_topology_map_runtime_001] is 2026-06-24_task_048_topology_map_runtime_001
+    = scale: wide
+    = dimensionality_count: 4
+    = association_gradient: map_contract:14 > aperture:12 > boundary:11 > focus_zoom:9
+  + [N:focus:topology_map_runtime_selection] is topology map runtime selection
+  + [N:cell:focal_cell] is focal_cell, semantic_topology_map, return_anchor
+    = cell_role: focal_cell
+    = meaning_connection_density: 6
+    = salience: 6
+  + [N:outside:hyperbolic_map_boundary] is hidden activations, actual transformer weights, exact embedding geometry, unsupported causation, unrepresented cells beyond the map
+  + [N:cell:aperture] is Aperture reentry springboard
+    = cell_role: periphery_cell
+    = dimension: reentry
+    = meaning_connection_density: 7
+    = salience: 5
+  + [N:dimension:reentry] is reentry
+  + [N:orbit:reentry] is reentry orbit
+  + [N:cell:map_contract] is HyperbolicPantsAttentionMap contract
+    = cell_role: periphery_cell
+    = dimension: topology
+    = meaning_connection_density: 8
+    = salience: 6
+  + [N:dimension:topology] is topology
+  + [N:orbit:topology] is topology orbit
+  + [N:cell:boundary] is Hidden geometry boundary
+    = cell_role: periphery_cell
+    = dimension: boundary
+    = meaning_connection_density: 6
+    = salience: 5
+  + [N:dimension:boundary] is boundary
+  + [N:orbit:boundary] is boundary orbit
+  + [N:cell:focus_zoom] is FocusZoom scale control
+    = cell_role: periphery_cell
+    = dimension: scale
+    = meaning_connection_density: 5
+    = salience: 4
+  + [N:dimension:scale] is scale
+  + [N:orbit:scale] is scale orbit
+  + [N:leg:leg_aperture] is springboard_to_map
+    = weight: 9
+    = boundary: semantic proxy only
+  + [N:term:springboard_to_map] is springboard_to_map
+  + [N:leg:leg_contract] is map_authority
+    = weight: 10
+    = boundary: contract authority only
+  + [N:term:map_authority] is map_authority
+  + [N:leg:leg_boundary] is bounds_proxy
+    = weight: 8
+    = boundary: keeps hidden geometry outside
+  + [N:term:bounds_proxy] is bounds_proxy
+  + [N:leg:leg_scale] is controls_hyperbolic_scale
+    = weight: 7
+    = boundary: scale is attention aperture, not truth
+  + [N:term:controls_hyperbolic_scale] is controls_hyperbolic_scale
+
+/ [E:maps:2026_06_24_task_048_topology_map_runtime_001] -(maps; map=N:map:2026_06_24_task_048_topology_map_runtime_001; focus=N:focus:topology_map_runtime_selection; cell=N:cell:focal_cell; scale=wide)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:contains:focal_cell] -(contains; map=N:map:2026_06_24_task_048_topology_map_runtime_001; focal_cell=N:cell:focal_cell; local_meaning_body=focal_cell, semantic_topology_map, return_anchor)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:bounds:2026_06_24_task_048_topology_map_runtime_001] -(bounds; map=N:map:2026_06_24_task_048_topology_map_runtime_001; outside=N:outside:hyperbolic_map_boundary; proxy_status=semantic_not_hidden_geometry)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:orbits:reentry] -(orbits; focal=N:cell:focal_cell; periphery=N:cell:aperture; orbit=N:orbit:reentry; dimension=N:dimension:reentry; heat=12)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:adjoins:focal_cell_aperture] -(adjoins; cell_a=N:cell:focal_cell; cell_b=N:cell:aperture; map=N:map:2026_06_24_task_048_topology_map_runtime_001; relation=springboard_to_map)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:orbits:topology] -(orbits; focal=N:cell:focal_cell; periphery=N:cell:map_contract; orbit=N:orbit:topology; dimension=N:dimension:topology; heat=14)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:adjoins:focal_cell_map_contract] -(adjoins; cell_a=N:cell:focal_cell; cell_b=N:cell:map_contract; map=N:map:2026_06_24_task_048_topology_map_runtime_001; relation=map_authority)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:orbits:boundary] -(orbits; focal=N:cell:focal_cell; periphery=N:cell:boundary; orbit=N:orbit:boundary; dimension=N:dimension:boundary; heat=11)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:adjoins:focal_cell_boundary] -(adjoins; cell_a=N:cell:focal_cell; cell_b=N:cell:boundary; map=N:map:2026_06_24_task_048_topology_map_runtime_001; relation=bounds_proxy)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:orbits:scale] -(orbits; focal=N:cell:focal_cell; periphery=N:cell:focus_zoom; orbit=N:orbit:scale; dimension=N:dimension:scale; heat=9)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:adjoins:focal_cell_focus_zoom] -(adjoins; cell_a=N:cell:focal_cell; cell_b=N:cell:focus_zoom; map=N:map:2026_06_24_task_048_topology_map_runtime_001; relation=controls_hyperbolic_scale)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:navigates:leg_aperture] -(navigates; map=N:map:2026_06_24_task_048_topology_map_runtime_001; leg=N:leg:leg_aperture; from=N:cell:focal_cell; to=N:cell:aperture; relation=N:term:springboard_to_map; weight=9)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:navigates:leg_contract] -(navigates; map=N:map:2026_06_24_task_048_topology_map_runtime_001; leg=N:leg:leg_contract; from=N:cell:focal_cell; to=N:cell:map_contract; relation=N:term:map_authority; weight=10)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:navigates:leg_boundary] -(navigates; map=N:map:2026_06_24_task_048_topology_map_runtime_001; leg=N:leg:leg_boundary; from=N:cell:focal_cell; to=N:cell:boundary; relation=N:term:bounds_proxy; weight=8)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+/ [E:navigates:leg_scale] -(navigates; map=N:map:2026_06_24_task_048_topology_map_runtime_001; leg=N:leg:leg_scale; from=N:cell:focal_cell; to=N:cell:focus_zoom; relation=N:term:controls_hyperbolic_scale; weight=7)> [Graph:2026_06_24_task_048_topology_map_runtime_001]
+
+- outside: hidden activations
+- outside: actual transformer weights
+- outside: exact embedding geometry
+- outside: unsupported causation
+- outside: unrepresented cells beyond the map

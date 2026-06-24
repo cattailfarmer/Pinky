@@ -1,0 +1,18 @@
+Subject: Derived Topology Map Runtime Source
+
+Description: Derived source record for Task_048, preserving the implementation intent before treating the topology map runtime as integration authority.
+
+& [DerivedTopologyMapRuntimeSource] is the preserved derived source for the topology map runtime
+  + [source_kind] is derived_task_source
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is C:\Project\Pinky\.sop
+  + [source_basis] is Task_048_build_topology_map_runtime, HyperbolicPantsAttentionMap.sop, Dictated_Hyperbolic_Pants_Attention_Map_Source.sop, aperture reentry springboard 001, and operating_loop_tick_021
+  + [implementation_intent] is build a local command that reads focal terms, periphery cells, dimensions, and relation legs, then emits a HyperbolicPantsAttentionMap SOP-HG record with focal cell, dimensional orbit, adjacency ring, typed pants legs, scale, association gradient, and outside
+  + [authority_boundary] is Codex owns durable integration, file mutation, validation, commit, and push; generated topology maps are semantic navigation proxies and not proof of hidden transformer geometry
+  + [outside] is hidden activations, actual transformer weights, exact embedding geometry, unsupported causation, arbitrary visual analogy as proof, and unrepresented cells beyond the map
+
+  = must: preserve this derived source separately from runtime code and generated topology artifacts
+  = must: keep focal_cell, periphery_cell, dimensional_orbit, pants_leg, scale, association_gradient, and outside visible
+  = must: keep semantic_topology_map separate from hidden transformer geometry
+  = must: require typed pants_leg relations before navigation edges are emitted
+  - never: treat cell size, heat, adjacency, or visual metaphor as proof of truth
