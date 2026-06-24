@@ -1,0 +1,23 @@
+Subject: Derived LM Studio Worker Task Corpus Source
+
+Description: Preserved source bridge for diversifying LM Studio SOP worker task families before broadening readiness claims.
+
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_004.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+
+& [DerivedLMStudioWorkerTaskCorpusSource] is the preserved source bridge for corpus diversification
+  + [source_date] is 2026-06-24
+  + [trigger_tick] is operating_loop_tick_20260624_004
+  + [trigger_next_step] is define diversified LM Studio SOP worker task corpus before broadening readiness claims
+  + [active_root] is C:\Project\Pinky\.sop
+  + [source_impulse] is prevent repeated same-family score 100 from becoming a broad competence claim
+  + [readiness_profile_context] is LM Studio has two isolated score-100 strong validations on the strict ControlledExplosionReadiness prompt family
+  + [desired_output] is a diverse task corpus that tests multiple SOP proposal task families while preserving scratch isolation, no mutation, exact output, outside, and Codex validation
+
+  = must: preserve this source separately from canonical corpus contracts and benchmark packets
+  = must: keep all corpus tasks non-mutating and proposal-only
+  = must: require Codex-side validation before evidence can update readiness
+  = must: include distinct task families so evidence can test generalization rather than repetition
+  - outside: project-root authority, repo mutation, broad competence claims, hidden model state, destructive action, credentials, and unrelated dirty files

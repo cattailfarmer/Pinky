@@ -1,0 +1,21 @@
+Subject: LM Studio Worker Task Corpus 009
+
+Description: Event record for the initial diversified SOP worker task corpus.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
+
+& [LMStudioWorkerTaskCorpusEvent:20260624_009] is the initial diversified corpus event
+  + [corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
+  + [task_family_count] is 6
+  + [task_families] is boundary_delineation, outside_preservation, task_frame_routing, evidence_review, periphery_correlation, integration_disposition
+  + [launch_status] is not_launched
+  + [purpose] is define diversity before broadening LM Studio worker readiness claims
+  + [minimum_pass_gate] is at least four distinct task families score strong with no authority overclaim before readiness can broaden from narrow_same_family to limited_diverse
+  + [next_step] is compile first diversified task-frame launch queue candidates from this corpus
+  + [outside] is project-root authority, worker mutation, broad competence claims, hidden model state, credentials, destructive action, and unrelated dirty files
+
+  = must: keep this event as corpus definition, not worker proof
+  = must: launch future corpus candidates only through inspectable task-frame queues
+  = must: preserve per-family scores before aggregate readiness claims
+  - never: count unlaunched corpus tasks as worker competence evidence

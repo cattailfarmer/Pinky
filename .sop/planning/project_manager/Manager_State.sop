@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 10
-  + [completed_task_count] is 124
+  + [completed_task_count] is 125
   + [blocked_task_count] is 2
 
 & [CompletedTaskSet] is completed work
@@ -238,6 +238,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_next_probe_result_001.sop, C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_003.sop
   + [Task_124_integrate_lmstudio_readiness_profile] is integrate lmstudio_next_probe_001 as narrow readiness evidence for scratch-isolated non-mutating SOP proposal jobs, update LMStudioWorkerFunctionalLane and LMStudioAgentBenchmark, and record operating_loop_tick_004 with diverse task corpus as the next gate
     = evidence: C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop, C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop, C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_004.sop
+  + [Task_125_define_lmstudio_worker_task_corpus] is define a six-family diversified LM Studio SOP worker task corpus with pass gates, failure gates, and non-mutating validator-gated launch boundaries before broadening readiness claims
+    = evidence: C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lm_studio_worker_task_corpus\Derived_LM_Studio_Worker_Task_Corpus_Source.sop, C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_task_corpus_20260624_009.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_005.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_003_deepen_pressure_impact_records] is turn pressure and impact scan signals into deeper ThinkAbout records

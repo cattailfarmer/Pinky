@@ -16,6 +16,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -50,6 +51,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [post_output_validator] is the Codex-side rejection check for schema shape, forbidden-inside terms, hollow fields, and substitution faults before worker output is treated as usable
   + [functional_lane_result] is scratch_prompt_only Codex CLI over LM Studio passed strict functional prompt 007 with validation score 100 and band strong
   + [functional_lane_readiness_profile] is repeated isolated score-100 evidence now supports narrow scratch-isolated non-mutating SOP proposal readiness, but diverse task-family evidence is still required before broad reliability claims
+  + [diverse_task_corpus] is LMStudioWorkerTaskCorpus with boundary_delineation, outside_preservation, task_frame_routing, evidence_review, periphery_correlation, and integration_disposition families
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
@@ -69,6 +71,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: reject worker output through post_output_validator when inside contains explicitly excluded terms
   = must: treat LMStudioWorkerFunctionalLane as functional only for isolated non-mutating proposal jobs until project-root context leakage is solved
   = must: distinguish repeated same-family score 100 from broad worker competence
+  = must: use diverse_task_corpus before broadening readiness claims beyond the strict ControlledExplosionReadiness prompt family
   = must: compare project-root and isolated scratch launches when diagnosing whether an error is model comprehension or launch-surface context gravity
   = must: run non-mutating benchmark tasks by default
   = must: send explicit SOP task_frame reminders in every benchmark packet

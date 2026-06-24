@@ -13,6 +13,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
 @ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
 
@@ -34,6 +35,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [lm_studio_lane] is local OpenAI-compatible LM Studio inference when available
   + [lm_studio_agent_benchmark] is the Codex-hosted quality gate for qualifying LM Studio as a small-job SOP worker
   + [lm_studio_worker_functional_lane] is the scratch-isolated Codex-hosted worker lane for validated non-mutating SOP proposal jobs
+  + [lm_studio_worker_task_corpus] is the diversified task-family source for proving local worker readiness beyond repeated same-family prompts
   + [sop_language_primer_gate] is the local-worker language introduction required before SOP framework packets or tasks are assigned
   + [openai_codex_lane] is OpenAI Codex agent work suited for code edits, repo changes, tests, high-context implementation, and structured proof
   + [codex_cli_lane] is local Codex CLI worker lane when explicitly launched and bounded
@@ -62,6 +64,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: run sop_language_primer_gate before assigning a local lane to SOP framework-shaped task packets
   = must: qualify lm_studio_lane with LMStudioAgentBenchmark before using local model output for task_narrative integration
   = must: use LMStudioWorkerFunctionalLane for local LM Studio worker launches that need booted prompt packets, scratch isolation, capture, and validation
+  = must: use LMStudioWorkerTaskCorpus when queueing diversified LM Studio readiness probes
   = must: route openai_codex_lane or codex_cli_lane work toward code edits, repo mutations, tests, multi-file integration, high-context specification writing, or proof-bearing changes
   = must: keep codex_cli over LM Studio blocked when Codex initial prompt size exceeds the loaded model context window
   = must: keep codex_cli over LM Studio blocked when no-tool discipline or exact-output fidelity fails

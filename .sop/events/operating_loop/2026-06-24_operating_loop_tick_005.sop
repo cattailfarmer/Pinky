@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_005] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_005
+  + [focus_subject] is diversified LM Studio SOP worker task corpus
+  + [completed_step] is defined six-family LMStudioWorkerTaskCorpus before broadening readiness claims
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is compile first diversified task-frame launch queue candidates from LMStudioWorkerTaskCorpus
+  + [created_utc] is 2026-06-24T19:58:59Z
+  + [evidence_refs] is .sop\platform\LMStudioWorkerTaskCorpus.sop, .sop\events\benchmarks\lm_studio_worker_task_corpus_20260624_009.sop, corpus:6_families
+  + [outside] is corpus is not launched worker proof, broad LM Studio competence remains outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat commit, proof, or report as evidence that the clock stopped
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_005
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is compile first diversified task-frame launch queue candidates from LMStudioWorkerTaskCorpus
+  |outside| corpus is not launched worker proof, broad LM Studio competence remains outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside
