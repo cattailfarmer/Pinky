@@ -1,0 +1,14 @@
+Subject: Dictated Planner Weaver Activation Source
+
+Description: Raw user-directed source preserved before canonical refinement.
+
+& [DictatedPlannerWeaverActivationSource] is the preserved user direction
+  + [source_time] is 2026-06-24
+  + [source_authority] is user dictated direction in the Pinky .sop project
+  + [raw_direction] is we probably have activation patterns for Honesty and Security already, and now for Archivist and Refiner, but Planner and Weaver are weaker. Weaver activates when there are multiple components of attention and the intention is to bridge them together toward an integrated shape. Planner activates for deciding which blend of intentions between those components serves the purpose of goals.
+  + [consulted_prior_framework] is C:\Project\ReasoningFramework\platform\refinement\Integration.sop PlannerWeaverCoordination, used only as source context and re-expressed locally
+
+  = must: preserve this source separately from canonical refinement
+  = must: strengthen Planner and Weaver activation without weakening the paired balance law
+  = must: keep the canonical target self-contained inside Pinky .sop authority
+  - outside: Python runtime changes, relying on external definitions at runtime, hidden-state claims, and unrelated workspace changes

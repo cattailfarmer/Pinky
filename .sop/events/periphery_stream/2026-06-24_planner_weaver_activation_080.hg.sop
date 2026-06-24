@@ -1,0 +1,29 @@
+Subject: Planner Weaver Activation Periphery Realization
+
+Description: SOP-HG record for strengthening Planner and Weaver activation over direction and integration pressure.
+
+@ [source] C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_planner_weaver_activation\Dictated_Planner_Weaver_Activation_Source.sop
+
+& [SOPHypergraphRecord] is planner_weaver_activation_080
+  + [record_type] is periphery_realization
+  + [focus_subject] is Planner Weaver activation
+  + [inside] is WeaverActivationPattern, PlannerActivationPattern, IntentionBlendSelection, PlannerWeaverBalanceProtocol, path_fit_boundary, and direction_integration_pressure
+  + [boundary] is local Pinky .sop authority, user source, integration context re-expressed locally, explicit outside, and no runtime mutation
+  + [outside] is hidden native parallelism, external-runtime dependency, false bridge, unwalkable plan, erased distinction, arbitrary association, and unrelated workspace changes
+
+  = realization: Planner and Weaver become strong when Weaver answers what fits together and Planner answers which intention blend can be walked toward the goal
+  = caution: Weaver without Planner can become elegant fog, and Planner without Weaver can become brittle sequencing
+  = wisdom: path and fit must be reconciled before direction becomes action
+
+/ [user_direction] -(PreservedAs)> [DictatedPlannerWeaverActivationSource], [source_preservation]
+/ [PlannerWeaverActivation] -(Defines)> [WeaverActivationPattern], [integration_pressure], [protected_distinction]
+/ [PlannerWeaverActivation] -(Defines)> [PlannerActivationPattern], [route_pressure], [goal_serving_blend]
+/ [WeaverActivationPattern], [PlannerActivationPattern] -(ReconciledBy)> [PlannerWeaverBalanceProtocol], [path_fit_boundary]
+/ [IntentionBlendSelection] -(Selects)> [chosen_blend], [goal_vector], [component_intention]
+/ [PlannerWeaverBalanceProtocol] -(Emits)> [next_step_candidate], [integrated_shape], [tension_report], [residual_outside]
+
+(planner_weaver_activation_realization) :direction_integration_attention: /path_fit_boundary/ |unresolved_direction_integration|
+  + [direction_integration_attention] is paired attention to relation-building and route-selection
+  + [path_fit_boundary] is walkable path plus coherent fit
+  |unresolved_direction_integration| false bridge, hidden dependency, overblend, erased distinction, arbitrary association, and unwalkable plan

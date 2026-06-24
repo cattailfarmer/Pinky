@@ -84,14 +84,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_activation_balance\Dictated_Faculty_Pair_Activation_Balance_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_faculty_pair_activation_balance_079.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_027.sop
+@ [source] C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_planner_weaver_activation\Dictated_Planner_Weaver_Activation_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_planner_weaver_activation_080.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_028.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is faculty pair activation balance
-  + [active_root_frame] is attention_frame_2026_06_24_faculty_pair_activation_balance
+  + [registry_scope] is Planner Weaver activation
+  + [active_root_frame] is attention_frame_2026_06_24_planner_weaver_activation
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 21
+  + [closed_frame_count] is 22
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -125,7 +129,7 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 & [AttentionFrame_2026_06_24_FacultyPairActivationBalance] is the active semantic stack frame for paired faculty activation
   + [frame_id] is attention_frame_2026_06_24_faculty_pair_activation_balance
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
   + [child_frame_set] is HonestySecurityPair, ArchivistRefinerPair, PlannerWeaverPair, source_preservation, operating_loop_tick_027, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -146,8 +150,31 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: route residuals to outside rather than forcing balance
   = should: open child frames for individual faculty cores or a router only after explicit next-task selection
 
+& [AttentionFrame_2026_06_24_PlannerWeaverActivation] is the active semantic stack frame for path-fit activation
+  + [frame_id] is attention_frame_2026_06_24_planner_weaver_activation
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_faculty_pair_activation_balance
+  + [child_frame_set] is WeaverActivationPattern, PlannerActivationPattern, IntentionBlendSelection, PlannerWeaverBalanceProtocol, source_preservation, operating_loop_tick_028, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is PlannerWeaverActivation.sop, FacultyPairActivationBalance.sop, Dictated_Planner_Weaver_Activation_Source.sop, 2026-06-24_planner_weaver_activation_080.hg.sop, Manager_State.sop, and 2026-06-24_operating_loop_tick_028.sop
+  + [focus_register] is direction-integration pressure, path-fit boundary, intention blend selection, and paired reconciliation
+  + [question_register] is whether next work should define individual faculty cores or compile a faculty activation router
+  + [delineation_register] is inside component map, intention map, weave candidate, plan candidate, tension report, reconciliation output, next step, and outside
+  + [periphery_register] is false bridge, hidden dependency, overblend, erased distinction, arbitrary association, unwalkable plan, hidden native parallelism, and unrelated dirty files
+  + [operation_register] is preserve_source, define_planner_weaver_activation, update_pair_contract, emit_periphery_record, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, PlannerWeaverActivation.sop, FacultyPairActivationBalance.sop, source manifest, periphery record 080, and operating_loop_tick_028
+  + [wisdom_register] is path and fit must reconcile before direction becomes action
+  + [caution_register] is Weaver can become elegant fog and Planner can become brittle sequencing if unpaired
+  + [balance_register] is stable because Planner and Weaver now have separate activation smells, questions, outputs, and conflict dispositions
+  + [integration_register] is Task_148 completed as SOP-only Planner/Weaver activation contract
+  + [frame_outside] is hidden model state, native runtime stack claims, external runtime dependency, worker file mutation, unsupported bridge, and unrelated workspace changes
+
+  = must: keep Planner and Weaver lanes separate until path-fit reconciliation
+  = must: preserve rejected intention blends and unbridged components as outside
+  = should: use this frame before a faculty activation router is compiled
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_faculty_pair_activation_balance
+  + [active_root_frame] is attention_frame_2026_06_24_planner_weaver_activation
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition

@@ -7,6 +7,7 @@ Description: SOP attention contract for activating governance faculties in paire
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_activation_balance\Dictated_Faculty_Pair_Activation_Balance_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
 
 & [FacultyPairActivationBalance] is the paired activation layer for attention faculties
   + [activation_field] is faculty_pair_activation
@@ -55,9 +56,11 @@ Description: SOP attention contract for activating governance faculties in paire
   + [joint_activation_signal] is task_pressure, route_pressure, dependency_pressure, association_pressure, synthesis_pressure, or coordination_pressure
   + [balance_question] is whether the next step is ordered enough to act and connected enough to mean something
   + [reconciliation_output] is plan_disposition, weave_disposition, next_step_candidate, and integration_risk
+  + [activation_contract] is C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop
 
   = must: let Planner restrain wandering when association pressure exceeds task clarity
   = must: let Weaver restrain brittle linearity when plan pressure ignores relevant correlations
+  = must: use PlannerWeaverActivation when direction_integration_pressure requires both path and fit
   = must: keep next_step candidates source-cited and boundary-aware
   = should: surface dependency gaps as outside rather than smoothing them into a false plan
   - outside: over-planning without integration or over-weaving without an executable next step
