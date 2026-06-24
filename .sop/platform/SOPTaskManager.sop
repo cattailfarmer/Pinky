@@ -10,6 +10,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
 
@@ -28,6 +29,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [local_gpu_lane] is local model inference using the user's GPU through an available provider such as LM Studio or another configured local runtime
   + [lm_studio_lane] is local OpenAI-compatible LM Studio inference when available
   + [lm_studio_agent_benchmark] is the Codex-hosted quality gate for qualifying LM Studio as a small-job SOP worker
+  + [lm_studio_worker_functional_lane] is the scratch-isolated Codex-hosted worker lane for validated non-mutating SOP proposal jobs
   + [sop_language_primer_gate] is the local-worker language introduction required before SOP framework packets or tasks are assigned
   + [openai_codex_lane] is OpenAI Codex agent work suited for code edits, repo changes, tests, high-context implementation, and structured proof
   + [codex_cli_lane] is local Codex CLI worker lane when explicitly launched and bounded
@@ -53,6 +55,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: route local_gpu_lane or lm_studio_lane work toward associative scan, summarization, candidate extraction, low-risk critique, style variation, cross-model perspective, or non-mutating analysis
   = must: run sop_language_primer_gate before assigning a local lane to SOP framework-shaped task packets
   = must: qualify lm_studio_lane with LMStudioAgentBenchmark before using local model output for task_narrative integration
+  = must: use LMStudioWorkerFunctionalLane for local LM Studio worker launches that need booted prompt packets, scratch isolation, capture, and validation
   = must: route openai_codex_lane or codex_cli_lane work toward code edits, repo mutations, tests, multi-file integration, high-context specification writing, or proof-bearing changes
   = must: keep codex_cli over LM Studio blocked when Codex initial prompt size exceeds the loaded model context window
   = must: keep codex_cli over LM Studio blocked when no-tool discipline or exact-output fidelity fails
@@ -115,6 +118,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [local_gpu_fit] is broad low-risk inference, semantic scan, cross-model triangulation, summarization, brainstorming, critique, classification, or draft generation without direct repo mutation
   + [lm_studio_fit] is local OpenAI-compatible inference where prompt packets and captured responses are enough
   + [lm_studio_benchmark_fit] is local model worker eligibility measured through captured benchmark output, deterministic scoring, latency, outside preservation, and Codex review
+  + [lm_studio_functional_fit] is scratch-isolated Codex CLI over LM Studio for validated non-mutating SOP proposal jobs
   + [lm_studio_language_fit] is local model readiness to receive SOP framework packets after SOP marker, delineation, outside, evidence, and authority-boundary primer checks pass
   + [openai_codex_fit] is implementation, tests, repo mutations, tool use, long-context integration, or durable proof work
   + [codex_cli_fit] is bounded local agent work with explicit workspace, prompt packet, and capture slot
@@ -126,6 +130,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: prefer non-mutating lanes for exploratory or speculative work
   = must: use lm_studio_language_fit before treating SOP notation errors as framework reasoning failures
   = must: use lm_studio_benchmark_fit to decide whether LM Studio can receive small SOP worker jobs
+  = must: use lm_studio_functional_fit only for jobs where validated proposal text is sufficient
   = must: use codex_cli_lmstudio_fit only after context-window fit is proven
   = must: use codex_cli_lmstudio_readiness_fit only after fidelity and tool-discipline gates pass
   = must: prefer Codex lanes for file edits that require repo-aware verification

@@ -1,0 +1,17 @@
+Subject: Dictated LM Studio Worker Functionalization Source
+
+Description: Preserved source directive for walking the LM Studio agent lane forward until functional or blocked.
+
+& [DictatedLMStudioWorkerFunctionalizationSource] is the preserved user directive
+  + [source_date] is 2026-06-24
+  + [source_context] is after booted SOP worker benchmarking showed isolated prompt-only success and project-root host-context contamination
+  + [source_line_001] is "so it's coming together? take the next steps?"
+  + [source_line_002] is "can you walk through this project until the LM Studio agent is fully realized and functional or there's an unresolvable block?"
+  + [active_root] is C:\Project\Pinky\.sop
+  + [desired_output] is a functional LM Studio worker lane with booted prompt runner, validation, captured result, and explicit block records when readiness fails
+
+  = must: preserve this source separately from runtime helpers, reports, and canonical contracts
+  = must: keep Codex as operational host and repo authority
+  = must: keep LM Studio worker output non-mutating proposal text until validated
+  = must: distinguish functional prompt-only worker readiness from project-root context authority
+  - outside: hidden model state, unsupervised worker mutation, credentials, and broad competence claims beyond captured tests

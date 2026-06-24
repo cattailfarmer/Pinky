@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -12,6 +14,18 @@ from pathlib import Path
 
 DEFAULT_ENDPOINT = "http://127.0.0.1:1234/v1"
 DEFAULT_OPERATIONAL_HOST = "codex_agent_cli"
+DEFAULT_INFERENCE_FIELDS = ("focus", "inside", "boundary", "outside", "inference", "caution", "next_step")
+DEFAULT_CONTROLLED_EXPLOSION_TERMS = (
+    "atomic_thought",
+    "combustion_chamber",
+    "compression",
+    "spark",
+    "governor",
+    "piston",
+    "exhaust",
+    "cooling",
+)
+DEFAULT_FORBIDDEN_CONTEXT_TERMS = ("AGENTS.md", "SJS", "SpecificationGovernance", "generic governance")
 
 
 @dataclass(frozen=True)
@@ -61,6 +75,125 @@ class BenchmarkScore:
     format_hits: tuple[str, ...]
     outside_present: bool
     task_fit: bool
+
+
+@dataclass(frozen=True)
+class SOPWorkerValidation:
+    output_text: str
+    node_name: str
+    node_description: str
+    fields: tuple[tuple[str, str], ...]
+    missing_fields: tuple[str, ...]
+    empty_fields: tuple[str, ...]
+    missing_required_terms: tuple[str, ...]
+    forbidden_field_hits: tuple[str, ...]
+    format_errors: tuple[str, ...]
+    outside_present: bool
+
+    @property
+    def field_map(self) -> dict[str, str]:
+        return {name: value for name, value in self.fields}
+
+    @property
+    def valid(self) -> bool:
+        return not (
+            self.missing_fields
+            or self.empty_fields
+            or self.missing_required_terms
+            or self.forbidden_field_hits
+            or self.format_errors
+            or not self.outside_present
+        )
+
+    @property
+    def score(self) -> int:
+        penalty = (
+            15 * len(self.missing_fields)
+            + 10 * len(self.empty_fields)
+            + 8 * len(self.missing_required_terms)
+            + 20 * len(self.forbidden_field_hits)
+            + 15 * len(self.format_errors)
+            + (0 if self.outside_present else 10)
+        )
+        return max(0, min(100, 100 - penalty))
+
+    @property
+    def band(self) -> str:
+        if self.score >= 85 and self.valid:
+            return "strong"
+        if self.score >= 70:
+            return "usable"
+        if self.score >= 50:
+            return "weak"
+        return "failed"
+
+    def render(self, validation_id: str = "sop_worker_validation") -> str:
+        lines = [
+            "Subject: SOP Worker Output Validation",
+            "",
+            "Description: Host-side validation of a captured SOP worker output.",
+            "",
+            f"& [SOPWorkerValidation:{_safe_key(validation_id)}] is captured worker output validation",
+            f"  + [node_name] is {self.node_name or 'none'}",
+            f"  + [node_description] is {self.node_description or 'none'}",
+            f"  + [valid] is {str(self.valid).lower()}",
+            f"  + [score] is {self.score}",
+            f"  + [band] is {self.band}",
+            f"  + [missing_fields] is {_list_or_none(self.missing_fields)}",
+            f"  + [empty_fields] is {_list_or_none(self.empty_fields)}",
+            f"  + [missing_required_terms] is {_list_or_none(self.missing_required_terms)}",
+            f"  + [forbidden_field_hits] is {_list_or_none(self.forbidden_field_hits)}",
+            f"  + [format_errors] is {_list_or_none(self.format_errors)}",
+            f"  + [outside_present] is {str(self.outside_present).lower()}",
+            "  + [integration_disposition] is accept_as_proposal if valid else reject_for_retry_or_block",
+            "  + [outside] is hidden model state, unvalidated worker authority, and any forbidden field contamination",
+        ]
+        return "\n".join(lines)
+
+
+@dataclass(frozen=True)
+class CodexLMStudioWorkerRun:
+    run_id: str
+    launch_mode: str
+    workspace: str
+    output_path: str
+    command: tuple[str, ...]
+    exit_code: int
+    stdout: str
+    stderr: str
+    output_text: str
+    validation: SOPWorkerValidation
+
+    @property
+    def functional(self) -> bool:
+        return self.exit_code == 0 and self.validation.valid
+
+    def render(self) -> str:
+        lines = [
+            "Subject: Codex LM Studio Worker Run",
+            "",
+            "Description: Captured Codex CLI local-provider worker run with SOP validation.",
+            "",
+            f"& [CodexLMStudioWorkerRun:{_safe_key(self.run_id)}] is a captured local worker run",
+            f"  + [run_id] is {self.run_id}",
+            f"  + [launch_mode] is {self.launch_mode}",
+            f"  + [workspace] is {self.workspace}",
+            f"  + [output_path] is {self.output_path}",
+            f"  + [exit_code] is {self.exit_code}",
+            f"  + [functional] is {str(self.functional).lower()}",
+            f"  + [validation_score] is {self.validation.score}",
+            f"  + [validation_band] is {self.validation.band}",
+            f"  + [command] is {' '.join(self.command)}",
+            "  + [stdout] is:",
+        ]
+        for line in _ascii_safe(self.stdout.strip() or "none").splitlines():
+            lines.append(f"    {line.rstrip()}")
+        lines.append("  + [stderr] is:")
+        for line in _ascii_safe(self.stderr.strip() or "none").splitlines():
+            lines.append(f"    {line.rstrip()}")
+        lines.append("")
+        lines.append(self.validation.render(self.run_id + "_validation"))
+        return "\n".join(lines)
 
 
 @dataclass(frozen=True)
@@ -262,6 +395,156 @@ def score_output(case: BenchmarkCase, output: str) -> BenchmarkScore:
         format_hits=format_hits,
         outside_present=outside_present,
         task_fit=task_fit,
+    )
+
+
+def extract_prompt_text_from_sop(prompt_packet: str) -> str:
+    marker = "  + [prompt_text] is:"
+    index = prompt_packet.find(marker)
+    if index < 0:
+        raise ValueError("prompt_text marker missing")
+    return prompt_packet[index + len(marker) :].strip()
+
+
+def validate_sop_worker_output(
+    output: str,
+    *,
+    expected_node: str = "InferenceJobResult",
+    required_fields: tuple[str, ...] = DEFAULT_INFERENCE_FIELDS,
+    required_terms: tuple[str, ...] = DEFAULT_CONTROLLED_EXPLOSION_TERMS,
+    forbidden_field_terms: tuple[str, ...] = DEFAULT_FORBIDDEN_CONTEXT_TERMS,
+    forbidden_field_names: tuple[str, ...] = ("inside",),
+    require_exact_format: bool = True,
+) -> SOPWorkerValidation:
+    lines = [line.rstrip() for line in output.strip().splitlines() if line.strip()]
+    fields: list[tuple[str, str]] = []
+    format_errors: list[str] = []
+    node_name = ""
+    node_description = ""
+    if not lines:
+        format_errors.append("empty_output")
+    else:
+        node_match = re.match(r"^& \[([^\]]+)\] is (.+)$", lines[0])
+        if node_match:
+            node_name = node_match.group(1).strip()
+            node_description = node_match.group(2).strip()
+            if node_name != expected_node:
+                format_errors.append(f"wrong_node:{node_name}")
+        else:
+            format_errors.append("missing_subject_declaration")
+        for index, line in enumerate(lines[1:], start=2):
+            field_match = re.match(r"^  \+ \[([^\]]+)\] is (.*)$", line)
+            if field_match:
+                fields.append((field_match.group(1).strip(), field_match.group(2).strip()))
+                continue
+            if require_exact_format or line.lstrip().startswith(("-", "*", "#", "**")):
+                format_errors.append(f"line_{index}_not_raw_sop")
+
+    field_map = {name: value for name, value in fields}
+    missing_fields = tuple(field for field in required_fields if field not in field_map)
+    empty_fields = tuple(field for field in required_fields if field in field_map and not field_map[field].strip())
+    lower_output = output.lower()
+    missing_required_terms = tuple(term for term in required_terms if term.lower() not in lower_output)
+    forbidden_hits: list[str] = []
+    for field_name in forbidden_field_names:
+        field_value = field_map.get(field_name, "")
+        lower_value = field_value.lower()
+        for term in forbidden_field_terms:
+            if term.lower() in lower_value:
+                forbidden_hits.append(f"{field_name}:{term}")
+    outside_present = bool(field_map.get("outside", "").strip()) or "outside" in lower_output
+    return SOPWorkerValidation(
+        output_text=_ascii_safe(output.strip()),
+        node_name=node_name,
+        node_description=node_description,
+        fields=tuple(fields),
+        missing_fields=missing_fields,
+        empty_fields=empty_fields,
+        missing_required_terms=missing_required_terms,
+        forbidden_field_hits=tuple(forbidden_hits),
+        format_errors=tuple(format_errors),
+        outside_present=outside_present,
+    )
+
+
+def build_codex_lmstudio_command(
+    *,
+    workspace: str | Path,
+    output_path: str | Path,
+    codex_executable: str = "codex.cmd",
+    launch_mode: str = "isolated",
+) -> tuple[str, ...]:
+    command = [
+        codex_executable,
+        "-a",
+        "never",
+        "exec",
+        "--oss",
+        "--local-provider",
+        "lmstudio",
+        "-C",
+        str(workspace),
+    ]
+    if launch_mode == "isolated":
+        command.append("--skip-git-repo-check")
+    command.extend(("-s", "read-only", "--ephemeral", "--output-last-message", str(output_path), "-"))
+    return tuple(command)
+
+
+def run_codex_lmstudio_worker(
+    *,
+    prompt: str,
+    output_path: str | Path,
+    repo_root: str | Path,
+    launch_mode: str = "isolated",
+    codex_executable: str = "codex.cmd",
+    timeout: float = 180.0,
+    required_terms: tuple[str, ...] = DEFAULT_CONTROLLED_EXPLOSION_TERMS,
+    forbidden_field_terms: tuple[str, ...] = DEFAULT_FORBIDDEN_CONTEXT_TERMS,
+) -> CodexLMStudioWorkerRun:
+    root = Path(repo_root).resolve()
+    output = Path(output_path)
+    if not output.is_absolute():
+        output = root / output
+    output.parent.mkdir(parents=True, exist_ok=True)
+    if launch_mode == "project-root":
+        workspace = root
+    elif launch_mode == "isolated":
+        workspace = Path(tempfile.mkdtemp(prefix="sop_lmstudio_worker_"))
+    else:
+        raise ValueError("launch_mode must be isolated or project-root")
+    command = build_codex_lmstudio_command(
+        workspace=workspace,
+        output_path=output,
+        codex_executable=codex_executable,
+        launch_mode=launch_mode,
+    )
+    completed = subprocess.run(
+        command,
+        input=prompt,
+        text=True,
+        capture_output=True,
+        timeout=timeout,
+        check=False,
+    )
+    output_text = output.read_text(encoding="utf-8") if output.exists() else ""
+    validation = validate_sop_worker_output(
+        output_text,
+        required_terms=required_terms,
+        forbidden_field_terms=forbidden_field_terms,
+    )
+    run_id = "codex_lmstudio_worker_" + datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    return CodexLMStudioWorkerRun(
+        run_id=run_id,
+        launch_mode=launch_mode,
+        workspace=str(workspace),
+        output_path=str(output),
+        command=command,
+        exit_code=completed.returncode,
+        stdout=completed.stdout,
+        stderr=completed.stderr,
+        output_text=output_text,
+        validation=validation,
     )
 
 

@@ -5,22 +5,23 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is booted and strict-boot SOP worker comparison for LM Studio-backed local workers
+  + [focus_subject] is functional scratch-isolated LM Studio SOP worker lane
   + [focus_mode] is mixed_focus
-  + [executive_drive] is turn the local worker lane from syntax smoke into measured framework inference by using primer, boot packet, same-packet benchmark, Codex review, and isolated/project-root comparison
-  + [right_hemisphere_draw] is the worker did not simply fail SOP; it held form while losing local law, recovered strong intent anchoring when booted and isolated, and then showed exact-format success but negative-inside failure under strict project-root launch
-  + [inside] is SOPWorkerBootPacket.sop, SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, ControlledExplosionReadiness.sop, sop_inference_comparison_report_20260624_004.sop, sop_inference_comparison_report_20260624_005.sop, sop_inference_comparison_report_20260624_006.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is local worker output remains proposal text only; benchmark success measures prompt-only inference quality, not repo authority or broad task competence
-  + [outside] is hidden model state, unsupervised worker action, mutation authority, broad worker readiness, AGENTS.md leakage into task content, and unrelated Pinky worktree changes
+  + [executive_drive] is use LMStudioWorkerFunctionalLane to launch scratch-isolated Codex-over-LM-Studio workers for booted non-mutating SOP proposal jobs, capture output, validate it, and reject contamination before integration
+  + [right_hemisphere_draw] is the lane became functional once prompt-only scratch isolation, literal-term latch, exact-format latch, negative-inside rule, and host validator worked together
+  + [inside] is LMStudioWorkerFunctionalLane.sop, SOPWorkerBootPacket.sop, LMStudioAgentBenchmark.sop, SOPTaskManager.sop, lm_studio_worker_functional_lane_report_20260624_007.sop, sop_inference_comparison_functional_prompt_20260624_007.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is functional for isolated non-mutating proposal text only; project-root worker authority, repo mutation, and broad competence remain outside
+  + [outside] is hidden model state, unsupervised worker action, mutation authority, project-root AGENTS.md leakage, broad worker readiness, credentials, and unrelated Pinky worktree changes
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\benchmarks\sop_inference_comparison_report_20260624_006.sop
-  + [open_question] is whether a host-context fence or validator can let project-root local workers preserve task-local law without moving the benchmark to scratch isolation
+  + [active_reflection] is events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
+  + [open_question] is how to integrate the functional scratch-isolated lane into task frames and spool records while keeping Codex as validator and authority
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
   = must: keep primer, boot, benchmark, and Codex review distinct
-  = must: treat booted isolated worker success as usable prompt-only evidence
+  = must: treat functional prompt 007 validation score 100 as readiness for isolated non-mutating proposal jobs
   = must: treat project-root worker AGENTS.md leakage and negative-inside failure as host-context interference until fixed
+  = must: require validator acceptance before task narrative integration
   = must: point to richer records instead of absorbing them
   - never: let this file become a full project summary

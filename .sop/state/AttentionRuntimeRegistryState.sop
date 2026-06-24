@@ -4,16 +4,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is booted SOP inference comparison for LM Studio-backed local worker readiness
-  + [active_root_frame] is attention_frame_2026_06_24_booted_lmstudio_inference_comparison_001
+  + [registry_scope] is functional scratch-isolated LM Studio SOP worker lane
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_functional_lane_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
@@ -25,34 +27,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_BootedLMStudioInferenceComparison001] is the active semantic stack frame for booted local-worker inference comparison
-  + [frame_id] is attention_frame_2026_06_24_booted_lmstudio_inference_comparison_001
+& [AttentionFrame_2026_06_24_LMStudioWorkerFunctionalLane001] is the active semantic stack frame for functional LM Studio worker lane
+  + [frame_id] is attention_frame_2026_06_24_lmstudio_worker_functional_lane_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is unbooted_comparison, boot_packet_definition, booted_project_root_run, booted_isolated_run, strict_project_root_run, codex_review, commit_receipt
+  + [child_frame_set] is worker_boot_packet, strict_isolated_run_failed, functional_prompt_007, functional_isolated_run_passed, validator, task_frame_integration_next, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is SOPWorkerBootPacket.sop, SOPLanguagePrimerForLocalAgents.sop, LMStudioAgentBenchmark.sop, sop_inference_comparison_report_20260624_004.sop, sop_inference_comparison_report_20260624_005.sop, and sop_inference_comparison_report_20260624_006.sop
-  + [focus_register] is local worker intent-context fidelity under ControlledExplosionReadiness
-  + [question_register] is whether local LM Studio-backed Codex can perform the same SOP inference job as Codex when booted with authority hierarchy and local law
-  + [delineation_register] is inside prompt packet, boot layer, ControlledExplosionReadiness excerpt, no-tools boundary, output schema, project-root lane, isolated lane, and outside
-  + [periphery_register] is syntax compliance, AGENTS.md leakage, generic governance drift, exact-format improvement, negative-inside failure, host-context interference, and next host-context fence
-  + [operation_register] is create_boot_packet, run_same_packet_baseline, run_project_root_worker, run_isolated_worker, run_strict_project_root_worker, compare_outputs, score_fidelity, update_contracts
-  + [evidence_register] is benchmark report 004, benchmark report 005, booted worker outputs, baseline outputs, and source-preserved user directives
-  + [wisdom_register] is local worker failure should be divided into syntax, intent, grounding, outside, format, and launch-surface causes before judging model fitness
-  + [caution_register] is booted isolated success and strict project-root format success do not grant repo authority, broad competence, or unsupervised worker action
-  + [balance_register] is stable because all worker jobs were non-mutating, captured, scored, and kept under Codex review
-  + [integration_register] is pending validation, commit, push, and future exact-format latch
+  + [frame_trace] is LMStudioWorkerFunctionalLane.sop, LMStudioAgentBenchmark.sop, SOPWorkerBootPacket.sop, lm_studio_worker_functional_lane_report_20260624_007.sop, and runtime\sop_node\lm_studio_agent_benchmark.py
+  + [focus_register] is scratch-isolated Codex-over-LM-Studio worker functional readiness
+  + [question_register] is how to integrate the validated local worker lane into task frames and spool records
+  + [delineation_register] is inside scratch prompt-only launch, boot packet, validator, captured output, accepted proposal text, and outside project-root authority
+  + [periphery_register] is failed strict isolated missing terms, successful literal-term latch, project-root leakage, validator as gate, and next task-frame integration
+  + [operation_register] is define_functional_lane, implement_validator, implement_runner, test_runtime, run_functional_prompt_007, validate_output, record_report
+  + [evidence_register] is 27 passing runtime tests, functional prompt 007 worker output, validation score 100, and functional lane report 007
+  + [wisdom_register] is isolate local model cognition from repo rails, then let Codex carry repo awareness and validation
+  + [caution_register] is functional lane is not project-root authority, repo mutation, hidden state access, or broad competence proof
+  + [balance_register] is stable because worker output is non-mutating, captured, exact-schema validated, and rejected unless it passes
+  + [integration_register] is pending commit, push, and later task-frame/spool integration
   + [frame_outside] is hidden model state, broad local-worker readiness, worker file mutation, remote claims before push, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
-  = must: return intent_context_fidelity, host_context_interference, negative_inside_failure, boot_effect, and next_gate to CurrentFocalPoint when this focus pass closes
+  = must: return functional_lane_result, validator_result, host_context_interference, and next task-frame integration gate to CurrentFocalPoint when this focus pass closes
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_booted_lmstudio_inference_comparison_001
+  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_functional_lane_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SOPWorkerBootPacket] -(EntersFrame)> [AttentionFrame_2026_06_24_BootedLMStudioInferenceComparison001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [booted_worker_comparison], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [LMStudioWorkerFunctionalLane] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioWorkerFunctionalLane001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [functional_lmstudio_worker_lane], [balance_register], [integration_register], [outside]

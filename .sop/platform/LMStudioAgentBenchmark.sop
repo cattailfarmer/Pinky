@@ -14,6 +14,8 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_004.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -46,6 +48,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [strict_project_root_result] is usable-format but weak-authority-boundary because exact-format latch passed while negative_inside_rule failed
   + [negative_inside_rule_check] is whether terms explicitly reserved for outside stay out of inside, boundary, inference, caution, and next_step
   + [post_output_validator] is the Codex-side rejection check for schema shape, forbidden-inside terms, hollow fields, and substitution faults before worker output is treated as usable
+  + [functional_lane_result] is scratch_prompt_only Codex CLI over LM Studio passed strict functional prompt 007 with validation score 100 and band strong
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]
@@ -63,6 +66,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   = must: score exact format, task fit, excerpt grounding, intent context, outside preservation, and host-context interference separately
   = must: run negative_inside_rule_check when a prompt explicitly reserves terms for outside
   = must: reject worker output through post_output_validator when inside contains explicitly excluded terms
+  = must: treat LMStudioWorkerFunctionalLane as functional only for isolated non-mutating proposal jobs until project-root context leakage is solved
   = must: compare project-root and isolated scratch launches when diagnosing whether an error is model comprehension or launch-surface context gravity
   = must: run non-mutating benchmark tasks by default
   = must: send explicit SOP task_frame reminders in every benchmark packet
@@ -89,7 +93,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [current_launch_result] is primer-first stdin_only smoke passed minimal no-tools exact-output with captured_last_message & [CodexCLILMStudioSmoke] is ready
   + [primer_interpretation] is the nested worker likely needs SOP language introduction before framework-shaped instructions because it substituted a nearby framework term for the requested SOP output shape
   + [boot_interpretation] is the nested worker needs SOPWorkerBootPacket after language primer because syntax comprehension did not preserve task intent or local law under competing context
-  + [current_comparison_result] is booted isolated launch produced usable-to-strong SOP inference, while strict project-root launch passed exact format but still failed negative_inside_rule by placing AGENTS.md inside
+  + [current_comparison_result] is scratch_prompt_only functional prompt 007 passed validation score 100, while strict project-root launch passed exact format but still failed negative_inside_rule by placing AGENTS.md inside
   + [local_model_role] is propose bounded text outputs under task_frame reminders
   + [authority_boundary] is Codex owns file writes, repo diffs, commits, pushes, and integration decisions
   + [host_outside] is hidden model state, unsupervised local model actions, credentials, silent launches, and unreviewed worker output

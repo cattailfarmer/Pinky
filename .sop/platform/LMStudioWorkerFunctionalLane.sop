@@ -1,0 +1,50 @@
+Subject: LM Studio Worker Functional Lane
+
+Description: Contract for making LM Studio usable as a Codex-directed SOP worker lane through booted prompts, scratch isolation, validation, and captured results.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lm_studio_worker_functionalization\Dictated_LM_Studio_Worker_Functionalization_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+
+& [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
+  + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
+  + [operational_host] is Codex, which owns prompt packet preparation, subprocess launch, output capture, validation, file writes, commits, pushes, and integration decisions
+  + [worker_provider] is LM Studio through Codex CLI local-provider or OpenAI-compatible endpoint
+  + [safe_launch_mode] is scratch_prompt_only because project-root launches still leak host context into task content authority
+  + [project_root_mode] is diagnostic_only until host-context fence and validator prove negative_inside_rule compliance
+  + [boot_packet] is SOPWorkerBootPacket with authority hierarchy, intent anchor, local law, exact-format latch, and negative-inside rule
+  + [prompt_packet] is primer plus boot plus framework excerpt plus exact output schema
+  + [capture_target] is a SOP output file under events, spool, or benchmark records
+  + [validator] is Codex-side exact schema, field content, required term, forbidden inside term, outside preservation, and substitution fault check
+  + [accepted_output] is worker proposal text that passes validator and remains proposal until Codex integrates it
+  + [rejected_output] is captured worker text that fails validator and becomes evidence for retry, fence tuning, or block
+  + [spool_record] is the visible worker tree record containing prompt reference, launch command, result file, validation state, and authority boundary
+  + [functional_definition] is a local worker can complete a non-mutating booted SOP inference job in scratch_prompt_only mode, produce exact SOP output, pass validator, and return captured proposal text for Codex review
+  + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
+  + [lane_outside] is repo mutation by worker, direct trust of worker output, hidden model state, credentials, broad competence, and project-root authority until fenced
+
+  ? [use_when: LM Studio should perform a small Codex-directed SOP worker job]
+    = activate [LMStudioWorkerFunctionalLane]
+
+  = must: use scratch_prompt_only as the default launch mode for functional local worker jobs
+  = must: use project_root_mode only as a diagnostic benchmark until negative_inside_rule passes
+  = must: capture raw worker output before validation
+  = must: reject output when validator finds missing fields, Markdown format, forbidden inside terms, missing required local-law terms, or substitution faults
+  = must: preserve rejected output as benchmark evidence rather than silently repairing it
+  = must: record functional worker runs in a spool record when task orchestration or future re-entry matters
+  = must: keep accepted output as proposal text until Codex review integrates it
+  = should: retry with stricter boot only when failure suggests prompt ambiguity rather than model incapacity
+  - never: grant file mutation or repo authority to LM Studio worker output
+  - never: call the lane fully functional for project-root jobs while AGENTS.md leakage remains
+
+(lm_studio_worker_functional_lane) :prompt_packet: /boot_packet and validator/ |lane_outside|
+  + [prompt_packet] is primer plus boot plus local law plus exact schema
+  + [boot_packet] is authority hierarchy and intent-context guard
+  + [validator] is host-side proof that output obeyed the task boundary
+  + [accepted_output] is validated proposal text only
+  + [spool_record] is visible task tree and launch receipt
+  |lane_outside| worker mutation, hidden state, unvalidated output, project-root leakage, and broad competence claims
+
+/ [SOPWorkerBootPacket], [CodexOperationalHost], [LMStudioProvider] -(Launches)> [scratch_prompt_only_worker], [captured_output], [spool_record], [lane_outside]
+* [captured_output], [validator], [CodexReview] -(AcceptsOrRejects)> [accepted_output], [rejected_output], [next_gate]

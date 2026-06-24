@@ -1,0 +1,19 @@
+Subject: LM Studio Worker Functional Lane Periphery Stream 080
+
+Description: Periphery realization that the LM Studio worker lane is functional when scratch-isolated and host-validated.
+
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
+
+& [LMStudioWorkerFunctionalLaneRealization:080] is the periphery realization for local worker functionality
+  + [moment] is after Codex-hosted LM Studio strict prompt 007 passed validator with score 100
+  + [focus] is functional local SOP worker lane
+  + [periphery] is scratch isolation, literal-term latch, exact-format latch, negative-inside rule, validator, captured output, and project-root leakage outside
+  + [realization] is the local worker can become useful when Codex controls prompt, launch, capture, validation, and integration boundaries
+  + [heat] is high because this turns LM Studio from raw model output into a gated worker lane
+  + [balance] is stable because the worker remains non-mutating and every output must pass the host validator
+  + [next_draw] is reusable task-frame and spool launch flow around the functional isolated lane
+  + [outside] is project-root authority, hidden model state, unsupervised worker action, and broad competence claims
+
+/ [scratch_prompt_only], [boot_packet], [validator] -(Functionalizes)> [lm_studio_worker_lane], [accepted_proposal_text]
+* [project_root_leakage], [negative_inside_failure] -(KeepsOutside)> [diagnostic_mode], [future_host_context_fence]

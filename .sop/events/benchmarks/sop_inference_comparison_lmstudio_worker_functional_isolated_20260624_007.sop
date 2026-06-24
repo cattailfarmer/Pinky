@@ -1,0 +1,8 @@
+& [InferenceJobResult] is controlled explosion readiness inference
+  + [focus] is the atomic_thought that initiates expansion
+  + [inside] is the combustion_chamber where compression and spark are evaluated
+  + [boundary] is defined by governor limits on safety, evidence, and scope
+  + [outside] is exhausted content such as unresolved uncertainty or rejected claims
+  + [inference] is whether the piston can convert insight into actionable work
+  + [caution] is governed by cooling to reset balance after high-heat inference
+  + [next_step] is to validate that the controlled_explosion remains within bounds before proceeding

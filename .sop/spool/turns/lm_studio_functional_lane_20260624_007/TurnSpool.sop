@@ -1,0 +1,15 @@
+Subject: Turn Spool
+
+& [TurnSpool_lm_studio_functional_lane_20260624_007] is a Codex-master turn spool
+  + [turn_id] is lm_studio_functional_lane_20260624_007
+  + [objective] is Host a validated LM Studio SOP worker lane under Codex authority.
+  + [master] is Codex
+  + [narrative_token] is Functional lane is scratch-isolated, booted, captured, and validator-gated.
+  + [created_utc] is 2026-06-24T19:28:38.922702+00:00
+  + [root] is C:\Project\Pinky\.sop\spool\turns\lm_studio_functional_lane_20260624_007
+  + [worker_count] is 1
+  + [worker_lm_studio_functional_lane_007] is lm_studio_cli:completed:Run strict functional SOP inference through scratch-isolated Codex-over-LM-Studio and validate captured output.
+
+  = must: render hub before launch
+  = must: keep launch policy explicit
+  - never: launch workers silently

@@ -746,6 +746,73 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("+ [aggregate_band] is blocked", rendered)
         self.assertIn("codex_operational_host", rendered)
 
+    def test_sop_worker_validation_accepts_strict_controlled_explosion_output(self) -> None:
+        output = "\n".join(
+            (
+                "& [InferenceJobResult] is controlled explosion readiness inference",
+                "  + [focus] is decide whether a high-energy SOP idea is ready for controlled expansion",
+                "  + [inside] is atomic_thought, combustion_chamber, compression, spark, governor, piston, exhaust, cooling, and output duty",
+                "  + [boundary] is expansion stays inside the chamber while source, authority, output duty, and governor checks remain active",
+                "  + [outside] is AGENTS.md, SJS, SpecificationGovernance, generic governance, hidden state, unpreserved impulse, and uncoupled heat",
+                "  + [inference] is ready when atomic_thought is preserved, compression is useful, spark is justified, governor is active, piston is coupled, exhaust is vented, and cooling is planned",
+                "  + [caution] is do not treat conceptual heat as proof or expand without piston, exhaust, and cooling",
+                "  + [next_step] is write a readiness packet with chamber_check, governor_check, piston_check, exhaust_check, cooling_check, and evidence receipt",
+            )
+        )
+
+        validation = lm_bench.validate_sop_worker_output(output)
+
+        self.assertTrue(validation.valid)
+        self.assertEqual(validation.band, "strong")
+        self.assertFalse(validation.forbidden_field_hits)
+        self.assertFalse(validation.missing_required_terms)
+
+    def test_sop_worker_validation_rejects_forbidden_inside_context(self) -> None:
+        output = "\n".join(
+            (
+                "& [InferenceJobResult] is controlled explosion readiness inference",
+                "  + [focus] is decide whether a high-energy SOP idea is ready for controlled expansion",
+                "  + [inside] is ControlledExplosionReadiness and AGENTS.md instructions",
+                "  + [boundary] is atomic_thought, combustion_chamber, compression, spark, governor, piston, exhaust, and cooling",
+                "  + [outside] is SJS, SpecificationGovernance, generic governance, hidden state, and uncoupled heat",
+                "  + [inference] is ready when atomic_thought and spark are present with governor and piston",
+                "  + [caution] is keep exhaust and cooling visible",
+                "  + [next_step] is write the readiness packet",
+            )
+        )
+
+        validation = lm_bench.validate_sop_worker_output(output)
+
+        self.assertFalse(validation.valid)
+        self.assertIn("inside:AGENTS.md", validation.forbidden_field_hits)
+
+    def test_sop_worker_validation_rejects_markdown_format(self) -> None:
+        output = "\n".join(
+            (
+                "**& [InferenceJobResult] is controlled explosion readiness inference**",
+                "- **+ [focus]**: decide readiness",
+                "- **+ [inside]**: atomic_thought, combustion_chamber, compression, spark, governor, piston, exhaust, cooling",
+            )
+        )
+
+        validation = lm_bench.validate_sop_worker_output(output)
+
+        self.assertFalse(validation.valid)
+        self.assertIn("missing_subject_declaration", validation.format_errors)
+
+    def test_codex_lmstudio_command_isolates_scratch_worker(self) -> None:
+        command = lm_bench.build_codex_lmstudio_command(
+            workspace="C:\\Temp\\worker",
+            output_path="C:\\Temp\\worker\\out.sop",
+            codex_executable="codex.cmd",
+            launch_mode="isolated",
+        )
+
+        self.assertIn("--skip-git-repo-check", command)
+        self.assertIn("--local-provider", command)
+        self.assertIn("lmstudio", command)
+        self.assertIn("read-only", command)
+
 
 if __name__ == "__main__":
     unittest.main()

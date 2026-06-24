@@ -1,0 +1,39 @@
+Subject: LM Studio Worker Functional Lane Report 007
+
+Description: Functional readiness report for the Codex-hosted LM Studio SOP worker lane.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lm_studio_worker_functionalization\Dictated_LM_Studio_Worker_Functionalization_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\lm_studio_agent_benchmark.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\lm_studio_agent_benchmark.py
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_functional_prompt_20260624_007.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_lmstudio_worker_functional_isolated_20260624_007.sop
+@ [source] C:\Project\Pinky\.sop\spool\turns\lm_studio_functional_lane_20260624_007\TurnSpool.sop
+
+& [LMStudioWorkerFunctionalLaneReport:20260624_007] is the functional lane readiness report
+  + [lane] is Codex CLI over LM Studio local provider
+  + [launch_mode] is isolated scratch_prompt_only
+  + [provider_model] is openai/gpt-oss-20b through LM Studio as reported by Codex CLI
+  + [command_shape] is codex.cmd -a never exec --oss --local-provider lmstudio -C scratch --skip-git-repo-check -s read-only --ephemeral --output-last-message output -
+  + [functional_result] is true for non-mutating booted SOP proposal jobs under scratch isolation
+  + [validation_score] is 100
+  + [validation_band] is strong
+  + [validated_output] is exact SOP node with required fields, no forbidden inside context, all required ControlledExplosionReadiness terms, no Markdown format error, and outside present
+  + [spool_record] is C:\Project\Pinky\.sop\spool\turns\lm_studio_functional_lane_20260624_007
+  + [previous_retry_result] is strict isolated prompt without literal-term latch scored 84 and failed because combustion_chamber and cooling were missing
+  + [project_root_result] is still blocked for authority-bearing use because strict project-root launch passed exact format but failed negative_inside_rule by placing AGENTS.md inside
+  + [functional_boundary] is local worker may propose bounded prompt-only SOP text; Codex remains the only repo authority and validator
+  + [next_gate] is generalize the completed spool record into reusable task-frame launch and result-capture flow for future LM Studio worker jobs
+  + [outside] is project-root local worker authority, worker file mutation, hidden model state, credentials, and broad competence claims
+
+  = must: treat this as functional readiness for isolated non-mutating SOP proposal jobs only
+  = must: keep validator between local worker output and task narrative integration
+  = must: keep project-root worker mode diagnostic until host-context leakage is solved
+  = should: use literal-term latch for strict framework comprehension jobs
+  - never: grant LM Studio worker repo mutation authority from this result
+
+(lm_studio_worker_functional_lane_report) :validated_output: /scratch_prompt_only and validator/ |lane_outside|
+  + [validated_output] is captured proposal text passing host-side validation
+  + [scratch_prompt_only] is the current functional launch fence
+  + [validator] is exact SOP schema plus local-law term and forbidden-inside checks
+  |lane_outside| project-root leakage, hidden state, worker mutation, and broad competence claims
