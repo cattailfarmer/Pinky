@@ -1,0 +1,34 @@
+Subject: Derived Corridor Navigator Runtime Source
+
+Description: Source-preservation packet for Task_054 runtime tooling, preserving why executable helper code is allowed while SOP remains the authority.
+
+@ [source] C:\Project\Pinky\.sop\platform\HyperbolicCorridorNavigator.sop
+@ [source] C:\Project\Pinky\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
+
+& [DerivedCorridorNavigatorRuntimeSource] is the preserved source packet for the Task_054 corridor navigator runtime
+  + [source_kind] is derived_runtime_authority_packet
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is C:\Project\Pinky\.sop
+  + [task_id] is Task_054_build_corridor_navigator_runtime
+  + [source_impulse] is build a local command that reads focal subject, peripheral frame candidates, step size, and identity target, then emits a HyperbolicCorridorNavigator SOP-HG record
+  + [runtime_boundary] is Python is a subordinate emitter and validator for SOP records, not the attention layer, authority layer, or persistent semantic memory
+  + [authority_layer] is SOP contracts, SOP-HG records, source documents, focal state, manager state, and committed Git history
+  + [build_environment_marker] is runtime code remains outside specification-building unless explicitly requested as runtime tooling or proof requires a local command
+  + [inside] is corridor frames, curving associations, advance step, depth budget, local awareness extension, entanglement terms, identity target, candidate status, and outside preservation
+  + [boundary] is correlation remains correlation-only unless later evidence, Wisdom, Caution, and governance promote a supported core
+  + [outside] is hidden activations, actual transformer weights, exact embedding geometry, causal proof, definite relationship, unsupported identity, arbitrary visual analogy, worker mutation authority, automatic branch creation, credentials, and unrelated dirty files
+
+  = must: keep semantic authority in SOP
+  = must: use the runtime helper only to emit and validate SOP or SOP-HG artifacts
+  = must: preserve relationship_proof=false on curving association edges unless a later governance record proves otherwise
+  = must: preserve candidate_not_proof on identity clarity candidates
+  - never: treat the Python helper as persistent attention or source authority
+  - never: create runtime code merely because an attention idea is clear
+
+(corridor_navigator_runtime_source) :runtime_boundary: /SOP authority and explicit runtime task/ |outside|
+  + [runtime_boundary] is Python as subordinate emitter and validator
+  + [authority_layer] is SOP records and Git history
+  + [task_id] is Task_054_build_corridor_navigator_runtime
+  - outside: hidden geometry, unsupported relationship, unsupported identity, and executable authority drift

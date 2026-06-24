@@ -1,0 +1,91 @@
+Subject: 2026-06-24_task_054_corridor_navigator_runtime_001 Hyperbolic Corridor Navigation
+
+& [Graph:2026_06_24_task_054_corridor_navigator_runtime_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG hyperbolic-corridor-navigator
+  = focal_subject: corridor navigator runtime selection
+  = identity_resolution_target: security honesty governance runtime selection
+  = advance_step: normal
+  = depth_budget: normal
+  = correlation_boundary_status: all_curving_associations_are_correlation_only
+
+  + [N:map:2026_06_24_task_054_corridor_navigator_runtime_001] is 2026-06-24_task_054_corridor_navigator_runtime_001
+    = advance_step: normal
+    = depth_budget: normal
+    = frame_order: seven_fold:15 > corridor_contract:13 > resonance_governance:11
+    = correlation_boundary_status: all_curving_associations_are_correlation_only
+  + [N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor] is 2026_06_24_task_054_corridor_navigator_runtime_001_corridor
+  + [N:focus:corridor_navigator_runtime_selection] is corridor navigator runtime selection
+  + [N:subject:security_honesty_governance_runtime_selection] is security honesty governance runtime selection
+    = identity_status: target_not_proof
+  + [N:extension:seven_fold_frame_runtime_peripheral_frame_series_return_anchor_security_honesty_governance] is seven_fold_frame_runtime, peripheral_frame_series, return_anchor, security_honesty_governance
+  + [N:surf:2026_06_24_task_054_corridor_navigator_runtime_001_inference_surf] is visible semantic correlation surf only
+    = hidden_state_access: none
+  + [N:finding:security_honesty_governance_is_the_next_candidate_focus_not_proof_of_resolved_identity] is security honesty governance is the next candidate focus, not proof of resolved identity
+    = candidate_status: candidate_not_proof
+  + [N:outside:hyperbolic_corridor_boundary] is hidden activations, actual transformer weights, exact embedding geometry, causal proof, definite relationship, unsupported identity, arbitrary visual analogy
+  + [N:frame:seven_fold] is Seven-fold frame runtime
+    = rank: 1
+    = relation_role: fold_leg_series
+    = heat: 12
+    = distinctness: 3
+    = confidence: high
+    = return_anchor: CurrentFocalPoint
+    = source_ref: .sop/events/periphery_stream/2026-06-24_task_051_seven_fold_frame_runtime_001.hg.sop
+  + [N:periphery:seven_fold] is fold_leg_series
+    = heat: 12
+    = return_anchor: CurrentFocalPoint
+  + [N:frame:corridor_contract] is Hyperbolic corridor navigator contract
+    = rank: 2
+    = relation_role: corridor_policy
+    = heat: 10
+    = distinctness: 3
+    = confidence: high
+    = return_anchor: CurrentFocalPoint
+    = source_ref: .sop/platform/HyperbolicCorridorNavigator.sop
+  + [N:periphery:corridor_contract] is corridor_policy
+    = heat: 10
+    = return_anchor: CurrentFocalPoint
+  + [N:frame:resonance_governance] is Security Honesty governance checksum
+    = rank: 3
+    = relation_role: resonance_governance
+    = heat: 9
+    = distinctness: 2
+    = confidence: medium
+    = return_anchor: CurrentFocalPoint
+    = source_ref: .sop/events/bookmarks/2026-06-24_corridor_navigator_trailing_checksum_023.hg.sop
+  + [N:periphery:resonance_governance] is resonance_governance
+    = heat: 9
+    = return_anchor: CurrentFocalPoint
+  + [N:signal:curve_fold_to_contract] is folded_periphery_points_to_corridor_policy
+    = heat: 8
+    = confidence: high
+    = correlation_status: correlation_only
+    = outside: not a definite relationship
+    = evidence_ref: .sop/events/bookmarks/2026-06-24_seven_fold_frame_trailing_checksum_021.hg.sop
+  + [N:signal:curve_contract_to_governance] is corridor_heat_requires_governance
+    = heat: 7
+    = confidence: medium
+    = correlation_status: correlation_only
+    = outside: not identity proof
+    = evidence_ref: .sop/events/bookmarks/2026-06-24_corridor_navigator_trailing_checksum_023.hg.sop
+
+/ [E:navigates:2026_06_24_task_054_corridor_navigator_runtime_001_corridor] -(navigates; navigator=N:map:2026_06_24_task_054_corridor_navigator_runtime_001; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; focus=N:focus:corridor_navigator_runtime_selection; advance_step=normal)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:extends:seven_fold_frame_runtime_peripheral_frame_series_return_anchor_security_honesty_governance] -(extends; navigator=N:map:2026_06_24_task_054_corridor_navigator_runtime_001; extension=N:extension:seven_fold_frame_runtime_peripheral_frame_series_return_anchor_security_honesty_governance; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; depth_budget=normal)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:surfs:2026_06_24_task_054_corridor_navigator_runtime_001_inference_surf] -(surfs; navigator=N:map:2026_06_24_task_054_corridor_navigator_runtime_001; surf=N:surf:2026_06_24_task_054_corridor_navigator_runtime_001_inference_surf; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; claim_boundary=visible_semantic_correlation_only)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:probes:security_honesty_governance_runtime_selection] -(probes; navigator=N:map:2026_06_24_task_054_corridor_navigator_runtime_001; identity=N:subject:security_honesty_governance_runtime_selection; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:resolves:security_honesty_governance_is_the_next_candidate_focus_not_proof_of_resolved_identity] -(resolves; candidate=N:finding:security_honesty_governance_is_the_next_candidate_focus_not_proof_of_resolved_identity; identity=N:subject:security_honesty_governance_runtime_selection; navigator=N:map:2026_06_24_task_054_corridor_navigator_runtime_001; proof_status=candidate_not_proof)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:bounds:2026_06_24_task_054_corridor_navigator_runtime_001_corridor] -(bounds; navigator=N:map:2026_06_24_task_054_corridor_navigator_runtime_001; outside=N:outside:hyperbolic_corridor_boundary; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; outside_preserved=true)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:frames:seven_fold] -(frames; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; frame=N:frame:seven_fold; periphery=N:periphery:seven_fold; rank=1; weight=15)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:frames:corridor_contract] -(frames; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; frame=N:frame:corridor_contract; periphery=N:periphery:corridor_contract; rank=2; weight=13)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:frames:resonance_governance] -(frames; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; frame=N:frame:resonance_governance; periphery=N:periphery:resonance_governance; rank=3; weight=11)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:correlates:curve_fold_to_contract] -(correlates; signal=N:signal:curve_fold_to_contract; source_frame=N:frame:seven_fold; target_frame=N:frame:corridor_contract; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; status=correlation_only; relationship_proof=false)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+/ [E:correlates:curve_contract_to_governance] -(correlates; signal=N:signal:curve_contract_to_governance; source_frame=N:frame:corridor_contract; target_frame=N:frame:resonance_governance; corridor=N:corridor:2026_06_24_task_054_corridor_navigator_runtime_001_corridor; status=correlation_only; relationship_proof=false)> [Graph:2026_06_24_task_054_corridor_navigator_runtime_001]
+
+- outside: hidden activations
+- outside: actual transformer weights
+- outside: exact embedding geometry
+- outside: causal proof
+- outside: definite relationship
+- outside: unsupported identity
+- outside: arbitrary visual analogy

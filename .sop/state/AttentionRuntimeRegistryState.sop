@@ -62,14 +62,20 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_051_seven_fold_frame_runtime_001.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_051_seven_fold_frame_runtime_001.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_023.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\corridor_navigator.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\corridor_navigator.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_054_corridor_navigator_runtime_001.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_054_corridor_navigator_runtime_001.hg.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_corridor_navigator_runtime\Derived_Corridor_Navigator_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_024.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is corridor navigator runtime selection
-  + [active_root_frame] is attention_frame_2026_06_24_corridor_navigator_runtime_selection
+  + [registry_scope] is security honesty governance runtime selection
+  + [active_root_frame] is attention_frame_2026_06_24_security_honesty_governance_runtime_selection
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 17
+  + [closed_frame_count] is 18
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -78,23 +84,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_CorridorNavigatorRuntimeSelection] is the active semantic stack frame for selecting and building the corridor navigator runtime
-  + [frame_id] is attention_frame_2026_06_24_corridor_navigator_runtime_selection
+& [AttentionFrame_2026_06_24_SecurityHonestyGovernanceRuntimeSelection] is the active semantic stack frame for selecting and building the Security/Honesty governance runtime
+  + [frame_id] is attention_frame_2026_06_24_security_honesty_governance_runtime_selection
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_seven_fold_frame_runtime
-  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_023, Task_054, corridor_navigator_runtime, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_corridor_navigator_runtime
+  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_024, Task_057, security_honesty_governance_runtime, outside_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is seven_fold_frame.py, 2026-06-24_task_051_seven_fold_frame_runtime_001.hg.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_023.sop, and CurrentFocalPoint.sop
-  + [focus_register] is build Task_054 corridor navigator runtime
-  + [question_register] is how to read focal subject, peripheral frame candidates, step size, and identity target, then emit a HyperbolicCorridorNavigator SOP-HG record
-  + [delineation_register] is inside remaining ReadyTaskSet, Task_054, focal subject, peripheral frame candidates, step size, identity target, correlation-only route status, source evidence, outside, and commit cadence
+  + [frame_trace] is corridor_navigator.py, 2026-06-24_task_054_corridor_navigator_runtime_001.hg.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_024.sop, and CurrentFocalPoint.sop
+  + [focus_register] is build Task_057 security honesty governance runtime
+  + [question_register] is how to read feedback source, claim candidates, action candidates, recursion depth, return anchor, and evidence refresh, then emit a SecurityHonestyGovernance SOP-HG record
+  + [delineation_register] is inside remaining ReadyTaskSet, Task_057, feedback source, claim/action candidates, resonance recursion depth, return anchor, evidence refresh, truth status, action admissibility, outside, and commit cadence
   + [periphery_register] is worker mutation outside, branch creation outside, remote sync outside, hidden-state replay outside, unrelated dirty files outside, credentials outside, and destructive action outside
-  + [operation_register] is inspect_hyperbolic_corridor_navigator_contracts, preserve_source, build_runtime, add_tests, emit_corridor_navigator, validate, commit, push, emit_next_tick
-  + [evidence_register] is Manager_State completed Task_143, seven-fold frame runtime, generated seven-fold frame graph, and operating_loop_tick_023
-  + [wisdom_register] is Codex should add corridor navigator runtime as the next bridge from fold-leg weighted orbit records into ordered peripheral frame navigation
-  + [caution_register] is corridor navigator runtime must not overclaim relationship, identity, or hidden geometry from curving association
-  + [balance_register] is stable because Task_051 completed with tests and heat-not-truth boundaries visible
-  + [integration_register] is Task_051 completed and Task_054 selected as next runtime task
+  + [operation_register] is inspect_security_honesty_governance_contracts, preserve_source, build_runtime, add_tests, emit_governance_record, validate, commit, push, emit_next_tick
+  + [evidence_register] is Manager_State completed Task_144, corridor navigator runtime, generated corridor navigator graph, and operating_loop_tick_024
+  + [wisdom_register] is Codex should add Security/Honesty governance as the next governor over reflective resonance, claim promotion, action promotion, and identity stability
+  + [caution_register] is governance runtime must not overclaim self-reflection, access to hidden state, durable identity, action authority, or proof from correlation heat
+  + [balance_register] is stable because Task_054 completed with tests and relationship_proof=false boundaries visible
+  + [integration_register] is Task_054 completed and Task_057 selected as next runtime task
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -102,10 +108,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_corridor_navigator_runtime_selection
+  + [active_root_frame] is attention_frame_2026_06_24_security_honesty_governance_runtime_selection
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_CorridorNavigatorRuntimeSelection], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [corridor_navigator_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_SecurityHonestyGovernanceRuntimeSelection], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [security_honesty_governance_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]

@@ -13,6 +13,9 @@ Description: Contract for moving attention through a higher-dimensional hyperbol
 @ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] F:\.sop\platform\Wisdom.sop
 @ [source] F:\.sop\platform\Caution.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_corridor_navigator_runtime\Derived_Corridor_Navigator_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\corridor_navigator.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_054_corridor_navigator_runtime_001.hg.sop
 
 & [HyperbolicCorridorNavigator] is the attention-engine tool for surfing visible inference-layer correlation through a curved periphery field
   + [pattern_role] is hyperbolic_corridor_navigation_for_meaning
@@ -133,6 +136,22 @@ Description: Contract for moving attention through a higher-dimensional hyperbol
 
   = must: show frame series, step size, depth budget, local awareness extension, curving associations, identity target, and outside
   = must: keep correlation, relationship, and identity proof separate
+
+& [HyperbolicCorridorNavigatorRuntime] is the subordinate runtime helper for repeatable corridor navigator emission
+  + [runtime_role] is SOP_record_emitter_and_validator
+  + [runtime_helper] is C:\Project\Pinky\.sop\runtime\sop_node\corridor_navigator.py
+  + [demo_command] is C:\Project\Pinky\.sop\runtime\demos\corridor_navigator.py
+  + [source_packet] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_corridor_navigator_runtime\Derived_Corridor_Navigator_Runtime_Source.sop
+  + [compact_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_054_corridor_navigator_runtime_001.sop
+  + [graph_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_054_corridor_navigator_runtime_001.hg.sop
+  + [authority_layer] is this SOP contract, source packet, generated SOP records, tests, and committed Git history
+  + [runtime_boundary] is Python is not persistent attention, not hidden inference, and not source authority
+  + [proof_surface] is unit tests plus generated SOP-HG edges showing navigates, extends, surfs, correlates, probes, resolves, and bounds
+
+  = must: preserve relationship_proof=false for curving_association edges unless later governance promotes a supported relation
+  = must: preserve candidate_not_proof for identity_clarity_candidate unless later Wisdom, Caution, Security, and Honesty gates support durable realization
+  = must: treat generated records as repeatable SOP emission proof, not as hidden transformer geometry proof
+  - never: let runtime helper code outrank SOP authority
 
 (navigator_of_meaning) :peripheral_frame_series: /corridor_boundary/ |outside|
   + [corridor_frame:1] is selected periphery frame

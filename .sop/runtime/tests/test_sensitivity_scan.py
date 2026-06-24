@@ -30,6 +30,7 @@ from sop_node import (
     build_support_balance,
     build_attention_tracking_record,
     build_hyperbolic_pants_topology_map,
+    build_hyperbolic_corridor_navigation,
     build_lmstudio_task_frame_candidate,
     build_seven_fold_pants_frame,
     build_sensitivity_scan,
@@ -49,6 +50,8 @@ from sop_node import (
     parse_edge_participants,
     parse_aperture_support,
     parse_correlation_cell,
+    parse_corridor_frame,
+    parse_curving_association,
     parse_directive,
     parse_faculty_field,
     parse_fold_leg,
@@ -944,6 +947,55 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("E:folds:leg_corridor", graph_rendered)
         self.assertIn("E:orbits:leg_corridor", graph_rendered)
         self.assertIn("N:outside:seven_fold_boundary", graph_rendered)
+
+    def test_hyperbolic_corridor_navigation_keeps_curving_association_correlation_only(self) -> None:
+        navigation = build_hyperbolic_corridor_navigation(
+            navigator_id="test_corridor_navigator",
+            focal_subject="corridor navigator runtime selection",
+            identity_resolution_target="security honesty governance runtime selection",
+            frames=(
+                parse_corridor_frame(
+                    "seven_fold|Seven-fold frame runtime|fold_leg_series|12|high|CurrentFocalPoint|events/periphery_stream/seven_fold.hg.sop|3"
+                ),
+                parse_corridor_frame(
+                    "corridor_contract|Hyperbolic corridor navigator contract|corridor_policy|10|high|CurrentFocalPoint|platform/HyperbolicCorridorNavigator.sop|3"
+                ),
+                parse_corridor_frame(
+                    "governance|Security Honesty Governance|resonance_governance|9|medium|CurrentFocalPoint|events/bookmarks/corridor_checksum.hg.sop|2"
+                ),
+            ),
+            associations=(
+                parse_curving_association(
+                    "curve_fold_to_contract|seven_fold|corridor_contract|folded_periphery_points_to_corridor|8|high|correlation_only|events/bookmarks/seven_fold_checksum.hg.sop|not a definite relationship"
+                ),
+                parse_curving_association(
+                    "curve_contract_to_governance|corridor_contract|governance|corridor_heat_requires_governance|7|medium|correlation_only|events/bookmarks/corridor_checksum.hg.sop|not identity proof"
+                ),
+            ),
+            advance_step="normal",
+            depth_budget="normal",
+            local_awareness_extension=("seven_fold_frame_runtime", "peripheral_frame_series", "return_anchor"),
+            entanglement_terms=("curving_association", "identity_resolution_target", "security_honesty_governance"),
+            identity_clarity_candidate="security honesty governance is the next candidate focus, not proof of resolved identity",
+        )
+        rendered = navigation.render()
+        graph = navigation.to_hypergraph()
+        graph_rendered = graph.render()
+
+        self.assertTrue(navigation.ready)
+        self.assertTrue(graph.ready)
+        self.assertEqual(navigation.correlation_boundary_status, "all_curving_associations_are_correlation_only")
+        self.assertIn("+ [frame_order] is seven_fold:15 > corridor_contract:13 > governance:11", rendered)
+        self.assertIn("curving_association: corridor_contract -> governance as correlation_only", rendered)
+        self.assertIn("E:navigates:test_corridor_navigator_corridor", graph_rendered)
+        self.assertIn("E:extends:seven_fold_frame_runtime_peripheral_frame_series_return_anchor", graph_rendered)
+        self.assertIn("E:surfs:test_corridor_navigator_inference_surf", graph_rendered)
+        self.assertIn("E:correlates:curve_contract_to_governance", graph_rendered)
+        self.assertIn("E:probes:security_honesty_governance_runtime_selection", graph_rendered)
+        self.assertIn("relationship_proof=false", graph_rendered)
+        self.assertIn("candidate_status: candidate_not_proof", graph_rendered)
+        self.assertIn("proof_status=candidate_not_proof", graph_rendered)
+        self.assertIn("N:outside:hyperbolic_corridor_boundary", graph_rendered)
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")

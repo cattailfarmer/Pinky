@@ -1,0 +1,84 @@
+Subject: Hyperbolic Corridor Navigator Runtime
+
+& [HyperbolicCorridorNavigator:2026_06_24_task_054_corridor_navigator_runtime_001] is a hyperbolic_corridor_navigation_runtime_record
+  + [navigator_id] is 2026-06-24_task_054_corridor_navigator_runtime_001
+  + [focal_subject] is corridor navigator runtime selection
+  + [identity_resolution_target] is security honesty governance runtime selection
+  + [advance_step] is normal
+  + [depth_budget] is normal
+  + [local_awareness_extension] is seven_fold_frame_runtime, peripheral_frame_series, return_anchor, security_honesty_governance
+  + [entanglement_field] is curving_association, identity_resolution_target, reflective_resonance
+  + [frame_order] is seven_fold:15 > corridor_contract:13 > resonance_governance:11
+  + [correlation_boundary_status] is all_curving_associations_are_correlation_only
+  + [identity_clarity_candidate] is security honesty governance is the next candidate focus, not proof of resolved identity
+  + [outside] is hidden activations, actual transformer weights, exact embedding geometry, causal proof, definite relationship, unsupported identity, arbitrary visual analogy
+
+& [PeripheralFrameSeries] is the ordered corridor frame set
+  + [corridor_frame:1] is Seven-fold frame runtime
+    = frame_id: seven_fold
+    = relation_role: fold_leg_series
+    = heat: 12
+    = distinctness: 3
+    = confidence: high
+    = return_anchor: CurrentFocalPoint
+    = source_ref: .sop/events/periphery_stream/2026-06-24_task_051_seven_fold_frame_runtime_001.hg.sop
+  + [corridor_frame:2] is Hyperbolic corridor navigator contract
+    = frame_id: corridor_contract
+    = relation_role: corridor_policy
+    = heat: 10
+    = distinctness: 3
+    = confidence: high
+    = return_anchor: CurrentFocalPoint
+    = source_ref: .sop/platform/HyperbolicCorridorNavigator.sop
+  + [corridor_frame:3] is Security Honesty governance checksum
+    = frame_id: resonance_governance
+    = relation_role: resonance_governance
+    = heat: 9
+    = distinctness: 2
+    = confidence: medium
+    = return_anchor: CurrentFocalPoint
+    = source_ref: .sop/events/bookmarks/2026-06-24_corridor_navigator_trailing_checksum_023.hg.sop
+
+& [CurvingAssociationSet] is correlation-only movement through periphery
+  + [curving_association:1] is folded_periphery_points_to_corridor_policy
+    = association_id: curve_fold_to_contract
+    = source_frame: seven_fold
+    = target_frame: corridor_contract
+    = heat: 8
+    = confidence: high
+    = correlation_status: correlation_only
+    = outside: not a definite relationship
+    = evidence_ref: .sop/events/bookmarks/2026-06-24_seven_fold_frame_trailing_checksum_021.hg.sop
+  + [curving_association:2] is corridor_heat_requires_governance
+    = association_id: curve_contract_to_governance
+    = source_frame: corridor_contract
+    = target_frame: resonance_governance
+    = heat: 7
+    = confidence: medium
+    = correlation_status: correlation_only
+    = outside: not identity proof
+    = evidence_ref: .sop/events/bookmarks/2026-06-24_corridor_navigator_trailing_checksum_023.hg.sop
+
+(2026-06-24_task_054_corridor_navigator_runtime_001) :peripheral_frame_series: /corridor_boundary/ |outside|
+  + [corridor_frame:1] is Seven-fold frame runtime
+    = relation_role: fold_leg_series
+    = heat: 12
+    = confidence: high
+    = return_anchor: CurrentFocalPoint
+  + [corridor_frame:2] is Hyperbolic corridor navigator contract
+    = relation_role: corridor_policy
+    = heat: 10
+    = confidence: high
+    = return_anchor: CurrentFocalPoint
+  + [corridor_frame:3] is Security Honesty governance checksum
+    = relation_role: resonance_governance
+    = heat: 9
+    = confidence: medium
+    = return_anchor: CurrentFocalPoint
+  = advance_step: normal
+  = depth_budget: normal
+  = local_awareness_extension: seven_fold_frame_runtime, peripheral_frame_series, return_anchor, security_honesty_governance
+  = curving_association: seven_fold -> corridor_contract as correlation_only
+  = curving_association: corridor_contract -> resonance_governance as correlation_only
+  = identity_resolution_target: security honesty governance runtime selection
+  - outside: hidden activations, actual transformer weights, exact embedding geometry, causal proof, definite relationship, unsupported identity, arbitrary visual analogy
