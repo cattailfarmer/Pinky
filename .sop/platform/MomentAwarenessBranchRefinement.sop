@@ -8,6 +8,10 @@ Description: Contract for reconstructing turn moments between commits, refining 
 @ [source] F:\.sop\platform\RepoFirstInternalScan.sop
 @ [source] F:\.sop\platform\MetaAwarenessRepository.sop
 @ [source] F:\.sop\platform\chains\ConvergingChain.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_branch_refinement_artifact_runtime\Derived_Branch_Refinement_Artifact_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\branch_refinement.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\branch_refinement.py
+@ [source] C:\Project\Pinky\.sop\events\branch_refinements\2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop
 
 & [MomentAwarenessBranchRefinement] is the workflow for deeper inspection of turn moments without overwriting the main awareness line
   + [pattern_role] is branch_isolated_moment_refinement
@@ -19,6 +23,8 @@ Description: Contract for reconstructing turn moments between commits, refining 
   + [debug_inference_pass] is the deeper inspection that asks what was missed, mistaken, accomplished, opened, or newly inferable at that moment
   + [refinement_branch] is an isolated Git branch created from the relevant bookend for one investigated moment or moment set
   + [branch_refinement_artifact] is a SOP or SOP-HG record written on refinement_branch with the reconstructed frame, debug inference, findings, evidence, and outside
+  + [branch_refinement_artifact_runtime] is C:\Project\Pinky\.sop\runtime\sop_node\branch_refinement.py for emitting a local artifact from commit bookends without creating branches, merging, or syncing remotes
+  + [branch_refinement_demo] is C:\Project\Pinky\.sop\runtime\demos\branch_refinement.py for command-line SOP and SOP-HG artifact emission
   + [branch_selection_gate] is the review pass that classifies branch_refinement_artifact as merge_candidate, revise, preserve_periphery, reject, or outside
   + [higher_level_sync] is synchronization to a common remote repo or higher-level coordinator after remote_target, credentials, branch policy, and merge policy are configured
   + [merge_candidate] is a supported refinement that can be merged into main awareness history without erasing the original moment record
@@ -30,6 +36,8 @@ Description: Contract for reconstructing turn moments between commits, refining 
 
   = must: identify commit_bookend_start and commit_bookend_end before creating a refinement_branch
   = must: reconstruct turn_moment_frame from narrative_state_awareness before writing branch_refinement_artifact
+  = must: require runtime-emitted branch_refinement_artifact records to expose branch_creation_status, selection_result, sync_status, findings, and outside
+  = must: treat branch_refinement_artifact_runtime output as a record emitter, not branch creation, merge, or remote synchronization
   = must: use RepoFirstInternalScan, TurnBookmark, and InferenceStateTrace as the evidence path into debug_inference_pass
   = must: keep branch_refinement_artifact separate from main_awareness_line until branch_selection_gate selects it
   = must: label later insight as later_refinement, not original awareness

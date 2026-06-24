@@ -19,6 +19,7 @@ from sop_node import (
     SupportProbe,
     build_attention_frame,
     build_attention_kernel_packet,
+    build_branch_refinement_artifact,
     build_compiled_attention_packet,
     build_step_balance_walk,
     build_semantic_component,
@@ -38,6 +39,7 @@ from sop_node import (
     build_viewfinder_snapshot,
     classify_layer,
     create_turn_spool,
+    parse_branch_refinement_finding,
     parse_periphery_terms,
     parse_edge_participants,
     parse_directive,
@@ -713,6 +715,43 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("N:frame_reference:test_scaffold_compile_frame_risk", rendered_graph)
         self.assertIn("E:checks_balance:test_scaffold_compile_frame_risk", rendered_graph)
         self.assertIn("E:checks_frame:test_scaffold_compile_frame_risk", rendered_graph)
+
+    def test_branch_refinement_artifact_renders_local_candidate_without_sync(self) -> None:
+        finding = parse_branch_refinement_finding(
+            "missed_review|missed_work|commit integrity review|review artifact was added one turn later|preserve_periphery|events/bookmarks/example.hg.sop"
+        )
+        artifact = build_branch_refinement_artifact(
+            "C:\\Project\\Pinky",
+            artifact_id="test_branch_refinement_artifact",
+            commit_bookend_start="abc123",
+            commit_bookend_end="def456",
+            target_moment="moment branch refinement commit integrity",
+            refinement_branch="codex/refine/moment-branch-integrity",
+            narrative_state_refs=("events/bookmarks/example.hg.sop",),
+            reconstructed_state_refs=("state/CurrentFocalPoint.sop",),
+            planned_specification_refs=("platform/MomentAwarenessBranchRefinement.sop",),
+            debug_inference="later reflection repaired missing integrity review without rewriting history",
+            findings=(finding,),
+            selection_result="preserve_periphery",
+            selection_reason="useful later insight but not original awareness",
+        )
+        rendered = artifact.render()
+        graph = artifact.to_hypergraph()
+        graph_rendered = graph.render()
+
+        self.assertTrue(artifact.ready)
+        self.assertTrue(graph.ready)
+        self.assertIn("+ [branch_creation_status] is not_created_by_runtime", rendered)
+        self.assertIn("+ [sync_status] is disabled_no_remote_policy", rendered)
+        self.assertIn("+ [selection_result] is preserve_periphery", rendered)
+        self.assertIn("later reflection repaired missing integrity review", rendered)
+        self.assertIn("E:span:test_branch_refinement_artifact", graph_rendered)
+        self.assertIn("E:branches:test_branch_refinement_artifact", graph_rendered)
+        self.assertIn("E:blocks_sync:test_branch_refinement_artifact", graph_rendered)
+
+    def test_branch_refinement_finding_requires_minimal_fields(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_branch_refinement_finding("too|short|only")
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")

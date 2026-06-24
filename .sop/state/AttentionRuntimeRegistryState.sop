@@ -37,14 +37,19 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop
 @ [source] C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_018.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\branch_refinement.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\branch_refinement.py
+@ [source] C:\Project\Pinky\.sop\events\branch_refinements\2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop
+@ [source] C:\Project\Pinky\.sop\events\branch_refinements\2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_019.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is branch refinement artifact runtime selection
-  + [active_root_frame] is attention_frame_2026_06_24_branch_refinement_artifact_runtime_selection
+  + [registry_scope] is trailing checksum runtime selection
+  + [active_root_frame] is attention_frame_2026_06_24_trailing_checksum_runtime_selection
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 12
+  + [closed_frame_count] is 13
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -53,23 +58,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_BranchRefinementArtifactRuntimeSelection] is the active semantic stack frame for selecting and building the branch refinement artifact runtime
-  + [frame_id] is attention_frame_2026_06_24_branch_refinement_artifact_runtime_selection
+& [AttentionFrame_2026_06_24_TrailingChecksumRuntimeSelection] is the active semantic stack frame for selecting and building the trailing checksum runtime
+  + [frame_id] is attention_frame_2026_06_24_trailing_checksum_runtime_selection
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_minimal_scaffold_compile_runtime
-  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_018, Task_039, branch_refinement_artifact, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_branch_refinement_artifact_runtime
+  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_019, Task_043, trailing_checksum_bookmark, outside_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is scaffold_compile.py, 2026-06-24_minimal_scaffold_compile_packet_001.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_018.sop, and CurrentFocalPoint.sop
-  + [focus_register] is build Task_039 branch_refinement_artifact runtime
-  + [question_register] is how to emit a branch_refinement_artifact from commit bookends without remote sync
-  + [delineation_register] is inside remaining ReadyTaskSet, Task_039, local command, commit bookends, branch artifact record, source evidence, outside, and commit cadence
-  + [periphery_register] is remote sync outside, higher-level common repo outside, LM Studio worker authority outside, unrelated dirty files outside, credentials outside, and destructive action outside
-  + [operation_register] is inspect_branch_refinement_contracts, preserve_source, build_runtime, add_tests, emit_artifact, validate, commit, push, emit_next_tick
-  + [evidence_register] is Manager_State completed Task_138, minimal scaffold compile packet, scaffold runtime tests, and operating_loop_tick_018
-  + [wisdom_register] is Codex should convert the next ready runtime into a small local artifact emitter that improves future turn reconstruction
-  + [caution_register] is branch refinement runtime must not imply remote sync, common-repo merge policy, or automatic branch mutation without explicit authority
-  + [balance_register] is stable because Task_035 completed with tests and outside preserved
-  + [integration_register] is Task_035 completed and Task_039 selected as next runtime task
+  + [frame_trace] is branch_refinement.py, 2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_019.sop, and CurrentFocalPoint.sop
+  + [focus_register] is build Task_043 trailing checksum runtime
+  + [question_register] is how to detect the previous direct-focus commit and emit a trailing checksum bookmark
+  + [delineation_register] is inside remaining ReadyTaskSet, Task_043, previous direct-focus commit, checksum bookmark, source evidence, outside, and commit cadence
+  + [periphery_register] is worker mutation outside, branch creation outside, remote sync outside, unrelated dirty files outside, credentials outside, and destructive action outside
+  + [operation_register] is inspect_trailing_checksum_contracts, preserve_source, build_runtime, add_tests, emit_bookmark, validate, commit, push, emit_next_tick
+  + [evidence_register] is Manager_State completed Task_139, branch refinement artifact, branch refinement runtime tests, and operating_loop_tick_019
+  + [wisdom_register] is Codex should add the checksum voice as the next backward-facing reflection utility now that branch artifact records exist
+  + [caution_register] is trailing checksum runtime must label later insight as later reflection and avoid pretending it was present in the original turn
+  + [balance_register] is stable because Task_039 completed with tests, branch creation outside, and sync outside
+  + [integration_register] is Task_039 completed and Task_043 selected as next runtime task
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -77,10 +82,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_branch_refinement_artifact_runtime_selection
+  + [active_root_frame] is attention_frame_2026_06_24_trailing_checksum_runtime_selection
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_BranchRefinementArtifactRuntimeSelection], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [branch_refinement_artifact_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_TrailingChecksumRuntimeSelection], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [trailing_checksum_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]

@@ -1,0 +1,20 @@
+Subject: Branch Refinement Artifact Runtime Derived Source
+
+Description: Source preservation record for completing the ready task that asked for a local command accepting commit bookends and emitting a branch_refinement_artifact without remote sync.
+
+& [DerivedBranchRefinementArtifactRuntimeSource] is a preserved derived source for Task_039_build_branch_refinement_artifact_runtime
+  + [source_id] is 2026-06-24_branch_refinement_artifact_runtime
+  + [selected_task] is Task_039_build_branch_refinement_artifact_runtime
+  + [source_basis] is Manager_State ReadyTaskSet, MomentAwarenessBranchRefinement.sop, InferenceStateTrace.sop, TurnBookmark.sop, operating_loop_tick_018.sop, and user heartbeat re-entry instructions
+  + [dictated_need] is build a local command that accepts commit bookends and emits a branch_refinement_artifact without remote sync
+  + [implementation_surface] is C:\Project\Pinky\.sop\runtime\sop_node\branch_refinement.py and C:\Project\Pinky\.sop\runtime\demos\branch_refinement.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [event_surface] is C:\Project\Pinky\.sop\events\branch_refinements\2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop and C:\Project\Pinky\.sop\events\branch_refinements\2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.hg.sop
+  + [runtime_output] is branch_refinement_artifact with commit_bookend_start, commit_bookend_end, target_moment, refinement_branch, branch_creation_status, selection_result, sync_status, debug_inference, refs, findings, and outside
+  + [authority_boundary] is Codex owns durable source, runtime, tests, and commit; the runtime emits records only and does not create branches, merge branches, or sync remotes
+  + [outside] is automatic branch creation, remote synchronization, merge without selection gate, hidden cognition, exact hidden-state replay, credentials, and unrelated dirty files
+
+  = must: preserve this derived source before treating the runtime as completed task authority
+  = must: keep branch_creation_status and sync_status visible in every emitted artifact
+  = must: keep remote synchronization outside until explicit remote target, credentials, and merge policy are configured
+  - never: treat a branch_refinement_artifact as merged or synced because it has a candidate refinement_branch name

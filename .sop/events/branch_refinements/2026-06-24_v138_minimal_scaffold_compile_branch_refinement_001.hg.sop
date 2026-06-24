@@ -1,0 +1,54 @@
+Subject: v138_minimal_scaffold_compile_branch_refinement_001 Branch Refinement Artifact
+
+& [Graph:v138_minimal_scaffold_compile_branch_refinement_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG branch-refinement-artifact
+  = base_ref: fae4985
+  = head_ref: 340a162
+  = selection_result: preserve_periphery
+
+  + [N:artifact:v138_minimal_scaffold_compile_branch_refinement_001] is v138_minimal_scaffold_compile_branch_refinement_001
+    = selection_result: preserve_periphery
+    = sync_status: disabled_no_remote_policy
+  + [N:event:v138_minimal_scaffold_compile_branch_refinement_001_moment] is V138 minimal scaffold compile runtime completion
+  + [N:branch:codex_refine_v138_minimal_scaffold_compile] is codex/refine/v138-minimal-scaffold-compile
+    = creation_status: not_created_by_runtime
+  + [N:commit:fae4985] is fae4985
+  + [N:commit:340a162] is 340a162
+  + [N:reentry:v138_minimal_scaffold_compile_branch_refinement_001] is moment reconstruction packet
+  + [N:policy:v138_minimal_scaffold_compile_branch_refinement_001_selection_gate] is preserve_periphery
+    = reason: artifact is a reviewable branch-refinement record; no branch creation or merge authority is exercised
+  + [N:outside:moment_branch_refinement_boundary] is hidden cognition, exact hidden-state replay, automatic branch creation, remote synchronization, merge without selection gate
+  + [N:narrative:sop_events_operating_loop_2026_06_24_operating_loop_tick_018_sop] is .sop/events/operating_loop/2026-06-24_operating_loop_tick_018.sop
+  + [N:narrative:sop_state_CurrentFocalPoint_sop] is .sop/state/CurrentFocalPoint.sop
+  + [N:state:sop_runtime_sop_node_scaffold_compile_py] is .sop/runtime/sop_node/scaffold_compile.py
+  + [N:state:sop_events_compiled_packets_2026_06_24_minimal_scaffold_compile_packet_001_sop] is .sop/events/compiled_packets/2026-06-24_minimal_scaffold_compile_packet_001.sop
+  + [N:source:sop_platform_AttentionScaffoldCompiler_sop] is .sop/platform/AttentionScaffoldCompiler.sop
+  + [N:source:sop_platform_MomentAwarenessBranchRefinement_sop] is .sop/platform/MomentAwarenessBranchRefinement.sop
+  + [N:finding:runtime_gap_closed] is minimal scaffold compile runtime
+    = finding_kind: unique_accomplishment
+    = route: merge_candidate
+  + [N:finding:remote_sync_outside] is higher level sync
+    = finding_kind: outside
+    = route: outside
+
+/ [E:span:v138_minimal_scaffold_compile_branch_refinement_001] -(span; moment=N:event:v138_minimal_scaffold_compile_branch_refinement_001_moment; start=N:commit:fae4985; end=N:commit:340a162)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:branches:v138_minimal_scaffold_compile_branch_refinement_001] -(branches; reentry=N:reentry:v138_minimal_scaffold_compile_branch_refinement_001; branch=N:branch:codex_refine_v138_minimal_scaffold_compile; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; creation_status=not_created_by_runtime)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:captures:v138_minimal_scaffold_compile_branch_refinement_001] -(captures; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; moment=N:event:v138_minimal_scaffold_compile_branch_refinement_001_moment; reentry=N:reentry:v138_minimal_scaffold_compile_branch_refinement_001)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:selects:v138_minimal_scaffold_compile_branch_refinement_001] -(selects; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; gate=N:policy:v138_minimal_scaffold_compile_branch_refinement_001_selection_gate)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:blocks_sync:v138_minimal_scaffold_compile_branch_refinement_001] -(blocks_sync; branch=N:branch:codex_refine_v138_minimal_scaffold_compile; outside=N:outside:moment_branch_refinement_boundary; sync_status=disabled_no_remote_policy)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:bounds:v138_minimal_scaffold_compile_branch_refinement_001] -(bounds; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; outside=N:outside:moment_branch_refinement_boundary)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:references:v138_minimal_scaffold_compile_branch_refinement_001_narrative_001] -(references; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; narrative=N:narrative:sop_events_operating_loop_2026_06_24_operating_loop_tick_018_sop)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:references:v138_minimal_scaffold_compile_branch_refinement_001_narrative_002] -(references; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; narrative=N:narrative:sop_state_CurrentFocalPoint_sop)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:reconstructs:v138_minimal_scaffold_compile_branch_refinement_001_state_001] -(reconstructs; reentry=N:reentry:v138_minimal_scaffold_compile_branch_refinement_001; state=N:state:sop_runtime_sop_node_scaffold_compile_py)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:reconstructs:v138_minimal_scaffold_compile_branch_refinement_001_state_002] -(reconstructs; reentry=N:reentry:v138_minimal_scaffold_compile_branch_refinement_001; state=N:state:sop_events_compiled_packets_2026_06_24_minimal_scaffold_compile_packet_001_sop)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:compares:v138_minimal_scaffold_compile_branch_refinement_001_plan_001] -(compares; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; plan=N:source:sop_platform_AttentionScaffoldCompiler_sop)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:compares:v138_minimal_scaffold_compile_branch_refinement_001_plan_002] -(compares; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; plan=N:source:sop_platform_MomentAwarenessBranchRefinement_sop)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:finds:v138_minimal_scaffold_compile_branch_refinement_001_001] -(finds; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; finding=N:finding:runtime_gap_closed; description=Task_035 now has a tested local packet emitter)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+/ [E:finds:v138_minimal_scaffold_compile_branch_refinement_001_002] -(finds; artifact=N:artifact:v138_minimal_scaffold_compile_branch_refinement_001; finding=N:finding:remote_sync_outside; description=remote sync remains disabled and outside Task_039 runtime authority)> [Graph:v138_minimal_scaffold_compile_branch_refinement_001]
+
+- outside: hidden cognition
+- outside: exact hidden-state replay
+- outside: automatic branch creation
+- outside: remote synchronization
+- outside: merge without selection gate

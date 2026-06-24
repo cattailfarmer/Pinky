@@ -1,0 +1,16 @@
+Subject: Branch Refinement Artifact Runtime Source Manifest
+
+Description: Source preservation manifest for the branch refinement artifact runtime.
+
+& [SourceManifest] is the manifest for this source preservation set
+  + [source_id] is 2026-06-24_branch_refinement_artifact_runtime
+  + [source_file] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_branch_refinement_artifact_runtime\Derived_Branch_Refinement_Artifact_Runtime_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\MomentAwarenessBranchRefinement.sop
+  + [runtime_surface] is C:\Project\Pinky\.sop\runtime\sop_node\branch_refinement.py
+  + [demo_surface] is C:\Project\Pinky\.sop\runtime\demos\branch_refinement.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [event_surface] is C:\Project\Pinky\.sop\events\branch_refinements\2026-06-24_v138_minimal_scaffold_compile_branch_refinement_001.sop
+  + [governance] is source_before_canonical_and_runtime_completion
+  + [status] is runtime_integrated
+
+  = must: keep the derived source available for future reinterpretation
