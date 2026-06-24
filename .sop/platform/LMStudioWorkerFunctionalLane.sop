@@ -6,6 +6,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
 @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
 
 & [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
   + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
@@ -20,6 +21,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [accepted_output] is worker proposal text that passes validator and remains proposal until Codex integrates it
   + [rejected_output] is captured worker text that fails validator and becomes evidence for retry, fence tuning, or block
   + [spool_record] is the visible worker tree record containing prompt reference, launch command, result file, validation state, and authority boundary
+  + [launch_queue_candidate] is a TaskFrameLaunchQueue candidate that is ready_for_inspection before Codex decides whether to launch
   + [functional_definition] is a local worker can complete a non-mutating booted SOP inference job in scratch_prompt_only mode, produce exact SOP output, pass validator, and return captured proposal text for Codex review
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
   + [lane_outside] is repo mutation by worker, direct trust of worker output, hidden model state, credentials, broad competence, and project-root authority until fenced
@@ -30,6 +32,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   = must: use scratch_prompt_only as the default launch mode for functional local worker jobs
   = must: use project_root_mode only as a diagnostic benchmark until negative_inside_rule passes
   = must: capture raw worker output before validation
+  = must: enter TaskFrameLaunchQueue before launch when used by SOPTaskManager
   = must: reject output when validator finds missing fields, Markdown format, forbidden inside terms, missing required local-law terms, or substitution faults
   = must: preserve rejected output as benchmark evidence rather than silently repairing it
   = must: record functional worker runs in a spool record when task orchestration or future re-entry matters

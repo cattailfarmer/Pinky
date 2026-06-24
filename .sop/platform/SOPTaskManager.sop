@@ -7,6 +7,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
 @ [source] C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
 @ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
 @ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
@@ -24,6 +25,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [narrative_profile] is the selected task story, objective, constraints, source lineage, active focus, risk, and desired output shape
   + [slice_set] is the selected specification slices, manager tasks, source documents, proofs, or event records that define work
   + [task_frame] is the live task context frame that holds task subject, operational details, reminder patterns, lane context, gates, status, and return anchors
+  + [task_frame_launch_queue] is the inspectable queue that holds ready or blocked worker-launch candidates before execution
   + [reminder_pattern_set] is the task-local reminders that should fire when matching task subject, lane, operation, risk, source, or return conditions appear
   + [task_unit] is one bounded unit of work with objective, inputs, authority, lane fit, output schema, evidence gate, and return anchor
   + [lane_router] is the decision surface that assigns task_unit work to local_gpu_lane, lm_studio_lane, openai_codex_lane, codex_cli_lane, or manual_lane
@@ -51,6 +53,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: preserve the user directive as source before canonical task routing changes
   = must: build narrative_profile before creating task_unit records
   = must: create a task_frame before worker_packet emission when a task has operational details, lane routing, or reminder needs
+  = must: place launchable worker candidates in TaskFrameLaunchQueue before execution
   = must: bind reminder_pattern_set to task_frame so the task subject and operational details stay active during work
   = must: select slice_set from visible SOP records, manager state, source documents, or repo diffs
   = must: compile a worker_packet before assigning or launching a worker
@@ -64,6 +67,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: keep codex_cli over LM Studio blocked when no-tool discipline or exact-output fidelity fails
   = must: route manual_lane when credentials, remote authorization, destructive commands, unclear authority, or policy choices are required
   = must: make launch_command inspectable before execution
+  = must: treat queue_ready as ready_for_inspection, not launched, completed, or integrated
   = must: capture worker output before treating a task_unit as completed
   = must: integrate result_capture into task_narrative only after evidence_gate and action_gate are satisfied
   = must: emit loop_tick after worker result, validation, commit, push, or blocked status when another safe next step exists
@@ -188,5 +192,5 @@ Description: Task manager contract for turning SOP narrative and work slices int
   |manager_outside| silent launch, hidden state, credentials, uninspected remote claims, unrelated dirty files, and uncaptured worker output
 
 / [narrative_profile], [slice_set], [SourceAuthorityRoot] -(Prepares)> [task_frame], [task_unit], [manager_outside]
-* [task_frame], [task_unit], [LaneRoutingLaw], [AttentionKernelCompiler] -(Compiles)> [worker_packet], [spool_handoff], [capture_target]
+* [task_frame], [task_unit], [LaneRoutingLaw], [AttentionKernelCompiler] -(Compiles)> [worker_packet], [task_frame_launch_queue], [spool_handoff], [capture_target]
 * [worker_output], [result_capture], [evidence_gate] -(Integrates)> [task_narrative], [followup_slice], [outside]

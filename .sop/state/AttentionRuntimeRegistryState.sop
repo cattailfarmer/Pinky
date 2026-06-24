@@ -6,6 +6,7 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
 @ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -13,11 +14,13 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_functional_lane_report_20260624_007.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_001.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_002.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_task_frame_launch_queue_001.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is semantic cognition operating loop over functional LM Studio worker lane
-  + [active_root_frame] is attention_frame_2026_06_24_semantic_cognition_operating_loop_001
+  + [registry_scope] is task-frame launch queue over functional LM Studio worker lane
+  + [active_root_frame] is attention_frame_2026_06_24_task_frame_launch_queue_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
@@ -29,23 +32,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_SemanticCognitionOperatingLoop001] is the active semantic stack frame for the semantic cognition operating loop
-  + [frame_id] is attention_frame_2026_06_24_semantic_cognition_operating_loop_001
+& [AttentionFrame_2026_06_24_TaskFrameLaunchQueue001] is the active semantic stack frame for the task-frame launch queue
+  + [frame_id] is attention_frame_2026_06_24_task_frame_launch_queue_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_001, task_frame_launch_queue_next, commit_receipt
+  + [child_frame_set] is functional_lmstudio_lane, one_minute_heartbeat, operating_loop_tick_002, task_frame_launch_queue, lmstudio_next_probe_001, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is SemanticCognitionOperatingLoop.sop, task_manager_loop.py, 2026-06-24_operating_loop_tick_001.sop, LMStudioWorkerFunctionalLane.sop, and CurrentFocalPoint.sop
-  + [focus_register] is commit-report-review-step-in-again routine
-  + [question_register] is how to prevent completed work from falsely ending the task-manager process while preserving safety boundaries
-  + [delineation_register] is inside clock tick, proof state, balance state, drive state, next step, and outside stop or block conditions
-  + [periphery_register] is one-minute heartbeat, terminal-completion heuristic, running clock, task-frame launch queue, and unrelated dirty files outside
-  + [operation_register] is create_operating_loop_contract, implement_tick_runtime, create_heartbeat, emit_tick_001, update_reentry_state
-  + [evidence_register] is automation sop-loop-reentry, operating_loop_tick_001, runtime tests, and source-preserved directive
-  + [wisdom_register] is a task manager must turn proof into a next-step selection, not into a false terminal state
-  + [caution_register] is the loop must stop or block for explicit user stop, credentials, destructive actions, unclear authority, or unsafe PC control
-  + [balance_register] is stable because tick_001 has proof_state validated, clock_state running, drive_state continue, and outside preserved
-  + [integration_register] is pending commit, push, and next task-frame launch queue
+  + [frame_trace] is TaskFrameLaunchQueue.sop, task_frame_launch_queue.py, 2026-06-24_lmstudio_task_frame_launch_queue_001.sop, 2026-06-24_operating_loop_tick_002.sop, LMStudioWorkerFunctionalLane.sop, and CurrentFocalPoint.sop
+  + [focus_register] is ready-for-inspection LM Studio task-frame launch queue
+  + [question_register] is whether lmstudio_next_probe_001 should be launched through scratch isolation after Codex inspection
+  + [delineation_register] is inside task_frame_candidate, gate_set, launch_policy, capture_target, block_reasons, and queue_outside
+  + [periphery_register] is one-minute heartbeat, no_silent_launch, project-root leakage outside, validator gate, and unrelated dirty files outside
+  + [operation_register] is create_launch_queue_contract, implement_queue_runtime, emit_queue_001, emit_tick_002, update_reentry_state
+  + [evidence_register] is TaskFrameLaunchQueue.sop, task_frame_launch_queue.py, queue_001, operating_loop_tick_002, and runtime tests
+  + [wisdom_register] is a worker launch must pass through an inspectable membrane before execution
+  + [caution_register] is queue_ready means ready_for_inspection, not launched, completed, or integrated
+  + [balance_register] is stable because queue_001 has ready_count 1, block_count 0, no silent launch, and outside preserved
+  + [integration_register] is pending commit, push, and optional inspected launch of lmstudio_next_probe_001
   + [frame_outside] is hidden model state, broad local-worker readiness, worker file mutation, remote claims before push, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -53,10 +56,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_semantic_cognition_operating_loop_001
+  + [active_root_frame] is attention_frame_2026_06_24_task_frame_launch_queue_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [SemanticCognitionOperatingLoop] -(EntersFrame)> [AttentionFrame_2026_06_24_SemanticCognitionOperatingLoop001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_TaskFrameLaunchQueue001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [task_frame_launch_queue], [operating_loop_tick], [balance_register], [integration_register], [outside]

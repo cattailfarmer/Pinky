@@ -26,8 +26,10 @@ from sop_node import (
     build_semantic_correlation_graph,
     build_support_balance,
     build_attention_tracking_record,
+    build_lmstudio_task_frame_candidate,
     build_sensitivity_scan,
     build_sensitivity_scan_from_changes,
+    build_task_frame_launch_queue,
     build_turn_bookmark_from_scan,
     build_inference_state_trace,
     build_operating_loop_tick,
@@ -813,6 +815,44 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("--local-provider", command)
         self.assertIn("lmstudio", command)
         self.assertIn("read-only", command)
+
+    def test_task_frame_launch_queue_prepares_inspectable_lmstudio_candidate(self) -> None:
+        candidate = build_lmstudio_task_frame_candidate(
+            candidate_id="test_lmstudio_candidate",
+            task_frame_id="test_task_frame",
+            task_subject="controlled explosion readiness",
+            objective="Propose a bounded SOP inference result without editing files.",
+            prompt_packet=".sop/events/benchmarks/prompt.sop",
+            capture_target=".sop/events/benchmarks/result.sop",
+            repo_root="C:\\Project\\Pinky",
+            source_refs=(".sop/platform/LMStudioWorkerFunctionalLane.sop",),
+        )
+        queue = build_task_frame_launch_queue(queue_id="test_launch_queue", candidates=(candidate,))
+        rendered = queue.render()
+
+        self.assertTrue(queue.ready)
+        self.assertEqual(queue.queue_status, "ready_for_inspection")
+        self.assertTrue(candidate.ready_for_inspection)
+        self.assertIn("--launch-mode isolated", candidate.launch_command)
+        self.assertIn("validator_gate", rendered)
+        self.assertIn("never: launch silently from queue readiness", rendered)
+
+    def test_task_frame_launch_queue_blocks_non_scratch_lmstudio_candidate(self) -> None:
+        candidate = build_lmstudio_task_frame_candidate(
+            candidate_id="test_project_root_candidate",
+            task_frame_id="test_task_frame",
+            task_subject="project-root diagnostic",
+            objective="Attempt project-root local worker launch.",
+            prompt_packet=".sop/events/benchmarks/prompt.sop",
+            capture_target=".sop/events/benchmarks/result.sop",
+            launch_mode="project_root_diagnostic",
+        )
+        queue = build_task_frame_launch_queue(queue_id="test_blocked_launch_queue", candidates=(candidate,))
+
+        self.assertEqual(candidate.status, "blocked")
+        self.assertFalse(candidate.ready_for_inspection)
+        self.assertEqual(queue.queue_status, "blocked")
+        self.assertIn("launch_mode_not_scratch_isolated", candidate.block_reasons)
 
     def test_operating_loop_tick_keeps_clock_running_when_next_step_exists(self) -> None:
         tick = build_operating_loop_tick(

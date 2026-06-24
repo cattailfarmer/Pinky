@@ -1,0 +1,65 @@
+Subject: Task Frame Launch Queue
+
+Description: Contract for preparing inspectable task-frame launch candidates before any LM Studio or worker lane execution.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_launch_queue\Derived_Task_Frame_Launch_Queue_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
+@ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
+
+& [TaskFrameLaunchQueue] is the inspectable queue layer between task_frame readiness and worker launch
+  + [pattern_role] is task_frame_to_worker_launch_queue_membrane
+  + [queue_authority] is Codex, which owns queue creation, launch inspection, execution, capture, validation, integration, commits, and pushes
+  + [task_frame_candidate] is one task frame with objective, reminders, lane fit, gates, launch policy, capture target, outside, and block reasons
+  + [queue_status] is empty, queued, ready_for_inspection, blocked, running, completed, or closed
+  + [launch_policy] is inspect_before_launch and no_silent_launch
+  + [lane_fit] is lm_studio_cli, codex_cli, openai_codex, manual, deferred, or outside
+  + [reminder_bundle] is subject_reminder, boundary_reminder, operation_reminder, evidence_reminder, return_reminder, and outside_reminder
+  + [gate_set] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, and action_gate
+  + [capture_target] is the file where raw worker output or blocked result must be stored
+  + [queue_outside] is automatic launch, hidden model state, worker file mutation, credentials, project-root authority, destructive action, and unrelated dirty files
+
+  ? [use_when: a task frame is ready enough to become a visible worker-launch candidate]
+    = activate [TaskFrameLaunchQueue]
+
+  = must: create or update queue records before launching a worker
+  = must: keep every candidate inspectable with launch command, capture target, gates, and block reasons
+  = must: classify launch candidates as ready_for_inspection only when no block_reason is active
+  = must: preserve outside even when a candidate is ready_for_inspection
+  = must: keep LM Studio candidates scratch-isolated, prompt-only, captured, and validator-gated
+  = must: route project-root LM Studio candidates to blocked or diagnostic_only until leakage is solved
+  = must: let Codex decide whether a ready candidate is actually launched
+  - never: launch a candidate merely because it is queued
+  - never: treat ready_for_inspection as worker completion
+  - never: give LM Studio worker output file mutation or integration authority
+
+& [TaskFrameLaunchCandidate] is one queued launch candidate
+  + [candidate_id] is the stable candidate identifier
+  + [task_frame_id] is the task frame this launch candidate serves
+  + [task_subject] is the subject held by the frame reminders
+  + [objective] is the bounded worker objective
+  + [lane_fit] is the selected lane
+  + [launch_mode] is scratch_prompt_only, isolated, project_root_diagnostic, manual, or deferred
+  + [prompt_packet] is the packet or source record sent to the worker if launched
+  + [launch_command] is inspectable proposed command or blocked note
+  + [capture_target] is where worker output must be captured before validation
+  + [required_gates] is the gate set that must be satisfied before integration
+  + [block_reasons] is active reasons the candidate must not launch
+  + [status] is proposed, queue_ready, blocked, deferred, launched, returned, validated, rejected, or integrated
+  + [candidate_outside] is hidden model state, automatic launch, worker mutation authority, and unvalidated output
+
+  = must: hold task_frame, objective, lane_fit, launch_mode, prompt_packet, launch_command, capture_target, gates, block_reasons, and outside together
+  = must: expose why a candidate is blocked or ready
+  = must: stay non-mutating until Codex explicitly launches and validates it
+  - never: infer launch, completion, or integration from queue status alone
+
+(task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
+  + [task_frame_candidate] is a task frame prepared for worker-lane inspection
+  + [gate_set] is primer, isolation, capture, validator, Codex review, and action gates
+  + [launch_policy] is inspect_before_launch and no_silent_launch
+  |queue_outside| automatic launch, worker mutation, project-root leakage, credentials, destructive action, and unrelated dirty files
+
+/ [task_frame], [lane_fit], [reminder_bundle] -(Queues)> [task_frame_candidate], [launch_command], [capture_target], [queue_outside]
+* [task_frame_candidate], [gate_set], [block_reasons] -(Classifies)> [queue_status], [ready_for_inspection], [blocked]
+* [ready_for_inspection], [CodexReview], [LMStudioWorkerFunctionalLane] -(MayLaunch)> [captured_output], [validator], [result_capture]

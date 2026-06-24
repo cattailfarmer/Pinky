@@ -1,0 +1,27 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_002] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_002
+  + [focus_subject] is task-frame launch queue over LM Studio worker lane
+  + [completed_step] is generalized TaskFrameLaunchQueue and emitted ready-for-inspection LM Studio candidate without launching it
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is inspect and optionally run lmstudio_next_probe_001 through scratch-isolated validator-gated launch
+  + [created_utc] is 2026-06-24T19:46:14Z
+  + [evidence_refs] is .sop\platform\TaskFrameLaunchQueue.sop, .sop\events\task_queues\2026-06-24_lmstudio_task_frame_launch_queue_001.sop, runtime-tests:31-pass
+  + [outside] is automatic launch remains outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: preserve outside before scheduling next_step
+  - never: treat commit, proof, or report as evidence that the clock stopped
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_002
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is inspect and optionally run lmstudio_next_probe_001 through scratch-isolated validator-gated launch
+  |outside| automatic launch remains outside, project-root LM Studio authority remains outside, unrelated dirty files remain outside

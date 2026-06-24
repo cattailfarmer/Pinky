@@ -5,23 +5,24 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is semantic cognition operating loop over functional LM Studio worker lane
+  + [focus_subject] is task-frame launch queue over functional LM Studio worker lane
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is one-step stopping was a terminal-completion heuristic; the operating loop now treats proof or commit as a clock tick, not as the clock stopping
-  + [inside] is SemanticCognitionOperatingLoop.sop, SOPTaskManager.sop, LMStudioWorkerFunctionalLane.sop, 2026-06-24_operating_loop_tick_001.sop, lm_studio_worker_functional_lane_report_20260624_007.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when clock_state is running and next_step is safe; pause or block on user stop, credentials, destructive action, missing authority, or unrelated dirty files
+  + [right_hemisphere_draw] is the queue is the membrane between a ready task frame and a worker launch; ready_for_inspection is not launched or integrated
+  + [inside] is TaskFrameLaunchQueue.sop, SemanticCognitionOperatingLoop.sop, SOPTaskManager.sop, LMStudioWorkerFunctionalLane.sop, 2026-06-24_lmstudio_task_frame_launch_queue_001.sop, 2026-06-24_operating_loop_tick_002.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when clock_state is running, queue candidate is inspectable, and launch remains scratch-isolated, prompt-only, captured, and validator-gated; pause or block on user stop, credentials, destructive action, missing authority, or unrelated dirty files
   + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_001.sop
-  + [open_question] is how to generalize task-frame launch queues around LMStudioWorkerFunctionalLane as the next running tick
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_002.sop
+  + [open_question] is whether to run lmstudio_next_probe_001 through the scratch-isolated validator-gated launch path
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
   = must: keep primer, boot, benchmark, and Codex review distinct
   = must: treat functional prompt 007 validation score 100 as readiness for isolated non-mutating proposal jobs
   = must: treat project-root worker AGENTS.md leakage and negative-inside failure as host-context interference until fixed
+  = must: treat queue_ready as ready_for_inspection, not launched, completed, or integrated
   = must: require validator acceptance before task narrative integration
   = must: emit or update an operating-loop tick after meaningful completed work so the next step stays visible
   = must: point to richer records instead of absorbing them

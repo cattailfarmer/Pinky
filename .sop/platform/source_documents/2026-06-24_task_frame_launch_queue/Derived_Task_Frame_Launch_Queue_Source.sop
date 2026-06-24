@@ -1,0 +1,23 @@
+Subject: Derived Task Frame Launch Queue Source
+
+Description: Preserved source bridge from the operating-loop tick into a task-frame launch queue layer.
+
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_001.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+
+& [DerivedTaskFrameLaunchQueueSource] is the preserved source bridge for queue generalization
+  + [source_date] is 2026-06-24
+  + [trigger_tick] is operating_loop_tick_20260624_001
+  + [trigger_next_step] is generalize task-frame launch queue around LMStudioWorkerFunctionalLane
+  + [active_root] is C:\Project\Pinky\.sop
+  + [source_impulse] is convert a safe next_step into an inspectable queue before any worker launch occurs
+  + [task_manager_context] is SOPTaskManager requires task_frame, worker_packet, lane routing, evidence gate, action gate, capture target, and result integration
+  + [functional_lane_context] is LMStudioWorkerFunctionalLane is functional only for scratch-isolated, booted, non-mutating SOP proposal jobs validated by Codex
+  + [desired_output] is a queue format that can hold launch candidates, reminders, gates, capture targets, outside, and block reasons without silently launching workers
+
+  = must: preserve this bridge separately from canonical queue contracts and runtime emitters
+  = must: keep Codex as launch authority, validation authority, repo mutation authority, and integration authority
+  = must: keep LM Studio launch candidates scratch-isolated, prompt-only, captured, and validator-gated
+  = must: make launch commands inspectable before execution
+  - outside: automatic launch, worker file mutation, project-root authority, hidden model state, credentials, destructive action, and unrelated dirty files

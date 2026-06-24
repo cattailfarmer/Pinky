@@ -125,6 +125,13 @@ from .task_manager_loop import (
     build_operating_loop_tick,
     write_operating_loop_tick,
 )
+from .task_frame_launch_queue import (
+    TaskFrameLaunchCandidate,
+    TaskFrameLaunchQueue,
+    build_lmstudio_task_frame_candidate,
+    build_task_frame_launch_queue,
+    write_task_frame_launch_queue,
+)
 
 __all__ = [
     "AttentionFrame",
@@ -168,6 +175,8 @@ __all__ = [
     "SupportBalance",
     "SupportObservation",
     "SupportProbe",
+    "TaskFrameLaunchCandidate",
+    "TaskFrameLaunchQueue",
     "TurnSpool",
     "TurnBookmark",
     "TurnBookmarkFinding",
@@ -179,6 +188,7 @@ __all__ = [
     "build_attention_frame",
     "build_attention_kernel_packet",
     "build_codex_lmstudio_command",
+    "build_lmstudio_task_frame_candidate",
     "build_operating_loop_tick",
     "build_periphery_continuity_run",
     "build_step_balance_walk",
@@ -187,6 +197,7 @@ __all__ = [
     "build_semantic_hash_table",
     "build_semantic_correlation_graph",
     "build_support_balance",
+    "build_task_frame_launch_queue",
     "build_attention_tracking_record",
     "build_turn_bookmark",
     "build_turn_bookmark_from_scan",
@@ -218,4 +229,5 @@ __all__ = [
     "write_scan",
     "write_benchmark_report",
     "write_operating_loop_tick",
+    "write_task_frame_launch_queue",
 ]

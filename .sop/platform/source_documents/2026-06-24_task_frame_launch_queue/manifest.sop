@@ -1,0 +1,17 @@
+Subject: Task Frame Launch Queue Source Manifest
+
+Description: Manifest for preserved source feeding the task-frame launch queue contract and emitter.
+
+& [TaskFrameLaunchQueueSourceManifest] is the source-preservation manifest
+  + [source_folder] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_launch_queue
+  + [raw_source] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_task_frame_launch_queue\Derived_Task_Frame_Launch_Queue_Source.sop
+  + [contract_target] is C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+  + [runtime_target] is C:\Project\Pinky\.sop\runtime\sop_node\task_frame_launch_queue.py
+  + [demo_target] is C:\Project\Pinky\.sop\runtime\demos\task_frame_launch_queue.py
+  + [test_target] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [event_target] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_task_frame_launch_queue_001.sop
+  + [source_boundary] is inspectable queue preparation before worker launch
+  + [source_outside] is automatic launch, worker mutation, credentials, project-root authority, hidden model state, destructive action, and unrelated dirty files
+
+  = must: keep raw_source unchanged after processing
+  = must: cite raw_source from TaskFrameLaunchQueue

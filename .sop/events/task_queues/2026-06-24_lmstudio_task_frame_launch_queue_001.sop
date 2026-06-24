@@ -1,0 +1,45 @@
+Subject: Task Frame Launch Queue Event
+
+Description: Inspectable launch queue for task-frame worker candidates.
+
+& [TaskFrameLaunchQueue:lmstudio_task_frame_launch_queue_20260624_001] is a task-frame launch queue
+  + [queue_id] is lmstudio_task_frame_launch_queue_20260624_001
+  + [queue_status] is ready_for_inspection
+  + [candidate_count] is 1
+  + [ready_count] is 1
+  + [blocked_count] is 0
+  + [launch_policy] is inspect_before_launch; no_silent_launch
+  + [created_utc] is 2026-06-24T19:45:29Z
+  + [outside] is automatic launch, worker mutation authority, hidden model state, unrelated dirty files
+  = must: keep Codex as launch, validation, and integration authority
+  = must: keep ready candidates inspectable before launch
+  - never: launch silently from queue readiness
+
+& [TaskFrameLaunchCandidate:lmstudio_next_probe_001] is a queued task-frame launch candidate
+  + [candidate_id] is lmstudio_next_probe_001
+  + [task_frame_id] is task_frame_lmstudio_next_probe_001
+  + [task_subject] is LM Studio SOP proposal job
+  + [objective] is Prepare one scratch-isolated LM Studio proposal job for Codex inspection without launching it.
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\sop_inference_comparison_functional_prompt_20260624_007.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\sop_inference_comparison_functional_prompt_20260624_007.sop --launch-mode isolated --output .sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop --timeout 240
+  + [capture_target] is .sop\events\benchmarks\sop_inference_comparison_lmstudio_next_probe_20260624_008.sop
+  + [required_gates] is sop_language_primer_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [source_refs] is .sop\platform\LMStudioWorkerFunctionalLane.sop, .sop\events\operating_loop\2026-06-24_operating_loop_tick_001.sop
+  + [allowed_surface] is prompt_packet, scratch_workspace, capture_target
+  + [blocked_surface] is repo_mutation, credentials, destructive_action, project_root_authority
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker file mutation, hidden model state, project-root authority, unvalidated output
+  + [created_utc] is 2026-06-24T19:45:29Z
+  = must: inspect launch_command before execution
+  = must: capture output before validation or integration
+  - never: infer launched, completed, or integrated from queue status
+
+(task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
+  + [queue_status] is ready_for_inspection
+  + [ready_candidates] is lmstudio_next_probe_001
+  + [blocked_candidates] is none
+  |queue_outside| automatic launch, worker mutation authority, hidden model state, unrelated dirty files
