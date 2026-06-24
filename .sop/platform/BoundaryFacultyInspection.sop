@@ -9,6 +9,9 @@ Description: First-point awareness contract for Honesty and Security to inspect 
 @ [source] F:\.sop\platform\AttentionBalanceCenter.sop
 @ [source] F:\.sop\platform\Caution.sop
 @ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_faculty_inspection_runtime\Derived_Boundary_Faculty_Inspection_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\boundary_faculty_inspection.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_060_boundary_faculty_inspection_runtime_001.hg.sop
 
 & [BoundaryFacultyInspection] is the first-point awareness pattern for inspecting the boundary of identity
   + [pattern_role] is first_point_boundary_awareness
@@ -126,6 +129,23 @@ Description: First-point awareness contract for Honesty and Security to inspect 
 
   = must: show attention_subject, boundary terms, boundary periphery, orthogonality result, Honesty disposition, Security alert, and outside
   = must: keep non-orthogonal truth faults separate from weakened safety faults
+
+& [BoundaryFacultyInspectionRuntime] is the subordinate runtime helper for repeatable boundary inspection record emission
+  + [runtime_role] is SOP_record_emitter_and_validator
+  + [runtime_helper] is C:\Project\Pinky\.sop\runtime\sop_node\boundary_faculty_inspection.py
+  + [demo_command] is C:\Project\Pinky\.sop\runtime\demos\boundary_faculty_inspection.py
+  + [source_packet] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_faculty_inspection_runtime\Derived_Boundary_Faculty_Inspection_Runtime_Source.sop
+  + [compact_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_060_boundary_faculty_inspection_runtime_001.sop
+  + [graph_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_060_boundary_faculty_inspection_runtime_001.hg.sop
+  + [authority_layer] is this SOP contract, source packet, generated SOP records, tests, and committed Git history
+  + [runtime_boundary] is Python is not persistent attention, not hidden inference, not truth authority, and not safety authority
+  + [proof_surface] is unit tests plus generated SOP-HG edges showing inspects, represents, protects, misdirects, weakens, and bounds
+
+  = must: keep orthogonality_result, Honesty disposition, Security alert, and boundary_alarm separately visible
+  = must: preserve non-orthogonal boundary truth faults separately from weak safety-boundary faults
+  = must: preserve runtime helper authority drift as a watched boundary risk
+  = must: treat generated records as repeatable SOP emission proof, not identity truth proof or safety proof
+  - never: let runtime helper code outrank SOP authority
 
 (boundary_faculty_inspection) :attention_subject: /identity_boundary/ |outside|
   + [boundary_term:<id>] is term defining or constraining the subject boundary

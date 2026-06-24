@@ -29,6 +29,7 @@ from sop_node import (
     build_semantic_correlation_graph,
     build_support_balance,
     build_attention_tracking_record,
+    build_boundary_faculty_inspection_record,
     build_hyperbolic_pants_topology_map,
     build_hyperbolic_corridor_navigation,
     build_security_honesty_governance_record,
@@ -50,6 +51,7 @@ from sop_node import (
     parse_periphery_terms,
     parse_edge_participants,
     parse_aperture_support,
+    parse_boundary_term,
     parse_candidate_action,
     parse_candidate_claim,
     parse_correlation_cell,
@@ -1042,6 +1044,43 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("E:authorizes:SOP_authority_with_tests_and_source_packet", graph_rendered)
         self.assertIn("E:returns:security_honesty_governance_runtime_selection", graph_rendered)
         self.assertIn("N:outside:security_honesty_boundary", graph_rendered)
+
+    def test_boundary_faculty_inspection_separates_misdirection_from_weak_boundary_faults(self) -> None:
+        inspection = build_boundary_faculty_inspection_record(
+            inspection_id="test_boundary_faculty_inspection",
+            attention_subject="boundary faculty inspection runtime selection",
+            identity_boundary="SOP authority boundary",
+            boundary_periphery=("runtime helper authority", "identity proof", "protected work"),
+            protected_identity="SOP authority and user work",
+            terms=(
+                parse_boundary_term(
+                    "runtime_helper|runtime helper as attention authority|authority_limit|SOP authority|runtime helper emits only SOP records|orthogonal|none|watch|runtime helper is subordinate to SOP|source packet and tests|SOP authority and user work|none|authority drift if helper outranks SOP|permit|watch"
+                ),
+                parse_boundary_term(
+                    "clean_boundary_truth|clean-feeling boundary proves identity truth|truth_boundary|subject identity|clean feeling as proof|tilted|alarm|none|clean boundary proves identity|none|SOP authority|boundary feeling treated as proof|none|qualify|no_alert"
+                ),
+                parse_boundary_term(
+                    "automatic_worker_mutation|automatic worker mutation is permitted|permission_boundary|protected work|worker mutation authority|weakened|none|alarm|worker mutation is allowed|none|user work|none|worker mutation authority leak|permit|require_authorization"
+                ),
+            ),
+            purpose="inspect runtime boundary terms before durable identity or action promotion",
+        )
+        rendered = inspection.render()
+        graph = inspection.to_hypergraph()
+        graph_rendered = graph.render()
+
+        self.assertTrue(inspection.ready)
+        self.assertTrue(graph.ready)
+        self.assertEqual(inspection.boundary_alarm, "convergent_alarm")
+        self.assertIn("+ [orthogonality_summary] is runtime_helper:orthogonal, clean_boundary_truth:tilted, automatic_worker_mutation:weakened", rendered)
+        self.assertIn("+ [honesty_summary] is runtime_helper:permit, clean_boundary_truth:qualify, automatic_worker_mutation:permit", rendered)
+        self.assertIn("+ [security_summary] is runtime_helper:watch, clean_boundary_truth:no_alert, automatic_worker_mutation:require_authorization", rendered)
+        self.assertIn("E:inspects:test_boundary_faculty_inspection", graph_rendered)
+        self.assertIn("E:represents:clean_boundary_truth", graph_rendered)
+        self.assertIn("E:protects:automatic_worker_mutation", graph_rendered)
+        self.assertIn("E:misdirects:clean_boundary_truth", graph_rendered)
+        self.assertIn("E:weakens:automatic_worker_mutation", graph_rendered)
+        self.assertIn("N:outside:boundary_faculty_inspection_boundary", graph_rendered)
 
     def test_lm_studio_benchmark_quality_review_allows_not_integrated_boundary(self) -> None:
         case = next(case for case in lm_bench.default_benchmark_cases() if case.case_id == "quality_review")

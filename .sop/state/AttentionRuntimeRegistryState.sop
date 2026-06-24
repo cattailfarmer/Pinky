@@ -74,14 +74,20 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_057_security_honesty_governance_runtime_001.hg.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_security_honesty_governance_runtime\Derived_Security_Honesty_Governance_Runtime_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_025.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\boundary_faculty_inspection.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\boundary_faculty_inspection.py
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_060_boundary_faculty_inspection_runtime_001.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_060_boundary_faculty_inspection_runtime_001.hg.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_faculty_inspection_runtime\Derived_Boundary_Faculty_Inspection_Runtime_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_026.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is boundary faculty inspection runtime selection
-  + [active_root_frame] is attention_frame_2026_06_24_boundary_faculty_inspection_runtime_selection
+  + [registry_scope] is ready task queue exhaustion review
+  + [active_root_frame] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 19
+  + [closed_frame_count] is 20
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -90,23 +96,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_BoundaryFacultyInspectionRuntimeSelection] is the active semantic stack frame for selecting and building the Boundary Faculty Inspection runtime
-  + [frame_id] is attention_frame_2026_06_24_boundary_faculty_inspection_runtime_selection
+& [AttentionFrame_2026_06_24_ReadyTaskQueueExhaustionReview] is the active semantic stack frame for recognizing that no ready local runtime tasks remain
+  + [frame_id] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_security_honesty_governance_runtime
-  + [child_frame_set] is manager_state, remaining_ready_tasks, one_minute_heartbeat, operating_loop_tick_025, Task_060, boundary_faculty_inspection_runtime, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_boundary_faculty_inspection_runtime
+  + [child_frame_set] is manager_state, empty_ready_task_set, blocked_task_set, operating_loop_tick_026, user_direction_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is security_honesty_governance.py, 2026-06-24_task_057_security_honesty_governance_runtime_001.hg.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_025.sop, and CurrentFocalPoint.sop
-  + [focus_register] is build Task_060 boundary faculty inspection runtime
-  + [question_register] is how to read attention subject, boundary terms, boundary periphery, and protected identity, then emit a BoundaryFacultyInspection SOP-HG record
-  + [delineation_register] is inside remaining ReadyTaskSet, Task_060, attention subject, identity boundary, boundary terms, boundary periphery, protected identity, orthogonality result, honesty disposition, security alert, outside, and commit cadence
+  + [frame_trace] is boundary_faculty_inspection.py, 2026-06-24_task_060_boundary_faculty_inspection_runtime_001.hg.sop, Manager_State.sop, 2026-06-24_operating_loop_tick_026.sop, and CurrentFocalPoint.sop
+  + [focus_register] is recognize empty ReadyTaskSet and preserve blocked boundaries
+  + [question_register] is whether to create new SOP slices, review blocked tasks, configure remote policy, or wait for user direction without inventing ready work
+  + [delineation_register] is inside empty ReadyTaskSet, completed Task_146, blocked Task_004, blocked Task_040, focal state, registry state, outside, and commit cadence
   + [periphery_register] is worker mutation outside, branch creation outside, remote sync outside, hidden-state replay outside, unrelated dirty files outside, credentials outside, and destructive action outside
-  + [operation_register] is inspect_boundary_faculty_inspection_contracts, preserve_source, build_runtime, add_tests, emit_boundary_inspection_record, validate, commit, push, emit_next_tick
-  + [evidence_register] is Manager_State completed Task_145, Security/Honesty governance runtime, generated governance graph, and operating_loop_tick_025
-  + [wisdom_register] is Codex should add Boundary Faculty Inspection as the next first-point check for identity, fair representation, and safety boundary integrity
-  + [caution_register] is boundary inspection runtime must not overclaim identity truth, boundary safety, orthogonality, or protected-work permission
-  + [balance_register] is stable because Task_057 completed with tests and separate truth/security/feedback dispositions visible
-  + [integration_register] is Task_057 completed and Task_060 selected as next runtime task
+  + [operation_register] is validate_boundary_runtime, update_manager_empty_queue, commit, push, notify_no_ready_tasks
+  + [evidence_register] is Manager_State completed Task_146, Boundary Faculty Inspection runtime, generated boundary inspection graph, and operating_loop_tick_026
+  + [wisdom_register] is Codex should stop at the empty ready queue boundary rather than manufacturing implementation work
+  + [caution_register] is blocked tasks require external remote policy, credentials, or user direction before action
+  + [balance_register] is stable because Task_060 completed with tests and separate Honesty/Security boundary fault outputs visible
+  + [integration_register] is Task_060 completed and no ready local runtime tasks remain
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -114,10 +120,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_boundary_faculty_inspection_runtime_selection
+  + [active_root_frame] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_BoundaryFacultyInspectionRuntimeSelection], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [boundary_faculty_inspection_runtime_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_ReadyTaskQueueExhaustionReview], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [ready_task_queue_exhaustion_review], [operating_loop_tick], [balance_register], [integration_register], [outside]

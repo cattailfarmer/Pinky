@@ -1,0 +1,70 @@
+Subject: Boundary Faculty Inspection Runtime
+
+& [BoundaryFacultyInspection:2026_06_24_task_060_boundary_faculty_inspection_runtime_001] is a boundary_faculty_inspection_runtime_record
+  + [inspection_id] is 2026-06-24_task_060_boundary_faculty_inspection_runtime_001
+  + [attention_subject] is boundary faculty inspection runtime selection
+  + [identity_boundary] is SOP authority boundary
+  + [boundary_periphery] is runtime helper authority, identity proof, protected work
+  + [protected_identity] is SOP authority and user work
+  + [purpose] is inspect runtime boundary terms before durable identity or action promotion
+  + [orthogonality_summary] is runtime_helper:orthogonal, clean_boundary_truth:tilted, automatic_worker_mutation:weakened
+  + [honesty_summary] is runtime_helper:permit, clean_boundary_truth:qualify, automatic_worker_mutation:permit
+  + [security_summary] is runtime_helper:watch, clean_boundary_truth:no_alert, automatic_worker_mutation:require_authorization
+  + [boundary_alarm] is convergent_alarm
+  + [outside] is uninspected boundary periphery, hidden premise, unsupported identity, unsafe permission, proof by framing, unresolved boundary fault, runtime helper as attention authority
+
+& [BoundaryTermSet] is the inspected boundary term set
+  + [boundary_term:1] is runtime helper as attention authority
+    = term_id: runtime_helper
+    = boundary_role: authority_limit
+    = subject_vector: SOP authority
+    = boundary_vector: runtime helper emits only SOP records
+    = orthogonality_result: orthogonal
+    = honesty_load: none
+    = security_load: watch
+    = representation_claim: runtime helper is subordinate to SOP
+    = support_surface: source packet and tests
+    = protected_identity: SOP authority and user work
+    = misdirection_vector: none
+    = weak_boundary_fault: authority drift if helper outranks SOP
+    = honesty_disposition: permit
+    = security_alert: watch
+  + [boundary_term:2] is clean-feeling boundary proves identity truth
+    = term_id: clean_boundary_truth
+    = boundary_role: truth_boundary
+    = subject_vector: subject identity
+    = boundary_vector: clean feeling as proof
+    = orthogonality_result: tilted
+    = honesty_load: alarm
+    = security_load: none
+    = representation_claim: clean boundary proves identity
+    = support_surface: none
+    = protected_identity: SOP authority
+    = misdirection_vector: boundary feeling treated as proof
+    = weak_boundary_fault: none
+    = honesty_disposition: qualify
+    = security_alert: no_alert
+  + [boundary_term:3] is automatic worker mutation is permitted
+    = term_id: automatic_worker_mutation
+    = boundary_role: permission_boundary
+    = subject_vector: protected work
+    = boundary_vector: worker mutation authority
+    = orthogonality_result: weakened
+    = honesty_load: none
+    = security_load: alarm
+    = representation_claim: worker mutation is allowed
+    = support_surface: none
+    = protected_identity: user work
+    = misdirection_vector: none
+    = weak_boundary_fault: worker mutation authority leak
+    = honesty_disposition: permit
+    = security_alert: require_authorization
+
+(2026-06-24_task_060_boundary_faculty_inspection_runtime_001) :attention_subject: /identity_boundary/ |outside|
+  = attention_subject: boundary faculty inspection runtime selection
+  = identity_boundary: SOP authority boundary
+  = boundary_periphery: runtime helper authority, identity proof, protected work
+  = boundary_alarm: convergent_alarm
+  = honesty_boundary_inspection: runtime_helper:permit, clean_boundary_truth:qualify, automatic_worker_mutation:permit
+  = security_boundary_inspection: runtime_helper:watch, clean_boundary_truth:no_alert, automatic_worker_mutation:require_authorization
+  - outside: uninspected boundary periphery, hidden premise, unsupported identity, unsafe permission, proof by framing, unresolved boundary fault, runtime helper as attention authority

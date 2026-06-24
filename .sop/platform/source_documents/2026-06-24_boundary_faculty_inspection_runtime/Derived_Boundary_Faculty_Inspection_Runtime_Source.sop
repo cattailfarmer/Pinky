@@ -1,0 +1,36 @@
+Subject: Derived Boundary Faculty Inspection Runtime Source
+
+Description: Source-preservation packet for Task_060 runtime tooling, preserving why executable helper code is allowed while Boundary Faculty Inspection remains an SOP attention pattern.
+
+@ [source] C:\Project\Pinky\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] C:\Project\Pinky\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
+
+& [DerivedBoundaryFacultyInspectionRuntimeSource] is the preserved source packet for the Task_060 Boundary Faculty Inspection runtime
+  + [source_kind] is derived_runtime_authority_packet
+  + [recorded_on] is 2026-06-24
+  + [working_repo] is C:\Project\Pinky\.sop
+  + [task_id] is Task_060_build_boundary_faculty_inspection_runtime
+  + [source_impulse] is build a local command that reads attention subject, boundary terms, boundary periphery, and protected identity, then emits a BoundaryFacultyInspection SOP-HG record
+  + [runtime_boundary] is Python is a subordinate emitter and validator for SOP boundary inspection records, not the inspection faculty, attention layer, or persistent semantic memory
+  + [authority_layer] is SOP contracts, SOP-HG records, source documents, focal state, manager state, and committed Git history
+  + [build_environment_marker] is runtime code remains outside specification-building unless explicitly requested as runtime tooling or proof requires a local command
+  + [inside] is attention subject, identity boundary, boundary periphery, protected identity, boundary terms, subject vectors, boundary vectors, orthogonality results, Honesty dispositions, Security alerts, misdirection vectors, weak boundary faults, and outside preservation
+  + [boundary] is Honesty misdirection faults and Security weak-boundary faults stay distinct before any convergent alarm
+  + [outside] is uninspected boundary periphery, hidden premise, unsupported identity, unsafe permission, proof by framing, unresolved boundary fault, runtime helper as attention authority, worker mutation authority, automatic branch creation, credentials, and unrelated dirty files
+
+  = must: keep semantic authority in SOP
+  = must: use the runtime helper only to emit and validate SOP or SOP-HG artifacts
+  = must: preserve non-orthogonal truth faults separately from weakened safety faults
+  = must: preserve boundary_alarm as an inspection output, not as proof of truth or safety
+  = must: keep runtime helper authority drift visible as a watched boundary term
+  - never: treat the Python helper as persistent attention or source authority
+  - never: treat a clean-feeling boundary as truthful without Honesty support
+  - never: treat a tight-sounding boundary as safe without Security support
+
+(boundary_faculty_inspection_runtime_source) :inspection_boundary: /SOP authority and explicit runtime task/ |outside|
+  + [inspection_boundary] is separate Honesty misdirection and Security weak-boundary outputs
+  + [authority_layer] is SOP records and Git history
+  + [task_id] is Task_060_build_boundary_faculty_inspection_runtime
+  - outside: hidden premise, unsupported identity, unsafe permission, proof by framing, unresolved boundary fault, and executable authority drift

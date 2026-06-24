@@ -1,0 +1,84 @@
+Subject: 2026-06-24_task_060_boundary_faculty_inspection_runtime_001 Boundary Faculty Inspection
+
+& [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG boundary-faculty-inspection
+  = attention_subject: boundary faculty inspection runtime selection
+  = identity_boundary: SOP authority boundary
+  = boundary_alarm: convergent_alarm
+  = orthogonality_summary: runtime_helper:orthogonal, clean_boundary_truth:tilted, automatic_worker_mutation:weakened
+
+  + [N:governor:2026_06_24_task_060_boundary_faculty_inspection_runtime_001] is 2026-06-24_task_060_boundary_faculty_inspection_runtime_001
+    = boundary_alarm: convergent_alarm
+    = orthogonality_summary: runtime_helper:orthogonal, clean_boundary_truth:tilted, automatic_worker_mutation:weakened
+    = honesty_summary: runtime_helper:permit, clean_boundary_truth:qualify, automatic_worker_mutation:permit
+    = security_summary: runtime_helper:watch, clean_boundary_truth:no_alert, automatic_worker_mutation:require_authorization
+  + [N:honesty:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_honesty_boundary] is Honesty boundary inspection
+  + [N:security:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_security_boundary] is Security boundary inspection
+  + [N:subject:boundary_faculty_inspection_runtime_selection] is boundary faculty inspection runtime selection
+  + [N:boundary:SOP_authority_boundary] is SOP authority boundary
+  + [N:periphery:runtime_helper_authority_identity_proof_protected_work] is runtime helper authority, identity proof, protected work
+  + [N:identity:SOP_authority_and_user_work] is SOP authority and user work
+  + [N:outside:boundary_faculty_inspection_boundary] is uninspected boundary periphery, hidden premise, unsupported identity, unsafe permission, proof by framing, unresolved boundary fault, runtime helper as attention authority
+  + [N:term:runtime_helper] is runtime helper as attention authority
+    = boundary_role: authority_limit
+    = subject_vector: SOP authority
+    = boundary_vector: runtime helper emits only SOP records
+    = orthogonality_result: orthogonal
+    = honesty_load: none
+    = security_load: watch
+  + [N:claim:runtime_helper_representation] is runtime helper is subordinate to SOP
+    = support_surface: source packet and tests
+    = honesty_disposition: permit
+  + [N:policy:runtime_helper_protection] is SOP authority and user work
+    = weak_boundary_fault: authority drift if helper outranks SOP
+    = security_alert: watch
+  + [N:term:clean_boundary_truth] is clean-feeling boundary proves identity truth
+    = boundary_role: truth_boundary
+    = subject_vector: subject identity
+    = boundary_vector: clean feeling as proof
+    = orthogonality_result: tilted
+    = honesty_load: alarm
+    = security_load: none
+  + [N:claim:clean_boundary_truth_representation] is clean boundary proves identity
+    = support_surface: none
+    = honesty_disposition: qualify
+  + [N:policy:clean_boundary_truth_protection] is SOP authority
+    = weak_boundary_fault: none
+    = security_alert: no_alert
+  + [N:signal:clean_boundary_truth_misdirection] is boundary feeling treated as proof
+    = orthogonality_result: tilted
+  + [N:term:automatic_worker_mutation] is automatic worker mutation is permitted
+    = boundary_role: permission_boundary
+    = subject_vector: protected work
+    = boundary_vector: worker mutation authority
+    = orthogonality_result: weakened
+    = honesty_load: none
+    = security_load: alarm
+  + [N:claim:automatic_worker_mutation_representation] is worker mutation is allowed
+    = support_surface: none
+    = honesty_disposition: permit
+  + [N:policy:automatic_worker_mutation_protection] is user work
+    = weak_boundary_fault: worker mutation authority leak
+    = security_alert: require_authorization
+  + [N:signal:automatic_worker_mutation_weak_boundary] is worker mutation authority leak
+    = security_alert: require_authorization
+
+/ [E:inspects:2026_06_24_task_060_boundary_faculty_inspection_runtime_001] -(inspects; governor=N:governor:2026_06_24_task_060_boundary_faculty_inspection_runtime_001; subject=N:subject:boundary_faculty_inspection_runtime_selection; boundary=N:boundary:SOP_authority_boundary; periphery=N:periphery:runtime_helper_authority_identity_proof_protected_work; boundary_alarm=convergent_alarm)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:bounds:2026_06_24_task_060_boundary_faculty_inspection_runtime_001] -(bounds; governor=N:governor:2026_06_24_task_060_boundary_faculty_inspection_runtime_001; outside=N:outside:boundary_faculty_inspection_boundary)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:represents:runtime_helper] -(represents; honesty=N:honesty:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_honesty_boundary; subject=N:subject:boundary_faculty_inspection_runtime_selection; term=N:term:runtime_helper; claim=N:claim:runtime_helper_representation; honesty_disposition=permit)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:protects:runtime_helper] -(protects; security=N:security:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_security_boundary; protected=N:identity:SOP_authority_and_user_work; term=N:term:runtime_helper; policy=N:policy:runtime_helper_protection; security_alert=watch)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:represents:clean_boundary_truth] -(represents; honesty=N:honesty:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_honesty_boundary; subject=N:subject:boundary_faculty_inspection_runtime_selection; term=N:term:clean_boundary_truth; claim=N:claim:clean_boundary_truth_representation; honesty_disposition=qualify)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:protects:clean_boundary_truth] -(protects; security=N:security:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_security_boundary; protected=N:identity:SOP_authority_and_user_work; term=N:term:clean_boundary_truth; policy=N:policy:clean_boundary_truth_protection; security_alert=no_alert)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:misdirects:clean_boundary_truth] -(misdirects; term=N:term:clean_boundary_truth; signal=N:signal:clean_boundary_truth_misdirection; outside=N:outside:boundary_faculty_inspection_boundary; honesty_load=alarm)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:represents:automatic_worker_mutation] -(represents; honesty=N:honesty:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_honesty_boundary; subject=N:subject:boundary_faculty_inspection_runtime_selection; term=N:term:automatic_worker_mutation; claim=N:claim:automatic_worker_mutation_representation; honesty_disposition=permit)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:protects:automatic_worker_mutation] -(protects; security=N:security:2026_06_24_task_060_boundary_faculty_inspection_runtime_001_security_boundary; protected=N:identity:SOP_authority_and_user_work; term=N:term:automatic_worker_mutation; policy=N:policy:automatic_worker_mutation_protection; security_alert=require_authorization)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+/ [E:weakens:automatic_worker_mutation] -(weakens; term=N:term:automatic_worker_mutation; signal=N:signal:automatic_worker_mutation_weak_boundary; outside=N:outside:boundary_faculty_inspection_boundary; security_load=alarm)> [Graph:2026_06_24_task_060_boundary_faculty_inspection_runtime_001]
+
+- outside: uninspected boundary periphery
+- outside: hidden premise
+- outside: unsupported identity
+- outside: unsafe permission
+- outside: proof by framing
+- outside: unresolved boundary fault
+- outside: runtime helper as attention authority

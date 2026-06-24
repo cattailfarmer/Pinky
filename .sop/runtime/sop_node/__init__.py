@@ -172,6 +172,12 @@ from .security_honesty_governance import (
     parse_candidate_claim,
     parse_feedback_signal,
 )
+from .boundary_faculty_inspection import (
+    BoundaryFacultyInspectionRecord,
+    BoundaryTermInspection,
+    build_boundary_faculty_inspection_record,
+    parse_boundary_term,
+)
 from .lm_studio_agent_benchmark import (
     DEFAULT_ENDPOINT as DEFAULT_LM_STUDIO_ENDPOINT,
     BenchmarkCase,
@@ -218,6 +224,8 @@ __all__ = [
     "BenchmarkCaseResult",
     "BenchmarkReport",
     "BenchmarkScore",
+    "BoundaryFacultyInspectionRecord",
+    "BoundaryTermInspection",
     "BranchRefinementArtifact",
     "BranchRefinementFinding",
     "CandidateAction",
@@ -300,6 +308,7 @@ __all__ = [
     "build_hyperbolic_corridor_navigation",
     "build_security_honesty_governance_record",
     "build_attention_tracking_record",
+    "build_boundary_faculty_inspection_record",
     "build_turn_bookmark",
     "build_turn_bookmark_from_scan",
     "build_inference_state_trace",
@@ -311,6 +320,7 @@ __all__ = [
     "default_workers",
     "default_faculty_fields",
     "parse_aperture_support",
+    "parse_boundary_term",
     "parse_branch_refinement_finding",
     "parse_candidate_action",
     "parse_candidate_claim",
