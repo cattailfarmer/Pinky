@@ -32,6 +32,8 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_six_family_readiness_synthesis\Derived_LMStudio_Six_Family_Readiness_Synthesis_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_limited_worker_pilot_queue\Derived_LMStudio_Limited_Worker_Pilot_Queue_Source.sop
 
 & [LMStudioAgentBenchmark] is the quality gate for using LM Studio as a local SOP worker lane
   + [pattern_role] is local_model_worker_benchmark_and_quality_capture
@@ -79,6 +81,7 @@ Description: Contract for running small Codex-directed SOP worker jobs against a
   + [second_corpus_queue_status] is evidence_review, periphery_correlation, and integration_disposition completed strong
   + [limited_diverse_readiness_signal] is complete six-family corpus supports scratch-isolated non-mutating SOP proposal readiness, with broad competence and project-root authority still outside
   + [six_family_readiness_synthesis] is complete-corpus limited-diverse readiness for scratch-isolated non-mutating SOP proposal jobs, with 17 preserved attempts, 6 accepted strong family signals, and strict latch requirements before pilot use
+  + [first_synthesis_backed_pilot_queue] is pressure_impact_thinkabout_016 queued for inspection, not launched, to test real-use non-mutating SOP proposal value
   + [benchmark_outside] is provider offline, model timeout, hidden model state, local model repo authority, untested broader competence, and any local model file mutation
 
   ? [use_when: deciding whether an LM Studio hosted model can perform small SOP worker jobs]

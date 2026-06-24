@@ -25,14 +25,17 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\corpus_results\2026-06-24_integration_disposition_review_015.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_014.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\pilot_prompts\2026-06-24_pressure_impact_thinkabout_prompt_016.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_015.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is limited LM Studio worker pilot queue selection
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_pilot_queue
+  + [registry_scope] is pressure impact ThinkAbout pilot candidate inspection
+  + [active_root_frame] is attention_frame_2026_06_24_pressure_impact_pilot_candidate
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 8
+  + [closed_frame_count] is 9
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -41,23 +44,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_LMStudioWorkerPilotQueue] is the active semantic stack frame for selecting the first synthesis-backed worker pilot queue
-  + [frame_id] is attention_frame_2026_06_24_lmstudio_worker_pilot_queue
+& [AttentionFrame_2026_06_24_PressureImpactPilotCandidate] is the active semantic stack frame for inspecting the first synthesis-backed LM Studio worker pilot candidate
+  + [frame_id] is attention_frame_2026_06_24_pressure_impact_pilot_candidate
   + [frame_state] is active
-  + [parent_frame] is attention_frame_2026_06_24_lmstudio_readiness_synthesis
-  + [child_frame_set] is functional_lmstudio_lane, readiness_synthesis, one_minute_heartbeat, operating_loop_tick_014, task_frame_launch_queue, pilot_candidate, latch_set, outside_boundary, commit_receipt
+  + [parent_frame] is attention_frame_2026_06_24_lmstudio_worker_pilot_queue
+  + [child_frame_set] is functional_lmstudio_lane, readiness_synthesis, one_minute_heartbeat, operating_loop_tick_015, task_frame_launch_queue, pressure_impact_thinkabout_016, latch_set, outside_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is lm_studio_worker_readiness_synthesis_20260624_016.sop, 2026-06-24_operating_loop_tick_014.sop, LMStudioWorkerFunctionalLane.sop, TaskFrameLaunchQueue.sop, and CurrentFocalPoint.sop
-  + [focus_register] is compile limited LM Studio worker pilot queue
-  + [question_register] is which real non-mutating SOP proposal job can safely test usefulness under the synthesis latch set
-  + [delineation_register] is inside ready SOP maintenance candidates, synthesis latch set, scratch isolation, capture targets, validator profile, and pilot outside
-  + [periphery_register] is broad competence outside, project-root authority outside, worker mutation outside, direct trust outside, automatic launch outside, and unrelated dirty files outside
-  + [operation_register] is select_candidate, preserve_source, compile_task_frame, attach_latch_set, define_validator, emit_next_tick
-  + [evidence_register] is readiness synthesis, six family pass count, completed corpus queues, and operating_loop_tick_014
-  + [wisdom_register] is a bounded pilot can convert readiness evidence into operational usefulness while keeping Codex in authority
-  + [caution_register] is the pilot must be queued before launch and must not use project-root authority, file mutation, broad competence, or direct trust
-  + [balance_register] is stable because the next action is queue compilation, not worker launch
-  + [integration_register] is synthesis integrated and next pilot queue pending
+  + [frame_trace] is lmstudio_limited_worker_pilot_queue_001.sop, pressure_impact_thinkabout_prompt_016.sop, lm_studio_worker_readiness_synthesis_20260624_016.sop, 2026-06-24_operating_loop_tick_015.sop, and CurrentFocalPoint.sop
+  + [focus_register] is inspect pressure_impact_thinkabout_016 before any launch
+  + [question_register] is whether the candidate gates, prompt packet, capture target, validator, and outside boundary are sufficient to run
+  + [delineation_register] is inside queue readiness, prompt packet, launch command, capture target, required fields, required terms, forbidden terms, and synthesis latch set
+  + [periphery_register] is worker launch outside until chosen, broad competence outside, project-root authority outside, worker mutation outside, direct trust outside, automatic launch outside, and unrelated dirty files outside
+  + [operation_register] is inspect_candidate, decide_launch_or_adjust, preserve_raw_output_if_launched, validate_result, record_review, emit_next_tick
+  + [evidence_register] is pilot queue record, prompt packet, readiness synthesis, and operating_loop_tick_015
+  + [wisdom_register] is the pilot is useful because it tests real SOP proposal value on pressure and impact signals without granting authority
+  + [caution_register] is no launch occurs merely from queue readiness and any worker output remains not integrated until Codex review
+  + [balance_register] is stable because queue compilation is complete and launch remains a separate decision
+  + [integration_register] is pilot queue compiled, worker launch pending inspection
   + [frame_outside] is hidden model state, worker file mutation, remote claims before push, broad local-worker readiness, and unrelated workspace changes
 
   = must: treat this frame as current visible attention state
@@ -65,10 +68,10 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_lmstudio_worker_pilot_queue
+  + [active_root_frame] is attention_frame_2026_06_24_pressure_impact_pilot_candidate
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioWorkerPilotQueue], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [pilot_queue_selection], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [TaskFrameLaunchQueue] -(EntersFrame)> [AttentionFrame_2026_06_24_PressureImpactPilotCandidate], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [pilot_candidate_inspection], [operating_loop_tick], [balance_register], [integration_register], [outside]

@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is limited LM Studio worker pilot queue selection
+  + [focus_subject] is pressure impact ThinkAbout pilot candidate inspection
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the synthesis is complete and the next useful movement is a bounded pilot queue that tests real usefulness without granting authority
-  + [inside] is 2026-06-24_operating_loop_tick_014.sop, lm_studio_worker_readiness_synthesis_20260624_016.sop, LMStudioWorkerTaskCorpus.sop, LMStudioAgentBenchmark.sop, LMStudioWorkerFunctionalLane.sop, TaskFrameLaunchQueue.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when clock_state is running and the next queue remains scratch-isolated, non-mutating, proposal-only, Codex-reviewed, full-latch validated, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, self-integration, or unrelated dirty files
-  + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, unvalidated future tasks, automatic launch, and continuing after explicit stop
+  + [right_hemisphere_draw] is the first synthesis-backed real-use pilot queue is ready for inspection but not launch, so the next movement should verify gates and decide whether to run it
+  + [inside] is 2026-06-24_operating_loop_tick_015.sop, 2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop, 2026-06-24_pressure_impact_thinkabout_prompt_016.sop, lm_studio_worker_readiness_synthesis_20260624_016.sop, LMStudioWorkerFunctionalLane.sop, LMStudioAgentBenchmark.sop, TaskFrameLaunchQueue.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when clock_state is running and candidate execution remains scratch-isolated, non-mutating, proposal-only, Codex-reviewed, full-latch validated, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, self-integration, or unrelated dirty files
+  + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, unvalidated future tasks, automatic launch, launched status, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_014.sop
-  + [open_question] is which real non-mutating SOP proposal job should enter the first synthesis-backed LM Studio worker pilot queue
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_015.sop
+  + [open_question] is whether to launch pressure_impact_thinkabout_016 through scratch isolation and validator gates
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression

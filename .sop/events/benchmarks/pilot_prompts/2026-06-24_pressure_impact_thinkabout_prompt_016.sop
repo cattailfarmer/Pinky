@@ -1,0 +1,56 @@
+Subject: LM Studio Pilot Prompt Pressure Impact ThinkAbout 016
+
+Description: First synthesis-backed real-use LM Studio worker prompt packet for proposing deeper ThinkAbout records from pressure and impact scan signals.
+
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+@ [source] C:\Project\Pinky\.sop\platform\SensitivityScan.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPAwarenessNode.sop
+@ [source] C:\Project\Pinky\.sop\events\scans\2026-06-23_seed_awareness_node_scan.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_limited_worker_pilot_queue\Derived_LMStudio_Limited_Worker_Pilot_Queue_Source.sop
+
+& [LMStudioPilotPrompt:pressure_impact_thinkabout_016] is a non-mutating SOP worker prompt packet
+  + [task_family] is real_use_pressure_impact_thinkabout_proposal
+  + [prompt_boundary] is prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims, no integration authority
+  + [expected_output] is exactly one raw SOP node named InferenceJobResult with eight indented property lines and no Markdown
+  + [validation_required_fields] is focus_signal, pressure_signal, impact_signal, evidence, proposal, outside, caution, next_step
+  + [validation_required_terms] is pressure, impact, evidence, outside, not integrated
+  + [validation_forbidden_terms] is file mutation, repo authority, hidden state access, broad competence, self-integrated, completed integration
+  + [prompt_text] is:
+    You are performing a no-tools SOP inference job from this prompt only.
+    Do not call tools, inspect files, mutate state, or claim repo authority.
+    Codex owns launch, capture, validation, integration, commits, and pushes.
+
+    SOP primer:
+    & [Name] is a subject declaration.
+    + [field] is a property or inferred field.
+    A pressure signal should be sustained for later study.
+    An impact signal should be emphasized because it may shape future attention.
+    A ThinkAbout proposal is not integrated until Codex validates and integrates it.
+
+    Local evidence excerpt:
+    SensitivityScan says pressure and impact terms can become candidates for deeper ThinkAbout work.
+    SOPAwarenessNode says next_depth is later deeper ThinkAbout or Codex processing over pressure and impact signals.
+    The seed scan marks impact, pressure, and ThinkAbout-related signals as sensitivity evidence, while residual outside says term correlation is not proof.
+
+    Task:
+    Propose one deeper ThinkAbout candidate that would connect pressure and impact signals without claiming proof, file mutation, hidden state access, or repo authority.
+
+    Return exactly these nine raw SOP lines and no extra text:
+    & [InferenceJobResult] is pressure impact ThinkAbout proposal
+      + [focus_signal] is ...
+      + [pressure_signal] is ...
+      + [impact_signal] is ...
+      + [evidence] is ...
+      + [proposal] is ...
+      + [outside] is ...
+      + [caution] is ...
+      + [next_step] is ...
+
+    Final check before answering:
+    Line 1 must start with &.
+    Lines 2 through 9 must use exactly this operator form: two spaces, +, space, [field], space, is, space, value.
+    Do not replace is with verbs such as includes, separates, reminds, lists, or contains.
+    Replace every ... placeholder with specific content; do not output ellipses or placeholder text.
+    Use ASCII only; avoid curly quotes, nonbreaking hyphens, and special punctuation.
+    Include the literal terms pressure, impact, evidence, outside, and not integrated at least once.
+    Do not claim file mutation, repo authority, hidden state access, broad competence, self-integrated, or completed integration.

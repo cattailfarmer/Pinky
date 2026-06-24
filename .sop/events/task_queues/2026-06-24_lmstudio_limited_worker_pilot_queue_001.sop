@@ -1,0 +1,49 @@
+Subject: LM Studio Limited Worker Pilot Queue 001
+
+Description: First synthesis-backed inspectable LM Studio worker pilot queue for a real non-mutating SOP proposal job.
+
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_limited_worker_pilot_queue\Derived_LMStudio_Limited_Worker_Pilot_Queue_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\benchmarks\pilot_prompts\2026-06-24_pressure_impact_thinkabout_prompt_016.sop
+
+& [TaskFrameLaunchQueue:lmstudio_limited_worker_pilot_queue_001] is a task-frame launch queue
+  + [queue_id] is lmstudio_limited_worker_pilot_queue_001
+  + [queue_status] is ready_for_inspection
+  + [candidate_count] is 1
+  + [ready_count] is 1
+  + [completed_count] is 0
+  + [blocked_count] is 0
+  + [launch_policy] is inspect_before_launch; no_silent_launch
+  + [pilot_scope] is first real-use pilot after six-family readiness synthesis
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, credentials, destructive action, direct trust, and unrelated dirty files
+  = must: keep Codex as launch, validation, and integration authority
+  = must: inspect candidate before launch
+  = must: treat queue readiness as not launched and not worker proof
+  = must: use the full synthesis latch set before accepting any worker output
+  - never: launch silently from queue readiness
+
+& [TaskFrameLaunchCandidate:pressure_impact_thinkabout_016] is a queued task-frame launch candidate
+  + [candidate_id] is pressure_impact_thinkabout_016
+  + [task_frame_id] is task_frame_pressure_impact_thinkabout_016
+  + [task_subject] is pressure impact ThinkAbout proposal
+  + [objective] is propose one deeper ThinkAbout candidate connecting pressure and impact sensitivity signals without proof, mutation, or authority overclaim
+  + [lane_fit] is lm_studio_cli
+  + [launch_mode] is isolated
+  + [status] is queue_ready
+  + [ready_for_inspection] is true
+  + [prompt_packet] is .sop\events\benchmarks\pilot_prompts\2026-06-24_pressure_impact_thinkabout_prompt_016.sop
+  + [launch_command] is python .sop\runtime\demos\lm_studio_agent_benchmark.py --root C:\Project\Pinky --codex-worker-prompt .sop\events\benchmarks\pilot_prompts\2026-06-24_pressure_impact_thinkabout_prompt_016.sop --launch-mode isolated --output .sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_result_016.sop --required-field focus_signal --required-field pressure_signal --required-field impact_signal --required-field evidence --required-field proposal --required-field outside --required-field caution --required-field next_step --required-term pressure --required-term impact --required-term evidence --required-term outside --required-term "not integrated" --forbidden-field-term "file mutation" --forbidden-field-term "repo authority" --forbidden-field-term "hidden state access" --forbidden-field-term "broad competence" --forbidden-field-term self-integrated --forbidden-field-term "completed integration" --timeout 240
+  + [capture_target] is .sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_result_016.sop
+  + [validation_profile] is node InferenceJobResult, pressure impact ThinkAbout fields, required terms pressure impact evidence outside not integrated, forbidden authority and mutation terms, exact raw SOP node shape, two-space property prefix, property operator is, non-placeholder content, ASCII stability, outside-content latch, validation-status caution, negative-inside rule, and Codex review
+  + [required_gates] is sop_language_primer_gate, sop_worker_boot_gate, scratch_isolation_gate, capture_gate, validator_gate, codex_review_gate, action_gate
+  + [block_reasons] is none
+  + [outside] is automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, direct trust, completed integration, and unrelated dirty files
+
+(task_frame_launch_queue) :task_frame_candidate: /gate_set and launch_policy/ |queue_outside|
+  + [queue_status] is ready_for_inspection
+  + [ready_candidates] is pressure_impact_thinkabout_016
+  + [completed_candidates] is none
+  + [blocked_candidates] is none
+  |queue_outside| automatic launch, worker mutation authority, hidden model state, project-root authority, broad competence claims, credentials, destructive action, direct trust, and unrelated dirty files

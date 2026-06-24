@@ -1,0 +1,19 @@
+Subject: Derived LM Studio Limited Worker Pilot Queue Source
+
+Description: Preserved derived source for compiling the first synthesis-backed LM Studio worker pilot queue.
+
+& [DerivedLMStudioLimitedWorkerPilotQueueSource] is preserved derived source
+  + [source_type] is derived_from_operating_loop_tick_and_readiness_synthesis
+  + [observed_subject] is limited LM Studio worker pilot queue selection
+  + [source_tick] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_014.sop
+  + [readiness_synthesis] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+  + [selected_candidate] is pressure_impact_thinkabout_016
+  + [selection_reason] is Task_003 is a real project need that can be reduced to a non-mutating SOP proposal job over existing pressure and impact scan signals
+  + [pilot_boundary] is scratch-isolated, prompt-only, no tools, no file reads, no repo mutation, no hidden-state claims, exact raw SOP output, full latch validation, and Codex review before integration
+  + [reason_for_change] is the completed six-family corpus needs one bounded real-use pilot queue before any broader worker-lane claim
+  + [outside] is worker launch, worker mutation, project-root authority, broad competence, hidden model state, direct trust, credentials, destructive action, automatic execution, and unrelated dirty files
+
+  = must: treat this source as queue compilation authority only
+  = must: keep the selected candidate inspectable before any launch
+  = must: preserve all worker output as proposal text until Codex validates and integrates it
+  - never: treat queue readiness as launch, validation, completion, or integration

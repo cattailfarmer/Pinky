@@ -17,6 +17,8 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_integration_disposition_worker_latch\Derived_Integration_Disposition_Worker_Latch_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_six_family_readiness_synthesis\Derived_LMStudio_Six_Family_Readiness_Synthesis_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_limited_worker_pilot_queue\Derived_LMStudio_Limited_Worker_Pilot_Queue_Source.sop
 
 & [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
   + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
@@ -36,8 +38,9 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [readiness_evidence_count] is 6 distinct strong task-family validations, 17 preserved attempts, and earlier same-family stability evidence
   + [readiness_profile_record] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_profile_20260624_008.sop
   + [readiness_synthesis_record] is C:\Project\Pinky\.sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop
+  + [first_pilot_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
   + [functional_definition] is a local worker can complete a non-mutating booted SOP inference job in scratch_prompt_only mode, produce exact SOP output, pass validator, and return captured proposal text for Codex review
-  + [next_readiness_gate] is compile a limited worker pilot queue before considering any broader lane claim
+  + [next_readiness_gate] is inspect and optionally run pressure_impact_thinkabout_016 before considering any broader lane claim
   + [task_corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
   + [lane_outside] is repo mutation by worker, direct trust of worker output, hidden model state, credentials, broad competence, and project-root authority until fenced

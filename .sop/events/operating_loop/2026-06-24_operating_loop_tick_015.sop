@@ -1,0 +1,28 @@
+Subject: Semantic Cognition Operating Loop Tick
+
+Description: Visible task-manager heartbeat after a completed, blocked, or validated step.
+
+& [OperatingLoopTick:operating_loop_tick_20260624_015] is a semantic cognition operating loop tick
+  + [tick_id] is operating_loop_tick_20260624_015
+  + [focus_subject] is limited LM Studio worker pilot queue selection
+  + [completed_step] is compiled lmstudio_limited_worker_pilot_queue_001 with pressure_impact_thinkabout_016 as one ready-for-inspection real-use non-mutating SOP proposal candidate and did not launch the worker
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [drive_state] is continue
+  + [clock_state] is running
+  + [next_step] is inspect and optionally run pressure_impact_thinkabout_016 through scratch isolation and validator gates
+  + [created_utc] is 2026-06-24T21:06:56Z
+  + [evidence_refs] is .sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop, .sop\events\benchmarks\pilot_prompts\2026-06-24_pressure_impact_thinkabout_prompt_016.sop, .sop\events\benchmarks\lm_studio_worker_readiness_synthesis_20260624_016.sop, and .sop\platform\source_documents\2026-06-24_lmstudio_limited_worker_pilot_queue\Derived_LMStudio_Limited_Worker_Pilot_Queue_Source.sop
+  + [outside] is worker launch, broad LM Studio competence, project-root authority, worker mutation, hidden model state, direct trust of worker output, automatic launch, destructive action, credentials, unsupervised PC control, and unrelated dirty files
+
+  = must: treat this tick as a continuation point unless clock_state is blocked, paused, or stopped
+  = must: inspect queue readiness before any launch
+  = must: preserve outside before scheduling next_step
+  - never: treat queue readiness as launch, validation, completion, or integration
+
+(semantic_cognition_operating_loop) :clock_tick: /proof_state and balance_state/ |outside|
+  + [clock_tick] is operating_loop_tick_20260624_015
+  + [proof_state] is validated
+  + [balance_state] is stable
+  + [next_step] is inspect and optionally run pressure_impact_thinkabout_016 through scratch isolation and validator gates
+  |outside| worker launch, broad LM Studio competence, project-root authority, worker mutation, hidden model state, direct trust, automatic launch, destructive action, credentials, unsupervised PC control, and unrelated dirty files

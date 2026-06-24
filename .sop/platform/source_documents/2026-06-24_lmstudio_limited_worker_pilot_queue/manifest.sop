@@ -1,0 +1,13 @@
+Subject: LM Studio Limited Worker Pilot Queue Source Manifest
+
+Description: Source preservation manifest for the first synthesis-backed LM Studio worker pilot queue.
+
+& [LMStudioLimitedWorkerPilotQueueSourceManifest] is a source preservation manifest
+  + [source_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_limited_worker_pilot_queue\Derived_LMStudio_Limited_Worker_Pilot_Queue_Source.sop
+  + [target_contracts] is TaskFrameLaunchQueue.sop, LMStudioWorkerFunctionalLane.sop, LMStudioAgentBenchmark.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
+  + [queue_record] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
+  + [prompt_packet] is C:\Project\Pinky\.sop\events\benchmarks\pilot_prompts\2026-06-24_pressure_impact_thinkabout_prompt_016.sop
+  + [derived_terms] is pressure_impact_thinkabout_016, synthesis-backed pilot queue, full latch set, and proposal-only worker output
+  + [preservation_status] is preserved
+
+  = must: cite this manifest when auditing the first LM Studio worker pilot queue
