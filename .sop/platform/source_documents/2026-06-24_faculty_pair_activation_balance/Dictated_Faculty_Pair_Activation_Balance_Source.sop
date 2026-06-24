@@ -1,0 +1,13 @@
+Subject: Dictated Faculty Pair Activation Balance Source
+
+Description: Raw user-directed source preserved before canonical refinement.
+
+& [DictatedFacultyPairActivationBalanceSource] is the preserved user direction
+  + [source_time] is 2026-06-24
+  + [source_authority] is user dictated direction in the Pinky .sop project
+  + [raw_direction] is honesty and security need to activate together to refine in parallel and balance, archivist and refiner in parallel and balance, and planner and weaver in parallel and in balance.
+
+  = must: preserve this source separately from canonical refinement
+  = must: treat paired activation as an SOP attention-layer specification
+  = must: keep the build inside .sop attention directives unless runtime work is explicitly selected later
+  - outside: Python runtime changes, worker authority changes, hidden-state claims, and unrelated Pinky workspace changes

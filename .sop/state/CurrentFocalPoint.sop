@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is ready task queue exhaustion review
+  + [focus_subject] is faculty pair activation balance
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is Task_060 is now integrated as a Codex-owned Boundary Faculty Inspection runtime, and the manager queue has no ready local runtime tasks remaining
-  + [inside] is 2026-06-24_operating_loop_tick_026.sop, 2026-06-24_task_060_boundary_faculty_inspection_runtime_001.hg.sop, boundary_faculty_inspection.py, Manager_State.sop, AttentionRuntimeRegistryState.sop, empty ReadyTaskSet, and BlockedTaskSet
-  + [boundary] is continue only when clock_state is running and the next task remains inside .sop authority, Codex-owned mutation, source-cited, evidence-gated, and explicit about outside; pause or block on user stop, credentials, destructive action, project-root LM Studio authority, broad competence claims, automatic launch, worker mutation, direct trust, or unrelated dirty files
-  + [outside] is hidden model state, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
+  + [right_hemisphere_draw] is new user direction turns faculty activation into paired balance surfaces: Honesty/Security, Archivist/Refiner, and Planner/Weaver must co-activate when their shared pressure is load-bearing
+  + [inside] is FacultyPairActivationBalance.sop, Dictated_Faculty_Pair_Activation_Balance_Source.sop, 2026-06-24_faculty_pair_activation_balance_079.hg.sop, 2026-06-24_operating_loop_tick_027.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, evidence-gated, paired-lane balanced, explicit about outside, and non-mutating unless runtime work is selected later
+  + [outside] is hidden model state, hidden native parallelism claims, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_026.sop
-  + [open_question] is whether to create new SOP slices, review blocked tasks, configure remote policy, or wait for user direction without inventing ready work
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_027.sop
+  + [open_question] is whether to define individual Archivist, Refiner, Planner, and Weaver cores next or compile a faculty activation router over the paired balance contract
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -34,6 +34,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat corridor_navigator_runtime as the completed Task_054 anchor
   = must: treat security_honesty_governance_runtime as the completed Task_057 anchor
   = must: treat boundary_faculty_inspection_runtime as the completed Task_060 anchor
+  = must: treat faculty_pair_activation_balance as the completed Task_147 anchor
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration

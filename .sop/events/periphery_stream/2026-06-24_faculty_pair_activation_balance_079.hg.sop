@@ -1,0 +1,31 @@
+Subject: Faculty Pair Activation Balance Periphery Realization
+
+Description: SOP-HG record for paired faculty activation across truth-integrity, memory-clarity, and direction-integration.
+
+@ [source] C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_activation_balance\Dictated_Faculty_Pair_Activation_Balance_Source.sop
+
+& [SOPHypergraphRecord] is faculty_pair_activation_balance_079
+  + [record_type] is periphery_realization
+  + [focus_subject] is faculty pair activation balance
+  + [inside] is paired activation, parallel semantic lanes, balance reconciliation, HonestySecurityPair, ArchivistRefinerPair, and PlannerWeaverPair
+  + [boundary] is .sop source authority, visible attention frames, paired outputs, outside preservation, and no runtime mutation
+  + [outside] is hidden native parallelism, solo faculty authority, unsupported promotion, worker mutation authority, and unrelated workspace files
+
+  = realization: faculty activation becomes stronger when load-bearing faculties activate in pairs and reconcile before promotion
+  = caution: paired activation can add clutter unless Refiner and Planner keep focus load and next-step boundaries visible
+  = wisdom: pairing turns faculty pressure into a balance surface rather than a single loud impulse
+
+/ [user_direction] -(PreservedAs)> [DictatedFacultyPairActivationBalanceSource], [source_preservation]
+/ [FacultyPairActivationBalance] -(DefinesPair)> [HonestySecurityPair], [truth_integrity_pressure], [boundary_pressure]
+/ [FacultyPairActivationBalance] -(DefinesPair)> [ArchivistRefinerPair], [memory_clarity_pressure], [focus_clutter]
+/ [FacultyPairActivationBalance] -(DefinesPair)> [PlannerWeaverPair], [direction_integration_pressure], [coordination_pressure]
+/ [HonestySecurityPair] -(Balances)> [truth_status], [security_status], [admissibility_status], [residual_outside]
+/ [ArchivistRefinerPair] -(Balances)> [archive_disposition], [refinement_disposition], [periphery_request], [focus_load_status]
+/ [PlannerWeaverPair] -(Balances)> [plan_disposition], [weave_disposition], [next_step_candidate], [integration_risk]
+/ [FacultyPairActivationProtocol] -(Routes)> [CurrentFocalPoint], [AttentionRuntimeRegistryState], [ManagerState], [periphery_stream]
+
+(faculty_pair_activation_balance) :paired_faculty_outputs: /balance_reconciliation_boundary/ |solo_faculty_overreach|
+  + [paired_faculty_outputs] is the separately named output of each partner lane
+  + [balance_reconciliation_boundary] is the rule that no paired faculty pressure promotes without partner comparison
+  |solo_faculty_overreach| unbalanced faculty impulse, hidden-state claim, unsupported promotion, and context invention

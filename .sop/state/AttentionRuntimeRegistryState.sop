@@ -80,14 +80,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_task_060_boundary_faculty_inspection_runtime_001.hg.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_faculty_inspection_runtime\Derived_Boundary_Faculty_Inspection_Runtime_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_026.sop
+@ [source] C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_activation_balance\Dictated_Faculty_Pair_Activation_Balance_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_faculty_pair_activation_balance_079.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_027.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is ready task queue exhaustion review
-  + [active_root_frame] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
+  + [registry_scope] is faculty pair activation balance
+  + [active_root_frame] is attention_frame_2026_06_24_faculty_pair_activation_balance
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 20
+  + [closed_frame_count] is 21
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -98,7 +102,7 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 & [AttentionFrame_2026_06_24_ReadyTaskQueueExhaustionReview] is the active semantic stack frame for recognizing that no ready local runtime tasks remain
   + [frame_id] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_boundary_faculty_inspection_runtime
   + [child_frame_set] is manager_state, empty_ready_task_set, blocked_task_set, operating_loop_tick_026, user_direction_boundary, commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -119,8 +123,31 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: return clock_state, proof_state, balance_state, drive_state, next_step, and outside to CurrentFocalPoint when this focus pass closes
   = should: open child frames only when a concrete benchmark, scoring, or worker-profile pass is needed
 
+& [AttentionFrame_2026_06_24_FacultyPairActivationBalance] is the active semantic stack frame for paired faculty activation
+  + [frame_id] is attention_frame_2026_06_24_faculty_pair_activation_balance
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
+  + [child_frame_set] is HonestySecurityPair, ArchivistRefinerPair, PlannerWeaverPair, source_preservation, operating_loop_tick_027, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is FacultyPairActivationBalance.sop, Dictated_Faculty_Pair_Activation_Balance_Source.sop, 2026-06-24_faculty_pair_activation_balance_079.hg.sop, Manager_State.sop, and 2026-06-24_operating_loop_tick_027.sop
+  + [focus_register] is paired activation lanes and balance reconciliation before promotion
+  + [question_register] is whether next work should define individual faculty cores or compile a faculty activation router
+  + [delineation_register] is inside paired faculty outputs, balance_delta, reconciliation_output, source preservation, current focal point, manager state, and outside
+  + [periphery_register] is solo faculty overreach, hidden native parallelism claims, worker mutation authority, unscoped naming collisions, and unrelated dirty files
+  + [operation_register] is preserve_source, define_pair_contract, emit_periphery_record, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, FacultyPairActivationBalance.sop, source manifest, periphery record 079, and operating_loop_tick_027
+  + [wisdom_register] is pair activation makes faculty pressure a balance surface instead of a single loud impulse
+  + [caution_register] is pair activation must not become clutter or a hidden parallelism claim
+  + [balance_register] is stable because semantic lanes are named separately and reconciled before integration
+  + [integration_register] is Task_147 completed as SOP-only paired activation contract
+  + [frame_outside] is hidden model state, native runtime stack claims, worker file mutation, unsupported promotion, and unrelated workspace changes
+
+  = must: keep paired faculty outputs separate until reconciliation
+  = must: route residuals to outside rather than forcing balance
+  = should: open child frames for individual faculty cores or a router only after explicit next-task selection
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review
+  + [active_root_frame] is attention_frame_2026_06_24_faculty_pair_activation_balance
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition

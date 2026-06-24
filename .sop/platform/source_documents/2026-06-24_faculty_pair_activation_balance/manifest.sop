@@ -1,0 +1,14 @@
+Subject: Faculty Pair Activation Balance Source Manifest
+
+Description: Source preservation manifest for the paired faculty activation balance contract.
+
+& [FacultyPairActivationBalanceSourceManifest] is the source preservation record
+  + [source_directory] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_faculty_pair_activation_balance
+  + [raw_source] is Dictated_Faculty_Pair_Activation_Balance_Source.sop
+  + [canonical_target] is C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop
+  + [event_target] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_faculty_pair_activation_balance_079.hg.sop
+  + [operating_loop_target] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_027.sop
+
+  = must: keep dictated source distinct from canonical contract
+  = must: cite this manifest when the manager records Task_147
+  - outside: replacing raw source with refined wording
