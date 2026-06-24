@@ -3,55 +3,56 @@ Subject: Current Attention Runtime Registry State
 Description: Live semantic stack-frame registry for the current focus pass.
 
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
-@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
-@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\ControlledExplosionReadiness.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_lm_studio_agent_benchmark_075.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_controlled_explosion_readiness_076.hg.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is current LM Studio agent benchmark pass for C:\Project\Pinky\.sop under Codex operational host authority
-  + [active_root_frame] is attention_frame_2026_06_24_lm_studio_agent_benchmark_001
+  + [registry_scope] is current controlled explosion readiness pass for C:\Project\Pinky\.sop
+  + [active_root_frame] is attention_frame_2026_06_24_controlled_explosion_readiness_001
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
   + [closed_frame_count] is 0
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [registry_outside] is hidden activations, exact transformer attention, model weights, unsupervised worker action, credentials, and unrelated Pinky worktree changes
+  + [registry_outside] is hidden activations, exact transformer attention, model weights, uncontrolled inflation, proofless heat, metaphor confusion, and unrelated Pinky worktree changes
 
   = must: update this state when focus materially changes
-  = must: open child frames for provider probe, benchmark execution, Codex review, or integration attempts
+  = must: open child frames for source preservation, chamber setup, governor check, expansion stroke, exhaust, cooling, or commit receipt
   = must: preserve return anchors before closing or suspending frames
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
 
-& [AttentionFrame_2026_06_24_LMStudioAgentBenchmark001] is the active semantic stack frame for local worker benchmarking
-  + [frame_id] is attention_frame_2026_06_24_lm_studio_agent_benchmark_001
+& [AttentionFrame_2026_06_24_ControlledExplosionReadiness001] is the active semantic stack frame for controlled SOP expansion readiness
+  + [frame_id] is attention_frame_2026_06_24_controlled_explosion_readiness_001
   + [frame_state] is active
   + [parent_frame] is none
-  + [child_frame_set] is provider_probe, benchmark_run, codex_review, codex_cli_smoke
+  + [child_frame_set] is source_preservation, chamber_check, governor_check, piston_check, exhaust_check, cooling_check, crankshaft_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
-  + [frame_trace] is LMStudioAgentBenchmark.sop, SOPTaskManager.sop, WorkerLanes.sop, runtime\sop_node\lm_studio_agent_benchmark.py, runtime\demos\lm_studio_agent_benchmark.py, and lm_studio_agent_benchmark_075.hg.sop
-  + [focus_register] is benchmark LM Studio hosted local AI as a bounded SOP worker lane
-  + [question_register] is whether the active local model can follow task-frame reminders, preserve outside, avoid authority overclaiming, return useful small-job proposals, and later fit inside a nested Codex CLI local-provider launch
-  + [delineation_register] is inside provider probe, benchmark packet, captured output, quality score, latency, Codex review, and outside
-  + [periphery_register] is near codex.cmd entrypoint, mid repeated model comparison, shadow provider timeout, shadow context-window overflow, and horizon slim Codex worker profile
-  + [operation_register] is qualify_lm_studio_lane and record_benchmark_result
-  + [evidence_register] is preserved source, canonical benchmark contract, runtime benchmark command, unit tests, captured benchmark result, Codex CLI smoke result, and commit receipt
-  + [wisdom_register] is local model autonomy should begin as measured low-risk proposal work before being used in the task manager swarm
-  + [caution_register] is LM Studio output cannot mutate files, claim hidden state, claim completed repo work, or enter task narrative without Codex capture and review; nested Codex CLI LM Studio launch remains blocked while n_keep exceeds n_ctx
-  + [balance_register] is stable with watch because Codex remains the host of authority, direct LM Studio benchmark is usable, and nested CLI launch has an explicit context blocker
+  + [frame_trace] is ControlledExplosionReadiness.sop, CurrentFocalPoint.sop, Attention.sop, Manager_State.sop, and controlled_explosion_readiness_076.hg.sop
+  + [focus_register] is structured readiness for harnessed atomic-thought SOP expansion
+  + [question_register] is how to let SOP explode with power while keeping source, chamber, governor, piston, exhaust, cooling, and crankshaft receipt visible
+  + [delineation_register] is inside atomic_thought, fuel, combustion_chamber, compression, spark, controlled_explosion, power_stroke, piston, crankshaft, governor, cooling, exhaust, and outside
+  + [periphery_register] is near LM Studio benchmark governor tuning, mid task-manager worker slicing, shadow uncontrolled inflation, and horizon repeatable expansion strokes
+  + [operation_register] is preserve_source, define_readiness, wire_attention_root, update_registry, and commit_receipt
+  + [evidence_register] is preserved source, canonical readiness contract, periphery realization, current focal point, manager state, and commit receipt
+  + [wisdom_register] is SOP's power comes from controlled expansion, not suppressed association or runaway inflation
+  + [caution_register] is heat of insight is not proof; every expansion stroke needs governor, output coupling, exhaust, cooling, and evidence receipts
+  + [balance_register] is stable because the pattern names both power and restraint and forces expansion to drive useful output
   + [integration_register] is pending final validation and commit receipt
-  + [frame_outside] is automatic worker launch, hidden model state, credentials, unsupervised local model action, broad competence claims, nested Codex CLI LM Studio jobs before context fit, and unrelated Pinky worktree changes
+  + [frame_outside] is uncontrolled inflation, unsupported certainty, hidden model state, native activation claims, metaphor confusion, uncoupled heat, and unrelated Pinky worktree changes
 
   = must: treat this frame as current visible attention state
-  = must: return benchmark output, score band, caution_debt, wisdom_yield, and outside to CurrentFocalPoint when this focus pass closes
-  = should: open child frames only when a concrete provider, scoring, or integration pass is needed
+  = must: return readiness state, caution_debt, wisdom_yield, output duty, exhaust, and outside to CurrentFocalPoint when this focus pass closes
+  = should: open child frames only when a concrete chamber, governor, expansion, cooling, or receipt pass is needed
 
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_lm_studio_agent_benchmark_001
+  + [active_root_frame] is attention_frame_2026_06_24_controlled_explosion_readiness_001
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
-  |registry_outside| hidden model state, executable runtime stack, unsupervised worker action, unrelated dirty files, and untracked cognition
+  |registry_outside| hidden model state, executable runtime stack, uncontrolled inflation, metaphor confusion, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [LMStudioAgentBenchmark] -(EntersFrame)> [AttentionFrame_2026_06_24_LMStudioAgentBenchmark001], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [lm_studio_agent_benchmark], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ControlledExplosionReadiness] -(EntersFrame)> [AttentionFrame_2026_06_24_ControlledExplosionReadiness001], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [controlled_explosion_readiness], [balance_register], [integration_register], [outside]

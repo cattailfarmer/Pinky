@@ -1,0 +1,77 @@
+Subject: Controlled Explosion Readiness
+
+Description: SOP contract for harnessing atomic thoughts into controlled specification expansion that produces useful, governed motion.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_controlled_explosion_readiness\Dictated_Controlled_Explosion_Readiness_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\Wisdom.sop
+@ [source] C:\Project\Pinky\.sop\platform\Caution.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+
+& [ControlledExplosionReadiness] is the readiness governor for harnessed SOP expansion
+  + [pattern_role] is chambered_specification_expansion_for_useful_attention_power
+  + [atomic_thought] is the smallest preserved source impulse that can seed SOP expansion
+  + [fuel] is source-preserved attention pressure, question, observation, contradiction, possibility, or task need
+  + [combustion_chamber] is the bounded attention frame that holds focus, boundary, outside, authority, and output duty before expansion
+  + [compression] is constraint pressure from SJS, SourceAuthorityRoot, focal point, active registry, evidence gates, model limits, and scope
+  + [spark] is the executive or stimulus-driven ignition point that justifies expansion now
+  + [controlled_explosion] is the bounded SOP expansion that multiplies associations while preserving chamber boundary and output coupling
+  + [power_stroke] is the useful motion produced by expansion, such as a contract, slice, benchmark, task frame, runtime helper, or commit-ready proof
+  + [piston] is the selected output surface that converts conceptual expansion into work
+  + [crankshaft] is the commit, test, benchmark, manager-state, and trailing-review loop that turns repeated strokes into durable motion
+  + [governor] is Wisdom, Caution, Security, Honesty, Evidence, Balance, and FrameReference checks applied before, during, and after expansion
+  + [cooling] is balance reset, periphery stabilization, scope reduction, and caution debt payment after high-heat inference
+  + [exhaust] is outside material, rejected claims, unresolved uncertainty, dead associations, and deferred work vented from focus
+  + [readiness_state] is cold, primed, compressed, ignited, expanding, coupled, exhausted, cooled, or complete
+  + [structured_readiness] is the checklist that decides whether the engine may expand, what load it drives, and when it must vent or stop
+  + [combustion_outside] is uncontrolled inflation, unsupported certainty, authority overreach, hidden model state, metaphor confusion, and expansion without output duty
+
+  ? [use_when: an atomic thought or strong insight should be expanded into SOP without losing boundary, proof, or usefulness]
+    = activate [ControlledExplosionReadiness]
+
+  = must: preserve the atomic_thought as source before controlled expansion becomes authority
+  = must: name the combustion_chamber before ignition
+  = must: state focus, boundary, outside, authority, and intended output duty before expansion
+  = must: identify the spark that justifies expansion now
+  = must: set compression using SJS, source authority, focal point, active registry, evidence gates, model limits, and scope
+  = must: keep the governor active during expansion, not only afterward
+  = must: couple expansion to a piston so the heat becomes contract, slice, benchmark, runtime, or commit-backed proof
+  = must: vent exhaust into outside, trackers, deferred tasks, or rejected claims
+  = must: cool after high-heat expansion by checking balance, periphery stability, caution debt, and evidence receipts
+  = must: record the crankshaft receipt through tests, benchmark output, manager state, commit, push, or trailing checksum when applicable
+  = should: prefer repeated small controlled strokes over one huge uncontrolled burst
+  = should: tune expansion width by subject dimensionality, evidence quality, model quality, and current balance
+  - never: treat conceptual heat as proof
+  - never: let expansion outrun source preservation, boundary inspection, or evidence gates
+  - never: confuse metaphorical combustion with native machine internals or hidden activations
+  - never: keep expanding when the piston is uncoupled from useful output
+
+& [StructuredReadinessChecklist] is the pre-ignition and post-stroke checklist
+  + [fuel_check] is whether a preserved source impulse or problem pressure exists
+  + [chamber_check] is whether focus, boundary, outside, authority, and output duty are named
+  + [compression_check] is whether scope constraints and evidence gates are tight enough to make expansion useful
+  + [spark_check] is whether the executive or stimulus-driven reason for expansion is explicit
+  + [governor_check] is whether Wisdom, Caution, Security, Honesty, Evidence, Balance, and FrameReference are active
+  + [piston_check] is whether expansion has a selected output surface
+  + [exhaust_check] is whether rejected, uncertain, or deferred material has a place to go
+  + [cooling_check] is whether the pass ends with balance, periphery, caution debt, and next-step review
+  + [crankshaft_check] is whether useful motion is recorded in tests, benchmark, manager state, commit, push, or trailing checksum
+
+  = must: fail readiness if chamber_check, governor_check, or piston_check is absent
+  = must: downgrade readiness to primed when fuel exists but output duty is not yet coupled
+  = should: treat a failed hollow_form_check or boundary_blur_check as evidence that the governor needs sharpening before the next stroke
+
+(controlled_explosion_readiness) :atomic_thought: /combustion_chamber and governor/ |combustion_outside|
+  + [atomic_thought] is preserved source fuel
+  + [combustion_chamber] is focus plus boundary plus outside plus authority plus output duty
+  + [governor] is Wisdom, Caution, Security, Honesty, Evidence, Balance, and FrameReference
+  + [power_stroke] is useful SOP motion coupled to a selected piston
+  |combustion_outside| uncontrolled inflation, unsupported certainty, authority overreach, hidden model state, metaphor confusion, and uncoupled heat
+
+/ [atomic_thought], [fuel], [spark] -(IgnitesWithin)> [combustion_chamber], [compression], [governor]
+* [controlled_explosion], [piston], [power_stroke] -(Drives)> [contract], [slice], [benchmark], [runtime_helper], [commit_receipt]
+* [exhaust], [cooling], [crankshaft] -(Stabilizes)> [balance], [periphery], [manager_state], [next_stroke]
