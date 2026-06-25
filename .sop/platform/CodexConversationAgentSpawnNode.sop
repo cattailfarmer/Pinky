@@ -1,0 +1,144 @@
+Subject: Codex Conversation Agent Spawn Node
+
+Description: Spawn-node contract that attaches a root submission to a Codex app conversation, builds a bounded job frame, and coordinates LM Studio hosted Codex CLI agents through explicit launch, capture, and authority gates.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_codex_conversation_agent_spawn_node\Dictated_Codex_Conversation_Agent_Spawn_Node_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+
+& [CodexConversationAgentSpawnNode] is the launch membrane between a Codex app conversation and LM Studio hosted Codex CLI agents
+  + [spec_status] is future_blocked_specification
+  + [pattern_role] is root_submission_to_lmstudio_hosted_codex_cli_agent_swarm
+  + [codex_app_conversation] is the human-facing Codex app conversation that owns source authority, user intent, final review, and re-entry context
+  + [root_submission] is the user or AI-originated submission that defines the job, objective, constraints, desired artifact, and outside
+  + [root_submission_packet] is preserved source plus objective, authority, context, task frame, expected outputs, risk, budget, stop policy, and outside
+  + [conversation_attachment] is the link between root_submission_packet and the Codex app conversation handle, thread state, focal point, and commit trail
+  + [spawn_node] is the local node that prepares, gates, launches, supervises, and captures worker-agent instances
+  + [lm_studio_host] is the local LM Studio OpenAI-compatible provider used for low-cost manager attention or local-provider Codex CLI worker attempts
+  + [codex_cli_worker_instance] is one bounded Codex CLI process hosted by LM Studio or another declared model route
+  + [agent_role_set] is decomposer_agent, linker_agent, recommender_agent, critic_agent, verifier_agent, synthesizer_agent, route_planner_agent, and integrator_candidate_agent
+  + [job_frame] is the task frame created from root_submission_packet and held by SOPTaskManager
+  + [collaboration_thread] is the LLMAgentCollaborationFabric thread where worker contributions, votes, critiques, and substitution candidates collect
+  + [worker_packet] is the prompt and SOP context slice given to one codex_cli_worker_instance
+  + [spawn_plan] is the proposed set of worker instances, roles, context slices, capture targets, cost estimates, stop rules, and launch order
+  + [spawn_gate] is the context fit, SOP primer, boot packet, cost cap, concurrency cap, stop file, capture target, workspace boundary, dirty-file boundary, and Codex app review gate
+  + [context_fit_gate] is the check that Codex CLI prompt overhead plus worker_packet fits the LM Studio loaded context window
+  + [provider_fit_gate] is the check that LM Studio endpoint, model, tool discipline, no-tool mode, and exact-output behavior are fit for the worker role
+  + [authority_gate] is Codex app or user approval before any worker launch, repo mutation, artifact substitution, commit, push, or external action
+  + [capture_gate] is the requirement that every worker instance writes raw output, stderr, exit code, prompt hash, context slice, and outside before integration
+  + [cost_gate] is the visible budget and token/time cap for each worker and the whole spawn_plan
+  + [stop_gate] is user stop, stop file, timeout, failed validation, failed provider, budget cap, unsafe action, or dirty-file collision
+  + [spawn_state] is proposed, queued, launch_ready, launched, running, returned, validated, integrated, blocked, failed, stopped, or closed
+  + [return_surface] is captured agent contributions routed back to LLMAgentCollaborationFabric, SOPTaskManager, and the Codex app conversation
+  + [implementation_boundary] is no actual worker spawning until context, provider, cost, stop, capture, concurrency, and authority gates are specified and validated
+  + [residual_outside] is unsupervised daemon, hidden spend, credential handling, direct mutation, unbounded launch, hidden model state, and worker-owned authority
+
+  ? [use_when: a root submission attached to a Codex app conversation should coordinate multiple LM Studio hosted Codex CLI agents around a bounded job]
+    = activate [CodexConversationAgentSpawnNode]
+
+  = must: preserve root_submission before creating job_frame
+  = must: attach root_submission_packet to codex_app_conversation before spawn planning
+  = must: create job_frame and collaboration_thread before worker_packet emission
+  = must: compile one worker_packet per codex_cli_worker_instance
+  = must: require spawn_plan before any launch candidate is queued
+  = must: require spawn_gate before spawn_state becomes launch_ready
+  = must: keep lm_studio_host manager attention separate from codex_cli_worker_instance execution
+  = must: keep context_fit_gate visible because Codex CLI local-provider prompt overhead has previously exceeded available context
+  = must: keep provider_fit_gate visible because local-provider no-tool and exact-output behavior must be proven per role
+  = must: route every launch candidate through TaskFrameLaunchQueue
+  = must: route every returned worker output through capture_gate and LLMAgentCollaborationFabric before integration
+  = must: require authority_gate before repo mutation, artifact substitution, commit, push, or remote publication
+  = must: let stop_gate halt or block the spawn plan without treating it as failure
+  = should: begin with synthetic worker packets before real Codex CLI spawning
+  = should: use LM Studio manager mode to propose roles and packet routing before launching any worker
+  - never: spawn Codex CLI workers silently
+  - never: let LM Studio launch OpenAI-backed work directly
+  - never: let worker instances mutate files without Codex app review
+  - never: hide costs, credentials, prompt packets, capture targets, or outside
+
+& [RootSubmissionJobFrame] is the job frame formed from the root submission
+  + [root_submission_id] is stable handle for the originating submission
+  + [conversation_attachment] is Codex app conversation handle, focal point, current commit, and active user directive
+  + [objective] is the job goal
+  + [allowed_surface] is files, SOP subjects, commands, sources, and lanes allowed for the job
+  + [blocked_surface] is credentials, unrelated dirty files, destructive actions, unbounded launch, private capture, and remote publication
+  + [expected_artifact_set] is specifications, justifications, source docs, packets, patches, tests, reviews, or blocked notes
+  + [agent_role_plan] is which worker roles are useful and why
+  + [authority_boundary] is user and Codex app review over worker outputs and artifact substitution
+  + [outside] is hidden intent, hidden model state, implicit launch permission, and non-local authority
+
+  = must: keep objective and outside together
+  = must: keep conversation_attachment visible for re-entry and final reporting
+
+& [SpawnPlanProtocol] is the planning rule before worker launch
+  + [spawn_input] is root_submission_packet, job_frame, collaboration_thread, available provider, worker role needs, budget, and stop policy
+  + [worker_instance_set] is the proposed codex_cli_worker_instance records
+  + [role_assignment] is the mapping from agent_role to worker_packet
+  + [launch_order] is serial, parallel, staged, or blocked
+  + [concurrency_cap] is maximum simultaneous worker instances
+  + [budget_cap] is token, time, cost, or local compute limit
+  + [capture_plan] is where every worker writes raw output and validation notes
+  + [review_plan] is how Codex app conversation reviews returned contributions
+  + [outside] is hidden launch, unbounded work, and missing capture
+
+  = must: make serial or staged launch the default until parallel safety is proven
+  = must: preserve blocked worker roles rather than forcing a full swarm
+  = must: create launch candidates only after capture_plan and review_plan exist
+
+& [WorkerInstanceLaunchCandidate] is one proposed Codex CLI worker instance
+  + [worker_instance_id] is stable handle for the instance
+  + [agent_role] is the intended role
+  + [provider_route] is lm_studio_local_provider, direct_lm_studio_manager, openai_codex_cli, manual, blocked, or deferred
+  + [worker_packet] is the compact prompt and SOP context slice
+  + [launch_command] is the inspectable proposed command or blocked note
+  + [capture_target] is output file path for raw worker result
+  + [required_gates] is context_fit_gate, provider_fit_gate, capture_gate, cost_gate, stop_gate, dirty_file_gate, and authority_gate
+  + [status] is proposed, blocked, launch_ready, launched, returned, validated, rejected, or integrated
+  + [outside] is hidden worker state, implicit authority, direct mutation, unbounded cost, and uncaptured output
+
+  = must: keep required_gates with the candidate
+  = must: remain blocked when LM Studio context fit is not proven
+  = must: remain blocked when launch_command would touch unrelated dirty files
+
+& [SpawnReturnIntegration] is how worker results return to the Codex app conversation
+  + [return_input] is captured worker output, exit status, validation result, artifact candidates, votes, critiques, and outside
+  + [collaboration_update] is contribution, critique, proposal decomposition, fabric link, artifact candidate, or blocked note inserted into LLMAgentCollaborationFabric
+  + [codex_app_review] is the human-facing Codex app pass that accepts, rejects, merges, or defers the returned material
+  + [integration_output] is updated SOP record, task narrative, substitution receipt, commit, push, or outside note after authority_gate passes
+  + [outside] is integration without capture, worker self-authority, hidden mutation, and unreviewed substitution
+
+  = must: keep worker return separate from Codex app review
+  = must: route useful but unaccepted worker output into periphery, not authority
+  = must: report returned worker contributions to the attached Codex app conversation
+
+& [ImplementationGate_CodexConversationAgentSpawnNode] is the future implementation boundary
+  + [implementation_status] is blocked_until_gates_satisfied
+  + [required_gate_set] is codex_cli_local_provider_context_fit, provider_fidelity_test, worker_packet_schema, spawn_plan_schema, capture_storage_policy, cost_policy, stop_policy, concurrency_policy, dirty_file_policy, authority_review_policy, launch_command_policy, and rollback_policy
+  + [first_safe_prototype] is local-only synthetic root submission, synthetic spawn plan, and blocked worker candidates with no actual Codex CLI launch
+  + [blocked_work] is actual worker spawning, continuous runner, parallel launch, file mutation, OpenAI-backed dispatch, automatic artifact substitution, commit, push, and remote publication
+  + [outside] is any implementation that launches agents without visible stop, cost, capture, context, and authority gates
+
+  = must: begin with synthetic spawn plans before real worker launch
+  = must: prove Codex CLI hosted by LM Studio context fit before using that provider route
+  = must: keep actual spawning blocked until the user explicitly asks for implementation and required gates are present
+
+(codex_conversation_agent_spawn_node) :root_submission: /spawn_gate and conversation_attachment/ |residual_outside|
+  + [root_submission] is the job-defining origin attached to Codex app conversation
+  + [job_frame] is the bounded task context
+  + [spawn_plan] is proposed worker instance set and role routing
+  + [codex_cli_worker_instance] is a gated worker candidate hosted through declared provider route
+  + [return_surface] is captured contribution back to collaboration fabric and Codex app review
+  |residual_outside| silent spawn, hidden cost, credentials, unbounded launch, direct mutation, and worker-owned authority
+
+/ [root_submission], [codex_app_conversation] -(Frames)> [job_frame], [conversation_attachment], [outside]
+* [job_frame], [LLMAgentCollaborationFabric], [LocalAIManagerPrimary] -(Plans)> [spawn_plan], [worker_packet], [blocked_candidate]
+* [worker_packet], [TaskFrameLaunchQueue], [spawn_gate] -(MaySpawn)> [codex_cli_worker_instance], [capture_target], [stop_gate]
+* [codex_cli_worker_instance], [capture_gate], [authority_gate] -(Returns)> [collaboration_update], [codex_app_review], [outside]

@@ -13,6 +13,7 @@ Description: Collaboration fabric where LLM agents propose, categorize, critique
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
 @ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
 
 & [LLMAgentCollaborationFabric] is the agent collaboration layer for proposal, critique, voting, and artifact substitution
   + [spec_status] is future_blocked_specification
@@ -39,6 +40,7 @@ Description: Collaboration fabric where LLM agents propose, categorize, critique
   + [agent_identity_scope] is local_model, openai_codex, lm_studio_worker, codex_cli_worker, named_thread, imported_snapshot, or unknown_agent
   + [model_lens_scope] is the model, prompt packet, context stream, task frame, and temperature or reasoning posture that shaped the contribution
   + [authority_coordinator] is Codex, the user, or a declared local authority gate that decides whether a substitution is accepted
+  + [codex_conversation_agent_spawn_node] is the launch membrane that attaches a root submission to a Codex app conversation and prepares gated LM Studio hosted Codex CLI worker candidates
   + [substitution_scope] is local_task, project_branch, SOP_subject, source_document, implementation_patch, qualified_packet, or archived_experiment
   + [capture_receipt] is the stored worker output, prompt, context slice, model lane, timestamp, validation, and outside
   + [substitution_gate] is evidence, tests, authority boundary, source preservation, lineage, dissent, Security, Honesty, frame reference, and local identity review
@@ -54,6 +56,7 @@ Description: Collaboration fabric where LLM agents propose, categorize, critique
   = must: decompose concept_proposal before linking or extension recommendation
   = must: run fabric_linking_pass before treating a fabric_extension_recommendation as ready
   = must: route specification_justification_packet through SJS-style source preservation, justification, planning, and authority checks before implementation
+  = must: use CodexConversationAgentSpawnNode when a root submission needs Codex app attached worker spawning or spawn planning
   = must: treat agent_vote as model-lens signal, not authority
   = must: keep primacy_vote and substitution_vote separate from proof and authority
   = must: preserve capture_receipt for every agent_contribution considered for substitution

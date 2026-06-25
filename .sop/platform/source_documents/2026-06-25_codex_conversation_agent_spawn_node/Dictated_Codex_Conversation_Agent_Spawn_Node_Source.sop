@@ -1,0 +1,17 @@
+Subject: Dictated Codex Conversation Agent Spawn Node Source
+
+Description: Preserved source note for the node that spawns LM Studio hosted Codex CLI instances around a root submission attached to a Codex app conversation.
+
+& [DictatedCodexConversationAgentSpawnNodeSource] is the preserved user direction
+  + [source_status] is preserved_raw_direction
+  + [captured_request] is that should be the node that spawns instances of Codex CLI hosted by LM Studio to coordinate agents around a job as defined by the root submission attached to a Codex app conversation
+  + [root_submission_shape] is the original user or agent submission that defines the job
+  + [conversation_attachment_shape] is the Codex app conversation that owns the human-facing authority and re-entry context
+  + [spawn_shape] is a controlled node that launches or queues Codex CLI instances through LM Studio-hosted local inference only after gates pass
+  + [coordination_shape] is worker agents orbiting the job frame and returning captured contributions into the LLM agent collaboration fabric
+  + [preservation_boundary] is source direction only, not implementation authority until processed and gated
+  + [outside] is automatic spawning, unbounded Codex CLI launch, hidden cost, credentials, direct file mutation, and worker authority without Codex app review
+
+  = must: preserve root submission and Codex app conversation attachment
+  = must: treat Codex CLI hosted by LM Studio as a desired node shape subject to context and launch gates
+  = must: keep spawning blocked until stop, cost, capture, concurrency, context, and authority gates are visible

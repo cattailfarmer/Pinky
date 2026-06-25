@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is LLM Agent Collaboration Fabric
+  + [focus_subject] is Codex Conversation Agent Spawn Node
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the user-collaboration pattern can become a hivemind specification and artifact review board where user or AI proposals are decomposed, linked, recommended, voted, and allowed to substitute source artifacts only through capture, lineage, and authority gates
-  + [inside] is LLMAgentCollaborationFabric.sop, Dictated_Hivemind_Decomposition_Addendum_Source.sop, SOPTaskManager.sop, CodexLMStudioOrchestrationWorkspace.sop, LocalAIManagerPrimary.sop, ConceptRefinementFabric.sop, ConceptAuthorityQualification.sop, SecurityHonestyGovernance.sop, FrameReferenceIntegrity.sop, LocalIdentityConsumption.sop, NarrativeSubjectFileTable.sop, 2026-06-25_llm_agent_collaboration_fabric_095.hg.sop, 2026-06-25_operating_loop_tick_043.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when proposal origin, decomposition, fabric links, extension recommendations, and agent votes remain model-lens signals, source artifacts are preserved, artifact substitution remains scoped and receipt-bearing, and implementation stays blocked behind capture, proof, cost, stop, SJS, Security, Honesty, frame-reference, local identity, and user or Codex authority gates
-  + [outside] is hidden model state, unsupervised daemon, automatic agent spawning, unreviewed file replacement, public ranking, remote voting, hidden consensus, direct worker mutation, destructive action, credentials, unrelated dirty files, truth by model vote, erased source lineage, and continuing after explicit stop
+  + [right_hemisphere_draw] is the hivemind collaboration fabric needs a spawn membrane where a root submission attached to a Codex app conversation becomes a bounded job frame and gated LM Studio hosted Codex CLI worker plan
+  + [inside] is CodexConversationAgentSpawnNode.sop, LLMAgentCollaborationFabric.sop, CodexLMStudioOrchestrationWorkspace.sop, LocalAIManagerPrimary.sop, SOPTaskManager.sop, TaskFrameLaunchQueue.sop, SOPWorkerBootPacket.sop, SOPLanguagePrimerForLocalAgents.sop, SecurityHonestyGovernance.sop, FrameReferenceIntegrity.sop, LocalIdentityConsumption.sop, NarrativeSubjectFileTable.sop, 2026-06-25_codex_conversation_agent_spawn_node_096.hg.sop, 2026-06-25_operating_loop_tick_044.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when root submission, conversation attachment, job frame, spawn plan, worker candidates, context fit, provider fit, cost, stop, capture, dirty-file, and authority gates remain distinct and implementation stays blocked until those gates are explicitly satisfied
+  + [outside] is hidden model state, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, truth by model vote, erased source lineage, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_043.sop
-  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or design a local synthetic hivemind proposal decomposition thread
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_044.sop
+  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or design a local synthetic spawn plan prototype
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -51,6 +51,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat concept_refinement_fabric as the completed Task_164 anchor
   = must: treat concept_authority_qualification as the completed Task_165 anchor
   = must: treat llm_agent_collaboration_fabric as the completed Task_166 anchor
+  = must: treat codex_conversation_agent_spawn_node as the completed Task_167 anchor
   = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible

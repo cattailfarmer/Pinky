@@ -158,14 +158,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_Hivemind_Decomposition_Addendum_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_llm_agent_collaboration_fabric_095.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_043.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_codex_conversation_agent_spawn_node\Dictated_Codex_Conversation_Agent_Spawn_Node_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_codex_conversation_agent_spawn_node_096.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_044.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is LLM Agent Collaboration Fabric
-  + [active_root_frame] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
+  + [registry_scope] is Codex Conversation Agent Spawn Node
+  + [active_root_frame] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 37
+  + [closed_frame_count] is 38
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -565,9 +569,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: require evidence and moderation gates before community_qualified status
   = should: begin future prototypes with synthetic local response packets only
 
-& [AttentionFrame_2026_06_25_LLMAgentCollaborationFabric] is the active semantic stack frame for LLM agent artifact collaboration
+& [AttentionFrame_2026_06_25_LLMAgentCollaborationFabric] is the semantic stack frame for LLM agent artifact collaboration
   + [frame_id] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_concept_authority_qualification
   + [child_frame_set] is LLMAgentCollaborationFabric, HivemindSpecificationJustificationPlatform, ProposalDecompositionProtocol, FabricExtensionRecommendationProtocol, SOPTaskManager, CodexLMStudioOrchestrationWorkspace, LocalAIManagerPrimary, ConceptRefinementFabric, ConceptAuthorityQualification, AgentContributionShape, AgentVotingPolicy, ArtifactSubstitutionProtocol, source_preservation, operating_loop_tick_043, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -588,11 +592,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: require substitution receipts before accepting artifact replacement
   = should: begin future prototypes with synthetic local collaboration threads only
 
+& [AttentionFrame_2026_06_25_CodexConversationAgentSpawnNode] is the active semantic stack frame for Codex app attached agent spawning
+  + [frame_id] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
+  + [child_frame_set] is CodexConversationAgentSpawnNode, LLMAgentCollaborationFabric, CodexLMStudioOrchestrationWorkspace, LocalAIManagerPrimary, SOPTaskManager, TaskFrameLaunchQueue, RootSubmissionJobFrame, SpawnPlanProtocol, WorkerInstanceLaunchCandidate, source_preservation, operating_loop_tick_044, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is CodexConversationAgentSpawnNode.sop, LLMAgentCollaborationFabric.sop, CodexLMStudioOrchestrationWorkspace.sop, LocalAIManagerPrimary.sop, TaskFrameLaunchQueue.sop, Dictated_Codex_Conversation_Agent_Spawn_Node_Source.sop, 2026-06-25_codex_conversation_agent_spawn_node_096.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_044.sop
+  + [focus_register] is root_submission, codex_app_conversation, root_submission_packet, conversation_attachment, job_frame, spawn_node, spawn_plan, codex_cli_worker_instance, context_fit_gate, provider_fit_gate, cost_gate, stop_gate, capture_gate, dirty_file_gate, authority_gate, and return_surface
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or specify a local synthetic spawn plan prototype
+  + [delineation_register] is inside root submission framing, Codex app attachment, role-based worker planning, LM Studio hosted local-provider gate, worker packet, launch candidate, capture target, stop policy, authority review, and outside
+  + [periphery_register] is silent spawning, hidden spend, credential handling, unbounded launch, direct worker mutation, unreviewed file replacement, hidden model state, automatic artifact substitution, and unrelated dirty files
+  + [operation_register] is preserve_source, define_spawn_node, extend_collaboration_fabric, extend_orchestration_workspace, extend_task_manager, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, CodexConversationAgentSpawnNode.sop, LLMAgentCollaborationFabric update, CodexLMStudioOrchestrationWorkspace update, LocalAIManagerPrimary update, TaskFrameLaunchQueue update, source manifest, periphery record 096, and operating_loop_tick_044
+  + [wisdom_register] is the spawn node gives the collaboration fabric operational shape while preserving Codex app conversation as the authority and re-entry surface
+  + [caution_register] is actual Codex CLI hosted by LM Studio remains blocked until context fit, provider fidelity, cost, stop, capture, concurrency, dirty-file, and authority gates are proven
+  + [balance_register] is stable because root submission, conversation attachment, job frame, spawn plan, worker candidate, capture, authority, and outside remain distinct
+  + [integration_register] is Task_167 completed as SOP-only future specification while worker spawning remains blocked
+  + [frame_outside] is hidden model state, live worker spawning, direct mutation, unreviewed artifact replacement, hidden spend, credentials, destructive action, and unrelated workspace changes
+
+  = must: keep Codex app conversation as authority and final review surface
+  = must: keep spawn candidates blocked until gates are visible and accepted
+  = should: begin future prototypes with synthetic spawn plans only
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
+  + [active_root_frame] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_LLMAgentCollaborationFabric], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [llm_agent_collaboration_fabric], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_CodexConversationAgentSpawnNode], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [codex_conversation_agent_spawn_node], [operating_loop_tick], [balance_register], [integration_register], [outside]

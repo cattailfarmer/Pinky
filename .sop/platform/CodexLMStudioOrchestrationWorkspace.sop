@@ -17,6 +17,7 @@ Description: Canonical workspace contract for a local LM Studio manager process 
 @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\CaptureDirectory.sop
 @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
 @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
 
 & [CodexLMStudioOrchestrationWorkspace] is the local orchestration workspace for SOP-stream-managed Codex work
   + [pattern_role] is local_lm_studio_manager_primary_openai_codex_worker_on_demand
@@ -37,6 +38,7 @@ Description: Canonical workspace contract for a local LM Studio manager process 
   + [codex_job_proposal] is a proposed OpenAI Codex CLI job containing objective, working directory, allowed surface, blocked surface, command shape, capture target, proof gate, and outside
   + [codex_launch_gate] is Codex review of authority, cost, safety, scope, expected diff, stop policy, and capture target before launch
   + [openai_codex_worker_job] is a launched Codex CLI job using OpenAI inference and a bounded worker packet after codex_launch_gate passes
+  + [codex_conversation_agent_spawn_node] is the future node that attaches root submissions to Codex app conversations and prepares gated worker spawn plans
   + [result_capture] is raw worker output, diff, tests, validation, integration disposition, commit report, and loop tick
   + [current_lm_studio_endpoint] is http://127.0.0.1:1234/v1/models reachable on 2026-06-24
   + [available_local_model_set] is openai/gpt-oss-20b, qwen/qwen3.6-35b-a3b, google/gemma-4-e4b, and text-embedding-nomic-embed-text-v1.5
@@ -66,6 +68,7 @@ Description: Canonical workspace contract for a local LM Studio manager process 
   = must: represent LM Studio output as codex_job_proposal, not as launched work or integrated authority
   = must: prefer direct LM Studio endpoint for manager proposal calls while Codex CLI local-provider context overhead exceeds the loaded local context
   = must: route every codex_job_proposal through TaskFrameLaunchQueue before any OpenAI Codex CLI launch
+  = must: use CodexConversationAgentSpawnNode before coordinating multiple worker instances around a root submission attached to a Codex app conversation
   = must: require Codex launch review before any OpenAI-backed Codex worker job starts
   = must: capture raw worker output before validation and integration
   = must: update current focal point, manager state, runtime registry, periphery record, and operating-loop tick after meaningful workspace changes

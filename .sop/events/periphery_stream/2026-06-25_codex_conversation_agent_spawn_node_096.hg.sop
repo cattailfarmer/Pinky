@@ -1,0 +1,29 @@
+Subject: Codex Conversation Agent Spawn Node 096
+
+Description: SOP-HG realization event for the node that attaches a root submission to a Codex app conversation and coordinates LM Studio hosted Codex CLI worker instances.
+
+& [CodexConversationAgentSpawnNode_096] is the realized periphery event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is Codex Conversation Agent Spawn Node
+  + [source_question] is whether the LLM agent collaboration fabric should be the node that spawns Codex CLI instances hosted by LM Studio around a root submission attached to a Codex app conversation
+  + [primary_realization] is the spawn node must be a launch membrane, not a launcher by assumption: root submission attaches to Codex app conversation, becomes a job frame, receives a spawn plan, queues gated worker candidates, captures returns, and lets Codex app review integrate results
+  + [root_submission] is the job-defining origin
+  + [codex_app_conversation] is the human-facing authority and re-entry surface
+  + [spawn_plan] is the proposed set of roles, worker packets, provider routes, costs, stops, and captures
+  + [codex_cli_worker_instance] is a bounded worker candidate, not implicit authority
+  + [wisdom_register] is this node gives the hivemind fabric a concrete operational shape while preserving Codex app conversation as authority and re-entry context
+  + [caution_register] is actual Codex CLI hosted by LM Studio remains blocked until context fit, provider fidelity, stop, cost, capture, concurrency, dirty-file, and authority gates are proven
+  + [balance_register] is stable because root submission, conversation attachment, job frame, spawn plan, worker instance, capture, authority, and outside remain distinct
+  + [utility_horizon] is synthetic spawn plan prototype, role-based agent swarm planning, Codex app attached worker dashboard, LM Studio manager proposals, and future gated Codex CLI local-provider workers
+  + [next_step] is keep Task_161 ready or later prototype a synthetic spawn plan with no actual worker launch
+  + [outside] is silent spawning, hidden spend, credential handling, unbounded Codex CLI launch, direct worker mutation, automatic artifact substitution, and worker-owned authority
+
+  = must: treat this as future blocked implementation until gates exist
+  = must: keep Codex app conversation as authority and final review surface
+  = should: begin with synthetic spawn plans and blocked worker candidates
+
+N:codex_conversation_agent_spawn_node_096 -> C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
+E:extends -> LLMAgentCollaborationFabric, CodexLMStudioOrchestrationWorkspace, LocalAIManagerPrimary, SOPTaskManager, TaskFrameLaunchQueue
+E:anchors -> root_submission, codex_app_conversation, job_frame, spawn_plan, codex_cli_worker_instance, capture_gate, authority_gate
+E:guards -> context_fit_gate, provider_fit_gate, cost_gate, stop_gate, dirty_file_gate, capture_gate, authority_gate

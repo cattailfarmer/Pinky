@@ -9,6 +9,7 @@ Description: Correction contract making LM Studio the primary low-cost manager l
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
 
 & [LocalAIManagerPrimary] is the target architecture for the low-reasoning manager loop
   + [pattern_role] is local_lm_studio_manager_primary_openai_codex_worker_on_demand
@@ -22,6 +23,7 @@ Description: Correction contract making LM Studio the primary low-cost manager l
   + [lightweight_sop_framework] is a compact working-path bundle containing focal point, queue, runbook, packet template, allowed surface, blocked surface, proof gates, and outside
   + [manager_input] is lightweight_sop_context_stream produced from local .sop records without needing OpenAI Codex each tick
   + [manager_output] is one job proposal, blocked note, or request for higher-demand Codex attention
+  + [spawn_node_role] is propose spawn plans and blocked worker candidates for CodexConversationAgentSpawnNode, not launch them directly
   + [handoff_threshold] is when the local manager detects repo mutation, complex implementation, uncertain authority, failing tests, specification ambiguity, or high-risk action
   + [authority_boundary] is LM Studio may manage and propose but may not own repo mutation, credentials, spending, commits, pushes, destructive actions, or unbounded launch
   + [allowance_goal] is preserve OpenAI Codex allowance for work where higher reasoning and tool authority matter
@@ -36,6 +38,7 @@ Description: Correction contract making LM Studio the primary low-cost manager l
   = must: build lightweight_sop_context_stream from local .sop files so the manager can operate without this Codex app authoring every tick
   = must: keep Codex-mediated LM Studio routes as bootstrap, diagnostic, or fallback only while direct endpoint manager transport is viable
   = must: route every proposed OpenAI Codex job through capture, launch gate, cost gate, stop gate, and dirty-file boundary
+  = must: keep CodexConversationAgentSpawnNode spawning blocked until Codex app or user authority accepts launch candidates
   = should: keep the manager model and SOP bundle small enough for fast local iteration
   = should: treat manager failures as calibration signals for the lightweight SOP bundle
   - never: spend OpenAI Codex allowance on routine low-reasoning manager scans when LM Studio can do the job
