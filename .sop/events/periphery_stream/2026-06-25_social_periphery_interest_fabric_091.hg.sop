@@ -1,0 +1,29 @@
+Subject: Social Periphery Interest Fabric Realization
+
+Description: SOP-HG record for adapting the crawler/search pattern into a social-network fabric of shared interest digests and periphery overlap.
+
+@ [source] C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop
+
+& [SOPHypergraphRecord] is social_periphery_interest_fabric_091
+  + [record_type] is periphery_realization
+  + [focus_subject] is Social Periphery Interest Fabric
+  + [inside] is crawler pattern lineage, local interest digest, shared interest space, local social network, periphery signature, synchronized perspective, recommendation candidate, trust lens, explanation gate, and implementation boundary
+  + [boundary] is user-owned digests, consented sharing, compatible trust scopes, visible recommendation explanation, Security/Honesty review, local identity boundary, privacy gates, and no runtime crawler
+  + [outside] is silent browsing crawl, social graph scraping, private message capture, credentials, hidden identity, raw private data, global truth, centralized compulsory ranking, and implementation before gates
+
+  = realization: the Google-like pattern generalizes from crawling public documents to mapping consented interest/periphery packets across social networks
+  = caution: the same pattern becomes surveillance if raw browsing, private social data, or unconsented social graph edges become scan surfaces
+  = wisdom: shared periphery can surface recommendations and association routes when overlap is explainable, trust-lensed, and kept distinct from truth or endorsement
+  = implementation_status: future blocked specification, with first safe prototype limited to local synthetic packet comparison
+
+/ [local_interest_digest], [periphery_signature] -(Forms)> [InterestPacketShape], [shared_interest_space], [privacy_scope], [trust_scope]
+* [local_social_network], [InterestPacketShape] -(Transfers)> [community_interest_coordination], [synchronized_perspective], [private_outside]
+* [cross_network_periphery_scan], [periphery_signature] -(Raises)> [recommendation_candidate], [recommendation_explanation], [manipulation_risk]
+* [SecurityHonestyGovernance], [LocalIdentityConsumption] -(Gates)> [recommendation_candidate], [shared_packet], [outside]
+
+(social_periphery_interest_fabric_realization) :local_interest_digest: /privacy_scope and explanation_gate/ |network_outside|
+  + [local_interest_digest] is reviewed user-owned interest and periphery summary
+  + [periphery_signature] is overlap-search context
+  + [explanation_gate] is why a recommendation surfaced and what uncertainty remains
+  |network_outside| raw browsing, private messages, credentials, hidden identity, surveillance, global truth, centralized ranking, and implementation before gates

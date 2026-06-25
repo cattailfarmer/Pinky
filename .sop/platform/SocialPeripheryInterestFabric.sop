@@ -1,0 +1,122 @@
+Subject: Social Periphery Interest Fabric
+
+Description: Future specification for mapping interest-node relationships across local social networks through consented periphery overlap and trust-lensed recommendations.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+
+& [SocialPeripheryInterestFabric] is the future network map over consented interest and periphery signals
+  + [spec_status] is future_blocked_specification
+  + [pattern_lineage] is public web crawler and search ranking pattern adapted to user-owned semantic interest packets
+  + [operational_scope] is relationships between nodes of interest across internet sources, local SOP records, and opt-in shared social periphery packets
+  + [purpose_scope] is community interest coordination, trust-lensed discovery, synchronized perspective finding, and recommendation explanation
+  + [local_interest_digest] is a user-owned summary of an interest node, source relation, periphery context, evidence trace, and outside boundary
+  + [shared_interest_space] is the user's reviewed set of digested interests that may be shared with a local social network under explicit policy
+  + [local_social_network] is the user's selected trusted contacts, groups, communities, or lenses that may exchange interest packets
+  + [interest_node] is a subject, source, idea, question, project, document, page, artifact, community topic, or SOP record that attracts attention
+  + [interest_relation] is a weighted edge between interest_nodes based on correlation, causation claim, citation, co-attention, shared periphery, trust lens, or user judgement
+  + [periphery_signature] is the surrounding subject set, relation hints, boundary notes, uncertainty, and caution that travel with a local_interest_digest
+  + [cross_network_periphery_scan] is future opt-in comparison of shared periphery signatures across social networks
+  + [synchronized_perspective] is independently shared periphery overlap across different users, communities, or lenses
+  + [recommendation_candidate] is a surfaced interest_node or association route raised by overlap, trust-lens weighting, and explanation gates
+  + [recommendation_explanation] is why the node surfaced, which periphery overlaps contributed, which trust lenses affected it, and what uncertainty remains
+  + [crawler_boundary] is scan only user-consented packets, public sources selected by policy, or local records selected by the user
+  + [implementation_boundary] is no internet crawler, social graph scanner, browser extension, packet exchange, or recommendation automation until required gates exist
+  + [residual_outside] is raw browsing history, private messages, credentials, hidden identity, unconsented social graph, surveillance, global truth, and central ranking monopoly
+
+  ? [use_when: SOP Swarm Fabric needs to express social-network interest mapping, shared periphery overlap, or trust-lensed recommendations]
+    = activate [SocialPeripheryInterestFabric]
+
+  = must: treat this as the same crawler-search pattern at a different semantic and social scope
+  = must: keep local_interest_digest user-owned and local by default
+  = must: share only reviewed digests or packets, never raw private browsing or private social data by default
+  = must: treat local_social_network as the transfer medium for community interest coordination, not as an extraction target
+  = must: compare periphery_signature overlap before raising cross-network recommendations
+  = must: label synchronized_perspective as correlation and social resonance, not truth, safety, or endorsement
+  = must: route recommendation_candidate through trust_lens, Security, Honesty, LocalIdentityConsumption, and explanation gates
+  = must: make every recommendation explainable by visible overlaps, sources, trust lenses, and residual outside
+  = must: treat crawler_boundary as kernel-level before any automation
+  = must: preserve dissenting or cautionary periphery as part of the recommendation context
+  = should: support local-only use before cross-network exchange
+  = should: let users maintain multiple social lenses such as friends, project group, expert circle, skeptic circle, safety lens, and topic community
+  = should: decay stale periphery signatures unless reaffirmed
+  - never: silently crawl a user's browser, private messages, contacts, credentials, or social graph
+  - never: treat popularity, heat, overlap, or synchronized perspective as proof of truth
+  - never: build centralized compulsory rankings from user interest packets
+  - never: share packets beyond the user's selected social or trust scope
+  - never: implement network exchange from this specification alone
+
+& [InterestPacketShape] is the future shareable digest shape for one node of interest
+  + [packet_status] is future_schema_candidate
+  + [interest_node_key] is normalized subject handle or source-bound interest handle
+  + [source_pointer] is URL, SOP path, document pointer, content hash, or redacted source handle
+  + [digest_summary] is user-reviewed description of what attracted attention
+  + [periphery_signature] is nearby subjects, relation hints, uncertainty, caution, and outside
+  + [relation_vector] is correlation, citation, co-attention, contrast, support, contradiction, causation_claim, or route_hint
+  + [evidence_pointer_set] is source, citation, screenshot hash, SOP path, review note, or user assertion label
+  + [trust_scope] is self, friend, group, community, expert, topic, temporary, anonymous, public, or blocked
+  + [privacy_scope] is local_only, selected_contacts, selected_group, federated_lens, public_digest, or withdrawn
+  + [rating_vector] is usefulness, relevance, novelty, confidence, uncertainty, caution, quality, and objection
+  + [explanation_note] is why the packet exists and how it should or should not influence recommendations
+  + [expiry_or_decay] is when the packet loses weight unless reaffirmed
+  + [outside] is raw private content, hidden identity, proof of truth, compulsory ranking, and unreviewed data
+
+  = must: carry privacy_scope and trust_scope
+  = must: distinguish evidence_pointer_set from user judgement and correlation heat
+  = must: allow withdrawal, tombstone, or local-only lock
+
+& [PeripheryOverlapRecommendation] is the recommendation pattern from shared periphery across social networks
+  + [overlap_input] is two or more periphery_signature records shared under compatible privacy_scope and trust_scope
+  + [overlap_signal] is shared nearby subjects, relation hints, repeated route hints, common evidence pointer patterns, or complementary caution notes
+  + [network_scope] is one local social network, selected trusted group, federated community, or cross-lens comparison
+  + [recommendation_trigger] is overlap depth, trust-lens weight, novelty, relevance to current focus, or repeated independent emergence
+  + [recommendation_output] is interest_node suggestion, route_to_source, related community signal, cautionary warning, or ask_user_to_review
+  + [explanation_required] is overlap sources, trust lens used, uncertainty, dissent, manipulation risk, and local reason for surfacing
+  + [outside] is proof of truth, universal endorsement, hidden ranking, and unexplainable promotion
+
+  = must: require explanation_required before recommendation promotion
+  = must: treat weak overlap as periphery, not focus
+  = must: route suspicious overlap through manipulation_risk inspection
+  = should: let the user accept, ignore, downrank, or block the recommendation
+
+& [FederatedPeripheryCrawlerBoundary] is the future crawler boundary for social periphery scanning
+  + [crawler_status] is future_blocked
+  + [allowed_scan_surface] is local_interest_digest, shared_interest_space, opt-in InterestPacketShape records, and selected public sources under user policy
+  + [blocked_scan_surface] is raw private browsing, contacts, private messages, forms, credentials, unconsented social graph, and background telemetry
+  + [scan_goal] is find compatible periphery signatures, association routes, community interest clusters, and recommendation candidates
+  + [scan_output] is local index update, periphery overlap report, recommendation candidate, manipulation warning, or outside note
+  + [abuse_risk] is surveillance, deanonymization, Sybil influence, brigading, targeted manipulation, popularity capture, and social pressure loops
+  + [outside] is crawler automation before privacy, consent, transport, and abuse gates
+
+  = must: require consent, visibility, pause, deletion, redaction, and export controls before any crawler automation
+  = must: keep crawler output local unless user chooses a shareable packet
+  = must: make abuse_risk visible in every cross-network scan report
+
+& [ImplementationGate_SocialPeripheryInterestFabric] is the future implementation readiness boundary
+  + [implementation_status] is blocked_until_gates_satisfied
+  + [required_gate_set] is privacy_threat_model, consent_interface, packet_schema, redaction_engine, identity_signature_model, trust_lens_engine, recommendation_explanation_model, social_scope_policy, federated_transport_policy, manipulation_resistance_model, local_storage_model, export_delete_controls, and abuse_response_policy
+  + [first_safe_prototype] is local-only synthetic packet comparison over hand-written InterestPacketShape samples
+  + [blocked_work] is browser crawler, social graph import, packet federation, recommendation automation, public indexing, remote sync, and contact discovery
+  + [outside] is any implementation that collects, shares, ranks, or recommends user activity without explicit local control
+
+  = must: begin with synthetic or user-provided sample packets before any real internet or social data
+  = must: prove explanation quality and privacy boundary before any recommendation automation
+  = must: keep network exchange blocked until transport, identity, abuse, and deletion gates exist
+
+(social_periphery_interest_fabric) :local_interest_digest: /privacy_scope and trust_scope/ |private_outside|
+  + [local_interest_digest] is user-owned reviewed interest and periphery record
+  + [periphery_signature] is surrounding context that enables overlap search
+  + [shared_interest_space] is selected digest set shared under policy
+  + [synchronized_perspective] is compatible overlap across social networks or lenses
+  + [recommendation_candidate] is surfaced only with explanation and gates
+  |private_outside| raw browsing, private messages, credentials, hidden identity, unconsented social graph, surveillance, and global truth
+
+/ [local_interest_digest], [periphery_signature] -(Packetizes)> [InterestPacketShape], [privacy_scope], [trust_scope], [outside]
+* [InterestPacketShape], [local_social_network], [trust_lens] -(Transfers)> [shared_interest_space], [community_interest_coordination], [private_outside]
+* [periphery_signature], [cross_network_periphery_scan] -(Finds)> [synchronized_perspective], [recommendation_candidate], [manipulation_risk]
+* [recommendation_candidate], [recommendation_explanation], [SecurityHonestyGovernance] -(PromotesOrBlocks)> [user_review], [focus_candidate], [outside]

@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 13
+  + [subject_count] is 14
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -122,13 +122,24 @@ Description: Seed table mapping narrated subject matters to files of interest fo
 & [Subject_sop_swarm_fabric] is a narrative subject entry
   + [subject_key] is sop_swarm_fabric
   + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_sop_swarm_fabric_087.hg.sop
-  + [file_interest_set] is C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop, C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop, C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_035.sop
-  + [framework_periphery_set] is local_attention_framework, semantic_reentry_lookup_framework, trust_lens_framework, privacy_governance_framework, swarm_packet_framework, moderation_context_framework, viral_attention_pattern_framework, and dead_internet_recovery_framework
-  + [relation_reason_set] is future fabric specification, root import, layered inspection bridge, subject inquiry bridge, semantic pointer bridge, correlation bridge, Security/Honesty governance, local identity boundary, and current loop tick
-  + [search_phrase_set] is SOPSwarmFabric, SwarmAttentionPacket, TrustLensModel, AttentionCrawlerBoundary, ResonanceAndViralAttentionPolicy, DeadInternetRecoveryPattern, ImplementationOpenGate
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop, C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop, C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_035.sop
+  + [framework_periphery_set] is local_attention_framework, semantic_reentry_lookup_framework, trust_lens_framework, privacy_governance_framework, swarm_packet_framework, social_periphery_interest_framework, moderation_context_framework, viral_attention_pattern_framework, and dead_internet_recovery_framework
+  + [relation_reason_set] is future fabric specification, social periphery specialization, root import, layered inspection bridge, subject inquiry bridge, semantic pointer bridge, correlation bridge, Security/Honesty governance, local identity boundary, and current loop tick
+  + [search_phrase_set] is SOPSwarmFabric, SocialPeripheryInterestFabric, SwarmAttentionPacket, TrustLensModel, AttentionCrawlerBoundary, ResonanceAndViralAttentionPolicy, DeadInternetRecoveryPattern, ImplementationOpenGate
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is browser capture, remote sharing, raw browsing export, global truth, central moderation monopoly, runtime mutation, and implementation before gates
+
+& [Subject_social_periphery_interest_fabric] is a narrative subject entry
+  + [subject_key] is social_periphery_interest_fabric
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_social_periphery_interest_fabric_091.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop, C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop, C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_039.sop
+  + [framework_periphery_set] is social_periphery_interest_framework, sop_swarm_fabric_framework, semantic_correlation_framework, semantic_hash_framework, attention_weight_framework, security_honesty_framework, local_identity_framework, trust_lens_framework, and recommendation_explanation_framework
+  + [relation_reason_set] is social interest mapping contract, swarm fabric extension, correlation graph, semantic pointer bridge, weight scale, Security/Honesty governance, local identity boundary, and current loop tick
+  + [search_phrase_set] is SocialPeripheryInterestFabric, local_interest_digest, shared_interest_space, local_social_network, periphery_signature, synchronized_perspective, recommendation_candidate, federated periphery crawler
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is silent browsing crawl, social graph scraping, private message capture, hidden identity, global truth, centralized ranking monopoly, runtime mutation, and implementation before gates
 
 & [Subject_codex_lmstudio_orchestration_workspace] is a narrative subject entry
   + [subject_key] is codex_lmstudio_orchestration_workspace

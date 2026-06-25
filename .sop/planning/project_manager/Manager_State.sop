@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 1
-  + [completed_task_count] is 158
+  + [completed_task_count] is 159
   + [blocked_task_count] is 4
 
 & [CompletedTaskSet] is completed work
@@ -306,6 +306,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_output.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_review.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_codex_lmstudio_manager_dry_run_089.hg.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_037.sop
   + [Task_160_define_local_ai_manager_primary] is correct the orchestration architecture so LM Studio runs the routine low-reasoning manager loop locally and OpenAI Codex is reserved for high-demand worker and authority tasks
     = evidence: C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop, C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_local_ai_manager_primary\Dictated_Local_AI_Manager_Primary_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_local_ai_manager_primary_090.hg.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_038.sop
+  + [Task_162_define_social_periphery_interest_fabric] is define the future social periphery interest network where user-owned digested interest packets, local social networks, shared periphery overlap, trust lenses, and recommendation explanations adapt the public-web crawler pattern to a semantic social fabric
+    = evidence: C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop, C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_social_periphery_interest_fabric_091.hg.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_039.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_161_build_direct_lmstudio_endpoint_manager_runner] is build the local direct-endpoint manager runner that reads lightweight SOP context streams, calls LM Studio without OpenAI Codex allowance, captures proposal output, validates schema, and only marks Codex handoff candidates when handoff threshold is crossed

@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is local AI manager primary
+  + [focus_subject] is Social Periphery Interest Fabric
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is local AI should carry the low-reasoning manager clock so OpenAI Codex allowance is preserved for high-demand worker and authority turns
-  + [inside] is LocalAIManagerPrimary.sop, CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Runbook.sop, WorkerPacketTemplate.sop, SOPTaskManager.sop, LMStudioWorkerFunctionalLane.sop, Dictated_Local_AI_Manager_Primary_Source.sop, 2026-06-25_local_ai_manager_primary_090.hg.sop, 2026-06-25_operating_loop_tick_038.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when the next task preserves local LM Studio manager primacy, keeps OpenAI Codex for high-demand handoff, captures manager output, validates schema, and blocks direct mutation, credentials, destructive actions, hidden spend, and unrelated dirty files
-  + [outside] is hidden model state, unsupervised daemon, direct LM Studio mutation, direct LM Studio launch of OpenAI jobs, destructive action, credentials, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic spend, OpenAI routine-manager spend, and continuing after explicit stop
+  + [right_hemisphere_draw] is the crawler/search pattern can generalize from public documents to user-owned interest packets and shared periphery overlap across local social networks
+  + [inside] is SocialPeripheryInterestFabric.sop, SOPSwarmFabric.sop, SemanticCorrelationGraph.sop, SemanticHashIndex.sop, AttentionWeightScale.sop, SecurityHonestyGovernance.sop, LocalIdentityConsumption.sop, Dictated_Social_Periphery_Interest_Fabric_Source.sop, 2026-06-25_social_periphery_interest_fabric_091.hg.sop, 2026-06-25_operating_loop_tick_039.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task remains SOP-only, consent-gated, privacy-first, trust-lensed, explanation-required, implementation-blocked, and separate from raw crawling, social graph scraping, or truth claims
+  + [outside] is hidden model state, unsupervised daemon, browser crawler, social graph scraping, private message capture, direct remote sharing, recommendation automation, destructive action, credentials, unrelated dirty files, global truth by overlap, central ranking monopoly, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_038.sop
-  + [open_question] is how to implement the direct LM Studio endpoint manager runner while keeping it proposal-only and Codex-handoff gated
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_039.sop
+  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or design the privacy and consent gates for future social periphery prototypes
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -46,6 +46,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat codex_lmstudio_orchestration_workspace as the completed Task_157 anchor
   = must: treat codex_lmstudio_manager_dry_run as the completed Task_159 anchor
   = must: treat local_ai_manager_primary as the completed Task_160 anchor
+  = must: treat social_periphery_interest_fabric as the completed Task_162 anchor
   = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible

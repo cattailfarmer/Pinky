@@ -11,6 +11,8 @@ Description: Future implementation specification for a decentralized, local-firs
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_swarm_fabric\Dictated_SOP_Swarm_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop
 
 & [SOPSwarmFabric] is the future decentralized attention-fabric specification
   + [spec_status] is implementation_open_and_blocked
@@ -21,6 +23,8 @@ Description: Future implementation specification for a decentralized, local-firs
   + [trust_lens] is a user-selected weighting rule for whose judgement, moderation, or expertise affects recommendations
   + [moderation_context] is lens-specific judgment, rating, warning, or endorsement bound to source, subject, and reason
   + [viral_attention_pattern] is cross-user heat or recurrence, not truth, quality, endorsement, or safety
+  + [social_periphery_interest_fabric] is the specialization where shared interest digests and periphery signatures map social-network interest overlap and recommendations
+  + [network_mapping_lineage] is the public web crawler and search ranking pattern adapted to user-owned digested interest packets instead of raw public pages
   + [dead_internet_countermeasure] is provenance-aware human judgement, source traceability, trust-scoped recommendation, and manipulation detection
   + [implementation_boundary] is no networked capture, sharing, transport, crawling, or browser integration until future gates are satisfied
   + [residual_outside] is raw browsing history, private content, hidden user identity, unreviewed packets, global truth, and unbounded tracking
@@ -32,6 +36,7 @@ Description: Future implementation specification for a decentralized, local-firs
   = must: treat trust lenses as user-local weighting policies, not universal authority
   = must: treat moderation as context scoped by lens, domain, subject, and reason
   = must: separate attention heat, truth, safety, endorsement, popularity, novelty, and manipulation risk
+  = must: use SocialPeripheryInterestFabric when the fabric maps local social-network interest overlap, cross-network periphery, or trust-lensed recommendation candidates
   = must: route every shared signal through Security, Honesty, LocalIdentityConsumption, and privacy boundaries
   = must: make implementation dependent on a threat model, consent UI, packet schema, identity/signing scheme, storage model, and transport policy
   = should: support local-only use before any multi-user fabric exists
@@ -122,7 +127,7 @@ Description: Future implementation specification for a decentralized, local-firs
 
 & [ImplementationOpenGate] is the future implementation readiness boundary
   + [implementation_status] is blocked_until_gates_satisfied
-  + [required_gate_set] is privacy_threat_model, consent_interface, packet_schema, redaction_engine, identity_signature_model, local_storage_model, trust_lens_engine, moderation_model, transport_policy, abuse_resistance_model, and user_export_delete_controls
+  + [required_gate_set] is privacy_threat_model, consent_interface, packet_schema, redaction_engine, identity_signature_model, local_storage_model, trust_lens_engine, moderation_model, transport_policy, abuse_resistance_model, user_export_delete_controls, recommendation_explanation_model, social_scope_policy, and manipulation_resistance_model
   + [first_safe_prototype] is local-only manual packet drafting from a user-selected SOP subject or browser source
   + [blocked_work] is browser integration, packet exchange, peer transport, public swarm indexing, remote sync, recommendation automation, and crawler automation
   + [outside] is any implementation that collects, shares, or ranks user browsing without explicit local control

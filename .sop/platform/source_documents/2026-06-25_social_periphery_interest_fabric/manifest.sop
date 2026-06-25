@@ -1,0 +1,14 @@
+Subject: Social Periphery Interest Fabric Source Manifest
+
+Description: Manifest for source preservation before canonical Social Periphery Interest Fabric specification.
+
+& [SocialPeripheryInterestFabricSourceManifest] is the source-preservation manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+  + [related_contract] is C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+  + [source_kind] is dictated future-network refinement
+  + [preservation_status] is preserved
+  + [processing_status] is canonicalized
+
+  = must: keep dictated source intact
+  = must: cite this source from canonical contract and realization record

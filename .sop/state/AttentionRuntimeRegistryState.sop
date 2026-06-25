@@ -137,14 +137,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_local_ai_manager_primary\Dictated_Local_AI_Manager_Primary_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_local_ai_manager_primary_090.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_038.sop
+@ [source] C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_social_periphery_interest_fabric_091.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_039.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is local AI manager primary
-  + [active_root_frame] is attention_frame_2026_06_25_local_ai_manager_primary
+  + [registry_scope] is Social Periphery Interest Fabric
+  + [active_root_frame] is attention_frame_2026_06_25_social_periphery_interest_fabric
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 32
+  + [closed_frame_count] is 33
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -429,9 +433,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep Codex CLI local-provider manager mode blocked while effective context remains 8192
   = should: select direct endpoint manager runner as the next implementation route if user wants local manager operation
 
-& [AttentionFrame_2026_06_25_LocalAIManagerPrimary] is the active semantic stack frame for local manager primacy and OpenAI Codex allowance conservation
+& [AttentionFrame_2026_06_25_LocalAIManagerPrimary] is the semantic stack frame for local manager primacy and OpenAI Codex allowance conservation
   + [frame_id] is attention_frame_2026_06_25_local_ai_manager_primary
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_codex_lmstudio_manager_dry_run
   + [child_frame_set] is LocalAIManagerPrimary, CodexLMStudioOrchestrationWorkspace, WorkspaceState, Runbook, WorkerPacketTemplate, SOPTaskManager, LMStudioWorkerFunctionalLane, source_preservation, operating_loop_tick_038, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -452,11 +456,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: invoke OpenAI Codex only after handoff threshold or authority repair requires it
   = should: build direct endpoint manager runner next
 
+& [AttentionFrame_2026_06_25_SocialPeripheryInterestFabric] is the active semantic stack frame for social-network interest mapping and shared periphery recommendations
+  + [frame_id] is attention_frame_2026_06_25_social_periphery_interest_fabric
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_sop_swarm_fabric
+  + [child_frame_set] is SocialPeripheryInterestFabric, SOPSwarmFabric, InterestPacketShape, PeripheryOverlapRecommendation, FederatedPeripheryCrawlerBoundary, ImplementationGate, source_preservation, operating_loop_tick_039, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is SocialPeripheryInterestFabric.sop, SOPSwarmFabric.sop, SemanticCorrelationGraph.sop, SemanticHashIndex.sop, AttentionWeightScale.sop, Dictated_Social_Periphery_Interest_Fabric_Source.sop, 2026-06-25_social_periphery_interest_fabric_091.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_039.sop
+  + [focus_register] is crawler pattern lineage, local interest digest, shared interest space, local social network, periphery signature, synchronized perspective, recommendation candidate, trust lens, explanation gate, and implementation boundary
+  + [question_register] is whether to next return to Task_161 direct LM Studio manager runner or design privacy and consent gates for future social periphery prototypes
+  + [delineation_register] is inside user-owned digest, shared packet, social transfer medium, periphery overlap, recommendation explanation, trust scope, privacy scope, and outside
+  + [periphery_register] is silent crawling, social graph scraping, private message capture, credentials, hidden identity, global truth by overlap, centralized ranking monopoly, recommendation automation, and unrelated dirty files
+  + [operation_register] is preserve_source, define_social_periphery_interest_fabric, extend_swarm_fabric, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, SocialPeripheryInterestFabric.sop, SOPSwarmFabric update, source manifest, periphery record 091, and operating_loop_tick_039
+  + [wisdom_register] is the same crawler pattern can serve human agency when the shareable unit is a reviewed interest digest with periphery and explanation rather than raw surveillance data
+  + [caution_register] is cross-network overlap is recommendation heat and route evidence, not truth, consent, or automatic authority
+  + [balance_register] is stable because the specification separates interest digest, packet sharing, social transfer, overlap scan, recommendation explanation, and implementation gates
+  + [integration_register] is Task_162 completed as SOP-only future specification while network crawler implementation remains blocked under SOPSwarmFabric Task_156 gates
+  + [frame_outside] is hidden model state, raw browsing capture, private social capture, runtime crawler, remote packet exchange, recommendation automation, credentials, destructive action, and unrelated workspace changes
+
+  = must: keep Social Periphery Interest Fabric as future specification until privacy and consent gates exist
+  = must: treat synchronized perspective as correlation heat rather than truth
+  = should: start future prototypes with synthetic local packets only
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_local_ai_manager_primary
+  + [active_root_frame] is attention_frame_2026_06_25_social_periphery_interest_fabric
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_LocalAIManagerPrimary], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [local_ai_manager_primary], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_SocialPeripheryInterestFabric], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [social_periphery_interest_fabric], [operating_loop_tick], [balance_register], [integration_register], [outside]
