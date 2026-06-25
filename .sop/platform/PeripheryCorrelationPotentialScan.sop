@@ -1,0 +1,123 @@
+Subject: Periphery Correlation Potential Scan
+
+Description: Attention scan pattern for comparing the periphery of a new development against already-developed periphery to reveal possible utility without treating correlation as proof.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_periphery_correlation_potential_scan\Dictated_Periphery_Correlation_Potential_Scan_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+
+& [PeripheryCorrelationPotentialScan] is the scan that looks for utility where new periphery touches old periphery
+  + [scan_role] is cross_periphery_utility_discovery
+  + [new_development_set] is the current focus and its surrounding periphery
+  + [existing_periphery_set] is prior SOP work surfaces with nearby subject, relation, risk, or utility patterns
+  + [correlation_bridge] is the visible relation between a new periphery signal and an existing periphery surface
+  + [utility_candidate] is a possible tool, protocol, scaffold, manager action, or future specification revealed by the bridge
+  + [desirability_signal] is user agency, local ownership, re-entry fidelity, explanation quality, lowered OpenAI spend, safer recommendation, or stronger model transfer
+  + [evidence_path] is the SOP file set that made the correlation visible
+  + [promotion_gate] is Security, Honesty, frame reference, privacy, consent, source, and implementation readiness review before planning or building
+  + [residual_outside] is proof of truth, proof of utility, live network crawling, private capture, remote sharing, hidden cognition, and implementation authority
+
+  ? [use_when: a new development feels connected to older work and the system needs to discover useful next directions without exploding scope]
+    = activate [PeripheryCorrelationPotentialScan]
+
+  = must: start from named new_development_set and named existing_periphery_set
+  = must: record correlation_bridge before utility_candidate
+  = must: keep desirability_signal separate from evidence_path
+  = must: treat utility_candidate as periphery until promotion_gate passes
+  = must: route recommendation, crawler, social, and trust claims through SecurityHonestyGovernance and FrameReferenceIntegrity
+  = must: preserve privacy, consent, and local authority boundaries before any social or internet scope is treated as buildable
+  = should: prefer utility candidates that strengthen local-first agency, inspectability, and re-entry
+  - never: treat overlap, resonance, or heat as proof
+  - never: let a useful analogy become an implementation plan without gates
+
+& [CorrelationFinding_local_manager_social_fabric] is a discovered bridge
+  + [new_signal] is SocialPeripheryInterestFabric local interest digest and periphery signature
+  + [existing_surface] is LocalAIManagerPrimary lightweight SOP context stream and manager proposal lane
+  + [correlation_bridge] is local LM Studio can cheaply maintain, scan, and propose over user-owned interest digests while Codex stays authoritative for mutation and publication
+  + [utility_candidate] is local interest digest queue manager for proposal-only recommendations and next-subject routing
+  + [desirability_signal] is lowered OpenAI spend, local ownership, and always-visible authority boundary
+  + [promotion_gate] is direct endpoint runner, proposal capture, schema validation, launch threshold, and no automatic sharing
+  + [outside] is unsupervised daemon, direct repo mutation, hidden spend, and network recommendation automation
+
+& [CorrelationFinding_overlap_dimensional_probe] is a discovered bridge
+  + [new_signal] is synchronized perspective and shared periphery overlap
+  + [existing_surface] is PeripheryDimensionalProbe hot periphery and contextual anchor search
+  + [correlation_bridge] is repeated overlap can reveal candidate extra anchors that repair fragmented interpretation across model lenses
+  + [utility_candidate] is cross-model context anchoring for lower-resolution or alternate LLM workers
+  + [desirability_signal] is stronger semantic re-entry fidelity and better local worker comprehension
+  + [promotion_gate] is model transfer test, distinctness test, and caution against arbitrary word association
+  + [outside] is deterministic hidden-state recreation or proof that overlap means correctness
+
+& [CorrelationFinding_correlation_graph_interest_graph] is a discovered bridge
+  + [new_signal] is interest_node, interest_relation, recommendation_candidate, and trust_lens
+  + [existing_surface] is SemanticCorrelationGraph and AttentionWeightScale
+  + [correlation_bridge] is interest relations can reuse weighted semantic bucket correlation while preserving base_weight, directive_weight, and caution load
+  + [utility_candidate] is inspectable weighted interest graph with explanation receipts for why a recommendation surfaced
+  + [desirability_signal] is auditable ranking, local tuning, and visible uncertainty
+  + [promotion_gate] is explanation model, abuse model, trust-lens transparency, and no popularity-as-truth
+  + [outside] is central ranking monopoly, hidden algorithmic promotion, and global truth claims
+
+& [CorrelationFinding_scaffold_recommendation_profiles] is a discovered bridge
+  + [new_signal] is social periphery recommendation and community interest coordination
+  + [existing_surface] is AttentionScaffoldCompiler scaffold_profile selection
+  + [correlation_bridge] is recommendations can be compiled as purpose-fit attention scaffolds rather than generic suggestions
+  + [utility_candidate] is study_scaffold, research_scaffold, project_memory_scaffold, social_review_scaffold, and game_agent_scaffold recommendation profiles
+  + [desirability_signal] is recommendations become actionable frames with focus, periphery, gates, and expected output
+  + [promotion_gate] is scaffold fit evidence, reverse walk review, and validation need
+  + [outside] is treating a compelling scaffold as proven optimal
+
+& [CorrelationFinding_subject_index_memory_router] is a discovered bridge
+  + [new_signal] is periphery_signature and interest_node source pointer
+  + [existing_surface] is NarrativeSubjectFileIndex, NarrativeSubjectFileTable, and SurfacePeripheryInquiryIndex
+  + [correlation_bridge] is narrative subjects can route into files of interest before broad search, turning periphery into a personal knowledge router
+  + [utility_candidate] is what-related-SOP-should-I-inspect-next and why-this-came-up navigation
+  + [desirability_signal] is fast re-entry, lower search noise, and better context continuity
+  + [promotion_gate] is index coverage status, relation reasons, and stale-path review
+  + [outside] is exhaustive repository map or proof of semantic identity
+
+& [CorrelationFinding_frame_reference_web_safety] is a discovered bridge
+  + [new_signal] is internet-scale mapping, social recommendations, and synchronized periphery
+  + [existing_surface] is FrameReferenceIntegrity and SecurityHonestyGovernance
+  + [correlation_bridge] is recommendation systems need to distinguish observed source, presented frame, user judgement, social heat, and manipulation pressure
+  + [utility_candidate] is frame-aware recommendation safety and painted-frame detection for social/web attention maps
+  + [desirability_signal] is reduced manipulation risk and better separation of heat from truth
+  + [promotion_gate] is frame-reference check, evidence refresh, manipulation-risk inspection, and user-visible explanation
+  + [outside] is trusting viral attention, mistaking presented frames for reality, and hidden social pressure loops
+
+& [CorrelationFinding_security_honesty_trust_lens_kernel] is a discovered bridge
+  + [new_signal] is trust_lens, moderation_context, recommendation_explanation, and manipulation_risk
+  + [existing_surface] is SecurityHonestyGovernance, BoundaryFacultyInspection, and LocalIdentityConsumption
+  + [correlation_bridge] is trust lenses need kernel-level truth-status, boundary-integrity, local-identity, and consumption checks before promotion
+  + [utility_candidate] is recommendation antivirus layer for false authority, Sybil heat, unsafe sharing, and identity confusion
+  + [desirability_signal] is safer local autonomy and more honest representation
+  + [promotion_gate] is boundary inspection, local proof, identity scope, and claim-status labeling
+  + [outside] is authority by assertion or hidden identity capture
+
+& [PotentialUtilitySet] is the utility horizon revealed by this scan
+  + [personal_semantic_recommender] is local-only recommendation over user-owned SOP and hand-reviewed interest digests
+  + [project_memory_router] is subject-to-file re-entry for what to inspect next
+  + [synthetic_social_packet_lab] is local testbed for opt-in InterestPacketShape samples without real social data
+  + [cross_model_anchor_calibrator] is extra-anchor testing for LM Studio and other lower-resolution workers
+  + [trust_lens_browser_layer] is future frame-aware recommendation surface for public sources after privacy and consent gates
+  + [manager_loop_task_selector] is local LM Studio proposal selection based on periphery heat and ready-task boundaries
+  + [community_interest_fabric] is future federated interest-space exchange only after packet, identity, privacy, abuse, and deletion gates
+
+  = must: treat all utility entries as candidates until their promotion gates pass
+  = should: prototype first with local SOP files and synthetic packets
+
+(periphery_correlation_potential_scan) :utility_candidate: /correlation_bridge and promotion_gate/ |residual_outside|
+  + [new_development_set] is the active focus periphery being compared
+  + [existing_periphery_set] is older SOP surfaces with related signals
+  + [correlation_bridge] is the visible relation that makes a candidate plausible
+  + [utility_candidate] is the possible tool, scaffold, or protocol revealed
+  + [promotion_gate] is the review before utility becomes plan
+  |residual_outside| proof, implementation authority, private capture, remote sharing, hidden cognition, and truth by resonance
+
+/ [new_development_set], [existing_periphery_set] -(Scans)> [correlation_bridge], [residual_outside]
+* [correlation_bridge], [desirability_signal], [promotion_gate] -(Reveals)> [utility_candidate], [outside]

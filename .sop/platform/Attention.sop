@@ -73,6 +73,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [periphery_repository] is C:\Project\Pinky\.sop\platform\PeripheryRepository.sop
   + [sop_swarm_fabric] is C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
   + [social_periphery_interest_fabric] is C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+  + [periphery_correlation_potential_scan] is C:\Project\Pinky\.sop\platform\PeripheryCorrelationPotentialScan.sop
   + [repo_first_internal_scan] is C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
   + [changelog_correlation_weight_net] is C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop
   + [attention_weight_scale] is C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
@@ -158,6 +159,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :periphery_repo: C:\Project\Pinky\.sop\platform\PeripheryRepository.sop
   :sop_swarm_fabric: C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
   :social_periphery_interest_fabric: C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+  :periphery_correlation_potential_scan: C:\Project\Pinky\.sop\platform\PeripheryCorrelationPotentialScan.sop
   :repo_first_scan: C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
   :weight_net: C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop
   :weight_scale: C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
@@ -238,6 +240,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use the periphery repo for slow background realizations of correlations missed during primary attention formation
   = must: use sop_swarm_fabric only as a future blocked specification when local-first shared attention fabric, trust lenses, viral attention patterns, or dead-internet countermeasures are in scope
   = must: use social_periphery_interest_fabric when social-network interest mapping, shared periphery overlap, synchronized perspectives, or trust-lensed recommendations are in scope
+  = must: use periphery_correlation_potential_scan when new developments should be compared against older periphery to reveal possible utility without treating correlation as proof
   = must: use repo_first_scan when internal reflection spans committed or staged version bookends
   = must: use changelog_correlation_weight_net when mapping changelog units to subjects through narrative and justification weights
   = must: use attention_weight_scale when correlation heat needs units, resolution bands, scan depth, or confidence separation

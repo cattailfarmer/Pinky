@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 14
+  + [subject_count] is 15
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -140,6 +140,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is silent browsing crawl, social graph scraping, private message capture, hidden identity, global truth, centralized ranking monopoly, runtime mutation, and implementation before gates
+
+& [Subject_periphery_correlation_potential_scan] is a narrative subject entry
+  + [subject_key] is periphery_correlation_potential_scan
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_periphery_correlation_potential_scan_092.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\PeripheryCorrelationPotentialScan.sop, C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop, C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop, C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop, C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_040.sop
+  + [framework_periphery_set] is periphery_correlation_scan_framework, social_periphery_interest_framework, local_manager_framework, semantic_correlation_framework, dimensional_probe_framework, scaffold_compiler_framework, frame_reference_framework, security_honesty_framework, narrative_subject_lookup_framework, and manager_loop_framework
+  + [relation_reason_set] is scan contract, active social periphery focus, swarm fabric extension, local manager primacy, hot periphery dimensional anchors, weighted correlation bridge, purpose-fit scaffold bridge, frame-reference safety, Security/Honesty promotion gate, subject lookup, and current loop tick
+  + [search_phrase_set] is PeripheryCorrelationPotentialScan, correlation_bridge, utility_candidate, desirability_signal, promotion_gate, local interest digest queue manager, cross model anchor calibrator, project memory router, synthetic social packet lab
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is proof of utility, live network crawler, browser capture, social graph scraping, private messages, hidden model state, recommendation automation, and implementation before gates
 
 & [Subject_codex_lmstudio_orchestration_workspace] is a narrative subject entry
   + [subject_key] is codex_lmstudio_orchestration_workspace

@@ -1,0 +1,30 @@
+Subject: Periphery Correlation Potential Scan 092
+
+Description: SOP-HG realization event for scanning cross-periphery correlations between recent social periphery work and older SOP layers.
+
+& [PeripheryCorrelationPotentialScan_092] is the realized periphery scan event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is Periphery Correlation Potential Scan
+  + [source_question] is whether the periphery of these developments correlates to other periphery of already-developed work to reveal new potentials and desirable utility
+  + [new_development_set] is SocialPeripheryInterestFabric, SOPSwarmFabric, LocalAIManagerPrimary, local manager routing, shared periphery overlap, trust-lensed recommendation, and social interest packet design
+  + [existing_periphery_set] is PeripheryDimensionalProbe, SemanticCorrelationGraph, AttentionScaffoldCompiler, NarrativeSubjectFileTable, SurfacePeripheryInquiryIndex, FrameReferenceIntegrity, SecurityHonestyGovernance, BoundaryFacultyInspection, LocalIdentityConsumption, and AttentionRuntimeRegistryState
+  + [primary_realization] is yes, the new social and local-manager periphery lights up older work strongly enough to define a reusable scan pattern and a utility horizon
+  + [strongest_bridge] is local LM Studio manager can operate as a cheap local proposal scanner over SOP interest digests and periphery heat while Codex remains repo authority
+  + [second_bridge] is shared periphery overlap can become candidate dimensional anchors for cross-model comprehension and recommendation explanation
+  + [third_bridge] is semantic correlation graph weights can become the auditable relation layer for trust-lensed interest recommendations
+  + [utility_horizon] is personal semantic recommender, project-memory router, synthetic social packet lab, cross-model anchor calibrator, trust-lens browser layer, manager-loop task selector, and future community interest fabric
+  + [wisdom_register] is the useful shape is not a raw web crawler but a local-first periphery router that can later generalize to social or internet scale only through consented packets and explanation gates
+  + [caution_register] is correlation, heat, and synchronized perspective are not truth, consent, or implementation authority
+  + [balance_register] is stable because the scan names bridges, utility candidates, promotion gates, and outside separately
+  + [next_step] is either return to Task_161 direct LM Studio endpoint manager runner or prototype a synthetic local interest packet comparison after gates are specified
+  + [outside] is live crawler, browser capture, social graph scraping, private messages, credentials, remote packet exchange, automatic recommendations, proof of utility, and hidden model state
+
+  = must: keep utility candidates in periphery until promotion gates pass
+  = must: feed the scan into narrative subject lookup and attention root imports
+  = should: use this scan pattern again whenever a new high-heat development seems connected to older work
+
+N:periphery_correlation_potential_scan_092 -> C:\Project\Pinky\.sop\platform\PeripheryCorrelationPotentialScan.sop
+E:scans -> SocialPeripheryInterestFabric, SOPSwarmFabric, LocalAIManagerPrimary, PeripheryDimensionalProbe, SemanticCorrelationGraph, AttentionScaffoldCompiler, FrameReferenceIntegrity, SecurityHonestyGovernance
+E:reveals -> personal_semantic_recommender, project_memory_router, synthetic_social_packet_lab, cross_model_anchor_calibrator, manager_loop_task_selector
+E:guards -> privacy_gate, consent_gate, SecurityHonestyGovernance, FrameReferenceIntegrity, LocalIdentityConsumption
