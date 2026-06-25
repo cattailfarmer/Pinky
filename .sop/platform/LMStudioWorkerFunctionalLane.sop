@@ -21,6 +21,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_lmstudio_limited_worker_pilot_queue\Derived_LMStudio_Limited_Worker_Pilot_Queue_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pressure_impact_thinkabout_worker_latch\Derived_Pressure_Impact_ThinkAbout_Worker_Latch_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
 
 & [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
   + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
@@ -43,6 +44,9 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [first_pilot_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
   + [first_pilot_result] is pressure_impact_thinkabout_016 accepted retry_001 as score 100 strong after task-fit latch rejected one validator-strong external-example drift
   + [functional_definition] is a local worker can complete a non-mutating booted SOP inference job in scratch_prompt_only mode, produce exact SOP output, pass validator, and return captured proposal text for Codex review
+  + [manager_lane_extension] is LM Studio may act as a local manager over Codex-authored context streams by returning codex_job_proposal text only
+  + [manager_context_stream] is the Codex-authored current focus, task frame, source slice, attention kernel, queue state, expected output, gates, and outside
+  + [manager_proposal] is one proposed OpenAI Codex CLI job or blocked_outside note that must pass Codex review before launch
   + [next_readiness_gate] is draft the accepted pressure impact ThinkAbout record under Codex authority before considering any broader lane claim
   + [task_corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
@@ -60,10 +64,13 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   = must: record functional worker runs in a spool record when task orchestration or future re-entry matters
   = must: keep accepted output as proposal text until Codex review integrates it
   = must: treat readiness_profile as limited-diverse only for scratch_prompt_only non-mutating SOP proposal jobs
+  = must: keep manager_lane_extension non-mutating and proposal-only until Codex launch review accepts a proposed job
+  = must: require manager_context_stream, SOP language primer, boot packet, capture target, and validator before manager proposal work
   = must: use the readiness synthesis before selecting a limited worker pilot queue or broadening any lane claim
   = must: treat validator-strong external-example drift as rejected until task-fit latch passes
   = should: retry with stricter boot only when failure suggests prompt ambiguity rather than model incapacity
   - never: grant file mutation or repo authority to LM Studio worker output
+  - never: let LM Studio manager output directly launch OpenAI Codex jobs or claim completed Codex work
   - never: call the lane fully functional for project-root jobs while AGENTS.md leakage remains
   - never: treat repeated same-family validation score 100 as broad competence proof
 

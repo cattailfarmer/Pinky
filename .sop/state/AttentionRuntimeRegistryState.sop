@@ -120,14 +120,23 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_swarm_fabric\Dictated_SOP_Swarm_Fabric_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_sop_swarm_fabric_087.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_035.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\CaptureDirectory.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_lmstudio_orchestration_workspace\Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_codex_lmstudio_orchestration_workspace_088.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_036.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is SOP Swarm Fabric
-  + [active_root_frame] is attention_frame_2026_06_24_sop_swarm_fabric
+  + [registry_scope] is Codex LM Studio orchestration workspace
+  + [active_root_frame] is attention_frame_2026_06_24_codex_lmstudio_orchestration_workspace
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 29
+  + [closed_frame_count] is 30
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -343,9 +352,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: compile new realizations from inspected activation_layer_trace plus governance receipt
   = should: stop inspection when the realization compile packet is sufficient and stable
 
-& [AttentionFrame_2026_06_24_SOPSwarmFabric] is the active semantic stack frame for the future decentralized attention fabric specification
+& [AttentionFrame_2026_06_24_SOPSwarmFabric] is the semantic stack frame for the future decentralized attention fabric specification
   + [frame_id] is attention_frame_2026_06_24_sop_swarm_fabric
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_layered_activation_inspection
   + [child_frame_set] is SOPSwarmFabric, SwarmAttentionPacket, TrustLensModel, AttentionCrawlerBoundary, ResonanceAndViralAttentionPolicy, DeadInternetRecoveryPattern, ImplementationOpenGate, source_preservation, operating_loop_tick_035, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -366,11 +375,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat viral attention as heat, not truth
   = must: keep local attention traces private by default
 
+& [AttentionFrame_2026_06_24_CodexLMStudioOrchestrationWorkspace] is the active semantic stack frame for Codex-authored context streams and LM Studio manager proposals
+  + [frame_id] is attention_frame_2026_06_24_codex_lmstudio_orchestration_workspace
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_sop_swarm_fabric
+  + [child_frame_set] is CodexLMStudioOrchestrationWorkspace, WorkspaceState, Queue, CaptureDirectory, Runbook, WorkerPacketTemplate, SOPTaskManager, LMStudioWorkerFunctionalLane, TaskFrameLaunchQueue, source_preservation, operating_loop_tick_036, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Queue.sop, CaptureDirectory.sop, Runbook.sop, WorkerPacketTemplate.sop, Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop, 2026-06-24_codex_lmstudio_orchestration_workspace_088.hg.sop, Manager_State.sop, and 2026-06-24_operating_loop_tick_036.sop
+  + [focus_register] is Codex-authored context stream, LM Studio manager pass, Codex job proposal, Codex launch gate, OpenAI Codex CLI worker dispatch, result capture, commit report, and loop tick
+  + [question_register] is whether to run the manager dry-run candidate now or first define budget, stop, and concurrency policy for a supervised runner
+  + [delineation_register] is inside context stream, manager proposal, launch gate, capture gate, worker packet, result capture, loop tick, and outside
+  + [periphery_register] is unsupervised daemon, direct LM Studio mutation, direct LM Studio launch of OpenAI jobs, hidden spend, credentials, destructive command, broad local-worker competence, and unrelated dirty files
+  + [operation_register] is preserve_source, define_orchestration_workspace, create_workspace_state, create_queue, create_runbook, create_packet_template, update_task_manager, update_attention_root, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, CodexLMStudioOrchestrationWorkspace.sop, workspace state, queue, capture directory, runbook, packet template, source manifest, periphery record 088, and operating_loop_tick_036
+  + [wisdom_register] is always-on work becomes plausible when local management is cheap and proposal-only while Codex keeps authoritative launch and integration gates
+  + [caution_register] is non-stop language must not erase stop policy, cost policy, dirty-file boundaries, capture, or launch review
+  + [balance_register] is stable because LM Studio manager authority, Codex launch authority, OpenAI worker execution, and repo integration are separate membranes
+  + [integration_register] is Task_157 completed as SOP-only workspace scaffold and Task_158 blocked for continuous runner implementation
+  + [frame_outside] is hidden model state, native runtime stack claims, direct worker mutation, unsupervised launch, credentials, destructive action, and unrelated workspace changes
+
+  = must: use the workspace queue before launching manager or worker candidates
+  = must: treat LM Studio manager output as proposal-only
+  = must: preserve blocked continuous runner gates until explicitly specified
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_sop_swarm_fabric
+  + [active_root_frame] is attention_frame_2026_06_24_codex_lmstudio_orchestration_workspace
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_ReadyTaskQueueExhaustionReview], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [ready_task_queue_exhaustion_review], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_CodexLMStudioOrchestrationWorkspace], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [codex_lmstudio_orchestration_workspace], [operating_loop_tick], [balance_register], [integration_register], [outside]

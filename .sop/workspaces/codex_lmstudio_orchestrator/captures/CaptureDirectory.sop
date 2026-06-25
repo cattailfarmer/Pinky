@@ -1,0 +1,18 @@
+Subject: Codex LM Studio Capture Directory
+
+Description: Marker for captured LM Studio manager outputs and OpenAI Codex worker returns.
+
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+
+& [CodexLMStudioCaptureDirectory] is the capture surface for the orchestration workspace
+  + [capture_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures
+  + [capture_status] is initialized
+  + [capture_use] is store raw LM Studio manager output, OpenAI Codex worker output, validation reports, and blocked notes before integration
+  + [first_expected_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_output.sop
+  + [capture_outside] is secrets, auth files, unredacted credentials, unrelated project output, and hidden state claims
+
+  = must: capture raw outputs before validation or integration
+  = must: keep rejected output as evidence when a retry is needed
+  = must: redact credentials before any capture is committed
+  - never: treat a capture file as authority until Codex records integration disposition

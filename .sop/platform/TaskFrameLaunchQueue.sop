@@ -8,6 +8,7 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
 @ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
 @ [source] C:\Project\Pinky\.sop\platform\spool\WorkerLanes.sop
 @ [source] C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
 
 & [TaskFrameLaunchQueue] is the inspectable queue layer between task_frame readiness and worker launch
   + [pattern_role] is task_frame_to_worker_launch_queue_membrane
@@ -22,6 +23,9 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
   + [launch_result] is the captured returned, validated, rejected, or blocked outcome after Codex chooses to launch a candidate
   + [queue_outside] is automatic launch, hidden model state, worker file mutation, credentials, project-root authority, destructive action, and unrelated dirty files
   + [first_synthesis_backed_pilot_queue] is C:\Project\Pinky\.sop\events\task_queues\2026-06-24_lmstudio_limited_worker_pilot_queue_001.sop
+  + [codex_lmstudio_orchestrator_queue] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+  + [lm_studio_manager_candidate] is an LM Studio launch candidate that returns codex_job_proposal text instead of performing repo work
+  + [openai_codex_dispatch_candidate] is an OpenAI Codex CLI launch candidate created only after Codex accepts a manager proposal
 
   ? [use_when: a task frame is ready enough to become a visible worker-launch candidate]
     = activate [TaskFrameLaunchQueue]
@@ -33,6 +37,8 @@ Description: Contract for preparing inspectable task-frame launch candidates bef
   = must: keep LM Studio candidates scratch-isolated, prompt-only, captured, and validator-gated
   = must: route project-root LM Studio candidates to blocked or diagnostic_only until leakage is solved
   = must: let Codex decide whether a ready candidate is actually launched
+  = must: treat LM Studio manager candidates as proposal-generating candidates, not implementation candidates
+  = must: require Codex launch review before converting a manager proposal into an OpenAI Codex dispatch candidate
   = must: record launch_result after any launched candidate returns or blocks
   - never: launch a candidate merely because it is queued
   - never: treat ready_for_inspection as worker completion

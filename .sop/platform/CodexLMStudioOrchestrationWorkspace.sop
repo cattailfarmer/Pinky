@@ -1,0 +1,116 @@
+Subject: Codex LM Studio Orchestration Workspace
+
+Description: Canonical workspace contract for Codex-authored SOP context streams, LM Studio manager proposals, and gated OpenAI Codex CLI worker jobs.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_lmstudio_orchestration_workspace\Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\CaptureDirectory.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+
+& [CodexLMStudioOrchestrationWorkspace] is the local orchestration workspace for SOP-stream-managed Codex work
+  + [pattern_role] is codex_stream_author_lm_studio_manager_openai_codex_worker_loop
+  + [active_root] is C:\Project\Pinky\.sop
+  + [workspace_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator
+  + [context_stream_author] is OpenAI Codex in the Codex app or OpenAI-backed Codex CLI, which creates, repairs, validates, commits, and publishes SOP context streams
+  + [local_manager] is an LM Studio hosted model that reads Codex-authored SOP context streams and emits bounded job proposals
+  + [worker_executor] is Codex CLI using OpenAI inference for authoritative repo work after Codex validates a proposed job packet
+  + [manager_authority] is read provided SOP stream, select next safe candidate, prepare proposal, preserve outside, and return job packet text
+  + [launch_authority] is Codex host until a later supervised runner contract explicitly grants bounded launch behavior
+  + [repo_authority] is Codex host over C:\Project\Pinky with .sop as active local authority and GitHub as publication remote
+  + [non_stop_goal] is supervised continuous work through visible ticks, queue records, validation, commit reports, and explicit stop gates
+  + [non_stop_boundary] is not unbounded autonomous PC control, silent background launch, credential handling, hidden spending, destructive action, or worker-owned mutation
+  + [codex_context_stream] is a compact stream of current focus, task frame, source slice, compiled attention kernel, queue state, expected output, evidence gates, and outside
+  + [lm_studio_manager_pass] is the local model pass that scans the context stream and proposes the next Codex job without executing it
+  + [codex_job_proposal] is a proposed OpenAI Codex CLI job containing objective, working directory, allowed surface, blocked surface, command shape, capture target, proof gate, and outside
+  + [codex_launch_gate] is Codex review of authority, cost, safety, scope, expected diff, stop policy, and capture target before launch
+  + [openai_codex_worker_job] is a launched Codex CLI job using OpenAI inference and a bounded worker packet after codex_launch_gate passes
+  + [result_capture] is raw worker output, diff, tests, validation, integration disposition, commit report, and loop tick
+  + [current_lm_studio_endpoint] is http://127.0.0.1:1234/v1/models reachable on 2026-06-24
+  + [available_local_model_set] is openai/gpt-oss-20b, qwen/qwen3.6-35b-a3b, google/gemma-4-e4b, and text-embedding-nomic-embed-text-v1.5
+  + [codex_cli_entrypoint] is C:\Users\enjer\AppData\Roaming\npm\codex.cmd
+  + [powershell_note] is use codex.cmd because codex.ps1 may be blocked by PowerShell execution policy
+  + [workspace_state] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop
+  + [capture_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures
+  + [runbook] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+  + [queue] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+  + [worker_packet_template] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+  + [implementation_status] is workspace scaffold defined and dry-run manager proposal ready for inspection
+  + [blocked_runner_status] is supervised runner automation blocked until budget, stop file, concurrency cap, capture directory, launch policy, and user confirmation are specified
+  + [workspace_outside] is hidden model state, native KV cache control, unsupervised daemon, direct LM Studio repo mutation, credentials, destructive commands, unrelated dirty files, and remote claims before push
+
+  ? [use_when: LM Studio should manage Codex-authored SOP context streams and propose bounded OpenAI Codex CLI jobs]
+    = activate [CodexLMStudioOrchestrationWorkspace]
+
+  = must: let OpenAI Codex create and validate the SOP context streams
+  = must: let LM Studio read only the provided context stream or cited prompt packet when acting as manager
+  = must: require SOPLanguagePrimerForLocalAgents before LM Studio receives SOP framework-shaped task packets
+  = must: require SOPWorkerBootPacket before LM Studio is asked to reason over local SOP contracts
+  = must: represent LM Studio output as codex_job_proposal, not as launched work or integrated authority
+  = must: route every codex_job_proposal through TaskFrameLaunchQueue before any OpenAI Codex CLI launch
+  = must: require Codex launch review before any OpenAI-backed Codex worker job starts
+  = must: capture raw worker output before validation and integration
+  = must: update current focal point, manager state, runtime registry, periphery record, and operating-loop tick after meaningful workspace changes
+  = must: report commit file count, commit id, version, local/remote status, validation, and push status every turn that changes this workspace
+  = should: use LM Studio for cheap local breadth, queue triage, proposal drafting, and cross-model perspective
+  = should: use OpenAI Codex workers for authoritative repo mutation, tests, multi-file integration, and proof-bearing changes
+  = should: prefer a manager dry run that proposes one Codex job before implementing any continuous runner
+  - never: let LM Studio directly write project files, commit, push, launch OpenAI jobs, or spend tokens without a Codex-reviewed action gate
+  - never: treat a loop as continuous if it lacks stop policy, budget cap, concurrency cap, and capture audit
+  - never: send secrets, auth files, private credentials, or unredacted tokens through a worker packet
+
+& [CodexContextStreamLoop] is the supervised loop shape for continuous work
+  + [loop_step_001] is Codex compiles current SOP context stream from focal point, manager state, source slice, attention kernel, queue, and outside
+  + [loop_step_002] is LM Studio manager scans stream and emits exactly one codex_job_proposal or blocked_outside note
+  + [loop_step_003] is Codex validates proposal authority, surface, action, cost, capture target, and expected proof
+  + [loop_step_004] is Codex launches or blocks OpenAI Codex CLI worker job according to codex_launch_gate
+  + [loop_step_005] is Codex captures result, reviews diff, runs validation, integrates or rejects, commits, pushes, and emits operating-loop tick
+  + [loop_step_006] is loop re-enters only when next_step remains safe, bounded, and visible
+  + [loop_stop] is user stop, failed gate, missing provider, budget cap, concurrency cap, no ready candidate, validator failure, credentials, destructive action, or unrelated dirty-file collision
+
+  = must: keep each loop step independently inspectable
+  = must: keep per-turn work reversible through Git bookends and narrative records
+  = must: treat "running continuously" as repeated supervised ticks, not as a hidden infinite process
+
+& [LMStudioManagerLane] is the manager use of LM Studio over Codex-authored streams
+  + [manager_fit] is queue triage, next-step proposal, lightweight critique, context-stream summarization, cross-model perspective, and packet drafting
+  + [manager_input] is codex_context_stream plus primer, boot packet, exact schema, and outside
+  + [manager_output] is codex_job_proposal or blocked_outside note
+  + [manager_validation] is exact schema, local-law fidelity, no forbidden authority, no direct launch, no file mutation, and outside preservation
+  + [manager_outside] is repo authority, job execution, shell access, credentials, direct writes, exact hidden state, and broad competence claims
+
+  = must: classify manager output as proposal only
+  = must: reject manager output that smuggles execution authority or replaces the stream's local law
+  = should: retry manager output only when failure indicates prompt ambiguity rather than model incapacity
+
+& [OpenAICodexWorkerDispatch] is the gated launch shape for OpenAI-backed Codex CLI jobs
+  + [dispatch_input] is validated codex_job_proposal plus Codex-authored worker packet
+  + [dispatch_authority] is Codex host and user-approved policy boundaries
+  + [dispatch_allowed_surface] is explicitly named workspace, files, tests, and output capture target
+  + [dispatch_blocked_surface] is credentials, unrelated dirty files, destructive commands, silent remote changes, and unbounded runtime
+  + [dispatch_output] is captured worker report, changed files, validation evidence, outside, and integration disposition
+  + [dispatch_outside] is launched work without capture, unreviewed file mutation, cost surprise, and remote publication before explicit commit/push
+
+  = must: include expected output and proof gate before launch
+  = must: preserve worker output separately from integration decision
+  = must: route returned changes through Codex review before commit
+
+(codex_lmstudio_orchestration_workspace) :codex_context_stream: /codex_launch_gate and source_authority/ |workspace_outside|
+  + [codex_context_stream] is Codex-authored current focus, task frame, source slice, attention kernel, queue state, expected output, gates, and outside
+  + [lm_studio_manager_pass] is local model proposal over the stream
+  + [codex_job_proposal] is a proposed OpenAI Codex CLI job
+  + [codex_launch_gate] is Codex validation before worker execution
+  + [openai_codex_worker_job] is bounded Codex CLI execution after launch gate
+  |workspace_outside| unsupervised daemon, direct LM Studio mutation, credentials, hidden state, destructive action, unrelated dirty files, and cost without gate
+
+/ [OpenAI_Codex], [CurrentFocalPoint], [SOPTaskManager] -(Compiles)> [codex_context_stream], [outside]
+* [codex_context_stream], [LMStudioManagerLane], [SOPWorkerBootPacket] -(Proposes)> [codex_job_proposal], [blocked_outside]
+* [codex_job_proposal], [TaskFrameLaunchQueue], [CodexLaunchGate] -(MayDispatch)> [openai_codex_worker_job], [result_capture], [loop_tick]

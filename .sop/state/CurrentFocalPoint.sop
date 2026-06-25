@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is SOP Swarm Fabric
+  + [focus_subject] is Codex LM Studio orchestration workspace
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the semantic web can hold open a future local-first shared attention fabric that maps periphery, trust lenses, and viral attention patterns without implementing capture or sharing yet
-  + [inside] is SOPSwarmFabric.sop, Attention.sop, NarrativeSubjectFileTable.sop, LayeredActivationInspection.sop, SubjectInquiry.sop, SecurityHonestyGovernance.sop, LocalIdentityConsumption.sop, Dictated_SOP_Swarm_Fabric_Source.sop, 2026-06-24_sop_swarm_fabric_087.hg.sop, 2026-06-24_operating_loop_tick_035.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, privacy-gated, consent-gated, implementation-blocked, and non-mutating unless explicit future runtime work is selected later
-  + [outside] is hidden model state, hidden native parallelism claims, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
+  + [right_hemisphere_draw] is OpenAI Codex can author the SOP context streams while LM Studio cheaply traverses those streams to propose the next bounded Codex CLI job
+  + [inside] is CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Queue.sop, CaptureDirectory.sop, Runbook.sop, WorkerPacketTemplate.sop, SOPTaskManager.sop, LMStudioWorkerFunctionalLane.sop, TaskFrameLaunchQueue.sop, SOPLanguagePrimerForLocalAgents.sop, SOPWorkerBootPacket.sop, Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop, 2026-06-24_codex_lmstudio_orchestration_workspace_088.hg.sop, 2026-06-24_operating_loop_tick_036.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, scratch-isolated for LM Studio, Codex-reviewed for launch, captured before integration, and explicitly bounded by stop, budget, and dirty-file gates
+  + [outside] is hidden model state, unsupervised daemon, direct LM Studio mutation, direct LM Studio launch of OpenAI jobs, destructive action, credentials, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic spend, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_035.sop
-  + [open_question] is whether to later define the privacy and consent gates required before a local-only manual SwarmAttentionPacket prototype
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_036.sop
+  + [open_question] is whether to run the manager dry-run candidate now or first specify budget, stop, and concurrency policy for a supervised runner
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -43,6 +43,9 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat narrative_led_subject_inquiry as the completed Task_153 anchor
   = must: treat layered_activation_inspection as the completed Task_154 anchor
   = must: treat sop_swarm_fabric as the completed Task_155 anchor
+  = must: treat codex_lmstudio_orchestration_workspace as the completed Task_157 anchor
+  = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
+  = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration

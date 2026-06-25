@@ -1,0 +1,16 @@
+Subject: Dictated Codex LM Studio Orchestration Workspace Source
+
+Description: Preserved user source for setting up a workspace where LM Studio manages SOP context streams and dispatches bounded Codex CLI jobs.
+
+& [DictatedCodexLMStudioOrchestrationWorkspaceSource] is preserved raw source direction
+  + [source_time] is 2026-06-24
+  + [source_kind] is dictated workspace architecture direction
+  + [source_text_001] is "now I need to get a workspace set up where the Codex app is pointed to LM Studio, and I interact with that LLM to process jobs it's managing and deploying to Codex CLI -> OpenAI inference to make my local machine keep the OpenAI Codex agent working non-stop"
+  + [source_text_002] is "so OpenAI Codex will help create the SOP context streams, and then LM Studio agent will run through those SOP context streams to launch OpenAI Codex jobs."
+  + [preservation_status] is preserved without replacement by canonical wording
+  + [authority_note] is canonical contracts may refine launch authority, safety gates, and repo mutation boundaries but must not erase the requested flow
+
+  = must: preserve the desired architecture as Codex-authored SOP context streams, LM Studio manager pass, and OpenAI Codex CLI worker execution
+  = must: distinguish continuous work intent from unsupervised launch permission
+  = must: keep Codex repo authority visible unless a later contract explicitly changes the action gate
+  - never: treat this source as approval for unbounded background automation, credential handling, destructive commands, or silent OpenAI spend

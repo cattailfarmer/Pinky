@@ -7,9 +7,9 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [seed_source] is F:\.sop at commit 3f127da
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
-  + [ready_task_count] is 0
-  + [completed_task_count] is 155
-  + [blocked_task_count] is 3
+  + [ready_task_count] is 1
+  + [completed_task_count] is 156
+  + [blocked_task_count] is 4
 
 & [CompletedTaskSet] is completed work
   + [Task_001_initialize_local_git_node] is initialize F:\.sop as local Git repository
@@ -300,9 +300,12 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop, C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_layered_activation_inspection\Dictated_Layered_Activation_Inspection_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_layered_activation_inspection_086.hg.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_034.sop
   + [Task_155_define_sop_swarm_fabric_specification] is define the future local-first decentralized SOP attention fabric specification with consent-gated packets, trust lenses, moderation context, viral attention patterns, dead-internet countermeasures, and blocked implementation gates
     = evidence: C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_swarm_fabric\Dictated_SOP_Swarm_Fabric_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_sop_swarm_fabric_087.hg.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_035.sop
+  + [Task_157_define_codex_lmstudio_orchestration_workspace] is define the local workspace where OpenAI Codex authors SOP context streams, LM Studio reads those streams as manager/proposer, and OpenAI Codex CLI jobs are dispatched only after Codex launch review
+    = evidence: C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\CaptureDirectory.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_lmstudio_orchestration_workspace\Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_codex_lmstudio_orchestration_workspace_088.hg.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_036.sop
 
 & [ReadyTaskSet] is work ready without external configuration
-  + [empty] is no ready local runtime tasks remain in the current manager queue
+  + [Task_159_run_codex_lmstudio_manager_dry_run] is inspect or run codex_lmstudio_manager_dry_run_001 so LM Studio proposes exactly one bounded OpenAI Codex job from a Codex-authored context stream without launching it
+    = evidence: C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
 
 & [BlockedTaskSet] is work needing external configuration
   + [Task_004_idle_remote_sync] is automatically synchronize to remote GitHub during idle use
@@ -311,3 +314,5 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = blocker: no common_remote_target, credentials, branch protection policy, or merge selection policy configured
   + [Task_156_implement_sop_swarm_fabric_network] is implement SOP Swarm Fabric capture, packet exchange, trust lenses, or crawler automation
     = blocker: no privacy_threat_model, consent_interface, packet_schema, redaction_engine, identity_signature_model, local_storage_model, trust_lens_engine, moderation_model, transport_policy, abuse_resistance_model, or user_export_delete_controls specified
+  + [Task_158_implement_continuous_codex_lmstudio_runner] is implement a supervised continuous runner that lets LM Studio manage SOP context streams and dispatch OpenAI Codex jobs
+    = blocker: no budget_policy, stop_file, concurrency_cap, capture_directory_policy, launch_gate_policy, cost_report_policy, crash_recovery_policy, credential_redaction_policy, or user confirmation for automated OpenAI dispatch

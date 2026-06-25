@@ -1,0 +1,29 @@
+Subject: Codex LM Studio Orchestration Workspace Realization
+
+Description: SOP-HG record for defining the local workspace where Codex-authored streams feed an LM Studio manager which proposes gated OpenAI Codex CLI jobs.
+
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_lmstudio_orchestration_workspace\Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop
+
+& [SOPHypergraphRecord] is codex_lmstudio_orchestration_workspace_088
+  + [record_type] is periphery_realization
+  + [focus_subject] is Codex LM Studio orchestration workspace
+  + [inside] is Codex-authored context stream, LM Studio manager pass, Codex job proposal, Codex launch gate, OpenAI Codex CLI worker, result capture, commit report, and loop tick
+  + [boundary] is local Pinky .sop authority, scratch-isolated manager proposals, Codex-reviewed launch, capture before integration, explicit stop and budget gates, and unrelated dirty files outside
+  + [outside] is unsupervised daemon, direct LM Studio file mutation, direct LM Studio OpenAI launch, credentials, hidden model state, destructive commands, and silent spending
+
+  = realization: the useful loop is not the Codex app being replaced by LM Studio, but Codex authoring streams that LM Studio can cheaply traverse to propose the next bounded Codex job
+  = caution: endpoint availability and local enthusiasm must not collapse into unsupervised worker launch or hidden spend
+  = wisdom: this creates a practical route toward always-on work by making every tick inspectable, queued, captured, validated, committed, and re-enterable
+  = implementation_status: workspace scaffold ready, manager dry-run candidate ready for inspection, continuous runner blocked until safety gates are specified
+
+/ [OpenAI_Codex] -(Authors)> [codex_context_stream], [source_refs], [proof_gates], [outside]
+* [LMStudioManagerLane] -(Reads)> [codex_context_stream], [manager_proposal], [blocked_outside]
+* [manager_proposal], [CodexLaunchGate] -(MayBecome)> [openai_codex_worker_job], [result_capture], [loop_tick]
+* [result_capture], [RepoFirstInternalScan] -(Supports)> [commit_report], [state_reentry], [next_context_stream]
+
+(codex_lmstudio_orchestration_realization) :codex_context_stream: /launch_gate and capture_gate/ |automation_outside|
+  + [codex_context_stream] is Codex-authored SOP stream for manager attention
+  + [manager_proposal] is LM Studio's non-mutating next-job suggestion
+  + [launch_gate] is Codex review before OpenAI Codex CLI execution
+  |automation_outside| unsupervised daemon, credentials, hidden spend, direct mutation, and launch without capture

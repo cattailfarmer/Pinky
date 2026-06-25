@@ -1,0 +1,39 @@
+Subject: Codex LM Studio Orchestrator Queue
+
+Description: Initial inspectable queue for LM Studio manager proposals and gated OpenAI Codex worker dispatch.
+
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+
+& [CodexLMStudioOrchestratorQueue] is the active queue for the orchestration workspace
+  + [queue_status] is ready_for_inspection
+  + [candidate_count] is 1
+  + [queue_authority] is Codex
+  + [queue_scope] is manager dry-run proposal before any continuous runner
+  + [queue_outside] is automatic launch, hidden model state, worker mutation, credentials, destructive actions, and unrelated dirty files
+
+  = must: keep queued work inspectable before launch
+  = must: treat ready_for_inspection as not launched and not integrated
+  = must: preserve raw manager output before any Codex job dispatch
+
+& [Candidate_codex_lmstudio_manager_dry_run_001] is the first manager dry-run launch candidate
+  + [candidate_id] is codex_lmstudio_manager_dry_run_001
+  + [task_frame_id] is task_frame_codex_lmstudio_orchestration_workspace
+  + [task_subject] is Codex LM Studio orchestration workspace
+  + [objective] is ask LM Studio to read a Codex-authored SOP context stream and emit one bounded OpenAI Codex job proposal without launching it
+  + [lane_fit] is lm_studio_cli_manager
+  + [launch_mode] is scratch_prompt_only
+  + [prompt_packet] is SOPLanguagePrimerForLocalAgents plus SOPWorkerBootPacket plus CodexLMStudioOrchestrationWorkspace excerpt plus WorkerPacketTemplate proposal schema
+  + [launch_command] is codex.cmd --oss --local-provider lmstudio -m openai/gpt-oss-20b -C <scratch_workspace> -a never -s read-only --output-last-message <capture_target> exec <prompt_packet>
+  + [capture_target] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_output.sop
+  + [validation_profile] is exact SOP proposal schema, no launch claim, no file mutation, no repo authority, and outside preservation
+  + [required_gates] is sop_language_primer_gate, boot_packet_gate, scratch_isolation_gate, capture_gate, validator_gate, and codex_review_gate
+  + [block_reasons] is none before Codex launch review
+  + [status] is ready_for_inspection
+  + [candidate_outside] is direct launch, direct mutation, hidden model state, broad competence, credentials, and unbounded loop
+
+  = must: launch only when Codex chooses to run the dry-run candidate
+  = must: accept only a proposal or blocked_outside note from LM Studio
+  = must: reject output that launches or claims to have launched an OpenAI Codex job
+  = should: use the output to decide the first real OpenAI Codex worker packet only after Codex review

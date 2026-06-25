@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 10
+  + [subject_count] is 11
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -129,6 +129,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is browser capture, remote sharing, raw browsing export, global truth, central moderation monopoly, runtime mutation, and implementation before gates
+
+& [Subject_codex_lmstudio_orchestration_workspace] is a narrative subject entry
+  + [subject_key] is codex_lmstudio_orchestration_workspace
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_codex_lmstudio_orchestration_workspace_088.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\CaptureDirectory.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop, C:\Project\Pinky\.sop\platform\SOPTaskManager.sop, C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop, C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop, C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop, C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_036.sop
+  + [framework_periphery_set] is local_attention_framework, task_manager_framework, lm_studio_worker_lane_framework, task_frame_launch_queue_framework, codex_context_stream_framework, source_authority_framework, and semantic_operating_loop_framework
+  + [relation_reason_set] is orchestration workspace contract, workspace state, manager queue, supervised runbook, packet schema, task manager routing, LM Studio proposal lane, launch queue, local SOP primer, worker boot, and current loop tick
+  + [search_phrase_set] is CodexLMStudioOrchestrationWorkspace, codex_context_stream, lm_studio_manager_pass, codex_job_proposal, codex_launch_gate, openai_codex_worker_job, result_capture, non_stop_boundary
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is unsupervised daemon, direct LM Studio mutation, direct OpenAI launch, credentials, hidden spend, destructive action, and unrelated dirty files
 
 (narrative_subject_file_table) :subject_key: /file_interest_set and relation_reason/ |unindexed_subject|
   + [subject_key] is the normalized narrative handle

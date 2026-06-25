@@ -1,0 +1,14 @@
+Subject: Codex LM Studio Orchestration Workspace Source Manifest
+
+Description: Manifest for source preservation before canonical Codex-LM Studio orchestration workspace specification.
+
+& [CodexLMStudioOrchestrationWorkspaceSourceManifest] is the source-preservation manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_lmstudio_orchestration_workspace\Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+  + [workspace_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator
+  + [source_kind] is dictated workspace architecture direction
+  + [preservation_status] is preserved
+  + [processing_status] is canonicalized
+
+  = must: keep dictated source intact
+  = must: cite this source from canonical contract, workspace records, and realization record

@@ -1,0 +1,71 @@
+Subject: Codex LM Studio Worker Packet Template
+
+Description: Template for context streams, LM Studio manager proposals, OpenAI Codex worker packets, and result captures.
+
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+
+& [CodexContextStreamPacketShape] is the packet Codex writes for LM Studio manager attention
+  + [packet_id] is stable context stream identifier
+  + [source_authority] is C:\Project\Pinky\.sop plus cited source documents
+  + [focus_subject] is current task focus
+  + [task_frame] is subject, objective, reminders, allowed surface, blocked surface, and return anchor
+  + [source_slice_set] is the minimal SOP files or excerpts needed for the manager pass
+  + [compiled_attention_kernel] is selected attention patterns when needed
+  + [queue_state] is current ready, blocked, running, or returned candidates
+  + [expected_manager_output] is codex_job_proposal or blocked_outside note
+  + [evidence_gate] is proof required before integration
+  + [outside] is blocked work, uncertainty, credentials, hidden state, unrelated files, and forbidden launch
+
+  = must: be compact enough for the selected LM Studio context window
+  = must: include enough source to prevent adjacent project rails from becoming task authority
+  = must: carry outside explicitly
+
+& [LMStudioManagerProposalShape] is the exact output expected from the local manager
+  + [proposal_id] is stable proposal identifier
+  + [proposed_worker_lane] is openai_codex_cli, manual, deferred, or blocked
+  + [objective] is one bounded job for OpenAI Codex or blocked_outside reason
+  + [working_directory] is the proposed Codex CLI working root
+  + [allowed_surface] is files, commands, tests, and sources the worker may use
+  + [blocked_surface] is forbidden files, actions, claims, credentials, and unrelated dirty files
+  + [prompt_packet_refs] is context stream and source references to include
+  + [capture_target] is where worker output should be captured
+  + [proof_gate] is tests, diff, citations, validation, or review required before integration
+  + [risk_gate] is cost, authority, safety, destructive action, and stop policy
+  + [outside] is residual uncertainty or blocked launch material
+
+  = must: propose exactly one job or one blocked_outside note
+  = must: remain non-mutating proposal text
+  = must: avoid claiming launch, completion, commit, push, or integration
+
+& [OpenAICodexWorkerPacketShape] is the packet Codex may send to OpenAI-backed Codex CLI
+  + [worker_packet_id] is stable worker packet identifier
+  + [approved_by] is Codex launch review
+  + [objective] is one bounded implementation or specification task
+  + [source_refs] is files and source documents that govern the job
+  + [allowed_surface] is explicit workspace, files, commands, tests, and outputs
+  + [blocked_surface] is unrelated dirty files, credentials, destructive commands, and unapproved remote actions
+  + [expected_changes] is the intended files or no-file output
+  + [capture_target] is where final worker message and proof should be stored
+  + [proof_gate] is validation needed before integration
+  + [return_schema] is changed files, tests, summary, outside, and next step
+
+  = must: be reviewed before launch
+  = must: be captured before integration
+  = must: preserve outside and stop on authority conflict
+
+& [ResultCaptureRecordShape] is the record that turns returned work into task narrative
+  + [capture_id] is stable capture identifier
+  + [source_proposal] is LM Studio proposal or manual task frame that led to launch
+  + [worker_packet] is approved OpenAI Codex worker packet
+  + [raw_output] is captured worker message or blocked note
+  + [diff_summary] is changed files and intended meaning
+  + [validation] is test, diff check, ASCII scan, validator score, or review result
+  + [integration_disposition] is integrate, revise, retry, reject, defer, or preserve_outside
+  + [commit_report] is file count, commit id, version, local/remote status, and push status when committed
+  + [next_step] is the next safe visible action or stop reason
+  + [outside] is unresolved risk, missed work, blocked authority, failed validation, or unrelated worktree state
+
+  = must: separate raw output from integration disposition
+  = must: connect captures back to queue, manager state, focal point, and operating-loop tick
