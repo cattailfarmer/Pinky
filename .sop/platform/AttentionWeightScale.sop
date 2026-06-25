@@ -11,6 +11,7 @@ Description: Terminology and data contract for calibrated signal strength across
 @ [source] F:\.sop\platform\TrailingChecksumVoice.sop
 @ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
 @ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop
 
 & [AttentionWeightScale] is the scale vocabulary for measuring correlation signal strength in an activated attention graph
   + [pattern_role] is calibrated_attention_signal_scale
@@ -31,6 +32,10 @@ Description: Terminology and data contract for calibrated signal strength across
   + [heat_ordered_cell] is a cell ranked or sized by visible heat while keeping salience, confidence, and proof separate
   + [extra_dimension_candidate] is a periphery-discovered orientation that may tighten a fragmented signal
   + [contextual_anchor] is the term or pointer selected from extra_dimension_candidate to improve re-entry or model transfer
+  + [relationship_eigenspectrum] is the ordered record of relationship-strength components for a subject neighborhood
+  + [semantic_eigenvalue] is an eigenvalue-like relationship-strength scalar bounded to visible semantic evidence
+  + [semantic_eigenvector] is the orientation bundle explaining which relationship direction the semantic_eigenvalue measures
+  + [dominance_ratio] is the comparison between a dominant relationship component and the next comparable component
   + [outside] is semantic truth, causal proof, hidden cognition, and unsupported motive
 
   ? [use_when: a correlation graph, hash table, changelog weight net, or turn bookmark needs calibrated signal terminology]
@@ -44,6 +49,8 @@ Description: Terminology and data contract for calibrated signal strength across
   = must: expose resolution_band and scan_depth with every durable high-salience signal
   = must: expose focus_aperture when a weight decision depends on widened periphery
   = must: expose heat_ordered_cell and top_three_correlations when a seven-fold pants frame uses size or centrality to guide attention
+  = must: use RelationshipEigenspectrum when heat needs to be summarized as ordered relationship components
+  = must: keep semantic_eigenvalue separate from proof, confidence, and native mathematical eigenvalues unless a graph runtime explicitly computes them
   = must: distinguish signal strength from confidence
   = must: allow low-resolution scans when the purpose is quick orientation
   = must: allow high-resolution scans when missed work, mistakes, or consequential decisions are plausible
@@ -65,6 +72,8 @@ Description: Terminology and data contract for calibrated signal strength across
   + [warmth_zone] is a trailing checksum region with modest but coherent salience that should remain available to periphery or future scan
   + [hot_zone] is a trailing checksum region with high salience, recurrence, surprise, risk, or purpose-bearing load that should catch attention
   + [latent_depth_candidate] is a hot_zone or repeated warmth_zone with unexplored structure worth preparing for inquiry
+  + [component] is one bounded relationship direction inside a spectrum
+  + [spectrum] is an ordered component set showing relative dominance and stability
 
   = must: use citation and touch for counting
   = must: use pulse and strand for one-dimensional signal
@@ -72,6 +81,7 @@ Description: Terminology and data contract for calibrated signal strength across
   = must: use draw when a periphery signal wants focus
   = must: use load when the signal creates obligation or risk
   = must: keep warmth_zone and hot_zone separate from proof of truth
+  = must: keep component and spectrum separate from single-number authority
 
 & [ResolutionBandScale] is the default qualitative scale for attention signal resolution
   + [surface] is visible but too weak or uncited to preserve beyond immediate narration

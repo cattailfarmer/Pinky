@@ -12,6 +12,7 @@ Description: SOP contract for weighted correlations over semantic hash buckets a
   + [total_weight] is base_weight plus directive_weight
   + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop for naming units and resolution bands when graph weights are interpreted
   + [periphery_dimensional_probe] is F:\.sop\platform\PeripheryDimensionalProbe.sop when hot periphery suggests another independent anchor dimension
+  + [relationship_eigenspectrum] is C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop when multiple relations need ranked component-strength summaries
   + [attention_directive] is a named instruction that expects, captures, bounds, and associates subjects
   + [changelog_weight_net] is F:\.sop\platform\ChangelogCorrelationWeightNet.sop when weighted bucket relations are attached to repo change units and narrative justification
   + [identified_capture] is the directive name for the captured :inside: surface
@@ -51,6 +52,7 @@ Description: SOP contract for weighted correlations over semantic hash buckets a
 
   = must: expose base_weight and directive_weight separately
   = must: use attention_weight_scale when total_weight must become salience, draw, load, or probe depth
+  = must: use relationship_eigenspectrum when several bucket relations compete or cooperate around the same subject neighborhood
   = must: use periphery_dimensional_probe when a bucket relation is hot but fragmented and might gain receptive form through another dimension
   = must: hand repo-delta subject attachment to changelog_weight_net when narrative and justification dimensions are load-bearing
   = must: allow tuning without changing the underlying table
@@ -66,4 +68,4 @@ Description: SOP contract for weighted correlations over semantic hash buckets a
   - never: hide uncertainty behind confident correlation language
 
 / [attention_directive] -(tilts)> [bucket_correlation]
-* [subject_a], [subject_b], [bucket_correlation], [total_weight] -(AttentionAssociation)> [association_surface]
+* [subject_a], [subject_b], [bucket_correlation], [total_weight] -(AttentionAssociation)> [association_surface], [relationship_eigenspectrum]

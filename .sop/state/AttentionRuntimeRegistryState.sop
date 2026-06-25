@@ -174,14 +174,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_legacy_contract_reinforcement_policy\Dictated_Legacy_Contract_Reinforcement_Policy_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_legacy_contract_reinforcement_policy_099.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_047.sop
+@ [source] C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_relationship_eigenspectrum\Dictated_Relationship_Eigenspectrum_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_relationship_eigenspectrum_100.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_048.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Legacy Contract Reinforcement Policy
-  + [active_root_frame] is attention_frame_2026_06_25_legacy_contract_reinforcement_policy
+  + [registry_scope] is Relationship Eigenspectrum
+  + [active_root_frame] is attention_frame_2026_06_25_relationship_eigenspectrum
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 41
+  + [closed_frame_count] is 42
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -673,9 +677,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep internal consistency stability separate from external model stability
   = should: begin future prototypes with read-only internal periphery view models
 
-& [AttentionFrame_2026_06_25_LegacyContractReinforcementPolicy] is the active semantic stack frame for authority-bounded use of older or less articulated SOP contracts
+& [AttentionFrame_2026_06_25_LegacyContractReinforcementPolicy] is the semantic stack frame for authority-bounded use of older or less articulated SOP contracts
   + [frame_id] is attention_frame_2026_06_25_legacy_contract_reinforcement_policy
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_sectioned_periphery_association_fabric
   + [child_frame_set] is LegacyContractReinforcementPolicy, SourceAuthorityRoot, Attention, Caution, SecurityHonestyGovernance, SectionedPeripheryAssociationFabric, AuthorityPrecedenceOrder, LegacyAgreementProcedure, ReinforcementReceiptShape, source_preservation, operating_loop_tick_047, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -697,11 +701,35 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat no-agreement material as baseless or off-topic unless later user direction reopens it
   = should: use old contracts as lineage, search clues, or reinforcement only after the agreement test passes
 
+& [AttentionFrame_2026_06_25_RelationshipEigenspectrum] is the active semantic stack frame for eigenvalue-like relationship-strength spectra
+  + [frame_id] is attention_frame_2026_06_25_relationship_eigenspectrum
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_legacy_contract_reinforcement_policy
+  + [child_frame_set] is RelationshipEigenspectrum, AttentionWeightScale, SemanticCorrelationGraph, ChangelogCorrelationWeightNet, SemanticHashIndex, SectionedPeripheryAssociationFabric, PeripheryDimensionalProbe, SecurityHonestyGovernance, NarrativeSubjectFileTable, SpectrumRecordShape, SpectrumPromotionPolicy, source_preservation, operating_loop_tick_048, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is RelationshipEigenspectrum.sop, AttentionWeightScale.sop, SemanticCorrelationGraph.sop, ChangelogCorrelationWeightNet.sop, Dictated_Relationship_Eigenspectrum_Source.sop, 2026-06-25_relationship_eigenspectrum_100.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_048.sop
+  + [focus_register] is subject_neighborhood, relationship_component, semantic_eigenvalue, semantic_eigenvector, eigenspectrum, relationship_strength, dominance_ratio, stability_score, confidence_band, proof_boundary, caution_gate, dominant_component, minor_component, noise_component, and outside
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or plan a read-only relationship-spectrum index prototype
+  + [delineation_register] is inside visible relationship components, orientation bundles, evidence paths, salience, stability, confidence, proof boundary, caution route, and outside
+  + [periphery_register] is high heat with low confidence, causal overclaim, exact hidden attention, single-number authority, native transformer eigenvalue claim, runtime eigensolver, and unrelated dirty files
+  + [operation_register] is preserve_source, define_relationship_eigenspectrum, extend_attention_weight_scale, extend_semantic_correlation_graph, extend_changelog_weight_net, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, RelationshipEigenspectrum.sop, AttentionWeightScale update, SemanticCorrelationGraph update, ChangelogCorrelationWeightNet update, source manifest, periphery record 100, and operating_loop_tick_048
+  + [wisdom_register] is relationship spectra let attention distinguish durable structure from noisy heat by preserving both strength and direction
+  + [caution_register] is semantic_eigenvalue is not proof, hidden activation access, causation, or native mathematical eigensolver output
+  + [balance_register] is stable because component strength, relation direction, dominance, stability, confidence, proof boundary, caution route, and outside remain distinct
+  + [integration_register] is Task_171 completed as SOP-only spectrum specification while graph-matrix runtime remains outside
+  + [frame_outside] is hidden model state, exact transformer eigenvalues, causal proof, truth by heat, runtime eigensolver, single-number authority, direct mutation, credential access, destructive action, and unrelated workspace changes
+
+  = must: keep semantic_eigenvalue as relationship-strength summary until actual graph math exists
+  = must: preserve semantic_eigenvector with every durable semantic_eigenvalue
+  = must: route strong low-confidence components through Caution before promotion
+  = should: use spectra to compare cross-model interpretations when model-lens work resumes
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_legacy_contract_reinforcement_policy
+  + [active_root_frame] is attention_frame_2026_06_25_relationship_eigenspectrum
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_LegacyContractReinforcementPolicy], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [legacy_contract_reinforcement_policy], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_RelationshipEigenspectrum], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [relationship_eigenspectrum], [operating_loop_tick], [balance_register], [integration_register], [outside]

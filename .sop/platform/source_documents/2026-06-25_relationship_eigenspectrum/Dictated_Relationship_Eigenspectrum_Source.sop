@@ -1,0 +1,16 @@
+Subject: Dictated Relationship Eigenspectrum Source
+
+Description: Preserved source wording for relationship eigenvalue-style strength records over SOP semantic relationships.
+
+& [DictatedRelationshipEigenspectrumSource] is the preserved source input
+  + [source_date] is 2026-06-25
+  + [source_origin] is user dictated direction in Codex conversation
+  + [source_text] is "we need to record something like eigenvalues over relationships in the system? that specify the strength of the relationships?"
+  + [interpreted_need] is record dominant relationship-strength components over semantic graph relations so the system can see which subject relations carry stable draw, heat, confidence, and caution
+  + [metaphor_boundary] is eigenvalue language is allowed as semantic eigenspectrum notation unless an actual graph matrix and eigensolver are implemented
+  + [implementation_boundary] is SOP-only specification in current turn
+  + [outside] is hidden model activation measurement, exact transformer eigenvalues, proof of truth, and native graph linear algebra runtime
+
+  = must: preserve the question form of the source
+  = must: distinguish semantic relationship strength from mathematical proof
+  = must: route the canonical contract through AttentionWeightScale and SemanticCorrelationGraph

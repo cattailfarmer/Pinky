@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is Legacy Contract Reinforcement Policy
+  + [focus_subject] is Relationship Eigenspectrum
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is overbuilt remnants need an authority membrane: older or thinner SOP can reinforce only with at least partial agreement, wide shared context with mismatch becomes blind-spot review, and no-agreement material remains outside as baseless or off-topic
-  + [inside] is LegacyContractReinforcementPolicy.sop, SourceAuthorityRoot.sop, Attention.sop, Caution.sop, SecurityHonestyGovernance.sop, SectionedPeripheryAssociationFabric.sop, NarrativeSubjectFileTable.sop, 2026-06-25_legacy_contract_reinforcement_policy_099.hg.sop, 2026-06-25_operating_loop_tick_047.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when primary authority, legacy reinforcement, partial agreement, shared context, blind-spot review, baseless or off-topic disposition, evidence, validation, and outside remain distinct
-  + [outside] is hidden model state, exhaustive repository coverage, proof by association, stale path certainty, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, truth by visual graph, erased source lineage, continuing after explicit stop, legacy override, authority by age or volume, stale backup authority, less articulated command, hidden preference, no-agreement material, and deleting old contracts without a refactor task
+  + [right_hemisphere_draw] is relationship weights need a spectral layer: not just total heat, but dominant relationship components with direction bundles, stability, confidence, and proof boundaries
+  + [inside] is RelationshipEigenspectrum.sop, AttentionWeightScale.sop, SemanticCorrelationGraph.sop, ChangelogCorrelationWeightNet.sop, SemanticHashIndex.sop, SectionedPeripheryAssociationFabric.sop, PeripheryDimensionalProbe.sop, SecurityHonestyGovernance.sop, NarrativeSubjectFileTable.sop, 2026-06-25_relationship_eigenspectrum_100.hg.sop, 2026-06-25_operating_loop_tick_048.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when relationship component, semantic eigenvalue, semantic eigenvector, relationship strength, dominance ratio, stability score, confidence band, proof boundary, caution gate, evidence, validation, and outside remain distinct
+  + [outside] is hidden model state, exhaustive repository coverage, proof by association, stale path certainty, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, truth by visual graph, erased source lineage, continuing after explicit stop, exact transformer eigenvalues, hidden activations, proof by heat, causal truth, runtime eigensolver, and single-number authority
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_047.sop
-  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or create a cleanup/refactor slice for older SOP remnants
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_048.sop
+  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or plan a read-only relationship-spectrum index prototype
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -55,6 +55,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat sop_job_node_browser_interface as the completed Task_168 anchor
   = must: treat sectioned_periphery_association_fabric as the completed Task_169 anchor
   = must: treat legacy_contract_reinforcement_policy as the completed Task_170 anchor
+  = must: treat relationship_eigenspectrum as the completed Task_171 anchor
   = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible

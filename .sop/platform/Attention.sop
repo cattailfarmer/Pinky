@@ -95,6 +95,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [surface_periphery_inquiry_index] is C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
   + [surface_periphery_inquiry_table] is C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
   + [semantic_correlation_graph] is C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+  + [relationship_eigenspectrum] is C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop
   + [carried_support_balance] is C:\Project\Pinky\.sop\platform\CarriedSupportBalance.sop
   + [relation_contracts] is C:\Project\Pinky\.sop\platform\attention_layers\RelationContracts.sop
 
@@ -188,6 +189,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :surface_inquiry_index: C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
   :surface_inquiry_table: C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
   :semantic_correlation: C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+  :relationship_eigenspectrum: C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop
   :support_balance: C:\Project\Pinky\.sop\platform\CarriedSupportBalance.sop
 
   = must: keep focus thin enough to act
@@ -276,6 +278,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use narrative_subject_file_index when a narrative subject needs its files of interest before re-entry, review, or deeper inquiry
   = must: use surface_periphery_inquiry_index when a visible SOP surface marks terms for deeper inquiry and needs table-backed file search pointers
   = must: use semantic correlation graphs when attention direction needs weighted bucket relations and directive tilt
+  = must: use relationship_eigenspectrum when weighted relationships need dominant components, direction bundles, stability, confidence, and proof boundaries recorded as a spectrum
   = must: use carried support balance when imported rails, laws, metaphors, or governance patterns might be mistaken for subject-native association
   = must: use spool master hub to coordinate turn-local worker pools and visible worker trees
   - never: keep a tracker live past its session period without reaffirmation or declared period

@@ -1,0 +1,17 @@
+Subject: Relationship Eigenspectrum Periphery Record 100
+
+Description: SOP-HG realization record for adding eigenvalue-like relationship-strength spectra to the attention framework.
+
+& [RelationshipEigenspectrumRealization_100] is a periphery realization
+  + [record_status] is completed
+  + [record_date] is 2026-06-25
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_relationship_eigenspectrum\Dictated_Relationship_Eigenspectrum_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop
+  + [realization] is relation weights need a spectrum layer that names dominant components, not only total heat
+  + [inside] is semantic_eigenvalue, semantic_eigenvector, relationship_component, eigenspectrum, dominance_ratio, stability_score, confidence_band, proof_boundary, and caution_gate
+  + [boundary] is visible weight dimensions, source paths, graph relations, changelog evidence, narrative justification, Caution, and SecurityHonestyGovernance
+  + [outside] is exact hidden attention, native transformer eigenvalues, causal proof, truth by heat, and single-number authority
+  + [balance] is stable because component strength, direction, confidence, stability, and proof remain separate
+
+/ [relationship_component], [orientation_set], [evidence_path_set] -(Forms)> [semantic_eigenvector]
+* [component_salience], [stability_score], [confidence_band], [penalty_set] -(Ranks)> [semantic_eigenvalue], [eigenspectrum], [outside]

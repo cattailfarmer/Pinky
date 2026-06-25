@@ -10,6 +10,7 @@ Description: Data contract for weighted correlations that attach changelog units
   + [attention_weight_scale] is F:\.sop\platform\AttentionWeightScale.sop
   + [semantic_hash_table] is F:\.sop\platform\SemanticHashTable.sop
   + [semantic_correlation_graph] is F:\.sop\platform\SemanticCorrelationGraph.sop
+  + [relationship_eigenspectrum] is C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop when changelog-attached relationships need dominant component summaries
   + [index_concordance] is the cited term-use structure that counts terms, source locations, and file roles before weighting
   + [version_a] is the old commit, ref, or file state
   + [version_b] is the new commit, ref, or file state
@@ -29,6 +30,7 @@ Description: Data contract for weighted correlations that attach changelog units
   = must: build index_concordance before computing total heat
   = must: use attention_weight_scale to name citation, touch, trace, pulse, chord, heat, salience, draw, and load
   = must: expose the weight vector for every meaningful subject attachment
+  = must: route multi-relation attention_result through relationship_eigenspectrum when one subject neighborhood has competing dominant relationship components
   = must: keep justification_weight separate from narrative_weight and lexical_weight
   = must: penalize generated artifacts when they dominate line count without being semantic core
   = must: preserve unsupported but interesting associations as outside or periphery, not proof

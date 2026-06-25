@@ -1,0 +1,105 @@
+Subject: Relationship Eigenspectrum
+
+Description: SOP contract for recording eigenvalue-like relationship-strength components over semantic relationships without overclaiming mathematical proof.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_relationship_eigenspectrum\Dictated_Relationship_Eigenspectrum_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+
+& [RelationshipEigenspectrum] is the semantic spectrum of dominant relationship-strength components around a subject neighborhood
+  + [spec_status] is active_specification
+  + [pattern_role] is relationship_strength_spectrum
+  + [subject_neighborhood] is the bounded set of subject nodes, relation edges, semantic buckets, file surfaces, and narrative terms currently being measured
+  + [relationship_component] is one named direction of relation strength across subject_a, subject_b, relation_type, evidence_path, and orientation set
+  + [semantic_eigenvalue] is an eigenvalue-like scalar that records how strongly a relationship_component dominates the current subject_neighborhood
+  + [semantic_eigenvector] is the named orientation bundle that explains what kind of relation the semantic_eigenvalue is measuring
+  + [eigenspectrum] is the ordered set of semantic_eigenvalues and semantic_eigenvectors for a subject_neighborhood
+  + [dominant_component] is the relationship_component with highest salience after confidence, caution, and stability review
+  + [minor_component] is a weaker relationship_component that may support triangulation but should not steer focus alone
+  + [noise_component] is heat that lacks evidence diversity, stable recurrence, or boundary clarity
+  + [relationship_strength] is the normalized strength of one component after base weight, directive weight, orientation weights, penalties, confidence, and stability are considered
+  + [dominance_ratio] is how much stronger one component is than the next comparable component
+  + [stability_score] is recurrence across commits, files, narrative frames, model lenses, or repeated scans
+  + [confidence_band] is low, medium, high, or outside according to evidence diversity and boundary inspection
+  + [proof_boundary] is the explicit separation between relationship strength, confidence, causation, and truth
+  + [caution_gate] is the route through Caution and SecurityHonestyGovernance when a strong component could overclaim, collapse identity, or steer unsafe action
+  + [outside] is exact transformer eigenvalues, hidden activations, causal proof, truth by heat, and unmeasured relations
+
+  ? [use_when: relationship strength must be summarized across multiple weighted relations or orientations]
+    = activate [RelationshipEigenspectrum]
+
+  = must: treat semantic_eigenvalue as a visible relationship-strength summary, not mathematical proof
+  = must: preserve semantic_eigenvector so the relationship direction remains inspectable
+  = must: compute or estimate relationship_strength from visible weight dimensions only
+  = must: keep relationship_strength, confidence_band, stability_score, and proof_boundary separate
+  = must: use AttentionWeightScale for heat, salience, pulse, chord, draw, load, resolution_band, and scan_depth language
+  = must: use SemanticCorrelationGraph when subject relationships are bucket or directive relations
+  = must: use ChangelogCorrelationWeightNet when relationship components depend on commit bookends, changelog units, narrative, or justification
+  = must: route high-strength low-confidence components through caution_gate
+  = must: mark noise_component when heat lacks evidence diversity or boundary clarity
+  = should: use dominance_ratio to decide when one relationship should guide focus
+  = should: use stability_score to distinguish momentary heat from durable relation structure
+  - never: call a high semantic_eigenvalue a true causal relationship without independent proof
+  - never: hide relation direction, evidence path, penalties, or caution behind a single number
+
+& [RelationshipComponentVector] is the standard semantic_eigenvector shape
+  + [component_id] is a stable local handle for the relationship component
+  + [subject_a] is the first subject or semantic surface
+  + [subject_b] is the second subject or semantic surface
+  + [relation_type] is supports, contradicts, explains, bounds, causes_candidate, analogy, lineage, co_occurs, refines, routes_to, or outside
+  + [orientation_set] is lexical, subject, role, source_lineage, narrative, justification, recurrence, periphery, primary_document, secondary_document, state, intention, model_lens, and caution orientations
+  + [evidence_path_set] is citations, files, source documents, manifests, commits, periphery records, tests, or accepted captures supporting the component
+  + [penalty_set] is caution, staleness, generated_artifact, boundary_blur, source_gap, or model_drift penalties
+  + [component_heat] is summed visible heat before confidence and caution adjustment
+  + [component_salience] is heat adjusted by confidence, evidence diversity, and caution
+  + [semantic_eigenvalue] is normalized component_salience multiplied by stability_score and reduced by active penalties
+  + [proof_boundary] is what the component cannot prove
+
+  = must: keep subject_a, subject_b, relation_type, and evidence_path_set visible
+  = must: keep component_heat separate from component_salience and semantic_eigenvalue
+  = must: allow relation_type causes_candidate only as a hypothesis until proof exists
+
+& [SpectrumRecordShape] is the minimal SOP-HG shape for one relationship spectrum
+  + [spectrum_node] is N:spectrum:<spectrum_id>
+  + [subject_neighborhood_node] is N:neighborhood:<subject_key>
+  + [component_node] is N:relation_component:<component_id>
+  + [eigenvalue_node] is N:semantic_eigenvalue:<component_id>
+  + [eigenvector_node] is N:semantic_eigenvector:<component_id>
+  + [evidence_node] is N:evidence:<evidence_key>
+  + [caution_node] is N:caution:<caution_key>
+  + [outside_node] is N:outside:relationship_eigenspectrum_boundary
+  + [orders_edge] is E:orders:<spectrum_id>
+  + [dominates_edge] is E:dominates:<component_id>
+  + [supports_edge] is E:supports:<component_id>
+  + [bounds_edge] is E:bounds:<component_id>
+
+  = must: include at least one outside_node in durable spectrum records
+  = must: make rank order inspectable
+  = must: allow later scans to supersede a spectrum without erasing the older record
+
+& [SpectrumPromotionPolicy] is how relationship spectra influence attention
+  + [focus_driver] is a dominant_component with high confidence, adequate stability, and clear proof_boundary
+  + [triangulation_support] is a minor_component that strengthens a subject by distinct orientation
+  + [periphery_hold] is a component with interesting draw but insufficient evidence diversity, stability, or boundary clarity
+  + [caution_hold] is a strong component with unresolved contradiction, safety risk, authority risk, or causal overclaim
+  + [retire_signal] is a component that lost recurrence, evidence support, or relevance after later scans
+
+  = must: promote only focus_driver or triangulation_support into active focus
+  = must: keep periphery_hold and caution_hold visible without letting them steer action
+  = must: route retired or unstable components into outside or history
+  = should: use the spectrum to compare model-lens interpretations across different LLMs
+
+(relationship_eigenspectrum) :relationship_component: /semantic_eigenvalue and proof_boundary/ |truth_by_heat|
+  + [relationship_component] is a bounded subject relation with visible direction and evidence
+  + [semantic_eigenvalue] is normalized relationship-strength dominance for that component
+  + [semantic_eigenvector] is the orientation bundle that explains the direction of measurement
+  + [eigenspectrum] is ranked relationship_component set for the current subject neighborhood
+  + [proof_boundary] is the separation from causation, truth, and hidden native attention
+  |truth_by_heat| treating strength as truth, causal proof, hidden activation access, or exact mathematical eigenvalue without runtime measurement
+
+/ [subject_a], [subject_b], [relation_type], [orientation_set] -(FormsComponent)> [relationship_component]
+* [relationship_component], [component_salience], [stability_score], [confidence_band], [caution_gate], [outside] -(SpectralRelationStrength)> [semantic_eigenvalue], [eigenspectrum]
