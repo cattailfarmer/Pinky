@@ -1,0 +1,22 @@
+Subject: Operating Loop Tick 045
+
+Description: Loop tick recording the completed SOP job node browser interface specification and next safe runnable state.
+
+& [OperatingLoopTick_045] is a semantic cognition operating-loop tick
+  + [tick_status] is completed
+  + [tick_date] is 2026-06-25
+  + [completed_task] is Task_168_define_sop_job_node_browser_interface
+  + [completed_artifact] is C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_sop_job_node_browser_interface_097.hg.sop
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_sop_job_node_browser_interface\Dictated_SOP_Job_Node_Browser_Interface_Source.sop
+  + [commit_frame] is validation_passed_pending_commit
+  + [manager_ready_task] is Task_161_build_direct_lmstudio_endpoint_manager_runner
+  + [clock_state] is running_with_ready_task
+  + [balance_state] is stable because interface browsing, narrative tracking, queue display, capture display, authority gates, and worker execution remain distinct
+  + [proof_state] is git diff check passed, ASCII scan passed, runtime test suite passed, commit pending, and push pending
+  + [next_step] is continue toward direct LM Studio endpoint manager runner unless a read-only browser view-model prototype is selected first
+  + [outside] is unrelated dirty files, actual UI runner code, hidden worker launch, direct mutation, credentials, public network bind, stale cache authority, and remote publication controls
+
+  = must: report containing commit after validation, commit, and push
+  = must: keep Task_161 ready after this specification
+  = must: treat runnable UI implementation as blocked until read model, path allowlist, embedding, cache, redaction, action, and stop policies are specified

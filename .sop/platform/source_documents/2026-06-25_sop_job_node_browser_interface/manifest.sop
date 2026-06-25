@@ -1,0 +1,14 @@
+Subject: SOP Job Node Browser Interface Source Manifest
+
+Description: Source preservation manifest for the SOP job node browser interface specification.
+
+& [SOPJobNodeBrowserInterfaceSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_sop_job_node_browser_interface\Dictated_SOP_Job_Node_Browser_Interface_Source.sop
+  + [canonical_output] is C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_sop_job_node_browser_interface_097.hg.sop
+  + [operating_loop_tick] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_045.sop
+  + [intake_status] is processed_to_canonical_sop
+  + [authority_boundary] is source document preserved separately from canonical browser-interface contract
+
+  = must: keep source wording separate from canonical interface rules
+  = must: cite this manifest when the browser interface is treated as a completed slice

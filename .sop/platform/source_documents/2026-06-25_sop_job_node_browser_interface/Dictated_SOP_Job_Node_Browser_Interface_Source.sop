@@ -1,0 +1,17 @@
+Subject: Dictated SOP Job Node Browser Interface Source
+
+Description: Preserved source note for the interface that lets a Codex app conversation browse the SOP framework around a job node while sub-agent Codex CLI work operates underneath.
+
+& [DictatedSOPJobNodeBrowserInterfaceSource] is the preserved user direction
+  + [source_status] is preserved_raw_direction
+  + [captured_request] is the SOP framework needs to be runnable into a user interface for investigating and following links, tracking narrative, and browsing the framework built around the job node, so it can be loaded as the user interface within the main Codex app instance in which the sub-agent Codex CLI layer operates
+  + [interface_shape] is a local Codex app loaded browser surface over SOP files, narrative records, job node relations, worker queue state, capture output, and authority gates
+  + [job_node_shape] is the root job node and its surrounding source documents, subject links, task frame, spawn plan, worker candidates, captures, and commit ticks
+  + [sub_agent_layer_shape] is Codex CLI worker instances and LM Studio manager proposals remaining underneath the visible interface as gated candidates and captured returns
+  + [preservation_boundary] is source direction only, not implementation authority until processed and gated
+  + [outside] is hidden launching, direct mutation from the interface, credential handling, unbounded worker spawning, private capture, and UI state treated as source authority
+
+  = must: preserve the interface idea separately from canonical runtime or UI implementation
+  = must: keep the main Codex app conversation as the authority surface
+  = must: keep the sub-agent Codex CLI layer inspectable and gated under the interface
+  = must: treat the first interface as read-first and navigation-first before launch controls

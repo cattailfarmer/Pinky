@@ -1,0 +1,127 @@
+Subject: SOP Job Node Browser Interface
+
+Description: Canonical read-first interface contract for loading the SOP framework around a job node as an inspectable Codex app surface while sub-agent Codex CLI work stays gated underneath.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_sop_job_node_browser_interface\Dictated_SOP_Job_Node_Browser_Interface_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
+@ [source] C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPHypergraphRecord.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+
+& [SOPJobNodeBrowserInterface] is the visible operator surface for a job node and its SOP neighborhood
+  + [spec_status] is future_blocked_interface_specification
+  + [pattern_role] is job_node_to_codex_app_embedded_sop_browser
+  + [codex_app_surface] is the main Codex app conversation or local browser pane that the user and Codex use as the authority-facing interface
+  + [job_node] is the active root submission, Codex app attachment, job frame, spawn plan, worker candidates, and return surface
+  + [job_node_neighborhood] is source documents, canonical SOP contracts, narrative ticks, periphery records, hypergraph edges, subject index entries, queue records, captures, validation reports, commits, and outside notes related to the job node
+  + [browser_runtime] is a future local read-first interface generator or server that renders the job_node_neighborhood into navigable views
+  + [read_first_mode] is browse, inspect, filter, compare, open link, trace lineage, view gate, view capture, view diff, and prepare proposal without launching or mutating
+  + [codex_app_embedding] is loading the local interface inside the main Codex app instance or adjacent in-app browser surface while keeping Codex as final review authority
+  + [sub_agent_cli_layer] is the LM Studio manager and Codex CLI worker layer shown as gated candidates, launched jobs, captured returns, validation results, and blocked notes
+  + [navigation_graph] is the graph of SOP subjects, source links, task links, narrative links, worker links, and evidence links
+  + [narrative_timeline] is ordered operating-loop ticks, periphery events, source documents, commits, pushes, reviews, and realization records
+  + [framework_tree] is the expandable file and subject tree surrounding the job node
+  + [hypergraph_view] is the SOP-HG node and edge view for meaning relations, source lineage, gates, and return anchors
+  + [queue_panel] is TaskFrameLaunchQueue and CodexConversationAgentSpawnNode worker candidates grouped by status and gate state
+  + [capture_panel] is raw output, stderr, exit code, prompt hash, context slice, validation, and integration disposition for workers and manager passes
+  + [authority_panel] is source authority, local identity, dirty-file boundary, commit status, push status, launch gate, capture gate, cost gate, stop gate, Security, and Honesty state
+  + [focus_periphery_panel] is current focus, periphery draw, open question, active runtime frame, and subject file-interest links
+  + [search_surface] is subject-key search, path search, relation search, event search, capture search, and unresolved outside search
+  + [action_surface] is proposal-only until a separate authority gate permits launch, mutation, commit, push, or remote publication
+  + [implementation_boundary] is no executable UI code in this slice; first implementation must be local read-only or read-first with explicit action gates
+  + [residual_outside] is hidden model state, credentials, unsupervised daemon, direct mutation, automatic worker launch, private capture, remote publication, and UI-as-authority confusion
+
+  ? [use_when: a job node needs a visible Codex app loaded interface for browsing SOP links, narrative, queues, captures, gates, and worker returns]
+    = activate [SOPJobNodeBrowserInterface]
+
+  = must: load from local C:\Project\Pinky\.sop authority before any remote or worker state
+  = must: center the interface on the job_node and keep the surrounding framework as navigable periphery
+  = must: expose source documents separately from canonical SOP records
+  = must: expose narrative_timeline as the time axis of job-node realization
+  = must: expose queue_panel and capture_panel before any worker action is considered
+  = must: expose authority_panel before any launch, mutation, commit, push, substitution, or remote publication
+  = must: show outside notes beside the node or artifact they constrain
+  = must: keep UI state as view state, not source authority
+  = must: keep Codex app conversation as the review and integration authority
+  = must: keep LM Studio and Codex CLI sub-agent layers visible as gated surfaces, not hidden process state
+  = should: support read-only static rendering before server-backed or interactive rendering
+  = should: support deep links from subject keys to first-inspection files through NarrativeSubjectFileTable
+  = should: support a job-node neighborhood export that can be handed to local models as a context stream
+  - never: let the interface silently launch workers
+  - never: let the interface mutate files without Codex app or user authority
+  - never: hide worker prompt packets, captures, costs, stops, gates, or outside
+  - never: treat a visual graph, model vote, or UI filter as proof
+
+& [JobNodeBrowserViewModel] is the minimal data shape the interface reads
+  + [view_model_id] is stable handle for a rendered job node view
+  + [root_submission_packet] is preserved source, objective, constraints, expected output, and outside
+  + [conversation_attachment] is Codex app conversation handle, focal point, current commit, and return anchor
+  + [subject_index_slice] is relevant NarrativeSubjectFileTable entries for the job node and its periphery
+  + [hypergraph_slice] is SOP-HG nodes and edges selected around the job node
+  + [timeline_slice] is operating-loop ticks, periphery events, source documents, validation records, commits, and pushes
+  + [queue_slice] is launch candidates and blocked candidates
+  + [capture_slice] is worker and manager capture records
+  + [authority_slice] is source authority, local identity, frame reference, Security, Honesty, dirty-file, stop, cost, capture, launch, commit, and push state
+  + [outside_slice] is unresolved, blocked, risky, stale, hidden, or explicitly excluded material
+
+  = must: keep every slice source-linked
+  = must: keep missing data visible as missing rather than inferred
+  = must: rebuild from local files instead of trusting stale UI cache
+
+& [JobNodeNavigationProtocol] is how the interface follows links
+  + [navigation_input] is selected subject, file path, graph node, event, queue candidate, capture, gate, commit, or outside note
+  + [first_hop] is direct source link, canonical contract link, narrative event link, task link, queue link, capture link, or index entry
+  + [second_hop] is periphery file-interest set, hypergraph edge, source citation, related task, related gate, or return anchor
+  + [zoom_rule] is draw more periphery into focus only when relation reason, heat, risk, or unresolved outside justifies the wider view
+  + [backtrack_rule] is return through narrative_timeline and commit bookends to reconstruct prior state
+  + [navigation_outside] is broken path, stale index entry, unsupported relation, hidden model state, or unaudited external link
+
+  = must: preserve the path taken through links as navigation trace
+  = must: separate correlation navigation from proof navigation
+  = must: keep backtracking grounded in committed or captured artifacts
+
+& [SubAgentLayerPanel] is how the interface displays LM Studio and Codex CLI work underneath
+  + [manager_pass_view] is LM Studio manager proposals, blocked notes, model route, prompt packet, output capture, and validation result
+  + [worker_candidate_view] is proposed Codex CLI workers, roles, provider route, prompt packet, launch command, required gates, status, and outside
+  + [worker_return_view] is captured output, stderr, exit code, validation score, integration disposition, and periphery notes
+  + [launch_control_state] is hidden, blocked, proposed, review_required, approved_elsewhere, launched_elsewhere, returned, or closed
+  + [sub_agent_outside] is direct LM Studio mutation, hidden OpenAI spend, credentials, silent launch, and worker-owned authority
+
+  = must: show blocked reasons before launch controls
+  = must: show capture and validation before integration controls
+  = must: require CodexConversationAgentSpawnNode and TaskFrameLaunchQueue state for worker views
+  - never: let worker status imply integration
+
+& [InterfaceImplementationGate] is the boundary before building runnable UI code
+  + [implementation_status] is blocked_until_read_model_and_security_policy_are_specified
+  + [required_gate_set] is read_model_schema, local_path_allowlist, read_only_default, port_binding_policy, browser_embedding_policy, cache_policy, stale_data_policy, link_sanitization_policy, capture_redaction_policy, action_gate_policy, stop_policy, and validation_policy
+  + [first_safe_prototype] is static local read-only HTML or JSON view model generated from the current job node and no worker launch controls
+  + [blocked_work] is interactive mutation, automatic launch, remote sync controls, credential access, arbitrary file browsing, public network bind, hidden telemetry, and worker execution
+  + [outside] is any UI runtime that can control the machine without visible authority and stop gates
+
+  = must: begin with a read-only or read-first prototype
+  = must: prove path allowlist and stale-data behavior before interactive controls
+  = must: keep action buttons disabled or absent until authority gate policy exists
+
+(sop_job_node_browser_interface) :job_node_neighborhood: /read_first_mode and authority_panel/ |residual_outside|
+  + [job_node_neighborhood] is the browsable local SOP graph around the active job node
+  + [navigation_graph] is the subject, file, narrative, task, queue, capture, gate, and evidence link network
+  + [narrative_timeline] is the chronological thread of realization and commit frames
+  + [sub_agent_cli_layer] is visible gated workers and captured returns
+  + [authority_panel] is the boundary that prevents UI navigation from becoming unreviewed action
+  |residual_outside| hidden launching, direct mutation, credential access, stale UI authority, public network bind, and unbounded worker spawning
+
+/ [root_submission], [codex_app_surface] -(Loads)> [job_node], [job_node_neighborhood], [outside]
+* [job_node], [NarrativeSubjectFileTable], [SOPHypergraphRecord] -(Renders)> [navigation_graph], [framework_tree], [hypergraph_view]
+* [operating_loop_tick], [periphery_event], [commit_receipt] -(Orders)> [narrative_timeline], [backtrack_rule], [state_reconstruction]
+* [TaskFrameLaunchQueue], [CodexConversationAgentSpawnNode], [capture_gate] -(Displays)> [queue_panel], [capture_panel], [SubAgentLayerPanel]
+* [SecurityHonestyGovernance], [FrameReferenceIntegrity], [LocalIdentityConsumption], [authority_gate] -(Guards)> [authority_panel], [action_surface], [outside]

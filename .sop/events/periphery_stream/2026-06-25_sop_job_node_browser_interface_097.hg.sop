@@ -1,0 +1,28 @@
+Subject: SOP Job Node Browser Interface 097
+
+Description: SOP-HG realization event for the read-first interface that lets the Codex app browse the SOP framework around a job node.
+
+& [SOPJobNodeBrowserInterface_097] is the realized periphery event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is SOP Job Node Browser Interface
+  + [source_question] is whether the SOP framework should be runnable into a user interface for investigating links, tracking narrative, and browsing the job-node framework inside the main Codex app while sub-agent Codex CLI work operates below it
+  + [primary_realization] is the job-node system needs a read-first operator surface that renders the local SOP graph, narrative timeline, queue, captures, gates, and worker returns without confusing navigation with authority
+  + [job_node] is the active root submission and its Codex app attached job frame
+  + [navigation_graph] is the browsable network of source, subject, narrative, hypergraph, queue, capture, and gate links
+  + [sub_agent_cli_layer] is shown as gated worker candidates, launches elsewhere, captured returns, and validation records
+  + [wisdom_register] is the interface gives the attention operating system an inspectable cockpit where Codex and user can see what the worker layer is doing before accepting action or integration
+  + [caution_register] is interface affordances must not become hidden launch authority, repo mutation authority, stale cache authority, or proof by visual graph
+  + [balance_register] is stable because browsing, queue display, capture display, gate display, and action authority remain distinct
+  + [utility_horizon] is static read-only browser prototype, job-node view model, narrative timeline renderer, subject link navigator, capture review panel, and authority dashboard
+  + [next_step] is keep Task_161 ready or later define a read-only static browser prototype before any interactive runner
+  + [outside] is direct mutation, hidden launch, credentials, unbounded worker spawning, stale UI cache, public network bind, and automatic remote publication
+
+  = must: keep first interface prototype read-only or read-first
+  = must: expose gates before action controls
+  = should: build the view model before building UI code
+
+N:sop_job_node_browser_interface_097 -> C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
+E:extends -> CodexConversationAgentSpawnNode, LLMAgentCollaborationFabric, CodexLMStudioOrchestrationWorkspace, SOPTaskManager, TaskFrameLaunchQueue
+E:renders -> job_node, navigation_graph, narrative_timeline, framework_tree, hypergraph_view, queue_panel, capture_panel, authority_panel
+E:guards -> read_first_mode, source_authority, SecurityHonestyGovernance, FrameReferenceIntegrity, LocalIdentityConsumption, action_gate

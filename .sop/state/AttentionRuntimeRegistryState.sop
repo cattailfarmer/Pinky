@@ -162,14 +162,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_codex_conversation_agent_spawn_node\Dictated_Codex_Conversation_Agent_Spawn_Node_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_codex_conversation_agent_spawn_node_096.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_044.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_sop_job_node_browser_interface\Dictated_SOP_Job_Node_Browser_Interface_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_sop_job_node_browser_interface_097.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_045.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Codex Conversation Agent Spawn Node
-  + [active_root_frame] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
+  + [registry_scope] is SOP Job Node Browser Interface
+  + [active_root_frame] is attention_frame_2026_06_25_sop_job_node_browser_interface
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 38
+  + [closed_frame_count] is 39
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -592,9 +596,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: require substitution receipts before accepting artifact replacement
   = should: begin future prototypes with synthetic local collaboration threads only
 
-& [AttentionFrame_2026_06_25_CodexConversationAgentSpawnNode] is the active semantic stack frame for Codex app attached agent spawning
+& [AttentionFrame_2026_06_25_CodexConversationAgentSpawnNode] is the semantic stack frame for Codex app attached agent spawning
   + [frame_id] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
   + [child_frame_set] is CodexConversationAgentSpawnNode, LLMAgentCollaborationFabric, CodexLMStudioOrchestrationWorkspace, LocalAIManagerPrimary, SOPTaskManager, TaskFrameLaunchQueue, RootSubmissionJobFrame, SpawnPlanProtocol, WorkerInstanceLaunchCandidate, source_preservation, operating_loop_tick_044, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -615,11 +619,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep spawn candidates blocked until gates are visible and accepted
   = should: begin future prototypes with synthetic spawn plans only
 
+& [AttentionFrame_2026_06_25_SOPJobNodeBrowserInterface] is the active semantic stack frame for the Codex app loaded job-node browser
+  + [frame_id] is attention_frame_2026_06_25_sop_job_node_browser_interface
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
+  + [child_frame_set] is SOPJobNodeBrowserInterface, CodexConversationAgentSpawnNode, LLMAgentCollaborationFabric, CodexLMStudioOrchestrationWorkspace, SOPTaskManager, TaskFrameLaunchQueue, SpoolMasterHub, AttentionRuntimeRegistry, NarrativeSubjectFileIndex, NarrativeSubjectFileTable, SOPHypergraphRecord, JobNodeBrowserViewModel, JobNodeNavigationProtocol, SubAgentLayerPanel, InterfaceImplementationGate, source_preservation, operating_loop_tick_045, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is SOPJobNodeBrowserInterface.sop, CodexConversationAgentSpawnNode.sop, LLMAgentCollaborationFabric.sop, CodexLMStudioOrchestrationWorkspace.sop, SOPTaskManager.sop, TaskFrameLaunchQueue.sop, Dictated_SOP_Job_Node_Browser_Interface_Source.sop, 2026-06-25_sop_job_node_browser_interface_097.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_045.sop
+  + [focus_register] is job_node, job_node_neighborhood, codex_app_surface, browser_runtime, read_first_mode, navigation_graph, narrative_timeline, framework_tree, hypergraph_view, queue_panel, capture_panel, authority_panel, focus_periphery_panel, sub_agent_cli_layer, and action_surface
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or specify a read-only browser view-model prototype
+  + [delineation_register] is inside local SOP graph browsing, source links, subject links, narrative events, queue candidates, capture records, authority gates, sub-agent returns, view-model slices, and outside
+  + [periphery_register] is hidden launching, direct mutation, credentials, stale UI authority, public network bind, private capture, automatic remote publication, hidden model state, and unrelated dirty files
+  + [operation_register] is preserve_source, define_job_node_browser_interface, extend_spawn_node, extend_orchestration_workspace, extend_task_manager, extend_launch_queue, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, SOPJobNodeBrowserInterface.sop, CodexConversationAgentSpawnNode update, CodexLMStudioOrchestrationWorkspace update, SOPTaskManager update, TaskFrameLaunchQueue update, source manifest, periphery record 097, and operating_loop_tick_045
+  + [wisdom_register] is the browser interface turns the SOP operating system into an inspectable local control surface while preserving Codex app authority and read-first navigation
+  + [caution_register] is any runnable UI must not become hidden launch authority, repo mutation authority, stale cache authority, credential access, or proof by visual graph
+  + [balance_register] is stable because browsing, queue display, capture display, authority gates, view state, and worker execution remain distinct
+  + [integration_register] is Task_168 completed as SOP-only future interface specification while runnable UI code remains blocked behind read model, path allowlist, cache, redaction, action, and stop policies
+  + [frame_outside] is hidden model state, live worker spawning, direct mutation, stale cache authority, credential access, public network bind, destructive action, and unrelated workspace changes
+
+  = must: keep UI state as view state
+  = must: keep action controls blocked until authority gate policy exists
+  = should: begin future prototypes with static read-only job-node view models
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
+  + [active_root_frame] is attention_frame_2026_06_25_sop_job_node_browser_interface
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_CodexConversationAgentSpawnNode], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [codex_conversation_agent_spawn_node], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_SOPJobNodeBrowserInterface], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [sop_job_node_browser_interface], [operating_loop_tick], [balance_register], [integration_register], [outside]

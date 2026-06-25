@@ -56,6 +56,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [local_ai_manager_primary] is C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
   + [llm_agent_collaboration_fabric] is C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
   + [codex_conversation_agent_spawn_node] is C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
+  + [sop_job_node_browser_interface] is C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
   + [lm_studio_agent_benchmark] is C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
   + [lm_studio_worker_functional_lane] is C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
   + [lm_studio_worker_task_corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
@@ -146,6 +147,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :local_ai_manager_primary: C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
   :llm_agent_collaboration_fabric: C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
   :codex_conversation_agent_spawn_node: C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
+  :sop_job_node_browser_interface: C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
   :lm_studio_agent_benchmark: C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
   :lm_studio_worker_functional_lane: C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
   :lm_studio_worker_task_corpus: C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
@@ -231,6 +233,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use local_ai_manager_primary when the manager loop should run locally through LM Studio so OpenAI Codex allowance is reserved for high-demand worker and authority tasks
   = must: use llm_agent_collaboration_fabric when multiple LLM agents, model lanes, or worker outputs need contribution categories, critique votes, primacy votes, artifact substitution, or source lineage review
   = must: use codex_conversation_agent_spawn_node when a root submission attached to a Codex app conversation needs a gated spawn plan for LM Studio hosted Codex CLI worker candidates
+  = must: use sop_job_node_browser_interface when a job node needs a visible Codex app loaded surface for browsing SOP links, narrative, queues, captures, gates, and sub-agent returns without granting hidden launch authority
   = must: use lm_studio_agent_benchmark before treating LM Studio output as a reliable local SOP worker lane
   = must: use lm_studio_worker_functional_lane when launching a Codex-hosted LM Studio worker for a booted non-mutating SOP proposal job
   = must: use lm_studio_worker_task_corpus when repeated same-family LM Studio validations need diverse task-family evidence before broader readiness claims

@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 19
+  + [subject_count] is 20
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -195,6 +195,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is silent spawning, hidden spend, credentials, unbounded Codex CLI launch, direct worker mutation, automatic artifact substitution, worker-owned authority, and implementation before gates
+
+& [Subject_sop_job_node_browser_interface] is a narrative subject entry
+  + [subject_key] is sop_job_node_browser_interface
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_sop_job_node_browser_interface_097.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop, C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop, C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop, C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop, C:\Project\Pinky\.sop\platform\SOPTaskManager.sop, C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop, C:\Project\Pinky\.sop\platform\SpoolMasterHub.sop, C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop, C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\SOPHypergraphRecord.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop, C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_045.sop
+  + [framework_periphery_set] is job_node_browser_interface_framework, codex_conversation_spawn_framework, llm_agent_collaboration_framework, codex_lmstudio_orchestration_framework, task_manager_framework, launch_queue_framework, spool_master_hub_framework, attention_runtime_registry_framework, narrative_subject_lookup_framework, sop_hypergraph_framework, security_honesty_framework, frame_reference_framework, and local_identity_framework
+  + [relation_reason_set] is Codex app embedded UI surface, job-node neighborhood, source links, subject links, narrative timeline, hypergraph view, queue panel, capture panel, authority panel, sub-agent CLI layer visibility, read-first mode, stale cache boundary, and current loop tick
+  + [search_phrase_set] is SOPJobNodeBrowserInterface, job_node_browser_interface, job_node_neighborhood, browser_runtime, codex_app_embedding, navigation_graph, narrative_timeline, framework_tree, hypergraph_view, queue_panel, capture_panel, authority_panel, SubAgentLayerPanel, read_first_mode
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is direct mutation, silent worker launch, credentials, stale UI authority, public network bind, private capture, automatic remote publication, and UI state treated as source authority
 
 & [Subject_codex_lmstudio_orchestration_workspace] is a narrative subject entry
   + [subject_key] is codex_lmstudio_orchestration_workspace

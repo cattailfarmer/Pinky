@@ -13,6 +13,7 @@ Description: Spawn-node contract that attaches a root submission to a Codex app 
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
 @ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
 
 & [CodexConversationAgentSpawnNode] is the launch membrane between a Codex app conversation and LM Studio hosted Codex CLI agents
   + [spec_status] is future_blocked_specification
@@ -38,6 +39,7 @@ Description: Spawn-node contract that attaches a root submission to a Codex app 
   + [stop_gate] is user stop, stop file, timeout, failed validation, failed provider, budget cap, unsafe action, or dirty-file collision
   + [spawn_state] is proposed, queued, launch_ready, launched, running, returned, validated, integrated, blocked, failed, stopped, or closed
   + [return_surface] is captured agent contributions routed back to LLMAgentCollaborationFabric, SOPTaskManager, and the Codex app conversation
+  + [job_node_browser_interface] is the visible read-first surface where the job node, spawn plan, worker candidates, captures, gates, and returns are inspected inside the Codex app context
   + [implementation_boundary] is no actual worker spawning until context, provider, cost, stop, capture, concurrency, and authority gates are specified and validated
   + [residual_outside] is unsupervised daemon, hidden spend, credential handling, direct mutation, unbounded launch, hidden model state, and worker-owned authority
 
@@ -55,6 +57,7 @@ Description: Spawn-node contract that attaches a root submission to a Codex app 
   = must: keep provider_fit_gate visible because local-provider no-tool and exact-output behavior must be proven per role
   = must: route every launch candidate through TaskFrameLaunchQueue
   = must: route every returned worker output through capture_gate and LLMAgentCollaborationFabric before integration
+  = must: expose spawn plans, worker candidates, capture targets, and authority gates to SOPJobNodeBrowserInterface when a Codex app UI surface is active
   = must: require authority_gate before repo mutation, artifact substitution, commit, push, or remote publication
   = must: let stop_gate halt or block the spawn plan without treating it as failure
   = should: begin with synthetic worker packets before real Codex CLI spawning
