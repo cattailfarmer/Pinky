@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 20
+  + [subject_count] is 21
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -52,6 +52,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is pressure
   + [coverage_status] is partial
   + [outside] is proof of meaning, exhaustive coverage, and stale-path certainty
+
+& [Subject_sectioned_periphery_association_fabric] is a narrative subject entry
+  + [subject_key] is sectioned_periphery_association_fabric
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_sectioned_periphery_association_fabric_098.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop, C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop, C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop, C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop, C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop, C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop, C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop, C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_046.sop
+  + [framework_periphery_set] is sectioned_periphery_framework, periphery_attention_framework, surface_periphery_inquiry_framework, narrative_subject_lookup_framework, attention_weight_framework, dimensional_probe_framework, balance_center_framework, job_node_browser_framework, security_honesty_framework, and frame_reference_framework
+  + [relation_reason_set] is sectioned periphery contract, base periphery layer, surface term lookup, surface lookup table, narrative subject file index, subject file table, weight scale, hot periphery probe, stability split, browser panels, Security/Honesty gate, frame-reference gate, and current loop tick
+  + [search_phrase_set] is SectionedPeripheryAssociationFabric, internal_periphery_section, external_periphery_section, primary_document_association, secondary_document_association, primary_document_set, secondary_document_set, triangulation_weight, internal_consistency_stability, external_model_stability, PeripheryStabilitySplit
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is hidden model activations, proof by association, stale path certainty, exhaustive repository map, and automatic promotion
 
 & [Subject_unified_faculty_attention] is a narrative subject entry
   + [subject_key] is unified_faculty_attention

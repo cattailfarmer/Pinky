@@ -2,6 +2,8 @@ Subject: Periphery Attention Layer
 
 Description: Available surrounding attention field around focus.
 
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+
 & [PeripheryAttentionLayer] is the surrounding field of relevant but non-focal nodes
   + [layer_key] is periphery
   + [node_role] is N:periphery:<subject_key>
@@ -12,6 +14,13 @@ Description: Available surrounding attention field around focus.
   + [focal_point_layer] is F:\.sop\platform\FocalPoint.sop when periphery creates enough draw to chase focus
   + [traversal_policy] is F:\.sop\platform\AttentionTraversalPolicy.sop when periphery is folded into focal probing
   + [support_balance_layer] is F:\.sop\platform\CarriedSupportBalance.sop when support fit needs audit
+  + [sectioned_periphery_association_fabric] is C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop when periphery needs internal and external sections with primary and secondary file associations
+  + [internal_periphery_section] is local file-surface periphery that names nearby elements and associated files for browsing into focus
+  + [external_periphery_section] is general contextual and model-frame periphery around the specified module or job
+  + [primary_document_association] is a strong local file association that should carry greater triangulation weight
+  + [secondary_document_association] is a weak nearby file association that should remain available without overpowering the primary shape
+  + [internal_consistency_stability] is local stability of file paths, cited subjects, primary documents, secondary documents, and visible outside
+  + [external_model_stability] is model-frame stability of the LLM's interpretation over broader contextual periphery
   + [entry_condition] is shared subject layer, recent narrative weight, or correlation with focus
   + [exit_condition] is fades, is promoted by draw, or is archived into subject layer
 
@@ -21,6 +30,10 @@ Description: Available surrounding attention field around focus.
   = must: let traversal_policy fold and unwind periphery realizations before promotion
   = must: feed tracker periphery only when the subject was explicitly marked for later attention
   = must: let focus chase periphery when contextual draw demands right_hemisphere_focus
+  = must: use SectionedPeripheryAssociationFabric when a periphery signal depends on local file associations or external model-frame context
+  = must: keep internal_periphery_section separate from external_periphery_section
+  = must: keep primary_document_association stronger than secondary_document_association without treating either as proof
+  = must: report internal_consistency_stability separately from external_model_stability when periphery stability affects balance
   = must: route slow cross-turn background realizations to PeripheryRepository
   = must: report when a carried support fails to appear in periphery so it remains imported rather than native
   - never: promote periphery without liminal draw or explicit focus

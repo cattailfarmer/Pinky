@@ -3,12 +3,13 @@ Subject: Surface Periphery Inquiry Table
 Description: Seed lookup table mapping surface-layer inquiry terms to deeper SOP files to search.
 
 @ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
 
 & [SurfacePeripheryInquiryTable] is the current table for surface-to-depth search pointers
   + [table_status] is seed
   + [table_scope] is active faculty attention and periphery inquiry surfaces
   + [authority_root] is C:\Project\Pinky\.sop
-  + [entry_count] is 12
+  + [entry_count] is 14
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed SOP files, stale historical F:\.sop references, runtime pointers, and terms not yet reviewed
 
@@ -21,6 +22,12 @@ Description: Seed lookup table mapping surface-layer inquiry terms to deeper SOP
   + [surface_key] is unified_faculty_attention
   + [surface_file] is C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
   + [inquiry_term_set] is depth_profile, faculty_field, balance_axis_set, shared_pair_frame, direction_integration_axis, unified_interrogation_cycle, depth_weighted_activation, wisdom_caution_axis, periphery_state, semantic_lookup, semantic_hash_index, traversal, latent_depth, periphery_dimensional_probe, unresolved_faculty_residual, and router
+  + [lookup_status] is lookup_ready
+
+& [SurfaceMarker_SectionedPeripheryAssociationFabric] is the table surface for sectioned periphery association
+  + [surface_key] is sectioned_periphery_association_fabric
+  + [surface_file] is C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+  + [inquiry_term_set] is internal_periphery_section, external_periphery_section, primary_document_association, secondary_document_association, internal_consistency_stability, external_model_stability, and triangulation_weight
   + [lookup_status] is lookup_ready
 
 & [Entry_unified_depth_profile_001] is a lookup entry
@@ -154,6 +161,30 @@ Description: Seed lookup table mapping surface-layer inquiry terms to deeper SOP
   + [query_mode] is permissive
   + [depth_hint] is deep_probe
   + [outside] is hidden geometry or guaranteed model transfer
+
+& [Entry_sectioned_internal_periphery_013] is a lookup entry
+  + [surface_key] is sectioned_periphery_association_fabric
+  + [inquiry_term] is internal_periphery_section
+  + [target_file] is C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+  + [target_subject] is InternalPeripherySection and PeripheryAssociationRecord
+  + [association_strength] is primary
+  + [search_phrase_set] is internal_periphery_section, primary_document_set, secondary_document_set, PeripheryAssociationRecord, browser_gather_rule
+  + [relation_reason] is defines local file-surface periphery and primary or secondary document associations
+  + [query_mode] is exact
+  + [depth_hint] is impact
+  + [outside] is exhaustive repository coverage or proof by nearby file
+
+& [Entry_sectioned_stability_split_014] is a lookup entry
+  + [surface_key] is sectioned_periphery_association_fabric
+  + [inquiry_term] is internal_consistency_stability
+  + [target_file] is C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+  + [target_subject] is PeripheryStabilitySplit
+  + [association_strength] is primary
+  + [search_phrase_set] is internal_consistency_stability, external_model_stability, internal_instability_signal, external_instability_signal, PeripheryStabilitySplit
+  + [relation_reason] is separates local file-surface stability from external model-frame stability
+  + [query_mode] is exact
+  + [depth_hint] is impact
+  + [outside] is treating either stability layer as proof
 
 (surface_periphery_inquiry_table) :inquiry_term: /lookup_entry and target_file/ |unresolved_inquiry|
   + [inquiry_term] is the lookup handle exposed by a surface file

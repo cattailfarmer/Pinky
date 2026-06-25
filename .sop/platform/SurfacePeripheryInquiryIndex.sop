@@ -9,6 +9,7 @@ Description: Contract for marking SOP surface files with deeper-inquiry terms th
 @ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
 @ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_surface_periphery_inquiry_index\Dictated_Surface_Periphery_Inquiry_Index_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
 
 & [SurfacePeripheryInquiryIndex] is the surface-to-depth lookup contract
   + [surface_file] is an SOP file that acts as a visible layer over deeper subject material
@@ -18,6 +19,9 @@ Description: Contract for marking SOP surface files with deeper-inquiry terms th
   + [lookup_table] is C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
   + [lookup_entry] is one mapping from inquiry term to file pointer, section handle, search phrase, relation reason, depth hint, and outside
   + [search_pointer] is a file path plus subject, section handle, search phrase, or query terms for re-entry
+  + [primary_document_pointer] is a search pointer whose target file strongly governs the inquiry term
+  + [secondary_document_pointer] is a search pointer whose target file is nearby support or weak association
+  + [association_strength] is primary, secondary, weak_nearby, unresolved, or outside
   + [depth_hint] is surface, hair, skin, pressure, impact, or deep_probe
   + [query_mode] is exact, strict, permissive, inclusive, or traverse
   + [residual_outside] is terms not yet indexed, stale paths, unsupported semantic identity, and missing deeper record
@@ -26,6 +30,8 @@ Description: Contract for marking SOP surface files with deeper-inquiry terms th
   = must: map each inquiry term to at least one search_pointer when the term is marked as lookup_ready
   = must: preserve terms without known pointers as unresolved_inquiry rather than inventing a target
   = must: keep lookup entries as search guidance, not proof of meaning
+  = must: preserve primary_document_pointer and secondary_document_pointer separately when a lookup entry is used for internal periphery
+  = must: expose association_strength when lookup output feeds SectionedPeripheryAssociationFabric
   = must: prefer local Pinky .sop paths over old F:\.sop authority paths
   = must: use NarrativeSubjectFileIndex when the inquiry begins from a narrated subject rather than from a visible surface term
   = must: receive active file surfaces from SubjectInquiry when narrative-led subject following selects files to inspect
@@ -53,6 +59,7 @@ Description: Contract for marking SOP surface files with deeper-inquiry terms th
   + [inquiry_term] is the term to search from
   + [target_file] is the SOP file to inspect
   + [target_subject] is the subject or section handle to seek
+  + [association_strength] is primary, secondary, weak_nearby, unresolved, or outside
   + [search_phrase_set] is the phrases an agent should search with rg or local file search
   + [relation_reason] is why this target helps deepen the inquiry
   + [query_mode] is exact, strict, permissive, inclusive, or traverse
@@ -61,6 +68,7 @@ Description: Contract for marking SOP surface files with deeper-inquiry terms th
 
   = must: keep target_file inspectable
   = must: keep relation_reason short and concrete
+  = must: mark whether target_file is a primary or secondary association when the lookup supports internal periphery
   = must: mark missing or speculative targets as unresolved instead of lookup_ready
   = should: prefer section handles over brittle line numbers
 

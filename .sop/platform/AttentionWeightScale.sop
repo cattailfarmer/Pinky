@@ -10,6 +10,7 @@ Description: Terminology and data contract for calibrated signal strength across
 @ [source] F:\.sop\platform\FocusZoom.sop
 @ [source] F:\.sop\platform\TrailingChecksumVoice.sop
 @ [source] F:\.sop\platform\SevenFoldPantsCorrelationFrame.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
 
 & [AttentionWeightScale] is the scale vocabulary for measuring correlation signal strength in an activated attention graph
   + [pattern_role] is calibrated_attention_signal_scale
@@ -96,6 +97,8 @@ Description: Terminology and data contract for calibrated signal strength across
   + [recurrence_orientation] is repeated appearance across frames, commits, files, or reflections
   + [intensity_orientation] is additions, deletions, hunk count, blast radius, or suddenness
   + [periphery_orientation] is nearby association, hidden-behind term, turned aspect, or missed-focus candidate
+  + [primary_document_orientation] is signal strength from directly governing or source-bearing local documents
+  + [secondary_document_orientation] is weaker signal strength from nearby supporting or analogous documents
   + [state_orientation] is framework state, commit bookend, focal point, and logged recall fit
   + [intention_orientation] is purpose, desired outcome, use case, or directive fit
   + [model_lens_orientation] is consistency of interpretation across backing LLMs or model perspectives
@@ -104,6 +107,8 @@ Description: Terminology and data contract for calibrated signal strength across
   = must: keep caution_orientation as penalty or gate, not ordinary positive heat
   = must: keep justification_orientation separate from narrative_orientation
   = must: keep model_lens_orientation separate from proof of correctness
+  = must: keep primary_document_orientation stronger than secondary_document_orientation only when paths and relation reasons are inspected
+  = must: penalize secondary_document_orientation when it distorts or contradicts primary documents
   = must: require at least one source or justification orientation before claiming a durable work finding
 
 & [ProbeDepthPolicy] is the rule for choosing low-resolution or high-resolution scan depth

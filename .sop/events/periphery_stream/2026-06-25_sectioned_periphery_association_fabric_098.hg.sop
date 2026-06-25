@@ -1,0 +1,30 @@
+Subject: Sectioned Periphery Association Fabric 098
+
+Description: SOP-HG realization event for refining periphery into internal and external sections with primary and secondary document associations.
+
+& [SectionedPeripheryAssociationFabric_098] is the realized periphery event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is Sectioned Periphery Association Fabric
+  + [source_question] is how periphery should notice nearby elements, name strongly and weakly associated files, strengthen triangulation through primary documents, and distinguish internal file-surface periphery from external context/model periphery
+  + [primary_realization] is periphery needs sections: internal periphery is the local file-surface web that can be browsed into focus, while external periphery is the general context and LLM model frame; stability must split into internal consistency stability and external model stability
+  + [internal_periphery_section] is local specific file, subject, source, event, index, capture, and gate association
+  + [external_periphery_section] is contextual frame, model lens, broad operating frame, and unspecified outside
+  + [primary_document_association] is strong file association for triangulation
+  + [secondary_document_association] is weak nearby association held available but not dominant
+  + [wisdom_register] is the divided periphery makes browsing and triangulation cleaner because the system can know whether a signal comes from local file structure or external model framing
+  + [caution_register] is primary and secondary association strength must not become proof, and external model stability must not replace local file-surface consistency
+  + [balance_register] is stable because internal periphery, external periphery, primary files, secondary files, and the two stability layers remain distinct
+  + [utility_horizon] is stronger job-node browser periphery panels, better subject lookup, primary-first triangulation, stability debugging, and safer model-lens comparison
+  + [next_step] is keep Task_161 ready or later prototype a read-only internal periphery view model
+  + [outside] is hidden model activations, proof by nearby files, exhaustive coverage, automatic promotion, stale path certainty, and broad model stability claims
+
+  = must: keep internal and external periphery separate
+  = must: weight primary documents more strongly than secondary documents without treating either as proof
+  = should: surface primary and secondary document sets in browser and balance records
+
+N:sectioned_periphery_association_fabric_098 -> C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+E:extends -> PeripheryAttentionLayer, SurfacePeripheryInquiryIndex, NarrativeSubjectFileIndex, AttentionWeightScale, AttentionBalanceCenter, SOPJobNodeBrowserInterface
+E:sections -> internal_periphery_section, external_periphery_section
+E:weights -> primary_document_association, secondary_document_association, triangulation_weight
+E:stabilizes -> internal_consistency_stability, external_model_stability

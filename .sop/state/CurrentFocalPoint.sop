@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is SOP Job Node Browser Interface
+  + [focus_subject] is Sectioned Periphery Association Fabric
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the headless spawn node needs a visible read-first interface where the Codex app can browse the job-node SOP neighborhood, narrative timeline, queues, captures, gates, and sub-agent returns before any action is accepted
-  + [inside] is SOPJobNodeBrowserInterface.sop, CodexConversationAgentSpawnNode.sop, LLMAgentCollaborationFabric.sop, CodexLMStudioOrchestrationWorkspace.sop, SOPTaskManager.sop, TaskFrameLaunchQueue.sop, SpoolMasterHub.sop, AttentionRuntimeRegistry.sop, NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, SOPHypergraphRecord.sop, SecurityHonestyGovernance.sop, FrameReferenceIntegrity.sop, LocalIdentityConsumption.sop, 2026-06-25_sop_job_node_browser_interface_097.hg.sop, 2026-06-25_operating_loop_tick_045.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when browsing, source links, subject links, narrative timeline, queue display, capture display, authority gates, UI state, and worker execution remain distinct and runnable UI implementation stays blocked until read model, path allowlist, cache, redaction, action, and stop policies exist
-  + [outside] is hidden model state, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, stale UI authority, public network bind, truth by visual graph, erased source lineage, and continuing after explicit stop
+  + [right_hemisphere_draw] is periphery needs divided fabric: internal periphery names local file-surface associations with primary and secondary documents, while external periphery holds the broader model/context frame, and stability must split into local consistency and model-frame stability
+  + [inside] is SectionedPeripheryAssociationFabric.sop, Periphery.sop, SurfacePeripheryInquiryIndex.sop, SurfacePeripheryInquiryTable.sop, NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, AttentionWeightScale.sop, PeripheryDimensionalProbe.sop, AttentionBalanceCenter.sop, SOPJobNodeBrowserInterface.sop, SecurityHonestyGovernance.sop, FrameReferenceIntegrity.sop, 2026-06-25_sectioned_periphery_association_fabric_098.hg.sop, 2026-06-25_operating_loop_tick_046.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when internal periphery, external periphery, primary document associations, secondary document associations, triangulation weight, internal consistency stability, external model stability, confidence, and proof remain distinct
+  + [outside] is hidden model state, exhaustive repository coverage, proof by association, stale path certainty, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, truth by visual graph, erased source lineage, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_045.sop
-  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or design a read-only job-node browser view-model prototype
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_046.sop
+  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or prototype a read-only internal periphery view model
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -53,6 +53,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat llm_agent_collaboration_fabric as the completed Task_166 anchor
   = must: treat codex_conversation_agent_spawn_node as the completed Task_167 anchor
   = must: treat sop_job_node_browser_interface as the completed Task_168 anchor
+  = must: treat sectioned_periphery_association_fabric as the completed Task_169 anchor
   = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible

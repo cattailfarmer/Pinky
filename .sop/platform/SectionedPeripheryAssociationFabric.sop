@@ -1,0 +1,141 @@
+Subject: Sectioned Periphery Association Fabric
+
+Description: Canonical contract for dividing periphery into internal and external sections, weighting primary and secondary document associations, and separating local consistency stability from model-frame stability.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_sectioned_periphery_association_fabric\Dictated_Sectioned_Periphery_Association_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPJobNodeBrowserInterface.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+
+& [SectionedPeripheryAssociationFabric] is the divided periphery fabric for local file-surface associations and external frame context
+  + [spec_status] is active_specification
+  + [pattern_role] is sectioned_periphery_and_stability_refinement
+  + [periphery_section_set] is internal_periphery_section and external_periphery_section
+  + [internal_periphery_section] is the local specific reference fabric of nearby subjects, terms, files, citations, source relations, and folder/path adjacency that can be gathered into focus by browsing the file structure
+  + [external_periphery_section] is the general contextual frame around which the active module or job operates, including model-lens interpretation, user intent context, domain frame, world frame, and unspecified outside
+  + [nearby_element] is a subject, term, directive, file, event, source, index entry, gate, or outside note close enough to the focal subject to remain available
+  + [primary_document_association] is a strong association to a directly governing or source-bearing document, contract, state file, event, or index entry
+  + [secondary_document_association] is a weak or nearby association to a supporting, adjacent, analogous, or background document
+  + [primary_document_set] is the files that should be opened first for local internal periphery and triangulation
+  + [secondary_document_set] is the nearby files that stay available as weaker periphery and may be admitted only when focus, zoom, or uncertainty requires them
+  + [association_strength] is primary, secondary, weak_nearby, unresolved, or outside
+  + [document_role] is source, canonical_contract, state, event, index, runtime_capture, test, planning, gate, support, analogy, or outside
+  + [triangulation_weight] is the stronger signal given to matching terms that recur across primary_document_association records before secondary records are admitted
+  + [periphery_term_cluster] is a set of terms that jointly point toward the same focal subject through primary and secondary document associations
+  + [internal_periphery_web] is the inspectable graph of nearby elements, file pointers, relation reasons, search phrases, depth hints, and outside notes inside local SOP authority
+  + [internal_consistency_stability] is stability of local file-surface periphery: paths exist, cited subjects align, primary documents agree, secondary documents do not distort, and outside remains visible
+  + [external_model_stability] is stability of inference over external periphery through the LLM model lens: context frame remains coherent, model interpretation stays proportionate, and unsupported outside is not promoted
+  + [stability_layer_set] is internal_consistency_stability and external_model_stability
+  + [browser_gather_rule] is use SOPJobNodeBrowserInterface, NarrativeSubjectFileTable, and SurfacePeripheryInquiryTable to browse internal_periphery_section into focus
+  + [external_frame_rule] is use FrameReferenceIntegrity, ModelLensProjection, SecurityHonestyGovernance, and Caution before treating external_periphery_section as stable
+  + [residual_outside] is hidden model state, stale paths, exhaustive coverage, proof by association, remote authority, model determinism, and automatic promotion
+
+  ? [use_when: periphery must distinguish local file-surface associations from broader contextual or model-frame associations]
+    = activate [SectionedPeripheryAssociationFabric]
+
+  = must: divide periphery into internal_periphery_section and external_periphery_section before using stability as a quality signal
+  = must: name primary_document_set and secondary_document_set when an internal periphery signal is durable enough to guide focus
+  = must: treat primary_document_association as stronger triangulation evidence than secondary_document_association
+  = must: keep secondary_document_association available without letting it crowd or overrule primary documents
+  = must: include relation_reason and search_phrase_set for each durable association
+  = must: route internal_periphery_section through local file browsing before promotion
+  = must: route external_periphery_section through model-frame caution before promotion
+  = must: compute internal_consistency_stability separately from external_model_stability
+  = must: preserve association_strength separately from confidence and proof
+  = must: preserve unresolved, stale, weak, or model-only associations as outside until inspected
+  = should: let triangulation start from primary_document_set and admit secondary_document_set only when the primary shape is underdetermined
+  = should: update NarrativeSubjectFileTable when a repeated internal periphery signal becomes lookup-worthy
+  - never: treat a nearby file as proof merely because it is nearby
+  - never: let external model stability replace local file-surface consistency
+  - never: claim exhaustive internal periphery coverage from seed tables
+
+& [InternalPeripherySection] is the local file-surface periphery section
+  + [section_role] is local_specific_reference
+  + [input] is focal_subject, narrative_subject_key, surface_key, source document, event record, task frame, queue candidate, capture, or current focal point
+  + [nearby_element_set] is terms, files, subject entries, source citations, event links, queue records, captures, gates, and outside notes
+  + [primary_document_set] is directly cited or governing local files
+  + [secondary_document_set] is adjacent support files, analogous files, nearby indexes, or weaker related records
+  + [association_record_set] is document path, document role, relation reason, search phrases, association strength, depth hint, and outside
+  + [triangulation_rule] is stronger heat when a periphery_term_cluster appears in two or more primary documents or one primary document plus independent source lineage
+  + [promotion_rule] is gather into focus only after file existence, relation reason, and outside are inspected
+  + [outside] is missing files, stale references, weak analogy, source mismatch, and unsupported local identity
+
+  = must: use rg or local file reads to verify paths and terms before strong claims
+  = must: keep internal periphery navigable through file pointers
+  = must: keep weak nearby support in secondary_document_set until focus asks for it
+
+& [ExternalPeripherySection] is the broader contextual and model-frame periphery section
+  + [section_role] is general_contextual_frame
+  + [input] is user intent context, domain frame, task purpose, model-lens interpretation, external world frame, and unspecified outside
+  + [frame_context_set] is purpose frame, domain frame, operating context, user expectation, model lens, and external constraint
+  + [model_stability_signal] is whether the LLM interpretation remains coherent when the external frame is held separately from local file evidence
+  + [contextual_drift_signal] is when external periphery starts pulling local file-surface meaning away from cited evidence
+  + [promotion_rule] is admit only as contextual frame, hypothesis, or caution unless local internal periphery supports it
+  + [outside] is hidden activations, world truth without source, model preference, unsupported causation, and broad AGI claims
+
+  = must: keep external periphery separate from local evidence
+  = must: route contextual_drift_signal through Caution and FrameReferenceIntegrity
+  = must: treat model_stability_signal as useful posture evidence, not proof
+
+& [PeripheryAssociationRecord] is one durable internal periphery association
+  + [association_id] is stable local handle for the association
+  + [focal_subject] is the subject being framed
+  + [nearby_element] is the associated term, file, source, gate, event, or outside note
+  + [target_file] is the local SOP file where the association is inspected
+  + [document_role] is source, canonical_contract, state, event, index, runtime_capture, test, planning, gate, support, analogy, or outside
+  + [association_strength] is primary, secondary, weak_nearby, unresolved, or outside
+  + [relation_reason] is why the target file belongs in periphery
+  + [search_phrase_set] is phrases for re-entry
+  + [depth_hint] is surface, hair, skin, pressure, impact, or deep_probe
+  + [outside] is what the association does not prove
+
+  = must: keep primary and secondary association records distinct
+  = must: cite target_file before using the record for triangulation
+  = must: keep unresolved association records available but unpromoted
+
+& [PeripheryTriangulationProtocol] is how periphery terms become stronger through primary files
+  + [step_001_focus] is name focal_subject and current boundary
+  + [step_002_terms] is collect periphery_term_cluster from narrative, surface markers, subject index, and file search
+  + [step_003_primary] is inspect primary_document_set first
+  + [step_004_secondary] is inspect secondary_document_set only after primary shape is visible or underdetermined
+  + [step_005_weight] is apply triangulation_weight with primary associations stronger than secondary associations
+  + [step_006_stability] is calculate internal_consistency_stability separately from external_model_stability
+  + [step_007_route] is promote, keep peripheral, deepen, or preserve outside
+
+  = must: preserve skipped steps in quick scans
+  = must: demote signals when secondary documents contradict or distort primary documents
+  = must: leave model-only coherence in external_periphery_section until local support appears
+
+& [PeripheryStabilitySplit] is the two-layer stability model
+  + [internal_consistency_stability] is local file-surface stability over internal_periphery_section
+  + [external_model_stability] is LLM/model-lens stability over external_periphery_section
+  + [combined_balance_use] is balance can continue when both layers are visible, or when one layer is weak and clearly marked outside
+  + [internal_instability_signal] is missing files, stale paths, conflicting primary documents, weak relation reasons, or secondary distortion
+  + [external_instability_signal] is model drift, frame mismatch, unsupported context, overbroad inference, or luminous correlation without local support
+  + [outside] is treating either stability layer as proof by itself
+
+  = must: report the two layers separately when periphery stability affects balance_score
+  = must: use internal_consistency_stability for local file browsing and source re-entry
+  = must: use external_model_stability for model-frame posture and caution
+  = must: require both layers or explicit outside marking before durable realization
+
+(sectioned_periphery_association_fabric) :internal_periphery_section: /primary_document_set and secondary_document_set/ |external_periphery_section|
+  + [internal_periphery_section] is local file-surface associations that can be browsed into focus
+  + [primary_document_set] is strong local files for triangulation
+  + [secondary_document_set] is weaker nearby local files kept available
+  + [external_periphery_section] is general context and model-frame periphery
+  + [stability_layer_set] is internal_consistency_stability and external_model_stability
+  |residual_outside| hidden model state, proof by association, stale path certainty, exhaustive coverage, and automatic promotion
+
+/ [focal_subject], [NarrativeSubjectFileTable], [SurfacePeripheryInquiryTable] -(Finds)> [internal_periphery_section], [primary_document_set], [secondary_document_set]
+* [primary_document_association], [secondary_document_association], [periphery_term_cluster] -(Triangulates)> [triangulation_weight], [internal_consistency_stability], [outside]
+* [external_periphery_section], [model_lens], [FrameReferenceIntegrity] -(Frames)> [external_model_stability], [contextual_drift_signal], [outside]
+* [internal_consistency_stability], [external_model_stability], [AttentionBalanceCenter] -(Balances)> [balance_score], [correction_move], [outside]

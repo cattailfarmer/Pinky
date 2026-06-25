@@ -166,14 +166,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_sop_job_node_browser_interface\Dictated_SOP_Job_Node_Browser_Interface_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_sop_job_node_browser_interface_097.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_045.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_sectioned_periphery_association_fabric\Dictated_Sectioned_Periphery_Association_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_sectioned_periphery_association_fabric_098.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_046.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is SOP Job Node Browser Interface
-  + [active_root_frame] is attention_frame_2026_06_25_sop_job_node_browser_interface
+  + [registry_scope] is Sectioned Periphery Association Fabric
+  + [active_root_frame] is attention_frame_2026_06_25_sectioned_periphery_association_fabric
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 39
+  + [closed_frame_count] is 40
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -619,9 +623,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep spawn candidates blocked until gates are visible and accepted
   = should: begin future prototypes with synthetic spawn plans only
 
-& [AttentionFrame_2026_06_25_SOPJobNodeBrowserInterface] is the active semantic stack frame for the Codex app loaded job-node browser
+& [AttentionFrame_2026_06_25_SOPJobNodeBrowserInterface] is the semantic stack frame for the Codex app loaded job-node browser
   + [frame_id] is attention_frame_2026_06_25_sop_job_node_browser_interface
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_codex_conversation_agent_spawn_node
   + [child_frame_set] is SOPJobNodeBrowserInterface, CodexConversationAgentSpawnNode, LLMAgentCollaborationFabric, CodexLMStudioOrchestrationWorkspace, SOPTaskManager, TaskFrameLaunchQueue, SpoolMasterHub, AttentionRuntimeRegistry, NarrativeSubjectFileIndex, NarrativeSubjectFileTable, SOPHypergraphRecord, JobNodeBrowserViewModel, JobNodeNavigationProtocol, SubAgentLayerPanel, InterfaceImplementationGate, source_preservation, operating_loop_tick_045, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -642,11 +646,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep action controls blocked until authority gate policy exists
   = should: begin future prototypes with static read-only job-node view models
 
+& [AttentionFrame_2026_06_25_SectionedPeripheryAssociationFabric] is the active semantic stack frame for divided periphery and stability
+  + [frame_id] is attention_frame_2026_06_25_sectioned_periphery_association_fabric
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_sop_job_node_browser_interface
+  + [child_frame_set] is SectionedPeripheryAssociationFabric, PeripheryAttentionLayer, SurfacePeripheryInquiryIndex, SurfacePeripheryInquiryTable, NarrativeSubjectFileIndex, NarrativeSubjectFileTable, AttentionWeightScale, PeripheryDimensionalProbe, AttentionBalanceCenter, SOPJobNodeBrowserInterface, InternalPeripherySection, ExternalPeripherySection, PeripheryAssociationRecord, PeripheryTriangulationProtocol, PeripheryStabilitySplit, source_preservation, operating_loop_tick_046, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is SectionedPeripheryAssociationFabric.sop, Periphery.sop, SurfacePeripheryInquiryIndex.sop, SurfacePeripheryInquiryTable.sop, NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, AttentionBalanceCenter.sop, SOPJobNodeBrowserInterface.sop, Dictated_Sectioned_Periphery_Association_Fabric_Source.sop, 2026-06-25_sectioned_periphery_association_fabric_098.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_046.sop
+  + [focus_register] is internal_periphery_section, external_periphery_section, nearby_element, primary_document_association, secondary_document_association, primary_document_set, secondary_document_set, association_strength, triangulation_weight, internal_periphery_web, internal_consistency_stability, external_model_stability, and stability_layer_set
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or specify a read-only internal periphery view-model prototype
+  + [delineation_register] is inside local file-surface association, primary documents, secondary documents, triangulation terms, internal consistency, external model frame, contextual drift, and outside
+  + [periphery_register] is hidden model activations, stale paths, proof by association, exhaustive coverage, automatic promotion, broad model stability claims, and unrelated dirty files
+  + [operation_register] is preserve_source, define_sectioned_periphery, extend_periphery_layer, extend_surface_lookup, extend_narrative_lookup, extend_weight_scale, extend_balance_center, extend_browser_interface, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, SectionedPeripheryAssociationFabric.sop, Periphery.sop update, SurfacePeripheryInquiryIndex update, SurfacePeripheryInquiryTable update, NarrativeSubjectFileIndex update, NarrativeSubjectFileTable update, AttentionBalanceCenter update, SOPJobNodeBrowserInterface update, source manifest, periphery record 098, and operating_loop_tick_046
+  + [wisdom_register] is dividing periphery lets the system browse local file structure for internal associations while keeping broader model-context inference in a separate caution-bearing section
+  + [caution_register] is primary and secondary file association are retrieval and triangulation guidance, not proof, and external model stability must not replace internal consistency
+  + [balance_register] is stable because internal periphery, external periphery, primary documents, secondary documents, internal consistency stability, external model stability, confidence, and proof remain distinct
+  + [integration_register] is Task_169 completed as SOP-only periphery refinement while internal periphery view-model runtime remains a future option
+  + [frame_outside] is hidden model state, exhaustive repository map, stale path certainty, direct mutation, unreviewed worker launch, credential access, destructive action, and unrelated workspace changes
+
+  = must: keep internal and external periphery sections distinct
+  = must: keep internal consistency stability separate from external model stability
+  = should: begin future prototypes with read-only internal periphery view models
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_sop_job_node_browser_interface
+  + [active_root_frame] is attention_frame_2026_06_25_sectioned_periphery_association_fabric
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_SOPJobNodeBrowserInterface], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [sop_job_node_browser_interface], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_SectionedPeripheryAssociationFabric], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [sectioned_periphery_association_fabric], [operating_loop_tick], [balance_register], [integration_register], [outside]

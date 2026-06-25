@@ -1,0 +1,19 @@
+Subject: Dictated Sectioned Periphery Association Fabric Source
+
+Description: Preserved source note for refining periphery into internal and external sections with primary and secondary file associations.
+
+& [DictatedSectionedPeripheryAssociationFabricSource] is the preserved user direction
+  + [source_status] is preserved_raw_direction
+  + [captured_request] is refine periphery so it notices nearby elements, names files with strong associations in primary documents and weak associations in secondary nearby documents, strengthens triangulation through primary-document associations, creates a web of internal periphery, divides periphery into sections, distinguishes internal periphery from external periphery, and splits stability into internal consistency stability over local file-surface periphery and LLM model stability over external periphery
+  + [internal_periphery_shape] is local file-surface periphery gathered into focus by browsing file structure and subject lookup
+  + [external_periphery_shape] is the broader contextual frame around which the specified module operates in a general sense
+  + [primary_document_shape] is strongly associated local source, contract, state, event, or index file that should carry greater triangulation weight
+  + [secondary_document_shape] is nearby weakly associated local file that should remain available without overpowering primary associations
+  + [stability_shape] is internal consistency stability for local file-surface coherence and model-frame stability for external periphery inference through the LLM
+  + [preservation_boundary] is source direction only, not implementation authority until processed and gated
+  + [outside] is hidden model activations, exhaustive repository coverage, proof by association, automatic promotion, stale path certainty, and broad model stability claims
+
+  = must: preserve internal and external periphery as separate sections
+  = must: preserve primary and secondary document association as different strengths
+  = must: preserve that internal consistency stability and LLM model stability are separate layers
+  = must: keep triangulation as evidence-weighting guidance, not proof of meaning

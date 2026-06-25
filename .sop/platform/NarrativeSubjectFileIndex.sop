@@ -8,12 +8,16 @@ Description: Contract for mapping narrative-layer subject matters to files of in
 @ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
 
 & [NarrativeSubjectFileIndex] is the narrative-subject-to-file-interest contract
   + [narrated_subject] is a subject matter named or implied by narrative, reflection, operating-loop tick, periphery realization, or source-preserved user direction
   + [narrative_subject_key] is the stable normalized key for a narrated subject
   + [file_of_interest] is a local SOP file worth opening when re-entering or deepening that narrated subject
   + [file_interest_relation] is why the file matters to the narrated subject
+  + [primary_file_interest_set] is directly cited, governing, source-bearing, or canonical files to open first
+  + [secondary_file_interest_set] is adjacent, supporting, analogous, or weakly associated files to keep available as internal periphery
+  + [file_association_strength] is primary, secondary, weak_nearby, unresolved, or outside
   + [subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   + [subject_file_entry] is one subject key with file pointers, relation reasons, search phrases, depth hints, and outside limits
   + [framework_periphery_set] is the named larger framework context visible around the subject
@@ -27,6 +31,8 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   = must: preserve depth_hint so focus can decide whether to skim, inspect, or deep-probe
   = must: keep files_of_interest as search and re-entry guidance, not proof of semantic identity
   = must: distinguish directly cited files from inferred support files
+  = must: distinguish primary_file_interest_set from secondary_file_interest_set when the entry feeds internal periphery
+  = must: keep file_association_strength as guidance, not proof
   = must: preserve framework_periphery_set as named context for deeper activation inspection
   = must: preserve unindexed, stale, or weakly supported subjects as outside
   = should: prefer local C:\Project\Pinky\.sop paths over historical F:\.sop paths
@@ -38,6 +44,8 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   + [subject_key] is the normalized narrative subject
   + [narrative_surface] is the narrative record, tick, source, or state file where the subject is active
   + [file_interest_set] is the files to open first for that subject
+  + [primary_file_interest_set] is the strongest file-interest pointers for first inspection
+  + [secondary_file_interest_set] is weaker nearby pointers for later or wider inspection
   + [relation_reason_set] is why each file belongs to the subject
   + [search_phrase_set] is local phrases to search in those files
   + [framework_periphery_set] is the named larger framework context that may be admitted through LayeredActivationInspection
@@ -48,6 +56,7 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   = must: keep the subject key compact and stable
   = must: include at least one narrative_surface or evidence path
   = must: separate file_interest_set from authority claims
+  = must: preserve primary and secondary file interest when a subject becomes internal periphery
   = must: keep framework_periphery_set as periphery until LayeredActivationInspection admits a bounded declaration window
   = should: include a later_review_trigger when the subject is hot but under-indexed
 
@@ -58,7 +67,8 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   = step_1: identify narrated subject matters in the active narrative, tick, realization, or user direction
   = step_2: normalize each narrated subject into a narrative_subject_key
   = step_3: collect directly cited files and inferred support files
-  = step_4: classify each file_interest_relation as source, contract, state, event, index, runtime, evidence, blocker, or outside
+  = step_4: classify each file_interest_relation as source, contract, state, event, index, runtime, evidence, blocker, support, analogy, or outside
+  = step_4b: classify each file_of_interest as primary, secondary, weak_nearby, unresolved, or outside for SectionedPeripheryAssociationFabric
   = step_5: select depth_hint from the attention weight scale and current faculty depth
   = step_6: hand selected file_interest_set to SubjectInquiryLayer for inspection queue formation
   = step_7: query NarrativeSubjectFileTable before broad repository search

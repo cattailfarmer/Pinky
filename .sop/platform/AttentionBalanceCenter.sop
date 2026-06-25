@@ -12,6 +12,7 @@ Description: Contract for monitoring attention posture, delineation stability, w
 @ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
 @ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
 
 & [AttentionBalanceCenter] is the live stability monitor for subject-oriented attention work
   + [pattern_role] is inference_posture_balance_monitor
@@ -21,6 +22,9 @@ Description: Contract for monitoring attention posture, delineation stability, w
   + [balance_posture] is the visible stance of attention while tracking, inspecting, tracing, and walking through the system
   + [delineation_stability] is how well inside, boundary, outside, and return anchor remain distinct while attention moves
   + [periphery_stability] is how well the periphery remains coherent, available, and proportionate enough to frame focal attention
+  + [internal_consistency_stability] is local file-surface stability over internal periphery, primary documents, secondary documents, paths, relation reasons, and outside
+  + [external_model_stability] is LLM model-frame stability over external periphery, contextual frame, model lens, and unsupported outside
+  + [sectioned_periphery_stability] is internal_consistency_stability and external_model_stability reported separately before they affect balance_score
   + [frame_reference_stability] is how well stable periphery, source markers, and representation surfaces keep the perception frame distinct from the presented frame
   + [immersion_break_cue] is a stable periphery or boundary signal from FrameReferenceIntegrity that requires breaking immersion into a presented frame
   + [frame_mismatch] is conflict between presented content and stable periphery, source lineage, sensor context, action constraints, or available observation surface
@@ -43,6 +47,9 @@ Description: Contract for monitoring attention posture, delineation stability, w
   = must: base balance on observation_surface, not hidden activations
   = must: monitor delineation_stability while attention moves
   = must: include periphery_stability in balance_metric
+  = must: split periphery_stability into internal_consistency_stability and external_model_stability when SectionedPeripheryAssociationFabric is active
+  = must: reduce balance_score when internal_consistency_stability is weak because primary documents are stale, missing, contradictory, or uninspected
+  = must: reduce balance_score when external_model_stability is weak because model-frame interpretation drifts beyond local file support
   = must: include frame_reference_stability when work depends on perception, UI, map, image, simulation, narrative, or model projection
   = must: reduce balance_score when relevant periphery shrinks below the needs of focal_core, job_need, or zoom_level
   = must: reduce balance_score when frame_mismatch or immersion_break_cue is present
@@ -87,6 +94,8 @@ Description: Contract for monitoring attention posture, delineation stability, w
 & [BalanceMetric] is the metric contract for center-of-balance assessment
   + [positive_factor_delineation] is clear inside, boundary, outside, and return anchor
   + [positive_factor_periphery] is stable periphery frame with relevant outside markers and alternate angles preserved
+  + [positive_factor_internal_consistency] is primary and secondary local files are inspected, relation reasons fit, and outside remains visible
+  + [positive_factor_external_model] is model-frame context stays coherent without replacing local evidence
   + [positive_factor_frame_reference] is perception_frame, presented_frame, representation_surface, stable periphery, and first-hand observation status are separately visible
   + [positive_factor_proof] is confidence aligned to source, evidence, tests, and caution
   + [positive_factor_rail] is scaffold rails selected without unresolved conflict
@@ -94,9 +103,12 @@ Description: Contract for monitoring attention posture, delineation stability, w
   + [penalty_interference] is cross-purpose pressure, stale context, prompt bloat, or rail conflict
   + [penalty_shrinkage] is periphery_collapse or frame_thinning caused by over-narrow focus
   + [penalty_flood] is periphery_flood caused by over-wide focus
+  + [penalty_internal_instability] is missing primary files, stale paths, contradiction among primary documents, or secondary distortion
+  + [penalty_external_instability] is model drift, context overreach, unsupported external inference, or frame mismatch
   + [penalty_frame_mismatch] is loss of balance caused by treating a presented frame as first-hand observation or actionable reality
 
   = must: expose positive factors and penalties separately before assigning balance_score
+  = must: expose internal consistency and external model factors separately before assigning balance_score
   = must: subtract penalty_shrinkage when useful periphery is lost
   = must: subtract penalty_flood when periphery overwhelms focus
   = must: subtract penalty_frame_mismatch before action, durable realization, or model-projection evidence use
