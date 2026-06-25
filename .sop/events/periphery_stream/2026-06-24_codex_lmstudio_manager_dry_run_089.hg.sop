@@ -1,0 +1,27 @@
+Subject: Codex LM Studio Manager Dry Run Realization
+
+Description: SOP-HG record for the first LM Studio manager dry run over a Codex-authored context stream.
+
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_review.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_output.sop
+
+& [SOPHypergraphRecord] is codex_lmstudio_manager_dry_run_089
+  + [record_type] is periphery_realization
+  + [focus_subject] is LM Studio manager dry run
+  + [inside] is Codex CLI local-provider attempt, direct LM Studio API attempt, blocked manager proposal, transport split, context overhead, and next gate
+  + [boundary] is no tools, no files, no mutation, no launch, proposal-only manager output, Codex validation, and capture before integration
+  + [outside] is broad local competence, direct OpenAI dispatch, repo mutation, credentials, hidden model state, and continuous runner authority
+
+  = realization: the local model can act as a cautious manager when called directly through LM Studio's OpenAI-compatible API, but Codex CLI local-provider currently carries too much agent prompt for an 8192-token local context
+  = caution: increasing LM Studio context in the UI did not make this Codex CLI local-provider run see more than 8192 tokens, so context size must be verified at the actual route being used
+  = wisdom: split the system cleanly by transport, using direct LM Studio API for local manager proposals and OpenAI Codex CLI for authoritative worker execution
+  = implementation_status: Task_159 completed as dry-run evidence; Task_158 remains blocked for continuous runner implementation
+
+/ [codex_cli_local_provider] -(BlockedBy)> [n_ctx_8192], [codex_agent_prompt_overhead], [manager_output_absent]
+* [direct_lm_studio_api] -(Returns)> [blocked_manager_proposal], [schema_score_strong], [authority_score_strong]
+* [transport_split] -(Guides)> [direct_endpoint_manager_runner], [larger_context_local_provider_gate], [continuous_runner_block]
+
+(codex_lmstudio_manager_dry_run) :manager_proposal: /transport_gate and codex_review/ |dry_run_outside|
+  + [manager_proposal] is blocked_outside output captured from direct LM Studio API
+  + [transport_gate] is use direct endpoint until Codex CLI local-provider context overhead is solved
+  |dry_run_outside| launch authority, mutation authority, hidden state, credentials, and broad competence claims

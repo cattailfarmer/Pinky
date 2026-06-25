@@ -47,6 +47,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [manager_lane_extension] is LM Studio may act as a local manager over Codex-authored context streams by returning codex_job_proposal text only
   + [manager_context_stream] is the Codex-authored current focus, task frame, source slice, attention kernel, queue state, expected output, gates, and outside
   + [manager_proposal] is one proposed OpenAI Codex CLI job or blocked_outside note that must pass Codex review before launch
+  + [manager_transport_preference] is direct LM Studio OpenAI-compatible endpoint when Codex CLI local-provider prompt overhead exceeds the effective local context
   + [next_readiness_gate] is draft the accepted pressure impact ThinkAbout record under Codex authority before considering any broader lane claim
   + [task_corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry

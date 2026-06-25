@@ -7,8 +7,8 @@ Description: Initial inspectable queue for LM Studio manager proposals and gated
 @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
 
 & [CodexLMStudioOrchestratorQueue] is the active queue for the orchestration workspace
-  + [queue_status] is ready_for_inspection
-  + [candidate_count] is 1
+  + [queue_status] is returned_blocked
+  + [candidate_count] is 0
   + [queue_authority] is Codex
   + [queue_scope] is manager dry-run proposal before any continuous runner
   + [queue_outside] is automatic launch, hidden model state, worker mutation, credentials, destructive actions, and unrelated dirty files
@@ -30,7 +30,8 @@ Description: Initial inspectable queue for LM Studio manager proposals and gated
   + [validation_profile] is exact SOP proposal schema, no launch claim, no file mutation, no repo authority, and outside preservation
   + [required_gates] is sop_language_primer_gate, boot_packet_gate, scratch_isolation_gate, capture_gate, validator_gate, and codex_review_gate
   + [block_reasons] is none before Codex launch review
-  + [status] is ready_for_inspection
+  + [status] is returned_blocked
+  + [launch_result] is direct LM Studio API returned blocked proposal; Codex CLI local-provider attempt blocked before output because n_keep 9381 was greater than or equal to n_ctx 8192
   + [candidate_outside] is direct launch, direct mutation, hidden model state, broad competence, credentials, and unbounded loop
 
   = must: launch only when Codex chooses to run the dry-run candidate

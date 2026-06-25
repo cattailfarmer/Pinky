@@ -1,0 +1,12 @@
+& [LMStudioManagerProposal] is codex_lmstudio_manager_dry_run_001
+  + [proposal_id] is codex_lmstudio_manager_dry_run_001
+  + [proposed_worker_lane] is blocked
+  + [objective] is blocked_outside: continuous runner lacks required budget, stop file, concurrency cap, capture policy, launch gate policy, cost report policy, crash recovery policy, credential redaction policy, and user confirmation; cannot safely execute next job.
+  + [working_directory] is outside
+  + [allowed_surface] is C:\Project\Pinky\.sop
+  + [blocked_surface] is any direct execution, mutation, or launch of code beyond the SOP-defined safe surface
+  + [prompt_packet_refs] is none
+  + [capture_target] is outside
+  + [proof_gate] is required validation by Codex before integration
+  + [risk_gate] is risk checks before launch
+  + [outside] is residual uncertainty regarding execution policies and budget constraints.

@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 11
+  + [subject_count] is 12
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -140,6 +140,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is unsupervised daemon, direct LM Studio mutation, direct OpenAI launch, credentials, hidden spend, destructive action, and unrelated dirty files
+
+& [Subject_codex_lmstudio_manager_dry_run] is a narrative subject entry
+  + [subject_key] is codex_lmstudio_manager_dry_run
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_codex_lmstudio_manager_dry_run_089.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_output.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_review.sop, C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop, C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop, C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_037.sop
+  + [framework_periphery_set] is local_attention_framework, lm_studio_worker_lane_framework, codex_context_stream_framework, task_frame_launch_queue_framework, and semantic_operating_loop_framework
+  + [relation_reason_set] is raw manager output, Codex review, orchestration contract, queue status, workspace state, manager lane transport preference, and current loop tick
+  + [search_phrase_set] is codex_lmstudio_manager_dry_run, n_keep, n_ctx, direct_lm_studio_api, codex_cli_local_provider, blocked_manager_proposal, transport_split
+  + [depth_hint] is pressure
+  + [coverage_status] is seed
+  + [outside] is broad local competence, launch permission, mutation authority, credentials, hidden spend, and exact hidden state
 
 (narrative_subject_file_table) :subject_key: /file_interest_set and relation_reason/ |unindexed_subject|
   + [subject_key] is the normalized narrative handle

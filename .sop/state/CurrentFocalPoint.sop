@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is Codex LM Studio orchestration workspace
+  + [focus_subject] is LM Studio manager dry run
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is OpenAI Codex can author the SOP context streams while LM Studio cheaply traverses those streams to propose the next bounded Codex CLI job
-  + [inside] is CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Queue.sop, CaptureDirectory.sop, Runbook.sop, WorkerPacketTemplate.sop, SOPTaskManager.sop, LMStudioWorkerFunctionalLane.sop, TaskFrameLaunchQueue.sop, SOPLanguagePrimerForLocalAgents.sop, SOPWorkerBootPacket.sop, Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop, 2026-06-24_codex_lmstudio_orchestration_workspace_088.hg.sop, 2026-06-24_operating_loop_tick_036.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, scratch-isolated for LM Studio, Codex-reviewed for launch, captured before integration, and explicitly bounded by stop, budget, and dirty-file gates
+  + [right_hemisphere_draw] is the manager lane should likely use direct LM Studio endpoint calls for proposal-only traversal, while OpenAI Codex CLI remains the worker executor after Codex review
+  + [inside] is codex_lmstudio_manager_dry_run_001_output.sop, codex_lmstudio_manager_dry_run_001_review.sop, CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Queue.sop, CaptureDirectory.sop, 2026-06-24_codex_lmstudio_manager_dry_run_089.hg.sop, 2026-06-24_operating_loop_tick_037.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, proposal-only for LM Studio, Codex-reviewed for launch, captured before integration, and explicitly bounded by stop, budget, and dirty-file gates
   + [outside] is hidden model state, unsupervised daemon, direct LM Studio mutation, direct LM Studio launch of OpenAI jobs, destructive action, credentials, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic spend, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_036.sop
-  + [open_question] is whether to run the manager dry-run candidate now or first specify budget, stop, and concurrency policy for a supervised runner
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_037.sop
+  + [open_question] is whether to build a direct LM Studio endpoint manager runner or reload LM Studio with verified larger context before retrying Codex CLI local-provider manager mode
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -44,6 +44,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat layered_activation_inspection as the completed Task_154 anchor
   = must: treat sop_swarm_fabric as the completed Task_155 anchor
   = must: treat codex_lmstudio_orchestration_workspace as the completed Task_157 anchor
+  = must: treat codex_lmstudio_manager_dry_run as the completed Task_159 anchor
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work

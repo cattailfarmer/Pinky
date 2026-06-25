@@ -1,0 +1,26 @@
+Subject: Codex LM Studio Manager Dry Run 001 Review
+
+Description: Codex review of the first LM Studio manager dry-run attempt across Codex CLI local-provider and direct LM Studio API routes.
+
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_output.sop
+
+& [CodexLMStudioManagerDryRun001Review] is the validation review for the first manager dry run
+  + [review_status] is completed_with_transport_split
+  + [codex_cli_local_provider_attempt] is blocked before manager output
+  + [codex_cli_local_provider_blocker] is LM Studio reported n_keep 9381 greater than or equal to n_ctx 8192 after Codex CLI loaded its agent prompt
+  + [direct_lm_studio_api_attempt] is completed
+  + [direct_lm_studio_api_result] is valid blocked proposal
+  + [schema_score] is strong because the output used the requested SOP node and required property fields
+  + [authority_score] is strong because the output refused direct execution and kept launch outside
+  + [intent_score] is usable because it selected blocked rather than inventing launch authority, though it did not propose a SOP-only next specification job
+  + [transport_finding] is LM Studio manager should use the direct OpenAI-compatible endpoint for proposal-only management until Codex CLI local-provider context overhead is solved
+  + [next_transport_gate] is either reload the local model with a larger effective context for Codex CLI local-provider or build a direct-endpoint manager runner that emits captured proposals for Codex review
+  + [review_outside] is broad LM Studio competence, direct launch, repo mutation, OpenAI worker dispatch, credentials, hidden state, and unbounded loop
+
+  = must: treat the direct API result as manager proposal evidence only
+  = must: keep Codex CLI local-provider blocked for this manager lane while effective context remains 8192
+  = must: keep continuous runner implementation blocked until budget, stop, concurrency, capture, launch, and cost gates are specified
+  = should: use direct endpoint manager calls for the next proposal probe if the goal is local manager operation rather than nested Codex local-provider behavior
+  - never: infer OpenAI worker launch permission from this dry run
