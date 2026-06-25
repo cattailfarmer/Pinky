@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 1
-  + [completed_task_count] is 160
+  + [completed_task_count] is 161
   + [blocked_task_count] is 4
 
 & [CompletedTaskSet] is completed work
@@ -310,6 +310,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop, C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_social_periphery_interest_fabric_091.hg.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_039.sop
   + [Task_163_define_periphery_correlation_potential_scan] is define the scan that compares the periphery of new developments against already-developed periphery to reveal possible utility while preserving correlation, proof, promotion gates, and implementation outside as separate fields
     = evidence: C:\Project\Pinky\.sop\platform\PeripheryCorrelationPotentialScan.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_periphery_correlation_potential_scan\Dictated_Periphery_Correlation_Potential_Scan_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_periphery_correlation_potential_scan_092.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_040.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+  + [Task_164_define_concept_refinement_fabric] is define the social fabric specialization where community-contributed explanations orbit concept nodes, votes raise attention, and a scoped explanation candidate can replace the root explanation while preserving lineage, evidence receipts, trust lenses, and rollback boundaries
+    = evidence: C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop, C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop, C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_refinement_fabric\Dictated_Concept_Refinement_Fabric_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_refinement_fabric_093.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_041.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_161_build_direct_lmstudio_endpoint_manager_runner] is build the local direct-endpoint manager runner that reads lightweight SOP context streams, calls LM Studio without OpenAI Codex allowance, captures proposal output, validates schema, and only marks Codex handoff candidates when handoff threshold is crossed

@@ -1,0 +1,16 @@
+Subject: Dictated Concept Refinement Fabric Source
+
+Description: Preserved source note for a Stack-Overflow-like concept refinement platform where conversation explanations can become refined root nodes by community attention.
+
+& [DictatedConceptRefinementFabricSource] is the preserved user direction
+  + [source_status] is preserved_raw_direction
+  + [captured_request] is part of the social fabric should raise attention by anchoring meaning around nodes in a system like Stack Overflow coordinates user contributed concepts and lets users rate concepts
+  + [extended_request] is take the pattern further so one explanation in a conversation can replace the root node in the conversation by upvote and become a concept refinement platform
+  + [attention_shape] is community-contributed explanations orbiting a concept root with vote, trust, evidence, and lineage signals
+  + [root_replacement_shape] is a promoted explanation becomes the current concept root for a scope while prior roots remain preserved as lineage and dissent context
+  + [preservation_boundary] is source direction only, not canonical specification authority until separately processed
+  + [outside] is proof of truth by upvote, erased lineage, centralized compulsory canon, private capture, reputation farming, and implementation before gates
+
+  = must: preserve upvote as an attention signal, not truth
+  = must: preserve the root replacement idea without erasing previous roots or dissent
+  = must: keep implementation outside until platform, consent, moderation, and abuse gates exist

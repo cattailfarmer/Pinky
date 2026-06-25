@@ -105,6 +105,7 @@ Description: Attention scan pattern for comparing the periphery of a new develop
   + [synthetic_social_packet_lab] is local testbed for opt-in InterestPacketShape samples without real social data
   + [cross_model_anchor_calibrator] is extra-anchor testing for LM Studio and other lower-resolution workers
   + [trust_lens_browser_layer] is future frame-aware recommendation surface for public sources after privacy and consent gates
+  + [concept_refinement_platform] is Stack Overflow style concept-node refinement where explanation candidates can become scoped roots with lineage and trust-lens receipts
   + [manager_loop_task_selector] is local LM Studio proposal selection based on periphery heat and ready-task boundaries
   + [community_interest_fabric] is future federated interest-space exchange only after packet, identity, privacy, abuse, and deletion gates
 

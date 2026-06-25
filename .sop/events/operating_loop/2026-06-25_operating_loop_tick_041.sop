@@ -1,0 +1,22 @@
+Subject: Operating Loop Tick 041
+
+Description: Loop tick recording the completed concept refinement fabric specification and next safe runnable state.
+
+& [OperatingLoopTick_041] is a semantic cognition operating-loop tick
+  + [tick_status] is completed
+  + [tick_date] is 2026-06-25
+  + [completed_task] is Task_164_define_concept_refinement_fabric
+  + [completed_artifact] is C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_refinement_fabric_093.hg.sop
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_refinement_fabric\Dictated_Concept_Refinement_Fabric_Source.sop
+  + [commit_frame] is validation_passed_pending_commit
+  + [manager_ready_task] is Task_161_build_direct_lmstudio_endpoint_manager_runner
+  + [clock_state] is running_with_ready_task
+  + [balance_state] is stable because root replacement is scoped, lineage-preserved, vote-weighted, trust-lensed, and implementation-blocked
+  + [proof_state] is git diff check passed, ASCII scan passed, runtime test suite passed, commit pending, and push pending
+  + [next_step] is continue toward direct LM Studio endpoint manager runner unless user chooses a local synthetic concept-node refinement prototype first
+  + [outside] is unrelated dirty files, network voting, public reputation, automatic root replacement, private capture, hidden ranking, credentials, and direct local mutation
+
+  = must: report containing commit after validation, commit, and push
+  = must: keep Task_161 ready after this specification
+  = must: treat concept refinement as future blocked implementation until gates are specified

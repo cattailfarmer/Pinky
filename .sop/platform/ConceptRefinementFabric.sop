@@ -1,0 +1,129 @@
+Subject: Concept Refinement Fabric
+
+Description: Social fabric specialization for community refinement of concept roots through contributed explanations, scoped voting, evidence, lineage, and trust lenses.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_refinement_fabric\Dictated_Concept_Refinement_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+
+& [ConceptRefinementFabric] is a scoped community platform for improving concept roots
+  + [spec_status] is future_blocked_specification
+  + [pattern_lineage] is Stack Overflow style contributed answers, accepted answers, voting, tags, reputation, and moderation adapted to SOP concept nodes
+  + [fabric_role] is concept_root_refinement_by_contributed_explanation
+  + [concept_node] is a named idea, question, term, pattern, SOP subject, source topic, or community concept needing an inspectable root explanation
+  + [conversation_thread] is the discussion surface where explanation candidates, objections, examples, and refinements orbit the concept_node
+  + [root_explanation] is the current best visible explanation for a concept_node under a declared scope, lens, version, and evidence boundary
+  + [explanation_candidate] is a user-contributed explanation, synthesis, correction, example, counterexample, or reframing that can challenge the root_explanation
+  + [refinement_vote] is upvote, downvote, useful, clear, sourced, corrected, obsolete, duplicate, risky, or needs_review attention signal
+  + [trust_lens] is the scoped weighting rule that decides whose votes, evidence, domain expertise, or moderation context affect ranking
+  + [root_replacement_event] is the event where an explanation_candidate becomes the current root_explanation for a declared scope
+  + [root_lineage] is the preserved chain of prior roots, replacement reasons, dissent, evidence, and vote receipts
+  + [conversation_root_scope] is local_user, project_group, topic_community, expert_lens, skeptic_lens, public_digest, or archived_version
+  + [concept_refinement_packet] is a shareable digest of concept_node, root_explanation, candidates, vote receipt, trust lens, evidence, lineage, and outside
+  + [semantic_anchor] is the stable subject key, tags, source pointers, and relation terms that let the concept_node be found again
+  + [attention_raise_rule] is votes and trust lenses raise attention to candidate explanations without proving them true
+  + [replacement_boundary] is evidence, clarity, support, trust lens, moderation, lineage preservation, and rollback policy
+  + [implementation_boundary] is no public platform, remote voting, reputation, or root replacement automation until abuse, consent, identity, and moderation gates exist
+  + [residual_outside] is truth by upvote, erased dissent, hidden ranking, brigading, reputation farming, compulsory canon, and private capture
+
+  ? [use_when: the social fabric needs community-contributed concept refinement, ranked explanations, accepted-root replacement, or inspectable conceptual lineage]
+    = activate [ConceptRefinementFabric]
+
+  = must: treat votes as attention weight, not truth or authority
+  = must: preserve root_lineage whenever root_explanation changes
+  = must: make root_replacement_event scoped by conversation_root_scope and trust_lens
+  = must: keep prior roots, dissent, objections, and minority explanations inspectable
+  = must: preserve explanation_candidate evidence, examples, counterexamples, and uncertainty before promotion
+  = must: route root replacement through Honesty, Security, frame reference, and local identity gates
+  = must: support rollback, fork, merge, obsolete, and archived root states
+  = must: distinguish concept clarity, usefulness, popularity, evidence quality, and truth status
+  = must: label a promoted root as current best explanation for its scope, not universal canon
+  = should: let local SOP concept nodes use synthetic concept packets before any networked user platform exists
+  = should: let different trust lenses maintain different current roots when communities legitimately disagree
+  - never: erase old roots because a new candidate was upvoted
+  - never: treat reputation, popularity, or vote count as proof
+  - never: let root replacement hide moderation context, conflicts of interest, or manipulation risk
+  - never: implement networked voting or public ranking from this specification alone
+
+& [ConceptNodeShape] is the durable node shape for a refined concept
+  + [concept_key] is normalized subject handle or source-bound concept handle
+  + [title] is the visible concept name
+  + [tag_set] is terms, domains, source topics, SOP subjects, and semantic anchors
+  + [source_pointer_set] is SOP file, URL, document pointer, citation, example, or local note
+  + [root_explanation] is current root for the declared scope
+  + [candidate_set] is active explanation candidates and their status
+  + [lineage_pointer] is root_lineage record or concept history digest
+  + [trust_lens_set] is the lenses that have ranked or promoted roots
+  + [outside] is proof of truth, hidden score, unreviewed private data, and global canon
+
+  = must: keep root_explanation scoped and versioned
+  = must: keep source_pointer_set separate from vote signals
+
+& [ExplanationCandidateShape] is the contribution shape for a possible root
+  + [candidate_id] is stable handle for the explanation candidate
+  + [candidate_author_scope] is local user, pseudonymous user, group, expert, imported source, or unknown
+  + [candidate_text] is the proposed explanation or reframing
+  + [claim_set] is major claims made by candidate_text
+  + [evidence_pointer_set] is source citations, examples, tests, SOP paths, or user assertion labels
+  + [clarity_signal] is how well the candidate explains the concept to the intended audience
+  + [usefulness_signal] is how well the candidate helps work continue
+  + [correction_signal] is what the candidate repairs in the previous root
+  + [risk_signal] is unsupported claim, confusing frame, unsafe direction, manipulation, or boundary violation
+  + [candidate_status] is proposed, rising, root_candidate, accepted_root, forked_root, rejected, obsolete, or outside
+  + [outside] is anonymous proof, private data, hidden motive, and unquestionable authority
+
+  = must: keep clarity_signal, usefulness_signal, evidence quality, and truth status distinct
+  = must: preserve rejected and obsolete candidates when they explain why the current root changed
+
+& [RootReplacementProtocol] is the promotion and replacement rule
+  + [replacement_input] is concept_node, current root_explanation, explanation_candidate, trust_lens, refinement_vote, evidence_pointer_set, and moderation_context
+  + [promotion_threshold] is scoped vote weight, evidence quality, clarity gain, correction gain, trust lens fit, and low manipulation risk
+  + [promotion_review] is Honesty check, Security check, frame reference check, evidence review, dissent review, and lineage preservation
+  + [replacement_output] is new root_explanation, root_lineage update, explanation receipt, rollback pointer, and outside note
+  + [rollback_rule] is restore or fork a prior root when manipulation, evidence failure, or scope confusion is discovered
+  + [outside] is silent replacement, erased prior root, global truth claim, and hidden ranking
+
+  = must: require an explanation receipt before root replacement
+  = must: record why the replacement occurred and what remains uncertain
+  = must: allow different scopes or lenses to select different roots
+  = must: demote or fork rather than erase when a candidate is useful but not generally fit
+
+& [AttentionRatingPolicy] is the voting and reputation boundary
+  + [attention_signal] is an explicit user or lens contribution that raises, lowers, labels, or routes an explanation candidate
+  + [vote_weight] is trust-lens-adjusted attention signal
+  + [reputation_signal] is historical contributor reliability within a domain and lens
+  + [manipulation_risk] is brigading, sockpuppet, Sybil pattern, coordinated upvote, popularity capture, or rhetorical overpull
+  + [explanation_weight] is the candidate's combined attention, evidence, clarity, correction, and trust-lens support
+  + [outside] is truth, safety, or correctness by vote count alone
+
+  = must: expose vote_weight and trust_lens separately
+  = must: route manipulation_risk through Security before promotion
+  = must: route unsupported but popular claims through Honesty before promotion
+  = should: decay stale attention unless reaffirmed by current evidence or use
+
+& [ImplementationGate_ConceptRefinementFabric] is the future implementation boundary
+  + [implementation_status] is blocked_until_gates_satisfied
+  + [required_gate_set] is concept_packet_schema, vote_receipt_schema, root_lineage_schema, trust_lens_engine, moderation_policy, abuse_model, identity_or_pseudonym_policy, rollback_policy, evidence_receipt_model, local_storage_model, export_delete_controls, consent_interface, and privacy_threat_model
+  + [first_safe_prototype] is local-only synthetic concept nodes and explanation candidates over hand-written SOP records
+  + [blocked_work] is public platform, remote voting, reputation system, automatic root replacement, network exchange, crawler import, and private conversation capture
+  + [outside] is any implementation that promotes, ranks, or replaces user-contributed concepts without visible lineage and gate review
+
+  = must: begin with synthetic local concept packets before real user network data
+  = must: prove root lineage and explanation receipts before any replacement automation
+  = must: keep public social mechanics blocked until abuse and moderation models exist
+
+(concept_refinement_fabric) :root_explanation: /trust_lens and root_lineage/ |residual_outside|
+  + [concept_node] is the meaning anchor under refinement
+  + [explanation_candidate] is the contributed possible replacement
+  + [refinement_vote] is attention signal around candidate fit
+  + [root_replacement_event] is scoped promotion with receipt
+  + [root_lineage] is preserved prior roots, reasons, dissent, and rollback
+  |residual_outside| truth by upvote, erased lineage, hidden ranking, private capture, global canon, and implementation without gates
+
+/ [concept_node], [explanation_candidate], [refinement_vote] -(RaisesAttention)> [root_candidate], [outside]
+* [root_candidate], [trust_lens], [promotion_review], [root_lineage] -(RootReplacement)> [root_explanation], [explanation_receipt], [rollback_pointer]

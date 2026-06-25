@@ -1,0 +1,30 @@
+Subject: Concept Refinement Fabric 093
+
+Description: SOP-HG realization event for the social fabric specialization where contributed explanations refine concept roots.
+
+& [ConceptRefinementFabric_093] is the realized periphery event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is Concept Refinement Fabric
+  + [source_question] is whether social fabric can raise attention around nodes like Stack Overflow and let an explanation replace the conversation root by upvote
+  + [primary_realization] is the pattern becomes a concept refinement platform when votes raise attention around explanation candidates and scoped promotion can replace the current root explanation while preserving lineage
+  + [concept_node] is the durable meaning anchor
+  + [root_explanation] is the current best explanation under a lens and scope
+  + [explanation_candidate] is the contributed possible replacement or refinement
+  + [root_replacement_event] is scoped promotion, not universal truth
+  + [root_lineage] is the preserved history that prevents refinement from erasing prior roots, dissent, and failed alternatives
+  + [wisdom_register] is community attention can refine concepts when the system treats explanations as evolving roots with visible receipts and lineage
+  + [caution_register] is upvote, reputation, and popularity are attention weights only and must not become truth, safety, or compulsory canon
+  + [balance_register] is stable because the contract separates concept root, candidate explanation, vote weight, trust lens, evidence receipt, lineage, and outside
+  + [utility_horizon] is local SOP concept refinement, project glossary evolution, explanation quality competition, synthetic packet lab, community trust-lens canon, and future social knowledge graph
+  + [next_step] is keep Task_161 ready or later prototype local synthetic concept packets after gates
+  + [outside] is networked voting, public reputation, private conversation capture, automatic root replacement, hidden ranking, and truth by upvote
+
+  = must: keep root replacement scoped and reversible
+  = must: preserve lineage and minority context before any root promotion
+  = should: reuse this pattern for local SOP glossary and concept-node refinement before social implementation
+
+N:concept_refinement_fabric_093 -> C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop
+E:extends -> SocialPeripheryInterestFabric, SOPSwarmFabric, PeripheryCorrelationPotentialScan
+E:anchors -> concept_node, root_explanation, explanation_candidate, root_lineage
+E:guards -> SecurityHonestyGovernance, FrameReferenceIntegrity, LocalIdentityConsumption, trust_lens, promotion_review

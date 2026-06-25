@@ -145,14 +145,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_periphery_correlation_potential_scan\Dictated_Periphery_Correlation_Potential_Scan_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_periphery_correlation_potential_scan_092.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_040.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_refinement_fabric\Dictated_Concept_Refinement_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_refinement_fabric_093.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_041.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Periphery Correlation Potential Scan
-  + [active_root_frame] is attention_frame_2026_06_25_periphery_correlation_potential_scan
+  + [registry_scope] is Concept Refinement Fabric
+  + [active_root_frame] is attention_frame_2026_06_25_concept_refinement_fabric
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 34
+  + [closed_frame_count] is 35
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -483,9 +487,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat synchronized perspective as correlation heat rather than truth
   = should: start future prototypes with synthetic local packets only
 
-& [AttentionFrame_2026_06_25_PeripheryCorrelationPotentialScan] is the active semantic stack frame for cross-periphery utility discovery
+& [AttentionFrame_2026_06_25_PeripheryCorrelationPotentialScan] is the semantic stack frame for cross-periphery utility discovery
   + [frame_id] is attention_frame_2026_06_25_periphery_correlation_potential_scan
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_social_periphery_interest_fabric
   + [child_frame_set] is PeripheryCorrelationPotentialScan, SocialPeripheryInterestFabric, SOPSwarmFabric, LocalAIManagerPrimary, PeripheryDimensionalProbe, SemanticCorrelationGraph, AttentionScaffoldCompiler, FrameReferenceIntegrity, SecurityHonestyGovernance, NarrativeSubjectFileTable, source_preservation, operating_loop_tick_040, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -506,11 +510,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: use this frame when a new development should be compared to existing periphery for useful next directions
   = should: let Task_161 direct LM Studio endpoint manager runner consume this scan as future task-selection context
 
+& [AttentionFrame_2026_06_25_ConceptRefinementFabric] is the active semantic stack frame for concept-root refinement through contributed explanations
+  + [frame_id] is attention_frame_2026_06_25_concept_refinement_fabric
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_social_periphery_interest_fabric
+  + [child_frame_set] is ConceptRefinementFabric, SocialPeripheryInterestFabric, SOPSwarmFabric, PeripheryCorrelationPotentialScan, ConceptNodeShape, ExplanationCandidateShape, RootReplacementProtocol, AttentionRatingPolicy, source_preservation, operating_loop_tick_041, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is ConceptRefinementFabric.sop, SocialPeripheryInterestFabric.sop, SOPSwarmFabric.sop, PeripheryCorrelationPotentialScan.sop, Dictated_Concept_Refinement_Fabric_Source.sop, 2026-06-25_concept_refinement_fabric_093.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_041.sop
+  + [focus_register] is concept_node, conversation_thread, root_explanation, explanation_candidate, refinement_vote, trust_lens, root_replacement_event, root_lineage, and implementation boundary
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or specify a local synthetic concept-node refinement prototype
+  + [delineation_register] is inside contributed explanation candidates, scoped upvotes, trust-lens weighting, evidence receipts, current root, root lineage, rollback pointer, dissent, and outside
+  + [periphery_register] is truth by upvote, erased lineage, reputation farming, hidden ranking, public platform implementation, private conversation capture, automatic root replacement, credentials, and unrelated dirty files
+  + [operation_register] is preserve_source, define_concept_refinement_fabric, extend_social_fabric, extend_swarm_fabric, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, ConceptRefinementFabric.sop, SocialPeripheryInterestFabric update, SOPSwarmFabric update, source manifest, periphery record 093, and operating_loop_tick_041
+  + [wisdom_register] is concept refinement becomes powerful when community attention can promote clearer explanations while every root replacement remains scoped, inspectable, reversible, and lineage-preserving
+  + [caution_register] is votes, reputation, and popularity must never become proof of truth or permission to erase prior roots and dissent
+  + [balance_register] is stable because concept node, root explanation, candidate explanation, vote weight, trust lens, lineage, and outside remain distinct
+  + [integration_register] is Task_164 completed as SOP-only future specification while network voting and public platform implementation remain blocked
+  + [frame_outside] is hidden model state, live network voting, private capture, reputation automation, central canon, automatic root replacement, direct mutation, credentials, destructive action, and unrelated workspace changes
+
+  = must: keep votes as attention signals
+  = must: keep root replacement scoped, reversible, and lineage-preserved
+  = should: begin future prototypes with local synthetic concept nodes only
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_periphery_correlation_potential_scan
+  + [active_root_frame] is attention_frame_2026_06_25_concept_refinement_fabric
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_PeripheryCorrelationPotentialScan], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [periphery_correlation_potential_scan], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_ConceptRefinementFabric], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [concept_refinement_fabric], [operating_loop_tick], [balance_register], [integration_register], [outside]
