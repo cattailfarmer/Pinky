@@ -1,0 +1,142 @@
+Subject: SOP Swarm Fabric
+
+Description: Future implementation specification for a decentralized, local-first semantic attention fabric.
+
+@ [source] C:\Project\Pinky\.sop\platform\Attention.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_swarm_fabric\Dictated_SOP_Swarm_Fabric_Source.sop
+
+& [SOPSwarmFabric] is the future decentralized attention-fabric specification
+  + [spec_status] is implementation_open_and_blocked
+  + [fabric_role] is local-first shared semantic attention map over user-owned SOP traces
+  + [local_attention_trace] is a private user-local record of subject, source pointer, purpose, periphery activation, and attention signal
+  + [swarm_attention_packet] is an opt-in redacted signed packet derived from local_attention_trace
+  + [subject_resonance_map] is the aggregate map of independently shared attention signals around similar subjects
+  + [trust_lens] is a user-selected weighting rule for whose judgement, moderation, or expertise affects recommendations
+  + [moderation_context] is lens-specific judgment, rating, warning, or endorsement bound to source, subject, and reason
+  + [viral_attention_pattern] is cross-user heat or recurrence, not truth, quality, endorsement, or safety
+  + [dead_internet_countermeasure] is provenance-aware human judgement, source traceability, trust-scoped recommendation, and manipulation detection
+  + [implementation_boundary] is no networked capture, sharing, transport, crawling, or browser integration until future gates are satisfied
+  + [residual_outside] is raw browsing history, private content, hidden user identity, unreviewed packets, global truth, and unbounded tracking
+
+  = must: keep all attention traces local by default
+  = must: require explicit consent before any packet is shared
+  = must: redact or summarize source content before sharing unless the user explicitly chooses otherwise
+  = must: sign shared packets and preserve provenance without exposing private local identity by default
+  = must: treat trust lenses as user-local weighting policies, not universal authority
+  = must: treat moderation as context scoped by lens, domain, subject, and reason
+  = must: separate attention heat, truth, safety, endorsement, popularity, novelty, and manipulation risk
+  = must: route every shared signal through Security, Honesty, LocalIdentityConsumption, and privacy boundaries
+  = must: make implementation dependent on a threat model, consent UI, packet schema, identity/signing scheme, storage model, and transport policy
+  = should: support local-only use before any multi-user fabric exists
+  = should: allow friend, community, expert, skeptic, safety, aesthetic, and domain-specific trust lenses
+  = should: degrade or decay old attention signals unless reaffirmed
+  - never: silently track browsing
+  - never: export raw private browsing traces by default
+  - never: treat shared heat as proof of truth
+  - never: allow central moderation claims to erase local user judgment
+  - never: implement remote sync, crawling, or packet exchange from this specification alone
+
+& [SwarmAttentionPacket] is the future shared packet shape
+  + [packet_status] is future_schema_candidate
+  + [packet_id] is content-addressed hash over redacted packet body and schema version
+  + [schema_version] is the packet contract version
+  + [subject_key] is the normalized subject being signaled
+  + [source_pointer] is URL, document pointer, SOP path, content hash, or redacted source handle
+  + [attention_signal] is draw, heat, salience, confidence, uncertainty, caution, or rating signal
+  + [periphery_context] is nearby subjects, relation reasons, boundary notes, and unresolved outside
+  + [rating_vector] is user-local or opt-in score across usefulness, trust, novelty, risk, quality, relevance, and objection
+  + [trust_scope] is self, friend, community, expert, domain, temporary, anonymous, or public
+  + [moderation_note] is optional human judgement with reason and scope
+  + [redaction_boundary] is what was removed, summarized, hashed, or kept local
+  + [signature] is future cryptographic signature or local authenticity receipt
+  + [expiry_or_decay] is the rule by which the packet loses weight over time
+  + [outside] is raw private content, unredacted identity, proof of truth, and universal recommendation authority
+
+  = must: be optional and consent-gated
+  = must: be inspectable before publication
+  = must: carry redaction_boundary and expiry_or_decay
+  = must: allow rejection, withdrawal, or local tombstone
+  = should: be small enough for peer exchange and local indexing
+
+& [TrustLensModel] is the rule for trusted influence and recommendations
+  + [lens_owner] is the local user, group, community, or explicit policy owner
+  + [trusted_source_set] is the people, communities, signatures, or domains weighted by the lens
+  + [domain_scope] is the subject area where the lens is relevant
+  + [judgment_vector] is usefulness, reliability, taste, safety, expertise, dissent, novelty, and caution
+  + [moderation_policy] is how the lens handles warning, block, downrank, endorse, annotate, or route-to-review
+  + [explanation_receipt] is why the lens changed ranking or recommendation
+  + [outside] is global truth, compulsory ranking, hidden manipulation, and unchosen authority
+
+  = must: be local-selectable and inspectable
+  = must: explain why a recommendation was raised, lowered, hidden, or warned
+  = must: support disagreement between lenses without forcing one global answer
+  = must: allow the user to disable a lens
+  = should: allow context-specific trust rather than person-wide authority
+
+& [AttentionCrawlerBoundary] is the rule for browsing and web mapping
+  + [crawler_status] is future_blocked
+  + [local_capture] is permitted only after explicit local user configuration
+  + [source_scope] is the selected browser page, URL, document, SOP record, or user-marked source
+  + [periphery_capture] is the local subject and relation map inferred around the source
+  + [sharing_gate] is explicit review before any local capture becomes a SwarmAttentionPacket
+  + [outside] is silent telemetry, keystroke tracking, credential capture, private message capture, and background browsing export
+
+  = must: begin as manual or local-only before automation
+  = must: exclude credentials, private messages, forms, payment pages, and sensitive sources by default
+  = must: provide visible capture state and pause controls before any crawler implementation
+  = must: keep local browsing traces outside shared fabric unless explicitly packetized by user consent
+  - never: behave like analytics tracking
+
+& [ResonanceAndViralAttentionPolicy] is the rule for cross-user heat
+  + [attention_resonance] is repeated independent attention on similar subjects or relations
+  + [viral_attention_pattern] is rapid growth, recurrence, or cross-lens spread of attention signals
+  + [correlation_cluster] is related subject packets grouped by semantic overlap and trust lens
+  + [manipulation_risk] is bot-like growth, Sybil pattern, brigading, paid rating, copy-paste packets, or coordinated abuse
+  + [truth_boundary] is resonance does not prove factuality
+  + [outside] is proof, safety, authority, or user endorsement without inspection
+
+  = must: label viral attention as heat, not truth
+  = must: compare resonance across trust lenses before recommendation promotion
+  = must: route suspicious growth through Security and Honesty gates
+  = must: preserve dissenting moderation and low-trust signals as context
+  = should: expose why a subject is rising in attention
+
+& [DeadInternetRecoveryPattern] is the intended social utility boundary
+  + [problem_field] is synthetic flood, content farms, engagement capture, weak provenance, manipulative ranking, and loss of user agency
+  + [counter_pattern] is local-first attention, signed provenance, human moderation context, trust lenses, anti-manipulation scoring, and shared resonance maps
+  + [success_signal] is users recover agency over what their attention follows and why
+  + [failure_signal] is the fabric becomes another tracker, ranking monopoly, popularity engine, or manipulation surface
+  + [outside] is saving the internet by assertion or replacing all public search engines
+
+  = must: preserve user agency over attention
+  = must: make recommendation reasons inspectable
+  = must: make manipulation risk visible rather than hiding it behind engagement metrics
+  = should: complement search rather than pretending to replace the whole web
+
+& [ImplementationOpenGate] is the future implementation readiness boundary
+  + [implementation_status] is blocked_until_gates_satisfied
+  + [required_gate_set] is privacy_threat_model, consent_interface, packet_schema, redaction_engine, identity_signature_model, local_storage_model, trust_lens_engine, moderation_model, transport_policy, abuse_resistance_model, and user_export_delete_controls
+  + [first_safe_prototype] is local-only manual packet drafting from a user-selected SOP subject or browser source
+  + [blocked_work] is browser integration, packet exchange, peer transport, public swarm indexing, remote sync, recommendation automation, and crawler automation
+  + [outside] is any implementation that collects, shares, or ranks user browsing without explicit local control
+
+  = must: keep implementation blocked until all required gates have source-preserved specifications
+  = must: start with local-only manual packet drafting if implementation begins later
+  = must: validate packets with Security, Honesty, LocalIdentityConsumption, and user-visible review
+  = should: prototype with synthetic or user-provided test data before real browsing data
+
+(sop_swarm_fabric) :local_attention_trace: /consent_gate and trust_lens/ |private_outside|
+  + [local_attention_trace] is private user-owned semantic attention record
+  + [consent_gate] is explicit review and permission before sharing
+  + [trust_lens] is user-selected weighting over shared judgement and moderation context
+  + [private_outside] is raw browsing, private identity, unredacted content, and unshared local context
+  = inside: subject key, redacted source pointer, attention signal, periphery context, rating vector, trust scope, moderation note, signature, decay, and provenance
+  = boundary: local-first storage, consent, redaction, signed packet, privacy, governance, abuse resistance, and implementation gate
+  |outside| silent telemetry, surveillance, global truth, central moderation monopoly, unbounded crawler, raw private data, and implementation without gates

@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is layered activation inspection
+  + [focus_subject] is SOP Swarm Fabric
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is subjects need lightweight deeper activation inspection, with each subject naming its larger framework periphery so realizations can expand through bounded SOP declaration windows
-  + [inside] is LayeredActivationInspection.sop, SubjectInquiry.sop, NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, AttentionWeightScale.sop, UnifiedFacultyAttention.sop, Dictated_Layered_Activation_Inspection_Source.sop, 2026-06-24_layered_activation_inspection_086.hg.sop, 2026-06-24_operating_loop_tick_034.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, evidence-gated, table-backed, explicit about uninspected framework network, and non-mutating unless runtime work is selected later
+  + [right_hemisphere_draw] is the semantic web can hold open a future local-first shared attention fabric that maps periphery, trust lenses, and viral attention patterns without implementing capture or sharing yet
+  + [inside] is SOPSwarmFabric.sop, Attention.sop, NarrativeSubjectFileTable.sop, LayeredActivationInspection.sop, SubjectInquiry.sop, SecurityHonestyGovernance.sop, LocalIdentityConsumption.sop, Dictated_SOP_Swarm_Fabric_Source.sop, 2026-06-24_sop_swarm_fabric_087.hg.sop, 2026-06-24_operating_loop_tick_035.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, privacy-gated, consent-gated, implementation-blocked, and non-mutating unless explicit future runtime work is selected later
   + [outside] is hidden model state, hidden native parallelism claims, unsupervised PC control, destructive action, credentials, project-root LM Studio authority, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic launch, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_034.sop
-  + [open_question] is whether to compile a small realization example using layered activation inspection on one active subject
+  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_035.sop
+  + [open_question] is whether to later define the privacy and consent gates required before a local-only manual SwarmAttentionPacket prototype
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -42,6 +42,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat narrative_subject_file_index as the completed Task_152 anchor
   = must: treat narrative_led_subject_inquiry as the completed Task_153 anchor
   = must: treat layered_activation_inspection as the completed Task_154 anchor
+  = must: treat sop_swarm_fabric as the completed Task_155 anchor
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work
   = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
   = must: require validator acceptance before task narrative integration

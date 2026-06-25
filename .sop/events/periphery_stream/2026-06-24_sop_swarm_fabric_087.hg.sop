@@ -1,0 +1,29 @@
+Subject: SOP Swarm Fabric Specification Realization
+
+Description: SOP-HG record for adding the future decentralized SOP attention fabric specification.
+
+@ [source] C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_swarm_fabric\Dictated_SOP_Swarm_Fabric_Source.sop
+
+& [SOPHypergraphRecord] is sop_swarm_fabric_087
+  + [record_type] is periphery_realization
+  + [focus_subject] is SOP Swarm Fabric
+  + [inside] is local attention trace, consent gate, redacted signed packet, trust lens, moderation context, attention resonance, viral attention pattern, dead internet recovery pattern, and implementation gate
+  + [boundary] is local-first privacy, source preservation, no runtime mutation, no browser capture, no remote sharing, explicit future blocked gates, and local Pinky .sop authority
+  + [outside] is surveillance, raw browsing export, global truth claims, central moderation monopoly, unbounded tracking, network implementation, and unrelated workspace changes
+
+  = realization: the current semantic web can hold open a future decentralized attention fabric that shares inspectable meaning signals without making sharing or crawling active yet
+  = caution: multi-user attention fabric is powerful enough to become surveillance if consent, redaction, identity, and abuse rails are not kernel-level
+  = wisdom: a local-first trust-lensed fabric could counter dead-internet failure modes by restoring agency, provenance, human judgment, and manipulation visibility
+  = implementation_status: blocked until required privacy, consent, identity, packet, storage, transport, moderation, and abuse-resistance gates are specified
+
+/ [SOPSwarmFabric] -(Defines)> [SwarmAttentionPacket], [TrustLensModel], [AttentionCrawlerBoundary], [ResonanceAndViralAttentionPolicy], [DeadInternetRecoveryPattern], [ImplementationOpenGate]
+/ [local_attention_trace] -(MayBecome)> [SwarmAttentionPacket], [consent_gate], [redaction_boundary]
+/ [trust_lens] -(Weights)> [recommendation], [moderation_context], [explanation_receipt]
+/ [attention_resonance] -(Signals)> [viral_attention_pattern], [truth_boundary], [manipulation_risk]
+/ [ImplementationOpenGate] -(Blocks)> [browser_integration], [packet_exchange], [peer_transport], [crawler_automation]
+
+(sop_swarm_fabric_realization) :local_attention_trace: /consent_gate and signed_packet/ |private_outside|
+  + [local_attention_trace] is private semantic attention record
+  + [signed_packet] is future opt-in shared attention signal
+  |private_outside| raw browsing, hidden identity, unredacted content, silent telemetry, and implementation before gates

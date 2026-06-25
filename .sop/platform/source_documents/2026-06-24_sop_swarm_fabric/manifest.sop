@@ -1,0 +1,13 @@
+Subject: SOP Swarm Fabric Source Manifest
+
+Description: Manifest for source preservation before canonical SOP Swarm Fabric specification.
+
+& [SOPSwarmFabricSourceManifest] is the source-preservation manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_swarm_fabric\Dictated_SOP_Swarm_Fabric_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+  + [source_kind] is dictated refinement
+  + [preservation_status] is preserved
+  + [processing_status] is canonicalized
+
+  = must: keep dictated source intact
+  = must: cite this source from canonical contract and realization record

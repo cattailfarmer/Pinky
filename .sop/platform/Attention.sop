@@ -69,6 +69,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [frame_reference_integrity] is C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
   + [model_lens_projection] is C:\Project\Pinky\.sop\platform\ModelLensProjection.sop
   + [periphery_repository] is C:\Project\Pinky\.sop\platform\PeripheryRepository.sop
+  + [sop_swarm_fabric] is C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
   + [repo_first_internal_scan] is C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
   + [changelog_correlation_weight_net] is C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop
   + [attention_weight_scale] is C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
@@ -150,6 +151,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :frame_reference: C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
   :model_lens: C:\Project\Pinky\.sop\platform\ModelLensProjection.sop
   :periphery_repo: C:\Project\Pinky\.sop\platform\PeripheryRepository.sop
+  :sop_swarm_fabric: C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
   :repo_first_scan: C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
   :weight_net: C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop
   :weight_scale: C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
@@ -226,6 +228,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use frame_reference when a presented frame, image, map, UI, simulation, narrative, or model projection might be mistaken for first-hand observation or actionable reality
   = must: use model lens projection when exchangeable LLMs provide different eyes on the same scaffold
   = must: use the periphery repo for slow background realizations of correlations missed during primary attention formation
+  = must: use sop_swarm_fabric only as a future blocked specification when local-first shared attention fabric, trust lenses, viral attention patterns, or dead-internet countermeasures are in scope
   = must: use repo_first_scan when internal reflection spans committed or staged version bookends
   = must: use changelog_correlation_weight_net when mapping changelog units to subjects through narrative and justification weights
   = must: use attention_weight_scale when correlation heat needs units, resolution bands, scan depth, or confidence separation
