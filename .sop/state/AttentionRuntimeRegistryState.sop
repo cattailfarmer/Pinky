@@ -182,14 +182,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_transformer_readiness_threshold\Dictated_Transformer_Readiness_Threshold_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_transformer_readiness_threshold_101.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_049.sop
+@ [source] C:\Project\Pinky\.sop\events\reviews\2026-06-25_active_kernel_compression_readiness_review_001.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_active_kernel_compression_review\Dictated_Active_Kernel_Compression_Review_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_active_kernel_compression_review_102.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_050.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is SOP Transformer Readiness Threshold
-  + [active_root_frame] is attention_frame_2026_06_25_transformer_readiness_threshold
+  + [registry_scope] is Active Kernel Compression Readiness Review
+  + [active_root_frame] is attention_frame_2026_06_25_active_kernel_compression_review
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 43
+  + [closed_frame_count] is 44
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -729,9 +733,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: route strong low-confidence components through Caution before promotion
   = should: use spectra to compare cross-model interpretations when model-lens work resumes
 
-& [AttentionFrame_2026_06_25_TransformerReadinessThreshold] is the active semantic stack frame for measuring SOP burden and transformer-like compilation readiness
+& [AttentionFrame_2026_06_25_TransformerReadinessThreshold] is the semantic stack frame for measuring SOP burden and transformer-like compilation readiness
   + [frame_id] is attention_frame_2026_06_25_transformer_readiness_threshold
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_relationship_eigenspectrum
   + [child_frame_set] is SOPTransformerReadinessThreshold, AttentionKernelCompiler, AttentionScaffoldCompiler, RelationshipEigenspectrum, AttentionWeightScale, SemanticCorrelationGraph, ModelLensProjection, SecurityHonestyGovernance, LegacyContractReinforcementPolicy, NarrativeSubjectFileTable, ReadinessVector, BurdenVector, CompilationReadinessGate, ThresholdDisposition, source_preservation, operating_loop_tick_049, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -753,11 +757,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat transformer_candidate as planning disposition only
   = should: prefer compression, read-only index, or evaluator prototypes before training paths
 
+& [AttentionFrame_2026_06_25_ActiveKernelCompressionReview] is the active semantic stack frame for the read-only active root burden and readiness review
+  + [frame_id] is attention_frame_2026_06_25_active_kernel_compression_review
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_transformer_readiness_threshold
+  + [child_frame_set] is ActiveKernelCompressionReadinessReview_001, SOPTransformerReadinessThreshold, AttentionRoot, AttentionKernelCompiler, AttentionScaffoldCompiler, LocalAIManagerPrimary, ManagerState, NarrativeSubjectFileTable, ReadinessVectorResult, BurdenVectorResult, CompactManagerKernelRecommendation, source_preservation, operating_loop_tick_050, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is 2026-06-25_active_kernel_compression_readiness_review_001.sop, SOPTransformerReadinessThreshold.sop, Attention.sop, LocalAIManagerPrimary.sop, Dictated_Active_Kernel_Compression_Review_Source.sop, 2026-06-25_active_kernel_compression_review_102.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_050.sop
+  + [focus_register] is readiness_score, burden_score, threshold_disposition, compression_candidate_set, index_ready_candidate, evaluator_ready_candidate, compact_manager_kernel_recommendation, Task_174, Task_161, and outside
+  + [question_register] is define Task_174 compact LM Studio manager kernel bundle before Task_161 direct endpoint manager runner
+  + [delineation_register] is inside measured root counts, platform counts, source-document count, operating tick count, readiness vector, burden vector, recommended next task, validation, and outside
+  + [periphery_register] is full-root prompt bloat, transformer_candidate overclaim, model training, hidden activation claims, implementing Task_161 before compression, and unrelated dirty files
+  + [operation_register] is preserve_source, measure_root_burden, record_readiness_review, update_manager, update_subject_index, update_focal_point, update_registry, validate, commit, and push
+  + [evidence_register] is measured Attention.sop counts, platform contract counts, source document counts, operating tick count, review artifact, periphery record 102, and operating_loop_tick_050
+  + [wisdom_register] is a few-hour runway should start by shrinking the operating kernel before making the local manager consume it
+  + [caution_register] is medium-high readiness plus high burden means compress_first and index_ready, not transformer_candidate
+  + [balance_register] is stable because runway, readiness, overburden, compression, index readiness, manager runner, implementation permission, and outside remain distinct
+  + [integration_register] is Task_173 completed as read-only review while Task_174 becomes the next ready task and Task_161 remains ready after that
+  + [frame_outside] is hidden model state, model training, transformer implementation, hidden activation claims, direct worker launch, source replacement, credential access, destructive action, and unrelated workspace changes
+
+  = must: use compact manager kernel before direct LM Studio runner implementation when possible
+  = must: keep index_ready separate from transformer_candidate
+  = must: preserve Task_161 as ready but second in sequence after Task_174
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_transformer_readiness_threshold
+  + [active_root_frame] is attention_frame_2026_06_25_active_kernel_compression_review
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_TransformerReadinessThreshold], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [sop_transformer_readiness_threshold], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_ActiveKernelCompressionReview], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [active_kernel_compression_review], [operating_loop_tick], [balance_register], [integration_register], [outside]

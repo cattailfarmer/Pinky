@@ -1,0 +1,16 @@
+Subject: Dictated Active Kernel Compression Review Source
+
+Description: Preserved source wording for selecting a substantial work lane after the transformer readiness threshold was defined.
+
+& [DictatedActiveKernelCompressionReviewSource] is the preserved source input
+  + [source_date] is 2026-06-25
+  + [source_origin] is user dictated direction in Codex conversation
+  + [source_text] is "what can we get busy doing? I haven't put my pro subscription to much work yet today. is there sufficient runway for you to work for a few hours non-stop?"
+  + [interpreted_need] is choose a safe high-yield work lane with enough runway for sustained Codex work
+  + [selected_lane] is read-only compression and readiness review over the active SOP root before returning to LM Studio manager runner implementation
+  + [selection_reason] is the active SOP root has high expressive resolution and high active-kernel burden, so compression should precede further runtime widening
+  + [outside] is unsupervised long-running automation, hidden worker launch, model training, credentials, direct mutation outside .sop, and claiming transformer readiness without evaluation
+
+  = must: preserve the user's runway question as work-selection source
+  = must: keep the first sustained lane safe, bounded, and commit-visible
+  = must: preserve Task_161 as ready unless this review creates a safer precursor task

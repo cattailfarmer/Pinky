@@ -1,0 +1,14 @@
+Subject: Active Kernel Compression Review Source Manifest
+
+Description: Source preservation manifest for the active kernel compression and readiness review.
+
+& [ActiveKernelCompressionReviewSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_active_kernel_compression_review\Dictated_Active_Kernel_Compression_Review_Source.sop
+  + [review_output] is C:\Project\Pinky\.sop\events\reviews\2026-06-25_active_kernel_compression_readiness_review_001.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_active_kernel_compression_review_102.hg.sop
+  + [operating_loop_tick] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_050.sop
+  + [intake_status] is processed_to_review_sop
+  + [authority_boundary] is source wording preserved separately from review disposition and next-task recommendation
+
+  = must: cite this manifest when active kernel compression review is treated as a completed slice
+  = must: keep review findings subordinate to source authority and validation

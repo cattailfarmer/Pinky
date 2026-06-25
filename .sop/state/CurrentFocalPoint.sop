@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is SOP Transformer Readiness Threshold
+  + [focus_subject] is Active Kernel Compression Readiness Review
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the SOP system feels near a transformer-like compilation threshold, but the same density creates burden; readiness must be measured together with compression, evaluation, and authority boundaries
-  + [inside] is SOPTransformerReadinessThreshold.sop, AttentionKernelCompiler.sop, AttentionScaffoldCompiler.sop, RelationshipEigenspectrum.sop, AttentionWeightScale.sop, SemanticCorrelationGraph.sop, ModelLensProjection.sop, SecurityHonestyGovernance.sop, LegacyContractReinforcementPolicy.sop, NarrativeSubjectFileTable.sop, 2026-06-25_transformer_readiness_threshold_101.hg.sop, 2026-06-25_operating_loop_tick_049.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when readiness vector, burden vector, compression candidate, network candidate, training corpus candidate, evaluation boundary, authority boundary, threshold disposition, validation, and outside remain distinct
-  + [outside] is hidden model state, exhaustive repository coverage, proof by association, stale path certainty, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, truth by visual graph, erased source lineage, continuing after explicit stop, AGI proof, hidden model access, automatic training, source replacement by compiled artifact, transformer implementation without gates, and SOP volume as readiness
+  + [right_hemisphere_draw] is the first useful long-work lane is not more expansion but compression: the active root has enough resolution for indexing, but the LM Studio manager needs a compact kernel bundle before direct runner work
+  + [inside] is 2026-06-25_active_kernel_compression_readiness_review_001.sop, SOPTransformerReadinessThreshold.sop, Attention.sop, AttentionKernelCompiler.sop, AttentionScaffoldCompiler.sop, LocalAIManagerPrimary.sop, Manager_State.sop, 2026-06-25_active_kernel_compression_review_102.hg.sop, 2026-06-25_operating_loop_tick_050.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when readiness score, burden score, compression candidate, index readiness, evaluator readiness, compact manager kernel recommendation, Task_174, Task_161, validation, and outside remain distinct
+  + [outside] is hidden model state, exhaustive repository coverage, proof by association, stale path certainty, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, truth by visual graph, erased source lineage, continuing after explicit stop, model training, transformer implementation, hidden activation claims, source replacement, and implementing Task_161 before compact manager kernel bundle exists
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_049.sop
-  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or run a read-only compression/readiness review over active root layers
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_050.sop
+  + [open_question] is define Task_174 compact LM Studio manager kernel bundle, then return to Task_161 direct endpoint manager runner
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -57,7 +57,9 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat legacy_contract_reinforcement_policy as the completed Task_170 anchor
   = must: treat relationship_eigenspectrum as the completed Task_171 anchor
   = must: treat sop_transformer_readiness_threshold as the completed Task_172 anchor
-  = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
+  = must: treat active_kernel_compression_readiness_review as the completed Task_173 anchor
+  = must: treat Task_174_define_compact_lmstudio_manager_kernel_bundle as the next ready task
+  = must: keep Task_161_build_direct_lmstudio_endpoint_manager_runner ready after Task_174
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work

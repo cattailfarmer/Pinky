@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 24
+  + [subject_count] is 25
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -96,6 +96,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is AGI proof, hidden model access, automatic training, source replacement by compiled artifact, implementation without gates, and SOP volume as readiness
+
+& [Subject_active_kernel_compression_review] is a narrative subject entry
+  + [subject_key] is active_kernel_compression_review
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\reviews\2026-06-25_active_kernel_compression_readiness_review_001.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\events\reviews\2026-06-25_active_kernel_compression_readiness_review_001.sop, C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop, C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop, C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop, C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop, C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop, C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_050.sop
+  + [framework_periphery_set] is transformer_readiness_framework, attention_root_framework, attention_kernel_framework, attention_scaffold_framework, local_manager_framework, manager_state_framework, runtime_registry_framework, and operating_loop_framework
+  + [relation_reason_set] is read-only review artifact, threshold gate, active root burden source, kernel compression target, scaffold selection target, local manager target, ready task update, active focal state, registry state, and loop tick
+  + [search_phrase_set] is ActiveKernelCompressionReadinessReview, readiness_score, burden_score, compress_first, index_ready, evaluator_ready_candidate, compact_manager_kernel_recommendation, Task_174_define_compact_lmstudio_manager_kernel_bundle, Task_161_build_direct_lmstudio_endpoint_manager_runner
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is model training, transformer implementation, hidden activation claims, source replacement, direct worker launch, credentials, unrelated dirty files, and implementation before gates
 
 & [Subject_unified_faculty_attention] is a narrative subject entry
   + [subject_key] is unified_faculty_attention

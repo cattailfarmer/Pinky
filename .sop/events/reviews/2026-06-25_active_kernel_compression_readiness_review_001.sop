@@ -1,0 +1,79 @@
+Subject: Active Kernel Compression Readiness Review 001
+
+Description: Read-only review applying SOPTransformerReadinessThreshold to the current active SOP root and manager runway.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_active_kernel_compression_review\Dictated_Active_Kernel_Compression_Review_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop
+@ [source] C:\Project\Pinky\.sop\platform\Attention.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
+
+& [ActiveKernelCompressionReadinessReview_001] is a read-only transformer readiness and burden review
+  + [review_status] is completed
+  + [review_date] is 2026-06-25
+  + [review_scope] is active root Attention.sop, platform contract surface, source-document corpus, operating-loop history, and ready LM Studio manager task
+  + [attention_root_line_count] is 287
+  + [attention_root_import_field_count] is 96
+  + [attention_root_must_rule_count] is 90
+  + [platform_contract_count] is 92
+  + [platform_subject_body_count] is 416
+  + [platform_must_rule_count] is 1894
+  + [source_document_folder_count] is 116
+  + [operating_loop_tick_count] is 49
+  + [readiness_score] is medium_high
+  + [burden_score] is high
+  + [threshold_disposition] is compress_first and index_ready
+  + [not_disposition] is transformer_candidate
+  + [reason] is the system has strong source preservation, stable primitives, repeated state records, and evaluable manager lanes, but the active root is too wide for a local manager prompt and should be compressed before further runtime widening
+  + [compression_candidate_set] is active_attention_root_import_surface, active_attention_root_must_surface, manager_kernel_bundle, readiness_review_index, relationship_spectrum_index, and legacy_remnant_routing
+  + [index_ready_candidate] is read-only subject and contract index for selecting a compact kernel bundle by task family
+  + [evaluator_ready_candidate] is schema and authority-boundary validator for local LM Studio manager outputs
+  + [network_candidate] is deferred until compact kernels, input-output examples, model-lens comparisons, and evaluation records exist
+  + [task_161_disposition] is still ready but should consume a compact LM Studio manager kernel rather than the full attention root
+  + [recommended_next_task] is Task_173_define_compact_lmstudio_manager_kernel_bundle
+  + [outside] is model training, transformer implementation, hidden activation claims, direct worker launch, source replacement, broad repo mutation, credentials, and unrelated dirty files
+
+  = must: treat compress_first as the dominant near-term disposition
+  = must: treat index_ready as permission for read-only lookup and kernel-bundle preparation, not model training
+  = must: keep Task_161 ready but precede it with compact manager kernel bundle if possible
+  = must: keep LM Studio manager proposal-only until Codex accepts a handoff candidate
+  = should: use the compact manager kernel to reduce active context before any local manager runner implementation
+
+& [ReadinessVectorResult] is the measured readiness surface
+  + [primitive_stability] is high because attention, boundary, outside, source authority, focal state, runtime registry, and manager state persist across commits
+  + [schema_regularization] is medium_high because SOP contracts share subject, description, source, fields, must rules, outside, and graph-edge patterns
+  + [corpus_quality] is high because source documents, manifests, canonical contracts, reviews, periphery records, and operating ticks are preserved
+  + [evaluation_surface] is medium because runtime tests exist and LM Studio dry-run evidence exists, but compact manager task-family evaluation is incomplete
+  + [compression_gain] is high because the active root has 96 import fields and 90 must rules while the manager lane needs only a small subset
+  + [relationship_spectrum_stability] is medium because RelationshipEigenspectrum is defined but not yet populated by repeated index records
+  + [authority_integrity] is high because SourceAuthorityRoot, CurrentFocalPoint, runtime registry, commit records, and GitHub push reports remain distinct
+  + [runtime_boundary_clarity] is medium_high because read-only, proposal-only, mutation, worker launch, and training are named, but direct runner implementation remains pending
+
+& [BurdenVectorResult] is the measured burden surface
+  + [active_contract_count] is high because root Attention.sop imports 96 fields
+  + [field_density] is high because the immediate root holds 90 must rules
+  + [duplicate_role_pressure] is medium because compiler, kernel, scaffold, threshold, manager, and job-node surfaces overlap productively but need selection
+  + [activation_noise] is medium because many layers can activate by relevance, but only a subset affects the LM Studio manager runner
+  + [context_load] is high because loading the full active root is too large for lightweight local manager work
+  + [stale_remnant_pressure] is medium because older F:\.sop and prior AttentionFramework remnants remain reference material, now bounded by LegacyContractReinforcementPolicy
+  + [validation_drag] is medium because SOP-only changes validate quickly, but runtime manager work will need stronger schema tests
+
+& [CompactManagerKernelRecommendation] is the next safe work packet
+  + [kernel_purpose] is give LM Studio a small manager-readable SOP packet without the full active root burden
+  + [minimum_contract_set] is LocalAIManagerPrimary, CodexLMStudioOrchestrationWorkspace, WorkspaceState, Queue, Runbook, WorkerPacketTemplate, SOPLanguagePrimerForLocalAgents, SOPWorkerBootPacket, SecurityHonestyGovernance, FrameReferenceIntegrity, CurrentFocalPoint, and TaskFrameLaunchQueue
+  + [excluded_from_minimum] is photonic contracts, social swarm fabric, concept refinement fabric, transformer readiness, relationship eigenspectrum, hyperbolic navigation, and broad historical completed-task list unless specifically requested by a manager task
+  + [output_shape] is compact_manager_kernel_bundle with role, task queue, allowed actions, blocked actions, handoff threshold, schema, stop policy, and capture target
+  + [validation_need] is compare local manager output against schema, outside preservation, task routing, and authority boundary
+  + [next_after_kernel] is implement or refine Task_161 direct LM Studio endpoint manager runner using the compact bundle
+
+(active_kernel_compression_review) :readiness_vector: /burden_vector and threshold_disposition/ |overclaim|
+  + [readiness_vector] is medium_high
+  + [burden_vector] is high
+  + [threshold_disposition] is compress_first and index_ready
+  + [recommended_next_task] is Task_173_define_compact_lmstudio_manager_kernel_bundle
+  |overclaim| transformer_candidate, model training, hidden activation claims, source replacement, and unsupervised worker launch
+
+/ [AttentionRoot], [ManagerState], [SOPTransformerReadinessThreshold] -(Measures)> [ReadinessVectorResult], [BurdenVectorResult], [threshold_disposition]
+* [threshold_disposition], [LocalAIManagerPrimary], [Task_161] -(Recommends)> [CompactManagerKernelRecommendation], [outside]
