@@ -1,0 +1,15 @@
+Subject: Compact LM Studio Manager Kernel Bundle Source Manifest
+
+Description: Source preservation manifest for the compact LM Studio manager kernel bundle.
+
+& [CompactLMStudioManagerKernelBundleSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_compact_lmstudio_manager_kernel_bundle\Dictated_Compact_LMStudio_Manager_Kernel_Bundle_Source.sop
+  + [canonical_output] is C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+  + [workspace_packet] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_compact_lmstudio_manager_kernel_bundle_103.hg.sop
+  + [operating_loop_tick] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_051.sop
+  + [intake_status] is processed_to_canonical_sop_and_workspace_packet
+  + [authority_boundary] is source wording preserved separately from canonical bundle contract and runnable workspace packet
+
+  = must: cite this manifest when compact LM Studio manager kernel bundle is treated as a completed slice
+  = must: keep the workspace packet proposal-only until the runner validates it

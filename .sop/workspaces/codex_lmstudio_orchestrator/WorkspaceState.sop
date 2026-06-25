@@ -25,7 +25,8 @@ Description: Current local state for the SOP workspace that coordinates LM Studi
   + [capture_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures
   + [runbook] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
   + [packet_template] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
-  + [next_safe_step] is define or build the direct LM Studio endpoint manager runner that reads local lightweight SOP context streams without spending OpenAI Codex allowance
+  + [compact_manager_kernel_bundle] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+  + [next_safe_step] is build or refine the direct LM Studio endpoint manager runner against CompactManagerKernelBundle.sop
   + [last_manager_probe] is codex_lmstudio_manager_dry_run_001
   + [last_manager_probe_result] is direct LM Studio API returned a valid blocked proposal and Codex CLI local-provider blocked on n_keep 9381 greater than or equal to n_ctx 8192
   + [manager_transport_preference] is direct_lm_studio_openai_compatible_endpoint until Codex CLI local-provider context overhead is solved or verified larger context is loaded
@@ -35,5 +36,6 @@ Description: Current local state for the SOP workspace that coordinates LM Studi
   = must: keep this file as state, not as the full project summary
   = must: update state after a manager dry run, worker dispatch, validation, commit, push, or block
   = must: keep action authority separate from endpoint availability
+  = must: load compact_manager_kernel_bundle before direct endpoint manager prompt construction
   = should: record provider reachability and selected model before each manager-run batch
   - never: treat endpoint availability as permission to launch or spend

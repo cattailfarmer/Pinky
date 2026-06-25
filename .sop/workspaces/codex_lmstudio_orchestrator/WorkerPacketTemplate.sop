@@ -5,6 +5,7 @@ Description: Template for context streams, LM Studio manager proposals, OpenAI C
 @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+@ [source] C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
 
 & [CodexContextStreamPacketShape] is the packet Codex writes for LM Studio manager attention
   + [packet_id] is stable context stream identifier
@@ -28,6 +29,7 @@ Description: Template for context streams, LM Studio manager proposals, OpenAI C
   + [focus_subject] is current task focus from CurrentFocalPoint
   + [task_frame] is selected queue candidate, reminders, allowed surface, blocked surface, and return anchor
   + [source_slice_set] is compact local SOP files or excerpts selected by table lookup
+  + [compact_manager_kernel_bundle] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
   + [handoff_threshold] is the condition that justifies invoking OpenAI Codex
   + [expected_manager_output] is codex_job_proposal, blocked_outside note, or codex_attention_request
   + [evidence_gate] is proof required before integration
@@ -35,6 +37,7 @@ Description: Template for context streams, LM Studio manager proposals, OpenAI C
 
   = must: be buildable by a local wrapper from existing .sop files
   = must: stay smaller than the loaded LM Studio context
+  = must: include compact_manager_kernel_bundle as the manager's role and gate source
   = must: include handoff_threshold so local manager can conserve OpenAI Codex usage
 
 & [LMStudioManagerProposalShape] is the exact output expected from the local manager

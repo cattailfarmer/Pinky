@@ -1,0 +1,86 @@
+Subject: Compact LM Studio Manager Kernel Bundle
+
+Description: Canonical compact kernel for local LM Studio manager proposal passes before direct endpoint runner implementation.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_compact_lmstudio_manager_kernel_bundle\Dictated_Compact_LMStudio_Manager_Kernel_Bundle_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\reviews\2026-06-25_active_kernel_compression_readiness_review_001.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+
+& [CompactLMStudioManagerKernelBundle] is the compact SOP kernel for local LM Studio manager passes
+  + [spec_status] is active_specification
+  + [pattern_role] is compact_local_manager_kernel
+  + [workspace_packet] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+  + [manager_role] is local proposal manager over SOP queue and context stream
+  + [manager_transport] is direct LM Studio OpenAI-compatible endpoint by default
+  + [manager_model] is selected by WorkspaceState preferred_initial_manager_model unless a newer benchmark overrides it
+  + [codex_role] is authority reviewer, mutation executor, validation runner, committer, pusher, and high-demand worker
+  + [kernel_order] is primer, boot, role, task queue, allowed surface, blocked surface, handoff threshold, output schema, self-check, outside
+  + [minimum_source_set] is SOPLanguagePrimerForLocalAgents, SOPWorkerBootPacket, LocalAIManagerPrimary, Runbook, WorkerPacketTemplate, Queue, WorkspaceState, CurrentFocalPoint, SecurityHonestyGovernance, and FrameReferenceIntegrity
+  + [excluded_source_set] is full Attention.sop root, broad completed-task list, photonic contracts, social swarm contracts, concept refinement contracts, hyperbolic navigation contracts, and transformer implementation contracts unless the selected task explicitly needs them
+  + [allowed_surface] is read local SOP packet, select one queue candidate, produce one manager proposal, produce one blocked note, preserve outside, and request Codex attention when handoff threshold is crossed
+  + [blocked_surface] is file mutation, shell commands, worker launch, OpenAI spend, commits, pushes, credentials, destructive actions, background loops, and claims of completed work
+  + [handoff_threshold] is repo mutation, complex implementation, uncertain authority, failing validation, specification ambiguity, high-risk action, hidden spend, credential boundary, or user-directed Codex escalation
+  + [expected_output] is exactly one LMStudioManagerProposalShape or one blocked_outside note
+  + [validation_gate] is schema validation, outside preservation, no launch claim, no mutation claim, task routing fit, authority boundary, and capture path presence
+  + [stop_policy] is stop on missing provider, invalid schema, unsafe proposal, unbounded action, dirty-file conflict, credential request, or explicit user stop
+  + [outside] is hidden model state, direct mutation, direct worker launch, background daemon, credential handling, hidden spend, source authority replacement, and unrelated dirty files
+
+  ? [use_when: LM Studio manager should read a lightweight SOP context stream before proposing Codex work]
+    = activate [CompactLMStudioManagerKernelBundle]
+
+  = must: load the compact bundle before any direct LM Studio manager proposal pass
+  = must: keep the local manager proposal-only and non-mutating
+  = must: include handoff_threshold and blocked_surface in every manager prompt
+  = must: include expected_output and validation_gate in every manager prompt
+  = must: keep Codex as the only authority for repo mutation, worker launch, commit, push, and integration
+  = must: keep the bundle smaller than full Attention.sop root
+  = must: cite source refs by path instead of embedding broad historical context
+  = should: use this bundle as Task_161 direct endpoint manager runner input
+  = should: update this bundle after manager benchmark failures reveal missing fields
+  - never: let LM Studio manager claim it launched, edited, committed, pushed, or validated work
+  - never: include the whole project history when one queue candidate and source slice are enough
+
+& [CompactManagerPromptShape] is the exact prompt body skeleton for the direct endpoint runner
+  + [system_intent] is You are a local SOP manager. You propose one bounded next action or one blocked note. You do not edit files, run tools, launch workers, commit, push, or spend OpenAI tokens.
+  + [authority_hierarchy] is prompt packet first, cited local SOP snippets second, host conduct rules third, unrelated project rails outside
+  + [current_focus] is read from CurrentFocalPoint focus_subject, inside, boundary, outside, and open_question
+  + [queue_candidate] is one selected candidate from Queue or Manager_State ReadyTaskSet
+  + [allowed_surface] is read, classify, propose, block, preserve outside, request Codex attention
+  + [blocked_surface] is mutate, launch, claim completion, commit, push, spend, handle credentials, or ignore outside
+  + [response_schema] is proposal_id, proposed_worker_lane, objective, working_directory, allowed_surface, blocked_surface, prompt_packet_refs, capture_target, proof_gate, risk_gate, outside
+  + [self_check] is local_law named, outside preserved, no launch claimed, one job only, handoff threshold inspected
+
+  = must: be emitted by the runner before sending to LM Studio
+  = must: keep queue_candidate singular
+  = must: reject output with missing outside or launch claims
+
+& [CompactManagerKernelValidation] is the local validation surface for manager output
+  + [schema_present] is all expected LMStudioManagerProposalShape fields are present or blocked_outside fields are present
+  + [proposal_count] is exactly one
+  + [mutation_claim] is absent
+  + [launch_claim] is absent
+  + [authority_boundary] is Codex retains mutation, launch, commit, push, and integration authority
+  + [outside_preserved] is non-empty and relevant
+  + [capture_target_present] is true for proposal outputs
+  + [handoff_threshold_named] is true when OpenAI Codex worker lane is proposed
+  + [validation_result] is accept_for_codex_review, blocked_outside, retry_with_smaller_packet, or reject
+
+  = must: run before any manager output enters queue state
+  = must: preserve raw output even when rejected
+  = must: never dispatch from validation alone
+
+(compact_lmstudio_manager_kernel_bundle) :manager_role: /handoff_threshold and validation_gate/ |blocked_surface|
+  + [manager_role] is local proposal manager
+  + [handoff_threshold] is the line where Codex attention is requested
+  + [validation_gate] is schema, outside, no launch, no mutation, task fit, authority, and capture
+  |blocked_surface| mutation, worker launch, OpenAI spend, commit, push, credentials, destructive action, and background daemon
+
+/ [SOPLanguagePrimerForLocalAgents], [SOPWorkerBootPacket], [LocalAIManagerPrimary] -(Compacts)> [CompactManagerPromptShape]
+* [CompactManagerPromptShape], [LMStudioManagerProposalShape], [CompactManagerKernelValidation] -(Gates)> [codex_attention_request], [blocked_outside], [outside]

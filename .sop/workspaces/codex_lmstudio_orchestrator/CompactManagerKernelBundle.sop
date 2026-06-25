@@ -1,0 +1,48 @@
+Subject: Compact Manager Kernel Bundle
+
+Description: Workspace packet for direct LM Studio manager proposal passes.
+
+@ [source] C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+
+& [CompactManagerKernelBundle] is the loaded local-manager packet
+  + [packet_status] is ready_for_direct_endpoint_runner
+  + [packet_role] is compact_context_stream_kernel
+  + [local_manager] is LM Studio direct endpoint proposal lane
+  + [codex_authority] is Codex app or OpenAI-backed Codex worker after explicit handoff review
+  + [current_primary_task] is Task_161_build_direct_lmstudio_endpoint_manager_runner after this packet exists
+  + [manager_may] is read this packet, inspect one queue candidate, propose one bounded Codex job, emit one blocked note, preserve outside, request Codex attention
+  + [manager_may_not] is edit files, run shell commands, launch workers, spend OpenAI tokens, commit, push, access credentials, claim completion, or integrate output
+  + [handoff_threshold] is repo mutation, implementation, uncertain authority, failing validation, specification ambiguity, high-risk action, hidden spend, credential boundary, or explicit user direction
+  + [expected_output] is exactly one proposal or one blocked_outside note using LMStudioManagerProposalShape fields
+  + [capture_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures
+  + [default_capture_target] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+  + [stop_policy] is stop on missing provider, invalid schema, unsafe proposal, unbounded action, dirty-file conflict, credential request, or explicit user stop
+  + [outside] is full root prompt, broad completed-task history, model training, direct mutation, direct launch, credentials, hidden spend, background daemon, unrelated dirty files, and transformer implementation
+
+  = must: keep output proposal-only
+  = must: preserve outside
+  = must: name handoff_threshold when proposing OpenAI Codex work
+  = must: use one queue candidate only
+  = should: prefer blocked_outside over guessing when source context is insufficient
+
+& [CompactManagerExpectedProposal] is the expected manager response shape
+  + [proposal_id] is stable id
+  + [proposed_worker_lane] is openai_codex_cli, manual, deferred, or blocked
+  + [objective] is one bounded job or blocked reason
+  + [working_directory] is C:\Project\Pinky or outside
+  + [allowed_surface] is explicit files, commands, tests, and sources for a future Codex worker
+  + [blocked_surface] is forbidden files, actions, credentials, launches, claims, and unrelated dirty files
+  + [prompt_packet_refs] is compact bundle plus specific task sources
+  + [capture_target] is local capture path
+  + [proof_gate] is validation required before integration
+  + [risk_gate] is cost, authority, safety, destructive action, and stop policy
+  + [outside] is residual uncertainty or blocked launch material
+
+  = must: contain all fields for proposal outputs
+  = must: use blocked when no safe single job is visible
+  - never: claim that the proposed job has already run

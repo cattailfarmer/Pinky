@@ -186,14 +186,19 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_active_kernel_compression_review\Dictated_Active_Kernel_Compression_Review_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_active_kernel_compression_review_102.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_050.sop
+@ [source] C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_compact_lmstudio_manager_kernel_bundle\Dictated_Compact_LMStudio_Manager_Kernel_Bundle_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_compact_lmstudio_manager_kernel_bundle_103.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_051.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Active Kernel Compression Readiness Review
-  + [active_root_frame] is attention_frame_2026_06_25_active_kernel_compression_review
+  + [registry_scope] is Compact LM Studio Manager Kernel Bundle
+  + [active_root_frame] is attention_frame_2026_06_25_compact_lmstudio_manager_kernel_bundle
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 44
+  + [closed_frame_count] is 45
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -757,9 +762,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat transformer_candidate as planning disposition only
   = should: prefer compression, read-only index, or evaluator prototypes before training paths
 
-& [AttentionFrame_2026_06_25_ActiveKernelCompressionReview] is the active semantic stack frame for the read-only active root burden and readiness review
+& [AttentionFrame_2026_06_25_ActiveKernelCompressionReview] is the semantic stack frame for the read-only active root burden and readiness review
   + [frame_id] is attention_frame_2026_06_25_active_kernel_compression_review
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_transformer_readiness_threshold
   + [child_frame_set] is ActiveKernelCompressionReadinessReview_001, SOPTransformerReadinessThreshold, AttentionRoot, AttentionKernelCompiler, AttentionScaffoldCompiler, LocalAIManagerPrimary, ManagerState, NarrativeSubjectFileTable, ReadinessVectorResult, BurdenVectorResult, CompactManagerKernelRecommendation, source_preservation, operating_loop_tick_050, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -780,11 +785,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep index_ready separate from transformer_candidate
   = must: preserve Task_161 as ready but second in sequence after Task_174
 
+& [AttentionFrame_2026_06_25_CompactLMStudioManagerKernelBundle] is the active semantic stack frame for the compact local manager kernel bundle
+  + [frame_id] is attention_frame_2026_06_25_compact_lmstudio_manager_kernel_bundle
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_active_kernel_compression_review
+  + [child_frame_set] is CompactLMStudioManagerKernelBundle, CompactManagerKernelBundle, LocalAIManagerPrimary, Runbook, WorkerPacketTemplate, Queue, WorkspaceState, SOPLanguagePrimerForLocalAgents, SOPWorkerBootPacket, ManagerState, source_preservation, operating_loop_tick_051, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is CompactLMStudioManagerKernelBundle.sop, CompactManagerKernelBundle.sop, LocalAIManagerPrimary.sop, Runbook.sop, WorkerPacketTemplate.sop, Queue.sop, WorkspaceState.sop, Dictated_Compact_LMStudio_Manager_Kernel_Bundle_Source.sop, 2026-06-25_compact_lmstudio_manager_kernel_bundle_103.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_051.sop
+  + [focus_register] is manager_role, allowed_surface, blocked_surface, handoff_threshold, expected_output, validation_gate, stop_policy, capture_target, Codex authority, Task_161, and outside
+  + [question_register] is build or refine Task_161 direct LM Studio endpoint manager runner against CompactManagerKernelBundle.sop
+  + [delineation_register] is inside compact manager context, local proposal lane, one queue candidate, output schema, capture target, Codex review, and outside
+  + [periphery_register] is full root prompt, direct mutation, direct worker launch, OpenAI spend, credentials, hidden spend, background daemon, and unrelated dirty files
+  + [operation_register] is preserve_source, define_compact_bundle, emit_workspace_packet, wire_runbook, wire_packet_template, wire_queue, wire_workspace_state, update_manager, update_subject_index, validate, commit, and push
+  + [evidence_register] is compact canonical contract, workspace packet, LocalAIManagerPrimary update, Runbook update, WorkerPacketTemplate update, Queue update, WorkspaceState update, periphery record 103, and operating_loop_tick_051
+  + [wisdom_register] is a small local manager kernel lets the system use LM Studio without dragging the full active root into each prompt
+  + [caution_register] is compact manager may propose only and cannot mutate, launch, spend, commit, push, or claim completion
+  + [balance_register] is stable because compact manager context, proposal authority, Codex authority, runner implementation, validation, and outside remain distinct
+  + [integration_register] is Task_174 completed as SOP-only bundle and Task_161 restored as primary ready task
+  + [frame_outside] is hidden model state, full root prompt, direct mutation, direct worker launch, OpenAI spend, credentials, hidden spend, background daemon, destructive action, and unrelated workspace changes
+
+  = must: use CompactManagerKernelBundle.sop before direct endpoint runner prompts
+  = must: keep LM Studio output proposal-only
+  = must: keep Codex as authority for mutation, launch, commit, push, and integration
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_active_kernel_compression_review
+  + [active_root_frame] is attention_frame_2026_06_25_compact_lmstudio_manager_kernel_bundle
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_ActiveKernelCompressionReview], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [active_kernel_compression_review], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_CompactLMStudioManagerKernelBundle], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [compact_lmstudio_manager_kernel_bundle], [operating_loop_tick], [balance_register], [integration_register], [outside]

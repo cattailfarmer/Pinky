@@ -46,15 +46,16 @@ Description: Initial inspectable queue for LM Studio manager proposals and gated
   + [objective] is build or specify the local runner that reads lightweight SOP context streams, calls LM Studio direct endpoint, captures proposal output, validates schema, and marks Codex handoff candidates without spending OpenAI Codex allowance
   + [lane_fit] is openai_codex_for_initial_runtime_build_or_manual_if_user_prefers_sop_only
   + [launch_mode] is deferred_until_user_confirms_runtime_build
-  + [prompt_packet] is LocalAIManagerPrimary plus Runbook plus WorkerPacketTemplate plus WorkspaceState
+  + [prompt_packet] is CompactManagerKernelBundle plus LocalAIManagerPrimary plus Runbook plus WorkerPacketTemplate plus WorkspaceState
   + [launch_command] is outside until implementation is selected
   + [capture_target] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
   + [validation_profile] is local runner reads only allowed .sop files, calls only LM Studio direct endpoint by default, emits captured proposals, validates schema, and does not launch OpenAI Codex jobs without handoff gate
   + [required_gates] is runtime_build_confirmation, stop_file_gate, budget_policy_gate, capture_gate, validator_gate, dirty_file_gate, and codex_review_gate
-  + [block_reasons] is runtime_build_confirmation missing
+  + [block_reasons] is runtime_build_confirmation missing but compact_manager_kernel_bundle is ready
   + [status] is ready_for_inspection_blocked_for_runtime_confirmation
   + [candidate_outside] is unsupervised daemon, direct mutation, direct OpenAI launch, credentials, destructive actions, hidden spend, and unrelated dirty files
 
   = must: keep this candidate as inspectable until runtime build is selected
   = must: preserve direct endpoint manager as the primary route
+  = must: load CompactManagerKernelBundle before direct endpoint prompt construction
   = must: keep OpenAI Codex worker dispatch behind handoff threshold and launch gate

@@ -1,0 +1,18 @@
+Subject: Compact LM Studio Manager Kernel Bundle Periphery Record 103
+
+Description: SOP-HG realization record for defining the compact LM Studio manager kernel bundle.
+
+& [CompactLMStudioManagerKernelBundleRealization_103] is a periphery realization
+  + [record_status] is completed
+  + [record_date] is 2026-06-25
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_compact_lmstudio_manager_kernel_bundle\Dictated_Compact_LMStudio_Manager_Kernel_Bundle_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+  + [workspace_packet] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+  + [realization] is Task_161 needs a compact manager kernel before the direct runner reads local SOP context streams
+  + [inside] is manager role, allowed surface, blocked surface, handoff threshold, expected output, validation gate, stop policy, capture target, and Codex authority
+  + [boundary] is proposal-only local LM Studio manager pass before Codex launch review
+  + [outside] is mutation, launch, OpenAI spend, commits, pushes, credentials, hidden spend, background daemon, and broad root prompt
+  + [balance] is stable because local proposal management and Codex authority remain distinct
+
+/ [ActiveKernelCompressionReadinessReview], [LocalAIManagerPrimary] -(Requires)> [CompactLMStudioManagerKernelBundle]
+* [CompactManagerKernelBundle], [LMStudioManagerProposalShape], [handoff_threshold] -(Prepares)> [Task_161_build_direct_lmstudio_endpoint_manager_runner], [outside]

@@ -1,0 +1,15 @@
+Subject: Dictated Compact LM Studio Manager Kernel Bundle Source
+
+Description: Preserved source for the compact manager kernel bundle derived from the active kernel compression review.
+
+& [DictatedCompactLMStudioManagerKernelBundleSource] is the preserved source input
+  + [source_date] is 2026-06-25
+  + [source_origin] is ActiveKernelCompressionReadinessReview_001 and current Codex work turn
+  + [source_text] is "define the compact manager-readable SOP kernel bundle that lets the LM Studio manager consume a small role/task/gate packet instead of the full active Attention.sop root"
+  + [interpreted_need] is create a small SOP packet for local LM Studio manager proposals before direct endpoint runner implementation
+  + [selected_surface] is local manager role, task queue, allowed surface, blocked surface, handoff threshold, schema, stop policy, capture target, and Codex authority boundary
+  + [outside] is full Attention.sop root, broad historical task list, model training, direct worker launch, direct mutation, credentials, and hidden spend
+
+  = must: keep this bundle compact enough for local manager context
+  = must: preserve Codex authority for mutation, launch, commit, push, and integration
+  = must: support Task_161 direct endpoint manager runner
