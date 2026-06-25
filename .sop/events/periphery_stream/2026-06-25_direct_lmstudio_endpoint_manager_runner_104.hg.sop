@@ -1,0 +1,21 @@
+Subject: Direct LM Studio Endpoint Manager Runner Periphery Record 104
+
+Description: SOP-HG realization record for completing Task_161 direct LM Studio endpoint manager runner.
+
+& [DirectLMStudioEndpointManagerRunnerRealization_104] is a periphery realization
+  + [record_status] is completed
+  + [record_date] is 2026-06-25
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_direct_lmstudio_endpoint_manager_runner\Dictated_Direct_LMStudio_Endpoint_Manager_Runner_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
+  + [runtime_module] is C:\Project\Pinky\.sop\runtime\sop_node\direct_lmstudio_manager.py
+  + [runtime_demo] is C:\Project\Pinky\.sop\runtime\demos\direct_lmstudio_manager.py
+  + [context_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_context.sop
+  + [run_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+  + [realization] is the local manager lane now has a direct endpoint actuator with schema validation and capture preservation
+  + [inside] is direct endpoint probe, chat completion call, compact context stream, selected candidate, raw output capture, proposal validator, syntax latch, and dry-run default
+  + [boundary] is local proposal-only manager output before Codex review
+  + [outside] is OpenAI worker launch, direct mutation, hidden spend, background daemon, credentials, destructive action, and broad manager competence
+  + [balance] is stable because provider reachability, manager output, validation, Codex authority, and stale queue calibration remain distinct
+
+/ [CompactLMStudioManagerKernelBundle], [QueueCandidate_direct_lmstudio_endpoint_manager_runner_001] -(Feeds)> [DirectLMStudioEndpointManagerRunner]
+* [DirectLMStudioEndpointManagerRunner], [LMStudioManagerProposalValidation], [RawCapture] -(Produces)> [accept_for_codex_review], [CodexReviewGate], [PostBuildQueueCalibration]

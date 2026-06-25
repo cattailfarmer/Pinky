@@ -12,12 +12,13 @@ Description: Supervised runbook for using LM Studio as the local primary manager
   + [stage_001_verify_local_provider] is confirm LM Studio endpoint and selected manager model are available
   + [stage_002_compile_context_stream] is local wrapper reads current focal point, task frame, source slice, selected attention kernel, queue state, expected output, handoff threshold, proof gates, and outside
   + [stage_003_boot_lm_studio_manager] is send SOP language primer, worker boot packet, CompactManagerKernelBundle, and lightweight_sop_context_stream to LM Studio through direct OpenAI-compatible endpoint by default
-  + [stage_004_capture_manager_proposal] is store raw LM Studio manager output as a codex_job_proposal or blocked_outside note
+  + [stage_004_capture_manager_proposal] is DirectLMStudioEndpointManagerRunner stores raw LM Studio manager output as a codex_job_proposal or blocked_outside note
   + [stage_005_local_validate_or_handoff] is local validator accepts blocked/proposal output or escalates to Codex launch review only when handoff threshold is crossed
   + [stage_006_dispatch_openai_codex_worker] is run Codex CLI with OpenAI inference only after stage_005 passes
   + [stage_007_capture_validate_integrate] is capture worker output, review diff, run validation, integrate or reject, then commit, push, and tick
   + [stage_008_reenter_or_stop] is continue only when next_step is safe, visible, and bounded
   + [manager_command_shape] is direct HTTP POST to http://127.0.0.1:1234/v1/chat/completions with model, lightweight_sop_context_stream, exact output schema, and capture target
+  + [direct_endpoint_runner_command] is python .sop\runtime\demos\direct_lmstudio_manager.py --root . --send --timeout 120 --max-tokens 900 --max-chars-per-source 2500
   + [compact_manager_kernel_bundle] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
   + [diagnostic_manager_command_shape] is codex.cmd --oss --local-provider lmstudio -m openai/gpt-oss-20b -C <scratch_workspace> -a never -s read-only --output-last-message <capture_target> exec <prompt_packet>
   + [worker_command_shape] is codex.cmd -C C:\Project\Pinky -a never -s workspace-write --output-last-message <capture_target> exec <worker_packet>
@@ -26,6 +27,7 @@ Description: Supervised runbook for using LM Studio as the local primary manager
 
   = must: inspect command shapes before launch
   = must: keep LM Studio manager runs local, non-mutating, and direct-endpoint by default
+  = must: preserve direct_endpoint_runner capture before queue integration or Codex launch review
   = must: include compact_manager_kernel_bundle in direct endpoint manager prompts
   = must: keep OpenAI Codex worker runs bounded by a worker packet and capture target
   = must: avoid using OpenAI Codex for routine manager context-stream construction unless high-demand repair or authority review is required

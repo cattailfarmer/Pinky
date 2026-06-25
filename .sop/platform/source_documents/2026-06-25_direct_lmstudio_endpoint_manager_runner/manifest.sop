@@ -1,0 +1,18 @@
+Subject: Direct LM Studio Endpoint Manager Runner Source Manifest
+
+Description: Source preservation manifest for Task_161 direct endpoint manager runner.
+
+& [DirectLMStudioEndpointManagerRunnerSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_direct_lmstudio_endpoint_manager_runner\Dictated_Direct_LMStudio_Endpoint_Manager_Runner_Source.sop
+  + [canonical_output] is C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
+  + [runtime_module] is C:\Project\Pinky\.sop\runtime\sop_node\direct_lmstudio_manager.py
+  + [runtime_demo] is C:\Project\Pinky\.sop\runtime\demos\direct_lmstudio_manager.py
+  + [context_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_context.sop
+  + [run_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_direct_lmstudio_endpoint_manager_runner_104.hg.sop
+  + [operating_loop_tick] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_052.sop
+  + [intake_status] is processed_to_canonical_sop_runtime_capture_and_validation
+  + [authority_boundary] is source wording preserved separately from canonical runner contract, runtime actuator, and captured manager output
+
+  = must: cite this manifest when Task_161 is treated as completed
+  = must: preserve the raw LM Studio capture before any queue calibration or worker handoff

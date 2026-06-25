@@ -11,6 +11,7 @@ Description: Correction contract making LM Studio the primary low-cost manager l
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
 @ [source] C:\Project\Pinky\.sop\platform\CodexConversationAgentSpawnNode.sop
 @ [source] C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+@ [source] C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
 
 & [LocalAIManagerPrimary] is the target architecture for the low-reasoning manager loop
   + [pattern_role] is local_lm_studio_manager_primary_openai_codex_worker_on_demand
@@ -23,6 +24,7 @@ Description: Correction contract making LM Studio the primary low-cost manager l
   + [direct_endpoint_role] is preferred_manager_transport because it keeps manager prompts small and avoids spending OpenAI Codex allowance
   + [lightweight_sop_framework] is a compact working-path bundle containing focal point, queue, runbook, packet template, allowed surface, blocked surface, proof gates, and outside
   + [compact_manager_kernel_bundle] is C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop and C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+  + [direct_endpoint_manager_runner] is C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop and C:\Project\Pinky\.sop\runtime\sop_node\direct_lmstudio_manager.py
   + [manager_input] is lightweight_sop_context_stream produced from local .sop records without needing OpenAI Codex each tick
   + [manager_output] is one job proposal, blocked note, or request for higher-demand Codex attention
   + [spawn_node_role] is propose spawn plans and blocked worker candidates for CodexConversationAgentSpawnNode, not launch them directly
@@ -39,6 +41,7 @@ Description: Correction contract making LM Studio the primary low-cost manager l
   = must: let the local manager request OpenAI Codex rather than impersonate OpenAI Codex authority
   = must: build lightweight_sop_context_stream from local .sop files so the manager can operate without this Codex app authoring every tick
   = must: load compact_manager_kernel_bundle before direct endpoint manager runner prompts
+  = must: use direct_endpoint_manager_runner for local LM Studio proposal passes before any OpenAI Codex handoff is considered
   = must: keep Codex-mediated LM Studio routes as bootstrap, diagnostic, or fallback only while direct endpoint manager transport is viable
   = must: route every proposed OpenAI Codex job through capture, launch gate, cost gate, stop gate, and dirty-file boundary
   = must: keep CodexConversationAgentSpawnNode spawning blocked until Codex app or user authority accepts launch candidates
@@ -50,7 +53,7 @@ Description: Correction contract making LM Studio the primary low-cost manager l
 & [LocalManagerLoopShape] is the corrected manager loop shape
   + [loop_step_001] is local wrapper reads CurrentFocalPoint, WorkspaceState, Queue, Runbook, WorkerPacketTemplate, and selected lightweight SOP contracts
   + [loop_step_002] is local wrapper builds lightweight_sop_context_stream without calling OpenAI Codex
-  + [loop_step_003] is LM Studio manager returns proposal, blocked note, or codex_attention_request
+  + [loop_step_003] is direct_endpoint_manager_runner calls LM Studio only when explicit send is requested and captures proposal, blocked note, or codex_attention_request
   + [loop_step_004] is local wrapper records capture and validates schema and authority boundary
   + [loop_step_005] is only proposal crossing handoff_threshold becomes a Codex job candidate
   + [loop_step_006] is OpenAI Codex worker or Codex app enters only when candidate needs high-demand reasoning or repo authority

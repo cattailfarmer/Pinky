@@ -8,7 +8,7 @@ Description: Initial inspectable queue for LM Studio manager proposals and gated
 
 & [CodexLMStudioOrchestratorQueue] is the active queue for the orchestration workspace
   + [queue_status] is ready_for_inspection
-  + [candidate_count] is 1
+  + [candidate_count] is 2
   + [queue_authority] is Codex
   + [queue_scope] is manager dry-run proposal before any continuous runner
   + [queue_outside] is automatic launch, hidden model state, worker mutation, credentials, destructive actions, and unrelated dirty files
@@ -45,14 +45,15 @@ Description: Initial inspectable queue for LM Studio manager proposals and gated
   + [task_subject] is direct LM Studio endpoint manager runner
   + [objective] is build or specify the local runner that reads lightweight SOP context streams, calls LM Studio direct endpoint, captures proposal output, validates schema, and marks Codex handoff candidates without spending OpenAI Codex allowance
   + [lane_fit] is openai_codex_for_initial_runtime_build_or_manual_if_user_prefers_sop_only
-  + [launch_mode] is deferred_until_user_confirms_runtime_build
+  + [launch_mode] is direct_endpoint_runner_built_and_probe_run
   + [prompt_packet] is CompactManagerKernelBundle plus LocalAIManagerPrimary plus Runbook plus WorkerPacketTemplate plus WorkspaceState
-  + [launch_command] is outside until implementation is selected
+  + [launch_command] is python .sop\runtime\demos\direct_lmstudio_manager.py --root . --send --timeout 120 --max-tokens 900 --max-chars-per-source 2500
   + [capture_target] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
   + [validation_profile] is local runner reads only allowed .sop files, calls only LM Studio direct endpoint by default, emits captured proposals, validates schema, and does not launch OpenAI Codex jobs without handoff gate
-  + [required_gates] is runtime_build_confirmation, stop_file_gate, budget_policy_gate, capture_gate, validator_gate, dirty_file_gate, and codex_review_gate
-  + [block_reasons] is runtime_build_confirmation missing but compact_manager_kernel_bundle is ready
-  + [status] is ready_for_inspection_blocked_for_runtime_confirmation
+  + [required_gates] is capture_gate, validator_gate, dirty_file_gate, codex_review_gate, stop_policy_gate, budget_policy_gate, and post_build_queue_calibration_gate
+  + [block_reasons] is none for runtime build; continuous runner and OpenAI dispatch remain blocked elsewhere
+  + [status] is runner_built_validated_accept_for_codex_review_but_requires_post_build_queue_calibration
+  + [launch_result] is direct LM Studio API returned schema-valid accept_for_codex_review proposal with validation_score 100 strong while still proposing the already-completed runner build and reflecting stale runtime_build_confirmation in outside
   + [candidate_outside] is unsupervised daemon, direct mutation, direct OpenAI launch, credentials, destructive actions, hidden spend, and unrelated dirty files
 
   = must: keep this candidate as inspectable until runtime build is selected

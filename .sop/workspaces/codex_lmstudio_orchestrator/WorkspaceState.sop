@@ -26,9 +26,12 @@ Description: Current local state for the SOP workspace that coordinates LM Studi
   + [runbook] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
   + [packet_template] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
   + [compact_manager_kernel_bundle] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
-  + [next_safe_step] is build or refine the direct LM Studio endpoint manager runner against CompactManagerKernelBundle.sop
+  + [direct_endpoint_manager_runner] is C:\Project\Pinky\.sop\runtime\demos\direct_lmstudio_manager.py and C:\Project\Pinky\.sop\runtime\sop_node\direct_lmstudio_manager.py
+  + [next_safe_step] is reconcile post-build queue state and run a manager calibration pass that no longer proposes the already-completed runner build or repeats stale runtime_build_confirmation
   + [last_manager_probe] is codex_lmstudio_manager_dry_run_001
   + [last_manager_probe_result] is direct LM Studio API returned a valid blocked proposal and Codex CLI local-provider blocked on n_keep 9381 greater than or equal to n_ctx 8192
+  + [last_direct_endpoint_runner_probe] is direct_lmstudio_endpoint_manager_runner_001
+  + [last_direct_endpoint_runner_result] is provider_available true, provider_called true, selected_model openai/gpt-oss-20b, validation_score 100, validation_band strong, integration_disposition accept_for_codex_review, with already-completed runner build and stale runtime_build_confirmation still dominating output
   + [manager_transport_preference] is direct_lm_studio_openai_compatible_endpoint until Codex CLI local-provider context overhead is solved or verified larger context is loaded
   + [architecture_correction] is LM Studio is primary manager lane and OpenAI Codex is on-demand high-reasoning worker and authority lane
   + [state_outside] is background daemon, cost-bearing launch, secrets, hidden native state, unrelated dirty files, and direct remote writes
@@ -37,5 +40,7 @@ Description: Current local state for the SOP workspace that coordinates LM Studi
   = must: update state after a manager dry run, worker dispatch, validation, commit, push, or block
   = must: keep action authority separate from endpoint availability
   = must: load compact_manager_kernel_bundle before direct endpoint manager prompt construction
+  = must: treat direct_endpoint_manager_runner as built and proposal-only
+  = must: reconcile stale queue blockers before using manager output to select the next worker candidate
   = should: record provider reachability and selected model before each manager-run batch
   - never: treat endpoint availability as permission to launch or spend

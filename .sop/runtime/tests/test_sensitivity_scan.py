@@ -30,6 +30,7 @@ from sop_node import (
     build_support_balance,
     build_attention_tracking_record,
     build_boundary_faculty_inspection_record,
+    build_direct_lmstudio_manager_context,
     build_hyperbolic_pants_topology_map,
     build_hyperbolic_corridor_navigation,
     build_security_honesty_governance_record,
@@ -70,6 +71,8 @@ from sop_node import (
     parse_tracked_subject,
     scan_to_hypergraph,
     select_scaffold_profile,
+    run_direct_lmstudio_manager,
+    validate_lmstudio_manager_proposal,
 )
 
 
@@ -1306,6 +1309,185 @@ class SensitivityScanTests(unittest.TestCase):
         self.assertIn("--local-provider", command)
         self.assertIn("lmstudio", command)
         self.assertIn("read-only", command)
+
+    def test_direct_lmstudio_manager_context_selects_one_candidate(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            workspace = root / ".sop" / "workspaces" / "codex_lmstudio_orchestrator"
+            platform = root / ".sop" / "platform"
+            state = root / ".sop" / "state"
+            workspace.mkdir(parents=True)
+            platform.mkdir(parents=True)
+            state.mkdir(parents=True)
+            (platform / "SOPLanguagePrimerForLocalAgents.sop").write_text("Subject: SOP Primer\n", encoding="utf-8")
+            (platform / "SOPWorkerBootPacket.sop").write_text("Subject: SOP Worker Boot\n", encoding="utf-8")
+            (platform / "CompactLMStudioManagerKernelBundle.sop").write_text("Subject: Compact Kernel\n", encoding="utf-8")
+            (workspace / "CompactManagerKernelBundle.sop").write_text("Subject: Compact Workspace Kernel\n", encoding="utf-8")
+            (workspace / "WorkspaceState.sop").write_text(
+                "Subject: Workspace State\n\n& [State] is state\n  + [preferred_initial_manager_model] is local/test-model\n",
+                encoding="utf-8",
+            )
+            (workspace / "Runbook.sop").write_text("Subject: Runbook\n", encoding="utf-8")
+            (workspace / "WorkerPacketTemplate.sop").write_text("Subject: Worker Packet Template\n", encoding="utf-8")
+            (workspace / "Queue.sop").write_text(
+                "\n".join(
+                    (
+                        "Subject: Queue",
+                        "",
+                        "& [Candidate_codex_lmstudio_manager_dry_run_001] is old candidate",
+                        "  + [candidate_id] is codex_lmstudio_manager_dry_run_001",
+                        "",
+                        "& [Candidate_direct_lmstudio_endpoint_manager_runner_001] is target candidate",
+                        "  + [candidate_id] is direct_lmstudio_endpoint_manager_runner_001",
+                        "  + [objective] is build the direct endpoint runner",
+                    )
+                ),
+                encoding="utf-8",
+            )
+            (state / "CurrentFocalPoint.sop").write_text("Subject: Current Focal Point\n", encoding="utf-8")
+
+            context = build_direct_lmstudio_manager_context(
+                root=root,
+                stream_id="test_direct_context",
+                max_chars_per_source=80,
+            )
+            prompt = context.prompt_text()
+
+            self.assertTrue(context.ready)
+            self.assertEqual(context.model, "local/test-model")
+            self.assertIn("Candidate_direct_lmstudio_endpoint_manager_runner_001", context.selected_candidate_excerpt)
+            self.assertNotIn("Candidate_codex_lmstudio_manager_dry_run_001", context.selected_candidate_excerpt)
+            self.assertIn("Compact source slices", prompt)
+            self.assertIn("proposed_worker_lane", prompt)
+            self.assertNotIn("Candidate_codex_lmstudio_manager_dry_run_001", prompt)
+
+    def test_direct_lmstudio_manager_validation_accepts_safe_handoff_proposal(self) -> None:
+        output = "\n".join(
+            (
+                "& [LMStudioManagerProposal:test_direct_runner] is one direct endpoint manager proposal",
+                "  + [proposal_id] is test_direct_runner",
+                "  + [proposed_worker_lane] is openai_codex_cli",
+                "  + [objective] is implement one dry-run CLI refinement after the handoff threshold is crossed",
+                "  + [working_directory] is C:\\Project\\Pinky",
+                "  + [allowed_surface] is .sop/runtime/sop_node/direct_lmstudio_manager.py and tests only",
+                "  + [blocked_surface] is credentials, worker launch, direct mutation by LM Studio, unrelated dirty files, commits, and pushes",
+                "  + [prompt_packet_refs] is CompactManagerKernelBundle.sop and Queue.sop",
+                "  + [capture_target] is C:\\Project\\Pinky\\.sop\\workspaces\\codex_lmstudio_orchestrator\\captures\\worker_output.sop",
+                "  + [proof_gate] is unit tests, ASCII scan, diff check, and Codex review",
+                "  + [risk_gate] is handoff threshold required because repo mutation belongs to Codex",
+                "  + [outside] is credentials, background daemon, hidden spend, and direct worker launch",
+            )
+        )
+
+        validation = validate_lmstudio_manager_proposal(output)
+
+        self.assertTrue(validation.valid)
+        self.assertEqual(validation.band, "strong")
+        self.assertEqual(validation.integration_disposition, "accept_for_codex_review")
+
+    def test_direct_lmstudio_manager_validation_rejects_launch_claim(self) -> None:
+        output = "\n".join(
+            (
+                "& [LMStudioManagerProposal:test_bad_claim] is one direct endpoint manager proposal",
+                "  + [proposal_id] is test_bad_claim",
+                "  + [proposed_worker_lane] is blocked",
+                "  + [objective] is I launched the worker already",
+                "  + [working_directory] is outside",
+                "  + [allowed_surface] is none",
+                "  + [blocked_surface] is worker launch and commits",
+                "  + [prompt_packet_refs] is CompactManagerKernelBundle.sop",
+                "  + [capture_target] is outside",
+                "  + [proof_gate] is Codex review",
+                "  + [risk_gate] is authority boundary",
+                "  + [outside] is hidden state and unreviewed launch claim",
+            )
+        )
+
+        validation = validate_lmstudio_manager_proposal(output)
+
+        self.assertFalse(validation.valid)
+        self.assertIn("launch_claim", validation.forbidden_claims)
+
+    def test_direct_lmstudio_manager_validation_reports_missing_is_marker(self) -> None:
+        output = "\n".join(
+            (
+                "& [LMStudioManagerProposal:test_bad_marker] is one direct endpoint manager proposal",
+                "  + [proposal_id] test_bad_marker",
+                "  + [proposed_worker_lane] blocked",
+                "  + [objective] blocked_outside because syntax is malformed",
+                "  + [working_directory] outside",
+                "  + [allowed_surface] read context and return blocked note",
+                "  + [blocked_surface] worker launch and commits",
+                "  + [prompt_packet_refs] CompactManagerKernelBundle.sop",
+                "  + [capture_target] outside",
+                "  + [proof_gate] Codex review",
+                "  + [risk_gate] authority boundary",
+                "  + [outside] hidden state",
+            )
+        )
+
+        validation = validate_lmstudio_manager_proposal(output)
+
+        self.assertFalse(validation.valid)
+        self.assertTrue(any(error.startswith("missing_is_property_marker") for error in validation.format_errors))
+
+    def test_direct_lmstudio_manager_run_uses_direct_endpoint_and_validates_response(self) -> None:
+        context = build_direct_lmstudio_manager_context(
+            root=Path(__file__).resolve().parents[2],
+            stream_id="test_direct_run_context",
+        )
+
+        def probe(*, endpoint: str, timeout: float) -> tuple[str, ...]:
+            return ("local/test-model",)
+
+        def complete(*, endpoint: str, model: str, prompt: str, timeout: float, max_tokens: int) -> str:
+            self.assertIn("Selected queue candidate", prompt)
+            return "\n".join(
+                (
+                    "& [LMStudioManagerProposal:test_direct_run] is one direct endpoint manager proposal",
+                    "  + [proposal_id] is test_direct_run",
+                    "  + [proposed_worker_lane] is blocked",
+                    "  + [objective] is blocked_outside because this unit test does not launch workers",
+                    "  + [working_directory] is outside",
+                    "  + [allowed_surface] is read compact context and return proposal text",
+                    "  + [blocked_surface] is file mutation, shell commands, worker launch, commits, and pushes",
+                    "  + [prompt_packet_refs] is CompactManagerKernelBundle.sop and Queue.sop",
+                    "  + [capture_target] is outside",
+                    "  + [proof_gate] is Codex validation before integration",
+                    "  + [risk_gate] is no handoff threshold crossed in this test",
+                    "  + [outside] is provider side effects, hidden state, and repo mutation",
+                )
+            )
+
+        run = run_direct_lmstudio_manager(
+            context_stream=context,
+            dry_run=False,
+            model_probe=probe,
+            completion_fn=complete,
+        )
+
+        self.assertTrue(run.provider_called)
+        self.assertTrue(run.validation.valid)
+        self.assertEqual(run.validation.integration_disposition, "blocked_outside")
+
+    def test_direct_lmstudio_manager_run_blocks_when_provider_probe_fails(self) -> None:
+        context = build_direct_lmstudio_manager_context(
+            root=Path(__file__).resolve().parents[2],
+            stream_id="test_direct_run_blocked_context",
+        )
+
+        def probe(*, endpoint: str, timeout: float) -> tuple[str, ...]:
+            raise ValueError("offline")
+
+        run = run_direct_lmstudio_manager(
+            context_stream=context,
+            dry_run=False,
+            model_probe=probe,
+        )
+
+        self.assertFalse(run.provider_available)
+        self.assertFalse(run.provider_called)
+        self.assertIn("provider_probe_failed", run.error)
 
     def test_task_frame_launch_queue_prepares_inspectable_lmstudio_candidate(self) -> None:
         candidate = build_lmstudio_task_frame_candidate(

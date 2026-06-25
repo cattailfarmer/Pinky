@@ -191,14 +191,20 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_compact_lmstudio_manager_kernel_bundle\Dictated_Compact_LMStudio_Manager_Kernel_Bundle_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_compact_lmstudio_manager_kernel_bundle_103.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_051.sop
+@ [source] C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
+@ [source] C:\Project\Pinky\.sop\runtime\sop_node\direct_lmstudio_manager.py
+@ [source] C:\Project\Pinky\.sop\runtime\demos\direct_lmstudio_manager.py
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_direct_lmstudio_endpoint_manager_runner_104.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_052.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Compact LM Studio Manager Kernel Bundle
-  + [active_root_frame] is attention_frame_2026_06_25_compact_lmstudio_manager_kernel_bundle
+  + [registry_scope] is Direct LM Studio Endpoint Manager Runner
+  + [active_root_frame] is attention_frame_2026_06_25_direct_lmstudio_endpoint_manager_runner
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 45
+  + [closed_frame_count] is 46
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -206,6 +212,29 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: preserve return anchors before closing or suspending frames
   = must: keep the registry semantic and visible, not native-runtime or hidden-state based
   = should: stay compact enough for context-compression re-entry
+
+& [AttentionFrame_2026_06_25_DirectLMStudioEndpointManagerRunner] is the active semantic stack frame for Task_161 completion and queue calibration
+  + [frame_id] is attention_frame_2026_06_25_direct_lmstudio_endpoint_manager_runner
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_compact_lmstudio_manager_kernel_bundle
+  + [child_frame_set] is DirectLMStudioEndpointManagerRunner, direct_lmstudio_manager.py, direct_lmstudio_manager_demo, context_capture, run_capture, validation_100_strong, Queue, WorkspaceState, Manager_State, operating_loop_tick_052, and post_build_queue_calibration
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is DirectLMStudioEndpointManagerRunner.sop, direct_lmstudio_endpoint_manager_runner_001_output.sop, 2026-06-25_direct_lmstudio_endpoint_manager_runner_104.hg.sop, Manager_State.sop, Queue.sop, and operating_loop_tick_052
+  + [focus_register] is direct endpoint manager runner built and captured as proposal-only local manager lane
+  + [question_register] is how to reconcile post-build queue state so the local manager stops proposing the already-completed runner build and stops repeating stale runtime_build_confirmation
+  + [delineation_register] is inside runner code, context stream, selected candidate, LM Studio output, schema validator, Codex authority, queue state, and outside
+  + [periphery_register] is stale source dominance, completed-task freshness, hollow field failure, missing property marker failure, provider 400 body capture, prompt clipping, candidate clipping, and model-specific syntax fidelity
+  + [operation_register] is build runtime, export module, add demo, run tests, dry-run context, call LM Studio, validate output, update queue state, commit, and push
+  + [evidence_register] is 52 passing tests, direct endpoint provider model list, direct manager run capture validation_score 100, DirectLMStudioEndpointManagerRunner.sop, and operating_loop_tick_052
+  + [wisdom_register] is local manager output can be useful when held as proposal-only and measured by validators
+  + [caution_register] is accepted blocked_outside output is not launch permission and stale queue state can dominate local manager attention
+  + [balance_register] is stable because local provider, manager proposal, validator, queue calibration, and Codex authority are separate
+  + [integration_register] is Task_161 completed and Task_175 selected as next ready calibration task
+  + [frame_outside] is continuous runner, worker dispatch, hidden spend, credentials, destructive action, exact model internals, and unrelated workspace changes
+
+  = must: preserve raw manager output before queue calibration
+  = must: keep OpenAI Codex worker dispatch blocked until Codex review accepts a proposal
+  = should: use this frame to start Task_175
 
 & [AttentionFrame_2026_06_24_ReadyTaskQueueExhaustionReview] is the active semantic stack frame for recognizing that no ready local runtime tasks remain
   + [frame_id] is attention_frame_2026_06_24_ready_task_queue_exhaustion_review

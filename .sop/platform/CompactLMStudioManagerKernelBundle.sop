@@ -12,11 +12,13 @@ Description: Canonical compact kernel for local LM Studio manager proposal passe
 @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
 
 & [CompactLMStudioManagerKernelBundle] is the compact SOP kernel for local LM Studio manager passes
   + [spec_status] is active_specification
   + [pattern_role] is compact_local_manager_kernel
   + [workspace_packet] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+  + [direct_endpoint_runner] is C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
   + [manager_role] is local proposal manager over SOP queue and context stream
   + [manager_transport] is direct LM Studio OpenAI-compatible endpoint by default
   + [manager_model] is selected by WorkspaceState preferred_initial_manager_model unless a newer benchmark overrides it
@@ -36,6 +38,7 @@ Description: Canonical compact kernel for local LM Studio manager proposal passe
     = activate [CompactLMStudioManagerKernelBundle]
 
   = must: load the compact bundle before any direct LM Studio manager proposal pass
+  = must: let DirectLMStudioEndpointManagerRunner select one queue candidate and preserve raw manager output before validation
   = must: keep the local manager proposal-only and non-mutating
   = must: include handoff_threshold and blocked_surface in every manager prompt
   = must: include expected_output and validation_gate in every manager prompt

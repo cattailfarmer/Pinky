@@ -1,0 +1,26 @@
+Subject: Operating Loop Tick 052
+
+Description: Loop tick recording the completed direct LM Studio endpoint manager runner and next calibration step.
+
+& [OperatingLoopTick_052] is a semantic cognition operating-loop tick
+  + [tick_status] is completed
+  + [tick_date] is 2026-06-25
+  + [completed_task] is Task_161_build_direct_lmstudio_endpoint_manager_runner
+  + [completed_artifact] is C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
+  + [runtime_module] is C:\Project\Pinky\.sop\runtime\sop_node\direct_lmstudio_manager.py
+  + [runtime_demo] is C:\Project\Pinky\.sop\runtime\demos\direct_lmstudio_manager.py
+  + [context_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_context.sop
+  + [run_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_direct_lmstudio_endpoint_manager_runner_104.hg.sop
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_direct_lmstudio_endpoint_manager_runner\Dictated_Direct_LMStudio_Endpoint_Manager_Runner_Source.sop
+  + [commit_frame] is validation_passed_pending_commit
+  + [manager_result] is provider_available true, provider_called true, selected_model openai/gpt-oss-20b, validation_score 100, validation_band strong, and integration_disposition accept_for_codex_review
+  + [clock_state] is running_with_ready_task
+  + [balance_state] is stable because local manager runtime, LM Studio output, validator, Codex authority, and stale queue calibration are separated
+  + [proof_state] is runtime tests passed, direct endpoint call captured, validator accepted output, git diff check pending, ASCII scan pending, commit pending, and push pending
+  + [next_step] is reconcile post-build queue state and run a manager calibration pass that no longer proposes the already-completed runner build or repeats stale runtime_build_confirmation
+  + [outside] is continuous runner, automatic OpenAI worker dispatch, budget policy, stop-file policy, credentials, hidden spend, destructive action, and unrelated dirty files
+
+  = must: update commit_frame after commit and push
+  = must: preserve direct manager output as proposal-only
+  = must: treat stale queue-state dominance as the next calibration target

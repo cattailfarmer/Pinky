@@ -1,0 +1,61 @@
+Subject: Direct LM Studio Endpoint Manager Runner
+
+Description: Canonical contract for the local direct endpoint manager runner used by LM Studio before Codex worker handoff.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_direct_lmstudio_endpoint_manager_runner\Dictated_Direct_LMStudio_Endpoint_Manager_Runner_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\CompactManagerKernelBundle.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+
+& [DirectLMStudioEndpointManagerRunner] is the local manager runtime for Task_161
+  + [spec_status] is active_runtime_contract
+  + [runtime_module] is C:\Project\Pinky\.sop\runtime\sop_node\direct_lmstudio_manager.py
+  + [runtime_demo] is C:\Project\Pinky\.sop\runtime\demos\direct_lmstudio_manager.py
+  + [manager_transport] is direct LM Studio OpenAI-compatible endpoint
+  + [default_endpoint] is http://127.0.0.1:1234/v1
+  + [default_model] is openai/gpt-oss-20b unless WorkspaceState or a newer benchmark selects otherwise
+  + [input_surface] is CompactManagerKernelBundle, CurrentFocalPoint, WorkspaceState, Runbook, WorkerPacketTemplate, and one selected Queue candidate
+  + [context_stream] is DirectLMStudioManagerContextStream with one selected candidate, compact source slices, exact output shape, syntax latch, stale blocker handling, and outside preservation
+  + [provider_probe] is GET /models before chat completion
+  + [completion_call] is POST /chat/completions only when --send is explicit
+  + [dry_run_default] is true unless --send is provided
+  + [capture_output] is DirectLMStudioManagerRun preserving raw output and validation
+  + [validator] is LMStudioManagerProposalValidation requiring all proposal fields, exact property marker, valid lane, outside, no launch claim, no mutation claim, and handoff threshold when OpenAI Codex is proposed
+  + [observed_provider_result] is provider_available true, provider_called true, selected_model openai/gpt-oss-20b, validation_score 100, validation_band strong, integration_disposition accept_for_codex_review
+  + [observed_review_disposition] is preserve_as_calibration_evidence because the manager proposed the already-completed runner build and left stale runtime_build_confirmation in outside
+  + [allowed_surface] is build context stream, call LM Studio when explicitly requested, write context capture, write run capture, validate output, and report blocked or accepted disposition
+  + [blocked_surface] is file mutation by LM Studio, shell commands by LM Studio, worker launch, OpenAI spend, commits, pushes, credentials, destructive actions, hidden daemon, and unrelated dirty files
+  + [handoff_threshold] is repo mutation, implementation, uncertain authority, failing validation, specification ambiguity, high-risk action, hidden spend, credential boundary, or user-directed Codex escalation
+  + [outside] is unsupervised loop, automatic dispatch, launch authority, direct mutation, hidden model state, broad manager competence, stale source state, and model training
+
+  ? [use_when: the local manager should read a compact SOP stream and return one proposal or blocked note through LM Studio]
+    = activate [DirectLMStudioEndpointManagerRunner]
+
+  = must: default to dry-run unless --send is explicit
+  = must: select exactly one queue candidate before prompt construction
+  = must: extract selected candidate and model hints from full source files before prompt clipping
+  = must: hide non-selected queue candidates from the compact prompt slice
+  = must: preserve raw LM Studio output even when validation rejects it
+  = must: reject missing fields, hollow fields, non-ASCII output, markdown output, missing property markers, invalid lanes, mutation claims, launch claims, and authority claims
+  = must: treat accepted manager output as proposal-only until Codex review
+  = should: use validation failures as manager prompt calibration evidence
+  - never: dispatch OpenAI Codex workers from this runner alone
+  - never: let provider reachability imply launch permission
+
+& [DirectLMStudioEndpointManagerRunnerResult_001] is the first completed runtime proof
+  + [context_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_context.sop
+  + [run_capture] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+  + [test_command] is python .sop\runtime\tests\test_sensitivity_scan.py
+  + [test_result] is 52 tests passed
+  + [direct_call_command] is python .sop\runtime\demos\direct_lmstudio_manager.py --root . --send --timeout 120 --max-tokens 900 --max-chars-per-source 2500
+  + [direct_call_result] is provider reachable and manager output accepted as strong accept_for_codex_review proposal
+  + [calibration_finding] is stale queue state and completed-task freshness can dominate manager output and should be reconciled before next worker candidate selection
+  + [outside] is actual worker dispatch, continuous runner, background loop, budget policy, stop-file policy, and credential handling
+
+(direct_lmstudio_endpoint_manager_runner) :manager_context_stream: /validation_gate and handoff_threshold/ |runner_outside|
+  + [manager_context_stream] is compact direct endpoint prompt and source slices
+  + [validation_gate] is schema, syntax, outside, lane, no mutation, no launch, and authority boundary
+  + [handoff_threshold] is the line where Codex attention is requested
+  |runner_outside| worker dispatch, direct mutation, credentials, hidden spend, background daemon, and unrelated dirty files

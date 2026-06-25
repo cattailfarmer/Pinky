@@ -1,0 +1,392 @@
+Subject: Direct LM Studio Manager Context Stream
+
+Description: Lightweight SOP context stream for a local LM Studio manager proposal pass.
+
+& [DirectLMStudioManagerContextStream:direct_lmstudio_manager_context_20260625_224849] is a lightweight SOP context stream
+  + [stream_id] is direct_lmstudio_manager_context_20260625_224849
+  + [root] is C:\Project\Pinky
+  + [endpoint] is http://127.0.0.1:1234/v1
+  + [model] is openai/gpt-oss-20b
+  + [candidate_id] is direct_lmstudio_endpoint_manager_runner_001
+  + [source_refs] is .sop/platform/SOPLanguagePrimerForLocalAgents.sop, .sop/platform/SOPWorkerBootPacket.sop, .sop/platform/CompactLMStudioManagerKernelBundle.sop, .sop/workspaces/codex_lmstudio_orchestrator/CompactManagerKernelBundle.sop, .sop/workspaces/codex_lmstudio_orchestrator/WorkspaceState.sop, .sop/workspaces/codex_lmstudio_orchestrator/Runbook.sop, .sop/workspaces/codex_lmstudio_orchestrator/WorkerPacketTemplate.sop, .sop/workspaces/codex_lmstudio_orchestrator/Queue.sop, .sop/state/CurrentFocalPoint.sop
+  + [source_slice_count] is 9
+  + [created_utc] is 2026-06-25T22:48:49Z
+  + [prompt_text] is:
+    You are the local LM Studio SOP manager for C:\Project\Pinky\.sop.
+    Codex remains the only authority for file mutation, shell commands, worker launch, commits, pushes, and integration.
+    Your job is to read the compact SOP context stream and return exactly one bounded manager proposal or one blocked note.
+    Runner status: this direct endpoint runner exists and is currently executing in proposal-only mode.
+    If a stale source says runtime_build_confirmation is missing, treat this runner execution as the build-confirmation context and inspect whether any other gate remains blocked.
+    Return raw SOP only. Do not use markdown, bullets, code fences, or commentary outside the SOP node.
+    Every property line must use this exact syntax: two spaces, plus sign, field in brackets, space, is, space, value.
+    Example:   + [proposal_id] is direct_runner_next_step
+
+    Required output shape:
+    & [LMStudioManagerProposal:<proposal_id>] is one direct endpoint manager proposal
+      + [proposal_id] is stable short id for this proposal
+      + [proposed_worker_lane] is openai_codex_cli, manual, deferred, or blocked
+      + [objective] is one bounded job or one concrete blocked_outside reason
+      + [working_directory] is C:\Project\Pinky or outside
+      + [allowed_surface] is read compact context, classify the selected candidate, preserve outside, and return one proposal or blocked note
+      + [blocked_surface] is file mutation, shell commands, worker launch, commits, pushes, credentials, destructive action, hidden spend, and unrelated dirty files
+      + [prompt_packet_refs] is CompactManagerKernelBundle.sop plus the selected queue candidate and source refs
+      + [capture_target] is local capture path or outside when no worker capture is safe
+      + [proof_gate] is tests, diff check, ASCII scan, validator score, and Codex review before integration
+      + [risk_gate] is cost, authority, safety, stop policy, and handoff threshold when Codex worker lane is proposed
+      + [outside] is uncertainty, stale blockers, unsafe actions, hidden state, and any launch material not accepted
+
+    Rules:
+    - proposed_worker_lane must be one of openai_codex_cli, manual, deferred, or blocked.
+    - If proposed_worker_lane is openai_codex_cli, name the handoff threshold in risk_gate or objective.
+    - Keep exactly one job or exactly one blocked note.
+    - Do not claim you edited files, ran commands, launched workers, committed, pushed, validated, or integrated work.
+    - Use ASCII only.
+    - Required fields must be concrete. For blocked notes, allowed_surface should describe reading context and returning a blocked note; do not use none, TBD, or placeholders.
+    - Preserve outside explicitly.
+
+    Selected queue candidate:
+    & [Candidate_direct_lmstudio_endpoint_manager_runner_001] is the next local manager runner build candidate
+      + [candidate_id] is direct_lmstudio_endpoint_manager_runner_001
+      + [task_frame_id] is task_frame_local_ai_manager_primary
+      + [task_subject] is direct LM Studio endpoint manager runner
+      + [objective] is build or specify the local runner that reads lightweight SOP context streams, calls LM Studio direct endpoint, captures proposal output, validates schema, and marks Codex handoff candidates without spending OpenAI Codex allowance
+      + [lane_fit] is openai_codex_for_initial_runtime_build_or_manual_if_user_prefers_sop_only
+      + [launch_mode] is direct_endpoint_runner_built_and_probe_run
+      + [prompt_packet] is CompactManagerKernelBundle plus LocalAIManagerPrimary plus Runbook plus WorkerPacketTemplate plus WorkspaceState
+      + [launch_command] is python .sop\runtime\demos\direct_lmstudio_manager.py --root . --send --timeout 120 --max-tokens 900 --max-chars-per-source 2500
+      + [capture_target] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+      + [validation_profile] is local runner reads only allowed .sop files, calls only LM Studio direct endpoint by default, emits captured proposals, validates schema, and does not launch OpenAI Codex jobs without handoff gate
+      + [required_gates] is capture_gate, validator_gate, dirty_file_gate, codex_review_gate, stop_policy_gate, budget_policy_gate, and post_build_queue_calibration_gate
+      + [block_reasons] is none for runtime build; continuous runner and OpenAI dispatch remain blocked elsewhere
+      + [status] is runner_built_validated_accept_for_codex_review_but_requires_post_build_queue_calibration
+      + [launch_result] is direct LM Studio API returned schema-valid accept_for_codex_review proposal with validation_score 100 strong while still proposing the already-completed runner build and reflecting stale runtime_build_confirmation in outside
+      + [candidate_outside] is unsupervised daemon, direct mutation, direct OpenAI launch, credentials, destructive actions, hidden spend, and unrelated dirty files
+
+      = must: keep this candidate as inspectable until runtime build is selected
+      = must: preserve direct endpoint manager as the primary route
+      = must: load CompactManagerKernelBundle before direct endpoint prompt construction
+      = must: keep OpenAI Codex worker dispatch behind handoff threshold and launch gate
+
+    Compact source slices:
+
+    [source:.sop/platform/SOPLanguagePrimerForLocalAgents.sop]
+    Subject: SOP Language Primer For Local Agents
+
+    Description: Contract for introducing local LM Studio or Codex CLI local-provider agents to SOP notation before assigning SOP framework work.
+
+    @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_language_intro_for_local_agents\Dictated_SOP_Language_Intro_For_Local_Agents_Source.sop
+    @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+    @ [source] C:\Project\Pinky\.sop\platform\Attention.sop
+    @ [source] C:\Project\Pinky\.sop\events\benchmarks\codex_cli_lmstudio_primer_smoke_20260624_003.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+    @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_004.sop
+    @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_005.sop
+    @ [source] C:\Project\Pinky\.sop\events\benchmarks\sop_inference_comparison_report_20260624_006.sop
+    @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_delineation_worker_latch\Derived_Boundary_Delineation_Worker_Latch_Source.sop
+
+    & [SOPLanguagePrimerForLocalAgents] is the language-introduction gate for local SOP work
+    [... clipped middle for compact manager context ...]
+    + [boot_condition] is the worker can name or apply task_content_authority, local_law, intent_anchor, outside_context, and forbidden_substitution
+
+      = must: run before LMStudioAgentBenchmark framework-specific cases when the worker has not been primed in-session
+      = must: treat minimal exact-output smoke pass as narrow readiness only
+      = must: require boot_condition before framework-excerpt tasks are treated as comprehension evidence
+      = should: include one tiny SOP example and one tiny explanation request
+
+    (sop_language_primer_for_local_agents) :primer_packet: /comprehension_check and authority_boundary/ |primer_outside|
+      + [primer_packet] is SOP marker set plus examples plus no-tool rule
+      + [comprehension_check] is exact no-tools response proving language grasp
+      + [authority_boundary] is local worker proposes text only until Codex captures and reviews it
+      |primer_outside| hidden model state, repo mutation, framework assignment before primer pass, and proofless worker readiness
+
+    / [LocalWorker], [SOPMarkerSet], [AttentionDelineation] -(Introduces)> [comprehension_check], [primer_outside]
+    * [comprehension_check], [authority_boundary], [no_tool_rule] -(Qualifies)> [framework_packet_readiness], [task_packet_readiness], [outside]
+
+    [source:.sop/platform/SOPWorkerBootPacket.sop]
+    Subject: SOP Worker Boot Packet
+
+    Description: Contract for booting local SOP workers with authority hierarchy and intent-context anchoring before framework-specific tasks.
+
+    @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_sop_worker_boot_intent_anchor\Dictated_SOP_Worker_Boot_Intent_Anchor_Source.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+    @ [source] C:\Project\Pinky\.sop\platform\LMStudioAgentBenchmark.sop
+    @ [source] C:\Project\Pinky\.sop\platform\ControlledExplosionReadiness.sop
+    @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_boundary_delineation_worker_latch\Derived_Boundary_Delineation_Worker_Latch_Source.sop
+    @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_outside_preservation_worker_latch\Derived_Outside_Preservation_Worker_Latch_Source.sop
+
+    & [SOPWorkerBootPacket] is the intent-context boot layer for local SOP workers
+      + [pattern_role] is local_worker_intent_context_boot
+      + [target_worker] is LM Studio hosted model, Codex CLI local-provider worker, or other local LLM lane
+      + [boot_order] is SOP language primer, authority hierarchy, intent anchor, task boundary, outside preservation, substitution warning, output schema, s
+    [... clipped middle for compact manager context ...]
+    become integrated authority before Codex review accepts it
+
+    (sop_worker_boot_packet) :intent_anchor: /authority_hierarchy and local_law/ |boot_outside|
+      + [intent_anchor] is the task subject plus requested inference verb
+      + [authority_hierarchy] is prompt packet above adjacent context for task meaning
+      + [local_law] is the provided framework excerpt or cited contract that governs the answer
+      + [substitution_fault] is schema compliance with wrong governing inside
+      + [exact_format_latch] is raw SOP lines only when exact schema is required
+      + [property_line_latch] is every property line must be + [field] is value
+      + [required_term_bundle_latch] is validator-critical literal terms must remain present together
+      |boot_outside| hidden state, unprovided repo contents, unrelated project rails, generic examples, and worker authority claims
+
+    / [SOPLanguagePrimerForLocalAgents], [SOPWorkerBootPacket], [LMStudioAgentBenchmark] -(Boots)> [intent_context_fidelity], [task_content_authority], [boot_outside]
+    * [intent_anchor], [local_law], [output_duty], [exact_format_latch], [property_line_latch], [required_term_bundle_latch] -(Prevents)> [substitution_fault], [context_gravity], [hollow_form], [operator_substitution], [literal_term_drop]
+
+    [source:.sop/platform/CompactLMStudioManagerKernelBundle.sop]
+    Subject: Compact LM Studio Manager Kernel Bundle
+
+    Description: Canonical compact kernel for local LM Studio manager proposal passes before direct endpoint runner implementation.
+
+    @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_compact_lmstudio_manager_kernel_bundle\Dictated_Compact_LMStudio_Manager_Kernel_Bundle_Source.sop
+    @ [source] C:\Project\Pinky\.sop\events\reviews\2026-06-25_active_kernel_compression_readiness_review_001.sop
+    @ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+    @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+    @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+    @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+    @ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+    @ [source] C:\Project\Pinky\.sop\platform\DirectLMStudioEndpointManagerRunner.sop
+
+    & [CompactLMStudioManagerKernelBundle] is the compact SOP kernel for local LM Studio manager
+    [... clipped middle for compact manager context ...]
+    tion, launch, commit, push, and integration authority
+      + [outside_preserved] is non-empty and relevant
+      + [capture_target_present] is true for proposal outputs
+      + [handoff_threshold_named] is true when OpenAI Codex worker lane is proposed
+      + [validation_result] is accept_for_codex_review, blocked_outside, retry_with_smaller_packet, or reject
+
+      = must: run before any manager output enters queue state
+      = must: preserve raw output even when rejected
+      = must: never dispatch from validation alone
+
+    (compact_lmstudio_manager_kernel_bundle) :manager_role: /handoff_threshold and validation_gate/ |blocked_surface|
+      + [manager_role] is local proposal manager
+      + [handoff_threshold] is the line where Codex attention is requested
+      + [validation_gate] is schema, outside, no launch, no mutation, task fit, authority, and capture
+      |blocked_surface| mutation, worker launch, OpenAI spend, commit, push, credentials, destructive action, and background daemon
+
+    / [SOPLanguagePrimerForLocalAgents], [SOPWorkerBootPacket], [LocalAIManagerPrimary] -(Compacts)> [CompactManagerPromptShape]
+    * [CompactManagerPromptShape], [LMStudioManagerProposalShape], [CompactManagerKernelValidation] -(Gates)> [codex_attention_request], [blocked_outside], [outside]
+
+    [source:.sop/workspaces/codex_lmstudio_orchestrator/CompactManagerKernelBundle.sop]
+    Subject: Compact Manager Kernel Bundle
+
+    Description: Workspace packet for direct LM Studio manager proposal passes.
+
+    @ [source] C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+    @ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+    @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+    @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
+    @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
+    @ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+
+    & [CompactManagerKernelBundle] is the loaded local-manager packet
+      + [packet_status] is ready_for_direct_endpoint_runner
+      + [packet_role] is compact_context_stream_kernel
+      + [local_manager] is LM Studio direct endpoint proposal lane
+      + [codex_authority] is Codex app or OpenAI-backed Codex worker after explicit handoff review
+      + [current_primary_task] is Task_161_build_direct_lmstudio_endpoint_manager_runner after this packet exists
+      + [manager_may] is read this packet, inspect one queue candidate, propose one bounded Codex job, emit one blocked note, preserve outside, request Codex attention
+      + [manager_may_not] is edit files, run shell command
+    [... clipped middle for compact manager context ...]
+    ormer implementation
+
+      = must: keep output proposal-only
+      = must: preserve outside
+      = must: name handoff_threshold when proposing OpenAI Codex work
+      = must: use one queue candidate only
+      = should: prefer blocked_outside over guessing when source context is insufficient
+
+    & [CompactManagerExpectedProposal] is the expected manager response shape
+      + [proposal_id] is stable id
+      + [proposed_worker_lane] is openai_codex_cli, manual, deferred, or blocked
+      + [objective] is one bounded job or blocked reason
+      + [working_directory] is C:\Project\Pinky or outside
+      + [allowed_surface] is explicit files, commands, tests, and sources for a future Codex worker
+      + [blocked_surface] is forbidden files, actions, credentials, launches, claims, and unrelated dirty files
+      + [prompt_packet_refs] is compact bundle plus specific task sources
+      + [capture_target] is local capture path
+      + [proof_gate] is validation required before integration
+      + [risk_gate] is cost, authority, safety, destructive action, and stop policy
+      + [outside] is residual uncertainty or blocked launch material
+
+      = must: contain all fields for proposal outputs
+      = must: use blocked when no safe single job is visible
+      - never: claim that the proposed job has already run
+
+    [source:.sop/workspaces/codex_lmstudio_orchestrator/WorkspaceState.sop]
+    Subject: Codex LM Studio Orchestrator Workspace State
+
+    Description: Current local state for the SOP workspace that coordinates LM Studio manager proposals and gated OpenAI Codex CLI worker jobs.
+
+    @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+    @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_lmstudio_orchestration_workspace\Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop
+    @ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+
+    & [CodexLMStudioOrchestratorWorkspaceState] is the current state of the orchestration workspace
+      + [workspace_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator
+      + [state_status] is local_manager_primary_scaffold_ready
+      + [local_authority_root] is C:\Project\Pinky\.sop
+      + [publication_repo] is C:\Project\Pinky
+      + [backup_root] is F:\.sop as local backup/reference
+      + [lm_studio_endpoint] is http://127.0.0.1:1234/v1/models
+      + [lm_studio_endpoint_status] is reachable on 2026-06-24
+      + [available_local_model_set] is openai/gpt-oss-20b, qwen/qwen3.6-35b-a3b, google/gemma-4-e4b, and text-embedding-nomic-embed-text-v1.5
+      + [preferred_initial_manager_model] is openai/gpt-oss-20b until a stronger local manag
+    [... clipped middle for compact manager context ...]
+    ccept_for_codex_review, with already-completed runner build and stale runtime_build_confirmation still dominating output
+      + [manager_transport_preference] is direct_lm_studio_openai_compatible_endpoint until Codex CLI local-provider context overhead is solved or verified larger context is loaded
+      + [architecture_correction] is LM Studio is primary manager lane and OpenAI Codex is on-demand high-reasoning worker and authority lane
+      + [state_outside] is background daemon, cost-bearing launch, secrets, hidden native state, unrelated dirty files, and direct remote writes
+
+      = must: keep this file as state, not as the full project summary
+      = must: update state after a manager dry run, worker dispatch, validation, commit, push, or block
+      = must: keep action authority separate from endpoint availability
+      = must: load compact_manager_kernel_bundle before direct endpoint manager prompt construction
+      = must: treat direct_endpoint_manager_runner as built and proposal-only
+      = must: reconcile stale queue blockers before using manager output to select the next worker candidate
+      = should: record provider reachability and selected model before each manager-run batch
+      - never: treat endpoint availability as permission to launch or spend
+
+    [source:.sop/workspaces/codex_lmstudio_orchestrator/Runbook.sop]
+    Subject: Codex LM Studio Orchestrator Runbook
+
+    Description: Supervised runbook for using LM Studio as the local primary manager over lightweight SOP streams and Codex CLI as the OpenAI-backed worker lane.
+
+    @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+    @ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+    @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+
+    & [CodexLMStudioOrchestratorRunbook] is the supervised operating procedure
+      + [runbook_status] is local_manager_primary_scaffold_ready
+      + [stage_001_verify_local_provider] is confirm LM Studio endpoint and selected manager model are available
+      + [stage_002_compile_context_stream] is local wrapper reads current focal point, task frame, source slice, selected attention kernel, queue state, expected output, handoff threshold, proof gates, and outside
+      + [stage_003_boot_lm_studio_manager] is send SOP language primer, worker boot packet, CompactManagerKernelBundle, and lightweight_sop_context_stream to LM Studio through direct OpenAI-compatible endpoint by default
+      + [stage_004_capture_manager_proposal] is DirectLMStudioEndpointManagerRunner stores raw LM
+    [... clipped middle for compact manager context ...]
+    ds
+
+      = must: inspect command shapes before launch
+      = must: keep LM Studio manager runs local, non-mutating, and direct-endpoint by default
+      = must: preserve direct_endpoint_runner capture before queue integration or Codex launch review
+      = must: include compact_manager_kernel_bundle in direct endpoint manager prompts
+      = must: keep OpenAI Codex worker runs bounded by a worker packet and capture target
+      = must: avoid using OpenAI Codex for routine manager context-stream construction unless high-demand repair or authority review is required
+      = must: stop on failed provider, failed validation, unclear authority, explicit user stop, or budget/concurrency cap
+      = should: use manager dry runs until proposal fidelity is stable across several task types
+      - never: run an invisible background loop from this runbook alone
+
+    (codex_lmstudio_orchestrator_runbook) :manager_proposal: /codex_launch_review and capture/ |runbook_outside|
+      + [manager_proposal] is LM Studio output captured before launch
+      + [codex_launch_review] is authority and safety review
+      + [capture] is raw output, diff, tests, validation, integration, and loop tick
+      |runbook_outside| unbounded daemon, missing capture, credentials, destructive commands, and hidden spend
+
+    [source:.sop/workspaces/codex_lmstudio_orchestrator/WorkerPacketTemplate.sop]
+    Subject: Codex LM Studio Worker Packet Template
+
+    Description: Template for context streams, LM Studio manager proposals, OpenAI Codex worker packets, and result captures.
+
+    @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+    @ [source] C:\Project\Pinky\.sop\platform\SOPWorkerBootPacket.sop
+    @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+    @ [source] C:\Project\Pinky\.sop\platform\CompactLMStudioManagerKernelBundle.sop
+
+    & [CodexContextStreamPacketShape] is the packet Codex writes for LM Studio manager attention
+      + [packet_id] is stable context stream identifier
+      + [source_authority] is C:\Project\Pinky\.sop plus cited source documents
+      + [focus_subject] is current task focus
+      + [task_frame] is subject, objective, reminders, allowed surface, blocked surface, and return anchor
+      + [source_slice_set] is the minimal SOP files or excerpts needed for the manager pass
+      + [compiled_attention_kernel] is selected attention patterns when needed
+      + [queue_state] is current ready, blocked, running, or returned candidates
+      + [expected_manager_output] is codex_job_proposal or blocked_outside note
+      + [evidence_gate] is proof required before integration
+      + [outside] is blocked work, uncertainty
+    [... clipped middle for compact manager context ...]
+    needed before integration
+      + [return_schema] is changed files, tests, summary, outside, and next step
+
+      = must: be reviewed before launch
+      = must: be captured before integration
+      = must: preserve outside and stop on authority conflict
+
+    & [ResultCaptureRecordShape] is the record that turns returned work into task narrative
+      + [capture_id] is stable capture identifier
+      + [source_proposal] is LM Studio proposal or manual task frame that led to launch
+      + [worker_packet] is approved OpenAI Codex worker packet
+      + [raw_output] is captured worker message or blocked note
+      + [diff_summary] is changed files and intended meaning
+      + [validation] is test, diff check, ASCII scan, validator score, or review result
+      + [integration_disposition] is integrate, revise, retry, reject, defer, or preserve_outside
+      + [commit_report] is file count, commit id, version, local/remote status, and push status when committed
+      + [next_step] is the next safe visible action or stop reason
+      + [outside] is unresolved risk, missed work, blocked authority, failed validation, or unrelated worktree state
+
+      = must: separate raw output from integration disposition
+      = must: connect captures back to queue, manager state, focal point, and operating-loop tick
+
+    [source:.sop/workspaces/codex_lmstudio_orchestrator/Queue.sop]
+    Subject: Selected Queue Candidate
+
+    & [Candidate_direct_lmstudio_endpoint_manager_runner_001] is the next local manager runner build candidate
+      + [candidate_id] is direct_lmstudio_endpoint_manager_runner_001
+      + [task_frame_id] is task_frame_local_ai_manager_primary
+      + [task_subject] is direct LM Studio endpoint manager runner
+      + [objective] is build or specify the local runner that reads lightweight SOP context streams, calls LM Studio direct endpoint, captures proposal output, validates schema, and marks Codex handoff candidates without spending OpenAI Codex allowance
+      + [lane_fit] is openai_codex_for_initial_runtime_build_or_manual_if_user_prefers_sop_only
+      + [launch_mode] is direct_endpoint_runner_built_and_probe_run
+      + [prompt_packet] is CompactManagerKernelBundle plus LocalAIManagerPrimary plus Runbook plus WorkerPacketTemplate plus WorkspaceState
+      + [launch_command] is python .sop\runtime\demos\direct_lmstudio_manager.py --root . --send --timeout 120 --max-tokens 900 --max-chars-per-source 2500
+      + [capture_target] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+      + [validation_profile] is local runner reads only allowed .sop files, calls only LM Studio direct endpoint by default, emits captured proposals, validates schema, and does not launch OpenAI Codex jobs without handoff gate
+      + [required_gates] is capture_gate, validator_gate, dirty_file_gate, codex_review_gate, stop_policy_gate, budget_policy_gate, and post_build_queue_calibration_gate
+      + [block_reasons] is none for runtime build; continuous runner and OpenAI dispatch remain blocked elsewhere
+      + [status] is runner_built_validated_accept_for_codex_review_but_requires_post_build_queue_calibration
+      + [launch_result] is direct LM Studio API returned schema-valid accept_for_codex_review proposal with validation_score 100 strong while still proposing the already-completed runner build and reflecting stale runtime_build_confirmation in outside
+      + [candidate_outside] is unsupervised daemon, direct mutation, direct OpenAI launch, credentials, destructive actions, hidden spend, and unrelated dirty files
+
+      = must: keep this candidate as inspectable until runtime build is selected
+      = must: preserve direct endpoint manager as the primary route
+      = must: load CompactManagerKernelBundle before direct endpoint prompt construction
+      = must: keep OpenAI Codex worker dispatch behind handoff threshold and launch gate
+
+    |queue_outside| other queue candidates are omitted from this compact manager pass
+
+    [source:.sop/state/CurrentFocalPoint.sop]
+    Subject: Current Focal Point
+
+    Description: Compact attention-direction packet to reload after context compression.
+
+    & [CurrentFocalPoint] is the live re-entry seed for active focus
+      + [status] is active
+      + [renewal_reason] is preserve focused attention across context compression
+      + [focus_subject] is Direct LM Studio Endpoint Manager Runner
+      + [focus_mode] is mixed_focus
+      + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
+      + [right_hemisphere_draw] is the direct endpoint runner now exists and the next work should reconcile stale queue state so LM Studio manager output reflects post-build task freshness
+      + [inside] is DirectLMStudioEndpointManagerRunner.sop, direct_lmstudio_manager.py, direct_lmstudio_manager.py demo, direct_lmstudio_endpoint_manager_runner_001_context.sop, direct_lmstudio_endpoint_manager_runner_001_output.sop, CompactManagerKernelBundle.sop, LocalAIManagerPrimary.sop, Runbook.sop, WorkerPacketTemplate.sop, Queue.sop, WorkspaceState.sop, Manager_State.sop, 2026-06-25_direct_lmstudio_endpoint_manager_runner_104.hg.sop, 2026-06-25_operating_loop_tick_052.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegis
+    [... clipped middle for compact manager context ...]
+    threshold as the completed Task_172 anchor
+      = must: treat active_kernel_compression_readiness_review as the completed Task_173 anchor
+      = must: treat compact_lmstudio_manager_kernel_bundle as the completed Task_174 anchor
+      = must: treat direct_lmstudio_endpoint_manager_runner as the completed Task_161 anchor
+      = must: treat Task_175_reconcile_post_build_manager_queue_state as the next ready task
+      = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
+      = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible
+      = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work
+      = must: treat operator substitution, hollow placeholders, missing literal terms, non-ASCII output, raw-format breaks, and authority-boundary encoding damage as independent validator failures
+      = must: require validator acceptance before task narrative integration
+      = must: emit or update an operating-loop tick after meaningful completed work so the next step stays visible
+      = must: point to richer records instead of absorbing them
+      - never: let this file become a full project summary
+
+  = must: be reviewed or sent by an explicit runner call
+  = must: keep one selected queue candidate
+  - never: launch a worker from context construction alone

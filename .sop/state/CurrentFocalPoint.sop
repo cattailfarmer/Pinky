@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is Compact LM Studio Manager Kernel Bundle
+  + [focus_subject] is Direct LM Studio Endpoint Manager Runner
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the local manager now has a compact kernel bundle; the next work can build or refine the direct LM Studio endpoint runner against a small proposal-only packet
-  + [inside] is CompactLMStudioManagerKernelBundle.sop, CompactManagerKernelBundle.sop, LocalAIManagerPrimary.sop, Runbook.sop, WorkerPacketTemplate.sop, Queue.sop, WorkspaceState.sop, SOPLanguagePrimerForLocalAgents.sop, SOPWorkerBootPacket.sop, Manager_State.sop, 2026-06-25_compact_lmstudio_manager_kernel_bundle_103.hg.sop, 2026-06-25_operating_loop_tick_051.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when compact manager context, local proposal lane, allowed surface, blocked surface, handoff threshold, expected output, validation gate, stop policy, capture target, Task_161, and outside remain distinct
+  + [right_hemisphere_draw] is the direct endpoint runner now exists and the next work should reconcile stale queue state so LM Studio manager output reflects post-build task freshness
+  + [inside] is DirectLMStudioEndpointManagerRunner.sop, direct_lmstudio_manager.py, direct_lmstudio_manager.py demo, direct_lmstudio_endpoint_manager_runner_001_context.sop, direct_lmstudio_endpoint_manager_runner_001_output.sop, CompactManagerKernelBundle.sop, LocalAIManagerPrimary.sop, Runbook.sop, WorkerPacketTemplate.sop, Queue.sop, WorkspaceState.sop, Manager_State.sop, 2026-06-25_direct_lmstudio_endpoint_manager_runner_104.hg.sop, 2026-06-25_operating_loop_tick_052.sop, CurrentFocalPoint.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when local endpoint manager runtime, LM Studio proposal output, schema validation, stale queue calibration, Codex authority, handoff threshold, and outside remain distinct
   + [outside] is hidden model state, exhaustive repository coverage, proof by association, stale path certainty, unsupervised daemon, silent Codex CLI spawning, hidden spend, credential handling, unbounded launch, unreviewed file replacement, public ranking, remote voting, direct worker mutation, destructive action, unrelated dirty files, truth by visual graph, erased source lineage, continuing after explicit stop, full root prompt, model training, transformer implementation, hidden activation claims, source replacement, direct launch, OpenAI routine-manager spend, and credentials
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_051.sop
-  + [open_question] is build or refine Task_161 direct LM Studio endpoint manager runner against CompactManagerKernelBundle.sop
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_052.sop
+  + [open_question] is reconcile post-build manager queue state and rerun the local manager without proposing the already-completed runner build or repeating stale runtime_build_confirmation
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -59,7 +59,8 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat sop_transformer_readiness_threshold as the completed Task_172 anchor
   = must: treat active_kernel_compression_readiness_review as the completed Task_173 anchor
   = must: treat compact_lmstudio_manager_kernel_bundle as the completed Task_174 anchor
-  = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
+  = must: treat direct_lmstudio_endpoint_manager_runner as the completed Task_161 anchor
+  = must: treat Task_175_reconcile_post_build_manager_queue_state as the next ready task
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work

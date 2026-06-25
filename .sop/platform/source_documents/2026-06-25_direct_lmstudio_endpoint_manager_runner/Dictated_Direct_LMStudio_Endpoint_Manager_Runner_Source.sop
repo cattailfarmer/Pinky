@@ -1,0 +1,19 @@
+Subject: Direct LM Studio Endpoint Manager Runner Source
+
+Description: Preserved source impulse for building the direct LM Studio manager runner from the compact SOP kernel bundle.
+
+& [DirectLMStudioEndpointManagerRunnerSource] is preserved source for Task_161
+  + [source_date] is 2026-06-25
+  + [user_direction] is keep work going until the LM Studio agent is realized or blocked, with Codex as repo authority and LM Studio as scratch-isolated proposal manager
+  + [source_impulse] is build the local direct endpoint manager runner that reads lightweight SOP context streams, calls LM Studio without OpenAI Codex allowance, captures proposal output, validates schema, and only marks handoff candidates when thresholds are crossed
+  + [runtime_constraint] is Python is allowed here only as the runtime actuator and test harness beneath SOP source authority
+  + [inside] is CompactManagerKernelBundle, CurrentFocalPoint, Queue, WorkspaceState, Runbook, WorkerPacketTemplate, LM Studio direct endpoint, context stream construction, proposal validation, capture records, and tests
+  + [boundary] is local non-mutating proposal management before Codex launch review
+  + [outside] is unsupervised daemon, direct file mutation by LM Studio, OpenAI worker launch, credentials, destructive actions, commits by worker, pushes by worker, hidden spend, and unrelated dirty files
+  + [observed_result] is direct LM Studio endpoint was reachable, returned available models, accepted the compact context stream, and produced schema-valid manager output scoring 100 strong with integration_disposition accept_for_codex_review
+  + [stale_blocker_note] is the accepted manager output still proposed the already-completed runner build and kept stale runtime_build_confirmation in outside, so Codex review must treat it as calibration evidence rather than launch permission
+
+  = must: preserve runner output as advisory until Codex review
+  = must: keep all launch authority with Codex or the user
+  = must: treat accepted manager output as fidelity evidence, not as permission to dispatch workers
+  = should: use the stale blocker finding to drive the next queue calibration pass
