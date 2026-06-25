@@ -1,0 +1,14 @@
+Subject: Local AI Manager Primary Source Manifest
+
+Description: Manifest for source preservation before canonical local-manager-primary correction.
+
+& [LocalAIManagerPrimarySourceManifest] is the source-preservation manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_local_ai_manager_primary\Dictated_Local_AI_Manager_Primary_Source.sop
+  + [canonical_contract] is C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+  + [related_contract] is C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+  + [source_kind] is dictated architecture correction
+  + [preservation_status] is preserved
+  + [processing_status] is canonicalized
+
+  = must: keep dictated source intact
+  = must: cite this source from canonical correction and updated orchestration records

@@ -16,6 +16,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
 @ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
 @ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
 
 & [SOPTaskManager] is the slim coordinating agent for narrative-driven worker orchestration
@@ -29,7 +30,9 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [task_frame] is the live task context frame that holds task subject, operational details, reminder patterns, lane context, gates, status, and return anchors
   + [task_frame_launch_queue] is the inspectable queue that holds ready or blocked worker-launch candidates before execution
   + [codex_lmstudio_orchestration_workspace] is the workspace where Codex-authored SOP context streams are read by an LM Studio manager to propose gated OpenAI Codex CLI jobs
+  + [local_ai_manager_primary] is the correction that LM Studio should run routine low-reasoning manager attention locally while OpenAI Codex is reserved for high-demand worker and authority tasks
   + [codex_context_stream] is the compact stream of focus, task frame, source slice, attention kernel, queue, output schema, proof gate, and outside sent to the LM Studio manager lane
+  + [lightweight_sop_context_stream] is the locally built manager stream that should be used before spending OpenAI Codex allowance on stream authorship or repair
   + [lm_studio_manager_lane] is LM Studio acting as a scheduler/proposer over a Codex-authored stream rather than as repo authority
   + [codex_job_proposal] is the LM Studio manager output that proposes exactly one bounded OpenAI Codex CLI job or blocked_outside note
   + [openai_codex_worker_dispatch] is Codex-reviewed launch of OpenAI-backed Codex CLI after proposal validation and action gates pass
@@ -67,7 +70,9 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: compile a worker_packet before assigning or launching a worker
   = must: use AttentionKernelCompiler when worker_packet needs a compact in-context SOP pattern bundle
   = must: use CodexLMStudioOrchestrationWorkspace when LM Studio is asked to manage a queue of Codex jobs from SOP context streams
+  = must: use LocalAIManagerPrimary when selecting the manager lane so routine queue scanning does not consume OpenAI Codex allowance
   = must: treat codex_context_stream as Codex-authored input and codex_job_proposal as LM Studio proposal output only
+  = must: prefer lightweight_sop_context_stream for routine manager ticks and reserve codex_context_stream for high-demand repair, validation, or authority work
   = must: route codex_job_proposal through TaskFrameLaunchQueue and Codex launch review before any OpenAI Codex CLI worker dispatch
   = must: route local_gpu_lane or lm_studio_lane work toward associative scan, summarization, candidate extraction, low-risk critique, style variation, cross-model perspective, or non-mutating analysis
   = must: run sop_language_primer_gate before assigning a local lane to SOP framework-shaped task packets
@@ -141,6 +146,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [lm_studio_benchmark_fit] is local model worker eligibility measured through captured benchmark output, deterministic scoring, latency, outside preservation, and Codex review
   + [lm_studio_functional_fit] is scratch-isolated Codex CLI over LM Studio for validated non-mutating SOP proposal jobs
   + [lm_studio_manager_fit] is local LM Studio reading Codex-authored context streams and emitting one non-mutating Codex job proposal or blocked_outside note
+  + [local_ai_manager_fit] is direct-endpoint LM Studio reading lightweight SOP context streams without OpenAI Codex allowance for routine manager ticks
   + [lm_studio_language_fit] is local model readiness to receive SOP framework packets after SOP marker, delineation, outside, evidence, and authority-boundary primer checks pass
   + [openai_codex_fit] is implementation, tests, repo mutations, tool use, long-context integration, or durable proof work
   + [codex_cli_fit] is bounded local agent work with explicit workspace, prompt packet, and capture slot
@@ -154,6 +160,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: use lm_studio_benchmark_fit to decide whether LM Studio can receive small SOP worker jobs
   = must: use lm_studio_functional_fit only for jobs where validated proposal text is sufficient
   = must: use lm_studio_manager_fit only when Codex remains launch validator and repo authority
+  = must: use local_ai_manager_fit before lm_studio_manager_fit when the job is routine manager attention rather than Codex-authored stream repair
   = must: use codex_cli_lmstudio_fit only after context-window fit is proven
   = must: use codex_cli_lmstudio_readiness_fit only after fidelity and tool-discipline gates pass
   = must: prefer Codex lanes for file edits that require repo-aware verification

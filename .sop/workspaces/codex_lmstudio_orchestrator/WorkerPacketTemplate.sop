@@ -22,6 +22,21 @@ Description: Template for context streams, LM Studio manager proposals, OpenAI C
   = must: include enough source to prevent adjacent project rails from becoming task authority
   = must: carry outside explicitly
 
+& [LightweightSOPContextStreamPacketShape] is the packet local manager runtime builds without spending OpenAI Codex allowance
+  + [packet_id] is stable local context stream identifier
+  + [source_authority] is C:\Project\Pinky\.sop plus cited source documents
+  + [focus_subject] is current task focus from CurrentFocalPoint
+  + [task_frame] is selected queue candidate, reminders, allowed surface, blocked surface, and return anchor
+  + [source_slice_set] is compact local SOP files or excerpts selected by table lookup
+  + [handoff_threshold] is the condition that justifies invoking OpenAI Codex
+  + [expected_manager_output] is codex_job_proposal, blocked_outside note, or codex_attention_request
+  + [evidence_gate] is proof required before integration
+  + [outside] is blocked work, uncertainty, credentials, hidden state, unrelated files, forbidden launch, and OpenAI routine-manager spend
+
+  = must: be buildable by a local wrapper from existing .sop files
+  = must: stay smaller than the loaded LM Studio context
+  = must: include handoff_threshold so local manager can conserve OpenAI Codex usage
+
 & [LMStudioManagerProposalShape] is the exact output expected from the local manager
   + [proposal_id] is stable proposal identifier
   + [proposed_worker_lane] is openai_codex_cli, manual, deferred, or blocked

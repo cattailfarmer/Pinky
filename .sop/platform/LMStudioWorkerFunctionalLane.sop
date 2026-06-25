@@ -22,6 +22,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
 @ [source] C:\Project\Pinky\.sop\events\benchmarks\pilot_results\2026-06-24_pressure_impact_thinkabout_review_016.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pressure_impact_thinkabout_worker_latch\Derived_Pressure_Impact_ThinkAbout_Worker_Latch_Source.sop
 @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
 
 & [LMStudioWorkerFunctionalLane] is the functional local worker lane for booted SOP proposal jobs
   + [pattern_role] is codex_hosted_lm_studio_worker_runner_and_validator
@@ -48,6 +49,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   + [manager_context_stream] is the Codex-authored current focus, task frame, source slice, attention kernel, queue state, expected output, gates, and outside
   + [manager_proposal] is one proposed OpenAI Codex CLI job or blocked_outside note that must pass Codex review before launch
   + [manager_transport_preference] is direct LM Studio OpenAI-compatible endpoint when Codex CLI local-provider prompt overhead exceeds the effective local context
+  + [local_manager_primary_correction] is routine manager attention should use direct local LM Studio and lightweight SOP context streams before involving OpenAI Codex
   + [next_readiness_gate] is draft the accepted pressure impact ThinkAbout record under Codex authority before considering any broader lane claim
   + [task_corpus] is C:\Project\Pinky\.sop\platform\LMStudioWorkerTaskCorpus.sop
   + [block_condition] is provider unavailable, Codex CLI unavailable, context overflow, no-tool failure, exact-format failure, negative-inside failure, hidden-state overclaim, or repeated local-law substitution after boot and validator retry
@@ -66,6 +68,7 @@ Description: Contract for making LM Studio usable as a Codex-directed SOP worker
   = must: keep accepted output as proposal text until Codex review integrates it
   = must: treat readiness_profile as limited-diverse only for scratch_prompt_only non-mutating SOP proposal jobs
   = must: keep manager_lane_extension non-mutating and proposal-only until Codex launch review accepts a proposed job
+  = must: prefer direct endpoint local_manager_primary_correction for low-reasoning queue management
   = must: require manager_context_stream, SOP language primer, boot packet, capture target, and validator before manager proposal work
   = must: use the readiness synthesis before selecting a limited worker pilot queue or broadening any lane claim
   = must: treat validator-strong external-example drift as rejected until task-fit latch passes

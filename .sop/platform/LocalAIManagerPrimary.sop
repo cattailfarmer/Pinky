@@ -1,0 +1,65 @@
+Subject: Local AI Manager Primary
+
+Description: Correction contract making LM Studio the primary low-cost manager lane and OpenAI Codex the high-demand worker and authority lane.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_local_ai_manager_primary\Dictated_Local_AI_Manager_Primary_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkspaceState.sop
+@ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\LMStudioWorkerFunctionalLane.sop
+@ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
+
+& [LocalAIManagerPrimary] is the target architecture for the low-reasoning manager loop
+  + [pattern_role] is local_lm_studio_manager_primary_openai_codex_worker_on_demand
+  + [manager_runtime] is local LM Studio model accessed through direct OpenAI-compatible endpoint or a lightweight local wrapper
+  + [manager_workspace] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator
+  + [manager_workload] is low-reasoning queue scanning, context-stream reading, task triage, candidate selection, proposal drafting, outside preservation, and tick preparation
+  + [expensive_lane] is OpenAI Codex app or OpenAI-backed Codex CLI used only for high-demand implementation, complex reasoning, authoritative review, repo mutation, tests, commits, pushes, or correction
+  + [codex_app_role] is human-facing high-demand authority shell, not the routine local manager process
+  + [codex_cli_lmstudio_role] is bootstrap_or_diagnostic because Codex CLI local-provider adds agent prompt overhead and may exceed the local model context
+  + [direct_endpoint_role] is preferred_manager_transport because it keeps manager prompts small and avoids spending OpenAI Codex allowance
+  + [lightweight_sop_framework] is a compact working-path bundle containing focal point, queue, runbook, packet template, allowed surface, blocked surface, proof gates, and outside
+  + [manager_input] is lightweight_sop_context_stream produced from local .sop records without needing OpenAI Codex each tick
+  + [manager_output] is one job proposal, blocked note, or request for higher-demand Codex attention
+  + [handoff_threshold] is when the local manager detects repo mutation, complex implementation, uncertain authority, failing tests, specification ambiguity, or high-risk action
+  + [authority_boundary] is LM Studio may manage and propose but may not own repo mutation, credentials, spending, commits, pushes, destructive actions, or unbounded launch
+  + [allowance_goal] is preserve OpenAI Codex allowance for work where higher reasoning and tool authority matter
+  + [primary_outside] is OpenAI Codex running routine manager loops, Codex CLI local-provider as required manager transport, hidden daemon, direct local mutation, credentials, destructive action, and unbounded spend
+
+  ? [use_when: the system needs a local low-cost manager process that keeps OpenAI Codex reserved for higher-demand work]
+    = activate [LocalAIManagerPrimary]
+
+  = must: run routine manager attention through LM Studio or another local model when the task is queue selection, context-stream reading, or proposal drafting
+  = must: keep OpenAI Codex out of the routine manager loop unless a high-demand threshold is crossed
+  = must: let the local manager request OpenAI Codex rather than impersonate OpenAI Codex authority
+  = must: build lightweight_sop_context_stream from local .sop files so the manager can operate without this Codex app authoring every tick
+  = must: keep Codex-mediated LM Studio routes as bootstrap, diagnostic, or fallback only while direct endpoint manager transport is viable
+  = must: route every proposed OpenAI Codex job through capture, launch gate, cost gate, stop gate, and dirty-file boundary
+  = should: keep the manager model and SOP bundle small enough for fast local iteration
+  = should: treat manager failures as calibration signals for the lightweight SOP bundle
+  - never: spend OpenAI Codex allowance on routine low-reasoning manager scans when LM Studio can do the job
+  - never: let local manager convenience bypass Codex review for repo mutation, remote publication, or expensive worker dispatch
+
+& [LocalManagerLoopShape] is the corrected manager loop shape
+  + [loop_step_001] is local wrapper reads CurrentFocalPoint, WorkspaceState, Queue, Runbook, WorkerPacketTemplate, and selected lightweight SOP contracts
+  + [loop_step_002] is local wrapper builds lightweight_sop_context_stream without calling OpenAI Codex
+  + [loop_step_003] is LM Studio manager returns proposal, blocked note, or codex_attention_request
+  + [loop_step_004] is local wrapper records capture and validates schema and authority boundary
+  + [loop_step_005] is only proposal crossing handoff_threshold becomes a Codex job candidate
+  + [loop_step_006] is OpenAI Codex worker or Codex app enters only when candidate needs high-demand reasoning or repo authority
+  + [loop_step_007] is result returns to local .sop queue, capture records, and next manager context stream
+  + [loop_stop] is user stop, budget cap, failed validation, missing provider, unsafe action, credential boundary, dirty-file conflict, or no safe next candidate
+
+  = must: keep local manager loop visible through captures and queue state
+  = must: keep handoff_threshold explicit before OpenAI Codex worker dispatch
+  = must: preserve outside instead of forcing a job proposal
+
+(local_ai_manager_primary) :local_manager_loop: /handoff_threshold and authority_boundary/ |primary_outside|
+  + [local_manager_loop] is LM Studio-driven low-reasoning queue and proposal process
+  + [handoff_threshold] is the line where OpenAI Codex should be invoked
+  + [authority_boundary] is local manager proposes and Codex authorizes high-demand work
+  |primary_outside| OpenAI routine-manager spend, direct mutation, credentials, hidden daemon, destructive action, and unbounded spend
+
+/ [LMStudioLocalModel], [lightweight_sop_context_stream] -(Manages)> [job_proposal], [blocked_note], [codex_attention_request]
+* [job_proposal], [handoff_threshold], [launch_gate] -(MayInvoke)> [OpenAI_Codex_Worker], [result_capture], [repo_authority_review]

@@ -1,29 +1,32 @@
 Subject: Codex LM Studio Orchestrator Runbook
 
-Description: Supervised runbook for using LM Studio as a local manager over Codex-authored SOP streams and Codex CLI as the OpenAI-backed worker lane.
+Description: Supervised runbook for using LM Studio as the local primary manager over lightweight SOP streams and Codex CLI as the OpenAI-backed worker lane.
 
 @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
 @ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
 @ [source] C:\Project\Pinky\.sop\platform\TaskFrameLaunchQueue.sop
 
 & [CodexLMStudioOrchestratorRunbook] is the supervised operating procedure
-  + [runbook_status] is scaffold_ready
+  + [runbook_status] is local_manager_primary_scaffold_ready
   + [stage_001_verify_local_provider] is confirm LM Studio endpoint and selected manager model are available
-  + [stage_002_compile_context_stream] is Codex writes or selects current focal point, task frame, source slice, attention kernel, queue state, expected output, proof gates, and outside
-  + [stage_003_boot_lm_studio_manager] is send SOP language primer, worker boot packet, and codex_context_stream to LM Studio through codex.cmd local-provider or compatible endpoint
+  + [stage_002_compile_context_stream] is local wrapper reads current focal point, task frame, source slice, selected attention kernel, queue state, expected output, handoff threshold, proof gates, and outside
+  + [stage_003_boot_lm_studio_manager] is send SOP language primer, worker boot packet, and lightweight_sop_context_stream to LM Studio through direct OpenAI-compatible endpoint by default
   + [stage_004_capture_manager_proposal] is store raw LM Studio manager output as a codex_job_proposal or blocked_outside note
-  + [stage_005_codex_launch_review] is Codex checks authority, cost, scope, command, capture target, proof gate, tests, and dirty-file boundaries
+  + [stage_005_local_validate_or_handoff] is local validator accepts blocked/proposal output or escalates to Codex launch review only when handoff threshold is crossed
   + [stage_006_dispatch_openai_codex_worker] is run Codex CLI with OpenAI inference only after stage_005 passes
   + [stage_007_capture_validate_integrate] is capture worker output, review diff, run validation, integrate or reject, then commit, push, and tick
   + [stage_008_reenter_or_stop] is continue only when next_step is safe, visible, and bounded
-  + [manager_command_shape] is codex.cmd --oss --local-provider lmstudio -m openai/gpt-oss-20b -C <scratch_workspace> -a never -s read-only --output-last-message <capture_target> exec <prompt_packet>
+  + [manager_command_shape] is direct HTTP POST to http://127.0.0.1:1234/v1/chat/completions with model, lightweight_sop_context_stream, exact output schema, and capture target
+  + [diagnostic_manager_command_shape] is codex.cmd --oss --local-provider lmstudio -m openai/gpt-oss-20b -C <scratch_workspace> -a never -s read-only --output-last-message <capture_target> exec <prompt_packet>
   + [worker_command_shape] is codex.cmd -C C:\Project\Pinky -a never -s workspace-write --output-last-message <capture_target> exec <worker_packet>
   + [command_shape_status] is illustrative and must be inspected before each launch
   + [runbook_outside] is direct daemon launch, missing capture, hidden credentials, unbounded token spend, unrelated dirty files, and destructive shell commands
 
   = must: inspect command shapes before launch
-  = must: keep LM Studio manager runs non-mutating
+  = must: keep LM Studio manager runs local, non-mutating, and direct-endpoint by default
   = must: keep OpenAI Codex worker runs bounded by a worker packet and capture target
+  = must: avoid using OpenAI Codex for routine manager context-stream construction unless high-demand repair or authority review is required
   = must: stop on failed provider, failed validation, unclear authority, explicit user stop, or budget/concurrency cap
   = should: use manager dry runs until proposal fidelity is stable across several task types
   - never: run an invisible background loop from this runbook alone

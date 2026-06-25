@@ -133,14 +133,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\codex_lmstudio_manager_dry_run_001_review.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_codex_lmstudio_manager_dry_run_089.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_037.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_local_ai_manager_primary\Dictated_Local_AI_Manager_Primary_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_local_ai_manager_primary_090.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_038.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is LM Studio manager dry run
-  + [active_root_frame] is attention_frame_2026_06_24_codex_lmstudio_manager_dry_run
+  + [registry_scope] is local AI manager primary
+  + [active_root_frame] is attention_frame_2026_06_25_local_ai_manager_primary
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 31
+  + [closed_frame_count] is 32
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -402,9 +406,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat LM Studio manager output as proposal-only
   = must: preserve blocked continuous runner gates until explicitly specified
 
-& [AttentionFrame_2026_06_24_CodexLMStudioManagerDryRun] is the active semantic stack frame for first manager proposal transport evidence
+& [AttentionFrame_2026_06_24_CodexLMStudioManagerDryRun] is the semantic stack frame for first manager proposal transport evidence
   + [frame_id] is attention_frame_2026_06_24_codex_lmstudio_manager_dry_run
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_codex_lmstudio_orchestration_workspace
   + [child_frame_set] is codex_cli_local_provider_attempt, direct_lm_studio_api_attempt, blocked_manager_proposal, transport_split, capture_review, periphery_record_089, operating_loop_tick_037, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -425,11 +429,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep Codex CLI local-provider manager mode blocked while effective context remains 8192
   = should: select direct endpoint manager runner as the next implementation route if user wants local manager operation
 
+& [AttentionFrame_2026_06_25_LocalAIManagerPrimary] is the active semantic stack frame for local manager primacy and OpenAI Codex allowance conservation
+  + [frame_id] is attention_frame_2026_06_25_local_ai_manager_primary
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_codex_lmstudio_manager_dry_run
+  + [child_frame_set] is LocalAIManagerPrimary, CodexLMStudioOrchestrationWorkspace, WorkspaceState, Runbook, WorkerPacketTemplate, SOPTaskManager, LMStudioWorkerFunctionalLane, source_preservation, operating_loop_tick_038, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is LocalAIManagerPrimary.sop, CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Runbook.sop, WorkerPacketTemplate.sop, Dictated_Local_AI_Manager_Primary_Source.sop, 2026-06-25_local_ai_manager_primary_090.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_038.sop
+  + [focus_register] is local LM Studio manager, lightweight SOP context stream, direct endpoint transport, OpenAI Codex handoff threshold, allowance conservation, proposal-only manager boundary, and next runner build
+  + [question_register] is how to implement the direct LM Studio endpoint manager runner while keeping it proposal-only and Codex-handoff gated
+  + [delineation_register] is inside local manager loop, handoff threshold, lightweight context stream, direct endpoint, local validation, Codex worker on demand, and outside
+  + [periphery_register] is OpenAI routine-manager spend, Codex-mediated manager loop, direct mutation, hidden daemon, credentials, destructive action, hidden spend, and unrelated dirty files
+  + [operation_register] is preserve_source, define_local_manager_primary, correct_orchestration_workspace, update_runbook, update_workspace_state, update_manager, update_attention_root, validate, commit, and push
+  + [evidence_register] is user correction, LocalAIManagerPrimary.sop, updated orchestration contract, workspace state, runbook, packet template, periphery record 090, and operating_loop_tick_038
+  + [wisdom_register] is the right economy is cheap local manager attention and expensive Codex attention only at named handoff thresholds
+  + [caution_register] is local manager primacy must not become unsupervised mutation, hidden spending, or bypassed Codex authority
+  + [balance_register] is stable because manager duty, handoff threshold, worker execution, and repo authority are distinct
+  + [integration_register] is Task_160 completed as architecture correction and Task_161 ready as direct endpoint manager runner build
+  + [frame_outside] is hidden model state, direct local mutation, unsupervised launch, credentials, destructive action, broad readiness claims, OpenAI routine-manager spend, and unrelated workspace changes
+
+  = must: treat LM Studio as primary manager for routine low-reasoning ticks
+  = must: invoke OpenAI Codex only after handoff threshold or authority repair requires it
+  = should: build direct endpoint manager runner next
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_codex_lmstudio_manager_dry_run
+  + [active_root_frame] is attention_frame_2026_06_25_local_ai_manager_primary
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_24_CodexLMStudioManagerDryRun], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [codex_lmstudio_manager_dry_run], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_LocalAIManagerPrimary], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [local_ai_manager_primary], [operating_loop_tick], [balance_register], [integration_register], [outside]

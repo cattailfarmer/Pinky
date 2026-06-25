@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is LM Studio manager dry run
+  + [focus_subject] is local AI manager primary
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the manager lane should likely use direct LM Studio endpoint calls for proposal-only traversal, while OpenAI Codex CLI remains the worker executor after Codex review
-  + [inside] is codex_lmstudio_manager_dry_run_001_output.sop, codex_lmstudio_manager_dry_run_001_review.sop, CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Queue.sop, CaptureDirectory.sop, 2026-06-24_codex_lmstudio_manager_dry_run_089.hg.sop, 2026-06-24_operating_loop_tick_037.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when the next task remains inside .sop authority, source-cited, proposal-only for LM Studio, Codex-reviewed for launch, captured before integration, and explicitly bounded by stop, budget, and dirty-file gates
-  + [outside] is hidden model state, unsupervised daemon, direct LM Studio mutation, direct LM Studio launch of OpenAI jobs, destructive action, credentials, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic spend, and continuing after explicit stop
+  + [right_hemisphere_draw] is local AI should carry the low-reasoning manager clock so OpenAI Codex allowance is preserved for high-demand worker and authority turns
+  + [inside] is LocalAIManagerPrimary.sop, CodexLMStudioOrchestrationWorkspace.sop, WorkspaceState.sop, Runbook.sop, WorkerPacketTemplate.sop, SOPTaskManager.sop, LMStudioWorkerFunctionalLane.sop, Dictated_Local_AI_Manager_Primary_Source.sop, 2026-06-25_local_ai_manager_primary_090.hg.sop, 2026-06-25_operating_loop_tick_038.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when the next task preserves local LM Studio manager primacy, keeps OpenAI Codex for high-demand handoff, captures manager output, validates schema, and blocks direct mutation, credentials, destructive actions, hidden spend, and unrelated dirty files
+  + [outside] is hidden model state, unsupervised daemon, direct LM Studio mutation, direct LM Studio launch of OpenAI jobs, destructive action, credentials, unrelated dirty files, broad LM Studio competence, worker mutation authority, direct trust, automatic spend, OpenAI routine-manager spend, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-24_operating_loop_tick_037.sop
-  + [open_question] is whether to build a direct LM Studio endpoint manager runner or reload LM Studio with verified larger context before retrying Codex CLI local-provider manager mode
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_038.sop
+  + [open_question] is how to implement the direct LM Studio endpoint manager runner while keeping it proposal-only and Codex-handoff gated
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -45,6 +45,8 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat sop_swarm_fabric as the completed Task_155 anchor
   = must: treat codex_lmstudio_orchestration_workspace as the completed Task_157 anchor
   = must: treat codex_lmstudio_manager_dry_run as the completed Task_159 anchor
+  = must: treat local_ai_manager_primary as the completed Task_160 anchor
+  = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible
   = must: treat an empty ReadyTaskSet as a real boundary, not as permission to invent implementation work

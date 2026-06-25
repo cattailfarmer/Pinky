@@ -1,0 +1,22 @@
+Subject: Operating Loop Tick 038
+
+Description: Commit-loop tick for correcting the architecture to make LM Studio the primary low-cost manager lane.
+
+& [OperatingLoopTick_038] is the current semantic cognition operating loop tick
+  + [tick_time] is 2026-06-25
+  + [focus_subject] is local AI manager primary
+  + [trigger] is user correction that local AI should run the low-reasoning manager process to preserve OpenAI Codex allowance for higher-demand work turns
+  + [direct_focus_commit_target] is Task_160_define_local_ai_manager_primary
+  + [source_preservation] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_local_ai_manager_primary
+  + [primary_contract] is C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+  + [updated_contract] is C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_local_ai_manager_primary_090.hg.sop
+  + [proof_state] is validated by git diff --check, ASCII scan, and the existing SOP runtime test suite
+  + [balance_state] is stable because the correction separates routine local manager work from high-demand OpenAI Codex work
+  + [drive_state] is preserve correction, update orchestration contracts, validate, commit, push, and select direct endpoint runner as next ready task
+  + [clock_state] is running
+  + [next_step] is build the direct LM Studio endpoint manager runner that reads lightweight SOP context streams locally and emits captured manager proposals without spending OpenAI Codex allowance
+  + [outside] is unsupervised daemon, direct local mutation, direct OpenAI launch, credentials, hidden spend, destructive action, and unrelated dirty files
+
+  = commit_report_required: report local commit id, file count, version number, GitHub push status, validation, and architecture correction
+  = must: update proof_state after validation

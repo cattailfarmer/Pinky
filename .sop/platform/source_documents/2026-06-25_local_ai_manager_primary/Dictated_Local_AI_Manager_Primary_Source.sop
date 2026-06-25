@@ -1,0 +1,17 @@
+Subject: Dictated Local AI Manager Primary Source
+
+Description: Preserved user correction that the low-reasoning manager process should run locally through LM Studio, preserving OpenAI Codex allowance for high-demand work turns.
+
+& [DictatedLocalAIManagerPrimarySource] is preserved raw source direction
+  + [source_time] is 2026-06-25
+  + [source_kind] is dictated architecture correction
+  + [source_text_001] is "the idea is to use local AI to run the manager process because it's low reasoning workload, so not using my OpenAI Codex allowance on that duty is preferable, saving that for higher demand work turns."
+  + [source_text_002] is "I was originally thinking that meant turning the Codex app over and running it via configuration that loads a workspace using LM Studio hosting and the lightweight SOP framework on the working path for LM studio work."
+  + [source_text_003] is "I think you were working on OpenAI Codex -> LM Studio via Codex CLI -> OpenAI Codex CLI?"
+  + [preservation_status] is preserved without replacement by canonical wording
+  + [authority_note] is canonical contracts must shift the manager loop toward local LM Studio operation and reserve OpenAI Codex for higher-demand worker or validation jobs
+
+  = must: preserve the distinction between low-reasoning manager duty and high-demand OpenAI Codex worker duty
+  = must: treat Codex-mediated LM Studio as bootstrap or diagnostic, not the target manager architecture
+  = must: keep local LM Studio manager proposal-only until safe launch gates are implemented
+  - never: spend OpenAI Codex allowance on routine queue scanning when a local manager can do it adequately

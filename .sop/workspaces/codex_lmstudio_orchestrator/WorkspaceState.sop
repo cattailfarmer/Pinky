@@ -4,10 +4,11 @@ Description: Current local state for the SOP workspace that coordinates LM Studi
 
 @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_codex_lmstudio_orchestration_workspace\Dictated_Codex_LMStudio_Orchestration_Workspace_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
 
 & [CodexLMStudioOrchestratorWorkspaceState] is the current state of the orchestration workspace
   + [workspace_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator
-  + [state_status] is scaffold_ready
+  + [state_status] is local_manager_primary_scaffold_ready
   + [local_authority_root] is C:\Project\Pinky\.sop
   + [publication_repo] is C:\Project\Pinky
   + [backup_root] is F:\.sop as local backup/reference
@@ -18,16 +19,17 @@ Description: Current local state for the SOP workspace that coordinates LM Studi
   + [codex_cli_entrypoint] is C:\Users\enjer\AppData\Roaming\npm\codex.cmd
   + [codex_cli_status] is available
   + [powershell_shim_status] is codex.ps1 may be blocked by execution policy, so use codex.cmd
-  + [current_allowed_action_set] is manager dry-run proposal, queue inspection, non-mutating SOP benchmark, and Codex-reviewed OpenAI worker dispatch after gate
+  + [current_allowed_action_set] is local direct-endpoint manager proposal, queue inspection, non-mutating SOP benchmark, local validation, and Codex-reviewed OpenAI worker dispatch after handoff threshold
   + [current_blocked_action_set] is unsupervised daemon, direct LM Studio launch of OpenAI jobs, direct LM Studio file mutation, credential handling, destructive commands, and broad auto-sync
   + [open_queue] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Queue.sop
   + [capture_root] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures
   + [runbook] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\Runbook.sop
   + [packet_template] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
-  + [next_safe_step] is run or inspect the LM Studio manager dry-run candidate that emits one Codex job proposal without launching it
+  + [next_safe_step] is define or build the direct LM Studio endpoint manager runner that reads local lightweight SOP context streams without spending OpenAI Codex allowance
   + [last_manager_probe] is codex_lmstudio_manager_dry_run_001
   + [last_manager_probe_result] is direct LM Studio API returned a valid blocked proposal and Codex CLI local-provider blocked on n_keep 9381 greater than or equal to n_ctx 8192
   + [manager_transport_preference] is direct_lm_studio_openai_compatible_endpoint until Codex CLI local-provider context overhead is solved or verified larger context is loaded
+  + [architecture_correction] is LM Studio is primary manager lane and OpenAI Codex is on-demand high-reasoning worker and authority lane
   + [state_outside] is background daemon, cost-bearing launch, secrets, hidden native state, unrelated dirty files, and direct remote writes
 
   = must: keep this file as state, not as the full project summary

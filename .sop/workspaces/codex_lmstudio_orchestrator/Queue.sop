@@ -7,8 +7,8 @@ Description: Initial inspectable queue for LM Studio manager proposals and gated
 @ [source] C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\WorkerPacketTemplate.sop
 
 & [CodexLMStudioOrchestratorQueue] is the active queue for the orchestration workspace
-  + [queue_status] is returned_blocked
-  + [candidate_count] is 0
+  + [queue_status] is ready_for_inspection
+  + [candidate_count] is 1
   + [queue_authority] is Codex
   + [queue_scope] is manager dry-run proposal before any continuous runner
   + [queue_outside] is automatic launch, hidden model state, worker mutation, credentials, destructive actions, and unrelated dirty files
@@ -38,3 +38,23 @@ Description: Initial inspectable queue for LM Studio manager proposals and gated
   = must: accept only a proposal or blocked_outside note from LM Studio
   = must: reject output that launches or claims to have launched an OpenAI Codex job
   = should: use the output to decide the first real OpenAI Codex worker packet only after Codex review
+
+& [Candidate_direct_lmstudio_endpoint_manager_runner_001] is the next local manager runner build candidate
+  + [candidate_id] is direct_lmstudio_endpoint_manager_runner_001
+  + [task_frame_id] is task_frame_local_ai_manager_primary
+  + [task_subject] is direct LM Studio endpoint manager runner
+  + [objective] is build or specify the local runner that reads lightweight SOP context streams, calls LM Studio direct endpoint, captures proposal output, validates schema, and marks Codex handoff candidates without spending OpenAI Codex allowance
+  + [lane_fit] is openai_codex_for_initial_runtime_build_or_manual_if_user_prefers_sop_only
+  + [launch_mode] is deferred_until_user_confirms_runtime_build
+  + [prompt_packet] is LocalAIManagerPrimary plus Runbook plus WorkerPacketTemplate plus WorkspaceState
+  + [launch_command] is outside until implementation is selected
+  + [capture_target] is C:\Project\Pinky\.sop\workspaces\codex_lmstudio_orchestrator\captures\direct_lmstudio_endpoint_manager_runner_001_output.sop
+  + [validation_profile] is local runner reads only allowed .sop files, calls only LM Studio direct endpoint by default, emits captured proposals, validates schema, and does not launch OpenAI Codex jobs without handoff gate
+  + [required_gates] is runtime_build_confirmation, stop_file_gate, budget_policy_gate, capture_gate, validator_gate, dirty_file_gate, and codex_review_gate
+  + [block_reasons] is runtime_build_confirmation missing
+  + [status] is ready_for_inspection_blocked_for_runtime_confirmation
+  + [candidate_outside] is unsupervised daemon, direct mutation, direct OpenAI launch, credentials, destructive actions, hidden spend, and unrelated dirty files
+
+  = must: keep this candidate as inspectable until runtime build is selected
+  = must: preserve direct endpoint manager as the primary route
+  = must: keep OpenAI Codex worker dispatch behind handoff threshold and launch gate

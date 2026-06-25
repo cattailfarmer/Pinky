@@ -1,0 +1,27 @@
+Subject: Local AI Manager Primary Realization
+
+Description: SOP-HG record correcting the orchestration architecture so LM Studio runs the low-reasoning manager loop locally and OpenAI Codex is reserved for high-demand work.
+
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_local_ai_manager_primary\Dictated_Local_AI_Manager_Primary_Source.sop
+
+& [SOPHypergraphRecord] is local_ai_manager_primary_090
+  + [record_type] is periphery_realization
+  + [focus_subject] is local AI manager primary
+  + [inside] is LM Studio local manager, lightweight SOP context stream, direct endpoint transport, handoff threshold, OpenAI Codex worker on demand, and allowance conservation
+  + [boundary] is local manager proposes, local validator checks routine output, OpenAI Codex enters only for high-demand reasoning, repo mutation, authority repair, tests, commits, pushes, or launch review
+  + [outside] is OpenAI Codex routine-manager spend, Codex CLI local-provider as required manager transport, hidden daemon, direct local mutation, credentials, destructive actions, and unbounded spend
+
+  = realization: the target architecture is local-first manager operation, not OpenAI Codex mediating every manager tick through LM Studio
+  = caution: Codex-mediated LM Studio remains useful as diagnostic/bootstrap but it defeats the allowance-conservation goal if used for routine manager duty
+  = wisdom: the correct economy is cheap local attention for queue awareness and expensive Codex attention only when the task crosses a named handoff threshold
+  = implementation_status: correction encoded; direct LM Studio endpoint manager runner is the next ready build surface
+
+/ [LMStudioLocalModel] -(Manages)> [lightweight_sop_context_stream], [job_proposal], [blocked_note], [codex_attention_request]
+* [handoff_threshold] -(Routes)> [OpenAI_Codex_Worker], [authority_review], [repo_mutation], [tests]
+* [OpenAI_Codex_Worker] -(Returns)> [capture], [diff], [validation], [commit_tick]
+
+(local_ai_manager_primary_realization) :local_manager_loop: /handoff_threshold and allowance_boundary/ |primary_outside|
+  + [local_manager_loop] is local LM Studio queue and proposal attention
+  + [handoff_threshold] is when OpenAI Codex is worth invoking
+  |primary_outside| OpenAI routine-manager spend, direct mutation, hidden daemon, credentials, destructive action, and unbounded spend
