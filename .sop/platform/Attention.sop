@@ -68,6 +68,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [attention_impression_compiler] is C:\Project\Pinky\.sop\platform\AttentionImpressionCompiler.sop
   + [attention_scaffold_compiler] is C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
   + [attention_kernel_compiler] is C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+  + [sop_transformer_readiness_threshold] is C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop
   + [local_identity_consumption] is C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
   + [faculty_attention_field_naming] is C:\Project\Pinky\.sop\platform\FacultyAttentionFieldNaming.sop
   + [attention_balance_center] is C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
@@ -162,6 +163,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :impression: C:\Project\Pinky\.sop\platform\AttentionImpressionCompiler.sop
   :scaffold_compiler: C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
   :attention_kernel: C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+  :transformer_readiness_threshold: C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop
   :local_identity: C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
   :faculty_fields: C:\Project\Pinky\.sop\platform\FacultyAttentionFieldNaming.sop
   :balance_center: C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
@@ -251,6 +253,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use attention impression compiler when awe, drive, and pattern-sense need to become inspectable SOP records
   = must: use attention_scaffold_compiler when a job needs a purpose-fit attention scaffold, debug frame, model-lens packet, or concept-imagination pass
   = must: use attention_kernel_compiler when selected attention patterns need to run as one in-context compiled unit with Security and Honesty before all downstream layers
+  = must: use sop_transformer_readiness_threshold when SOP resolution feels near compiled network readiness or active contracts feel overburdened
   = must: use local_identity_consumption when layered attention patterns, reflection consumption, local identity claims, foreign snapshots, or scoped names are involved
   = must: use faculty_attention_field_naming when custom attention systems need field nouns that name the feature each system accounts for
   = must: use attention_balance_center when attention posture wobbles, rails interfere, or periphery pressure threatens inference stability

@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 1
-  + [completed_task_count] is 168
+  + [completed_task_count] is 169
   + [blocked_task_count] is 4
 
 & [CompletedTaskSet] is completed work
@@ -326,6 +326,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop, C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\Caution.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_legacy_contract_reinforcement_policy\Dictated_Legacy_Contract_Reinforcement_Policy_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_legacy_contract_reinforcement_policy_099.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_047.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   + [Task_171_define_relationship_eigenspectrum] is define the relationship eigenspectrum layer that records eigenvalue-like semantic relationship-strength components, their direction bundles, dominance, stability, confidence, proof boundary, and caution route without treating heat as truth or native transformer eigenvalues
     = evidence: C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop, C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\ChangelogCorrelationWeightNet.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_relationship_eigenspectrum\Dictated_Relationship_Eigenspectrum_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_relationship_eigenspectrum_100.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_048.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+  + [Task_172_define_transformer_readiness_threshold] is define the threshold gate for deciding when SOP resolution is ready for transformer-like compilation, when overburden requires compression or refactor first, and how derived network artifacts remain subordinate to SOP source authority
+    = evidence: C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop, C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop, C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop, C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_transformer_readiness_threshold\Dictated_Transformer_Readiness_Threshold_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_transformer_readiness_threshold_101.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_049.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_161_build_direct_lmstudio_endpoint_manager_runner] is build the local direct-endpoint manager runner that reads lightweight SOP context streams, calls LM Studio without OpenAI Codex allowance, captures proposal output, validates schema, and only marks Codex handoff candidates when handoff threshold is crossed

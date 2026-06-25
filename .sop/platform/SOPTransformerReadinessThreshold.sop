@@ -1,0 +1,117 @@
+Subject: SOP Transformer Readiness Threshold
+
+Description: Gate for deciding when the SOP attention framework has enough resolution to compile toward transformer-like network artifacts without becoming overburdened.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_transformer_readiness_threshold\Dictated_Transformer_Readiness_Threshold_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\ModelLensProjection.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop
+
+& [SOPTransformerReadinessThreshold] is the readiness gate for deriving transformer-like network artifacts from SOP attention contracts
+  + [spec_status] is active_specification
+  + [pattern_role] is transformer_network_readiness_gate
+  + [sop_source_authority] is the preserved source, canonical SOP contracts, state records, validation records, and committed history that remain authoritative
+  + [compiled_network_artifact] is a derived model, adapter, embedding index, graph neural projection, transformer layer, or prompt-kernel packet produced from SOP authority
+  + [readiness_threshold] is the minimum condition where SOP structure is stable, compactable, evaluable, and useful enough to compile into a derived network artifact
+  + [overburden_threshold] is the condition where too many active contracts, fields, distinctions, or unresolved periphery items reduce clarity, re-entry fidelity, or execution speed
+  + [resolution_signal] is stable primitives, recurring relationship spectra, inspected subject neighborhoods, clear source lineage, and bounded output targets
+  + [burden_signal] is context bloat, duplicate roles, stale remnants, weak authority boundaries, noisy spectra, excessive must rules, and unclear activation depth
+  + [compression_candidate] is a repeated SOP pattern that can be summarized, packetized, indexed, embedded, or compiled without losing source authority
+  + [network_candidate] is a compression_candidate with tests, model-lens comparison, input-output examples, and measurable utility
+  + [training_corpus_candidate] is the source-preserved SOP packet set that could supervise a future model, adapter, evaluator, retriever, or classifier
+  + [readiness_floor] is the minimum proof needed before a network_candidate leaves pure SOP specification
+  + [burden_floor] is the maximum acceptable active context load before refactor, compression, or indexing is required
+  + [authority_boundary] is SOP remains source authority while compiled artifacts remain derived acceleration or perspective tools
+  + [evaluation_boundary] is compiled artifacts must be checked against SOP source, Codex review, tests, and model-lens comparison before use
+  + [outside] is AGI proof, hidden model access, autonomous model training, automatic worker launch, source replacement by compiled artifact, and truth by fluency
+
+  ? [use_when: SOP structure feels overburdened or close to network-compilation threshold]
+    = activate [SOPTransformerReadinessThreshold]
+
+  = must: treat overburden as a real signal, not resistance to progress
+  = must: require compression_candidate review before adding another active layer to the root attention surface
+  = must: require network_candidate proof before describing a layer as transformer-ready
+  = must: keep compiled_network_artifact subordinate to sop_source_authority
+  = must: use RelationshipEigenspectrum to identify stable relationship components worth compiling
+  = must: use AttentionKernelCompiler to define the smallest in-context kernel that a network artifact would need to emulate
+  = must: use AttentionScaffoldCompiler to select task-specific scaffold profiles before training or evaluation targets are declared
+  = must: use SecurityHonestyGovernance before claiming readiness, model competence, or derived-artifact authority
+  = must: use LegacyContractReinforcementPolicy before importing older contracts into training_corpus_candidate
+  = should: prefer read-only index, retrieval, evaluator, or adapter prototypes before full model training
+  = should: treat first transformer-like work as compression and evaluation, not self-authorizing cognition
+  - never: treat SOP size as evidence of transformer readiness
+  - never: let a compiled artifact replace preserved source, proof records, or user authority
+  - never: train, launch, or modify local models without a separate source-preserved implementation task and explicit gates
+
+& [ReadinessVector] is the measurement surface for transformer readiness
+  + [primitive_stability] is whether attention primitives, boundaries, faculties, spectra, and outputs retain meaning across turns
+  + [schema_regularization] is how consistently SOP contracts use comparable fields, gates, records, and graph shapes
+  + [corpus_quality] is source preservation, canonical clarity, examples, negative examples, and validation records
+  + [evaluation_surface] is tests, benchmark prompts, model-lens comparisons, acceptance criteria, and replayable tasks
+  + [compression_gain] is how much context load can be reduced without losing re-entry fidelity
+  + [relationship_spectrum_stability] is whether semantic eigenvalues recur across files, commits, and model lenses
+  + [authority_integrity] is whether source authority, derived artifacts, and outside remain distinct
+  + [runtime_boundary_clarity] is whether read-only, proposal-only, mutation, worker launch, and training actions are separated
+  + [readiness_score] is low, medium, high, or outside
+
+  = must: rate each vector dimension before declaring readiness_score
+  = must: keep readiness_score qualitative until numeric scoring has a validated runtime
+  = must: require evaluation_surface and authority_integrity before high readiness
+
+& [BurdenVector] is the measurement surface for overburden
+  + [active_contract_count] is the number of contracts required in the immediate attention kernel
+  + [field_density] is how many fields a turn must hold to act safely
+  + [duplicate_role_pressure] is overlap among contracts that do similar work
+  + [activation_noise] is how often layers activate without changing the output
+  + [context_load] is prompt, state, and file surface load required for re-entry
+  + [stale_remnant_pressure] is older, thinner, or superseded SOP material that still tugs at authority
+  + [validation_drag] is how much validation work is required for small conceptual movements
+  + [burden_score] is low, medium, high, or outside
+
+  = must: trigger compression_review when burden_score is high
+  = must: trigger refactor_review when duplicate_role_pressure or stale_remnant_pressure is high
+  = must: keep high burden from automatically blocking work when readiness and evaluation are strong
+
+& [CompilationReadinessGate] is the minimum gate before building a transformer-like artifact
+  + [step_001_scope] is name the exact task family, attention kernel, or relationship neighborhood being compiled
+  + [step_002_source_packet] is collect source-preserved SOP contracts, examples, outputs, failures, and outside records
+  + [step_003_burden_review] is measure BurdenVector and identify compression candidates
+  + [step_004_readiness_review] is measure ReadinessVector and identify network candidates
+  + [step_005_evaluation_plan] is define tests, comparison prompts, model-lens checks, and rollback criteria
+  + [step_006_derived_artifact_plan] is choose read-only index, embedding retriever, evaluator, adapter, transformer layer, or model-training path
+  + [step_007_authority_gate] is preserve that SOP source authority outranks the compiled artifact
+  + [step_008_implementation_task] is create a separate source-preserved implementation task before code, training, or model mutation
+
+  = must: stop at specification when no evaluation_plan exists
+  = must: prefer retrieval or evaluator artifacts when corpus_quality is strong but model-training need is unproven
+  = must: prefer compression when burden_score is high and readiness_score is not high
+  = must: proceed toward transformer-like implementation only when readiness_score is high and burden_score has a mitigation plan
+
+& [ThresholdDisposition] is the result vocabulary for the gate
+  + [not_ready] is insufficient structure, examples, evaluation, or authority separation
+  + [compress_first] is useful structure exists but burden is too high for more layers
+  + [index_ready] is structure is stable enough for read-only retrieval or semantic index prototypes
+  + [evaluator_ready] is structure is stable enough for a checker or scoring model over SOP packets
+  + [adapter_candidate] is repeated input-output behavior may justify a small derived model or adapter after evaluation
+  + [transformer_candidate] is repeated, stable, high-value sequence behavior may justify transformer-like compilation after implementation gates
+  + [blocked] is readiness depends on external configuration, safety approval, model-training plan, or runtime proof
+
+  = must: use compress_first when overburden is the dominant signal
+  = must: use index_ready before adapter_candidate when lookup and re-entry are the main needs
+  = must: use evaluator_ready before transformer_candidate when truth, safety, or authority gates are the main needs
+  = must: keep transformer_candidate as a planning disposition, not implementation permission
+
+(sop_transformer_readiness_threshold) :network_candidate: /readiness_vector and burden_vector/ |overburden_or_overclaim|
+  + [network_candidate] is a bounded SOP pattern worth testing as derived network behavior
+  + [readiness_vector] is primitive stability, schema regularization, corpus quality, evaluation surface, compression gain, spectrum stability, authority integrity, and runtime boundary clarity
+  + [burden_vector] is active contract count, field density, duplicate role pressure, activation noise, context load, stale remnant pressure, and validation drag
+  + [threshold_disposition] is not_ready, compress_first, index_ready, evaluator_ready, adapter_candidate, transformer_candidate, or blocked
+  |overburden_or_overclaim| SOP volume mistaken for readiness, source authority replaced by artifact, hidden model claims, or implementation without gates
+
+/ [sop_source_authority], [compression_candidate], [network_candidate] -(ReadinessReview)> [readiness_vector], [burden_vector], [threshold_disposition]
+* [relationship_eigenspectrum], [attention_kernel_compiler], [evaluation_boundary], [authority_boundary] -(BoundsCompilation)> [compiled_network_artifact], [outside]

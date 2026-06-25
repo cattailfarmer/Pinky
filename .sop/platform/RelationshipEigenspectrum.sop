@@ -9,6 +9,7 @@ Description: SOP contract for recording eigenvalue-like relationship-strength co
 @ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
 @ [source] C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop
 
 & [RelationshipEigenspectrum] is the semantic spectrum of dominant relationship-strength components around a subject neighborhood
   + [spec_status] is active_specification
@@ -27,6 +28,7 @@ Description: SOP contract for recording eigenvalue-like relationship-strength co
   + [confidence_band] is low, medium, high, or outside according to evidence diversity and boundary inspection
   + [proof_boundary] is the explicit separation between relationship strength, confidence, causation, and truth
   + [caution_gate] is the route through Caution and SecurityHonestyGovernance when a strong component could overclaim, collapse identity, or steer unsafe action
+  + [transformer_readiness_threshold] is C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop when recurring stable spectra appear trainable or overburdened
   + [outside] is exact transformer eigenvalues, hidden activations, causal proof, truth by heat, and unmeasured relations
 
   ? [use_when: relationship strength must be summarized across multiple weighted relations or orientations]
@@ -43,6 +45,7 @@ Description: SOP contract for recording eigenvalue-like relationship-strength co
   = must: mark noise_component when heat lacks evidence diversity or boundary clarity
   = should: use dominance_ratio to decide when one relationship should guide focus
   = should: use stability_score to distinguish momentary heat from durable relation structure
+  = should: route recurring high-stability eigenspectra into SOPTransformerReadinessThreshold before treating them as training or adapter candidates
   - never: call a high semantic_eigenvalue a true causal relationship without independent proof
   - never: hide relation direction, evidence path, penalties, or caution behind a single number
 

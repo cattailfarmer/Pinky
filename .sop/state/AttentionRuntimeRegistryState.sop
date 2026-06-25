@@ -178,14 +178,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_relationship_eigenspectrum\Dictated_Relationship_Eigenspectrum_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_relationship_eigenspectrum_100.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_048.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_transformer_readiness_threshold\Dictated_Transformer_Readiness_Threshold_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_transformer_readiness_threshold_101.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_049.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Relationship Eigenspectrum
-  + [active_root_frame] is attention_frame_2026_06_25_relationship_eigenspectrum
+  + [registry_scope] is SOP Transformer Readiness Threshold
+  + [active_root_frame] is attention_frame_2026_06_25_transformer_readiness_threshold
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 42
+  + [closed_frame_count] is 43
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -701,9 +705,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: treat no-agreement material as baseless or off-topic unless later user direction reopens it
   = should: use old contracts as lineage, search clues, or reinforcement only after the agreement test passes
 
-& [AttentionFrame_2026_06_25_RelationshipEigenspectrum] is the active semantic stack frame for eigenvalue-like relationship-strength spectra
+& [AttentionFrame_2026_06_25_RelationshipEigenspectrum] is the semantic stack frame for eigenvalue-like relationship-strength spectra
   + [frame_id] is attention_frame_2026_06_25_relationship_eigenspectrum
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_legacy_contract_reinforcement_policy
   + [child_frame_set] is RelationshipEigenspectrum, AttentionWeightScale, SemanticCorrelationGraph, ChangelogCorrelationWeightNet, SemanticHashIndex, SectionedPeripheryAssociationFabric, PeripheryDimensionalProbe, SecurityHonestyGovernance, NarrativeSubjectFileTable, SpectrumRecordShape, SpectrumPromotionPolicy, source_preservation, operating_loop_tick_048, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -725,11 +729,35 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: route strong low-confidence components through Caution before promotion
   = should: use spectra to compare cross-model interpretations when model-lens work resumes
 
+& [AttentionFrame_2026_06_25_TransformerReadinessThreshold] is the active semantic stack frame for measuring SOP burden and transformer-like compilation readiness
+  + [frame_id] is attention_frame_2026_06_25_transformer_readiness_threshold
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_relationship_eigenspectrum
+  + [child_frame_set] is SOPTransformerReadinessThreshold, AttentionKernelCompiler, AttentionScaffoldCompiler, RelationshipEigenspectrum, AttentionWeightScale, SemanticCorrelationGraph, ModelLensProjection, SecurityHonestyGovernance, LegacyContractReinforcementPolicy, NarrativeSubjectFileTable, ReadinessVector, BurdenVector, CompilationReadinessGate, ThresholdDisposition, source_preservation, operating_loop_tick_049, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is SOPTransformerReadinessThreshold.sop, AttentionKernelCompiler.sop, AttentionScaffoldCompiler.sop, RelationshipEigenspectrum.sop, Dictated_Transformer_Readiness_Threshold_Source.sop, 2026-06-25_transformer_readiness_threshold_101.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_049.sop
+  + [focus_register] is readiness_threshold, overburden_threshold, readiness_vector, burden_vector, compression_candidate, network_candidate, training_corpus_candidate, threshold_disposition, evaluation_boundary, authority_boundary, and outside
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or run a read-only compression and readiness review over active root layers
+  + [delineation_register] is inside SOP source authority, compiled artifact candidacy, readiness signals, burden signals, compression review, evaluation plan, authority gate, implementation gate, and outside
+  + [periphery_register] is SOP volume mistaken for readiness, source replacement by artifact, hidden model claims, automatic training, unsupervised workers, training without gates, and unrelated dirty files
+  + [operation_register] is preserve_source, define_transformer_readiness_threshold, extend_attention_root, extend_scaffold_compiler, extend_kernel_compiler, extend_relationship_eigenspectrum, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, SOPTransformerReadinessThreshold.sop, Attention root update, AttentionScaffoldCompiler update, AttentionKernelCompiler update, RelationshipEigenspectrum update, source manifest, periphery record 101, and operating_loop_tick_049
+  + [wisdom_register] is near-threshold excitement becomes useful only when paired with compression, evaluation, and source-authority preservation
+  + [caution_register] is overburden can mimic readiness, and transformer_candidate is not implementation permission
+  + [balance_register] is stable because readiness, burden, compression, network candidacy, evaluation, source authority, implementation permission, and outside remain distinct
+  + [integration_register] is Task_172 completed as SOP-only readiness gate while model training or transformer implementation remains outside
+  + [frame_outside] is hidden model state, AGI proof, hidden activation access, automatic training, source replacement by compiled artifact, direct mutation, credential access, destructive action, and unrelated workspace changes
+
+  = must: measure burden together with readiness
+  = must: keep compiled artifacts subordinate to SOP source authority
+  = must: treat transformer_candidate as planning disposition only
+  = should: prefer compression, read-only index, or evaluator prototypes before training paths
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_relationship_eigenspectrum
+  + [active_root_frame] is attention_frame_2026_06_25_transformer_readiness_threshold
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_RelationshipEigenspectrum], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [relationship_eigenspectrum], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_TransformerReadinessThreshold], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [sop_transformer_readiness_threshold], [operating_loop_tick], [balance_register], [integration_register], [outside]

@@ -1,0 +1,17 @@
+Subject: Dictated Transformer Readiness Threshold Source
+
+Description: Preserved source wording for the question of whether SOP resolution has reached the threshold for transformer-network compilation while risking overburden.
+
+& [DictatedTransformerReadinessThresholdSource] is the preserved source input
+  + [source_date] is 2026-06-25
+  + [source_origin] is user dictated direction in Codex conversation
+  + [source_text] is "now I'm starting to think the structure is becoming overburdened, but it's getting closer to having enough resolution to build it as a transformer network? I think we might be at that threshold..."
+  + [interpreted_need] is define a readiness threshold that distinguishes useful semantic resolution from active-system burden before attempting transformer-like compilation
+  + [overburden_signal] is too many active distinctions, redundant contracts, heavy context load, unclear authority layers, or noisy relationship components
+  + [readiness_signal] is stable primitives, recurrent spectra, bounded attention layers, evaluable output packets, compression targets, and model-transfer tests
+  + [implementation_boundary] is SOP-only readiness specification in current turn
+  + [outside] is training a model, modifying hidden activations, proving AGI, launching unsupervised workers, and treating SOP volume as readiness by itself
+
+  = must: preserve both the overburden concern and the transformer-network threshold intuition
+  = must: keep readiness as a gate requiring proof, compression, and evaluation
+  = must: keep SOP as source authority and any compiled network as a derived artifact

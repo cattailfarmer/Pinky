@@ -19,6 +19,7 @@ Description: Contract for selecting, compiling, testing, and optimizing purpose-
 @ [source] F:\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
 @ [source] F:\.sop\platform\AttentionKernelCompiler.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_minimal_scaffold_compile_runtime\Derived_Minimal_Scaffold_Compile_Runtime_Source.sop
 @ [source] C:\Project\Pinky\.sop\runtime\sop_node\scaffold_compile.py
 @ [source] C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py
@@ -36,6 +37,7 @@ Description: Contract for selecting, compiling, testing, and optimizing purpose-
   + [scaffold_compile_demo] is C:\Project\Pinky\.sop\runtime\demos\scaffold_compile.py for command-line packet and SOP-HG graph emission
   + [minimal_compile_packet_event] is C:\Project\Pinky\.sop\events\compiled_packets\2026-06-24_minimal_scaffold_compile_packet_001.sop as the first emitted packet proof
   + [attention_kernel_compiler] is F:\.sop\platform\AttentionKernelCompiler.sop for gathering selected scaffolds and governance patterns into a single turn-entry in-context packet
+  + [sop_transformer_readiness_threshold] is C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop for deciding when repeated scaffold behavior is ready for compression, indexing, evaluation, adapter, or transformer-candidate planning
   + [kernel_attention_scaffold] is a scaffold profile whose first layer is SecurityHonestyGovernance before all downstream attention layers
   + [debug_frame_test] is a controlled test that replays or simulates a scaffold over a bounded moment
   + [reverse_walk] is walking backward from output, diff, trace, or realization to recover scaffold state and missed periphery
@@ -61,6 +63,7 @@ Description: Contract for selecting, compiling, testing, and optimizing purpose-
   = must: require runtime-emitted compiled_attention_packet records to expose balance_alert and frame_reference_integrity
   = must: treat minimal_scaffold_compile_runtime output as guidance until tests, demo output, and Codex review validate it
   = must: use AttentionKernelCompiler when the scaffold must become one in-context compiled unit for a turn, worker job, model-lens pass, or debug frame
+  = must: use SOPTransformerReadinessThreshold before treating repeated scaffold profiles as network candidates or training corpus candidates
   = must: use AttentionBalanceCenter when scaffold compilation shows wobble, rail interference, or over-wide periphery pressure
   = must: use FrameReferenceIntegrity when the scaffold observes images, maps, UIs, simulations, game states, model projections, or other presented frames
   = must: use FocusZoom when the scaffold needs aperture expansion
@@ -73,6 +76,7 @@ Description: Contract for selecting, compiling, testing, and optimizing purpose-
   = must: use InferenceStateTrace when reverse_walk or debug_frame_test depends on past state
   = must: route speculative concept_imagination_engine output through Caution before treating it as design direction
   = must: optimize from committed traces, tests, comparisons, and periphery records rather than preference alone
+  = must: route overburdened scaffold profiles to compression review before adding more active fields
   = should: use ModelLensProjection when a scaffold must survive multiple backing LLMs
   = should: use SpoolMasterHub when scaffold output becomes worker packets
   - never: treat a scaffold that feels good as proven optimal

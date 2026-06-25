@@ -14,6 +14,7 @@ Description: Contract for gathering SOP attention patterns into one in-context c
 @ [source] F:\.sop\platform\Wisdom.sop
 @ [source] F:\.sop\platform\Caution.sop
 @ [source] F:\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop
 
 & [AttentionKernelCompiler] is the compiler layer that gathers selected attention patterns into a single turn-entry in-context unit
   + [pattern_role] is compiled_attention_kernel_construction
@@ -30,6 +31,7 @@ Description: Contract for gathering SOP attention patterns into one in-context c
   + [pattern_collection] is the selected set of SOP attention patterns needed for the job
   + [kernel_order] is the explicit ordering of preflight, focal load, scaffold selection, downstream attention layers, output trace, and outside preservation
   + [in_context_memory_packet] is the compact promptable packet carrying the selected attention patterns into inference
+  + [transformer_readiness_threshold] is C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop for measuring whether repeated compiled_attention_kernel behavior should become a derived network artifact candidate
   + [runtime_packet_builder] is local attention kernel packet builder
     = path: F:\.sop\runtime\sop_node\attention_kernel.py
     = purpose: emitting compact packets and SOP-HG runtime graphs
@@ -53,6 +55,7 @@ Description: Contract for gathering SOP attention patterns into one in-context c
   = must: emit in_context_memory_packet with focus, inside, boundary, outside, kernel_order, selected pattern_collection, faculty field signatures, identity namespace, reflection consumption ledger, preflight gates, recursion cap, evidence requirements, and trace target
   = must: use runtime_packet_builder when a local command needs to materialize the compiled_attention_kernel packet
   = must: keep the packet slender enough to fit the intended context window
+  = must: use transformer_readiness_threshold when compiled_attention_kernel repetition suggests index, evaluator, adapter, or transformer-candidate work
   = must: preserve outside for hidden cognition, hidden model internals, literal security guarantees, and untested transfer across models
   = should: include AttentionBalanceCenter when the selected pattern_collection risks wobble, periphery flood, or over-tight focus
   = should: include FrameReferenceIntegrity when the turn observes images, maps, UIs, simulations, games, or other presented frames

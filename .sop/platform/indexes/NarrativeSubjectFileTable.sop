@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 23
+  + [subject_count] is 24
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -85,6 +85,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is exact transformer eigenvalues, hidden activations, proof by heat, causal truth, runtime eigensolver, and single-number authority
+
+& [Subject_sop_transformer_readiness_threshold] is a narrative subject entry
+  + [subject_key] is sop_transformer_readiness_threshold
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_transformer_readiness_threshold_101.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\SOPTransformerReadinessThreshold.sop, C:\Project\Pinky\.sop\platform\AttentionKernelCompiler.sop, C:\Project\Pinky\.sop\platform\AttentionScaffoldCompiler.sop, C:\Project\Pinky\.sop\platform\RelationshipEigenspectrum.sop, C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\ModelLensProjection.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop, C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop, C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_049.sop
+  + [framework_periphery_set] is transformer_readiness_framework, attention_kernel_framework, attention_scaffold_framework, relationship_spectrum_framework, attention_weight_framework, semantic_correlation_framework, model_lens_framework, security_honesty_framework, legacy_reinforcement_framework, runtime_registry_framework, and operating_loop_framework
+  + [relation_reason_set] is readiness gate, compiled kernel behavior, scaffold repetition, stable spectra, weight vocabulary, semantic relation graph, cross-model evaluation, truth and stability governance, legacy corpus boundary, active focal state, registry state, and current loop tick
+  + [search_phrase_set] is SOPTransformerReadinessThreshold, readiness_threshold, overburden_threshold, readiness_vector, burden_vector, compression_candidate, network_candidate, training_corpus_candidate, threshold_disposition, transformer_candidate, evaluator_ready, index_ready, and compress_first
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is AGI proof, hidden model access, automatic training, source replacement by compiled artifact, implementation without gates, and SOP volume as readiness
 
 & [Subject_unified_faculty_attention] is a narrative subject entry
   + [subject_key] is unified_faculty_attention
