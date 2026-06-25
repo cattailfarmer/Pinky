@@ -1,0 +1,97 @@
+Subject: Layered Activation Inspection
+
+Description: Lightweight pattern for deeper inspection across activation layers before compiling new realizations.
+
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
+@ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+@ [source] C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPHypergraphRecord.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_layered_activation_inspection\Dictated_Layered_Activation_Inspection_Source.sop
+
+& [LayeredActivationInspection] is the lightweight deeper inspection pattern
+  + [layer_key] is layered_activation_inspection
+  + [input] is subject_key, purpose_question, inspection_queue, depth_need, framework_periphery_set, and active_runtime_frame
+  + [activation_layer_trace] is the ordered record of what each inspection layer exposed
+  + [framework_periphery_set] is the named larger framework context carried in periphery for the active subject
+  + [declaration_network_window] is the bounded set of SOP declarations admitted from the larger framework periphery
+  + [realization_compile_packet] is the compact output used to write a new SOP-HG realization
+  + [output] is inspected_layer_set, framework_periphery_set, declaration_network_window, realization_compile_packet, and residual_outside
+
+  = must: start from SubjectInquiry inspection_queue rather than broad repository search
+  = must: inspect activation layers in order until the purpose is satisfied or the depth boundary is reached
+  = must: carry framework_periphery_set as named context, not active focus
+  = must: admit only a bounded declaration_network_window from the larger SOP network
+  = must: compile new realizations only from inspected layers, relation reasons, evidence surfaces, and governance review
+  = must: preserve unresolved layers, skipped framework periphery, and weak network edges as outside
+  = should: stop early when the realization compile packet is sufficient and stable
+  = should: widen from surface to pressure to impact only when heat, purpose, or Caution requires it
+  - never: treat the larger framework periphery as fully loaded awareness
+  - never: let correlation heat alone compile a durable realization
+  - never: claim hidden transformer activation or exact native attention
+
+& [ActivationLayerStrata] is the default shallow-to-deep inspection order
+  + [layer_1_narrative_lead] is the narrative subject, purpose question, and current focal impulse
+  + [layer_2_subject_file_set] is the NarrativeSubjectFileTable file_interest_set, relation reasons, search phrases, and depth hints
+  + [layer_3_file_surface] is inspected file content, surface markers, declared subjects, boundaries, imports, and outside
+  + [layer_4_deeper_inquiry_terms] is SurfacePeripheryInquiryIndex terms that open deeper file pointers
+  + [layer_5_semantic_pointer_set] is SemanticHashIndex or SemanticHashTable pointers used only when table-backed lookup is missing or partial
+  + [layer_6_correlation_weight_set] is SemanticCorrelationGraph and AttentionWeightScale signals, including heat, salience, confidence, and caution penalties
+  + [layer_7_faculty_governance] is UnifiedFacultyAttention, Wisdom, Caution, Honesty, Security, Planner, Weaver, Archivist, and Refiner review
+  + [layer_8_framework_periphery] is the named larger framework periphery and bounded declaration_network_window
+
+  = must: keep each layer separable in the activation_layer_trace
+  = must: keep later layers optional and depth-gated
+  = must: use framework_periphery only after the inspected subject surface needs broader network context
+
+& [FrameworkPeripheryName] is the per-subject larger framework handle
+  + [framework_periphery_name] is a compact name for the larger SOP framework visible around a subject
+  + [framework_anchor_file] is the root or contract file that names the larger framework
+  + [declaration_family_set] is the declaration families worth searching from that framework
+  + [expansion_boundary] is the limit on how far the subject may expand into the framework
+  + [periphery_role] is why that larger framework matters to the subject
+  + [outside] is the uninspected remainder of the framework
+
+  = must: appear in narrative subject table entries when a subject needs network expansion
+  = must: be treated as periphery until explicitly drawn into focus
+  = must: identify framework_anchor_file and periphery_role
+  = should: use local framework names already present in Attention.sop
+  - never: use framework_periphery_name as proof that the whole framework was inspected
+
+& [DeclarationNetworkExpansionPolicy] is the rule for expanding awareness across SOP declarations
+  + [input] is subject_key, framework_periphery_set, purpose_question, and depth_need
+  + [output] is declaration_network_window, skipped_declarations, and residual_outside
+
+  = step_1: select one framework_periphery_name that fits the current subject and purpose
+  = step_2: open its framework_anchor_file or import surface
+  = step_3: search only declaration_family_set terms relevant to the subject
+  = step_4: admit declarations into declaration_network_window only when they connect by relation reason, source, surface marker, or semantic pointer
+  = step_5: stop when the window is sufficient for realization compilation or when the expansion boundary is reached
+  = step_6: preserve uninspected declarations and weak network edges as outside
+
+& [RealizationCompilePattern] is the shape for compiling new realizations from layered inspection
+  + [subject_key] is the inspected subject
+  + [realization_claim] is the smallest durable meaning that survived inspection
+  + [activation_layer_trace] is the inspected layer evidence
+  + [framework_periphery_set] is the larger framework named around the subject
+  + [declaration_network_window] is the bounded SOP declaration context used
+  + [governance_receipt] is the Wisdom, Caution, Honesty, Security, and balance review summary
+  + [promotion_status] is accepted, partial, deferred, rejected, or outside
+  + [residual_outside] is unresolved or uninspected material
+
+  = must: compile realization_claim only after at least narrative lead, subject file set, file surface, and governance layers are inspected
+  = must: include framework_periphery_set even when declaration_network_window stays empty
+  = must: mark partial or deferred when deeper activation was suggested but not inspected
+  = should: output as SOP-HG when the realization changes durable understanding
+
+(layered_activation_inspection) :subject_key: /activation_layer_trace and framework_periphery_set/ |uninspected_network|
+  + [subject_key] is the subject being followed into deeper activation
+  + [activation_layer_trace] is the inspected sequence from narrative lead to governed realization
+  + [framework_periphery_set] is the named larger SOP framework context held in periphery
+  + [uninspected_network] is unvisited framework declarations, weak edges, unresolved layers, and overbroad expansion
+  = inside: subject file queue, file surface, deeper terms, semantic pointers, correlation weights, governance receipts, framework periphery, and realization compile packet
+  = boundary: local Pinky .sop authority, source preservation, bounded depth, inspected evidence, relation reasons, and outside preservation
+  |outside| hidden native activation, exhaustive network awareness, proof by heat, unbounded traversal, runtime mutation, and unrelated workspace changes

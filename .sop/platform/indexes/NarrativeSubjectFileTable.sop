@@ -4,12 +4,13 @@ Description: Seed table mapping narrated subject matters to files of interest fo
 
 @ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop
 
 & [NarrativeSubjectFileTable] is the current table for narrative-subject file interests
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 8
+  + [subject_count] is 9
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -23,6 +24,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is narrative_subject_file_index
   + [narrative_surface] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop, C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop, C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop, and C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop
+  + [framework_periphery_set] is local_attention_framework, narrative_digestion_framework, subject_inquiry_framework, surface_periphery_inquiry_framework, and semantic_reentry_lookup_framework
   + [relation_reason_set] is canonical contract, seed table, narrative layer integration, surface lookup bridge, current focus state, and semantic stack-frame state
   + [search_phrase_set] is narrative_subject_key, file_of_interest, file_interest_relation, subject_file_table, NarrativeSubjectFileIndex, NarrativeSubjectFileTable
   + [depth_hint] is impact
@@ -33,6 +35,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is narrative_digestion
   + [narrative_surface] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop, C:\Project\Pinky\.sop\platform\ViewfinderSnapshot.sop, C:\Project\Pinky\.sop\platform\ApertureReentryCycle.sop, C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop, C:\Project\Pinky\.sop\platform\TrailingChecksumVoice.sop, and C:\Project\Pinky\.sop\events\operating_loop
+  + [framework_periphery_set] is local_attention_framework, aperture_reentry_framework, viewfinder_snapshot_framework, repo_first_scan_framework, and trailing_checksum_framework
   + [relation_reason_set] is narrative digestion contract, snapshot comparison, second-pass re-entry, commit-framed scan, one-turn-later review, and loop tick evidence
   + [search_phrase_set] is weightier_narrative, second_pass_narrative, subject_declaration_pass, viewfinder_snapshot, bookends, evidence paths
   + [depth_hint] is pressure
@@ -43,6 +46,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is surface_periphery_inquiry_index
   + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_surface_periphery_inquiry_index_083.hg.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop, C:\Project\Pinky\.sop\platform\indexes\SurfacePeripheryInquiryTable.sop, C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop, C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop, C:\Project\Pinky\.sop\platform\SemanticHashTable.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_031.sop
+  + [framework_periphery_set] is local_attention_framework, subject_inquiry_framework, semantic_reentry_lookup_framework, unified_faculty_attention_framework, and attention_traversal_framework
   + [relation_reason_set] is surface lookup contract, seed lookup table, active surface marker, semantic pointer bridge, permissive table lookup, and last loop tick
   + [search_phrase_set] is inquiry_term, surface_key, lookup_table, search_pointer, depth_hint, unresolved_inquiry
   + [depth_hint] is pressure
@@ -53,6 +57,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is unified_faculty_attention
   + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_unified_faculty_attention_082.hg.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop, C:\Project\Pinky\.sop\platform\FacultyPairSharedAttentionFrame.sop, C:\Project\Pinky\.sop\platform\FacultyPairActivationBalance.sop, C:\Project\Pinky\.sop\platform\PlannerWeaverActivation.sop, C:\Project\Pinky\.sop\platform\Wisdom.sop, C:\Project\Pinky\.sop\platform\Caution.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, and C:\Project\Pinky\.sop\platform\BoundaryFacultyInspection.sop
+  + [framework_periphery_set] is local_attention_framework, unified_faculty_framework, boundary_governance_framework, wisdom_caution_framework, and attention_kernel_framework
   + [relation_reason_set] is unified field, shared pair frame, balance axis, Planner/Weaver axis, Wisdom facet, Caution facet, Honesty/Security governor, and boundary inspection
   + [search_phrase_set] is faculty_field, depth_profile, balance_axis_set, unified_disposition, Honesty, Security, Archivist, Refiner, Planner, Weaver, Wisdom, Caution
   + [depth_hint] is impact
@@ -63,6 +68,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is attention_runtime_registry
   + [narrative_surface] is C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop, C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop, C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop, C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop, and C:\Project\Pinky\.sop\events\operating_loop
+  + [framework_periphery_set] is local_attention_framework, attention_runtime_registry_framework, semantic_cognition_operating_loop_framework, step_balance_walk_framework, and current_focal_point_framework
   + [relation_reason_set] is registry contract, live registry state, re-entry seed, operating loop contract, and tick history
   + [search_phrase_set] is active_root_frame, semantic_register_set, return_anchor, balance_register, integration_register, operating_loop_tick
   + [depth_hint] is pressure
@@ -73,6 +79,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is semantic_reentry_lookup
   + [narrative_surface] is C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop, C:\Project\Pinky\.sop\platform\SemanticHashTable.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop, C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop, and C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+  + [framework_periphery_set] is local_attention_framework, semantic_hash_framework, semantic_correlation_framework, attention_weight_scale_framework, and periphery_dimensional_probe_framework
   + [relation_reason_set] is hashed pointer index, permissive lookup, weighted correlation graph, depth units, dimensional probe, and surface lookup bridge
   + [search_phrase_set] is semantic_landscape, component_pointer, permissive_query, facet_bucket, weighted_relation, latent_depth_candidate, hot_periphery
   + [depth_hint] is impact
@@ -83,6 +90,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is local_sop_authority
   + [narrative_surface] is C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop, C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop, and C:\Project\Pinky\.sop\platform\BuildEnvironmentPeripheryMarker.sop
+  + [framework_periphery_set] is local_attention_framework, source_authority_framework, manager_state_framework, build_environment_marker_framework, and github_facing_repo_framework
   + [relation_reason_set] is authority root, attention root imports, manager state, active focus boundary, and build-environment reminder
   + [search_phrase_set] is authority_root, node_root, source authority, current_focal_point, build_environment_marker, SOP-only
   + [depth_hint] is skin
@@ -93,11 +101,23 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [subject_key] is narrative_led_subject_inquiry
   + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_narrative_led_subject_inquiry_085.hg.sop
   + [file_interest_set] is C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop, C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop, C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop, C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop, C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop, C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_033.sop
+  + [framework_periphery_set] is local_attention_framework, subject_inquiry_framework, narrative_subject_file_index_framework, surface_periphery_inquiry_framework, layered_activation_inspection_framework, and unified_faculty_framework
   + [relation_reason_set] is subject inquiry layer, narrative lead source, subject file lookup, seed subject table, surface/depth bridge, governance review, and current loop tick
   + [search_phrase_set] is SubjectInquiryLayer, narrative_lead, inspection_queue, file_interest_set, relation_reason, surface_inquiry_bridge, semantic_fallback
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is proof before inspection, exhaustive repository search, hidden cognition, runtime mutation, and stale-path certainty
+
+& [Subject_layered_activation_inspection] is a narrative subject entry
+  + [subject_key] is layered_activation_inspection
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_layered_activation_inspection_086.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop, C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop, C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop, C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop, C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop, C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop, C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop, C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop, and C:\Project\Pinky\.sop\platform\SOPHypergraphRecord.sop
+  + [framework_periphery_set] is local_attention_framework, subject_inquiry_framework, surface_periphery_inquiry_framework, semantic_reentry_lookup_framework, correlation_weight_framework, unified_faculty_framework, and hypergraph_realization_framework
+  + [relation_reason_set] is deeper activation inspection contract, subject inquiry queue, subject file index bridge, surface term bridge, semantic pointer bridge, correlation weight bridge, depth scale, faculty governance, and realization output format
+  + [search_phrase_set] is LayeredActivationInspection, ActivationLayerStrata, framework_periphery_set, declaration_network_window, RealizationCompilePattern, activation_layer_trace
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is hidden native activation, exhaustive network awareness, proof by heat, runtime mutation, and unbounded traversal
 
 (narrative_subject_file_table) :subject_key: /file_interest_set and relation_reason/ |unindexed_subject|
   + [subject_key] is the normalized narrative handle

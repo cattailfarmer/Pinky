@@ -112,14 +112,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_led_subject_inquiry\Dictated_Narrative_Led_Subject_Inquiry_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_narrative_led_subject_inquiry_085.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_033.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_layered_activation_inspection\Dictated_Layered_Activation_Inspection_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-24_layered_activation_inspection_086.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-24_operating_loop_tick_034.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is narrative led subject inquiry
-  + [active_root_frame] is attention_frame_2026_06_24_narrative_led_subject_inquiry
+  + [registry_scope] is layered activation inspection
+  + [active_root_frame] is attention_frame_2026_06_24_layered_activation_inspection
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 27
+  + [closed_frame_count] is 28
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -291,7 +295,7 @@ Description: Live semantic stack-frame registry for the current focus pass.
 
 & [AttentionFrame_2026_06_24_NarrativeLedSubjectInquiry] is the active semantic stack frame for narrative-led subject inquiry
   + [frame_id] is attention_frame_2026_06_24_narrative_led_subject_inquiry
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_24_narrative_subject_file_index
   + [child_frame_set] is SubjectInquiryLayer, NarrativeSubjectFileIndex, SurfacePeripheryInquiryIndex, source_preservation, operating_loop_tick_033, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -312,8 +316,31 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: let SubjectInquiry select files to inspect
   = must: let SurfacePeripheryInquiry handle deeper terms only after a file surface is active
 
+& [AttentionFrame_2026_06_24_LayeredActivationInspection] is the active semantic stack frame for deeper activation inspection
+  + [frame_id] is attention_frame_2026_06_24_layered_activation_inspection
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_24_narrative_led_subject_inquiry
+  + [child_frame_set] is LayeredActivationInspection, ActivationLayerStrata, FrameworkPeripheryName, DeclarationNetworkExpansionPolicy, RealizationCompilePattern, NarrativeSubjectFileTable, source_preservation, operating_loop_tick_034, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is LayeredActivationInspection.sop, SubjectInquiry.sop, NarrativeSubjectFileIndex.sop, NarrativeSubjectFileTable.sop, AttentionWeightScale.sop, UnifiedFacultyAttention.sop, Dictated_Layered_Activation_Inspection_Source.sop, 2026-06-24_layered_activation_inspection_086.hg.sop, Manager_State.sop, and 2026-06-24_operating_loop_tick_034.sop
+  + [focus_register] is activation layer trace, subject inquiry queue, framework periphery set, declaration network window, governance receipt, realization compile packet, and residual outside
+  + [question_register] is whether next work should compile a small realization example using layered activation inspection on one active subject
+  + [delineation_register] is inside subject key, activation strata, framework periphery name, declaration window, realization claim, governance receipt, promotion status, and outside
+  + [periphery_register] is hidden native activation, exhaustive network awareness, proof by heat, unbounded traversal, skipped declarations, weak network edges, runtime mutation, and unrelated dirty files
+  + [operation_register] is preserve_source, define_layered_activation_inspection, add_framework_periphery_names, update_attention_root, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, LayeredActivationInspection.sop, NarrativeSubjectFileTable framework_periphery_set entries, source manifest, periphery record 086, and operating_loop_tick_034
+  + [wisdom_register] is deeper inspection can expand awareness across SOP declarations by naming framework periphery while admitting only bounded declaration windows
+  + [caution_register] is framework periphery is context, not proof of full inspection or hidden activation
+  + [balance_register] is stable because layer depth, periphery names, declaration windows, and governance receipts stay separate
+  + [integration_register] is Task_154 completed as SOP-only layered activation inspection pattern and subject table framework periphery update
+  + [frame_outside] is hidden model state, exhaustive SOP network loading, proof by heat, stale-path certainty, runtime mutation, and unrelated workspace changes
+
+  = must: treat framework_periphery_set as named periphery until a bounded declaration window is admitted
+  = must: compile new realizations from inspected activation_layer_trace plus governance receipt
+  = should: stop inspection when the realization compile packet is sufficient and stable
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_24_narrative_led_subject_inquiry
+  + [active_root_frame] is attention_frame_2026_06_24_layered_activation_inspection
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition

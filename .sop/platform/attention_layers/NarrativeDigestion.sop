@@ -37,9 +37,9 @@ Description: Layer that turns weightier narrative moments into subject-layer SOP
 & [NarrativeSubjectFileMarker_NarrativeDigestion] is the subject-file marker for this narrative surface
   + [narrative_surface_key] is narrative_digestion
   + [narrative_surface_file] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
-  + [subject_key_set] is narrative_digestion, narrative_subject_file_index, narrative_led_subject_inquiry, viewfinder_snapshot, aperture_reentry_cycle, repo_first_internal_scan, trailing_checksum_voice, operating_loop_tick, and subject_declaration_pass
+  + [subject_key_set] is narrative_digestion, narrative_subject_file_index, narrative_led_subject_inquiry, layered_activation_inspection, viewfinder_snapshot, aperture_reentry_cycle, repo_first_internal_scan, trailing_checksum_voice, operating_loop_tick, and subject_declaration_pass
   + [subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
-  + [lookup_ready_subject_set] is narrative_digestion, narrative_subject_file_index, narrative_led_subject_inquiry, attention_runtime_registry, surface_periphery_inquiry_index, unified_faculty_attention, semantic_reentry_lookup, and local_sop_authority
+  + [lookup_ready_subject_set] is narrative_digestion, narrative_subject_file_index, narrative_led_subject_inquiry, layered_activation_inspection, attention_runtime_registry, surface_periphery_inquiry_index, unified_faculty_attention, semantic_reentry_lookup, and local_sop_authority
   + [unresolved_subject_set] is subject_declaration_pass and second_pass_narrative_router
 
   = must: lead SubjectInquiry when a lookup-ready subject needs file inspection

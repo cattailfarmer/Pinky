@@ -4,6 +4,7 @@ Description: Contract for mapping narrative-layer subject matters to files of in
 
 @ [source] C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
 @ [source] C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop
 @ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_subject_file_index\Dictated_Narrative_Subject_File_Index_Source.sop
@@ -15,6 +16,7 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   + [file_interest_relation] is why the file matters to the narrated subject
   + [subject_file_table] is C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   + [subject_file_entry] is one subject key with file pointers, relation reasons, search phrases, depth hints, and outside limits
+  + [framework_periphery_set] is the named larger framework context visible around the subject
   + [depth_hint] is surface, hair, skin, pressure, impact, or deep_probe
   + [coverage_status] is seed, partial, reviewed, stale, unresolved, or outside
   + [reentry_use] is search guidance for Codex, local workers, narrative digestion, and trailing checksum review
@@ -25,6 +27,7 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   = must: preserve depth_hint so focus can decide whether to skim, inspect, or deep-probe
   = must: keep files_of_interest as search and re-entry guidance, not proof of semantic identity
   = must: distinguish directly cited files from inferred support files
+  = must: preserve framework_periphery_set as named context for deeper activation inspection
   = must: preserve unindexed, stale, or weakly supported subjects as outside
   = should: prefer local C:\Project\Pinky\.sop paths over historical F:\.sop paths
   = should: update the table when a narrative record, tick, or periphery realization becomes a surface for future work
@@ -37,6 +40,7 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   + [file_interest_set] is the files to open first for that subject
   + [relation_reason_set] is why each file belongs to the subject
   + [search_phrase_set] is local phrases to search in those files
+  + [framework_periphery_set] is the named larger framework context that may be admitted through LayeredActivationInspection
   + [depth_hint] is the attention depth to spend on re-entry
   + [coverage_status] is how trustworthy or complete the entry is
   + [outside] is what the entry does not prove
@@ -44,6 +48,7 @@ Description: Contract for mapping narrative-layer subject matters to files of in
   = must: keep the subject key compact and stable
   = must: include at least one narrative_surface or evidence path
   = must: separate file_interest_set from authority claims
+  = must: keep framework_periphery_set as periphery until LayeredActivationInspection admits a bounded declaration window
   = should: include a later_review_trigger when the subject is hot but under-indexed
 
 & [NarrativeSubjectIndexProcedure] is the operating pass for using the index

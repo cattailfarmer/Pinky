@@ -6,6 +6,7 @@ Description: Attention layer that follows a narrated subject into an evidence-ga
 @ [source] C:\Project\Pinky\.sop\platform\NarrativeSubjectFileIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
 @ [source] C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop
 @ [source] C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\UnifiedFacultyAttention.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_narrative_led_subject_inquiry\Dictated_Narrative_Led_Subject_Inquiry_Source.sop
@@ -19,6 +20,8 @@ Description: Attention layer that follows a narrated subject into an evidence-ga
   + [inspection_queue] is the ordered files of interest selected for subject re-entry
   + [inspection_reason] is why each queued file is relevant to the subject
   + [inspection_depth] is the depth hint for how much attention to spend per file
+  + [layered_activation_inspection] is C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop
+  + [framework_periphery_set] is the named larger framework context carried for the subject
   + [surface_inquiry_bridge] is C:\Project\Pinky\.sop\platform\SurfacePeripheryInquiryIndex.sop
   + [semantic_fallback] is C:\Project\Pinky\.sop\platform\SemanticHashIndex.sop
   + [output] is selected_file_set, skipped_file_set, deeper_inquiry_terms, unresolved_subjects, and residual_outside
@@ -27,6 +30,7 @@ Description: Attention layer that follows a narrated subject into an evidence-ga
   = must: query NarrativeSubjectFileTable before broad repository search
   = must: build inspection_queue from files_of_interest, relation reasons, depth hints, and current purpose
   = must: inspect selected files as evidence surfaces before promoting subject claims
+  = must: use LayeredActivationInspection when deeper activation layers or framework periphery are needed before compiling a realization
   = must: route active file surfaces through SurfacePeripheryInquiryIndex when deeper terms need search pointers
   = must: use SemanticHashIndex only as fallback or bridge when the narrative subject table is missing or incomplete
   = must: preserve skipped files, stale paths, weak relations, and missing targets as outside
@@ -41,6 +45,7 @@ Description: Attention layer that follows a narrated subject into an evidence-ga
   + [subject_key] is the normalized subject being followed
   + [purpose_question] is why the subject is being inspected now
   + [queue_entry] is one file plus relation reason, search phrases, depth hint, and inspection status
+  + [framework_periphery_name] is the larger framework context named for this subject but held outside active focus until drawn inward
   + [inspection_status] is pending, inspected, skipped, stale, unresolved, or outside
   + [promotion_status] is unpromoted, evidence_supported, needs_surface_lookup, needs_semantic_fallback, or rejected
   + [outside] is what the queue does not prove
@@ -59,11 +64,13 @@ Description: Attention layer that follows a narrated subject into an evidence-ga
   = step_3: query NarrativeSubjectFileTable for file_interest_set and relation_reason_set
   = step_4: rank file interests by direct citation, purpose fit, depth hint, freshness, and current boundary
   = step_5: build a slender inspection_queue with pending statuses and outside limits
-  = step_6: inspect selected files using listed search phrases and relation reasons
-  = step_7: when an inspected file exposes inquiry terms, route those terms through SurfacePeripheryInquiryIndex
-  = step_8: when the table is missing or weak, route a bounded fallback query through SemanticHashIndex
-  = step_9: report evidence-supported findings, rejected findings, skipped files, and unresolved subjects separately
-  = step_10: return findings to NarrativeDigestion for durable narrative or subject-layer promotion only after governance review
+  = step_6: attach framework_periphery_set from the subject entry without loading the whole framework into focus
+  = step_7: inspect selected files using listed search phrases and relation reasons
+  = step_8: when deeper activation or realization compilation is needed, route the inspection_queue through LayeredActivationInspection
+  = step_9: when an inspected file exposes inquiry terms, route those terms through SurfacePeripheryInquiryIndex
+  = step_10: when the table is missing or weak, route a bounded fallback query through SemanticHashIndex
+  = step_11: report evidence-supported findings, rejected findings, skipped files, and unresolved subjects separately
+  = step_12: return findings to NarrativeDigestion for durable narrative or subject-layer promotion only after governance review
 
 & [SubjectInquiryActivationPattern] is the activation smell for this layer
   + [activation_cue] is a question asking where to inspect, what files follow a subject, how to re-enter a narrated subject, or which files support a narrative subject

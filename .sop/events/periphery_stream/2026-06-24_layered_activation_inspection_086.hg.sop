@@ -1,0 +1,30 @@
+Subject: Layered Activation Inspection Realization
+
+Description: SOP-HG record for the lightweight deeper inspection pattern and framework periphery naming.
+
+@ [source] C:\Project\Pinky\.sop\platform\attention_layers\LayeredActivationInspection.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_layered_activation_inspection\Dictated_Layered_Activation_Inspection_Source.sop
+
+& [SOPHypergraphRecord] is layered_activation_inspection_086
+  + [record_type] is periphery_realization
+  + [focus_subject] is layered activation inspection
+  + [inside] is activation layer trace, subject inquiry queue, file surface, deeper inquiry terms, semantic pointers, correlation weights, governance review, framework periphery, declaration network window, and realization compile packet
+  + [boundary] is Pinky .sop authority, source preservation, bounded depth, inspected evidence, named framework periphery, and no runtime mutation
+  + [outside] is hidden native activation, exhaustive SOP network loading, proof by heat, unbounded traversal, worker mutation, and unrelated workspace changes
+
+  = realization: deeper inspection needs a bounded layer trace so a subject can expand into the SOP declaration network without flooding focus
+  = framework_periphery: each subject can name its larger framework context in periphery, then admit only a narrow declaration window when needed
+  = caution: framework periphery is context, not proof that the whole framework was inspected
+  = wisdom: new realizations should be compiled from inspected layers plus governance receipt, not from association heat alone
+
+/ [SubjectInquiry] -(Feeds)> [LayeredActivationInspection], [inspection_queue]
+/ [LayeredActivationInspection] -(Inspects)> [ActivationLayerStrata], [activation_layer_trace]
+/ [NarrativeSubjectFileTable] -(Names)> [framework_periphery_set], [subject_key]
+/ [LayeredActivationInspection] -(Bounds)> [declaration_network_window], [uninspected_network]
+/ [RealizationCompilePattern] -(Emits)> [SOPHypergraphRecord], [governance_receipt]
+
+(layered_activation_inspection_realization) :subject_key: /layer_trace and framework_periphery/ |uninspected_network|
+  + [subject_key] is the subject receiving deeper inspection
+  + [layer_trace] is the inspected activation strata
+  + [framework_periphery] is the named larger context around the subject
+  |uninspected_network| weak edges, skipped declarations, unresolved layers, and overbroad framework expansion
