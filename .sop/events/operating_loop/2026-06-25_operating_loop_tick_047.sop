@@ -1,0 +1,22 @@
+Subject: Operating Loop Tick 047
+
+Description: Loop tick recording the completed legacy contract reinforcement policy and next safe runnable state.
+
+& [OperatingLoopTick_047] is a semantic cognition operating-loop tick
+  + [tick_status] is completed
+  + [tick_date] is 2026-06-25
+  + [completed_task] is Task_170_define_legacy_contract_reinforcement_policy
+  + [completed_artifact] is C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_legacy_contract_reinforcement_policy_099.hg.sop
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_legacy_contract_reinforcement_policy\Dictated_Legacy_Contract_Reinforcement_Policy_Source.sop
+  + [commit_frame] is validation_passed_pending_commit
+  + [manager_ready_task] is Task_161_build_direct_lmstudio_endpoint_manager_runner
+  + [clock_state] is running_with_ready_task
+  + [balance_state] is stable because primary authority, legacy reinforcement, lineage, search clue, caution debt, and outside remain distinct
+  + [proof_state] is git diff check passed, ASCII scan passed, runtime test suite passed, commit pending, and push pending
+  + [next_step] is continue toward direct LM Studio endpoint manager runner unless a cleanup or refactor slice is selected
+  + [outside] is unrelated dirty files, deleting old contracts, legacy override, stale backup authority, hidden model preference, and authority by age or volume
+
+  = must: update commit_frame after commit and push
+  = must: keep Task_161 ready after this specification
+  = must: apply the policy before letting older or less articulated contracts affect action or integration

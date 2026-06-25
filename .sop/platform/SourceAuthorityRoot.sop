@@ -5,6 +5,7 @@ Description: Canonical authority contract for C:\Project\Pinky\.sop as the activ
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-24_pinky_sop_root_authority\Dictated_Pinky_SOP_Root_Authority_Source.sop
 @ [source] C:\Project\Pinky\.sop\state\RepoRoleIndex.sop
 @ [source] C:\Project\Pinky\.sop\platform\Attention.sop
+@ [source] C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop
 
 & [SourceAuthorityRoot] is the active local source authority boundary for Pinky's SOP awareness system
   + [active_root] is C:\Project\Pinky\.sop
@@ -14,6 +15,7 @@ Description: Canonical authority contract for C:\Project\Pinky\.sop as the activ
   + [backup_root] is F:\.sop
   + [authority_surface] is AGENTS.md, platform contracts, state records, planning manager state, events, and source documents under C:\Project\Pinky\.sop
   + [backup_surface] is F:\.sop as a local backup, seed snapshot, and comparison surface
+  + [legacy_contract_reinforcement_policy] is C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop for interpreting older, thinner, imported, or less articulated SOP contracts as reinforcement rather than override
   + [authority_outside] is unrelated Pinky sibling projects, backup-only state, nested .sop Git authority, hidden model state, and unreviewed remote state
 
   ? [use_when: choosing where SOP attention authority, commits, and publication records should be written]
@@ -23,10 +25,12 @@ Description: Canonical authority contract for C:\Project\Pinky\.sop as the activ
   = must: commit and publish through the C:\Project\Pinky repository when GitHub publication is requested
   = must: treat F:\.sop as backup/reference unless the user explicitly promotes it again
   = must: preserve F:\.sop seed lineage when importing copied records
+  = must: use LegacyContractReinforcementPolicy before treating older, thinner, backup, seed, or less articulated contracts as instructions over current Pinky .sop authority
   = must: keep unrelated Pinky project changes outside .sop authority commits unless explicitly selected
   = must: distinguish local authority from remote publication
   = should: export or refresh F:\.sop only after Pinky .sop has formed or accepted the record
   - never: let backup-only records override active Pinky .sop authority
+  - never: let legacy contracts override current source-preserved and canonical active authority without explicit promotion
   - never: claim GitHub publication occurred without a successful Pinky push
 
 (source_authority_root) :active_root: /publication_repo and seed_lineage/ |authority_outside|

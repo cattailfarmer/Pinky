@@ -10,7 +10,7 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [table_status] is seed
   + [table_scope] is active attention, narrative digestion, runtime registry, surface inquiry, and semantic re-entry subjects
   + [authority_root] is C:\Project\Pinky\.sop
-  + [subject_count] is 21
+  + [subject_count] is 22
   + [coverage_status] is partial and intentionally non-exhaustive
   + [residual_outside] is unindexed narrative subjects, stale historical F:\.sop paths, runtime-only details, and subjects not yet reviewed
 
@@ -63,6 +63,17 @@ Description: Seed table mapping narrated subject matters to files of interest fo
   + [depth_hint] is impact
   + [coverage_status] is seed
   + [outside] is hidden model activations, proof by association, stale path certainty, exhaustive repository map, and automatic promotion
+
+& [Subject_legacy_contract_reinforcement_policy] is a narrative subject entry
+  + [subject_key] is legacy_contract_reinforcement_policy
+  + [narrative_surface] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_legacy_contract_reinforcement_policy_099.hg.sop
+  + [file_interest_set] is C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop, C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop, C:\Project\Pinky\.sop\platform\Attention.sop, C:\Project\Pinky\.sop\platform\Caution.sop, C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop, C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop, C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop, C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop, C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop, and C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_047.sop
+  + [framework_periphery_set] is legacy_reinforcement_framework, source_authority_framework, local_attention_framework, caution_framework, security_honesty_framework, sectioned_periphery_framework, runtime_registry_framework, manager_state_framework, and operating_loop_framework
+  + [relation_reason_set] is authority precedence policy, source authority boundary, root import surface, caution route, truth and stability governance, periphery agreement context, active focal state, registry state, manager state, and current loop tick
+  + [search_phrase_set] is LegacyContractReinforcementPolicy, primary_authority_layer, primary_impulse, legacy_contract, less_articulated_instruction, agreement_test, partial_agreement, shared_context_scope, blind_spot_candidate, baseless_or_off_topic, reinforcement_use, articulation_gap, AuthorityPrecedenceOrder
+  + [depth_hint] is impact
+  + [coverage_status] is seed
+  + [outside] is legacy override, stale backup authority, authority by age, authority by volume, hidden model preference, and deleting old contracts without a refactor task
 
 & [Subject_unified_faculty_attention] is a narrative subject entry
   + [subject_key] is unified_faculty_attention

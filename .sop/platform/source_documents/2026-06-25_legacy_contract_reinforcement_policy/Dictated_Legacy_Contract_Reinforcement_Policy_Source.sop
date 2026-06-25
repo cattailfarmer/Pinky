@@ -1,0 +1,21 @@
+Subject: Dictated Legacy Contract Reinforcement Policy Source
+
+Description: Preserved source note for handling older or less articulated SOP contracts without letting them override active authority.
+
+& [DictatedLegacyContractReinforcementPolicySource] is the preserved user direction
+  + [source_status] is preserved_raw_direction
+  + [captured_request] is the SOP framework may be overbuilt because remnants of older contracts try to do some jobs without full articulation, and that is acceptable if there is a policy not to take less articulated instruction as authority while allowing it to reinforce when it agrees with primary impulses; later refinement adds that they have to agree at least to some extent or be considered baseless or off-topic, while wide shared context with partial disagreement may reveal a blind spot to consider
+  + [problem_shape] is older, thinner, or less articulated contracts can blur authority when they resemble current work but lack the latest boundary, gate, or purpose articulation
+  + [desired_policy_shape] is primary authority comes from the active source-preserved and canonical contract layer, while less articulated contracts may reinforce, corroborate, warn, or guide search only when they agree with that primary layer
+  + [primary_impulse_shape] is current user direction, source preservation, active canonical SOP contract, current focal point, registry frame, manager state, validation, and committed record
+  + [legacy_support_shape] is older contracts acting as context, reinforcement, historical lineage, periphery, search clue, or caution signal
+  + [blind_spot_shape] is wide shared context with partial disagreement that deserves inspection as possible missed framing rather than authority
+  + [preservation_boundary] is source direction only, not canonical authority until processed and gated
+  + [outside] is legacy override, authority by age, authority by volume, instruction collision, stale F:\.sop override, and treating under-articulated remnants as implementation command
+
+  = must: preserve the distinction between primary authority and reinforcing legacy support
+  = must: allow old contracts to reinforce only when they agree with current active authority
+  = must: treat no-agreement legacy material as baseless, off-topic, or outside unless a separate source-preserved task selects it
+  = must: treat wide shared context with partial disagreement as possible blind spot, not authority
+  = must: route conflicting or under-articulated old contracts to Caution or outside
+  = must: avoid deleting old contracts merely because they are thinner

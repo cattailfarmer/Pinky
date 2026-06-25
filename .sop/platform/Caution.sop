@@ -4,6 +4,7 @@ Description: Independent attention pattern for boundary, proof, uncertainty, fau
 
 @ [source] F:\.sop\platform\FrameReferenceIntegrity.sop
 @ [source] F:\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop
 
 & [Caution] is an attention pattern for deciding what must be bounded, tested, narrowed, delayed, rejected, or preserved outside
   + [pattern_role] is boundary_attention
@@ -15,6 +16,9 @@ Description: Independent attention pattern for boundary, proof, uncertainty, fau
   + [causal_boundary] is what appears related but has not been shown to cause or explain
   + [frame_reference_boundary] is what may be a presented frame, representation surface, simulation, UI, map, image, narrative, or model projection rather than first-hand observation
   + [authority_boundary] is what must not become implementation authority before source preservation and SJS routing
+  + [legacy_authority_boundary] is older, thinner, imported, backup, or less articulated SOP material that must not override active primary authority without agreement, source preservation, and promotion
+  + [blind_spot_review] is wide shared context plus partial agreement from legacy material that may deserve inspection without becoming authority
+  + [baseless_or_off_topic] is legacy material with no partial agreement or relevant shared context
   + [staleness_boundary] is what may be expired, unrenewed, or context-washed
   + [failure_path] is how the candidate could mislead, bloat, distort, erase outside, or cause operational fault
   + [balance_alert] is F:\.sop\platform\AttentionBalanceCenter.sop warning that wobble or interference may affect inference
@@ -30,6 +34,9 @@ Description: Independent attention pattern for boundary, proof, uncertainty, fau
   = must: bind unsupported causation, hidden cognition, stale tracking, and boundary-smuggling to outside
   = must: bind unverified presented_frame content to frame_reference_boundary before it becomes actionable_world_state
   = must: use boundary_faculty_inspection when a boundary term may distort identity, fair representation, permission, or protected work
+  = must: use LegacyContractReinforcementPolicy when old or less articulated SOP material might influence current focus, action, or integration
+  = must: route no-agreement legacy material to baseless_or_off_topic or outside
+  = must: route wide shared context with partial agreement to blind_spot_review rather than authority
   = must: require truth_test when support is incomplete and the candidate is consequential
   = must: prefer stop_action, preserve_outside, or verify_frame when frame_mismatch carries action_consequence_risk
   = must: treat balance_alert as a reason to narrow, test, unwind, or preserve_outside before continuing

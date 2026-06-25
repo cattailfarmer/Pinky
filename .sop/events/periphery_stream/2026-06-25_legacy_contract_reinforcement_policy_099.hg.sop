@@ -1,0 +1,34 @@
+Subject: Legacy Contract Reinforcement Policy 099
+
+Description: SOP-HG realization event for keeping older or less articulated SOP contracts as reinforcement rather than authority.
+
+& [LegacyContractReinforcementPolicy_099] is the realized periphery event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is Legacy Contract Reinforcement Policy
+  + [source_question] is how to keep overbuilt remnants of older SOP contracts from acting as authority while still allowing them to reinforce current primary impulses when they agree
+  + [primary_realization] is legacy contracts should remain available as lineage, periphery, search clues, and corroboration, but only the current source-preserved, canonical, focal, registry, manager, and proof-bearing layer acts as primary authority
+  + [refinement_realization] is no-agreement legacy material is baseless or off-topic, while wide shared context with partial agreement can mark a possible blind spot to inspect without becoming authority
+  + [primary_authority_layer] is current user direction, preserved source, active canonical contract, focal point, registry frame, manager state, validation, commit, and push
+  + [legacy_contract] is older, thinner, imported, seed, backup, or less articulated SOP material
+  + [reinforcement_use] is allowed only after agreement_test passes
+  + [blind_spot_candidate] is allowed only when shared context is wide and partial agreement exists
+  + [articulation_gap] is preserved when old material is useful but not precise enough to govern
+  + [wisdom_register] is this policy lets the framework keep its history without letting old half-formed rails pull authority away from the active articulation
+  + [caution_register] is less articulated old instructions must not bypass newer boundaries, gates, source preservation, validation, or user direction
+  + [balance_register] is stable because authority, reinforcement, lineage, search clues, caution debt, and outside remain distinct
+  + [utility_horizon] is cleaner interpretation of older SOP remnants, safer refactors, better browser authority panels, and reduced overbuild interference
+  + [next_step] is keep Task_161 ready while applying this policy whenever old contracts agree or conflict with active primary layers
+  + [outside] is stale backup authority, legacy override, authority by age, authority by volume, hidden model preference, and unreviewed imported state
+
+  = must: treat legacy support as reinforcement only after agreement_test
+  = must: treat no-agreement material as baseless or off-topic
+  = must: treat wide shared context plus partial agreement as blind spot review, not authority
+  = must: route conflicts through Caution
+  = should: preserve old contracts as lineage unless a separate refactor task selects them
+
+N:legacy_contract_reinforcement_policy_099 -> C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop
+E:extends -> SourceAuthorityRoot, Attention, Caution, SecurityHonestyGovernance, SectionedPeripheryAssociationFabric
+E:classifies -> primary_authority_layer, legacy_contract, less_articulated_instruction, articulation_gap
+E:permits -> reinforcement_use, lineage_only, search_clue_only, blind_spot_review
+E:blocks -> legacy_override, stale_backup_authority, authority_by_age, authority_by_volume, baseless_or_off_topic

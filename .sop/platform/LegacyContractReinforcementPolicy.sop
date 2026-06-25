@@ -1,0 +1,110 @@
+Subject: Legacy Contract Reinforcement Policy
+
+Description: Canonical policy for using older or less articulated SOP contracts as reinforcement, periphery, lineage, or caution without letting them override active primary authority.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_legacy_contract_reinforcement_policy\Dictated_Legacy_Contract_Reinforcement_Policy_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SourceAuthorityRoot.sop
+@ [source] C:\Project\Pinky\.sop\platform\Attention.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\.sop\state\AttentionRuntimeRegistryState.sop
+@ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
+@ [source] C:\Project\Pinky\.sop\platform\Caution.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+
+& [LegacyContractReinforcementPolicy] is the authority-precedence policy for older or less articulated SOP contracts
+  + [spec_status] is active_specification
+  + [pattern_role] is legacy_contract_reinforcement_not_override
+  + [primary_authority_layer] is current user directive, preserved source document, canonical active SOP contract, active focal point, runtime registry frame, manager state, validation record, committed Git history, and pushed publication when present
+  + [primary_impulse] is the active direction formed by current source-preserved intent, canonical specification, focal boundary, registry state, proof gates, and committed record
+  + [legacy_contract] is an older, thinner, imported, seed, backup, partially articulated, or superseded SOP contract that resembles the current work but lacks current articulation or gates
+  + [less_articulated_instruction] is a directive, must rule, field, metaphor, or old contract clause that is weaker, thinner, ambiguous, stale, or less bounded than the current primary authority layer
+  + [reinforcement_use] is corroboration, lineage support, search clue, periphery context, caution signal, analogy, or historical rationale that agrees with primary_authority_layer
+  + [non_authority_use] is material that may be inspected but cannot command action, override focus, mutate files, launch workers, or replace a newer active contract
+  + [agreement_test] is compare purpose, boundary, outside, source lineage, current focal frame, gates, and shared context before allowing reinforcement_use
+  + [partial_agreement] is overlap in purpose, subject, context, or boundary without enough agreement to reinforce as authority-bearing support
+  + [shared_context_scope] is how much subject matter, purpose, file surface, or conceptual frame the legacy contract shares with the active primary layer
+  + [blind_spot_candidate] is a legacy signal with wide shared_context_scope and partial_agreement that may reveal a missed boundary, missing term, or under-inspected angle
+  + [baseless_or_off_topic] is a legacy signal with no meaningful agreement, no relevant shared context, or no inspectable relation to the primary layer
+  + [conflict_test] is detect contradiction, missing boundary, stale root, weaker gates, overbroad command, or incompatible purpose
+  + [articulation_gap] is the missing precision that prevents a legacy contract from acting as authority
+  + [reinforcement_receipt] is the note that a legacy contract agrees with the primary layer and is used only to reinforce or contextualize
+  + [caution_disposition] is preserve_outside, reinforce_only, historical_lineage_only, search_clue_only, blind_spot_review, baseless_or_off_topic, defer, or reject_as_authority
+  + [residual_outside] is authority by age, authority by volume, stale backup root, hidden model preference, old instruction collision, unreviewed imported state, and legacy override
+
+  ? [use_when: an older, thinner, imported, or less articulated SOP contract appears to govern the same subject as the active primary contract]
+    = activate [LegacyContractReinforcementPolicy]
+
+  = must: use current source-preserved and canonical active contracts as primary authority when they are more articulated than older remnants
+  = must: treat less_articulated_instruction as reinforcement only when agreement_test passes
+  = must: require at least partial_agreement before legacy material can affect the current frame
+  = must: classify legacy material with no partial_agreement as baseless_or_off_topic or outside
+  = must: classify wide shared_context_scope with partial_agreement and unresolved mismatch as blind_spot_candidate
+  = must: route conflicting or stale legacy_contract material through Caution before it influences focus, action, or integration
+  = must: preserve old contracts as lineage and periphery unless they create active contradiction or operational risk
+  = must: prevent legacy_contract material from overriding SourceAuthorityRoot, CurrentFocalPoint, active runtime registry, manager state, or current canonical contract
+  = must: record articulation_gap when an older contract is close but not precise enough to govern
+  = must: preserve reinforcement_receipt when old material strengthens the same boundary, purpose, or evidence direction
+  = must: keep F:\.sop and imported seed records as reference or backup unless explicitly promoted into Pinky .sop authority
+  = should: use blind_spot_candidate material as a prompt for inspection, not as a replacement authority
+  = should: use older contracts as search clues into subject history and nearby periphery
+  = should: let repeated agreement from legacy contracts increase confidence in lineage, not authority
+  - never: treat a less articulated old rule as command authority because it appears earlier, appears often, or sounds familiar
+  - never: use old contracts to bypass newer gates, source preservation, validation, or user direction
+  - never: delete old contracts as cleanup without a separate source-preserved refactor task
+
+& [AuthorityPrecedenceOrder] is the default order for resolving SOP instruction strength
+  + [tier_1_current_user_direction] is explicit current user direction in the active conversation
+  + [tier_2_preserved_source_and_canonical_contract] is source-preserved current specification plus the canonical SOP contract produced from it
+  + [tier_3_active_state] is CurrentFocalPoint, AttentionRuntimeRegistryState, Manager_State, operating-loop tick, and validation state
+  + [tier_4_direct_evidence] is source documents, manifests, commit diffs, tests, captures, and accepted runtime outputs
+  + [tier_5_reinforcing_legacy] is older or less articulated contracts that agree with tiers 1 through 4
+  + [tier_5b_blind_spot_candidate] is older or less articulated contracts with wide shared context and partial agreement but unresolved mismatch
+  + [tier_6_reference_only] is backup roots, imported remnants, stale references, analogies, model preference, and unresolved outside
+
+  = must: resolve conflict by the highest applicable tier with sufficient articulation
+  = must: downgrade a higher-tier item to outside when it lacks required boundary, evidence, or authority gate
+  = must: use reinforcing_legacy only after agreement_test passes
+  = must: use blind_spot_candidate only as inspection prompt until primary authority accepts or rejects the insight
+  = must: preserve lower-tier conflict as caution_debt or outside rather than smoothing it away
+
+& [LegacyAgreementProcedure] is the operating pass for using a legacy contract safely
+  + [step_001_identify] is name the legacy_contract and the active primary contract it resembles
+  + [step_002_classify] is classify legacy_contract as current, legacy, imported_seed, backup_reference, partial, stale, superseded, or outside
+  + [step_003_compare] is compare purpose, boundary, outside, evidence, gates, and action permissions
+  + [step_004_agreement] is mark agreement, partial_agreement, wide_shared_context, no_agreement, conflict, stale, ambiguous, or outside
+  + [step_004b_blind_spot] is mark blind_spot_candidate only when wide_shared_context and partial_agreement are both present
+  + [step_005_route] is reinforce_only, lineage_only, search_clue_only, blind_spot_review, baseless_or_off_topic, caution_debt, defer, reject_as_authority, or promote_after_source_preservation
+  + [step_006_record] is write reinforcement_receipt or articulation_gap when the decision matters for focus or action
+
+  = must: inspect actual text when a legacy contract might change the work path
+  = must: keep partial_agreement from becoming full authority
+  = must: keep blind_spot_review from becoming authority before current primary layers accept it
+  = must: preserve no_agreement material as baseless_or_off_topic unless later user direction reopens it
+  = must: use promote_after_source_preservation only when the user or current task explicitly asks to revive or refactor the old contract
+
+& [ReinforcementReceiptShape] is the minimal record for legacy support
+  + [receipt_id] is stable local handle for the reinforcement decision
+  + [primary_authority] is the active source, contract, focal frame, or manager task being reinforced
+  + [legacy_contract] is the older or less articulated record being considered
+  + [agreement_scope] is the bounded area where legacy_contract agrees
+  + [use_disposition] is reinforce_only, lineage_only, search_clue_only, blind_spot_review, baseless_or_off_topic, caution_debt, defer, or reject_as_authority
+  + [shared_context_scope] is none, narrow, moderate, wide, or outside
+  + [blind_spot_candidate] is yes, no, or outside
+  + [articulation_gap] is what the old contract lacks
+  + [outside] is what the receipt does not permit
+
+  = must: keep use_disposition separate from authority
+  = must: require partial_agreement before blind_spot_candidate can be yes
+  = must: keep articulation_gap visible when agreement is partial
+
+(legacy_contract_reinforcement_policy) :primary_authority_layer: /agreement_test and articulation_gap/ |legacy_override|
+  + [primary_authority_layer] is current, source-preserved, canonical, focal, registry, manager, and proof-bearing authority
+  + [agreement_test] is comparison of purpose, boundary, outside, evidence, gates, action permissions, and shared context
+  + [legacy_contract] is older or less articulated support
+  + [reinforcement_use] is agreement-limited support, lineage, periphery, or search guidance
+  + [blind_spot_candidate] is wide shared context with partial agreement and unresolved mismatch
+  |legacy_override| stale rule, backup-only state, less articulated command, hidden preference, no-agreement material, and authority by age or volume
+
+/ [primary_authority_layer], [legacy_contract] -(AgreementTest)> [reinforcement_use], [articulation_gap], [outside]
+* [legacy_contract], [conflict_test], [Caution] -(Bounds)> [caution_disposition], [legacy_override], [outside]

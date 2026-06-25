@@ -22,6 +22,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   + [wisdom_caution] is C:\Project\Pinky\.sop\platform\WisdomCaution.sop
   + [periphery_layer] is C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
   + [sectioned_periphery_association_fabric] is C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+  + [legacy_contract_reinforcement_policy] is C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop
   + [liminal_draw_layer] is C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
   + [narrative_layer] is C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
   + [subject_inquiry_layer] is C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
@@ -114,6 +115,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   :wisdom_caution: C:\Project\Pinky\.sop\platform\WisdomCaution.sop
   :periphery: C:\Project\Pinky\.sop\platform\attention_layers\Periphery.sop
   :sectioned_periphery_association_fabric: C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+  :legacy_contract_reinforcement_policy: C:\Project\Pinky\.sop\platform\LegacyContractReinforcementPolicy.sop
   :between: C:\Project\Pinky\.sop\platform\attention_layers\LiminalDraw.sop
   :narrative: C:\Project\Pinky\.sop\platform\attention_layers\NarrativeDigestion.sop
   :subject_inquiry: C:\Project\Pinky\.sop\platform\attention_layers\SubjectInquiry.sop
@@ -204,6 +206,7 @@ Description: Local root attention contract for C:\Project\Pinky\.sop.
   = must: use wisdom_caution only as a composition protocol when both independent passes are needed
   = must: keep periphery broad enough to notice relevant draw
   = must: use sectioned_periphery_association_fabric when periphery must separate local file-surface associations from external model/context frame and report primary, secondary, internal stability, and external stability separately
+  = must: use legacy_contract_reinforcement_policy when older, thinner, imported, backup, or less articulated contracts appear to govern the same focus as the active primary authority
   = must: use liminal draw to explain why periphery becomes focus
   = must: digest weightier narrative into subject-layer SOP records
   = must: use subject_inquiry_layer when narrative names a subject and attention needs to find which files to inspect before promotion
