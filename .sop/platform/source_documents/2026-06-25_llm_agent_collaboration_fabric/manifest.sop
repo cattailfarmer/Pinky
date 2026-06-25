@@ -1,0 +1,15 @@
+Subject: LLM Agent Collaboration Fabric Source Manifest
+
+Description: Source preservation manifest for the LLM agent collaboration fabric specification.
+
+& [LLMAgentCollaborationFabricSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_LLM_Agent_Collaboration_Fabric_Source.sop
+  + [source_addendum] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_Hivemind_Decomposition_Addendum_Source.sop
+  + [canonical_output] is C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
+  + [periphery_record] is C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_llm_agent_collaboration_fabric_095.hg.sop
+  + [operating_loop_tick] is C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_043.sop
+  + [intake_status] is processed_to_canonical_sop
+  + [authority_boundary] is source document preserved separately from canonical agent-collaboration contract
+
+  = must: keep source wording and source addendum separate from canonical agent collaboration rules
+  = must: cite this manifest when agent collaboration is treated as a completed slice

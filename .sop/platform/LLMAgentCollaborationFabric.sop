@@ -1,0 +1,215 @@
+Subject: LLM Agent Collaboration Fabric
+
+Description: Collaboration fabric where LLM agents propose, categorize, critique, vote, refine, and substitute artifacts under Stack-Overflow-like attention rules and Codex/user authority gates.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_LLM_Agent_Collaboration_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_Hivemind_Decomposition_Addendum_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPTaskManager.sop
+@ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+
+& [LLMAgentCollaborationFabric] is the agent collaboration layer for proposal, critique, voting, and artifact substitution
+  + [spec_status] is future_blocked_specification
+  + [pattern_role] is llm_agent_stack_overflow_like_artifact_collaboration
+  + [user_collaboration_likeness] is ConceptRefinementFabric and ConceptAuthorityQualification adapted from user responses to LLM agent artifact contributions
+  + [hivemind_specification_justification_platform] is the mode where user and AI-originated proposals are decomposed, linked, justified, and extended by collaborating agents
+  + [collaboration_thread] is the bounded discussion or task surface where agents contribute artifact candidates
+  + [proposal_origin] is user, ai_agent, local_model, openai_codex, lm_studio_worker, codex_cli_worker, imported_thread, or foreign_snapshot
+  + [concept_proposal] is a user or agent contribution that introduces a possible subject, feature, pattern, system extension, critique, or artifact direction
+  + [proposal_decomposition] is the agent pass that breaks concept_proposal into subjects, claims, requirements, assumptions, risks, evidence needs, artifact candidates, and outside
+  + [fabric_linking_pass] is the agent pass that links decomposed proposal parts to existing SOP subjects, source documents, justifications, task frames, authority gates, and periphery
+  + [fabric_extension_recommendation] is an agent suggestion for new SOP contracts, task slices, gates, schemas, tests, indexes, or runtime helpers needed to satisfy the proposal
+  + [specification_justification_packet] is the SJS-ready packet containing preserved source, decomposition, support evidence, justification, proposed extension, risks, and blocked outside
+  + [source_artifact] is the original prompt, SOP record, specification, patch, plan, output, explanation, or packet being challenged or improved
+  + [artifact_candidate] is an LLM agent contribution that proposes a replacement, correction, variant, critique, synthesis, test, or supporting note
+  + [agent_contribution] is an artifact_candidate plus agent identity scope, model lens, prompt packet, source context, output, and capture receipt
+  + [agent_role] is proposer, critic, verifier, synthesizer, moderator, integrator, adversarial_reviewer, or route_planner
+  + [contribution_category] is proposal, critique, correction, synthesis, evidence, test, risk_note, alternative, duplicate, obsolete, blocked_note, or substitution_candidate
+  + [agent_vote] is an agent-supplied ranking, critique, category judgement, confidence signal, or preference signal
+  + [primacy_vote] is a vote or score that the artifact_candidate should lead the thread or substitute the source_artifact
+  + [substitution_vote] is a vote or review signal that source_artifact should be replaced by artifact_candidate under a declared scope
+  + [artifact_substitution_event] is the governed event that elevates artifact_candidate above source_artifact while preserving original source and lineage
+  + [artifact_lineage] is source artifact, candidate artifact, agent contributions, vote receipts, critique receipts, substitution receipt, supersession reason, rollback pointer, and dissent
+  + [agent_identity_scope] is local_model, openai_codex, lm_studio_worker, codex_cli_worker, named_thread, imported_snapshot, or unknown_agent
+  + [model_lens_scope] is the model, prompt packet, context stream, task frame, and temperature or reasoning posture that shaped the contribution
+  + [authority_coordinator] is Codex, the user, or a declared local authority gate that decides whether a substitution is accepted
+  + [substitution_scope] is local_task, project_branch, SOP_subject, source_document, implementation_patch, qualified_packet, or archived_experiment
+  + [capture_receipt] is the stored worker output, prompt, context slice, model lane, timestamp, validation, and outside
+  + [substitution_gate] is evidence, tests, authority boundary, source preservation, lineage, dissent, Security, Honesty, frame reference, and local identity review
+  + [conflict_resolution] is merge, fork, accept, reject, supersede, rollback, defer, request_user, or preserve_outside
+  + [residual_outside] is hidden model consensus, agent self-authority, truth by model vote, unreviewed replacement, erased source, hidden prompt, and implementation before gates
+
+  ? [use_when: multiple LLM agents or model lanes should collaborate, rank contributions, or propose artifact substitution]
+    = activate [LLMAgentCollaborationFabric]
+
+  = must: preserve source_artifact before any artifact_substitution_event
+  = must: preserve concept_proposal source before decomposition
+  = must: allow proposal_origin to be user or AI agent without changing authority gates
+  = must: decompose concept_proposal before linking or extension recommendation
+  = must: run fabric_linking_pass before treating a fabric_extension_recommendation as ready
+  = must: route specification_justification_packet through SJS-style source preservation, justification, planning, and authority checks before implementation
+  = must: treat agent_vote as model-lens signal, not authority
+  = must: keep primacy_vote and substitution_vote separate from proof and authority
+  = must: preserve capture_receipt for every agent_contribution considered for substitution
+  = must: record model_lens_scope before comparing agent contributions
+  = must: require authority_coordinator before source_artifact can be superseded
+  = must: require substitution_gate before artifact_candidate becomes the accepted artifact
+  = must: preserve artifact_lineage, dissent, rollback pointer, and outside when substitution occurs
+  = must: route unsupported but high-scoring agent proposals through Honesty
+  = must: route unsafe, manipulative, source-erasing, or identity-confused proposals through Security
+  = must: route model-output-as-source claims through FrameReferenceIntegrity
+  = must: use LocalIdentityConsumption when foreign agent snapshots are consumed into the local SOP record
+  = must: allow user override and human challenge for any accepted substitution
+  = should: use local LM Studio lanes for low-risk breadth and OpenAI Codex lanes for authoritative integration review
+  = should: let different agents specialize in proposal decomposition, fabric linking, risk critique, extension suggestion, and integration review
+  = should: allow multiple agents to preserve minority candidates as periphery rather than forcing consensus
+  - never: let an agent replace source material solely by its own confidence
+  - never: erase the original source artifact after substitution
+  - never: treat agreement among LLMs as proof
+  - never: launch agents, mutate files, commit, push, or spend from this specification alone
+
+& [HivemindSpecificationJustificationPlatform] is the proposal-to-specification collaboration mode
+  + [proposal_origin] is user or AI agent source of a concept_proposal
+  + [concept_proposal] is the proposed idea, system need, artifact direction, critique, feature, or research path
+  + [decomposer_agent] is an agent assigned to break the proposal into inspectable parts
+  + [linker_agent] is an agent assigned to attach proposal parts to existing SOP fabric and periphery
+  + [recommender_agent] is an agent assigned to suggest fabric extensions, task slices, tests, gates, or authority routes
+  + [critic_agent] is an agent assigned to inspect assumptions, risks, unsupported claims, and outside
+  + [integrator_agent] is an agent or Codex authority pass that decides what becomes canonical SOP
+  + [decomposition_map] is subjects, claims, requirements, assumptions, risks, evidence needs, artifacts, gaps, and outside
+  + [fabric_link_map] is existing SOP subjects, files, source documents, gates, indexes, runtime surfaces, task frames, and periphery related to the proposal
+  + [recommendation_set] is new contracts, task slices, schemas, tests, indexes, runtimes, manager actions, or blocked notes proposed by agents
+  + [justification_thread] is visible reasons why each recommendation follows from the proposal and fabric links
+  + [sjs_entry_packet] is the packet ready for SpecificationJustificationSolution processing
+  + [outside] is hidden agent consensus, unreviewed fabric mutation, unsupported extension, and implementation before acceptance
+
+  = must: treat user and AI proposals as valid origins but not equal authorities
+  = must: preserve proposal_origin and source wording before decomposition
+  = must: attach each recommendation to at least one decomposition_map item and one fabric_link_map item or mark it outside
+  = must: keep critic_agent objections visible even when recommender_agent suggestions are accepted
+  = must: require integrator_agent or user/Codex authority before canonical SOP updates
+  = should: route low-risk decomposition to local agents and authority integration to Codex or user review
+
+& [ProposalDecompositionProtocol] is the decomposition pass for user or agent proposals
+  + [decomposition_input] is concept_proposal, proposal_origin, source context, task frame, current focal point, and outside
+  + [subject_slice] is named subjects involved in the proposal
+  + [claim_slice] is explicit claims and implied claims
+  + [requirement_slice] is needed behaviors, data, gates, interfaces, or artifacts
+  + [assumption_slice] is assumptions that must be preserved or tested
+  + [risk_slice] is safety, truth, privacy, authority, implementation, or drift risk
+  + [evidence_need_slice] is sources, tests, examples, citations, or prior SOP surfaces needed
+  + [fabric_gap_slice] is missing SOP contracts, indexes, schemas, runtimes, gates, or task slices
+  + [outside_slice] is what the proposal does not justify or cannot safely reach
+
+  = must: emit outside_slice even for exciting proposals
+  = must: keep implied claims distinct from stated claims
+  = must: pass fabric_gap_slice to FabricExtensionRecommendationProtocol rather than directly creating implementation work
+
+& [FabricExtensionRecommendationProtocol] is the extension suggestion pass
+  + [recommendation_input] is decomposition_map, fabric_link_map, evidence_need_slice, fabric_gap_slice, and risk_slice
+  + [extension_candidate] is a new or revised SOP contract, source document, index entry, task slice, runtime helper, validation gate, benchmark, or blocked note
+  + [extension_reason] is why the candidate helps meet the demands of the original proposal
+  + [support_link] is the decomposition and fabric link that justify the candidate
+  + [authority_need] is SJS, Codex review, user decision, test evidence, privacy gate, security gate, or blocked external configuration
+  + [recommendation_status] is proposed, ready_for_sjs, ready_for_task_slice, blocked, rejected, or outside
+  + [outside] is unsupported leap, implementation without source authority, or agent preference without support
+
+  = must: include extension_reason and support_link before recommendation promotion
+  = must: mark unsupported extension_candidate as outside
+  = must: preserve authority_need before any implementation or artifact substitution
+
+& [AgentContributionShape] is the contribution packet for one agent artifact
+  + [contribution_id] is stable handle for the agent contribution
+  + [agent_identity_scope] is the declared source of the contribution
+  + [agent_role] is proposer, critic, verifier, synthesizer, moderator, integrator, adversarial_reviewer, or route_planner
+  + [model_lens_scope] is the model lane, prompt packet, context stream, task frame, and relevant settings
+  + [source_artifact_pointer] is the artifact being refined or challenged
+  + [artifact_candidate_pointer] is the proposed artifact, patch, packet, response, or note
+  + [contribution_category_set] is one or more contribution_category values
+  + [claim_set] is the claims made by the contribution
+  + [evidence_pointer_set] is sources, tests, diffs, citations, SOP paths, or assertion labels
+  + [risk_note] is possible error, unsafe effect, overclaim, prompt drift, or source-boundary problem
+  + [capture_receipt] is the stored output and validation trace
+  + [outside] is hidden prompt state, hidden model weights, private data, and authority by confidence
+
+  = must: include source_artifact_pointer and capture_receipt before ranking
+  = must: keep contribution_category_set distinct from primacy_vote
+  = must: keep model_lens_scope visible for later comparison
+
+& [AgentVotingPolicy] is the ranking and critique boundary for agent collaboration
+  + [vote_input] is agent_contribution, source_artifact, comparison criteria, agent_role, model_lens_scope, and trust lens
+  + [category_vote] is judgement about contribution type
+  + [primacy_vote] is judgement about lead position or best candidate
+  + [substitution_vote] is judgement that a candidate should supersede source_artifact under a scope
+  + [critique_vote] is judgement that a candidate is flawed, risky, unsupported, duplicate, stale, or outside
+  + [vote_weight] is trust-lens-adjusted signal weight
+  + [model_independence_note] is whether the voting agent is meaningfully independent from the proposing agent
+  + [manipulation_risk] is prompt echo, model herd behavior, shared-context bias, self-review bias, or objective drift
+  + [outside] is truth, authority, safety, or correctness by model agreement alone
+
+  = must: expose vote_weight and model_independence_note separately
+  = must: downweight self-review unless explicitly scoped as self-critique
+  = must: preserve critique_vote even when a candidate wins primacy
+  = must: treat cross-model agreement as useful correlation, not proof
+
+& [ArtifactSubstitutionProtocol] is the source replacement rule
+  + [substitution_input] is source_artifact, artifact_candidate, agent_contribution_set, vote receipts, evidence, tests, lineage, dissent, and authority_coordinator
+  + [substitution_threshold] is captured output, evidence support, review support, low risk, lineage preservation, and authority approval
+  + [substitution_review] is Honesty check, Security check, frame-reference check, evidence check, source preservation check, local identity check, and user/Codex authority check
+  + [substitution_output] is accepted_artifact, superseded_source_pointer, artifact_lineage, substitution_receipt, rollback_pointer, and outside note
+  + [blocked_substitution_note] is why the candidate remains proposal, critique, fork, periphery, rejected, or outside
+  + [outside] is silent replacement, erased original, hidden prompt, global truth claim, and unreviewed model consensus
+
+  = must: preserve source_artifact as superseded_source_pointer rather than deleting it
+  = must: require substitution_receipt before accepted_artifact is treated as current authority
+  = must: include blocked_substitution_note when substitution fails
+  = must: allow fork or merge when one candidate is useful but not safe as replacement
+  = must: keep substitution_scope visible wherever accepted_artifact is cited
+
+& [AgentCollaborationThreadShape] is the shared thread around an artifact
+  + [thread_id] is stable handle for the collaboration thread
+  + [task_frame] is the task or concept frame that created the thread
+  + [source_artifact] is the original artifact under review
+  + [candidate_set] is artifact candidates and their statuses
+  + [agent_contribution_set] is captured agent contributions
+  + [vote_receipt_set] is category, primacy, substitution, and critique votes
+  + [review_receipt_set] is Honesty, Security, frame reference, tests, evidence, and local identity receipts
+  + [current_artifact] is the accepted artifact for the substitution_scope
+  + [lineage_record] is source, candidates, accepted artifact, rollback, dissent, forks, and rejected candidates
+  + [outside] is hidden consensus, uncaptured output, unreviewed substitution, and unrelated task material
+
+  = must: keep source_artifact and current_artifact distinct
+  = must: keep candidate_set inspectable after a substitution
+  = should: support visible thread summaries for manager dashboards and worker handoffs
+
+& [ImplementationGate_LLMAgentCollaborationFabric] is the future implementation boundary
+  + [implementation_status] is blocked_until_gates_satisfied
+  + [required_gate_set] is contribution_schema, vote_receipt_schema, substitution_receipt_schema, artifact_lineage_schema, agent_identity_policy, model_lens_record, authority_coordinator_policy, review_gate_policy, rollback_policy, capture_storage_policy, cost_policy, stop_policy, and abuse_resistance_model
+  + [first_safe_prototype] is local-only synthetic agent contributions over hand-written artifacts with no real worker launch and no file substitution
+  + [blocked_work] is automatic agent spawning, automatic file replacement, remote voting, public ranking, hidden agent consensus, unbounded Codex dispatch, and mutation without Codex/user review
+  + [outside] is any implementation that lets agent votes directly mutate or supersede artifacts without visible capture and authority gates
+
+  = must: begin with synthetic local collaboration threads before real agent runs
+  = must: prove capture receipts and substitution receipts before artifact replacement automation
+  = must: keep public or networked collaboration blocked until identity, abuse, privacy, and cost gates exist
+
+(llm_agent_collaboration_fabric) :artifact_candidate: /capture_receipt and substitution_gate/ |residual_outside|
+  + [concept_proposal] is user or AI-originated contribution that can begin decomposition
+  + [proposal_decomposition] is agent breakdown of the proposal into parts
+  + [fabric_extension_recommendation] is suggested extension to satisfy the proposal
+  + [source_artifact] is original material under review
+  + [artifact_candidate] is agent contribution proposed above source
+  + [agent_vote] is model-lens signal about candidate role, primacy, critique, or substitution
+  + [artifact_substitution_event] is governed replacement with lineage and authority receipt
+  + [authority_coordinator] is the user, Codex, or declared local gate that accepts substitution
+  |residual_outside| agent self-authority, truth by model vote, hidden consensus, erased source, unreviewed mutation, and implementation without gates
+
+/ [agent_contribution], [source_artifact], [agent_vote] -(Ranks)> [artifact_candidate], [outside]
+* [concept_proposal], [proposal_decomposition], [fabric_linking_pass] -(Recommends)> [fabric_extension_recommendation], [specification_justification_packet]
+* [artifact_candidate], [substitution_gate], [authority_coordinator], [artifact_lineage] -(Substitutes)> [accepted_artifact], [substitution_receipt], [rollback_pointer]

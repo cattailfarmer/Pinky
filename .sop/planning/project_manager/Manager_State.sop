@@ -8,7 +8,7 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
   + [repo_initialized] is true
   + [remote_configured] is via C:\Project\Pinky origin
   + [ready_task_count] is 1
-  + [completed_task_count] is 162
+  + [completed_task_count] is 163
   + [blocked_task_count] is 4
 
 & [CompletedTaskSet] is completed work
@@ -314,6 +314,8 @@ Description: Manager state for the Pinky .sop authority root seeded from F:\.sop
     = evidence: C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop, C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop, C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_refinement_fabric\Dictated_Concept_Refinement_Fabric_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_refinement_fabric_093.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_041.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
   + [Task_165_define_concept_authority_qualification] is define response categorization, primacy voting, authority voting, moderation signals, evidence floors, moderation quorum, lineage, dissent, and qualified source packets so community-refined material can become scoped citeable authority without becoming truth by vote
     = evidence: C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop, C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_authority_qualification\Dictated_Concept_Authority_Qualification_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_authority_qualification_094.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_042.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
+  + [Task_166_define_llm_agent_collaboration_fabric] is define the LLM agent collaboration layer where user or AI-originated proposals are decomposed, linked into the SOP fabric, recommended as extension candidates, and where agents categorize, critique, vote, and substitute artifacts under capture receipts, source lineage, model-lens records, substitution gates, and Codex or user authority review
+    = evidence: C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop, C:\Project\Pinky\.sop\platform\SOPTaskManager.sop, C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop, C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_LLM_Agent_Collaboration_Fabric_Source.sop, C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_Hivemind_Decomposition_Addendum_Source.sop, C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_llm_agent_collaboration_fabric_095.hg.sop, C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_043.sop, and C:\Project\Pinky\.sop\platform\indexes\NarrativeSubjectFileTable.sop
 
 & [ReadyTaskSet] is work ready without external configuration
   + [Task_161_build_direct_lmstudio_endpoint_manager_runner] is build the local direct-endpoint manager runner that reads lightweight SOP context streams, calls LM Studio without OpenAI Codex allowance, captures proposal output, validates schema, and only marks Codex handoff candidates when handoff threshold is crossed

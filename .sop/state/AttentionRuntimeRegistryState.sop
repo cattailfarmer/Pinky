@@ -153,14 +153,19 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_authority_qualification\Dictated_Concept_Authority_Qualification_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_authority_qualification_094.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_042.sop
+@ [source] C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_LLM_Agent_Collaboration_Fabric_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_llm_agent_collaboration_fabric\Dictated_Hivemind_Decomposition_Addendum_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_llm_agent_collaboration_fabric_095.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_043.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Concept Authority Qualification
-  + [active_root_frame] is attention_frame_2026_06_25_concept_authority_qualification
+  + [registry_scope] is LLM Agent Collaboration Fabric
+  + [active_root_frame] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 36
+  + [closed_frame_count] is 37
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -537,9 +542,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep root replacement scoped, reversible, and lineage-preserved
   = should: begin future prototypes with local synthetic concept nodes only
 
-& [AttentionFrame_2026_06_25_ConceptAuthorityQualification] is the active semantic stack frame for community-qualified source material
+& [AttentionFrame_2026_06_25_ConceptAuthorityQualification] is the semantic stack frame for community-qualified source material
   + [frame_id] is attention_frame_2026_06_25_concept_authority_qualification
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_concept_refinement_fabric
   + [child_frame_set] is ConceptAuthorityQualification, ConceptRefinementFabric, SocialPeripheryInterestFabric, SOPSwarmFabric, ResponseCategorizationProtocol, PrimacyVotingProtocol, AuthorityQualificationProtocol, QualifiedSourcePacketShape, source_preservation, operating_loop_tick_042, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -560,11 +565,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: require evidence and moderation gates before community_qualified status
   = should: begin future prototypes with synthetic local response packets only
 
+& [AttentionFrame_2026_06_25_LLMAgentCollaborationFabric] is the active semantic stack frame for LLM agent artifact collaboration
+  + [frame_id] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_concept_authority_qualification
+  + [child_frame_set] is LLMAgentCollaborationFabric, HivemindSpecificationJustificationPlatform, ProposalDecompositionProtocol, FabricExtensionRecommendationProtocol, SOPTaskManager, CodexLMStudioOrchestrationWorkspace, LocalAIManagerPrimary, ConceptRefinementFabric, ConceptAuthorityQualification, AgentContributionShape, AgentVotingPolicy, ArtifactSubstitutionProtocol, source_preservation, operating_loop_tick_043, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is LLMAgentCollaborationFabric.sop, SOPTaskManager.sop, ConceptRefinementFabric.sop, ConceptAuthorityQualification.sop, Dictated_LLM_Agent_Collaboration_Fabric_Source.sop, Dictated_Hivemind_Decomposition_Addendum_Source.sop, 2026-06-25_llm_agent_collaboration_fabric_095.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_043.sop
+  + [focus_register] is proposal_origin, concept_proposal, proposal_decomposition, fabric_linking_pass, fabric_extension_recommendation, specification_justification_packet, source_artifact, artifact_candidate, agent_contribution, agent_vote, primacy_vote, substitution_vote, artifact_substitution_event, artifact_lineage, authority_coordinator, substitution_gate, and capture_receipt
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or specify a local synthetic hivemind proposal decomposition prototype
+  + [delineation_register] is inside user or agent proposals, decomposition maps, fabric link maps, extension recommendations, captured agent outputs, model-lens records, contribution categories, critique votes, artifact candidates, source lineage, substitution receipts, Codex/user authority gates, rollback pointers, and outside
+  + [periphery_register] is agent self-authority, hidden consensus, truth by model vote, unreviewed file replacement, erased source lineage, automatic agent spawning, public ranking, remote voting, credentials, and unrelated dirty files
+  + [operation_register] is preserve_source, define_agent_collaboration_fabric, extend_task_manager, extend_concept_refinement, extend_authority_qualification, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, LLMAgentCollaborationFabric.sop, SOPTaskManager update, ConceptRefinementFabric update, ConceptAuthorityQualification update, source manifest, periphery record 095, and operating_loop_tick_043
+  + [wisdom_register] is agent collaboration becomes powerful when multiple model lenses decompose proposals, recommend fabric extensions, and create competing artifacts while authority remains in captured evidence, source preservation, SJS, and explicit substitution review
+  + [caution_register] is LLM agreement, confidence, model votes, and fabric extension recommendations must remain correlation signals until Codex or user authority accepts them under visible gates
+  + [balance_register] is stable because proposal origin, decomposition, fabric link, recommendation, source artifact, candidate artifact, agent vote, substitution event, lineage, authority coordinator, and outside remain distinct
+  + [integration_register] is Task_166 completed as SOP-only future specification while agent spawning and artifact substitution automation remain blocked
+  + [frame_outside] is hidden model state, live worker spawning, direct mutation, unreviewed artifact replacement, hidden consensus, public ranking, remote voting, credentials, destructive action, and unrelated workspace changes
+
+  = must: keep agent contributions captured before comparison
+  = must: require substitution receipts before accepting artifact replacement
+  = should: begin future prototypes with synthetic local collaboration threads only
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_concept_authority_qualification
+  + [active_root_frame] is attention_frame_2026_06_25_llm_agent_collaboration_fabric
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_ConceptAuthorityQualification], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [concept_authority_qualification], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_LLMAgentCollaborationFabric], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [llm_agent_collaboration_fabric], [operating_loop_tick], [balance_register], [integration_register], [outside]

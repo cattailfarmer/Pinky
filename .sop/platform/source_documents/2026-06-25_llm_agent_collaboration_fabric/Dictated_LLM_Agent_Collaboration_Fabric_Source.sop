@@ -1,0 +1,15 @@
+Subject: Dictated LLM Agent Collaboration Fabric Source
+
+Description: Preserved source note for an LLM agent collaboration layer based on the user collaboration system, Stack Overflow style contribution voting, and artifact substitution.
+
+& [DictatedLLMAgentCollaborationFabricSource] is the preserved user direction
+  + [source_status] is preserved_raw_direction
+  + [captured_request] is make a layer of LLM agent collaboration using a version of the user collaboration system stylized after Stack Overflow collaboration and voting contributions above original source
+  + [artifact_substitution_request] is include artifact substitution where a contribution can be elevated above the original source artifact under governed conditions
+  + [collaboration_shape] is multiple LLM agents proposing, categorizing, critiquing, voting, refining, and substituting artifacts
+  + [preservation_boundary] is source direction only, not canonical specification authority until separately processed
+  + [outside] is agent self-authority, hidden consensus, unreviewed artifact replacement, truth by model vote, erased source lineage, and implementation before gates
+
+  = must: preserve the user-collaboration likeness
+  = must: preserve artifact substitution as a governed event, not automatic replacement
+  = must: keep agent votes and model critiques separate from authority

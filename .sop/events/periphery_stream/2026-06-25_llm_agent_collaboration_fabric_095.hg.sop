@@ -1,0 +1,32 @@
+Subject: LLM Agent Collaboration Fabric 095
+
+Description: SOP-HG realization event for Stack-Overflow-like LLM agent collaboration, voting, and artifact substitution.
+
+& [LLMAgentCollaborationFabric_095] is the realized periphery event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is LLM Agent Collaboration Fabric
+  + [source_question] is whether a version of the user collaboration system can become an LLM agent collaboration layer with Stack Overflow style voting and artifact substitution
+  + [primary_realization] is user concept refinement generalizes into agent artifact collaboration and hivemind specification justification when user or AI-originated proposals are decomposed, linked, recommended, and substituted only through capture receipts, lineage, and authority gates
+  + [proposal_origin] is user or AI agent
+  + [concept_proposal] is the originating contribution or suggestion
+  + [proposal_decomposition] is agent breakdown into subjects, claims, requirements, assumptions, risks, evidence needs, fabric gaps, and outside
+  + [fabric_extension_recommendation] is agent suggestion for how SOP should extend to meet the demands of the proposal
+  + [source_artifact] is the original prompt, SOP file, patch, output, or packet being improved
+  + [artifact_candidate] is the agent contribution that can be voted above the source artifact
+  + [artifact_substitution_event] is the governed replacement of source_artifact by artifact_candidate under a declared scope
+  + [wisdom_register] is LLM collaboration becomes useful when agent diversity creates alternatives but authority remains grounded in visible proof, source preservation, and integration review
+  + [caution_register] is model agreement, confidence, and cross-agent votes are correlation signals, not proof or mutation authority
+  + [balance_register] is stable because agent contribution, vote, critique, substitution, lineage, authority, and outside remain distinct
+  + [utility_horizon] is agent artifact review boards, hivemind SJS decomposition, Codex worker proposal tournaments, model-lens comparison, synthetic collaboration threads, patch candidate ranking, and SOP source refinement
+  + [next_step] is keep Task_161 ready or later prototype a synthetic agent collaboration thread with no worker launch
+  + [outside] is automatic agent spawning, unreviewed file replacement, hidden consensus, public ranking, remote voting, truth by model vote, and erased source lineage
+
+  = must: keep agent votes as signals
+  = must: require substitution receipts before accepting artifact replacement
+  = should: use this pattern to prepare future local manager worker-candidate comparison without immediate implementation
+
+N:llm_agent_collaboration_fabric_095 -> C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
+E:extends -> SOPTaskManager, ConceptRefinementFabric, ConceptAuthorityQualification, LocalAIManagerPrimary
+E:anchors -> concept_proposal, proposal_decomposition, fabric_extension_recommendation, source_artifact, artifact_candidate, agent_contribution, agent_vote, artifact_substitution_event, artifact_lineage
+E:guards -> SecurityHonestyGovernance, FrameReferenceIntegrity, LocalIdentityConsumption, authority_coordinator, substitution_gate

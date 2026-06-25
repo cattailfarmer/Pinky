@@ -11,6 +11,7 @@ Description: Social fabric specialization for community refinement of concept ro
 @ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
 @ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
 @ [source] C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop
+@ [source] C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
 
 & [ConceptRefinementFabric] is a scoped community platform for improving concept roots
   + [spec_status] is future_blocked_specification
@@ -30,6 +31,7 @@ Description: Social fabric specialization for community refinement of concept ro
   + [response_category] is a category label for response units such as definition, explanation, example, evidence, objection, correction, synthesis, caveat, duplicate, obsolete, or risky
   + [primacy_vote] is up or down attention signal about which response should lead the concept within a scope
   + [authority_qualification] is the ConceptAuthorityQualification pass used when refined material is being considered as scoped authoritative source material
+  + [llm_agent_collaboration_fabric] is the agent-side adaptation where LLM contributions become artifact candidates that can challenge or substitute source artifacts
   + [attention_raise_rule] is votes and trust lenses raise attention to candidate explanations without proving them true
   + [replacement_boundary] is evidence, clarity, support, trust lens, moderation, lineage preservation, and rollback policy
   + [implementation_boundary] is no public platform, remote voting, reputation, or root replacement automation until abuse, consent, identity, and moderation gates exist
@@ -44,6 +46,7 @@ Description: Social fabric specialization for community refinement of concept ro
   = must: keep prior roots, dissent, objections, and minority explanations inspectable
   = must: preserve explanation_candidate evidence, examples, counterexamples, and uncertainty before promotion
   = must: use ConceptAuthorityQualification when response categories, primacy voting, authority levels, or qualified source packets are in scope
+  = must: use LLMAgentCollaborationFabric when contributors are LLM agents, model lanes, Codex workers, or LM Studio workers proposing artifacts
   = must: route root replacement through Honesty, Security, frame reference, and local identity gates
   = must: support rollback, fork, merge, obsolete, and archived root states
   = must: distinguish concept clarity, usefulness, popularity, evidence quality, and truth status

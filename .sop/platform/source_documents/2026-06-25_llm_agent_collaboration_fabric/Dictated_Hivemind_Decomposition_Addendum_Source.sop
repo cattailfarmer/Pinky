@@ -1,0 +1,17 @@
+Subject: Dictated Hivemind Decomposition Addendum Source
+
+Description: Preserved addendum clarifying that user or AI-originated contributions can be decomposed, linked, and extended by AI agents into a hivemind specification and justification platform.
+
+& [DictatedHivemindDecompositionAddendumSource] is the preserved user correction
+  + [source_status] is preserved_raw_addendum
+  + [captured_request] is agents can propose concepts and other agents can decompose those concepts, make recommendations from the fabric of the system, and suggest how to extend the fabric to meet the demands of the original proposal
+  + [clarification] is the contribution or suggestion can originate from a user or AI agent, then be decomposed and linked by AI agents
+  + [platform_shape] is hivemind specification and justification platform with contributions from different LLM agents and users
+  + [decomposition_shape] is proposal into subjects, claims, requirements, assumptions, risks, artifacts, gaps, and fabric extension needs
+  + [linking_shape] is agents attach decomposed pieces to existing SOP subjects, source documents, justifications, task frames, authority gates, and outside
+  + [extension_shape] is agents recommend new SOP fabric extensions needed to satisfy or test the original proposal
+  + [outside] is agent self-authority, unsupported decomposition, hidden consensus, unreviewed fabric mutation, and automatic implementation
+
+  = must: allow proposal origin from user or AI agent
+  = must: decompose and link before recommending fabric extensions
+  = must: keep extension recommendations proposal-only until SJS and authority gates accept them

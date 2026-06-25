@@ -107,6 +107,7 @@ Description: Attention scan pattern for comparing the periphery of a new develop
   + [trust_lens_browser_layer] is future frame-aware recommendation surface for public sources after privacy and consent gates
   + [concept_refinement_platform] is Stack Overflow style concept-node refinement where explanation candidates can become scoped roots with lineage and trust-lens receipts
   + [community_authority_qualification] is response categorization, primacy voting, moderation, and evidence-gated qualified source packets for scoped concept authority
+  + [llm_agent_artifact_collaboration] is Stack Overflow style agent contribution ranking and artifact substitution for worker outputs, patches, SOP records, and proposal packets
   + [manager_loop_task_selector] is local LM Studio proposal selection based on periphery heat and ready-task boundaries
   + [community_interest_fabric] is future federated interest-space exchange only after packet, identity, privacy, abuse, and deletion gates
 

@@ -17,6 +17,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
 @ [source] C:\Project\Pinky\.sop\platform\SOPLanguagePrimerForLocalAgents.sop
 @ [source] C:\Project\Pinky\.sop\platform\CodexLMStudioOrchestrationWorkspace.sop
 @ [source] C:\Project\Pinky\.sop\platform\LocalAIManagerPrimary.sop
+@ [source] C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
 @ [source] C:\Project\Pinky\.sop\planning\project_manager\Manager_State.sop
 
 & [SOPTaskManager] is the slim coordinating agent for narrative-driven worker orchestration
@@ -53,6 +54,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   + [manual_lane] is human or deferred review when credentials, policy, destructive actions, or unclear authority block automation
   + [spool_handoff] is the optional handoff to SpoolMasterHub for visible worker records and hub tree rendering
   + [result_capture] is the record of worker output, changed files, proof, narrative delta, unresolved outside, and return status
+  + [llm_agent_collaboration_fabric] is the future collaboration layer where multiple LLM workers propose, critique, vote, and substitute artifacts under capture and authority gates
   + [task_narrative] is the cumulative story of task assignment, worker action, returned evidence, integration, and remaining outside
   + [loop_tick] is the SemanticCognitionOperatingLoop record emitted after completed, blocked, committed, pushed, or validated work
   + [manager_outside] is automatic launch, hidden model state, credentials, uninspected remote state, worker claims without capture, and unrelated Pinky worktree changes
@@ -86,6 +88,7 @@ Description: Task manager contract for turning SOP narrative and work slices int
   = must: make launch_command inspectable before execution
   = must: treat queue_ready as ready_for_inspection, not launched, completed, or integrated
   = must: capture worker output before treating a task_unit as completed
+  = must: use LLMAgentCollaborationFabric when multiple worker outputs need ranked comparison, critique voting, or artifact substitution
   = must: integrate result_capture into task_narrative only after evidence_gate and action_gate are satisfied
   = must: emit loop_tick after worker result, validation, commit, push, or blocked status when another safe next step exists
   = must: preserve unresolved material in manager_outside or tracker records

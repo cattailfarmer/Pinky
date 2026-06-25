@@ -11,6 +11,7 @@ Description: Contract for categorizing responses, voting on primacy, and qualify
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
 @ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+@ [source] C:\Project\Pinky\.sop\platform\LLMAgentCollaborationFabric.sop
 
 & [ConceptAuthorityQualification] is the authority gate over refined concept material
   + [spec_status] is future_blocked_specification
@@ -31,6 +32,7 @@ Description: Contract for categorizing responses, voting on primacy, and qualify
   + [dissent_record] is preserved objection, minority explanation, unresolved uncertainty, or conflicting lens note attached to the packet
   + [lineage_record] is root lineage, response lineage, merge history, split history, author scopes, vote receipts, and moderation receipts
   + [review_cadence] is the expiry, reaffirmation, challenge, or refresh schedule for qualified material
+  + [agent_qualified_material] is material produced or challenged by LLM agents that may qualify only after capture, lineage, and external authority review
   + [authority_boundary] is community-qualified source material within a declared scope, not universal truth or official external authority
   + [residual_outside] is truth by vote, hidden ranking, unscoped canon, erased dissent, source laundering, manipulation, private capture, and implementation without gates
 
@@ -47,6 +49,7 @@ Description: Contract for categorizing responses, voting on primacy, and qualify
   = must: route suspicious vote patterns, unsafe claims, and identity confusion through Security before qualification
   = must: route source-material claims through frame reference checks when sources, screenshots, simulations, or model outputs are used
   = must: allow qualified material to be disputed, deprecated, withdrawn, forked, or superseded
+  = must: use LLMAgentCollaborationFabric when source-material candidates are generated, ranked, or substituted by LLM agents
   = should: let multiple scopes maintain different qualified packets when lenses legitimately disagree
   = should: decay or review stale qualified packets rather than leaving authority permanent
   - never: let upvotes alone qualify authority
