@@ -10,6 +10,7 @@ Description: Future specification for mapping interest-node relationships across
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
 @ [source] C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop
 
 & [SocialPeripheryInterestFabric] is the future network map over consented interest and periphery signals
   + [spec_status] is future_blocked_specification
@@ -27,6 +28,7 @@ Description: Future specification for mapping interest-node relationships across
   + [recommendation_candidate] is a surfaced interest_node or association route raised by overlap, trust-lens weighting, and explanation gates
   + [recommendation_explanation] is why the node surfaced, which periphery overlaps contributed, which trust lenses affected it, and what uncertainty remains
   + [concept_refinement_fabric] is the specialization where interest nodes become concept nodes whose contributed explanations can replace scoped roots through visible votes, trust lenses, and lineage preservation
+  + [concept_authority_qualification] is the specialization where categorized responses and primacy votes help produce scoped qualified source material after evidence and moderation gates
   + [crawler_boundary] is scan only user-consented packets, public sources selected by policy, or local records selected by the user
   + [implementation_boundary] is no internet crawler, social graph scanner, browser extension, packet exchange, or recommendation automation until required gates exist
   + [residual_outside] is raw browsing history, private messages, credentials, hidden identity, unconsented social graph, surveillance, global truth, and central ranking monopoly
@@ -42,6 +44,7 @@ Description: Future specification for mapping interest-node relationships across
   = must: label synchronized_perspective as correlation and social resonance, not truth, safety, or endorsement
   = must: route recommendation_candidate through trust_lens, Security, Honesty, LocalIdentityConsumption, and explanation gates
   = must: use ConceptRefinementFabric when the social fabric anchors community attention around concepts, explanation candidates, root replacement, voting, or concept lineage
+  = must: use ConceptAuthorityQualification when a refined concept is being considered as citeable or authoritative source material
   = must: make every recommendation explainable by visible overlaps, sources, trust lenses, and residual outside
   = must: treat crawler_boundary as kernel-level before any automation
   = must: preserve dissenting or cautionary periphery as part of the recommendation context

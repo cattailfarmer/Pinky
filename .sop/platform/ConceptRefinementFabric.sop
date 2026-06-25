@@ -10,6 +10,7 @@ Description: Social fabric specialization for community refinement of concept ro
 @ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
 @ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
 @ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop
 
 & [ConceptRefinementFabric] is a scoped community platform for improving concept roots
   + [spec_status] is future_blocked_specification
@@ -26,6 +27,9 @@ Description: Social fabric specialization for community refinement of concept ro
   + [conversation_root_scope] is local_user, project_group, topic_community, expert_lens, skeptic_lens, public_digest, or archived_version
   + [concept_refinement_packet] is a shareable digest of concept_node, root_explanation, candidates, vote receipt, trust lens, evidence, lineage, and outside
   + [semantic_anchor] is the stable subject key, tags, source pointers, and relation terms that let the concept_node be found again
+  + [response_category] is a category label for response units such as definition, explanation, example, evidence, objection, correction, synthesis, caveat, duplicate, obsolete, or risky
+  + [primacy_vote] is up or down attention signal about which response should lead the concept within a scope
+  + [authority_qualification] is the ConceptAuthorityQualification pass used when refined material is being considered as scoped authoritative source material
   + [attention_raise_rule] is votes and trust lenses raise attention to candidate explanations without proving them true
   + [replacement_boundary] is evidence, clarity, support, trust lens, moderation, lineage preservation, and rollback policy
   + [implementation_boundary] is no public platform, remote voting, reputation, or root replacement automation until abuse, consent, identity, and moderation gates exist
@@ -39,6 +43,7 @@ Description: Social fabric specialization for community refinement of concept ro
   = must: make root_replacement_event scoped by conversation_root_scope and trust_lens
   = must: keep prior roots, dissent, objections, and minority explanations inspectable
   = must: preserve explanation_candidate evidence, examples, counterexamples, and uncertainty before promotion
+  = must: use ConceptAuthorityQualification when response categories, primacy voting, authority levels, or qualified source packets are in scope
   = must: route root replacement through Honesty, Security, frame reference, and local identity gates
   = must: support rollback, fork, merge, obsolete, and archived root states
   = must: distinguish concept clarity, usefulness, popularity, evidence quality, and truth status
@@ -68,6 +73,7 @@ Description: Social fabric specialization for community refinement of concept ro
   + [candidate_id] is stable handle for the explanation candidate
   + [candidate_author_scope] is local user, pseudonymous user, group, expert, imported source, or unknown
   + [candidate_text] is the proposed explanation or reframing
+  + [response_category_set] is the category labels assigned to this candidate
   + [claim_set] is major claims made by candidate_text
   + [evidence_pointer_set] is source citations, examples, tests, SOP paths, or user assertion labels
   + [clarity_signal] is how well the candidate explains the concept to the intended audience
@@ -78,6 +84,7 @@ Description: Social fabric specialization for community refinement of concept ro
   + [outside] is anonymous proof, private data, hidden motive, and unquestionable authority
 
   = must: keep clarity_signal, usefulness_signal, evidence quality, and truth status distinct
+  = must: keep response_category_set separate from primacy and authority votes
   = must: preserve rejected and obsolete candidates when they explain why the current root changed
 
 & [RootReplacementProtocol] is the promotion and replacement rule
@@ -95,6 +102,8 @@ Description: Social fabric specialization for community refinement of concept ro
 
 & [AttentionRatingPolicy] is the voting and reputation boundary
   + [attention_signal] is an explicit user or lens contribution that raises, lowers, labels, or routes an explanation candidate
+  + [primacy_vote] is a specific vote about whether a response should become primary material for the concept root
+  + [authority_vote] is a specific vote about whether a response supports qualified source material under a declared scope
   + [vote_weight] is trust-lens-adjusted attention signal
   + [reputation_signal] is historical contributor reliability within a domain and lens
   + [manipulation_risk] is brigading, sockpuppet, Sybil pattern, coordinated upvote, popularity capture, or rhetorical overpull
@@ -102,6 +111,7 @@ Description: Social fabric specialization for community refinement of concept ro
   + [outside] is truth, safety, or correctness by vote count alone
 
   = must: expose vote_weight and trust_lens separately
+  = must: expose primacy_vote and authority_vote separately
   = must: route manipulation_risk through Security before promotion
   = must: route unsupported but popular claims through Honesty before promotion
   = should: decay stale attention unless reaffirmed by current evidence or use

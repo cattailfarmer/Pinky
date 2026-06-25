@@ -1,0 +1,28 @@
+Subject: Concept Authority Qualification 094
+
+Description: SOP-HG realization event for categorized responses, primacy voting, and community-qualified source material.
+
+& [ConceptAuthorityQualification_094] is the realized periphery event
+  + [event_status] is realized
+  + [event_time] is 2026-06-25
+  + [focus_subject] is Concept Authority Qualification
+  + [source_question] is whether users can categorize responses, vote up or down for primacy, and refine subject material until it qualifies as authoritative source material through community participation and moderation
+  + [primary_realization] is the platform needs a distinct authority qualification layer above concept refinement so votes raise attention, categories route response roles, and qualified source packets require evidence, moderation, scope, lineage, and dissent
+  + [response_category] is the role a contribution plays in the concept surface
+  + [primacy_vote] is a scoped vote for lead position rather than truth
+  + [qualified_source_packet] is the citeable community-qualified output under declared scope and level
+  + [wisdom_register] is community refinement becomes source-quality when it preserves the process that made the material reliable, not merely the winning answer
+  + [caution_register] is authoritative must mean scoped, reviewed, citeable, and reversible rather than popular, final, or universal
+  + [balance_register] is stable because category, primacy, authority level, evidence, moderation, lineage, dissent, and outside remain separate
+  + [utility_horizon] is local SOP glossary authority, project doctrine packets, community-reviewed explanations, expert-lens source material, and future federated concept libraries
+  + [next_step] is keep Task_161 ready or later prototype local synthetic response categorization and authority packet examples
+  + [outside] is public voting, reputation automation, network authority ranking, private capture, official authority claim, truth by vote, and erased dissent
+
+  = must: keep qualified authority scoped and citeable by packet
+  = must: preserve blocked_authority_note when qualification fails
+  = should: use this layer before any concept refinement output is described as authoritative
+
+N:concept_authority_qualification_094 -> C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop
+E:extends -> ConceptRefinementFabric, SocialPeripheryInterestFabric, SOPSwarmFabric
+E:anchors -> response_unit, response_category, primacy_vote, authority_vote, qualified_source_packet
+E:guards -> SecurityHonestyGovernance, FrameReferenceIntegrity, LocalIdentityConsumption, evidence_floor, moderation_quorum, lineage_record

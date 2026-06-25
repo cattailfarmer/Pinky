@@ -1,0 +1,132 @@
+Subject: Concept Authority Qualification
+
+Description: Contract for categorizing responses, voting on primacy, and qualifying refined concept material as scoped authoritative source material through community participation, moderation, evidence, and lineage.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_authority_qualification\Dictated_Concept_Authority_Qualification_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SOPSwarmFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\SemanticCorrelationGraph.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+@ [source] C:\Project\Pinky\.sop\platform\SecurityHonestyGovernance.sop
+@ [source] C:\Project\Pinky\.sop\platform\FrameReferenceIntegrity.sop
+@ [source] C:\Project\Pinky\.sop\platform\LocalIdentityConsumption.sop
+
+& [ConceptAuthorityQualification] is the authority gate over refined concept material
+  + [spec_status] is future_blocked_specification
+  + [pattern_role] is community_refined_authority_qualification
+  + [concept_node] is the subject, question, definition, pattern, or SOP concept being refined
+  + [response_unit] is any answer, explanation, definition, example, counterexample, objection, correction, synthesis, evidence note, caveat, or moderation note attached to a concept_node
+  + [response_category] is definition, explanation, example, evidence, counterexample, objection, correction, synthesis, caveat, duplicate, obsolete, risky, moderation_note, or source_note
+  + [primacy_vote] is up, down, neutral, primary, secondary, supporting, obsolete, disputed, or needs_review signal about whether a response should lead the concept
+  + [category_vote] is user or lens judgement that the response belongs to a response_category
+  + [authority_vote] is user or lens judgement that the response contributes to qualified source material
+  + [moderation_signal] is correction, merge, split, close, reopen, duplicate, conflict, unsafe, unsupported, stale, or abuse marker
+  + [qualification_candidate] is a refined concept packet being considered for scoped source authority
+  + [qualified_source_packet] is a versioned, scoped, evidence-bearing, moderated concept packet that can be cited as community-qualified material
+  + [authority_scope] is local_user, project, team, domain, expert_lens, skeptic_lens, topic_community, public_digest, or archived_version
+  + [authority_level] is draft, useful, reviewed, community_qualified, expert_reviewed, deprecated, disputed, or withdrawn
+  + [evidence_floor] is the minimum source, example, test, citation, lineage, and dissent record required for an authority_level
+  + [moderation_quorum] is the scoped participation and review threshold needed before authority_level can rise
+  + [dissent_record] is preserved objection, minority explanation, unresolved uncertainty, or conflicting lens note attached to the packet
+  + [lineage_record] is root lineage, response lineage, merge history, split history, author scopes, vote receipts, and moderation receipts
+  + [review_cadence] is the expiry, reaffirmation, challenge, or refresh schedule for qualified material
+  + [authority_boundary] is community-qualified source material within a declared scope, not universal truth or official external authority
+  + [residual_outside] is truth by vote, hidden ranking, unscoped canon, erased dissent, source laundering, manipulation, private capture, and implementation without gates
+
+  ? [use_when: responses need categories, primacy votes, moderation, or source-material qualification]
+    = activate [ConceptAuthorityQualification]
+
+  = must: keep response_category, primacy_vote, authority_vote, and moderation_signal separate
+  = must: treat primacy_vote as a signal about leading explanation position, not truth
+  = must: require evidence_floor before authority_level rises above useful
+  = must: require moderation_quorum before authority_level rises to community_qualified
+  = must: preserve dissent_record and lineage_record before emitting qualified_source_packet
+  = must: declare authority_scope and authority_level on every qualified_source_packet
+  = must: route popular but unsupported packets through Honesty before qualification
+  = must: route suspicious vote patterns, unsafe claims, and identity confusion through Security before qualification
+  = must: route source-material claims through frame reference checks when sources, screenshots, simulations, or model outputs are used
+  = must: allow qualified material to be disputed, deprecated, withdrawn, forked, or superseded
+  = should: let multiple scopes maintain different qualified packets when lenses legitimately disagree
+  = should: decay or review stale qualified packets rather than leaving authority permanent
+  - never: let upvotes alone qualify authority
+  - never: erase dissent or lineage to make a clean canon
+  - never: present community-qualified material as universal truth or official external authority
+  - never: implement network voting, reputation, or public authority ranking from this specification alone
+
+& [ResponseCategorizationProtocol] is the response classification rule
+  + [categorization_input] is response_unit, concept_node, author_scope, source_pointer_set, local context, and existing root material
+  + [category_assignment] is one or more response_category values
+  + [category_reason] is why the response belongs in the category
+  + [category_conflict] is disagreement about category fit
+  + [category_output] is response_unit with category labels, category votes, conflict note, and outside
+  + [outside] is final truth, source authority, hidden intent, and unstated context
+
+  = must: allow multiple categories when a response both explains and corrects or both evidences and cautions
+  = must: preserve category_conflict when users disagree on what kind of response it is
+  = should: use categories to route attention rather than flattening every response into a score
+
+& [PrimacyVotingProtocol] is the ranking rule for lead material
+  + [primacy_input] is response_unit, response_category, root_explanation, authority_scope, trust_lens, and vote receipts
+  + [primacy_signal] is whether the response should lead, support, correct, warn, or step aside
+  + [primacy_weight] is trust-lens-adjusted vote weight for lead position
+  + [primacy_reason] is clarity, evidence, completeness, correction value, domain fit, audience fit, or risk reduction
+  + [primacy_conflict] is competing lead candidates, scope mismatch, popularity capture, or lens disagreement
+  + [outside] is proof of truth, automatic root replacement, and hidden ranking
+
+  = must: keep primacy_weight separate from evidence quality
+  = must: let primacy select lead position only within authority_scope
+  = must: preserve primacy_conflict before root replacement or source qualification
+
+& [AuthorityQualificationProtocol] is the path from refined responses to qualified source material
+  + [qualification_input] is concept_node, root_explanation, selected response_units, response categories, primacy votes, authority votes, evidence pointers, moderation signals, dissent record, and lineage record
+  + [qualification_review] is Honesty review, Security review, frame-reference review, evidence review, moderation review, dissent review, and scope review
+  + [qualification_threshold] is evidence_floor plus moderation_quorum plus stable lineage plus acceptable risk
+  + [qualification_output] is qualified_source_packet or blocked_authority_note
+  + [blocked_authority_note] is why the material remains draft, useful, disputed, risky, unsupported, or outside
+  + [outside] is absolute truth, official authority, hidden consensus, and unreviewed popularity
+
+  = must: require qualification_review before community_qualified status
+  = must: include blocked_authority_note when qualification fails
+  = must: keep qualification_output versioned and reversible
+  = must: cite the response_units and evidence that support qualification
+
+& [QualifiedSourcePacketShape] is the output packet for source-quality material
+  + [packet_id] is content-addressed hash or stable local handle
+  + [concept_key] is the concept_node key
+  + [authority_scope] is the community, lens, project, or domain where the packet is qualified
+  + [authority_level] is draft, useful, reviewed, community_qualified, expert_reviewed, deprecated, disputed, or withdrawn
+  + [root_explanation] is the lead explanation or definition
+  + [supporting_response_set] is categorized responses used as support
+  + [evidence_pointer_set] is citations, examples, tests, SOP paths, source notes, or assertion labels
+  + [vote_receipt_set] is primacy_vote, category_vote, authority_vote, trust_lens, and moderation receipts
+  + [dissent_record] is preserved objections, caveats, minority roots, and unresolved questions
+  + [lineage_record] is root, response, merge, split, deprecation, and rollback history
+  + [review_cadence] is expiry, reaffirmation, challenge, or refresh rule
+  + [outside] is proof beyond scope, hidden ranking, erased dissent, and official external authority
+
+  = must: be citeable only with authority_scope and authority_level
+  = must: carry dissent_record even when the packet is community_qualified
+  = must: expose review_cadence so authority can age gracefully
+
+& [ImplementationGate_ConceptAuthorityQualification] is the future implementation boundary
+  + [implementation_status] is blocked_until_gates_satisfied
+  + [required_gate_set] is response_schema, category_schema, vote_receipt_schema, authority_packet_schema, moderation_policy, abuse_model, trust_lens_engine, evidence_receipt_model, lineage_storage_model, identity_or_pseudonym_policy, privacy_threat_model, export_delete_controls, and rollback_policy
+  + [first_safe_prototype] is local-only synthetic concept nodes, responses, categories, votes, and qualified packet examples
+  + [blocked_work] is public ranking, remote voting, reputation system, automatic authority promotion, network exchange, crawler import, and private conversation capture
+  + [outside] is any implementation that turns user votes into public authority without visible evidence, lineage, dissent, and moderation gates
+
+  = must: begin with synthetic local packets before real community data
+  = must: prove qualification review and blocked_authority_note before authority automation
+  = must: keep public authority mechanics blocked until abuse, moderation, privacy, and identity gates exist
+
+(concept_authority_qualification) :qualified_source_packet: /evidence_floor and moderation_quorum and lineage_record/ |residual_outside|
+  + [response_unit] is categorized contribution material
+  + [primacy_vote] is lead-position attention signal
+  + [authority_vote] is qualification support signal
+  + [qualified_source_packet] is scoped citeable concept material
+  + [authority_boundary] is scoped community qualification, not universal truth
+  |residual_outside| truth by vote, hidden ranking, erased dissent, official authority claim, private capture, and implementation without gates
+
+/ [response_unit], [response_category], [primacy_vote] -(CategorizesAndRanks)> [qualification_candidate], [outside]
+* [qualification_candidate], [evidence_floor], [moderation_quorum], [lineage_record] -(Qualifies)> [qualified_source_packet], [blocked_authority_note]

@@ -5,17 +5,17 @@ Description: Compact attention-direction packet to reload after context compress
 & [CurrentFocalPoint] is the live re-entry seed for active focus
   + [status] is active
   + [renewal_reason] is preserve focused attention across context compression
-  + [focus_subject] is Concept Refinement Fabric
+  + [focus_subject] is Concept Authority Qualification
   + [focus_mode] is mixed_focus
   + [executive_drive] is keep the OS clock running by committing, reporting, reviewing, emitting a loop tick, and stepping into the next safe runnable frame
-  + [right_hemisphere_draw] is the social fabric can become a concept refinement platform when contributed explanations orbit concept nodes and scoped votes can promote a better explanation into the root while preserving lineage
-  + [inside] is ConceptRefinementFabric.sop, SocialPeripheryInterestFabric.sop, SOPSwarmFabric.sop, PeripheryCorrelationPotentialScan.sop, SemanticCorrelationGraph.sop, AttentionWeightScale.sop, SecurityHonestyGovernance.sop, FrameReferenceIntegrity.sop, LocalIdentityConsumption.sop, NarrativeSubjectFileTable.sop, 2026-06-25_concept_refinement_fabric_093.hg.sop, 2026-06-25_operating_loop_tick_041.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
-  + [boundary] is continue only when upvotes remain attention signals, root replacement remains scoped and reversible, lineage and dissent are preserved, and implementation stays blocked behind privacy, moderation, abuse, identity, Security, Honesty, and frame-reference gates
-  + [outside] is hidden model state, unsupervised daemon, browser crawler, social graph scraping, private conversation capture, public voting implementation, automatic root replacement, reputation farming, destructive action, credentials, unrelated dirty files, truth by upvote, erased lineage, central canon, and continuing after explicit stop
+  + [right_hemisphere_draw] is the concept refinement fabric becomes citeable when categorized responses, primacy votes, evidence floors, moderation quorum, lineage, and dissent qualify scoped source packets
+  + [inside] is ConceptAuthorityQualification.sop, ConceptRefinementFabric.sop, SocialPeripheryInterestFabric.sop, SOPSwarmFabric.sop, SemanticCorrelationGraph.sop, AttentionWeightScale.sop, SecurityHonestyGovernance.sop, FrameReferenceIntegrity.sop, LocalIdentityConsumption.sop, NarrativeSubjectFileTable.sop, 2026-06-25_concept_authority_qualification_094.hg.sop, 2026-06-25_operating_loop_tick_042.sop, Manager_State.sop, and AttentionRuntimeRegistryState.sop
+  + [boundary] is continue only when response categories, primacy votes, authority votes, moderation signals, evidence floors, authority levels, lineage, dissent, and outside remain distinct and implementation stays blocked behind privacy, moderation, abuse, identity, Security, Honesty, and frame-reference gates
+  + [outside] is hidden model state, unsupervised daemon, browser crawler, social graph scraping, private conversation capture, public voting implementation, automatic authority promotion, reputation farming, destructive action, credentials, unrelated dirty files, truth by vote, erased dissent, official authority claim, central canon, and continuing after explicit stop
   + [active_tracker] is events\trackers\2026-06-24_sop_attention_directive_run_marker.hg.sop
   + [active_registry] is state\AttentionRuntimeRegistryState.sop
-  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_041.sop
-  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or design a local synthetic concept-node refinement prototype
+  + [active_reflection] is events\operating_loop\2026-06-25_operating_loop_tick_042.sop
+  + [open_question] is whether to next return to Task_161 direct LM Studio manager runner or design a local synthetic authority packet prototype
   + [renewal_rule] is read this file first after compaction, update it before final response when focal direction changed
 
   = must: be held in attention after context compression
@@ -49,6 +49,7 @@ Description: Compact attention-direction packet to reload after context compress
   = must: treat social_periphery_interest_fabric as the completed Task_162 anchor
   = must: treat periphery_correlation_potential_scan as the completed Task_163 anchor
   = must: treat concept_refinement_fabric as the completed Task_164 anchor
+  = must: treat concept_authority_qualification as the completed Task_165 anchor
   = must: treat Task_161_build_direct_lmstudio_endpoint_manager_runner as the next ready task
   = must: keep LM Studio manager output proposal-only until Codex launch review accepts a job
   = must: keep OpenAI Codex CLI worker dispatch blocked unless a worker packet, capture target, proof gate, stop policy, and dirty-file boundary are visible

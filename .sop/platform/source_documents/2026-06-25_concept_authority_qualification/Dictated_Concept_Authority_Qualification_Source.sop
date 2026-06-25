@@ -1,0 +1,15 @@
+Subject: Dictated Concept Authority Qualification Source
+
+Description: Preserved source note for categorizing responses, voting on primacy, and refining subject material until it can qualify as scoped authoritative source material.
+
+& [DictatedConceptAuthorityQualificationSource] is the preserved user direction
+  + [source_status] is preserved_raw_direction
+  + [captured_request] is users can categorize responses, vote up or down for primacy, and make it useful for refining subject material to the point that it qualifies as authoritative source material by community participation in refining and moderating the subject material
+  + [attention_shape] is response categorization, primacy voting, community refinement, moderation, and authority qualification
+  + [authority_shape] is scoped and qualified source material, not universal truth by popularity
+  + [preservation_boundary] is source direction only, not canonical specification authority until separately processed
+  + [outside] is truth by vote, hidden ranking, unmoderated public canon, erased dissent, reputation capture, private capture, and implementation before gates
+
+  = must: preserve categorization and primacy voting as distinct operations
+  = must: preserve authoritative source material as a qualified and scoped output
+  = must: keep community authority separate from proof, universal truth, and centralized canon

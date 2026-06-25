@@ -14,6 +14,7 @@ Description: Future implementation specification for a decentralized, local-firs
 @ [source] C:\Project\Pinky\.sop\platform\SocialPeripheryInterestFabric.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_social_periphery_interest_fabric\Dictated_Social_Periphery_Interest_Fabric_Source.sop
 @ [source] C:\Project\Pinky\.sop\platform\ConceptRefinementFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop
 
 & [SOPSwarmFabric] is the future decentralized attention-fabric specification
   + [spec_status] is implementation_open_and_blocked
@@ -26,6 +27,7 @@ Description: Future implementation specification for a decentralized, local-firs
   + [viral_attention_pattern] is cross-user heat or recurrence, not truth, quality, endorsement, or safety
   + [social_periphery_interest_fabric] is the specialization where shared interest digests and periphery signatures map social-network interest overlap and recommendations
   + [concept_refinement_fabric] is the specialization where swarm attention packets support community refinement of concept roots through explanation candidates, scoped votes, and lineage
+  + [concept_authority_qualification] is the specialization where categorized responses, primacy votes, and moderation receipts qualify scoped source packets
   + [network_mapping_lineage] is the public web crawler and search ranking pattern adapted to user-owned digested interest packets instead of raw public pages
   + [dead_internet_countermeasure] is provenance-aware human judgement, source traceability, trust-scoped recommendation, and manipulation detection
   + [implementation_boundary] is no networked capture, sharing, transport, crawling, or browser integration until future gates are satisfied
@@ -40,6 +42,7 @@ Description: Future implementation specification for a decentralized, local-firs
   = must: separate attention heat, truth, safety, endorsement, popularity, novelty, and manipulation risk
   = must: use SocialPeripheryInterestFabric when the fabric maps local social-network interest overlap, cross-network periphery, or trust-lensed recommendation candidates
   = must: use ConceptRefinementFabric when the fabric ranks contributed explanations or replaces scoped concept roots
+  = must: use ConceptAuthorityQualification when the fabric produces citeable qualified source material
   = must: route every shared signal through Security, Honesty, LocalIdentityConsumption, and privacy boundaries
   = must: make implementation dependent on a threat model, consent UI, packet schema, identity/signing scheme, storage model, and transport policy
   = should: support local-only use before any multi-user fabric exists

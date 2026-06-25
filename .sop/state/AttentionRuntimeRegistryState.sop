@@ -149,14 +149,18 @@ Description: Live semantic stack-frame registry for the current focus pass.
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_refinement_fabric\Dictated_Concept_Refinement_Fabric_Source.sop
 @ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_refinement_fabric_093.hg.sop
 @ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_041.sop
+@ [source] C:\Project\Pinky\.sop\platform\ConceptAuthorityQualification.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-25_concept_authority_qualification\Dictated_Concept_Authority_Qualification_Source.sop
+@ [source] C:\Project\Pinky\.sop\events\periphery_stream\2026-06-25_concept_authority_qualification_094.hg.sop
+@ [source] C:\Project\Pinky\.sop\events\operating_loop\2026-06-25_operating_loop_tick_042.sop
 
 & [CurrentAttentionRuntimeRegistryState] is the live semantic registry for active attention
   + [registry_status] is active
-  + [registry_scope] is Concept Refinement Fabric
-  + [active_root_frame] is attention_frame_2026_06_25_concept_refinement_fabric
+  + [registry_scope] is Concept Authority Qualification
+  + [active_root_frame] is attention_frame_2026_06_25_concept_authority_qualification
   + [active_frame_count] is 1
   + [suspended_frame_count] is 0
-  + [closed_frame_count] is 35
+  + [closed_frame_count] is 36
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
   + [registry_outside] is hidden activations, exact transformer attention, model weights, worker mutation authority, broad task competence, copy-exact overclaim, and unrelated Pinky worktree changes
 
@@ -510,9 +514,9 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: use this frame when a new development should be compared to existing periphery for useful next directions
   = should: let Task_161 direct LM Studio endpoint manager runner consume this scan as future task-selection context
 
-& [AttentionFrame_2026_06_25_ConceptRefinementFabric] is the active semantic stack frame for concept-root refinement through contributed explanations
+& [AttentionFrame_2026_06_25_ConceptRefinementFabric] is the semantic stack frame for concept-root refinement through contributed explanations
   + [frame_id] is attention_frame_2026_06_25_concept_refinement_fabric
-  + [frame_state] is active
+  + [frame_state] is closed
   + [parent_frame] is attention_frame_2026_06_25_social_periphery_interest_fabric
   + [child_frame_set] is ConceptRefinementFabric, SocialPeripheryInterestFabric, SOPSwarmFabric, PeripheryCorrelationPotentialScan, ConceptNodeShape, ExplanationCandidateShape, RootReplacementProtocol, AttentionRatingPolicy, source_preservation, operating_loop_tick_041, and commit_receipt
   + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
@@ -533,11 +537,34 @@ Description: Live semantic stack-frame registry for the current focus pass.
   = must: keep root replacement scoped, reversible, and lineage-preserved
   = should: begin future prototypes with local synthetic concept nodes only
 
+& [AttentionFrame_2026_06_25_ConceptAuthorityQualification] is the active semantic stack frame for community-qualified source material
+  + [frame_id] is attention_frame_2026_06_25_concept_authority_qualification
+  + [frame_state] is active
+  + [parent_frame] is attention_frame_2026_06_25_concept_refinement_fabric
+  + [child_frame_set] is ConceptAuthorityQualification, ConceptRefinementFabric, SocialPeripheryInterestFabric, SOPSwarmFabric, ResponseCategorizationProtocol, PrimacyVotingProtocol, AuthorityQualificationProtocol, QualifiedSourcePacketShape, source_preservation, operating_loop_tick_042, and commit_receipt
+  + [return_anchor] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [frame_trace] is ConceptAuthorityQualification.sop, ConceptRefinementFabric.sop, SocialPeripheryInterestFabric.sop, SOPSwarmFabric.sop, Dictated_Concept_Authority_Qualification_Source.sop, 2026-06-25_concept_authority_qualification_094.hg.sop, Manager_State.sop, and 2026-06-25_operating_loop_tick_042.sop
+  + [focus_register] is response_unit, response_category, primacy_vote, authority_vote, moderation_signal, evidence_floor, moderation_quorum, qualified_source_packet, authority_scope, authority_level, lineage_record, and dissent_record
+  + [question_register] is whether next work should return to Task_161 direct LM Studio manager runner or specify a local synthetic authority packet prototype
+  + [delineation_register] is inside categorized responses, primacy ranking, authority qualification, evidence receipts, moderation receipts, dissent preservation, lineage preservation, review cadence, and outside
+  + [periphery_register] is truth by vote, hidden ranking, erased dissent, official authority claim, public platform implementation, private capture, reputation automation, automatic authority promotion, credentials, and unrelated dirty files
+  + [operation_register] is preserve_source, define_authority_qualification, extend_concept_refinement, extend_social_fabric, update_attention_root, update_subject_index, update_manager, validate, commit, and push
+  + [evidence_register] is user direction, ConceptAuthorityQualification.sop, ConceptRefinementFabric update, SocialPeripheryInterestFabric update, SOPSwarmFabric update, source manifest, periphery record 094, and operating_loop_tick_042
+  + [wisdom_register] is community authority becomes useful when the process of refinement is itself preserved as evidence through category, vote, moderation, lineage, dissent, and review cadence
+  + [caution_register] is authoritative must remain scoped, citeable, reversible, and distinct from truth by popularity or official external authority
+  + [balance_register] is stable because response category, primacy vote, authority vote, evidence floor, moderation quorum, authority level, lineage, dissent, and outside remain distinct
+  + [integration_register] is Task_165 completed as SOP-only future specification while public ranking and authority automation remain blocked
+  + [frame_outside] is hidden model state, live public voting, private capture, reputation automation, central canon, automatic authority promotion, direct mutation, credentials, destructive action, and unrelated workspace changes
+
+  = must: keep authority scoped and citeable by packet
+  = must: require evidence and moderation gates before community_qualified status
+  = should: begin future prototypes with synthetic local response packets only
+
 (current_attention_runtime_registry_state) :active_root_frame: /semantic_register_set and return_anchor/ |registry_outside|
-  + [active_root_frame] is attention_frame_2026_06_25_concept_refinement_fabric
+  + [active_root_frame] is attention_frame_2026_06_25_concept_authority_qualification
   + [semantic_register_set] is focus, question, delineation, periphery, operation, evidence, Wisdom, Caution, balance, and integration registers
   + [return_anchor] is CurrentFocalPoint
   |registry_outside| hidden model state, executable runtime stack, unreviewed worker authority, unrelated dirty files, and untracked cognition
 
-/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_ConceptRefinementFabric], [registry_outside]
-* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [concept_refinement_fabric], [operating_loop_tick], [balance_register], [integration_register], [outside]
+/ [CurrentFocalPoint], [AttentionRuntimeRegistry], [ManagerState] -(EntersFrame)> [AttentionFrame_2026_06_25_ConceptAuthorityQualification], [registry_outside]
+* [semantic_register_set], [return_anchor], [frame_trace] -(SupportsReentry)> [concept_authority_qualification], [operating_loop_tick], [balance_register], [integration_register], [outside]
