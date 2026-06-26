@@ -324,6 +324,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_100_build_hodge_transfer_mechanism_candidate_ledger] is build and apply a candidate ledger ranking Hodge transfer mechanisms by arbitrary rational Hodge-class-to-cycle lock reduction
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Transfer_Mechanism_Candidate_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_transfer_mechanism_candidate_ledger_001.sop
+  + [Task_101_research_hodge_explicit_cycle_correspondence] is run deep research on explicit cycle construction and algebraic correspondence transfer in higher-codimension Hodge settings
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_explicit_cycle_correspondence_deep_research_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
