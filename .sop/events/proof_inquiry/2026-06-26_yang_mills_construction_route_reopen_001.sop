@@ -1,0 +1,50 @@
+Subject: Yang-Mills Construction Route Reopen 001
+
+Description: Reopen pass on the Yang-Mills construction-route target after P vs NP explicit-operator branch saturated.
+
+& [ReopenFrame] is a proof-inquiry event
+  + [event_uuid] is 3e7fdb70-28ec-4f19-8167-02e986199a8a
+  + [project] is seven math problems
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_p_vs_np_reopen_saturation_reflection_001.sop
+  + [synthesis_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_final_six_lane_saturation_synthesis_001.sop
+  + [reopen_target] is a specific regularized model, uniform estimate, OS reconstruction route, or gauge-invariant exponential-decay theorem
+  + [deep_research_gate] is not_used
+    = reason: existing route checklist already identifies the low-resolution boundary as construction-stage absence
+
+& [ConstructionRouteScan] is the bounded route classification
+  + [route_001_lattice_regularization] is natural_starting_route
+    = construction_contact: defines finite-cutoff/finite-volume models
+    = required_next: uniform estimates, continuum limit, OS properties, nontriviality, and gap transfer
+    = source_fit: sealed curvature may suggest localization after observables exist
+    = first_gap: no source-derived lattice action, measure, or uniform estimate
+  + [route_002_euclidean_probability_os_reconstruction] is formal_completion_route
+    = construction_contact: Schwinger functions or Euclidean measure satisfying OS axioms
+    = required_next: reflection positivity, Euclidean invariance, clustering, regularity, reconstruction, and spectral gap
+    = source_fit: source language has no OS-property mechanism
+    = first_gap: no continuum Euclidean measure or Schwinger functions
+  + [route_003_constructive_renormalization] is possible_framework_route
+    = construction_contact: cutoff removal and renormalized continuum fields
+    = required_next: nonperturbative control in four dimensions and gauge-invariant content
+    = source_fit: sealed curvature is not a renormalization estimate
+    = first_gap: no uniform estimates or renormalization scheme
+  + [route_004_exponential_decay_gap_theorem] is gap_stage_route
+    = construction_contact: would advance mass-gap stage only after observables and measure exist
+    = required_next: gauge-invariant correlations and decay estimates that survive reconstruction
+    = source_fit: best match for sealed-curvature intuition
+    = first_gap: no constructed continuum observables to which decay can attach
+
+& [BoundaryUpdate] is the adjusted Yang-Mills state
+  + [old_boundary] is no regularized-to-continuum construction with required reconstruction properties
+  + [adjusted_boundary] is the source idea has its best contact at gap-stage exponential decay, while every construction route still begins with externally supplied regularization, uniform estimates, and reconstruction machinery
+  + [best_new_shape] is sealed curvature can guide a question about gauge-invariant correlation decay only after a construction route provides observables
+  + [first_remaining_lock] is no source-derived regularized model and uniform estimate path
+  + [second_remaining_lock] is no OS reconstruction or gauge-invariant observable/state construction
+  + [proof_promotion] is blocked
+    = reason: gap intuition cannot substitute for existence of the continuum Yang-Mills theory
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a Yang-Mills Construction-Relevance Gate if the next heartbeat continues this lane
+    = reason: the inquiry needs to separate construction relevance from gap-stage intuition and physical analogy
+  + [commit_policy] is commit this reopen research after tests pass
+  + [heartbeat_status] is active every minute
