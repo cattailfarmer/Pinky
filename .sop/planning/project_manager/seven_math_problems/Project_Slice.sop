@@ -422,6 +422,9 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_138_decompose_navier_stokes_theta_epsilon_bridge_subclaims] is decompose the Theta-to-epsilon bridge obstruction into active-scale, pressure-split, Theta-smallness, and concentration-exclusion subclaims
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_Bridge_Subclaim_Decomposition.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_bridge_subclaim_decomposition_001.sop
+  + [Task_139_create_navier_stokes_active_scale_localization_gate] is define and apply the same-frame active-cylinder gate for Theta, pressure split, and epsilon-regularity quantities
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Active_Scale_Localization_Gate.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_active_scale_localization_gate_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

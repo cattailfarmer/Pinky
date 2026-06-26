@@ -1,0 +1,54 @@
+Subject: Navier-Stokes Active-Scale Localization Gate 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Prior: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_Bridge_Subclaim_Decomposition.sop
+Authority Boundary: bounded research and gate-definition record only; no Navier-Stokes proof claim
+
+& [DeepResearchUnit] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [trigger] is heartbeat reentry from the latest committed obstruction map
+  + [low_resolution_signal] is whether the Theta route has a same-frame active cylinder rather than only a scale-invariant global functional
+  + [bounded_question] is what must be true before Theta, pressure splitting, and epsilon-regularity quantities can be compared on one local cylinder
+  + [curiosity_priority] is high
+    = reason: active-scale localization is the first subclaim blocking the pressure-split and Theta-to-epsilon audits
+
+& [SourceSet] is the bounded research surface
+  + [source_001] is Finite-Scale One-Component Regularity via Harmonic Pressure for 3D Navier-Stokes
+    = link: https://arxiv.org/html/2606.08352v1
+    = use: records local scale-invariant quantities on parabolic cylinders and emphasizes harmonic pressure as an obstruction
+  + [source_002] is Caffarelli-Kohn-Nirenberg seminar notes on Navier-Stokes partial regularity
+    = link: https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.020/skipper/NotesCKN_Jack_2.pdf
+    = use: preserves accepted local regularity language for suitable weak solutions and local parabolic cylinders
+  + [source_003] is Barker and Prange, From concentration to quantitative regularity
+    = link: https://prange.perso.math.cnrs.fr/papers/survey-concentration-quantreg.pdf
+    = use: frames concentration on small scales as a quantitative regularity problem rather than a direct global-norm decision
+  + [source_004] is Quadrupole-Depletion Route to L3 Regularity for 3D Incompressible Navier-Stokes
+    = link: https://quantumaetherdynamics.org/papers/Navier_Stokes_Millenium_Puzzle.pdf
+    = use: source of the Theta functional and endpoint pressure-work target being tested
+
+& [ResearchFindings] is the theorem-boundary result
+  + [finding_001] is standard local theory supplies parabolic cylinders and scale-invariant quantities
+    = meaning: the project does not need to invent the local frame language
+  + [finding_002] is the candidate route still needs a selection rule for the active cylinder
+    = meaning: scale invariance alone does not say which cylinder carries Theta control, pressure decomposition, and epsilon-smallness together
+  + [finding_003] is pressure decomposition must be same-frame
+    = meaning: harmonic or nonlocal pressure control cannot be audited until the pressure split is tied to the chosen cylinder
+  + [finding_004] is concentration-sequence selection is downstream
+    = meaning: a singular sequence may identify shrinking cylinders, but the candidate route still needs a theorem placing Theta and pressure control on those cylinders
+
+& [GateCreated] is recorded
+  + [artifact_created] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Active_Scale_Localization_Gate.sop
+  + [current_application_status] is boundary_only
+  + [first_missing_feature] is no_explicit_active_cylinder_selection_rule_for_theta
+  + [next_research_handle] is active-cylinder selection theorem for Theta
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is define active-scale localization generally
+  + [new_shape] is find or formulate an explicit rule selecting Q_r(x0,t0) where Theta, pressure split, and epsilon quantities are all available
+  + [retired_overclaim] is standard local regularity cylinders automatically localize a source-route depletion functional
+  + [preserved_potential] is high because the obstruction is now a concrete theorem interface
+
+& [NextAction] is bounded
+  + [recommended_next] is test the source document for an explicit active-cylinder selection rule or create a source-bound extraction ledger for that claim
+  + [heartbeat_status] is active

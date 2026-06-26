@@ -1,0 +1,58 @@
+Subject: Navier-Stokes Active-Scale Localization Gate
+
+Description: Project-local math inquiry gate for testing whether a Navier-Stokes route defines a same-frame active cylinder before invoking pressure splitting or epsilon regularity.
+
+& [NavierStokesActiveScaleLocalizationGate] is a math inquiry tool
+  + [tool_uuid] is 2aa9d60f-1a96-4975-a2c6-78dbe68d13e8
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_bridge_subclaim_decomposition_001.sop
+  + [parent_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_Bridge_Subclaim_Decomposition.sop
+  + [role] is test whether a candidate route supplies the local cylinder needed to compare Theta, pressure, and epsilon-regularity quantities
+  + [not_role] is proving a pressure estimate, validating a singularity exclusion, or promoting a source-document heuristic
+
+& [LocalizationColumnSet] is the same-frame test
+  + [candidate_scale] is the radius r and center (x0,t0) of a parabolic cylinder Q_r(x0,t0)
+  + [selection_rule] is concentration_sequence, maximal_quantity, pressure_work_active_scale, theorem_given, heuristic, or absent
+  + [theta_frame_status] is same_cylinder, comparable_cylinder, global_only, implicit, or absent
+  + [epsilon_frame_status] is CKN_quantity_defined, local_energy_quantity_defined, one_component_quantity_defined, global_only, or absent
+  + [pressure_frame_status] is local_nonlocal_harmonic_split_on_same_cylinder, split_on_different_frame, pressure_not_split, or absent
+  + [scale_invariance_status] is invariant, conditional, mismatched, or unclear
+  + [promotion_status] is admitted_for_pressure_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+  + [first_missing_feature] is the earliest missing feature preventing a pressure or epsilon audit
+
+& [UseProcedure] is the active-scale workflow
+  + [step_001_candidate] is name the active cylinder and how the route selects it
+  + [step_002_theta] is check whether Theta is measured on that cylinder or only globally
+  + [step_003_epsilon] is name the accepted local criterion measured on that cylinder
+  + [step_004_pressure] is check whether pressure is decomposed on the same cylinder
+  + [step_005_scale] is confirm all quantities have compatible Navier-Stokes scaling
+  + [step_006_decision] is decide whether the route may proceed to pressure-split audit
+
+  = must: preserve the distinction between scale-invariant quantities and a rule selecting the scale where they are useful
+  = must: reject a route that has local epsilon quantities but only global or implicit Theta control
+  = must: reject a pressure split unless it is tied to the same or explicitly comparable cylinder
+  = should: treat concentration-sequence cylinder selection as downstream unless the candidate theorem gives enough local data
+  - never: use the existence of standard parabolic cylinders as evidence that the candidate route has localized its own depletion functional
+
+(navier_stokes_active_scale_localization_gate) :active cylinder, selection rule, Theta frame, epsilon frame, pressure frame/ |pressure audit admission|
+  + [inside] is same-frame localization needed before pressure-split or epsilon-smallness testing
+  + [boundary] is a route must name both the cylinder and the rule that chooses it
+  |outside| global L3 control, pressure-work absorption without localization, and geometric depletion measured outside the epsilon frame
+
+& [CurrentApplication] is the quadrupole endpoint pressure-work route
+  + [candidate_scale] is implicit_active_scale
+  + [selection_rule] is heuristic
+  + [theta_frame_status] is implicit
+  + [epsilon_frame_status] is CKN_quantity_defined_by_target_not_by_source_route
+  + [pressure_frame_status] is pressure_not_split_in_same_frame
+  + [scale_invariance_status] is meaningful_but_unanchored
+  + [promotion_status] is boundary_only
+  + [first_missing_feature] is no_explicit_active_cylinder_selection_rule_for_theta
+
+& [CurrentReading] is the next proof-shape adjustment
+  + [old_handle] is active-scale localization
+  + [new_handle] is find or formulate an explicit active-cylinder selection theorem for Theta
+  + [pressure_audit_status] is blocked_until_same_frame_cylinder_exists
+  + [deep_research_gate_status] is active because the local source surface is low-resolution at the cylinder-selection rule
