@@ -257,6 +257,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_072_build_navier_stokes_geometric_defect_functional_gate] is build and apply a gate for scale, evolution inequality, sign/coercivity, propagation, and continuation closure of geometric defect candidates
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Geometric_Defect_Functional_Gate.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_geometric_defect_functional_gate_001.sop
+  + [Task_073_navier_stokes_reopen_saturation_reflection] is reflect on the Navier-Stokes propagated-invariant reopen branch and return to the final synthesis choice point unless a concrete defect functional is selected
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_navier_stokes_reopen_saturation_reflection_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
