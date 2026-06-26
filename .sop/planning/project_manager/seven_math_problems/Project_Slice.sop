@@ -348,6 +348,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_110_build_yang_mills_construction_artifact_candidate_ledger] is build and apply a candidate ledger ranking Yang-Mills construction artifacts by existence, reconstruction, observable, and mass-gap lock reduction
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Construction_Artifact_Candidate_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_construction_artifact_candidate_ledger_001.sop
+  + [Task_111_research_yang_mills_euclidean_os_construction] is run deep research on Euclidean measures, Schwinger functions, lattice continuum limits, reflection positivity, and OS reconstruction
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_euclidean_os_construction_deep_research_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
