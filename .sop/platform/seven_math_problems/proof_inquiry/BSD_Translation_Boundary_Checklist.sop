@@ -1,0 +1,40 @@
+Subject: BSD Translation Boundary Checklist
+
+Description: Project-local math tool for testing whether a special BSD theorem corridor can be translated back to the original elliptic-curve BSD statement without losing its hypotheses, objects, or rank claim.
+
+& [BSDTranslationBoundaryChecklist] is a math inquiry tool
+  + [tool_uuid] is 34ea9cf9-b42b-45b0-a84c-52d017d4e08a
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_diagonal_cycles_001.sop
+  + [role] is prevent special theorem corridors from being mistaken for general elliptic-curve BSD proof routes
+  + [not_role] is rejecting special-case theorems, proving BSD, or demanding every useful corridor solve the Millennium statement
+
+& [ChecklistLockSet] is the translation boundary
+  + [lock_001_statement_identity] is the target statement remains the original BSD statement for an elliptic curve or an explicitly scoped variant
+  + [lock_002_l_function_identity] is the analytic object is the same L(E,s) or a justified factor/component whose BSD implication is proved
+  + [lock_003_selmer_identity] is the controlled Selmer group is the Selmer group governing the target curve's Mordell-Weil rank
+  + [lock_004_source_transfer] is the special source object transfers to rational points or rank-relevant Selmer classes for the target curve
+  + [lock_005_measurement_transfer] is the height/regulator or p-adic measurement computes the rank-relevant independence data
+  + [lock_006_upper_bound_transfer] is the Euler/Kolyvagin/Iwasawa control bounds the same target rank, not only an auxiliary motive or representation
+  + [lock_007_rank_range] is the theorem covers the analytic rank range claimed by the proposition
+  + [lock_008_hypothesis_retention] is sign, modularity, residual image, ordinarity, field, and representation hypotheses are not silently dropped
+  + [lock_009_generalization_status] is any step from special setting to general BSD is marked proved, conditional, conjectural, analogy, or outside
+
+& [UseProcedure] is the translation test
+  + [step_001_name_target] is write the exact BSD statement or scoped variant being approached
+  + [step_002_name_corridor] is name the special theorem corridor and its hypotheses
+  + [step_003_apply_locks] is mark each lock closed, partial, conditional, conjectural, open, or outside
+  + [step_004_stop_at_first_open] is name the first open translation boundary
+  + [step_005_preserve_meaning] is keep any useful symbolic/formal insight while refusing proof promotion
+
+  = must: distinguish special theorem value from general proof value
+  = must: keep L-function identity separate from related L-function analogy
+  = must: keep Selmer control separate from rational point construction
+  = should: use this checklist before any "solution potential" upgrade
+  - never: erase auxiliary hypotheses when translating a special theorem corridor
+
+(bsd_translation_boundary_checklist) :special_corridor: /translation locks/ |general BSD proof|
+  + [inside] is proof-boundary control for BSD theorem corridors
+  + [boundary] is a special theorem can be high meaning while low general-solution reach
+  |outside| all-rank proof by analogy, hypothesis-free transfer, and same-topic substitution

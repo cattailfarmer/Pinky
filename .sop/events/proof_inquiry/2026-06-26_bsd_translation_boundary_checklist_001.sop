@@ -1,0 +1,45 @@
+Subject: BSD Translation Boundary Checklist 001
+
+Description: First application of the BSD Translation Boundary Checklist to the diagonal-cycle and triple-product corridor.
+
+& [ChecklistApplication] is a proof-inquiry event
+  + [event_uuid] is ccb0de7a-7a37-4834-a518-319542056eda
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Translation_Boundary_Checklist.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_diagonal_cycles_001.sop
+  + [target_statement] is general BSD rank equality for an elliptic curve over Q, unless explicitly scoped otherwise
+  + [tested_corridor] is diagonal-cycle and triple-product p-adic Gross-Zagier/Euler-system corridor
+
+& [LockReadout] is the first translation test
+  + [lock_001_statement_identity] is partial
+    = reason: the corridor has BSD applications, but the natural statement is often Hasse-Weil-Artin or triple-product scoped rather than the bare general elliptic-curve statement
+  + [lock_002_l_function_identity] is partial
+    = reason: triple-product or Artin-representation L-functions are related but not identical to arbitrary L(E,s)
+  + [lock_003_selmer_identity] is partial
+    = reason: the controlled arithmetic object may be a representation- or motive-scoped Selmer group rather than the target curve's full Mordell-Weil Selmer group
+  + [lock_004_source_transfer] is open
+    = reason: diagonal cycles do not automatically transfer into enough independent rational points on the target elliptic curve
+  + [lock_005_measurement_transfer] is partial
+    = reason: p-adic Abel-Jacobi and p-adic height measurements are meaningful but special-setting dependent
+  + [lock_006_upper_bound_transfer] is partial
+    = reason: Euler-system style control is visible in the corridor but does not automatically bound the general target curve rank
+  + [lock_007_rank_range] is open
+    = reason: strongest identified BSD applications do not cover all analytic ranks for all elliptic curves
+  + [lock_008_hypothesis_retention] is open_for_generalization
+    = reason: sign, representation, modularity, ordinarity, and field hypotheses are essential and cannot be discarded
+  + [lock_009_generalization_status] is analogy_or_special_theorem
+    = reason: the route is a high-meaning special corridor, not a general proof transfer
+
+& [BoundaryConclusion] is the proposition update
+  + [first_open_boundary] is lock_004_source_transfer
+  + [supporting_open_boundary] is lock_007_rank_range
+  + [meaning_preserved] is diagonal-cycle corridors reveal how L-hand/R-hand/phase-correction language can become analytic object/source cycle/regulator measurement/control architecture
+  + [proof_promotion] is blocked
+    = reason: source transfer and rank-range generalization are not supplied
+  + [next_best_question] is whether any known special corridor supplies source transfer into Mordell-Weil rank, or whether the inquiry should return to comparing other six-problem lanes after BSD saturation
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is run a short BSD saturation reflection, then decide whether to continue BSD or move to the next highest-potential lane
+  + [commit_policy] is commit this checklist increment after tests pass
+  + [heartbeat_status] is active every minute
