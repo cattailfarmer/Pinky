@@ -300,6 +300,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_090_build_navier_stokes_defect_functional_candidate_ledger] is build and apply a candidate ledger ranking concrete Navier-Stokes defect-functional candidates by unresolved-lock-mass reduction
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Defect_Functional_Candidate_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_defect_functional_candidate_ledger_001.sop
+  + [Task_091_research_navier_stokes_strain_eigenframe] is run deep research on strain eigenframe alignment and exact strain/vorticity identities to refine unresolved lock mass
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_strain_eigenframe_deep_research_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

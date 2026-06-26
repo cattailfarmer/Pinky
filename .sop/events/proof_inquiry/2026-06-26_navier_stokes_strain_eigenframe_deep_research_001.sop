@@ -1,0 +1,63 @@
+Subject: Navier-Stokes Strain Eigenframe Deep Research 001
+
+Description: Deep-research pass on strain eigenframe alignment and exact strain/vorticity evolution identities as the highest-revelation Navier-Stokes candidate from the defect-functional ledger.
+
+& [NavierStokesStrainEigenframeDeepResearch] is a deep research event
+  + [event_uuid] is 6d2820fb-6bda-49cf-86e2-61d53173b928
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:27Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_defect_functional_candidate_ledger_001.sop
+  + [authority_status] is research_resolution_not_proof
+  + [deep_research_gate] is active
+
+& [SourceSet] is the checked research surface
+  + [source_001] is Evan Miller, A regularity criterion for the Navier-Stokes equation involving only the middle eigenvalue of the strain tensor
+    = url: https://arxiv.org/abs/1710.05569
+    = source_status: arXiv and Arch. Rational Mech. Anal. journal reference
+    = relevance: derives a strain equation, enstrophy-growth identity, and scale-critical criteria depending on the positive part of the middle strain eigenvalue
+  + [source_002] is Evan Miller, Finite-time blowup for a Navier-Stokes model equation for the self-amplification of strain
+    = url: https://arxiv.org/abs/1910.05415
+    = source_status: arXiv and Analysis & PDE journal reference
+    = relevance: shows that the enstrophy-growth identity and strain constraint space alone are not sufficient for global regularity in a model equation
+  + [source_003] is Evan Miller, On the interaction of strain and vorticity for solutions of the Navier-Stokes equation
+    = url: https://arxiv.org/abs/2407.02691
+    = source_status: arXiv and Pure Appl. Analysis journal reference
+    = relevance: gives a new divergence-free identity involving strain and vorticity, plus regularity criteria clarifying when advection depletes nonlinearity
+
+& [ResearchResolution] is the strain-eigenframe result
+  + [confirmed_001_exact_dynamics_exist] is the strain route is not merely metaphorical; literature derives strain equations and identities tied to enstrophy growth
+  + [confirmed_002_middle_eigenvalue_is_structural] is positive middle eigenvalue control gives scale-critical regularity criteria and restricts possible blowup geometry
+  + [confirmed_003_model_obstruction_is_serious] is a strain self-amplification model can blow up despite sharing enstrophy-growth identity and constraint structure with the full strain equation
+  + [confirmed_004_newer_identity_is_promising_periphery] is the 2024/2026 strain-vorticity identity suggests a way to separate nonlinearity depletion by advection from growth mechanisms
+
+& [LockMassUpdate] is the unresolved-lock reading after research
+  + [concrete_defect_lock] is partially_reduced
+    = reason: middle-eigenvalue positive part and strain-vorticity interaction terms are concrete enough to test
+  + [evolution_inequality_lock] is still_open
+    = reason: exact identities and criteria do not yet give an autonomous one-sided inequality for arbitrary smooth data
+  + [sign_coercivity_lock] is still_high
+    = reason: strain self-amplification and indefinite nonlinear terms remain the apparent obstruction
+  + [continuation_closure_lock] is still_open
+    = reason: criteria identify what would prevent blowup but do not derive the required bound from all smooth initial data
+  + [unresolved_lock_mass_delta] is slight_decrease_in_definition_lock_only
+
+& [MeaningDevelopment] is the refined proposition
+  + [old_shape] is strain eigenframe alignment might provide a propagated defect functional
+  + [new_shape] is strain eigenframe inquiry is best used to isolate the exact sign/coercivity obstruction; proof progress requires converting identity-level structure into a one-sided bound
+  + [promising_concept_001] is positive middle eigenvalue of the strain tensor as a scale-critical obstruction coordinate
+  + [promising_concept_002] is strain-vorticity interaction identity as a possible decomposition of advective depletion versus self-amplification
+  + [promising_concept_003] is model-equation blowup as a warning that shared identities are insufficient without the omitted full-Navier-Stokes terms doing regularizing work
+
+& [NextToolNeed] is the emerging mathematical tool shape
+  + [tool_name] is Strain Sign Obstruction Ledger
+  + [tool_purpose] is separate identity-level progress from sign/coercivity progress for strain-based Navier-Stokes candidates
+  + [columns] is term, exact_identity_status, sign_status, scale_status, omitted_term_role, continuation_contact, obstruction_or_opportunity
+  + [reason] is the next meaningful question is not whether strain identities exist, but which terms prevent or permit one-sided control
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [navier_stokes_solution_status] is unresolved
+  + [research_status] is deep_research_resolved_the_low_resolution_periphery
+  + [heartbeat_status] is active every minute
+
