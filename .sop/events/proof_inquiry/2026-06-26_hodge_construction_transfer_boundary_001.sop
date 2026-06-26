@@ -1,0 +1,74 @@
+Subject: Hodge Construction-Transfer Boundary 001
+
+Description: First application of the construction-transfer boundary ledger after Hodge explicit-cycle and correspondence deep research.
+
+& [HodgeConstructionTransferBoundaryApplication] is a proof-inquiry event
+  + [event_uuid] is 9d456ff5-6e96-4efb-aa26-7491c49d7865
+  + [project] is seven math problems
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26T19:44Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Construction_Transfer_Boundary_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_explicit_cycle_correspondence_deep_research_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [BoundaryRows] is the first construction-transfer boundary table
+  + [row_001_explicit_cycle_construction] is direct realization mechanism
+    = input_data: arbitrary_hodge_class_or_family_data
+    = output_cycle_status: actual_algebraic_cycle_when_successful
+    = transfer_scope: arbitrary_only_if_algorithm_exists
+    = arbitrary_class_status: fails_in_general_current_records
+    = authority_boundary: proof_relevant_when_available
+    = first_missing_feature: no general arbitrary rational Hodge-class-to-cycle construction mechanism
+  + [row_002_algebraic_correspondence_transfer] is scoped transfer mechanism
+    = input_data: correspondence
+    = output_cycle_status: transferred_cycle
+    = transfer_scope: correspondence_scoped
+    = arbitrary_class_status: requires_extra_structure
+    = authority_boundary: proof_relevant_in_scope
+    = first_missing_feature: no general production of correspondences from arbitrary Hodge classes
+  + [row_003_normal_functions] is family organization mechanism
+    = input_data: normal_function
+    = output_cycle_status: obstruction_or_invariant
+    = transfer_scope: family_scoped
+    = arbitrary_class_status: detects_only
+    = authority_boundary: boundary_relevant
+    = first_missing_feature: invariant or obstruction does not itself output arbitrary algebraic cycles
+  + [row_004_noether_lefschetz_spread] is special-locus detection mechanism
+    = input_data: special_locus
+    = output_cycle_status: detected_class_or_scoped_cycle
+    = transfer_scope: special_locus
+    = arbitrary_class_status: detects_only
+    = authority_boundary: calibration
+    = first_missing_feature: special locus detection does not construct cycles outside the locus
+  + [row_005_motivated_absolute_hodge_structure] is substitute organization mechanism
+    = input_data: motive_or_absolute_class
+    = output_cycle_status: substitute_structure
+    = transfer_scope: substitute_only
+    = arbitrary_class_status: substitutes_only
+    = authority_boundary: substitute_not_authority
+    = first_missing_feature: substitute structure is not algebraic cycle output for the Clay target
+
+& [BoundaryConclusion] is the current construction-transfer status
+  + [best_proof_relevant_shape] is row_001_explicit_cycle_construction
+    = reason: actual cycle output is exactly the Clay target, but no general mechanism is available
+  + [best_scoped_transfer_shape] is row_002_algebraic_correspondence_transfer
+    = reason: it transfers algebraicity when correspondences are present, but arbitrary-class generation is missing
+  + [best_diagnostic_shape] is row_003_normal_functions
+    = reason: normal functions organize family obstructions and cycle questions without becoming general construction
+  + [best_calibration_shape] is row_004_noether_lefschetz_spread
+    = reason: special loci teach detection/realization shape while remaining scoped
+  + [blocked_as_authority] is row_005_motivated_absolute_hodge_structure
+    = reason: substitute structure lacks actual algebraic cycle output
+
+& [MeaningDevelopment] is the refined Hodge shape
+  + [current_missing_theorem] is arbitrary rational Hodge-class data must produce an algebraic cycle or correspondence that produces such a cycle
+  + [revelation] is Hodge's obstruction is not lack of rich structures; it is the absence of a universal output mechanism
+  + [proof_progress] is none
+  + [unresolved_lock_mass] is still high for arbitrary construction and transfer
+  + [next_responsible_step] is either audit a concrete claimed construction mechanism or record Hodge saturation for this cycle
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [hodge_solution_status] is unresolved
+  + [heartbeat_status] is active every minute
+

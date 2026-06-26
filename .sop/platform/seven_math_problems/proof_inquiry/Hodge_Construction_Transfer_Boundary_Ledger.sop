@@ -1,0 +1,35 @@
+Subject: Hodge Construction-Transfer Boundary Ledger
+
+Description: Project-local boundary ledger separating Hodge detection, organization, correspondence transfer, substitute structure, and actual algebraic cycle output.
+
+& [HodgeConstructionTransferBoundaryLedger] is a math inquiry tool
+  + [tool_uuid] is 99d8a5f3-f5a3-445c-a16b-adf8969ec8a4
+  + [project] is seven math problems
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26T19:44Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_explicit_cycle_correspondence_deep_research_001.sop
+  + [role] is decide whether a Hodge mechanism outputs algebraic cycles, transfers cycle output, detects loci, organizes obstructions, or only supplies substitute structure
+  + [not_role] is proving Hodge or downgrading useful non-proof mechanisms
+
+& [ColumnSet] is the construction-transfer boundary surface
+  + [mechanism] is the proposed construction, detection, transfer, or organizing method
+  + [input_data] is arbitrary_hodge_class, family_data, normal_function, correspondence, special_locus, motive_or_absolute_class, or unclear
+  + [output_cycle_status] is actual_algebraic_cycle, conditional_cycle, transferred_cycle, detected_class, obstruction_or_invariant, substitute_structure, or none
+  + [transfer_scope] is arbitrary, family_scoped, special_locus, correspondence_scoped, substitute_only, or none
+  + [arbitrary_class_status] is handles_arbitrary_class, requires_extra_structure, detects_only, substitutes_only, or fails
+  + [authority_boundary] is proof_relevant, boundary_relevant, calibration, substitute_not_authority, outside, or audit_needed
+  + [first_missing_feature] is the earliest feature missing for Clay-target proof relevance
+
+& [UseProcedure] is the boundary-ledger workflow
+  + [step_001_name_mechanism] is state the mechanism and its input data
+  + [step_002_classify_output] is classify actual cycle output versus detection, invariant, or substitute
+  + [step_003_classify_transfer_scope] is name how far the output transfers beyond a family or correspondence
+  + [step_004_test_arbitrary_class] is ask whether arbitrary rational Hodge classes are handled or require extra data
+  + [step_005_mark_authority] is mark whether the mechanism is proof-relevant, boundary-relevant, calibration, substitute-not-authority, outside, or audit-needed
+
+  = must: require actual algebraic cycle output for proof-relevant realization
+  = must: treat correspondence transfer as scoped unless correspondences are produced from arbitrary input
+  = must: keep normal functions as organization unless they produce/existentially force cycles in scope
+  = should: preserve calibration mechanisms for future theorem-shape learning
+  - never: let substitute structure cross into Clay proof authority without algebraic cycles
+
