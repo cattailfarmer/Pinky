@@ -1,0 +1,54 @@
+Subject: Navier-Stokes Theta Bridge Subclaim Decomposition
+
+Description: Project-local math inquiry tool for decomposing the Theta-to-epsilon bridge obstruction into smaller proof-facing subclaims.
+
+& [NavierStokesThetaBridgeSubclaimDecomposition] is a math inquiry tool
+  + [tool_uuid] is 9c044427-9c6c-4c04-983c-61b58b238d0e
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_epsilon_regularity_bridge_research_001.sop
+  + [parent_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_To_Epsilon_Regularity_Bridge_Ledger.sop
+  + [role] is split the missing Theta-to-epsilon theorem into separately auditable theorem interfaces
+  + [not_role] is proving Navier-Stokes, validating the quadrupole route, or treating subclaim names as established lemmas
+
+& [SubclaimAdmissionRule] is the promotion boundary
+  = must: keep Theta, pressure work, epsilon criteria, and concentration exclusion in the same local cylinder frame
+  = must: identify whether each subclaim is proved by a source, only proposed by the source document, or absent
+  = must: reject any bridge that controls only the absorbed pressure-work coefficient but not the accepted local regularity quantity
+  = should: prefer subclaims that can be checked against known pressure decomposition or epsilon-regularity theorems
+  - never: infer regularity from geometric depletion without an explicit inequality into a known criterion
+
+& [SubclaimSet] is the current decomposition
+  + [subclaim_001_active_scale_localization] is define the active cylinder Q_r(x0,t0) where Theta is measured and where an epsilon-regularity criterion will be tested
+    = intended_output: same-frame localization between depletion, pressure work, and local regularity quantities
+    = current_status: not_admitted
+    = first_missing_feature: exact active-scale selection tied to possible concentration sequences
+    = research_value: high because pressure splitting and epsilon criteria cannot be compared before the frame is fixed
+  + [subclaim_002_pressure_split_control] is split pressure into local, nonlocal, and harmonic parts on the active cylinder and bound the nonlocal or harmonic contribution in that same frame
+    = intended_output: pressure nonlocality becomes a controlled term rather than an implicit geometric remainder
+    = current_status: not_admitted
+    = first_missing_feature: no checked bound from Theta to the harmonic or nonlocal pressure oscillation
+    = research_value: high because accepted local criteria are velocity-pressure criteria, not velocity-geometry criteria alone
+  + [subclaim_003_theta_to_epsilon_smallness] is prove that the Theta threshold plus admissible local data imply CKN-style or local-energy epsilon smallness
+    = intended_output: a direct theorem bridge from the candidate depletion functional to an accepted regularity criterion
+    = current_status: absent
+    = first_missing_feature: no Theta-to-epsilon inequality in the current bounded source set
+    = research_value: very_high because this is the central missing theorem after localization and pressure control are stated
+  + [subclaim_004_concentration_sequence_exclusion] is show every possible singular concentration sequence contains an active cylinder satisfying the Theta-to-epsilon bridge
+    = intended_output: concentration cannot persist through all shrinking scales once the bridge hypotheses are met
+    = current_status: open
+    = first_missing_feature: no propagation or rigidity theorem forcing the needed active-scale hypotheses
+    = research_value: medium_high because it becomes sharp only after subclaims 001 through 003 have substance
+
+(navier_stokes_theta_bridge_subclaim_decomposition) :active scale, pressure split, theta inequality, concentration exclusion/ |epsilon regularity bridge|
+  + [inside] is decomposition of a missing theorem into proof-facing audit targets
+  + [boundary] is each subclaim needs source support or a formal proof package before promotion
+  |outside| global proof claims, source-document authority expansion, and semantic reinterpretation of pressure terms
+
+& [CurrentReading] is the proof-shape adjustment
+  + [old_obstruction] is no_theta_to_epsilon_regularity_smallness_theorem
+  + [new_shape] is four smaller interfaces: active-scale localization, same-frame pressure split, Theta-to-epsilon inequality, and concentration sequence exclusion
+  + [best_next_handle] is subclaim_001_active_scale_localization
+  + [reason] is the active cylinder must be fixed before the pressure split or epsilon criterion can be meaningfully audited
+  + [deep_research_gate_status] is ready_if_active_scale_definitions_remain_low_resolution

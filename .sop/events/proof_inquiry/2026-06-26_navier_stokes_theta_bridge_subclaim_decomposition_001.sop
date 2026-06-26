@@ -1,0 +1,33 @@
+Subject: Navier-Stokes Theta Bridge Subclaim Decomposition 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Prior: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_To_Epsilon_Regularity_Bridge_Ledger.sop
+Authority Boundary: decomposition record only; no Navier-Stokes proof claim
+
+& [ProofInquiryEvent] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [trigger] is heartbeat reentry from the latest committed obstruction map
+  + [bounded_question] is whether the Theta-to-epsilon bridge obstruction can be decomposed into smaller theorem-shaped targets
+  + [artifact_created] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_Bridge_Subclaim_Decomposition.sop
+
+& [FindingSet] is the decomposition result
+  + [finding_001] is active-scale localization is the first smaller obstruction
+    = meaning: pressure work, Theta, and epsilon-regularity quantities must be measured in the same cylinder before a bridge theorem can be stated
+  + [finding_002] is pressure split control is a separate obstruction
+    = meaning: nonlocal and harmonic pressure contributions cannot be hidden inside the depletion scalar unless bounded in the active frame
+  + [finding_003] is the central missing theorem remains Theta-to-epsilon smallness
+    = meaning: the source route still needs an inequality into accepted local regularity criteria, not only pressure-work absorption
+  + [finding_004] is concentration exclusion is downstream
+    = meaning: singular-scale exclusion becomes meaningful only after the active-scale and Theta-to-epsilon bridge have a theorem statement
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is find a direct Theta-to-epsilon regularity bridge
+  + [new_shape] is first build or find a same-frame active-scale localization theorem, then test pressure splitting and Theta-to-epsilon smallness within that frame
+  + [retired_overclaim] is concentration can be excluded directly from the Theta functional without an active-scale bridge
+  + [preserved_potential] is high because the route now has smaller theorem interfaces rather than one monolithic missing theorem
+
+& [NextAction] is bounded
+  + [recommended_next] is run a focused active-scale localization pass before returning to broader concentration or endpoint L3 sources
+  + [deep_research_priority_gate] is ready_if_local_records_do_not_define_active_cylinders_with_enough_resolution
+  + [heartbeat_status] is active
