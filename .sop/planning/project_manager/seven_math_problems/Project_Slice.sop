@@ -271,6 +271,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_078_build_p_vs_np_operator_completeness_gate] is build and apply a gate separating local soundness from global completeness, failure certificates, and polynomial runtime
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Operator_Completeness_Gate.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_operator_completeness_gate_001.sop
+  + [Task_079_p_vs_np_reopen_saturation_reflection] is reflect on the P vs NP explicit-operator reopen branch and return to the final synthesis choice point unless a complete polynomial operator is selected
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_p_vs_np_reopen_saturation_reflection_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
