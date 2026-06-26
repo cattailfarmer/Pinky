@@ -369,6 +369,9 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_symbolic_ricci_flow_scoring_runtime_001.sop
   + [Task_118_create_reentry_candidate_scorecard] is score current six-lane reentry candidates and select the next concrete audit target
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_reentry_candidate_scorecard_001.sop
+  + [Task_119_create_bsd_same_frame_measurement_boundary_ledger] is define the BSD same-frame admission test for source count, independence, measurement, and upper control
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Same_Frame_Measurement_Boundary_Ledger.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_same_frame_measurement_boundary_ledger_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

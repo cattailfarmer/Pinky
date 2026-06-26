@@ -1,0 +1,63 @@
+Subject: BSD Same-Frame Measurement Boundary Ledger
+
+Description: Project-local math inquiry tool for testing whether BSD source count, independence, measurement, and upper control live in one compatible theorem frame.
+
+& [BSDSameFrameMeasurementBoundaryLedger] is a math inquiry tool
+  + [tool_uuid] is 2fe12f3c-c2d5-47a6-81c8-7a57e9d376c8
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_reentry_candidate_scorecard_001.sop
+  + [role] is prevent BSD source-count, independence, measurement, and upper control from being assembled across incompatible hypotheses
+  + [not_role] is proving BSD, rejecting special theorem corridors, or converting analogy into proof authority
+
+& [LedgerColumnSet] is the same-frame surface
+  + [candidate_corridor] is the named source-count or Euler/Kolyvagin-style mechanism being audited
+  + [target_statement] is the exact BSD claim, curve family, field, rank range, and coefficient setting
+  + [analytic_frame] is the L-function, derivative order, p-adic L-function, leading coefficient, or analytic signal used
+  + [source_frame] is the points, cycles, Selmer classes, Euler system classes, or Stark/Kolyvagin-system objects supplied
+  + [measurement_frame] is the height pairing, regulator, derived height, p-adic height, or nonvanishing theorem used to test independence
+  + [upper_control_frame] is the Selmer/rank upper bound, descent, Euler/Kolyvagin system control, Iwasawa control, or equivalent closure
+  + [hypothesis_match] is same, compatible_with_proof, conditional_match, translated_with_gap, incompatible, or unknown
+  + [rank_count_match] is exact, lower_bound_only, upper_bound_only, special_rank_only, conjectural, or unknown
+  + [first_frame_break] is the first place where analytic, source, measurement, and control frames stop matching
+  + [proof_promotion_status] is blocked, special_case_only, conditional, audit_ready, or outside
+
+& [UseProcedure] is the boundary workflow
+  + [step_001_target] is write the exact BSD statement and rank scope before naming candidate objects
+  + [step_002_frames] is fill analytic, source, measurement, and upper-control frames as separate entries
+  + [step_003_match] is test whether all frames share field, family, representation, hypotheses, and rank range
+  + [step_004_count] is test whether the same frame supplies both enough independent sources and no hidden extra rank
+  + [step_005_boundary] is classify proof promotion status and name first frame break
+
+  = must: require same-frame compatibility before treating lower and upper data as one proof route
+  = must: keep auxiliary-field or special-family abundance separate from the original target statement
+  = must: distinguish nonzero height of one point from rank-parametrized regulator nondegeneracy
+  = should: preserve special corridors as meaning-bearing partial structure
+  - never: combine source objects from one hypothesis set with upper control from another unless a translation theorem is recorded
+
+(bsd_same_frame_measurement_boundary_ledger) :candidate_corridor: /analytic frame, source frame, measurement frame, upper control frame/ |proof promotion|
+  + [inside] is compatibility testing for BSD higher-rank reentry candidates
+  + [boundary] is point production, height measurement, and Selmer control only form proof-shaped evidence when they close in the same theorem frame
+  |outside| source-count by metaphor, independence by computation alone, and upper control imported from a different corridor
+
+& [CurrentApplication] is the selected reentry candidate
+  + [candidate_corridor] is higher-rank Euler/Kolyvagin-style source-count audit
+  + [target_statement] is general higher-rank BSD remains too broad until a specific curve family, field, rank range, and theorem corridor are named
+  + [analytic_frame] is open
+    = reason: candidate has not yet fixed whether the analytic signal is complex L-series order, p-adic L-function data, derivative formula, or leading coefficient formula
+  + [source_frame] is open
+    = reason: candidate has not yet fixed whether the source objects are points, cycles, Selmer classes, Euler-system classes, or Kolyvagin-derived classes
+  + [measurement_frame] is open
+    = reason: candidate has not yet fixed a height/regulator/nonvanishing theorem that certifies rank-parametrized independence
+  + [upper_control_frame] is open
+    = reason: candidate has not yet fixed same-hypothesis Selmer or rank upper control
+  + [hypothesis_match] is unknown
+  + [rank_count_match] is unknown
+  + [first_frame_break] is target_statement_not_scoped
+  + [proof_promotion_status] is blocked
+
+& [ReentryDecision] is bounded
+  + [next_probe] is choose one named theorem corridor or source-count mechanism whose analytic, source, measurement, and upper-control frames can be tested line by line
+  + [deep_research_priority_gate] is conditionally_ready
+    = trigger: if no local artifact names enough details to fill the four frames, run bounded deep research on higher-rank Euler/Kolyvagin or Stark-system corridors
+  + [meaning_gain] is the BSD reentry target has shifted from "find source count" to "find a same-frame theorem corridor where source count, independence, measurement, and upper control can be audited together"
