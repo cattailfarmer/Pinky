@@ -1,0 +1,57 @@
+Subject: BSD Source Transfer Reopen 001
+
+Description: Reopen pass on the highest-potential post-synthesis BSD target: whether special higher-cycle corridors transfer into Mordell-Weil rank evidence.
+
+& [ReopenFrame] is a proof-inquiry event
+  + [event_uuid] is 90f88d52-6d4e-47b5-a05b-3d3a3650e86d
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_final_six_lane_saturation_synthesis_001.sop
+  + [boundary_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_translation_boundary_checklist_001.sop
+  + [reopen_target] is source transfer from special higher-cycle objects into enough independent Mordell-Weil rational points
+  + [deep_research_gate] is used
+    = reason: source-transfer mechanisms were the highest-potential unresolved periphery after final synthesis
+
+& [SourceSet] is the bounded source-transfer frame
+  + [source_001] is Bertolini, Darmon, and Prasanna, Chow-Heegner points on CM elliptic curves and values of p-adic L-functions
+    = link: https://www.math.mcgill.ca/darmon/pub/Articles/Research/53.BDP3/paper.pdf
+    = use: outlines a construction of rational points on CM elliptic curves using cycles on higher-dimensional varieties, with p-adic rationality results
+  + [source_002] is Bertolini, Darmon, and Prasanna, Generalized Heegner cycles and p-adic Rankin L-series
+    = link: https://sites.lsa.umich.edu/kartikp/wp-content/uploads/sites/1326/2024/07/BDP1.pdf
+    = use: relates generalized Heegner cycles under p-adic Abel-Jacobi maps to special values of p-adic Rankin L-series
+  + [source_003] is Darmon, Daub, Lichtenstein, and Rotger, Algorithms for Chow-Heegner points via iterated integrals
+    = link: https://wstein.org/papers/mcom2927-chow-heegner.pdf
+    = use: gives algorithms for computing Chow-Heegner points and reports rank-one computations in small conductor examples
+  + [source_004] is Darmon, Rotger, and Sols, Iterated integrals, diagonal cycles and rational points on elliptic curves
+    = link: https://www.numdam.org/articles/10.5802/pmb.a-145/
+    = use: connects diagonal cycles and iterated integrals to rational points on elliptic curves in special settings
+  + [source_005] is Castella, Heegner cycles and p-adic L-functions
+    = link: https://web.math.ucsb.edu/~castella/HeegnerCycles-print.pdf
+    = use: shows Heegner-cycle and p-adic L-function machinery can yield rank-zero Bloch-Kato type consequences in certain higher-weight settings
+
+& [ResearchFindings] is the source-transfer result
+  + [finding_001] is Chow-Heegner points are a genuine source-transfer mechanism in special settings
+    = meaning: the R-hand "growth" phrase has a sharper formal neighbor than generic diagonal cycles alone
+  + [finding_002] is the transfer can land in rational points on elliptic curves
+    = meaning: source transfer is not wholly blocked; the boundary is scope and sufficiency, not impossibility
+  + [finding_003] is the known transfer is special-family and hypothesis dependent
+    = meaning: CM, modular, correspondence, p-adic, Tate-conjectural, or rank-one style conditions remain part of the statement
+  + [finding_004] is computations and constructions do not become an all-rank source-count theorem
+    = meaning: producing some Chow-Heegner points is not the same as producing enough independent generators for arbitrary analytic rank
+  + [finding_005] is independence and upper-control compatibility remain separate locks
+    = meaning: even successful point construction must still be paired with height/regulator independence and Selmer upper bounds
+
+& [BoundaryUpdate] is the adjusted BSD state
+  + [old_boundary] is no source transfer from special higher-cycle objects into enough independent Mordell-Weil points
+  + [adjusted_boundary] is source transfer exists in special Chow-Heegner and related settings, but no general sufficiency theorem supplies enough independent Mordell-Weil generators for arbitrary BSD rank
+  + [best_new_shape] is BSD source transfer should be studied through Chow-Heegner point corridors rather than generic diagonal cycles
+  + [first_remaining_lock] is sufficiency of source count and independence for arbitrary analytic rank
+  + [second_remaining_lock] is compatible upper-control system in the same hypotheses
+  + [proof_promotion] is blocked
+    = reason: special point construction does not close rank equality or leading coefficient formula for general BSD
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a BSD Source Transfer Sufficiency Ledger if the next heartbeat continues BSD
+    = reason: the inquiry now needs to separate existence of source transfer from enough independent source transfer
+  + [commit_policy] is commit this reopen research after tests pass
+  + [heartbeat_status] is active every minute
