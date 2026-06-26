@@ -224,6 +224,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_057_build_bsd_corridor_compatibility_ledger] is build and apply a same-frame ledger for BSD theorem corridors to identify the highest revelation route
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Corridor_Compatibility_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_corridor_compatibility_ledger_001.sop
+  + [Task_058_research_bsd_diagonal_cycle_corridor] is resolve the diagonal-cycle and triple-product corridor as a special high-revelation BSD route with translation boundaries
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_diagonal_cycles_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

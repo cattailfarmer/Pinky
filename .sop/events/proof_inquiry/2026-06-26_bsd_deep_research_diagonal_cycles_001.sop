@@ -1,0 +1,55 @@
+Subject: BSD Deep Research Diagonal Cycles 001
+
+Description: Bounded Deep_Research_Priority_Gate pass on diagonal-cycle and triple-product corridors as the highest-revelation BSD target after the corridor compatibility ledger.
+
+& [DeepResearchUnit] is a Deep_Research_Priority_Gate application
+  + [event_uuid] is 9a0f0e49-0e25-44e1-9720-8bbd82ddf84f
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_corridor_compatibility_ledger_001.sop
+  + [resolution_gap] is whether diagonal-cycle and triple-product Euler-system corridors can turn L-hand/R-hand meaning into a BSD-relevant proof shape
+  + [curiosity_priority] is high
+    = reason: this is the first BSD corridor where higher-cycle source objects, p-adic measurement, and Euler-system language visibly coexist
+  + [proof_boundary] is special theorem corridor only, not general BSD solution authority
+
+& [SourceSet] is the bounded research frame
+  + [source_001] is Darmon and Rotger, Diagonal cycles and Euler systems I: A p-adic Gross-Zagier formula
+    = link: https://www.numdam.org/articles/10.24033/asens.2227/
+    = use: relates generalized diagonal cycles under p-adic Abel-Jacobi maps to special values of triple-product p-adic L-functions
+  + [source_002] is Darmon and Rotger, Diagonal cycles and Euler systems II: The Birch and Swinnerton-Dyer conjecture for Hasse-Weil-Artin L-functions
+    = link: https://www.ams.org/jams/2017-30-03/S0894-0347-2016-00861-5/
+    = use: establishes new BSD cases in analytic rank 0 for elliptic curves over Q viewed through certain self-dual Artin representations
+  + [source_003] is Bertolini, Darmon, and Rotger, Beilinson-Flach elements and Euler systems I
+    = link: https://www.math.mcgill.ca/darmon/pub/Articles/Research/58.BDR-Flach1/paper.pdf
+    = use: provides adjacent Euler-system/regulator architecture for modular curves and Rankin p-adic L-series
+  + [source_004] is Dasgupta, p-adic L-functions and Euler systems
+    = link: https://sites.math.duke.edu/~dasgupta/papers/Trilogies.pdf
+    = use: situates generalized Gross-Kudla-Schoen diagonal cycles as one of several Euler-system trilogies tied to L-values
+  + [source_005] is Clay Mathematics Institute, Birch and Swinnerton-Dyer problem description
+    = link: https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf
+    = use: keeps the formal Millennium statement boundary visible against special-case progress
+
+& [ResearchFindings] is the extracted theorem-boundary shape
+  + [finding_001_source_object] is diagonal cycles provide a genuine higher-cycle source object
+    = meaning: this is a much better formal analogue of R-hand "growth" than generic traversal language
+  + [finding_002_measurement_object] is p-adic Abel-Jacobi images and p-adic Gross-Zagier formulas supply a measurement bridge
+    = meaning: this gives the project a sharper formal reading of "phase correction" as regulator or p-adic height data
+  + [finding_003_control_object] is Euler-system language is present but specialized
+    = meaning: the corridor has control flavor, but not a universal elliptic-curve BSD control mechanism
+  + [finding_004_application_boundary] is the strongest BSD applications found are special cases such as analytic rank 0 Hasse-Weil-Artin settings
+    = meaning: the route yields real theorems and meaning, but it does not cross directly to general higher analytic rank BSD for all elliptic curves
+  + [finding_005_translation_lock] is the main obstacle is translation from triple-product or Artin-representation settings to the original elliptic curve's Mordell-Weil rank equality
+    = meaning: the corridor can illuminate the shape of a proof but not replace the missing general source/independence/control package
+
+& [PeripheryResolution] is the adjusted shape of meaning
+  + [old_blur] is diagonal cycles might be the higher-rank replacement for Heegner points
+  + [resolved_shape] is diagonal cycles are a high-value special corridor: they show how source cycle, p-adic measurement, and Euler-system structure can occupy one frame, but their BSD consequences are constrained by representation, sign, rank, and specialization hypotheses
+  + [source_document_mapping] is L-hand collapse maps best to triple-product or p-adic L-function special data; R-hand growth maps to diagonal-cycle Selmer classes; phase correction maps to p-adic Abel-Jacobi/regulator measurement
+  + [retired_overclaim] is diagonal cycles solve the higher-rank BSD source problem
+  + [new_candidate_tool_need] is evident
+    = reason: the next question is a translation-boundary checklist, not another broad table
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a BSD Translation Boundary Checklist for special theorem corridors before asking whether any route can return to the original elliptic-curve BSD statement
+  + [commit_policy] is commit this deep-research increment after tests pass
+  + [heartbeat_status] is active every minute
