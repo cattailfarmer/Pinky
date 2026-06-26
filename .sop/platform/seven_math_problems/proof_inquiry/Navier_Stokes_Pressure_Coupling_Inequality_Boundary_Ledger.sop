@@ -1,0 +1,35 @@
+Subject: Navier-Stokes Pressure-Coupling Inequality Boundary Ledger
+
+Description: Project-local ledger for testing whether pressure and strain-vorticity coupling can become a one-sided continuation-scale inequality.
+
+& [NavierStokesPressureCouplingInequalityBoundaryLedger] is a math inquiry tool
+  + [tool_uuid] is 95e04c9a-44a6-4faf-8a11-96886004d552
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:33Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_full_strain_coupling_term_map_001.sop
+  + [role] is distinguish plausible full-equation counteraction from a proof-relevant one-sided inequality
+  + [not_role] is proving Navier-Stokes, asserting pressure coercivity, or turning criteria into estimates
+
+& [ColumnSet] is the inequality-boundary surface
+  + [candidate_bound] is the proposed inequality shape or term grouping
+  + [left_side] is the controlled quantity or defect
+  + [right_side] is the amplifying term, dissipative term, pressure-coupling term, or continuation-scale norm
+  + [sign_requirement] is negative_control, absorbable_positive_part, cancellation, conditional, or unknown
+  + [scale_requirement] is critical_or_continuation_level, subcritical, energy_level, local, or unclear
+  + [available_status] is known_identity, criterion, perturbative_estimate, turbulence_diagnostic, conjectural, or absent
+  + [boundary_result] is inside_candidate, boundary_only, outside_proof, or deep_research_needed
+  + [first_missing_feature] is the earliest missing mathematical feature
+
+& [UseProcedure] is the boundary-ledger workflow
+  + [step_001_name_bound] is write the inequality shape and controlled quantity
+  + [step_002_check_sign] is test whether pressure/coupling terms have definite sign, absorbability, or cancellation
+  + [step_003_check_scale] is test whether the inequality acts at critical or continuation scale
+  + [step_004_check_availability] is classify whether the relation is an identity, estimate, criterion, diagnostic, conjecture, or absent
+  + [step_005_update_lock_mass] is reduce sign/coercivity lock only for a valid one-sided estimate
+
+  = must: reject redistribution without sign as proof progress
+  = must: reject criteria that assume the target control
+  = should: preserve pressure and strain-vorticity terms as high-value periphery when sign is unknown
+  - never: count turbulence diagnostics as deterministic regularity estimates
+

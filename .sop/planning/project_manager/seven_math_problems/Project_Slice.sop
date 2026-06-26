@@ -310,6 +310,9 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_094_build_navier_stokes_full_strain_coupling_term_map] is build and apply a term map for pressure, viscous, advective, self-amplification, and strain-vorticity coupling roles
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Full_Strain_Coupling_Term_Map.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_full_strain_coupling_term_map_001.sop
+  + [Task_095_build_navier_stokes_pressure_coupling_inequality_boundary] is build and apply a boundary ledger for pressure/coupling one-sided inequality candidates
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Coupling_Inequality_Boundary_Ledger.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_coupling_inequality_boundary_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

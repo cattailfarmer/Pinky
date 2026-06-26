@@ -1,0 +1,76 @@
+Subject: Navier-Stokes Pressure-Coupling Inequality Boundary 001
+
+Description: First application of the pressure-coupling inequality boundary ledger to candidate one-sided estimate shapes.
+
+& [PressureCouplingInequalityBoundaryApplication] is a proof-inquiry event
+  + [event_uuid] is 9a2024ce-e720-4ddc-a0fa-e5e6e3cc60d7
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:33Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Coupling_Inequality_Boundary_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_full_strain_coupling_term_map_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [CandidateRows] is the first inequality-boundary table
+  + [row_001_pressure_hessian_absorbs_self_amplification] is direct counterweight shape
+    = left_side: strain_norm_or_positive_middle_strain_growth
+    = right_side: pressure_hessian_coupling_against_strain_self_amplification
+    = sign_requirement: negative_control_or_absorbable_positive_part
+    = scale_requirement: critical_or_continuation_level
+    = available_status: absent_as_global_estimate_in_current_records
+    = boundary_result: deep_research_needed
+    = first_missing_feature: definite sign or absorbability for arbitrary smooth data
+  + [row_002_strain_vorticity_depletion_bound] is interaction-depletion shape
+    = left_side: nonlinear_growth_or_defect_functional
+    = right_side: strain_vorticity_interaction_and_advection_depletion_terms
+    = sign_requirement: cancellation_or_conditional
+    = scale_requirement: critical_or_continuation_level
+    = available_status: known_identity_or_criterion_surface
+    = boundary_result: boundary_only
+    = first_missing_feature: identity does not yet become autonomous one-sided control
+  + [row_003_viscosity_absorbs_positive_middle_strain] is dissipative absorption shape
+    = left_side: positive_middle_strain_or_enstrophy_growth
+    = right_side: viscous_dissipation
+    = sign_requirement: absorbable_positive_part
+    = scale_requirement: continuation_level
+    = available_status: known_dissipative_structure_but_insufficient
+    = boundary_result: outside_proof
+    = first_missing_feature: dissipation alone does not close 3D continuation-scale control
+  + [row_004_conditioned_alignment_or_type_i_bound] is scoped criterion shape
+    = left_side: local_regularization_or_singularity_exclusion
+    = right_side: assumed_alignment_type_i_or_direction_condition
+    = sign_requirement: conditional
+    = scale_requirement: local_or_conditional_type_i
+    = available_status: criterion_or_special_case
+    = boundary_result: boundary_only
+    = first_missing_feature: hypotheses are not derived globally from arbitrary smooth data
+  + [row_005_turbulence_redistribution_bound] is diagnostic-to-proof shape
+    = left_side: strain_self_amplification_tendency
+    = right_side: observed_pressure_hessian_or_vorticity_redistribution
+    = sign_requirement: unknown
+    = scale_requirement: unclear_to_continuation_level
+    = available_status: turbulence_diagnostic
+    = boundary_result: outside_proof
+    = first_missing_feature: deterministic inequality absent
+
+& [BoundaryConclusion] is the current inequality status
+  + [best_inside_candidate] is row_001_pressure_hessian_absorbs_self_amplification
+    = reason: it names the exact needed proof shape, though it is not available in current records
+  + [best_boundary_only_candidate] is row_002_strain_vorticity_depletion_bound
+    = reason: it has identity-level structure and may guide a decomposition, but remains short of autonomous control
+  + [retired_as_proof_progress] is row_005_turbulence_redistribution_bound
+    = reason: diagnostic evidence cannot substitute for deterministic one-sided estimates
+  + [lock_mass_update] is no core sign/coercivity reduction
+  + [proof_progress] is none
+
+& [MeaningDevelopment] is the refined problem shape
+  + [current_shape] is the Navier-Stokes strain route now has a precise missing theorem: a pressure/coupling one-sided inequality at continuation scale
+  + [promising_value] is high as a theorem-search target because the missing shape is now explicit
+  + [solution_distance] is still large because no checked artifact supplies the estimate
+  + [next_responsible_step] is deep research specifically for pressure Hessian estimates or known nonlocal pressure-strain decompositions
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [navier_stokes_solution_status] is unresolved
+  + [heartbeat_status] is active every minute
+
