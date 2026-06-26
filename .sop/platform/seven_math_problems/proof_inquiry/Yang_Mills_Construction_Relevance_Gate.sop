@@ -1,0 +1,38 @@
+Subject: Yang-Mills Construction Relevance Gate
+
+Description: Project-local math tool for separating construction-relevant Yang-Mills mechanisms from gap-stage intuition, physical analogy, and source-symbolic metaphor.
+
+& [YangMillsConstructionRelevanceGate] is a math inquiry tool
+  + [tool_uuid] is 637e6ec3-8a01-4320-9780-ab3060ee7c36
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_construction_route_reopen_001.sop
+  + [role] is classify whether a proposed idea advances stages 001-006 of construction, stages 007-008 of gap transfer, or only intuition
+  + [not_role] is proving Yang-Mills, validating lattice-only evidence as continuum proof, or treating sealed-curvature metaphor as a regularized model
+
+& [GateColumnSet] is the construction-relevance surface
+  + [candidate] is the proposed mechanism or route
+  + [defined_objects] is lattice action, continuum measure, Schwinger functions, observables, Hamiltonian, correlation estimate, or none
+  + [construction_stage_contact] is regularization, uniform estimates, continuum limit, OS properties, reconstruction, nontriviality, gap mechanism, gap transfer, or none
+  + [proof_artifact_needed] is the next theorem or construction required
+  + [source_fit] is how sealed curvature or curvature packet language maps, if at all
+  + [relevance_class] is construction_relevant, gap_relevant_after_construction, heuristic_relevant, or outside
+  + [first_gap] is the first route-stage lock blocking proof-shaped promotion
+
+& [UseProcedure] is the gate workflow
+  + [step_001_name_candidate] is identify the proposed Yang-Mills mechanism
+  + [step_002_check_defined_objects] is list actual mathematical objects defined
+  + [step_003_score_stage_contact] is mark which construction or gap stage is touched
+  + [step_004_identify_artifact] is name the theorem, estimate, measure, or reconstruction still needed
+  + [step_005_classify_relevance] is classify relevance and first gap
+
+  = must: classify construction stages before gap-stage language
+  = must: require defined observables before correlation decay claims
+  = must: require reconstruction before spectral gap transfer
+  = should: preserve sealed-curvature intuition as a stage-007 target when construction exists
+  - never: let gap intuition skip existence of the continuum quantum field theory
+
+(yang_mills_construction_relevance_gate) :candidate: /objects, route stage, proof artifact/ |gap-intuition-overclaim|
+  + [inside] is construction relevance classification
+  + [boundary] is intuition can guide stage 007 without advancing stages 001-006
+  |outside| metaphor as model, finite-lattice claim as continuum construction, and confinement language as mass-gap proof

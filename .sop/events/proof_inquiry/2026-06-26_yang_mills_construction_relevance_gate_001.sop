@@ -1,0 +1,54 @@
+Subject: Yang-Mills Construction Relevance Gate 001
+
+Description: First application of the Yang-Mills Construction Relevance Gate to construction-route candidates and sealed-curvature intuition.
+
+& [GateApplication] is a proof-inquiry event
+  + [event_uuid] is 83ae3767-2c09-4c4c-8763-aad35ef8138d
+  + [project] is seven math problems
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Construction_Relevance_Gate.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_construction_route_reopen_001.sop
+  + [target_claim] is sealed curvature may be meaningful only if it is attached to route-stage construction or gap artifacts
+
+& [GateRows] is the first relevance table
+  + [row_001_lattice_regularization] is construction candidate
+    = defined_objects: possible lattice action and finite-volume measure if specified externally
+    = construction_stage_contact: regularization
+    = proof_artifact_needed: uniform estimates and continuum limit
+    = source_fit: weak; sealed curvature does not define the action or estimates
+    = relevance_class: construction_relevant_if_specified
+    = first_gap: no source-defined regularized model
+  + [row_002_os_reconstruction_route] is construction completion candidate
+    = defined_objects: Schwinger functions or Euclidean measure if constructed externally
+    = construction_stage_contact: OS properties and reconstruction
+    = proof_artifact_needed: reflection positivity, invariance, clustering, regularity, Hilbert-space reconstruction
+    = source_fit: none to weak
+    = relevance_class: construction_relevant_if_objects_exist
+    = first_gap: no continuum Euclidean measure or Schwinger functions
+  + [row_003_exponential_decay_of_observables] is gap-stage candidate
+    = defined_objects: gauge-invariant observables and correlations if construction exists
+    = construction_stage_contact: gap mechanism and gap transfer
+    = proof_artifact_needed: uniform exponential decay and transfer to Hamiltonian spectral gap
+    = source_fit: strongest formal home for sealed curvature
+    = relevance_class: gap_relevant_after_construction
+    = first_gap: no constructed observables or reconstructed Hamiltonian
+  + [row_004_source_sealed_curvature] is symbolic candidate
+    = defined_objects: none
+    = construction_stage_contact: none directly
+    = proof_artifact_needed: regularized model, observables, decay theorem, and reconstruction
+    = source_fit: native source language
+    = relevance_class: heuristic_relevant
+    = first_gap: no mathematical Yang-Mills object is defined
+
+& [GateConclusion] is the construction-relevance result
+  + [best_construction_route] is externally supplied lattice or Euclidean construction route, not source sealed-curvature language
+  + [best_source_fit] is exponential decay of gauge-invariant observables after construction
+  + [first_general_lock] is no source-defined regularized model or continuum measure
+  + [second_general_lock] is no gauge-invariant observable/reconstruction pipeline for spectral gap transfer
+  + [proof_promotion] is blocked
+    = reason: source intuition is gap-stage heuristic until construction artifacts exist
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is run a Yang-Mills reopen saturation reflection unless a concrete regularized model or reconstruction theorem is selected
+  + [commit_policy] is commit this gate after tests pass
+  + [heartbeat_status] is active every minute
