@@ -1,0 +1,60 @@
+Subject: Six-Lane Missing Theorem Map
+
+Description: Internal navigation map of missing theorem shapes, audit targets, and reentry gates after the current Symbolic Ricci Flow diagnostic cycle.
+
+& [SixLaneMissingTheoremMap] is a project navigation artifact
+  + [map_uuid] is 5497a737-99d4-4a80-a582-11f7634713ad
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T20:05Z
+  + [source_synthesis] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_current_cycle_six_lane_symbolic_ricci_flow_synthesis_001.sop
+  + [authority_status] is internal_research_map_not_proof
+
+& [MapUse] is the navigation rule
+  + [use_for] is selecting concrete reentry targets, audit targets, or synthesis products
+  + [do_not_use_for] is proof authority, solution claims, or broad survey restart
+  + [selection_rule] is reopen a lane only with a concrete artifact capable of reducing unresolved_lock_mass
+
+& [LaneRows] is the missing theorem table
+  + [bsd] is Birch and Swinnerton-Dyer
+    = missing_theorem_shape: rank-parametrized source-count mechanism with independence, same-frame measurement, and upper-control closure
+    = current_status: saturated_for_current_cycle
+    = best_reentry_target: higher-rank Euler/Kolyvagin-style mechanism or source-count theorem for line-by-line sufficiency audit
+    = audit_boundary: point or cycle existence is insufficient without independence and upper control
+  + [navier_stokes] is Navier-Stokes Existence and Smoothness
+    = missing_theorem_shape: deterministic pressure-Hessian or pressure-strain one-sided continuation-scale inequality controlling positive middle-strain or strain self-amplification
+    = current_status: saturated_for_current_cycle
+    = best_reentry_target: pressure-Hessian coercivity proof, endpoint pressure-work estimate, or concrete defect functional with autonomous inequality
+    = audit_boundary: geometric depletion intuition is insufficient without sign/coercivity and continuation closure
+  + [hodge] is Hodge Conjecture
+    = missing_theorem_shape: arbitrary rational Hodge-class-to-algebraic-cycle construction or correspondence-generation theorem
+    = current_status: saturated_for_current_cycle
+    = best_reentry_target: explicit cycle algorithm, correspondence-generation theorem, or concrete construction mechanism
+    = audit_boundary: normal functions, Noether-Lefschetz loci, and substitute structures are not proof authority without algebraic cycle output
+  + [p_vs_np] is P versus NP
+    = missing_theorem_shape: polynomial proof-system simulation or refutation power for hard SAT/3-SAT fixed points, or barrier-aware lower-bound route
+    = current_status: saturated_for_current_cycle
+    = best_reentry_target: polynomial unsat-certificate theorem, complete propagation proof, proof-system simulation theorem, or barrier-aware lower-bound route
+    = audit_boundary: local consistency and tractable CSP fragments are meaningful but not NP-complete completeness
+  + [yang_mills] is Yang-Mills Existence and Mass Gap
+    = missing_theorem_shape: continuum nonabelian Yang-Mills Schwinger functions or Euclidean measure satisfying OS properties plus reconstruction and gauge-invariant decay-to-gap transfer
+    = current_status: saturated_for_current_cycle
+    = best_reentry_target: OS-ready Schwinger-function construction, continuum measure, lattice continuum-limit theorem, or complete-proof claim for stage audit
+    = audit_boundary: finite lattice models and confinement intuition are insufficient without continuum reconstruction and gap transfer
+  + [poincare] is Poincare Conjecture and Symbolic Ricci Flow context
+    = missing_theorem_shape: none_for_poincare_in_this_project
+    = current_status: solved_externally; symbolic_ricci_flow_model_is_non_proof
+    = best_reentry_target: model validation or implementation only
+    = audit_boundary: model coherence cannot become mathematical proof authority
+
+& [GlobalPattern] is the cross-lane theorem-shape pattern
+  + [pattern_001] is construction, transfer, propagation, or completeness is the recurrent missing object
+  + [pattern_002] is source metaphor becomes valuable only after formal target, proof obligation, and boundary lock are separated
+  + [pattern_003] is scoped success teaches proof shape but does not transfer automatically
+  + [pattern_004] is audit targets must be admitted stage by stage, not by title or claim strength
+
+& [NextActions] is the responsible next menu
+  + [option_001] is choose one lane and one concrete audit target from the table
+  + [option_002] is create a public-facing synthesis that states no solution claims and explains the missing theorem shapes
+  + [option_003] is implement a repeatable graph prototype for Symbolic Ricci Flow scoring
+  + [option_004] is pause proof inquiry until a concrete external target is supplied
+
