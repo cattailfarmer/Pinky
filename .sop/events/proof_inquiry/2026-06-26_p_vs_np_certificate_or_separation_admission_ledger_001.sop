@@ -1,0 +1,30 @@
+Subject: P vs NP Certificate Or Separation Admission Ledger 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Tool: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Certificate_Or_Separation_Admission_Ledger.sop
+Authority Boundary: admission ledger only; no P vs NP proof claim
+
+& [ProofInquiryEvent] is complete
+  + [lane] is P versus NP
+  + [reentry_target] is polynomial unsat-certificate theorem, complete propagation proof, proof-system simulation theorem, or barrier-aware lower-bound route
+  + [purpose] is define the admission test for separating P equals NP certificate/simulation routes from P not NP lower-bound routes
+
+& [BoundaryFinding] is the current shape
+  + [finding_001] is the reentry must choose a proof direction
+    = meaning: algorithmic coherence and lower-bound separation carry different proof obligations
+  + [finding_002] is polynomial unsat certificates remain the direct operator-side test
+    = meaning: local propagation becomes proof-relevant only if it supplies polynomial refutations or simulates a strong enough proof system
+  + [finding_003] is separation routes require barrier placement
+    = meaning: a lower-bound claim must state its model and relationship to relativization, natural proofs, and algebrization concerns
+
+& [CurrentApplication] is boundary-only
+  + [candidate_route] is polynomial unsat-certificate theorem, complete propagation proof, proof-system simulation theorem, or barrier-aware lower-bound route
+  + [first_missing_feature] is no_named_route_with_proof_system_or_barrier_placement
+  + [admission_status] is boundary_only
+  + [selected_next_probe] is polynomial_unsat_certificate_or_proof_system_simulation
+    = reason: it most directly tests the imported source proposition that coherence/propagation could become algorithmic power
+
+& [NextAction] is ready
+  + [recommended_next] is inspect local records for a named polynomial unsat-certificate or proof-system simulation theorem candidate; trigger Deep_Research_Priority_Gate only if the local record is too low-resolution
+  + [heartbeat_status] is active

@@ -1,0 +1,61 @@
+Subject: P vs NP Certificate Or Separation Admission Ledger
+
+Description: Project-local math inquiry tool for admitting or rejecting P vs NP mechanisms as either polynomial certificate/simulation routes or barrier-aware separation routes.
+
+& [PvsNPCertificateOrSeparationAdmissionLedger] is a math inquiry tool
+  + [tool_uuid] is 66a436ec-f970-4379-b19d-1eeebea247ec
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_hodge_cycle_output_reentry_saturation_reflection_001.sop
+  + [role] is force a proposed mechanism to declare whether it is a P equals NP certificate/simulation route or a P not NP lower-bound route
+  + [not_role] is proving P vs NP, promoting local consistency, or mixing algorithmic heuristics with separation claims
+
+& [AdmissionColumnSet] is the route-admission surface
+  + [candidate_route] is the operator, certificate theorem, simulation theorem, repair bound, or lower-bound framework
+  + [route_type] is p_equals_np_algorithm, p_equals_np_certificate, p_not_np_lower_bound, scoped_tractability, heuristic, or unclear
+  + [target_scope] is SAT_3SAT, NP_complete_CSP, all_NP, restricted_model, tractable_fragment, or unclear
+  + [proof_system_or_model] is local_consistency, resolution, cutting_planes, polynomial_calculus, sum_of_squares, frege_like, circuit_model, oracle_model, communication_model, or unknown
+  + [certificate_or_lower_bound_output] is polynomial_refutations, polynomial_decision_certificates, simulation_theorem, circuit_lower_bound, barrier_analysis, scoped_result, or none
+  + [worst_case_polynomial_status] is proved, theorem_candidate, conditional, contradicted_by_lower_bounds, unknown, or not_applicable
+  + [barrier_status] is natural_proofs_checked, relativization_checked, algebrization_checked, model_limited, unchecked, or not_applicable
+  + [admission_status] is admitted_for_line_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+  + [first_missing_feature] is the earliest missing feature blocking proof-shaped promotion
+
+& [UseProcedure] is the admission workflow
+  + [step_001_route] is classify the candidate as P equals NP, P not NP, scoped tractability, heuristic, or unclear
+  + [step_002_scope] is name the exact NP-complete or lower-bound scope
+  + [step_003_system] is place the candidate in a proof system or lower-bound model
+  + [step_004_output] is identify the certificate, simulation, or lower-bound object produced
+  + [step_005_polynomial] is require a worst-case polynomial theorem for P equals NP routes
+  + [step_006_barriers] is require barrier analysis for P not NP routes
+  + [step_007_admit] is admit only candidates with enough system/model placement for line-by-line audit
+
+  = must: keep P equals NP and P not NP proof burdens separate
+  = must: require unsat/refutation power for complete SAT-style algorithms
+  = must: require known-barrier positioning for broad separation claims
+  = should: preserve tractable CSP results as scoped meaning
+  - never: infer NP-complete completeness from bounded-width or local-consistency success
+
+(p_vs_np_certificate_or_separation_admission_ledger) :candidate_route: /route type, target scope, proof system or model, output, polynomial or barrier status/ |P vs NP proof|
+  + [inside] is admission control for P vs NP certificate and separation audits
+  + [boundary] is a candidate must either produce polynomial certificates on NP-complete scope or specify a barrier-aware lower-bound model
+  |outside| local repair intuition, heuristic search, tractable fragments, and unplaced lower-bound slogans
+
+& [CurrentApplication] is the active P vs NP reentry target
+  + [candidate_route] is polynomial unsat-certificate theorem, complete propagation proof, proof-system simulation theorem, or barrier-aware lower-bound route
+  + [route_type] is unclear
+    = reason: current records list both P equals NP and P not NP routes, but no concrete new route is selected
+  + [target_scope] is SAT_3SAT_or_NP_complete_CSP
+  + [proof_system_or_model] is unknown
+  + [certificate_or_lower_bound_output] is none
+  + [worst_case_polynomial_status] is unknown
+  + [barrier_status] is unchecked
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is no_named_route_with_proof_system_or_barrier_placement
+
+& [NextProbe] is selected
+  + [candidate] is polynomial_unsat_certificate_or_proof_system_simulation
+  + [reason] is it is the clearest P equals NP side of the current missing theorem and directly tests the source coherence/operator idea
+  + [deep_research_priority_gate] is conditionally_ready
+    = trigger: use only if local records cannot identify whether any polynomial unsat-certificate or simulation theorem candidate exists
