@@ -1,0 +1,101 @@
+Subject: P vs NP Completeness Mechanism Candidate Ledger 001
+
+Description: First application of the P vs NP Completeness Mechanism Candidate Ledger to completeness, certificate, repair, CSP, and separation candidates.
+
+& [PvsNPCompletenessMechanismCandidateLedgerApplication] is a proof-inquiry event
+  + [event_uuid] is 3d99c6d6-f71d-4901-b0e8-a9b7c3886444
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26T19:48Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Completeness_Mechanism_Candidate_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_p_vs_np_lock_mass_diagnostic_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [CandidateRows] is the first completeness ledger
+  + [row_001_fixed_point_unsat_certificates] is certificate-completion route
+    = target_scope: SAT_3SAT_or_NP_complete_CSP
+    = global_completeness_status: complete_if_proven
+    = certificate_status: unsat_missing
+    = runtime_status: polynomial_if_bound_proven
+    = barrier_status: not_applicable_for_algorithm_claim
+    = lock_mass_reduction: high_if_successful
+    = deep_research_need: priority_if_selected
+    = first_blocker: no proof that all hard fixed points yield polynomial unsatisfiability certificates
+  + [row_002_bounded_repair_depth] is repair-runtime route
+    = target_scope: SAT_3SAT_or_NP_complete_CSP
+    = global_completeness_status: unknown
+    = certificate_status: sat_only_or_unsat_missing
+    = runtime_status: polynomial_if_bound_proven
+    = barrier_status: not_applicable_for_algorithm_claim
+    = lock_mass_reduction: medium_if_coupled_to_completeness
+    = deep_research_need: bounded
+    = first_blocker: repair choices may encode exponential search unless bounded with completeness
+  + [row_003_complete_local_propagation_system] is propagation-completeness route
+    = target_scope: SAT_3SAT_or_NP_complete_CSP
+    = global_completeness_status: complete_if_proven
+    = certificate_status: sat_and_unsat_certificates_needed
+    = runtime_status: polynomial_if_bound_proven
+    = barrier_status: not_applicable_for_algorithm_claim
+    = lock_mass_reduction: high_if_successful
+    = deep_research_need: priority_if_selected
+    = first_blocker: known local consistency methods are incomplete for general NP-complete scope
+  + [row_004_polymorphism_or_dichotomy_route] is tractable-subclass route
+    = target_scope: fixed_tractable_CSP
+    = global_completeness_status: scoped_complete
+    = certificate_status: sat_and_unsat_certificates_in_scope
+    = runtime_status: polynomial_proven_in_known_cases
+    = barrier_status: not_applicable
+    = lock_mass_reduction: low_for_p_vs_np_high_for_subclass_meaning
+    = deep_research_need: none
+    = first_blocker: tractable CSP structure does not cover NP-complete languages
+  + [row_005_lower_bound_separation_route] is P not NP route
+    = target_scope: lower_bound_model_or_general_NP
+    = global_completeness_status: separation_route
+    = certificate_status: lower_bound_witness
+    = runtime_status: model_specific_or_none
+    = barrier_status: natural_proofs_relativization_algebrization_relevant
+    = lock_mass_reduction: high_if_barrier_aware_general_lower_bound
+    = deep_research_need: priority_if_selected
+    = first_blocker: no barrier-aware lower-bound framework is specified
+  + [row_006_heuristic_search_guidance] is source-meaning route
+    = target_scope: heuristic
+    = global_completeness_status: heuristic
+    = certificate_status: none
+    = runtime_status: exponential_or_unknown
+    = barrier_status: not_applicable
+    = lock_mass_reduction: none
+    = deep_research_need: none
+    = first_blocker: heuristic guidance has no worst-case proof authority
+
+& [LedgerConclusion] is the current candidate ranking
+  + [rank_001] is row_001_fixed_point_unsat_certificates
+    = reason: it attacks the strongest missing piece of local propagation with repair
+  + [rank_002] is row_003_complete_local_propagation_system
+    = reason: it would directly turn source coherence into a complete solver if true
+  + [rank_003] is row_005_lower_bound_separation_route
+    = reason: it is an alternate P not NP path but requires barrier-aware machinery absent from source records
+  + [rank_004] is row_002_bounded_repair_depth
+    = reason: runtime matters only after completeness is coupled to the repair process
+  + [rank_005] is row_004_polymorphism_or_dichotomy_route
+    = reason: meaningful for tractable-subclass insight but not full P vs NP
+  + [rank_006] is row_006_heuristic_search_guidance
+    = reason: preserves source meaning without proof relevance
+
+& [MeaningDevelopment] is the proposition update
+  + [current_best_shape] is the P equals NP branch would need polynomial unsat certificates for local-propagation fixed points or a complete propagation system on SAT/3-SAT
+  + [alternate_shape] is the P not NP branch would need a barrier-aware lower-bound route, not local-coherence metaphor
+  + [proof_progress] is none
+  + [unresolved_lock_mass] is still high for NP-complete completeness
+
+& [DeepResearchPriorityGate] is the active research gate
+  + [gate_status] is priority_if_next_heartbeat_continues_p_vs_np
+  + [target] is proof complexity, local consistency limitations, and unsatisfiability certificates for propagation fixed points
+  + [reason] is low-resolution understanding sits exactly at the unsat-certificate and completeness lock
+  + [bounded_question] is whether any known propagation, consistency, resolution, or proof-complexity framework can certify all hard fixed points in polynomial size
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [p_vs_np_solution_status] is unresolved
+  + [model_status] is completeness_mechanism_ledger_created_and_populated
+  + [heartbeat_status] is active every minute
+

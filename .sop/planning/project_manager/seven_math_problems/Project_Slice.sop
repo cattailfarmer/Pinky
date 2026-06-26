@@ -333,6 +333,9 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_hodge_construction_transfer_saturation_reflection_001.sop
   + [Task_104_apply_symbolic_ricci_flow_to_p_vs_np_lock_mass] is apply the refined graph scoring diagnostic to the P vs NP explicit-operator lane
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_p_vs_np_lock_mass_diagnostic_001.sop
+  + [Task_105_build_p_vs_np_completeness_mechanism_candidate_ledger] is build and apply a candidate ledger ranking P vs NP completeness, certificate, repair, CSP, and separation mechanisms
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Completeness_Mechanism_Candidate_Ledger.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_completeness_mechanism_candidate_ledger_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

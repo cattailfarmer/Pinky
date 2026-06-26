@@ -1,0 +1,38 @@
+Subject: P vs NP Completeness Mechanism Candidate Ledger
+
+Description: Project-local ledger for testing candidate mechanisms that could reduce global-completeness, certificate, runtime, or separation lock mass for P vs NP.
+
+& [PvsNPCompletenessMechanismCandidateLedger] is a math inquiry tool
+  + [tool_uuid] is 2e39d715-e71a-4e16-9504-7e1d94ef3f2c
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26T19:48Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_p_vs_np_lock_mass_diagnostic_001.sop
+  + [parent_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_CSP_Coherence_Translation_Gate.sop
+  + [role] is rank mechanisms by whether they could prove completeness, certificates, polynomial bounds, or separation on NP-complete scope
+  + [not_role] is proving P vs NP, promoting local consistency, or treating tractable subclasses as all-NP progress
+
+& [ColumnSet] is the completeness-mechanism surface
+  + [candidate] is the proposed completeness or separation mechanism
+  + [target_scope] is SAT_3SAT, NP_complete_CSP, fixed_tractable_CSP, general_NP, lower_bound_model, heuristic, or unclear
+  + [global_completeness_status] is complete_if_proven, scoped_complete, incomplete, separation_route, heuristic, or unknown
+  + [certificate_status] is sat_and_unsat_certificates, sat_only, unsat_missing, proof_complexity_certificate, lower_bound_witness, or none
+  + [runtime_status] is polynomial_proven, polynomial_if_bound_proven, exponential_or_unknown, model_specific, or none
+  + [barrier_status] is natural_proofs_relativization_algebrization_relevant, barrier_aware, barrier_unchecked, or not_applicable
+  + [lock_mass_reduction] is none, low, medium, high, or blocked
+  + [deep_research_need] is none, bounded, or priority
+  + [first_blocker] is the earliest unresolved lock that stops proof-shaped promotion
+
+& [UseProcedure] is the completeness-ledger workflow
+  + [step_001_name_target] is name SAT, 3-SAT, an NP-complete CSP, all NP, or a lower-bound model
+  + [step_002_name_mechanism] is write the operator, certificate system, repair theorem, or lower-bound route
+  + [step_003_check_completeness] is decide whether every instance in the target scope is solved or separated
+  + [step_004_check_certificates] is require both satisfiable and unsatisfiable correctness evidence for decision solving
+  + [step_005_check_runtime] is require a worst-case polynomial bound or an explicit lower-bound framework
+  + [step_006_check_barriers] is mark known complexity-theory barriers when the route claims separation
+
+  = must: preserve distinction between tractable fragments and NP-complete scope
+  = must: require unsatisfiability handling for complete SAT-style decision algorithms
+  = should: route low-resolution lower-bound claims through barrier-aware deep research
+  - never: infer P equals NP from local propagation without global completeness
+
