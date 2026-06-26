@@ -1,0 +1,38 @@
+Subject: Hodge Transfer Mechanism Candidate Ledger
+
+Description: Project-local ledger for testing candidate mechanisms that might transfer scoped Hodge realization into broader rational Hodge-class-to-cycle construction.
+
+& [HodgeTransferMechanismCandidateLedger] is a math inquiry tool
+  + [tool_uuid] is 2cab1df6-6b6d-4338-a91a-e4e5fd30d49c
+  + [project] is seven math problems
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26T19:41Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_hodge_lock_mass_diagnostic_001.sop
+  + [parent_table] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Cycle_Realization_Mechanism_Table.sop
+  + [role] is rank candidate transfer mechanisms by whether they reduce arbitrary rational Hodge-class realization lock mass
+  + [not_role] is proving Hodge, treating known cases as transfer, or accepting substitute cycle theories as algebraic cycle output
+
+& [ColumnSet] is the transfer ledger surface
+  + [candidate] is the proposed transfer or construction mechanism
+  + [input_scope] is arbitrary_rational_hodge_class, family_hodge_class, special_locus_class, motivated_class, normal_function_data, correspondence_data, or unclear
+  + [cycle_output_status] is algebraic_cycle_output, conditional_cycle_output, detected_class, substitute_cycle, obstruction_signal, or none
+  + [transfer_status] is transferable, scoped_transfer, calibration_only, substitute_only, conjectural, or outside
+  + [construction_status] is explicit, conditional, existential, organizing_framework, heuristic, or absent
+  + [variant_risk] is rational_projective_clean, integral_variant_risk, kahler_variant_risk, substitute_authority_risk, or unclear
+  + [lock_mass_reduction] is none, low, medium, high, or blocked
+  + [deep_research_need] is none, bounded, or priority
+  + [first_blocker] is the earliest unresolved lock that stops proof-shaped promotion
+
+& [UseProcedure] is the transfer-ledger workflow
+  + [step_001_name_candidate] is state the mechanism and its input data
+  + [step_002_check_target] is verify the target is rational projective Hodge, not an integral or Kahler variant
+  + [step_003_check_output] is require algebraic cycle output rather than detection or substitute classes
+  + [step_004_check_transfer] is decide whether the mechanism escapes its known family or substitute theory
+  + [step_005_score_lock_mass] is reduce unresolved_lock_mass only when arbitrary-class construction or true transfer improves
+  + [step_006_route_research] is send low-resolution but promising mechanisms through the Deep_Research_Priority_Gate
+
+  = must: distinguish recognition of Hodge type from construction of cycles
+  = must: preserve known-case and special-family boundaries
+  = should: prefer mechanisms with actual algebraic cycle output
+  - never: count motivated, absolute, or normal-function structures as proof without algebraic cycles
+

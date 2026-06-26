@@ -1,0 +1,90 @@
+Subject: Hodge Transfer Mechanism Candidate Ledger 001
+
+Description: First application of the Hodge Transfer Mechanism Candidate Ledger to candidate transfer routes suggested by prior Hodge diagnostics.
+
+& [HodgeTransferMechanismCandidateLedgerApplication] is a proof-inquiry event
+  + [event_uuid] is 76d38e9c-90b1-4f9d-944d-ebc585ea04a2
+  + [project] is seven math problems
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26T19:41Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Transfer_Mechanism_Candidate_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_hodge_lock_mass_diagnostic_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [CandidateRows] is the first transfer ledger
+  + [row_001_algebraic_correspondences] is correspondence-transfer route
+    = input_scope: correspondence_data
+    = cycle_output_status: conditional_cycle_output
+    = transfer_status: scoped_transfer
+    = construction_status: conditional
+    = variant_risk: rational_projective_clean
+    = lock_mass_reduction: medium_if_correspondence_exists
+    = deep_research_need: bounded
+    = first_blocker: arbitrary Hodge classes do not come with correspondences that construct cycles
+  + [row_002_normal_functions] is family/variation obstruction route
+    = input_scope: normal_function_data
+    = cycle_output_status: obstruction_signal
+    = transfer_status: scoped_transfer
+    = construction_status: organizing_framework
+    = variant_risk: rational_projective_clean
+    = lock_mass_reduction: low_to_medium_in_families
+    = deep_research_need: priority_if_selected
+    = first_blocker: normal functions detect and organize algebraicity obstructions more readily than they output arbitrary cycles
+  + [row_003_noether_lefschetz_spread] is special-locus spread route
+    = input_scope: special_locus_class
+    = cycle_output_status: detected_class_or_scoped_cycle
+    = transfer_status: calibration_only_to_scoped_transfer
+    = construction_status: existential_or_geometric_in_family
+    = variant_risk: rational_projective_clean
+    = lock_mass_reduction: low
+    = deep_research_need: bounded
+    = first_blocker: special loci do not supply arbitrary-class construction outside the locus
+  + [row_004_motivated_or_absolute_hodge_classes] is substitute-structure route
+    = input_scope: motivated_class
+    = cycle_output_status: substitute_cycle
+    = transfer_status: substitute_only
+    = construction_status: organizing_framework
+    = variant_risk: substitute_authority_risk
+    = lock_mass_reduction: blocked
+    = deep_research_need: bounded
+    = first_blocker: substitute categories do not prove algebraic cycle realization for the Clay target
+  + [row_005_explicit_cycle_search] is direct construction route
+    = input_scope: family_hodge_class_or_arbitrary_rational_hodge_class
+    = cycle_output_status: algebraic_cycle_output_when_successful
+    = transfer_status: conjectural
+    = construction_status: explicit_when_available
+    = variant_risk: rational_projective_clean
+    = lock_mass_reduction: high_if_algorithmic
+    = deep_research_need: priority_if_selected
+    = first_blocker: no general algorithm from arbitrary rational Hodge class to algebraic cycle is known in current records
+
+& [LedgerConclusion] is the current candidate ranking
+  + [rank_001] is row_005_explicit_cycle_search
+    = reason: it is the only route whose success would directly reduce the arbitrary construction lock, but it currently lacks a general mechanism
+  + [rank_002] is row_001_algebraic_correspondences
+    = reason: correspondences can transfer algebraic cycles when available, but do not arise for arbitrary Hodge classes
+  + [rank_003] is row_002_normal_functions
+    = reason: high structural meaning and good family diagnostics, but more often detects obstruction than constructs arbitrary cycles
+  + [rank_004] is row_003_noether_lefschetz_spread
+    = reason: strong calibration/traversal value, weak general transfer value
+  + [rank_005] is row_004_motivated_or_absolute_hodge_classes
+    = reason: useful organizing language, blocked as proof authority without algebraic cycle output
+
+& [MeaningDevelopment] is the proposition update
+  + [current_best_shape] is Hodge progress requires either explicit cycle construction or a correspondence that turns arbitrary rational Hodge-class data into algebraic cycle data
+  + [promising_next] is deep research explicit cycle construction and correspondence transfer mechanisms in known higher-codimension settings
+  + [proof_progress] is none
+  + [unresolved_lock_mass] is still high for general Hodge
+
+& [DeepResearchPriorityGate] is the active research gate
+  + [gate_status] is priority_if_next_heartbeat_continues_hodge
+  + [target] is explicit cycle construction and algebraic correspondence transfer in higher-codimension Hodge settings
+  + [reason] is low-resolution understanding sits exactly at the arbitrary-class-to-cycle construction lock
+  + [bounded_question] is whether known correspondence or spread methods ever produce transferable cycle construction beyond scoped families, and where they fail
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [hodge_solution_status] is unresolved
+  + [model_status] is transfer_mechanism_ledger_created_and_populated
+  + [heartbeat_status] is active every minute
+
