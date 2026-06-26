@@ -1,0 +1,30 @@
+Subject: Yang-Mills Construction Chain Admission Ledger 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Tool: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Construction_Chain_Admission_Ledger.sop
+Authority Boundary: admission ledger only; no Yang-Mills proof claim
+
+& [ProofInquiryEvent] is complete
+  + [lane] is Yang-Mills Existence and Mass Gap
+  + [reentry_target] is OS-ready Schwinger-function construction, continuum measure, lattice continuum-limit theorem, or complete-proof claim
+  + [purpose] is define the admission test for deciding whether a Yang-Mills artifact closes the construction-to-gap chain in order
+
+& [BoundaryFinding] is the current shape
+  + [finding_001] is the chain order is the proof burden
+    = meaning: finite models, continuum limits, OS axioms, reconstruction, observables, and gap transfer cannot be rearranged or skipped
+  + [finding_002] is complete-proof uploads require stage audit before authority
+    = meaning: a claim title is not evidence unless each stage is inspectable and verified
+  + [finding_003] is finite lattice artifacts remain scoped starts
+    = meaning: lattice regularization matters, but proof authority begins only after uniform continuum and OS-positive construction
+
+& [CurrentApplication] is boundary-only
+  + [candidate_artifact] is OS-ready Schwinger-function construction, continuum measure, lattice continuum-limit theorem, or complete-proof claim
+  + [first_missing_feature] is no_selected_artifact_with_verified_continuum_limit_and_os_axioms
+  + [admission_status] is boundary_only
+  + [selected_next_probe] is recent_complete_proof_claim_stage_audit
+    = reason: prior records found concrete complete-proof claims that can be filtered by the chain ledger
+
+& [NextAction] is ready
+  + [recommended_next] is inspect local records for the named recent complete-proof claims and apply a stage audit; trigger Deep_Research_Priority_Gate only if the claim source is too low-resolution
+  + [heartbeat_status] is active

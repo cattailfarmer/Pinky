@@ -1,0 +1,60 @@
+Subject: Yang-Mills Construction Chain Admission Ledger
+
+Description: Project-local math inquiry tool for admitting or rejecting Yang-Mills artifacts as complete construction-to-mass-gap chains.
+
+& [YangMillsConstructionChainAdmissionLedger] is a math inquiry tool
+  + [tool_uuid] is 04f298b7-259c-4368-a60f-c0c40a2b1c2b
+  + [project] is seven math problems
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_p_vs_np_certificate_reentry_saturation_reflection_001.sop
+  + [role] is test whether a construction artifact supplies a complete continuum Yang-Mills construction, OS reconstruction, observables, and mass-gap transfer chain
+  + [not_role] is proving Yang-Mills, validating complete-proof uploads, or accepting lattice/confinement evidence without continuum reconstruction
+
+& [AdmissionColumnSet] is the construction-chain surface
+  + [candidate_artifact] is the model, continuum measure, Schwinger-function family, proof claim, decay theorem, or reconstruction theorem
+  + [regularization_status] is finite_model, continuum_direct, claimed_complete, not_applicable, absent, or unknown
+  + [continuum_limit_status] is proven_uniform_limit, candidate_limit, claimed_limit, missing_uniform_estimates, absent, or unknown
+  + [os_axiom_status] is reflection_positive_and_os_complete, partial, claimed, blocked_by_limit, absent, or unknown
+  + [reconstruction_status] is reconstructed_theory, reconstructable_if_os_inputs_hold, claimed, blocked_upstream, absent, or unknown
+  + [observable_status] is gauge_invariant_correlations_constructed, claimed, finite_cutoff_only, post_reconstruction_needed, absent, or unknown
+  + [mass_gap_status] is spectral_gap_proven_in_constructed_theory, decay_transfer_proven, claimed, lattice_or_heuristic_only, absent, or unknown
+  + [admission_status] is admitted_for_line_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+  + [first_missing_feature] is the earliest missing feature blocking proof-shaped promotion
+
+& [UseProcedure] is the admission workflow
+  + [step_001_artifact] is name the artifact and whether it claims a complete chain or one stage
+  + [step_002_limit] is test continuum limit and uniform estimates before reconstruction
+  + [step_003_os] is test reflection positivity and OS axioms before reconstruction claims
+  + [step_004_reconstruct] is test reconstruction before Hilbert-space or Hamiltonian gap claims
+  + [step_005_observables] is test gauge-invariant continuum correlations before decay transfer
+  + [step_006_gap] is test decay-to-spectral-gap transfer in the constructed theory
+  + [step_007_admit] is admit only artifacts with enough stage detail for line-by-line audit
+
+  = must: treat missing continuum limit as blocking OS reconstruction authority
+  = must: treat missing OS-positive Schwinger functions as blocking reconstructed-theory authority
+  = must: treat missing observables as blocking mass-gap transfer
+  = should: preserve finite lattice and decay artifacts as scoped partial structure
+  - never: accept a mass-gap claim before construction and reconstruction are verified
+
+(yang_mills_construction_chain_admission_ledger) :candidate_artifact: /regularization, continuum limit, OS axioms, reconstruction, observables, mass gap/ |Yang-Mills proof|
+  + [inside] is admission control for construction-to-gap chain audits
+  + [boundary] is a complete proof must close the stages in order
+  |outside| confinement intuition, finite lattice evidence alone, postulated continuum measures, and decay claims without reconstructed observables
+
+& [CurrentApplication] is the active Yang-Mills reentry target
+  + [candidate_artifact] is OS-ready Schwinger-function construction, continuum measure, lattice continuum-limit theorem, or complete-proof claim
+  + [regularization_status] is finite_model_or_claimed_complete
+  + [continuum_limit_status] is unknown
+  + [os_axiom_status] is unknown
+  + [reconstruction_status] is unknown
+  + [observable_status] is unknown
+  + [mass_gap_status] is unknown
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is no_selected_artifact_with_verified_continuum_limit_and_os_axioms
+
+& [NextProbe] is selected
+  + [candidate] is recent_complete_proof_claim_stage_audit
+  + [reason] is prior records found complete-proof uploads, and a stage audit can quickly determine whether any claim is precise enough to enter line-by-line authority review
+  + [deep_research_priority_gate] is conditionally_ready
+    = trigger: use only if local records do not preserve enough source detail to identify the claimed construction chain
