@@ -385,6 +385,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_124_create_navier_stokes_theta_threshold_obstruction_ledger] is define the obstruction surface for Theta threshold exclusion in the endpoint pressure-work route
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_Threshold_Obstruction_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_threshold_obstruction_ledger_001.sop
+  + [Task_125_research_navier_stokes_theta_threshold_exclusion] is run Deep_Research_Priority_Gate on Theta threshold exclusion and adjacent critical-space rigidity machinery
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_threshold_deep_research_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
