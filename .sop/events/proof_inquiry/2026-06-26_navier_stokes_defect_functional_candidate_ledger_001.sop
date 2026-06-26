@@ -1,0 +1,79 @@
+Subject: Navier-Stokes Defect Functional Candidate Ledger 001
+
+Description: First application of the Navier-Stokes Defect Functional Candidate Ledger to known candidate families from the prior gate.
+
+& [DefectFunctionalCandidateLedgerApplication] is a proof-inquiry event
+  + [event_uuid] is c7d1ce3e-61bd-4622-b7d4-bb6ef32d56f1
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:26Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Defect_Functional_Candidate_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_navier_stokes_lock_mass_diagnostic_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [CandidateRows] is the first lock-mass ledger
+  + [row_001_type_i_alignment_defect] is best partial candidate
+    = formal_definition_status: partial
+    = scale_contact: conditional_type_i
+    = evolution_contact: conditional_estimate
+    = coercivity_contact: conditional
+    = continuation_contact: special_case_only
+    = lock_mass_reduction: medium_in_special_scope
+    = deep_research_need: bounded
+    = first_blocker: Type I and alignment hypotheses are not derived from arbitrary smooth data
+  + [row_002_vorticity_direction_modulus] is best symbolic fit
+    = formal_definition_status: concrete_when_vorticity_nonzero
+    = scale_contact: touches_known_criterion
+    = evolution_contact: conditional_estimate
+    = coercivity_contact: unknown
+    = continuation_contact: touches_known_criterion
+    = lock_mass_reduction: low
+    = deep_research_need: bounded
+    = first_blocker: no autonomous evolution inequality preserving the direction modulus globally
+  + [row_003_strain_eigenframe_alignment_defect] is best exact-identity surface
+    = formal_definition_status: partial
+    = scale_contact: geometric_only
+    = evolution_contact: exact_identity_without_monotonicity
+    = coercivity_contact: indefinite
+    = continuation_contact: touches_enstrophy_growth_control
+    = lock_mass_reduction: low
+    = deep_research_need: priority_if_selected
+    = first_blocker: nonlinear strain terms expose growth channels but do not provide one-sided coercive control
+  + [row_004_velocity_direction_defect] is direction-field criterion surface
+    = formal_definition_status: concrete_under_nonzero_velocity
+    = scale_contact: criterion_dependent
+    = evolution_contact: conditional_criterion
+    = coercivity_contact: unknown
+    = continuation_contact: touches_known_criterion
+    = lock_mass_reduction: low
+    = deep_research_need: bounded
+    = first_blocker: no flow law forces the direction condition globally
+
+& [LedgerConclusion] is the current candidate ranking
+  + [rank_001] is row_001_type_i_alignment_defect
+    = reason: it has the strongest special-case continuation contact, but does not escape conditional hypotheses
+  + [rank_002] is row_003_strain_eigenframe_alignment_defect
+    = reason: it has exact evolution structure and therefore the most interesting periphery if we seek a new tool, but sign is indefinite
+  + [rank_003] is row_002_vorticity_direction_modulus
+    = reason: it best matches the source-symbolic alignment story, but remains mostly a criterion surface
+  + [rank_004] is row_004_velocity_direction_defect
+    = reason: it has criterion contact but weaker source fit and no propagation mechanism
+
+& [MeaningDevelopment] is the proposition update
+  + [current_best_shape] is the highest-revelation path is not the best symbolic fit; it is the candidate with exact evolution structure where one might inspect sign failure
+  + [promising_next] is strain eigenframe alignment defect as a deep-research target, because exact identities can reveal why monotonicity fails or where a corrected defect might live
+  + [proof_progress] is none
+  + [unresolved_lock_mass] is still high for general Navier-Stokes
+
+& [DeepResearchPriorityGate] is the active research gate
+  + [gate_status] is priority_if_next_heartbeat_continues_navier_stokes
+  + [target] is strain eigenframe alignment and strain/vorticity evolution identities
+  + [reason] is local understanding is low-resolution exactly where the candidate touches exact dynamics but fails sign/coercivity
+  + [bounded_question] is whether any known strain-eigenframe or vorticity-strain decomposition yields a one-sided defect inequality, even in scoped settings
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [navier_stokes_solution_status] is unresolved
+  + [model_status] is candidate_ledger_created_and_populated
+  + [heartbeat_status] is active every minute
+

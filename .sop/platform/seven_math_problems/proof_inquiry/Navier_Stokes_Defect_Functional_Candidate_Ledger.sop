@@ -1,0 +1,38 @@
+Subject: Navier-Stokes Defect Functional Candidate Ledger
+
+Description: Project-local ledger for testing concrete defect-functional candidates against unresolved lock mass.
+
+& [NavierStokesDefectFunctionalCandidateLedger] is a math inquiry tool
+  + [tool_uuid] is e0f0d24f-cb22-4ae3-823c-b02b0860c970
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:26Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_navier_stokes_lock_mass_diagnostic_001.sop
+  + [parent_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Geometric_Defect_Functional_Gate.sop
+  + [role] is rank concrete candidates by their ability to reduce unresolved_lock_mass
+  + [not_role] is proving Navier-Stokes, validating a heuristic, or promoting conditional criteria to propagated estimates
+
+& [LockMassColumnSet] is the candidate ledger surface
+  + [candidate] is the named defect functional or monotonicity formula candidate
+  + [formal_definition_status] is concrete, partial, low_resolution, or absent
+  + [scale_contact] is continuation_level, local_regularization, conditional_type_i, geometric_only, or unclear
+  + [evolution_contact] is exact_identity, one_sided_inequality, conditional_estimate, heuristic, or missing
+  + [coercivity_contact] is coercive, conditional, indefinite, unknown, or missing
+  + [continuation_contact] is closes_known_criterion, touches_known_criterion, special_case_only, or none
+  + [lock_mass_reduction] is none, low, medium, high, or blocked
+  + [deep_research_need] is none, bounded, or priority
+  + [first_blocker] is the earliest unresolved lock that stops proof-shaped promotion
+
+& [UseProcedure] is the ledger workflow
+  + [step_001_name_candidate] is name one functional or formula precisely enough to test
+  + [step_002_score_definition] is reject vague geometric language until it has variables and a formula shape
+  + [step_003_score_dynamics] is identify exact or one-sided evolution information
+  + [step_004_score_coercivity] is test whether the dynamic relation has sign or controls a continuation-level quantity
+  + [step_005_score_lock_mass] is record which of the four Navier-Stokes locks are reduced
+  + [step_006_route_research] is send low-resolution but promising candidates through the Deep_Research_Priority_Gate
+
+  = must: preserve distinction between conditional regularity criteria and propagated estimates
+  = must: treat unresolved_lock_mass as positive until a lock is actually reduced
+  = should: prefer candidates with exact identities over candidates with only geometric appeal
+  - never: count a hypothesis as an evolution law
+
