@@ -61,3 +61,15 @@ Description: Project-local math inquiry tool for testing whether BSD source coun
   + [deep_research_priority_gate] is conditionally_ready
     = trigger: if no local artifact names enough details to fill the four frames, run bounded deep research on higher-rank Euler/Kolyvagin or Stark-system corridors
   + [meaning_gain] is the BSD reentry target has shifted from "find source count" to "find a same-frame theorem corridor where source count, independence, measurement, and upper control can be audited together"
+
+& [ApplicationHistory] is append-only
+  + [application_001] is initial higher-rank Euler/Kolyvagin-style source-count audit
+    = event: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_same_frame_measurement_boundary_ledger_001.sop
+    = first_frame_break: target_statement_not_scoped
+    = proof_promotion_status: blocked
+  + [application_002] is diagonal-cycle and triple-product p-adic Gross-Zagier/Euler-system corridor audit
+    = event: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_same_frame_diagonal_cycle_audit_001.sop
+    = hypothesis_match: translated_with_gap
+    = rank_count_match: special_rank_only
+    = first_frame_break: source_transfer_to_target_mordell_weil_rank
+    = proof_promotion_status: special_case_only

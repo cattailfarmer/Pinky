@@ -372,6 +372,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_119_create_bsd_same_frame_measurement_boundary_ledger] is define the BSD same-frame admission test for source count, independence, measurement, and upper control
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Same_Frame_Measurement_Boundary_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_same_frame_measurement_boundary_ledger_001.sop
+  + [Task_120_audit_bsd_diagonal_cycle_same_frame_corridor] is apply the same-frame ledger to the diagonal-cycle and triple-product corridor
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_same_frame_diagonal_cycle_audit_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
