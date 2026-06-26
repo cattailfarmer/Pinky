@@ -1,0 +1,47 @@
+Subject: Public-Facing Missing Theorem Synthesis
+
+Description: Proof-boundary-safe synthesis of the current seven math problems research state, focused on missing theorem shapes rather than solution claims.
+
+& [PublicFacingMissingTheoremSynthesis] is a synthesis artifact
+  + [artifact_uuid] is b8d03bb4-9a2f-4ebb-84e5-c9efc5b3e914
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T20:07Z
+  + [source_map] is C:\Project\Pinky\.sop\platform\seven_math_problems\Six_Lane_Missing_Theorem_Map.sop
+  + [authority_status] is public_summary_not_proof
+
+& [OpeningPosition] is the public boundary
+  + [claim] is this project did not produce a proof of any unsolved Millennium Prize problem
+  + [value] is the work clarified what kind of theorem or construction would be needed for progress
+  + [method] is source ideas were translated into formal proof obligations, then blocked where construction, transfer, propagation, completeness, or reconstruction was missing
+
+& [ProblemSummaries] is the six-lane summary
+  + [bsd] is Birch and Swinnerton-Dyer
+    = missing_shape: a mechanism producing enough independent sources for the analytic rank, measured in the same frame, with upper-control closure
+    = plain_reading: special points or cycles can be meaningful, but point existence alone does not prove the rank equality
+  + [navier_stokes] is Navier-Stokes Existence and Smoothness
+    = missing_shape: a deterministic one-sided pressure-Hessian or pressure-strain inequality at continuation scale
+    = plain_reading: geometric depletion and alignment are useful only if they become a propagated estimate strong enough to prevent blowup
+  + [hodge] is Hodge Conjecture
+    = missing_shape: a construction that turns arbitrary rational Hodge classes into algebraic cycles, or correspondences that do so
+    = plain_reading: special families and normal functions organize the problem, but the Clay target needs actual algebraic cycle output
+  + [p_vs_np] is P versus NP
+    = missing_shape: polynomial refutation or simulation power for hard SAT or 3-SAT instances, or a barrier-aware lower-bound route
+    = plain_reading: local consistency and tractable CSP fragments are meaningful but do not settle NP-complete completeness
+  + [yang_mills] is Yang-Mills Existence and Mass Gap
+    = missing_shape: continuum Schwinger functions or Euclidean measure satisfying OS properties, reconstruction, observables, and decay-to-gap transfer
+    = plain_reading: lattice models and confinement intuition are not enough without a reconstructed continuum theory
+  + [poincare] is Poincare Conjecture
+    = missing_shape: none in this project
+    = plain_reading: Poincare is already solved externally; Symbolic Ricci Flow here is only a research-organization model
+
+& [CrossProblemLesson] is the shared result
+  + [lesson_001] is meaningful metaphors must be separated from proof obligations
+  + [lesson_002] is scoped successes teach shape but do not automatically transfer
+  + [lesson_003] is the recurring missing objects are construction, transfer, propagation, completeness, and reconstruction
+  + [lesson_004] is audit targets should be checked stage by stage before any authority is admitted
+
+& [NextUse] is how this artifact should be used
+  + [use] is orientation, communication, and target selection
+  + [not_use] is proof, publication as a solution, or authority replacement for formal mathematics
+  + [next_step] is choose one concrete audit target or implement the Symbolic Ricci Flow scoring prototype
+
