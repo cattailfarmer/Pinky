@@ -1,0 +1,52 @@
+Subject: Birch and Swinnerton-Dyer Math Bridge
+
+& [Graph:bsd_l_hand_r_hand_bridge] is a SOP-HG graph
+  = format: SOP-HG
+  = format_profile: SOP-HG math-bridge-map
+
+  + [N:math_bridge:bsd_l_hand_r_hand_bridge] is bsd_l_hand_r_hand_bridge
+    = problem: Birch and Swinnerton-Dyer
+    = open_obligation_count: 7
+  + [N:proposition:bsd_l_hand_r_hand_bridge] is L-hand/R-hand language is useful only if it grounds analytic rank, algebraic rank, generator emergence, and leading-term data without circularly assuming BSD.
+  + [N:outside:math_bridge_not_proof] is bridge map is not proof
+  + [N:bridge_term:l_hand_collapse] is L-hand collapse
+    = bridge_status: mapped_with_obligations
+    = inquiry_route: resolve_obligations
+    = evidence_status: mapped_candidate
+  + [N:formal_object:order_of_vanishing_of_L_E_s_at_the_central_point] is order of vanishing of L(E,s) at the central point
+  + [N:obligations:l_hand_collapse] is L-hand collapse proof obligations
+    = count: 2
+  + [N:bridge_term:r_hand_growth] is R-hand growth
+    = bridge_status: mapped_with_obligations
+    = inquiry_route: resolve_obligations
+    = evidence_status: mapped_candidate
+  + [N:formal_object:Mordell_Weil_generator_structure_of_E_Q] is Mordell-Weil generator structure of E(Q)
+  + [N:obligations:r_hand_growth] is R-hand growth proof obligations
+    = count: 2
+  + [N:bridge_term:surviving_rational_directions] is surviving rational directions
+    = bridge_status: mapped_with_obligations
+    = inquiry_route: resolve_obligations
+    = evidence_status: mapped_candidate
+  + [N:formal_object:rank_of_E_Q] is rank of E(Q)
+  + [N:obligations:surviving_rational_directions] is surviving rational directions proof obligations
+    = count: 2
+  + [N:bridge_term:phase_corrected_field] is phase-corrected field
+    = bridge_status: mapped_with_obligations
+    = inquiry_route: resolve_obligations
+    = evidence_status: unresolved_candidate
+  + [N:formal_object:unresolved_bridge_regulator_height_pairing_or_leading_coefficient_data] is unresolved bridge: regulator, height pairing, or leading coefficient data
+  + [N:obligations:phase_corrected_field] is phase-corrected field proof obligations
+    = count: 1
+
+/ [E:frames:bsd_l_hand_r_hand_bridge] -(frames; bridge=N:math_bridge:bsd_l_hand_r_hand_bridge; proposition=N:proposition:bsd_l_hand_r_hand_bridge)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:maps:l_hand_collapse] -(maps_to; term=N:bridge_term:l_hand_collapse; formal_object=N:formal_object:order_of_vanishing_of_L_E_s_at_the_central_point; bridge=N:math_bridge:bsd_l_hand_r_hand_bridge; problem_role=analytic-rank candidate)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:requires:l_hand_collapse] -(requires; term=N:bridge_term:l_hand_collapse; obligations=N:obligations:l_hand_collapse; outside=N:outside:math_bridge_not_proof)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:maps:r_hand_growth] -(maps_to; term=N:bridge_term:r_hand_growth; formal_object=N:formal_object:Mordell_Weil_generator_structure_of_E_Q; bridge=N:math_bridge:bsd_l_hand_r_hand_bridge; problem_role=algebraic-rank candidate)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:requires:r_hand_growth] -(requires; term=N:bridge_term:r_hand_growth; obligations=N:obligations:r_hand_growth; outside=N:outside:math_bridge_not_proof)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:maps:surviving_rational_directions] -(maps_to; term=N:bridge_term:surviving_rational_directions; formal_object=N:formal_object:rank_of_E_Q; bridge=N:math_bridge:bsd_l_hand_r_hand_bridge; problem_role=rank bridge)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:requires:surviving_rational_directions] -(requires; term=N:bridge_term:surviving_rational_directions; obligations=N:obligations:surviving_rational_directions; outside=N:outside:math_bridge_not_proof)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:maps:phase_corrected_field] -(maps_to; term=N:bridge_term:phase_corrected_field; formal_object=N:formal_object:unresolved_bridge_regulator_height_pairing_or_leading_coefficient_data; bridge=N:math_bridge:bsd_l_hand_r_hand_bridge; problem_role=possible refined BSD bridge)> [Graph:bsd_l_hand_r_hand_bridge]
+/ [E:requires:phase_corrected_field] -(requires; term=N:bridge_term:phase_corrected_field; obligations=N:obligations:phase_corrected_field; outside=N:outside:math_bridge_not_proof)> [Graph:bsd_l_hand_r_hand_bridge]
+
+- outside: symbolic-to-formal mapping does not prove the proposition
+- outside: open obligations must be resolved by accepted mathematical argument

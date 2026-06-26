@@ -1,0 +1,58 @@
+Subject: P vs NP Periphery Proof Shape 001
+
+Description: First periphery-guided proof-shaping pass for P vs NP using the source document's structure-over-enumeration and pi-traversal language.
+
+& [FocalSubject] is the fourth proof-inquiry lane
+  + [problem] is P versus NP
+  + [formal_problem_space] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\P_vs_NP_Problem_Space.sop
+  + [document_analysis] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\P_vs_NP_Document_Analysis.sop
+  + [source_section] is Spiral Seven: P vs NP
+  + [inquiry_rank] is 4 after BSD, Navier-Stokes, and Hodge paused at open locks
+
+& [IntendedPurpose] is the mathematical target shape
+  + [purpose] is determine whether every language accepted by a nondeterministic polynomial-time algorithm is accepted by a deterministic polynomial-time algorithm
+  + [formal_core] is relationship between efficient verification and efficient deterministic solution for decision problems
+  + [proof_need_for_P_equals_NP] is a polynomial-time deterministic algorithm for an NP-complete language or proof all NP languages are in P
+  + [proof_need_for_P_not_equals_NP] is a lower-bound/separation argument showing some NP language is not in P
+
+& [DocumentProposition] is the source-implied proposition
+  + [raw_shape] is hidden structure and resonance traversal replace brute enumeration, collapsing the hard-search boundary
+  + [pi_example] is nonlinear traversal of pi digits by Fibonacci spacing, prime index alignment, and error correction
+  + [candidate_receptive_form] is some hard search spaces may admit structure-guided traversal that avoids exhaustive enumeration
+  + [meaning_role] is heuristic for search-space compression
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [PeripheryTrigger] is the curiosity trigger
+  + [trigger_type] is heat_zone_crossing_trigger
+  + [heat_zone_crossing] is crossing from symbolic search guidance into formal complexity classes, reductions, and polynomial-time algorithms
+  + [restraint_gate] is no traversal claim may promote unless it targets a decision problem and supplies complexity proof
+
+& [SymbolicToFormalMap] is the first translation
+  + [structure_over_enumeration] maps_to algorithmic exploitation of structure, pruning, dynamic programming, reductions, or tractable subclass
+  + [resonance_traversal] maps_to deterministic algorithmic construction or search procedure
+  + [phase_locking] maps_to invariant, certificate, or canonical representation
+  + [pi_digit_walk] maps_to outside unless framed as a decision problem with relevance to NP-completeness
+  + [hard_search_boundary] maps_to NP-complete decision problem under polynomial reductions
+
+& [BetterProblemShape] is the improved shape after first probe
+  + [old_shape] is hard problems become easy when structure is tuned
+  + [adjusted_shape] is identify a specific NP language, a verifier/certificate relation, and either a polynomial-time solver or a reduction/lower-bound argument
+  + [first_gate] is complexity target gate
+  + [first_open_question] is what formal decision problem is the source document actually solving, if any
+
+& [ProofObligationMap] is the current gate set
+  + [obligation_001] is choose a language or decision problem
+  + [obligation_002] is show the problem is in NP through polynomial verifier/certificates
+  + [obligation_003] is if claiming P equals NP, reduce from or solve an NP-complete problem in polynomial time
+  + [obligation_004] is if claiming P not equals NP, state a lower-bound framework and avoid known barriers
+  + [obligation_005] is provide runtime analysis in input size
+  + [obligation_006] is separate pi digit computation from NP-complete decision problems
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is P vs NP Complexity Target Gate
+  + [tool_purpose] is classify a proposed structural traversal as decision problem, verifier, algorithm, reduction, runtime proof, barrier-aware lower bound, or outside
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_complexity_target_gate
+  + [heartbeat_status] is active every minute

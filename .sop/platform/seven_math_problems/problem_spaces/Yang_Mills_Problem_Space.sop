@@ -1,0 +1,18 @@
+Subject: Yang-Mills Existence and Mass Gap Problem Space
+
+& [ProblemSpace] is formal mathematical framing
+  + [domain] is mathematical quantum field theory, gauge theory, and analysis
+  + [core_objects] are compact simple gauge groups, four-dimensional quantum Yang-Mills theory, existence, vacuum state, correlation functions, and positive mass gap
+  + [central_question] is to prove existence of a nontrivial quantum Yang-Mills theory on four-dimensional space-time with a positive mass gap
+  + [official_status] is open as of 2026-06-26 according to Clay Mathematics Institute public Millennium Problems framing
+  + [authority_floor] is mathematically precise construction satisfying axioms and proof of a positive lower bound above vacuum energy
+
+& [Delineation] is the problem boundary
+  + [inside] is rigorous construction of quantum gauge field theory and proof of mass gap
+  + [boundary] is relation between gauge-field dynamics, confinement-like behavior, and spectral gap
+  + [outside] is symbolic encryption or curvature packet language unless mapped to gauge theory, spectrum, and field construction
+
+& [SupportNeeds] is required support for canonical work
+  = need: formal statement and chosen axiom framework
+  = need: translation from symbolic mass terms to spectral or field-theoretic objects
+  = need: proof obligations for existence and positive gap

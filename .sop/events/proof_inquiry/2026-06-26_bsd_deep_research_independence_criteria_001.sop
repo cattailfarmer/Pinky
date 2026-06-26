@@ -1,0 +1,63 @@
+Subject: BSD Deep Research Independence Criteria 001
+
+Description: Bounded deep research pass on nonvanishing, height-pairing, and control criteria that certify independence or sufficiency for Heegner-style source families.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Birch and Swinnerton-Dyer
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [pairing_table] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_measurement_pairing_table_001.sop
+  + [low_resolution_signal] is independence and sufficiency criteria
+  + [bounded_question] is what nonvanishing or height-pairing statements certify independence and sufficiency for constructed points or cycles in known BSD-related cases
+
+& [SourceSet] is research evidence
+  + [source_001] is Kedlaya Kolyvagin seminar notes on Gross-Zagier and Kolyvagin
+    = url: https://kskedlaya.org/kolyvagin-seminar/first.pdf
+    = evidence: when the relevant zero is simple, the canonical height of a Heegner point is nonzero, giving rank at least one; Kolyvagin then controls rank and Sha
+  + [source_002] is Wei Zhang "Selmer groups and the indivisibility of Heegner points"
+    = url: https://math.mit.edu/~wz2113/math/online/Kconj.pdf
+    = evidence: Kolyvagin asserts analytic rank at most one implies Mordell-Weil rank equals analytic rank and Tate-Shafarevich group is finite, through Heegner point methods
+  + [source_003] is Nekovar "On the p-adic height of Heegner cycles"
+    = url: https://webusers.imj-prg.fr/~jan.nekovar/pu/heegner.pdf
+    = evidence: nonzero Heegner-cycle images can imply one-dimensional image and finiteness-type conclusions in the relevant setting
+  + [source_004] is Shnidman "Heights of Generalized Heegner Cycles"
+    = url: https://math.huji.ac.il/~shnidman/thesis.pdf
+    = evidence: non-degeneracy of relevant p-adic height pairings is a major obstacle; in higher settings, pairings are often not known to be nondegenerate
+  + [source_005] is Howard "The Heegner point Kolyvagin system"
+    = url: https://wstein.org/misc/sagedays18_papers/howard-the_heegner_point_kolyvagin_system.pdf
+    = evidence: Heegner point Kolyvagin systems can yield upper bounds on Mordell-Weil rank in terms of Heegner point data
+
+& [Finding] is the independence shape
+  + [rank_one_independence] is nonzero canonical height of a Heegner point certifies non-torsion and supplies rank at least one
+  + [rank_one_sufficiency] is Kolyvagin-style control supplies rank upper bounds and Sha finiteness in rank at most one settings
+  + [higher_rank_independence] is requires nondegenerate pairings, independent source classes, or a system controlling the Selmer group dimension
+  + [higher_rank_sufficiency] is not supplied by a single nonzero point or cycle; it needs enough independent sources plus control proving no hidden extra rank
+  + [obstruction] is nondegeneracy of p-adic or cycle height pairings is often assumed or unknown outside special cases
+
+& [SymbolicResolution] is the updated concept shape
+  + [r_hand_growth] is not merely producing candidates; it must produce enough independent candidates
+  + [phase_correction] is not merely measuring candidates; it must prove nondegenerate independence or expose dependence
+  + [l_hand_collapse] is not merely analytic order; it sets the expected dimension that source plus measurement must match
+  + [sufficiency_condition] is source_count and independent_height_rank must match analytic_order, with Selmer/control evidence ruling out hidden excess
+
+& [PropositionAdjustment] is the current BSD proposition
+  + [old_proposition] is higher-rank bridge likely needs source family plus height/regulator measurement
+  + [new_proposition] is the BSD symbolic bridge becomes proof-relevant only when L-hand analytic order, R-hand source candidates, phase-correction nondegenerate pairing, and Selmer/rank control form a closed dimension match
+  + [retired_overreach] is nonzero cycle height alone proves higher-rank BSD
+  + [kept_claim] is nonvanishing height and control systems show what a real bridge must look like
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is BSD Dimension Closure Checklist
+  + [tool_purpose] is check whether a proposed bridge accounts for expected analytic dimension, source candidate count, independence pairing rank, and upper-bound/control sufficiency
+  + [reason] is independence and sufficiency require a closed dimension argument rather than a single source-measurement pair
+
+& [ToolResolution] is the next heartbeat work result
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Dimension_Closure_Checklist.sop
+  + [checklist_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_dimension_closure_checklist_001.sop
+  + [closure_status] is not_closed
+  + [first_open_lock] is independence_rank
+  + [next_research_target] is nondegeneracy of higher-rank height pairings
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_dimension_closure_checklist
+  + [heartbeat_status] is active every minute

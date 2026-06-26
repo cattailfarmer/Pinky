@@ -1,0 +1,55 @@
+Subject: Navier-Stokes Deep Research Alignment Evolution 001
+
+Description: Bounded deep research pass on evolution identities for vorticity direction, strain/eigenframe, and alignment quantities.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [depletion_checklist] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_depletion_propagation_checklist_001.sop
+  + [low_resolution_signal] is evolution equations for alignment/depletion quantities
+  + [bounded_question] is whether any known evolution identity or maximum-principle-like structure can propagate depletion instead of merely assuming it
+
+& [SourceSet] is research evidence
+  + [source_001] is Giga, Gu, and Hsu "Continuous alignment of vorticity direction prevents the blow-up..."
+    = url: https://eprints.lib.hokudai.ac.jp/repo/huscap/all/73710/ContinuousAlignmentVorticity.pdf
+    = evidence: uniform continuity of vorticity direction can prevent certain blowup scenarios, but the alignment is a hypothesis
+  + [source_002] is Beirao da Veiga and Berselli direction-of-vorticity work
+    = url: https://people.dm.unipi.it/beiraodaveiga/pdf/hbv-127.pdf
+    = evidence: Holder regularity assumptions on vorticity direction induce integrability and regularity conclusions
+  + [source_003] is Miller "The Navier-Stokes strain equation with applications to enstrophy growth and regularity"
+    = url: https://www.math.toronto.edu/mccann/papers/MillerPhD19.pdf
+    = evidence: strain/enstrophy identities expose alignment with strain eigenvectors and regularity criteria, but observed alignment remains heuristic without global propagation proof
+  + [source_004] is "Geometry of turbulent dissipation and the Navier-Stokes regularity problem"
+    = url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8065050/
+    = evidence: geometric depletion through vorticity direction coherence is a major line of attack, but remains a conditional/criterion-based framework
+  + [source_005] is Tao "Why global regularity for Navier-Stokes is hard"
+    = url: https://terrytao.wordpress.com/2007/03/18/why-global-regularity-for-navier-stokes-is-hard/
+    = evidence: global regularity requires preventing concentration/cascade in a critical or supercritical setting, not merely identifying a helpful geometric condition
+
+& [Finding] is the alignment evolution boundary
+  + [identity_shape] is vorticity and strain evolution identities expose the nonlinear stretching geometry
+  + [criterion_shape] is coherent vorticity direction or strain alignment can imply regularity when assumed at sufficient strength
+  + [propagation_gap] is no general evolution principle in the current research set forces sufficient coherence for arbitrary smooth 3D data
+  + [maximum_principle_gap] is alignment quantities do not behave like a scalar dissipative quantity with a simple maximum principle
+  + [meaning] is phase correction cannot be just "the flow aligns"; it needs a propagated geometric invariant or inequality
+
+& [ChecklistUpdate] is the updated lock state
+  + [lock_002_dynamic_propagation] is still open
+  + [lock_003_scaling_relevance] is partial because some criteria touch critical regularity
+  + [lock_004_anti_concentration] is partial because geometric depletion can reduce stretching if coherence holds
+  + [lock_005_continuation_closure] is still open because propagation is missing
+
+& [PropositionAdjustment] is the current Navier-Stokes proposition
+  + [old_proposition] is phase correction may be geometric depletion of vortex stretching
+  + [new_proposition] is the Navier-Stokes symbolic approach is proof-relevant only if it identifies a dynamically propagated alignment/depletion invariant strong enough to control a critical continuation criterion
+  + [retired_overreach] is observed or conditional alignment proves global regularity
+  + [kept_claim] is geometric depletion is the correct formal pressure point for the source document's phase-correction idea
+
+& [NextDecision] is the route after this pass
+  + [decision] is reflect_before_more_expansion
+  + [why] is Navier-Stokes has now reached a real open lock analogous to BSD nondegeneracy
+  + [recommended_next] is project Git reflection, then decide whether to continue Navier-Stokes or move to Hodge
+
+& [Disposition] is the pass result
+  + [decision] is preserve_boundary_and_reflect
+  + [heartbeat_status] is active every minute

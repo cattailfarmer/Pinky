@@ -1,0 +1,51 @@
+Subject: P vs NP Toy CSP Coherence Model 001
+
+Description: A deliberately limited formal toy model translating the source document's resonance/coherence language into a CSP-shaped object without promoting it to P vs NP proof authority.
+
+& [ToyModel] is a proof-inquiry artifact
+  + [event_uuid] is 559b15d2-8246-46fb-8229-15ff9432ae31
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [source_analysis] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\P_vs_NP_Document_Analysis.sop
+  + [translation_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_CSP_Coherence_Translation_Gate.sop
+  + [prior_gate_application] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_csp_coherence_translation_gate_001.sop
+  + [authority_status] is exploratory_model_not_solution
+
+& [FormalToyCSP] is the model
+  + [variables] is X_1 through X_n, representing local symbolic positions or decision sites
+  + [domain] is a finite phase alphabet D
+  + [constraints] is a set of local relations R_i over bounded-size variable scopes
+  + [coherence_condition] is an assignment a: {X_1,...,X_n} -> D satisfying every relation R_i
+  + [certificate] is the full assignment a
+  + [verifier] is check each listed relation against a in time polynomial in the encoded instance size
+  + [source_mapping] is phase coherence becomes simultaneous satisfaction of local compatibility relations
+
+& [CoherenceOperator] is the candidate formal operation
+  + [operator_name] is local propagation with repair
+  + [input] is partial assignment and constraint list
+  + [step] is remove locally inconsistent domain values, propagate forced choices, and revise conflicting local assignments
+  + [possible_success_case] is acyclic, bounded-treewidth, Horn-like, bijunctive, affine, or otherwise tractable restricted structure
+  + [known_failure_shape] is local consistency can hold while global satisfiability fails in hard CSP families
+  + [runtime_shape] is polynomial for bounded local propagation passes, but not guaranteed complete for arbitrary NP-complete instances
+
+& [GateEvaluation] is the CSP coherence translation result
+  + [lock_001_variables_domains_constraints] is passed_for_toy_model
+  + [lock_002_certificate_verifier] is passed_for_toy_model
+  + [lock_003_constraint_language_scope] is restricted_or_unspecified
+  + [lock_004_coherence_operator] is partial
+  + [lock_005_algorithmic_effect] is partial_for_tractable_fragments_failed_for_general_np_complete_scope
+  + [lock_006_complexity_status] is polynomial_as_propagation_incomplete_as_solver
+  + [lock_007_claim_route] is tractable_subclass_laboratory
+
+& [MeaningYield] is what this model finds
+  + [meaning_001] is the source proposition becomes mathematically sharper when recast as a question about which constraint structures allow local coherence to determine global solution
+  + [meaning_002] is resonance key becomes a formal invariant or closure operation only after a constraint language is chosen
+  + [meaning_003] is the toy model supports algorithmic intuition but not P equals NP
+  + [meaning_004] is the hard frontier is precisely whether any source-derived coherence operator is complete on an NP-complete family
+
+& [Disposition] is the lane status
+  + [solution_status] is no_solution_found
+  + [best_current_shape] is CSP translation yields a tractable-subclass research program and a clean overclaim detector
+  + [open_lock] is no source-derived polynomial-time complete solver for SAT, 3-SAT, or an NP-complete CSP family
+  + [recommended_next] is either pivot to SAT/3-SAT lower-resolution research or pause P vs NP and run project Git reflection before Yang-Mills
+  + [heartbeat_status] is active every minute

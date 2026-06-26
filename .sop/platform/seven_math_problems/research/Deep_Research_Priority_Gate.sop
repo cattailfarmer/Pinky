@@ -1,0 +1,54 @@
+Subject: Deep Research Priority Gate
+
+Description: Project-local gate for prioritizing deep research when periphery curiosity is high but local understanding is too low-resolution to promote the subject into proof focus.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_deep_research_priority\manifest.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryInquiryCuriosityTrigger.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionWeightScale.sop
+
+& [DeepResearchPriorityGate] is the deep research priority rule for seven math problems
+  + [gate_uuid] is fcf96f4b-9a57-4c63-8d79-fd703a83ec4b
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [role] is route high-curiosity low-resolution periphery into source-backed research before focus promotion or proof-shaping dependence
+  + [not_role] is proof by citation volume, automatic internet search, broad literature drift, or authority promotion without SJS
+  + [activation_condition] is curiosity_trigger active and subject_understanding_resolution is low or fragmented
+  + [deep_research_priority] is elevated when the signal is needed for current proof obligations, formal object mapping, known theorem boundary, or mathematical definition
+  + [research_unit] is a bounded question with source targets, expected disambiguation, and promotion criteria
+  + [promotion_result] is resolved_to_focus, kept_peripheral, split_into_subquestions, or retired_outside
+
+& [TriggerSet] is when the gate fires
+  + [trigger_001_low_resolution_formal_object] is symbolic term maps weakly to an undefined or ambiguous formal object
+  + [trigger_002_low_resolution_theorem_boundary] is proof shaping depends on known results or impossibility boundaries not yet locally understood
+  + [trigger_003_low_resolution_counterexample_risk] is a claim may be invalidated by known exceptions, solved cases, or false analogues
+  + [trigger_004_low_resolution_tool_need] is a repeated inquiry operation needs a new math tool but the operation is not yet understood enough to design cleanly
+
+& [ResearchProtocol] is the bounded deep research sequence
+  + [step_001_name_signal] is name the periphery signal and curiosity trigger
+  + [step_002_state_resolution_gap] is say exactly what is low-resolution
+  + [step_003_bind_to_proof_obligation] is link the research to a proof obligation or proposition adjustment
+  + [step_004_select_sources] is prefer primary mathematical sources, official problem statements, survey papers, textbooks, or accepted theorem references
+  + [step_005_extract_boundary] is record definitions, known theorem boundary, known partial result, open gap, and cautions
+  + [step_006_adjust_shape] is update proposition, mapping table, tool need, or outside status
+
+  = must: use deep research when low-resolution understanding blocks responsible promotion
+  = must: prefer research that tightens the current proof obligation
+  = must: record source links or local source paths when research changes proposition shape
+  = must: keep internet/current external research separate from imported source-document authority
+  = must: route any new canonical specification through SJS if it becomes project authority
+  = should: ask a narrow research question rather than browse generally
+  - never: treat deep research as proof unless a proof is actually supplied and checked
+  - never: let research volume substitute for mathematical understanding
+
+& [CurrentBSDUse] is immediate application to Birch and Swinnerton-Dyer
+  + [active_signal] is phase-corrected field as possible regulator, height pairing, or leading coefficient data
+  + [resolution_gap] is low-resolution understanding of which refined BSD object the symbolic term should map to
+  + [research_priority] is high because the bridge map surfaced this as the weakest mapping
+  + [bounded_question] is whether phase-corrected field should map to canonical height pairing, regulator, leading coefficient, local factors, or be retired
+  + [promotion_criteria] is a source-backed mapping that reduces proof obligations without circularly assuming BSD
+
+(deep_research_priority_gate) :curiosity_signal: /low-resolution formal understanding/ |proof inflation|
+  + [inside] is bounded research question, source-backed disambiguation, and proposition adjustment
+  + [boundary] is research informs proof shape but does not become proof by itself
+  |outside| proof by literature volume, general browsing drift, hidden authority, and unsupported promotion

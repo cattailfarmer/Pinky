@@ -1,0 +1,56 @@
+Subject: Navier-Stokes Deep Research Geometric Depletion 001
+
+Description: Bounded deep research pass on geometric depletion of vortex stretching as the formal candidate for the source document's phase-correction language.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [anti_blowup_matrix] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_anti_blowup_gate_matrix_001.sop
+  + [low_resolution_signal] is geometric depletion of vortex stretching
+  + [bounded_question] is which alignment, strain, or vorticity direction conditions imply regularity, and whether any are propagated by the equations rather than assumed
+
+& [SourceSet] is research evidence
+  + [source_001] is Constantin and Fefferman vorticity direction criterion lineage
+    = evidence: regularity can follow when vorticity direction has sufficient coherence, motivating geometric depletion of vortex stretching
+  + [source_002] is Giga, Gu, and Hsu "Continuous alignment of vorticity direction prevents the blow-up..."
+    = url: https://eprints.lib.hokudai.ac.jp/repo/huscap/all/73710/ContinuousAlignmentVorticity.pdf
+    = evidence: uniform continuity of vorticity direction can rule out type I blowup in bounded domains under no-slip conditions
+  + [source_003] is Hou "The Dual Role of Convection in 3D Navier-Stokes Equations"
+    = url: https://www.dam.brown.edu/AFOSR_MURI_pub/FoCM_Hou_new_dual.pdf
+    = evidence: local geometric regularity of the unit vorticity vector can deplete vortex stretching; computations show dynamic depletion in vortex-tube scenarios
+  + [source_004] is "On Depletion of the Vortex-Stretching Term in the 3D Navier-Stokes Equations"
+    = url: https://link.springer.com/article/10.1007/s00220-004-1072-0
+    = evidence: cancellation properties in the vortex-stretching term lead to geometric criteria preventing finite-time blowup
+  + [source_005] is Beirao da Veiga and Berselli direction-of-vorticity survey line
+    = url: https://people.dm.unipi.it/beiraodaveiga/pdf/hbv-127.pdf
+    = evidence: Holder continuity assumptions on vorticity direction imply integrability/regularity conclusions
+
+& [Finding] is the geometric depletion boundary
+  + [known_shape] is vorticity-direction coherence, strain alignment, or geometric regularity can be sufficient for regularity
+  + [symbolic_mapping] is phase correction maps best to alignment-driven depletion of vortex stretching
+  + [proof_pressure] is the condition must be propagated or derived from Navier-Stokes dynamics, not merely assumed
+  + [open_shape] is no general theorem proves such alignment/depletion for all smooth 3D data
+  + [meaning] is the document's "resonance anchors" become geometric coherence constraints; the missing step is invariance or propagation of coherence
+
+& [GateUpdate] is the updated anti-blowup gate state
+  + [surface_tension_primary_mapping] is geometric anti-concentration through vorticity/strain alignment
+  + [phase_correction_primary_mapping] is depletion of nonlinear vortex stretching
+  + [first_open_lock] is propagation of alignment/depletion
+  + [second_open_lock] is critical-norm closure after depletion
+  + [retired_overreach] is alignment criteria by themselves solve Navier-Stokes
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is Navier-Stokes Depletion Propagation Checklist
+  + [tool_purpose] is check whether an alignment/depletion candidate is merely conditional, dynamically propagated, scale-critical, and strong enough to close a continuation criterion
+
+& [ToolResolution] is the next heartbeat work result
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Depletion_Propagation_Checklist.sop
+  + [checklist_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_depletion_propagation_checklist_001.sop
+  + [closure_status] is not_closed
+  + [first_open_lock] is dynamic_propagation
+  + [next_research_target] is evolution equations for alignment/depletion quantities
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_depletion_propagation_checklist
+  + [heartbeat_status] is active every minute

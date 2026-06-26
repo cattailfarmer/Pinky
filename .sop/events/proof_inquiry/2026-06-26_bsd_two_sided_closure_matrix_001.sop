@@ -1,0 +1,69 @@
+Subject: BSD Two-Sided Closure Matrix 001
+
+Description: First two-sided closure matrix for the returned BSD lane, pairing source/height lower-bound mechanisms with Euler/Kolyvagin/Stark upper-control mechanisms.
+
+& [MatrixApplication] is a proof-inquiry event
+  + [event_uuid] is 3d8cdbfd-9894-463c-9129-c02342cd623c
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Two_Sided_Closure_Matrix.sop
+  + [prior_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_euler_kolyvagin_001.sop
+  + [scope] is higher-rank BSD outside already-known rank 0/1 corridors
+
+& [CandidateRows] is the first matrix
+  + [row_001_heegner_gross_zagier_kolyvagin_rank_one] is calibration corridor
+    = analytic_signal: first derivative and Heegner hypothesis setting
+    = lower_source: Heegner point
+    = measurement: Neron-Tate height via Gross-Zagier type formula
+    = independence_lower_bound: nonzero height/non-torsion point in rank one
+    = upper_control: Kolyvagin system from Heegner points bounds Selmer rank
+    = compatibility: high in scoped rank-one settings
+    = closure_status: special_case
+    = first_gap: does not generalize automatically to higher rank
+  + [row_002_generalized_heegner_cycles_with_p_adic_heights] is higher-rank measurement corridor
+    = analytic_signal: higher derivatives or p-adic L-function derivatives in special settings
+    = lower_source: generalized Heegner cycles or Chow-Heegner point/cycle sources
+    = measurement: p-adic or derived height/regulator pairing
+    = independence_lower_bound: partial or conditional on nondegeneracy
+    = upper_control: not automatically supplied by the same source family
+    = compatibility: partial
+    = closure_status: partial
+    = first_gap: independence and compatible upper-control system
+  + [row_003_higher_rank_euler_kolyvagin_stark_systems] is upper-control corridor
+    = analytic_signal: leading terms or determinant-style special elements in p-adic representation setting
+    = lower_source: global cohomology classes if a suitable higher-rank system exists
+    = measurement: Rubin lattice, determinant module, or regulator-like special element
+    = independence_lower_bound: encoded indirectly under hypotheses, not direct point construction
+    = upper_control: strongest visible mechanism for Selmer structure and upper bounds
+    = compatibility: conjectural or hypothesis-dependent for broad BSD families
+    = closure_status: partial_conjectural
+    = first_gap: existence of suitable system and compatibility with elliptic-curve analytic rank data
+  + [row_004_iwasawa_main_conjecture_style_control] is analytic-to-Selmer control corridor
+    = analytic_signal: p-adic L-functions and characteristic ideals
+    = lower_source: often indirect Selmer or cohomological data
+    = measurement: p-adic regulator or leading term in refined settings
+    = independence_lower_bound: requires separate nonvanishing/regulator input
+    = upper_control: strong in settings where main conjectures are proved
+    = compatibility: special_setting
+    = closure_status: special_case_or_partial
+    = first_gap: separate lower-bound source and regulator nondegeneracy
+  + [row_005_source_document_l_hand_r_hand_bridge] is symbolic route
+    = analytic_signal: L-hand order of collapse
+    = lower_source: R-hand rational directions by resonance traversal
+    = measurement: phase correction as informal height/regulator proxy
+    = independence_lower_bound: not supplied
+    = upper_control: not supplied
+    = compatibility: outside until formal mechanisms are attached
+    = closure_status: outside_as_proof
+    = first_gap: no formal source construction, no independence proof, no upper control
+
+& [MatrixConclusion] is the two-sided closure result
+  + [best_current_route] is pair special Heegner-style lower sources with compatible Kolyvagin/Euler/Iwasawa upper-control only in scoped theorem corridors
+  + [highest_general_potential] is higher-rank Euler/Kolyvagin/Stark systems as upper-control partners, not standalone solutions
+  + [source_document_update] is L-hand/R-hand language can describe the need for both lower and upper closure, but it supplies neither side by itself
+  + [new_first_gap] is compatibility between enough source candidates, nondegenerate measurement, and an upper-control system in the same higher-rank setting
+  + [solution_potential] is special-case meaningful, general-case still open
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is pause BSD after two-sided closure matrix and run project Git reflection, unless a specific theorem corridor is selected for detailed study
+  + [heartbeat_status] is active every minute

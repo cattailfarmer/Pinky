@@ -1,0 +1,43 @@
+Subject: Navier-Stokes Anti-Blowup Gate Matrix
+
+Description: Math inquiry tool for comparing candidate formal meanings of the source document's surface tension and phase-correction language against known anti-blowup proof requirements.
+
+& [NavierStokesAntiBlowupGateMatrix] is a project-local math inquiry tool
+  + [tool_uuid] is bb5bcf11-b454-4cbd-8f34-b07b54b83f44
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_periphery_proof_shape_001.sop
+  + [role] is test whether a candidate stabilizing concept can actually block blowup under a known continuation or regularity criterion
+  + [not_role] is proving Navier-Stokes, validating simulations, or treating dissipation as enough by itself
+
+& [MatrixColumnSet] is the comparison surface
+  + [candidate_control] is the proposed formal meaning of surface tension, anchor, or phase correction
+  + [controlled_quantity] is energy, enstrophy, vorticity norm, strain norm, critical norm, alignment geometry, or other quantity
+  + [regularity_criterion_contact] is the known criterion or continuation gate it would satisfy
+  + [scaling_status] is subcritical, critical, supercritical, geometric, or unclear
+  + [anti_concentration_job] is how it prevents finite-time concentration
+  + [known_boundary] is known estimate, criterion, heuristic, special case, or open frontier
+  + [symbolic_fit] is how it maps to surface tension, resonance anchor, phase correction, or error diffusion
+  + [next_question] is the next bounded research question
+
+& [UseProcedure] is the matrix workflow
+  + [step_001_list_candidates] is list possible formal mappings for the symbolic stabilizer
+  + [step_002_attach_criterion] is tie each candidate to a known regularity or blowup criterion
+  + [step_003_score_scaling] is mark whether the quantity is strong enough for 3D criticality
+  + [step_004_find_gap] is identify where the candidate fails to control blowup
+  + [step_005_adjust_proposition] is narrow the source-document claim to the candidate with best formal pressure
+
+  = must: separate energy dissipation from global smoothness proof
+  = must: distinguish known criteria from quantities actually proven bounded
+  = must: preserve scaling status
+  = should: prefer candidates that contact critical regularity criteria
+  - never: treat physical intuition about smoothing as an a priori estimate
+
+& [CurrentApplication] is the first planned matrix
+  + [matrix_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_anti_blowup_gate_matrix_001.sop
+  + [starting_candidates] is energy inequality, enstrophy/vorticity control, BKM-style vorticity criterion, Prodi-Serrin critical norm control, strain/alignment geometry, and depletion of nonlinearity
+
+(navier_stokes_anti_blowup_gate_matrix) :candidate_control: /regularity criterion and scaling status/ |smoothing metaphor|
+  + [inside] is anti-blowup gate comparison
+  + [boundary] is candidate control must satisfy a continuation criterion before proof-shaped promotion
+  |outside| proof by dissipation, proof by turbulence intuition, and symbolic smoothing without estimates

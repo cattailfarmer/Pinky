@@ -1,0 +1,49 @@
+Subject: BSD Dimension Closure Checklist
+
+Description: Math inquiry tool for checking whether a proposed BSD bridge closes the dimension argument between analytic order, source candidates, independent height rank, and upper-bound/control evidence.
+
+& [BSDDimensionClosureChecklist] is a project-local math inquiry tool
+  + [tool_uuid] is e0b2d35e-fc7b-4673-a479-af23d149608f
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_independence_criteria_001.sop
+  + [role] is test whether a proposed bridge has a closed dimension match
+  + [not_role] is proving the conjecture, filling missing sources by desire, or treating nonzero height as all-rank sufficiency
+
+& [ClosureLockSet] is the required proof-shaped gate
+  + [lock_001_analytic_order] is the expected dimension from order of vanishing or leading coefficient data
+  + [lock_002_source_count] is enough candidate points, cycles, or Selmer classes are produced
+  + [lock_003_independence_rank] is height/regulator pairing proves the candidates are independent to the required rank
+  + [lock_004_upper_bound_control] is Selmer, Euler-system, Kolyvagin-system, descent, or equivalent control rules out hidden extra rank or obstruction
+  + [lock_005_refined_formula_fit] is leading coefficient factors are accounted for when the claim exceeds rank equality
+
+& [ChecklistStatusSet] is status vocabulary
+  + [closed] is supported enough for the scoped claim
+  + [partial] is evidence exists but not enough for the scoped claim
+  + [special_case] is closed only under special hypotheses or settings
+  + [open] is unresolved
+  + [outside] is not relevant to the scoped claim
+
+& [UseProcedure] is the checklist workflow
+  + [step_001_scope_claim] is name rank case, curve family, and exact BSD claim
+  + [step_002_fill_locks] is assign each closure lock a status and evidence
+  + [step_003_find_first_open_lock] is identify the first lock preventing proof relevance
+  + [step_004_adjust_proposition] is narrow, split, research, or retire the proposition
+  + [step_005_route] is send open locks to deep research or tool development
+
+  = must: scope the claim before scoring locks
+  = must: keep source_count independent from independence_rank
+  = must: keep upper_bound_control independent from lower-bound construction
+  = must: require refined_formula_fit only when the proposition claims more than rank equality
+  = should: use the checklist before any future "promising bridge" is called proof-shaped
+  - never: treat one closed lock as closure of the whole dimension argument
+
+& [CurrentApplication] is the first checklist
+  + [checklist_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_dimension_closure_checklist_001.sop
+  + [current_result] is not_closed
+  + [first_open_lock] is source_count and independence_rank outside special settings
+
+(bsd_dimension_closure_checklist) :bsd_bridge_candidate: /analytic order, source count, independence rank, upper bound control/ |proof overclaim|
+  + [inside] is dimension-closure checking
+  + [boundary] is closed dimension match is required before proof-shaped promotion
+  |outside| proof by one nonzero point, proof by table, and unscoped all-rank claims

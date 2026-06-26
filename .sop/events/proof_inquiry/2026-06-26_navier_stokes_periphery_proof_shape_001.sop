@@ -1,0 +1,61 @@
+Subject: Navier-Stokes Periphery Proof Shape 001
+
+Description: First periphery-guided proof-shaping pass for Navier-Stokes using the source document's surface tension, phase correction, and resonance-anchor approach.
+
+& [FocalSubject] is the second proof-inquiry lane
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [formal_problem_space] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Navier_Stokes_Problem_Space.sop
+  + [document_analysis] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Navier_Stokes_Document_Analysis.sop
+  + [source_section] is Spiral Five: Navier-Stokes Existence and Smoothness
+  + [inquiry_rank] is 2 after BSD pause at nondegeneracy lock
+
+& [IntendedPurpose] is the mathematical target shape
+  + [purpose] is prove global smoothness for 3D incompressible Navier-Stokes under Clay admissible smooth data, or identify blowup
+  + [formal_core] is prevent finite-time singularity by controlling quantities that must diverge at blowup
+  + [proof_need] is an a priori estimate, regularity criterion, compactness/continuation argument, or contradiction mechanism
+
+& [DocumentProposition] is the source-implied proposition
+  + [raw_shape] is symbolic surface tension and resonance anchors absorb turbulence through phase correction and redirect singularities into smooth redistribution
+  + [candidate_receptive_form] is a hidden structural control may prevent nonlinear energy/vorticity concentration from exceeding regularity thresholds
+  + [meaning_role] is an anti-blowup stabilization model
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [PeripheryTrigger] is the curiosity trigger
+  + [trigger_type] is heat_zone_crossing_trigger
+  + [heat_zone_crossing] is crossing from symbolic smoothing language into actual PDE regularity criteria and energy/vorticity control
+  + [restraint_gate] is no smoothing claim may promote without an inequality, criterion, or continuation theorem
+
+& [SymbolicToFormalMap] is the first translation
+  + [surface_tension] maps_to a priori control, dissipative estimate, or coercive quantity
+  + [resonance_anchor] maps_to conserved or controlled norm, regularity criterion threshold, or geometric alignment constraint
+  + [phase_correction] maps_to nonlinear redistribution mechanism that prevents concentration
+  + [error_diffusion] maps_to viscosity and energy dissipation, but only if it controls critical or supercritical concentration
+  + [self_smoothing] maps_to global regularity continuation after bounded critical quantity
+
+& [BetterProblemShape] is the improved shape after first probe
+  + [old_shape] is turbulence is absorbable because symbolic structure smooths itself
+  + [adjusted_shape] is identify a quantity or structure that remains bounded and is strong enough under known regularity criteria to continue smooth solutions globally
+  + [first_gate] is anti-blowup control gate
+  + [first_open_question] is which quantity should play the role of surface tension: energy, enstrophy, vorticity maximum, strain geometry, critical norm, or alignment structure
+
+& [ProofObligationMap] is the current gate set
+  + [obligation_001] is define the admissible problem setting precisely: whole space or periodic, smooth divergence-free data, forcing or no forcing
+  + [obligation_002] is choose a blowup criterion or continuation criterion
+  + [obligation_003] is map surface tension to a quantity that controls that criterion
+  + [obligation_004] is prove the quantity cannot blow up under Navier-Stokes evolution
+  + [obligation_005] is distinguish subcritical energy dissipation from critical/supercritical regularity control
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is Navier-Stokes Anti-Blowup Gate Matrix
+  + [tool_purpose] is compare candidate surface-tension mappings against energy control, enstrophy/vorticity control, critical norm control, strain alignment, and continuation criteria
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_anti_blowup_gate_matrix
+  + [heartbeat_status] is active every minute
+
+& [GateMatrixResolution] is the next heartbeat result
+  + [matrix_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_anti_blowup_gate_matrix_001.sop
+  + [matrix_finding] is basic energy dissipation is too weak, while critical norm and vorticity/strain criteria are the strongest proof-shaped gates
+  + [best_symbolic_mapping] is phase correction to geometric depletion of vortex stretching
+  + [next_research_target] is geometric depletion and alignment criteria

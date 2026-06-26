@@ -1,0 +1,54 @@
+Subject: BSD Deep Research Phase-Corrected Field 001
+
+Description: First bounded deep research pass for the weakest BSD bridge-map term: phase-corrected field.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Birch and Swinnerton-Dyer
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [bridge_map] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.sop
+  + [low_resolution_signal] is phase-corrected field
+  + [bounded_question] is whether phase-corrected field should map to height pairing, regulator, leading coefficient, local factors, or outside
+  + [research_result] is map primarily to Neron-Tate height pairing and regulator, with leading coefficient as the larger refined-BSD container
+
+& [SourceSet] is research evidence
+  + [source_001] is Clay Mathematics Institute BSD overview at https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/
+    = evidence: Clay marks BSD unsolved and frames it as relating rational points to behavior of an associated zeta function near s=1
+  + [source_002] is Andrew Wiles Clay official BSD problem description PDF at https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf
+    = evidence: Wiles describes the historical generation of rational points by chord/tangent, descent, known rank 0 and 1 results, and the theorem that BSD holds when analytic order m is 0 or 1
+  + [source_003] is Wei Zhang survey "The Birch-Swinnerton-Dyer conjecture and Heegner points" at https://math.mit.edu/~wz2113/math/online/CDM2013%20final.pdf
+    = evidence: analytic rank is order of vanishing, Mordell-Weil rank is asserted equal by rank BSD, regulator is determinant of the Neron-Tate height pairing on generators, and refined BSD relates leading coefficient to period, regulator, and Tate-Shafarevich data
+
+& [ResearchFinding] is the resolved mapping
+  + [phase_corrected_field_primary_mapping] is Neron-Tate height pairing
+  + [phase_corrected_field_secondary_mapping] is regulator of the Mordell-Weil lattice
+  + [phase_corrected_field_container] is refined BSD leading coefficient formula
+  + [reason] is height pairing gives a metric on rational generators and regulator measures the density/volume of the generator lattice, making it the best formal analogue for phase-correction as stabilized relational geometry
+  + [not_primary_mapping] is local Tamagawa factors
+  + [why_not_local_factors] is Tamagawa factors correct local bad-reduction contributions but do not primarily measure the global generator field
+  + [not_primary_mapping_002] is Tate-Shafarevich group
+  + [why_not_sha] is Sha records local-global obstruction rather than generator-field phase geometry
+
+& [AdjustedMeaningShape] is the improved proposition
+  + [old_shape] is phase-corrected field may map to regulator, height pairing, leading coefficient data, or local factors
+  + [new_shape] is phase-corrected field should be treated as the Neron-Tate height/regulator layer where independent rational directions become a measured lattice inside the refined BSD formula
+  + [meaning_gain] is the symbolic field gains a formal measurement surface instead of floating as a broad resonance metaphor
+  + [proof_gain] is low_to_medium because the mapping clarifies terms but does not prove rank equality or the refined formula
+
+& [NextProofObligations] is updated work
+  + [obligation_001] is define R-hand growth as generation of the free part of E(Q) modulo torsion
+  + [obligation_002] is define phase correction as the Neron-Tate pairing measuring relations among independent generators
+  + [obligation_003] is decide whether a non-circular route can move from analytic vanishing to nonzero generator construction
+  + [obligation_004] is inspect Gross-Zagier and Kolyvagin rank 0/1 results because they already form a real bridge from derivative behavior to points and finiteness
+  + [obligation_005] is treat higher rank as the hard frontier rather than assuming the rank 0/1 bridge scales
+
+& [ToolNeedAssessment] is whether another math tool is needed
+  + [current_tool] is Math Bridge Map Tool
+  + [new_tool_needed_now] is yes
+  + [emergent_tool_shape] is BSD Rank-Bridge Case Splitter
+  + [tool_purpose] is split inquiry into known rank 0/1 bridge versus higher-rank unknown frontier, so the proposition does not blur solved partial cases with open cases
+
+& [ResearchDisposition] is the end-state of this pass
+  + [decision] is resolved_to_focus
+  + [promote_mapping] is phase-corrected field to Neron-Tate height pairing and regulator
+  + [keep_caution] is mapping is not proof
+  + [next_focus] is build BSD Rank-Bridge Case Splitter and use it to separate known low-rank bridge from higher-rank proposition frontier

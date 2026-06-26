@@ -1,0 +1,56 @@
+Subject: BSD Deep Research Derived Heights 001
+
+Description: Bounded deep research pass on derived heights as the phase-correction mechanism for higher-rank BSD inquiry.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Birch and Swinnerton-Dyer
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [frontier_matrix] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_higher_rank_frontier_matrix_001.sop
+  + [low_resolution_signal] is derived heights as phase-correction mechanism
+  + [bounded_question] is which derived-height construction most directly connects higher-order vanishing to regulator-like nondegeneracy in higher-rank BSD settings
+
+& [SourceSet] is research evidence
+  + [source_001] is Bertolini-Darmon "Derived p-adic heights"
+    = url: https://www.math.mcgill.ca/darmon/pub/Articles/Research/13.Derived-p-adic/paper.pdf
+    = evidence: derived regulator is introduced to handle cases where the classical p-adic height is degenerate; if the first p-adic height pairing is nondegenerate, the derived regulator reduces to the usual p-adic regulator
+  + [source_002] is Castella-Hsu-Kundu-Lee-Liu "Derived p-adic heights and the leading coefficient of the Bertolini-Darmon-Prasanna p-adic L-function"
+    = url: https://arxiv.org/abs/2308.10474
+    = evidence: leading coefficient results are tied to an expected maximal non-degeneracy of an anticyclotomic p-adic height; the framework explicitly targets p-adic BSD style order-of-vanishing and leading-coefficient questions
+  + [source_003] is Castella-Hsu-Kundu-Lee-Liu PDF copy
+    = url: https://web.math.ucsb.edu/~castella/APAW-paper.pdf
+    = evidence: the paper formulates p-adic BSD for BDP p-adic L-functions beyond earlier technical hypotheses and relates leading coefficient conclusions to non-degeneracy of p-adic heights
+  + [source_004] is Nekovar "On the p-adic height of Heegner cycles"
+    = url: https://webusers.imj-prg.fr/~jan.nekovar/pu/heegner.pdf
+    = evidence: p-adic height pairings of Heegner cycles relate derivative behavior of p-adic L-functions to cycle height, showing a cycle-height bridge pattern
+
+& [Finding] is the derived-height shape
+  + [core_role] is derived heights repair degeneracy or insufficiency in ordinary p-adic height/regulator measurement
+  + [phase_correction_translation] is when first-order height balance fails or collapses, derived heights preserve higher-order information needed to measure the generator lattice
+  + [l_hand_contact] is higher-order analytic or p-adic vanishing and leading coefficient behavior
+  + [r_hand_contact] is Selmer/Mordell-Weil directions measured through height pairings rather than direct generator construction
+  + [regulator_contact] is derived regulator as a higher-order replacement or refinement of the usual regulator
+  + [proof_boundary] is this is a refined measurement and nondegeneracy framework, not by itself a generator-producing proof of BSD
+
+& [MeaningResolution] is the adjusted concept map
+  + [symbolic_term] is phase correction
+  + [old_mapping] is Neron-Tate height pairing and regulator
+  + [refined_mapping] is hierarchy of height pairings and derived regulators that activate when ordinary height/regulator data degenerates or lacks enough resolution
+  + [best_phrase] is higher-order height correction
+  + [why] is derived heights preserve and measure higher-order structure after simpler pairings fail to capture the leading term
+
+& [PropositionAdjustment] is the current BSD proposition
+  + [old_proposition] is higher-rank revelation potential sits where L-hand higher-order vanishing can be tied to derived-height or regulator nondegeneracy
+  + [new_proposition] is BSD's symbolic phase-correction idea becomes mathematically sharp when treated as a hierarchy of height/regulator measurements, where derived heights capture higher-order leading-coefficient information after ordinary height pairings degenerate
+  + [retired_overreach] is derived heights construct all higher-rank generators
+  + [kept_claim] is derived heights are a strong candidate for the measurement half of the higher-rank bridge
+
+& [NextObstruction] is the remaining gap
+  + [gap] is measurement is not construction
+  + [meaning] is derived heights can test or measure independent directions, but the inquiry still needs a generator/cycle source
+  + [next_target] is generalized Heegner cycles as possible R-hand generator/cycle source
+  + [priority] is high
+
+& [Disposition] is the pass result
+  + [decision] is resolved_to_focus_and_continue
+  + [matrix_update] is derived heights move from promising candidate to primary phase-correction mechanism
+  + [heartbeat_status] is active every minute

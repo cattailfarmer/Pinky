@@ -1,0 +1,87 @@
+﻿Subject: Seven Math Problems Imported Corpus Manifest
+
+Description: Source corpus manifest for imported seven math problems files and preserved extracted text snapshots.
+
+& [ImportedCorpusManifest] is the source-preservation manifest
+  + [manifest_uuid] is c3f5092d-cd39-4f33-9985-4d0fb26f65a7
+  + [created_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [extraction_method] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\Extraction_Method.sop
+  + [snapshot_root] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots
+
+& [SMP_SOURCE_001] is imported source file
+  + [filename] is Emergent Toroidal Structure.odt
+  + [original_path] is C:\Project\Pinky\seven math problems\Emergent Toroidal Structure.odt
+  + [extension] is .odt
+  + [original_bytes] is 45216
+  + [original_sha256] is 4956397ada1beec09645cff374db8066540e76ef7b438b206f8ef18c551e00ea
+  + [snapshot_path] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots\Emergent_Toroidal_Structure.txt
+  + [snapshot_sha256] is fbd313875c246e96111ea44b604a239920f6835225f82edd23f94ef53e150c62
+  + [extraction_method] is odt_content_xml_zip_extract_plain_text
+  + [word_count] is 773
+  + [character_count] is 5444
+
+& [SMP_SOURCE_002] is imported source file
+  + [filename] is Observations 2.odt
+  + [original_path] is C:\Project\Pinky\seven math problems\Observations 2.odt
+  + [extension] is .odt
+  + [original_bytes] is 38460
+  + [original_sha256] is 06d12b029053f2606d058291a5dad208b9f8f08245a0d3d8311483b2dd3bdac6
+  + [snapshot_path] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots\Observations_2.txt
+  + [snapshot_sha256] is 08d553f50de1349a1e06948ef3f8b03a62f857324a533b15c02359861c457a2c
+  + [extraction_method] is odt_content_xml_zip_extract_plain_text
+  + [word_count] is 1073
+  + [character_count] is 7711
+
+& [SMP_SOURCE_003] is imported source file
+  + [filename] is Observations.odt
+  + [original_path] is C:\Project\Pinky\seven math problems\Observations.odt
+  + [extension] is .odt
+  + [original_bytes] is 36016
+  + [original_sha256] is b530517228694d32f21fd4a13e9a47793c1372b830baa766300956977b677b58
+  + [snapshot_path] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots\Observations.txt
+  + [snapshot_sha256] is 0e55f3fceecdea3c80932d7d1249d695cbc168e5de38d4b7b194d8864942a631
+  + [extraction_method] is odt_content_xml_zip_extract_plain_text
+  + [word_count] is 531
+  + [character_count] is 3888
+
+& [SMP_SOURCE_004] is imported source file
+  + [filename] is seven millenium math problems 2.odt
+  + [original_path] is C:\Project\Pinky\seven math problems\seven millenium math problems 2.odt
+  + [extension] is .odt
+  + [original_bytes] is 37516
+  + [original_sha256] is bf687bad18d76537a229b56a94ddac089749b87750836874ec6be9983a6b6788
+  + [snapshot_path] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots\seven_millenium_math_problems_2.txt
+  + [snapshot_sha256] is 41190c85bd839b85b574106d44e86e61fe5bd883a63786dab603c04863dc0663
+  + [extraction_method] is odt_content_xml_zip_extract_plain_text
+  + [word_count] is 1267
+  + [character_count] is 8078
+
+& [SMP_SOURCE_005] is imported source file
+  + [filename] is seven millenium math problems.odt
+  + [original_path] is C:\Project\Pinky\seven math problems\seven millenium math problems.odt
+  + [extension] is .odt
+  + [original_bytes] is 41387
+  + [original_sha256] is 5bf3a72a5d8c084ef5e9b238381c7e3709760599953e66ead01325317643e773
+  + [snapshot_path] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots\seven_millenium_math_problems.txt
+  + [snapshot_sha256] is 740536dd3b4d96922d3afc36fecd540cacee6b0be4c0a26f622de9d086f799c5
+  + [extraction_method] is odt_content_xml_zip_extract_plain_text
+  + [word_count] is 3069
+  + [character_count] is 20038
+
+& [SMP_SOURCE_006] is imported source file
+  + [filename] is Seven Millennium Math Problems.txt
+  + [original_path] is C:\Project\Pinky\seven math problems\Seven Millennium Math Problems.txt
+  + [extension] is .txt
+  + [original_bytes] is 20138
+  + [original_sha256] is 2a8e70573a298883955597cd4351dc5e0a7be60c31211ca7cdf76a08b801a160
+  + [snapshot_path] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots\Seven_Millennium_Math_Problems.txt
+  + [snapshot_sha256] is 9a51ab5299f19f5453349a89d7d757a64744b663280838b54dc0219f66d68b45
+  + [extraction_method] is copied_txt_verbatim
+  + [word_count] is 3076
+  + [character_count] is 20140
+
+& [AuthorityBoundary] is source governance
+  = inside: preserved source snapshots, hashes, extraction provenance, and corpus IDs
+  = outside: canonical specification authority until processed through SJS
+  = must: cite this manifest when analysis layers use imported corpus text

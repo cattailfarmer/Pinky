@@ -1,0 +1,31 @@
+Subject: Poincare Solved-Problem Authority Gate
+
+Description: Project-local tool for interpreting source claims about the already-solved Poincare Conjecture without replacing Perelman's accepted proof or inflating symbolic analogy into proof.
+
+& [PoincareSolvedProblemAuthorityGate] is a math inquiry tool
+  + [tool_uuid] is 3ea12058-6bc1-4b4e-8974-c6faf0cb3f3a
+  + [problem] is Poincare Conjecture
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_poincare_periphery_proof_shape_001.sop
+  + [role] is distinguish accepted proof authority, exposition, analogy, computational model, formal transform, and overclaim
+  + [not_role] is reproving Poincare, evaluating Perelman's proof, or promoting symbolic collapse as replacement proof
+
+& [ClosureLockSet] is the required gate
+  + [lock_001_accepted_status] is Poincare is marked solved before interpretation begins
+  + [lock_002_formal_theorem] is closed simply connected 3-manifold and homeomorphism to S3 are preserved as the formal theorem
+  + [lock_003_proof_lineage] is Hamilton-Perelman Ricci flow with surgery is named as authority floor
+  + [lock_004_source_claim_route] is each source statement is classified as exposition, analogy, computational model, formal transform, or overclaim
+  + [lock_005_no_replacement] is symbolic model is not allowed to replace accepted mathematical proof
+  + [lock_006_model_requirements] is any cognitive or computational model must define its own objects, dynamics, and evaluation criteria
+
+& [ClassificationRules] is the gate logic
+  + [rule_001] is if a claim restates the known theorem or proof lineage, classify as accepted-proof reference
+  + [rule_002] is if a claim compares smoothing to recursive conceptual clarification, classify as analogy
+  + [rule_003] is if a claim defines states, update rule, convergence metric, and experiments, classify as computational model candidate
+  + [rule_004] is if a claim defines a mathematical transform and theorem separate from Poincare, classify as formal-transform candidate
+  + [rule_005] is if a claim says symbolic collapse proves Poincare, classify as overclaim
+
+(poincare_solved_problem_authority_gate) :symbolic_collapse_claim: /accepted proof, analogy, model, transform, overclaim/ |replacement-proof|
+  + [inside] is solved-problem boundary and analogy/model classification
+  + [boundary] is source meaning can be useful without becoming proof authority
+  |outside| new Poincare proof claims, cognitive analogy as topology, and Poincare evidence for other unsolved Millennium solutions

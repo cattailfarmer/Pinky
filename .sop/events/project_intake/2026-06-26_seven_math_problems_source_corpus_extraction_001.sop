@@ -1,0 +1,36 @@
+Subject: Seven Math Problems Source Corpus Extraction 001
+
+Description: Project hygiene event recording extraction of imported ODT/TXT source files into preserved text snapshots and a corpus manifest.
+
+& [ExtractionEvent] is a source-preservation event
+  + [event_uuid] is 8aa815a8-eefe-4a7b-a949-423de493935d
+  + [project] is seven math problems
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [manifest] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+  + [method_record] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\Extraction_Method.sop
+  + [records_json] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\corpus_records.json
+  + [snapshot_root] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots
+
+& [CorpusSurface] is the extracted source set
+  + [source_count] is 6
+  + [odt_count] is 5
+  + [txt_count] is 1
+  + [total_words] is 9789
+  + [originals_modified] is no
+  + [hashes_recorded] is original_sha256 and snapshot_sha256 for every imported file
+
+& [SourceEntries] is the stable corpus ID set
+  + [SMP_SOURCE_001] is Emergent Toroidal Structure.odt
+  + [SMP_SOURCE_002] is Observations 2.odt
+  + [SMP_SOURCE_003] is Observations.odt
+  + [SMP_SOURCE_004] is seven millenium math problems 2.odt
+  + [SMP_SOURCE_005] is seven millenium math problems.odt
+  + [SMP_SOURCE_006] is Seven Millennium Math Problems.txt
+
+& [AuthorityBoundary] is the governance result
+  + [task_001_status] is completed
+  + [task_002_status] is completed
+  + [inside] is source snapshots, extraction method, corpus IDs, and hashes
+  + [outside] is canonical project specification authority until SJS processing occurs
+  + [next_recommended] is use corpus manifest for claim/evidence inventory and SJS canonical specification
+  + [heartbeat_status] is active every minute

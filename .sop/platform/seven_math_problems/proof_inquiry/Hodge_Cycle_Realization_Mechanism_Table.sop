@@ -1,0 +1,34 @@
+Subject: Hodge Cycle Realization Mechanism Table
+
+Description: Math inquiry tool for comparing candidate mechanisms that turn Hodge classes into algebraic cycles or expose why the realization step remains open.
+
+& [HodgeCycleRealizationMechanismTable] is a project-local math inquiry tool
+  + [tool_uuid] is 51ad5444-c4ea-4446-85fb-29463e73977b
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_deep_research_cycle_realization_001.sop
+  + [role] is compare cycle-realization mechanisms by scope, construction strength, known boundary, and symbolic fit
+  + [not_role] is proving Hodge or treating substitute cycle theories as algebraic realization
+
+& [TableColumnSet] is the comparison surface
+  + [mechanism] is the realization or detection approach
+  + [input_anchor] is what kind of Hodge class or data it starts from
+  + [cycle_output] is the algebraic cycle, divisor, family cycle, motivated substitute, or none
+  + [construction_strength] is known_realization, special_case, organizing_framework, substitute, heuristic, or outside
+  + [known_boundary] is known case, open frontier, conditional, false variant, or analogy
+  + [symbolic_fit] is how it maps to memory anchor, walk/traversal, phase stability, or algebraic behavior
+  + [next_question] is the next bounded inquiry opened by the row
+
+  = must: distinguish detection/organization from construction
+  = must: distinguish substitute cycles from algebraic cycles
+  = must: preserve known-case scope before assigning promise
+  - never: call a motivated or absolute Hodge substitute a proof of algebraicity without a cycle
+
+& [CurrentApplication] is the first planned table
+  + [table_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_cycle_realization_mechanism_table_001.sop
+  + [starting_mechanisms] is Lefschetz divisors, special geometry, normal functions, motivated/absolute cycles, and explicit cycle search
+
+(hodge_cycle_realization_mechanism_table) :realization_mechanism: /input anchor, cycle output, construction strength/ |substitute-as-proof|
+  + [inside] is realization mechanism comparison
+  + [boundary] is Hodge proof needs algebraic cycle output
+  |outside| stable anchor as proof, motivated substitute as proof, and unscoped traversal language

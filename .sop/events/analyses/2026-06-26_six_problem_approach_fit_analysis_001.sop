@@ -1,0 +1,85 @@
+Subject: Six Problem Approach Fit Analysis 001
+
+Description: Analysis of how the source document's symbolic approaches serve the intended purpose of each included Millennium problem space, excluding Riemann Hypothesis.
+
+& [AnalysisBoundary] is the authority boundary
+  + [source] is C:\Project\Pinky\seven math problems\Seven Millennium Math Problems.txt
+  + [framework_index] is C:\Project\Pinky\.sop\platform\seven_math_problems\SevenProblemDecompositionIndex.sop
+  + [analysis_scope] is Hodge, Poincare, Birch and Swinnerton-Dyer, Navier-Stokes, Yang-Mills, and P vs NP
+  + [excluded_problem] is Riemann Hypothesis
+  + [analysis_type] is approach-fit analysis
+
+  = must: evaluate how each symbolic approach serves each problem's intended purpose
+  = must: separate semantic usefulness from formal proof sufficiency
+
+& [HodgeApproachFit] is approach fit for Hodge Conjecture
+  + [intended_problem_purpose] is bridge continuous geometric/topological structure to algebraic-cycle representation
+  + [document_approach] is memory anchors inside curvature fields
+  + [served_function] is recasting Hodge classes as stable points where continuous form becomes discrete symbolic/algebraic identity
+  + [meaning_promise] is high
+  + [formal_promise] is medium_if_mapped
+  = fit: strong conceptual fit because the actual problem is about whether certain geometric/cohomological structures admit algebraic representation
+  = need: translate memory anchors into Hodge classes, algebraic cycles, rational cohomology, or a precise representation map
+
+& [PoincareApproachFit] is approach fit for Poincare Conjecture
+  + [intended_problem_purpose] is characterize hole-free closed 3-dimensional spaces as spheres
+  + [document_approach] is collapse to coherence through recursive smoothing
+  + [served_function] is using symbolic collapse as an analogy to Ricci-flow smoothing and topological simplification
+  + [meaning_promise] is medium_to_high
+  + [formal_promise] is low_for_new_proof and medium_for_exposition
+  = fit: useful as an explanatory analogy because the known solution already involves flow-like smoothing
+  = limit: weaker as original proof work because the problem is solved and the document does not reconstruct Perelman's proof
+  = need: decide whether this layer is educational analogy, cognitive model, or formal topology commentary
+
+& [BSDApproachFit] is approach fit for Birch and Swinnerton-Dyer
+  + [intended_problem_purpose] is relate analytic vanishing of an L-function to algebraic rank of rational points
+  + [document_approach] is dual-handed collapse and growth
+  + [served_function] is assigning analytic behavior to the L-hand collapse and rational-point generation to the R-hand growth
+  + [meaning_promise] is high
+  + [formal_promise] is medium_if_mapped
+  = fit: very natural metaphorical fit because the real conjecture already pairs analytic data with algebraic structure
+  = need: map L-hand to order of vanishing, R-hand to Mordell-Weil generators, and "surviving rational directions" to rank
+  = risk: can overclaim if it says correspondence is confirmed without proof of equality
+
+& [NavierStokesApproachFit] is approach fit for Navier-Stokes
+  + [intended_problem_purpose] is show smooth global fluid evolution or identify possible blowup
+  + [document_approach] is symbolic surface tension, resonance anchors, and phase correction
+  + [served_function] is imagining stabilizing mechanisms that absorb turbulent energy and redirect singularity risk into smoothing
+  + [meaning_promise] is high
+  + [formal_promise] is medium_if_quantified
+  = fit: conceptually apt because the problem turns on energy transfer, regularity, and whether turbulence can concentrate into singularity
+  = need: translate surface tension to energy estimates, vorticity control, dissipation, compactness, or regularity criteria
+  = risk: "the field smooths itself" is only meaningful if a measurable anti-blowup mechanism is specified
+
+& [YangMillsApproachFit] is approach fit for Yang-Mills
+  + [intended_problem_purpose] is construct quantum Yang-Mills theory and prove a positive mass gap
+  + [document_approach] is sealed curvature packets, symbolic encryption, and phase-locked mass
+  + [served_function] is treating mass as stable resistance to unfolding and the gap as persistence of locked structure above vacuum
+  + [meaning_promise] is high
+  + [formal_promise] is low_to_medium_until_defined
+  = fit: evocative fit because Yang-Mills involves gauge curvature, field structure, and spectral gap
+  = need: map sealed curvature to gauge-field configurations, confinement-like behavior, spectrum, correlation decay, or constructive QFT axioms
+  = risk: poetic strength is high, but formal distance is large
+
+& [PvsNPApproachFit] is approach fit for P versus NP
+  + [intended_problem_purpose] is determine whether efficient verification implies efficient solution
+  + [document_approach] is structure over enumeration, resonance traversal, and phase-locked shortcuts
+  + [served_function] is proposing that hidden structure can convert blind search into guided construction
+  + [meaning_promise] is very_high
+  + [formal_promise] is medium_for_heuristics and low_for_theorem_until_complexity_proof
+  = fit: excellent conceptual fit because P vs NP is fundamentally about search versus efficient construction
+  = need: replace pi-digit traversal analogy with NP decision problems, reductions, certificates, and polynomial-time algorithm analysis
+  = risk: examples outside NP-complete decision problems do not establish P equals NP or P not equals NP
+
+& [CrossProblemAssessment] is comparative finding
+  + [best_fit] is Birch and Swinnerton-Dyer because collapse/growth mirrors analytic/algebraic duality
+  + [best_modeling_fit] is Navier-Stokes because phase correction can be pursued as quantitative stability or anti-blowup modeling
+  + [best_expository_fit] is Poincare because smoothing/collapse explains an already-solved flow-shaped problem
+  + [best_research_program_fit] is P vs NP because structure-over-enumeration directly matches the core question
+  + [most_evocative_but_least_formalized] is Yang-Mills sealed curvature packet
+  + [cleanest_symbolic_to_formal_bridge] is Hodge memory anchors to algebraic cycles if a precise glossary is built
+
+& [NextMeaningWork] is the next useful continuation
+  = create: per-problem concept mapping tables
+  = columns: symbolic approach, intended mathematical role, closest formal analogue, missing definitions, evidence route, promise score
+  = prioritize: Hodge, Birch and Swinnerton-Dyer, Navier-Stokes, and P vs NP before Yang-Mills if the goal is more formal meaning

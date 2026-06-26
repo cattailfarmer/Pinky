@@ -1,0 +1,61 @@
+Subject: Seven Math Problems Git Reflection 001
+
+Description: First project-local Git reflection for seven math problems, applying repo-first and turn-bookmark logic to the build/research project surface.
+
+& [ReflectionFrame] is the bounded project reflection
+  + [case] is C:\Project\Pinky\.sop\platform\seven_math_problems\reflection\Build_Project_Git_Reflection_Case.sop
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [version_a] is last relevant visible commit 68d7460 Build direct LM Studio manager runner
+  + [version_b] is current worktree at 2026-06-26T15:38Z
+  + [commit_log_scope] is C:\Project\Pinky, C:\Project\Pinky\seven math problems, C:\Project\Pinky\.sop\platform\seven_math_problems, C:\Project\Pinky\.sop\events\proof_inquiry, and C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems
+
+& [CommitLogContext] is the scoped log reading
+  + [latest_commit] is 68d7460 Build direct LM Studio manager runner
+  + [recent_framework_lineage] is compact manager kernel, active kernel compression review, transformer readiness threshold, relationship eigenspectrum, legacy contract reinforcement, sectioned periphery association fabric, SOP job node browser, Codex conversation agent spawn, LLM agent collaboration, concept authority qualification, and concept refinement fabric
+  + [interpretation] is current seven math problems work is newer than the committed framework lineage and is mostly untracked project-specific research, not yet represented in commit history
+
+& [ChangeLogBridge] is the current scoped worktree surface
+  + [tracked_diff] is .sop\runtime\tests\test_sensitivity_scan.py modified with math bridge map test coverage
+  + [untracked_project_surface] is C:\Project\Pinky\seven math problems imported source corpus
+  + [untracked_sop_surface] is project intake records, analyses, proof inquiry records, project manager slice, seven_math_problems platform contracts, math_bridge runtime module, and math_bridge demo
+  + [oddity] is git diff alone underreports work because untracked SOP artifacts are the majority of project evidence
+
+& [RoleClassification] is changed surface classification
+  + [source_import] is C:\Project\Pinky\seven math problems
+  + [source_requests] are project intake, decomposition, deep research priority, and build project git reflection source documents
+  + [project_contracts] are seven_math_problems decomposition, proof inquiry, research, and reflection contracts
+  + [analysis_events] are approach fit, suggested approaches, proof inquiry, deep research, and rank split records
+  + [runtime_tool] is C:\Project\Pinky\.sop\runtime\sop_node\math_bridge.py
+  + [runtime_demo] is C:\Project\Pinky\.sop\runtime\demos\math_bridge.py
+  + [test_surface] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+
+& [ReflectionFindings] is the turn bookmark result
+  + [unique_accomplishment_001] is the project now has its own decomposition, proof-inquiry, deep-research, math-tool, and git-reflection surfaces
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems
+    = plan_relation: opened_and_partially_satisfied
+    = route: continue
+  + [unique_accomplishment_002] is BSD proposition was narrowed from symbolic confirmation to rank-case-sensitive bridge inquiry
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_rank_bridge_case_split_001.sop
+    = plan_relation: satisfied
+    = route: continue
+  + [new_potential_001] is higher-rank BSD inquiry now has a concrete next tool shape: BSD Higher-Rank Frontier Matrix
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_bridge_001.sop
+    = plan_relation: opened
+    = route: manager_task
+  + [missed_work_001] is imported ODT documents have not yet been extracted into preserved source snapshots
+    = evidence: C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems\Project_Slice.sop Task_001 remains ready
+    = plan_relation: missing
+    = route: track
+  + [mistake_or_risk_001] is heartbeat scheduling was assumed persistent before observed delivery showed uncertainty
+    = evidence: conversation correction and automation refresh
+    = plan_relation: corrected
+    = route: caution
+  + [outside_001] is no formal proof of any Millennium problem has been produced
+    = evidence: proof inquiry records explicitly preserve proof boundary
+    = plan_relation: outside
+    = route: outside
+
+& [ReflectionAdjustment] is the project-focus correction
+  + [adjustment] is use build-project Git reflection at sustained research turn boundaries
+  + [next_action] is build BSD Higher-Rank Frontier Matrix unless source extraction becomes higher priority
+  + [heartbeat_status] is active every minute but delivery reliability should be observed rather than assumed

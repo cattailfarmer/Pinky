@@ -1,0 +1,33 @@
+Subject: P vs NP Target Selection Table
+
+Description: Project-local tool for selecting a formal P vs NP target for source-inspired structure-over-enumeration claims.
+
+& [PvsNPTargetSelectionTable] is a math inquiry tool
+  + [tool_uuid] is 0dc5a5b6-1871-4ca0-90b5-fef1494cf9df
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_complexity_target_gate_001.sop
+  + [role] is rank candidate target classes for testing whether structural traversal can become a formal complexity-theoretic contribution
+  + [not_role] is proving P equals NP, proving P not equals NP, or promoting heuristic search into proof
+
+& [ColumnSet] is the table schema
+  + [column_001_target_family] is candidate language or problem family
+  + [column_002_np_membership_shape] is verifier and certificate form
+  + [column_003_np_complete_contact] is known reduction or contact with NP-completeness
+  + [column_004_structural_fit] is fit with source notions of resonance, phase locking, and guided traversal
+  + [column_005_proof_route] is P equals NP algorithm route, P not equals NP lower-bound route, or subclass route
+  + [column_006_main_lock] is the first obstacle preventing proof promotion
+  + [column_007_priority] is high, medium, low, or outside
+
+& [SelectionRule] is the routing method
+  + [rule_001] is prefer SAT or 3-SAT when the claim is meant to touch P equals NP generally
+  + [rule_002] is prefer graph NP-complete problems when the source language suggests geometry, paths, folds, or coherent traversal
+  + [rule_003] is prefer CSP when the source language suggests local constraints, correction fields, or phase consistency
+  + [rule_004] is route pi traversal to outside or toy laboratory unless a decision-problem bridge is supplied
+  + [rule_005] is route restricted structured cases to tractable-subclass work, not P equals NP proof authority
+  + [rule_006] is route separation claims to lower-bound/barrier-aware research before any proof-shaped claim
+
+(p_vs_np_target_selection_table) :structure_guided_search_claim: /target family, verifier, reduction contact, route/ |metaphor promotion|
+  + [inside] is formal target selection and proof-route classification
+  + [boundary] is target selection can sharpen inquiry but cannot settle P vs NP
+  |outside| pi-digit traversal as direct proof, symbolic convergence as reduction, and unbounded heuristic optimism

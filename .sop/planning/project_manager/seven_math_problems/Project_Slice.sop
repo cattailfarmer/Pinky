@@ -1,0 +1,229 @@
+Subject: Seven Math Problems Project Manager Slice
+
+Description: Managed work surface for staged analysis of the imported seven math problems document corpus.
+
+& [ProjectSlice] is the active managed slice
+  + [project_uuid] is 4d3d1535-62a5-4907-9423-ee569ab70689
+  + [project_name] is seven math problems
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [active_sop_root] is C:\Project\Pinky\.sop
+  + [created_at] is 2026-06-26
+  + [source_intake] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_project_intake\Dictated_Seven_Math_Problems_Project_Intake_Source.sop
+  + [initial_analysis] is C:\Project\Pinky\.sop\events\project_intake\2026-06-26_seven_math_problems_initial_analysis_001.sop
+  + [status] is intake_started
+
+& [ReadyTaskSet] is ready project work
+  + [Task_007_build_bsd_mapping_table] is map L-hand/R-hand symbolic terms to BSD formal objects and identify the first non-circular lemma candidate
+    = evidence_needed: mapping table, proposition adjustment record, proof obligations, and retired overclaims
+  + [Task_008_develop_next_math_tool_when_needed] is create the next narrow math inquiry tool only when repeated proof-shaping work reveals a concrete need
+    = evidence_needed: tool contract, runtime or table artifact, test coverage if executable, and first output
+  + [Task_009_apply_deep_research_to_bsd_weakest_mapping] is research the weakest BSD bridge-map term and decide whether phase-corrected field maps to height pairing, regulator, leading coefficient, local factors, or outside
+    = evidence_needed: bounded research record, source references, adjusted bridge map, and proposition update
+  + [Task_010_research_higher_rank_bsd_bridge] is research what can replace the rank 1 Heegner/Gross-Zagier/Kolyvagin corridor in higher analytic rank
+    = evidence_needed: bounded research record, source references, updated rank-bridge split, and next proposition adjustment
+  + [Task_011_build_bsd_higher_rank_frontier_matrix] is build a matrix of higher-rank candidate mechanisms against analytic order, generator construction, independence, height pairing, regulator, leading coefficient, and theorem boundary
+    = evidence_needed: tool contract, populated first matrix, and proposition adjustment
+  + [Task_013_research_derived_heights_phase_correction] is research derived heights as the most promising formal phase-correction mechanism in higher-rank BSD
+    = evidence_needed: bounded research record, source references, and matrix update
+  + [Task_014_research_generalized_heegner_cycles_generator_source] is research generalized Heegner cycles as the possible R-hand generator or cycle source for higher-rank BSD
+    = evidence_needed: bounded research record, source references, and updated two-part bridge shape
+  + [Task_015_build_bsd_source_measurement_pairing_table] is build a table pairing source families with height/regulator measurement frameworks and their construction, measurement, independence, and sufficiency status
+    = evidence_needed: tool contract, populated first table, and proposition update
+  + [Task_016_research_bsd_independence_criteria] is research nonvanishing and height-pairing criteria that certify independence and sufficiency for constructed Heegner or Chow-Heegner points/cycles
+    = evidence_needed: bounded research record and pairing table update
+  + [Task_017_build_bsd_dimension_closure_checklist] is build a checklist for analytic order, source candidate count, independence pairing rank, and upper-bound control sufficiency
+    = evidence_needed: tool contract, first checklist, and proposition update
+  + [Task_018_research_higher_rank_height_pairing_nondegeneracy] is research nondegeneracy of higher-rank height pairings for generalized Heegner cycles or related source families
+    = evidence_needed: bounded research record and dimension closure update
+  + [Task_019_project_reflection_after_bsd_open_lock] is run project-local Git reflection after sharpening the BSD nondegeneracy lock
+    = evidence_needed: reflection record, diff/status classification, missed work, accomplishments, and next route
+  + [Task_020_begin_navier_stokes_periphery_inquiry] is begin the next highest-potential lane using the gate-making method learned from BSD
+    = evidence_needed: Navier-Stokes proof-shape record, first low-resolution periphery target, and any needed tool contract
+  + [Task_021_build_navier_stokes_anti_blowup_gate_matrix] is compare candidate surface-tension mappings against continuation criteria, scaling, and anti-concentration jobs
+    = evidence_needed: tool contract, populated first matrix, and proposition update
+  + [Task_022_research_navier_stokes_geometric_depletion] is research alignment, strain, or vorticity-direction conditions that imply regularity and whether they can be propagated
+    = evidence_needed: bounded research record and matrix update
+  + [Task_023_build_navier_stokes_depletion_propagation_checklist] is build a checklist testing whether depletion is conditional, propagated, scale-critical, and continuation-closing
+    = evidence_needed: tool contract, first checklist, and proposition update
+  + [Task_024_research_navier_stokes_alignment_evolution] is research evolution identities for vorticity direction, strain eigenframe, or alignment quantities to see whether depletion can propagate
+    = evidence_needed: bounded research record and depletion checklist update
+  + [Task_025_project_reflection_after_navier_stokes_open_lock] is run project-local Git reflection after Navier-Stokes reaches the dynamic propagation lock
+    = evidence_needed: reflection record, diff/status classification, missed work, accomplishments, and next route
+  + [Task_026_begin_hodge_periphery_inquiry] is begin the next highest-potential lane using the gate-making method learned from BSD and Navier-Stokes
+    = evidence_needed: Hodge proof-shape record, first low-resolution periphery target, and any needed tool contract
+  + [Task_027_build_hodge_anchor_realization_gate] is test memory anchors against Hodge type, rationality, cycle class map, realization, and variant boundary
+    = evidence_needed: tool contract, first gate record, and proposition update
+  + [Task_028_research_hodge_known_cases_and_variant_boundaries] is research known Hodge cases and failure boundaries for integral/generalized variants
+    = evidence_needed: bounded research record and anchor gate update
+  + [Task_029_build_hodge_variant_boundary_map] is build a map classifying Hodge claims by rational target, integral/Kähler variant, known case, open frontier, or false/outside
+    = evidence_needed: tool contract, first map, and proposition update
+  + [Task_030_research_hodge_cycle_realization_mechanisms] is research mechanisms that produce algebraic cycles from Hodge classes in known or special Hodge cases
+    = evidence_needed: bounded research record and anchor/variant map update
+  + [Task_031_build_hodge_cycle_realization_mechanism_table] is build a table comparing realization mechanisms by scope, construction strength, known-case status, and symbolic fit
+    = evidence_needed: tool contract, first table, and proposition update
+  + [Task_032_project_reflection_after_hodge_open_lock] is run project-local Git reflection after Hodge reaches the cycle-realization lock
+    = evidence_needed: reflection record, diff/status classification, missed work, accomplishments, and next route
+  + [Task_033_begin_p_vs_np_periphery_inquiry] is begin the next highest-potential lane using the gate-making method learned from BSD, Navier-Stokes, and Hodge
+    = evidence_needed: P vs NP proof-shape record, first low-resolution periphery target, and any needed tool contract
+  + [Task_034_build_p_vs_np_complexity_target_gate] is test structure-over-enumeration claims against language target, verifier, reduction, algorithm/runtime, and outside filter
+    = evidence_needed: tool contract, first gate record, and proposition update
+  + [Task_012_run_project_git_reflection_bookmark] is run project-local Git reflection over scoped commit log, status, diff, untracked artifacts, and plan comparison
+    = evidence_needed: reflection case, reflection record, classified findings, and manager route updates
+
+& [CompletedTaskSet] is completed project work
+  + [Task_001_extract_imported_document_text] is extract text from all ODT files into preserved source snapshots without modifying originals
+    = evidence: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots
+    = evidence: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\Extraction_Method.sop
+    = event: C:\Project\Pinky\.sop\events\project_intake\2026-06-26_seven_math_problems_source_corpus_extraction_001.sop
+  + [Task_002_build_source_corpus_manifest] is assign stable IDs to each imported file and extracted snapshot
+    = evidence: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+    = evidence: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\corpus_records.json
+  + [Task_003_create_sjs_project_specification] is process preserved source corpus into a canonical project specification
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Seven_Math_Problems_Project_SJS.sop
+    = event: C:\Project\Pinky\.sop\events\analyses\2026-06-26_seven_math_problems_project_sjs_001.sop
+  + [Task_004_claim_and_evidence_inventory] is separate narrative-symbolic claims from formal mathematical/proof claims
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Claim_Evidence_Inventory.sop
+    = event: C:\Project\Pinky\.sop\events\analyses\2026-06-26_seven_math_problems_claim_evidence_inventory_001.sop
+  + [Task_005_create_six_problem_decomposition_framework] is create paired SOP layers for each included Millennium problem except Riemann Hypothesis
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\SevenProblemDecompositionIndex.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis
+    = source: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_problem_decomposition_request\Dictated_Seven_Problem_Decomposition_Request_Source.sop
+  + [Task_006_expand_each_analysis_layer] is deepen each document-analysis layer with direct quotations, symbolic vocabulary tables, and formal mapping candidates after source extraction
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Source_Quote_Index_First_Pass.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Document_Analysis_Expansion_First_Pass.sop
+    = event: C:\Project\Pinky\.sop\events\analyses\2026-06-26_seven_math_problems_document_analysis_expansion_001.sop
+  + [Task_006_start_periphery_guided_proof_inquiry_order] is establish ordered inquiry lanes and run the first BSD proof-shaping probe
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Six_Problem_Periphery_Inquiry_Order.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_periphery_proof_shape_001.sop
+  + [Task_007_develop_math_bridge_map_tool] is develop the first narrow math inquiry tool for symbolic-to-formal bridge mapping and apply it to BSD
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Math_Bridge_Map_Tool.sop
+    = evidence: C:\Project\Pinky\.sop\runtime\sop_node\math_bridge.py
+    = evidence: C:\Project\Pinky\.sop\runtime\demos\math_bridge.py
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.hg.sop
+  + [Task_008_add_deep_research_priority_gate] is add deep research priority when high-curiosity periphery cannot be promoted because formal understanding is low-resolution
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+    = source: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_deep_research_priority\Dictated_Deep_Research_Priority_Source.sop
+  + [Task_009_apply_deep_research_to_bsd_phase_field] is resolve the weakest BSD bridge-map term through bounded deep research
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_phase_corrected_field_001.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.sop
+  + [Task_010_create_bsd_rank_bridge_case_splitter] is create and apply a rank-case splitter to keep known rank 0/1 territory separate from higher-rank frontier
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Rank_Bridge_Case_Splitter.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_rank_bridge_case_split_001.sop
+  + [Task_011_research_higher_rank_bsd_bridge] is identify the higher-rank BSD frontier shape after rank-case splitting
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_bridge_001.sop
+  + [Task_012_add_build_project_git_reflection_case] is add and apply a project-local Git reflection case for seven math problems
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\reflection\Build_Project_Git_Reflection_Case.sop
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_001.sop
+    = source: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_build_project_git_reflection\Dictated_Build_Project_Git_Reflection_Source.sop
+  + [Task_013_build_bsd_higher_rank_frontier_matrix] is build and populate the first higher-rank BSD frontier matrix
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Higher_Rank_Frontier_Matrix.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_higher_rank_frontier_matrix_001.sop
+  + [Task_014_research_derived_heights_phase_correction] is resolve derived heights as the primary formal phase-correction mechanism for higher-rank BSD measurement
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_derived_heights_001.sop
+  + [Task_015_research_generalized_heegner_cycles_generator_source] is resolve generalized Heegner cycles as best visible R-hand source family but not a general generator solution
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_generalized_heegner_cycles_001.sop
+  + [Task_016_build_bsd_source_measurement_pairing_table] is build the source-measurement pairing tool and first table
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Measurement_Pairing_Table.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_measurement_pairing_table_001.sop
+  + [Task_017_research_bsd_independence_criteria] is resolve independence and sufficiency as a dimension-closure problem
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_independence_criteria_001.sop
+  + [Task_018_build_bsd_dimension_closure_checklist] is build and apply the dimension closure checklist
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Dimension_Closure_Checklist.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_dimension_closure_checklist_001.sop
+  + [Task_019_research_higher_rank_height_pairing_nondegeneracy] is resolve nondegeneracy as the first still-open BSD proof lock outside special cases
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_height_pairing_nondegeneracy_001.sop
+  + [Task_020_project_reflection_after_bsd_open_lock] is reflect on the BSD open lock and project worktree state before expanding further
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_002.sop
+  + [Task_021_begin_navier_stokes_periphery_inquiry] is start Navier-Stokes proof shaping and define the anti-blowup gate matrix
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_periphery_proof_shape_001.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Anti_Blowup_Gate_Matrix.sop
+  + [Task_022_build_navier_stokes_anti_blowup_gate_matrix] is populate the first Navier-Stokes anti-blowup gate matrix
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_anti_blowup_gate_matrix_001.sop
+  + [Task_023_research_navier_stokes_geometric_depletion] is resolve geometric depletion as a conditional route whose open lock is propagation
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_deep_research_geometric_depletion_001.sop
+  + [Task_024_build_navier_stokes_depletion_propagation_checklist] is build and apply the depletion propagation checklist
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Depletion_Propagation_Checklist.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_depletion_propagation_checklist_001.sop
+  + [Task_025_research_navier_stokes_alignment_evolution] is resolve alignment/depletion propagation as the first still-open Navier-Stokes proof lock
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_deep_research_alignment_evolution_001.sop
+  + [Task_026_project_reflection_after_navier_stokes_open_lock] is reflect on the Navier-Stokes open lock and project worktree state before expanding further
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_003.sop
+  + [Task_027_begin_hodge_periphery_inquiry] is start Hodge proof shaping and define the anchor realization gate
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_periphery_proof_shape_001.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Anchor_Realization_Gate.sop
+  + [Task_028_apply_hodge_anchor_realization_gate] is apply the first Hodge anchor realization gate and identify open locks
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_anchor_realization_gate_001.sop
+  + [Task_029_research_hodge_known_cases_and_variant_boundaries] is resolve known-case and variant boundaries for Hodge anchor inquiry
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_deep_research_known_cases_boundaries_001.sop
+  + [Task_030_build_hodge_variant_boundary_map] is build and apply the Hodge variant boundary map
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Variant_Boundary_Map.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_variant_boundary_map_001.sop
+  + [Task_031_research_hodge_cycle_realization_mechanisms] is research cycle-realization mechanisms and identify the need for a mechanism table
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_deep_research_cycle_realization_001.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Cycle_Realization_Mechanism_Table.sop
+  + [Task_032_build_hodge_cycle_realization_mechanism_table] is populate the Hodge cycle realization mechanism table and identify the open lock
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_cycle_realization_mechanism_table_001.sop
+  + [Task_033_project_reflection_after_hodge_open_lock] is reflect on the Hodge open lock and project worktree state before expanding further
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_004.sop
+  + [Task_034_begin_p_vs_np_periphery_inquiry] is start P vs NP proof shaping and define the complexity target gate
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_periphery_proof_shape_001.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Complexity_Target_Gate.sop
+  + [Task_035_apply_p_vs_np_complexity_target_gate] is apply the first P vs NP complexity target gate and identify the first formal lock
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_complexity_target_gate_001.sop
+  + [Task_036_build_p_vs_np_target_selection_table] is build and apply the target selection table for SAT, CSP, graph targets, pi traversal, and lower-bound routes
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Target_Selection_Table.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_target_selection_table_001.sop
+  + [Task_037_research_p_vs_np_csp_dichotomy_boundary] is research CSP dichotomy as the boundary between source-style coherence and P vs NP overclaim
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_deep_research_csp_dichotomy_001.sop
+  + [Task_038_build_p_vs_np_csp_coherence_translation_gate] is build and apply a CSP coherence translation gate to classify resonance claims as tractable subclass, NP-complete solver claim, heuristic, or outside
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_CSP_Coherence_Translation_Gate.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_csp_coherence_translation_gate_001.sop
+  + [Task_039_build_p_vs_np_toy_csp_coherence_model] is formalize a toy CSP coherence model to preserve meaning while avoiding P vs NP overclaim
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_toy_csp_coherence_model_001.sop
+  + [Task_040_project_reflection_after_p_vs_np_open_lock] is reflect on the P vs NP open lock and project worktree state before moving to Yang-Mills
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_005.sop
+  + [Task_041_begin_yang_mills_periphery_inquiry] is start Yang-Mills proof shaping and define the existence-gap separation gate
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_periphery_proof_shape_001.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Existence_Gap_Separation_Gate.sop
+  + [Task_042_apply_yang_mills_existence_gap_separation_gate] is apply the first Yang-Mills existence-gap separation gate and identify construction as the first open lock
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_existence_gap_separation_gate_001.sop
+  + [Task_043_research_yang_mills_construction_route] is research the constructive route boundary for Yang-Mills, including OS reconstruction, lattice limits, and mass-gap correlation decay
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_deep_research_construction_route_001.sop
+  + [Task_044_build_yang_mills_construction_route_checklist] is build and apply the Yang-Mills construction route checklist to expose missing continuum, reconstruction, nontriviality, and gap-transfer locks
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Construction_Route_Checklist.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_construction_route_checklist_001.sop
+  + [Task_045_research_yang_mills_confinement_decay_boundary] is research confinement, area-law, and exponential-decay mechanisms as the best formal target for sealed-curvature intuition
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_deep_research_confinement_decay_001.sop
+  + [Task_046_project_reflection_after_yang_mills_open_lock] is reflect on the Yang-Mills open lock and project worktree state before moving to Poincare
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_006.sop
+  + [Task_047_begin_poincare_solved_problem_inquiry] is start Poincare solved-problem boundary inquiry and define the solved-problem authority gate
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_poincare_periphery_proof_shape_001.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Poincare_Solved_Problem_Authority_Gate.sop
+  + [Task_048_apply_poincare_solved_problem_authority_gate] is apply the first Poincare solved-problem authority gate and classify symbolic Ricci flow as analogy unless model criteria are supplied
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_poincare_solved_problem_authority_gate_001.sop
+  + [Task_049_build_poincare_symbolic_ricci_flow_model_boundary] is build and apply the symbolic Ricci flow model boundary to decide metaphor, model candidate, formal transform, or overclaim
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Poincare_Symbolic_Ricci_Flow_Model_Boundary.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_poincare_symbolic_ricci_flow_model_boundary_001.sop
+  + [Task_050_create_six_lane_synthesis] is synthesize the first pass across all six non-Riemann lanes and update ranking, proof locks, risks, and next work
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_six_lane_synthesis_001.sop
+  + [Task_051_return_to_bsd_higher_rank_euler_kolyvagin_route] is research higher-rank Euler, Kolyvagin, and Stark systems as alternate or complementary independence and upper-bound control mechanisms
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_euler_kolyvagin_001.sop
+  + [Task_052_build_bsd_two_sided_closure_matrix] is build and apply a two-sided closure matrix pairing lower-bound source/measurement with upper-bound Selmer control
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Two_Sided_Closure_Matrix.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_two_sided_closure_matrix_001.sop
+  + [Task_053_project_reflection_after_bsd_return_matrix] is reflect on the BSD return pass and route next work toward scoped theorem corridor or project hygiene
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_007.sop
+  + [Task_054_project_reflection_after_hygiene_first_pass] is reflect on source extraction, corpus manifest, claim inventory, SJS, quote index, and analysis expansion before further work
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_008.sop
+  + [Task_055_create_project_artifact_staging_plan] is create a non-mutating staging plan for project-specific artifacts while waiting for user approval
+    = evidence: C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems\Project_Artifact_Staging_Plan.sop
+  + [Task_056_select_bsd_theorem_corridor] is select the highest-meaning BSD theorem corridor after the two-sided closure matrix and preserve source/proof boundaries
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_theorem_corridor_selection_001.sop
+
+& [BlockedOrDeferredTaskSet] is not ready as authority work
+  + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
+    = blocker: no formal proof package, peer review trail, definitions, lemmas, or accepted external validation in the current intake
+  + [Task_publication_or_implementation] is transform the corpus into a publishable artifact, app, or implementation
+    = blocker: no canonical SJS project specification or user-selected goal yet

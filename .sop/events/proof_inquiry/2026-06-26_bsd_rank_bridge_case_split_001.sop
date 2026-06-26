@@ -1,0 +1,32 @@
+Subject: BSD Rank Bridge Case Split 001
+
+Description: First application of the BSD Rank-Bridge Case Splitter to the L-hand/R-hand proposition.
+
+& [CaseSplitRun] is the first case split
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Rank_Bridge_Case_Splitter.sop
+  + [input_proposition] is L-hand/R-hand language may organize analytic-to-algebraic correspondence
+  + [source_bridge_map] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.sop
+  + [source_deep_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_phase_corrected_field_001.sop
+
+& [SplitFinding] is the resulting shape
+  + [rank_zero] is useful boundary case but low revelation value for generator-growth language
+  + [rank_one] is the calibration case where analytic first-derivative behavior has known point-construction meaning through the Heegner/Gross-Zagier/Kolyvagin corridor
+  + [higher_rank] is the real frontier where multiple independent rational directions must be accounted for without assuming BSD
+  + [refined_formula] is where phase-corrected field now belongs through Neron-Tate height pairing and regulator
+
+& [AdjustedProposition] is the narrowed proposition
+  + [old_proposition] is L-hand/R-hand language may organize analytic-to-algebraic correspondence
+  + [new_proposition] is L-hand/R-hand should be developed as a rank-case-sensitive bridge model: rank 1 calibrates the bridge, higher rank tests whether the model can reveal genuinely new structure, and refined BSD tests whether phase-correction corresponds to regulator geometry
+  + [retired_overreach] is low-rank bridge evidence implies all-rank BSD
+  + [current_frontier_question] is what formal mechanism could convert higher-order analytic vanishing into multiple independent generator directions
+
+& [NextDeepResearchTarget] is the next low-resolution subject
+  + [target] is higher-rank BSD bridge mechanisms
+  + [bounded_question] is what known higher-rank generalizations, Heegner-cycle analogues, Euler systems, p-adic methods, or derived-height frameworks try to replace the rank 1 point-construction corridor
+  + [priority] is high
+  + [why] is the core revelation potential sits exactly where the rank 1 bridge stops being enough
+
+& [DeepResearchResolution] is the heartbeat research continuation
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_bridge_001.sop
+  + [frontier_shape] is higher rank is a multi-generator lattice-and-height problem, not repeated rank 1 point construction
+  + [new_tool_need] is BSD Higher-Rank Frontier Matrix

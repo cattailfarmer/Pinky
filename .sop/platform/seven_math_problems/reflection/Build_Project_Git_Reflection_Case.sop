@@ -1,0 +1,56 @@
+Subject: Seven Math Problems Build Project Git Reflection Case
+
+Description: Project-local reflection case that applies RepoFirstInternalScan and TurnBookmark logic to the seven math problems build/research project, rather than only to the .sop framework itself.
+
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_build_project_git_reflection\manifest.sop
+@ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+@ [source] C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\MomentAwarenessBranchRefinement.sop
+
+& [BuildProjectGitReflectionCase] is the project-local reflection case
+  + [case_uuid] is a337f9de-3068-46d7-8dc4-92ef3237a7f0
+  + [project_name] is seven math problems
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [project_sop_surface] is C:\Project\Pinky\.sop\platform\seven_math_problems
+  + [project_event_surface] is C:\Project\Pinky\.sop\events
+  + [project_manager_slice] is C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems\Project_Slice.sop
+  + [role] is reflect on build-project work from commit logs, status, diff, source artifacts, manager slice, and proof-inquiry records
+  + [not_role] is treating .sop framework commits as sufficient reflection for every build project
+
+& [ReflectionInputSet] is the required evidence bundle
+  + [commit_log] is git log scoped to project_root and project-specific SOP paths
+  + [status_surface] is git status --short scoped to project_root and project-specific SOP paths
+  + [diff_surface] is git diff stat/name-status/numstat for tracked changes
+  + [untracked_surface] is untracked imported files, source documents, project artifacts, and generated records
+  + [planned_specification] is source request, project manager slice, current proof-inquiry order, and active research gate
+  + [test_surface] is relevant runtime tests or validation outputs
+
+& [ReflectionProcedure] is the project case workflow
+  + [step_001_bookend] is identify last relevant commit and current worktree
+  + [step_002_commit_log] is read scoped commit log before interpreting current work
+  + [step_003_status] is inspect tracked and untracked project surfaces
+  + [step_004_diff] is inspect tracked diff, then separately list untracked artifacts
+  + [step_005_classify] is classify source import, source request, canonical/project contract, analysis event, proof inquiry, runtime tool, test, generated graph, and outside
+  + [step_006_compare_plan] is compare changes against project manager slice and current research order
+  + [step_007_reflect] is classify missed work, mistake, unique accomplishment, new potential, and outside
+  + [step_008_route] is update project manager, proof inquiry, deep research, or heartbeat focus
+
+  = must: use commit log as temporal context but not as proof of current untracked work
+  = must: include untracked files because build projects may start as imported source bundles
+  = must: keep imported source files separate from SOP interpretation artifacts
+  = must: reflect on project-specific work without collapsing it into framework development
+  = must: preserve unsupported inferences as outside or future research tasks
+  = should: run this reflection at the end of sustained project-research turns
+  - never: infer project completion from framework test success alone
+
+& [FindingKinds] is the project reflection taxonomy
+  + [missed_work] is required project work with insufficient artifact evidence
+  + [mistake] is boundary violation, overclaim, stale heartbeat, unsupported proof status, or untracked source confusion
+  + [unique_accomplishment] is project-specific structure or tool that satisfies a slice
+  + [new_potential] is newly visible research lane, math tool, proof shape, or source-processing need
+  + [outside] is unsupported formal proof, hidden scheduler state, and uninspected imported documents
+
+(build_project_git_reflection_case) :project_delta: /commit log, status, diff, untracked artifacts/ |framework-only reflection|
+  + [inside] is project-local repo reflection and plan comparison
+  + [boundary] is project work uses .sop framework but has its own reflection case
+  |outside| hidden motive, proof by diff, and framework-root completion as project completion

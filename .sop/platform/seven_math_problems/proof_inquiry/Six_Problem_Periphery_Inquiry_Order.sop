@@ -1,0 +1,40 @@
+Subject: Six Problem Periphery Inquiry Order
+
+Description: Ordered proof-inquiry route for the six remaining Millennium problem spaces, using periphery probing to shape propositions before proof claims.
+
+& [InquiryOrder] is the working order selected from prior approach-fit analysis
+  + [order_001] is Birch and Swinnerton-Dyer
+  + [order_002] is Navier-Stokes Existence and Smoothness
+  + [order_003] is Hodge Conjecture
+  + [order_004] is P versus NP
+  + [order_005] is Yang-Mills Existence and Mass Gap
+  + [order_006] is Poincare Conjecture
+  + [excluded_problem] is Riemann Hypothesis
+
+& [PeripheryInquiryMethod] is the active probing method
+  + [trigger_source] is C:\Project\Pinky\.sop\platform\PeripheryInquiryCuriosityTrigger.sop
+  + [dimensional_probe] is C:\Project\Pinky\.sop\platform\PeripheryDimensionalProbe.sop
+  + [correlation_scan] is C:\Project\Pinky\.sop\platform\PeripheryCorrelationPotentialScan.sop
+  + [sectioned_periphery] is C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+  + [deep_research_priority_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+
+  = must: start each problem with named focal subject, intended mathematical purpose, and imported-document proposition
+  = must: divide internal periphery from external periphery
+  = must: classify curiosity triggers before promoting signals
+  = must: test candidate dimensions for distinctness, subject fit, evidence fit, and caution load
+  = must: route high-curiosity low-resolution formal understanding through deep research before proof-shaping dependence
+  = must: adjust proposition shape as proof obligations become clearer
+  = must: demote attractive meanings that fail formal mapping or evidence tests
+  - never: promote resonance, heat, or metaphor into proof
+
+& [ProofShapeLifecycle] is the development route
+  + [stage_001_problem_shape] is define the formal problem boundary and intended proof target
+  + [stage_002_document_proposition] is extract the source document's implied proposition
+  + [stage_003_periphery_probe] is inspect adjacent concepts, analogues, support gaps, and possible anchors
+  + [stage_004_receptive_form] is rewrite the proposition in a tighter inspectable form
+  + [stage_005_proof_obligation_map] is name what a proof would need to show
+  + [stage_006_adjustment] is strengthen, narrow, split, or retire the proposition according to evidence
+
+& [CurrentFocus] is the active lane
+  + [problem] is Birch and Swinnerton-Dyer
+  + [focus_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_periphery_proof_shape_001.sop

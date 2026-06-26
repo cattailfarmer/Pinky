@@ -1,0 +1,32 @@
+Subject: P vs NP CSP Coherence Translation Gate
+
+Description: Project-local tool for translating source resonance/coherence language into constraint satisfaction terms while preserving the boundary between tractable subclasses and P vs NP proof claims.
+
+& [PvsNPCSPCoherenceTranslationGate] is a math inquiry tool
+  + [tool_uuid] is 673f7068-a396-4f17-9798-37d7ec840a2d
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_deep_research_csp_dichotomy_001.sop
+  + [role] is classify source-style coherence claims as formal CSP structure, algorithm, heuristic, NP-complete proof claim, or outside metaphor
+  + [not_role] is proving CSP dichotomy, proving P equals NP, or treating symbolic fit as mathematical sufficiency
+
+& [GateLocks] is the closure set
+  + [lock_001_variables_domains_constraints] is variables, finite domains, and constraints are specified
+  + [lock_002_certificate_verifier] is satisfying assignment and polynomial-time verifier are specified
+  + [lock_003_constraint_language_scope] is fixed tractable language, NP-complete language, or varying instance family is identified
+  + [lock_004_coherence_operator] is proposed phase/coherence operation is formalized as propagation, polymorphism, invariant, canonicalization, or search heuristic
+  + [lock_005_algorithmic_effect] is the operation has a proved effect on all instances in the selected scope
+  + [lock_006_complexity_status] is runtime is polynomial, exponential, heuristic, or unknown
+  + [lock_007_claim_route] is classified as tractable subclass, NP-complete solver claim, lower-bound/separation claim, heuristic, or outside
+
+& [ClassificationRules] is the translation logic
+  + [rule_001] is if the coherence operator proves polynomial solving only for a tractable fixed constraint language, classify as tractable subclass insight
+  + [rule_002] is if the operator claims to solve an NP-complete CSP/SAT family in polynomial time, classify as P equals NP candidate and require full algorithm and proof
+  + [rule_003] is if the operator guides search without worst-case guarantee, classify as heuristic
+  + [rule_004] is if no variables, domains, or constraints are supplied, classify as unsupported metaphor
+  + [rule_005] is if the result separates hardness, require lower-bound framework and known-barrier caution
+
+(p_vs_np_csp_coherence_translation_gate) :resonance_key: /CSP variables, constraints, operator, complexity route/ |tractable-overclaim|
+  + [inside] is CSP translation and claim-route classification
+  + [boundary] is tractable structure can be meaningful without settling P vs NP
+  |outside| coherence language without CSP formalization, pi traversal as direct proof, and restricted-case success advertised as all-NP success

@@ -1,0 +1,46 @@
+Subject: BSD Source-Measurement Pairing Table
+
+Description: Math inquiry tool for pairing candidate BSD source families with height/regulator measurement frameworks and classifying construction, measurement, independence, and sufficiency status.
+
+& [BSDSourceMeasurementPairingTable] is a project-local math inquiry tool
+  + [tool_uuid] is 93703d2c-737c-484f-af01-71efcd540ac3
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_generalized_heegner_cycles_001.sop
+  + [role] is test the two-part bridge shape by pairing source candidates with measurement frameworks
+  + [not_role] is proving independence, proving sufficiency, or treating matched terminology as theorem evidence
+
+& [PairingColumnSet] is the required table surface
+  + [source_family] is the candidate generator, point, cycle, or Selmer source
+  + [measurement_framework] is the height, derived height, regulator, p-adic regulator, or leading-coefficient lens
+  + [constructs_candidates] is yes, special_setting, indirect, no, or unknown
+  + [measures_candidates] is yes, partial, indirect, no, or unknown
+  + [independence_status] is proven_special_case, conjectural, measured_if_nonzero, indirect_control, unknown, or outside
+  + [sufficiency_status] is enough_for_known_case, special_case_only, not_sufficient, conjectural, or unknown
+  + [l_hand_contact] is how analytic vanishing or leading coefficient enters
+  + [r_hand_contact] is how rational points, cycles, Selmer classes, or generators enter
+  + [phase_correction_contact] is how height/regulator nondegeneracy appears
+  + [next_question] is the bounded question opened by the row
+
+& [UseProcedure] is the table workflow
+  + [step_001_pair] is pair a source family with one measurement framework
+  + [step_002_classify_jobs] is classify construction, measurement, independence, and sufficiency
+  + [step_003_preserve_boundary] is mark known special case, conjectural frontier, or outside
+  + [step_004_select_gap] is choose the next gap by highest relevance to the adjusted proposition
+  + [step_005_update_bridge] is update the BSD bridge shape without overclaiming proof
+
+  = must: keep source and measurement roles separate
+  = must: treat independence as its own status, not implied by construction or measurement
+  = must: treat sufficiency as its own status, not implied by symbolic fit
+  = must: choose next research by the row with the most concrete unresolved gap
+  - never: call a pair a solution unless it proves construction, independence, and sufficiency for the required rank case
+
+& [CurrentApplication] is the first populated table
+  + [table_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_measurement_pairing_table_001.sop
+  + [current_best_pair] is generalized Heegner or Chow-Heegner source family with derived or p-adic height/regulator measurement in special settings
+  + [current_gap] is independence and sufficiency outside special settings
+
+(bsd_source_measurement_pairing_table) :source_family + measurement_framework: /construction, measurement, independence, sufficiency/ |solution claim|
+  + [inside] is pairwise diagnostic comparison
+  + [boundary] is a pair can be promising without being sufficient
+  |outside| proof by pairing, independence by metaphor, and all-rank sufficiency by analogy

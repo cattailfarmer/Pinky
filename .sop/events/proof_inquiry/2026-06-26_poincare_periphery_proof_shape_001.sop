@@ -1,0 +1,50 @@
+Subject: Poincare Periphery Proof Shape 001
+
+Description: First periphery-guided pass for the Poincare Conjecture, treated as a solved problem whose source section should be interpreted rather than solution-hunted.
+
+& [FocalSubject] is the sixth proof-inquiry lane
+  + [problem] is Poincare Conjecture
+  + [formal_problem_space] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Poincare_Conjecture_Problem_Space.sop
+  + [document_analysis] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Poincare_Conjecture_Document_Analysis.sop
+  + [source_section] is Spiral Three: The Poincare Conjecture
+  + [inquiry_rank] is 6 after Yang-Mills paused at construction and gap-transfer locks
+
+& [AcceptedStatus] is the proof authority boundary
+  + [status] is solved
+  + [solver] is Grigori Perelman, completing Hamilton's Ricci-flow program
+  + [official_reference] is https://www.claymath.org/millennium/poincare-conjecture/
+  + [proof_detail_reference] is https://www.claymath.org/resource/ricci-flow-and-the-poincare-conjecture/
+  + [authority_floor] is accepted Ricci flow with surgery and the detailed expositions following Perelman's preprints
+
+& [IntendedPurpose] is the mathematical target shape
+  + [purpose] is classify closed simply connected 3-manifolds as homeomorphic to the 3-sphere
+  + [formal_core] is topology of closed 3-manifolds and geometry under Ricci flow with surgery
+  + [project_role] is not to solve the conjecture but to separate accepted proof, source analogy, and possible cognitive/modeling meaning
+
+& [DocumentProposition] is the source-implied proposition
+  + [raw_shape] is simply connected symbolic fields collapse toward minimal coherent spherical form
+  + [symbolic_ricci_flow] is recursive contextual alignment reduces conceptual turbulence and smooths cognition
+  + [meaning_role] is analogy between geometric smoothing and symbolic clarification
+  + [proof_status] is interpretive_layer_not_new_proof
+
+& [SymbolicToFormalMap] is the first translation
+  + [closed_simply_connected_space] maps_to closed simply connected 3-manifold only in the formal theorem
+  + [symbolic_field] maps_to cognitive or representational state space, not a manifold unless formalized
+  + [collapse_to_sphere] maps_to homeomorphism to S3 in topology, but to simplification/coherence in the symbolic analogy
+  + [symbolic_ricci_flow] maps_to analogy with smoothing, not the Ricci flow PDE unless a formal transform is specified
+  + [conceptual_turbulence] maps_to noise, inconsistency, or unresolved representation in a cognitive model
+
+& [BetterProblemShape] is the improved shape after first probe
+  + [old_shape] is symbolic recursive alignment proves or reenacts Poincare
+  + [adjusted_shape] is Perelman proves Poincare; the source section may define an analogy or computational-cognition model inspired by Ricci flow
+  + [first_gate] is solved-problem authority gate
+  + [first_open_question] is whether symbolic Ricci flow should be treated as metaphor, computational model, or formal transform
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is Poincare Solved-Problem Authority Gate
+  + [tool_purpose] is classify source statements as accepted proof reference, exposition, analogy, computational model, formal transform, or overclaim
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_solved_problem_authority_gate
+  + [heartbeat_status] is active every minute

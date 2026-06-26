@@ -1,0 +1,18 @@
+Subject: P versus NP Problem Space
+
+& [ProblemSpace] is formal mathematical framing
+  + [domain] is theoretical computer science and computational complexity
+  + [core_objects] are decision problems, deterministic polynomial time, nondeterministic polynomial time, verifiers, certificates, reductions, and complexity classes P and NP
+  + [central_question] is whether every decision problem whose solution can be verified in polynomial time can also be solved in polynomial time
+  + [official_status] is open as of 2026-06-26 according to Clay Mathematics Institute public Millennium Problems framing
+  + [authority_floor] is precise machine model, complexity definitions, reduction framework, and proof separating or equating P and NP
+
+& [Delineation] is the problem boundary
+  + [inside] is equality or inequality of P and NP for decision problems under standard complexity definitions
+  + [boundary] is relation between efficient verification and efficient construction/search
+  + [outside] is digit-walking, resonance traversal, or structural intuition unless expressed as algorithms with polynomial-time proof and correct target problem framing
+
+& [SupportNeeds] is required support for canonical work
+  = need: exact problem statement and target class
+  = need: algorithmic complexity proof for any constructive traversal claim
+  = need: distinguish computing digits of pi from NP-complete decision-problem resolution unless a rigorous reduction is supplied

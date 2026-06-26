@@ -1,0 +1,32 @@
+Subject: Yang-Mills Existence-Gap Separation Gate
+
+Description: Project-local tool for testing whether source-style mass/encryption claims address the construction of quantum Yang-Mills theory, the proof of a positive mass gap, both, or neither.
+
+& [YangMillsExistenceGapSeparationGate] is a math inquiry tool
+  + [tool_uuid] is b83f1ed0-2789-4fa1-b2f5-6cf67d934541
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_periphery_proof_shape_001.sop
+  + [role] is separate construction, axioms, gauge invariance, nontriviality, spectral gap, and heuristic confinement evidence
+  + [not_role] is proving Yang-Mills, accepting lattice evidence as continuum proof, or promoting symbolic mass language
+
+& [ClosureLockSet] is the required gate
+  + [lock_001_formal_framework] is Wightman, Osterwalder-Schrader, or equivalent rigorous framework is selected
+  + [lock_002_continuum_construction] is four-dimensional continuum quantum Yang-Mills theory is constructed for compact simple G
+  + [lock_003_axioms] is required axioms such as locality, covariance, positivity, and spectral condition are proved or reconstructed
+  + [lock_004_gauge_invariant_content] is physical/gauge-invariant observables or state space are defined
+  + [lock_005_nontriviality] is theory is nontrivial and not merely a free or empty construction
+  + [lock_006_gap_statement] is mass gap is stated as a spectral gap above vacuum
+  + [lock_007_gap_proof] is positive lower bound is proved in the continuum theory
+  + [lock_008_evidence_boundary] is lattice, simulation, perturbative, and metaphorical evidence are not treated as proof
+
+& [UseProcedure] is the gate workflow
+  + [step_001_claim] is state the symbolic or formal mass-gap claim
+  + [step_002_route] is classify as construction, axioms, observables, confinement intuition, spectral gap, lattice evidence, or outside
+  + [step_003_locks] is evaluate each closure lock
+  + [step_004_adjust] is update proposition to the strongest supported formal meaning
+
+(yang_mills_existence_gap_separation_gate) :mass_gap_claim: /construction, axioms, observables, spectrum, gap/ |symbolic_mass|
+  + [inside] is construction-gap distinction and spectral-gap proof obligations
+  + [boundary] is physical intuition may guide inquiry but cannot replace continuum axiomatic construction
+  |outside| sealed curvature as proof, encryption metaphor as spectrum, lattice-only evidence as Millennium solution

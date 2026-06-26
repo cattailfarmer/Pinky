@@ -1,0 +1,47 @@
+Subject: BSD Higher-Rank Frontier Matrix
+
+Description: Math inquiry tool for comparing higher-rank BSD bridge candidates against the jobs required by the L-hand/R-hand proposition.
+
+& [BSDHigherRankFrontierMatrix] is a project-local math inquiry tool
+  + [tool_uuid] is 8198c34d-d5b7-40db-a40b-7ad3afcfd00d
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_bridge_001.sop
+  + [role] is compare candidate higher-rank mechanisms against analytic order, generator construction, independence, height pairing, regulator, leading coefficient, and theorem-boundary jobs
+  + [not_role] is proving BSD, ranking papers by prestige, or turning candidate mechanisms into proof authority
+
+& [MatrixColumnSet] is the required comparison surface
+  + [candidate_mechanism] is the higher-rank bridge candidate
+  + [analytic_order_job] is how the mechanism responds to order of vanishing greater than 1
+  + [generator_construction_job] is whether it constructs, detects, or only predicts Mordell-Weil generators
+  + [independence_job] is how it addresses independent rational directions rather than one point
+  + [height_pairing_job] is how it uses Neron-Tate, p-adic, derived, or related height pairings
+  + [regulator_job] is whether it accounts for nondegenerate lattice volume
+  + [leading_coefficient_job] is whether it participates in a refined BSD formula
+  + [known_boundary] is known theorem, conditional framework, special setting, conjectural frontier, or analogy only
+  + [symbolic_fit] is how it maps to L-hand, R-hand, phase correction, or resonance-anchor language
+  + [next_inquiry] is the focused research question opened by the row
+
+& [UseProcedure] is the matrix workflow
+  + [step_001_list_candidates] is name candidate corridors from deep research
+  + [step_002_fill_jobs] is fill each job column with evidence-bound phrases
+  + [step_003_mark_boundary] is label known theorem, special case, conjectural framework, or outside
+  + [step_004_compare_gaps] is identify which candidate has the cleanest next inquiry
+  + [step_005_adjust_proposition] is narrow the L-hand/R-hand proposition to the best-supported corridor
+
+  = must: keep candidate mechanism separate from proof result
+  = must: mark whether a row constructs generators or only measures consequences
+  = must: keep height/regulator nondegeneracy visible as the phase-correction test
+  = must: preserve known_boundary before assigning promise
+  = should: select the next research target by frontier clarity, not metaphor strength
+  - never: collapse all higher-rank mechanisms into one "resonance" claim
+
+& [CurrentMatrixPath] is the first application
+  + [matrix_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_higher_rank_frontier_matrix_001.sop
+  + [current_best_focus] is derived heights and regulator nondegeneracy as phase-correction test
+  + [secondary_focus] is generalized Heegner cycles as possible generator/cycle-to-point corridor
+
+(bsd_higher_rank_frontier_matrix) :candidate_mechanism: /formal job columns/ |proof authority|
+  + [inside] is comparison, gap exposure, and proposition narrowing
+  + [boundary] is matrix rows are inquiry candidates, not theorems
+  |outside| proof by table, proof by analogy, and mechanism conflation

@@ -1,0 +1,42 @@
+Subject: Hodge Variant Boundary Map
+
+Description: Math inquiry tool for classifying Hodge-related claims by target statement, known-case status, open frontier, false variant, or outside analogy.
+
+& [HodgeVariantBoundaryMap] is a project-local math inquiry tool
+  + [tool_uuid] is 79d278eb-cc4f-4ad8-b8c1-d3440bf83e93
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_deep_research_known_cases_boundaries_001.sop
+  + [role] is prevent Hodge inquiry from drifting between rational Hodge, integral Hodge, Kahler variants, known cases, open frontier, and analogy
+  + [not_role] is proving Hodge or dismissing all heuristic anchor language
+
+& [BoundaryCategorySet] is the classification surface
+  + [rational_projective_hodge_target] is the Clay target: rational Hodge classes on smooth projective complex varieties are rational combinations of algebraic cycle classes
+  + [known_case] is a scoped case where realization is established, such as codimension one/divisor classes
+  + [open_frontier] is rational higher-codimension projective Hodge realization outside known cases
+  + [integral_variant] is an integral-coefficient variant, known to have counterexamples in naive forms
+  + [kahler_variant] is a non-projective Kahler-style variant, vulnerable to too-few-subvarieties pathologies
+  + [generalized_variant] is a nearby strengthened or altered conjecture requiring separate statement
+  + [analogy_outside] is symbolic or representational stability without a cohomology object
+
+& [UseProcedure] is the map workflow
+  + [step_001_name_claim] is state the Hodge-like claim being made
+  + [step_002_identify_setting] is name projective/non-projective, smoothness, coefficients, codimension, and class type
+  + [step_003_classify_boundary] is assign one boundary category
+  + [step_004_attach_risk] is note if the category is known, open, false, or outside
+  + [step_005_route] is send target/open claims to anchor realization, known cases to calibration, and variants/outside to caution
+
+  = must: classify coefficient field before using Hodge language
+  = must: classify projective versus Kahler/non-projective setting
+  = must: keep known cases as calibration rather than proof of open frontier
+  = must: route analogy-only anchors outside until a cohomology class is specified
+  - never: borrow truth from a nearby variant without reclassification
+
+& [CurrentApplication] is the first map
+  + [map_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_variant_boundary_map_001.sop
+  + [current_result] is source document language is analogy_outside until scoped to rational projective Hodge target
+
+(hodge_variant_boundary_map) :hodge_like_claim: /target, known case, open frontier, false variant, analogy/ |variant drift|
+  + [inside] is variant classification and routing
+  + [boundary] is only rational projective Hodge target belongs to the Clay lane
+  |outside| integral counterexample drift, Kahler drift, and LLM-cluster analogy as proof

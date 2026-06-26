@@ -1,0 +1,36 @@
+Subject: Math Bridge Map Tool
+
+Description: Project-local math inquiry tool for mapping symbolic concepts to formal mathematical objects, proof obligations, and caution boundaries.
+
+& [MathBridgeMapTool] is the first developed math inquiry tool for seven math problems
+  + [runtime_module] is C:\Project\Pinky\.sop\runtime\sop_node\math_bridge.py
+  + [demo_runner] is C:\Project\Pinky\.sop\runtime\demos\math_bridge.py
+  + [first_output] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.sop
+  + [first_hypergraph_output] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.hg.sop
+  + [first_use_case] is Birch and Swinnerton-Dyer L-hand/R-hand bridge
+
+& [ToolRole] is the tool purpose
+  + [role] is convert source-document symbolic terms into formal-object candidates, proof obligations, inquiry routes, and outside boundaries
+  + [not_role] is theorem prover, symbolic algebra engine, numerical verifier, or proof authority
+  + [use_when] is a symbolic concept gains enough periphery heat that it needs a formal mapping test
+
+& [ToolOutputContract] is the output shape
+  + [symbolic_term] is the source or inquiry-language term
+  + [formal_object] is the candidate mathematical object or unmapped state
+  + [problem_role] is the term's intended job inside the problem
+  + [evidence_status] is candidate, mapped_candidate, unresolved_candidate, defined, accepted, or known_theorem
+  + [bridge_status] is unmapped, mapped, mapped_with_obligations, or load_bearing
+  + [inquiry_route] is keep_peripheral, add_obligations, resolve_obligations, or test_in_proposition
+  + [proof_obligations] are the missing mathematical work before the term can support proof shape
+  + [outside] is the explicit reminder that mapping is not proof
+
+& [FirstFinding] is the BSD result from first use
+  + [open_obligation_count] is 7
+  + [strongest_mapping] is L-hand collapse to order of vanishing and R-hand growth to Mordell-Weil generator structure
+  + [weakest_mapping] is phase-corrected field to regulator, height pairing, or leading coefficient data
+  + [adjustment] is continue BSD inquiry by resolving bridge obligations before stronger proof claims
+
+  = must: create new math tools only when the inquiry shape reveals a repeated need
+  = must: keep each tool small enough to inspect
+  = must: let proof obligations reshape the proposition
+  - never: let a tool output become proof merely because it is structured

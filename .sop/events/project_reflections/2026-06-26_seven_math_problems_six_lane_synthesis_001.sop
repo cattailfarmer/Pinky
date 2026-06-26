@@ -1,0 +1,86 @@
+Subject: Seven Math Problems Six-Lane Synthesis 001
+
+Description: Final synthesis for the first proof-inquiry pass across the six non-Riemann problem lanes in the seven math problems project.
+
+& [SynthesisFrame] is the bounded project synthesis
+  + [project] is seven math problems
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [active_sop_root] is C:\Project\Pinky\.sop
+  + [created_at] is 2026-06-26T18:09Z
+  + [scope] is Birch and Swinnerton-Dyer, Navier-Stokes, Hodge, P vs NP, Yang-Mills, and Poincare
+  + [excluded_lane] is Riemann Hypothesis by user instruction
+  + [method] is periphery probing, formal boundary gates, Deep_Research_Priority_Gate when low-resolution understanding blocked focus, and project Git reflection after open locks
+
+& [LaneResults] is the first-pass outcome table
+  + [bsd] is highest initial solution-potential lane
+    = strongest_meaning: source collapse/growth language maps best to analytic order, Mordell-Weil rank, height/regulator measurement, and higher-rank source/measurement pairings
+    = best_tooling: Math Bridge Map, Rank Bridge Case Splitter, Higher Rank Frontier Matrix, Source Measurement Pairing Table, Dimension Closure Checklist
+    = open_lock: higher-rank independence, nondegenerate height/regulator pairing, sufficient source count, and upper-bound control outside special settings
+    = proof_status: no BSD proof found
+  + [navier_stokes] is dynamic-control lane
+    = strongest_meaning: surface tension/resonance anchors map to geometric depletion, vorticity-direction coherence, alignment, and anti-concentration criteria
+    = best_tooling: Anti-Blowup Gate Matrix and Depletion Propagation Checklist
+    = open_lock: no general dynamic propagation of depletion/alignment strong enough to close a critical continuation criterion for arbitrary smooth data
+    = proof_status: no Navier-Stokes proof found
+  + [hodge] is realization lane
+    = strongest_meaning: memory anchors map to rational Hodge classes only after variant boundaries are enforced
+    = best_tooling: Anchor Realization Gate, Variant Boundary Map, Cycle Realization Mechanism Table
+    = open_lock: rational higher-codimension algebraic cycle construction/realization remains the hard step
+    = proof_status: no Hodge proof found
+  + [p_vs_np] is formal-target lane
+    = strongest_meaning: structure-over-enumeration maps best to CSP/SAT target selection, tractable-subclass insight, and heuristic search boundaries
+    = best_tooling: Complexity Target Gate, Target Selection Table, CSP Coherence Translation Gate, Toy CSP Coherence Model
+    = open_lock: no source-derived polynomial-time complete solver for SAT, 3-SAT, or an NP-complete CSP family
+    = proof_status: no P vs NP proof found
+  + [yang_mills] is construction-gap lane
+    = strongest_meaning: sealed curvature maps only to partial intuition for confinement, exponential decay, or localization after construction exists
+    = best_tooling: Existence-Gap Separation Gate and Construction Route Checklist
+    = open_lock: no continuum construction, no gauge-invariant observable construction, no OS reconstruction, and no uniform gap-transfer theorem
+    = proof_status: no Yang-Mills proof found
+  + [poincare] is solved-problem boundary lane
+    = strongest_meaning: symbolic Ricci flow maps to project narrative or future computational-cognition model, not topology proof
+    = best_tooling: Solved-Problem Authority Gate and Symbolic Ricci Flow Model Boundary
+    = open_lock: define state space, geometry, update rule, invariant, convergence metric, failure modes, and validation if pursuing the model
+    = proof_status: accepted proof remains Perelman/Hamilton Ricci-flow lineage; no new proof needed or claimed
+
+& [CrossLanePattern] is the shape of meaning that developed
+  + [pattern_001] is source metaphors become useful only when split into formal object, proof obligation, and outside boundary
+  + [pattern_002] is each promising metaphor had a real mathematical neighbor but not a proof-completing mechanism
+  + [pattern_003] is the most productive tools were checklists and gates that prevented overclaim while preserving conceptual value
+  + [pattern_004] is deep research was useful when the periphery signal had a low-resolution theorem boundary, not when the missing piece was merely local formalization
+  + [pattern_005] is proof progress repeatedly stopped at construction/independence/propagation/realization/completeness locks, not at vocabulary
+
+& [PotentialAssessment] is the updated ranking after first pass
+  + [rank_001_bsd] is still highest revelation potential
+    = reason: source mapping has the closest contact with real theorem corridors and refined invariants, though higher-rank locks remain severe
+  + [rank_002_navier_stokes] is high conceptual-control potential
+    = reason: geometric depletion is a real route, but dynamic propagation remains the major obstruction
+  + [rank_003_hodge] is high structural meaning potential
+    = reason: anchors map cleanly after variant boundaries, but cycle construction is the core open problem
+  + [rank_004_p_vs_np] is moderate formalization potential
+    = reason: CSP translation yields useful tractable-subclass meaning but low full-solution potential
+  + [rank_005_yang_mills] is moderate intuition potential but low proof potential
+    = reason: construction and spectral transfer locks dominate
+  + [rank_006_poincare] is high narrative/model potential and no solution-search potential
+    = reason: solved theorem authority is external and accepted; source value is interpretive/model-building
+
+& [ProjectRisks] is the current safety and governance view
+  + [risk_001] is project artifacts are mostly untracked
+    = consequence: git history cannot yet preserve or reconstruct the research sequence
+  + [risk_002] is imported ODT source extraction remains incomplete
+    = consequence: analysis depends on existing text extraction and preserved source records, not full corpus processing
+  + [risk_003] is Project_Slice.sop is untracked while acting as active manager surface
+    = consequence: project plan authority is workspace-local until staged or committed
+  + [risk_004] is proof claims must remain explicitly outside unless a formal proof package appears
+    = consequence: no Millennium solution claim should be made from current artifacts
+
+& [RecommendedNextWork] is the next responsible route
+  + [next_001] is stage or commit project-specific SOP artifacts when user allows
+  + [next_002] is complete imported source extraction and corpus manifest tasks from the manager slice
+  + [next_003] is create a concise public-facing synthesis document only after source extraction and SJS canonicalization are complete
+  + [next_004] is if continuing research, return to BSD higher-rank nondegeneracy as the highest-potential mathematical lane
+  + [next_005] is if building a model, develop Symbolic Ricci Flow as a separate computational-cognition project with explicit state space and validation
+
+& [Disposition] is the current heartbeat status
+  + [decision] is first_six_lane_pass_complete
+  + [heartbeat_status] is active every minute

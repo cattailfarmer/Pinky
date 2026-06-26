@@ -1,0 +1,15 @@
+Subject: Build Project Git Reflection Source Manifest
+
+Description: Source manifest for adding project-local Git reflection to seven math problems.
+
+& [BuildProjectGitReflectionManifest] is the source manifest
+  + [manifest_uuid] is d094ac97-2ec9-4de7-8970-7163a8a31625
+  + [source_uuid] is 9a5bfaa8-62e1-4f2c-a3ad-66cde73f5e67
+  + [captured_at] is 2026-06-26
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_build_project_git_reflection\Dictated_Build_Project_Git_Reflection_Source.sop
+  + [canonical_target] is C:\Project\Pinky\.sop\platform\seven_math_problems\reflection\Build_Project_Git_Reflection_Case.sop
+  + [first_reflection_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_seven_math_problems_git_reflection_001.sop
+  + [source_role] is user_directive_for_build_project_reflection
+
+  = must: route project work through repo-first scan and turn bookmark logic
+  = must: distinguish committed history from untracked imported/project artifacts

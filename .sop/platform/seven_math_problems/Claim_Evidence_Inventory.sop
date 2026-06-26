@@ -1,0 +1,103 @@
+Subject: Seven Math Problems Claim Evidence Inventory
+
+Description: Source-linked inventory separating narrative-symbolic claims, formal mathematical claims, experiment/model claims, cross-problem transfer claims, and proof-status boundaries for the imported corpus.
+
+& [ClaimEvidenceInventory] is a project source-analysis artifact
+  + [inventory_uuid] is e79c73fa-7a08-4bd1-b9dc-22ac51ef3955
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26
+  + [corpus_manifest] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+  + [snapshot_root] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots
+  + [role] is provide source/evidence separation before SJS canonical specification
+  + [not_role] is proving or disproving the mathematics
+
+& [ClaimTypeSet] is the inventory vocabulary
+  + [formal_math_claim] is a claim about a standard mathematical object or theorem
+  + [symbolic_interpretation_claim] is a metaphor or narrative model claim using resonance, curvature, memory, collapse, phase, or field language
+  + [computational_model_claim] is a claim about an experiment, instrument, state, update, or measurable symbolic process
+  + [cross_problem_transfer_claim] is a claim that one problem's symbolic structure implies insight for another
+  + [proof_status_claim] is a statement about solved/open/proved status
+  + [outside_or_gap] is a claim lacking formal bridge to proof authority
+
+& [InventoryRows] is the first claim set
+  + [claim_001_millennium_reframing] is formalism may misframe the seven Millennium Problems and symbolic resonance may reveal another path
+    = type: symbolic_interpretation_claim
+    = source: SMP_SOURCE_005 and SMP_SOURCE_006
+    = evidence_status: source_assertion
+    = support_gap: no formal method yet converts symbolic reframing into theorem proof
+    = route: project_narrative
+  + [claim_002_poincare_solved_status] is Poincare was formally solved by Grigori Perelman and acknowledged
+    = type: proof_status_claim
+    = source: SMP_SOURCE_005, SMP_SOURCE_006, and official Clay references in Poincare gate
+    = evidence_status: externally_supported
+    = support_gap: none for accepted status
+    = route: accepted_authority_boundary
+  + [claim_003_riemann_structural_solution] is Riemann zeros lie on the critical line because of spiral balance and resonance
+    = type: formal_math_claim plus symbolic_interpretation_claim
+    = source: SMP_SOURCE_004, SMP_SOURCE_005, SMP_SOURCE_006
+    = evidence_status: source_assertion_only
+    = support_gap: Riemann lane excluded from current proof inquiry by user instruction; no accepted proof supplied
+    = route: preserved_outside_current_scope
+  + [claim_004_hodge_memory_anchors] is stable resonant memory points resolve into rational algebraic features
+    = type: symbolic_interpretation_claim mapped_to formal_math_claim
+    = source: SMP_SOURCE_005 and SMP_SOURCE_006
+    = evidence_status: analyzed_boundary
+    = support_gap: no rational higher-codimension algebraic cycle construction supplied
+    = route: Hodge Anchor Realization Gate and Cycle Realization Mechanism Table
+  + [claim_005_poincare_symbolic_ricci_flow] is recursive symbolic alignment mimics Ricci flow by reducing conceptual turbulence
+    = type: computational_model_claim candidate
+    = source: SMP_SOURCE_002, SMP_SOURCE_003, SMP_SOURCE_005, SMP_SOURCE_006
+    = evidence_status: metaphor_with_model_potential
+    = support_gap: no state space, geometry, update rule, invariant, convergence metric, failure modes, or validation supplied
+    = route: Poincare Symbolic Ricci Flow Model Boundary
+  + [claim_006_bsd_l_hand_r_hand] is L-hand analytic collapse and R-hand rational growth align BSD rank with rational directions
+    = type: symbolic_interpretation_claim mapped_to formal_math_claim
+    = source: SMP_SOURCE_005 and SMP_SOURCE_006
+    = evidence_status: analyzed_boundary
+    = support_gap: higher-rank source count, nondegenerate measurement, and upper-control compatibility remain open
+    = route: BSD Two-Sided Closure Matrix
+  + [claim_007_navier_stokes_symbolic_surface_tension] is resonance anchors and symbolic surface tension prevent blowup through error diffusion
+    = type: symbolic_interpretation_claim mapped_to formal_math_claim
+    = source: SMP_SOURCE_005 and SMP_SOURCE_006
+    = evidence_status: analyzed_boundary
+    = support_gap: no dynamic propagation of depletion/alignment closes a critical continuation criterion
+    = route: Navier-Stokes Depletion Propagation Checklist
+  + [claim_008_yang_mills_sealed_curvature] is mass gap emerges as sealed curvature, symbolic encryption, and resistance to unfolding
+    = type: symbolic_interpretation_claim mapped_to formal_math_claim
+    = source: SMP_SOURCE_004, SMP_SOURCE_005, SMP_SOURCE_006
+    = evidence_status: analyzed_boundary
+    = support_gap: no continuum construction, gauge-invariant observable construction, OS reconstruction, or uniform gap-transfer theorem supplied
+    = route: Yang-Mills Construction Route Checklist
+  + [claim_009_p_vs_np_structure_over_enumeration] is hard search collapses when approached through internal phase coherence rather than enumeration
+    = type: cross_problem_transfer_claim mapped_to formal_math_claim
+    = source: SMP_SOURCE_005 and SMP_SOURCE_006
+    = evidence_status: analyzed_boundary
+    = support_gap: no target NP language, polynomial-time algorithm, reduction, or lower-bound proof supplied; CSP translation remains tractable-subclass/heuristic
+    = route: P vs NP Complexity Target Gate and CSP Coherence Translation Gate
+  + [claim_010_pi_digit_traversal] is nonlinear pi digit traversal through Fibonacci spacing, prime alignment, and error correction demonstrates structure-guided computation
+    = type: computational_model_claim plus cross_problem_transfer_claim
+    = source: SMP_SOURCE_001, SMP_SOURCE_005, SMP_SOURCE_006
+    = evidence_status: source_assertion_and_model_candidate
+    = support_gap: no formal bridge to NP-complete decision problems or verified digit-computation theorem supplied
+    = route: outside P vs NP proof authority unless formalized separately
+  + [claim_011_symbolic_field_experiments] is symbolic sensory arrays, phase density gauges, anchor drift trackers, and resonance drains can instrument symbolic topologies
+    = type: computational_model_claim
+    = source: SMP_SOURCE_002 and SMP_SOURCE_003
+    = evidence_status: experiment_design_source
+    = support_gap: no implemented instrumentation, data schema, or validation output supplied in current project
+    = route: possible separate symbolic-model project
+  + [claim_012_toroidal_resonance_superstructure] is irrational constants projected through prime/Fibonacci modular fields form a resonance superstructure and toroidal closure
+    = type: computational_model_claim plus symbolic_interpretation_claim
+    = source: SMP_SOURCE_001
+    = evidence_status: source_assertion_and_model_candidate
+    = support_gap: no reproducible computation, formal definitions, or statistical control supplied in current project
+    = route: possible formal experiment after SJS
+
+& [EvidenceBoundary] is the project authority state
+  + [inside] is preserved source claims, extracted snapshots, external official references, and project analysis gates
+  + [outside] is any claim that a Millennium Problem solution has been proved by current artifacts
+  + [must] is route canonical specification through SJS before treating this inventory as implementation or publication authority
+
+& [NextRoute] is the inventory consequence
+  + [task_004_status] is completed_first_pass
+  + [recommended_next] is create SJS project specification or expand per-problem analysis layers with direct source quotations and corpus IDs

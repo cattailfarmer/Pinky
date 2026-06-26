@@ -1,0 +1,68 @@
+Subject: Hodge Cycle Realization Mechanism Table 001
+
+Description: First populated table comparing Hodge cycle-realization mechanisms against the source document's memory-anchor and traversal language.
+
+& [TableFrame] is the comparison setup
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Cycle_Realization_Mechanism_Table.sop
+  + [source_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_deep_research_cycle_realization_001.sop
+  + [variant_map] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_variant_boundary_map_001.sop
+  + [proposition] is memory-anchor language can at most identify candidate rational Hodge classes until a cycle-realization mechanism is supplied
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [Mechanism_001_LefschetzDivisors] is a table row
+  + [mechanism] is Lefschetz (1,1)-type divisor realization
+  + [input_anchor] is codimension-one rational Hodge class
+  + [cycle_output] is divisor/algebraic class
+  + [construction_strength] is known_realization
+  + [known_boundary] is known_case
+  + [symbolic_fit] is calibration for what a real anchor-to-cycle realization looks like
+  + [next_question] is use only as calibration, not as evidence for higher codimension
+
+& [Mechanism_002_SpecialGeometry] is a table row
+  + [mechanism] is special variety geometry, products, abelian variety structures, or reductions to known cases
+  + [input_anchor] is Hodge class in a variety with extra geometric structure
+  + [cycle_output] is special-case algebraic cycles
+  + [construction_strength] is special_case
+  + [known_boundary] is known_case_or_open_by_family
+  + [symbolic_fit] is memory anchor can mean structure supplied by special geometry
+  + [next_question] is identify which special geometry could provide the missing cycle source
+
+& [Mechanism_003_NormalFunctionsVariation] is a table row
+  + [mechanism] is normal functions, variations of Hodge structure, and family methods
+  + [input_anchor] is moving Hodge-theoretic data in a family
+  + [cycle_output] is sometimes cycle detection or obstruction data rather than direct cycles
+  + [construction_strength] is organizing_framework
+  + [known_boundary] is conditional_or_open_frontier
+  + [symbolic_fit] is closest formal analogue of "walk the space"
+  + [next_question] is determine when traversal through a family actually produces cycles rather than detects constraints
+
+& [Mechanism_004_MotivatedAbsoluteCycles] is a table row
+  + [mechanism] is motivated cycles or absolute Hodge classes
+  + [input_anchor] is highly stable Hodge-like class under comparison or motivic operations
+  + [cycle_output] is substitute cycle object, not necessarily algebraic cycle
+  + [construction_strength] is substitute
+  + [known_boundary] is not_enough_for_Hodge_without_algebraicity
+  + [symbolic_fit] is strong analogy to memory anchors but dangerous as proof
+  + [next_question] is keep as periphery unless algebraicity bridge is supplied
+
+& [Mechanism_005_ExplicitCycleSearch] is a table row
+  + [mechanism] is explicit cycle construction on special hypersurfaces or families
+  + [input_anchor] is candidate Hodge class plus geometric ansatz
+  + [cycle_output] is explicit algebraic cycle when successful
+  + [construction_strength] is special_case_or_heuristic
+  + [known_boundary] is open_frontier_by_family
+  + [symbolic_fit] is closest practical version of anchor-guided search
+  + [next_question] is source document would need to choose a variety/family before this becomes usable
+
+& [TableFinding] is the current conclusion
+  + [best_calibration] is Lefschetz divisor realization
+  + [best_traversal_analogue] is normal functions and variations of Hodge structure
+  + [best_anchor_analogue] is motivated or absolute Hodge classes, but only as substitute/periphery
+  + [best_constructive_route] is special geometry or explicit cycle search after a variety is specified
+  + [core_open_lock] is cycle construction in rational higher codimension
+  + [proposition_update] is memory anchors can guide candidate selection, but Hodge proof requires a scoped variety and an algebraic cycle output
+
+& [NextDecision] is the route after this pass
+  + [decision] is reflect_before_more_hodge_expansion
+  + [why] is Hodge has reached a real open lock: cycle construction in rational higher codimension
+  + [recommended_next] is project Git reflection, then move to P vs NP unless user asks to continue Hodge

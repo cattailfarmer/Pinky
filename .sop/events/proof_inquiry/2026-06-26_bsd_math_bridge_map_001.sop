@@ -1,0 +1,50 @@
+Subject: Birch and Swinnerton-Dyer Math Bridge Map
+
+& [MathBridgeMap] is bsd_l_hand_r_hand_bridge
+  + [problem_name] is Birch and Swinnerton-Dyer
+  + [proposition] is L-hand/R-hand language is useful only if it grounds analytic rank, algebraic rank, generator emergence, and leading-term data without circularly assuming BSD.
+  + [open_obligation_count] is 7
+
+& [l_hand_collapse] is a math bridge term
+  + [symbolic_term] is L-hand collapse
+  + [formal_object] is order of vanishing of L(E,s) at the central point
+  + [problem_role] is analytic-rank candidate
+  + [evidence_status] is mapped_candidate
+  + [bridge_status] is mapped_with_obligations
+  + [inquiry_route] is resolve_obligations
+    = proof_obligation_001: Define collapse without assuming analytic rank equals algebraic rank.
+    = proof_obligation_002: Show how multiplicity becomes usable information for the algebraic side.
+
+& [r_hand_growth] is a math bridge term
+  + [symbolic_term] is R-hand growth
+  + [formal_object] is Mordell-Weil generator structure of E(Q)
+  + [problem_role] is algebraic-rank candidate
+  + [evidence_status] is mapped_candidate
+  + [bridge_status] is mapped_with_obligations
+  + [inquiry_route] is resolve_obligations
+    = proof_obligation_001: Define a generator-discovery or generator-accounting process.
+    = proof_obligation_002: Show why the process captures independent rational directions.
+
+& [surviving_rational_directions] is a math bridge term
+  + [symbolic_term] is surviving rational directions
+  + [formal_object] is rank of E(Q)
+  + [problem_role] is rank bridge
+  + [evidence_status] is mapped_candidate
+  + [bridge_status] is mapped_with_obligations
+  + [inquiry_route] is resolve_obligations
+    = proof_obligation_001: Relate directions to independent points modulo torsion.
+    = proof_obligation_002: Avoid treating a visual direction metaphor as a rank proof.
+
+& [phase_corrected_field] is a math bridge term
+  + [symbolic_term] is phase-corrected field
+  + [formal_object] is Neron-Tate height pairing and regulator inside the refined BSD leading coefficient formula
+  + [problem_role] is possible refined BSD bridge
+  + [evidence_status] is mapped_candidate_after_deep_research
+  + [bridge_status] is mapped_with_obligations
+  + [inquiry_route] is resolve_obligations
+    = proof_obligation_001: Define phase correction as Neron-Tate pairing without importing metaphor as proof.
+    = proof_obligation_002: Explain how regulator measures the independent generator lattice inside the refined BSD formula.
+    = proof_obligation_003: Keep local Tamagawa factors and Tate-Shafarevich group separate as refined-formula factors, not the primary phase-field mapping.
+    = caution: Mapping is clearer after deep research but still does not prove BSD.
+
+|outside| symbolic-to-formal mapping does not prove the proposition; open obligations must be resolved by accepted mathematical argument

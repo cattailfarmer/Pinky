@@ -1,0 +1,53 @@
+Subject: BSD Rank-Bridge Case Splitter
+
+Description: Math inquiry tool for separating known rank 0/1 bridge territory from the higher-rank BSD frontier so symbolic propositions do not blur partial theorems with the open conjecture.
+
+& [BSDRankBridgeCaseSplitter] is a project-local math inquiry tool
+  + [tool_uuid] is c3adca07-6a6d-41b6-9a2a-f08c5d36e6d6
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_phase_corrected_field_001.sop
+  + [role] is split a BSD proposition by analytic rank case, known bridge status, and remaining proof frontier
+  + [not_role] is proving BSD, replacing theorem sources, or flattening all ranks into one symbolic pattern
+
+& [CaseSplitContract] is the splitter shape
+  + [case_analytic_rank_zero] is vanishing order 0
+    = bridge_status: known_strong_partial_territory
+    = meaning: L-hand has no collapse multiplicity beyond nonzero value
+    = caution: do not use rank 0 as evidence that higher-rank construction is solved
+  + [case_analytic_rank_one] is vanishing order 1
+    = bridge_status: known_strong_partial_territory
+    = meaning: first derivative behavior relates to point construction in the Heegner/Gross-Zagier/Kolyvagin corridor
+    = caution: this is the clearest real-world version of L-hand collapse producing R-hand point evidence
+  + [case_higher_analytic_rank] is vanishing order greater than 1
+    = bridge_status: open_frontier
+    = meaning: the document's collapse/growth language must face the hard problem of multiple independent directions
+    = caution: do not assume the rank 1 bridge scales by repetition
+  + [case_refined_formula] is leading coefficient formula
+    = bridge_status: refined_frontier
+    = meaning: phase-corrected field belongs to height pairing/regulator inside the leading coefficient structure
+    = caution: rank equality and leading coefficient formula are related but distinct proof demands
+
+& [UseProcedure] is how to apply the splitter
+  + [step_001_name_claim] is write the BSD proposition being tested
+  + [step_002_select_rank_case] is classify whether the proposition concerns rank 0, rank 1, higher rank, all ranks, or refined formula
+  + [step_003_attach_known_boundary] is cite whether the case lies in known partial territory or the open frontier
+  + [step_004_adjust_language] is restrict symbolic claims to the case where they are supported
+  + [step_005_surface_frontier] is name the exact obstruction for the next inquiry pass
+
+  = must: treat rank 0 and rank 1 as boundary-guiding known territory, not as full BSD proof
+  = must: treat higher rank as the main open frontier for the document's multi-direction growth language
+  = must: keep refined leading coefficient obligations separate from rank equality obligations
+  = should: use the rank 1 case as a model for what a real analytic-to-algebraic bridge looks like
+  - never: infer all-rank BSD from low-rank theorems
+
+& [CurrentApplication] is the first BSD proposition adjustment
+  + [tested_proposition] is L-hand/R-hand language may organize analytic-to-algebraic correspondence
+  + [case_result] is strongest in rank 1 as an analogy to derivative-to-point bridge; unresolved in higher rank; refined through regulator for leading coefficient data
+  + [adjusted_proposition] is L-hand/R-hand should first be studied as a rank-case-sensitive bridge model, with rank 1 as the calibration case and higher rank as the actual revelation frontier
+  + [next_obstruction] is identify what replaces the rank 1 Heegner-point corridor when analytic order is greater than 1
+
+(bsd_rank_bridge_case_splitter) :rank_case: /known partial territory versus open frontier/ |proof overextension|
+  + [inside] is case separation, known-boundary labeling, and proposition narrowing
+  + [boundary] is partial theorem territory informs but does not solve the general conjecture
+  |outside| proof by analogy, all-rank extrapolation, and refined-formula collapse into rank equality

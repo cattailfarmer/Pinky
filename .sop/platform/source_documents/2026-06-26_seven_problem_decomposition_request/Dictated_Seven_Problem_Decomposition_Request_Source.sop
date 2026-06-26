@@ -1,0 +1,16 @@
+Subject: Seven Problem Decomposition Request Source
+
+Description: Preserved raw user request for decomposing six Millennium problem spaces and their document-provided analysis layers, excluding Riemann Hypothesis.
+
+& [SevenProblemDecompositionRequestSource] is preserved source input
+  + [source_uuid] is 8fb44a46-7ee0-41f7-b06a-16f361859442
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [active_sop_root] is C:\Project\Pinky\.sop
+  + [raw_request] is "I want to decompose each of the seven problems except Riemann Hypothesis and create the SOP framework to define each of the problem spaces, and then another layer for each of the analysis provided in the document."
+
+  = must: exclude Riemann Hypothesis from this decomposition pass
+  = must: create one SOP problem-space layer for each included problem
+  = must: create one SOP document-analysis layer for each included problem
+  = must: keep official mathematical problem space separate from the imported document's symbolic analysis
+  = must: preserve source provenance and avoid treating document claims as solved proof authority

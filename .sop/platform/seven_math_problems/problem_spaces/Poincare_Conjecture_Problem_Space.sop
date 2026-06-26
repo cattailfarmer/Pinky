@@ -1,0 +1,18 @@
+Subject: Poincare Conjecture Problem Space
+
+& [ProblemSpace] is formal mathematical framing
+  + [domain] is geometric topology and 3-manifold theory
+  + [core_objects] are closed 3-manifolds, simple connectedness, homeomorphism, 3-sphere, Ricci flow, and surgery
+  + [central_question] is whether every closed simply connected 3-manifold is homeomorphic to the 3-sphere
+  + [official_status] is solved by Grigori Perelman and recognized as resolved in Clay Millennium Problem history
+  + [authority_floor] is Perelman's proof lineage, Ricci flow with surgery, and accepted mathematical review
+
+& [Delineation] is the problem boundary
+  + [inside] is topological classification of closed simply connected 3-manifolds
+  + [boundary] is the relation between topology, geometry, and flow-based smoothing
+  + [outside] is any new claim of proof unless it distinguishes itself from or relates rigorously to the accepted proof
+
+& [SupportNeeds] is required support for canonical work
+  = need: distinguish exposition of known solution from a new symbolic analog
+  = need: cite accepted proof status before using Poincare as open-problem evidence
+  = need: separate cognitive-collapse metaphor from manifold topology

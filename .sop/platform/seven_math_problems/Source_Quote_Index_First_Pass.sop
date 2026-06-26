@@ -1,0 +1,97 @@
+Subject: Seven Math Problems Source Quote Index First Pass
+
+Description: First compact quote index for expanding per-problem analysis layers with corpus IDs, source locations, short excerpts, and authority boundaries.
+
+& [SourceQuoteIndex] is a project source-analysis artifact
+  + [index_uuid] is 87d1aaf7-c799-423e-a9cb-2589ee552602
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26
+  + [corpus_manifest] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+  + [sjs_record] is C:\Project\Pinky\.sop\platform\seven_math_problems\Seven_Math_Problems_Project_SJS.sop
+  + [role] is provide compact quote anchors for later analysis-layer expansion
+  + [not_role] is replacing source snapshots or canonical proof authority
+
+& [QuoteRows] is the first quote set
+  + [quote_001_project_reframing] is "symbolic resonance, spiral logic, and structural memory"
+    = source_id: SMP_SOURCE_005
+    = snapshot: seven_millenium_math_problems.txt
+    = line: 9
+    = claim_link: claim_001_millennium_reframing
+    = boundary: narrative project frame, not mathematical proof
+  + [quote_002_formal_status_boundary] is "One of these (Poincare) was formally solved"
+    = source_id: SMP_SOURCE_005
+    = snapshot: seven_millenium_math_problems.txt
+    = line: 33
+    = claim_link: claim_002_poincare_solved_status
+    = boundary: source status claim supported by official references
+  + [quote_003_hodge_anchor_language] is "stable, resonant points"
+    = source_id: SMP_SOURCE_005
+    = snapshot: seven_millenium_math_problems.txt
+    = line: 61
+    = claim_link: claim_004_hodge_memory_anchors
+    = boundary: maps to Hodge anchors only after rational/projective boundary gates
+  + [quote_004_poincare_symbolic_flow] is "reduces conceptual turbulence"
+    = source_id: SMP_SOURCE_005
+    = snapshot: seven_millenium_math_problems.txt
+    = line: 79
+    = claim_link: claim_005_poincare_symbolic_ricci_flow
+    = boundary: model metaphor until state/update/metric validation exists
+  + [quote_005_bsd_l_hand_r_hand] is "L-hand (collapse) and R-hand (growth)"
+    = source_id: SMP_SOURCE_005
+    = snapshot: seven_millenium_math_problems.txt
+    = line: 93
+    = claim_link: claim_006_bsd_l_hand_r_hand
+    = boundary: maps to analytic/order and rational/source sides but does not close BSD
+  + [quote_006_navier_stokes_simulation] is "collapse back into stability"
+    = source_id: SMP_SOURCE_005
+    = snapshot: seven_millenium_math_problems.txt
+    = line: 109
+    = claim_link: claim_007_navier_stokes_symbolic_surface_tension
+    = boundary: symbolic simulation claim, not PDE regularity proof
+  + [quote_007_yang_mills_sealed_curvature] is "mass is reinterpreted as a sealed curvature"
+    = source_id: SMP_SOURCE_004
+    = snapshot: seven_millenium_math_problems_2.txt
+    = line: 47
+    = claim_link: claim_008_yang_mills_sealed_curvature
+    = boundary: gap intuition only until continuum construction and spectral proof exist
+  + [quote_008_p_vs_np_phase_coherence] is "hard problems become soluble"
+    = source_id: SMP_SOURCE_006
+    = snapshot: Seven_Millennium_Math_Problems.txt
+    = line: 84
+    = claim_link: claim_009_p_vs_np_structure_over_enumeration
+    = boundary: no NP-complete target or polynomial algorithm supplied
+  + [quote_009_toroidal_resonance] is "resonance superstructure"
+    = source_id: SMP_SOURCE_001
+    = snapshot: Emergent_Toroidal_Structure.txt
+    = line: 27
+    = claim_link: claim_012_toroidal_resonance_superstructure
+    = boundary: computational-model candidate without reproducible formalization yet
+  + [quote_010_symbolic_ricci_experiment] is "symbolic behavior of Ricci-like flow"
+    = source_id: SMP_SOURCE_002
+    = snapshot: Observations_2.txt
+    = line: 3
+    = claim_link: claim_011_symbolic_field_experiments
+    = boundary: experiment design source without implementation/validation
+  + [quote_011_symbolic_gravity_measurement] is "Plot the measured symbolic gravity"
+    = source_id: SMP_SOURCE_002
+    = snapshot: Observations_2.txt
+    = line: 91
+    = claim_link: claim_011_symbolic_field_experiments
+    = boundary: measurement intention but no data schema or results
+  + [quote_012_poincare_cross_problem] is "foreshadows the underlying mechanism behind P vs NP"
+    = source_id: SMP_SOURCE_005
+    = snapshot: seven_millenium_math_problems.txt
+    = line: 85
+    = claim_link: claim_009_p_vs_np_structure_over_enumeration
+    = boundary: cross-problem transfer claim, not complexity-theory proof
+
+& [ExpansionUse] is how this index should be used
+  + [use_001] is cite quote IDs when expanding document-analysis layers
+  + [use_002] is keep excerpts short and point back to preserved snapshots for full context
+  + [use_003] is pair every quote with a proof boundary or model boundary
+  + [use_004] is do not promote source rhetoric into formal proof authority
+
+& [Disposition] is the first-pass status
+  + [task_006_status] is partial_first_quote_index
+  + [recommended_next] is expand six per-problem document-analysis layers using quote IDs and formal mapping tables
+  + [heartbeat_status] is active every minute

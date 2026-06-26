@@ -1,0 +1,56 @@
+Subject: BSD Deep Research Height Pairing Nondegeneracy 001
+
+Description: Bounded deep research pass on nondegeneracy of higher-rank height pairings for generalized Heegner cycles and related source families.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Birch and Swinnerton-Dyer
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [dimension_closure_checklist] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_dimension_closure_checklist_001.sop
+  + [low_resolution_signal] is higher-rank height-pairing nondegeneracy
+  + [bounded_question] is where nondegenerate pairing results are known, conjectured, or blocked for higher-rank Heegner-style constructions
+
+& [SourceSet] is research evidence
+  + [source_001] is Castella "Heegner cycles and higher weight specializations of big Heegner points"
+    = url: https://web.math.ucsb.edu/~castella/Higher.pdf
+    = evidence: interpolation of Heegner-cycle Abel-Jacobi images is obtained assuming non-degeneracy of the p-adic height pairing
+  + [source_002] is Disegni "On the p-adic Birch and Swinnerton-Dyer conjecture for elliptic curves over number fields"
+    = url: https://disegni-daniel.perso.math.cnrs.fr/exc.pdf
+    = evidence: multivariable p-adic BSD formulations use p-adic height and regulator structures for elliptic curves over number fields
+  + [source_003] is Ariel Shnidman "p-adic heights of generalized Heegner cycles"
+    = url: https://arxiv.org/abs/1407.0785
+    = evidence: p-adic heights of generalized Heegner cycles are related to derivatives of p-adic L-functions, generalizing p-adic Gross-Zagier formulas
+  + [source_004] is Nekovar "On the p-adic height of Heegner cycles"
+    = url: https://webusers.imj-prg.fr/~jan.nekovar/pu/heegner.pdf
+    = evidence: nonzero Heegner-cycle images and p-adic height formulas can imply dimension and finiteness conclusions in scoped settings
+  + [source_005] is Shnidman "Heights of Generalized Heegner Cycles"
+    = url: https://math.huji.ac.il/~shnidman/thesis.pdf
+    = evidence: non-degeneracy of p-adic height pairings is a major obstacle; higher-codimensional cycle height nonvanishing can be known p-adically while Archimedean nonvanishing may remain expected
+
+& [Finding] is the nondegeneracy boundary
+  + [known_shape] is p-adic height formulas relate Heegner-cycle heights to p-adic L-function derivatives in special settings
+  + [assumption_shape] is nondegeneracy of the relevant p-adic height pairing is frequently assumed to derive interpolation, independence, or regulator conclusions
+  + [special_result_shape] is some rank-one or special twist settings can prove nonzero p-adic height or nondegenerate pairing
+  + [open_shape] is no general nondegeneracy theorem closes higher-rank Heegner-style source families for BSD
+  + [meaning] is phase correction is now a precise obstruction: nondegenerate height pairing is the gate between measured candidates and independent directions
+
+& [DimensionClosureUpdate] is the updated lock state
+  + [lock_003_independence_rank] is still open outside special cases
+  + [why] is nondegeneracy is often a hypothesis or special theorem, not a general result
+  + [lock_005_refined_formula_fit] is partial because p-adic formulas supply refined contact in selected settings
+  + [proof_pressure] is any proposed solution path must either prove nondegeneracy or avoid needing it by another independence mechanism
+
+& [PropositionAdjustment] is the current BSD proposition
+  + [old_proposition] is higher-rank BSD bridge requires closed dimension match
+  + [new_proposition] is the first genuine proof lock for the source document's BSD approach is nondegenerate height/regulator pairing for enough source candidates; without it, phase correction remains a measurement metaphor rather than a proof mechanism
+  + [retired_overreach] is derived or p-adic height frameworks automatically prove independence
+  + [kept_claim] is nondegeneracy is the correct formal pressure point for phase correction
+
+& [NextDecision] is the route after this pass
+  + [decision] is branch_inquiry
+  + [route_001] is continue BSD by researching alternate independence mechanisms such as Euler/Kolyvagin systems in higher rank
+  + [route_002] is pause BSD and run project Git reflection because the same open lock has been sharpened across multiple artifacts
+  + [recommended_next] is run project Git reflection before more literature expansion
+
+& [Disposition] is the pass result
+  + [decision] is preserve_boundary_and_reflect
+  + [heartbeat_status] is active every minute

@@ -221,6 +221,12 @@ from .task_frame_launch_queue import (
     build_task_frame_launch_queue,
     write_task_frame_launch_queue,
 )
+from .math_bridge import (
+    MathBridgeMap,
+    MathBridgeTerm,
+    build_math_bridge_map,
+    parse_math_bridge_term,
+)
 
 __all__ = [
     "AttentionFrame",
@@ -266,6 +272,8 @@ __all__ = [
     "FocalPointSeed",
     "FoldLeg",
     "LMStudioManagerProposalValidation",
+    "MathBridgeMap",
+    "MathBridgeTerm",
     "Reweighing",
     "PeripheryImpression",
     "PeripheryContinuityLink",
@@ -311,6 +319,7 @@ __all__ = [
     "build_codex_lmstudio_command",
     "build_direct_lmstudio_manager_context",
     "build_lmstudio_task_frame_candidate",
+    "build_math_bridge_map",
     "build_operating_loop_tick",
     "build_periphery_continuity_run",
     "build_step_balance_walk",
@@ -350,6 +359,7 @@ __all__ = [
     "parse_directive",
     "parse_faculty_field",
     "parse_fold_leg",
+    "parse_math_bridge_term",
     "parse_pants_leg",
     "parse_periphery_run_frame",
     "parse_periphery_terms",

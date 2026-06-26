@@ -1,0 +1,32 @@
+Subject: Poincare Symbolic Ricci Flow Model Boundary
+
+Description: Project-local tool for deciding whether "symbolic Ricci flow" is metaphor, computational-cognition model, formal transform, or overclaim.
+
+& [PoincareSymbolicRicciFlowModelBoundary] is a math inquiry tool
+  + [tool_uuid] is 70f97703-c0fc-4d15-9b01-53a657fb7478
+  + [problem] is Poincare Conjecture
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_poincare_solved_problem_authority_gate_001.sop
+  + [role] is specify what symbolic Ricci flow would need in order to become a model independent from the solved Poincare proof
+  + [not_role] is replacing Ricci flow with cognition, proving Poincare, or using model analogy as evidence for other Millennium solutions
+
+& [ModelRequirementSet] is the minimum model boundary
+  + [requirement_001_state_space] is define the objects being smoothed, such as concepts, embeddings, graph nodes, documents, or typed assertions
+  + [requirement_002_geometry_or_adjacency] is define a metric, graph, topology, similarity relation, or curvature proxy
+  + [requirement_003_update_rule] is define an iteration rule that changes the state by reducing a measured irregularity
+  + [requirement_004_invariant] is define what must be preserved under smoothing
+  + [requirement_005_convergence_measure] is define coherence, entropy, curvature, inconsistency, or loss metric and its target behavior
+  + [requirement_006_failure_modes] is define collapse, over-smoothing, loss of distinction, or false coherence
+  + [requirement_007_validation] is define experiment, theorem, or observation that can support the model
+  + [requirement_008_authority_boundary] is state that model success is not Poincare proof and not evidence for unsolved Millennium problems
+
+& [ClassificationRules] is the boundary logic
+  + [rule_001] is if only smoothing language is present, classify as metaphor
+  + [rule_002] is if state space, update rule, and convergence metric are supplied, classify as computational-model candidate
+  + [rule_003] is if formal objects and theorems are supplied, classify as formal-transform candidate
+  + [rule_004] is if it claims to prove Poincare or P vs NP by analogy, classify as overclaim
+
+(poincare_symbolic_ricci_flow_model_boundary) :symbolic_ricci_flow_claim: /state, geometry, update, invariant, convergence, validation/ |proof-analogy|
+  + [inside] is cognitive/model boundary and validation requirements
+  + [boundary] is model meaning can be valuable while remaining outside topology proof
+  |outside| analogy as theorem, smoothing as proof, and symbolic collapse as solution transfer

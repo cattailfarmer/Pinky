@@ -1,0 +1,39 @@
+Subject: BSD Two-Sided Closure Matrix
+
+Description: Project-local tool for pairing BSD lower-bound source/measurement mechanisms with upper-bound Selmer-control mechanisms so dimension closure is tested from both sides.
+
+& [BSDTwoSidedClosureMatrix] is a math inquiry tool
+  + [tool_uuid] is 74c3fa04-4e01-4f3f-882b-fdeecb2a7c59
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_euler_kolyvagin_001.sop
+  + [role] is test whether a proposed higher-rank BSD route closes both lower-bound construction/independence and upper-bound Selmer control
+  + [not_role] is proving BSD, assuming Euler systems exist, or treating upper-bound control as generator construction
+
+& [MatrixColumnSet] is the required comparison surface
+  + [analytic_signal] is L-function order, derivative, leading coefficient, or p-adic L-function data
+  + [lower_source] is points, cycles, Selmer classes, Heegner/Chow-Heegner objects, or generalized source family
+  + [measurement] is height pairing, derived height, p-adic height, regulator, or leading-term formula
+  + [independence_lower_bound] is how enough independent directions are proved or measured
+  + [upper_control] is Euler system, Kolyvagin system, Stark system, descent, Iwasawa main conjecture, or Selmer bound
+  + [compatibility] is whether source, measurement, and control live in the same family, field, representation, rank, and hypotheses
+  + [closure_status] is closed, special_case, partial, conjectural, open, or outside
+  + [first_gap] is the first lock preventing proof-shaped promotion
+
+& [UseProcedure] is the two-sided closure workflow
+  + [step_001_scope] is name the curve family, rank range, field, and exact BSD claim
+  + [step_002_lower_side] is fill analytic signal, lower source, measurement, and independence lower bound
+  + [step_003_upper_side] is fill Selmer-control mechanism and what it bounds
+  + [step_004_compatibility] is check hypotheses and objects match across both sides
+  + [step_005_closure] is classify closure status and first gap
+
+  = must: keep lower-bound source construction separate from upper-bound Selmer control
+  = must: require compatibility before treating the two sides as one proof route
+  = must: mark special-case closure separately from general BSD
+  = should: prefer paired routes where both sides already exist in the same theorem corridor
+  - never: use control machinery as a substitute for producing the source classes it needs
+
+(bsd_two_sided_closure_matrix) :bsd_route: /analytic signal, source, measurement, independence, upper control, compatibility/ |one-sided-proof|
+  + [inside] is lower/upper dimension closure comparison
+  + [boundary] is a promising route needs both independent candidates and no hidden extra rank
+  |outside| source without control, control without source, and compatibility by wishful analogy

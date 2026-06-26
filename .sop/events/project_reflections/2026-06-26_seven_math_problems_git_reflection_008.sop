@@ -1,0 +1,54 @@
+Subject: Seven Math Problems Git Reflection 008
+
+Description: Project-local Git reflection after project hygiene completed source extraction, corpus manifest, claim inventory, SJS specification, quote index, and first document-analysis expansion.
+
+& [ReflectionFrame] is the bounded project reflection
+  + [case] is C:\Project\Pinky\.sop\platform\seven_math_problems\reflection\Build_Project_Git_Reflection_Case.sop
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [version_a] is no project-specific committed history visible in scoped log
+  + [version_b] is current worktree at 2026-06-26T18:22Z
+  + [reason] is project hygiene route closed the main source-governance gaps after BSD return reflection recommended hygiene before theorem expansion
+
+& [CommitLogContext] is the scoped log reading
+  + [commit_log_result] is no commits appeared for the project-specific SOP paths and imported project root under this scoped query
+  + [interpretation] is the project is now coherent as an untracked artifact surface but not preserved in git history
+  + [risk] is loss or confusion risk remains high until the project-specific artifacts are staged and committed with user approval
+
+& [ChangeLogBridge] is the current scoped worktree surface
+  + [tracked_diff] is no scoped tracked diff was inspected as project authority in this reflection
+  + [untracked_project_surface] is imported source corpus at C:\Project\Pinky\seven math problems
+  + [untracked_sop_surface] is source corpus manifest, extraction snapshots, claim inventory, SJS record, quote index, document-analysis expansion, proof inquiry records, project reflections, and manager slice
+  + [oddity] is Project_Slice.sop remains untracked while functioning as active project manager surface
+
+& [HygieneWorkReflection] is the focused project-hygiene reflection
+  + [accomplishment_001] is all imported ODT/TXT source files were extracted into preserved text snapshots with hashes and stable corpus IDs
+    = evidence: C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+    = route: preserve
+  + [accomplishment_002] is source claims were separated into narrative-symbolic, formal-math, computational-model, cross-problem, and proof-status categories
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Claim_Evidence_Inventory.sop
+    = route: preserve_boundary
+  + [accomplishment_003] is a project SJS record now establishes canonical project analysis authority without creating formal math solution authority
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Seven_Math_Problems_Project_SJS.sop
+    = route: preserve_authority
+  + [accomplishment_004] is quote-backed expansion now covers Hodge, Poincare, BSD, Navier-Stokes, Yang-Mills, P vs NP, and cross-model experiment material
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Document_Analysis_Expansion_First_Pass.sop
+    = route: use_for_public_synthesis_later
+  + [missed_work_001] is the project-specific artifacts are still untracked
+    = evidence: git status shows untracked source, event, platform, and manager surfaces
+    = route: ask_user_before_staging_or_committing
+  + [missed_work_002] is richer full-quote tables and duplicate/variant comparison across source snapshots remain future work
+    = evidence: quote index is explicitly first pass
+    = route: optional_depth
+  + [new_potential_001] is a public-facing synthesis can now be built responsibly because source preservation, SJS, claim inventory, and quote-backed expansion exist
+    = evidence: SJS plan_002 and document-analysis expansion
+    = route: possible_next_project_output
+  + [outside_001] is no unsolved Millennium Problem proof has been established
+    = evidence: SJS formal_math_solution_authority is not established
+    = route: outside
+
+& [ReflectionDecision] is the next-route decision
+  + [decision] is project_hygiene_first_pass_complete
+  + [why] is the main source-governance gaps are closed enough for either preservation in git or responsible synthesis work
+  + [next_research_route] is BSD scoped theorem-corridor study only after selecting a specific corridor
+  + [recommended_route] is ask user whether to stage and commit the project-specific artifact surface before further expansion
+  + [heartbeat_status] is active every minute

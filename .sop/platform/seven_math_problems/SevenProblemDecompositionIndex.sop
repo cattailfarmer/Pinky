@@ -1,0 +1,25 @@
+Subject: Seven Math Problems Decomposition Index
+
+Description: Framework index for six Millennium problem spaces and six imported-document analysis layers. Riemann Hypothesis is intentionally excluded from this pass by user request.
+
+& [DecompositionIndex] is the project framework index
+  + [project_name] is seven math problems
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [source_request] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_problem_decomposition_request\Dictated_Seven_Problem_Decomposition_Request_Source.sop
+  + [primary_imported_text_source] is C:\Project\Pinky\seven math problems\Seven Millennium Math Problems.txt
+  + [official_reference] is Clay Mathematics Institute Millennium Problems page, checked 2026-06-26
+  + [excluded_problem] is Riemann Hypothesis
+
+& [IncludedProblemSet] is the six-problem surface
+  + [hodge_conjecture] links C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Hodge_Conjecture_Problem_Space.sop and C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Hodge_Conjecture_Document_Analysis.sop
+  + [poincare_conjecture] links C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Poincare_Conjecture_Problem_Space.sop and C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Poincare_Conjecture_Document_Analysis.sop
+  + [birch_swinnerton_dyer] links C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Birch_Swinnerton_Dyer_Problem_Space.sop and C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Birch_Swinnerton_Dyer_Document_Analysis.sop
+  + [navier_stokes] links C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Navier_Stokes_Problem_Space.sop and C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Navier_Stokes_Document_Analysis.sop
+  + [yang_mills] links C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Yang_Mills_Problem_Space.sop and C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Yang_Mills_Document_Analysis.sop
+  + [p_vs_np] links C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\P_vs_NP_Problem_Space.sop and C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\P_vs_NP_Document_Analysis.sop
+
+& [LayerContract] is the decomposition rule
+  = problem_space_layer: define domain, formal object, question, accepted status, evidence floor, and outside boundary
+  = document_analysis_layer: define imported-document metaphor, claim structure, support gaps, and SJS route
+  = must: keep narrative-symbolic insight separate from mathematical proof authority
+  = must: preserve imported document wording as source evidence, not overwrite it with canonical interpretation

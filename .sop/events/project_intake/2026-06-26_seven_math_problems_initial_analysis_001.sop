@@ -1,0 +1,65 @@
+Subject: Seven Math Problems Initial Project Analysis 001
+
+Description: Read-only first-pass project intake for C:\Project\Pinky\seven math problems under the active Pinky SOP framework.
+
+& [ProjectBoundary] is the active analysis boundary
+  + [workspace_root] is C:\Project\Pinky
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [project_identity] is imported old project named "seven math problems"
+  + [inside] is C:\Project\Pinky\seven math problems and project-specific SOP records created for this intake
+  + [boundary] is active SOP authority at C:\Project\Pinky\.sop
+  + [outside] is other sibling projects under C:\Project\Pinky, F:\.sop backup state, and any mathematical truth claim not yet supported by formal evidence
+
+  = decision: project-specific analysis is allowed because the user named this project
+  = caution: C:\Project\Pinky remains a multi-project workspace root and is not itself the project identity
+
+& [ImportedSourceInventory] is observed source evidence
+  + [file_001] is C:\Project\Pinky\seven math problems\Emergent Toroidal Structure.odt
+  + [file_002] is C:\Project\Pinky\seven math problems\Observations 2.odt
+  + [file_003] is C:\Project\Pinky\seven math problems\Observations.odt
+  + [file_004] is C:\Project\Pinky\seven math problems\seven millenium math problems 2.odt
+  + [file_005] is C:\Project\Pinky\seven math problems\seven millenium math problems.odt
+  + [file_006] is C:\Project\Pinky\seven math problems\Seven Millennium Math Problems.txt
+
+  = observed: the project currently presents as a document corpus, not a code repository
+  = observed: the text file begins with a symbolic walkthrough of the Millennium Problems using memory anchors, spirals, resonance, curvature, and structural language
+  = observed: the text file frames itself as non-technical and not primarily formal
+  = observed: the text file contains strong mathematical-solution claims that require external proof support before any canonical authority status
+  = caution: imported source filenames use "millenium" in two ODT names and "Millennium" in the text file; preserve spelling as provenance
+
+& [InitialSubjectMap] is the early semantic surface
+  + [subject_001] is symbolic resonance as a reasoning frame
+  + [subject_002] is seven Millennium Prize Problems
+  + [subject_003] is spiral traversal as narrative structure
+  + [subject_004] is memory anchors and phase correction
+  + [subject_005] is mathematical proof-status boundary
+  + [subject_006] is possible project goal ambiguity: exposition, proof attempt, critique, archive, or transformation into a formal artifact
+
+  = inference: the project likely needs source extraction, provenance indexing, claim inventory, and formal-status separation before any implementation or publication work
+  = inference: a useful next slice is to extract text from all ODT files, preserve raw extracted snapshots, and build an SJS canonical project specification from the preserved source corpus
+  = caution: symbolic coherence claims may be narratively meaningful while remaining outside formal mathematical proof until supported by accepted definitions, lemmas, and citations
+
+& [ActivatedSystems] is active framework use for this intake
+  + [SpecificationGovernance] is active because imported documents may be treated as specifications or proof claims
+  + [SpecificationJustificationSolution] is active because project authority must preserve source, canonical specification, justification, plan, and later solution records
+  + [SourceSpecificationPreservation] is active because original imported documents and raw user request must remain unmodified
+  + [Delineation] is active because workspace, project, source, analysis, proof, and outside boundaries must stay explicit
+  + [DualHemisphereThinking] is active because the project mixes poetic-symbolic exploration with claims needing stable semantic convergence
+  + [DataDrivenDesign] is active because the next useful work depends on a source inventory, claim index, evidence records, and traceable IDs
+  + [FeatureRequirementSupport] is active because future project slices need requirement/support gaps before implementation
+  + [ConversationWorkAttribution] is active because this conversation is creating SOP records in a shared workspace
+  + [OperationalFaults] is active because proof limits, extraction limits, and authority limits must be recorded instead of smoothed over
+  + [SharedCognitionSpace] is active as lightweight continuity through source, intake, and project-manager records
+  + [ProjectNarrativeSurface] is active because the imported corpus needs a coherent narrative/reentry surface
+  + [ProjectManager] is active through a project slice for staged source extraction and SJS processing
+  + [ConversationMailboxBoxProtocol] is checked as a coordination protocol; no mailbox message is required for this single-conversation intake
+
+& [NextSliceRecommendation] is the next managed project slice
+  + [slice_id] is seven_math_problems_source_extraction_001
+  + [goal] is extract readable text from all imported ODT files and preserve extracted snapshots as source-adjacent records without overwriting originals
+  + [then] is create a canonical SJS project specification that distinguishes narrative intent, mathematical claims, evidence needs, and possible publication or research goals
+  + [spark_suitability] is not Spark-suitable for authority judgment; extraction mechanics are bounded, but mathematical/proof-status analysis requires deeper reasoning
+
+  = must: do extraction read-only against original imported documents
+  = must: avoid validating mathematical claims as solved without formal evidence
+  = must: keep narrative value and proof authority as separate lanes

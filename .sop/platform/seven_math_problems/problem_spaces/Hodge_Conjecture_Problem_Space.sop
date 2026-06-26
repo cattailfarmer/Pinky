@@ -1,0 +1,18 @@
+Subject: Hodge Conjecture Problem Space
+
+& [ProblemSpace] is formal mathematical framing
+  + [domain] is algebraic geometry, complex geometry, topology, and Hodge theory
+  + [core_objects] are nonsingular projective complex algebraic varieties, cohomology classes, Hodge classes, rational classes, and algebraic cycles
+  + [central_question] is whether certain rational cohomology classes of type (p,p) are rational linear combinations of classes of algebraic cycles
+  + [official_status] is open as of 2026-06-26 according to Clay Mathematics Institute public Millennium Problems framing
+  + [authority_floor] is formal definitions, accepted theorem references, proof obligations, and peer-verifiable argument
+
+& [Delineation] is the problem boundary
+  + [inside] is the precise relation between Hodge classes and algebraic cycles on projective complex varieties
+  + [boundary] is the gap between geometric/topological structure and algebraic representation
+  + [outside] is metaphorical curvature-memory language unless translated into accepted algebraic geometry definitions
+
+& [SupportNeeds] is required support for canonical work
+  = need: exact statement variant and definitions
+  = need: known partial results and counterexample boundaries for related generalized forms
+  = need: claim inventory linking any proposed symbolic term to mathematical objects

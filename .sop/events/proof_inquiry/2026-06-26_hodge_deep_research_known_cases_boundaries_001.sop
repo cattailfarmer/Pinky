@@ -1,0 +1,63 @@
+Subject: Hodge Deep Research Known Cases Boundaries 001
+
+Description: Bounded deep research pass on known Hodge cases and failure boundaries for nearby variants.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Hodge Conjecture
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [anchor_gate] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_anchor_realization_gate_001.sop
+  + [low_resolution_signal] is known cases and variant boundaries
+  + [bounded_question] is which known cases turn Hodge classes into algebraic cycles, and where conversion from cohomological anchor to cycle realization remains open or fails in variants
+
+& [SourceSet] is research evidence
+  + [source_001] is Clay Mathematics Institute Hodge problem statement
+    = url: https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf
+    = evidence: Deligne states the rational Hodge conjecture for projective nonsingular varieties over C as Hodge classes being rational combinations of algebraic cycle classes
+  + [source_002] is Voisin "The Hodge conjecture"
+    = url: https://webusers.imj-prg.fr/~claire.voisin/Articlesweb/voisinhodge.pdf
+    = evidence: Hodge relates Betti cohomology, complex Hodge structure, and algebraic cycles
+  + [source_003] is Arapura and Kang "Known cases of the Hodge conjecture"
+    = url: https://ar5iv.labs.arxiv.org/html/2105.04695
+    = evidence: known cases exist and can be organized, but the general Hodge conjecture remains open
+  + [source_004] is Totaro "On the integral Hodge and Tate conjectures over a number field"
+    = url: https://www.math.ucla.edu/~totaro/papers/public_html/integral.pdf
+    = evidence: integral Hodge variants have counterexamples, including Atiyah-Hirzebruch torsion examples and later non-torsion examples
+  + [source_005] is Voisin "Some aspects of the Hodge conjecture"
+    = url: https://webusers.imj-prg.fr/~claire.voisin/Articlesweb/takagifinal.pdf
+    = evidence: integral Hodge and Kähler-style variants have serious pathologies and counterexamples
+
+& [Finding] is the known-boundary map
+  + [known_case_001] is codimension one / divisor classes through Lefschetz (1,1)-type theorem
+  + [known_case_002] is trivial degree and top-degree cases
+  + [known_case_003] is additional special varieties and structural cases recorded in known-case surveys
+  + [open_frontier] is rational higher-codimension Hodge classes on smooth projective complex varieties
+  + [false_variant_001] is integral Hodge conjecture in naive form
+  + [false_variant_002] is naive Kähler generalization where too few subvarieties exist
+  + [meaning] is memory anchors must be scoped to rational projective Hodge classes; integral or Kähler drift can turn the concept false
+
+& [GateUpdate] is the updated Hodge anchor realization state
+  + [lock_006_variant_boundary] is strengthened
+  + [known_case_boundary] is divisor/codimension-one realization is known and should be calibration, not proof of higher codimension
+  + [core_open_lock] is cycle realization in rational higher codimension
+  + [first_practical_lock] is specify variety and rational Hodge class before any source-document anchor can enter the gate
+
+& [PropositionAdjustment] is the current Hodge proposition
+  + [old_proposition] is memory anchors may correspond to rational Hodge classes and be algebraically realizable
+  + [new_proposition] is memory-anchor language is proof-relevant only when scoped to a smooth projective variety and a rational (p,p) class, then tested against known-case boundaries and a cycle-realization mechanism
+  + [retired_overreach] is stable representational anchor implies algebraic cycle
+  + [kept_claim] is anchor language can function as a heuristic for identifying candidate Hodge classes, not for proving realization
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is Hodge Variant Boundary Map
+  + [tool_purpose] is classify a candidate claim as rational Hodge, integral variant, Kähler variant, known case, open frontier, or false/outside
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_variant_boundary_map
+  + [heartbeat_status] is active every minute
+
+& [ToolResolution] is the next heartbeat work result
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Variant_Boundary_Map.sop
+  + [map_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_variant_boundary_map_001.sop
+  + [classification_result] is source memory-anchor language is analogy_outside until scoped to rational projective Hodge data
+  + [next_research_target] is cycle-realization mechanisms in known or special Hodge cases

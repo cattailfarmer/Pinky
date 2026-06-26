@@ -1,0 +1,61 @@
+Subject: BSD Deep Research Higher Rank Bridge 001
+
+Description: Bounded deep research pass on what can replace the rank 1 Gross-Zagier/Kolyvagin point-construction corridor in higher analytic rank.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Birch and Swinnerton-Dyer
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [case_splitter] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Rank_Bridge_Case_Splitter.sop
+  + [case_split_run] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_rank_bridge_case_split_001.sop
+  + [low_resolution_signal] is higher-rank BSD bridge mechanism
+  + [bounded_question] is what known higher-rank generalizations, Heegner-cycle analogues, Euler systems, p-adic methods, or derived-height frameworks try to replace the rank 1 point-construction corridor
+
+& [SourceSet] is research evidence
+  + [source_001] is Wei Zhang survey "The Birch-Swinnerton-Dyer conjecture and Heegner points"
+    = url: https://math.mit.edu/~wz2113/math/online/CDM2013%20final.pdf
+    = evidence: BSD rank conjecture states analytic rank equals Mordell-Weil rank; refined BSD uses leading coefficient, regulator, and related arithmetic data
+  + [source_002] is Stein "Toward a Generalization of the Gross-Zagier Conjecture"
+    = url: https://wstein.org/misc/sagedays18_papers/stein-toward_a_generalization_of_the_gross-zagier_conjecture.pdf
+    = evidence: BSD rank is known for analytic rank at most 1, while rank at least 2 has comparatively little progress
+  + [source_003] is Castella-Hsu-Kundu-Lee-Liu "Derived p-adic heights and the leading coefficient of the Bertolini-Darmon-Prasanna p-adic L-function"
+    = url: https://arxiv.org/abs/2308.10474
+    = evidence: derived p-adic height and leading coefficient frameworks explicitly target higher-order vanishing and p-adic BSD style formulas
+  + [source_004] is Bertolini-Darmon-Prasanna "Chow-Heegner points on CM elliptic curves and values of p-adic L-functions"
+    = url: https://www.math.mcgill.ca/darmon/pub/Articles/Research/53.BDP3/paper.pdf
+    = evidence: higher-dimensional cycles can be used to construct rational points in specific settings, suggesting a cycle-to-point corridor
+
+& [Finding] is the higher-rank frontier shape
+  + [rank_one_corridor] is derivative behavior to Heegner point heights to rank/finiteness control
+  + [higher_rank_candidate_corridors] is derived heights, generalized Heegner cycles, Euler-system style control, p-adic L-functions, leading coefficient formulas, and nondegeneracy of height pairings
+  + [frontier_shape] is not a simple repetition of rank 1 point construction; it is a multi-generator lattice-and-height problem
+  + [meaning_shift] is R-hand growth should be reinterpreted from finding one point to constructing or detecting a rank-r independent lattice with a nondegenerate height/regulator structure
+  + [proof_status] is open_frontier
+
+& [SymbolicAdjustment] is the updated translation of the source approach
+  + [old_symbolic_shape] is L-hand collapse multiplicity predicts surviving rational directions
+  + [new_symbolic_shape] is L-hand higher-order collapse must encode enough independent height directions for R-hand growth to produce a nondegenerate generator lattice
+  + [phase_correction_role] is no longer decorative; it becomes the height/regulator nondegeneracy condition that prevents multiple directions from collapsing into dependence
+  + [best_meaning_candidate] is derived-height/regulator lattice as the formal home of phase correction in higher rank
+
+& [PropositionUpdate] is the adjusted proposition
+  + [old_proposition] is L-hand/R-hand should be developed as a rank-case-sensitive bridge model
+  + [new_proposition] is the BSD symbolic approach has its highest revelation potential in higher rank if L-hand collapse can be tied to derived-height or regulator nondegeneracy that accounts for multiple independent Mordell-Weil directions
+  + [retired_overreach] is higher rank follows from rank 1 by repeated point construction
+  + [kept_research_path] is use rank 1 as calibration, then seek the higher-rank analogue in derived heights, Heegner cycles, and regulator nondegeneracy
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is BSD Higher-Rank Frontier Matrix
+  + [tool_purpose] is track candidate higher-rank mechanisms against required jobs: analytic order, generator construction, independence, height pairing, regulator, leading coefficient, and known theorem boundary
+  + [reason] is the inquiry now has multiple competing formal corridors and needs a matrix to prevent conflating them
+
+& [ToolResolution] is the next heartbeat work result
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Higher_Rank_Frontier_Matrix.sop
+  + [matrix_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_higher_rank_frontier_matrix_001.sop
+  + [matrix_finding] is best emerging bridge shape is generator/cycle source plus nondegenerate height/regulator measurement
+  + [next_research_target] is derived heights as phase-correction mechanism
+
+& [Disposition] is the pass result
+  + [decision] is continue_bsd_with_frontier_matrix
+  + [notify_user] is no
+  + [heartbeat_status] is active every minute

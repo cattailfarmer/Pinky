@@ -1,0 +1,73 @@
+Subject: P vs NP Target Selection Table 001
+
+Description: First target-selection pass for P vs NP after the complexity target gate found no formal language target in the source proposition.
+
+& [TableApplication] is a proof-inquiry event
+  + [event_uuid] is d9cbcf48-8bf4-4ed0-8e9e-48d1501ee748
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Target_Selection_Table.sop
+  + [prior_gate] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_complexity_target_gate_001.sop
+  + [source_boundary] is imported source language remains preserved but non-authoritative for proof until formalized
+
+& [SourceBackedBoundary] is the external research boundary
+  + [clay_statement] is P vs NP asks whether every language accepted by a nondeterministic polynomial-time algorithm is also accepted by a deterministic polynomial-time algorithm
+    = source: https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf
+  + [clay_overview] is the intuitive distinction is easy checking versus easy solving
+    = source: https://www.claymath.org/millennium/p-vs-np/
+  + [np_complete_anchor] is SAT is the standard NP-complete contact point because NP problems reduce to SAT in polynomial time
+    = source: https://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture09.pdf
+  + [barrier_caution] is separation attempts must respect relativization, natural proofs, and algebrization-style barriers
+    = source: https://dl.acm.org/doi/10.1145/1490270.1490272
+
+& [CandidateRows] is the first target table
+  + [row_001_sat_or_3sat] is highest proof-relevance target
+    = np_membership_shape: truth assignment certificate verified by evaluating clauses
+    = np_complete_contact: direct through SAT or 3-SAT NP-completeness
+    = structural_fit: medium because phase locking can mean satisfying local constraints consistently
+    = proof_route: P equals NP route if a deterministic polynomial-time solver is proved for all instances
+    = main_lock: source gives no clause-language, no solver, and no worst-case runtime proof
+    = priority: high
+  + [row_002_constraint_satisfaction] is best semantic fit target
+    = np_membership_shape: assignment certificate checked against local constraints
+    = np_complete_contact: many CSP families are NP-complete, while restricted templates can be tractable
+    = structural_fit: high because local coherence and correction-field language map naturally to constraints
+    = proof_route: subclass route unless NP-complete CSP scope is specified
+    = main_lock: must avoid proving only a tractable fragment while claiming P equals NP
+    = priority: high_as_inquiry_medium_as_solution
+  + [row_003_hamiltonian_path_or_cycle] is best traversal-language target
+    = np_membership_shape: candidate path/cycle checked for adjacency and no repeated vertices
+    = np_complete_contact: standard NP-complete graph target
+    = structural_fit: high because the source emphasizes walking, anchors, and paths
+    = proof_route: P equals NP route if all instances are solved in deterministic polynomial time
+    = main_lock: resonance traversal needs a graph invariant that provably finds or rejects paths for worst-case graphs
+    = priority: medium_high
+  + [row_004_clique_or_independent_set] is structure-density target
+    = np_membership_shape: candidate vertex set checked pairwise for required edge condition
+    = np_complete_contact: standard NP-complete graph target
+    = structural_fit: medium because phase coherence can map to dense mutual compatibility
+    = proof_route: algorithm route or lower-bound route
+    = main_lock: known worst-case graphs defeat naive structure heuristics
+    = priority: medium
+  + [row_005_pi_digit_traversal] is outside proof target
+    = np_membership_shape: no NP decision language supplied
+    = np_complete_contact: none
+    = structural_fit: high as metaphor, low as P vs NP target
+    = proof_route: toy laboratory only
+    = main_lock: computing or predicting digits of pi does not address NP-complete decision problems
+    = priority: outside_for_proof
+  + [row_006_lower_bound_separation] is P not equals NP route
+    = np_membership_shape: choose an NP language and prove no deterministic polynomial-time algorithm exists
+    = np_complete_contact: can use SAT or another NP-complete language
+    = structural_fit: low for current source text because it argues solvability, not hardness
+    = proof_route: barrier-aware lower-bound theory
+    = main_lock: no lower-bound framework is proposed
+    = priority: low_currently
+
+& [Conclusion] is the target-selection result
+  + [best_next_target] is SAT/3-SAT or CSP, depending whether the next pass prioritizes maximum proof relevance or maximum semantic fit
+  + [recommended_path] is start with CSP as semantic translation, then require SAT/3-SAT NP-complete contact before any P equals NP significance is claimed
+  + [proposition_adjustment] is source resonance language may become a constraint-consistency heuristic, not a P vs NP proof, unless it solves an NP-complete target in polynomial time
+  + [deep_research_gate] is deferred
+    = reason: formal target-selection is now sharper; deep research should fire next only if CSP dichotomy, SAT solver lower bounds, or barrier theory becomes the active low-resolution blocker
+  + [heartbeat_status] is active every minute

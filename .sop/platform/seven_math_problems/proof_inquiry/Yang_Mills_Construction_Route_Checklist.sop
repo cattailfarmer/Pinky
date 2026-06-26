@@ -1,0 +1,38 @@
+Subject: Yang-Mills Construction Route Checklist
+
+Description: Project-local tool for checking whether a Yang-Mills mass-gap idea advances the regularized-to-continuum construction, Osterwalder-Schrader reconstruction, nontriviality, or spectral-gap proof route.
+
+& [YangMillsConstructionRouteChecklist] is a math inquiry tool
+  + [tool_uuid] is 0f9b4256-5368-43f6-8f65-f4e7a648582c
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_deep_research_construction_route_001.sop
+  + [role] is classify proposed mechanisms by construction route stage and expose missing continuum or gap locks
+  + [not_role] is proving Yang-Mills, validating unaccepted claimed solutions, or replacing proof with physical intuition
+
+& [ChecklistStages] is the required route
+  + [stage_001_regularized_model] is a precise finite-cutoff, finite-volume, lattice, or other regularized Yang-Mills model is defined
+  + [stage_002_uniform_estimates] is estimates survive cutoff removal and infinite-volume limits
+  + [stage_003_continuum_limit] is continuum Euclidean measure or Schwinger functions are constructed
+  + [stage_004_os_properties] is reflection positivity, Euclidean invariance, symmetry, regularity, and clustering properties are proved as needed
+  + [stage_005_reconstruction] is Hilbert space, Hamiltonian, fields or gauge-invariant observables, and Wightman-type theory are reconstructed
+  + [stage_006_gauge_and_nontriviality] is gauge-invariant content and nontrivial interacting character are established
+  + [stage_007_gap_mechanism] is exponential correlation decay or direct spectral separation is proved
+  + [stage_008_gap_transfer] is the gap survives reconstruction as positive Hamiltonian spectral gap above vacuum
+
+& [Classification] is how a proposed mechanism is routed
+  + [construction_relevant] is advances stages 001 through 006 with proof obligations stated
+  + [gap_relevant] is advances stages 007 through 008 with continuum/reconstruction dependence stated
+  + [heuristic_relevant] is suggests confinement, localization, or massive excitation without route-stage proof
+  + [outside] is symbolic or simulation-only material with no route-stage contact
+
+  = must: distinguish finite lattice from continuum
+  = must: distinguish correlation decay evidence from reconstructed spectral gap
+  = must: distinguish gauge fixing from gauge-invariant physical content
+  = must: classify nontriviality separately from existence
+  - never: call a gap proved before the continuum theory and Hamiltonian route are in place
+
+(yang_mills_construction_route_checklist) :candidate_mechanism: /regularization, uniform estimates, OS reconstruction, nontriviality, gap transfer/ |lattice-or-metaphor-overclaim|
+  + [inside] is route-stage classification and missing-lock detection
+  + [boundary] is a mechanism can be promising while still failing the Millennium proof route
+  |outside| sealed curvature as proof, finite-lattice gap as continuum proof, and physical confinement intuition as axiomatic construction

@@ -1,0 +1,16 @@
+Subject: Build Project Git Reflection Source
+
+Description: Preserved user request to extend Git diff and commit-log reflection from the .sop framework project to each build project, starting with seven math problems.
+
+& [BuildProjectGitReflectionSource] is preserved source input
+  + [source_uuid] is 9a5bfaa8-62e1-4f2c-a3ad-66cde73f5e67
+  + [captured_at] is 2026-06-26
+  + [active_sop_root] is C:\Project\Pinky\.sop
+  + [target_build_project] is C:\Project\Pinky\seven math problems
+  + [raw_request] is "I think this needs the git diff reflection as well. I developed that system as a reflection on your work and assigned it to the C:\Project\Pinky\.sop\ project to reflect on work done and infer about the changes applied, and I think that was something to help focus on the project. we need another case for each build project and not just the .sop framework. I want you reading your commit logs for this project and using that to reflect on your work in the same way that system is defined for .sop development."
+
+  = must: preserve this request separately from canonical project reflection rules
+  = must: add a build-project Git reflection case, not only framework-root reflection
+  = must: read commit logs and change surfaces for the selected project
+  = must: reflect on work done through evidence before narrative inference
+  = must: include untracked project artifacts because imported/build projects may begin outside committed history

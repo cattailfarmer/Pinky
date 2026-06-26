@@ -1,0 +1,94 @@
+Subject: Navier-Stokes Anti-Blowup Gate Matrix 001
+
+Description: First populated matrix comparing candidate formal meanings of surface tension, resonance anchors, and phase correction against Navier-Stokes anti-blowup proof requirements.
+
+& [MatrixFrame] is the comparison setup
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Anti_Blowup_Gate_Matrix.sop
+  + [source_shape] is surface tension and phase correction prevent turbulence from concentrating into singularity
+  + [formal_target] is a bounded quantity or structure strong enough to satisfy a known continuation or regularity criterion
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [SourceSet] is research evidence
+  + [source_001] is Clay Mathematics Institute Navier-Stokes problem statement by Charles Fefferman
+    = url: https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf
+    = evidence: the problem asks for existence and smoothness or breakdown for 3D Navier-Stokes under specified smooth initial data
+  + [source_002] is Tao "Why global regularity for Navier-Stokes is hard"
+    = url: https://terrytao.wordpress.com/2007/03/18/why-global-regularity-for-navier-stokes-is-hard/
+    = evidence: global regularity needs control stronger than the basic energy inequality because nonlinear energy transfer can concentrate at small scales
+  + [source_003] is Beale-Kato-Majda criterion discussion
+    = url: https://terrytao.wordpress.com/tag/beale-kato-majda-criterion/
+    = evidence: smooth solutions continue unless a vorticity/gradient-type integral criterion blows up
+  + [source_004] is Chan and Vasseur log-improved Prodi-Serrin criterion
+    = url: https://web.ma.utexas.edu/users/vasseur/documents/preprints/summer2006.pdf
+    = evidence: regularity follows from near-critical integrability control beyond basic energy bounds
+  + [source_005] is Evan Miller strain equation thesis
+    = url: https://www.math.toronto.edu/mccann/papers/MillerPhD19.pdf
+    = evidence: strain and enstrophy growth identities expose geometric/nonlinear mechanisms relevant to concentration and regularity
+
+& [Candidate_001_EnergyInequality] is a matrix row
+  + [candidate_control] is energy inequality and viscosity dissipation
+  + [controlled_quantity] is L2 kinetic energy and integrated gradient energy
+  + [regularity_criterion_contact] is weak solution existence and energy dissipation, not full smooth continuation
+  + [scaling_status] is subcritical_or_too_weak_for_3D_regularization
+  + [anti_concentration_job] is limits total energy but does not prevent critical small-scale concentration
+  + [known_boundary] is known_estimate_not_solution
+  + [symbolic_fit] is error diffusion
+  + [next_question] is what stronger quantity upgrades dissipation into regularity control
+
+& [Candidate_002_EnstrophyVorticityControl] is a matrix row
+  + [candidate_control] is enstrophy or vorticity norm control
+  + [controlled_quantity] is L2 or Linfinity-type vorticity/gradient information
+  + [regularity_criterion_contact] is BKM-style or continuation criteria involving vorticity/gradient blowup
+  + [scaling_status] is closer_to_blowup_threshold_but_hard_to_bound
+  + [anti_concentration_job] is directly targets vortex stretching and gradient concentration
+  + [known_boundary] is criterion_known_boundedness_open
+  + [symbolic_fit] is resonance anchor as bounded vorticity threshold
+  + [next_question] is what mechanism could bound vortex stretching without assuming regularity
+
+& [Candidate_003_ProdiSerrinCriticalNorm] is a matrix row
+  + [candidate_control] is Prodi-Serrin or Ladyzhenskaya critical integrability
+  + [controlled_quantity] is scale-critical velocity norm
+  + [regularity_criterion_contact] is regularity if critical or near-critical spacetime norm remains finite
+  + [scaling_status] is critical
+  + [anti_concentration_job] is rules out scale-invariant concentration
+  + [known_boundary] is criterion_known_boundedness_open
+  + [symbolic_fit] is surface tension as critical norm containment
+  + [next_question] is can the source approach suggest why critical norm should stay bounded
+
+& [Candidate_004_StrainAlignmentGeometry] is a matrix row
+  + [candidate_control] is strain or vorticity alignment geometry
+  + [controlled_quantity] is geometric depletion of nonlinear stretching
+  + [regularity_criterion_contact] is geometric regularity mechanisms and strain/enstrophy identities
+  + [scaling_status] is geometric
+  + [anti_concentration_job] is weakens vortex stretching by alignment, cancellation, or depletion of nonlinearity
+  + [known_boundary] is promising_frontier_not_general_solution
+  + [symbolic_fit] is phase correction as alignment that redirects concentration
+  + [next_question] is which alignment/depletion condition is known to imply regularity and whether it can be propagated
+
+& [Candidate_005_CriticalSmallness] is a matrix row
+  + [candidate_control] is small data in critical spaces
+  + [controlled_quantity] is critical norm initially and through evolution
+  + [regularity_criterion_contact] is global regularity for sufficiently small critical data
+  + [scaling_status] is critical_but_small_data
+  + [anti_concentration_job] is prevents nonlinear cascade from becoming large
+  + [known_boundary] is known_special_case_not_large_data_solution
+  + [symbolic_fit] is resonance anchor as initial controlled amplitude
+  + [next_question] is not enough for Clay large smooth data unless a mechanism creates effective smallness
+
+& [MatrixFinding] is the current conclusion
+  + [best_formal_pressure] is critical norm control and vorticity/strain continuation criteria
+  + [best_symbolic_fit] is strain/alignment geometry as phase correction and depletion of nonlinearity
+  + [weakest_candidate] is basic energy inequality because it dissipates but does not control critical concentration
+  + [shape_correction] is surface tension must mean critical anti-concentration, not generic smoothing
+  + [proposition_update] is the source document's Navier-Stokes approach becomes proof-relevant only if phase correction can be formalized as a propagated geometric depletion or critical norm control mechanism
+
+& [NextResearchTarget] is the next bounded deep research
+  + [target] is geometric depletion of vortex stretching
+  + [bounded_question] is which alignment, strain, or vorticity direction conditions imply regularity, and whether any are propagated by the equations rather than assumed
+  + [priority] is high
+
+& [GeometricDepletionResearchResolution] is the next heartbeat result
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_deep_research_geometric_depletion_001.sop
+  + [resolution] is geometric depletion is a strong conditional regularity route but not known to propagate for arbitrary data
+  + [first_open_lock] is propagation of alignment/depletion
+  + [next_tool_need] is Navier-Stokes Depletion Propagation Checklist

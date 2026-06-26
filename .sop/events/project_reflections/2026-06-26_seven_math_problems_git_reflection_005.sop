@@ -1,0 +1,55 @@
+Subject: Seven Math Problems Git Reflection 005
+
+Description: Project-local Git reflection after the P vs NP inquiry sharpened the CSP tractable-subclass boundary and paused at the NP-complete solver lock.
+
+& [ReflectionFrame] is the bounded project reflection
+  + [case] is C:\Project\Pinky\.sop\platform\seven_math_problems\reflection\Build_Project_Git_Reflection_Case.sop
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [version_a] is last relevant visible commit 68d7460 Build direct LM Studio manager runner
+  + [version_b] is current worktree at 2026-06-26T17:58Z
+  + [reason] is P vs NP inquiry reached a repeated open lock: no source-derived polynomial complete solver for SAT, 3-SAT, or an NP-complete CSP family
+
+& [CommitLogContext] is the scoped log reading
+  + [commit_log_result] is visible scoped commits remain framework-oriented, not seven math problems project commits
+  + [interpretation] is the project research sequence is currently reconstructed from untracked SOP artifacts rather than committed history
+  + [risk] is without staging or commits, project history remains vulnerable to being confused with broader .sop framework churn
+
+& [ChangeLogBridge] is the current scoped worktree surface
+  + [tracked_diff] is no scoped tracked diff was inspected as project authority in this reflection
+  + [untracked_project_surface] is imported source corpus at C:\Project\Pinky\seven math problems
+  + [untracked_sop_surface] is proof inquiry records, target gates, CSP translation tool, toy model, project reflections, and manager slice
+  + [oddity] is Project_Slice.sop is untracked while it acts as the current manager surface
+
+& [PvsNPWorkReflection] is the focused research reflection
+  + [accomplishment_001] is structure-guided search was separated from formal P vs NP proof requirements
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_complexity_target_gate_001.sop
+    = route: preserve_boundary
+  + [accomplishment_002] is SAT/3-SAT, CSP, graph targets, pi traversal, and lower-bound routes were classified by proof relevance and semantic fit
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_target_selection_table_001.sop
+    = route: continue_as_reference
+  + [accomplishment_003] is CSP dichotomy research prevented tractable-subclass insight from being overclaimed as P equals NP
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_deep_research_csp_dichotomy_001.sop
+    = route: preserve_boundary
+  + [accomplishment_004] is a CSP coherence translation gate and toy model were created to preserve source meaning in formal variables, domains, constraints, certificates, and propagation terms
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_CSP_Coherence_Translation_Gate.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_toy_csp_coherence_model_001.sop
+    = route: use_as_template
+  + [missed_work_001] is imported ODT source extraction remains incomplete
+    = evidence: C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems\Project_Slice.sop Task_001
+    = route: track
+  + [missed_work_002] is project-specific SOP research artifacts remain untracked
+    = evidence: git status shows untracked project-specific SOP artifacts
+    = route: consider_commit_or_stage_when_user_allows
+  + [new_potential_001] is CSP coherence can become a useful computational experiment or restricted-algorithm program even though it is not a P vs NP solution
+    = evidence: toy model and CSP gate records
+    = route: future_experiment
+  + [outside_001] is no P vs NP proof has been found
+    = evidence: no deterministic polynomial-time solver for SAT, 3-SAT, or NP-complete CSP family was produced
+    = route: outside
+
+& [ReflectionDecision] is the next-route decision
+  + [decision] is pause_p_vs_np_expansion_after_recording_open_lock
+  + [why] is the next meaningful P vs NP advance would require SAT/3-SAT algorithmic breakthrough or lower-bound research rather than more symbolic translation
+  + [next_research_route] is move to Yang-Mills and the Mass Gap according to remaining proof-inquiry order
+  + [recommended_route] is start Yang-Mills by separating symbolic mass/encryption language from constructive quantum Yang-Mills existence and positive mass gap requirements
+  + [heartbeat_status] is active every minute

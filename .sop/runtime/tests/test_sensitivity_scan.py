@@ -35,6 +35,7 @@ from sop_node import (
     build_hyperbolic_corridor_navigation,
     build_security_honesty_governance_record,
     build_lmstudio_task_frame_candidate,
+    build_math_bridge_map,
     build_seven_fold_pants_frame,
     build_sensitivity_scan,
     build_sensitivity_scan_from_changes,
@@ -61,6 +62,7 @@ from sop_node import (
     parse_directive,
     parse_faculty_field,
     parse_feedback_signal,
+    parse_math_bridge_term,
     parse_fold_leg,
     parse_pants_leg,
     parse_periphery_run_frame,
@@ -77,6 +79,37 @@ from sop_node import (
 
 
 class SensitivityScanTests(unittest.TestCase):
+    def test_math_bridge_map_tracks_open_obligations(self) -> None:
+        bridge = build_math_bridge_map(
+            bridge_id="bsd_bridge_test",
+            problem_name="Birch and Swinnerton-Dyer",
+            proposition="test proposition",
+            terms=(
+                parse_math_bridge_term(
+                    term_id="l_hand",
+                    symbolic_term="L-hand collapse",
+                    formal_object="order of vanishing",
+                    problem_role="analytic side",
+                    evidence_status="mapped_candidate",
+                    proof_obligations=("define collapse", "avoid circularity"),
+                ),
+                parse_math_bridge_term(
+                    term_id="unknown",
+                    symbolic_term="phase key",
+                    problem_role="unresolved bridge",
+                ),
+            ),
+        )
+
+        rendered = bridge.render()
+        graph = bridge.to_hypergraph().render()
+        self.assertTrue(bridge.ready)
+        self.assertEqual(bridge.open_obligation_count, 2)
+        self.assertEqual(bridge.weakest_terms[0].term_id, "unknown")
+        self.assertIn("mapped_with_obligations", rendered)
+        self.assertIn("keep_peripheral", rendered)
+        self.assertIn("SOP-HG math-bridge-map", graph)
+
     def test_classify_layer_routes_touch_and_heat(self) -> None:
         self.assertEqual(classify_layer(0, 0), ("surface", "fade"))
         self.assertEqual(classify_layer(1, 3), ("hair", "notice"))

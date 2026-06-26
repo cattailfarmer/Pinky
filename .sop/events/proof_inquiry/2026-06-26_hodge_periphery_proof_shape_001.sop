@@ -1,0 +1,62 @@
+Subject: Hodge Periphery Proof Shape 001
+
+Description: First periphery-guided proof-shaping pass for Hodge using the source document's memory anchor, phase-stable traversal, and algebraic behavior language.
+
+& [FocalSubject] is the third proof-inquiry lane
+  + [problem] is Hodge Conjecture
+  + [formal_problem_space] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Hodge_Conjecture_Problem_Space.sop
+  + [document_analysis] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Hodge_Conjecture_Document_Analysis.sop
+  + [source_section] is Spiral Two: The Hodge Conjecture
+  + [inquiry_rank] is 3 after BSD and Navier-Stokes paused at open locks
+
+& [IntendedPurpose] is the mathematical target shape
+  + [purpose] is show rational Hodge classes on smooth projective complex varieties are rational linear combinations of algebraic cycle classes
+  + [formal_core] is bridge cohomological Hodge type (p,p) and rationality to algebraic cycle realization
+  + [proof_need] is a construction, detection, or equivalence showing that the relevant cohomology class lies in the image of the cycle class map
+
+& [DocumentProposition] is the source-implied proposition
+  + [raw_shape] is curved spaces have memory anchors that settle into repeatable rational algebraic behavior
+  + [candidate_receptive_form] is a phase-stable geometric/cohomological feature may correspond to a rational Hodge class and should be algebraically realizable
+  + [meaning_role] is algebraic realization of stable cohomological structure
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [PeripheryTrigger] is the curiosity trigger
+  + [trigger_type] is heat_zone_crossing_trigger
+  + [heat_zone_crossing] is crossing from symbolic memory anchors into Hodge classes and algebraic cycles
+  + [restraint_gate] is no anchor claim may promote unless it maps to a rational Hodge class and a cycle-class realization path
+
+& [SymbolicToFormalMap] is the first translation
+  + [memory_anchor] maps_to candidate rational Hodge class
+  + [phase_stable_form] maps_to cohomology class of type (p,p) stable under Hodge decomposition
+  + [algebraic_behavior] maps_to membership in the span of algebraic cycle classes
+  + [curvature_field] maps_to smooth projective complex variety and its cohomology/Hodge structure
+  + [walk_the_space] maps_to method for detecting or constructing cycle representatives
+
+& [BetterProblemShape] is the improved shape after first probe
+  + [old_shape] is stable symbolic memory points reveal algebraic anchors
+  + [adjusted_shape] is identify a rational Hodge class and prove it lies in the image of the algebraic cycle class map
+  + [first_gate] is Hodge anchor realization gate
+  + [first_open_question] is what converts a cohomological anchor into an algebraic cycle rather than merely recognizing Hodge type
+
+& [ProofObligationMap] is the current gate set
+  + [obligation_001] is define variety class and codimension
+  + [obligation_002] is identify the rational Hodge class
+  + [obligation_003] is distinguish rational Hodge conjecture from integral Hodge conjecture variants that can fail
+  + [obligation_004] is produce an algebraic cycle whose class matches the Hodge class
+  + [obligation_005] is avoid treating representation stability or LLM cluster stability as algebraic realization
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is Hodge Anchor Realization Gate
+  + [tool_purpose] is check whether a proposed memory anchor is a Hodge class, rational, cycle-realizable, in a known case, or outside
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_hodge_anchor_realization_gate
+  + [heartbeat_status] is active every minute
+
+& [AnchorGateResolution] is the next heartbeat result
+  + [gate_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_anchor_realization_gate_001.sop
+  + [closure_status] is not_closed
+  + [first_open_lock] is variety_scope
+  + [core_open_lock] is cycle_realization
+  + [next_research_target] is known cases and failure boundaries for Hodge variants

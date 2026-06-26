@@ -1,0 +1,18 @@
+Subject: Birch and Swinnerton-Dyer Conjecture Problem Space
+
+& [ProblemSpace] is formal mathematical framing
+  + [domain] is number theory and arithmetic geometry
+  + [core_objects] are elliptic curves over rational numbers, rational points, Mordell-Weil rank, L-functions, analytic rank, and special values
+  + [central_question] is whether the rank of the group of rational points on an elliptic curve equals the order of vanishing of its L-function at the central point, with deeper leading-coefficient structure
+  + [official_status] is open as of 2026-06-26 according to Clay Mathematics Institute public Millennium Problems framing
+  + [authority_floor] is exact curve conditions, analytic continuation/modularity context, rank definitions, and peer-verifiable proof
+
+& [Delineation] is the problem boundary
+  + [inside] is correspondence between algebraic rank and analytic behavior of the L-function
+  + [boundary] is the bridge between rational-point structure and complex analytic vanishing
+  + [outside] is handedness or resonance language unless mapped to elliptic curve group law, L-series, or rank machinery
+
+& [SupportNeeds] is required support for canonical work
+  = need: exact statement and known cases
+  = need: table of symbolic terms against arithmetic objects
+  = need: evidence distinction between heuristic structural analogy and formal proof

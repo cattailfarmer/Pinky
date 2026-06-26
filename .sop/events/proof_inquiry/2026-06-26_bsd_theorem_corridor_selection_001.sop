@@ -1,0 +1,63 @@
+Subject: BSD Theorem Corridor Selection 001
+
+Description: Return-pass BSD inquiry selecting the most promising theorem corridor after the two-sided closure matrix, with source/proof boundaries preserved.
+
+& [CorridorSelection] is a proof-inquiry event
+  + [event_uuid] is 7ad60b6e-327a-4eb3-bfe2-02743d93f703
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [prior_matrix] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_two_sided_closure_matrix_001.sop
+  + [active_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Two_Sided_Closure_Matrix.sop
+  + [periphery_target] is compatibility between lower-bound source construction, height/regulator measurement, and upper-bound Selmer control
+  + [deep_research_gate] is used
+    = reason: the phrase "compatible theorem corridor" remained low-resolution after the prior matrix
+
+& [SourceBoundary] is the project-source claim being tested
+  + [source_claim] is L-hand collapse and R-hand growth should correspond to analytic order and rational direction structure
+  + [source_anchor] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots\seven_millenium_math_problems.txt
+  + [source_lines] is 87-97
+  + [preserved_boundary] is this remains symbolic analysis authority, not formal BSD proof authority
+
+& [ResearchSourceSet] is the bounded theorem-corridor frame
+  + [source_001] is Wei Zhang, The Birch-Swinnerton-Dyer conjecture and Heegner points: a survey
+    = link: https://math.mit.edu/~wz2113/math/online/CDM2013%20final.pdf
+    = use: states the Gross-Zagier and Kolyvagin rank result as the broadest rank-part theorem corridor for elliptic curves over Q
+  + [source_002] is William Stein, Toward a Generalization of the Gross-Zagier Conjecture
+    = link: https://wstein.org/misc/sagedays18_papers/stein-toward_a_generalization_of_the_gross-zagier_conjecture.pdf
+    = use: frames rank at most one as known territory and rank at least two as the difficult frontier
+  + [source_003] is Burns, Sakamoto, and Sano, On the theory of higher rank Euler, Kolyvagin and Stark systems, III: applications
+    = link: https://arxiv.org/abs/1902.07002
+    = use: higher-rank derivative maps and Selmer-module applications strengthen upper-control vocabulary but do not by themselves create all needed elliptic-curve source classes
+  + [source_004] is Burns, Sakamoto, and Sano, On the theory of higher rank Euler, Kolyvagin and Stark systems, II
+    = link: https://arxiv.org/abs/1805.08448
+    = use: canonical higher Kolyvagin derivative homomorphism supports the control-side corridor under hypotheses
+  + [source_005] is Darmon and Rotger, Diagonal cycles and Euler systems I
+    = link: https://www.numdam.org/articles/10.24033/asens.2227/
+    = use: diagonal-cycle and p-adic Gross-Zagier work shows a higher-cycle analogue of the source/measurement/control shape in special settings
+
+& [CorridorFindings] is the selected shape
+  + [finding_001_rank_one_calibration] is the Heegner point, Gross-Zagier height formula, and Kolyvagin system corridor is the clearest realized L-hand/R-hand bridge
+    = meaning: analytic first derivative data can be tied to a constructed point and to Selmer upper control in compatible hypotheses
+    = proof_status: special_case_or_rank_part_boundary
+  + [finding_002_higher_rank_source_gap] is higher analytic rank needs source families beyond repeated rank-one Heegner points
+    = meaning: the R-hand "growth" side must become a construction of enough independent classes, not just a traversal metaphor
+    = proof_status: open_for_general_BSD
+  + [finding_003_control_gap_shift] is higher-rank Euler, Kolyvagin, and Stark systems sharpen upper control once suitable systems exist
+    = meaning: they can help prevent hidden extra rank, but they are not a universal source constructor
+    = proof_status: conditional_or_special_setting
+  + [finding_004_best_revelation_corridor] is special higher-cycle or diagonal-cycle settings are the best next place to seek meaning
+    = meaning: they keep all three desired roles visible: source object, regulator or p-adic height measurement, and Euler-system-style control
+    = proof_status: promising_as_structural_research_not_solution
+
+& [PropositionAdjustment] is the updated BSD proposition shape
+  + [old_shape] is pair source/measurement with upper-control and choose a theorem corridor
+  + [adjusted_shape] is the L-hand/R-hand model is most meaningful when constrained to corridors where analytic derivative data, constructed arithmetic classes, regulator measurement, and Selmer control are all in the same hypotheses
+  + [most_promising_next_focus] is higher-cycle or diagonal-cycle analogues of Gross-Zagier/Kolyvagin, treated as special theorem corridors rather than general BSD solution engines
+  + [retired_overclaim] is symbolic phase coherence confirms BSD
+  + [current_first_gap] is construct enough independent source classes in higher rank while preserving compatible regulator measurement and upper Selmer control
+  + [solution_potential] is highest among current lanes for producing meaningful mathematical structure, but not currently a path to a complete Millennium-problem proof
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a small BSD Corridor Compatibility Ledger if the next turn stays in BSD
+    = reason: the inquiry now needs row-by-row compatibility tests for rank-one, generalized Heegner-cycle, diagonal-cycle, and higher-rank Kolyvagin/Stark routes
+  + [heartbeat_status] is active every minute

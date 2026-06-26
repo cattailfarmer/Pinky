@@ -1,0 +1,81 @@
+Subject: Seven Math Problems Document Analysis Expansion First Pass
+
+Description: Quote-backed expansion of the six non-Riemann document-analysis layers using the preserved source corpus and first source quote index.
+
+& [ExpansionFrame] is a project source-analysis artifact
+  + [expansion_uuid] is 89f136d7-efc5-46cf-9347-2f24f69f09ec
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26
+  + [corpus_manifest] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+  + [quote_index] is C:\Project\Pinky\.sop\platform\seven_math_problems\Source_Quote_Index_First_Pass.sop
+  + [sjs_record] is C:\Project\Pinky\.sop\platform\seven_math_problems\Seven_Math_Problems_Project_SJS.sop
+  + [role] is expand document-analysis layers with quote anchors, symbolic vocabulary, formal mapping candidates, and support gaps
+  + [not_role] is proving any Millennium Problem
+
+& [HodgeExpansion] is quote-backed analysis
+  + [base_layer] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Hodge_Conjecture_Document_Analysis.sop
+  + [quote_anchor] is quote_003_hodge_anchor_language
+  + [source_ids] are SMP_SOURCE_005 and SMP_SOURCE_006
+  + [symbolic_vocabulary] is stable resonant points, field memory, algebraic anchors, curvature resonance
+  + [formal_mapping_candidate] is rational Hodge class, Hodge decomposition type, cycle class map, and algebraic cycle realization
+  + [support_gap] is stable anchor recognition does not produce rational higher-codimension algebraic cycles
+  + [authority_boundary] is Hodge proof relevance requires cycle construction, not memory-anchor language
+
+& [PoincareExpansion] is quote-backed analysis
+  + [base_layer] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Poincare_Conjecture_Document_Analysis.sop
+  + [quote_anchor] is quote_004_poincare_symbolic_flow and quote_010_symbolic_ricci_experiment
+  + [source_ids] are SMP_SOURCE_002, SMP_SOURCE_003, SMP_SOURCE_005, and SMP_SOURCE_006
+  + [symbolic_vocabulary] is conceptual turbulence, symbolic Ricci flow, recursive alignment, coherence, non-simply-connected symbolic fields
+  + [formal_mapping_candidate] is accepted Perelman/Hamilton Ricci-flow proof for topology and separate computational-cognition model for symbolic smoothing
+  + [support_gap] is symbolic Ricci flow lacks state space, metric, update rule, invariant, convergence criterion, failure modes, and validation
+  + [authority_boundary] is Poincare is solved externally; source material is analogy or model candidate only
+
+& [BSDExpansion] is quote-backed analysis
+  + [base_layer] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Birch_Swinnerton_Dyer_Document_Analysis.sop
+  + [quote_anchor] is quote_005_bsd_l_hand_r_hand
+  + [source_ids] are SMP_SOURCE_005 and SMP_SOURCE_006
+  + [symbolic_vocabulary] is L-hand collapse, R-hand growth, rational directions, phase-corrected fields, harmonic traversal
+  + [formal_mapping_candidate] is analytic order of vanishing, Mordell-Weil rank, height/regulator measurement, and Selmer upper control
+  + [support_gap] is higher-rank source construction, nondegenerate measurement, and compatible upper-control systems are not jointly supplied
+  + [authority_boundary] is BSD proof relevance must pass the Two-Sided Closure Matrix
+
+& [NavierStokesExpansion] is quote-backed analysis
+  + [base_layer] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Navier_Stokes_Document_Analysis.sop
+  + [quote_anchor] is quote_006_navier_stokes_simulation
+  + [source_ids] are SMP_SOURCE_005 and SMP_SOURCE_006
+  + [symbolic_vocabulary] is surface tension, resonance anchors, error diffusion, self-smoothing, curvature memory
+  + [formal_mapping_candidate] is vorticity direction coherence, geometric depletion of vortex stretching, strain alignment, continuation criteria, and anti-concentration estimates
+  + [support_gap] is no mechanism proves dynamic propagation of sufficient depletion/alignment from arbitrary smooth data
+  + [authority_boundary] is symbolic simulation is not a Clay regularity proof
+
+& [YangMillsExpansion] is quote-backed analysis
+  + [base_layer] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Yang_Mills_Document_Analysis.sop
+  + [quote_anchor] is quote_007_yang_mills_sealed_curvature
+  + [source_ids] are SMP_SOURCE_004, SMP_SOURCE_005, and SMP_SOURCE_006
+  + [symbolic_vocabulary] is sealed curvature, glyphic enclosure, symbolic encryption, phase key, curvature packet
+  + [formal_mapping_candidate] is confinement intuition, gauge-invariant correlations, exponential decay, continuum Yang-Mills construction, OS reconstruction, and spectral gap
+  + [support_gap] is no continuum construction, gauge-invariant observable construction, OS reconstruction, nontriviality proof, or gap-transfer theorem is supplied
+  + [authority_boundary] is sealed curvature remains stage-007 intuition, not mass-gap proof
+
+& [PvsNPExpansion] is quote-backed analysis
+  + [base_layer] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\P_vs_NP_Document_Analysis.sop
+  + [quote_anchor] is quote_008_p_vs_np_phase_coherence and quote_012_poincare_cross_problem
+  + [source_ids] are SMP_SOURCE_005 and SMP_SOURCE_006
+  + [symbolic_vocabulary] is structure over enumeration, phase coherence, hard-search boundary, resonance traversal, symbolic collapse
+  + [formal_mapping_candidate] is NP language target, verifier/certificate relation, SAT/3-SAT or CSP target, polynomial-time algorithm, reduction, or lower-bound framework
+  + [support_gap] is no NP-complete target solver, polynomial runtime proof, or lower-bound proof is supplied
+  + [authority_boundary] is source language supports CSP/heuristic analysis only until formal complexity locks are met
+
+& [ModelExperimentExpansion] is cross-source model analysis
+  + [quote_anchor] is quote_009_toroidal_resonance and quote_011_symbolic_gravity_measurement
+  + [source_ids] are SMP_SOURCE_001, SMP_SOURCE_002, and SMP_SOURCE_003
+  + [symbolic_vocabulary] is resonance superstructure, toroidal closure, symbolic gravity, phase density, anchor drift, resonance thresholds
+  + [formal_mapping_candidate] is computational experiment specification with defined state space, projection rule, metrics, instrumentation, controls, and validation
+  + [support_gap] is no reproducible implementation, data schema, statistical control, or validation output is supplied in the current project
+  + [authority_boundary] is model-building route should be split from Millennium proof claims
+
+& [Task006Satisfaction] is the completion marker
+  + [task_006_status] is completed_first_pass
+  + [satisfied_by] is quote index plus this expansion layer
+  + [remaining_depth] is future work can add fuller quotation tables and per-source duplicate/variant comparison
+  + [heartbeat_status] is active every minute

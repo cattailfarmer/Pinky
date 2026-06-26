@@ -1,0 +1,67 @@
+Subject: Seven Math Problems Project Specification Justification Solution
+
+Description: SJS-processed project specification for the imported seven math problems corpus after source preservation, corpus manifesting, and first claim/evidence inventory.
+
+& [SJSFrame] is the project authority frame
+  + [sjs_uuid] is 9eb908bf-34f2-441b-b4f1-5a592b761bda
+  + [project] is seven math problems
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [active_sop_root] is C:\Project\Pinky\.sop
+  + [created_at] is 2026-06-26
+  + [source_manifest] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+  + [claim_inventory] is C:\Project\Pinky\.sop\platform\seven_math_problems\Claim_Evidence_Inventory.sop
+  + [manager_slice] is C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems\Project_Slice.sop
+  + [authority_status] is canonical_project_analysis_authority
+  + [not_authority_for] is formal proof that any unsolved Millennium Problem has been solved
+
+& [SourceSpecification] is the preserved source basis
+  + [source_count] is 6 imported corpus entries
+  + [source_ids] are SMP_SOURCE_001 through SMP_SOURCE_006
+  + [source_roles] are symbolic-number-field study, symbolic Ricci-flow observations, Millennium-problem narrative, Yang-Mills/P-vs-NP fragment, and plain-text project copy
+  + [source_preservation] is originals unmodified with SHA256 hashes and UTF-8 text snapshots
+  + [governance] is raw source remains separate from canonical interpretation
+
+& [CanonicalSpecification] is the project specification
+  + [spec_001] is preserve and analyze the imported corpus as a symbolic-mathematical research narrative, not as an accepted proof package
+  + [spec_002] is decompose the six non-Riemann Millennium-problem lanes into formal problem spaces, source-document analysis layers, proof-inquiry gates, and support-gap records
+  + [spec_003] is keep Riemann Hypothesis outside the active proof-inquiry lanes per user instruction while preserving its source claims in the corpus inventory
+  + [spec_004] is use periphery probing to translate source concepts into formal mathematical neighbors only when the mapping can be bounded by proof obligations
+  + [spec_005] is use Deep_Research_Priority_Gate when low-resolution theorem boundaries block responsible focus
+  + [spec_006] is develop narrow math tools only when repeated inquiry reveals a concrete classification or closure need
+  + [spec_007] is record every proof-shaping result as SOP artifacts before summarizing or moving lanes
+  + [spec_008] is run project-local Git reflection after major open locks or large project deltas
+  + [spec_009] is separate narrative, model, computational experiment, formal theorem, and proof-status claims in all downstream documents
+  + [spec_010] is no public-facing or implementation artifact should treat the project as a proof of any unsolved Millennium Problem without an independently valid formal proof package
+
+& [Justification] is why this specification is warranted
+  + [justification_001] is source preservation is complete enough for first-pass analysis: all imported ODT/TXT files have snapshots, hashes, and corpus IDs
+  + [justification_002] is the claim/evidence inventory shows multiple formal-sounding claims but no accepted solution proof
+  + [justification_003] is the six-lane inquiry produced useful formal neighbors while preserving open mathematical locks
+  + [justification_004] is the most reliable project value is disciplined translation and boundary-setting, not solution assertion
+  + [justification_005] is the SOP framework needs a canonical project authority record now that source extraction and claim inventory are complete
+
+& [SupportGaps] is what remains unsupported
+  + [gap_001] is no formal proof package, definitions, lemmas, or peer-reviewed validation exists for any unsolved Millennium solution claim
+  + [gap_002] is per-problem analysis layers do not yet include full direct-quote tables from all source snapshots
+  + [gap_003] is symbolic field experiments lack implemented instrumentation, data schema, and validation outputs
+  + [gap_004] is BSD higher-rank two-sided closure remains open outside special theorem corridors
+  + [gap_005] is Navier-Stokes dynamic propagation, Hodge cycle realization, P vs NP NP-complete algorithm/lower-bound, and Yang-Mills continuum construction/gap transfer remain open
+  + [gap_006] is project artifacts remain largely untracked in Git
+
+& [Plan] is the authorized next work
+  + [plan_001] is expand per-problem analysis layers with direct source quotes and corpus IDs
+  + [plan_002] is create a public-facing synthesis only after quote-backed analysis expansion
+  + [plan_003] is if research continues, use BSD Two-Sided Closure Matrix as the primary return gate and select a scoped theorem corridor before more deep research
+  + [plan_004] is if model-building continues, split symbolic Ricci flow or toroidal resonance into separate computational-model specifications
+  + [plan_005] is stage or commit project-specific artifacts when user allows
+
+& [SolutionRecordBoundary] is the current solution status
+  + [analysis_solution] is completed first-pass decomposition, proof-inquiry, synthesis, source extraction, corpus manifest, claim inventory, and SJS project specification
+  + [math_solution] is none for unsolved Millennium Problems
+  + [accepted_external_solution] is Poincare Conjecture solved by Perelman/Hamilton Ricci-flow lineage
+  + [current_research_best_lane] is BSD higher-rank two-sided closure
+
+& [Satisfaction] is the completion marker
+  + [task_003_status] is completed_first_pass
+  + [satisfied_by] is source manifest, claim inventory, six-lane synthesis, and this SJS record
+  + [heartbeat_status] is active every minute

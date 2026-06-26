@@ -1,0 +1,88 @@
+Subject: BSD Source-Measurement Pairing Table 001
+
+Description: First table pairing higher-rank BSD source families with measurement frameworks.
+
+& [TableFrame] is the comparison setup
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Measurement_Pairing_Table.sop
+  + [source_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_generalized_heegner_cycles_001.sop
+  + [measurement_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_derived_heights_001.sop
+  + [proposition] is higher-rank BSD bridge likely needs a source family plus height/regulator measurement
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [Pair_001_GeneralizedHeegner_DerivedHeights] is a source-measurement pair
+  + [source_family] is generalized Heegner cycles
+  + [measurement_framework] is derived heights or p-adic heights
+  + [constructs_candidates] is special_setting
+  + [measures_candidates] is yes_in_special_formulas
+  + [independence_status] is conjectural_or_measured_if_nonzero
+  + [sufficiency_status] is special_case_only
+  + [l_hand_contact] is derivatives or leading coefficients of complex or p-adic L-functions
+  + [r_hand_contact] is cycle classes and sometimes cycle-to-point or point-producing constructions
+  + [phase_correction_contact] is p-adic/derived height nondegeneracy
+  + [next_question] is when a nonzero derived height actually proves independent rational directions rather than only cycle-level information
+
+& [Pair_002_ChowHeegner_PadicHeights] is a source-measurement pair
+  + [source_family] is Chow-Heegner points
+  + [measurement_framework] is p-adic heights and p-adic L-function values
+  + [constructs_candidates] is special_setting
+  + [measures_candidates] is partial
+  + [independence_status] is proven_special_case_or_unknown_by_setting
+  + [sufficiency_status] is special_case_only
+  + [l_hand_contact] is p-adic L-function value or derivative behavior
+  + [r_hand_contact] is rational points produced in selected CM or modular settings
+  + [phase_correction_contact] is height nonvanishing or p-adic regulator behavior
+  + [next_question] is whether Chow-Heegner constructions scale to multiple independent points or remain isolated point sources
+
+& [Pair_003_EulerSystem_SelmerControl] is a source-measurement pair
+  + [source_family] is Euler-system or Kolyvagin-system style classes
+  + [measurement_framework] is Selmer-rank control and explicit reciprocity
+  + [constructs_candidates] is indirect
+  + [measures_candidates] is indirect
+  + [independence_status] is indirect_control
+  + [sufficiency_status] is not_sufficient_by_itself
+  + [l_hand_contact] is reciprocity laws connecting classes to L-values or p-adic L-functions
+  + [r_hand_contact] is Selmer classes rather than direct Mordell-Weil generators
+  + [phase_correction_contact] is weak unless paired with height/regulator data
+  + [next_question] is whether Euler-system control can certify rank bounds for source families already producing candidates
+
+& [Pair_004_PadicLFunction_DerivedRegulator] is a source-measurement pair
+  + [source_family] is p-adic analytic leading coefficient data
+  + [measurement_framework] is derived p-adic regulator
+  + [constructs_candidates] is no
+  + [measures_candidates] is yes
+  + [independence_status] is measured_if_nonzero
+  + [sufficiency_status] is measurement_not_source
+  + [l_hand_contact] is direct p-adic order of vanishing and leading coefficient
+  + [r_hand_contact] is through Selmer or Mordell-Weil directions already present or conjecturally matched
+  + [phase_correction_contact] is strongest
+  + [next_question] is identify the source family that supplies the directions whose regulator is being measured
+
+& [Pair_005_Regulator_MordellWeilGenerators] is a source-measurement pair
+  + [source_family] is known or hypothesized Mordell-Weil generators
+  + [measurement_framework] is Neron-Tate regulator
+  + [constructs_candidates] is no
+  + [measures_candidates] is yes
+  + [independence_status] is measured_if_nonzero
+  + [sufficiency_status] is enough_after_generators_are_known
+  + [l_hand_contact] is refined BSD leading coefficient only after rank side is supplied
+  + [r_hand_contact] is actual generator lattice
+  + [phase_correction_contact] is classical regulator nondegeneracy
+  + [next_question] is this is the target state, not the discovery mechanism
+
+& [TableFinding] is the current conclusion
+  + [best_source_measurement_pair] is generalized Heegner or Chow-Heegner sources paired with derived/p-adic heights in special settings
+  + [best_measurement_only_pair] is p-adic L-function leading data paired with derived regulator
+  + [best_target_state_pair] is Mordell-Weil generators paired with Neron-Tate regulator
+  + [remaining_obstruction] is independence and sufficiency outside special settings
+  + [proposition_update] is the source document's R-hand growth cannot remain generic; it must specify a source family, and phase correction must specify the measurement framework that proves independence
+
+& [NextResearchTarget] is the next bounded question
+  + [target] is independence criteria for generalized Heegner or Chow-Heegner source families
+  + [bounded_question] is what nonvanishing or height-pairing statements certify independence and sufficiency for constructed points or cycles in known BSD-related cases
+  + [priority] is high
+
+& [IndependenceResearchResolution] is the next heartbeat result
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_independence_criteria_001.sop
+  + [resolution] is independence requires nonzero/nondegenerate height pairing or independent source classes, while sufficiency requires Selmer/rank control to rule out hidden extra rank
+  + [proposition_update] is proof-relevant BSD bridge requires closed dimension match among analytic order, source candidates, pairing rank, and control upper bound
+  + [next_tool_need] is BSD Dimension Closure Checklist

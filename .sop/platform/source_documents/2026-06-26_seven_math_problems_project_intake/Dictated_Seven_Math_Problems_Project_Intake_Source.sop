@@ -1,0 +1,19 @@
+Subject: Seven Math Problems Project Intake Source
+
+Description: Preserved raw user request and workspace boundary declaration for beginning analysis of the imported project at C:\Project\Pinky\seven math problems through the active C:\Project\Pinky\.sop framework.
+
+& [SevenMathProblemsProjectIntakeSource] is preserved source input
+  + [source_uuid] is 12a53bf2-1f7a-4e67-9aa1-4a6dd93bdfd1
+  + [captured_at] is 2026-06-26
+  + [captured_by] is Codex conversation in C:\Project\Pinky
+  + [workspace_root] is C:\Project\Pinky
+  + [active_sop_root] is C:\Project\Pinky\.sop
+  + [named_project] is seven math problems
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [raw_request] is "I have imported an old project into C:\Project\Pinky\seven math problems\. using the C:\Project\Pinky\.sop\ framework, begin analysis of this project."
+
+  = must: preserve this request separately from canonical project analysis
+  = must: treat C:\Project\Pinky as a multi-project workspace root
+  = must: narrow project-specific analysis only to C:\Project\Pinky\seven math problems because the user named that project
+  = must: treat imported project documents as source evidence, not as processed specification authority
+  = must: route any future build specification through SJS before implementation authority

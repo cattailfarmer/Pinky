@@ -1,0 +1,18 @@
+Subject: Seven Math Problems Project Intake Source Manifest
+
+Description: Source manifest for the read-only intake and analysis start of the imported seven math problems project.
+
+& [SevenMathProblemsProjectIntakeManifest] is the source manifest for project intake
+  + [manifest_uuid] is 61c3e0f8-807e-493a-88c1-d798a9bd2a59
+  + [source_uuid] is 12a53bf2-1f7a-4e67-9aa1-4a6dd93bdfd1
+  + [captured_at] is 2026-06-26
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_project_intake\Dictated_Seven_Math_Problems_Project_Intake_Source.sop
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [initial_analysis_record] is C:\Project\Pinky\.sop\events\project_intake\2026-06-26_seven_math_problems_initial_analysis_001.sop
+  + [project_manager_slice] is C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems\Project_Slice.sop
+  + [governing_contract] is C:\Project\Pinky\.sop\AGENTS.md
+  + [source_role] is user_directive_for_project_intake
+
+  = must: preserve raw source separately from analysis records
+  = must: mark imported files as source artifacts requiring preservation and interpretation
+  = must: require SJS processing before any claim becomes implementation or formal proof authority

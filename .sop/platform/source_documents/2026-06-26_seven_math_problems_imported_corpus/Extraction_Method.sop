@@ -1,0 +1,13 @@
+﻿Subject: Seven Math Problems Imported Corpus Extraction Method
+
+Description: Method record for source-preserving extraction of imported seven math problems ODT and TXT files.
+
+& [ExtractionMethod] is the project-local source extraction method
+  + [created_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\seven math problems
+  + [snapshot_root] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots
+  + [odt_method] is read ODT as ZIP, parse content.xml, extract text:p and text:h nodes, normalize whitespace, and write UTF-8 plain-text snapshot
+  + [txt_method] is copy TXT content into UTF-8 plain-text snapshot
+  + [source_preservation] is originals were not modified
+  + [hashing] is SHA256 recorded for original files and generated snapshots
+  + [boundary] is extraction creates source snapshots, not canonical SJS authority by itself

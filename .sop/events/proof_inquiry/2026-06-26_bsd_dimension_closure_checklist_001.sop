@@ -1,0 +1,54 @@
+Subject: BSD Dimension Closure Checklist 001
+
+Description: First dimension-closure check for the current higher-rank BSD bridge candidate.
+
+& [ChecklistFrame] is the scoped check
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Dimension_Closure_Checklist.sop
+  + [source_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_independence_criteria_001.sop
+  + [pairing_table] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_measurement_pairing_table_001.sop
+  + [scoped_claim] is generalized Heegner or Chow-Heegner source families plus derived/p-adic height measurement may form the higher-rank BSD bridge
+  + [claim_scope] is higher-rank exploratory bridge, not all-curves proof
+
+& [Lock_001_AnalyticOrder] is a closure lock
+  + [status] is partial
+  + [evidence] is p-adic and complex L-function derivatives or leading coefficients can provide expected analytic order in special frameworks
+  + [gap] is no general all-curves analytic order mechanism is supplied by the project
+
+& [Lock_002_SourceCount] is a closure lock
+  + [status] is partial_to_special_case
+  + [evidence] is generalized Heegner cycles and Chow-Heegner points can provide source objects in special settings
+  + [gap] is no general mechanism supplies exactly r independent candidates for analytic rank r
+
+& [Lock_003_IndependenceRank] is a closure lock
+  + [status] is open_outside_special_cases
+  + [evidence] is nonzero height certifies non-torsion in rank 1 and nondegenerate pairings can certify independence when available
+  + [gap] is higher-rank nondegenerate height-pairing evidence is often conjectural or setting-dependent
+
+& [Lock_004_UpperBoundControl] is a closure lock
+  + [status] is partial
+  + [evidence] is Kolyvagin/Euler-system style control can bound ranks in some settings, especially rank at most one
+  + [gap] is no general upper-bound/control mechanism is attached to the higher-rank source-measurement pair
+
+& [Lock_005_RefinedFormulaFit] is a closure lock
+  + [status] is partial
+  + [evidence] is derived regulators and p-adic leading coefficient frameworks point toward refined formulas
+  + [gap] is full refined BSD factors and classical-to-p-adic translation are not closed
+
+& [ChecklistFinding] is the result
+  + [dimension_closure_status] is not_closed
+  + [first_open_lock] is independence_rank
+  + [second_open_lock] is source_count outside special settings
+  + [third_open_lock] is upper_bound_control for higher rank
+  + [meaning_gain] is the project now has a precise gate for when a BSD bridge becomes proof-shaped
+  + [proposition_update] is current BSD symbolic bridge is a research scaffold whose next mathematical pressure point is nondegenerate independence evidence for enough candidate sources
+
+& [NextResearchTarget] is the next bounded question
+  + [target] is nondegeneracy of higher-rank height pairings for generalized Heegner cycles or related source families
+  + [bounded_question] is where nondegenerate pairing results are known, conjectured, or blocked for higher-rank Heegner-style constructions
+  + [priority] is high
+
+& [NondegeneracyResearchResolution] is the next heartbeat result
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_height_pairing_nondegeneracy_001.sop
+  + [resolution] is nondegeneracy remains the first open lock outside special cases
+  + [proposition_update] is phase correction becomes proof-relevant only when nondegenerate height/regulator pairing is proven for enough source candidates
+  + [recommended_next] is project Git reflection before expanding BSD literature further

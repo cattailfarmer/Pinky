@@ -1,0 +1,60 @@
+Subject: Hodge Variant Boundary Map 001
+
+Description: First classification of Hodge-like claims in the source document and early Hodge inquiry.
+
+& [MapFrame] is the classification setup
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Variant_Boundary_Map.sop
+  + [source_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_deep_research_known_cases_boundaries_001.sop
+  + [anchor_gate] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_anchor_realization_gate_001.sop
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [Claim_001_SourceMemoryAnchors] is a boundary classification
+  + [claim] is memory anchors in curved symbolic fields settle into rational algebraic behavior
+  + [setting] is unspecified symbolic/representational field
+  + [category] is analogy_outside
+  + [risk] is no smooth projective variety, cohomology class, Hodge type, rationality, or cycle class is specified
+  + [route] is preserve_as_heuristic_until_scoped
+
+& [Claim_002_RationalProjectiveHodgeTarget] is a boundary classification
+  + [claim] is rational Hodge classes on smooth projective complex varieties are rational combinations of algebraic cycle classes
+  + [setting] is projective nonsingular complex algebraic variety with rational coefficients
+  + [category] is rational_projective_hodge_target
+  + [risk] is open in higher codimension
+  + [route] is anchor_realization_gate
+
+& [Claim_003_DivisorCase] is a boundary classification
+  + [claim] is codimension-one Hodge classes correspond to divisor/algebraic classes
+  + [setting] is divisor/codimension-one projective setting
+  + [category] is known_case
+  + [risk] is calibration only, not general Hodge proof
+  + [route] is calibration
+
+& [Claim_004_IntegralHodgeVariant] is a boundary classification
+  + [claim] is every integral Hodge class should be algebraic
+  + [setting] is integral coefficients
+  + [category] is integral_variant
+  + [risk] is false in naive forms by counterexamples
+  + [route] is caution_outside_unless_explicitly_scoped
+
+& [Claim_005_KahlerVariant] is a boundary classification
+  + [claim] is Hodge-style algebraicity for arbitrary compact Kahler manifolds
+  + [setting] is non-projective Kahler
+  + [category] is kahler_variant
+  + [risk] is false or pathological in naive forms because algebraic subvarieties may be insufficient
+  + [route] is caution_outside_unless_explicitly_scoped
+
+& [MapFinding] is the current conclusion
+  + [classification_result] is source memory-anchor language is outside the Clay target until scoped to rational projective Hodge data
+  + [known_case_use] is divisor case can calibrate what realization means
+  + [open_frontier] is rational higher-codimension cycle realization
+  + [core_lock] is specify a rational Hodge class and produce a cycle-realization mechanism
+
+& [NextResearchTarget] is the next bounded question
+  + [target] is cycle-realization mechanisms in known or special Hodge cases
+  + [bounded_question] is what kinds of mechanisms produce algebraic cycles from Hodge classes in known cases, and whether any resemble the source document's anchor/traversal language
+  + [priority] is high
+
+& [CycleRealizationResearchResolution] is the next heartbeat result
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_deep_research_cycle_realization_001.sop
+  + [resolution] is mechanisms either realize known cases, construct cycles in special geometry, organize cycles through variation, or supply substitutes that are not algebraicity
+  + [next_tool_need] is Hodge Cycle Realization Mechanism Table

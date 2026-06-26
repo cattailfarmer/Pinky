@@ -1,0 +1,53 @@
+Subject: Navier-Stokes Depletion Propagation Checklist 001
+
+Description: First propagation checklist for geometric depletion of vortex stretching as the phase-correction candidate.
+
+& [ChecklistFrame] is the scoped check
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Depletion_Propagation_Checklist.sop
+  + [source_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_deep_research_geometric_depletion_001.sop
+  + [anti_blowup_matrix] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_anti_blowup_gate_matrix_001.sop
+  + [scoped_candidate] is vorticity-direction or strain alignment depletes vortex stretching enough to prevent blowup
+  + [claim_scope] is exploratory anti-blowup mechanism, not a proof of global regularity
+
+& [Lock_001_ConditionalRegularizer] is a closure lock
+  + [status] is partial_to_conditional
+  + [evidence] is vorticity direction coherence and geometric depletion criteria can imply regularity under hypotheses
+  + [gap] is criteria remain conditional and setting-dependent
+
+& [Lock_002_DynamicPropagation] is a closure lock
+  + [status] is open
+  + [evidence] is no general theorem in the current research set derives or preserves sufficient alignment for arbitrary smooth 3D data
+  + [gap] is the Navier-Stokes evolution may create stretching and misalignment; propagation of depletion is the first open lock
+
+& [Lock_003_ScalingRelevance] is a closure lock
+  + [status] is partial
+  + [evidence] is geometric criteria can contact critical blowup mechanisms through vorticity stretching and direction regularity
+  + [gap] is not every alignment condition is scale-critical or strong enough for Clay problem closure
+
+& [Lock_004_AntiConcentration] is a closure lock
+  + [status] is partial
+  + [evidence] is depletion of vortex stretching can reduce nonlinear amplification
+  + [gap] is no global anti-concentration estimate is produced from arbitrary smooth data
+
+& [Lock_005_ContinuationClosure] is a closure lock
+  + [status] is open
+  + [evidence] is continuation criteria are known if critical/vorticity quantities stay controlled
+  + [gap] is the candidate has not shown boundedness of a continuation-level quantity for all time
+
+& [ChecklistFinding] is the result
+  + [depletion_closure_status] is not_closed
+  + [first_open_lock] is dynamic_propagation
+  + [second_open_lock] is continuation_closure
+  + [meaning_gain] is the document's phase correction now has an exact PDE burden: propagated geometric depletion
+  + [proposition_update] is the Navier-Stokes symbolic bridge is proof-relevant only if it can derive alignment/depletion from the equations and close a continuation criterion
+
+& [NextResearchTarget] is the next bounded question
+  + [target] is evolution equations for vorticity direction, strain eigenframe, or alignment quantities
+  + [bounded_question] is whether any known evolution identity or maximum-principle-like structure can propagate depletion instead of merely assuming it
+  + [priority] is high
+
+& [AlignmentEvolutionResearchResolution] is the next heartbeat result
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_deep_research_alignment_evolution_001.sop
+  + [resolution] is alignment/depletion propagation remains open; known identities expose geometry but do not force sufficient coherence for arbitrary smooth data
+  + [proposition_update] is phase correction requires a dynamically propagated alignment/depletion invariant strong enough for continuation closure
+  + [recommended_next] is project Git reflection before more Navier-Stokes expansion

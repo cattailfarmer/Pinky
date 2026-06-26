@@ -1,0 +1,62 @@
+Subject: BSD Deep Research Generalized Heegner Cycles 001
+
+Description: Bounded deep research pass on generalized Heegner cycles as the possible R-hand generator or cycle source for higher-rank BSD.
+
+& [ResearchBoundary] is the bounded deep research frame
+  + [problem] is Birch and Swinnerton-Dyer
+  + [research_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [frontier_matrix] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_higher_rank_frontier_matrix_001.sop
+  + [low_resolution_signal] is generalized Heegner cycles as R-hand generator source
+  + [bounded_question] is whether generalized Heegner cycles provide a higher-rank analogue of the rank 1 Heegner-point corridor or only special-setting constructive evidence
+
+& [SourceSet] is research evidence
+  + [source_001] is Wei Zhang survey "The Birch-Swinnerton-Dyer conjecture and Heegner points"
+    = url: https://math.mit.edu/~wz2113/math/online/CDM2013%20final.pdf
+    = evidence: higher-rank generalizations of Gross-Zagier exist conceptually through arithmetic Gan-Gross-Prasad and related formulas, but fewer results are known and serious obstructions remain
+  + [source_002] is Bertolini-Darmon-Prasanna "Chow-Heegner points on CM elliptic curves and values of p-adic L-functions"
+    = url: https://www.math.mcgill.ca/darmon/pub/Articles/Research/53.BDP3/paper.pdf
+    = evidence: Heegner-point theory gives the best analytic-rank-one results; attempts to broaden systematic point construction remain constrained, while Chow-Heegner constructions provide special-setting point/cycle bridges
+  + [source_003] is Nekovar "On the p-adic height of Heegner cycles"
+    = url: https://webusers.imj-prg.fr/~jan.nekovar/pu/heegner.pdf
+    = evidence: p-adic Gross-Zagier type formulas relate derivatives of p-adic L-functions to p-adic heights of Heegner cycles
+  + [source_004] is Bertolini-Darmon-Prasanna "Generalised Heegner cycles and p-adic Rankin L-series"
+    = url: https://www.math.mcgill.ca/darmon/pub/Articles/Research/51.BDP1/paper.pdf
+    = evidence: generalized Heegner cycles are supported over CM fibers and their heights relate to central critical derivatives of Rankin convolution L-series
+
+& [Finding] is the generator-source shape
+  + [constructive_strength] is real but special-setting
+  + [cycle_source_role] is generalized Heegner cycles provide geometric/arithmetic objects whose heights can contact derivative or leading-coefficient data
+  + [point_source_role] is Chow-Heegner and related constructions may produce rational points in selected settings
+  + [higher_rank_limit] is they do not currently supply a general all-curves rank-r Mordell-Weil generator machine
+  + [best_formal_role] is R-hand periphery source, to be paired with derived-height/regulator measurement
+  + [proof_boundary] is special formulas and constructions are not a full higher-rank BSD proof
+
+& [SymbolicAdjustment] is the updated source-document translation
+  + [old_r_hand_shape] is R-hand growth unfolds rational-point structure
+  + [new_r_hand_shape] is R-hand growth needs an arithmetic source of candidate points or cycles, and generalized Heegner/Chow-Heegner objects are the best visible source family so far
+  + [phase_relation] is derived heights evaluate or constrain these cycle/point sources
+  + [l_hand_relation] is p-adic or complex derivative/leading-coefficient behavior supplies the analytic contact point
+
+& [TwoPartBridgeShape] is the updated BSD research model
+  + [part_001_source] is generalized Heegner cycles, Chow-Heegner points, or related cycle-to-point constructions
+  + [part_002_measurement] is derived heights, p-adic heights, Neron-Tate heights, and regulator nondegeneracy
+  + [missing_link] is a general mechanism showing enough independent sources and nondegenerate pairings to account for rank r
+  + [meaning] is the document's R-hand and phase-correction concepts now split into source and measurement roles
+
+& [NextObstruction] is the remaining gap
+  + [gap] is independence and sufficiency
+  + [bounded_question] is how candidate cycles/points are proven independent and sufficient to match analytic order in known special cases, and why this fails or remains open in higher rank generally
+  + [next_tool_need] is yes
+  + [tool_name] is BSD Source-Measurement Pairing Table
+  + [tool_purpose] is pair candidate source families with height/regulator measurement frameworks and record whether they construct, measure, prove independence, or only suggest structure
+
+& [ToolResolution] is the next heartbeat work result
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Measurement_Pairing_Table.sop
+  + [table_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_measurement_pairing_table_001.sop
+  + [table_finding] is best current pair is special-setting Heegner or Chow-Heegner source family plus derived or p-adic height measurement
+  + [remaining_obstruction] is independence and sufficiency outside special settings
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_pairing_table
+  + [matrix_update] is generalized Heegner cycles stay as best constructive periphery but not a general generator solution
+  + [heartbeat_status] is active every minute

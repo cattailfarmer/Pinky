@@ -1,0 +1,96 @@
+Subject: BSD Higher-Rank Frontier Matrix 001
+
+Description: First populated matrix comparing higher-rank BSD bridge candidates against the jobs required by the adjusted L-hand/R-hand proposition.
+
+& [MatrixFrame] is the comparison setup
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Higher_Rank_Frontier_Matrix.sop
+  + [source_research] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_higher_rank_bridge_001.sop
+  + [adjusted_proposition] is higher-rank revelation potential sits where L-hand higher-order vanishing can be tied to derived-height or regulator nondegeneracy for multiple independent Mordell-Weil directions
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [Candidate_001_DerivedHeights] is a matrix row
+  + [candidate_mechanism] is derived heights
+  + [analytic_order_job] is responds directly to higher-order vanishing by making higher derivatives or derived pairings visible
+  + [generator_construction_job] is more likely measures or constrains generator structure than directly constructs all generators
+  + [independence_job] is promising because nondegenerate derived pairings can distinguish multiple directions
+  + [height_pairing_job] is central
+  + [regulator_job] is central if the derived height determinant becomes a regulator-like object
+  + [leading_coefficient_job] is strong in p-adic/refined BSD style formulations
+  + [known_boundary] is conjectural_frontier_with_active_partial_frameworks
+  + [symbolic_fit] is phase correction becomes the derived height pairing that prevents multiple directions from collapsing into dependence
+  + [next_inquiry] is define which derived height pairing is closest to the source document's phase-corrected field and whether it has a nondegeneracy statement
+
+& [Candidate_002_GeneralizedHeegnerCycles] is a matrix row
+  + [candidate_mechanism] is generalized Heegner cycles and cycle-to-point corridors
+  + [analytic_order_job] is tries to generalize the rank 1 Heegner point bridge into higher-dimensional cycle data
+  + [generator_construction_job] is potentially constructive in special settings
+  + [independence_job] is unclear; cycles may need height pairings or projections to certify independent directions
+  + [height_pairing_job] is important through height pairings of cycles or resulting points
+  + [regulator_job] is indirect unless enough independent classes/points are obtained
+  + [leading_coefficient_job] is potentially strong in special formulas
+  + [known_boundary] is special_setting_and_conjectural_generalization
+  + [symbolic_fit] is R-hand growth as cycle-mediated emergence of rational-point structure
+  + [next_inquiry] is identify when higher-dimensional cycles actually yield rational points and when they only provide analogical support
+
+& [Candidate_003_EulerSystems] is a matrix row
+  + [candidate_mechanism] is Euler-system style control
+  + [analytic_order_job] is usually controls Selmer groups and ranks rather than directly encoding analytic multiplicity
+  + [generator_construction_job] is control-oriented more than generator-constructive
+  + [independence_job] is useful if the system bounds or organizes Selmer rank
+  + [height_pairing_job] is secondary
+  + [regulator_job] is secondary
+  + [leading_coefficient_job] is indirect unless linked to explicit reciprocity laws
+  + [known_boundary] is powerful_partial_method_but_not_whole_bridge
+  + [symbolic_fit] is support scaffold rather than primary L-hand/R-hand bridge
+  + [next_inquiry] is keep as constraint/control periphery unless a specific higher-rank Euler-system result becomes focal
+
+& [Candidate_004_PadicLFunctions] is a matrix row
+  + [candidate_mechanism] is p-adic L-functions and p-adic BSD formulations
+  + [analytic_order_job] is strong for p-adic order of vanishing and leading coefficient analogues
+  + [generator_construction_job] is usually indirect
+  + [independence_job] is mediated by p-adic heights and Selmer structures
+  + [height_pairing_job] is strong when paired with p-adic height theory
+  + [regulator_job] is strong through p-adic regulator terms
+  + [leading_coefficient_job] is central
+  + [known_boundary] is refined_framework_with_special_results_and_conjectural_frontier
+  + [symbolic_fit] is L-hand collapse measured in an alternate analytic lens; phase correction appears through p-adic heights/regulators
+  + [next_inquiry] is compare p-adic derived-height formulations to classical Neron-Tate/regulator meaning
+
+& [Candidate_005_RegulatorNondegeneracy] is a matrix row
+  + [candidate_mechanism] is regulator and height-pairing nondegeneracy
+  + [analytic_order_job] is not enough alone to produce analytic vanishing, but required to make multiple directions measurable
+  + [generator_construction_job] is nonconstructive unless paired with a source of generators
+  + [independence_job] is central
+  + [height_pairing_job] is central
+  + [regulator_job] is central
+  + [leading_coefficient_job] is central in refined BSD once rank is known
+  + [known_boundary] is structural_requirement_not_complete_bridge
+  + [symbolic_fit] is strongest formal home for phase correction
+  + [next_inquiry] is pair regulator nondegeneracy with a generator-producing candidate; do not treat it as sufficient by itself
+
+& [MatrixFinding] is the current conclusion
+  + [best_primary_focus] is derived heights plus regulator nondegeneracy
+  + [best_constructive_periphery] is generalized Heegner cycles
+  + [best_control_periphery] is Euler-system style control
+  + [best_refined_formula_lens] is p-adic L-functions and p-adic BSD formulations
+  + [shape_correction] is no single candidate currently does all jobs; the best emerging shape is a two-part bridge: generator/cycle source plus nondegenerate height/regulator measurement
+  + [symbolic_translation] is R-hand growth needs a generator source; phase correction needs height/regulator nondegeneracy; L-hand collapse needs leading-coefficient or derived-height contact
+
+& [NextResearchTarget] is the next bounded deep research
+  + [target] is derived heights as phase-correction mechanism
+  + [bounded_question] is which derived-height construction most directly connects higher-order vanishing to regulator-like nondegeneracy in higher-rank BSD settings
+  + [priority] is high
+  + [reason] is the matrix identifies derived heights as the cleanest next focus for turning symbolic phase correction into mathematical structure
+
+& [DerivedHeightResearchResolution] is the next heartbeat result
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_derived_heights_001.sop
+  + [resolution] is derived heights are the primary phase-correction measurement mechanism
+  + [refined_mapping] is phase correction as higher-order height/regulator hierarchy after ordinary pairings degenerate
+  + [remaining_gap] is measurement is not construction
+  + [next_target] is generalized Heegner cycles as possible R-hand generator/cycle source
+
+& [GeneralizedHeegnerResearchResolution] is the next heartbeat result
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_generalized_heegner_cycles_001.sop
+  + [resolution] is generalized Heegner and Chow-Heegner objects are the best visible R-hand source family, but special-setting and not a general all-curves generator machine
+  + [two_part_bridge] is source family plus height/regulator measurement
+  + [next_tool_need] is BSD Source-Measurement Pairing Table

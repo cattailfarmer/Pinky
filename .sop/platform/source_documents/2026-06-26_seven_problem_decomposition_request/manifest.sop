@@ -1,0 +1,17 @@
+Subject: Seven Problem Decomposition Request Manifest
+
+Description: Source manifest for the six-problem decomposition framework.
+
+& [SevenProblemDecompositionManifest] is the source manifest
+  + [manifest_uuid] is 086ebf2f-0fa5-40b0-bff7-4d69209a5e4c
+  + [source_uuid] is 8fb44a46-7ee0-41f7-b06a-16f361859442
+  + [captured_at] is 2026-06-26
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_problem_decomposition_request\Dictated_Seven_Problem_Decomposition_Request_Source.sop
+  + [framework_index] is C:\Project\Pinky\.sop\platform\seven_math_problems\SevenProblemDecompositionIndex.sop
+  + [formal_problem_space_root] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces
+  + [document_analysis_root] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis
+  + [primary_imported_text_source] is C:\Project\Pinky\seven math problems\Seven Millennium Math Problems.txt
+  + [official_reference] is https://www.claymath.org/millennium-problems/
+
+  = must: separate official problem framing from imported symbolic analysis
+  = must: use SJS before promoting any analysis into canonical proof or build authority

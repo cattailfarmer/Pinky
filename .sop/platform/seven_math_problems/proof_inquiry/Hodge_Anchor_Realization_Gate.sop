@@ -1,0 +1,40 @@
+Subject: Hodge Anchor Realization Gate
+
+Description: Math inquiry tool for testing whether a symbolic memory anchor can become a formal Hodge class and then an algebraic cycle class.
+
+& [HodgeAnchorRealizationGate] is a project-local math inquiry tool
+  + [tool_uuid] is 58a40ac2-c5f7-487a-b9dd-0f450bb1b607
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_periphery_proof_shape_001.sop
+  + [role] is test memory-anchor language against the formal sequence: cohomology class, Hodge type, rationality, algebraic cycle realization
+  + [not_role] is proving Hodge, validating LLM cluster analogies, or treating stable representation as algebraic cycle evidence
+
+& [ClosureLockSet] is the required gate
+  + [lock_001_variety_scope] is smooth projective complex variety and codimension are specified
+  + [lock_002_hodge_type] is the candidate class is of type (p,p)
+  + [lock_003_rationality] is the class is rational
+  + [lock_004_cycle_class_map] is an algebraic cycle class map target is specified
+  + [lock_005_realization] is an algebraic cycle or rational combination of cycles is produced or known by theorem
+  + [lock_006_variant_boundary] is rational versus integral and generalized variants are not conflated
+
+& [UseProcedure] is the gate workflow
+  + [step_001_scope] is name variety, dimension, codimension, and coefficient field
+  + [step_002_anchor] is name the proposed memory anchor or stable class
+  + [step_003_type_check] is test Hodge type and rationality
+  + [step_004_realization_check] is determine whether an algebraic cycle realizes the class
+  + [step_005_boundary_check] is classify known case, open case, false variant, analogy, or outside
+
+  = must: distinguish Hodge class recognition from algebraic cycle construction
+  = must: distinguish rational Hodge conjecture from integral variants
+  = must: preserve known cases separately from open frontier
+  - never: treat stable conceptual clustering as a Hodge class without a cohomology object
+
+& [CurrentApplication] is the first planned gate application
+  + [gate_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_anchor_realization_gate_001.sop
+  + [starting_candidates] is memory anchor, phase-stable form, rational algebraic behavior, and representation cluster analogy
+
+(hodge_anchor_realization_gate) :memory_anchor: /Hodge type, rationality, cycle realization/ |analogy|
+  + [inside] is Hodge-class-to-cycle realization checking
+  + [boundary] is cohomological stability is not algebraic realization
+  |outside| proof by metaphor, proof by LLM clusters, and integral/rational variant confusion

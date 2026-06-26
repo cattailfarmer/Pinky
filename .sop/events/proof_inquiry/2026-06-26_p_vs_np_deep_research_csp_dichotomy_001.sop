@@ -1,0 +1,61 @@
+Subject: P vs NP Deep Research CSP Dichotomy 001
+
+Description: Bounded deep-research pass on whether the source document's phase-coherence and correction-field language can responsibly map to constraint satisfaction without inflating tractable subclasses into P vs NP proof.
+
+& [DeepResearchUnit] is a Deep_Research_Priority_Gate application
+  + [event_uuid] is 9976a5f6-7da2-4792-9da6-428ecf563f10
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [trigger_signal] is CSP as semantic translation for phase coherence, local correction, and structure-guided search
+  + [resolution_gap] is low-resolution understanding of when CSP structure means polynomial-time tractability versus NP-complete hardness
+  + [proof_obligation] is prevent a tractable-subclass result from being misread as P equals NP
+
+& [SourceSet] is the bounded source frame
+  + [source_001] is Clay Mathematics Institute P vs NP official problem description
+    = link: https://www.claymath.org/millennium/p-vs-np/
+    = use: preserve the verifier-versus-solver target
+  + [source_002] is Stephen Cook official Clay P vs NP problem statement PDF
+    = link: https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf
+    = use: formalize the problem as deterministic versus nondeterministic polynomial time
+  + [source_003] is Bulatov A Dichotomy Theorem for Nonuniform CSPs
+    = link: https://www.cs.sfu.ca/~abulatov/papers/focs17.pdf
+    = use: finite-domain nonuniform CSPs split into polynomial-time or NP-complete cases
+  + [source_004] is Zhuk A Proof of CSP Dichotomy Conjecture
+    = link: https://ieee-focs.org/FOCS-2017-Papers/3464a331.pdf
+    = use: independent confirmation of the finite-domain CSP dichotomy boundary
+  + [source_005] is Schaefer Boolean satisfiability dichotomy tradition
+    = link: https://dl.acm.org/doi/10.1145/800133.804350
+    = use: Boolean CSP/SAT fragments split into tractable and NP-complete cases
+
+& [ResearchFindings] is the extracted theorem boundary
+  + [finding_001] is CSP is a natural formal home for source language about local coherence and correction
+    = meaning: variables, domains, and constraints can represent local phase-consistency demands
+  + [finding_002] is finite-domain CSP has a dichotomy shape
+    = meaning: fixed constraint languages fall on a polynomial-time side or an NP-complete side under known dichotomy theorems
+  + [finding_003] is tractable structure is real but local
+    = meaning: special algebraic or relational structure can yield polynomial-time algorithms for restricted CSP families
+  + [finding_004] is the dichotomy blocks overclaim
+    = meaning: discovering coherence in one tractable CSP class does not imply all NP problems are easy
+  + [finding_005] is P equals NP significance requires the NP-complete side
+    = meaning: the source-style method must solve an NP-complete CSP/SAT family in deterministic polynomial time, not merely identify why some restricted family is tractable
+
+& [SymbolicTranslation] is the adjusted source mapping
+  + [phase_coherence] maps_to satisfying a family of local constraints simultaneously
+  + [correction_field] maps_to propagation, consistency checking, local repair, or algebraic closure operation
+  + [resonance_key] maps_to polymorphism, invariant, canonical form, or tractable structural restriction
+  + [sealed_curvature_or_mass_gap] maps_to hard constraint language or instance structure that resists local propagation
+  + [spiral_walk] maps_to search, propagation, or constructive assignment algorithm
+
+& [PropositionAdjustment] is the new P vs NP shape
+  + [old_claim] is phase-coherent structure makes hard problems solvable
+  + [adjusted_claim] is phase-coherent structure may identify tractable CSP subclasses or useful heuristics, but it must cross an NP-complete constraint-language boundary with a polynomial-time proof before it bears on P equals NP
+  + [promising_direction] is use CSP as the formal sandbox for translating symbolic coherence into variables, constraints, invariants, and algorithms
+  + [open_lock] is no source-derived invariant or correction operation has been shown to solve an NP-complete CSP class
+  + [solution_potential] is moderate for tractable-subclass insight, low for full P vs NP solution without a new worst-case algorithm
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a CSP Coherence Translation Gate that asks whether a proposed resonance key is a polymorphism/invariant for a tractable class, a heuristic for NP-complete cases, or an unsupported metaphor
+  + [tool_need] is evident
+    = reason: repeated translation now needs a narrow classifier between tractable CSP meaning and P vs NP overclaim
+  + [heartbeat_status] is active every minute

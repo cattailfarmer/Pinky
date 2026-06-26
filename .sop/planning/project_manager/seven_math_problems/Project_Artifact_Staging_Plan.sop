@@ -1,0 +1,46 @@
+Subject: Seven Math Problems Project Artifact Staging Plan
+
+Description: Non-mutating staging plan for preserving the seven math problems project artifact surface in Git after user approval.
+
+& [StagingPlan] is a project-manager artifact
+  + [plan_uuid] is 180ea317-943d-4dff-856e-ffb5b0f53727
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T18:24Z
+  + [reason] is project-specific analysis artifacts are coherent but untracked
+  + [status] is approved_for_regular_research_commits
+  + [approval] is user instructed "commit regularly" as part of staged reflection
+
+& [IncludeSet] is the proposed project-specific staging surface
+  + [include_001] is C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems
+  + [include_002] is C:\Project\Pinky\.sop\platform\seven_math_problems
+  + [include_003] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus
+  + [include_004] is C:\Project\Pinky\.sop\events\project_intake\2026-06-26_seven_math_problems_initial_analysis_001.sop
+  + [include_005] is C:\Project\Pinky\.sop\events\project_intake\2026-06-26_seven_math_problems_source_corpus_extraction_001.sop
+  + [include_006] is C:\Project\Pinky\.sop\events\analyses
+  + [include_007] is C:\Project\Pinky\.sop\events\proof_inquiry
+  + [include_008] is C:\Project\Pinky\.sop\events\project_reflections
+  + [include_009] is C:\Project\Pinky\.sop\runtime\sop_node\math_bridge.py
+  + [include_010] is C:\Project\Pinky\.sop\runtime\demos\math_bridge.py
+  + [include_011] is C:\Project\Pinky\.sop\runtime\tests\test_sensitivity_scan.py
+  + [include_012] is C:\Project\Pinky\.sop\runtime\sop_node\__init__.py
+  + [include_013] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_project_intake
+  + [include_014] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_problem_decomposition_request
+  + [include_015] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_deep_research_priority
+  + [include_016] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_build_project_git_reflection
+
+& [ExcludeSet] is the protection boundary
+  + [exclude_001] is unrelated modified .sop platform files outside seven_math_problems unless user separately requests framework commit
+  + [exclude_002] is unrelated AttentionFramework, unreal_platform_project, AlienHand, RiemannHypothesis, and other workspace surfaces
+  + [exclude_003] is raw imported source originals under C:\Project\Pinky\seven math problems unless user wants them versioned
+  + [exclude_004] is any generated or unrelated untracked files not named in IncludeSet
+
+& [SuggestedCommit] is the possible preservation commit
+  + [branch_policy] is use existing branch unless user requests a new codex/ branch
+  + [commit_message] is Preserve seven math problems SOP research artifacts
+  + [pre_commit_checks] is git status scoped to IncludeSet, python -m unittest discover runtime\tests from C:\Project\Pinky\.sop
+  + [post_commit_record] is add git commit directive only after actual successful commit
+
+& [RiskBoundary] is the current decision state
+  + [risk] is unrelated workspace changes must remain outside this commit
+  + [safe_next] is stage only IncludeSet artifacts, run SOP runtime tests, then commit
+  + [heartbeat_status] is active every minute

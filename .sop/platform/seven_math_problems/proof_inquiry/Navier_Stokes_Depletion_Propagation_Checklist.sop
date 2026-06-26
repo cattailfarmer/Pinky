@@ -1,0 +1,47 @@
+Subject: Navier-Stokes Depletion Propagation Checklist
+
+Description: Math inquiry tool for checking whether a geometric depletion or alignment candidate is conditional, dynamically propagated, scale-relevant, and strong enough to close a continuation criterion.
+
+& [NavierStokesDepletionPropagationChecklist] is a project-local math inquiry tool
+  + [tool_uuid] is 315fe3f4-bcbb-44ee-9288-9d012715a07c
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_deep_research_geometric_depletion_001.sop
+  + [role] is test whether phase-correction-as-geometric-depletion can become a proof-shaped anti-blowup mechanism
+  + [not_role] is proving regularity from assumed alignment or treating numerical depletion as theorem evidence
+
+& [ClosureLockSet] is the required gate
+  + [lock_001_conditional_regularizer] is the alignment/depletion condition is known to imply regularity
+  + [lock_002_dynamic_propagation] is the condition is derived from or preserved by the Navier-Stokes evolution for arbitrary smooth data
+  + [lock_003_scaling_relevance] is the condition controls a critical or continuation-level quantity
+  + [lock_004_anti_concentration] is the condition prevents vortex stretching or critical norm concentration
+  + [lock_005_continuation_closure] is the condition closes a continuation criterion globally
+
+& [ChecklistStatusSet] is status vocabulary
+  + [closed] is supported enough for the scoped claim
+  + [conditional] is true if assumed but not derived
+  + [partial] is supported only in special cases or under extra hypotheses
+  + [open] is unresolved
+  + [outside] is not relevant to the scoped claim
+
+& [UseProcedure] is the checklist workflow
+  + [step_001_scope_candidate] is name the geometric depletion candidate
+  + [step_002_fill_locks] is assign each lock status and evidence
+  + [step_003_find_first_open_lock] is identify the first lock preventing proof-shaped promotion
+  + [step_004_adjust_proposition] is narrow, split, research, or retire the candidate
+  + [step_005_route] is send open locks to deep research or project reflection
+
+  = must: separate conditional regularity from propagated regularity
+  = must: preserve scaling relevance before calling a condition anti-blowup
+  = must: require continuation closure before proof-shaped promotion
+  - never: treat a criterion as a proof that its hypotheses always hold
+
+& [CurrentApplication] is the first checklist
+  + [checklist_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_depletion_propagation_checklist_001.sop
+  + [current_result] is not_closed
+  + [first_open_lock] is dynamic_propagation
+
+(navier_stokes_depletion_propagation_checklist) :geometric_depletion_candidate: /conditional regularity, propagation, scaling, anti-concentration, continuation/ |regularity proof|
+  + [inside] is depletion propagation checking
+  + [boundary] is assumed alignment is not global regularity
+  |outside| proof by condition, proof by numerics, and smoothing metaphor without estimates

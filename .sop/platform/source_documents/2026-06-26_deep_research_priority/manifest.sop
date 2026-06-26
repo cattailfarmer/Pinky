@@ -1,0 +1,14 @@
+Subject: Deep Research Priority Source Manifest
+
+Description: Source manifest for adding deep research priority to seven math problems periphery inquiry.
+
+& [DeepResearchPriorityManifest] is the source manifest
+  + [manifest_uuid] is 5ead04d0-5a63-4a57-9ea2-6ee6dd12be1d
+  + [source_uuid] is 6392c92d-3533-4f08-9560-8970ce16c7f1
+  + [captured_at] is 2026-06-26
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_deep_research_priority\Dictated_Deep_Research_Priority_Source.sop
+  + [canonical_target] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+  + [source_role] is user_directive_for_research_priority_setup
+
+  = must: route low-resolution high-curiosity periphery through deep research before proof promotion
+  = must: distinguish research priority from proof authority

@@ -1,0 +1,52 @@
+Subject: Yang-Mills Periphery Proof Shape 001
+
+Description: First periphery-guided proof-shaping pass for Yang-Mills existence and mass gap using the source document's sealed-curvature, symbolic-mass, and phase-key language.
+
+& [FocalSubject] is the fifth proof-inquiry lane
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [formal_problem_space] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Yang_Mills_Problem_Space.sop
+  + [document_analysis] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Yang_Mills_Document_Analysis.sop
+  + [source_section] is Spiral Six: Yang-Mills and the Mass Gap
+  + [inquiry_rank] is 5 after BSD, Navier-Stokes, Hodge, and P vs NP paused at open locks
+
+& [IntendedPurpose] is the mathematical target shape
+  + [purpose] is prove that for every compact simple gauge group G, a nontrivial quantum Yang-Mills theory exists on four-dimensional space-time and has a positive mass gap
+  + [existence_core] is construct a rigorous quantum field theory satisfying axioms at least as strong as the cited constructive or axiomatic QFT frameworks
+  + [gap_core] is prove that the Hamiltonian or energy spectrum has no nonzero states arbitrarily close to the vacuum
+  + [authority_floor] is a construction of the theory plus a spectral lower-bound proof
+
+& [DocumentProposition] is the source-implied proposition
+  + [raw_shape] is mass is sealed curvature, glyphic enclosure, or symbolic encryption that resists unfolding without the correct resonance key
+  + [candidate_receptive_form] is localized stable excitations may arise from nonabelian field self-interaction, confinement-like structure, or spectral separation
+  + [meaning_role] is heuristic for why a positive mass scale might emerge from field structure
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [SymbolicToFormalMap] is the first translation
+  + [sealed_curvature] maps_to gauge-field curvature and nonabelian self-interaction, but only after a rigorous field construction exists
+  + [glyphic_enclosure] maps_to confinement or gauge-invariant bound states as a possible physical intuition
+  + [symbolic_encryption] maps_to inaccessible nonperturbative structure or gauge-invariant sector, not proof
+  + [phase_key] maps_to gauge choice, invariant observable, or constructive method, depending on formalization
+  + [mass_gap] maps_to spectral gap above the vacuum in the quantum theory
+
+& [BetterProblemShape] is the improved shape after first probe
+  + [old_shape] is mass appears when field tension crystallizes into locked packets
+  + [adjusted_shape] is construct the quantum Yang-Mills measure/Hilbert-space theory, prove axioms, identify gauge-invariant states or observables, and prove positive spectral gap
+  + [first_gate] is existence-gap separation gate
+  + [first_open_question] is whether the source's sealed-curvature language maps to construction, confinement mechanism, or spectral-gap proof
+
+& [ProofObligationMap] is the current gate set
+  + [obligation_001] is choose the formal framework, such as Wightman or Osterwalder-Schrader route
+  + [obligation_002] is construct nontrivial four-dimensional quantum Yang-Mills theory for compact simple G
+  + [obligation_003] is establish gauge invariance and required axiomatic properties
+  + [obligation_004] is define Hamiltonian or reconstructed spectrum
+  + [obligation_005] is prove a positive gap above the vacuum
+  + [obligation_006] is separate lattice/numerical/physical confinement evidence from continuum proof
+
+& [NextToolNeed] is the emergent tool shape
+  + [tool_needed] is yes
+  + [tool_name] is Yang-Mills Existence-Gap Separation Gate
+  + [tool_purpose] is classify symbolic mass claims by whether they address construction, gauge-invariant observables, confinement intuition, spectral gap, lattice approximation, or outside metaphor
+
+& [Disposition] is the pass result
+  + [decision] is continue_with_existence_gap_separation_gate
+  + [heartbeat_status] is active every minute

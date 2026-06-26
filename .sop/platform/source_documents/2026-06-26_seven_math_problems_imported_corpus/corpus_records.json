@@ -1,0 +1,80 @@
+﻿[
+    {
+        "SourceId":  "SMP_SOURCE_001",
+        "FileName":  "Emergent Toroidal Structure.odt",
+        "OriginalPath":  "C:\\Project\\Pinky\\seven math problems\\Emergent Toroidal Structure.odt",
+        "Extension":  ".odt",
+        "OriginalBytes":  45216,
+        "OriginalSha256":  "4956397ada1beec09645cff374db8066540e76ef7b438b206f8ef18c551e00ea",
+        "SnapshotPath":  "C:\\Project\\Pinky\\.sop\\platform\\source_documents\\2026-06-26_seven_math_problems_imported_corpus\\extracted_text_snapshots\\Emergent_Toroidal_Structure.txt",
+        "SnapshotSha256":  "fbd313875c246e96111ea44b604a239920f6835225f82edd23f94ef53e150c62",
+        "ExtractionMethod":  "odt_content_xml_zip_extract_plain_text",
+        "WordCount":  773,
+        "CharCount":  5444
+    },
+    {
+        "SourceId":  "SMP_SOURCE_002",
+        "FileName":  "Observations 2.odt",
+        "OriginalPath":  "C:\\Project\\Pinky\\seven math problems\\Observations 2.odt",
+        "Extension":  ".odt",
+        "OriginalBytes":  38460,
+        "OriginalSha256":  "06d12b029053f2606d058291a5dad208b9f8f08245a0d3d8311483b2dd3bdac6",
+        "SnapshotPath":  "C:\\Project\\Pinky\\.sop\\platform\\source_documents\\2026-06-26_seven_math_problems_imported_corpus\\extracted_text_snapshots\\Observations_2.txt",
+        "SnapshotSha256":  "08d553f50de1349a1e06948ef3f8b03a62f857324a533b15c02359861c457a2c",
+        "ExtractionMethod":  "odt_content_xml_zip_extract_plain_text",
+        "WordCount":  1073,
+        "CharCount":  7711
+    },
+    {
+        "SourceId":  "SMP_SOURCE_003",
+        "FileName":  "Observations.odt",
+        "OriginalPath":  "C:\\Project\\Pinky\\seven math problems\\Observations.odt",
+        "Extension":  ".odt",
+        "OriginalBytes":  36016,
+        "OriginalSha256":  "b530517228694d32f21fd4a13e9a47793c1372b830baa766300956977b677b58",
+        "SnapshotPath":  "C:\\Project\\Pinky\\.sop\\platform\\source_documents\\2026-06-26_seven_math_problems_imported_corpus\\extracted_text_snapshots\\Observations.txt",
+        "SnapshotSha256":  "0e55f3fceecdea3c80932d7d1249d695cbc168e5de38d4b7b194d8864942a631",
+        "ExtractionMethod":  "odt_content_xml_zip_extract_plain_text",
+        "WordCount":  531,
+        "CharCount":  3888
+    },
+    {
+        "SourceId":  "SMP_SOURCE_004",
+        "FileName":  "seven millenium math problems 2.odt",
+        "OriginalPath":  "C:\\Project\\Pinky\\seven math problems\\seven millenium math problems 2.odt",
+        "Extension":  ".odt",
+        "OriginalBytes":  37516,
+        "OriginalSha256":  "bf687bad18d76537a229b56a94ddac089749b87750836874ec6be9983a6b6788",
+        "SnapshotPath":  "C:\\Project\\Pinky\\.sop\\platform\\source_documents\\2026-06-26_seven_math_problems_imported_corpus\\extracted_text_snapshots\\seven_millenium_math_problems_2.txt",
+        "SnapshotSha256":  "41190c85bd839b85b574106d44e86e61fe5bd883a63786dab603c04863dc0663",
+        "ExtractionMethod":  "odt_content_xml_zip_extract_plain_text",
+        "WordCount":  1267,
+        "CharCount":  8078
+    },
+    {
+        "SourceId":  "SMP_SOURCE_005",
+        "FileName":  "seven millenium math problems.odt",
+        "OriginalPath":  "C:\\Project\\Pinky\\seven math problems\\seven millenium math problems.odt",
+        "Extension":  ".odt",
+        "OriginalBytes":  41387,
+        "OriginalSha256":  "5bf3a72a5d8c084ef5e9b238381c7e3709760599953e66ead01325317643e773",
+        "SnapshotPath":  "C:\\Project\\Pinky\\.sop\\platform\\source_documents\\2026-06-26_seven_math_problems_imported_corpus\\extracted_text_snapshots\\seven_millenium_math_problems.txt",
+        "SnapshotSha256":  "740536dd3b4d96922d3afc36fecd540cacee6b0be4c0a26f622de9d086f799c5",
+        "ExtractionMethod":  "odt_content_xml_zip_extract_plain_text",
+        "WordCount":  3069,
+        "CharCount":  20038
+    },
+    {
+        "SourceId":  "SMP_SOURCE_006",
+        "FileName":  "Seven Millennium Math Problems.txt",
+        "OriginalPath":  "C:\\Project\\Pinky\\seven math problems\\Seven Millennium Math Problems.txt",
+        "Extension":  ".txt",
+        "OriginalBytes":  20138,
+        "OriginalSha256":  "2a8e70573a298883955597cd4351dc5e0a7be60c31211ca7cdf76a08b801a160",
+        "SnapshotPath":  "C:\\Project\\Pinky\\.sop\\platform\\source_documents\\2026-06-26_seven_math_problems_imported_corpus\\extracted_text_snapshots\\Seven_Millennium_Math_Problems.txt",
+        "SnapshotSha256":  "9a51ab5299f19f5453349a89d7d757a64744b663280838b54dc0219f66d68b45",
+        "ExtractionMethod":  "copied_txt_verbatim",
+        "WordCount":  3076,
+        "CharCount":  20140
+    }
+]

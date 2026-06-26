@@ -1,0 +1,50 @@
+Subject: Yang-Mills Existence-Gap Separation Gate 001
+
+Description: First application of the Yang-Mills Existence-Gap Separation Gate to the source document's sealed-curvature and symbolic-mass proposition.
+
+& [GateApplication] is a proof-inquiry event
+  + [event_uuid] is e7006816-8f07-4380-a8e5-e1568728d98f
+  + [project] is seven math problems
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Existence_Gap_Separation_Gate.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_periphery_proof_shape_001.sop
+  + [source_claim] is tension crystallizes into phase-locked curvature packets whose resistance to unfolding is mass
+
+& [SourceBackedBoundary] is the external research boundary
+  + [clay_overview] is experiment and simulations suggest a mass gap, but no proof is known
+    = source: https://www.claymath.org/millennium/yang-mills-the-maths-gap/
+  + [jaffe_witten_statement] is prove nontrivial quantum Yang-Mills theory exists on R4 for compact simple G and has a mass gap
+    = source: https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf
+  + [mass_gap_form] is the Hamiltonian has no spectrum in an interval (0, Delta) for some positive Delta
+    = source: https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf
+
+& [GateReading] is the first lock evaluation
+  + [lock_001_formal_framework] is failed
+    = reason: the source document names no Wightman, Osterwalder-Schrader, or equivalent framework
+  + [lock_002_continuum_construction] is failed
+    = reason: no four-dimensional continuum quantum Yang-Mills construction is supplied
+  + [lock_003_axioms] is failed
+    = reason: no positivity, covariance, locality, spectral condition, or reconstruction proof is supplied
+  + [lock_004_gauge_invariant_content] is failed
+    = reason: no gauge-invariant observable or state-space construction is supplied
+  + [lock_005_nontriviality] is failed
+    = reason: no nontriviality proof is supplied
+  + [lock_006_gap_statement] is partial
+    = reason: the source gestures toward a lowest nonzero mass but does not state spectral gap precisely
+  + [lock_007_gap_proof] is failed
+    = reason: no positive continuum spectral lower bound is proved
+  + [lock_008_evidence_boundary] is passed
+    = reason: current SOP record explicitly separates symbolic, simulation, and physical intuition from proof authority
+
+& [PropositionAdjustment] is the current Yang-Mills shape
+  + [old_claim] is sealed curvature explains the mass gap
+  + [adjusted_claim] is sealed curvature may be a heuristic for confinement-like localization or spectral separation, but a proof must construct the quantum field theory and prove a positive spectral gap
+  + [best_potential] is moderate as conceptual map for gap intuition
+  + [solution_potential] is low until existence and spectral proof mechanisms appear
+  + [first_open_lock] is no constructive continuum Yang-Mills framework is supplied
+
+& [NextInquiry] is the next periphery target
+  + [recommended_next] is deep research the construction route boundary: Wightman versus Osterwalder-Schrader, Euclidean lattice limits, reflection positivity, and mass gap reconstruction
+  + [deep_research_gate] is active
+    = reason: construction framework and theorem boundary are low-resolution and block responsible promotion
+  + [heartbeat_status] is active every minute

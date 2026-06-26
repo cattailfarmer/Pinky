@@ -1,0 +1,92 @@
+Subject: BSD Periphery Proof Shape 001
+
+Description: First periphery-guided proof-shaping pass for Birch and Swinnerton-Dyer using the source document's L-hand/R-hand approach.
+
+& [FocalSubject] is the first proof-inquiry lane
+  + [problem] is Birch and Swinnerton-Dyer Conjecture
+  + [formal_problem_space] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Birch_Swinnerton_Dyer_Problem_Space.sop
+  + [document_analysis] is C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Birch_Swinnerton_Dyer_Document_Analysis.sop
+  + [source_section] is Spiral Four: The Birch and Swinnerton-Dyer Conjecture
+  + [inquiry_rank] is 1
+
+& [IntendedPurpose] is the mathematical target shape
+  + [purpose] is relate analytic vanishing of an elliptic curve L-function to algebraic rank of rational points
+  + [analytic_side] is order of vanishing of L(E,s) at the central point
+  + [algebraic_side] is rank of E(Q), the finitely generated group of rational points
+  + [bridge_need] is a controlled correspondence from analytic collapse to algebraic generator structure
+
+& [DocumentProposition] is the source-implied proposition
+  + [raw_shape] is L-hand collapse marks the L-function zero while R-hand growth unfolds rational-point structure
+  + [candidate_receptive_form] is analytic vanishing may be treated as a collapse signature whose multiplicity predicts the independent algebraic directions available for rational-point generation
+  + [meaning_role] is a dual-aspect bridge between analytic degeneracy and algebraic emergence
+  + [proof_status] is inquiry_candidate_not_proof
+
+& [PeripheryTrigger] is the curiosity trigger
+  + [trigger_type] is mixed accumulation_trigger and heat_zone_crossing_trigger
+  + [accumulation_signal] is repeated document pattern of collapse/growth, phase correction, rational directions, and structure-over-enumeration
+  + [heat_zone_crossing] is crossing from symbolic handedness language into an actual analytic/algebraic duality in BSD
+  + [restraint_gate] is proof-status boundary and formal arithmetic-geometry mapping requirement
+
+& [SectionedPeriphery] is the divided inquiry context
+  + [internal_periphery_section] is local SOP files for BSD problem space, BSD document analysis, six-problem approach fit, and decomposition index
+  + [primary_document_set] is C:\Project\Pinky\.sop\platform\seven_math_problems\problem_spaces\Birch_Swinnerton_Dyer_Problem_Space.sop, C:\Project\Pinky\.sop\platform\seven_math_problems\document_analysis\Birch_Swinnerton_Dyer_Document_Analysis.sop, and C:\Project\Pinky\seven math problems\Seven Millennium Math Problems.txt
+  + [secondary_document_set] is C:\Project\Pinky\.sop\events\analyses\2026-06-26_six_problem_approach_fit_analysis_001.sop and C:\Project\Pinky\.sop\events\analyses\2026-06-26_seven_math_problems_suggested_approaches_analysis_001.sop
+  + [external_periphery_section] is standard arithmetic geometry context, elliptic curves, L-functions, Mordell-Weil theorem, analytic rank, algebraic rank, and known BSD partial results
+  + [internal_consistency_stability] is medium because local source layers agree on the dual-handed bridge
+  + [external_model_stability] is medium_low until exact formal references and known theorem boundaries are added
+
+& [CandidateDimensions] is the first dimensional probe
+  + [dimension_001_analytic_vanishing] is order of zero as collapse multiplicity
+    = distinctness: high
+    = subject_fit: high
+    = evidence_fit: medium
+    = caution_load: low
+  + [dimension_002_mordell_weil_rank] is independent rational directions as rank/generator structure
+    = distinctness: high
+    = subject_fit: high
+    = evidence_fit: medium
+    = caution_load: low
+  + [dimension_003_generator_growth_walk] is R-hand traversal as generation of rational points from known points
+    = distinctness: medium
+    = subject_fit: medium_high
+    = evidence_fit: low_to_medium
+    = caution_load: medium
+  + [dimension_004_height_descent_or_regulator] is possible missing bridge between generators and measured algebraic complexity
+    = distinctness: high
+    = subject_fit: high
+    = evidence_fit: low_pending_research
+    = caution_load: medium
+  + [dimension_005_special_value_leading_term] is possible bridge from zero order to refined BSD leading coefficient data
+    = distinctness: high
+    = subject_fit: high
+    = evidence_fit: low_pending_research
+    = caution_load: medium
+
+& [BetterProblemShape] is the improved shape after first probe
+  + [original_shape] is prove BSD by symbolic collapse/growth resonance
+  + [adjusted_shape] is investigate whether the collapse/growth frame can organize a traceable mapping between analytic rank, algebraic rank, generator emergence, and refined leading-term data
+  + [narrowed_proposition] is L-hand/R-hand language is promising if it can be grounded in rank, generators, height/regulator behavior, and L-function leading-term structure
+  + [proof_obligation_001] is define the map from zero order to independent rational directions without circularly assuming BSD
+  + [proof_obligation_002] is explain how R-hand growth identifies or constructs Mordell-Weil generators
+  + [proof_obligation_003] is account for refined BSD data beyond rank, including regulator, torsion, Tamagawa factors, and Tate-Shafarevich group if the proposition claims full BSD
+  + [proof_obligation_004] is compare against known partial results and avoid contradicting established theorem boundaries
+
+& [AdjustmentDecision] is the current proof-shape decision
+  + [decision] is narrow_and_continue
+  + [why] is the symbolic proposition has unusually good structural fit but is not yet a proof path
+  + [next_probe] is build a BSD mapping table from L-hand/R-hand terms to formal arithmetic objects and identify the first non-circular lemma candidate
+  + [retired_claim] is "the conjecture is confirmed" because no proof has been supplied
+  + [kept_claim] is "the dual-handed frame may help organize analytic-to-algebraic correspondence"
+
+& [DevelopedToolUse] is the first math-tool development response
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Math_Bridge_Map_Tool.sop
+  + [runtime_module] is C:\Project\Pinky\.sop\runtime\sop_node\math_bridge.py
+  + [bridge_map_output] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.sop
+  + [hypergraph_output] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_math_bridge_map_001.hg.sop
+  + [result] is seven open proof obligations surfaced for the L-hand/R-hand mapping
+
+& [DeepResearchUpdate] is the first low-resolution periphery resolution
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_phase_corrected_field_001.sop
+  + [resolved_signal] is phase-corrected field
+  + [new_mapping] is Neron-Tate height pairing and regulator inside refined BSD
+  + [next_tool_need] is BSD Rank-Bridge Case Splitter

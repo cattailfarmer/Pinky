@@ -1,0 +1,18 @@
+Subject: Navier-Stokes Existence and Smoothness Problem Space
+
+& [ProblemSpace] is formal mathematical framing
+  + [domain] is partial differential equations and mathematical fluid dynamics
+  + [core_objects] are incompressible Navier-Stokes equations in three dimensions, velocity field, pressure, viscosity, smooth initial data, global existence, smoothness, and finite-time blowup
+  + [central_question] is whether smooth physically reasonable initial data always yields smooth global solutions or whether singularities can form
+  + [official_status] is open as of 2026-06-26 according to Clay Mathematics Institute public Millennium Problems framing
+  + [authority_floor] is exact PDE statement, function spaces, energy estimates, regularity criteria, and rigorous proof
+
+& [Delineation] is the problem boundary
+  + [inside] is existence and regularity for 3D incompressible Navier-Stokes
+  + [boundary] is how nonlinear fluid evolution distributes energy across scales
+  + [outside] is symbolic smoothing language unless translated into estimates, compactness, regularity, or contradiction proof
+
+& [SupportNeeds] is required support for canonical work
+  = need: mathematical definition of "smooth", "global", and allowed initial conditions
+  = need: claim mapping from symbolic surface tension to PDE energy or vorticity behavior
+  = need: evidence for any proposed anti-blowup mechanism

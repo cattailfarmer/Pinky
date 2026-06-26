@@ -1,0 +1,43 @@
+Subject: P vs NP Complexity Target Gate
+
+Description: Math inquiry tool for testing whether a symbolic structure-guided traversal claim has the formal ingredients needed to bear on P vs NP.
+
+& [PvsNPComplexityTargetGate] is a project-local math inquiry tool
+  + [tool_uuid] is e7f84d4d-b45b-4c9a-8d96-54fc92d21eda
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_periphery_proof_shape_001.sop
+  + [role] is test symbolic traversal claims against decision-problem, verifier, reduction, algorithm, runtime, and lower-bound requirements
+  + [not_role] is proving P vs NP or validating non-decision-problem analogies
+
+& [ClosureLockSet] is the required gate
+  + [lock_001_language_target] is a language or decision problem is specified
+  + [lock_002_np_membership] is polynomial verifier and certificate relation are specified
+  + [lock_003_np_complete_contact] is NP-complete reduction or target is specified if claiming P equals NP
+  + [lock_004_algorithm_or_lower_bound] is a deterministic polynomial-time algorithm or lower-bound/separation framework is specified
+  + [lock_005_runtime_analysis] is runtime is polynomial in input size
+  + [lock_006_barrier_boundary] is relativization, natural proofs, algebrization, or other known barrier risks are not ignored when claiming separation
+  + [lock_007_outside_filter] is non-decision examples such as pi traversal are kept outside unless bridged formally
+
+& [UseProcedure] is the gate workflow
+  + [step_001_name_claim] is state the structural traversal claim
+  + [step_002_target_language] is identify the language/decision problem
+  + [step_003_verifier] is define certificates and verifier
+  + [step_004_complexity_contact] is attach NP-completeness, reduction, or lower-bound framework
+  + [step_005_runtime] is analyze runtime in input length
+  + [step_006_route] is classify as proof-relevant, heuristic, experiment, tractable subclass, or outside
+
+  = must: require a decision-problem target
+  = must: require polynomial runtime proof before P-style claims
+  = must: require reduction contact before NP-complete significance
+  = must: keep pi traversal outside unless formal bridge is supplied
+  - never: treat faster search on one structured object as P equals NP
+
+& [CurrentApplication] is the first planned gate
+  + [gate_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_complexity_target_gate_001.sop
+  + [starting_claim] is source pi-traversal and structure-over-enumeration thesis
+
+(p_vs_np_complexity_target_gate) :structural_traversal_claim: /language, verifier, reduction, algorithm, runtime/ |analogy|
+  + [inside] is formal complexity-target checking
+  + [boundary] is P vs NP concerns languages/decision problems and polynomial-time resources
+  |outside| pi digit metaphor, search intuition without verifier/reduction, and proof by structure-language
