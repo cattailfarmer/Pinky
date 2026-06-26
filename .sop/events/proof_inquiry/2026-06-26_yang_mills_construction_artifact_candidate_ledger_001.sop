@@ -1,0 +1,107 @@
+Subject: Yang-Mills Construction Artifact Candidate Ledger 001
+
+Description: First application of the Yang-Mills Construction Artifact Candidate Ledger to lattice, Euclidean, OS, observable, decay, and source-heuristic routes.
+
+& [YangMillsConstructionArtifactCandidateLedgerApplication] is a proof-inquiry event
+  + [event_uuid] is 88310b74-c210-477a-b690-c4cacd98138c
+  + [project] is seven math problems
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [created_at] is 2026-06-26T19:56Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Construction_Artifact_Candidate_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_yang_mills_lock_mass_diagnostic_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [CandidateRows] is the first construction artifact ledger
+  + [row_001_lattice_regularized_model] is finite-cutoff construction start
+    = artifact_type: regularized_model
+    = construction_stage: regularization
+    = continuum_status: finite_cutoff
+    = positivity_reconstruction_status: reconstructable_if_proven
+    = observable_status: gauge_invariant_defined_at_cutoff
+    = gap_status: heuristic_decay_or_lattice_gap_only
+    = lock_mass_reduction: low_to_medium_if_uniform_estimates_exist
+    = deep_research_need: bounded
+    = first_blocker: finite lattice model needs uniform estimates and continuum limit
+  + [row_002_euclidean_measure_schwinger_functions] is continuum construction route
+    = artifact_type: continuum_measure_or_schwinger_functions
+    = construction_stage: continuum_limit
+    = continuum_status: limit_candidate_or_unknown
+    = positivity_reconstruction_status: os_axioms_partial_if_proven
+    = observable_status: correlations_defined_if_measure_exists
+    = gap_status: absent_until_decay
+    = lock_mass_reduction: high_if_constructed_with_os_axioms
+    = deep_research_need: priority_if_selected
+    = first_blocker: no constructed four-dimensional continuum measure with required OS properties in current records
+  + [row_003_os_reconstruction_package] is reconstruction route
+    = artifact_type: os_reconstruction
+    = construction_stage: reconstruction
+    = continuum_status: depends_on_schwinger_functions
+    = positivity_reconstruction_status: reflection_positive_required
+    = observable_status: post_reconstruction_only
+    = gap_status: spectral_gap_transfer_if_decay_available
+    = lock_mass_reduction: high_if_inputs_exist
+    = deep_research_need: bounded
+    = first_blocker: reconstruction cannot begin without OS-positive continuum Schwinger functions
+  + [row_004_gauge_invariant_correlation_decay] is gap-stage artifact
+    = artifact_type: correlation_decay
+    = construction_stage: gap_proof
+    = continuum_status: depends_on_constructed_observables
+    = positivity_reconstruction_status: transfer_requires_reconstruction
+    = observable_status: correlations_defined_if_construction_exists
+    = gap_status: decay_theorem_needed
+    = lock_mass_reduction: high_after_construction_low_before
+    = deep_research_need: priority_if_selected
+    = first_blocker: no constructed continuum observables or reconstructed Hamiltonian in current records
+  + [row_005_constructive_renormalization] is continuum-control route
+    = artifact_type: continuum_measure
+    = construction_stage: continuum_limit
+    = continuum_status: conditional_or_unknown
+    = positivity_reconstruction_status: unknown
+    = observable_status: gauge_invariant_content_needed
+    = gap_status: absent_until_decay
+    = lock_mass_reduction: medium_if_uniform_control_available
+    = deep_research_need: priority_if_selected
+    = first_blocker: four-dimensional nonperturbative gauge control and positivity are not supplied
+  + [row_006_source_sealed_curvature] is source heuristic
+    = artifact_type: heuristic
+    = construction_stage: outside
+    = continuum_status: absent
+    = positivity_reconstruction_status: absent
+    = observable_status: absent
+    = gap_status: heuristic_decay
+    = lock_mass_reduction: none
+    = deep_research_need: none
+    = first_blocker: no mathematical construction artifact is defined
+
+& [LedgerConclusion] is the current candidate ranking
+  + [rank_001] is row_002_euclidean_measure_schwinger_functions
+    = reason: this would most directly start the continuum construction plus OS route if supplied
+  + [rank_002] is row_001_lattice_regularized_model
+    = reason: finite models are concrete and natural, but need uniform estimates and continuum transfer
+  + [rank_003] is row_003_os_reconstruction_package
+    = reason: decisive after Schwinger functions exist, but dependent on upstream construction
+  + [rank_004] is row_004_gauge_invariant_correlation_decay
+    = reason: best source-fit and gap-stage target, but downstream of construction
+  + [rank_005] is row_005_constructive_renormalization
+    = reason: potentially central but low-resolution and not currently tied to a concrete artifact
+  + [rank_006] is row_006_source_sealed_curvature
+    = reason: preserves meaning as heuristic but reduces no proof lock
+
+& [MeaningDevelopment] is the proposition update
+  + [current_best_shape] is Yang-Mills progress requires a continuum Euclidean measure or Schwinger functions with OS properties, then reconstruction, then gauge-invariant decay-to-gap transfer
+  + [promising_next] is deep research Euclidean measure and lattice continuum-limit construction artifacts with OS positivity
+  + [proof_progress] is none
+  + [unresolved_lock_mass] is still high for construction and reconstruction
+
+& [DeepResearchPriorityGate] is the active research gate
+  + [gate_status] is priority_if_next_heartbeat_continues_yang_mills
+  + [target] is Euclidean Yang-Mills measure, Schwinger functions, lattice continuum limits, reflection positivity, and OS reconstruction
+  + [reason] is low-resolution understanding sits exactly at the construction artifact lock
+  + [bounded_question] is whether any current construction route supplies continuum measure or Schwinger functions with enough OS properties for four-dimensional nonabelian Yang-Mills
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [yang_mills_solution_status] is unresolved
+  + [model_status] is construction_artifact_ledger_created_and_populated
+  + [heartbeat_status] is active every minute
+

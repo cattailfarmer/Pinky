@@ -1,0 +1,39 @@
+Subject: Yang-Mills Construction Artifact Candidate Ledger
+
+Description: Project-local ledger for ranking Yang-Mills construction artifacts by their ability to reduce existence, reconstruction, observable, and mass-gap lock mass.
+
+& [YangMillsConstructionArtifactCandidateLedger] is a math inquiry tool
+  + [tool_uuid] is 5a4b2e48-55dc-4063-acb0-0ebf18d13dd0
+  + [project] is seven math problems
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [created_at] is 2026-06-26T19:56Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_yang_mills_lock_mass_diagnostic_001.sop
+  + [parent_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Construction_Relevance_Gate.sop
+  + [role] is rank concrete artifacts by whether they supply regularization, continuum limit, reconstruction, observables, or gap transfer
+  + [not_role] is proving Yang-Mills, accepting confinement intuition as construction, or treating lattice evidence as continuum proof
+
+& [ColumnSet] is the construction artifact surface
+  + [candidate] is the proposed construction or gap artifact
+  + [artifact_type] is regularized_model, continuum_measure, schwinger_functions, os_reconstruction, gauge_invariant_observables, correlation_decay, spectral_gap_transfer, heuristic, or unclear
+  + [construction_stage] is regularization, continuum_limit, os_axioms, reconstruction, observable_definition, gap_proof, or outside
+  + [continuum_status] is finite_cutoff, limit_candidate, continuum_constructed, conditional, absent, or unknown
+  + [positivity_reconstruction_status] is reflection_positive, os_axioms_partial, reconstructable_if_proven, absent, or unknown
+  + [observable_status] is gauge_invariant_defined, correlations_defined, post_reconstruction_only, absent, or unknown
+  + [gap_status] is decay_theorem, spectral_gap_transfer, heuristic_decay, absent, or unknown
+  + [lock_mass_reduction] is none, low, medium, high, or blocked
+  + [deep_research_need] is none, bounded, or priority
+  + [first_blocker] is the earliest missing feature blocking proof-shaped promotion
+
+& [UseProcedure] is the artifact-ledger workflow
+  + [step_001_name_artifact] is name the actual model, measure, functions, observables, or theorem
+  + [step_002_place_stage] is place the artifact in the construction pipeline
+  + [step_003_check_continuum] is classify finite-cutoff, limiting, or continuum status
+  + [step_004_check_reconstruction] is classify reflection positivity and OS/Wightman reconstruction status
+  + [step_005_check_observables_gap] is classify gauge-invariant observables and decay or spectral gap transfer
+  + [step_006_score_lock_mass] is reduce unresolved_lock_mass only for artifacts that close a pipeline stage
+
+  = must: keep finite lattice models separate from continuum construction
+  = must: require reconstruction before Hamiltonian spectral-gap claims
+  = should: preserve exponential decay as a strong gap-stage target after construction
+  - never: count confinement intuition as an existence proof
+
