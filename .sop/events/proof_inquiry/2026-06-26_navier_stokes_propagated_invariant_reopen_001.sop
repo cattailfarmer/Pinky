@@ -1,0 +1,63 @@
+Subject: Navier-Stokes Propagated Invariant Reopen 001
+
+Description: Reopen pass on the highest-potential Navier-Stokes target after final synthesis: whether a propagated geometric invariant can replace assumed alignment/depletion.
+
+& [ReopenFrame] is a proof-inquiry event
+  + [event_uuid] is 17bb1cc1-c5f3-4bbf-93ee-64c6868b9a78
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_bsd_source_transfer_reopen_saturation_reflection_001.sop
+  + [synthesis_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_final_six_lane_saturation_synthesis_001.sop
+  + [reopen_target] is a specific propagated invariant, monotonicity formula, or scale-critical alignment quantity
+  + [deep_research_gate] is used
+    = reason: the phrase "propagated invariant" needed low-resolution periphery resolution before new tool creation
+
+& [SourceSet] is the bounded source frame
+  + [source_001] is Barker and Prange, Scale-invariant estimates and vorticity alignment for Navier-Stokes in the half-space with no-slip boundary conditions
+    = link: https://arxiv.org/abs/1906.08225
+    = use: vorticity-direction uniform continuity can rule out singularity under Type I and local hypotheses; still a criterion, not arbitrary-data propagation
+  + [source_002] is Geometry of turbulent dissipation and the Navier-Stokes regularity problem
+    = link: https://pmc.ncbi.nlm.nih.gov/articles/PMC8065050/
+    = use: geometric depletion is a serious regularity framework, but coherence of vorticity direction remains the kind of condition to control
+  + [source_003] is Miller, The Navier-Stokes strain equation with applications to enstrophy growth and regularity
+    = link: https://www.math.utoronto.ca/mccann/papers/MillerPhD19.pdf
+    = use: strain/enstrophy identities expose alignment with strain eigenvectors and regularity criteria, but observed alignment is not a propagated global invariant
+  + [source_004] is Beirao da Veiga and Berselli, Navier-Stokes equations: Some questions related to the direction of the vorticity
+    = link: https://people.dm.unipi.it/beiraodaveiga/pdf/hbv-127.pdf
+    = use: Holder regularity of vorticity direction can imply regularity, but the Holder condition remains assumed
+  + [source_005] is Vasseur, Regularity criterion for 3D Navier-Stokes equations in terms of the direction of the velocity
+    = link: https://web.ma.utexas.edu/users/vasseur/documents/preprints/NSdirection2.pdf
+    = use: direction-based regularity criteria reinforce the source-document geometry reading while staying conditional
+
+& [CandidateInvariantScan] is the bounded result
+  + [candidate_001_vorticity_direction_modulus] is meaningful_but_conditional
+    = role: coherence or continuity of vorticity direction can deplete vortex stretching
+    = propagation_status: not derived for arbitrary smooth data
+    = first_gap: no evolution inequality preserves the required modulus through possible singularity formation
+  + [candidate_002_strain_eigenframe_alignment] is meaningful_but_heuristic_to_conditional
+    = role: alignment with strain eigenvectors can rewrite or bound enstrophy growth terms
+    = propagation_status: not a known monotone invariant in the current frame
+    = first_gap: nonlinear strain evolution can amplify rather than dissipatively control the needed alignment
+  + [candidate_003_scale_invariant_type_i_alignment] is special_conditional
+    = role: scale-invariant alignment assumptions near possible singularities can exclude blowup in scoped settings
+    = propagation_status: conditional under Type I or local assumptions
+    = first_gap: Type I/alignment assumptions are not proved from arbitrary initial data
+  + [candidate_004_velocity_direction_criteria] is direction_criterion
+    = role: direction fields may encode regularity conditions
+    = propagation_status: criterion only
+    = first_gap: no source-derived flow law forces the direction condition
+
+& [BoundaryUpdate] is the adjusted Navier-Stokes state
+  + [old_boundary] is dynamic propagation of sufficient alignment/depletion from the Navier-Stokes equations
+  + [adjusted_boundary] is there are several scale-relevant geometric criteria, but no candidate currently supplies a propagated monotone or coercive invariant for arbitrary smooth 3D data
+  + [best_new_shape] is the source-document "phase correction" should be tested as an evolution inequality for a geometric defect functional, not as a qualitative tendency toward alignment
+  + [first_remaining_lock] is no propagated geometric defect functional with continuation-level control
+  + [second_remaining_lock] is no closure from conditional alignment criteria to arbitrary-data regularity
+  + [proof_promotion] is blocked
+    = reason: criteria and alignment identities do not prove their hypotheses are generated or preserved by the flow
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a Navier-Stokes Geometric Defect Functional Gate if the next heartbeat continues this lane
+    = reason: the inquiry needs to classify proposed defect functionals by scale, evolution inequality, and continuation closure
+  + [commit_policy] is commit this reopen research after tests pass
+  + [heartbeat_status] is active every minute
