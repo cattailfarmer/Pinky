@@ -1,0 +1,60 @@
+Subject: Symbolic Ricci Flow Model Specification
+
+Description: Non-proof computational-cognition model specification for symbolic smoothing, kept outside Poincare proof authority.
+
+& [SymbolicRicciFlowModel] is a model specification
+  + [model_uuid] is 3692691b-7da1-46b4-a4d0-37a9b5f7b41b
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26
+  + [source_boundary] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_poincare_symbolic_ricci_flow_model_boundary_001.sop
+  + [authority_status] is computational_model_candidate_not_poincare_proof
+  + [role] is model recursive conceptual smoothing while preserving traceable distinctions
+  + [not_role] is proving Poincare, proving any unsolved Millennium problem, or validating analogy as theorem
+
+& [StateSpace] is the first model state
+  + [node] is a typed assertion, concept, source claim, proof obligation, boundary lock, or model variable
+  + [edge] is a typed relation such as supports, contradicts, refines, analogizes, blocks, transfers_to, or depends_on
+  + [weight] is confidence, relevance, conflict pressure, or evidence strength on nodes and edges
+  + [state] is a finite attributed graph of nodes and typed weighted edges
+
+& [GeometryOrAdjacency] is the first geometry
+  + [adjacency] is typed graph neighborhood
+  + [distance] is weighted path distance with type penalties
+  + [curvature_proxy] is local inconsistency or compression pressure around a node
+  + [irregularity] is high contradiction, unsupported analogy, overbroad transfer, or unresolved boundary concentration
+
+& [UpdateRule] is the symbolic smoothing step
+  + [step_001_measure] is compute local irregularity for each node from contradiction, unsupported transfer, and boundary pressure
+  + [step_002_reweight] is lower unsupported analogy edges and strengthen source-backed support/refinement edges
+  + [step_003_split] is split nodes that conflate source meaning, formal object, proof obligation, and outside boundary
+  + [step_004_route] is move overclaim edges to explicit boundary nodes instead of deleting them
+  + [step_005_stop] is stop when irregularity decreases below threshold or no allowed update reduces irregularity
+
+& [InvariantSet] is what must be preserved
+  + [invariant_001_source_trace] is raw source claims remain linked to source records
+  + [invariant_002_authority_boundary] is model outputs cannot become mathematical proof authority
+  + [invariant_003_distinction_preservation] is smoothing must not merge distinct formal problems or proof obligations
+  + [invariant_004_reversibility_log] is each update produces a traceable before/after record
+
+& [ConvergenceMeasure] is the test metric
+  + [metric_001_irregularity_total] is sum of local contradiction, unsupported-transfer, and overclaim pressure
+  + [metric_002_boundary_clarity] is proportion of claims with explicit formal object, proof obligation, and outside boundary
+  + [metric_003_source_coverage] is proportion of active model claims linked to source or research records
+  + [metric_004_distinction_loss] is penalty for collapsed distinctions or erased uncertainty
+
+& [FailureModes] is the model risk set
+  + [failure_001_over_smoothing] is distinct concepts collapse into vague coherence
+  + [failure_002_false_coherence] is contradictions are hidden by rewording rather than resolved
+  + [failure_003_authority_leak] is model coherence is mistaken for proof evidence
+  + [failure_004_source_loss] is generated structure drifts away from preserved source records
+  + [failure_005_boundary_erasure] is open locks are removed instead of named
+
+& [ValidationPlan] is the first test plan
+  + [test_001_replay] is replay a known lane, such as BSD, and verify the model recreates source/formal/boundary separation
+  + [test_002_overclaim_detection] is seed a false proof-transfer claim and verify it is routed to boundary nodes
+  + [test_003_trace_integrity] is verify every update preserves source links and reversible logs
+  + [test_004_metric_direction] is verify irregularity decreases without increasing distinction_loss beyond threshold
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a Symbolic Ricci Flow Model Boundary Evaluation event applying the original boundary requirements to this model specification
+  + [heartbeat_status] is active every minute

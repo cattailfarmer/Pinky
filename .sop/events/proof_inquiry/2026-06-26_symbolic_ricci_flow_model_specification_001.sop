@@ -1,0 +1,33 @@
+Subject: Symbolic Ricci Flow Model Specification 001
+
+Description: First model-building event for Symbolic Ricci Flow as a computational-cognition model outside Poincare proof authority.
+
+& [ModelBuildEvent] is a model-building event
+  + [event_uuid] is c69f96fd-c11d-4c13-9a3c-9a2a9343cb46
+  + [project] is seven math problems
+  + [problem_boundary] is Poincare Conjecture solved externally
+  + [model_specification] is C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Model_Specification.sop
+  + [boundary_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_poincare_symbolic_ricci_flow_model_boundary_001.sop
+  + [authority_status] is model_candidate_not_proof
+
+& [RequirementClosure] is the first closure result
+  + [state_space] is defined_as_typed_assertion_graph
+  + [geometry_or_adjacency] is defined_as_weighted_typed_graph_with_curvature_proxy
+  + [update_rule] is defined_as_measure_reweight_split_route_stop
+  + [invariant] is defined_as_source_trace_authority_boundary_distinction_preservation_reversibility_log
+  + [convergence_measure] is defined_as_irregularity_boundary_clarity_source_coverage_distinction_loss
+  + [failure_modes] is defined
+  + [validation] is defined_as_replay_overclaim_trace_metric_tests
+  + [authority_boundary] is passed
+
+& [MeaningUpdate] is the proposition result
+  + [old_status] is metaphor_with_model_potential
+  + [new_status] is computational_model_candidate
+  + [meaning_gain] is symbolic Ricci flow now has model objects and test obligations without touching Poincare proof authority
+  + [proof_promotion] is blocked
+    = reason: this model concerns cognition/workflow smoothing, not 3-manifold topology
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is commit this model specification, then run a final project-state reflection
+  + [commit_policy] is commit this model specification after tests pass
+  + [heartbeat_status] is active every minute
