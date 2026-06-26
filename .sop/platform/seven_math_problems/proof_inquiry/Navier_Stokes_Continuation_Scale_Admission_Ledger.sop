@@ -61,3 +61,15 @@ Description: Project-local math inquiry tool for admitting or rejecting pressure
   + [reason] is it names endpoint pressure-work and L3-style pressure control more directly than broad geometric-depletion narratives
   + [deep_research_priority_gate] is conditionally_ready
     = trigger: use only if the local artifacts cannot define the claimed endpoint pressure-work bound precisely enough for admission testing
+
+& [ApplicationHistory] is append-only
+  + [application_001] is initial pressure-Hessian or endpoint pressure-work admission boundary
+    = event: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_continuation_scale_admission_ledger_001.sop
+    = first_missing_feature: deterministic_sign_or_absorbability_at_continuation_scale
+    = admission_status: boundary_only
+  + [application_002] is quadrupole-depletion endpoint pressure-work route audit
+    = event: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_quadrupole_endpoint_pressure_work_audit_001.sop
+    = scale_level: continuation_critical
+    = propagation_status: conditional_on_geometry_or_target_theorems
+    = first_missing_feature: unconditional_threshold_exclusion_for_theta
+    = admission_status: boundary_only
