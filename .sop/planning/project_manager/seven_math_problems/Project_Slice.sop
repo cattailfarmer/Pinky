@@ -319,6 +319,8 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_hessian_claim_audit_001.sop
   + [Task_098_navier_stokes_pressure_coercivity_saturation_reflection] is reflect on the Navier-Stokes pressure-Hessian coercivity branch and mark it saturated for the current cycle
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_navier_stokes_pressure_coercivity_saturation_reflection_001.sop
+  + [Task_099_apply_symbolic_ricci_flow_to_hodge_lock_mass] is apply the refined graph scoring diagnostic to the Hodge scoped-construction lane
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_hodge_lock_mass_diagnostic_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
