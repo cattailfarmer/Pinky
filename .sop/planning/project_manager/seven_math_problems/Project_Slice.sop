@@ -295,6 +295,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_088_refine_symbolic_ricci_flow_unresolved_lock_mass] is refine the graph scoring prototype so clean boundary states still report unsolved mathematical lock mass
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Graph_Scoring_Prototype.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_unresolved_lock_mass_refinement_001.sop
+  + [Task_089_apply_symbolic_ricci_flow_to_navier_stokes_lock_mass] is apply the refined graph scoring diagnostic to the Navier-Stokes propagated-invariant lane
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_navier_stokes_lock_mass_diagnostic_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

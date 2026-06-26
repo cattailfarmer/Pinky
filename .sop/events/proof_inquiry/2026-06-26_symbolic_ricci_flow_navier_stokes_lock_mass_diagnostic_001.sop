@@ -1,0 +1,70 @@
+Subject: Symbolic Ricci Flow Navier-Stokes Lock Mass Diagnostic 001
+
+Description: First application of the refined Symbolic Ricci Flow graph scoring diagnostic to the Navier-Stokes propagated-invariant lane.
+
+& [SymbolicRicciFlowNavierStokesDiagnostic] is a model diagnostic event
+  + [event_uuid] is e7435946-df1a-47c1-9dd0-0aa2dece3b96
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T19:25Z
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [scoring_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Graph_Scoring_Prototype.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_unresolved_lock_mass_refinement_001.sop
+  + [primary_lane_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_propagated_invariant_reopen_001.sop
+  + [gate_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_geometric_defect_functional_gate_001.sop
+  + [authority_status] is diagnostic_not_proof
+
+& [CompressedBeforeState] is the source-shaped proposition before diagnostic splitting
+  + [compressed_claim] is phase correction or geometric depletion may become a propagated stabilizing invariant preventing Navier-Stokes blowup
+  + [active_claims] is 1
+  + [source_linked_claims] is 1
+  + [claims_with_explicit_boundary] is 0
+  + [unsupported_analogizes_edges] is 1
+  + [overbroad_transfers_to_edges] is 1
+  + [depends_on_open_lock_edges] is 4
+  + [supports_with_source_trace_edges] is 1
+  + [refines_distinction_edges] is 0
+  + [blocks_proof_promotion_edges] is 0
+  + [authority_leak_count] is 1
+  + [distinction_loss] is 4
+
+& [SplitAfterState] is the boundary-preserved proposition after diagnostic splitting
+  + [source_claim_node] is phase correction, surface tension, or resonance-anchor language gestures toward stabilizing geometric structure
+  + [formal_object_node] is 3D incompressible Navier-Stokes regularity requires an a priori mechanism preventing blowup under Clay-admissible smooth data
+  + [candidate_mechanism_node] is a geometric defect, alignment, depletion, strain, vorticity-direction, or coherence quantity
+  + [proof_obligation_node] is derive an autonomous inequality from the Navier-Stokes equations with sign or coercivity strong enough for continuation
+  + [boundary_lock_001_concrete_defect] is no selected concrete defect functional has the required formal definition and scale behavior
+  + [boundary_lock_002_evolution_inequality] is no autonomous evolution inequality preserves or improves the defect for arbitrary smooth data
+  + [boundary_lock_003_sign_coercivity] is no sign or coercivity is strong enough to control vortex stretching or equivalent growth globally
+  + [boundary_lock_004_continuation_closure] is no continuation-level criterion is closed by the candidate mechanism
+  + [proof_authority_node] is no Navier-Stokes proof claim is authorized
+
+& [DiagnosticScore] is the refined score reading
+  + [before_irregularity_total] is 13.00
+    = calculation: 3.00 unsupported analogy + 3.00 overbroad transfer + 8.00 open-lock dependency - 1.00 source support
+  + [after_irregularity_total] is 0.00
+    = calculation: max(0.00, 8.00 open-lock dependency - 5.00 source support - 7.50 distinction refinement - 2.00 proof-promotion block)
+  + [before_boundary_clarity] is 0.00
+  + [after_boundary_clarity] is 1.00
+  + [source_coverage_delta] is 0.00
+  + [distinction_loss_delta] is -4
+  + [authority_leak_delta] is -1
+  + [unresolved_lock_mass_after] is 4_high_relevance_locks
+
+& [MeaningDevelopment] is the Navier-Stokes shape after diagnostic scoring
+  + [clarified_meaning] is the source concept does not yet name a proof mechanism; it names a demand for a propagated geometric defect inequality
+  + [promising_item] is a concrete defect functional with scale-critical relevance and an autonomous one-sided inequality
+  + [least_promising_item] is qualitative alignment, depletion, or smoothing language without a derived evolution law
+  + [reason_to_continue] is Navier-Stokes remains high potential if a candidate functional can reduce unresolved_lock_mass rather than merely improve boundary clarity
+  + [reason_to_pause] is further broad research is low-yield until a specific functional or monotonicity formula is selected
+
+& [NextSelection] is the next narrow target
+  + [recommended_next] is construct a Navier-Stokes Defect Functional Candidate Ledger only if a concrete candidate can be named for testing
+  + [deep_research_gate] is active if a candidate functional is low-resolution or if known literature around a proposed defect is uncertain
+  + [do_not_do] is repeat general surveys of vorticity alignment without a candidate capable of reducing unresolved_lock_mass
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [navier_stokes_solution_status] is unresolved
+  + [model_status] is diagnostic_applied_once_to_navier_stokes_lock_mass
+  + [heartbeat_status] is active every minute
+
