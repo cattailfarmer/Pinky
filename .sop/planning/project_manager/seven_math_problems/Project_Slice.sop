@@ -285,6 +285,8 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_model_specification_001.sop
   + [Task_084_project_state_after_model_specification] is reflect on the current project state after all proof-lane reopen branches and the Symbolic Ricci Flow model specification
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_project_state_after_model_specification_001.sop
+  + [Task_085_validate_symbolic_ricci_flow_bsd_replay] is validate the Symbolic Ricci Flow computational-cognition model against the BSD source-transfer replay while preserving proof/source boundaries
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_bsd_replay_validation_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
