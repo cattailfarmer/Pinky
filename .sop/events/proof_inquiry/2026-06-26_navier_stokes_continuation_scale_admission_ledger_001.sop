@@ -1,0 +1,30 @@
+Subject: Navier-Stokes Continuation-Scale Admission Ledger 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Tool: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Continuation_Scale_Admission_Ledger.sop
+Authority Boundary: admission ledger only; no Navier-Stokes proof claim
+
+& [ProofInquiryEvent] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [reentry_target] is pressure-Hessian coercivity proof, endpoint pressure-work estimate, or autonomous defect functional inequality
+  + [purpose] is define the admission test for deciding whether a candidate is a propagated continuation-scale proof target
+
+& [BoundaryFinding] is the current shape
+  + [finding_001] is the missing object is not pressure structure by itself
+    = meaning: pressure-Hessian or pressure-work terms must produce deterministic sign, cancellation, or absorbability
+  + [finding_002] is continuation-scale propagation is the admission line
+    = meaning: criteria that assume the controlled norm do not reduce lock mass
+  + [finding_003] is pressure nonlocality remains an independent lock
+    = meaning: geometric depletion language is insufficient unless the nonlocal pressure term is bounded in the needed scale
+
+& [CurrentApplication] is boundary-only
+  + [candidate_mechanism] is pressure-Hessian coercivity or endpoint pressure-work bound
+  + [first_missing_feature] is deterministic_sign_or_absorbability_at_continuation_scale
+  + [admission_status] is boundary_only
+  + [selected_next_probe] is row_005_quadrupole_depletion_route
+    = reason: it most directly names endpoint pressure-work and L3-style pressure control among audited pressure-Hessian claims
+
+& [NextAction] is ready
+  + [recommended_next] is inspect whether the quadrupole depletion route locally states a precise endpoint pressure-work inequality; trigger Deep_Research_Priority_Gate only if the local record is too low-resolution
+  + [heartbeat_status] is active

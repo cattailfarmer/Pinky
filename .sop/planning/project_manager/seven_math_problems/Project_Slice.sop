@@ -377,6 +377,9 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_121_reflect_bsd_same_frame_reentry_saturation] is mark the BSD same-frame reentry saturated and advance current focus to Navier-Stokes
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_bsd_same_frame_reentry_saturation_reflection_001.sop
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Six_Problem_Periphery_Inquiry_Order.sop
+  + [Task_122_create_navier_stokes_continuation_scale_admission_ledger] is define the Navier-Stokes admission test for pressure-Hessian and endpoint pressure-work candidates
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Continuation_Scale_Admission_Ledger.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_continuation_scale_admission_ledger_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

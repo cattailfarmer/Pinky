@@ -1,0 +1,63 @@
+Subject: Navier-Stokes Continuation-Scale Admission Ledger
+
+Description: Project-local math inquiry tool for admitting or rejecting pressure-Hessian, pressure-work, and defect-functional candidates as continuation-scale proof targets.
+
+& [NavierStokesContinuationScaleAdmissionLedger] is a math inquiry tool
+  + [tool_uuid] is e56a59f5-5cb8-43c1-a440-c59bd664a83f
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_bsd_same_frame_reentry_saturation_reflection_001.sop
+  + [role] is test whether a proposed Navier-Stokes mechanism is a propagated continuation-scale estimate rather than a criterion, diagnostic, or conditional hinge
+  + [not_role] is proving Navier-Stokes, accepting informal global-regularity claims, or treating geometric depletion language as an estimate
+
+& [AdmissionColumnSet] is the proof-target surface
+  + [candidate_mechanism] is the pressure-Hessian, pressure-work, defect-functional, or coupling mechanism being tested
+  + [controlled_quantity] is the norm, strain quantity, vorticity quantity, pressure-work term, defect, or continuation criterion target
+  + [equation_level_identity] is exact identity, derived inequality, criterion, conditional estimate, heuristic, or absent
+  + [sign_or_absorption] is deterministic_negative, absorbable_positive, cancellation, conditional, indefinite, or unknown
+  + [scale_level] is continuation_critical, critical_proxy, subcritical, energy_level, local_only, or unclear
+  + [propagation_status] is propagated_from_initial_data, criterion_assuming_control, conditional_on_geometry, perturbative, diagnostic, or absent
+  + [pressure_nonlocality_status] is controlled, decomposed_with_bound, conditional_alignment, unresolved, or ignored
+  + [first_missing_feature] is the earliest missing feature blocking proof-shaped promotion
+  + [admission_status] is admitted_for_line_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+
+& [UseProcedure] is the admission workflow
+  + [step_001_name_candidate] is write the exact proposed mechanism or inequality target
+  + [step_002_identity] is identify the equation-level identity or estimate it rests on
+  + [step_003_sign] is test sign, cancellation, or absorbability without assuming regularity
+  + [step_004_scale] is test whether it acts at continuation-critical scale or only at energy/local/diagnostic scale
+  + [step_005_propagation] is distinguish propagated estimates from criteria that assume the desired control
+  + [step_006_pressure] is check whether pressure nonlocality is bounded rather than narrated
+  + [step_007_admit] is admit only candidates with enough formal structure for line-by-line audit
+
+  = must: keep Beale-Kato-Majda or Serrin-style criteria separate from estimates that propagate their hypotheses
+  = must: reject pressure-Hessian coercivity unless sign or absorbability is actually derived
+  = must: reject scale-mismatched energy estimates as global smoothness proof targets
+  = should: preserve conditional hinges as useful research targets when their missing feature is explicit
+  - never: count turbulence diagnostics, numerical depletion, or alignment intuition as deterministic proof control
+
+(navier_stokes_continuation_scale_admission_ledger) :candidate_mechanism: /identity, sign, scale, propagation, pressure nonlocality/ |regularity proof|
+  + [inside] is admission control for concrete Navier-Stokes proof-target audits
+  + [boundary] is a candidate must propagate continuation-scale control with pressure nonlocality handled
+  |outside| criteria without propagation, conditional geometry, informal depletion claims, and pressure sign by intuition
+
+& [CurrentApplication] is the active reentry target
+  + [candidate_mechanism] is pressure-Hessian coercivity or endpoint pressure-work bound
+  + [controlled_quantity] is continuation-scale strain/vorticity or pressure-work control against self-amplification
+  + [equation_level_identity] is partial
+    = reason: existing artifacts identify pressure Hessian and pressure-work structures, but no accepted one-sided estimate has been admitted
+  + [sign_or_absorption] is unknown
+  + [scale_level] is critical_proxy
+    = reason: endpoint pressure-work or continuation-scale norms are the intended target, but current audited claims do not close the scale requirement
+  + [propagation_status] is criterion_assuming_control
+    = reason: existing claims often state the hinge or criterion rather than deriving propagated control from initial data
+  + [pressure_nonlocality_status] is unresolved
+  + [first_missing_feature] is deterministic_sign_or_absorbability_at_continuation_scale
+  + [admission_status] is boundary_only
+
+& [NextProbe] is selected
+  + [candidate] is row_005_quadrupole_depletion_route from the pressure-Hessian claim audit
+  + [reason] is it names endpoint pressure-work and L3-style pressure control more directly than broad geometric-depletion narratives
+  + [deep_research_priority_gate] is conditionally_ready
+    = trigger: use only if the local artifacts cannot define the claimed endpoint pressure-work bound precisely enough for admission testing
