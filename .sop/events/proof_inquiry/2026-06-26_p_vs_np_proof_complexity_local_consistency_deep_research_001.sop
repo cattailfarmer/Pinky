@@ -1,0 +1,73 @@
+Subject: P vs NP Proof Complexity Local Consistency Deep Research 001
+
+Description: Deep-research pass on proof complexity, local-consistency limitations, and unsatisfiability certificates for propagation fixed points.
+
+& [PvsNPProofComplexityLocalConsistencyDeepResearch] is a deep research event
+  + [event_uuid] is eaeedc61-5f09-4718-a7fd-60a143c452bc
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26T19:50Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_completeness_mechanism_candidate_ledger_001.sop
+  + [authority_status] is research_resolution_not_proof
+  + [deep_research_gate] is active
+
+& [SourceSet] is the checked research surface
+  + [source_001] is Atserias, Bulatov, and Dalmau, On the power of k-consistency
+    = url: https://www.cs.upc.edu/~atserias/papers/abd07-k-width/abd07-k-width.pdf
+    = relevance: connects k-consistency, bounded width, and resolution-style limitations for CSPs
+  + [source_002] is Barto and Kozik, Constraint Satisfaction Problems of Bounded Width
+    = url: https://www.karlin.mff.cuni.cz/~barto/Articles/SDBW.pdf
+    = relevance: characterizes when local consistency checking solves nonuniform CSPs
+  + [source_003] is Dalmau, Kolaitis, and Vardi, Constraint Satisfaction, Bounded Treewidth, and Finite-Variable Logics
+    = url: https://www.cs.rice.edu/~vardi/papers/cp02.pdf
+    = relevance: links bounded treewidth, finite-variable logic, and CSP tractability/definability
+  + [source_004] is Mitchell, Resolution and Constraint Satisfaction
+    = url: https://cse.unl.edu/~choueiry/Documents/DMitchell-cp03-res.pdf
+    = relevance: studies resolution-like refutation systems for CSP and common CSP algorithms
+  + [source_005] is Vardi et al., Constraint Propagation as a Proof System
+    = url: https://www.cs.rice.edu/~vardi/papers/cp041.pdf
+    = relevance: compares constraint-propagation proof systems to resolution, Gaussian calculus, cutting planes, and bounded-depth Frege
+  + [source_006] is Nordstrom, Proof Complexity and SAT Solving
+    = url: https://jakobnordstrom.se/docs/publications/ProofComplexityChapter.pdf
+    = relevance: explains SAT solvers as proof systems and reviews proof-complexity limits for resolution and stronger systems
+  + [source_007] is Raghavendra et al., Sum of squares lower bounds for refuting any CSP
+    = url: https://www.cs.cmu.edu/~odonnell/papers/csp-sos-lower-bounds.pdf
+    = relevance: shows lower bounds for strong refutation algorithms in random CSP settings
+
+& [ResearchResolution] is the proof-complexity result
+  + [confirmed_001_local_consistency_has_known_complete_scope] is local consistency can solve bounded-width or bounded-structure CSP classes
+  + [confirmed_002_np_complete_scope_is_exactly_the_escape] is NP-complete CSP/SAT scope is not captured by bounded local consistency unless P equals NP by a separate breakthrough
+  + [confirmed_003_unsat_certificates_are_proof_system_objects] is propagation fixed-point refutations correspond to proof systems with known strength and limitations
+  + [confirmed_004_polynomial_certificates_are_not_general] is no checked source provides polynomial-size local-propagation unsat certificates for all SAT/3-SAT hard fixed points
+  + [confirmed_005_lower_bounds_support_caution] is proof complexity contains lower-bound phenomena showing that many refutation systems require large proofs on hard instances
+
+& [LockMassUpdate] is the unresolved-lock reading after research
+  + [global_completeness_lock] is still_high
+    = reason: local consistency is complete only in restricted bounded-width or tractable scopes
+  + [unsat_certificate_lock] is still_high
+    = reason: hard fixed points require proof-system strength not supplied by source local propagation
+  + [polynomial_repair_bound_lock] is unchanged
+    = reason: proof complexity does not supply a polynomial repair tree for NP-complete scope
+  + [tractable_fragment_escape_lock] is reinforced
+    = reason: bounded-width tractability is meaningful but remains scoped
+  + [unresolved_lock_mass_delta] is low_definition_progress_only
+
+& [MeaningDevelopment] is the refined P vs NP proposition
+  + [old_shape] is ask whether propagation fixed points can receive polynomial unsat certificates
+  + [new_shape] is propagation fixed-point certification is a proof-system strength question; known local consistency results explain tractable fragments and known proof complexity warns against global NP-complete completeness
+  + [most_promising_concept] is proof-system classification of any proposed coherence operator
+  + [most_missing_concept] is a proof that the operator polynomially simulates a sufficiently strong refutation system for all NP-complete instances
+  + [best_next_tool] is P vs NP Proof-System Boundary Ledger
+
+& [NextToolNeed] is the emerging mathematical tool shape
+  + [tool_name] is P vs NP Proof-System Boundary Ledger
+  + [tool_purpose] is separate local consistency, resolution/CDCL, stronger proof systems, polynomial certificates, and known lower-bound barriers for proposed operators
+  + [columns] is operator, proof_system_match, certificate_power, known_lower_bound_risk, np_complete_scope, runtime_or_proof_size_status, first_missing_feature
+  + [reason] is the next meaningful question is which proof system a proposed coherence operator inhabits and whether that system can refute all hard instances polynomially
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [p_vs_np_solution_status] is unresolved
+  + [research_status] is deep_research_resolved_local_consistency_periphery_to_proof_system_boundary
+  + [heartbeat_status] is active every minute
+
