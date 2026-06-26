@@ -1,0 +1,41 @@
+Subject: P vs NP Operator Completeness Gate
+
+Description: Project-local math tool for testing whether a proposed coherence/search operator is merely locally sound or actually complete and polynomial on an NP-complete target family.
+
+& [PvsNPOperatorCompletenessGate] is a math inquiry tool
+  + [tool_uuid] is 0e504f6e-e3e0-45fb-9958-00feb4646683
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_explicit_operator_reopen_001.sop
+  + [role] is separate local propagation soundness from global completeness, failure certification, and polynomial worst-case solving
+  + [not_role] is proving P vs NP, replacing reductions with intuition, or treating useful heuristics as complete solvers
+
+& [GateColumnSet] is the operator-completeness surface
+  + [operator] is the named algorithmic operation
+  + [target_family] is SAT, 3-SAT, fixed CSP language, bounded-treewidth CSP, or other scoped family
+  + [local_soundness] is whether each local rule preserves satisfiability or detects a real contradiction
+  + [global_completeness] is whether the operator always finds a satisfying assignment or proves unsatisfiability in the target family
+  + [failure_certificate] is the proof object or invariant produced when the instance is unsatisfiable
+  + [runtime_bound] is polynomial, exponential, heuristic, unknown, or conditional
+  + [branching_control] is none, bounded, structural, exponential, hidden, or unknown
+  + [claim_class] is tractable_fragment, heuristic, incomplete_propagator, np_complete_solver_claim, lower_bound_claim, or outside
+  + [first_gap] is the first missing element blocking proof-shaped promotion
+
+& [UseProcedure] is the completeness workflow
+  + [step_001_name_target] is identify the exact language or instance family
+  + [step_002_define_operator] is write deterministic and nondeterministic steps explicitly
+  + [step_003_prove_local_soundness] is mark whether local moves preserve solutions or detect contradictions
+  + [step_004_prove_global_completeness] is test whether fixed points decide all instances in the target family
+  + [step_005_bound_runtime] is include repair, branching, restarts, and proof search in the runtime
+  + [step_006_classify_claim] is classify and name first gap
+
+  = must: count hidden branching as part of runtime
+  = must: require unsat certificates or equivalent proof of impossibility
+  = must: distinguish tractable fixed languages from NP-complete target families
+  = should: preserve incomplete propagators as useful heuristics or preprocessing
+  - never: infer P equals NP from polynomial local propagation alone
+
+(p_vs_np_operator_completeness_gate) :operator: /soundness, completeness, certificate, runtime/ |solver-overclaim|
+  + [inside] is operator route classification
+  + [boundary] is local consistency is not global satisfiability
+  |outside| heuristic as proof, hidden exponential repair, and restricted CSP success as all-NP collapse

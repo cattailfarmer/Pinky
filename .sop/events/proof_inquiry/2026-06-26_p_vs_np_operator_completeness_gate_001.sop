@@ -1,0 +1,40 @@
+Subject: P vs NP Operator Completeness Gate 001
+
+Description: First application of the P vs NP Operator Completeness Gate to local propagation with repair.
+
+& [GateApplication] is a proof-inquiry event
+  + [event_uuid] is b14e2d69-034c-44e0-9a36-3d4b723f03e5
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Operator_Completeness_Gate.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_explicit_operator_reopen_001.sop
+  + [target_claim] is local propagation with repair might be a polynomial-time solver for SAT/3-SAT or an NP-complete CSP family
+
+& [OperatorReadout] is the first gate result
+  + [operator] is local propagation with repair
+  + [target_family] is SAT/3-SAT or unspecified NP-complete CSP
+  + [local_soundness] is partial_to_plausible
+    = reason: unit propagation and arc/local consistency style rules can be sound when formally specified
+  + [global_completeness] is failed_for_general_np_complete_scope
+    = reason: locally consistent instances can remain globally unsatisfiable or require search
+  + [failure_certificate] is missing
+    = reason: the operator does not supply a general unsatisfiability certificate for hard fixed points
+  + [runtime_bound] is polynomial_for_bounded_propagation_unknown_or_exponential_for_complete_repair
+    = reason: repair and branching are not bounded by a proved polynomial
+  + [branching_control] is hidden_or_unknown
+    = reason: revise conflicting assignments can encode search choices
+  + [claim_class] is incomplete_propagator_or_heuristic
+  + [first_gap] is global_completeness
+
+& [MeaningPreservation] is the adjusted source reading
+  + [useful_role] is preprocessing, tractable-fragment solving, structure detection, and heuristic search guidance
+  + [tractable_targets] is Horn, bijunctive, affine, acyclic, bounded-treewidth, or polymorphism-characterized CSPs when rules match the language
+  + [hard_target_boundary] is SAT/3-SAT completeness requires a proof that fixed points decide all instances with polynomial repair
+  + [source_mapping] is resonance coherence maps to local consistency only after a constraint language and proof of completeness are supplied
+  + [proof_promotion] is blocked
+    = reason: the operator lacks global completeness, unsat certificates, and polynomial branching control on NP-complete scope
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is run a P vs NP reopen saturation reflection unless a new operator with explicit completeness proof is selected
+  + [commit_policy] is commit this gate after tests pass
+  + [heartbeat_status] is active every minute
