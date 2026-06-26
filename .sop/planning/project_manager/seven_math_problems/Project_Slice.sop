@@ -315,6 +315,8 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_coupling_inequality_boundary_001.sop
   + [Task_096_research_navier_stokes_pressure_hessian_estimates] is run deep research on pressure Hessian estimates and nonlocal pressure-strain decompositions
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_hessian_estimates_deep_research_001.sop
+  + [Task_097_audit_navier_stokes_pressure_hessian_claims] is audit concrete pressure-Hessian depletion and pressure-coercivity claims before accepting any proof authority
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_hessian_claim_audit_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
