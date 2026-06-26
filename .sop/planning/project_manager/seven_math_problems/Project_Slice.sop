@@ -435,6 +435,8 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_bound_to_epsilon_audit_001.sop
   + [Task_143_inspect_navier_stokes_tail_budget_pressure_smallness_bridge] is compare the quadrupole tail budget against harmonic-pressure and epsilon-regularity bridge requirements
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_tail_budget_pressure_smallness_inspection_001.sop
+  + [Task_144_extract_navier_stokes_quadrupole_tail_lemma_lines] is inspect the quadrupole source for a tail-budget-to-pressure-smallness or pressure-oscillation lemma
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_quadrupole_tail_lemma_line_extraction_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

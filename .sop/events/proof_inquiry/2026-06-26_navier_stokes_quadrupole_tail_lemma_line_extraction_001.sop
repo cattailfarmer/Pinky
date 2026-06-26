@@ -1,0 +1,59 @@
+Subject: Navier-Stokes Quadrupole Tail Lemma Line Extraction 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Source: https://quantumaetherdynamics.org/papers/Navier_Stokes_Millenium_Puzzle.pdf
+Prior: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_tail_budget_pressure_smallness_inspection_001.sop
+Authority Boundary: external-source extraction only; no Navier-Stokes proof claim
+
+& [LineExtractionEvent] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [trigger] is heartbeat reentry from the tail-budget pressure-smallness inspection
+  + [bounded_question] is whether the quadrupole source states a tail-budget-to-pressure-smallness or harmonic-pressure-oscillation lemma
+  + [extraction_method] is bounded PDF text extraction using bundled Python pypdf into a temporary snippet file
+  + [search_terms] is tail, harmonic, oscillation, L3_over_2, epsilon, CKN, smallness, pressure
+
+& [ExtractedSourceSurface] is the relevant source neighborhood
+  + [page_009_section_10_4] is usable localized pressure bound for the entropy identity
+    = local_reading: the source presents this as an interface between global l_equals_2 commutator machinery and localized speed entropy
+  + [page_009_lemma_10_5] is tail lemma plug-and-play with explicit outer log
+    = local_reading: the source isolates far-field and cutoff commutator debris into a tail module and bounds that tail by a small multiple of a coercive local term plus an explicit remainder
+  + [page_009_to_010_lemma_10_6] is localized entropy pressure bound in the l_equals_2 channel
+    = local_reading: the lemma controls localized pressure work by a small multiple of entropy/direction-gradient coercive terms plus the tail budget
+  + [page_012_theorem_12_1] is localized l_equals_2 pressure-control for speed entropy target form
+    = local_reading: the remaining work is explicitly stated as theorem targets, including localized pressure-control
+  + [page_013_appendix_A_2] is explicit Omega choice that controls the tail
+    = local_reading: the source gives an explicit tail control expression in terms of local vorticity or local velocity-size quantities
+
+& [ExtractionFindings] is the theorem-boundary result
+  + [finding_001] is the source contains a localized pressure-work absorption lemma
+    = meaning: the route has a real local pressure-work object, not just global pressure terminology
+  + [finding_002] is the extracted lemma controls pressure work, not pressure size
+    = meaning: it does not state scale-invariant L3_over_2 pressure smallness or pressure oscillation smallness in the accepted epsilon-regularity sense
+  + [finding_003] is the tail module is bounded as an error term in the localized entropy identity
+    = meaning: tail control supports absorption in the source's entropy route, but does not by itself become CKN pressure smallness
+  + [finding_004] is the source labels localized pressure-control as a target theorem surface
+    = meaning: proof promotion is blocked because the relevant pressure-control theorem is part of the remaining-work structure, not an independently admitted bridge to epsilon regularity
+  + [finding_005] is no tail-budget-to-pressure-oscillation lemma was extracted
+    = meaning: the missing theorem remains no_tail_budget_to_pressure_oscillation_or_L3_over_2_smallness_lemma
+
+& [AuditApplicationUpdate] is recorded
+  + [audit] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
+  + [source_pressure_object] is localized_entropy_pressure_work_bound_plus_tail_module
+  + [same_frame_status] is same_ball_for_entropy_identity
+  + [velocity_quantity_status] is local_entropy_and_direction_gradient_terms_plus_endpoint_L3_route
+  + [pressure_quantity_status] is pressure_work_bound_not_pressure_size_smallness
+  + [epsilon_target] is CKN_velocity_pressure_smallness_or_local_energy_pressure_smallness
+  + [smallness_status] is not_extracted
+  + [audit_status] is boundary_only
+  + [first_missing_feature] is no_tail_budget_to_pressure_oscillation_or_L3_over_2_smallness_lemma
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is the missing lemma may be hidden in the quadrupole source
+  + [new_shape] is the quadrupole source contains localized pressure-work and tail-control lemmas, but not the accepted pressure-smallness bridge required for epsilon regularity
+  + [retired_overclaim] is localized entropy pressure control is equivalent to CKN pressure smallness
+  + [preserved_potential] is moderate because the source has a precise local pressure-work route, while the epsilon bridge remains unproved
+
+& [NextAction] is bounded
+  + [recommended_next] is mark the Navier-Stokes Theta pressure-to-epsilon lane saturated for this cycle and re-enter the cross-problem order
+  + [heartbeat_status] is active
