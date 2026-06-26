@@ -1,0 +1,57 @@
+Subject: Hodge Cycle Output Admission Ledger
+
+Description: Project-local math inquiry tool for admitting or rejecting Hodge construction mechanisms as actual algebraic-cycle output for arbitrary rational Hodge classes.
+
+& [HodgeCycleOutputAdmissionLedger] is a math inquiry tool
+  + [tool_uuid] is 8f4f65e7-1e48-4dfb-b124-26d0b55d0484
+  + [project] is seven math problems
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_navier_stokes_theta_reentry_saturation_reflection_001.sop
+  + [role] is test whether a Hodge mechanism outputs algebraic cycles for arbitrary rational Hodge-class input
+  + [not_role] is proving Hodge, accepting detection as construction, or treating substitute structures as algebraic cycles
+
+& [AdmissionColumnSet] is the cycle-output surface
+  + [candidate_mechanism] is the construction, correspondence, spread, normal-function, motive, or algorithm candidate
+  + [input_class_scope] is arbitrary_rational_hodge_class, family_class, special_locus_class, correspondence_supplied, motivated_class, or unclear
+  + [output_object] is algebraic_cycle, cycle_class_after_transfer, detected_locus, obstruction_invariant, substitute_structure, or none
+  + [output_effectivity] is explicit_cycle, existential_cycle, conditional_cycle, transfer_if_correspondence_given, detection_only, or absent
+  + [arbitrary_scope_status] is arbitrary, family_scoped, special_locus_only, correspondence_scoped, substitute_only, or absent
+  + [cohomology_match_status] is proves_class_match, conditional_match, detects_possible_match, substitute_match, unknown, or none
+  + [authority_status] is admitted_for_line_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+  + [first_missing_feature] is the earliest missing feature blocking proof-shaped promotion
+
+& [UseProcedure] is the admission workflow
+  + [step_001_name_candidate] is identify the mechanism and its allowed input data
+  + [step_002_output] is decide whether it outputs an algebraic cycle or only detects, organizes, substitutes, or transfers
+  + [step_003_scope] is test whether the mechanism handles arbitrary rational classes or only special/family/correspondence-supplied cases
+  + [step_004_match] is test whether the output cycle class is proved to match the input Hodge class
+  + [step_005_admit] is admit only mechanisms with enough cycle output and matching structure for line-by-line audit
+
+  = must: require algebraic-cycle output or a theorem forcing algebraic-cycle existence
+  = must: separate "correspondence supplied" from "correspondence generated"
+  = must: reject normal-function or Noether-Lefschetz detection as arbitrary-cycle construction
+  = should: preserve scoped mechanisms as calibration when they teach proof shape
+  - never: count motivated, absolute, integral, or Kahler substitute frameworks as Clay-target output without algebraic cycles
+
+(hodge_cycle_output_admission_ledger) :candidate_mechanism: /input scope, output object, effectivity, arbitrary scope, cohomology match/ |Hodge proof|
+  + [inside] is admission control for explicit Hodge cycle-construction audits
+  + [boundary] is a candidate must output cycles for arbitrary rational Hodge classes or generate correspondences that do so
+  |outside| detection-only tools, special-family calibration, substitute structures, and correspondence transfer without generated correspondences
+
+& [CurrentApplication] is the active Hodge reentry target
+  + [candidate_mechanism] is explicit cycle construction or correspondence-generation theorem
+  + [input_class_scope] is arbitrary_rational_hodge_class
+  + [output_object] is none
+    = reason: current records do not name a general arbitrary-class construction algorithm
+  + [output_effectivity] is absent
+  + [arbitrary_scope_status] is absent
+  + [cohomology_match_status] is none
+  + [authority_status] is boundary_only
+  + [first_missing_feature] is no_named_arbitrary_class_to_cycle_output_mechanism
+
+& [NextProbe] is selected
+  + [candidate] is algebraic_correspondence_generation
+  + [reason] is correspondence transfer is already the best scoped mechanism, so the next proof-shaped question is whether correspondences can be generated from arbitrary Hodge-class input
+  + [deep_research_priority_gate] is conditionally_ready
+    = trigger: use only if local records cannot identify whether any correspondence-generation theorem candidate exists
