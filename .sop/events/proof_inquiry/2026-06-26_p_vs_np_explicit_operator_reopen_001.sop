@@ -1,0 +1,54 @@
+Subject: P vs NP Explicit Operator Reopen 001
+
+Description: Reopen pass on the P vs NP explicit-operator target after BSD, Navier-Stokes, and Hodge reopen branches saturated.
+
+& [ReopenFrame] is a proof-inquiry event
+  + [event_uuid] is 3697bf84-9b5e-477d-a0b4-09ab7602ff3f
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_hodge_reopen_saturation_reflection_001.sop
+  + [synthesis_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_final_six_lane_saturation_synthesis_001.sop
+  + [reopen_target] is a concrete NP-complete target family and explicit coherence operator with worst-case proof
+  + [source_candidate] is local propagation with repair from the toy CSP coherence model
+  + [deep_research_gate] is not_used
+    = reason: the immediate boundary is already local and formal: operator completeness against NP-complete CSP/SAT scope
+
+& [OperatorSpecification] is the tested candidate
+  + [target_family] is SAT, 3-SAT, or NP-complete CSP family
+  + [operator_name] is local propagation with repair
+  + [input] is finite variables, domains or Boolean values, and local constraints or clauses
+  + [operation] is remove locally inconsistent values, propagate forced choices, revise local conflicts, and repeat until fixed point or search branch
+  + [certificate] is satisfying assignment
+  + [verifier] is polynomial-time clause or constraint check
+  + [runtime_claim] is polynomial only for bounded propagation passes, not established for complete solving
+
+& [CompletenessTest] is the proof-boundary readout
+  + [lock_001_target_family] is partial
+    = reason: SAT/3-SAT can be named, but no source-derived restriction or encoding is chosen
+  + [lock_002_operator_determinism] is partial
+    = reason: propagation is formalizable, but repair/revision can hide search choices
+  + [lock_003_local_soundness] is plausible
+    = reason: removing inconsistent values or propagating forced assignments can preserve satisfiability when rules are sound
+  + [lock_004_global_completeness] is failed
+    = reason: local consistency does not decide arbitrary SAT/3-SAT satisfiability
+  + [lock_005_polynomial_bound] is partial_or_failed
+    = reason: bounded propagation is polynomial, but complete repair/search may branch exponentially
+  + [lock_006_failure_certificate] is missing
+    = reason: no proof distinguishes unsatisfiable from locally consistent but globally unsatisfiable hard instances
+  + [lock_007_claim_route] is tractable_fragment_or_heuristic
+    = reason: the operator can explain Horn, bijunctive, affine, acyclic, bounded-treewidth, or similar structure, but not all NP-complete instances
+
+& [BoundaryUpdate] is the adjusted P vs NP state
+  + [old_boundary] is no source-derived polynomial-time complete solver for SAT, 3-SAT, or an NP-complete CSP family
+  + [adjusted_boundary] is the explicit local-propagation-with-repair operator remains a tractable-fragment or heuristic solver unless a global completeness theorem and polynomial repair bound are supplied
+  + [best_new_shape] is source coherence should be studied as a polymorphism/structure detector or local-consistency heuristic, not as a P equals NP proof
+  + [first_remaining_lock] is global completeness on an NP-complete family
+  + [second_remaining_lock] is polynomial bound for any required repair/search process
+  + [proof_promotion] is blocked
+    = reason: a polynomial local operator that is incomplete as a solver does not collapse P vs NP
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a P vs NP Operator Completeness Gate if the next heartbeat continues this lane
+    = reason: the inquiry needs a reusable gate separating local soundness, global completeness, runtime, and failure certificates
+  + [commit_policy] is commit this reopen research after tests pass
+  + [heartbeat_status] is active every minute
