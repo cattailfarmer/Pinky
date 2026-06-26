@@ -1,0 +1,59 @@
+Subject: Navier-Stokes Geometric Defect Functional Gate 001
+
+Description: First application of the Navier-Stokes Geometric Defect Functional Gate to candidate alignment/depletion defects.
+
+& [GateApplication] is a proof-inquiry event
+  + [event_uuid] is b0f1ca90-9eba-4ca6-af56-ce2a48f7f995
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Geometric_Defect_Functional_Gate.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_propagated_invariant_reopen_001.sop
+  + [target_claim] is phase correction should become a propagated geometric defect functional with continuation-level control
+
+& [GateRows] is the first defect table
+  + [row_001_vorticity_direction_modulus] is coherence defect
+    = state_variables: vorticity direction where vorticity is nonzero
+    = scale_status: geometric_local_or_critical_contact
+    = evolution_relation: conditional_estimate_or_criterion
+    = sign_or_coercivity: unknown
+    = continuation_contact: vorticity direction coherence regularity criteria
+    = propagation_status: assumed
+    = first_gap: no autonomous evolution inequality preserving required modulus
+  + [row_002_strain_eigenframe_alignment_defect] is strain-geometry defect
+    = state_variables: strain tensor eigenframe, vorticity, enstrophy growth terms
+    = scale_status: geometric_local
+    = evolution_relation: exact identities expose stretching but not monotonicity
+    = sign_or_coercivity: indefinite
+    = continuation_contact: enstrophy or strain growth control
+    = propagation_status: heuristic_to_conditional
+    = first_gap: nonlinear strain terms have no one-sided coercive control
+  + [row_003_type_i_alignment_defect] is local blowup-profile defect
+    = state_variables: scale-invariant local norms and vorticity direction near candidate singularity
+    = scale_status: conditional_type_i
+    = evolution_relation: conditional estimate in scoped settings
+    = sign_or_coercivity: coercive_under_condition
+    = continuation_contact: local regularity or singularity-exclusion criteria
+    = propagation_status: partial_special_case
+    = first_gap: Type I and alignment hypotheses are not derived from arbitrary data
+  + [row_004_velocity_direction_defect] is direction-field defect
+    = state_variables: velocity direction field and velocity magnitude
+    = scale_status: criterion_dependent
+    = evolution_relation: conditional criterion
+    = sign_or_coercivity: unknown
+    = continuation_contact: direction-based regularity criteria
+    = propagation_status: assumed
+    = first_gap: no flow law forces the direction condition globally
+
+& [GateConclusion] is the defect-functional result
+  + [best_partial_candidate] is row_003_type_i_alignment_defect
+  + [best_symbolic_fit] is row_001_vorticity_direction_modulus
+  + [first_general_lock] is no autonomous evolution inequality preserving or improving the defect for arbitrary smooth data
+  + [second_general_lock] is no sign/coercivity strong enough to close a continuation criterion globally
+  + [proposition_update] is phase correction should be read as a demand for a dissipative geometric defect inequality, not as a discovered invariant
+  + [proof_promotion] is blocked
+    = reason: all candidates remain assumed, conditional, indefinite, or special-case
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is run a Navier-Stokes reopen saturation reflection unless a concrete defect functional with an evolution inequality is selected
+  + [commit_policy] is commit this gate after tests pass
+  + [heartbeat_status] is active every minute

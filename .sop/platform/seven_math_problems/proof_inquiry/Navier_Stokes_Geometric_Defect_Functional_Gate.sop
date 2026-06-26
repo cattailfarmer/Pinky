@@ -1,0 +1,40 @@
+Subject: Navier-Stokes Geometric Defect Functional Gate
+
+Description: Project-local math tool for testing whether a proposed geometric defect functional is propagated, scale-relevant, sign/coercive, and strong enough to close a Navier-Stokes continuation criterion.
+
+& [NavierStokesGeometricDefectFunctionalGate] is a math inquiry tool
+  + [tool_uuid] is 98e328dc-a0dc-45b5-99ca-334e0a164c70
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_propagated_invariant_reopen_001.sop
+  + [role] is test whether a geometric depletion candidate can become a propagated defect functional rather than a conditional regularity criterion
+  + [not_role] is proving regularity, inventing unverified monotonicity, or treating alignment observations as estimates
+
+& [GateColumnSet] is the defect-functional surface
+  + [candidate_defect] is the geometric defect or alignment quantity
+  + [state_variables] is velocity, vorticity, strain, direction field, eigenframe, or local blowup profile data
+  + [scale_status] is critical, subcritical, supercritical, geometric_local, conditional_type_i, or unclear
+  + [evolution_relation] is exact identity, inequality, conditional estimate, heuristic, unknown, or outside
+  + [sign_or_coercivity] is monotone, dissipative, coercive_under_condition, indefinite, unknown, or outside
+  + [continuation_contact] is BKM, Prodi-Serrin, vorticity criterion, local regularity criterion, or none
+  + [propagation_status] is propagated, conditional, partial_special_case, assumed, heuristic, or open
+  + [first_gap] is the earliest missing feature blocking proof-shaped promotion
+
+& [UseProcedure] is the gate workflow
+  + [step_001_define_defect] is write the defect functional and its state variables
+  + [step_002_score_scale] is classify whether the defect controls a continuation-level scale
+  + [step_003_read_evolution] is identify the evolution identity or inequality
+  + [step_004_test_sign] is check whether the evolution relation is monotone, dissipative, or coercive
+  + [step_005_link_continuation] is name the continuation criterion it would close
+  + [step_006_classify] is assign propagation status and first gap
+
+  = must: separate a regularity criterion from a propagated estimate
+  = must: require an evolution relation before calling a defect functional dynamic
+  = must: require sign or coercivity before calling it anti-blowup
+  = should: preserve useful conditional criteria as periphery meaning
+  - never: infer propagation from numerical alignment or physical intuition
+
+(navier_stokes_geometric_defect_functional_gate) :candidate_defect: /scale, evolution, sign, continuation/ |regularity proof|
+  + [inside] is propagated-defect testing
+  + [boundary] is a defect may be meaningful but still not propagated
+  |outside| assumed coherence as proof, conditional criterion as theorem, and alignment without estimate
