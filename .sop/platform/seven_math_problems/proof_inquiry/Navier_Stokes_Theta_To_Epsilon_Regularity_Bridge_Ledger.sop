@@ -1,0 +1,51 @@
+Subject: Navier-Stokes Theta-to-Epsilon Regularity Bridge Ledger
+
+Description: Project-local math inquiry tool for testing whether a Theta depletion threshold implies known epsilon-regularity smallness conditions.
+
+& [NavierStokesThetaToEpsilonRegularityBridgeLedger] is a math inquiry tool
+  + [tool_uuid] is 6f1f3e49-3a79-43db-b4ff-a2f672e24d16
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_epsilon_regularity_bridge_research_001.sop
+  + [role] is test whether Theta-threshold control can imply an accepted local epsilon-regularity criterion
+  + [not_role] is proving Navier-Stokes, validating Theta, or replacing pressure estimates with geometric language
+
+& [BridgeColumnSet] is the theorem-bridge surface
+  + [candidate_theta] is the depletion functional or pressure-work coefficient being tested
+  + [target_epsilon_criterion] is CKN_velocity_pressure_smallness, local_energy_pressure_smallness, one_component_pressure_decomposition, L3_endpoint_smallness, or unclear
+  + [active_scale_localization] is defined, conditional, heuristic, absent, or unclear
+  + [pressure_split_status] is nonlocal_and_harmonic_controlled, decomposed_not_bounded, conditional, ignored, or unclear
+  + [theta_to_quantity_bound] is proved, theorem_candidate, conditional, heuristic, absent, or contradicted
+  + [concentration_exclusion_status] is excluded, reduced_to_epsilon_smallness, conditional, open, or ignored
+  + [bridge_status] is admitted_for_line_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+  + [first_missing_feature] is the earliest missing bridge feature blocking proof-shaped promotion
+
+& [UseProcedure] is the bridge workflow
+  + [step_001_theta] is name Theta and the threshold needed for pressure-work absorption
+  + [step_002_epsilon] is name the accepted local regularity criterion being targeted
+  + [step_003_localize] is define active scales and cylinders where Theta is measured
+  + [step_004_pressure] is split pressure into local, nonlocal, and harmonic parts and state the needed bounds
+  + [step_005_bound] is prove or classify the bound from Theta threshold to epsilon-small velocity-pressure quantities
+  + [step_006_concentration] is classify whether concentration sequences are excluded or merely reformulated
+
+  = must: name an accepted epsilon-regularity criterion before claiming local regularity
+  = must: control pressure nonlocality in the same active-scale frame
+  = must: separate pressure-work absorption from local regularity smallness
+  = should: preserve Theta as a candidate bridge object when it clarifies the needed estimate
+  - never: treat small geometric depletion as epsilon-regularity without a theorem
+
+(navier_stokes_theta_to_epsilon_regularity_bridge_ledger) :candidate_theta: /epsilon criterion, active scale, pressure split, theta-bound, concentration exclusion/ |regularity proof|
+  + [inside] is bridge testing between endpoint pressure-work programs and accepted local regularity criteria
+  + [boundary] is Theta must imply known scale-invariant smallness, not just reduce one pressure-work term
+  |outside| global L3 criterion alone, coherent geometry by assumption, and pressure control without harmonic/nonlocal bounds
+
+& [CurrentApplication] is the quadrupole endpoint pressure-work route
+  + [candidate_theta] is scale-invariant depletion functional Theta(v)
+  + [target_epsilon_criterion] is CKN_velocity_pressure_smallness_or_local_energy_pressure_smallness
+  + [active_scale_localization] is claimed_or_implicit
+  + [pressure_split_status] is decomposed_not_bounded
+  + [theta_to_quantity_bound] is absent
+  + [concentration_exclusion_status] is reduced_to_epsilon_smallness
+  + [bridge_status] is boundary_only
+  + [first_missing_feature] is no_theta_to_epsilon_regularity_smallness_theorem

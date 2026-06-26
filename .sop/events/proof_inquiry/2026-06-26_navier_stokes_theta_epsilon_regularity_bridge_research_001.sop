@@ -1,0 +1,66 @@
+Subject: Navier-Stokes Theta Epsilon-Regularity Bridge Research 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Gate: C:\Project\Pinky\.sop\platform\seven_math_problems\research\Deep_Research_Priority_Gate.sop
+Prior: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_threshold_deep_research_001.sop
+Authority Boundary: bounded research resolution only; no Navier-Stokes proof claim
+
+& [DeepResearchUnit] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [low_resolution_signal] is whether Theta-threshold exclusion should be tested against epsilon-regularity or active-scale pressure criteria rather than only global L3 compactness
+  + [bounded_question] is whether known scale-invariant epsilon-regularity, local-energy, pressure-decomposition, or concentration results provide a bridge from a Theta depletion threshold to regularity
+  + [curiosity_priority] is high
+    = reason: the prior Theta pass preserved endpoint L3 as the boundary but did not identify the nearest local regularity admission test
+
+& [SourceSet] is the bounded research surface
+  + [source_001] is Escauriaza, Seregin, and Sverak, L3,infinity-solutions of Navier-Stokes equations and backward uniqueness
+    = link: https://www.pdmi.ras.ru/~seregin/Recent%20Publications/engESS3.pdf
+    = use: preserves endpoint L3,infinity regularity as a global critical-space theorem
+  + [source_002] is Caffarelli-Kohn-Nirenberg seminar notes on Navier-Stokes partial regularity
+    = link: https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.020/skipper/NotesCKN_Jack_2.pdf
+    = use: records scale-invariant local energy and pressure criteria as the local regularity language
+  + [source_003] is Barker and Prange, From concentration to quantitative regularity
+    = link: https://prange.perso.math.cnrs.fr/papers/survey-concentration-quantreg.pdf
+    = use: connects concentration on small scales with quantitative regularity and critical norm behavior
+  + [source_004] is Guevara and Nguyen, Local energy bounds and epsilon-regularity criteria for the 3D Navier-Stokes system
+    = link: https://www.math.lsu.edu/~pcnguyen/papers_html/Guevara-Phuc-12-29-16.pdf
+    = use: develops local energy and pressure-based epsilon-regularity refinements
+  + [source_005] is Finite-Scale One-Component Regularity via Harmonic Pressure
+    = link: https://arxiv.org/html/2606.08352v1
+    = use: recent pressure-decomposition work emphasizing scale-invariant pressure oscillation and harmonic pressure obstructions
+  + [source_006] is Quadrupole-Depletion Route to L3 Regularity for 3D Incompressible Navier-Stokes
+    = link: https://quantumaetherdynamics.org/papers/Navier_Stokes_Millenium_Puzzle.pdf
+    = use: source of the Theta functional and endpoint pressure-work target
+
+& [ResearchFindings] is the theorem-boundary result
+  + [finding_001] is epsilon-regularity is the nearest local admission test
+    = meaning: a Theta route should be tested by whether it forces smallness of known scale-invariant velocity-pressure quantities on active cylinders
+  + [finding_002] is pressure decomposition is central
+    = meaning: pressure nonlocality cannot be hidden inside a scalar threshold unless the harmonic/nonlocal pressure part is controlled in the same active-scale frame
+  + [finding_003] is concentration-compactness remains relevant but too global
+    = meaning: global critical-norm blow-up exclusion identifies the endpoint, while local epsilon criteria identify what a Theta threshold must actually imply
+  + [finding_004] is no Theta-to-epsilon theorem was found
+    = meaning: no checked source proves that small Theta forces CKN-style local regularity smallness or excludes concentration sequences
+  + [finding_005] is new pressure-focused claims remain audit targets
+    = meaning: recent pressure-decomposition and regularity claims can sharpen candidate gates but do not become authority without validation
+
+& [ThetaLedgerUpdate] is the obstruction reading
+  + [old_first_obstruction] is no_theta_specific_propagated_or_rigidity_exclusion_found
+  + [new_bridge_obstruction] is no_theta_to_epsilon_regularity_smallness_theorem
+  + [scale_invariance_status] is meaningful_but_unbridged
+  + [evolution_control_status] is still_absent
+  + [concentration_sequence_status] is local_epsilon_bridge_needed
+  + [pressure_kernel_status] is must_split_nonlocal_and_harmonic_parts
+  + [continuation_connection] is endpoint_boundary_plus_local_admission_test
+  + [lock_mass_effect] is definition_progress_only
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is prove Theta threshold exclusion directly or via critical-space rigidity
+  + [new_shape] is the sharper proof-shaped target is a Theta-to-epsilon bridge: show the depletion threshold forces known scale-invariant local regularity smallness while controlling pressure nonlocality
+  + [retired_overclaim] is a scale-invariant Theta functional automatically controls CKN quantities
+  + [preserved_potential] is high because the obstruction now has a local theorem interface
+
+& [NextAction] is bounded
+  + [recommended_next] is create a Theta-to-Epsilon Regularity Bridge Ledger and apply it to the quadrupole pressure-work route
+  + [heartbeat_status] is manual_continue

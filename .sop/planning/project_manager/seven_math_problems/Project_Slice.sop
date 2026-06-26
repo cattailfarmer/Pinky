@@ -416,6 +416,9 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Six_Problem_Periphery_Inquiry_Order.sop
   + [Task_136_synthesize_reentry_cycle_saturation] is synthesize the current reentry cycle across all six non-Riemann lanes and the Poincare model-validation context
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_reentry_cycle_saturation_synthesis_001.sop
+  + [Task_137_research_navier_stokes_theta_epsilon_bridge] is run Deep_Research_Priority_Gate on the Theta-to-epsilon-regularity bridge and define its admission ledger
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_theta_epsilon_regularity_bridge_research_001.sop
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_To_Epsilon_Regularity_Bridge_Ledger.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
