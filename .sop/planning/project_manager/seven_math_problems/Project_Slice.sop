@@ -248,6 +248,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_068_build_bsd_source_transfer_sufficiency_ledger] is separate source-transfer existence from enough independent Mordell-Weil source evidence and same-hypothesis upper control
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Transfer_Sufficiency_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_transfer_sufficiency_ledger_001.sop
+  + [Task_069_research_bsd_chow_heegner_source_count] is research whether Chow-Heegner and related point constructions supply source-count sufficiency beyond special rank-one-style settings
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_deep_research_chow_heegner_source_count_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

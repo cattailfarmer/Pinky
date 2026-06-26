@@ -1,0 +1,56 @@
+Subject: BSD Deep Research Chow-Heegner Source Count 001
+
+Description: Bounded Deep_Research_Priority_Gate pass on whether Chow-Heegner and related point constructions supply enough independent Mordell-Weil points for BSD source-count sufficiency.
+
+& [DeepResearchUnit] is a Deep_Research_Priority_Gate application
+  + [event_uuid] is a58a587b-0ea5-40bc-8d45-5fe1eea5d85c
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_transfer_sufficiency_ledger_001.sop
+  + [resolution_gap] is whether the Chow-Heegner source-transfer corridor can move from point existence to enough independent source count
+  + [curiosity_priority] is high
+    = reason: source-count sufficiency is the first general lock after the source-transfer ledger
+  + [proof_boundary] is no general BSD proof authority unless construction, independence, and upper control close in the same rank scope
+
+& [SourceSet] is the bounded research frame
+  + [source_001] is Bertolini, Darmon, and Prasanna, Chow-Heegner points on CM elliptic curves and values of p-adic L-functions
+    = link: https://www.math.mcgill.ca/darmon/pub/Articles/Research/53.BDP3/paper.pdf
+    = use: gives special CM elliptic-curve Chow-Heegner point constructions, with rank-zero/rank-one behavior visible in examples
+  + [source_002] is Darmon, Daub, Lichtenstein, Rotger, and Stein, Algorithms for Chow-Heegner points via iterated integrals
+    = link: https://wstein.org/papers/mcom2927-chow-heegner.pdf
+    = use: computes Chow-Heegner points for rank-one elliptic curves of conductor below 100 for Hecke-correspondence cycles
+  + [source_003] is Darmon, Rotger, and Sols, Iterated integrals, diagonal cycles and rational points on elliptic curves
+    = link: https://www.numdam.org/articles/10.5802/pmb.a-145/
+    = use: connects diagonal-cycle/iterated-integral constructions to rational points on elliptic curves in special settings
+  + [source_004] is Bo-Hae Im, Heegner points and Mordell-Weil groups of elliptic curves over large fields
+    = link: https://arxiv.org/abs/math/0411534
+    = use: shows Heegner-point families can create infinite-rank phenomena over large fields, clarifying that abundant points over auxiliary fields are not the same as BSD source count over Q
+  + [source_005] is Darmon and Rotger, Algebraic cycles and Stark-Heegner points
+    = link: https://swc-math.github.io/aws/2011/2011DarmonRotgerNotes.pdf
+    = use: frames Stark-Heegner and algebraic-cycle point constructions as canonical but often conjectural or special analytic constructions
+
+& [ResearchFindings] is the source-count result
+  + [finding_001] is Chow-Heegner constructions can produce explicit rational points in special settings
+    = meaning: source transfer is real enough to preserve as the best R-hand formal neighbor
+  + [finding_002] is the most concrete computations in the current frame are rank-one style
+    = meaning: current evidence calibrates point production, not arbitrary-rank source-count sufficiency
+  + [finding_003] is varying correspondences or auxiliary fields may produce more points but changes the target scope
+    = meaning: abundant auxiliary-field points do not automatically prove enough independent points over the original field Q
+  + [finding_004] is no source-count theorem was found that supplies analytic-rank-many independent Chow-Heegner points for all elliptic curves
+    = meaning: the first general lock remains closed against proof promotion
+  + [finding_005] is source count and independence cannot be separated in practice
+    = meaning: even multiple constructed points require a nondegenerate height/regulator matrix and same-frame Selmer control
+
+& [LedgerUpdate] is the adjusted sufficiency reading
+  + [row_002_chow_heegner_points_source_count_status] is still one_or_some
+  + [row_002_chow_heegner_points_independence_status] is still measured_if_nonzero_or_computational_in_examples
+  + [first_general_lock] is source_count_status
+  + [lock_shape] is now sharper: no rank-parametrized source factory over the target field has been identified
+  + [meaning_gain] is source-document R-hand growth can mean a family of correspondences/cycles only after the target field, rank claim, and independence test are fixed
+  + [proof_promotion] is blocked
+    = reason: special explicit points and rank-one computations do not give enough independent generators for arbitrary BSD rank
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is run a BSD reopen saturation reflection unless a concrete candidate source-count mechanism is selected
+  + [commit_policy] is commit this deep-research increment after tests pass
+  + [heartbeat_status] is active every minute
