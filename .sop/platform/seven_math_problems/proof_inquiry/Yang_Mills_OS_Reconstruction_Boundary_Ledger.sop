@@ -1,0 +1,36 @@
+Subject: Yang-Mills OS Reconstruction Boundary Ledger
+
+Description: Project-local boundary ledger for testing Yang-Mills construction artifacts against finite-cutoff, continuum-limit, reflection-positivity, Schwinger-function, reconstruction, and gap-transfer requirements.
+
+& [YangMillsOSReconstructionBoundaryLedger] is a math inquiry tool
+  + [tool_uuid] is 5b2dc8f1-a6f4-4431-b6df-37ffc7595cf0
+  + [project] is seven math problems
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [created_at] is 2026-06-26T19:59Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_euclidean_os_construction_deep_research_001.sop
+  + [role] is separate construction artifacts by OS reconstruction readiness and gap-transfer authority
+  + [not_role] is proving Yang-Mills, validating recent complete-proof uploads, or treating finite lattice models as continuum theory
+
+& [ColumnSet] is the OS boundary surface
+  + [artifact] is the model, measure, Schwinger-function family, reconstruction theorem, observable, or gap theorem
+  + [finite_cutoff_status] is finite_model_defined, not_applicable, absent, or unknown
+  + [continuum_limit_status] is proven_limit, candidate_limit, uniform_estimates_needed, absent, or unknown
+  + [reflection_positivity_status] is proven, plausible_at_cutoff, needs_limit_preservation, absent, or unknown
+  + [schwinger_function_status] is constructed, candidate, finite_cutoff_only, absent, or unknown
+  + [reconstruction_status] is reconstructed, reconstructable_if_os_axioms_hold, blocked_upstream, absent, or unknown
+  + [gap_transfer_status] is spectral_gap_proven, decay_to_gap_if_reconstructed, decay_only, heuristic, absent, or unknown
+  + [first_missing_feature] is the earliest missing feature blocking construction authority
+
+& [UseProcedure] is the OS-boundary workflow
+  + [step_001_name_artifact] is name the artifact and source record
+  + [step_002_check_cutoff] is mark whether a finite regularized model exists
+  + [step_003_check_limit] is mark whether continuum limit and uniform estimates exist
+  + [step_004_check_os] is mark reflection positivity and OS axioms
+  + [step_005_check_reconstruction] is mark whether a Hilbert-space or Wightman reconstruction is available
+  + [step_006_check_gap] is mark whether decay transfers to a Hamiltonian spectral gap
+
+  = must: treat every missing earlier stage as blocking downstream gap authority
+  = must: audit recent solution claims stage by stage before authority use
+  = should: preserve finite lattice and decay theorems as meaningful scoped artifacts
+  - never: accept a mass-gap claim without constructed observables and reconstruction
+
