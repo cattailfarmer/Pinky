@@ -409,6 +409,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_133_create_yang_mills_construction_chain_admission_ledger] is define the Yang-Mills admission test for complete construction-to-mass-gap chains
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_Construction_Chain_Admission_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_construction_chain_admission_ledger_001.sop
+  + [Task_134_audit_yang_mills_recent_complete_claim_stage_chain] is apply the Yang-Mills construction-chain admission ledger to a recent complete-proof claim
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_complete_claim_stage_audit_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

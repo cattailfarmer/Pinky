@@ -58,3 +58,18 @@ Description: Project-local math inquiry tool for admitting or rejecting Yang-Mil
   + [reason] is prior records found complete-proof uploads, and a stage audit can quickly determine whether any claim is precise enough to enter line-by-line authority review
   + [deep_research_priority_gate] is conditionally_ready
     = trigger: use only if local records do not preserve enough source detail to identify the claimed construction chain
+
+& [ApplicationHistory] is append-only
+  + [application_001] is initial complete construction-chain admission boundary
+    = event: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_construction_chain_admission_ledger_001.sop
+    = first_missing_feature: no_selected_artifact_with_verified_continuum_limit_and_os_axioms
+    = admission_status: boundary_only
+  + [application_002] is recent complete-proof claim stage audit
+    = event: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_complete_claim_stage_audit_001.sop
+    = regularization_status: claimed_complete
+    = continuum_limit_status: claimed_limit
+    = os_axiom_status: claimed
+    = reconstruction_status: claimed
+    = mass_gap_status: claimed
+    = first_missing_feature: independent_acceptance_of_uniform_estimates_and_regulator_equivalence
+    = admission_status: boundary_only
