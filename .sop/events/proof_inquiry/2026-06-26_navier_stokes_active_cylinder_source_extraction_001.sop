@@ -1,0 +1,56 @@
+Subject: Navier-Stokes Active Cylinder Source Extraction 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Prior: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Active_Scale_Localization_Gate.sop
+Authority Boundary: source-extraction record only; no Navier-Stokes proof claim
+
+& [SourceExtractionEvent] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [trigger] is heartbeat reentry from the active-scale localization gate
+  + [bounded_question] is whether the preserved imported corpus states an explicit active-cylinder selection rule for the Theta route
+  + [source_manifest] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\manifest.sop
+  + [search_surface] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_seven_math_problems_imported_corpus\extracted_text_snapshots
+
+& [SearchTerms] is the extraction query set
+  + [term_001] is theta
+  + [term_002] is active scale
+  + [term_003] is cylinder
+  + [term_004] is pressure
+  + [term_005] is depletion
+  + [term_006] is concentration
+  + [term_007] is L3
+  + [term_008] is regularity
+
+& [ExtractionFindings] is the source-bound result
+  + [finding_001] is the preserved imported corpus does not contain the Theta route terminology
+    = evidence: corpus search found no theta or active-scale localization language in the imported snapshots
+    = meaning: the local imported seven-problem corpus cannot authorize the Theta-specific bridge or active-cylinder claim
+  + [finding_002] is the imported Navier-Stokes text is descriptive rather than proof-technical
+    = evidence: the preserved snapshots describe velocity, pressure, energy, smooth global solutions, and possible singularity at a high level
+    = meaning: the source layer supports problem-space framing, not the current Theta proof-audit route
+  + [finding_003] is the Theta route remains sourced to the external quadrupole-depletion document cited in prior research records
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_quadrupole_endpoint_pressure_work_audit_001.sop
+    = meaning: source/proof boundaries must distinguish imported project corpus from later external theorem-interface research
+  + [finding_004] is no active-cylinder selection rule was extracted from preserved project sources
+    = meaning: the active-scale localization gate remains boundary_only for the current route
+
+& [GateApplicationUpdate] is recorded
+  + [gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Active_Scale_Localization_Gate.sop
+  + [candidate_scale] is not_extracted_from_imported_corpus
+  + [selection_rule] is absent_in_imported_corpus
+  + [theta_frame_status] is outside_imported_corpus
+  + [epsilon_frame_status] is not_defined_by_imported_corpus
+  + [pressure_frame_status] is descriptive_only_in_imported_corpus
+  + [promotion_status] is boundary_only
+  + [first_missing_feature] is no_source_preserved_active_cylinder_selection_rule
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is test the source document for an explicit active-cylinder selection rule
+  + [new_shape] is imported corpus cannot supply the rule; the next valid audit must inspect the external quadrupole-depletion source or formulate a new theorem candidate separately
+  + [retired_overclaim] is the old project source document already contains the Theta active-scale proof route
+  + [preserved_potential] is moderate_high because the theorem interface is still concrete, but its authority must come from external source audit or new formal work
+
+& [NextAction] is bounded
+  + [recommended_next] is create an external-source extraction table for the quadrupole-depletion route focused only on active-cylinder selection language
+  + [heartbeat_status] is active

@@ -425,6 +425,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_139_create_navier_stokes_active_scale_localization_gate] is define and apply the same-frame active-cylinder gate for Theta, pressure split, and epsilon-regularity quantities
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Active_Scale_Localization_Gate.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_active_scale_localization_gate_001.sop
+  + [Task_140_extract_navier_stokes_active_cylinder_language_from_imported_sources] is test the preserved imported corpus for Theta active-cylinder selection language and record the source boundary
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_active_cylinder_source_extraction_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
