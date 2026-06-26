@@ -1,0 +1,32 @@
+Subject: Navier-Stokes Pressure-Bound to Epsilon Audit 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Prior: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_External_Active_Cylinder_Extraction_Table.sop
+Authority Boundary: audit record only; no Navier-Stokes proof claim
+
+& [ProofInquiryEvent] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [trigger] is heartbeat reentry from the external active-cylinder extraction
+  + [bounded_question] is whether localized pressure and tail estimates in the source route reach accepted epsilon-regularity smallness
+  + [artifact_created] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
+
+& [AuditFindings] is the theorem-boundary result
+  + [finding_001] is the source pressure localization is not the same object as accepted local pressure smallness
+    = meaning: a pressure-work or pressure-tail estimate may help an endpoint energy identity without controlling the pressure norm or oscillation required by local regularity criteria
+  + [finding_002] is endpoint L3 continuation remains distinct from epsilon regularity
+    = meaning: global L-infinity-in-time L3 control can be a continuation target, but it does not by itself supply a local CKN-small cylinder
+  + [finding_003] is a same-frame bridge would need both velocity and pressure quantities
+    = meaning: the source estimate must control the accepted scale-invariant velocity-pressure pair, not only one signed work term
+  + [finding_004] is the next inspectable theorem interface is tail-budget-to-pressure-smallness
+    = meaning: the current audit should look for a lemma converting the source tail budget or harmonic pressure control into pressure oscillation or L3_over_2 smallness
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is source localized pressure estimates may provide the epsilon bridge
+  + [new_shape] is source localized pressure estimates are only epsilon-relevant if they yield accepted local velocity-pressure smallness on the same frame
+  + [retired_overclaim] is pressure-work absorption is equivalent to CKN pressure smallness
+  + [preserved_potential] is moderate_high because the remaining gap is a concrete estimate rather than a vague geometric claim
+
+& [NextAction] is bounded
+  + [recommended_next] is inspect the source for a tail-budget-to-pressure-smallness or harmonic-pressure-oscillation lemma before broader research
+  + [heartbeat_status] is active

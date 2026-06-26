@@ -1,0 +1,59 @@
+Subject: Navier-Stokes Pressure-Bound to Epsilon Audit
+
+Description: Project-local audit tool for testing whether localized pressure bounds in a candidate Navier-Stokes route imply accepted epsilon-regularity smallness.
+
+& [NavierStokesPressureBoundToEpsilonAudit] is a math inquiry tool
+  + [tool_uuid] is c545fb66-9d94-430e-962b-b2b67f1071e0
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_external_active_cylinder_extraction_001.sop
+  + [parent_table] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_External_Active_Cylinder_Extraction_Table.sop
+  + [role] is compare localized source pressure estimates with accepted local epsilon-regularity quantities
+  + [not_role] is validating source estimates, proving CKN regularity, or converting endpoint L3 monotonicity into local regularity by assertion
+
+& [AuditColumnSet] is the same-frame pressure-to-epsilon surface
+  + [source_pressure_object] is localized_entropy_pressure_bound, pressure_work_absorption, harmonic_pressure_tail, quadrupole_hessian_bound, or unclear
+  + [same_frame_status] is same_ball, comparable_ball, global_only, conditional, or absent
+  + [velocity_quantity_status] is L3_local_bound, local_energy_bound, gradient_dissipation_bound, endpoint_global_L3, or absent
+  + [pressure_quantity_status] is L3_over_2_pressure_smallness, pressure_oscillation_smallness, pressure_work_bound, tail_budget, or absent
+  + [epsilon_target] is CKN_velocity_pressure_smallness, local_energy_pressure_smallness, one_component_harmonic_pressure, endpoint_L3_continuation, or unclear
+  + [smallness_status] is proved, conditional, target_theorem, heuristic, absent, or mismatched
+  + [audit_status] is admitted_for_line_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+  + [first_missing_feature] is the earliest missing feature blocking accepted epsilon-regularity promotion
+
+& [UseProcedure] is the audit workflow
+  + [step_001_source_pressure] is name the exact localized pressure estimate or pressure-work estimate from the source route
+  + [step_002_frame] is check whether the estimate lives on the same ball or cylinder as the proposed regularity test
+  + [step_003_velocity] is identify the local velocity quantity available in the same frame
+  + [step_004_pressure_quantity] is identify whether the source estimate controls pressure size or only pressure work
+  + [step_005_epsilon_target] is name the accepted epsilon criterion being targeted
+  + [step_006_smallness] is classify whether the source proves smallness of the accepted criterion
+
+  = must: separate pressure-work absorption from pressure-size smallness
+  = must: require local velocity and pressure quantities in the same frame before epsilon promotion
+  = must: preserve endpoint L3 continuation as a different target from local epsilon regularity
+  = should: use harmonic pressure decomposition as a bridge only when pressure oscillation or nonlocal pressure is bounded in the criterion's frame
+  - never: count a local pressure estimate as CKN smallness unless it supplies the accepted scale-invariant quantity and threshold
+
+(navier_stokes_pressure_bound_to_epsilon_audit) :source pressure object, same frame, velocity quantity, pressure quantity, epsilon target/ |regularity admission|
+  + [inside] is audit of pressure-bound-to-epsilon bridge claims
+  + [boundary] is local pressure control must become accepted local smallness before regularity promotion
+  |outside| endpoint continuation alone, geometric coherence alone, and source theorem labels without independent validation
+
+& [CurrentApplication] is the external quadrupole-depletion route
+  + [source_pressure_object] is localized_entropy_pressure_bound_and_tail_budget
+  + [same_frame_status] is same_ball_for_source_estimate
+  + [velocity_quantity_status] is endpoint_global_L3_with_local_entropy_terms
+  + [pressure_quantity_status] is pressure_work_bound_and_tail_budget
+  + [epsilon_target] is CKN_velocity_pressure_smallness_or_local_energy_pressure_smallness
+  + [smallness_status] is absent
+  + [audit_status] is boundary_only
+  + [first_missing_feature] is no_local_velocity_pressure_smallness_threshold_extracted_from_source_pressure_bound
+
+& [CurrentReading] is the proof-shape adjustment
+  + [old_obstruction] is no_bridge_from_source_active_ball_to_accepted_epsilon_regular_regularization
+  + [new_obstruction] is pressure-work and tail estimates are not yet pressure-size or velocity-pressure smallness estimates
+  + [best_next_handle] is inspect whether any source lemma converts tail-budget control into scale-invariant pressure oscillation or L3_over_2 pressure smallness
+  + [proof_promotion_status] is blocked
+  + [deep_research_gate_status] is ready_if_the_source_lemma_text_cannot_be_resolved_locally
