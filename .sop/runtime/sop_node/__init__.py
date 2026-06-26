@@ -79,6 +79,15 @@ from .state_trace import (
     InferenceStateTrace,
     build_inference_state_trace,
 )
+from .symbolic_ricci_flow import (
+    EDGE_PRESSURES,
+    NODE_WEIGHTS,
+    FlowScore,
+    FlowScoreDelta,
+    FlowStateCounts,
+    score_delta,
+    score_state,
+)
 from .attention_kernel import (
     CompiledAttentionKernel,
     FacultyFieldSignature,

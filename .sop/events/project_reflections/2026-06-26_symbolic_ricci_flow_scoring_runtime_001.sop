@@ -1,0 +1,28 @@
+Subject: Seven Math Problems - Symbolic Ricci Flow Scoring Runtime
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Source Boundary: C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Graph_Scoring_Prototype.sop
+Authority Boundary: diagnostic runtime only; no proof authority; no Millennium Problem solution claim
+
+& [RuntimeImplementationRecord] is complete
+  + [implemented_surface] is repeatable scoring for counted Symbolic Ricci Flow proof-inquiry states
+    = file: C:\Project\Pinky\.sop\runtime\sop_node\symbolic_ricci_flow.py
+    = exports: FlowStateCounts, FlowScore, FlowScoreDelta, score_state, score_delta
+  + [test_surface] is focused unit coverage for BSD replay calibration and guardrails
+    = file: C:\Project\Pinky\.sop\runtime\tests\test_symbolic_ricci_flow.py
+  + [preserved_boundary] is the separation between boundary cleanup and real unresolved lock reduction
+    = diagnostic: irregularity_total may fall to zero while unresolved_lock_mass remains positive
+    = diagnostic: authority_leak_count is reported rather than normalized away
+
+& [Reflection] is scoped
+  + [why_now] is the current six-lane proof-inquiry cycle is saturated and needs repeatable diagnostics before future reentry choices
+  + [what_changed] is the Symbolic Ricci Flow prototype moved from prose calibration into a narrow runtime tool
+  + [what_did_not_change] is the mathematical status of every problem lane
+    = no formal proof package
+    = no accepted validation
+    = no source/proof boundary relaxation
+
+& [NextUse] is proposed
+  + [candidate] is score future reentry candidates against existing lock ledgers before selecting another deep research or audit lane
+  + [gate] is use Deep_Research_Priority_Gate only when a low-resolution peripheral concept blocks a concrete score or boundary assignment
