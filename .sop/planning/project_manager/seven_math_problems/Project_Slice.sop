@@ -427,6 +427,9 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_active_scale_localization_gate_001.sop
   + [Task_140_extract_navier_stokes_active_cylinder_language_from_imported_sources] is test the preserved imported corpus for Theta active-cylinder selection language and record the source boundary
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_active_cylinder_source_extraction_001.sop
+  + [Task_141_extract_external_quadrupole_active_cylinder_language] is extract active-ball, localized entropy, tail-budget, and coherent-tube localization language from the external quadrupole-depletion route
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_External_Active_Cylinder_Extraction_Table.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_external_active_cylinder_extraction_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

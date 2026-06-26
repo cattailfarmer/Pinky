@@ -1,0 +1,46 @@
+Subject: Navier-Stokes External Active Cylinder Extraction 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Source: https://quantumaetherdynamics.org/papers/Navier_Stokes_Millenium_Puzzle.pdf
+Prior: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_active_cylinder_source_extraction_001.sop
+Authority Boundary: external-source extraction only; no Navier-Stokes proof claim
+
+& [ExternalSourceExtractionEvent] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [trigger] is heartbeat reentry from the active-cylinder source boundary
+  + [bounded_question] is whether the external quadrupole-depletion source contains active-scale or active-cylinder selection language
+  + [artifact_created] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_External_Active_Cylinder_Extraction_Table.sop
+
+& [SourceFindings] is the bounded extraction result
+  + [finding_001] is the source defines global Theta by a supremum over balls and radii
+    = meaning: Theta has a scale-invariant ball surface, but this is a global supremum, not a selected regularity cylinder
+  + [finding_002] is the source defines active balls by a q-average threshold
+    = meaning: the source has a concrete active-scale object for packing and dissipation payment
+  + [finding_003] is the source localizes the speed-entropy identity on a ball with a cutoff and pressure core
+    = meaning: there is a same-ball pressure interface worth auditing next
+  + [finding_004] is the source's coherent-tube closure is conditional and quantified over balls
+    = meaning: it can imply small Theta under strong geometric hypotheses, but it does not supply unconditional concentration exclusion
+  + [finding_005] is no accepted epsilon-regularity bridge was extracted
+    = meaning: active balls and localized pressure estimates still feed endpoint L3 monotonicity rather than CKN-style local smallness
+
+& [GateApplicationUpdate] is recorded
+  + [gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Active_Scale_Localization_Gate.sop
+  + [candidate_scale] is B(y,rho)_and_active_ball_B(x,rho)
+  + [selection_rule] is threshold_by_q_average_or_arbitrary_ball_with_cutoff
+  + [theta_frame_status] is comparable_ball_surface_but_not_epsilon_cylinder
+  + [epsilon_frame_status] is absent
+  + [pressure_frame_status] is localized_pressure_bound_candidate
+  + [promotion_status] is boundary_only
+  + [first_missing_feature] is no_bridge_from_source_active_ball_to_accepted_epsilon_regular_regularization
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is inspect whether the external source contains active-cylinder selection language
+  + [new_shape] is active-ball and localized-pressure language exists, but the next proof interface is pressure-bound-to-epsilon rather than active-scale existence
+  + [retired_overclaim] is the external route lacks any active-scale object
+  + [retired_overclaim_002] is the external route's active balls already satisfy accepted epsilon-regularity smallness
+  + [preserved_potential] is high because the next obstruction is a precise same-frame estimate
+
+& [NextAction] is bounded
+  + [recommended_next] is build a same-frame pressure-bound-to-epsilon audit for the localized entropy pressure lemma and tail budget
+  + [heartbeat_status] is active

@@ -1,0 +1,72 @@
+Subject: Navier-Stokes External Active Cylinder Extraction Table
+
+Description: Source-bound extraction table for active-scale and active-cylinder language in the external quadrupole-depletion Navier-Stokes route.
+
+& [NavierStokesExternalActiveCylinderExtractionTable] is a source-bound proof inquiry tool
+  + [tool_uuid] is 437262e8-d9a4-49f0-bb58-6ef02d321052
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [source] is https://quantumaetherdynamics.org/papers/Navier_Stokes_Millenium_Puzzle.pdf
+  + [parent_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Active_Scale_Localization_Gate.sop
+  + [role] is extract only the source's active-scale localization claims before proof promotion
+  + [not_role] is validating the estimates, filling omitted arguments, or treating source labels as accepted theorems
+
+& [ExtractionColumnSet] is the active-cylinder source surface
+  + [source_object] is active ball, localized entropy ball, pressure-bound localization, coherent-tube ball, or global_theta
+  + [selection_rule] is threshold_by_q_average, arbitrary_ball_with_cutoff, every_ball_condition, supremum_over_balls, concentration_sequence, or absent
+  + [theta_connection] is direct_theta_definition, pressure_bound_interface, coherent_tube_to_theta, indirect, or absent
+  + [pressure_connection] is localized_pressure_bound, global_pressure_work, tail_module, absent, or unclear
+  + [epsilon_connection] is accepted_epsilon_criterion, endpoint_L3_only, absent, or unclear
+  + [audit_status] is source_extractable, theorem_candidate, boundary_only, rejected_as_authority, or outside
+  + [first_missing_feature] is the first missing feature blocking admission to the next audit layer
+
+& [ExtractedItemSet] is the current source readout
+  + [item_001_global_theta] is the source defines a scale-invariant depletion functional by a supremum over centers and radii
+    = selection_rule: supremum_over_balls
+    = theta_connection: direct_theta_definition
+    = pressure_connection: global_pressure_work
+    = epsilon_connection: endpoint_L3_only
+    = audit_status: source_extractable
+    = first_missing_feature: no_selection_of_a_specific_epsilon_regular_regularizing_cylinder
+  + [item_002_active_ball] is the source defines an active ball at scale rho using an average of q = |grad u|^2/u and parameters a and Omega
+    = selection_rule: threshold_by_q_average
+    = theta_connection: indirect
+    = pressure_connection: absent_at_definition
+    = epsilon_connection: absent
+    = audit_status: source_extractable
+    = first_missing_feature: no_direct_link_from_active_ball_to_theta_smallness_or_epsilon_smallness
+  + [item_003_local_entropy_ball] is the source fixes B(y,rho), a cutoff on B(y,2rho), and an entropy core scale r0 = nu/Omega
+    = selection_rule: arbitrary_ball_with_cutoff
+    = theta_connection: pressure_bound_interface
+    = pressure_connection: localized_pressure_bound
+    = epsilon_connection: absent
+    = audit_status: theorem_candidate
+    = first_missing_feature: localized_pressure_bound_not_yet_same_as_epsilon_regular_regularization
+  + [item_004_tail_module] is the source isolates far-field and cutoff debris into a local tail budget
+    = selection_rule: arbitrary_ball_with_cutoff
+    = theta_connection: indirect
+    = pressure_connection: tail_module
+    = epsilon_connection: absent
+    = audit_status: theorem_candidate
+    = first_missing_feature: tail_budget_not_shown_small_on_all_concentrating_cylinders
+  + [item_005_coherent_tube_ball] is the source states a conditional coherent-tube hypothesis for every ball and time with a chosen Omega
+    = selection_rule: every_ball_condition
+    = theta_connection: coherent_tube_to_theta
+    = pressure_connection: global_pressure_work_after_theta_smallness
+    = epsilon_connection: endpoint_L3_only
+    = audit_status: boundary_only
+    = first_missing_feature: conditional_geometry_not_unconditionally_forced
+
+(navier_stokes_external_active_cylinder_extraction_table) :source active ball, local entropy ball, tail budget, coherent tube ball/ |active-scale audit|
+  + [inside] is source-bound extraction from the external quadrupole-depletion route
+  + [boundary] is active balls and localized pressure bounds are not automatically epsilon-regularity cylinders
+  |outside| proof validation, CKN admission, and unconditional singularity exclusion
+
+& [CurrentReading] is the adjusted theorem interface
+  + [old_obstruction] is no_explicit_active_cylinder_selection_rule_for_theta
+  + [new_reading] is the source does provide active balls and localized pressure balls, but they are not yet tied to accepted epsilon-regularity smallness
+  + [best_next_handle] is same-frame pressure-bound-to-epsilon audit
+  + [reason] is the active localization language exists, so the next obstruction is whether the localized pressure/tail estimate supplies accepted local smallness rather than only endpoint L3 monotonicity
+  + [proof_promotion_status] is blocked
+  + [first_missing_feature] is no_bridge_from_source_active_ball_to_accepted_epsilon_regular_regularization
