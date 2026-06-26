@@ -1,0 +1,72 @@
+Subject: Navier-Stokes Strain Sign Obstruction Ledger 001
+
+Description: First application of the strain sign obstruction ledger to strain eigenvalue, self-amplification, and strain-vorticity interaction terms.
+
+& [StrainSignObstructionLedgerApplication] is a proof-inquiry event
+  + [event_uuid] is c13e091a-b2b8-4b2e-91a4-f524595a3725
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:29Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Strain_Sign_Obstruction_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_strain_eigenframe_deep_research_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [LedgerRows] is the first sign-obstruction table
+  + [row_001_positive_middle_strain_eigenvalue] is scale-critical criterion coordinate
+    = exact_identity_status: criterion_level
+    = sign_status: unfavorable_when_large_positive
+    = scale_status: critical
+    = omitted_term_role: not_applicable
+    = continuation_contact: direct_criterion_contact
+    = obstruction_or_opportunity: mixed
+    = reading: useful because it names a scale-critical obstruction coordinate, but not propagated from arbitrary data
+  + [row_002_strain_self_amplification] is nonlinear strain growth channel
+    = exact_identity_status: exact_and_model_equation
+    = sign_status: indefinite_to_unfavorable
+    = scale_status: continuation_level
+    = omitted_term_role: absent_in_self_amplification_model
+    = continuation_contact: indirect
+    = obstruction_or_opportunity: obstruction
+    = reading: model blowup warns that self-amplification identities alone cannot be the regularizing mechanism
+  + [row_003_pressure_hessian_or_full_coupling_terms] is omitted-full-equation candidate
+    = exact_identity_status: exact_in_full_equation_context
+    = sign_status: unknown
+    = scale_status: continuation_level
+    = omitted_term_role: regularizing_candidate
+    = continuation_contact: indirect
+    = obstruction_or_opportunity: opportunity
+    = reading: the next meaningful question is whether full-equation coupling terms counter the self-amplification model's blowup channel
+  + [row_004_strain_vorticity_interaction_identity] is newer interaction identity surface
+    = exact_identity_status: exact_or_near_exact_research_surface
+    = sign_status: conditional_or_unknown
+    = scale_status: continuation_level
+    = omitted_term_role: not_applicable
+    = continuation_contact: criterion_only_to_indirect
+    = obstruction_or_opportunity: opportunity
+    = reading: promising for decomposing advective depletion and nonlinearity, but not yet a one-sided inequality
+  + [row_005_viscous_dissipation] is known dissipative channel
+    = exact_identity_status: exact
+    = sign_status: favorable
+    = scale_status: energy_level_not_sufficient
+    = omitted_term_role: not_applicable
+    = continuation_contact: indirect
+    = obstruction_or_opportunity: boundary
+    = reading: dissipative but already known insufficient by itself for 3D smooth continuation
+
+& [LedgerConclusion] is the sign/coercivity result
+  + [primary_obstruction] is strain self-amplification has exact structure but unfavorable or indefinite sign
+  + [primary_opportunity] is full-equation coupling or strain-vorticity interaction may identify omitted regularizing terms absent from blowup model equations
+  + [lock_mass_update] is sign_coercivity_lock_remains_high
+  + [concrete_next_question] is whether full Navier-Stokes pressure/coupling/advection terms produce a controllable negative contribution against positive middle-strain growth
+  + [proof_progress] is none
+
+& [MeaningDevelopment] is the refined problem shape
+  + [better_shape] is not "find alignment" but "find a one-sided inequality defeating strain self-amplification at continuation scale"
+  + [tool_result] is exact identities are now sorted into obstruction, opportunity, and boundary roles
+  + [next_research_gate] is active for pressure Hessian, strain-vorticity interaction, and omitted-term analysis if the lane continues
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [navier_stokes_solution_status] is unresolved
+  + [heartbeat_status] is active every minute
+

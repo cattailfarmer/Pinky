@@ -1,0 +1,34 @@
+Subject: Navier-Stokes Strain Sign Obstruction Ledger
+
+Description: Project-local tool for separating exact strain-identity progress from sign and coercivity progress.
+
+& [NavierStokesStrainSignObstructionLedger] is a math inquiry tool
+  + [tool_uuid] is c9078308-0f72-4038-896a-2b1d5f35e87a
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:29Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_strain_eigenframe_deep_research_001.sop
+  + [role] is identify which exact strain and vorticity terms obstruct or support a one-sided continuation inequality
+  + [not_role] is proving regularity, inventing a monotonicity formula, or replacing sign estimates with geometric language
+
+& [ColumnSet] is the obstruction ledger surface
+  + [term] is the strain, vorticity, eigenvalue, or interaction term under inspection
+  + [exact_identity_status] is exact, criterion_level, model_equation, heuristic, or unknown
+  + [sign_status] is favorable, unfavorable, indefinite, conditional, or unknown
+  + [scale_status] is critical, continuation_level, local, supercritical, or unclear
+  + [omitted_term_role] is regularizing_candidate, destabilizing_candidate, absent_in_model, unknown, or not_applicable
+  + [continuation_contact] is direct, indirect, special_case, criterion_only, or none
+  + [obstruction_or_opportunity] is obstruction, opportunity, mixed, or boundary
+
+& [UseProcedure] is the sign-obstruction workflow
+  + [step_001_select_identity] is choose one exact identity or criterion-level relation
+  + [step_002_split_terms] is separate self-amplification, vorticity stretching, pressure Hessian, advection, and viscous terms when available
+  + [step_003_score_sign] is mark each term by sign status under arbitrary smooth data
+  + [step_004_score_omissions] is compare model equations against full Navier-Stokes terms to locate omitted regularizing candidates
+  + [step_005_update_lock_mass] is reduce unresolved_lock_mass only when a term gives one-sided control or a valid continuation closure
+
+  = must: keep exact identity separate from one-sided inequality
+  = must: record indefinite terms as obstruction until a valid condition controls them
+  = should: treat model blowup as a warning about missing regularizing terms
+  - never: call an identity coercive without a sign argument
+
