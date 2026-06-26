@@ -313,6 +313,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_095_build_navier_stokes_pressure_coupling_inequality_boundary] is build and apply a boundary ledger for pressure/coupling one-sided inequality candidates
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Coupling_Inequality_Boundary_Ledger.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_coupling_inequality_boundary_001.sop
+  + [Task_096_research_navier_stokes_pressure_hessian_estimates] is run deep research on pressure Hessian estimates and nonlocal pressure-strain decompositions
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_hessian_estimates_deep_research_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
