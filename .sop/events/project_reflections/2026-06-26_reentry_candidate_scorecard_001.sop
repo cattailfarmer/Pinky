@@ -1,0 +1,73 @@
+Subject: Seven Math Problems - Reentry Candidate Scorecard
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Source Boundary: C:\Project\Pinky\.sop\platform\seven_math_problems\Six_Lane_Missing_Theorem_Map.sop
+Runtime Boundary: C:\Project\Pinky\.sop\runtime\sop_node\symbolic_ricci_flow.py
+Authority Boundary: selection diagnostic only; no proof authority; no solution claim
+
+& [ReentryCandidateScorecard] is complete
+  + [purpose] is select the next concrete proof-inquiry reentry target after implementation of repeatable Symbolic Ricci Flow scoring
+  + [method] is score candidate states for irregularity, unresolved lock mass, boundary clarity, source coverage, and authority leaks
+  + [limitation] is scoring does not certify mathematical truth or solvability
+
+& [CandidateScores] is a diagnostic table
+  + [bsd_higher_rank_source_count_audit] is Birch and Swinnerton-Dyer
+    = candidate: higher-rank Euler/Kolyvagin-style mechanism or source-count theorem for line-by-line sufficiency audit
+    = irregularity_total: 0.00
+    = unresolved_lock_mass: 2.75
+    = boundary_clarity: 0.75
+    = source_coverage: 1.00
+    = authority_leak_count: 0
+    = interpretation: best concrete audit object, but boundary must sharpen same-frame measurement before proof promotion
+  + [navier_stokes_pressure_hessian_coercivity_audit] is Navier-Stokes
+    = candidate: pressure-Hessian coercivity proof, endpoint pressure-work estimate, or autonomous defect functional inequality
+    = irregularity_total: 0.00
+    = unresolved_lock_mass: 3.00
+    = boundary_clarity: 1.00
+    = source_coverage: 1.00
+    = authority_leak_count: 0
+    = interpretation: clear boundary, but sign/coercivity and nonlocal pressure closure remain large unresolved locks
+  + [hodge_explicit_cycle_construction_audit] is Hodge
+    = candidate: explicit cycle algorithm, correspondence-generation theorem, or construction mechanism
+    = irregularity_total: 0.00
+    = unresolved_lock_mass: 3.00
+    = boundary_clarity: 0.75
+    = source_coverage: 1.00
+    = authority_leak_count: 0
+    = interpretation: construction target is clear in shape, but arbitrary rational output remains too broad for immediate audit
+  + [p_vs_np_proof_system_simulation_audit] is P versus NP
+    = candidate: polynomial unsat-certificate theorem, complete propagation proof, proof-system simulation theorem, or barrier-aware lower-bound route
+    = irregularity_total: 0.00
+    = unresolved_lock_mass: 2.75
+    = boundary_clarity: 1.00
+    = source_coverage: 1.00
+    = authority_leak_count: 0
+    = interpretation: strong formal boundary, but candidate space branches between simulation, certificates, and lower bounds
+  + [yang_mills_os_schwinger_construction_audit] is Yang-Mills
+    = candidate: OS-ready Schwinger-function construction, continuum measure, lattice continuum-limit theorem, or complete-proof claim for stage audit
+    = irregularity_total: 0.00
+    = unresolved_lock_mass: 3.75
+    = boundary_clarity: 1.00
+    = source_coverage: 1.00
+    = authority_leak_count: 0
+    = interpretation: boundary is clean but lock mass is largest because construction, reconstruction, and gap transfer all remain active
+  + [poincare_model_validation] is Poincare and Symbolic Ricci Flow context
+    = candidate: model validation or implementation only
+    = irregularity_total: 0.00
+    = unresolved_lock_mass: 0.25
+    = boundary_clarity: 1.00
+    = source_coverage: 1.00
+    = authority_leak_count: 0
+    = interpretation: not a Millennium solution lane in this project because Poincare is solved externally
+
+& [Selection] is next
+  + [selected_lane] is bsd_higher_rank_source_count_audit
+  + [reason] is it ties for lowest serious unresolved lock mass while offering the most concrete audit object from the current map
+  + [first_probe] is define the same-frame measurement requirements for source count, independence, and upper control before any deep research escalation
+  + [deep_research_gate] is not yet triggered
+    = reason: the current low-resolution point is not external knowledge but internal target sharpening
+
+& [NextAction] is ready
+  + [task] is create a BSD same-frame measurement boundary ledger for higher-rank source-count audit
+  + [proof_boundary] is no generated mechanism becomes proof authority without line-by-line formal support

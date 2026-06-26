@@ -367,6 +367,8 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\runtime\sop_node\symbolic_ricci_flow.py
     = evidence: C:\Project\Pinky\.sop\runtime\tests\test_symbolic_ricci_flow.py
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_symbolic_ricci_flow_scoring_runtime_001.sop
+  + [Task_118_create_reentry_candidate_scorecard] is score current six-lane reentry candidates and select the next concrete audit target
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_reentry_candidate_scorecard_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
