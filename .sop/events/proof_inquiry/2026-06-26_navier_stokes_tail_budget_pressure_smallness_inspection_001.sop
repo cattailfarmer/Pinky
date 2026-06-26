@@ -1,0 +1,59 @@
+Subject: Navier-Stokes Tail Budget Pressure Smallness Inspection 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Prior: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
+Authority Boundary: bounded research inspection only; no Navier-Stokes proof claim
+
+& [DeepResearchUnit] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [trigger] is heartbeat reentry from the pressure-bound-to-epsilon audit
+  + [low_resolution_signal] is whether tail-budget or harmonic-pressure control can become accepted pressure smallness
+  + [bounded_question] is whether current source records or nearby harmonic-pressure regularity results bridge the quadrupole tail budget to CKN-style local pressure smallness
+  + [curiosity_priority] is high
+    = reason: this is the first remaining same-frame estimate after active-scale localization was found in the external route
+
+& [SourceSet] is the bounded comparison surface
+  + [source_001] is Quadrupole-Depletion Route to L3 Regularity for 3D Incompressible Navier-Stokes
+    = link: https://quantumaetherdynamics.org/papers/Navier_Stokes_Millenium_Puzzle.pdf
+    = use: source of the localized entropy pressure bound, tail budget, and endpoint pressure-work route
+  + [source_002] is Finite-Scale One-Component Regularity via Harmonic Pressure for the 3D Navier-Stokes Equations
+    = link: https://arxiv.org/abs/2606.08352
+    = use: comparison source for harmonic-pressure topology, local scale-invariant bounds, and conversion into CKN smallness under a different one-component hypothesis package
+  + [source_003] is Guevara and Nguyen, Local energy bounds and epsilon-regularity criteria for the 3D Navier-Stokes system
+    = link: https://www.math.lsu.edu/~pcnguyen/papers_html/Guevara-Phuc-12-29-16.pdf
+    = use: comparison source for pressure-sensitive epsilon-regularity and local energy criteria
+  + [source_004] is Caffarelli-Kohn-Nirenberg seminar notes on Navier-Stokes partial regularity
+    = link: https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.020/skipper/NotesCKN_Jack_2.pdf
+    = use: accepted local regularity target language for velocity-pressure smallness
+
+& [InspectionFindings] is the theorem-boundary result
+  + [finding_001] is harmonic-pressure regularity results confirm the right bridge shape
+    = meaning: a successful bridge can pass through pressure modulo harmonic functions, pressure oscillation, and local scale-invariant bounds before reaching CKN smallness
+  + [finding_002] is the comparison bridge uses a different smallness input
+    = meaning: one-component or vertical-component critical smallness plus a fixed local bound is not the same as the quadrupole route's tail budget or pressure-work absorption
+  + [finding_003] is no tail-budget-to-pressure-smallness lemma is admitted in current records
+    = meaning: the quadrupole route still lacks an extracted theorem that converts its tail module into L3_over_2 pressure smallness or pressure oscillation smallness
+  + [finding_004] is the pressure-work route and epsilon route remain adjacent but not merged
+    = meaning: the external route may control a signed pressure-work term while accepted epsilon regularity requires local size or oscillation smallness of pressure paired with velocity control
+
+& [AuditApplicationUpdate] is recorded
+  + [audit] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
+  + [source_pressure_object] is localized_entropy_pressure_bound_and_tail_budget
+  + [same_frame_status] is same_ball_for_source_estimate
+  + [velocity_quantity_status] is endpoint_global_L3_with_local_entropy_terms
+  + [pressure_quantity_status] is pressure_work_bound_and_tail_budget
+  + [epsilon_target] is CKN_velocity_pressure_smallness_or_local_energy_pressure_smallness
+  + [smallness_status] is not_extracted
+  + [audit_status] is boundary_only
+  + [first_missing_feature] is no_tail_budget_to_pressure_oscillation_or_L3_over_2_smallness_lemma
+
+& [PropositionAdjustment] is recorded
+  + [old_shape] is inspect whether tail budget or harmonic pressure control becomes accepted pressure smallness
+  + [new_shape] is harmonic-pressure literature shows a possible form of bridge, but the quadrupole source still needs a specific tail-budget-to-pressure-smallness theorem
+  + [retired_overclaim] is harmonic-pressure regularity results automatically validate the quadrupole tail budget
+  + [preserved_potential] is moderate because the obstruction is concrete but currently unsupported by an admitted theorem
+
+& [NextAction] is bounded
+  + [recommended_next] is either inspect the quadrupole source line-by-line for the missing lemma or mark the Navier-Stokes Theta pressure-to-epsilon lane saturated for this cycle and return to the cross-problem order
+  + [heartbeat_status] is active

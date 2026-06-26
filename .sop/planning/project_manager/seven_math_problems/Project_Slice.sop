@@ -433,6 +433,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_142_create_navier_stokes_pressure_bound_to_epsilon_audit] is define the same-frame audit between localized pressure-work or tail estimates and accepted epsilon-regularity smallness
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_bound_to_epsilon_audit_001.sop
+  + [Task_143_inspect_navier_stokes_tail_budget_pressure_smallness_bridge] is compare the quadrupole tail budget against harmonic-pressure and epsilon-regularity bridge requirements
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_tail_budget_pressure_smallness_inspection_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
