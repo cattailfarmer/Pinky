@@ -1,0 +1,78 @@
+Subject: Symbolic Ricci Flow BSD Numeric Calibration 001
+
+Description: First numeric calibration of the Symbolic Ricci Flow graph scoring prototype against the BSD replay validation.
+
+& [SymbolicRicciFlowBSDNumericCalibration] is a model calibration event
+  + [event_uuid] is 5ac3f7dc-7c9f-4902-8b32-8a2b210ad5ce
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T19:23Z
+  + [scoring_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Graph_Scoring_Prototype.sop
+  + [validation_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_bsd_replay_validation_001.sop
+  + [authority_status] is numeric_attention_calibration_not_mathematical_proof
+
+& [BeforeGraph] is the compressed BSD replay state
+  + [active_claims] is 1
+  + [source_linked_claims] is 1
+  + [claims_with_explicit_boundary] is 0
+  + [unsupported_analogizes_edges] is 1
+  + [overbroad_transfers_to_edges] is 1
+  + [depends_on_open_lock_edges] is 3
+  + [supports_with_source_trace_edges] is 1
+  + [refines_distinction_edges] is 0
+  + [blocks_proof_promotion_edges] is 0
+  + [authority_leak_count] is 1
+  + [distinction_loss] is 3
+
+& [BeforeScore] is the compressed score
+  + [irregularity_total] is 11.00
+    = calculation: 3.00 unsupported analogy + 3.00 overbroad transfer + 6.00 open-lock dependency - 1.00 source support
+  + [boundary_clarity] is 0.00
+    = calculation: 0 claims with explicit boundary divided by 1 active proof-needing claim
+  + [source_coverage] is 1.00
+    = calculation: 1 source-linked claim divided by 1 active claim
+  + [distinction_loss] is 3
+  + [authority_leak_count] is 1
+
+& [AfterGraph] is the split BSD replay state
+  + [active_claims] is 5
+  + [source_linked_claims] is 5
+  + [claims_with_explicit_boundary] is 5
+  + [unsupported_analogizes_edges] is 0
+  + [overbroad_transfers_to_edges] is 0
+  + [depends_on_open_lock_edges] is 3
+  + [supports_with_source_trace_edges] is 5
+  + [refines_distinction_edges] is 4
+  + [blocks_proof_promotion_edges] is 1
+  + [authority_leak_count] is 0
+  + [distinction_loss] is 0
+
+& [AfterScore] is the split score
+  + [irregularity_total] is 0.00
+    = calculation: max(0.00, 6.00 open-lock dependency - 5.00 source support - 6.00 distinction refinement - 2.00 proof-promotion block)
+  + [boundary_clarity] is 1.00
+    = calculation: 5 claims with explicit boundary divided by 5 active proof-needing claims
+  + [source_coverage] is 1.00
+    = calculation: 5 source-linked claims divided by 5 active claims
+  + [distinction_loss] is 0
+  + [authority_leak_count] is 0
+
+& [CalibrationResult] is the first metric-direction result
+  + [irregularity_delta] is -11.00
+  + [boundary_clarity_delta] is 1.00
+  + [source_coverage_delta] is 0.00
+  + [distinction_loss_delta] is -3
+  + [authority_leak_delta] is -1
+  + [pass_condition] is passed_for_directional_calibration
+  + [meaning] is the scoring layer reproduces the qualitative BSD replay result: the model improves by splitting and routing, not by solving the boundary locks
+
+& [CalibrationLimits] is the boundary of the result
+  + [not_validated] is cross-problem weighting, theorem relevance ranking, or mathematical truth measurement
+  + [known_issue] is the zero irregularity floor can hide residual mathematical difficulty after boundary locks are properly named
+  + [next_refinement] is add a separate unresolved_lock_mass metric before applying the score to another problem lane
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [bsd_solution_status] is unresolved
+  + [model_status] is numerically_calibrated_once_for_boundary_preserving_replay
+  + [heartbeat_status] is active every minute
+

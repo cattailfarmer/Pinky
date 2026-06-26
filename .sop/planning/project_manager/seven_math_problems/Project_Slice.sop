@@ -290,6 +290,8 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_086_create_symbolic_ricci_flow_graph_scoring_prototype] is create the first narrow repeatable scoring tool for Symbolic Ricci Flow replay measurements
     = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Graph_Scoring_Prototype.sop
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_graph_scoring_prototype_001.sop
+  + [Task_087_calibrate_symbolic_ricci_flow_on_bsd_replay] is run the graph scoring prototype on the BSD replay and record the first numeric calibration limits
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_bsd_numeric_calibration_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
