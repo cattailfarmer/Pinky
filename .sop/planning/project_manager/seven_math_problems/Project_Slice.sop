@@ -338,6 +338,9 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_completeness_mechanism_candidate_ledger_001.sop
   + [Task_106_research_p_vs_np_proof_complexity_local_consistency] is run deep research on proof complexity, local-consistency limits, and unsatisfiability certificates for propagation fixed points
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_proof_complexity_local_consistency_deep_research_001.sop
+  + [Task_107_build_p_vs_np_proof_system_boundary] is build and apply a proof-system boundary ledger for local consistency, resolution, stronger systems, certificates, and lower-bound routes
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Boundary_Ledger.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_proof_system_boundary_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted

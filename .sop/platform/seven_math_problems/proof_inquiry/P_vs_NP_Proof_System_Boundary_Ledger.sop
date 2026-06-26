@@ -1,0 +1,34 @@
+Subject: P vs NP Proof-System Boundary Ledger
+
+Description: Project-local boundary ledger for classifying proposed P vs NP coherence operators by proof-system power, certificate strength, and known lower-bound risk.
+
+& [PvsNPProofSystemBoundaryLedger] is a math inquiry tool
+  + [tool_uuid] is 1e18ee79-6de5-4d58-914c-79ac7b5af60f
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26T19:51Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_proof_complexity_local_consistency_deep_research_001.sop
+  + [role] is separate local consistency, resolution/CDCL, stronger proof systems, polynomial certificates, and lower-bound barriers for proposed operators
+  + [not_role] is proving P vs NP, certifying an operator without proof-system placement, or treating proof-system strength as automatic polynomiality
+
+& [ColumnSet] is the proof-system boundary surface
+  + [operator] is the proposed algorithmic or refutation mechanism
+  + [proof_system_match] is local_consistency, bounded_width, resolution_cdcl, cutting_planes, polynomial_calculus, sum_of_squares, frege_like, lower_bound_route, heuristic, or unknown
+  + [certificate_power] is complete_in_scope, polynomial_refutations_known, hard_instances_known_or_likely, sat_only, unsat_missing, separation_witness, or none
+  + [known_lower_bound_risk] is low_in_scope, high_for_general_sat, barrier_relevant, model_specific, unknown, or not_applicable
+  + [np_complete_scope] is direct, indirect, tractable_fragment_only, separation_model_only, heuristic_only, or none
+  + [runtime_or_proof_size_status] is polynomial_in_scope, polynomial_if_new_theorem, exponential_or_unknown, lower_bound_needed, or none
+  + [first_missing_feature] is the earliest missing proof-system feature blocking proof-shaped promotion
+
+& [UseProcedure] is the proof-system boundary workflow
+  + [step_001_place_operator] is classify the proposed operator into a proof system or mark unknown
+  + [step_002_check_certificate_power] is determine whether satisfiable and unsatisfiable instances receive certificates in the target scope
+  + [step_003_check_lower_bounds] is record known lower-bound or barrier risk for the matched proof system
+  + [step_004_check_np_complete_scope] is separate tractable-fragment completeness from SAT/3-SAT completeness
+  + [step_005_update_lock_mass] is reduce P vs NP lock mass only when polynomial certificate power holds on NP-complete scope or a valid lower-bound route is specified
+
+  = must: classify proof-system strength before accepting unsat-certificate claims
+  = must: preserve bounded-width success as scoped tractability
+  = should: treat lower-bound routes as barrier-sensitive by default
+  - never: infer polynomial refutations for all SAT from local consistency success
+

@@ -1,0 +1,74 @@
+Subject: P vs NP Proof-System Boundary 001
+
+Description: First application of the P vs NP Proof-System Boundary Ledger to local propagation, resolution/CDCL, stronger proof systems, and lower-bound routes.
+
+& [PvsNPProofSystemBoundaryApplication] is a proof-inquiry event
+  + [event_uuid] is 9bd5d17d-19a9-4810-80bb-685bdc741544
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-26T19:51Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Boundary_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_p_vs_np_proof_complexity_local_consistency_deep_research_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [BoundaryRows] is the first proof-system table
+  + [row_001_local_propagation_with_repair] is source-derived operator
+    = proof_system_match: local_consistency_or_bounded_width_plus_search
+    = certificate_power: complete_in_scope_only
+    = known_lower_bound_risk: high_for_general_sat
+    = np_complete_scope: tractable_fragment_only_without_new_theorem
+    = runtime_or_proof_size_status: polynomial_in_scope_exponential_or_unknown_for_complete_repair
+    = first_missing_feature: polynomial refutations or complete decisions for all SAT/3-SAT fixed points
+  + [row_002_resolution_cdcl] is standard SAT proof-system route
+    = proof_system_match: resolution_cdcl
+    = certificate_power: polynomial_refutations_for_some_families_hard_instances_known_or_likely
+    = known_lower_bound_risk: high_for_general_sat
+    = np_complete_scope: direct
+    = runtime_or_proof_size_status: exponential_or_unknown_in_worst_case
+    = first_missing_feature: no polynomial-size resolution refutations for all unsatisfiable formulas
+  + [row_003_algebraic_or_cutting_plane_systems] is stronger refutation route
+    = proof_system_match: cutting_planes_or_polynomial_calculus
+    = certificate_power: stronger_than_local_consistency_but_not_universal_polynomial
+    = known_lower_bound_risk: model_specific
+    = np_complete_scope: direct_or_indirect
+    = runtime_or_proof_size_status: polynomial_if_new_theorem
+    = first_missing_feature: no proof the proposed coherence operator simulates these systems polynomially on all hard instances
+  + [row_004_sum_of_squares] is strong hierarchy route
+    = proof_system_match: sum_of_squares
+    = certificate_power: powerful_refutation_framework_but_lower_bounds_exist
+    = known_lower_bound_risk: model_specific_to_high
+    = np_complete_scope: direct_or_indirect
+    = runtime_or_proof_size_status: polynomial_if_bounded_degree_suffices
+    = first_missing_feature: bounded-degree sufficiency for all NP-complete instances is not available
+  + [row_005_lower_bound_separation] is P not NP route
+    = proof_system_match: lower_bound_route
+    = certificate_power: separation_witness
+    = known_lower_bound_risk: barrier_relevant
+    = np_complete_scope: separation_model_only_until_generalized
+    = runtime_or_proof_size_status: lower_bound_needed
+    = first_missing_feature: no barrier-aware general lower-bound framework is specified
+  + [row_006_heuristic_coherence_search] is source-meaning route
+    = proof_system_match: heuristic
+    = certificate_power: none
+    = known_lower_bound_risk: not_applicable
+    = np_complete_scope: heuristic_only
+    = runtime_or_proof_size_status: none
+    = first_missing_feature: no proof-system certificate semantics
+
+& [BoundaryConclusion] is the current proof-system status
+  + [best_p_equals_np_missing_theorem] is local propagation with repair polynomially simulates a proof system strong enough to refute all hard SAT/3-SAT fixed points
+  + [best_p_not_np_missing_theorem] is a barrier-aware lower-bound route separates P from NP beyond restricted models
+  + [meaningful_scoped_result] is bounded-width and tractable CSP completeness remain valid but scoped
+  + [lock_mass_update] is no core global-completeness or certificate lock reduction
+  + [proof_progress] is none
+
+& [MeaningDevelopment] is the refined P vs NP shape
+  + [current_shape] is source coherence must become proof-system strength, not only algorithmic intuition
+  + [revelation] is the missing object is polynomial refutation power on hard unsatisfiable instances
+  + [next_responsible_step] is either audit a concrete claimed proof-system simulation theorem or record P vs NP saturation for this cycle
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [p_vs_np_solution_status] is unresolved
+  + [heartbeat_status] is active every minute
+
