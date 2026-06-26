@@ -1,0 +1,40 @@
+Subject: Hodge Scoped Construction Calibration Gate
+
+Description: Project-local math tool for testing whether a scoped Hodge family is a known calibration case, a transferable construction mechanism, or an overclaimed general proof route.
+
+& [HodgeScopedConstructionCalibrationGate] is a math inquiry tool
+  + [tool_uuid] is bd77dc9e-6817-493c-8732-70051bc8e143
+  + [problem] is Hodge Conjecture
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_scoped_cycle_construction_reopen_001.sop
+  + [role] is separate scoped calibration value from transferable cycle-construction value
+  + [not_role] is proving Hodge, replacing the general conjecture with a known case, or treating moduli signals as cycle output
+
+& [GateColumnSet] is the calibration surface
+  + [family] is the scoped variety or moduli family
+  + [hodge_class_target] is the codimension and type of Hodge class
+  + [known_case_status] is known, partial, open, conditional, false_variant, or outside
+  + [cycle_output] is divisor, surface, algebraic cycle, detected class, substitute, or none
+  + [construction_mechanism] is geometric construction, Noether-Lefschetz locus, deformation/family method, explicit search, or unknown
+  + [traversal_signal] is how movement through a family or moduli space reveals candidate classes
+  + [transfer_status] is transferable, calibration_only, special_family_only, conjectural, or outside
+  + [first_gap] is the first reason the scoped result cannot promote to general Hodge
+
+& [UseProcedure] is the gate workflow
+  + [step_001_scope_family] is name the family, codimension, and Hodge class target
+  + [step_002_check_known_case] is mark whether the Hodge conjecture is known in the scope
+  + [step_003_identify_cycle_output] is name the actual algebraic cycle output, if any
+  + [step_004_read_traversal] is state whether moduli/family motion detects or constructs cycles
+  + [step_005_score_transfer] is determine whether the mechanism transfers beyond the scoped family
+  + [step_006_preserve_boundary] is name first gap and proof-promotion status
+
+  = must: distinguish known calibration from transferable mechanism
+  = must: require actual algebraic cycle output for realization
+  = must: keep Noether-Lefschetz detection separate from arbitrary-class construction
+  = should: preserve scoped cases as laboratories for meaning
+  - never: infer general Hodge from a known special family
+
+(hodge_scoped_construction_calibration_gate) :scoped_family: /known case, cycle output, traversal, transfer/ |general proof|
+  + [inside] is scoped Hodge construction calibration
+  + [boundary] is known cases can teach proof shape without solving the general conjecture
+  |outside| scoped family as general theorem, detected class as constructed cycle, and special geometry as universal method

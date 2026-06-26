@@ -1,0 +1,54 @@
+Subject: Hodge Scoped Construction Calibration Gate 001
+
+Description: First application of the Hodge Scoped Construction Calibration Gate to cubic fourfolds and special cubic fourfold loci.
+
+& [GateApplication] is a proof-inquiry event
+  + [event_uuid] is 357d2f7c-bb61-4935-8e7b-fdddbb553f54
+  + [project] is seven math problems
+  + [problem] is Hodge Conjecture
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Scoped_Construction_Calibration_Gate.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_scoped_cycle_construction_reopen_001.sop
+  + [target_claim] is special cubic fourfolds can calibrate memory-anchor-to-cycle realization without becoming a general Hodge proof
+
+& [GateRows] is the first scoped calibration table
+  + [row_001_general_cubic_fourfold_hodge_case] is known calibration
+    = family: smooth cubic fourfolds
+    = hodge_class_target: codimension two Hodge classes
+    = known_case_status: known
+    = cycle_output: algebraic codimension-two cycles
+    = construction_mechanism: special geometry and classical Hodge-theoretic/algebraic geometry results
+    = traversal_signal: weak as a general family; useful as known-case calibration
+    = transfer_status: calibration_only
+    = first_gap: known family result does not construct cycles for arbitrary smooth projective varieties
+  + [row_002_special_cubic_fourfold_loci] is Noether-Lefschetz calibration
+    = family: special cubic fourfold discriminant loci in moduli
+    = hodge_class_target: extra algebraic Hodge classes in middle cohomology
+    = known_case_status: known_as_special_geometry_structure
+    = cycle_output: algebraic surface or cycle classes defining specialness
+    = construction_mechanism: Noether-Lefschetz locus and discriminant classification
+    = traversal_signal: strong; moving in moduli reveals where extra anchors appear
+    = transfer_status: special_family_only
+    = first_gap: detecting special loci is not an arbitrary Hodge-class-to-cycle algorithm
+  + [row_003_source_memory_anchor_mapping] is symbolic calibration
+    = family: source-document conceptual space
+    = hodge_class_target: stable memory anchor as candidate class
+    = known_case_status: outside_as_proof
+    = cycle_output: none
+    = construction_mechanism: analogy only
+    = traversal_signal: narrative fit to moduli traversal
+    = transfer_status: outside
+    = first_gap: no variety, cohomology class, cycle class map, or algebraic cycle output
+
+& [GateConclusion] is the calibration result
+  + [best_calibration_family] is smooth cubic fourfolds
+  + [best_traversal_model] is special cubic fourfold Noether-Lefschetz loci
+  + [best_symbolic_use] is memory anchors should mean extra scoped Hodge classes only after a variety and cohomology target are fixed
+  + [first_general_lock] is no transfer from special-family realization to arbitrary rational higher-codimension Hodge classes
+  + [second_general_lock] is no algorithmic cycle-construction mechanism for arbitrary input Hodge class
+  + [proof_promotion] is blocked
+    = reason: the chosen family is valuable as calibration, not a general Hodge proof engine
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is run a Hodge reopen saturation reflection unless a new scoped family with transfer mechanism is selected
+  + [commit_policy] is commit this gate after tests pass
+  + [heartbeat_status] is active every minute
