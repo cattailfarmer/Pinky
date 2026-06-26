@@ -1,0 +1,79 @@
+Subject: BSD Source Transfer Sufficiency Ledger 001
+
+Description: First application of the BSD Source Transfer Sufficiency Ledger to Chow-Heegner, generalized Heegner-cycle, diagonal-cycle, rank-one Heegner, and higher-rank system routes.
+
+& [LedgerApplication] is a proof-inquiry event
+  + [event_uuid] is b6e0c2a2-2cfc-43bd-b266-9cad107f2632
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Transfer_Sufficiency_Ledger.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_transfer_reopen_001.sop
+  + [target_claim] is general BSD rank equality for elliptic curves, with special cases marked separately
+
+& [LedgerRows] is the first sufficiency table
+  + [row_001_rank_one_heegner] is calibration route
+    = target_curve_scope: Heegner hypotheses and analytic rank one or rank-part special settings
+    = source_object: Heegner point and derivative classes
+    = transfer_lands_in: Mordell-Weil point
+    = source_count_status: enough_for_rank_one
+    = independence_status: proven_special_case_when_height_nonzero
+    = measurement_status: Gross-Zagier height formula
+    = upper_control_status: Kolyvagin same-hypothesis control
+    = sufficiency_class: closed_special_case
+    = first_gap: extrapolation beyond rank one
+  + [row_002_chow_heegner_points] is special source-transfer corridor
+    = target_curve_scope: special CM/modular/correspondence settings and selected elliptic curves
+    = source_object: higher-dimensional cycle transferred to Chow-Heegner point
+    = transfer_lands_in: Mordell-Weil point in special constructions
+    = source_count_status: one_or_some
+    = independence_status: measured_if_nonzero_or_computational_in_examples
+    = measurement_status: p-adic L-function or Abel-Jacobi relation in special settings
+    = upper_control_status: not generally same-hypothesis
+    = sufficiency_class: source_exists_not_enough
+    = first_gap: source_count_status
+  + [row_003_generalized_heegner_cycles] is higher-cycle measurement corridor
+    = target_curve_scope: higher-weight or Rankin-style settings, often not direct elliptic-curve Mordell-Weil rank
+    = source_object: generalized Heegner cycle
+    = transfer_lands_in: Abel-Jacobi image, Selmer-like class, or p-adic measurement object
+    = source_count_status: conditional_or_unknown_for_elliptic_curve_rank
+    = independence_status: conditional
+    = measurement_status: p-adic Abel-Jacobi and special-value formulas in scoped settings
+    = upper_control_status: separate_or_partial
+    = sufficiency_class: partial_meaningful
+    = first_gap: transfer_lands_in and source_count_status
+  + [row_004_diagonal_cycles] is special high-revelation corridor
+    = target_curve_scope: triple-product or Hasse-Weil-Artin scoped settings
+    = source_object: diagonal cycle
+    = transfer_lands_in: auxiliary motive, p-adic Abel-Jacobi image, or rational point in special derived constructions
+    = source_count_status: not_enough_for_general_rank
+    = independence_status: unknown_for_general_BSD
+    = measurement_status: p-adic Gross-Zagier style formulas in special settings
+    = upper_control_status: special_or_not_direct
+    = sufficiency_class: partial_meaningful
+    = first_gap: statement_identity and source_count_status
+  + [row_005_higher_rank_euler_stark_systems] is control-first route
+    = target_curve_scope: p-adic representation settings with system hypotheses
+    = source_object: Euler/Stark system elements if constructed
+    = transfer_lands_in: Selmer/control module
+    = source_count_status: conjectural_for_general_elliptic_curve_generators
+    = independence_status: indirect_or_conjectural
+    = measurement_status: determinant/regulator-like special elements
+    = upper_control_status: strongest_when_system_exists
+    = sufficiency_class: conjectural
+    = first_gap: existence_of_suitable_system_and_source_transfer_to_points
+
+& [LedgerConclusion] is the sufficiency result
+  + [best_closed_case] is row_001_rank_one_heegner
+  + [best_source_transfer_meaning] is row_002_chow_heegner_points
+  + [best_higher_cycle_meaning] is row_004_diagonal_cycles
+  + [first_general_lock] is source_count_status
+  + [second_general_lock] is independence_status
+  + [third_general_lock] is upper_control_status in the same hypotheses
+  + [proposition_update] is the L-hand/R-hand model now has a precise sufficiency demand: source transfer must produce not merely points, but enough independent points with same-frame measurement and upper control
+  + [proof_promotion] is blocked
+    = reason: no row closes source count, independence, and upper control for general BSD
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is either research source-count mechanisms for Chow-Heegner families or pause BSD again because the first remaining lock is now named
+  + [commit_policy] is commit this ledger after tests pass
+  + [heartbeat_status] is active every minute

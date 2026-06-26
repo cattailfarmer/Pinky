@@ -1,0 +1,42 @@
+Subject: BSD Source Transfer Sufficiency Ledger
+
+Description: Project-local math tool for separating existence of a BSD source-transfer construction from sufficiency of source count, independence, and upper-control closure.
+
+& [BSDSourceTransferSufficiencyLedger] is a math inquiry tool
+  + [tool_uuid] is 3fd435d8-50ad-4d2f-b33b-24e70d97de25
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_source_transfer_reopen_001.sop
+  + [role] is test whether a source-transfer corridor produces enough independent Mordell-Weil evidence for the scoped BSD rank claim
+  + [not_role] is proving BSD, dismissing special point constructions, or treating point existence as source sufficiency
+
+& [LedgerColumnSet] is the sufficiency surface
+  + [corridor] is the named source-transfer route
+  + [target_curve_scope] is curve family, field, rank range, and auxiliary hypotheses
+  + [source_object] is higher cycle, Chow-Heegner point, Heegner point, Selmer class, or other transferred object
+  + [transfer_lands_in] is Mordell-Weil point, Selmer class, height/regulator class, auxiliary motive, or unknown
+  + [source_count_status] is enough, one_or_some, conditional, conjectural, unknown, or outside
+  + [independence_status] is proven, measured_if_nonzero, conditional, conjectural, unknown, or outside
+  + [measurement_status] is height/regulator/nonvanishing theorem status
+  + [upper_control_status] is same-hypothesis Selmer control status
+  + [sufficiency_class] is closed_special_case, partial_meaningful, source_exists_not_enough, conjectural, or outside
+  + [first_gap] is the first insufficiency blocking BSD proof promotion
+
+& [UseProcedure] is the ledger workflow
+  + [step_001_scope_rank_claim] is name the target rank equality or refined BSD claim
+  + [step_002_name_transfer] is identify the source-transfer construction and where it lands
+  + [step_003_count_sources] is test whether the construction supplies enough independent candidates for analytic order
+  + [step_004_test_independence] is test height/regulator/nonvanishing evidence
+  + [step_005_test_upper_control] is check whether upper Selmer control is in the same hypotheses
+  + [step_006_classify_sufficiency] is classify and name first gap
+
+  = must: keep "lands in Mordell-Weil" separate from "spans Mordell-Weil"
+  = must: keep point construction separate from independence proof
+  = must: keep special rank-one closure separate from arbitrary-rank BSD
+  = should: preserve special corridors as meaning even when insufficient for general proof
+  - never: count computations or examples as a general source-count theorem
+
+(bsd_source_transfer_sufficiency_ledger) :source_transfer_corridor: /source count, independence, measurement, upper control/ |proof promotion|
+  + [inside] is sufficiency analysis for BSD source-transfer routes
+  + [boundary] is source transfer can exist without closing BSD dimension
+  |outside| point-existence as all-rank proof, special-family evidence as general theorem, and source without same-hypothesis control
