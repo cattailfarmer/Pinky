@@ -1,0 +1,53 @@
+Subject: Hodge Scoped Cycle Construction Reopen 001
+
+Description: Reopen pass on the Hodge scoped-construction target after BSD and Navier-Stokes reopen branches saturated.
+
+& [ReopenFrame] is a proof-inquiry event
+  + [event_uuid] is 93733c8f-b5be-4682-9f72-43c050e5a7c8
+  + [project] is seven math problems
+  + [problem] is Hodge Conjecture
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_navier_stokes_reopen_saturation_reflection_001.sop
+  + [synthesis_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_final_six_lane_saturation_synthesis_001.sop
+  + [reopen_target] is a specific variety, family, codimension, or cycle-construction mechanism
+  + [deep_research_gate] is used
+    = reason: the phrase "scoped construction target" needed a concrete family before more Hodge inquiry would be meaningful
+
+& [SourceSet] is the bounded scoped-construction frame
+  + [source_001] is Clay Mathematics Institute Hodge problem statement
+    = link: https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf
+    = use: keeps the formal target as rational Hodge classes being rational combinations of algebraic cycle classes
+  + [source_002] is Arapura and Kang, Known cases of the Hodge conjecture
+    = link: https://arxiv.org/abs/2105.04695
+    = use: known-case landscape and caution that mechanism scope matters
+  + [source_003] is Zucker, The Hodge conjecture for cubic fourfolds
+    = link: https://www.numdam.org/article/CM_1977__34_2_199_0.pdf
+    = use: cubic fourfolds are a known scoped case where codimension-two Hodge classes are algebraic
+  + [source_004] is Hassett, Special cubic fourfolds
+    = link: https://www.math.brown.edu/bhassett/papers/cubics/cubic.pdf
+    = use: special cubic fourfolds form Noether-Lefschetz divisors where extra algebraic cycles are the defining signal
+  + [source_005] is Nollet, Developments in Noether-Lefschetz Theory
+    = link: https://faculty.tcu.edu/snollet/research/SURVEY1.pdf
+    = use: Noether-Lefschetz theory supplies a family/traversal lens for when extra Hodge classes become algebraic cycle questions
+
+& [ScopedTargetSelection] is the result
+  + [selected_family] is cubic fourfolds and special cubic fourfold Noether-Lefschetz loci
+  + [codimension] is codimension two cycles on fourfolds
+  + [why_selected] is this family gives a concrete version of memory-anchor language: an extra Hodge class signals special geometry and asks for an algebraic surface/cycle
+  + [known_case_boundary] is cubic fourfold Hodge conjecture is known, so this target is calibration and construction-analysis rather than general proof
+  + [construction_signal] is special cubic fourfolds are organized by extra algebraic cycles and discriminant divisors in moduli
+  + [symbolic_mapping] is memory anchor maps to extra Hodge class; traversal maps to Noether-Lefschetz locus in moduli; realization maps to an algebraic surface/cycle
+
+& [BoundaryUpdate] is the adjusted Hodge state
+  + [old_boundary] is construction of algebraic cycles in rational higher codimension
+  + [adjusted_boundary] is scoped families such as cubic fourfolds can calibrate what successful realization looks like, but they do not provide a general construction method for arbitrary smooth projective varieties
+  + [best_new_shape] is Hodge inquiry should use special cubic fourfolds as a calibration laboratory for anchor-to-cycle realization
+  + [first_remaining_lock] is no transfer from special-family realization to general rational higher-codimension Hodge classes
+  + [second_remaining_lock] is no algorithm taking arbitrary Hodge class input and producing algebraic cycle output
+  + [proof_promotion] is blocked
+    = reason: a known scoped case explains the shape of realization but does not solve the general Hodge conjecture
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is build a Hodge Scoped Construction Calibration Gate if the next heartbeat continues this lane
+    = reason: the inquiry needs to separate calibration-known cases from transferable construction mechanisms
+  + [commit_policy] is commit this reopen research after tests pass
+  + [heartbeat_status] is active every minute
