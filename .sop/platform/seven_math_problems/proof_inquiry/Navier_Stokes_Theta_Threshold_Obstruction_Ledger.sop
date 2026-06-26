@@ -1,0 +1,60 @@
+Subject: Navier-Stokes Theta Threshold Obstruction Ledger
+
+Description: Project-local math inquiry tool for testing whether a scale-invariant depletion functional Theta can be kept below the threshold needed for endpoint pressure-work control.
+
+& [NavierStokesThetaThresholdObstructionLedger] is a math inquiry tool
+  + [tool_uuid] is 0c1edba3-70e0-42bb-89b1-0d0e1166221f
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_quadrupole_endpoint_pressure_work_audit_001.sop
+  + [role] is separate a precise endpoint pressure-work proof target from the missing theorem that must keep Theta below threshold
+  + [not_role] is proving Navier-Stokes, validating a project PDF, or accepting a conditional threshold as propagated control
+
+& [LedgerColumnSet] is the threshold-obstruction surface
+  + [candidate_theta] is the named depletion functional, active-scale gate, or pressure-work coefficient
+  + [threshold_condition] is the inequality needed to make endpoint pressure work absorbable
+  + [scale_invariance_status] is proved, claimed, conditional, unclear, or absent
+  + [evolution_control_status] is differential_inequality, compactness_rigidity, active_scale_gate, conditional_geometry, heuristic, or absent
+  + [concentration_sequence_status] is excluded, reduced_to_rigidity, conditionally_excluded, possible, unknown, or ignored
+  + [pressure_kernel_status] is bounded_at_active_scale, decomposed, conditional, unresolved, or ignored
+  + [continuation_connection] is closes_L3_endpoint, touches_endpoint, conditional_endpoint, criterion_only, or none
+  + [first_obstruction] is the first missing feature preventing proof-shaped promotion
+  + [lock_mass_effect] is reduced, definition_progress, unchanged, or worsened
+
+& [UseProcedure] is the obstruction workflow
+  + [step_001_name_theta] is identify the functional and the exact threshold needed
+  + [step_002_scale] is test scale invariance and active-scale localization
+  + [step_003_evolution] is ask whether Theta has a propagated inequality, compactness-rigidity exclusion, or only conditional geometry
+  + [step_004_concentration] is test whether blow-up/concentration sequences are excluded below or above threshold
+  + [step_005_pressure] is verify pressure nonlocality is controlled in the same active-scale frame
+  + [step_006_continuation] is classify whether the endpoint L3 criterion is closed or only touched
+
+  = must: keep threshold definition separate from threshold exclusion
+  = must: reject conditional coherent-geometry hypotheses as propagated estimates
+  = must: require concentration-sequence exclusion for unconditional regularity relevance
+  = should: preserve Theta as a high-resolution formal object even when the proof lock remains open
+  - never: treat scale invariance alone as blow-up exclusion
+
+(navier_stokes_theta_threshold_obstruction_ledger) :candidate_theta: /threshold, scale, evolution, concentration, pressure kernel/ |endpoint regularity proof|
+  + [inside] is obstruction analysis for endpoint pressure-work routes
+  + [boundary] is an endpoint pressure-work program needs unconditional threshold exclusion, not just a useful functional
+  |outside| threshold by assumption, coherent-tube condition as theorem, and active-scale language without compactness or evolution control
+
+& [CurrentApplication] is the quadrupole endpoint pressure-work route
+  + [candidate_theta] is scale-invariant depletion functional Theta(v)
+  + [threshold_condition] is Theta remains below the pressure-work absorption threshold so pressure work is bounded by c D3(v) with c less than viscosity
+  + [scale_invariance_status] is claimed
+  + [evolution_control_status] is absent
+    = reason: no propagated differential inequality for Theta from arbitrary smooth initial data is admitted
+  + [concentration_sequence_status] is reduced_to_rigidity
+    = reason: source names rigidity or blow-up exclusion as target work rather than established theorem
+  + [pressure_kernel_status] is decomposed
+    = reason: quadrupole kernel structure is identified but not turned into unconditional active-scale control
+  + [continuation_connection] is conditional_endpoint
+  + [first_obstruction] is no_propagated_or_rigidity_exclusion_for_threshold_crossing
+  + [lock_mass_effect] is definition_progress
+
+& [NextProbe] is bounded
+  + [continue_if] is a theorem candidate supplies propagated Theta control or compactness-rigidity exclusion for concentration sequences
+  + [otherwise] is mark the Navier-Stokes reentry saturated at Theta-threshold obstruction

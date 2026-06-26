@@ -1,0 +1,32 @@
+Subject: Navier-Stokes Theta Threshold Obstruction Ledger 001
+Date: 2026-06-26
+Project: C:\Project\Pinky\seven math problems
+Framework: C:\Project\Pinky\.sop
+Tool: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Theta_Threshold_Obstruction_Ledger.sop
+Prior: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_quadrupole_endpoint_pressure_work_audit_001.sop
+Authority Boundary: obstruction ledger only; no Navier-Stokes proof claim
+
+& [ProofInquiryEvent] is complete
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [candidate] is quadrupole endpoint pressure-work route
+  + [purpose] is determine what must be shown about Theta before endpoint pressure-work control can reduce unresolved lock mass
+
+& [ObstructionReadout] is the current shape
+  + [theta_object] is scale-invariant depletion functional Theta(v)
+  + [threshold_use] is keep pressure work bounded by c D3(v) with c less than viscosity
+  + [first_obstruction] is no_propagated_or_rigidity_exclusion_for_threshold_crossing
+  + [meaning_gain] is the Navier-Stokes route now has a precise obstruction object rather than a general pressure-Hessian slogan
+  + [lock_mass_effect] is definition_progress
+    = reason: threshold exclusion remains a target theorem, not admitted proof
+
+& [BoundaryConclusion] is bounded
+  + [admitted_as_line_audit] is no
+  + [proof_promotion_status] is blocked
+  + [continue_navier_stokes_if] is a candidate theorem supplies propagated Theta control, active-scale compactness-rigidity, or concentration-sequence exclusion
+  + [saturation_signal] is high if no such theorem candidate is available locally
+
+& [NextAction] is ready
+  + [recommended_next] is inspect local records for a named rigidity or active-scale gate theorem; otherwise create a Navier-Stokes reentry saturation reflection
+  + [deep_research_priority_gate] is conditionally_ready
+    = trigger: if local records cannot resolve whether such a theorem candidate exists
+  + [heartbeat_status] is active
