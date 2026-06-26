@@ -1,0 +1,65 @@
+Subject: Navier-Stokes Pressure Coupling Deep Research 001
+
+Description: Deep-research pass on whether full-equation pressure, coupling, advection, and vorticity interaction terms counter strain self-amplification.
+
+& [NavierStokesPressureCouplingDeepResearch] is a deep research event
+  + [event_uuid] is d088068f-9491-4d37-a430-2c805a8ffded
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:30Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_strain_sign_obstruction_ledger_001.sop
+  + [authority_status] is research_resolution_not_proof
+  + [deep_research_gate] is active
+
+& [SourceSet] is the checked research surface
+  + [source_001] is Evan Miller, Finite-time blowup for a Navier-Stokes model equation for the self-amplification of strain
+    = url: https://arxiv.org/abs/1910.05415
+    = relevance: isolates strain self-amplification and shows blowup in a model sharing important strain/enstrophy structure with full Navier-Stokes
+  + [source_002] is Evan Miller, A regularity criterion for the Navier-Stokes equation involving only the middle eigenvalue of the strain tensor
+    = url: https://arxiv.org/abs/1710.05569
+    = relevance: identifies the positive middle strain eigenvalue as a scale-critical regularity/blowup coordinate
+  + [source_003] is Evan Miller, On the interaction of strain and vorticity for solutions of the Navier-Stokes equation
+    = url: https://arxiv.org/abs/2407.02691
+    = relevance: studies the reverse interaction of vorticity on strain and gives regularity criteria clarifying depletion by advection
+  + [source_004] is Johnson and Meneveau, On the role of vorticity stretching and strain self-amplification in the turbulence energy cascade
+    = url: https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/on-the-role-of-vorticity-stretching-and-strain-selfamplification-in-the-turbulence-energy-cascade/1E302903363C67A09F9B9E817533F935
+    = relevance: reports that non-local pressure Hessian and viscous terms alter the finite-time tendency seen in reduced dynamics, but this is turbulence/diagnostic evidence rather than a proof inequality
+  + [source_005] is Carbone and Bragg, Generation of intense dissipation in high Reynolds number turbulence
+    = url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9289790/
+    = relevance: describes strain self-amplification, depletion by vortex stretching, and redistribution by pressure Hessian in turbulent dynamics
+
+& [ResearchResolution] is the pressure-coupling result
+  + [confirmed_001_full_terms_matter] is pressure Hessian, viscosity, advection, and strain-vorticity interaction cannot be ignored when judging strain self-amplification
+  + [confirmed_002_model_blowup_is_warning] is reduced strain self-amplification blowup shows that exact shared identities are insufficient without the full coupling structure
+  + [confirmed_003_pressure_hessian_is_not_yet_sign_control] is pressure Hessian appears as redistribution or perturbative/full-equation structure, not as a known global coercive sign mechanism closing continuation
+  + [confirmed_004_vorticity_interaction_is_promising] is strain-vorticity interaction gives a sharper way to inspect depletion of nonlinearity and advection effects
+  + [confirmed_005_no_solution_claim] is no checked source supplies an autonomous one-sided inequality closing global smoothness for arbitrary smooth data
+
+& [LockMassUpdate] is the unresolved-lock reading after research
+  + [concrete_defect_lock] is reduced_to_specific_candidate_terms
+    = reason: pressure Hessian, positive middle strain eigenvalue, strain self-amplification, viscous dissipation, and strain-vorticity interaction are now separated
+  + [evolution_inequality_lock] is still_open
+    = reason: the sources provide identities, criteria, models, and perturbative readings but not the required global one-sided inequality
+  + [sign_coercivity_lock] is still_high
+    = reason: pressure/coupling terms have plausible regularizing roles but no recorded definite sign strong enough for arbitrary data
+  + [continuation_closure_lock] is still_open
+    = reason: available criteria still require control hypotheses rather than deriving them globally
+  + [unresolved_lock_mass_delta] is low_to_medium_on_definition_only_and_none_on_core_closure
+
+& [MeaningDevelopment] is the refined proposition
+  + [old_shape] is inspect whether full-equation pressure/coupling terms counter the self-amplification blowup channel
+  + [new_shape] is full terms likely counter or redistribute the reduced blowup tendency in important ways, but proof progress needs a term-level inequality converting this counteraction into continuation-scale control
+  + [most_promising_concept] is strain-vorticity interaction plus pressure-Hessian decomposition as a term-level obstruction/opportunity map
+  + [least_sufficient_concept] is turbulence-observed redistribution without a deterministic coercive estimate
+
+& [NextToolNeed] is the emerging mathematical tool shape
+  + [tool_name] is Full Strain Coupling Term Map
+  + [tool_purpose] is map pressure Hessian, viscous, advection, strain self-amplification, and strain-vorticity interaction terms by sign, scale, and continuation contact
+  + [reason] is the inquiry now needs term-level accounting to avoid treating plausible regularization as proven coercivity
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [navier_stokes_solution_status] is unresolved
+  + [research_status] is deep_research_resolved_pressure_coupling_periphery_into_term_map_need
+  + [heartbeat_status] is active every minute
+
