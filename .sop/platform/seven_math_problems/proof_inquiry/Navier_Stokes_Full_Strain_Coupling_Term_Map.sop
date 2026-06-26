@@ -1,0 +1,34 @@
+Subject: Navier-Stokes Full Strain Coupling Term Map
+
+Description: Project-local term map for pressure, viscous, advective, strain self-amplification, and strain-vorticity coupling terms.
+
+& [NavierStokesFullStrainCouplingTermMap] is a math inquiry tool
+  + [tool_uuid] is 1185505c-6803-4a80-93cd-c71423846ac6
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:32Z
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_coupling_deep_research_001.sop
+  + [role] is account for each full-equation term by sign, scale, and continuation contact
+  + [not_role] is proving sign coercivity, closing continuation, or treating plausible redistribution as an estimate
+
+& [ColumnSet] is the coupling map surface
+  + [term] is the full-equation term or reduced-model term
+  + [equation_location] is strain_evolution, vorticity_evolution, enstrophy_growth, strain_norm_growth, model_equation, or criterion
+  + [sign_status] is favorable, unfavorable, indefinite, redistributive, conditional, or unknown
+  + [scale_status] is energy_level, enstrophy_level, critical, continuation_level, local, or unclear
+  + [regularization_role] is dissipative, redistributive, counter_amplifying_candidate, amplifying, neutral, or unknown
+  + [continuation_contact] is direct, indirect, criterion_only, model_warning, or none
+  + [lock_mass_effect] is reduces_definition_lock, reduces_sign_lock, exposes_obstruction, preserves_lock, or unknown
+
+& [UseProcedure] is the term-map workflow
+  + [step_001_split_full_equation] is separate the full terms from reduced self-amplification models
+  + [step_002_mark_sign] is record whether sign is favorable, unfavorable, indefinite, or merely redistributive
+  + [step_003_mark_scale] is record whether the term touches continuation scale rather than only energy scale
+  + [step_004_mark_lock_effect] is reduce unresolved_lock_mass only for terms with actual sign or continuation force
+  + [step_005_route_next] is route unknown but promising terms to bounded deep research or a sharper inequality ledger
+
+  = must: distinguish dissipative energy-level information from continuation-level closure
+  = must: keep pressure redistribution separate from pressure coercivity
+  = should: treat full-equation terms omitted from blowup models as opportunities, not proof evidence
+  - never: infer global regularity from term-level plausibility
+

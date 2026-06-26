@@ -1,0 +1,80 @@
+Subject: Navier-Stokes Full Strain Coupling Term Map 001
+
+Description: First term-level map of full Navier-Stokes strain coupling terms after pressure/coupling deep research.
+
+& [FullStrainCouplingTermMapApplication] is a proof-inquiry event
+  + [event_uuid] is d8f13712-ac35-41cd-9d3b-c54dfdd1e0c4
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-26T19:32Z
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Full_Strain_Coupling_Term_Map.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_pressure_coupling_deep_research_001.sop
+  + [authority_status] is proof_inquiry_not_solution
+
+& [TermRows] is the first coupling map
+  + [row_001_strain_self_amplification] is reduced-model blowup channel
+    = equation_location: strain_evolution_and_model_equation
+    = sign_status: unfavorable_or_indefinite
+    = scale_status: continuation_level
+    = regularization_role: amplifying
+    = continuation_contact: model_warning
+    = lock_mass_effect: exposes_obstruction
+    = reading: exact structure without full coupling can blow up, so this term is the central sign obstruction
+  + [row_002_viscous_diffusion] is dissipative channel
+    = equation_location: strain_evolution_and_energy_level
+    = sign_status: favorable
+    = scale_status: energy_level_to_enstrophy_level
+    = regularization_role: dissipative
+    = continuation_contact: indirect
+    = lock_mass_effect: preserves_lock
+    = reading: favorable but not sufficient by itself to close 3D smooth continuation
+  + [row_003_pressure_hessian] is nonlocal redistribution candidate
+    = equation_location: strain_evolution
+    = sign_status: redistributive_or_unknown
+    = scale_status: continuation_level
+    = regularization_role: counter_amplifying_candidate
+    = continuation_contact: indirect
+    = lock_mass_effect: reduces_definition_lock
+    = reading: plausible full-equation counterweight, but not a recorded global coercive sign estimate
+  + [row_004_advection] is transport and depletion channel
+    = equation_location: strain_vorticity_interaction_and_local_dynamics
+    = sign_status: redistributive
+    = scale_status: local_to_continuation_level
+    = regularization_role: redistributive
+    = continuation_contact: criterion_only
+    = lock_mass_effect: reduces_definition_lock
+    = reading: may deplete nonlinearity in criteria or interaction identities, but does not by itself provide sign closure
+  + [row_005_strain_vorticity_interaction] is reverse interaction surface
+    = equation_location: strain_vorticity_interaction
+    = sign_status: conditional_or_unknown
+    = scale_status: continuation_level
+    = regularization_role: counter_amplifying_candidate
+    = continuation_contact: indirect_to_criterion_only
+    = lock_mass_effect: reduces_definition_lock
+    = reading: the best current opportunity for a sharper decomposition of amplification versus depletion
+  + [row_006_positive_middle_strain_eigenvalue] is criterion coordinate
+    = equation_location: criterion
+    = sign_status: unfavorable_when_large_positive
+    = scale_status: critical
+    = regularization_role: neutral
+    = continuation_contact: direct_criterion_contact
+    = lock_mass_effect: reduces_definition_lock
+    = reading: names the scale-critical obstruction coordinate but does not derive its global control
+
+& [MapConclusion] is the term-level result
+  + [primary_obstruction] is row_001_strain_self_amplification
+  + [primary_counterweight_candidate] is row_003_pressure_hessian together with row_005_strain_vorticity_interaction
+  + [known_favorable_but_insufficient] is row_002_viscous_diffusion
+  + [unresolved_lock_mass_update] is definition lock reduced, sign/coercivity and continuation locks preserved
+  + [proof_progress] is none
+
+& [NextInequalityQuestion] is the sharpened mathematical target
+  + [question] is can pressure Hessian plus strain-vorticity interaction be arranged into a one-sided bound against positive middle-strain self-amplification at continuation scale
+  + [required_shape] is an inequality, not a criterion or turbulence diagnostic
+  + [next_tool_or_research] is Pressure-Coupling Inequality Boundary Ledger if the lane continues
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [navier_stokes_solution_status] is unresolved
+  + [heartbeat_status] is active every minute
+
