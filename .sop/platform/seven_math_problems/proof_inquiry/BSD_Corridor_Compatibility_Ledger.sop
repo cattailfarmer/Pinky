@@ -1,0 +1,41 @@
+Subject: BSD Corridor Compatibility Ledger
+
+Description: Project-local math tool for testing whether a BSD theorem corridor keeps analytic signal, arithmetic source, measurement, and Selmer control in one compatible hypothesis frame.
+
+& [BSDCorridorCompatibilityLedger] is a math inquiry tool
+  + [tool_uuid] is c4b5ac7d-072a-4d0a-9c2e-b5b16079bb2a
+  + [problem] is Birch and Swinnerton-Dyer
+  + [created_at] is 2026-06-26
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_theorem_corridor_selection_001.sop
+  + [role] is compare selected BSD theorem corridors by same-hypotheses compatibility
+  + [not_role] is proving BSD, rating papers by prestige, or turning formal analogy into proof authority
+
+& [LedgerColumnSet] is the compatibility surface
+  + [corridor] is the named theorem route or analogy route
+  + [scope] is curve family, field, rank range, sign, and auxiliary hypotheses
+  + [analytic_object] is complex L-function, p-adic L-function, derivative, leading term, or special value
+  + [source_object] is Heegner point, generalized Heegner cycle, diagonal cycle, Stark/Euler class, Selmer class, or symbolic candidate
+  + [measurement_object] is height, p-adic height, derived height, regulator, or explicit reciprocity law
+  + [control_object] is Kolyvagin system, Euler system, Stark system, Iwasawa main conjecture, descent, or missing
+  + [same_frame_score] is high, medium, low, conjectural, or outside
+  + [first_mismatch] is the earliest place the corridor leaves the shared frame
+  + [meaning_yield] is how much the corridor clarifies the source document's L-hand/R-hand proposition
+
+& [UseProcedure] is the ledger workflow
+  + [step_001_name_corridor] is identify the specific theorem corridor, not a general topic
+  + [step_002_scope_hypotheses] is write the field, curve class, rank/sign, and auxiliary hypotheses
+  + [step_003_bind_objects] is list analytic, source, measurement, and control objects
+  + [step_004_score_same_frame] is judge whether all objects live in the same mathematical setting
+  + [step_005_extract_mismatch] is name the first mismatch before any promise is upgraded
+  + [step_006_update_meaning] is say what the corridor teaches about L-hand collapse and R-hand growth
+
+  = must: separate "same family" from "similar shape"
+  = must: preserve rank 0/1 theorem corridors as calibration rather than all-rank proof
+  = must: treat higher-rank cycle routes as special-setting research unless source, measurement, and control are all supplied
+  = should: prefer corridors that expose exact missing lemmas over broad metaphors
+  - never: count a control system as a source-object constructor unless the theorem supplies the source object
+
+(bsd_corridor_compatibility_ledger) :bsd_corridor: /same-frame test/ |proof authority|
+  + [inside] is compatibility analysis for BSD proof-shaping
+  + [boundary] is meaning can increase even when proof closure remains open
+  |outside| general BSD proof, symbolic confirmation, and compatibility by topic proximity

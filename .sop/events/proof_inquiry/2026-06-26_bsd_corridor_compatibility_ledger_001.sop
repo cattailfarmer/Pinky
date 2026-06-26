@@ -1,0 +1,80 @@
+Subject: BSD Corridor Compatibility Ledger 001
+
+Description: First application of the BSD Corridor Compatibility Ledger to rank-one, generalized-cycle, diagonal-cycle, higher-rank system, Iwasawa, and source-symbolic routes.
+
+& [LedgerApplication] is a proof-inquiry event
+  + [event_uuid] is eacb0a7b-029f-4cd1-9106-e3b3145acf53
+  + [project] is seven math problems
+  + [problem] is Birch and Swinnerton-Dyer
+  + [tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Corridor_Compatibility_Ledger.sop
+  + [prior_selection] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_theorem_corridor_selection_001.sop
+  + [purpose] is find which corridor yields the most meaning while keeping proof boundaries honest
+
+& [LedgerRows] is the first compatibility table
+  + [row_001_heegner_gross_zagier_kolyvagin] is rank-one calibration corridor
+    = scope: elliptic curves in compatible Heegner settings, analytic rank one or bounded rank-part statements
+    = analytic_object: first derivative of L-function
+    = source_object: Heegner point
+    = measurement_object: Neron-Tate height through Gross-Zagier style formula
+    = control_object: Kolyvagin system from Heegner-point derivatives
+    = same_frame_score: high
+    = first_mismatch: only mismatch is extrapolation beyond rank-one or special hypotheses
+    = meaning_yield: strongest realized model of L-hand derivative data producing R-hand arithmetic direction plus upper control
+  + [row_002_generalized_heegner_cycles] is higher-cycle source-measurement corridor
+    = scope: special higher-dimensional or higher-codimension settings, often with auxiliary modularity and sign hypotheses
+    = analytic_object: higher derivative, p-adic derivative, or refined leading term in special settings
+    = source_object: generalized Heegner cycle or Chow-Heegner point/cycle
+    = measurement_object: p-adic, derived, or height/regulator pairing
+    = control_object: partial, separate, or conjectural depending on setting
+    = same_frame_score: medium
+    = first_mismatch: control object is not automatically supplied by the same source-measurement theorem
+    = meaning_yield: best current formal home for "phase-corrected field" as regulator or height measurement
+  + [row_003_diagonal_cycle_euler_system] is special higher-cycle source/control corridor
+    = scope: diagonal cycles or triple-product style settings, not general elliptic-curve BSD
+    = analytic_object: p-adic L-function or triple-product special value/derivative data
+    = source_object: diagonal cycle or related cycle class
+    = measurement_object: p-adic height or explicit reciprocity relation
+    = control_object: Euler-system-like structure in special construction
+    = same_frame_score: medium_high_for_special_scope
+    = first_mismatch: translation from special motive/triple-product setting to general elliptic-curve BSD rank is not supplied
+    = meaning_yield: highest revelation corridor because source, measurement, and control visibly coexist without becoming general proof
+  + [row_004_higher_rank_euler_kolyvagin_stark] is control-first corridor
+    = scope: p-adic representation settings satisfying higher-rank system hypotheses
+    = analytic_object: leading term or determinant-style special element
+    = source_object: suitable Euler/Stark system elements if constructed
+    = measurement_object: determinant, Rubin lattice, regulator-like object
+    = control_object: higher-rank Kolyvagin/Stark system
+    = same_frame_score: conjectural_to_medium_when_system_exists
+    = first_mismatch: existence of suitable source system for broad elliptic-curve BSD is not automatic
+    = meaning_yield: clarifies upper-bound/control side of R-hand growth but does not alone construct rational directions
+  + [row_005_iwasawa_main_conjecture] is analytic-to-Selmer control corridor
+    = scope: ordinary/supersingular and modular settings where main conjecture input is available
+    = analytic_object: p-adic L-function and characteristic ideal
+    = source_object: usually indirect Selmer/cohomological data rather than explicit rational directions
+    = measurement_object: p-adic regulator or leading-term refinement when available
+    = control_object: Selmer characteristic ideal or main-conjecture control
+    = same_frame_score: medium_for_upper_control
+    = first_mismatch: lower source and independence still require separate construction or nonvanishing/regulator input
+    = meaning_yield: useful for the "no hidden extra rank" side, weaker for the document's generator-growth language
+  + [row_006_source_symbolic_l_hand_r_hand] is project-source symbolic route
+    = scope: source-document conceptual model only
+    = analytic_object: L-hand collapse
+    = source_object: R-hand rational directions by traversal
+    = measurement_object: phase correction
+    = control_object: not supplied
+    = same_frame_score: outside_as_proof
+    = first_mismatch: no formal source object, measurement theorem, independence proof, or Selmer control
+    = meaning_yield: good organizing metaphor after theorem corridors define the missing jobs
+
+& [LedgerConclusion] is the compatibility result
+  + [highest_same_frame] is row_001_heegner_gross_zagier_kolyvagin
+  + [highest_revelation_potential] is row_003_diagonal_cycle_euler_system
+  + [best_next_research_target] is diagonal-cycle and triple-product style special corridors, with a strict translation-boundary check
+  + [proposition_shape] is L-hand/R-hand becomes most productive when read as a same-frame compatibility demand: analytic collapse, arithmetic source, regulator measurement, and control must occupy one theorem corridor
+  + [current_open_lock] is translating special higher-cycle coherence into an elliptic-curve BSD-relevant rank statement without losing hypotheses
+  + [proof_status] is meaningful research direction, not a solution proof
+
+& [NextInquiry] is the next local target
+  + [recommended_next] is apply Deep_Research_Priority_Gate to diagonal-cycle and triple-product corridors only if the next heartbeat stays in BSD
+  + [commit_policy] is commit this ledger increment after tests pass
+  + [heartbeat_status] is active every minute

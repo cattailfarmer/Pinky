@@ -221,6 +221,9 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\planning\project_manager\seven_math_problems\Project_Artifact_Staging_Plan.sop
   + [Task_056_select_bsd_theorem_corridor] is select the highest-meaning BSD theorem corridor after the two-sided closure matrix and preserve source/proof boundaries
     = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_theorem_corridor_selection_001.sop
+  + [Task_057_build_bsd_corridor_compatibility_ledger] is build and apply a same-frame ledger for BSD theorem corridors to identify the highest revelation route
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Corridor_Compatibility_Ledger.sop
+    = evidence: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_corridor_compatibility_ledger_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
