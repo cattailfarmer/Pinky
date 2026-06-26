@@ -1,0 +1,55 @@
+Subject: Symbolic Ricci Flow Graph Scoring Prototype
+
+Description: Narrow non-proof scoring prototype for repeatable Symbolic Ricci Flow replay measurements.
+
+& [SymbolicRicciFlowGraphScoringPrototype] is a mathematical inquiry tool
+  + [tool_uuid] is 527c571d-d2c7-44dc-9639-6dd6a483aa6a
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T19:22Z
+  + [parent_model] is C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Model_Specification.sop
+  + [validation_seed] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_bsd_replay_validation_001.sop
+  + [authority_status] is repeatable_attention_scoring_not_proof_scoring
+
+& [Purpose] is the prototype purpose
+  + [primary_use] is make qualitative replay judgments repeatable enough to compare proof-inquiry states
+  + [not_use] is proving BSD, proving any Millennium problem, ranking theorem truth, or validating mathematical correctness
+  + [trigger_need] is the BSD replay validation passed qualitatively but lacked a numeric repeatability layer
+
+& [TypedNodeWeights] is the first scoring vocabulary
+  + [source_claim] is 1.00
+  + [formal_object] is 1.00
+  + [proof_obligation] is 1.00
+  + [boundary_lock] is 1.00
+  + [candidate_mechanism] is 0.75
+  + [analogy] is 0.50
+  + [model_variable] is 0.25
+
+& [EdgePressureWeights] is the first irregularity vocabulary
+  + [unsupported_analogizes] is 3.00
+  + [overbroad_transfers_to] is 3.00
+  + [contradicts_without_boundary] is 2.50
+  + [depends_on_open_lock] is 2.00
+  + [supports_with_source_trace] is -1.00
+  + [refines_distinction] is -1.50
+  + [blocks_proof_promotion] is -2.00
+
+& [MetricDefinitions] is the first numeric layer
+  + [irregularity_total] is sum of positive edge pressure plus unresolved boundary pressure minus credited source-backed support and distinction refinement
+  + [boundary_clarity] is count of claims with explicit formal object, proof obligation, and boundary lock divided by active claims needing proof authority
+  + [source_coverage] is count of active claims linked to source or research records divided by active claims
+  + [distinction_loss] is count of merged or erased source/formal/proof/boundary distinctions
+  + [authority_leak_count] is count of model outputs that attempt to become proof authority
+
+& [AllowedUpdateSet] is the allowed scoring update set
+  + [update_001_split] is split compressed claim nodes into source claim, formal object, proof obligation, candidate mechanism, and boundary lock nodes
+  + [update_002_reweight] is lower unsupported analogy and overbroad transfer edges
+  + [update_003_route] is redirect proof-promotion attempts to boundary locks
+  + [update_004_preserve] is preserve source-backed support edges and formal distinctions
+  + [forbidden_update_001_delete_lock] is deleting a boundary lock to improve score
+  + [forbidden_update_002_merge_distinctions] is merging source meaning with formal proof obligation to improve apparent coherence
+
+& [BSDCalibration] is the first calibration expectation
+  + [before_state] is compressed source-transfer proposition has high unsupported transfer and proof-promotion pressure
+  + [after_state] is split proposition has lower irregularity, higher boundary clarity, preserved source coverage, and zero authority leak count
+  + [pass_condition] is metric direction agrees with the qualitative BSD replay validation while preserving all named locks
+

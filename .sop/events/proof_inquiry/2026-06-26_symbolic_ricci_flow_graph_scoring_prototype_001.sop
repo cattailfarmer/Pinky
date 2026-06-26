@@ -1,0 +1,29 @@
+Subject: Symbolic Ricci Flow Graph Scoring Prototype 001
+
+Description: Creation of a narrow repeatable scoring tool for Symbolic Ricci Flow replay states.
+
+& [GraphScoringPrototypeEvent] is a tool creation event
+  + [event_uuid] is 4224cf8d-acbe-47fa-af21-0d2cfad61bc7
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T19:22Z
+  + [tool_record] is C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Graph_Scoring_Prototype.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_bsd_replay_validation_001.sop
+  + [authority_status] is non-proof_inquiry_tool
+
+& [NeedRecognition] is the periphery-to-tool transition
+  + [periphery_signal] is qualitative validation can detect boundary-preserving smoothing but cannot yet compare states repeatably
+  + [tool_shape] is a typed graph score with irregularity, boundary clarity, source coverage, distinction loss, and authority leak count
+  + [reason_for_narrowness] is only the BSD replay is calibrated; broader automation would overstate what has been validated
+
+& [PrototypeResult] is the immediate research result
+  + [created_tool] is Symbolic Ricci Flow Graph Scoring Prototype
+  + [promising_use] is compare before and after states in proof-inquiry replays
+  + [risk_control] is forbidden updates prevent score improvement by deleting locks or merging distinctions
+  + [next_test] is run the scoring prototype on the BSD replay as a numeric calibration event
+
+& [BoundaryStatement] is the proof boundary
+  + [proof_claim] is none
+  + [solution_claim] is none
+  + [mathematical_authority] is unchanged
+  + [heartbeat_status] is active every minute
+
