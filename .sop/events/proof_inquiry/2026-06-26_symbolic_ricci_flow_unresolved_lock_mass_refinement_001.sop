@@ -1,0 +1,40 @@
+Subject: Symbolic Ricci Flow Unresolved Lock Mass Refinement 001
+
+Description: Refinement of the graph scoring prototype after BSD numeric calibration showed that zero irregularity can hide named unsolved locks.
+
+& [UnresolvedLockMassRefinement] is a model refinement event
+  + [event_uuid] is ad01fbcf-dd61-45f8-94ce-5bb36ca78440
+  + [project] is seven math problems
+  + [created_at] is 2026-06-26T19:24Z
+  + [scoring_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\models\Symbolic_Ricci_Flow_Graph_Scoring_Prototype.sop
+  + [trigger_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_symbolic_ricci_flow_bsd_numeric_calibration_001.sop
+  + [authority_status] is non-proof_metric_refinement
+
+& [ProblemFound] is the calibration defect
+  + [defect] is irregularity_total can fall to zero after proper boundary routing even while the mathematical obstruction remains fully open
+  + [bsd_example] is source count, independence, and same-hypothesis upper control remain unresolved after the BSD replay is cleaned
+  + [risk] is a clean inquiry state could be misread as proof progress
+
+& [RefinementApplied] is the metric change
+  + [new_metric] is unresolved_lock_mass
+  + [definition] is sum of named open boundary locks weighted by proof relevance after distinctions are preserved
+  + [interpretation] is low irregularity plus high unresolved_lock_mass means the problem shape is clearer but not closer to solution by itself
+  + [guard] is proof-progress language requires a valid decrease in unresolved_lock_mass, not merely lower irregularity
+
+& [BSDReinterpretation] is the corrected calibration reading
+  + [irregularity_total_after] is 0.00
+  + [boundary_clarity_after] is 1.00
+  + [unresolved_lock_mass_after] is high
+  + [meaning] is the BSD replay is now well-posed for inquiry but still mathematically locked
+
+& [NextUse] is the next responsible application
+  + [recommended_next] is apply the refined scoring frame to the next highest-potential unresolved lane only as a boundary-and-lock diagnostic
+  + [candidate_lane] is Navier-Stokes propagated invariant and geometric defect functional
+  + [reason] is its current lock can be expressed as named unresolved mass: concrete defect functional, autonomous evolution inequality, and continuation-level control
+
+& [BoundaryStatement] is the proof authority statement
+  + [proof_claim] is none
+  + [solution_claim] is none
+  + [model_status] is refined_to_separate_boundary_cleanliness_from_unsolved_lock_mass
+  + [heartbeat_status] is active every minute
+

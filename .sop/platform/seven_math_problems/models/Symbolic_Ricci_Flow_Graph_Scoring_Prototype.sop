@@ -35,6 +35,7 @@ Description: Narrow non-proof scoring prototype for repeatable Symbolic Ricci Fl
 
 & [MetricDefinitions] is the first numeric layer
   + [irregularity_total] is sum of positive edge pressure plus unresolved boundary pressure minus credited source-backed support and distinction refinement
+  + [unresolved_lock_mass] is sum of named open boundary locks weighted by proof relevance after source/formal/proof distinctions have been preserved
   + [boundary_clarity] is count of claims with explicit formal object, proof obligation, and boundary lock divided by active claims needing proof authority
   + [source_coverage] is count of active claims linked to source or research records divided by active claims
   + [distinction_loss] is count of merged or erased source/formal/proof/boundary distinctions
@@ -51,5 +52,10 @@ Description: Narrow non-proof scoring prototype for repeatable Symbolic Ricci Fl
 & [BSDCalibration] is the first calibration expectation
   + [before_state] is compressed source-transfer proposition has high unsupported transfer and proof-promotion pressure
   + [after_state] is split proposition has lower irregularity, higher boundary clarity, preserved source coverage, and zero authority leak count
-  + [pass_condition] is metric direction agrees with the qualitative BSD replay validation while preserving all named locks
+  + [after_lock_mass] is still positive because source count, independence, and same-hypothesis upper control remain unresolved
+  + [pass_condition] is metric direction agrees with the qualitative BSD replay validation while preserving all named locks and reporting unresolved lock mass separately
 
+& [InterpretationRule] is the score interpretation boundary
+  + [clean_boundary_not_solution] is low irregularity plus high boundary clarity means the inquiry state is well-separated, not solved
+  + [solution_pressure_indicator] is unresolved_lock_mass must decrease through mathematically valid mechanisms before any proof-progress claim can be considered
+  + [proof_authority_guard] is authority_leak_count must remain zero and unresolved_lock_mass must not be hidden inside irregularity_total
