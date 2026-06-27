@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "precision_dps": 80,
+    "proof_status": "bounded_power_exponent_shift_probe_not_primality_proof",
+    "tool": "exponential_power_shift_probe"
+  },
+  "parameters": {
+    "base": 65537,
+    "exponent_base": 641,
+    "exponent_powers": [
+      3,
+      5,
+      17,
+      257,
+      65537
+    ],
+    "max_hits": 8,
+    "shifts": [
+      1,
+      2,
+      4
+    ],
+    "small_factor_limit": 1000000
+  },
+  "rows": [
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^3",
+      "exponent_parity": "odd",
+      "exponent_power": 3,
+      "expression": "65537^(641^3)+1",
+      "first_small_divisor": 2,
+      "forced_divisors": [
+        {
+          "divisor": 65538,
+          "factorization": {
+            "11": 1,
+            "2": 1,
+            "3": 2,
+            "331": 1
+          },
+          "reason": "base^odd_exponent + 1 is divisible by base + 1"
+        }
+      ],
+      "parity": "even",
+      "shift": 1,
+      "small_divisor_count_reported": 6,
+      "small_divisors": [
+        2,
+        3,
+        11,
+        331,
+        1283,
+        49999
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^3",
+      "exponent_parity": "odd",
+      "exponent_power": 3,
+      "expression": "65537^(641^3)+2",
+      "first_small_divisor": 7,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        7,
+        271,
+        7187
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^3",
+      "exponent_parity": "odd",
+      "exponent_power": 3,
+      "expression": "65537^(641^3)+4",
+      "first_small_divisor": 3,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 4,
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        3,
+        23,
+        2699
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^5",
+      "exponent_parity": "odd",
+      "exponent_power": 5,
+      "expression": "65537^(641^5)+1",
+      "first_small_divisor": 2,
+      "forced_divisors": [
+        {
+          "divisor": 65538,
+          "factorization": {
+            "11": 1,
+            "2": 1,
+            "3": 2,
+            "331": 1
+          },
+          "reason": "base^odd_exponent + 1 is divisible by base + 1"
+        }
+      ],
+      "parity": "even",
+      "shift": 1,
+      "small_divisor_count_reported": 6,
+      "small_divisors": [
+        2,
+        3,
+        11,
+        331,
+        1283,
+        49999
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^5",
+      "exponent_parity": "odd",
+      "exponent_power": 5,
+      "expression": "65537^(641^5)+2",
+      "first_small_divisor": 7,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        7
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^5",
+      "exponent_parity": "odd",
+      "exponent_power": 5,
+      "expression": "65537^(641^5)+4",
+      "first_small_divisor": 3,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 4,
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        47
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^17",
+      "exponent_parity": "odd",
+      "exponent_power": 17,
+      "expression": "65537^(641^17)+1",
+      "first_small_divisor": 2,
+      "forced_divisors": [
+        {
+          "divisor": 65538,
+          "factorization": {
+            "11": 1,
+            "2": 1,
+            "3": 2,
+            "331": 1
+          },
+          "reason": "base^odd_exponent + 1 is divisible by base + 1"
+        }
+      ],
+      "parity": "even",
+      "shift": 1,
+      "small_divisor_count_reported": 6,
+      "small_divisors": [
+        2,
+        3,
+        11,
+        331,
+        1283,
+        49999
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^17",
+      "exponent_parity": "odd",
+      "exponent_power": 17,
+      "expression": "65537^(641^17)+2",
+      "first_small_divisor": 7,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        7
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^17",
+      "exponent_parity": "odd",
+      "exponent_power": 17,
+      "expression": "65537^(641^17)+4",
+      "first_small_divisor": 3,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 4,
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        3,
+        1019,
+        906817
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^257",
+      "exponent_parity": "odd",
+      "exponent_power": 257,
+      "expression": "65537^(641^257)+1",
+      "first_small_divisor": 2,
+      "forced_divisors": [
+        {
+          "divisor": 65538,
+          "factorization": {
+            "11": 1,
+            "2": 1,
+            "3": 2,
+            "331": 1
+          },
+          "reason": "base^odd_exponent + 1 is divisible by base + 1"
+        }
+      ],
+      "parity": "even",
+      "shift": 1,
+      "small_divisor_count_reported": 6,
+      "small_divisors": [
+        2,
+        3,
+        11,
+        331,
+        1283,
+        49999
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^257",
+      "exponent_parity": "odd",
+      "exponent_power": 257,
+      "expression": "65537^(641^257)+2",
+      "first_small_divisor": 7,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        7
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^257",
+      "exponent_parity": "odd",
+      "exponent_power": 257,
+      "expression": "65537^(641^257)+4",
+      "first_small_divisor": 3,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 4,
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        464909
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^65537",
+      "exponent_parity": "odd",
+      "exponent_power": 65537,
+      "expression": "65537^(641^65537)+1",
+      "first_small_divisor": 2,
+      "forced_divisors": [
+        {
+          "divisor": 65538,
+          "factorization": {
+            "11": 1,
+            "2": 1,
+            "3": 2,
+            "331": 1
+          },
+          "reason": "base^odd_exponent + 1 is divisible by base + 1"
+        }
+      ],
+      "parity": "even",
+      "shift": 1,
+      "small_divisor_count_reported": 6,
+      "small_divisors": [
+        2,
+        3,
+        11,
+        331,
+        1283,
+        49999
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^65537",
+      "exponent_parity": "odd",
+      "exponent_power": 65537,
+      "expression": "65537^(641^65537)+2",
+      "first_small_divisor": 7,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        7
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent_base": 641,
+      "exponent_form": "641^65537",
+      "exponent_parity": "odd",
+      "exponent_power": 65537,
+      "expression": "65537^(641^65537)+4",
+      "first_small_divisor": 3,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 4,
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        3,
+        139,
+        383
+      ],
+      "small_factor_limit": 1000000
+    }
+  ]
+}

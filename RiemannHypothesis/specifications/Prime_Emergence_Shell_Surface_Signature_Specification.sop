@@ -1,0 +1,54 @@
+Subject: Prime Emergence Shell Surface Signature Specification
+
+Description: SJS-processed measurement contract for shell-surface signatures of prime emergence.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_emergence_shell_surface_signature\manifest.sop
+@ [related] C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Inflation_Surface_Metaphor_Specification.sop
+@ [related] C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Power_Decomposition_Bridge_Specification.sop
+@ [related] C:\Project\Pinky\RiemannHypothesis\specifications\Special_Prime_Periphery_Inquiry_Specification.sop
+
+& [PrimeEmergenceShellSurfaceSignatureSpecification] is a canonical measurement contract
+  + [canonical_specification_uuid] is df242e80-42d5-4eb6-bb79-736435c15996
+  + [source_uuid] is effa227e-b050-4000-ae9f-8da10cb7bd6a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [role] is measure prime-emergence shell surfaces as bounded finite traces
+  + [not_role] is prime-generation theory, RH proof, zero certification, or arbitrary special-prime search
+
+& [MeasuredObject] is prime-emergence shell surface signature
+  + [shell] is an interval (lower, upper] over positive integers
+  + [surface_area] is shell length
+  + [surface_prime_events] is primes inside the shell
+  + [density_stretch] is observed prime density compared with simple 1/log midpoint and Li increment baselines
+  + [sieve_push_forward] is the share of odd shell candidates not eliminated by primes up to sqrt(upper), with primes interpreted as surviving candidates
+  + [membrane_texture] is special-prime family membership inside the shell
+  + [lambda_texture] is theta increment, psi increment, higher-prime-power increment, and Lambda-weighted share data
+
+& [RequiredTraceFields] is the deterministic output contract
+  + [global_fields] are shell bounds, shell length, midpoint, prime count, odd candidate count, sieve survivor count, observed prime density, simple density estimate, Li increment estimate, theta increment, psi increment, higher-prime-power increment, and psi/theta movement
+  + [sieve_fields] are witness prime bound, composite-covered candidate count, survivor candidate count, and survivor candidate examples
+  + [family_fields] are selected family, family count, family members, family share of shell primes, and family theta share of shell theta
+  + [layer_fields] are Lambda layer rows by exponent for prime and higher prime powers
+
+& [InitialRunPolicy] is bounded
+  + [shell_policy] is consecutive endpoint shells using 0, 100, 200, 500, 1000, 2000, and 5000 unless a later source names another policy
+  + [family_policy] is all current special-prime family predicates from Special_Prime_Periphery_Inquiry
+  + [inference_policy] is compare pattern shape only after trace generation; do not infer RH truth or general law from finite rows
+
+& [PursuitValueGate] is active
+  + [boundary_value] is turns the inflation metaphor into shell rows with explicit not-it boundaries
+  + [identity_value] is separates sieve survival, ordinary prime density, special-family texture, and Lambda prime-power mechanics
+  + [evidence_value] is creates deterministic facts that can be compared with previous family and prime-power passes
+  + [whole_field_value] is keeps pi, theta, psi, Lambda, and Li visible while testing special-prime texture
+
+  = must: run deterministic trace before analysis
+  = must: report special-prime family overlap as texture, not central identity
+  = must: keep theta and psi separate and include higher-prime-power contribution
+  = must: treat sieve survival as finite shell accounting, not causal prime creation
+  = must: stop or defer if rows only repeat known density thinning without added boundary, identity, evidence, or whole-field value
+  - never: make RH proof, disproof, zero-certification, or prime-generation claims from finite shell signatures
+
+(prime_emergence_shell_surface_signature) :finite shell signature: /sieve survival, density stretch, family texture, theta psi Lambda layers/ |proof authority|
+  + [inside] is deterministic shell accounting and bounded interpretation
+  + [boundary] is useful measured metaphor support only
+  |outside| literal creation, RH proof, and special-prime sprawl

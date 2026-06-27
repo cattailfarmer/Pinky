@@ -1,0 +1,48 @@
+Subject: Cross Layer Landmark Displacement Specification
+
+Description: SJS-processed contract for finite cross-layer landmark displacement synthesis.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cross_layer_landmark_displacement\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_offset_local_contribution_asymmetry_synthesis_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_trace.json
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_trace.json
+
+& [CrossLayerLandmarkDisplacementSpecification] is a project-local finite synthesis contract
+  + [source_snapshot_uuid] is f87a7776-2b61-4e98-8bee-b774ff725f2a
+  + [manifest_uuid] is 6c30bbe2-b64d-4a0d-a78f-b2815bd60e82
+  + [canonical_specification_uuid] is e8a2bed4-b20e-4ddf-9fa3-6bddc183f435
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare finite landmark displacement across sparse resonance, dense Lambda heat, and contribution-layer offset extrema
+  + [not_purpose] is new scans, denser offset grids, proof, disproof, RH evidence, zero certification, critical-line authority, primary zero detection, or identity fusion
+  + [proof_status] is finite_cross_layer_landmark_displacement_not_rh_evidence
+
+& [MeasuredComparison] is existing_trace_displacement_synthesis
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference as labels only
+  + [sparse_layer] is vertical_resonance candidate rows from existing trace
+  + [dense_layer] is Lambda window/cutoff candidate rows from existing trace
+  + [contribution_layer] is Lambda phasor reference contribution offset rows from existing trace
+  + [displacement_measure] is signed sampled_t - reference_t when available and absolute distance to nearest reference label otherwise
+  + [comparison_policy] is compare per layer and per metric before drawing any cross-layer inference
+  + [allowed_output] is analysis pass and focal-point update only
+
+  = must: use existing trace rows only
+  = must: preserve sparse resonance and dense Lambda heat as separate layers
+  = must: preserve contribution-layer offset maxima/minima as coarse three-point stencil behavior only
+  = must: report nearest distances and directional offsets without zero certification
+  = must: decide whether cross-window/cutoff stability class is justified or whether overlay displacement should pause
+  = must: preserve proof_status finite_cross_layer_landmark_displacement_not_rh_evidence
+  - never: collapse sparse, dense, and contribution layers into one RH identity
+  - never: authorize denser scans from displacement alone
+
+& [CrossLayerLandmarkDisplacementSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_bounded_cross_layer_displacement_contract
+  + [reasoning_result] is the existing traces contain enough nearest-reference and offset-local structure to compare layer displacement without adding a new grid
+
+(cross_layer_landmark_displacement) :finite cross-layer displacement synthesis: /reference labels, sparse resonance, dense Lambda heat, contribution offsets/ |RH evidence|
+  + [inside] is bounded displacement synthesis from existing trace rows
+  + [boundary] is orientation and next-object selection only
+  |outside| proof, disproof, zero certification, critical-line authority, new scans, exact reference dominance, and single-surface identity

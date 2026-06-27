@@ -1,0 +1,41 @@
+Subject: Landmark Overlay Discipline Synthesis Specification
+
+Description: SJS-processed contract for synthesizing landmark-overlay discipline after half-plane boundary synthesis.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_landmark_overlay_discipline_synthesis\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_half_plane_boundary_synthesis_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landmark_overlay_report_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+
+& [LandmarkOverlayDisciplineSynthesis] is a project-local finite synthesis contract
+  + [source_snapshot_uuid] is e313d938-5dee-428d-871f-a8f5aa989936
+  + [manifest_uuid] is de0a5dd9-8a99-4645-86d2-0c6ee726d18a
+  + [canonical_specification_uuid] is bcb81288-bc58-4275-96dd-aef755ed4b92
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is refine landmark-overlay discipline as a comparison surface across existing sparse and dense finite landmark rails
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, critical-line authority, new scans, new math-processing tools, or primary zero-detection identity
+
+  = must: distinguish t-axis reference labels, vertical resonance candidates, Lambda overlay candidates, and half-plane boundary layers
+  = must: keep sparse landmarks and dense Lambda overlay heat separate
+  = must: classify reference-near alignment as inquiry pressure only
+  = must: preserve cutoff/window sensitivity and metric dependence as boundaries
+  = must: decide whether new overlay work is blocked or conditionally allowed
+  = must: mark proof_status as finite_landmark_overlay_discipline_not_rh_evidence
+  - never: claim that overlay agreement proves, disproves, certifies, or directly measures RH
+  - never: promote Lambda overlay density into a primary zero detector
+  - never: authorize computation without a new source-defined measured object
+
+& [LandmarkOverlayDisciplineSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_bounded_landmark_overlay_discipline_contract
+  + [reasoning_result] is existing overlay records are sufficient to refine discipline before any new math-processing work
+
+(landmark_overlay_discipline_synthesis) :finite overlay discipline: /reference labels, sparse resonance, dense Lambda heat, half-plane boundary, no zero certification/ |proof authority|
+  + [inside] is bounded synthesis of existing landmark-overlay records
+  + [boundary] is orientation and restraint only
+  |outside| RH proof, disproof, zero certification, critical-line evidence, new scans, and single-surface identity

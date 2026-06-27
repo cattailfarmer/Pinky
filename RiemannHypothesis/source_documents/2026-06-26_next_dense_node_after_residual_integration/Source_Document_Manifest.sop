@@ -1,0 +1,17 @@
+Subject: Next Dense Node After Residual Integration Source Document Manifest
+
+Description: Manifest for preserved source records governing next dense-node selection after residual movement integration.
+
+& [NextDenseNodeAfterResidualIntegrationSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 562f6333-dbf2-4dee-a85d-bbc7b5bc5ea6
+  + [manifest_uuid] is b425a5b5-6ed1-4489-8bea-e20b44af8399
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_next_dense_node_after_residual_integration\Dictated_Next_Dense_Node_After_Residual_Integration_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Next_Dense_Node_After_Residual_Integration_Selection_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before selection analysis
+  = must: keep this as finite planning and governance only
+  - never: treat selection as proof, disproof, zero certification, or implementation authority

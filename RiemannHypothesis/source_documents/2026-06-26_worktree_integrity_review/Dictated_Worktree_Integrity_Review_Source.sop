@@ -1,0 +1,24 @@
+Subject: Dictated Worktree Integrity Review Source
+
+Description: Raw source for the first RH walking-continuity worktree review after branch-stop correction.
+
+& [DictatedWorktreeIntegrityReviewSource] is preserved source for reviewing the current RiemannHypothesis work frame before deeper pursuit
+  + [source_snapshot_uuid] is 696d1a2f-1d30-4c56-a841-61d04ea4a92d
+  + [source_kind] is derived_from_user_walking_correction_and_current_worktree_state
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_user_statement] "walking is a continual assessment of forward progress, planning the next step, and following through"
+  @ [governing_user_statement] "read the SOP policy on walking/running via commit + review and analysis + periphery scan + following leads"
+  + [observed_work_frame] is HEAD to WORKTREE because RiemannHypothesis has zero tracked files and current project artifacts are untracked
+  + [observed_non_ignored_untracked_count] is 329 files under RiemannHypothesis
+  + [observed_ignored_runtime_surfaces] are RiemannHypothesis\.pytest_cache, RiemannHypothesis\.venv, tests\__pycache__, tools\rh_math\__pycache__, and tools\scripts\__pycache__
+  + [review_need] is classify the untracked project slice, verify runnable toolchain, identify periphery value, and select a next bounded lead without pretending a commit already exists
+  + [preservation_boundary] is this source names review need; it does not stage, commit, or promote proof claims
+
+  = must: use WORKTREE as the honest bookend until a real commit exists
+  = must: distinguish source/spec/analysis/tools/tests from ignored runtime byproducts
+  = must: run or cite available tests before treating the toolchain as coherent
+  = must: route next work through pursuit-value gates
+  - never: claim commit integrity before an actual commit exists
+  - never: treat untracked file volume as accomplishment without role classification and verification

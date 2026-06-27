@@ -1,0 +1,66 @@
+Subject: Heat Identity Focus Pass 002
+
+Description: Application pass for heat following across correlation, causation, and identity discovery.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_heat_identity_discovery\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_sparse_realization_focus_pass_001.sop
+
+& [HeatIdentityFocusPass002] is the first heat-following identity discovery pass
+  + [pass_uuid] is 8e2de8c6-ed88-4e4e-9b6f-d692d15c592e
+  + [pass_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [method] is follow correlation_heat, causation_heat, and identity_heat while requiring local fabric before identity fusion
+  + [status] is first_heat_identity_rule_applied
+
+  = must: follow heat without treating heat as proof
+  = must: suspect separate identity where persistent correlation and causation lack local fabric grounding
+  = must: route separate-identity suspicion into sparse realization or dense-node boundary review
+
+& [HeatRule001_CorrelationCausationPersistence] is the active heat rule
+  + [trigger] is correlation and causation both persist between two subjects
+  + [first_reading] is the subjects are strongly related
+  + [identity_reading] is separate identity is suspected unless known local fabric grounds shared identity
+  + [local_fabric_test] is look for accepted dense node, project-local source lineage, canonical local specification, inspected local authority file, or explicit identity record joining the subjects
+  + [fallback] is preserve relation without merging identity
+  + [outside] is proof by repeated relation heat
+
+& [SR006_PersistentHeatSuggestsSeparateIdentity] is a sparse realization
+  + [drawn_from] is heat identity discovery source
+  + [realization_text] is persistent correlation plus causation is often a boundary warning rather than an identity proof
+  + [surface_fact_set] is user direction says separate identity is suspected unless grounded in known local fabric
+  + [relation_hint_set] is correlation: repeated co-presence; causal: possible mechanism or enabling condition; identity: suspected separate subject until local grounding appears
+  + [scope_pressure] is scope out identity fusion and scope in relation tracing
+  + [promotion_condition] is apply to old Riemann/Zeta/Toribrot object classification
+  + [outside] is a universal rule that all correlated and causal subjects are separate
+
+& [RelationTrace005_ToribrotMathRuntimeNeed] is a relation trace
+  + [source_subject] is missing clean test/math/feedback loop
+  + [target_subject] is Toribrot math module
+  + [relation_type] is causal
+  + [support] is user correction plus old repair ledger
+  + [confidence] is medium
+  + [identity_heat] is high because both subjects involve computation and verification language
+  + [identity_disposition] is separate_identity_suspected
+  + [local_fabric_grounding] is absent for shared identity; the project has no accepted dense node making ToribrotMathModule the local feedback loop
+  + [promotion_rule] is preserve the causal relation while keeping the runtime need and Toribrot-branded module separate
+  + [outside] is importing ToribrotMathModule as the feedback-loop architecture
+
+& [RelationTrace006_ZetabrotOscilloscopeDependency] is a relation trace
+  + [source_subject] is Zetabrot Fourier layer
+  + [target_subject] is Zeta Oscilloscope
+  + [relation_type] is dependency
+  + [support] is old canonical descriptions make the oscilloscope a finite readout of Lambda-Zetabrot Fourier form
+  + [confidence] is high
+  + [identity_heat] is medium
+  + [identity_disposition] is separate_identity_preserved
+  + [local_fabric_grounding] is old external fabric supports dependency but not local identity fusion
+  + [promotion_rule] is import or re-author as two related objects, not one merged object
+  + [outside] is treating the visual instrument as the full spectral module
+
+& [HeatIdentityPassResult] is the settled output of this pass
+  + [accepted_rule] is HeatRule001_CorrelationCausationPersistence
+  + [new_sparse_realization] is SR006_PersistentHeatSuggestsSeparateIdentity
+  + [relation_updates] are RelationTrace005_ToribrotMathRuntimeNeed and RelationTrace006_ZetabrotOscilloscopeDependency
+  + [next_use] is apply heat identity rule during Task_002_ConceptualHackClassification
+  + [outside] is identity proof, automatic import, and causal certainty without further source inspection

@@ -1,0 +1,43 @@
+Subject: Whole Field RH Landscape Node Map Specification
+
+Description: SJS-processed contract for mapping current RH workspace objects into dense nodes, sparse realizations, and frontiers.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landscape_node_map\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landmark_overlay_report_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_bridge_restraint_synthesis_001.sop
+
+& [WholeFieldRHLandscapeNodeMap] is a project-local finite synthesis contract
+  + [source_snapshot_uuid] is b0b2b5d3-330b-434b-adaa-208abe55b7b9
+  + [manifest_uuid] is 5e9fc0c7-fac9-48b6-ad77-d33a7a555e09
+  + [canonical_specification_uuid] is 12559605-eb4f-482b-9414-f719f3af801e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is map current RH workspace objects into dense nodes, sparse realizations, frontiers, relation traces, and not-it fields before adding new math-processing tools
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, or new numerical implementation
+
+  = must: include pi(x), theta(x), psi(x), prime-power decomposition, Euler products, logarithmic derivative, explicit-formula error, zero-window behavior, reference ordinates, vertical resonance, Lambda overlay, and explicit/Euler bridge restraint
+  = must: classify each important object as dense_node, sparse_realization, frontier, outside, or deferred
+  = must: preserve inside, outside, uncertainty, relation ledger, and future use for dense nodes
+  = must: preserve concept promoters and identity anchors separately
+  = must: distinguish relation, correlation, and identity rather than fusing connected surfaces
+  = must: keep special-prime observations as periphery unless returned to pi(x), theta(x), psi(x), Euler products, explicit-formula error, or zero-behavior objects
+  = must: mark proof_status as finite_landscape_node_map_not_rh_evidence
+  - never: authorize new computation merely because a node is interesting
+  - never: densify a subject without not-it boundaries and future use
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from this map
+
+& [LandscapeMapSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_bounded_landscape_node_map_contract
+  + [reasoning_result] is after explicit/Euler bridge restraint, the next useful work is whole-field node mapping rather than another computation
+
+(whole_field_rh_landscape_node_map) :finite RH landscape node map: /dense nodes, sparse realizations, frontiers, relation ledger/ |proof authority|
+  + [inside] is bounded synthesis of current project-local RH rails
+  + [boundary] is orientation and future-use governance only
+  |outside| RH proof, disproof, zero certification, critical-line evidence, and unsourced tooling

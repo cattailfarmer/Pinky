@@ -1,0 +1,25 @@
+Subject: Dictated Post Discrepancy Route Settlement Source
+
+Description: Raw source for settling the ExplicitResidualArithmeticDiscrepancy result back into the whole-field RH route map.
+
+& [DictatedPostDiscrepancyRouteSettlementSource] is preserved source for post-discrepancy route settlement
+  + [source_snapshot_uuid] is b0c7c4de-da24-47c9-ba7a-d587460642a7
+  + [source_kind] is derived_from_explicit_residual_arithmetic_discrepancy_synthesis_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [discrepancy_synthesis] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis_001.sop
+  @ [landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+  @ [route_inventory] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_candidate_route_inventory_001.sop
+  @ [gap_ledger] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_dense_node_gap_ledger_001.sop
+  @ [commit_scope] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+  + [need] is settle the discrepancy synthesis into the whole-field route map and scan for the next non-mutating pursuit value
+  + [settlement_pressure] is ExplicitResidualArithmeticDiscrepancy is useful as support boundary but blocked as active computation frontier
+  + [governance_pressure] is many source/spec/analysis records have been added after the earlier commit-scope review, so bookend inventory is again the hotter non-mutating route
+  + [source_boundary] is this source authorizes route settlement only; it does not authorize deterministic execution, implementation, staging, commits, broad .sop mutation, proof claims, zero certification, denser scans, or branch reopening
+
+  = must: settle ExplicitResidualArithmeticDiscrepancy under DenseNode_ExplicitFormulaResidualSurface as support boundary only
+  = must: preserve DenseNode_PrimeCountingThetaPsi as arithmetic anchor and DenseNode_BridgeRestraint as governance anchor
+  = must: scan remaining warm leads against the measured-object gate before naming a next route
+  = must: prefer governance/bookend inventory over new math when no computation-ready object remains
+  - never: convert c32 local improvement, mixed sign relation, or split exact-layer dominance into proof, causation, or identity

@@ -1,0 +1,60 @@
+Subject: Post Discrepancy Route Settlement 001
+
+Description: Non-mutating settlement of ExplicitResidualArithmeticDiscrepancy back into the whole-field route map.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_post_discrepancy_route_settlement\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Post_Discrepancy_Route_Settlement_Specification.sop
+@ [discrepancy_synthesis] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis_001.sop
+
+& [PostDiscrepancyRouteSettlement001] is a completed non-mutating route settlement
+  + [analysis_uuid] is 91511ce9-b0f0-4cd6-846c-520fb7f6c954
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_post_discrepancy_route_settlement
+  + [proof_status] is route_settlement_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is route synthesis only
+  + [new_numerical_processing] is none
+
+& [DiscrepancySettlement] is settled_support_boundary
+  + [node_role] is support inside DenseNode_ExplicitFormulaResidualSurface
+  + [arithmetic_anchor] is DenseNode_PrimeCountingThetaPsi
+  + [governance_anchor] is DenseNode_BridgeRestraint
+  + [positive_support] is finite explicit residual movement can be compared against exact psi-theta-prime-power movement without adding new tools
+  + [negative_support] is mixed sign relation blocks simple residual-to-psi-error identity and split exact-layer dominance blocks single-layer ownership
+  + [route_status] is not an active computation frontier
+  + [blocked_math] is rerun, wider grids, tuning, new windows, new cutoffs, new kernels, Lambda overlay expansion, special-prime reopening, and proof-facing interpretation
+
+& [WholeFieldRouteUpdate] is route_map_delta
+  + [PrimeCountingThetaPsi] is strengthened_as_arithmetic_anchor
+  + [ExplicitFormulaResidualSurface] is refined_by_discrepancy_boundary
+  + [BridgeRestraint] is strengthened_by_no_new_computation_result
+  + [EulerLogDerivativeHalfPlane] is support_only_no_new_boundary_quantity
+  + [ReferenceAndResonanceLandmarks] is support_only_no_new_overlay_object
+  + [LambdaDiagnosticOverlay] is support_only_no_new_whole_field_purpose
+  + [SparsePeriphery] is no_reopen_for_special_primes_or_scale_novelty
+
+& [PeripheryScan] is current_route_scan
+  + [math_computation_ready] is none
+  + [math_source_request_worthy] is none after discrepancy source and synthesis were completed
+  + [math_support_warmth] is present but restrained in explicit residual, prime-power, Lambda overlay, half-plane, and sparse scale-law records
+  + [governance_warmth] is high because many source/spec/analysis records have been added after the earlier commit-scope review while the project remains untracked
+  + [contradiction_result] is no contradiction found; the discrepancy result refines the route map and reinforces prior restraint
+  + [pursuit_value] is source/spec/worktree/bookend inventory has stronger value than new math at this point
+
+& [NextNonMutatingLead] is selected
+  + [selected_next] is first-bookend delta inventory refresh
+  + [reason] is post-discrepancy math routes are settled and not computation-ready, while the untracked project slice has grown since the earlier commit-scope review
+  + [allowed_next] is review source/spec/analysis/tool surfaces and worktree deltas without staging or committing
+  + [blocked_next] is no math computation, no denser scans, no branch reopening, no staging, and no commit
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is ExplicitResidualArithmeticDiscrepancy is settled as support boundary, and the next valuable route is governance inventory rather than math expansion
+  + [next_action] is preserve source/spec for a first-bookend delta inventory refresh if walking continues
+  + [boundary] is no Git mutation, broad .sop mutation, runtime code change, test run, proof claim, zero certification, new math execution, branch reopening, or identity fusion occurred
+
+(post_discrepancy_route_settlement_001) :route settlement: /discrepancy settled; no math-ready route; first-bookend delta inventory next/ |proof claims|
+  + [inside] is route settlement and next non-mutating lead
+  + [boundary] is inquiry navigation only
+  |outside| proof, zero certification, staging, commit, branch reopening, new computation, and identity fusion

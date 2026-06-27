@@ -1,0 +1,52 @@
+Subject: Partial Summation Bridge Specification
+
+Description: SJS-processed contract for a smoothed Lambda-Mellin shared-unit bridge.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_partial_summation_bridge\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop
+
+& [PartialSummationBridge] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is 00c81407-468a-4099-b55f-77566e6752f2
+  + [manifest_uuid] is 5b53422e-7876-4464-8e5d-319109df44b2
+  + [canonical_specification_uuid] is 8b725a81-f18f-476c-b8eb-efca0de2e821
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether partial summation can preserve the shared Lambda-Mellin unit while reducing raw finite-difference noise from explicit psi estimates
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, or explicit/Euler identity fusion
+
+  = must: work only with Re(s) > 1 samples
+  = must: use exact finite Lambda sum Sum_{n<=N} Lambda(n)n^-s as the local target
+  = must: compute exact partial-summation projection from exact psi values and report its residual against the exact finite Lambda sum as sanity check
+  = must: compute explicit partial-summation projection psi_hat(N)N^-s + Sum_{k=2}^{N-1} psi_hat(k)*(k^-s - (k+1)^-s)
+  = must: compute the prior raw finite-difference projection Sum_{n<=N}(psi_hat(n)-psi_hat(n-1))n^-s for direct comparison
+  = must: report partial bridge residual, raw bridge residual, partial-over-raw ratio, exact cutoff residual against -zeta_prime/zeta(s), and combined explicit-to-infinite residual
+  = must: include sample-level rows for N, s, scale law, multiplier, window, exact finite sum, explicit partial sum, raw finite-difference sum, and residual magnitudes
+  = must: mark output proof_status as finite_partial_summation_bridge_not_rh_evidence
+  = must: treat mpmath zetazero and zeta derivative evaluation as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite bridge traces
+  - never: collapse explicit-zero truncation identity into Euler prime-power cutoff identity
+
+& [DefaultPartialSummationBridgeGrid] is the bounded comparison grid
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.134725141734693790457251983562i, and s=1.5+14.134725141734693790457251983562i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [rationale] is reuse the Lambda-Mellin bridge grid so the partial-summation projection can be compared directly against the raw finite-difference projection
+
+& [PartialSummationBridgeTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.partial_summation_bridge_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\partial_summation_bridge_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_pass_001.sop
+
+& [PartialSummationBridgeSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_partial_summation_bridge_contract
+  + [reasoning_result] is prior raw finite-difference Lambda-Mellin bridge created a shared unit but amplified jump noise; partial summation should test the same unit through a smoother lawful projection
+
+(partial_summation_bridge) :finite smoothed Lambda-Mellin projection: /exact psi sanity, explicit psi_hat projection, raw comparison/ |proof authority|
+  + [inside] is bounded finite Re(s)>1 shared-unit comparison
+  + [boundary] is bridge-projection diagnosis only
+  |outside| RH proof, disproof, zero certification, global bridge identity, critical-line evidence, and universal scale-law claims

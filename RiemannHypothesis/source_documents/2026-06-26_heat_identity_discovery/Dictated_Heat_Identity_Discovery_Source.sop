@@ -1,0 +1,22 @@
+Subject: Dictated Heat Identity Discovery Source
+
+Description: Preserved source refinement for following heat across correlation, causation, and identity discovery while suspecting separate identity when local grounding is missing.
+
+& [DictatedHeatIdentityDiscoverySource] is the preserved user refinement
+  + [source_status] is preserved_raw_refinement
+  + [captured_request] is follow heat for both correlation, causation, and identity discovery; where correlation and causation persist, separate identity is suspected unless grounded in known local fabric
+  + [active_project] is C:\Project\Pinky\RiemannHypothesis
+  + [active_framework] is SparseRealizationDenseNodeFramework
+  + [heat_lane_set] is correlation_heat, causation_heat, and identity_heat
+  + [persistent_correlation_causation_signal] is repeated or strong co-presence of correlation and causation pressure between subjects
+  + [separate_identity_suspicion] is the default when persistent correlation and causation are not grounded in known local fabric
+  + [known_local_fabric] is project-local source records, accepted dense nodes, canonical project specifications, inspected local authority files, and explicit local identity records
+  + [authority_boundary] is source refinement only until processed into the project framework contract
+  + [inside] is heat following, relation persistence, identity suspicion, local fabric grounding, and identity separation gate
+  + [outside] is identity fusion by resonance, proof by heat, causal proof without mechanism, and treating external old framework similarity as local identity
+
+  = must: follow heat across correlation, causation, and identity discovery
+  = must: preserve correlation and causation as separate heat lanes
+  = must: suspect separate identity when persistent correlation and causation lack known local fabric grounding
+  = must: require local grounding before shared identity is accepted
+  - never: merge identities only because correlation and causation both persist

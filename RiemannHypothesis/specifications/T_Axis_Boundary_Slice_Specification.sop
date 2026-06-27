@@ -1,0 +1,45 @@
+Subject: T Axis Boundary Slice Specification
+
+Description: SJS-processed contract for fixed-sigma t-axis slicing of finite Euler-product residual behavior.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_t_axis_boundary_slice\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+
+& [TAxisBoundarySlice] is a project-local inquiry contract
+  + [canonical_specification_uuid] is fb7480d0-adea-4708-b0ef-336b0e8b3f4d
+  + [source_snapshot_uuid] is 386555da-4497-4f6c-a62f-3da7d5fc9ddd
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare finite Euler-product and logarithmic-derivative residual behavior along selected t ordinates at fixed sigma values greater than 1
+  + [not_purpose] is RH proof, disproof, critical-line inspection, independent zero certification, or theorem-level statement about zero ordinates
+
+  = must: require all sigma values to be greater than 1
+  = must: compute zeta(s), finite Euler-product residuals, and logarithmic-derivative residuals for each selected t
+  = must: expose t_gap_from_previous and adjacent t transition ratios where possible
+  = must: annotate t = 0 as pole_axis_reference when selected
+  = must: annotate known zero ordinates as reference landmarks only, not zero certification
+  = must: compare behavior at at least one near-boundary sigma and one safer sigma when requested
+  = must: mark output proof_status as finite_t_axis_boundary_probe_not_zero_line_evidence
+  - never: treat t-axis landmarks as proof of zeros
+  - never: infer RH truth or falsehood from finite t-axis residual slices
+
+& [TAxisBoundaryProbeTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\t_axis_boundary_probe.py
+  + [runtime_function] is rh_math.euler_product.t_axis_boundary_probe
+  + [input] is finite sigma values greater than 1, t values, prime bounds, precision metadata, and reference ordinates
+  + [output] is residual rows, t-axis annotations, adjacent-t transition ratios, and summary rows
+  + [proof_status] is finite_t_axis_boundary_probe_not_zero_line_evidence
+
+& [TAxisBoundarySliceSJS] is the specification justification trace
+  + [protocol_uuid] is 254f9a2d-27b7-4659-b34b-0d1ff7519b59
+  + [source_snapshot_uuid] is 386555da-4497-4f6c-a62f-3da7d5fc9ddd
+  + [canonical_specification_uuid] is fb7480d0-adea-4708-b0ef-336b0e8b3f4d
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_t_axis_slice_contract
+  + [reasoning_result] is fixed-sigma t-axis slicing should follow sigma-boundary inspection to separate pole-axis influence, reference-zero-ordinate neighborhoods, and ordinary vertical behavior inside Re(s) > 1
+
+(t_axis_boundary_slice) :fixed-sigma vertical slice: /sigma greater than 1, t ordinates, finite residuals/ |zero-line authority|
+  + [inside] is finite vertical slicing in the convergent half-plane
+  + [boundary] is landmark-guided residual comparison only
+  |outside| RH proof, disproof, zero certification, and direct critical-line inference

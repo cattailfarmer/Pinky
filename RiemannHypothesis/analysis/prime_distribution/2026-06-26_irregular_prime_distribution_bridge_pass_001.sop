@@ -1,0 +1,53 @@
+Subject: Irregular Prime Distribution Bridge Pass 001
+
+Description: First bounded distribution bridge measuring irregular-prime periphery beside pi(x), theta(x), and psi(x).
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_irregular_prime_distribution_bridge\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Irregular_Prime_Distribution_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_irregular_prime_distribution_bridge_trace.json
+
+& [IrregularPrimeDistributionBridgePass001] is a completed bounded whole-field return pass
+  + [analysis_uuid] is 9b8b3d1a-d1e4-49f9-913a-37e9503a9873
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\irregular_prime_distribution.py
+  + [proof_status] is finite_irregular_prime_distribution_not_zero_line_evidence
+  + [status] is completed
+
+& [DistributionTrace_001] is bounded_arithmetic_fact
+  + [sample_points] is 100, 200, 500
+  + [x_100_irregular_count] is 3
+  + [x_100_odd_prime_count] is 24
+  + [x_100_irregular_density] is 0.125
+  + [x_100_irregular_theta_share] is 0.1420443880415725
+  + [x_100_theta_minus_x] is -16.271609600936077
+  + [x_100_psi_minus_x] is -5.954688770642608
+  + [x_200_irregular_count] is 8
+  + [x_200_odd_prime_count] is 45
+  + [x_200_irregular_density] is 0.1777777777777778
+  + [x_200_irregular_theta_share] is 0.1913328174093160
+  + [x_200_theta_minus_x] is -11.436493728492667
+  + [x_200_psi_minus_x] is 6.145856825054755
+  + [x_500_irregular_count] is 28
+  + [x_500_odd_prime_count] is 94
+  + [x_500_irregular_density] is 0.2978723404255319
+  + [x_500_irregular_theta_share] is 0.3232440247395712
+  + [x_500_theta_minus_x] is -25.44555584530581
+  + [x_500_psi_minus_x] is 1.652116649747636
+
+& [IdentityInference_001] is periphery_identity_result
+  + [inference] is irregular primes provide a cleaner zeta-adjacent sampling surface than the retired 641 special-form line because their definition contacts Bernoulli numerators and zeta negative odd special values directly
+  + [boundary] is the finite distribution trace does not identify an explanatory identity for theta(x)-x, psi(x)-x, Euler products, explicit formula error, or zeta-zero behavior
+  + [restraint] is increasing irregular density across the sampled points is a local observation only and cannot be treated as trend, cause, or RH evidence
+  + [noted_motion] is psi(x)-x changes sign between 100 and 200 while irregular-prime density and irregular theta share rise across all sampled points, so simple sign-tracking is not present in this finite trace
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is irregular primes should remain active as zeta-special-value periphery, not central RH identity
+  + [reason] is the bridge returns irregular-prime facts to pi(x), theta(x), and psi(x) cleanly, but no bounded causal or identity lock appears in the measured whole-field rows
+  + [next_relevant_periphery] is prime-power decomposition of psi movement and Euler-product weighting before adding more special-prime families
+  + [retired_branch] is the 641 special-form line remains retired unless a new source-defined identity appears
+
+(irregular_prime_distribution_bridge_pass_001) :bounded zeta-adjacent periphery bridge: /irregular-prime density and theta share measured beside pi, theta, psi/ |zero-line proof claims|
+  + [inside] is finite arithmetic trace, identity boundary, and next periphery direction
+  + [boundary] is useful inspection surface but incomplete explanation
+  |outside| RH proof, disproof, zero certification, and special-prime hypothesis sprawl

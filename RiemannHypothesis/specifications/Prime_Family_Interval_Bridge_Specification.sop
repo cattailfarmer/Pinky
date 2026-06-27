@@ -1,0 +1,42 @@
+Subject: Prime Family Interval Bridge Specification
+
+Description: SJS-processed project-local contract for interval-level special-prime family measurement against whole-field Chebyshev movement.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_family_interval_bridge\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Prime_Shape_Bridge_Specification.sop
+
+& [PrimeFamilyIntervalBridge] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 98af3202-1181-450f-a15e-bbe6835a03c0
+  + [source_snapshot_uuid] is 4f7b99ca-543e-4555-b7c1-ef77d2244321
+  + [solution_uuid] is a8d9ec2d-e18f-4e8b-b246-2c5b2672bc12
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [role] is measure family increments inside finite intervals and compare them to whole-field theta and psi interval movement
+  + [not_role] is correlation proof, RH evidence, or family-centered replacement subject
+
+  = must: compute interval prime-count, theta, and psi movement for each interval
+  = must: compute family-count and family-log-weight increments for the same intervals
+  = must: expose whether family increments occur in intervals where whole-field theta/psi error moves up or down
+  = must: report all results as finite traces with no proof or evidence claim
+  - never: infer causation from interval co-occurrence without later specification
+
+& [PrimeFamilyIntervalDistributionTool] is the script surface for interval whole-field return
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_family_intervals.py
+  + [input] is finite interval endpoint list or generated endpoints and selected families
+  + [output] is interval-level whole-prime increments and family increments
+  + [proof_status] is finite_family_interval_probe_not_rh_evidence
+
+## SJS Processing Trace
+
+& [PrimeFamilyIntervalBridgeSJS] is the specification justification trace
+  + [protocol_uuid] is 527fb069-c772-439e-8663-46fcb3131d16
+  + [source_snapshot_uuid] is 4f7b99ca-543e-4555-b7c1-ef77d2244321
+  + [canonical_specification_uuid] is 98af3202-1181-450f-a15e-bbe6835a03c0
+  + [solution_uuid] is a8d9ec2d-e18f-4e8b-b246-2c5b2672bc12
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [reasoning_result] is interval-level probes can test family contribution timing without centering special primes as the RH subject
+
+(prime_family_interval_bridge) :family increments in whole-field intervals: /theta and psi movement/ |causal or RH claims|
+  + [inside] is finite interval increments, family shares, and error movement signs
+  + [boundary] is no causation, proof, disproof, or RH evidence from co-occurrence alone
+  |outside| special-primes hypothesis and proof-grade inference

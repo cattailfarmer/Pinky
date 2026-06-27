@@ -1,0 +1,21 @@
+Subject: Dictated Explicit Residual Movement Decomposition Source
+
+Description: Preserved source for naming a measured residual-movement quantity after explicit residual surface refinement.
+
+& [DictatedExplicitResidualMovementDecompositionSource] is raw continuation source
+  + [source_snapshot_uuid] is b9d5b24c-6b67-4cab-a439-32236f1ac80c
+  + [captured_at] is 2026-06-26T17:35:06.035Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_residual_movement_decomposition_next
+  + [raw_need] is source-define a measured quantity decomposing explicit residual movement against psi(x), theta(x), and higher-prime-power layers without adding kernels, windows, cutoff laws, or proof-facing claims
+  + [selected_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [known_pressure] is the residual surface is now refined enough that more generic atlases are not justified, but a named movement decomposition may clarify whether residual changes track exact arithmetic layer movement
+  + [identity_boundary] is this decomposition is arithmetic diagnostics and residual-motion accounting, not RH evidence, zero certification, theorem structure, or explicit/Euler bridge fusion
+
+  = must: preserve this raw source separately from canonical specification
+  = must: define the measured quantity before implementation
+  = must: reuse existing sharp baseline, T-height coordinate, and T=c*log(x) diagnostic law unless explicit parameters select an existing supported policy
+  = must: keep psi(x), theta(x), and higher-prime-power layers visible in every reported movement row
+  = must: report sign/co-movement only as finite diagnostic relation, not causation
+  - never: add a new smoothing window, cutoff law, kernel, or proof-facing claim in this slice

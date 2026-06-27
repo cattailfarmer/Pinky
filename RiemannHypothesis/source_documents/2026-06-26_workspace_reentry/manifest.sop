@@ -1,0 +1,18 @@
+Subject: Riemann Hypothesis Workspace Reentry Source Manifest
+
+Description: Source preservation manifest for the new Pinky Riemann Hypothesis workspace reentry request.
+
+& [RiemannHypothesisWorkspaceReentrySourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_workspace_reentry\Dictated_Riemann_Hypothesis_Workspace_Reentry_Source.sop
+  + [canonical_output] is C:\Project\Pinky\RiemannHypothesis\specifications\RiemannHypothesis_Periphery_Workspace_Specification.sop
+  + [initial_analysis_record] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_framework_initial_periphery_inspection.sop
+  + [project_manager_state] is C:\Project\Pinky\RiemannHypothesis\planning\project_manager\Manager_State.sop
+  + [intake_status] is processed_to_initial_workspace_contract
+  + [captured_on] is 2026-06-26
+  + [active_sop_authority_root] is C:\Project\Pinky\.sop
+  + [external_periphery_root] is C:\Project\ReasoningFramework
+  + [authority_boundary] is source document preserved separately from local project specification and analysis records
+
+  = must: keep source wording separate from canonical workspace rules
+  = must: rerun SJS if this source document changes
+  = must: treat old framework material as cited external periphery unless imported through a later source-preserving pass

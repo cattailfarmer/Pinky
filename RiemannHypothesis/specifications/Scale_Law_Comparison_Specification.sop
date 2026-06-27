@@ -1,0 +1,53 @@
+Subject: Scale Law Comparison Specification
+
+Description: SJS-processed contract for comparing bounded x-dependent zero-height laws.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_law_comparison\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Scale_Tied_Zero_Height_Policy_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_pass_001.sop
+
+& [ScaleLawComparison] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is 4489c420-f07c-49da-9207-f0cb775a6c39
+  + [canonical_specification_uuid] is 6854719c-1751-4038-a7e7-84b10b3f90a0
+  + [protocol_uuid] is 2f85ee4d-2401-4146-9efa-58e74be92188
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare declared x-dependent zero-height laws as finite explicit-formula residual coordinates before any explicit/Euler bridge attempt
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, universal scale-law ranking, or explicit/Euler bridge identity
+
+  = must: compare T = c*log(x), T = c*sqrt(x), and T = c*sqrt(x)*log(x)
+  = must: use bounded default multiplier sets chosen to keep resulting T values in comparable finite ranges over the sampled x values
+  = must: use exact finite psi(x), theta(x), and pi(x) rows for sampled x
+  = must: include all positive zeta-zero pairs with ordinate gamma <= T for each computed cutoff
+  = must: expose law name, multiplier, resulting T, T/log(x), T/sqrt(x), and implied zero_pair_count
+  = must: compare sharp, Fejer, Lanczos, and Hann policies as height-weighted windows of gamma/T
+  = must: report law-level average residual, best-row counts, and local best-law drift by x
+  = must: mark output proof_status as finite_scale_law_comparison_not_zero_certification
+  = must: treat mpmath zetazero as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite scale-law comparison
+  - never: treat one law as universal without a later broader source-defined comparison
+  - never: collapse local minima into identity
+  - never: fuse explicit-formula residual rails with Euler-product/log-derivative rails without a later source-defined shared comparison unit
+
+& [ScaleLawDefaultMultipliers] is the bounded comparison grid
+  + [log] is 8, 12, 16, 24, and 32
+  + [sqrt] is 1, 2, 3, 4, and 6
+  + [sqrt_log] is 0.25, 0.5, 0.75, and 1
+  + [rationale] is keep T values finite and roughly comparable over x from 100 to 1000 without chasing arbitrary parameter rows
+
+& [ScaleLawComparisonTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.scale_law_comparison_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\scale_law_comparison_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_pass_001.sop
+
+& [ScaleLawComparisonSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_scale_law_comparison_contract
+  + [reasoning_result] is T = c*log(x) improved coordinate discipline but did not stabilize identity, so the next useful rail is comparing declared coordinate laws rather than adding smoothing policies
+
+(scale_law_comparison) :finite explicit residual coordinate-law comparison: /log, sqrt, sqrt_log, height windows, bounded multipliers/ |proof authority|
+  + [inside] is deterministic finite residual measurement against exact psi(x)
+  + [boundary] is bounded coordinate-law diagnosis only
+  |outside| RH proof, disproof, zero certification, global scale-law claims, and explicit/Euler bridge identity

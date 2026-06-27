@@ -1,0 +1,26 @@
+Subject: Enumerated Toribrot Math Engine Source Document Manifest
+Description: Preserved source-document manifest for reprocessing the Toribrot Math Engine source into a cleaner enumerated architecture.
+
+@ [source] platform/source_documents/2026-05-19_enumerated_toribrot_math_engine/Toribrot Math Engine.source-snapshot.txt
+@ [source] platform/refinement/Specification_Governance.sop
+@ [source] platform/refinement/Specification_Justification_Solution.sop
+@ [source] platform/refinement/Toribrot.sop
+@ [source] platform/refinement/Zeta_Oscilloscope.sop
+
+& [EnumeratedToribrotMathEngineSourceDocumentManifest] is the preserved source set for the corrected Enumerated Toribrot Math Engine definition
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [source_snapshot_uuid] is c2581602-856a-4cc1-bda3-0e3975716233
+  + [source_document] is platform/source_documents/2026-05-19_enumerated_toribrot_math_engine/Toribrot Math Engine.source-snapshot.txt
+  + [source_document_sha256] is BF3DC35D8E6931311C011ECF5E2C9EE64EBD8CD3CE4A9F7AE4654DA427B7D221
+  + [external_source_path] is C:/Users/jerem/Downloads/Toribrot Math Engine.txt
+  + [canonical_source_specification] is platform/refinement/Enumerated_Toribrot_Math_Engine.sop
+  + [source_purpose] is to repair and enumerate a Toribrot-derived verified arithmetic engine that can serve downstream numerical experiments without confusing itself for RH analysis
+  + [preservation_event] is external source copied into workspace before SJS reprocessing
+  + [worktree_attribution] is no_git_worktree_available_for_root; new derived files are owned by conversation_uuid 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+
+  = must: preserve source_document as original-purpose anchor
+  = must: emit canonical_source_specification separately from source_document
+  = must: treat the canonical file as architectural repair, not as mutation of source
+  - never: overwrite source_document with corrected architecture
+
+/ [toribrot_math_engine_source] -(SpecificationIntakeContract)> [source_document], [source_snapshot_uuid], [canonical_source_specification]

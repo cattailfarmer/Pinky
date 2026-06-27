@@ -1,0 +1,55 @@
+Subject: Measured Object Candidate Criteria Specification
+
+Description: SJS-processed contract for admitting future RH measured objects before deterministic math processing.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_measured_object_candidate_criteria\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_dense_node_gap_ledger_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_record_to_dense_node_matrix_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+
+& [MeasuredObjectCandidateCriteriaSpecification] is a non-mutating admission contract
+  + [source_snapshot_uuid] is 9c480377-8dd9-41b0-9405-942ebdb3d754
+  + [manifest_uuid] is 7f99c312-abe9-4c7e-90d7-3922fbf17593
+  + [canonical_specification_uuid] is 602cbb2f-8cfa-48e6-a95d-f011fd14cfbe
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is define admission gates for future source-defined measured objects
+  + [not_purpose] is new computation, proof, zero certification, branch reopening, staging, committing, broad .sop mutation, denser scans, more labels, more windows, or more offsets
+  + [proof_status] is criteria_not_rh_evidence
+
+& [AdmissionGate] is required_before_math_processing
+  + [gate_source] is raw source preserved plus canonical specification before analysis or implementation
+  + [gate_purpose] is a named question with purpose beyond curiosity, density, novelty, or visual resemblance
+  + [gate_dense_node_parentage] is one primary dense node plus explicit support lanes and governance lane
+  + [gate_whole_field_relevance] is relation to pi(x), theta(x), psi(x), Lambda(n), Euler/log-derivative, explicit residuals, zeta-reference behavior, or another named whole-field object
+  + [gate_identity_boundary] is inside, outside, not-it boundary, related periphery, and suspected external/internal fabric status
+  + [gate_existing_evidence] is a cited record set showing why the object is warm enough to pursue
+  + [gate_method_contract] is deterministic inputs, outputs, finite metric, comparison contract, and expected artifact path
+  + [gate_contradiction_handling] is what result would weaken, retire, or rescope the candidate
+  + [gate_restraint] is explicit check against reopening paused branches by density alone
+  + [gate_exit] is a definite conclusion condition for the bounded pass
+  + [gate_truth_boundary] is finite measurement only; no proof, disproof, zero certification, RH evidence, or critical-line authority
+
+& [CandidateStatusSet] is classification_contract
+  + [candidate_rejected] is fails a required gate
+  + [candidate_support_only] is useful as orientation but not admitted for computation
+  + [candidate_source_needed] is promising but lacks preserved source or canonical specification
+  + [candidate_spec_ready] is source and specification exist but deterministic tool contract is still missing
+  + [candidate_ready_for_deterministic_processing] is all gates pass and a bounded math-processing contract exists
+
+  = must: treat all gates as conjunctive before computation
+  = must: keep special-prime observations subordinate to whole-field objects
+  = must: keep Lambda overlay, landmark overlay, explicit/Euler bridge, and shell expansion pauses active unless a new source-defined purpose passes the gate
+  = must: report failure gates rather than patching them with inference
+  - never: promote a candidate because it is merely interesting, dense, sparse, repeated, or aesthetically suggestive
+  - never: use this criteria contract as permission for numerical work without a later candidate-specific source/spec
+
+& [MeasuredObjectCandidateCriteriaSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and admission_gate_scoped
+  + [processing_result] is accepted_measured_object_admission_contract
+  + [reasoning_result] is continuous RH walking needs a way to keep inquiry open while preventing ungoverned computation; admission gates make the next measured object selectable without turning periphery heat into proof pressure
+
+(measured_object_candidate_criteria) :admission gate: /source, purpose, node, boundary, method, contradiction, exit/ |proof claims|
+  + [inside] is criteria for future measured-object selection
+  + [boundary] is no computation, no proof inference, no branch reopening, no staging, no commit
+  |outside| RH proof, disproof, zero certification, critical-line authority, numerical scans, and identity fusion

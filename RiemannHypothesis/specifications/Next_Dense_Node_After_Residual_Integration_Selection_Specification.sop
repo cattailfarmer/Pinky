@@ -1,0 +1,38 @@
+Subject: Next Dense Node After Residual Integration Selection Specification
+
+Description: SJS-processed contract for selecting the next dense node after explicit residual movement integration.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_next_dense_node_after_residual_integration\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_post_residual_movement_landscape_integration_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+
+& [NextDenseNodeAfterResidualIntegrationSelection] is a project-local finite selection contract
+  + [source_snapshot_uuid] is 562f6333-dbf2-4dee-a85d-bbc7b5bc5ea6
+  + [manifest_uuid] is b425a5b5-6ed1-4489-8bea-e20b44af8399
+  + [canonical_specification_uuid] is 7f4458d1-c540-48a3-87ac-dc8387ca49b8
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is select the next dense node and refinement posture after residual movement integration
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, critical-line authority, runtime implementation, or new math-processing tool
+
+  = must: compare half-plane boundary synthesis, landmark-overlay discipline, and another dense-node refinement
+  = must: prefer the direction that improves whole-field orientation while preserving recent restraint boundaries
+  = must: keep Re(s)>1 convergence diagnostics separate from critical-line claims
+  = must: keep landmark overlays as reference orientation unless a later source names a shared measured object
+  = must: mark proof_status as finite_next_dense_node_selection_not_rh_evidence
+  - never: authorize computation from selection alone
+  - never: reopen explicit/Euler kernel work or residual movement grids from this selection
+  - never: infer RH truth from node priority
+
+& [NextDenseNodeSelectionSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and selection_scoped
+  + [processing_result] is accepted_bounded_post_integration_node_selection_contract
+  + [reasoning_result] is after the explicit residual node has been refined and restrained, the project needs a next orientation node before any new computation
+
+(next_dense_node_after_residual_integration_selection) :finite node selection: /post-residual integration direction; half-plane, landmark, or other dense node/ |proof authority|
+  + [inside] is bounded selection and refinement posture only
+  + [boundary] is planning and governance
+  |outside| RH proof, disproof, zero certification, critical-line evidence, and unsourced implementation

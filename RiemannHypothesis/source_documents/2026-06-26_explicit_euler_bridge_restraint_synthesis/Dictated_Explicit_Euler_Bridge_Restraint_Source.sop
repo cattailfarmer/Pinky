@@ -1,0 +1,20 @@
+Subject: Dictated Explicit Euler Bridge Restraint Source
+
+Description: Preserved source for deciding whether to pause explicit/Euler kernel refinement and return to whole-field RH synthesis.
+
+& [DictatedExplicitEulerBridgeRestraintSource] is raw continuation source
+  + [source_snapshot_uuid] is dc514f6c-3433-408b-bc05-3a266a9d2a38
+  + [captured_at] is 2026-06-26T17:23:35.876Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_bridge_branch_restraint_next after bias-tuned kernel bridge diagnosis
+  + [raw_need] is decide whether explicit/Euler kernel refinement should pause because the bridge-bias tradeoff is clearly delineated
+  + [prior_result] is alpha tuning exposed a Pareto dial: increasing smoothing improves explicit-side bridge residual while increasing exact cutoff bias against -zeta_prime/zeta
+  + [restraint_question] is whether more kernel variants would add meaning or merely refine the same tradeoff curve
+  + [whole_field_pressure] is return attention to pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior rather than overfitting one bridge surface
+  + [identity_boundary] is a finite bridge diagnostic can describe the terrain but cannot become RH evidence or a fused explicit/Euler identity
+
+  = must: preserve this raw source separately from canonical specification
+  = must: synthesize prior bridge records before declaring branch restraint
+  = must: keep special-prime and kernel observations subordinate to whole-field RH objects
+  - never: treat finite bridge restraint as proof, disproof, zero certification, or critical-line authority

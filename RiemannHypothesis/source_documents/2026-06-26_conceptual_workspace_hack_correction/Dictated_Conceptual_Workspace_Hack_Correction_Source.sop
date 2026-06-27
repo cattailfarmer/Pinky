@@ -1,0 +1,22 @@
+Subject: Dictated Conceptual Workspace Hack Correction Source
+
+Description: Preserved source correction that the old Riemann workspace was conceptual, and some modules were hacks caused by lack of a clean programmatic testing and feedback loop.
+
+& [DictatedConceptualWorkspaceHackCorrectionSource] is the preserved user correction
+  + [source_status] is preserved_raw_correction
+  + [captured_request] is the new kernel shape does not need to be a full operating system; the original Riemann workspace was conceptual, some concepts probably do not actually help, and some concepts were hacks because there was no clean way to write a program to perform tests, run math operations, and provide feedback, such as the Toribrot math module
+  + [corrected_kernel_target] is kernel_shape_not_full_operating_system
+  + [old_workspace_status] is conceptual_workspace
+  + [concept_status_warning] is some old concepts may not help the new workspace
+  + [hack_status_warning] is some old modules may encode workarounds for missing runtime, testing, math operation, and feedback capability
+  + [named_example] is Toribrot math module
+  + [analysis_requirement] is classify old objects as useful primitive, conceptual scaffold, workaround hack, obsolete analogy, or import candidate before treating them as local authority
+  + [authority_boundary] is source correction only until processed into project-local analysis and planning records
+  + [inside] is kernel target correction, conceptual status, hack/workaround warning, Toribrot math module caution, and next classification pass
+  + [outside] is assuming old conceptual modules are implementation-ready, automatically importing the Toribrot math engine, or preserving hacks as architecture without testing their original pressure
+
+  = must: treat old Riemann framework material as conceptual periphery until classified
+  = must: identify whether a module solved a real problem or compensated for missing runtime capability
+  = must: prefer a clean programmatic test/math/feedback loop over preserving conceptual workaround machinery
+  = must: handle the Toribrot math module as a likely workaround/hack candidate until reclassified
+  - never: let old conceptual coherence imply current implementation value

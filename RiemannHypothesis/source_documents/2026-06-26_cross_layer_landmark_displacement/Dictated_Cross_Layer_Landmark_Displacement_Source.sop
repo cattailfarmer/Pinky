@@ -1,0 +1,29 @@
+Subject: Dictated Cross Layer Landmark Displacement Source
+
+Description: Preserved source for comparing finite landmark displacement across reference labels, sparse resonance, dense Lambda heat, and contribution-layer offset rows.
+
+& [DictatedCrossLayerLandmarkDisplacementSource] is raw continuation source
+  + [source_snapshot_uuid] is f87a7776-2b61-4e98-8bee-b774ff725f2a
+  + [captured_at] is 2026-06-26T19:04:11-05:00 heartbeat continuation
+  + [automation_id] is riemann-rh-lambda-phasor-road-reactivation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is scheduled continuation after offset-local contribution asymmetry synthesis
+  + [source_basis] is offset-local contribution asymmetry promoted cross-layer landmark displacement as the next better object
+  + [selected_measured_object] is cross-layer landmark displacement
+  + [raw_need] is compare how far finite landmarks sit from reference labels across sparse vertical resonance, dense Lambda heat, and Lambda contribution-layer local offsets
+  + [input_trace_sparse] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_trace.json
+  + [input_trace_dense] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+  + [input_trace_contribution] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_trace.json
+  + [analysis_posture] is finite synthesis of existing traces, not a new scan
+  + [comparison_layers] are reference labels, sparse vertical resonance candidates, dense Lambda window/cutoff candidates, and contribution-layer three-point offset extrema
+  + [whole_field_return] is keep displacement tied to Lambda, Euler/log-derivative half-plane behavior, psi-theta prime-power mechanics, and landmark-overlay discipline
+  + [identity_boundary] is displacement is an orientation metric only, not zero certification, RH evidence, proof, disproof, critical-line authority, or single-surface identity
+
+  = must: preserve this raw source separately from canonical specification
+  = must: compare existing trace rows before adding new computation
+  = must: treat known zero ordinates as reference labels only
+  = must: report sparse versus dense candidate displacement separately
+  = must: report contribution-layer offset displacement separately from sparse/dense extrema
+  = must: decide whether a future stability-class object is justified or whether this branch should pause
+  - never: claim that nearest finite candidates certify zeros, prove RH, disprove RH, or define the local identity of zeta behavior

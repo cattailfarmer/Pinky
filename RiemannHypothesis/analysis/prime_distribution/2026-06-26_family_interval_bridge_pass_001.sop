@@ -1,0 +1,55 @@
+Subject: Family Interval Bridge Pass 001
+
+Description: First interval-level whole-field return pass for special-prime family increments against theta and psi movement.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_family_interval_bridge\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Family_Interval_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_family_interval_bridge_trace.json
+
+& [FamilyIntervalBridgePass001] is a completed interval whole-field return pass
+  + [analysis_uuid] is 3aec7801-0a61-4916-9756-27ab1cd16126
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_family_intervals.py
+  + [interval_endpoints] is 1000, 2000, 5000, 10000, 20000, 50000, 100000
+  + [status] is completed_first_pass
+
+## Whole Field Return
+
+& [GlobalIntervalSurface_001] is the tested all-prime interval surface
+  + [theta_movement] is negative in every tested interval from (0, 1000] through (50000, 100000]
+  + [psi_movement] is negative in (0, 1000], (1000, 2000], and (10000, 20000], and positive in the other tested intervals
+  + [meaning] is theta and psi do not move identically over these intervals because psi includes prime-power weight
+  + [boundary] is finite interval signs are not asymptotic evidence
+
+## Sparse Realizations
+
+& [Realization_001_NoSimpleFamilyControl] is a restraint realization
+  + [observation] is special-family increments occur in intervals with both negative and positive psi movement
+  + [observation] is theta movement remains negative across all tested intervals even while family increments vary substantially
+  + [meaning] is the current special-prime family set does not control or explain whole-field theta or psi movement in this finite pass
+  + [scope] is first-pass finite interval evidence only
+
+& [Realization_002_RareBoundaryWitnessesStayPeripheral] is a dense-node refinement
+  + [subjects] is Fermat-prime identity, Fermat-number factor periphery, Mersenne primes, and base-2 Wieferich primes
+  + [observation] is Fermat-number factor periphery appears only in (0, 1000], base-2 Wieferich primes appear in (1000, 2000] and (2000, 5000], and a Fermat-prime identity increment appears in (50000, 100000]
+  + [meaning] is these families remain sharp witnesses of local arithmetic structure rather than broad shapers of interval distribution
+
+& [Realization_003_BroadFamiliesAreBetterSamplingSurfaces] is a next-method realization
+  + [subjects] is Sophie Germain primes and safe primes
+  + [observation] is these families contribute in every tested interval with materially larger interval count shares than the rare crystalline families
+  + [meaning] is broad linked-prime families are better candidates for finite sampling comparisons, but still not controlling mechanisms
+  + [boundary] is a better sampling surface is not RH evidence
+
+& [Realization_004_PsiRequiresPrimePowerAttention] is a toolchain realization
+  + [subject] is psi(x)-x interval movement
+  + [observation] is psi sign flips while theta sign does not in this finite pass
+  + [meaning] is any RH-landscape bridge that uses psi must also inspect prime powers, not only prime family membership
+  + [next_use] is add prime-power interval decomposition before interpreting psi movements
+
+## Definite First-Pass Conclusion
+
+& [Conclusion_001] is definite_for_current_scope
+  + [statement] is the special-prime families tested so far are useful probes and sampling surfaces, but they are not sufficient explanatory variables for whole-field theta or psi interval movement
+  + [reason] is interval family increments do not align simply with theta or psi movement signs in the saved finite trace
+  + [next_boundary] is further work should either add prime-power decomposition or add a zeta-adjacent family such as irregular primes, not strengthen claims from the current family set

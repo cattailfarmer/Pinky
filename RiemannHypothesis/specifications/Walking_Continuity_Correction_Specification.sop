@@ -1,0 +1,55 @@
+Subject: Walking Continuity Correction Specification
+
+Description: SJS-processed contract for turning local branch completion into continued walking through review, periphery scan, next-step planning, and follow-through.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_walking_continuity_correction\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\platform\StepBalanceWalk.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryContinuityRun.sop
+@ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+@ [source] C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\TrailingChecksumVoice.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryInquiryCuriosityTrigger.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionBalanceCenter.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+
+& [WalkingContinuityCorrectionSpecification] is a project-local operating cadence correction
+  + [source_snapshot_uuid] is 445a45e7-73e6-4753-84a6-19e71c14ad2d
+  + [manifest_uuid] is 711a5403-be16-4e1d-bac1-600213682a5f
+  + [canonical_specification_uuid] is 14fe95c4-c2ca-47bb-8a08-42dfefa4e5f0
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is prevent local branch completion from becoming global idle while reviewable work and valuable periphery remain
+  + [not_purpose] is endless repetition of a completed branch, proof pursuit, hidden daemon work, automatic commits, or undisciplined association chasing
+  + [proof_status] is operating_cadence_correction_not_math_evidence
+
+& [WalkingCadence] is the corrected operating loop
+  + [step_001_settle_completed_step] is use StepBalanceWalk to name completed action, balance, settlement, and next candidate
+  + [step_002_bind_work_frame] is use commit, ref, or WORKTREE bookends to identify what changed
+  + [step_003_review] is use RepoFirstInternalScan, TurnBookmark, or TrailingChecksumVoice when the frame needs reflection
+  + [step_004_scan_periphery] is identify hot zones, warmth zones, boundary issues, identity uncertainty, missed work, and new potential
+  + [step_005_check_pursuit_value] is require boundary, identity, evidence, whole-field, governance, contradiction, or truth/security value before active pursuit
+  + [step_006_plan_next_step] is select a bounded next object or preserve outside
+  + [step_007_follow_through] is continue with source/spec before new analysis or implementation when a next object is selected
+  + [step_008_return_to_walk] is return to StepBalanceWalk when run continuity breaks or proof/security gates require checkpointing
+
+  = must: treat branch pause as local to the branch, not as global cessation of RH workspace walking
+  = must: continue while a reviewed work frame exposes valuable periphery and balance remains stable enough
+  = must: use WORKTREE as the bookend when no commit exists yet, without pretending a commit happened
+  = must: preserve source before specification before analysis or implementation
+  = must: keep special-prime, Lambda overlay, explicit residual, Euler/log-derivative, and zeta-reference branches subordinate to whole-field RH objects
+  = must: keep proof, disproof, zero certification, and critical-line authority outside finite exploratory traces
+  = should: let completed branch conclusions become route maps for the next review or periphery scan
+  = should: favor one bounded governed slice per wakeup or turn rather than unbounded grid expansion
+  - never: delete or pause a continuation schedule merely because one local branch has reached a useful conclusion
+  - never: reopen a paused branch by density, more labels, more windows, or proof-facing scans without a new source-defined purpose
+  - never: treat motion itself as evidence of truth
+
+& [WalkingContinuityCorrectionSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and cadence_scoped
+  + [processing_result] is accepted_operating_cadence_correction
+  + [reasoning_result] is SOP walking already requires step settlement, balance, next-step selection, repo-first review, delayed checksum review, and pursuit-value gates, so local branch completion should trigger review and next-lead routing instead of global idle
+
+(walking_continuity_correction) :operating cadence: /settle, review, scan, plan, follow through/ |proof claims|
+  + [inside] is walking continuity over work frames with pursuit-value gates
+  + [boundary] is local branch closure may pause that branch but must route remaining valuable periphery
+  |outside| proof, disproof, zero certification, automatic commits, hidden daemon work, and chasing every association

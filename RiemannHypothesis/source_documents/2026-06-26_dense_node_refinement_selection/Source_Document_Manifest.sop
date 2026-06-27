@@ -1,0 +1,17 @@
+Subject: Dense Node Refinement Selection Source Document Manifest
+
+Description: Manifest for preserved source records governing selection of the next RH dense node refinement.
+
+& [DenseNodeRefinementSelectionSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 3d888d96-082b-40ab-8aa5-efe14ce332b7
+  + [manifest_uuid] is eef32ccb-ff4d-47b9-b3e8-a5092d6915f7
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_dense_node_refinement_selection\Dictated_Dense_Node_Refinement_Selection_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Dense_Node_Refinement_Selection_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before selection authority
+  = must: keep the selection finite, bounded, and non-proof-facing
+  - never: treat node selection as RH evidence or implementation authority

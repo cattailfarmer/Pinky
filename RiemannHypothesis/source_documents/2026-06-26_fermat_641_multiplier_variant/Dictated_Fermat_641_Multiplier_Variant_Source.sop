@@ -1,0 +1,15 @@
+Subject: Dictated Fermat 641 Multiplier Variant Source
+
+Description: Raw source preserving the user's follow-up hypothesis about 65537^(641*N) plus or minus 1.
+
+& [DictatedFermat641MultiplierVariantSource] is preserved raw source for a Fermat-coherence multiplier variant
+  + [source_uuid] is 0ececf26-9ea2-4123-8e00-756e8133716b
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "or 65537^(641*N)+-1, where N is 3, 5, 17, 257, and 65537?"
+
+  = must: test both plus-one and minus-one forms for the listed Fermat-prime multipliers
+  = must: distinguish whole-number primality from primitive-factor order constraints
+  - never: treat large symbolic form as possible prime before checking algebraic factor rules

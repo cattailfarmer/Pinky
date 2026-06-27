@@ -1,0 +1,56 @@
+Subject: Explicit Residual Arithmetic Discrepancy Synthesis Specification
+
+Description: SJS-processed contract for synthesizing the existing residual movement trace as a discrepancy result.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Method_Gate_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_explicit_residual_arithmetic_discrepancy_method_gate_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+
+& [ExplicitResidualArithmeticDiscrepancySynthesisSpecification] is an existing-trace synthesis contract
+  + [source_snapshot_uuid] is 7498963a-7288-4dcf-90f5-9fa1e0962b7d
+  + [manifest_uuid] is b2e72c41-c42b-45b9-9fde-59ebde0b88ec
+  + [canonical_specification_uuid] is 87fbce7d-fdf6-4ef9-942c-c76b4c400285
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [purpose] is synthesize existing finite trace metrics into a discrepancy boundary result
+  + [not_purpose] is new numerical execution, implementation, proof, zero certification, branch reopening, staging, committing, broad .sop mutation, denser scans, more labels, more windows, more offsets, more kernels, or more cutoff laws
+  + [proof_status] is discrepancy_synthesis_not_rh_evidence
+
+& [SynthesisContract] is bounded
+  + [input_trace] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+  + [input_summary] is existing summary and configuration_summary_rows only
+  + [allowed_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis_001.sop
+  + [allowed_metrics] are residual-to-psi sign counts, exact-layer dominance counts, average residual movement, average residual-minus-psi-error movement, c16/c32 comparison, and branch-reopen disposition
+  + [blocked_metrics] are new sample points, new windows, new cutoffs, new kernels, new scale laws, new labels, and new offsets
+
+& [ContradictionFirstReading] is required
+  + [simple_identity_test] is compare same-sign and opposite-sign residual-to-psi-error movement counts
+  + [single_layer_test] is compare theta-error dominance and higher-prime-power dominance counts
+  + [smoothing_identity_test] is compare c16 and c32 residual movement improvement against sign relation and residual-minus-psi-error movement
+  + [branch_reopen_test] is decide whether the existing trace answers the discrepancy posture without new numerical work
+
+& [ExitContract] is bounded
+  + [candidate_supported_when] is the trace clarifies boundary or support value without identity claims
+  + [candidate_retired_when] is the trace contradicts simple identity and no new source-defined method need remains
+  + [new_computation_blocked_when] is synthesis result can be stated from existing trace
+  + [next_allowed_step] is post-discrepancy whole-field route settlement
+  + [truth_boundary] is finite discrepancy synthesis only; no RH evidence, proof, disproof, zero certification, critical-line authority, causation, or identity fusion
+
+  = must: report contradiction results before positive curiosity
+  = must: keep the result nested under DenseNode_ExplicitFormulaResidualSurface
+  = must: preserve DenseNode_PrimeCountingThetaPsi as arithmetic anchor
+  = must: preserve DenseNode_BridgeRestraint as governance anchor
+  - never: use this synthesis to authorize new deterministic processing by itself
+
+& [ExplicitResidualArithmeticDiscrepancySynthesisSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_existing_trace_synthesis_contract
+  + [reasoning_result] is the method gate made existing-trace synthesis ready, and the synthesis should decide boundary value before any new computation is considered
+
+(explicit_residual_arithmetic_discrepancy_synthesis) :existing trace synthesis: /contradiction-first discrepancy result; no new computation/ |proof claims|
+  + [inside] is finite discrepancy metric synthesis
+  + [boundary] is no new computation, no proof inference, no branch reopening, no staging, no commit
+  |outside| RH proof, disproof, zero certification, critical-line authority, numerical expansion, and identity fusion

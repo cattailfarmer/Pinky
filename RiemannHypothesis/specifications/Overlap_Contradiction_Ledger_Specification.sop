@@ -1,0 +1,43 @@
+Subject: Overlap Contradiction Ledger Specification
+
+Description: SJS-processed contract for classifying matrix overlap zones without fusing identities or reopening branches.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_overlap_contradiction_ledger\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_record_to_dense_node_matrix_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_shell_explicit_residual_bridge_pass_001.sop
+
+& [OverlapContradictionLedgerSpecification] is a non-mutating contradiction review contract
+  + [source_snapshot_uuid] is 17806e47-285d-4ea2-9e2b-a870b4d87c4d
+  + [manifest_uuid] is 46559663-9ba0-4458-8b6f-afa46e873144
+  + [canonical_specification_uuid] is b97ecadf-97a9-4fce-8a54-80720fddc5e3
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is preserve overlap boundaries and classify whether any route contradiction exists among three recurring overlap zones
+  + [not_purpose] is new computation, proof, zero certification, branch reopening, staging, committing, or broad .sop mutation
+  + [proof_status] is overlap_contradiction_ledger_not_rh_evidence
+
+& [LedgerContract] is bounded
+  + [classification_set] is acceptable_entanglement, route_contradiction, unresolved_boundary, deferred_measurement, and outside
+  + [overlap_001] is t_axis_boundary_slice across EulerLogDerivativeHalfPlane and ReferenceAndResonanceLandmarks
+  + [overlap_002] is lambda_mellin_bridge across LambdaDiagnosticOverlay and BridgeRestraint
+  + [overlap_003] is shell_explicit_residual_bridge across PrimeCountingThetaPsi and ExplicitFormulaResidualSurface
+  + [allowed_output] is contradiction ledger, restraint update, and next non-mutating lead
+
+  = must: classify each overlap by evidence, boundary, and next disposition
+  = must: preserve relation_without_identity unless a record explicitly proves identity, which current records do not
+  = must: preserve proof, disproof, zero certification, and critical-line authority as outside
+  = must: preserve no-branch-reopen unless a new source-defined measured object is named
+  - never: treat acceptable entanglement as identity fusion
+  - never: treat unresolved boundary as proof failure or proof support
+
+& [OverlapContradictionLedgerSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and ledger_scoped
+  + [processing_result] is accepted_overlap_contradiction_contract
+  + [reasoning_result] is the matrix revealed repeated cross-node overlaps that are useful for route clarity, but current records describe boundary entanglement rather than contradiction or identity merger
+
+(overlap_contradiction_ledger) :contradiction review: /three overlaps, classify, preserve boundaries/ |proof claims|
+  + [inside] is route contradiction review over existing records
+  + [boundary] is no computation, no mutation, no proof inference, and no branch reopening
+  |outside| RH proof, disproof, zero certification, critical-line authority, staging, commit, and broad authority mutation

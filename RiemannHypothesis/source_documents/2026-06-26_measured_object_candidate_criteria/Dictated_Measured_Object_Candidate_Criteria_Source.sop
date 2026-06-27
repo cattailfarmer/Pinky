@@ -1,0 +1,26 @@
+Subject: Dictated Measured Object Candidate Criteria Source
+
+Description: Raw source for deciding when RH periphery curiosity may become a source-defined measured object.
+
+& [DictatedMeasuredObjectCandidateCriteriaSource] is preserved source for a measured-object admission gate
+  + [source_snapshot_uuid] is 9c480377-8dd9-41b0-9405-942ebdb3d754
+  + [source_kind] is derived_from_dense_node_gap_ledger_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_gap_ledger] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_dense_node_gap_ledger_001.sop
+  @ [governing_node_matrix] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_record_to_dense_node_matrix_001.sop
+  @ [governing_landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+  + [need] is define what must be true before a future RH curiosity, heat pocket, sparse novelty, or dense-node gap can be promoted into deterministic math processing
+  + [reason] is the dense-node gap ledger found support roles across all six dense nodes but no measured object ready for computation now
+  + [candidate_pressure] is curiosity may continue through review and periphery scan, but computation needs an admitted object with purpose, boundary, method, and retirement criteria
+  + [source_boundary] is this source authorizes admission criteria only; it does not authorize staging, commits, broad .sop mutation, proof claims, zero certification, new numerical scans, or paused-branch reopening
+
+  = must: require source-defined purpose before deterministic math processing
+  = must: require dense-node parentage and whole-field relevance
+  = must: require identity boundary, not-it boundary, related-periphery boundary, and known fabric anchors
+  = must: require a deterministic method contract with declared inputs, outputs, comparison metric, and evidence quality
+  = must: require contradiction and retirement conditions before pursuit
+  = must: preserve existing restraints on Lambda overlay, explicit/Euler kernel multiplication, shell expansion, and special-prime identity chasing
+  - never: treat accumulated curiosity, visual resemblance, sparse novelty, or repeated heat as sufficient permission for computation by itself
+  - never: treat admitted finite measurement as RH evidence, proof, disproof, zero certification, or critical-line authority

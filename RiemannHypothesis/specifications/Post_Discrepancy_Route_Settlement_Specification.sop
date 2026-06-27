@@ -1,0 +1,48 @@
+Subject: Post Discrepancy Route Settlement Specification
+
+Description: SJS-processed contract for settling ExplicitResidualArithmeticDiscrepancy into the whole-field RH route map.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_post_discrepancy_route_settlement\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_candidate_route_inventory_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+
+& [PostDiscrepancyRouteSettlementSpecification] is a non-mutating route-settlement contract
+  + [source_snapshot_uuid] is b0c7c4de-da24-47c9-ba7a-d587460642a7
+  + [manifest_uuid] is 33189b0f-628d-46db-a13e-389dddc15a8a
+  + [canonical_specification_uuid] is 91511ce9-b0f0-4cd6-846c-520fb7f6c954
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is settle the discrepancy synthesis and select the next non-mutating pursuit route
+  + [not_purpose] is new computation, proof, zero certification, branch reopening, staging, committing, broad .sop mutation, denser scans, more labels, more windows, more offsets, more kernels, or more cutoff laws
+  + [proof_status] is route_settlement_not_rh_evidence
+
+& [SettlementContract] is bounded
+  + [settle_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [support_status] is ExplicitResidualArithmeticDiscrepancy becomes support_boundary_not_active_computation_frontier
+  + [arithmetic_anchor] is DenseNode_PrimeCountingThetaPsi
+  + [governance_anchor] is DenseNode_BridgeRestraint
+  + [blocked_math_routes] are residual rerun, wider grids, window expansion, cutoff expansion, kernel expansion, Lambda overlay expansion, special-prime reopening, and proof-facing interpretation
+  + [remaining_math_status] is no current computation-ready measured object after discrepancy settlement
+
+& [PeripheryScanContract] is bounded
+  + [scan_math_warmth] is check whether any route remains source-request-worthy or computation-ready
+  + [scan_governance_warmth] is check source/spec/tool/worktree/bookend surfaces for non-mutating pursuit value
+  + [scan_contradiction] is check whether discrepancy result conflicts with existing route map or only refines it
+  + [allowed_next] is one non-mutating lead with source/spec preservation before analysis
+
+  = must: keep math routes subordinate to whole-field objects
+  = must: select governance inventory if no math route passes the measured-object admission gate
+  = must: preserve first-bookend commit boundary as staging/commit gate only
+  - never: treat lack of computation-ready math as global idle while source/spec/worktree review remains valuable
+
+& [PostDiscrepancyRouteSettlementSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and route_settlement_scoped
+  + [processing_result] is accepted_route_settlement_contract
+  + [reasoning_result] is the discrepancy branch has reached a support-boundary conclusion, so the next valuable walk should return to whole-field and governance surfaces rather than reopen numerical work
+
+(post_discrepancy_route_settlement) :route settlement: /discrepancy support boundary; no math-ready object; governance inventory next/ |proof claims|
+  + [inside] is route settlement, periphery scan, and next non-mutating lead
+  + [boundary] is no new computation, no proof inference, no branch reopening, no staging, no commit
+  |outside| RH proof, disproof, zero certification, critical-line authority, numerical expansion, and identity fusion

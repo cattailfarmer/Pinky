@@ -1,0 +1,16 @@
+Subject: Dictated Focused Inquiry Restraint Source
+
+Description: Raw dictated source preserving the user's refinement that inquisitive periphery work needs restraint while a subject is in focus.
+
+& [DictatedFocusedInquiryRestraintSource] is preserved raw source for the RiemannHypothesis project
+  + [source_uuid] is b36758a7-e4a0-46e7-bbda-9c18aa18237c
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement_001] is "with that, restraint is something to hold while in focus, to say that the current line of inquiry is more relevant to purpose when there is no overriding meaning to observe in truth or security. you can't chase every hair-brained idea."
+  + [raw_user_statement_002] is "that restraint should hold stability until it is upset by priority or reason of greater impression of meaning that tunes something in the focus or immediate periphery."
+
+  = must: preserve this source separately from canonical specification, analysis, and implementation records
+  = must: treat this source as a refinement to inquisitive periphery focus rather than as replacement for inquisitiveness
+  - never: treat this raw source document as implementation authority without SJS processing

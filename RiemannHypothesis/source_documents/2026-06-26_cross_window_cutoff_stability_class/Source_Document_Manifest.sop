@@ -1,0 +1,17 @@
+Subject: Cross Window Cutoff Stability Class Source Document Manifest
+
+Description: Manifest for preserved source records governing cross-window and cutoff stability-class synthesis.
+
+& [CrossWindowCutoffStabilityClassSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 2e1bb3e1-5afc-431b-a5f5-53e911534a29
+  + [manifest_uuid] is ae7c4918-6a14-486f-bc51-f17350ba6117
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cross_window_cutoff_stability_class\Dictated_Cross_Window_Cutoff_Stability_Class_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Cross_Window_Cutoff_Stability_Class_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before analysis
+  = must: keep this as finite stability orientation only
+  - never: treat this source as proof, disproof, zero certification, or implementation authority

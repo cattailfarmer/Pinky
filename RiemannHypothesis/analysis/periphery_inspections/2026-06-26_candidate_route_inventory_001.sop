@@ -1,0 +1,105 @@
+Subject: Candidate Route Inventory 001
+
+Description: Non-mutating inventory of existing RH warm leads against the measured-object admission gate.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_candidate_route_inventory\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Candidate_Route_Inventory_Specification.sop
+@ [criteria] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_measured_object_candidate_criteria_001.sop
+@ [landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+
+& [CandidateRouteInventory001] is a completed non-mutating route inventory
+  + [analysis_uuid] is 1619a360-3643-4b4f-bf9b-e724e5714773
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_candidate_route_inventory
+  + [proof_status] is route_inventory_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is route synthesis only
+
+& [Route_ExplicitResidualArithmeticDiscrepancy] is candidate_route
+  + [primary_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [support_lanes] are PrimeCountingThetaPsi, EulerLogDerivativeHalfPlane, and BridgeRestraint
+  + [existing_heat] is residual surface, scale laws, movement decomposition, psi-theta mechanics, and explicit/Euler restraint all point at residual ambiguity without authorizing more windows, cutoffs, or kernels
+  + [passes_now] is dense_node_parentage, whole_field_relevance, identity_boundary_partial, existing_evidence, restraint, and truth_boundary
+  + [fails_now] is candidate_specific_source, deterministic_method_contract, contradiction_condition, exit_condition, and full identity boundary
+  + [classification] is candidate_source_request_worthy_not_computation_ready
+  + [source_request_shape] is name a non-kernel, non-window, non-cutoff object that compares explicit residual movement against exact psi-theta prime-power mechanics without claiming causal identity
+  + [reason_to_follow] is this is the only warm lead that directly touches a central dense node while also respecting the bridge-restraint pause
+
+& [Route_LambdaReferenceOverlayHeat] is candidate_route
+  + [primary_node] is DenseNode_LambdaDiagnosticOverlay
+  + [support_lanes] are ReferenceAndResonanceLandmarks and PrimeCountingThetaPsi
+  + [existing_heat] is higher-prime-power phasor contribution, reference-near offset asymmetry, cross-layer displacement, and cross-window stability
+  + [passes_now] is whole_field_relevance, existing_evidence, identity_boundary_partial, and truth_boundary
+  + [fails_now] is new_whole_field_purpose, restraint, deterministic_method_contract, contradiction_condition, and exit_condition
+  + [classification] is candidate_support_only
+  + [reason_to_hold] is this route is dense and generative; next computation would likely mean more labels, offsets, windows, or scans unless a new whole-field purpose arrives
+
+& [Route_HalfPlaneBoundaryQuantity] is candidate_route
+  + [primary_node] is DenseNode_EulerLogDerivativeHalfPlane
+  + [support_lanes] are LambdaDiagnosticOverlay and BridgeRestraint
+  + [existing_heat] is stable Re(s)>1 Lambda weighting, sigma-boundary stress, t-axis layers, and reference-label discipline
+  + [passes_now] is dense_node_parentage, whole_field_relevance, existing_evidence, restraint, and truth_boundary
+  + [fails_now] is named_boundary_quantity, deterministic_method_contract, critical_line_leakage_guard_detail, contradiction_condition, and exit_condition
+  + [classification] is candidate_support_only
+  + [reason_to_hold] is no current source names a boundary quantity beyond existing sigma, t-axis, prime-bound, or resonance records
+
+& [Route_PrimePowerLayerBaseline] is candidate_route
+  + [primary_node] is DenseNode_PrimeCountingThetaPsi
+  + [support_lanes] are ExplicitFormulaResidualSurface and LambdaDiagnosticOverlay
+  + [existing_heat] is exact psi-theta prime-power correction and visible Lambda phasor higher-prime-power layer
+  + [passes_now] is whole_field_relevance, identity_boundary, existing_evidence, restraint, and truth_boundary
+  + [fails_now] is measured_object_purpose and deterministic_method_contract
+  + [classification] is candidate_support_only
+  + [reason_to_hold] is prime-power mechanics are a baseline fabric and should support another object rather than become a new special-prime identity
+
+& [Route_SpecialPrimeReturn] is candidate_route
+  + [primary_node] is SparsePeriphery
+  + [support_lanes] are PrimeCountingThetaPsi
+  + [existing_heat] is Fermat primes, irregular primes, and retired 641 forms remain conceptually interesting
+  + [passes_now] is curiosity_pressure and some existing_evidence
+  + [fails_now] is whole_field_relevance, identity_boundary, deterministic_method_contract, contradiction_condition, and restraint
+  + [classification] is candidate_rejected_for_now
+  + [reason_to_hold] is special-prime work does not currently explain general prime emergence, psi/theta movement, or zero-behavior surfaces beyond support periphery
+
+& [Route_SparseScaleLawNovelty] is candidate_route
+  + [primary_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [support_lanes] are BridgeRestraint
+  + [existing_heat] is sqrt_log scale behavior is sparse because it beat sqrt on average while winning no sample in the bounded comparison
+  + [passes_now] is curiosity_pressure, existing_evidence, and truth_boundary
+  + [fails_now] is purpose_beyond_scale_law_tuning, deterministic_method_contract, contradiction_condition, exit_condition, and restraint
+  + [classification] is candidate_support_only
+  + [reason_to_hold] is sparse novelty is meaningful inquiry pressure but would reopen scale-law comparison without a new object
+
+& [Route_BridgeKernelRefinement] is candidate_route
+  + [primary_node] is DenseNode_BridgeRestraint
+  + [support_lanes] are ExplicitFormulaResidualSurface, EulerLogDerivativeHalfPlane, and LambdaDiagnosticOverlay
+  + [existing_heat] is Cesaro and alpha-tuned kernels exposed bridge improvement versus cutoff-bias Pareto behavior
+  + [passes_now] is existing_evidence and truth_boundary
+  + [fails_now] is restraint, purpose_beyond_kernel_multiplication, deterministic_method_contract, contradiction_condition, and exit_condition
+  + [classification] is candidate_governance_only
+  + [reason_to_hold] is the bridge branch already reached a useful restraint conclusion and should not reopen by optimization pressure
+
+& [InventorySynthesis] is current_result
+  + [computation_ready_candidate] is none
+  + [source_request_worthy_candidate] is Route_ExplicitResidualArithmeticDiscrepancy
+  + [support_only_routes] are LambdaReferenceOverlayHeat, HalfPlaneBoundaryQuantity, PrimePowerLayerBaseline, and SparseScaleLawNovelty
+  + [rejected_or_governance_routes] are SpecialPrimeReturn and BridgeKernelRefinement
+  + [main_reason] is only the explicit residual arithmetic discrepancy route has enough whole-field centrality and restraint compatibility to justify asking for a candidate-specific source
+  + [proof_boundary] is this inventory does not infer RH evidence, zero certification, causation, or identity fusion
+
+& [NextNonMutatingLead] is selected
+  + [selected_next] is explicit residual arithmetic discrepancy source request
+  + [reason] is this route is source-request-worthy but not computation-ready, so the next step is to preserve a candidate-specific source before any method contract is considered
+  + [blocked_next] is no math computation, no denser scans, no branch reopening, no staging, and no commit
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is existing warm leads have been inventoried; none is computation-ready, and one is source-request-worthy
+  + [next_action] is preserve a candidate-specific source for explicit residual arithmetic discrepancy if walking continues
+  + [boundary] is no Git mutation, broad .sop mutation, runtime code change, test run, proof claim, zero certification, or branch reopening occurred
+
+(candidate_route_inventory_001) :route inventory: /one source-request-worthy route; no computation-ready route/ |proof claims|
+  + [inside] is warm-lead triage against admission gates
+  + [boundary] is inquiry navigation only
+  |outside| proof, zero certification, staging, commit, branch reopening, new computation, and identity fusion

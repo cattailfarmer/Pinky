@@ -1,0 +1,28 @@
+Subject: Riemann Workspace Source Document Manifest
+Description: Preserved source-document manifest for the Riemann Workspace, an integration source joining Toribrot geometry, Enumerated Toribrot identity, and Zetabrot spectral analysis.
+
+@ [source] platform/source_documents/2026-05-19_riemann_workspace/Riemann Workspace.source-snapshot.txt
+@ [source] platform/refinement/Specification_Governance.sop
+@ [source] platform/refinement/Specification_Justification_Solution.sop
+@ [source] platform/refinement/Toribrot.sop
+@ [source] platform/refinement/Enumerated_Toribrot_Module.sop
+@ [source] platform/refinement/Zetabrot_Module.sop
+@ [source] platform/refinement/Zeta_Oscilloscope.sop
+
+& [RiemannWorkspaceSourceDocumentManifest] is the preserved source set for the Riemann Workspace definition
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [source_snapshot_uuid] is 00cc55d0-9f0d-4803-b425-196b057f46b4
+  + [source_document] is platform/source_documents/2026-05-19_riemann_workspace/Riemann Workspace.source-snapshot.txt
+  + [source_document_sha256] is 58E955997D09B6C490E79FEA64C74192983DDDFE2833ABCE5322BF3221A9BAD8
+  + [external_source_path] is C:/Users/jerem/Downloads/Riemann Workspace.txt
+  + [canonical_source_specification] is platform/refinement/Riemann_Workspace.sop
+  + [source_purpose] is to assemble Toribrot geometry, Enumerated Toribrot integer identity, and Zetabrot spectral transforms into an RH-adjacent exploration workspace
+  + [preservation_event] is external source copied into workspace before SJS reprocessing
+  + [worktree_attribution] is no_git_worktree_available_for_root; new derived files are owned by conversation_uuid 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+
+  = must: preserve source_document as original-purpose anchor
+  = must: emit canonical_source_specification separately from source_document
+  = must: treat the canonical file as workspace-level processed authority, not as mutation of the source
+  - never: overwrite source_document with corrected workspace semantics
+
+/ [riemann_workspace_source] -(SpecificationIntakeContract)> [source_document], [source_snapshot_uuid], [canonical_source_specification]

@@ -1,0 +1,59 @@
+Subject: 641 Shift Two Boundary
+
+Description: Boundary analysis of 65537^(641*N) +/- 2 for Fermat-prime multipliers N.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_shift_two_variant\manifest.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_two_probe_trace.json
+@ [prior] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_operator_hypothesis_boundary.sop
+
+& [Fermat641ShiftTwoBoundary] is a completed bounded modular probe
+  + [analysis_uuid] is cb0a8038-cb95-426c-82e6-663e00b8ce90
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [focus_subject] is 65537^(641*N) +/- 2 where N is 3, 5, 17, 257, or 65537
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\exponential_shift_probe.py
+  + [small_factor_limit] is 100000
+  + [status] is completed_first_boundary_test
+
+## Computed Boundary
+
+& [Boundary_001_ParityEscape] is confirmed
+  + [statement] is 65537^(641*N) +/- 2 is odd for every listed N
+  + [reason] is 65537 is odd, 641*N is odd, and odd +/- 2 is odd
+  + [meaning] is the plus-minus-two variant escapes the trivial evenness obstruction that killed plus-minus-one whole-number forms
+
+& [Boundary_002_SmallFactorEliminations] is bounded_arithmetic_fact
+  + [N_3_plus_2] has small divisors 5 and 397
+  + [N_3_minus_2] has small divisors 3 and 43
+  + [N_5_plus_2] has small divisor 17
+  + [N_5_minus_2] has small divisors 3, 5, 251, and 1759
+  + [N_17_minus_2] has small divisors 3, 5, 17, 257, and 4133
+  + [N_257_plus_2] has small divisor 773
+  + [N_257_minus_2] has small divisors 3, 5, 17, 257, 1597, and 2389
+  + [N_65537_plus_2] has small divisor 23
+  + [N_65537_minus_2] has small divisors 3, 5, 17, 179, 257, 4357, and 20479
+  + [scope] is bounded search up to 100000
+
+& [Boundary_003_InterestingSurvivor] is heat_marker_not_primality_evidence
+  + [form] is 65537^(641*17) + 2
+  + [exponent] is 10897
+  + [bounded_result] is no prime divisor found below or equal to 100000 in the first pass and below or equal to 50000000 in focused continuation
+  + [meaning] is this form survives the first small-divisor screen and deserves a deeper modular probe if the line remains useful
+  + [boundary] is no small divisor under 50000000 is not proof of primality, probable primality, or RH relevance
+
+& [Realization_001_ShiftTwoChangesIdentity] is a dense-node candidate
+  + [statement] is plus-minus-two escapes parity but crosses away from clean Fermat/cyclotomic plus-minus-one identity
+  + [reason] is factors now solve 65537^m congruent to plus or minus 2 modulo q rather than 65537^m congruent to plus or minus 1
+  + [meaning] is the surface becomes an exponential-shift/discrete-log boundary rather than a direct Fermat-number continuation
+
+& [Realization_002_PriorFermatPrimesReappearAsDivisors] is a periphery fact
+  + [statement] is several minus-two forms recover prior Fermat primes as small divisors
+  + [reason] is 65537 is congruent to 2 modulo earlier Fermat primes, so congruences of 641*N against the multiplicative order of 2 can force divisibility
+  + [meaning] is the Fermat-prime fabric still appears, but as a residue obstruction rather than as prime generation
+
+## Definite First-Pass Conclusion
+
+& [Conclusion_001] is definite_for_current_scope
+  + [statement] is the plus-minus-two variant is arithmetically better than plus-minus-one because it escapes forced evenness, but most listed forms are eliminated by small divisors under 100000
+  + [survivor] is 65537^(641*17) + 2 under the current bound
+  + [next_boundary] is deeper probing should increase the small-factor bound and inspect residue reasons for the survivor before any primality-oriented work

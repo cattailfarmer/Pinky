@@ -1,0 +1,17 @@
+Subject: Whole Field Record Index Source Document Manifest
+
+Description: Manifest for preserving source governing the non-mutating RH whole-field record index.
+
+& [WholeFieldRecordIndexSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is d2c5a412-2645-4891-bcce-d89d7e7fba2c
+  + [manifest_uuid] is e6654dea-e94e-423b-8fd9-d222c20980d5
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_record_index\Dictated_Whole_Field_Record_Index_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Record_Index_Specification.sop
+  + [source_preservation_rule] is raw index source remains separate from canonical specification and analysis
+  + [authority_status] is source_preserved_before_index_analysis
+
+  = must: process this source through specification before analysis
+  = must: preserve counts, branch names, and route boundaries
+  - never: treat this manifest as commit, proof, or computation authority

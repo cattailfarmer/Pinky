@@ -1,0 +1,56 @@
+Subject: Lambda Mellin Bridge Unit Specification
+
+Description: SJS-processed contract for a shared explicit/Euler comparison unit.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_mellin_bridge_unit\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_cutoff_bridge_report_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_pass_001.sop
+
+& [LambdaMellinBridgeUnit] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is 7783707d-15da-4d52-a206-f66b034bf71d
+  + [manifest_uuid] is 55f2fc43-3523-4e21-b170-1f50a15c5278
+  + [canonical_specification_uuid] is d24549d0-1b26-49d0-89c2-5ce79b735db9
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether a shared weighted Lambda contribution unit can compare explicit-formula residual rails with Euler-product/log-derivative cutoff rails without collapsing identity
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, universal scale-law ranking, or explicit/Euler identity fusion
+
+  = must: work only with Re(s) > 1 samples
+  = must: use the finite von Mangoldt/psi relation as the shared unit, not raw residual magnitude
+  = must: compute exact finite Lambda sum Sum_{n<=N} Lambda(n)n^-s as the local Euler/log-derivative cutoff rail
+  = must: compute explicit-formula psi estimates psi_hat(n) for n <= N using declared scale law, multiplier, and zero-height window
+  = must: derive explicit-side finite Lambda-like increments by psi_hat(n) - psi_hat(n-1)
+  = must: compare explicit-weighted sum Sum_{n<=N}(psi_hat(n)-psi_hat(n-1))n^-s against the exact finite Lambda sum over the same N and s
+  = must: also report exact finite Lambda sum residual against -zeta_prime/zeta(s) so the tail-to-infinity remains visible
+  = must: report bridge residual, exact cutoff residual, combined explicit-to-infinite residual, and normalized ratios
+  = must: include sample-level rows for N, s, scale law, multiplier, window, explicit finite sum, exact finite sum, and residual magnitudes
+  = must: mark output proof_status as finite_lambda_mellin_bridge_not_rh_evidence
+  = must: treat mpmath zetazero and zeta derivative evaluation as numerical library lookup, not proof authority
+  - never: compare x-domain and s-domain residuals as if they share units without this projection
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite bridge traces
+  - never: collapse explicit-zero truncation identity into Euler prime-power cutoff identity
+
+& [DefaultBridgeGrid] is the bounded comparison grid
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.134725141734693790457251983562i, and s=1.5+14.134725141734693790457251983562i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [rationale] is keep the explicit-side finite-difference grid small enough for deterministic local computation while testing whether the shared unit is coherent
+
+& [LambdaMellinBridgeTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.lambda_mellin_bridge_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_mellin_bridge_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop
+
+& [LambdaMellinBridgeSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_lambda_mellin_bridge_contract
+  + [reasoning_result] is prior explicit/Euler bridge failed as raw scalar residual comparison; the Lambda/psi summatory relation supplies a lawful shared finite unit while preserving separate rail identities
+
+(lambda_mellin_bridge_unit) :finite shared explicit/Euler comparison unit: /psi increments, Lambda weights, Re(s)>1 projection/ |proof authority|
+  + [inside] is bounded finite weighted Lambda contribution comparison
+  + [boundary] is bridge-unit coherence diagnosis only
+  |outside| RH proof, disproof, zero certification, global bridge identity, critical-line evidence, and universal scale-law claims

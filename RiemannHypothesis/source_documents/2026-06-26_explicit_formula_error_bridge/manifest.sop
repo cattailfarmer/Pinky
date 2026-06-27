@@ -1,0 +1,12 @@
+Subject: Explicit Formula Error Bridge Source Manifest
+
+Description: Source manifest for the bounded explicit-formula error bridge.
+
+& [ExplicitFormulaErrorBridgeSourceManifest] is the source manifest
+  + [manifest_uuid] is efa2a194-ea6d-4529-bc2b-a745c967587c
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_formula_error_bridge\Dictated_Explicit_Formula_Error_Bridge_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Formula_Error_Bridge_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+  + [preservation_rule] is source_document is raw continuation source and must not be overwritten by canonicalized specification

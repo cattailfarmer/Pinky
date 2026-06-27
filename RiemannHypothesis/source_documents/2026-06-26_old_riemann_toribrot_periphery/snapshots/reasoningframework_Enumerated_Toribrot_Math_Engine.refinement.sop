@@ -1,0 +1,253 @@
+Subject: Enumerated Toribrot Math Engine
+Description: Corrected canonical SOP definition for the Toribrot-derived verified arithmetic engine, separated into representation, local arithmetic, pants execution graph, verification, and downstream caller boundaries.
+
+@ [source] platform/source_documents/2026-05-19_enumerated_toribrot_math_engine/Source_Document_Manifest.sop
+@ [source] platform/source_documents/2026-05-19_enumerated_toribrot_math_engine/Toribrot Math Engine.source-snapshot.txt
+@ [source] platform/refinement/Enumerated_Toribrot_Module.sop
+@ [source] platform/refinement/Toribrot.sop
+@ [source] platform/refinement/Zeta_Oscilloscope.sop
+@ [source] platform/refinement/Data_Driven_Design.sop
+@ [source] platform/refinement/Specification_Governance.sop
+
+& [EnumeratedToribrotMathEngine] is a verified finite arithmetic execution substrate using addressed computation nodes, explicit digit representations, local operation tables, pants-style composition graphs, and replayable proof traces
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [canonical_specification_uuid] is 339838de-a2a2-4041-b9b4-92f9b09bc01f
+  + [source_snapshot_uuid] is c2581602-856a-4cc1-bda3-0e3975716233
+  + [source_document] is platform/source_documents/2026-05-19_enumerated_toribrot_math_engine/Toribrot Math Engine.source-snapshot.txt
+  + [solution_uuid] is 0dee9469-0d88-4d06-a877-c0d1d72cd4b1
+  + [primary_role] is arithmetic_proof_substrate
+  + [not_primary_role] is RH_solver, zeta_theorem_engine, or universal_math_oracle
+  + [architecture_layer_set] is RepresentationLayer, LocalArithmeticLayer, ExecutionGraphLayer, OperationProtocolLayer, VerificationLayer, and CallerBoundaryLayer
+  + [binary_status] is one supported representation mode, not the identity of the engine
+  + [address_module] is EnumeratedToribrotModule
+  + [pants_status] is execution and proof composition graph, not a guarantee of mathematical insight by itself
+  + [toribrot_status] is conceptual lineage and possible geometric caller, not the required shape of arithmetic correctness
+  + [rh_status] is downstream numerical experiment support only
+
+  = must: separate representation, local arithmetic, execution graph, operation protocols, verification, and callers
+  = must: define all arithmetic through finite, inspectable operations with explicit precision or exactness boundaries
+  = must: treat binary as Base = 2 within a general base/block representation discipline
+  = must: treat pants nodes as typed operations with declared inputs and one output
+  = must: verify computation bottom-up from leaves to root before claiming a checked result
+  = must: expose precision, rounding, normalization, and approximation policy before supporting real, complex, logarithmic, exponential, or zeta computations
+  = must: keep RH-related use downstream from the engine and limited to auditable finite numerical experiments
+  - never: claim RH relevance from the arithmetic substrate alone
+  - never: allow higher-level modules to hide numerical approximations behind the verified-integer engine
+  - never: confuse Toribrot geometric recursion with the arithmetic correctness proof
+
+## 1. Representation Layer
+
+& [RepresentationLayer] is the data identity layer for values handled by the engine
+  + [value_subject] is integer, rational, fixed_precision_real, fixed_precision_complex, interval, or symbolic_reference
+  + [representation_base] is an integer base greater than or equal to 2
+  + [block_size] is the count of base digits grouped into one local chunk
+  + [digit_sequence] is least-significant-first unless an operation protocol explicitly declares otherwise
+  + [sign_model] is unsigned_magnitude, signed_magnitude, twos_complement, or rational_sign
+  + [scale_model] is exact_integer_scale, rational_denominator, fixed_binary_point, fixed_decimal_point, or interval_radius
+  + [precision_policy] is exact, fixed_precision, adaptive_precision, or interval_bounded
+  + [rounding_policy] is none, truncate, round_to_nearest, directed_floor, directed_ceiling, or interval_outward
+  + [normalization_policy] is canonical digit range, carry normalization, denominator reduction, and sign normalization
+
+  = must: declare value_subject before operation selection
+  = must: declare representation_base and block_size before digit allocation
+  = must: declare precision_policy and rounding_policy before non-exact operations
+  = must: preserve exactness status with the value
+  = must: use Base = 2 only when binary is the chosen representation mode
+  - never: call an approximate value verified without its error or interval contract
+
+& [ValueRecord] is one represented mathematical value
+  + [value_id] is stable identifier for the represented value
+  + [semantic_type] is integer, rational, fixed_precision_real, fixed_precision_complex, interval, or symbolic_reference
+  + [representation] is RepresentationLayer fields plus digit_sequence or component references
+  + [exactness_state] is exact, approximate_with_error_bound, approximate_without_bound, or symbolic
+  + [component_set] is real_part, imaginary_part, numerator, denominator, mantissa, exponent, lower_bound, or upper_bound when required
+
+  = must: preserve component identity when complex, rational, or interval values are decomposed
+
+## 2. Node And Address Layer
+
+& [ComputationNode] is one addressed unit in a finite computation graph
+  + [address] is ToribrotAddress from EnumeratedToribrotModule
+  + [generation] is len(address) - 1
+  + [parent] is optional address
+  + [input_edge_set] is ordered references to child or predecessor nodes
+  + [output_edge_set] is references to dependent nodes
+  + [node_role] is OperandLeaf, DigitCell, CarryCell, PartialProduct, PartialSum, QuotientDigit, Remainder, ApproximationStep, VerificationStep, or FinalResult
+  + [operation_ref] is optional OperationRecord
+  + [value_ref] is optional ValueRecord
+  + [local_state] is digit, block, carry_in, carry_out, table_result, error_bound, or interval
+  + [verification_state] is unverified, verified, failed, skipped, or blocked
+  + [proof_trace] is optional structured explanation for recomputing this node
+
+  = must: allocate only the finite graph required by the active computation
+  = must: keep address identity stable after allocation
+  = must: follow EnumeratedToribrotModule for root address, generation, parent, and child rules
+  = must: distinguish tree address from dependency graph edges when operations share intermediate results
+
+& [ComputationGraph] is the finite graph instantiated for one problem
+  + [graph_id] is stable computation identifier
+  + [node_set] is finite set of ComputationNode
+  + [edge_set] is data dependency edges between nodes
+  + [root_node] is the output node for the requested operation
+  + [graph_shape] is tree, DAG, or sequence
+  + [allocation_policy] is lazy, eager, or planned
+
+  = must: allow DAG structure when sharing intermediate results is meaningful
+  = must: preserve pants-node semantics even when address storage is binary tree shaped
+  - never: infer dependency only from binary address ancestry when explicit operation edges differ
+
+## 3. Local Arithmetic Layer
+
+& [LocalArithmeticLayer] is the finite set of atomic operations used by operation protocols
+  + [AddBlock] maps block_a, block_b, carry_in to sum_block and carry_out
+  + [SubBlock] maps block_a, block_b, borrow_in to difference_block and borrow_out
+  + [MulBlock] maps block_a and block_b to product_block_pair or widened_product
+  + [CompareBlock] maps block sequences to less_than, equal, or greater_than
+  + [ShiftBlock] maps digit sequence and shift amount to shifted sequence
+  + [NormalizeBlock] maps raw block sequence to canonical digit range and final carries
+
+  = must: define each atomic operation by formula or exhaustive table
+  = must: exhaustively test table-backed atomic operations for the selected base and block_size
+  = must: preserve carry and borrow semantics as explicit local state
+  - never: hide carry propagation inside an unrecorded helper
+
+## 4. Operation Protocol Layer
+
+& [OperationRecord] is the declared operation performed at one pants node or operation subtree
+  + [op_type] is Add, Sub, Mul, Div, Compare, Shift, Normalize, Exp, Log, Sin, Cos, ZetaTerm, or Custom
+  + [input_value_set] is ordered ValueRecord references
+  + [output_value] is ValueRecord reference
+  + [parameter_set] is representation_base, block_size, precision_policy, rounding_policy, decomposition_strategy, and verification_mode
+  + [precondition_set] is input validity constraints
+  + [postcondition_set] is output validity constraints
+  + [implementation_protocol] is reference to an operation protocol
+
+  = must: declare op_type and parameters before graph execution
+  = must: define preconditions and postconditions for nontrivial operations
+
+& [AddProtocol] is exact or fixed-precision addition by block cells and carry propagation
+  + [strategy] is SequentialCarry, CarryLookahead, or BalancedManyAdd
+
+  = must: align digit positions
+  = must: compute each output block through AddBlock and explicit carry state
+  = must: normalize final carry
+
+& [MulProtocol] is exact or fixed-precision multiplication by partial products and checked summation
+  + [strategy] is ClassicalPartialProducts, KaratsubaLike, ToomLike, or Custom
+
+  = must: generate partial product nodes with explicit positional shifts
+  = must: combine partial products through AddProtocol or declared summation protocol
+  = must: preserve widening and carry normalization
+
+& [DivProtocol] is quotient and remainder computation under declared exactness and precision policy
+  + [strategy] is LongDivision, NewtonReciprocal, IntervalDivision, or Custom
+
+  = must: reject zero divisor before allocation
+  = must: define quotient digit selection and correction rules
+  = must: preserve remainder invariant when exact division is requested
+  = must: preserve error bounds when approximate division is requested
+
+& [TranscendentalProtocol] is the boundary for exp, log, trigonometric, and special-function operations
+  + [supported_method] is series, argument_reduction_plus_series, NewtonIteration, binary_splitting, interval_method, or external_oracle_with_proof
+  + [error_contract] is required for every approximate result
+  + [primitive_dependency] is AddProtocol, MulProtocol, DivProtocol, CompareBlock, and NormalizeBlock
+
+  = must: define convergence domain and error bound before use
+  = must: produce interval or certified error when used for analytic experiments
+  - never: treat transcendental approximations as verified merely because their internal arithmetic is verified
+
+## 5. Pants Execution Layer
+
+& [PantsExecutionLayer] is the decomposition discipline for composing operations
+  + [pants_node] is a typed operation node with two primary inputs and one output
+  + [arity_adapter] is a deterministic decomposition that converts many-input or unary operations into binary composition steps
+  + [composition_graph] is a tree or DAG of pants_node operations
+  + [intermediate_value] is stored output of a pants_node
+
+  = must: decompose many-input operations into explicit binary composition graph
+  = must: allow unary operations only when represented as an operation node with one value input and parameter input or as a declared unary adapter
+  = must: preserve intermediate_value references for audit and replay
+  - never: use pants vocabulary as a substitute for operation contracts
+
+## 6. Verification Layer
+
+& [VerificationLayer] is the proof and replay system for a computation graph
+  + [verification_mode] is off, atomic_only, full_graph, sampled, or interval_certified
+  + [leaf_check] verifies operand digit encoding against input ValueRecord
+  + [atomic_check] recomputes table or formula outputs for local operations
+  + [composition_check] verifies parent operation result from child outputs
+  + [invariant_check] verifies declared preconditions, postconditions, and remainder or error invariants
+  + [root_certificate] is accepted only when required checks pass
+
+  = must: verify leaves before internal nodes
+  = must: verify operation outputs bottom-up
+  = must: mark failed nodes with fault reason
+  = must: preserve proof_trace for every checked operation when audit mode is enabled
+  = must: distinguish exact verification from approximate error certification
+
+## 7. Caller Boundary Layer
+
+& [CallerBoundaryLayer] is the interface between the arithmetic engine and higher-level systems
+  + [caller] is Toribrot, ZetaOscilloscope, Zetabrot, Base60PrimeSieve, or another module
+  + [request] is OperationRecord or computation graph request
+  + [response] is ValueRecord plus verification certificate or fault
+  + [caller_responsibility] is declaring mathematical model, precision needs, and interpretation boundary
+  + [engine_responsibility] is executing and verifying the finite arithmetic request
+
+  = must: require callers to declare precision and interpretation boundary
+  = must: return verification_state with every result
+  = must: let callers own mathematical meaning beyond arithmetic correctness
+  - never: let callers claim analytic truth from arithmetic verification alone
+
+& [RHExperimentBoundary] is the safe use contract for RH-adjacent numerical experiments
+  + [valid_use] is finite zeta sums, finite prime-power phasor terms, explicit formula experiments, interval checks, or visualization data generation
+  + [invalid_claim] is proof of RH, disproof of RH, direct zero certification without an established analytic method, or theorem inference from visual pattern
+  + [required_support] is error bounds, cutoff policy, sampling policy, and independent cross-check when claims exceed visualization
+
+  = must: use ZetaOscilloscope or another analytic caller to define RH-adjacent quantities before arithmetic execution
+  = must: attach cutoff, smoothing, and error contracts to zeta-related computations
+  = must: preserve numerical result as evidence, not proof, unless connected to a valid theorem-level argument
+  - never: call the engine an RH analyzer by itself
+
+## 8. Architecture Repair
+
+& [ArchitectureRepair] is the correction from the source sketch to this canonical definition
+  + [source_strength] is strong intuition for explicit node addressing, chunked local arithmetic, pants composition, and verification traces
+  + [source_fault] is fusing arithmetic substrate, Toribrot geometry, and RH analysis into one over-authoritative engine
+  + [repair] is layered separation with caller-owned analytic meaning and engine-owned arithmetic execution
+  + [preserved_intent] is reliable auditable computation for downstream math experiments
+
+  = must: preserve explicit enumeration as the core improvement path
+  = must: downscope universal calculator claims to supported operation contracts
+  = must: require each advanced operation to declare approximation and verification rules
+  = must: make RH work downstream and evidence-bounded
+
+& [AcceptanceCriteria] is the completion standard for this canonical definition
+  + [canonical_file] is platform/refinement/Enumerated_Toribrot_Math_Engine.sop
+  + [source_snapshot] is platform/source_documents/2026-05-19_enumerated_toribrot_math_engine/Toribrot Math Engine.source-snapshot.txt
+  + [layers_defined] is RepresentationLayer, NodeAndAddressLayer, LocalArithmeticLayer, OperationProtocolLayer, PantsExecutionLayer, VerificationLayer, and CallerBoundaryLayer
+  + [binary_downscoped] is binary represented as Base = 2 mode
+  + [toribrot_downscoped] is Toribrot represented as lineage or caller, not arithmetic proof
+  + [rh_downscoped] is finite numerical experiment support only
+  + [transcendental_boundary] is explicit approximation and error-contract discipline
+
+& [SJSProcessingTrace] is the recorded refinement pass from source snapshot to canonical Enumerated Toribrot Math Engine definition
+  + [stage_set] is source_preserved, delineated, exploded, semantically_refined, constraint_checked, pruned, phase_locked, and signed
+  + [constraint_ledger] is source preservation, data identity, layer separation, exactness boundary, approximation boundary, pants graph semantics, verification semantics, caller boundary, and RH claim restraint
+  + [pruning_result] is universal_math_oracle_claim_pruned, RH_solver_claim_pruned, binary_identity_overclaim_pruned, toribrot_geometry_arithmetic_fusion_pruned, and hidden_approximation_pruned
+  + [growth_seed_set] is executable integer prototype, proof trace schema, interval arithmetic extension, ZetaOscilloscope caller adapter, and benchmark fixture suite
+  + [exhaustion_state] is phase_locked_for_architecture_repair_with_implementation_frontier
+
+& [SatisfactionSignature] is the valid SJS processing signature for this Enumerated Toribrot Math Engine definition
+  + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_uuid] is 599387ac-a7e3-49c7-8df6-2e28d4178004
+  + [signed_subject] is platform/refinement/Enumerated_Toribrot_Math_Engine.sop
+  + [source_snapshot_uuid] is c2581602-856a-4cc1-bda3-0e3975716233
+  + [source_document] is platform/source_documents/2026-05-19_enumerated_toribrot_math_engine/Toribrot Math Engine.source-snapshot.txt
+  + [processed_stage_set] is source_preserved, delineated, exploded, semantically_refined, constraint_checked, pruned, phase_locked, and signed
+  + [exhaustion_state] is phase_locked_for_architecture_repair_with_implementation_frontier
+  + [signature_status] is valid
+  + [invalidation_condition] is source_document_change, failed_definition_acceptance, hidden_approximation, broken_lineage, or analytic_overclaim
+
+  = must: identify this definition as processed to satisfaction for the corrected canonical artifact
+  = must: invalidate if source_document changes without reprocessing

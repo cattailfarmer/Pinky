@@ -1,0 +1,13 @@
+Subject: Dictated Zero Windowing Bridge Source
+
+Description: Preserved source for testing smoothed explicit-formula zero-term windows after sharp truncation proved oscillatory.
+
+& [DictatedZeroWindowingBridgeSource] is preserved source for the zero-windowing bridge
+  + [source_snapshot_uuid] is e6c1074d-3d4a-44b3-9672-0c75e4d36397
+  + [preserved_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [dictated_source] is "Return to this RiemannHypothesis thread after the wakeup. Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces."
+  + [focal_question] is whether smoothed explicit-formula windows give a better next whole-field zero-behavior surface after sharp finite zero-pair truncations proved oscillatory and truncation-sensitive
+  + [implementation_need] is deterministic finite math processing for sharp and Fejer-windowed zero-pair approximations to psi(x)
+  + [restraint] is zero-term windowing is a finite approximation surface, not RH proof, disproof, independent zero certification, or final convergence authority

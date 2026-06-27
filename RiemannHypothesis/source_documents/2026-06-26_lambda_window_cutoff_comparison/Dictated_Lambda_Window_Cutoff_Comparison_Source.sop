@@ -1,0 +1,20 @@
+Subject: Lambda Window Cutoff Comparison Source
+
+Description: Preserved source intake for comparing Lambda Oscilloscope window and cutoff behavior.
+
+& [DictatedLambdaWindowCutoffComparisonSource] is the preserved source request for this bounded scan
+  + [source_snapshot_uuid] is b5faa7e8-7326-4467-93a9-24eef79f1809
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_reason] is CurrentFocalPoint asks whether window policy and cutoff growth in the Lambda Oscilloscope probe create stable enough landmarks to compare with existing t-axis and vertical-resonance rails
+  + [preceding_tool] is C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+  + [preceding_analysis] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_pass_001.sop
+  + [comparison_rails] are t-axis boundary slicing and vertical resonance scanning in Re(s) > 1
+  + [source_question] is whether Lambda trace extrema persist across hard versus Fejer windows and across cutoff growth strongly enough to be useful landmarks
+
+  = must: keep the scan in finite deterministic math processing
+  = must: compare windows and cutoff bounds explicitly
+  = must: prefer Re(s) > 1 for comparison with existing half-plane rails
+  = must: treat candidate extrema as landmarks only
+  = must: preserve incomplete inference when windows or cutoffs disagree
+  - never: promote stable-looking finite extrema into RH evidence, zero detection, proof, or disproof

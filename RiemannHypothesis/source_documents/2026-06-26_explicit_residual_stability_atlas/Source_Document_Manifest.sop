@@ -1,0 +1,17 @@
+Subject: Explicit Residual Stability Atlas Source Document Manifest
+
+Description: Manifest for preserved source records governing the explicit residual stability atlas slice.
+
+& [ExplicitResidualStabilityAtlasSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 5418156b-b17f-44dc-93e8-67c1f6466fce
+  + [manifest_uuid] is 76fb47b3-41ad-4b70-a39e-f338425a534e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_stability_atlas\Dictated_Explicit_Residual_Stability_Atlas_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Stability_Atlas_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep atlas output finite and diagnostic
+  - never: treat finite stability as proof, disproof, zero certification, RH evidence, or a bridge identity

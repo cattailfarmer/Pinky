@@ -1,0 +1,67 @@
+Subject: Irregular Prime First Pass
+
+Description: First zeta-adjacent periphery pass after retiring the 641 special-form identity line.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_retire_641_and_irregular_prime_pivot\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Irregular_Prime_Periphery_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_irregular_prime_scan_200.json
+@ [restraint] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+
+& [IrregularPrimeFirstPass] is a completed zeta-adjacent periphery pass
+  + [analysis_uuid] is d28e0194-c743-4249-aeb1-07f76644dbdb
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\irregular_prime_scan.py
+  + [scan_limit] is 200
+  + [status] is completed_first_pass
+
+## Retirement
+
+& [Retirement_001_641SpecialForms] is active
+  + [statement] is retire the 641 special-form branches as active identity tracks
+  + [reason] is exponent-product, exponent-power, shift-ladder, and coefficient-shift branches produced obstruction surfaces or isolated survivors rather than set-tracking identities
+  + [preserved_meaning] is 641 remains Fermat-number factor periphery and residue-obstruction evidence, not current active focus
+
+## Computed Boundary
+
+& [IrregularPrimeScan_001] is bounded_arithmetic_fact
+  + [limit] is 200
+  + [odd_prime_count] is 45
+  + [irregular_prime_count] is 8
+  + [irregular_primes] is 37, 59, 67, 101, 103, 131, 149, 157
+  + [first_irregular_prime] is 37
+  + [irregular_index_two_prime] is 157
+
+& [IrregularPairs_001] is zeta_special_value_contact
+  + [37] has Bernoulli index 32 and zeta special argument -31
+  + [59] has Bernoulli index 44 and zeta special argument -43
+  + [67] has Bernoulli index 58 and zeta special argument -57
+  + [101] has Bernoulli index 68 and zeta special argument -67
+  + [103] has Bernoulli index 24 and zeta special argument -23
+  + [131] has Bernoulli index 22 and zeta special argument -21
+  + [149] has Bernoulli index 130 and zeta special argument -129
+  + [157] has Bernoulli indices 62 and 110 and zeta special arguments -61 and -109
+  + [bridge] is zeta(1-k) = -B_k/k
+
+## Sparse Realizations
+
+& [Realization_001_ZetaAdjacentPrimeOddity] is a dense-node candidate
+  + [statement] is irregular primes are a stronger RH-workspace periphery than the retired 641 special forms because their defining oddity directly touches zeta special values
+  + [reason] is the family is defined by prime divisibility of Bernoulli numerators, and Bernoulli numbers govern zeta at negative integers
+  + [boundary] is zeta special values are not zeta nontrivial zeros, so this remains periphery rather than zero-line explanation
+
+& [Realization_002_NotAZeroLineAnswer] is restraint
+  + [statement] is irregular-prime scans do not explain the critical line by themselves
+  + [reason] is they expose arithmetic structure at special values, while RH concerns nontrivial zero placement and whole-prime distribution error
+  + [next_bridge] is compare irregular-prime distribution to whole-field objects and inspect whether p-adic or L-function structures deserve a separate scoped inquiry
+
+& [Realization_003_FirstUsefulQuestion] is ready
+  + [question] is whether irregular primes behave merely as sparse zeta-special-value anomalies or whether their distribution gives a better sampling surface than the retired Fermat/641 branches
+  + [method] is add irregular-prime family distribution rows beside pi(x), theta(x), and psi(x), then compare only finite shares and increments
+
+## Definite First-Pass Conclusion
+
+& [Conclusion_001] is definite_for_current_scope
+  + [statement] is retire the 641 line for now and continue with irregular primes as the next zeta-adjacent periphery family
+  + [reason] is irregular primes yield direct Bernoulli/zeta-special-value contact, while the 641 branches yielded non-tracking residue obstructions
+  + [boundary] is irregular-prime contact with zeta special values is not RH evidence and not zero-line explanation

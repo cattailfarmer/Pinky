@@ -1,0 +1,283 @@
+<Toribrot>
+Toribrot Module
+1. Base Surface: Complex Torus / Elliptic Curve
+Fix a lattice (\Lambda = \langle \omega_1,\omega_2\rangle \subset \mathbb{C}) with (\Im(\omega_2/\omega_1) > 0).
+Define the complex torus: [ T^2(\tau) = \mathbb{C} / \Lambda,\quad \tau = \omega_2/\omega_1. ]
+By the uniformization theorem for elliptic curves, every complex torus (\mathbb{C}/\Lambda) admits the structure of a complex elliptic curve, unique up to isomorphism. Thus there exists a complex‑analytic isomorphism [ \phi: T^2(\tau) \xrightarrow{;\cong;} E(\mathbb{C}), ] where (E) is an elliptic curve in Weierstrass form. We identify (T^2(\tau)) with (E(\mathbb{C})) via (\phi) and equip it with the elliptic curve group law.
+
+2. Intrinsic Torus Maps
+Toribrot‑Geometric uses two families of intrinsic maps.
+
+2.1. Elliptic Endomorphism with Translation (Affine Self‑Map)
+Let (E(\mathbb{C})) be the elliptic curve corresponding to (T^2(\tau)).
+
+For an integer (m), let [ [m]: E(\mathbb{C}) \to E(\mathbb{C}) ] be the elliptic curve endomorphism “multiplication by (m)” in the group law.
+
+This is a finite holomorphic map of degree [ \deg([m]) = m^2. ]
+
+Fix (|m|\ge 2).
+
+For a point (P \in E(\mathbb{C})), define [ f_{P,m}: E(\mathbb{C}) \to E(\mathbb{C}),\quad f_{P,m}(Q) = [m]Q + P. ]
+
+Each (f_{P,m}) is a holomorphic affine self‑map of the elliptic curve: it is the composition of the group endomorphism ([m]) with a translation by (P). It is a group endomorphism if and only if (P = 0); for (P\neq 0), it is not a group homomorphism but remains a finite holomorphic map of degree (m^2). Iterating (f_{P,m}) defines one class of Toribrot‑Geometric dynamics.
+
+2.2. Hyperbolic Toral Automorphisms (SL(2,ℤ) Mode, Smooth Category)
+To define the SL(2,ℤ) mode, use a real model of the torus:
+
+Choose (v_1, v_2 \in \mathbb{C} \cong \mathbb{R}^2) such that [ \Lambda = \mathbb{Z} v_1 \oplus \mathbb{Z} v_2, ] and identify (T^2(\tau)) with (\mathbb{R}^2/\mathbb{Z}^2) using this basis.
+
+Let (A \in SL(2,\mathbb{Z})) be a real (2\times 2) matrix with determinant 1.
+
+Assume (A) is hyperbolic: its eigenvalues (\lambda,\lambda^{-1}) satisfy (|\lambda|>1); let (\lambda) denote the expanding eigenvalue.
+
+Define [ F_A: T^2(\tau) \to T^2(\tau) ] as the map induced by (x \mapsto A x) on (\mathbb{R}^2) modulo (\mathbb{Z}^2) in the chosen basis.
+
+The induced map (F_A) depends on the chosen identification of (T^2(\tau)) with (\mathbb{R}^2/\mathbb{Z}^2), but different choices correspond via conjugation by torus diffeomorphisms.
+
+In this SL(2,ℤ) mode, we work in the smooth (C^\infty) category on the real torus. The map (F_A) is generally not holomorphic with respect to the complex structure on (T^2(\tau)), unless (A) happens to respect that complex structure (which is exceptional).
+
+Iterating (F_A) defines another class of Toribrot‑Geometric dynamics.
+
+3. Pants Decomposition and Composition
+3.1. Topological Pants on the Torus
+A pair of pants is a compact surface homeomorphic to a sphere with three disjoint open disks removed; equivalently, a genus‑0 surface with three boundary components.
+
+We consider:
+
+Open subsets (U \subset T^2(\tau)),
+Embeddings [ i: P \hookrightarrow U \subset T^2(\tau), ] where (P) is a pair of pants and the boundary components of (P) map to simple closed curves in (T^2(\tau)).
+These pants domains are local domains for operations.
+
+3.2. Pants Units (Local Operations)
+A pants unit consists of:
+
+A pair‑of‑pants domain (P \subset T^2(\tau)),
+A map (\Phi: P \to T^2(\tau)), typically the restriction of one of the intrinsic maps (holomorphic (f_{P,m}) or smooth (F_A)) to (P) or a subdomain thereof.
+The three boundary components of (P) act as interfaces. Depending on the direction of composition, two boundaries may be treated as inputs and one as output, or vice versa.
+
+3.3. Functional Composition on Open Sets
+Global Toribrot‑Geometric structures are formed by gluing pants units along boundary components and composing their maps.
+
+Let ({(P_i, \Phi_i)}) be pants units with (P_i \subset T^2(\tau)).
+Suppose boundary components of (P_i) and (P_j) are identified (glued) along a common simple closed curve (C \subset T^2(\tau)), forming a larger domain (U \subset T^2(\tau)).
+Compatibility condition:
+On each glued boundary component (C), the corresponding maps must satisfy:
+
+Either (\Phi_i|_C = \Phi_j|_C), or
+(\Phi_i|_C) and (\Phi_j|_C) differ by a diffeomorphism of (C) that extends to a diffeomorphism of a collar neighborhood of (C) in (T^2(\tau)).
+Under this condition, one can define combined maps on unions of pants domains and extend by functional composition on overlapping open sets.
+
+3.4. Pants Composition Graph
+Each pants unit ((P_i,\Phi_i)) is represented as a node in a directed graph.
+Directed edges represent the flow from input boundaries to output boundaries under gluing and composition.
+The pants composition graph is required to be:
+
+Directed, and
+Acyclic, unless one explicitly constructs periodic dynamical structures—in which case directed cycles may be deliberately introduced to represent periodicity.
+This graph encodes a decomposition with potentially unbounded depth and local branching constrained by the three‑boundary structure of pants.
+
+4. Metric and Texture Fields
+Let (g_0) be an initial Riemannian metric on (T^2(\tau)).
+
+Under a hyperbolic toral automorphism (F_A) with expanding eigenvalue (\lambda), define a sequence of metrics by pullback‑renormalization: [ g_{n+1} = \lambda^{-2} (F_A)^* g_n. ]
+
+Interpretation:
+
+Since (\det A = 1), the toral automorphism (F_A) preserves total area on (T^2(\tau)).
+The pullback ((F_A)^* g_n) expands lengths by (\lambda) along the unstable direction and contracts by (\lambda^{-1}) along the stable direction (in the linear model).
+The renormalization factor (\lambda^{-2}) is introduced to normalize the growth along the unstable direction under iteration, helping to keep the metric bounded in that direction; it is not required for area preservation (which holds already because (\det A = 1)).
+Derived scalar fields (e.g., norms, distortion measures, curvature proxies) obtained from ({g_n}) can be defined on open sets and restricted to pants domains. These fields are carried along and updated under the dynamics.
+</Toribrot>
+
+
+
+
+<EnumeratedToriBrot>
+Enumerated Toribrot Specification (Root = 0)
+1. Addresses and Generations
+Each node has a finite binary address: [ a = (b_1, b_2, \dots, b_k),\quad b_i \in {0,1},\ k \ge 1. ]
+The root node has address: [ a_{\text{root}} = [0]. ]
+The generation (depth) of a node with address (a) is: [ \mathrm{gen}(a) = \text{len}(a) - 1. ] So:
+(\mathrm{gen}([0]) = 0) for the root,
+children of root have addresses [0,0] and [0,1] and generation 1, etc.
+2. Tree Structure
+Nodes are indexed by finite binary lists starting with 0:
+Root: [0].
+For any node with address a, its children have addresses:
+a + [0],
+a + [1].
+Parent/child relation:
+The parent of a node with address a (length ≥ 2) is the node with address a[:-1] (drop the last bit).
+The root [0] has no parent.
+This gives a rooted full binary tree with:
+
+Root at [0],
+Unique path from root to any node,
+generation = len(address) - 1.
+3. Node Data
+Each node stores:
+
+address: list[int] of 0/1, with root [0],
+generation: int = len(address) - 1,
+children: list[Node], either empty or [left, right],
+value: optional arithmetic value (default None),
+fields: dict[str, Any] for scalar fields (prime flag, log, gap, Λ, etc.).
+Updated Python Skeleton
+Here is the revised class and helper functions:
+
+class Node:
+    def __init__(self, address_bits):
+        # address_bits: list of 0/1, root is [0]
+        self.address = address_bits
+        # generation: root [0] -> 0, children [0,0],[0,1] -> 1, etc.
+        self.generation = len(address_bits) - 1
+        self.children = []      # will be [left, right] or []
+        self.value = None       # optional arithmetic value
+        self.fields = {}        # arbitrary scalar fields
+
+def create_root():
+    # root node has address [0]
+    return Node([0])
+
+def expand(node):
+    left  = Node(node.address + [0])
+    right = Node(node.address + [1])
+    node.children = [left, right]
+    return left, right
+This:
+
+Uses [0] as the root address,
+Treats the first element 0 as the root label,
+Keeps the binary expansion rule consistent.
+</EnumeratedToriBrot>
+
+
+
+
+
+
+
+<Zetabrot>
+Zetabrot — Definition (Built on Enumerated Toribrot)
+I. Base: Enumerated Toribrot
+Start from the Enumerated Toribrot structure:
+
+Nodes (Brots)
+
+For each integer (n \ge 2), there is exactly one brot node.
+The node is indexed by the integer (n).
+No duplication: one brot = one integer.
+Composite Pants (Factor Structure)
+
+For a composite (n), choose a factorization (n = ab) with (1 < a \le b).
+Attach a pants unit:
+Waist: node (n),
+Legs: nodes (a) and (b).
+If multiple factorizations are used, pants stack in series, not parallel: [ n \to a_1 b_1 \to a_2 b_2 \to \cdots ]
+This recursively decomposes (n) down to primes, forming a loop‑back circuit to prime seeds.
+Prime Nodes
+
+For a prime (p), there are no factor pants; instead, the node receives parameter pants (arithmetic observables).
+Prime Parameters
+For the (n)-th prime (p_n), attach:
+
+Log parameter: (L_n = \log p_n),
+Gap parameter: (g_n = p_{n+1} - p_n),
+Optional canonical field: the von Mangoldt function (\Lambda(n)), extended to all integers: [ \Lambda(n) = \begin{cases} \log p & \text{if } n = p^k \text{ for some prime } p, k\ge 1,\[2pt] 0 & \text{otherwise.} \end{cases} ]
+Field Layer
+
+Define a scalar field (a(n)) over all integer brots:
+e.g. prime indicator, gap‑derived function, or (\Lambda(n)).
+This makes the Toribrot an integer‑indexed scalar field with a pants‑style factorization structure.
+II. Zetabrot: Operator & Spectral Construction
+The Zetabrot is the operator‑spectral layer built from the Enumerated Toribrot field.
+
+1. Dirichlet/Mellin Operator (Brot → Spectral Map)
+Given a field (a(n)) on brots, define the Dirichlet/Mellin transform:
+
+[ F(s) = \sum_{n=1}^{\infty} a(n),n^{-s},\quad s = \sigma + it. ]
+
+Interpretation in pants language:
+
+One leg: field value (a(n)),
+Other leg: kernel (n^{-s}),
+Waist: summation over all brot nodes (n).
+This operator (F(s)) is the Zetabrot transform of the Toribrot field.
+
+Special case (Λ‑Zetabrot):
+
+If (a(n) = \Lambda(n)), then for (\Re(s) > 1),
+
+[ F(s) = \sum_{n\ge 1} \Lambda(n),n^{-s} = -\frac{\zeta'(s)}{\zeta(s)}. ]
+
+This is the Λ‑Zetabrot, directly linked to the zeta zeros.
+
+2. Log-Domain Compression (Zetabrot Signal)
+Introduce log‑time variable:
+
+[ u = \log n. ]
+
+Define the Zetabrot spike train:
+
+[ G(u) = \sum_{n\ge 1} a(n),\delta(u - \log n). ]
+
+This is the Toribrot field compressed onto the log axis:
+
+Each brot (n) becomes a spike at (u = \log n) with weight (a(n)).
+3. Fourier Layer (Zeta Ear / Zetabrot Phasor Sum)
+Define the Fourier transform of (G):
+
+[ \widehat{G}(t) = \int_{-\infty}^{\infty} G(u),e^{-itu},du = \sum_{n\ge 1} a(n),e^{-it\log n}. ]
+
+With damping exponent (\sigma), this becomes:
+
+[ \widehat{G}(t;\sigma) = \sum_{n\ge 1} a(n),n^{-\sigma} e^{-it\log n} = \sum_{n\ge 1} a(n),n^{-\sigma - it}. ]
+
+Λ‑Zetabrot Fourier form:
+
+For (a(n)=\Lambda(n)):
+
+[ \widehat{G}(t;\sigma) = \sum_{n\ge 1} \Lambda(n),n^{-\sigma - it} = -\frac{\zeta'(\sigma+it)}{\zeta(\sigma+it)}. ]
+
+Each term:
+
+[ \Lambda(n),n^{-\sigma} e^{-it\log n} ]
+
+is a rotating phasor with angular velocity (\log n) and amplitude controlled by (n^{-\sigma}) and (\Lambda(n)).
+
+This is the Zetabrot Ear / Oscilloscope: a spectral readout of the Toribrot integer field in log‑time.
+
+4. Spectral Layer (Zeros & Explicit Formula)
+In the Λ‑Zetabrot case, the transform (-\zeta'(s)/\zeta(s)) has poles at the non‑trivial zeros (\rho = \beta + i\gamma) of (\zeta(s)). The explicit formula connects:
+
+Arithmetic domain (Toribrot field over integers / primes),
+Spectral domain (zeros (\rho)),
+with each zero contributing a term of the form:
+
+[ x^\rho = x^\beta e^{i\gamma\log x} ]
+
+to prime‑counting fluctuations.
+
+The Riemann Hypothesis becomes a Zetabrot spectral amplitude constraint:
+
+[ \beta = \tfrac12 \quad \forall \rho, ]
+
+i.e., all non‑trivial zeros lie on the critical line (\Re(s) = \tfrac12), meaning every spectral contribution has magnitude (x^{1/2}).
+
+III. Summary: What Zetabrot Is
+Input: The Enumerated Toribrot (one node per integer), with:
+
+pants‑style factor structure for composites,
+parameter pants for primes,
+a chosen scalar field (a(n)) (especially (a(n)=\Lambda(n))).
+Zetabrot Construction:
+
+Form the Dirichlet/Mellin transform (F(s)=\sum a(n)n^{-s}).
+Interpret this via log‑domain spike train (G(u)).
+Take the Fourier transform (\widehat{G}(t;\sigma)) = Zetabrot Ear / Oscilloscope.
+In the Λ‑case, this is (-\zeta'/\zeta), whose singularities encode the zeta zeros.
+Zetabrot is thus:
+
+The operator‑spectral transform of the Enumerated Toribrot integer field, realized as a log‑domain Fourier/Mellin phasor sum whose poles and oscillations are governed by the zeros of the Riemann zeta function.
+
+</Zetabrot>

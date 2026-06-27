@@ -1,0 +1,16 @@
+Subject: Whole Field Prime Shape Bridge Source Manifest
+
+Description: Manifest for the source direction to begin whole-field guarded work from special-prime probes.
+
+& [WholeFieldPrimeShapeBridgeSourceManifest] is the source manifest for whole-field bridge work
+  + [manifest_uuid] is 8f69336e-f64a-4ebf-ab38-dadd6934ccf6
+  + [source_uuid] is a99461a9-3b98-488a-ac4e-6f6c044a30f4
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_prime_shape_bridge\Dictated_Whole_Field_Prime_Shape_Bridge_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Prime_Shape_Bridge_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_family_distribution_bridge_pass_001.sop
+  + [source_role] is user_direction_to_begin_guardrailed_rh_prime_shape_work
+
+  = must: keep source preservation separate from computed traces
+  = must: trace distribution bridge tools back to this manifest

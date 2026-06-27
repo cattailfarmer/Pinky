@@ -1,0 +1,244 @@
+Subject: Sparse Realization Dense Node Framework
+
+Description: Project-local .sop framework for turning periphery inspection signals into sparse realizations and only later into dense scoped nodes.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_sparse_realization_dense_node_framework\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_sparse_realization_dense_node_framework\Dictated_Sparse_Realization_Dense_Node_Framework_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_periphery_focus_primitive\Dictated_Periphery_Focus_Primitive_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\SectionedPeripheryAssociationFabric.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryCorrelationPotentialScan.sop
+@ [source] C:\Project\Pinky\.sop\platform\AttentionTraversalPolicy.sop
+@ [source] C:\Project\Pinky\.sop\platform\BoundaryFacultyInspection.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\RiemannHypothesis_Periphery_Workspace_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_heat_identity_discovery\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_inquisitive_periphery_drive\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_focused_inquiry_restraint\manifest.sop
+
+& [SparseRealizationDenseNodeFramework] is the project-local framework that lets periphery inspection preserve early realizations while preventing premature authority
+  + [canonical_specification_uuid] is dfaa09ba-b66d-42d6-8e2b-12f79bc46d60
+  + [source_snapshot_uuid] is 7b0fb4f9-6494-45f1-9d05-34d1c3ba8ca5
+  + [solution_uuid] is 21581ff7-0521-49e7-b6b2-8b53ace7ead7
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [pattern_role] is sparse_realization_to_dense_node_attention_framework
+  + [input] is periphery_signal, surface_fact, relation_pressure, contrast, resemblance, user_correction, old_framework_object, or runtime_gap
+  + [output] is sparse_realization, relation_record, delineated_subject, dense_node, uncertainty, outside, or frontier
+  + [heat_lane_set] is correlation_heat, causation_heat, and identity_heat
+  + [inquisitive_drive] is the motive to inspect what is being looked at until concept promoters, identity anchors, and wider meaning shape become visible
+  + [focused_restraint] is the stabilizing governor that holds the current line of inquiry as more relevant to purpose unless a supported override upsets focus
+  + [restraint_override_set] is truth_override, security_override, priority_override, and greater_meaning_impression
+  + [not_primary_role] is theorem proof, automatic import system, or autonomous worker scheduler
+
+  = must: start from named periphery signals or source facts
+  = must: activate inquisitiveness when drawing a subject from periphery into focus
+  = must: ask what elements promote concepts, what anchors identity, and what wider shape of meaning is visible
+  = must: hold focused restraint while in focus when the current line of inquiry remains more relevant to purpose
+  = must: permit focused restraint to be upset by truth, security, priority, or stronger meaning that tunes something in the focus or immediate periphery
+  = must: defer interesting but lower-purpose ideas as outside or frontier instead of pursuing them immediately
+  = must: follow heat across correlation, causation, and identity discovery
+  = must: preserve sparse realizations before trying to make dense nodes
+  = must: classify relationships as causal, casual, correlational, analogical, dependency, contrast, or unknown
+  = must: suspect separate identity when correlation and causation persist without grounding in known local fabric
+  = must: scope out what the subject is not before scoping in what belongs
+  = must: require delineation before dense node acceptance
+  = must: keep incomplete inference visible when boundaries remain unstable
+  - never: treat sparse realization as implementation authority
+  - never: upgrade a casual relationship into a causal relationship without support
+  - never: merge identities because correlation_heat and causation_heat both persist
+  - never: let inquisitiveness become unbounded scope expansion
+  - never: abandon a relevant line of inquiry merely because a peripheral idea is interesting
+  - never: densify a node merely because it feels important
+
+## Lifecycle
+
+& [SparseToDenseLifecycle] is the operating sequence for bringing a subject from periphery into focus
+  + [stage_001_periphery_signal] is something noticed at the edge of focus
+  + [stage_002_focus_draw] is the act of bringing the signal into temporary attention
+  + [stage_003_surface_facts] is the set of visible facts gathered from source, path, text, role, explicit non-role, user correction, or observed work pressure
+  + [stage_004_inquisitive_probe] is ask for concept promoters, identity anchors, whole-shape cues, and uninspected relevant outside
+  + [stage_005_focused_restraint_check] is decide whether inquiry should continue, stop, defer outside, or be upset by truth, security, priority, or greater immediate-periphery meaning
+  + [stage_006_relation_trace] is the first pass over causal, casual, correlational, analogical, dependency, contrast, and unknown relations
+  + [stage_007_sparse_realization] is a preserved but non-authoritative insight with enough shape to revisit
+  + [stage_008_delineation] is inside, outside, references, uncertainty, and not-it field
+  + [stage_009_dense_node_candidate] is a subject that may become durable after evidence and boundary tests
+  + [stage_010_dense_node] is an accepted scoped subject with relation ledger, authority boundary, and next use
+  + [stage_011_frontier] is the next sparse realization, dense-node refinement, source import, runtime test, or deferred outside
+
+  = must: allow quick passes to stop at sparse_realization
+  = must: require stages 008 and 009 before stage 010
+  = must: record deferred outside when focused restraint blocks immediate pursuit
+  = should: densify only when the node improves future work by reducing ambiguity, preserving a decision, or enabling a safe test
+
+## Inquisitive Periphery Drive
+
+& [InquisitivePeripheryDrive] is the positive inquiry drive inside the sparse-to-dense lifecycle
+  + [drive_name] is inquisitiveness
+  + [concept_promoter] is an element that makes a concept more likely, more coherent, more useful, or more discoverable
+  + [identity_anchor] is an element that ties a subject to stable identity, local fabric, source lineage, boundary, or distinct not-it field
+  + [whole_shape_cue] is a contour, relation, contrast, dependency, omission, source path, or adjacent object that widens the visible meaning of the subject
+  + [uninspected_relevant_outside] is material that appears relevant to the whole shape but has not yet been inspected enough for promotion
+  + [inquiry_question_set] is what promotes concepts, what anchors identity, what wider shape is visible, what remains uninspected, and what must stay outside
+  + [bounded_inquiry] is curiosity constrained by source lineage, relation typing, identity grounding, local fabric, and outside preservation
+  + [restraint_partner] is focused inquiry restraint that decides whether widened meaning should continue, defer, or upset focus
+  + [outside] is unbounded wandering, proof by interestingness, and automatic densification
+
+  = must: run an inquisitive probe before dense-node closure
+  = must: preserve concept_promoter and identity_anchor candidates separately
+  = must: use whole_shape_cue to widen meaning without absorbing uninspected outside
+  = must: submit wider-shape cues to focused restraint before they redirect the active inquiry
+  = must: stop or defer inquiry when it no longer improves boundary, relation, identity, or future use
+  - never: treat a wider picture as proof of local identity
+
+## Focused Inquiry Restraint
+
+& [FocusedInquiryRestraint] is the stabilizing governor for inquisitive periphery inspection while a subject is in focus
+  + [restraint_name] is focused_restraint
+  + [purpose_anchor] is the active user purpose, current project task, governing specification, or manager-state priority that selected the line of inquiry
+  + [ordinary_condition] is the current line of inquiry remains more relevant to purpose than unvetted peripheral alternatives
+  + [stability_hold] is continuing the current focus while preserving lower-priority interesting material as outside or frontier
+  + [truth_override] is evidence of contradiction, false premise, material uncertainty, authority confusion, or source fact that changes what can be said truthfully
+  + [security_override] is credential exposure, permission risk, destructive action, protected state, privacy risk, integrity risk, or unsafe operational condition
+  + [priority_override] is user redirection, blocking dependency, explicit manager-state priority, or urgent sequencing reason
+  + [greater_meaning_impression] is a supported meaning signal that tunes something already in focus or in the immediate periphery
+  + [immediate_periphery] is adjacent material with direct relation to the current subject, boundary, identity, relation trace, or future use
+  + [upset_condition] is truth_override, security_override, priority_override, or greater_meaning_impression with support
+  + [deferral_record] is a sparse realization, outside note, or frontier entry preserving material that should not be pursued now
+  + [outside] is remote novelty, ungrounded association, attention drift, and focus changes without purpose or override support
+
+  = must: hold focus stable when no supported upset_condition is present
+  = must: prefer the current purpose-anchored line of inquiry over lower-priority peripheral ideas
+  = must: distinguish deferral from rejection
+  = must: allow truth and security to override restraint immediately when relevant
+  = must: allow priority or greater immediate-periphery meaning to upset focus when support is visible
+  = must: preserve deferred material well enough to revisit later
+  - never: use restraint to suppress relevant truth, security, or priority signals
+  - never: use greater_meaning_impression for remote or merely interesting associations
+
+## Heat Identity Discovery
+
+& [HeatIdentityDiscovery] is the protocol for following heat without fusing identity
+  + [correlation_heat] is repeated, weighted, or strong co-presence between subjects, terms, files, roles, or signals
+  + [causation_heat] is repeated pressure suggesting mechanism, dependency, enabling condition, repair cause, or blocking cause
+  + [identity_heat] is pressure suggesting that a subject may be the same identity, a separate identity, a local instance, an external reference, or an entangled system surface
+  + [persistent_relation_heat] is heat that recurs across passes, source facts, relation traces, user corrections, or accepted dense nodes
+  + [known_local_fabric] is project-local source records, accepted dense nodes, canonical project specifications, inspected local authority files, and explicit local identity records
+  + [separate_identity_suspicion] is the default disposition when correlation_heat and causation_heat persist without known_local_fabric grounding shared identity
+  + [shared_identity_candidate] is allowed only when known_local_fabric explicitly grounds identity rather than mere relation
+  + [relation_without_identity] is the preserved result when subjects are connected but not locally fused
+  + [outside] is proof by heat, identity by resonance, hidden causation, and old external identity becoming local by repetition
+
+  = must: inspect correlation_heat, causation_heat, and identity_heat separately
+  = must: ask whether persistent relation heat is evidence of relation, boundary crossing, or separate identity
+  = must: require known_local_fabric before accepting shared_identity_candidate
+  = must: preserve relation_without_identity when local grounding is missing
+  = must: route separate_identity_suspicion through delineation before dense-node acceptance
+  - never: let persistent relation heat collapse subject boundaries by itself
+
+## Record Shapes
+
+& [SparseRealizationRecord] is one early realization that should survive but not yet govern
+  + [realization_id] is a stable handle
+  + [drawn_from] is periphery signal, source document, inspection, user correction, old object, or runtime gap
+  + [realization_text] is the concise insight
+  + [surface_fact_set] is visible evidence used to notice it
+  + [relation_hint_set] is possible causal, casual, correlational, analogical, dependency, contrast, or unknown relations
+  + [concept_promoter_set] is elements that seem to promote concepts but have not necessarily become accepted requirements
+  + [identity_anchor_set] is elements that seem to anchor identity but still need local fabric review
+  + [whole_shape_cue_set] is broader contour signals that widen meaning without proving identity
+  + [purpose_anchor] is the active purpose used to judge relevance while this realization is in focus
+  + [restraint_status] is pursued, deferred_by_restraint, overridden_by_truth, overridden_by_security, overridden_by_priority, overridden_by_greater_meaning, or unresolved
+  + [scope_pressure] is what seems to need scoping out or in
+  + [promotion_condition] is what must be inspected before densification
+  + [outside] is what this realization does not prove
+
+  = must: remain lightweight
+  = must: carry enough source and outside to be revisitable
+  = must: separate concept promoters from identity anchors when possible
+  = must: not authorize implementation by itself
+
+& [DenseNodeRecord] is one accepted scoped subject
+  + [node_id] is a stable handle
+  + [subject] is the clearly identified focus
+  + [inside] is what belongs to the subject
+  + [outside] is what does not belong to the subject
+  + [references] are relevant exterior materials
+  + [uncertainty] is unresolved remainder
+  + [not_it_field] is the surrounding field of adjacent elements and excluded meanings
+  + [relation_ledger] is typed relation records with causal or casual status separated
+  + [concept_promoter_set] is accepted concept-promoting elements or explicitly deferred candidates
+  + [identity_anchor_set] is accepted identity anchors or explicitly rejected anchors
+  + [whole_shape_summary] is the bounded wider picture that survived inquiry
+  + [restraint_policy] is how this node preserves focus, defers outside, and recognizes override conditions
+  + [authority_status] is local_authority, project_authority, reference_only, proposal_only, deferred, or outside
+  + [use] is how the dense node may guide future work
+
+  = must: have passed delineation
+  = must: show both scope_out and scope_in
+  = must: show which concept promoters and identity anchors survived inquiry
+  = must: name relation types before authority_status is assigned
+
+& [RelationTraceRecord] is one relationship found during periphery inspection
+  + [relation_id] is a stable handle
+  + [source_subject] is the origin side of the relation
+  + [target_subject] is the destination side of the relation
+  + [relation_type] is causal, casual, correlational, analogical, dependency, contrast, unknown, or rejected
+  + [support] is source fact, user correction, file evidence, old repair ledger, test result, or absence
+  + [confidence] is high, medium, low, speculative, or rejected
+  + [heat_profile] is correlation_heat, causation_heat, identity_heat, or none
+  + [identity_disposition] is shared_identity_candidate, separate_identity_suspected, separate_identity_preserved, relation_without_identity, unknown, or rejected
+  + [local_fabric_grounding] is accepted_dense_node, project_source_lineage, canonical_local_specification, inspected_authority_file, explicit_identity_record, absent, or unresolved
+  + [restraint_effect] is continue_focus, defer_target, upset_focus, or none
+  + [promotion_rule] is what would strengthen or demote the relation
+  + [outside] is what the relation does not prove
+
+  = must: treat causal as requiring support for mechanism, dependency, or enabling condition
+  = must: treat casual as useful for attention navigation but not authority
+  = must: mark identity_disposition when relation heat affects subject identity
+  = must: require local_fabric_grounding before shared identity is accepted
+  = must: allow unknown rather than forcing relation type
+
+## Densification Gates
+
+& [DensificationGate] is the acceptance gate for dense node formation
+  + [gate_001_subject_named] is the subject has a stable handle
+  + [gate_002_source_anchored] is at least one source or inspected surface anchors the subject
+  + [gate_003_scope_out] is not-it and outside are explicit
+  + [gate_004_scope_in] is inside is explicit and bounded
+  + [gate_005_relation_typed] is causal and casual relationships are not collapsed
+  + [gate_006_uncertainty_preserved] is unresolved material is visible
+  + [gate_007_future_use] is the node has a concrete use for planning, inspection, import, testing, or explanation
+  + [gate_008_identity_grounded] is persistent correlation and causation heat either has known local fabric grounding or preserves separate identity suspicion
+  + [gate_009_inquiry_satisfied] is concept promoters, identity anchors, and whole-shape cues are named, rejected, or explicitly deferred
+  + [gate_010_restraint_checked] is focus continuation, deferral, or supported upset has been recorded against the active purpose
+
+  = must: reject densification when any gate is missing
+  = may: keep the material as sparse_realization
+
+## SJS Processing Trace
+
+& [SJSProcessingTrace] is the specification justification trace for this framework
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [source_snapshot_uuid] is 7b0fb4f9-6494-45f1-9d05-34d1c3ba8ca5
+  + [canonical_specification_uuid] is dfaa09ba-b66d-42d6-8e2b-12f79bc46d60
+  + [solution_uuid] is 21581ff7-0521-49e7-b6b2-8b53ace7ead7
+  + [processed_stage_set] is source_preserved, delineated, exploded, semantically_refined, constraint_checked, pruned, exhaustion_reviewed, justified, and registry_recorded
+  + [processing_result] is stable_initial_framework_contract
+  + [reasoning_result] is user direction separated into sparse realization lifecycle, inquisitive drive, focused inquiry restraint, dense node gates, heat identity discovery, causal-casual relation typing, and scope-out/scope-in requirements
+  + [exhaustion_state] is phase_locked_for_initial_project_use
+
+& [FocusedRestraintSJSProcessingTrace] is the refinement trace for adding focused inquiry restraint
+  + [protocol_uuid] is 4824697b-56f5-4a4c-ab31-0c7bfb9a34f9
+  + [source_snapshot_uuid] is b36758a7-e4a0-46e7-bbda-9c18aa18237c
+  + [canonical_specification_uuid] is dfaa09ba-b66d-42d6-8e2b-12f79bc46d60
+  + [solution_uuid] is e640cb17-2bfc-4808-91e1-36f65956e9e1
+  + [processed_stage_set] is source_preserved, delineated, exploded, semantically_refined, constraint_checked, justified, and registry_recorded
+  + [processing_result] is accepted_framework_refinement
+  + [reasoning_result] is restraint separated from inquisitiveness as a focus-stability governor with truth, security, priority, and greater immediate-periphery meaning override conditions
+  + [exhaustion_state] is sufficient_for_current_periphery_inspection_use
+
+& [SatisfactionSignature] is the satisfaction signature for this framework
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_uuid] is e69342cf-bb34-43c4-beca-7e8c3364c620
+  + [signed_artifact] is C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_sparse_realization_dense_node_framework\Dictated_Sparse_Realization_Dense_Node_Framework_Source.sop
+  + [signature_status] is valid
+  + [satisfaction_scope] is initial project-local framework for sparse realization and dense node formation

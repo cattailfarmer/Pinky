@@ -1,0 +1,17 @@
+Subject: Candidate Route Inventory Source Document Manifest
+
+Description: Manifest for preserved source governing RH candidate route inventory.
+
+& [CandidateRouteInventorySourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is bb6a059d-b8fb-4c8c-9972-e2702e12f12b
+  + [manifest_uuid] is 3d3abd70-0ccd-44ce-82f7-48c83c722f65
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_candidate_route_inventory\Dictated_Candidate_Route_Inventory_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Candidate_Route_Inventory_Specification.sop
+  + [source_preservation_rule] is raw route-inventory source remains separate from canonical specification and analysis
+  + [authority_status] is source_preserved_before_route_inventory
+
+  = must: process this source through specification before inventory analysis
+  = must: preserve candidate pool, conjunctive gate application, source-request distinction, and no-computation boundary
+  - never: treat this manifest as computation, proof, branch-reopening, staging, commit, or broad .sop mutation authority

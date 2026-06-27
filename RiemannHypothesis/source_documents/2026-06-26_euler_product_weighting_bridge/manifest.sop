@@ -1,0 +1,16 @@
+Subject: Euler Product Weighting Bridge Source Manifest
+
+Description: Manifest for preserved source feeding the Euler-product/logarithmic-derivative weighting bridge.
+
+& [EulerProductWeightingBridgeSourceManifest] is the source manifest
+  + [manifest_uuid] is 82dae9fb-9d92-4076-b091-0237f295d01d
+  + [source_snapshot_uuid] is e61a5bee-3ede-4b95-a737-0be067439952
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_euler_product_weighting_bridge\Dictated_Euler_Product_Weighting_Bridge_Source.sop
+  + [canonical_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Euler_Product_Weighting_Bridge_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+  + [status] is preserved
+
+  = must: preserve raw dictated source separately from canonical specification
+  = must: process through SJS before implementation authority

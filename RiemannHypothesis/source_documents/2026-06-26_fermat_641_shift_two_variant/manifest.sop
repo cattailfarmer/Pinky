@@ -1,0 +1,15 @@
+Subject: Fermat 641 Shift Two Variant Source Manifest
+
+Description: Manifest for the source correction to test 65537^(641*N) +/- 2.
+
+& [Fermat641ShiftTwoVariantSourceManifest] is the source manifest for the shift-two variant
+  + [manifest_uuid] is 0c631c03-4517-4921-84c2-6e321d2c545f
+  + [source_uuid] is b7e7577e-bdd5-4c97-856e-bb47cdd8e605
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_shift_two_variant\Dictated_Fermat_641_Shift_Two_Variant_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Exponential_Shift_Probe_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_two_boundary.sop
+  + [source_role] is user_correction_for_exponential_shift_boundary_testing
+
+  = must: preserve the correction separately from the prior plus-minus-one variant

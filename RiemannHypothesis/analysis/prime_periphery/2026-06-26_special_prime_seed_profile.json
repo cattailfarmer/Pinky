@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "precision_dps": 80,
+    "proof_status": "finite_prime_family_profile_not_rh_evidence",
+    "tool": "special_prime_profile"
+  },
+  "parameters": {
+    "max_fermat_n": 6,
+    "primes": [
+      3,
+      5,
+      17,
+      257,
+      65537,
+      641
+    ]
+  },
+  "rows": [
+    {
+      "exact_fermat_number_index": 0,
+      "fermat_divisor_hits": [
+        0
+      ],
+      "fermat_prime_index": 0,
+      "identity_scope": "fermat_prime_identity",
+      "is_base2_wieferich_prime": false,
+      "is_mersenne_prime": true,
+      "is_prime": true,
+      "is_safe_prime": false,
+      "is_sophie_germain_prime": true,
+      "mersenne_prime_exponent": 2,
+      "multiplicative_order_2_mod_p": 2,
+      "p": 3,
+      "p_minus_1_factorization": {
+        "2": 1
+      },
+      "p_plus_1_factorization": {
+        "2": 2
+      },
+      "pierpont": {
+        "is_pierpont_form": true,
+        "remaining_factor": 1,
+        "representation": "2^1*3^0+1",
+        "three_power": 0,
+        "two_power": 1
+      },
+      "proth": {
+        "is_proth_form": true,
+        "odd_k": 1,
+        "representation": "1*2^1+1",
+        "two_power": 1
+      },
+      "safe_prime_parent": 1,
+      "smallest_fermat_number_divided": 0,
+      "sophie_germain_partner": 7
+    },
+    {
+      "exact_fermat_number_index": 1,
+      "fermat_divisor_hits": [
+        1
+      ],
+      "fermat_prime_index": 1,
+      "identity_scope": "fermat_prime_identity",
+      "is_base2_wieferich_prime": false,
+      "is_mersenne_prime": false,
+      "is_prime": true,
+      "is_safe_prime": true,
+      "is_sophie_germain_prime": true,
+      "mersenne_prime_exponent": null,
+      "multiplicative_order_2_mod_p": 4,
+      "p": 5,
+      "p_minus_1_factorization": {
+        "2": 2
+      },
+      "p_plus_1_factorization": {
+        "2": 1,
+        "3": 1
+      },
+      "pierpont": {
+        "is_pierpont_form": true,
+        "remaining_factor": 1,
+        "representation": "2^2*3^0+1",
+        "three_power": 0,
+        "two_power": 2
+      },
+      "proth": {
+        "is_proth_form": true,
+        "odd_k": 1,
+        "representation": "1*2^2+1",
+        "two_power": 2
+      },
+      "safe_prime_parent": 2,
+      "smallest_fermat_number_divided": 1,
+      "sophie_germain_partner": 11
+    },
+    {
+      "exact_fermat_number_index": 2,
+      "fermat_divisor_hits": [
+        2
+      ],
+      "fermat_prime_index": 2,
+      "identity_scope": "fermat_prime_identity",
+      "is_base2_wieferich_prime": false,
+      "is_mersenne_prime": false,
+      "is_prime": true,
+      "is_safe_prime": false,
+      "is_sophie_germain_prime": false,
+      "mersenne_prime_exponent": null,
+      "multiplicative_order_2_mod_p": 8,
+      "p": 17,
+      "p_minus_1_factorization": {
+        "2": 4
+      },
+      "p_plus_1_factorization": {
+        "2": 1,
+        "3": 2
+      },
+      "pierpont": {
+        "is_pierpont_form": true,
+        "remaining_factor": 1,
+        "representation": "2^4*3^0+1",
+        "three_power": 0,
+        "two_power": 4
+      },
+      "proth": {
+        "is_proth_form": true,
+        "odd_k": 1,
+        "representation": "1*2^4+1",
+        "two_power": 4
+      },
+      "safe_prime_parent": 8,
+      "smallest_fermat_number_divided": 2,
+      "sophie_germain_partner": 35
+    },
+    {
+      "exact_fermat_number_index": 3,
+      "fermat_divisor_hits": [
+        3
+      ],
+      "fermat_prime_index": 3,
+      "identity_scope": "fermat_prime_identity",
+      "is_base2_wieferich_prime": false,
+      "is_mersenne_prime": false,
+      "is_prime": true,
+      "is_safe_prime": false,
+      "is_sophie_germain_prime": false,
+      "mersenne_prime_exponent": null,
+      "multiplicative_order_2_mod_p": 16,
+      "p": 257,
+      "p_minus_1_factorization": {
+        "2": 8
+      },
+      "p_plus_1_factorization": {
+        "2": 1,
+        "3": 1,
+        "43": 1
+      },
+      "pierpont": {
+        "is_pierpont_form": true,
+        "remaining_factor": 1,
+        "representation": "2^8*3^0+1",
+        "three_power": 0,
+        "two_power": 8
+      },
+      "proth": {
+        "is_proth_form": true,
+        "odd_k": 1,
+        "representation": "1*2^8+1",
+        "two_power": 8
+      },
+      "safe_prime_parent": 128,
+      "smallest_fermat_number_divided": 3,
+      "sophie_germain_partner": 515
+    },
+    {
+      "exact_fermat_number_index": 4,
+      "fermat_divisor_hits": [
+        4
+      ],
+      "fermat_prime_index": 4,
+      "identity_scope": "fermat_prime_identity",
+      "is_base2_wieferich_prime": false,
+      "is_mersenne_prime": false,
+      "is_prime": true,
+      "is_safe_prime": false,
+      "is_sophie_germain_prime": false,
+      "mersenne_prime_exponent": null,
+      "multiplicative_order_2_mod_p": 32,
+      "p": 65537,
+      "p_minus_1_factorization": {
+        "2": 16
+      },
+      "p_plus_1_factorization": {
+        "11": 1,
+        "2": 1,
+        "3": 2,
+        "331": 1
+      },
+      "pierpont": {
+        "is_pierpont_form": true,
+        "remaining_factor": 1,
+        "representation": "2^16*3^0+1",
+        "three_power": 0,
+        "two_power": 16
+      },
+      "proth": {
+        "is_proth_form": true,
+        "odd_k": 1,
+        "representation": "1*2^16+1",
+        "two_power": 16
+      },
+      "safe_prime_parent": 32768,
+      "smallest_fermat_number_divided": 4,
+      "sophie_germain_partner": 131075
+    },
+    {
+      "exact_fermat_number_index": null,
+      "fermat_divisor_hits": [
+        5
+      ],
+      "fermat_prime_index": null,
+      "identity_scope": "fermat_number_factor_periphery",
+      "is_base2_wieferich_prime": false,
+      "is_mersenne_prime": false,
+      "is_prime": true,
+      "is_safe_prime": false,
+      "is_sophie_germain_prime": true,
+      "mersenne_prime_exponent": null,
+      "multiplicative_order_2_mod_p": 64,
+      "p": 641,
+      "p_minus_1_factorization": {
+        "2": 7,
+        "5": 1
+      },
+      "p_plus_1_factorization": {
+        "107": 1,
+        "2": 1,
+        "3": 1
+      },
+      "pierpont": {
+        "is_pierpont_form": false,
+        "remaining_factor": 5,
+        "representation": "2^7*3^0+1",
+        "three_power": 0,
+        "two_power": 7
+      },
+      "proth": {
+        "is_proth_form": true,
+        "odd_k": 5,
+        "representation": "5*2^7+1",
+        "two_power": 7
+      },
+      "safe_prime_parent": 320,
+      "smallest_fermat_number_divided": 5,
+      "sophie_germain_partner": 1283
+    }
+  ]
+}

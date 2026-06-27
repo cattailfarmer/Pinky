@@ -1,0 +1,57 @@
+Subject: Dense Node Refinement Selection 001
+
+Description: Bounded selection of the next RH dense node to refine after the whole-field landscape node map.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_dense_node_refinement_selection\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Dense_Node_Refinement_Selection_Specification.sop
+@ [landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+
+& [DenseNodeRefinementSelection001] is a finite synthesis analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is 8428d7f6-6975-4807-8264-7ed6e0e463df
+  + [source_snapshot_uuid] is 3d888d96-082b-40ab-8aa5-efe14ce332b7
+  + [manifest_uuid] is eef32ccb-ff4d-47b9-b3e8-a5092d6915f7
+  + [canonical_specification_uuid] is 58782aac-9bb7-47f3-a1f1-92437a1397de
+  + [proof_status] is finite_dense_node_selection_not_rh_evidence
+  + [implementation_change] is none; this pass records selection only
+  + [verification] is no tests run because no runtime code changed
+
+& [CandidateComparison] is the selection reasoning field
+  + [prime_counting_chebyshev_mechanics] is foundational and should remain the baseline, but its immediate uncertainty points toward comparison with explicit-formula error rather than isolated refinement
+  + [euler_log_derivative_half_plane_weighting] is stable and clean in Re(s)>1, but immediate refinement risks repeating convergence-boundary scans rather than engaging the current zero-behavior ambiguity
+  + [explicit_formula_residual_surface] is central because it touches psi(x), zero terms, cutoff choice, scale laws, and the strongest unresolved bridge between prime mechanics and zeta-zero behavior
+  + [t_reference_resonance_landmarks] is useful orientation, but landmark refinement risks metric-specific over-reading before the explicit residual surface is scoped more cleanly
+  + [lambda_diagnostic_overlay] is valuable but dense and bridge-adjacent; refining it now risks reopening the paused Lambda-Mellin/kernel branch
+  + [bridge_restraint_governance] is already doing its job by holding the kernel branch closed
+
+& [SelectedDenseNode] is the answered focal question
+  + [selected_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [selection_reason] is it is the most purpose-relevant node for RH-facing whole-field understanding because it directly mediates between psi(x) arithmetic mechanics and finite zeta-zero approximation behavior
+  + [boundary_reason] is it can be refined conceptually without adding kernels, windows, or cutoff laws, preserving the explicit/Euler bridge pause
+  + [not_selected_baseline] is prime-counting/Chebyshev mechanics remains the baseline node that the selected node must stay anchored to
+  + [not_selected_stable_support] is Euler/log-derivative half-plane weighting remains stable support rather than the next active refinement
+  + [not_selected_periphery] is reference/resonance and Lambda overlay remain comparison surfaces until the explicit residual subject is sharper
+  + [not_selected_governance] is bridge restraint remains active governance, not active inquiry
+
+& [NextRefinementPosture] is the next source-defined purpose
+  + [refinement_subject] is explicit-formula residual surface in relation to psi(x), theta(x), and prime-power mechanics
+  + [refinement_goal] is delineate what belongs to explicit-formula residual behavior before any new computation: x-domain object, zero-term contribution, cutoff coordinate, window sensitivity, scale-law sensitivity, and relation to theta/psi mechanics
+  + [allowed_next_artifact] is a source/spec/analysis refinement map for the explicit residual surface
+  + [blocked_next_artifact] is new kernel, new smoothing window, new cutoff law, special-prime expansion, or proof-facing claim
+  + [future_tool_condition] is a later deterministic tool may be justified only if the refinement map names a measured quantity that cannot be answered by existing traces
+
+& [RestraintBoundary] is the current guardrail
+  + [must_preserve] is explicit/Euler bridge refinement paused
+  + [must_preserve] is special-prime observations subordinate to whole-field nodes
+  + [must_preserve] is Euler/log-derivative half-plane support separate from finite explicit zero truncation
+  + [must_preserve] is finite residual behavior is not RH evidence or zero certification
+  + [answered_question] is the explicit-formula residual surface should receive the next source-defined refinement
+
+  = must: refine DenseNode_ExplicitFormulaResidualSurface before creating new RH math tooling
+  = must: keep psi(x), theta(x), and prime-power mechanics visible as anchors during refinement
+  = must: preserve the explicit/Euler bridge pause and avoid new kernel/cutoff/window sprawl
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, or single-surface RH identity from this selection
+
+(dense_node_refinement_selection_001) :finite node selection: /select explicit-formula residual surface for next refinement/ |proof authority|

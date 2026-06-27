@@ -1,0 +1,56 @@
+Subject: Lambda Oscilloscope Probe Specification
+
+Description: Canonical local specification for a deterministic finite Lambda Oscilloscope probe.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_oscilloscope_probe\Source_Document_Manifest.sop
+@ [classification] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_zeta_tool_translation_pass_001.sop
+@ [support] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\euler_product.py
+
+& [LambdaOscilloscopeProbeSpecification] is the local authority for this tool implementation
+  + [specification_uuid] is 33581a78-b859-46a3-927c-372f9adbfa1b
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool_helper] is C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+  + [tool_script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_oscilloscope_probe.py
+  + [purpose] is emit finite Lambda log-Fourier phasor traces and optional term rows for deterministic inspection
+  + [proof_status] is finite_lambda_oscilloscope_trace_not_rh_evidence
+
+& [FiniteTraceFormula] is the implemented mathematical object
+  + [series] is E_{sigma,N,W}(t) = sum over prime powers q <= N of Lambda(q) * W_N(q) * q^(-sigma) * exp(-i*t*log(q))
+  + [lambda_rule] is Lambda(p^k) = log(p) for prime p and integer k >= 1
+  + [hard_window] is W_N(q) = 1
+  + [fejer_window] is W_N(q) = max(0, 1 - q/(N + 1))
+  + [trace_row] is sigma, t, prime_power_bound, window, term_count, value, magnitude, and optional comparison residual
+  + [term_row] is sigma, t, prime, exponent, prime_power, Lambda weight, window weight, amplitude, phase, and contribution
+
+  = must: use natural logarithm
+  = must: sort term rows by prime_power, prime, exponent
+  = must: include prime powers, not only primes
+  = must: reject nonpositive prime_power_bound
+  = must: reject sigma < 0
+  = must: reject negative t values for default trace generation
+  = must: cap sample count to avoid accidental huge traces
+
+& [ConvergenceBoundary] is the comparison contract
+  + [sigma_greater_than_one] is eligible for comparison to -zeta_prime(s)/zeta(s)
+  + [sigma_less_or_equal_one] is finite trace only and not compared to the infinite Lambda Dirichlet series
+  + [comparison_residual] is finite_trace minus exact -zeta_prime(s)/zeta(s) when sigma > 1 and comparison is enabled
+
+  = must: label comparison availability in payload rows
+  = must: omit exact comparison for sigma <= 1
+  - never: present finite critical-line traces as convergent infinite series
+
+& [ImplementationPlan] is the required implementation slice
+  + [step_1] is create rh_math.lambda_oscilloscope helper with lambda_oscilloscope_probe and window_weight helpers
+  + [step_2] is create tools/scripts/lambda_oscilloscope_probe.py CLI
+  + [step_3] is update tools README and package export list
+  + [step_4] is add focused tests for prime-power inclusion, windowing, comparison boundary, and proof status
+  + [step_5] is run the Python test suite and record analysis
+
+& [AcceptanceCriteria] is the completion standard
+  + [prime_power_test] is bound 10 includes 2, 3, 4, 5, 7, 8, and 9 as active Lambda terms
+  + [hard_window_test] is every hard-window term has weight 1
+  + [fejer_window_test] is q = 2 at N = 10 has weight 1 - 2/11
+  + [comparison_test] is sigma = 2 includes a finite residual against -zeta_prime(s)/zeta(s)
+  + [boundary_test] is sigma = 0.5 reports no infinite-series comparison
+  + [proof_boundary_test] is metadata proof_status finite_lambda_oscilloscope_trace_not_rh_evidence

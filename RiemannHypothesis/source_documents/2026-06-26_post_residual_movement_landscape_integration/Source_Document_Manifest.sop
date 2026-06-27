@@ -1,0 +1,17 @@
+Subject: Post Residual Movement Landscape Integration Source Document Manifest
+
+Description: Manifest for preserved source records governing post-movement whole-field integration.
+
+& [PostResidualMovementLandscapeIntegrationSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 9205f08b-31f9-46f1-9d47-e4a95c0d7cbe
+  + [manifest_uuid] is 36ee3e19-e8d0-4179-87d0-909675a97b7f
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_post_residual_movement_landscape_integration\Dictated_Post_Residual_Movement_Landscape_Integration_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Post_Residual_Movement_Landscape_Integration_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before integration analysis
+  = must: keep this as finite landscape governance only
+  - never: treat integration as proof, disproof, zero certification, or implementation authority

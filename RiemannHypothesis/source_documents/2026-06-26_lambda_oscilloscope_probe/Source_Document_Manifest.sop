@@ -1,0 +1,21 @@
+Subject: Lambda Oscilloscope Probe Source Document Manifest
+
+Description: Manifest for the local source record that authorizes a deterministic Lambda Oscilloscope probe implementation.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_oscilloscope_probe\Dictated_Lambda_Oscilloscope_Probe_Source.sop
+@ [classification] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_zeta_tool_translation_pass_001.sop
+@ [old_source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\Source_Document_Manifest.sop
+
+& [LambdaOscilloscopeProbeSourceManifest] is the preserved source set for the local Lambda Oscilloscope probe
+  + [manifest_uuid] is c2dcc225-04b5-41d4-b18e-5cbe7acf4801
+  + [source_snapshot_uuid] is c0f941b7-a8c3-4a1c-a766-08a88e8a854b
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_oscilloscope_probe\Dictated_Lambda_Oscilloscope_Probe_Source.sop
+  + [source_purpose] is turn the classified Lambda log-Fourier primitive into a bounded deterministic probe
+  + [preservation_event] is source/spec saved before implementation edits
+  + [authority_status] is local_source_for_bounded_tool_slice
+
+  = must: keep this source separate from canonical specification and implementation
+  = must: retain old zeta-tool source as provenance but not authority
+  - never: overwrite old source snapshots with this local implementation meaning

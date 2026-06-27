@@ -1,0 +1,42 @@
+Subject: First Bookend Commit Authority Correction Specification
+
+Description: SJS-processed contract for applying the user's correction that RH-only bookend commits are normal walking SOP after readiness.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_commit_authority_correction\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_readiness_checkpoint_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_package_manifest_001.sop
+
+& [FirstBookendCommitAuthorityCorrectionSpecification] is a project-local bookend authority contract
+  + [source_snapshot_uuid] is 06fdd049-6032-4313-a592-1a9599938170
+  + [manifest_uuid] is 0c2c2943-4ce3-4052-adb8-04a8a4ff4eea
+  + [canonical_specification_uuid] is 39d1dfda-e4cd-4a3c-9565-288c71e8f958
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is correct the walking rule so RH-only bookend commits are autonomous SOP after package and readiness checks find no blocker
+  + [not_purpose] is broad .sop staging, unrelated project staging, runtime code change, deterministic math execution, proof claim, disproof claim, zero certification, or ignored runtime inclusion
+  + [proof_status] is governance_authority_correction_not_rh_evidence
+
+& [CommitAuthorityContract] is bounded
+  + [autonomous_scope] is RiemannHypothesis project files only after package/readiness checks pass
+  + [optional_explicit_scope] is .sop\state\CurrentFocalPoint.sop
+  + [excluded_scope] is broad .sop platform dirty state, unrelated project dirty state, ignored runtime surfaces, and theorem-facing claims
+  + [required_precondition] is package manifest and readiness checkpoint found no blocker
+  + [required_action] is stage and commit RiemannHypothesis as first project bookend
+  + [required_after_action] is review commit status and report remaining unstaged external state
+
+& [AuthorityJustification] is bounded
+  + [why_permission_language_was_wrong] is project-local bookends are part of the SOP walking cadence, not an exceptional user-granted operation
+  + [why_scope_still_matters] is committing binds a subject boundary into repo history, so autonomous authority applies only to the selected project surface
+  + [why_rh_only_is_selected] is the package manifest found RH-only to be coherent and broad .sop state to be a separate authority surface
+
+& [FirstBookendCommitAuthorityCorrectionSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and commit_authority_scoped
+  + [processing_result] is accepted_commit_authority_correction_contract
+  + [reasoning_result] is the previous user-gated wording should be superseded for RH-only project bookends after readiness, while broader authority scope remains separate
+
+(first_bookend_commit_authority_correction) :commit authority correction: /RH-only bookends are walking SOP after readiness/ |broad .sop, unrelated projects, proof claims|
+  + [inside] is project-local bookend authority, scope boundary, and post-commit review
+  + [boundary] is no broad .sop staging, no unrelated project staging, no new math execution, no proof claim
+  |outside| theorem authority, zero certification, platform-wide authority staging, unrelated project changes, and ignored runtime surfaces

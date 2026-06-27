@@ -1,0 +1,16 @@
+Subject: Dictated Fermat 641 Operator Hypothesis Source
+
+Description: Raw source preserving the user's question about whether 641 can operate as a next-sequence seed for Fermat-coherent primes.
+
+& [DictatedFermat641OperatorHypothesisSource] is preserved raw source for a Fermat-coherence operator hypothesis
+  + [source_uuid] is 021285ae-01c8-4885-bf77-5a69a1484472
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "now I'm wondering about the Fermat primes and 641, if 641 becomes an operator in a next sequence? maybe it's a power seed for the next sequence of undiscovered Fermat-coherent primes? like start at 65537^641+1?"
+
+  = must: test the proposed continuation as arithmetic before treating it as meaning
+  = must: distinguish prime-generating role from factor-boundary role
+  = must: preserve 641 as correlated periphery unless its operator role is clearly scoped
+  - never: treat symbolic continuation as primehood evidence without divisibility checks

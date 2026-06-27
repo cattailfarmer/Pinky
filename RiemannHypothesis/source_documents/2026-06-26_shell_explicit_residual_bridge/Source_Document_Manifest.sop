@@ -1,0 +1,19 @@
+Subject: Shell Explicit Residual Bridge Source Manifest
+
+Description: Manifest for shell-to-explicit-residual bridge comparison.
+
+& [ShellExplicitResidualBridgeSourceManifest] is the source manifest
+  + [manifest_uuid] is 783deb2a-cde2-4b3a-b12b-612aebce5a77
+  + [source_uuid] is cfae4416-cc13-4f5a-bd5b-a24d50a7b699
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_shell_explicit_residual_bridge\Derived_Shell_Explicit_Residual_Bridge_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Shell_Explicit_Residual_Bridge_Specification.sop
+  + [trace_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_shell_endpoint_explicit_residual_movement_trace.json
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_shell_explicit_residual_bridge_pass_001.sop
+  + [related_surfaces] are Prime_Emergence_Shell_Surface_Signature, Explicit_Residual_Movement_Decomposition, DenseNode_ExplicitFormulaResidualSurface, and Prime_Power_Decomposition_Bridge
+
+  = must: keep source, specification, trace, and analysis distinct
+  = must: reuse existing deterministic explicit residual movement tooling
+  = must: keep finite bridge output outside proof authority

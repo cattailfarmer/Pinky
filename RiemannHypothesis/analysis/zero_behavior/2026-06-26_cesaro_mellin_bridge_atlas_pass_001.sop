@@ -1,0 +1,84 @@
+Subject: Cesaro Mellin Bridge Atlas Pass 001
+
+Description: Finite diagnostic atlas testing n-domain smoothing kernels on the Lambda-Mellin bridge.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cesaro_mellin_bridge\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Cesaro_Mellin_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\cesaro_mellin_bridge_atlas.py
+
+& [CesaroMellinBridgeAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether n-domain kernels create a genuinely new smoothed Lambda-Mellin bridge surface compared with raw finite-difference projection
+  + [source_snapshot_uuid] is ed78b6e1-08cc-4344-a38b-4f4a553d5361
+  + [manifest_uuid] is 187c3a54-2d0b-44f5-9b2f-d0a5e76c5e0e
+  + [canonical_specification_uuid] is 9bfa7990-9b8d-4e99-85a5-d61f20559921
+  + [implementation_change] is added n_domain_kernel_weight, cesaro_mellin_bridge_atlas, and cesaro_mellin_bridge_atlas.py
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 33 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\cesaro_mellin_bridge_atlas.py --n-bound 50 --n-bound 100 --n-bound 200 --sample 2,0 --sample 2,14.134725141734693790457251983562 --sample 1.5,14.134725141734693790457251983562 --multiplier 16 --multiplier 32 --window sharp --window fejer --window lanczos --window hann --kernel sharp --kernel cesaro --kernel hann --dps 80 --output analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_trace.json
+  + [trace_row_count] is 216
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.1347251417347i, and s=1.5+14.1347251417347i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [zero_windows] is sharp, fejer, lanczos, and hann
+  + [n_domain_kernels] is sharp, cesaro, and hann
+  + [proof_status] is finite_cesaro_mellin_bridge_not_rh_evidence
+
+& [KernelSummary] is the observed bounded kernel field
+  + [cesaro_average_smoothed_bridge_residual_abs] is 0.19343399613885109985902922910971965786018101462270708768812308267052988299268814
+  + [cesaro_average_raw_bridge_residual_abs] is 0.20215013686948171181128178438972504070630749063419948108093960277566647809102337
+  + [cesaro_average_smoothed_over_raw] is 0.95688283537369954653640207718410923673562292498317724025171159018852499949395597
+  + [cesaro_improvement_count] is 72 of 72 rows
+  + [cesaro_average_exact_smoothed_cutoff_residual_abs] is 0.042674577324135931136275383454211308304387970251585649989508678999847321026857
+  + [hann_average_smoothed_bridge_residual_abs] is 0.20028667900501803495088873085283730894441514460679779475337262392740503725532674
+  + [hann_average_smoothed_over_raw] is 0.99078181250173073633450072463040862605521133127710929908543152768472311642250453
+  + [hann_improvement_count] is 62 of 72 rows
+  + [hann_average_exact_smoothed_cutoff_residual_abs] is 0.023771014273167675969692389085508314084101632862656500875022514729733024565932041
+  + [sharp_average_smoothed_bridge_residual_abs] is 0.20215013686948171181128178438972504070630749063419948108093960277566647809102337
+  + [sharp_average_exact_cutoff_residual_abs] is 0.0081881873673536333723141060145746634389250122143817792114557407193758064834827344
+  + [kernel_result] is Cesaro is the strongest bridge-residual smoother, Hann is weaker but less smoothing-biased, and sharp remains the least biased finite cutoff against the infinite target
+
+& [BestKernelRows] is the observed bounded sample field
+  + [best_kernel_counts] is Cesaro 9 of 9
+  + [n_50_s_2_0] is multiplier 32.0, zero-window lanczos, Cesaro kernel, smoothed_bridge_residual_abs 0.10247780281687611577407855786590112579663167003165767829998353369781735405724901, raw_bridge_residual_abs 0.10686365273373928138869852103186595359610600368517471053667058375369590850880392, exact_smoothed_cutoff_residual_abs 0.085364762830990381499916771169201701130586855754437661306129829737661383926383575
+  + [n_50_s_2_i14] is multiplier 32.0, zero-window lanczos, Cesaro kernel, smoothed_bridge_residual_abs 0.15822011034341930317759202470305585027190858510822322973142455972264182618251158, raw_bridge_residual_abs 0.17001035599845614817957759917295717904014605901744334199231855424548778666798748, exact_smoothed_cutoff_residual_abs 0.028162687208180668756404690803442065690064821682615439072950302279370602251962471
+  + [n_50_s_1_5_i14] is multiplier 32.0, zero-window sharp, Cesaro kernel, smoothed_bridge_residual_abs 0.27678875925562879127396983235776664888858742052626086308729802731747515065875448, raw_bridge_residual_abs 0.30145997219613358295617418724067471668380815458395416286369170248255497090202076, exact_smoothed_cutoff_residual_abs 0.088349284025579948707319717989641526131499674833703325182048065428143604999331101
+  + [n_100_s_2_0] is multiplier 32.0, zero-window lanczos, Cesaro kernel, smoothed_bridge_residual_abs 0.10469459424606569800046482675693712293045522812375582033706708133257276744435014, raw_bridge_residual_abs 0.10680310271008397200120647039790669406536431659149874779508585393162460985423069, exact_smoothed_cutoff_residual_abs 0.049894704953622117196556698152124338761054189954398339998349588003642653774778198
+  + [n_100_s_2_i14] is multiplier 32.0, zero-window lanczos, Cesaro kernel, smoothed_bridge_residual_abs 0.16401089574912955343541761302872402521824341087554650493507209135892098341206966, raw_bridge_residual_abs 0.16988230505579301308647186894593935826535721730038966991893297723365632147988594, exact_smoothed_cutoff_residual_abs 0.014843775320368841280795384498017980509818959686753714262182210661517507909714876
+  + [n_100_s_1_5_i14] is multiplier 32.0, zero-window sharp, Cesaro kernel, smoothed_bridge_residual_abs 0.28853085914896472260522178322519213000674615853447923521658544413419097861653583, raw_bridge_residual_abs 0.30040474975084397677911515389943657464530164805744441381459789442388009123097143, exact_smoothed_cutoff_residual_abs 0.05228719909681369055867791848711285984376188639208261273599749261987527822255859
+  + [n_200_s_2_0] is multiplier 32.0, zero-window lanczos, Cesaro kernel, smoothed_bridge_residual_abs 0.10582718284452756590668948362355949254709612267537859224670414125037576204445919, raw_bridge_residual_abs 0.10701313407027581447572499119906046354885139418543516987252195952256893050139231, exact_smoothed_cutoff_residual_abs 0.028485169308765494348906265652692965554785831455876693503444959747155441122691603
+  + [n_200_s_2_i14] is multiplier 32.0, zero-window lanczos, Cesaro kernel, smoothed_bridge_residual_abs 0.16696615343181744850410549893199895634427810264389101557761847137559913921880285, raw_bridge_residual_abs 0.16991828520887850460297676283475064780994651042545813141317995420472811816945766, exact_smoothed_cutoff_residual_abs 0.007599734242232996416719490407320417634590320511554764703000955311888483924978046
+  + [n_200_s_1_5_i14] is multiplier 32.0, zero-window sharp, Cesaro kernel, smoothed_bridge_residual_abs 0.29457570305048489294872169123831821809227957364175066232821277214144309782646634, raw_bridge_residual_abs 0.30056090106485256663201622518708525098773273876198954988238065254329675270029339, exact_smoothed_cutoff_residual_abs 0.02908387893066924146118151392834974651857695146084172008580217432174366975684325
+
+& [NKernelMovementSummary] is the observed cutoff movement field
+  + [n_50_cesaro_avg_bridge] is approximately 0.18719159462488386 with exact_smoothed_cutoff_avg approximately 0.067292244688250333
+  + [n_50_hann_avg_bridge] is approximately 0.19782431076163423 with exact_smoothed_cutoff_avg approximately 0.040877107201117931
+  + [n_50_sharp_avg_bridge] is approximately 0.20231793196431538 with exact_cutoff_avg approximately 0.010360443958807466
+  + [n_100_cesaro_avg_bridge] is approximately 0.194609615103835 with exact_smoothed_cutoff_avg approximately 0.039008559790268217
+  + [n_100_hann_avg_bridge] is approximately 0.20100476365549577 with exact_smoothed_cutoff_avg approximately 0.020338309807120925
+  + [n_100_sharp_avg_bridge] is approximately 0.20194626527977588 with exact_cutoff_avg approximately 0.0099262019604992036
+  + [n_200_cesaro_avg_bridge] is approximately 0.19850077868783442 with exact_smoothed_cutoff_avg approximately 0.021722927493889238
+  + [n_200_hann_avg_bridge] is approximately 0.20203096259792405 with exact_smoothed_cutoff_avg approximately 0.010097625811264173
+  + [n_200_sharp_avg_bridge] is approximately 0.20218621336435391 with exact_cutoff_avg approximately 0.0042779161827542342
+  + [movement_result] is Cesaro smoothing improves the bridge residual most at smaller N, while its smoothing bias decreases as N grows but remains larger than sharp cutoff bias
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is n-domain smoothing creates a genuinely new bridge surface unlike discrete partial summation
+  + [positive_result] is Cesaro improves the explicit-side smoothed bridge residual in all bounded rows and wins every best-kernel sample
+  + [restraint_result] is the same Cesaro smoothing increases the exact finite cutoff residual against -zeta_prime/zeta, so the improvement is a bridge-surface smoothing effect, not a better approximation to the infinite target
+  + [hann_result] is Hann gives smaller bridge improvement but less smoothing bias than Cesaro, making it a milder diagnostic surface
+  + [identity_boundary] is no stronger explicit/Euler identity follows; smoothing exposes a bias tradeoff rather than a unified error law
+  + [answered_question] is yes, Cesaro-style n-domain smoothing creates a new useful bridge diagnostic; no, it does not resolve the explicit/Euler boundary or prove a better zero-facing model
+  + [next_reasonable_coordinate] is compare bias-corrected or two-parameter kernels only with a fresh source-defined contract, or pause this branch because the bridge tradeoff is now clear
+
+  = must: treat Cesaro-Mellin smoothing as finite Re(s)>1 bridge-surface diagnosis only
+  = must: report smoothing bias whenever reporting bridge-residual improvement
+  = must: preserve sharp as the lower-bias finite cutoff baseline
+  = must: treat Cesaro improvement as evidence of useful smoothing, not RH evidence or explicit/Euler identity
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal bridge identity, or explicit/Euler fusion from this atlas
+
+(cesaro_mellin_bridge_atlas_pass_001) :finite n-domain smoothing diagnosis: /Cesaro improves bridge residual, smoothing bias increases, no identity fusion/ |proof authority|

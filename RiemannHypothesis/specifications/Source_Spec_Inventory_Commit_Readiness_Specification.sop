@@ -1,0 +1,46 @@
+Subject: Source Spec Inventory Commit Readiness Specification
+
+Description: SJS-processed contract for inventorying the RH worktree slice and deciding commit-readiness posture.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_source_spec_inventory_commit_readiness\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Worktree_Integrity_Review_Specification.sop
+@ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+@ [source] C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+
+& [SourceSpecInventoryCommitReadinessSpecification] is a project-local inventory and readiness contract
+  + [source_snapshot_uuid] is 8a803945-2820-4eb4-8110-eae57ddd9177
+  + [manifest_uuid] is b2cc832d-b6ef-448c-b5a9-497cc529a84a
+  + [canonical_specification_uuid] is 8017d7e8-efe5-4ecd-ad82-308f158f0de6
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is inventory the RH project slice and assess whether a future commit can become a clean repo bookend
+  + [not_purpose] is staging, committing, proof, zero certification, or choosing a new math branch
+  + [proof_status] is inventory_commit_readiness_not_rh_evidence
+
+& [InventoryContract] is bounded
+  + [version_a] is HEAD
+  + [version_b] is WORKTREE
+  + [non_ignored_untracked_count] is 333
+  + [file_type_counts] are 244 SOP, 36 JSON, 46 Python, and 7 markdown/text
+  + [role_counts] are 137 source document files, 50 specification files, 96 analysis files, 46 tool files, 1 test file, 1 planning file, AGENTS.md, and requirements.txt
+  + [ignored_runtime_surfaces] are .pytest_cache, .venv, and __pycache__ directories
+  + [verification_anchor] is 36 pytest tests passed
+  + [allowed_output] is inventory analysis, readiness classification, and focal-point update only
+
+  = must: separate source documents, specifications, analysis, tools, tests, planning, and ignored runtime surfaces
+  = must: report that no commit has happened yet
+  = must: decide whether the next walking step should be commit staging, root .sop review, or additional project-internal cleanup
+  = must: preserve existing branch-pause decisions and proof-status boundaries
+  - never: claim commit integrity until files are staged and committed
+  - never: treat commit-readiness as permission to include ignored runtime surfaces
+
+& [SourceSpecInventoryCommitReadinessSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and readiness_scoped
+  + [processing_result] is accepted_inventory_readiness_contract
+  + [reasoning_result] is a coherent untracked slice with green tests and clear ignored-runtime boundaries is suitable for commit-preparation, but not yet a commit bookend
+
+(source_spec_inventory_commit_readiness) :inventory: /roles, file types, ignored runtime, tests, readiness/ |RH evidence|
+  + [inside] is pre-commit inventory and route selection
+  + [boundary] is no staging or commit action yet
+  |outside| proof, disproof, zero certification, hidden authority, ignored runtime surfaces, and commit integrity before commit

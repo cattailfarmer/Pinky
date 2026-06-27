@@ -1,0 +1,19 @@
+Subject: Prime Inflation Surface Metaphor Source Manifest
+
+Description: Manifest for preserved source and SJS path for the prime-inflation surface metaphor.
+
+& [PrimeInflationSurfaceMetaphorSourceManifest] is the source manifest
+  + [manifest_uuid] is 112c2ef9-db94-4376-8a6d-b1a635d1c299
+  + [source_uuid] is ea842cad-0f9a-4168-a164-24b6176fd1b2
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_inflation_surface_metaphor\Dictated_Prime_Inflation_Surface_Metaphor_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Inflation_Surface_Metaphor_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_inflation_surface_metaphor_pass_001.sop
+  + [related_surfaces] are Special_Prime_Periphery_Inquiry, Whole_Field_Prime_Shape_Bridge, Prime_Power_Decomposition_Bridge, DenseNode_PrimeCountingThetaPsi, DenseNode_ExplicitFormulaResidualSurface, and DenseNode_EulerLogDerivativeHalfPlane
+  + [source_role] is user_metaphor_for_general_prime_emergence_and_special_prime_boundary_value
+
+  = must: keep source preservation separate from canonical measurement contracts
+  = must: trace future shell, sieve, or surface-emergence tooling back to this manifest if the metaphor becomes active inquiry
+  = must: keep RH proof, disproof, and zero certification outside this metaphor

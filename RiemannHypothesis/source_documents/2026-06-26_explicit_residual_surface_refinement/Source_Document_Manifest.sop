@@ -1,0 +1,17 @@
+Subject: Explicit Residual Surface Refinement Source Document Manifest
+
+Description: Manifest for preserved source records governing explicit-formula residual surface refinement.
+
+& [ExplicitResidualSurfaceRefinementSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is aa70cc47-ee0b-45db-a429-86a15af36e69
+  + [manifest_uuid] is 3c6b82d1-0c94-4f06-98c4-d2016150a083
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_surface_refinement\Dictated_Explicit_Residual_Surface_Refinement_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Surface_Refinement_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before refinement authority
+  = must: keep the refinement finite, bounded, and non-proof-facing
+  - never: treat residual surface refinement as RH evidence, zero certification, or implementation authority

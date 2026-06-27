@@ -1,0 +1,13 @@
+Subject: Dictated Euler Product Weighting Bridge Source
+
+Description: Preserved source for testing Euler-product and logarithmic-derivative weighting after explicit-formula and zero-window probes.
+
+& [DictatedEulerProductWeightingBridgeSource] is preserved source for the Euler-product weighting bridge
+  + [source_snapshot_uuid] is e61a5bee-3ede-4b95-a737-0be067439952
+  + [preserved_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [dictated_source] is "Return to this RiemannHypothesis thread after the wakeup. Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces."
+  + [focal_question] is whether Euler-product or logarithmic-derivative weighting gives a better whole-field surface after explicit-formula and zero-window residual probes
+  + [implementation_need] is deterministic finite math processing for Euler products and -zeta'(s)/zeta(s) comparisons in Re(s) > 1
+  + [restraint] is Euler-product and logarithmic-derivative traces are convergent half-plane probes, not RH proof, disproof, critical-line authority, or zero certification

@@ -1,0 +1,46 @@
+Subject: Euler Product Weighting Bridge Specification
+
+Description: SJS-processed contract for comparing finite Euler products and logarithmic-derivative prime-power weighting.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_euler_product_weighting_bridge\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+
+& [EulerProductWeightingBridge] is a project-local inquiry contract
+  + [canonical_specification_uuid] is bfd5f1cf-6b61-4e73-aa76-1184960b4e7a
+  + [source_snapshot_uuid] is e61a5bee-3ede-4b95-a737-0be067439952
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare finite Euler products and logarithmic-derivative prime-power weighting against zeta(s) and -zeta'(s)/zeta(s) in Re(s) > 1
+  + [not_purpose] is RH proof, disproof, critical-line certification, independent zero certification, or theorem-level convergence authority
+
+  = must: require sigma greater than 1 for Euler-product and Dirichlet-series convergence
+  = must: compute finite product over primes p <= bound for requested sample points s = sigma + it
+  = must: compute truncated prime-factor logarithmic derivative over primes p <= bound
+  = must: compute finite prime-power/von-Mangoldt cutoff over p^k <= bound
+  = must: compare each finite surface to numerical zeta(s) and -zeta'(s)/zeta(s)
+  = must: expose residual magnitudes and included prime/prime-power counts
+  = must: mark output proof_status as finite_euler_product_log_derivative_probe_not_rh_evidence
+  - never: use Euler-product convergence in Re(s) > 1 as direct RH evidence
+  - never: claim zero-line behavior from finite product or logarithmic-derivative traces
+
+& [EulerProductProbeTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\euler_product_probe.py
+  + [runtime_function] is rh_math.euler_product.euler_product_probe
+  + [input] is finite s samples, prime bounds, precision metadata, and optional term inclusion
+  + [output] is exact zeta and -zeta'/zeta rows, finite Euler products, prime-factor log-derivative sums, prime-power cutoff sums, residuals, and optional term rows
+  + [proof_status] is finite_euler_product_log_derivative_probe_not_rh_evidence
+
+& [EulerProductWeightingBridgeSJS] is the specification justification trace
+  + [protocol_uuid] is b9acbe1c-95d4-4665-a1a5-37ff78f8209f
+  + [source_snapshot_uuid] is e61a5bee-3ede-4b95-a737-0be067439952
+  + [canonical_specification_uuid] is bfd5f1cf-6b61-4e73-aa76-1184960b4e7a
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bridge_contract
+  + [reasoning_result] is Euler-product and logarithmic-derivative weighting should be measured as a stable whole-field prime-power surface after zero-term probes showed truncation-sensitive behavior
+
+(euler_product_weighting_bridge) :whole-field prime-power weighting: /Euler product, -zeta-prime-over-zeta, von Mangoldt cutoff/ |critical-line proof|
+  + [inside] is finite convergent half-plane comparison and residual trace
+  + [boundary] is whole-field weighting measurement only
+  |outside| RH proof, disproof, zero certification, and critical-line authority

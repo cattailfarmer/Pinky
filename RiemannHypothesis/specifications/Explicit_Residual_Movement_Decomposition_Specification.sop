@@ -1,0 +1,41 @@
+Subject: Explicit Residual Movement Decomposition Specification
+
+Description: SJS-processed contract for a finite measured quantity decomposing explicit residual movement against psi, theta, and higher-prime-power layers.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_movement_decomposition\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_surface_refinement_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_pass_001.sop
+
+& [ExplicitResidualMovementDecomposition] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is b9d5b24c-6b67-4cab-a439-32236f1ac80c
+  + [manifest_uuid] is 9e49d7af-3abf-44a3-ab59-2a0606b19634
+  + [canonical_specification_uuid] is 9bd847f1-deda-4ed8-8acc-1eeac7855829
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is measure interval movement of explicit residual R(x)=psi_hat(x)-psi(x) beside exact movement in theta(x), higher prime powers, and psi(x)-x
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, critical-line authority, new window policy, new cutoff law, new kernel, or explicit/Euler bridge fusion
+
+  = must: compute psi_hat with existing explicit-formula zero-height machinery
+  = must: default to scale_law log, sharp window, and existing positive multiplier selection unless CLI parameters choose existing supported policies
+  = must: define higher_prime_power_sum(x) as psi(x)-theta(x)
+  = must: define explicit_residual(x) as psi_hat(x)-psi(x)
+  = must: define theta_error_movement on interval (a,b] as (theta(b)-b) - (theta(a)-a)
+  = must: define higher_prime_power_movement as (psi(b)-theta(b)) - (psi(a)-theta(a))
+  = must: define psi_error_movement as (psi(b)-b) - (psi(a)-a)
+  = must: report explicit_residual_movement as R(b)-R(a)
+  = must: report co-movement signs and residual-vs-layer differences as finite diagnostics only
+  = must: preserve sharp/T-height/log-scale restraint and avoid adding new policies
+  = must: mark proof_status as finite_explicit_residual_movement_decomposition_not_rh_evidence
+  - never: claim causation, monotone convergence, zero certification, proof, disproof, universal cutoff superiority, or bridge identity
+
+& [ExplicitResidualMovementDecompositionSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_residual_movement_decomposition_contract
+  + [reasoning_result] is a named movement quantity is now sufficient to justify one narrow deterministic math-processing tool
+
+(explicit_residual_movement_decomposition) :finite residual movement accounting: /R(b)-R(a), theta-error movement, higher-prime-power movement, psi-error movement, sign co-movement/ |proof authority|
+  + [inside] is bounded arithmetic-residual movement decomposition using existing explicit-formula policies
+  + [boundary] is diagnostic accounting and orientation only
+  |outside| RH proof, disproof, zero certification, new kernels, new windows, new cutoff laws, explicit/Euler fusion, and causal claims

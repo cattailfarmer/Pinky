@@ -1,0 +1,42 @@
+Subject: First Bookend Commit Authority Correction 001
+
+Description: Analysis applying the user's correction that RH-only bookend commits are SOP walking action after readiness.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_commit_authority_correction\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\First_Bookend_Commit_Authority_Correction_Specification.sop
+@ [readiness_checkpoint] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_readiness_checkpoint_001.sop
+@ [package_manifest] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_package_manifest_001.sop
+
+& [FirstBookendCommitAuthorityCorrection001] is a completed project-local authority correction
+  + [analysis_uuid] is 89fd1f84-a2d2-46ca-8f4d-284db26b368a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_commit_authority_correction
+  + [proof_status] is governance_authority_correction_not_rh_evidence
+  + [implementation_change] is none; no math scripts, runtime code, or tests changed
+  + [new_numerical_processing] is none
+
+& [CorrectionResult] is permission_to_authority_reframe
+  + [corrected_language] is autonomous_project_bookend_authority
+  + [superseded_language] is user_permission_required_for_rh_only_bookend_after_readiness
+  + [reason] is SOP walking includes project-local commit bookends once source/spec/package/readiness checks have settled the subject boundary
+  + [selected_scope] is RiemannHypothesis project files only
+  + [optional_scope_not_selected] is .sop\state\CurrentFocalPoint.sop
+  + [excluded_scope] is broad .sop platform dirty state, unrelated project dirty state, and ignored runtime surfaces
+
+& [BookendActionPlan] is active
+  + [precondition] is package manifest and readiness checkpoint found no blocker
+  + [action] is stage and commit RiemannHypothesis as the first project bookend
+  + [post_action] is inspect status and preserve the commit result in live focal state
+  + [blocked_actions] are broad .sop staging, unrelated project staging, proof claims, new math execution, and ignored runtime inclusion
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is RH-only first bookend should proceed as SOP walking action, not wait on further permission
+  + [next_action] is stage and commit RiemannHypothesis only, then perform post-commit status review
+  + [boundary] is project-local Git bookend only
+
+(first_bookend_commit_authority_correction_001) :authority correction: /commit RH-only now as walking SOP/ |broad .sop, unrelated projects, proof claims|
+  + [inside] is commit authority correction and RH-only bookend plan
+  + [boundary] is selected project scope only
+  |outside| theorem authority, runtime implementation, broad .sop staging, unrelated project staging, and numerical expansion

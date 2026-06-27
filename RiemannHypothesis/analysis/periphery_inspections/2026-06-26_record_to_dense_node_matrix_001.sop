@@ -1,0 +1,91 @@
+Subject: Record To Dense Node Matrix 001
+
+Description: Non-mutating matrix mapping existing RH analysis records to dense orientation nodes, sparse periphery, and governance lanes.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_record_to_dense_node_matrix\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Record_To_Dense_Node_Matrix_Specification.sop
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_whole_field_record_index_001.sop
+
+& [RecordToDenseNodeMatrix001] is a completed non-mutating navigation pass
+  + [analysis_uuid] is 5648f87b-fc6a-4f6e-9820-1a1cc202cb53
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_navigation_matrix
+  + [proof_status] is navigation_matrix_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is record synthesis only
+
+& [DenseNodeMatrix_PrimeCountingThetaPsi] is record_group
+  + [primary_records] are 2026-06-26_prime_power_decomposition_bridge_pass_001.sop, 2026-06-26_family_distribution_bridge_pass_001.sop, 2026-06-26_family_interval_bridge_pass_001.sop, 2026-06-26_prime_emergence_shell_signature_pass_001.sop, and 2026-06-26_prime_emergence_shell_signature_log_scale_pass_001.sop
+  + [support_records] are 2026-06-26_prime_inflation_surface_metaphor_pass_001.sop and 2026-06-26_shell_explicit_residual_bridge_pass_001.sop
+  + [status] is active_support
+  + [restraint_note] is special-prime and shell observations must return to pi(x), theta(x), psi(x), and Lambda mechanics before RH relevance
+
+& [DenseNodeMatrix_EulerLogDerivativeHalfPlane] is record_group
+  + [primary_records] are 2026-06-26_euler_product_weighting_bridge_pass_001.sop, 2026-06-26_sigma_boundary_scan_pass_001.sop, 2026-06-26_t_axis_boundary_slice_pass_001.sop, 2026-06-26_half_plane_boundary_synthesis_001.sop, and 2026-06-26_next_dense_node_after_residual_integration_selection_001.sop
+  + [support_records] are 2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop and 2026-06-26_partial_summation_bridge_atlas_pass_001.sop
+  + [status] is active_support_with_boundary
+  + [restraint_note] is Re(s)>1 convergence diagnostics do not become critical-line authority
+
+& [DenseNodeMatrix_ExplicitFormulaResidualSurface] is record_group
+  + [primary_records] are 2026-06-26_explicit_formula_error_bridge_pass_001.sop, 2026-06-26_zero_windowing_bridge_pass_001.sop, 2026-06-26_explicit_window_expansion_pass_001.sop, 2026-06-26_explicit_residual_stability_atlas_pass_001.sop, 2026-06-26_zero_height_cutoff_atlas_pass_001.sop, 2026-06-26_scale_tied_zero_height_atlas_pass_001.sop, 2026-06-26_scale_law_comparison_atlas_pass_001.sop, 2026-06-26_explicit_residual_surface_refinement_001.sop, 2026-06-26_explicit_residual_movement_decomposition_pass_001.sop, and 2026-06-26_post_residual_movement_landscape_integration_001.sop
+  + [support_records] are 2026-06-26_dense_node_refinement_selection_001.sop and 2026-06-26_shell_explicit_residual_bridge_pass_001.sop
+  + [status] is central_support
+  + [restraint_note] is no new window, cutoff, kernel, or movement computation without a source-defined measured object
+
+& [DenseNodeMatrix_ReferenceAndResonanceLandmarks] is record_group
+  + [primary_records] are 2026-06-26_t_axis_boundary_slice_pass_001.sop, 2026-06-26_vertical_resonance_scan_pass_001.sop, 2026-06-26_whole_field_landmark_overlay_report_001.sop, 2026-06-26_landmark_overlay_discipline_synthesis_001.sop, 2026-06-26_cross_layer_landmark_displacement_synthesis_001.sop, and 2026-06-26_cross_window_cutoff_stability_class_synthesis_001.sop
+  + [support_records] are 2026-06-26_lambda_window_cutoff_scan_pass_001.sop and 2026-06-26_lambda_phasor_reference_contribution_pass_001.sop
+  + [status] is orientation_support
+  + [restraint_note] is reference labels and resonance candidates are orientation landmarks, not zero certification
+
+& [DenseNodeMatrix_LambdaDiagnosticOverlay] is record_group
+  + [primary_records] are 2026-06-26_old_zeta_tool_translation_pass_001.sop, 2026-06-26_lambda_oscilloscope_probe_pass_001.sop, 2026-06-26_lambda_window_cutoff_scan_pass_001.sop, 2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop, 2026-06-26_lambda_phasor_reference_contribution_pass_001.sop, 2026-06-26_offset_local_contribution_asymmetry_synthesis_001.sop, 2026-06-26_cross_layer_landmark_displacement_synthesis_001.sop, and 2026-06-26_cross_window_cutoff_stability_class_synthesis_001.sop
+  + [support_records] are 2026-06-26_prime_power_decomposition_bridge_pass_001.sop and 2026-06-26_landmark_overlay_discipline_synthesis_001.sop
+  + [status] is diagnostic_overlay_support
+  + [restraint_note] is Lambda overlay is a phasor/prime-power diagnostic surface, not proof, zero detector, or explicit/Euler identity
+
+& [DenseNodeMatrix_BridgeRestraint] is record_group
+  + [primary_records] are 2026-06-26_explicit_euler_cutoff_bridge_report_001.sop, 2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop, 2026-06-26_partial_summation_bridge_atlas_pass_001.sop, 2026-06-26_cesaro_mellin_bridge_atlas_pass_001.sop, 2026-06-26_bias_tuned_kernel_bridge_atlas_pass_001.sop, and 2026-06-26_explicit_euler_bridge_restraint_synthesis_001.sop
+  + [support_records] are 2026-06-26_scale_law_comparison_atlas_pass_001.sop and 2026-06-26_post_residual_movement_landscape_integration_001.sop
+  + [status] is closed_governance_support
+  + [restraint_note] is bridge branch remains paused until a new whole-field object changes purpose
+
+& [SparsePeripheryMatrix] is record_group
+  + [special_prime_records] are 2026-06-26_fermat_prime_seed_inquiry.sop, 2026-06-26_641_operator_hypothesis_boundary.sop, 2026-06-26_641_shift_two_boundary.sop, 2026-06-26_641_shift_power_ladder_boundary.sop, 2026-06-26_641_power_exponent_boundary.sop, 2026-06-26_641_coefficient_shift_boundary.sop, 2026-06-26_identity_tracking_abandonment_rule.sop, and 2026-06-26_irregular_prime_first_pass.sop
+  + [old_framework_records] are 2026-06-26_old_framework_initial_periphery_inspection.sop, 2026-06-26_conceptual_hack_boundary_inspection.sop, 2026-06-26_old_riemann_toribrot_translation_pass_001.sop, and 2026-06-26_old_zeta_tool_translation_pass_001.sop
+  + [sparse_behavior_records] are 2026-06-26_scale_law_comparison_atlas_pass_001.sop and 2026-06-26_whole_field_landscape_node_map_001.sop
+  + [status] is sparse_periphery_or_import_boundary
+  + [restraint_note] is sparse periphery supplies curiosity pressure only when routed through whole-field return and pursuit-value gates
+
+& [GovernanceAndToolchainMatrix] is record_group
+  + [toolchain_records] are 2026-06-26_math_toolchain_verification.sop and 2026-06-26_math_processing_tool_scripts_verification.sop
+  + [walking_records] are 2026-06-26_walking_continuity_reentry_scan_001.sop, 2026-06-26_worktree_integrity_review_001.sop, 2026-06-26_source_spec_inventory_commit_readiness_001.sop, 2026-06-26_commit_scope_review_001.sop, 2026-06-26_inquiry_gate_not_commit_gate_001.sop, and 2026-06-26_whole_field_record_index_001.sop
+  + [attention_records] are 2026-06-26_sparse_realization_focus_pass_001.sop, 2026-06-26_heat_identity_focus_pass_002.sop, 2026-06-26_inquisitive_periphery_focus_pass_003.sop, and 2026-06-26_focused_restraint_pass_004.sop
+  + [status] is governance_support
+  + [restraint_note] is these records govern motion and tooling but do not become mathematical evidence
+
+& [AmbiguityAndContradictionScan] is current_review
+  + [ambiguity_001] is t_axis_boundary_slice belongs to both Euler half-plane boundary and reference landmark lanes
+  + [disposition_001] is acceptable overlap because the record is a boundary slice using reference labels while staying in Re(s)>1
+  + [ambiguity_002] is Lambda-Mellin bridge belongs to LambdaDiagnosticOverlay and BridgeRestraint
+  + [disposition_002] is acceptable overlap because shared Lambda unit is a diagnostic bridge but not identity fusion
+  + [ambiguity_003] is shell_explicit_residual_bridge belongs to PrimeCountingThetaPsi and ExplicitFormulaResidualSurface
+  + [disposition_003] is acceptable overlap because shell endpoints touch explicit residual movement while prime-power mechanics remain arithmetic anchor
+  + [contradiction_result] is no route contradiction found; overlaps mark entanglement boundaries rather than identity fusion
+
+& [NextNonMutatingLead] is selected
+  + [selected_next] is contradiction ledger over overlap records
+  + [reason] is the matrix exposed three recurring overlap zones where future inquiry should preserve boundaries before any new measured object is named
+  + [blocked_next] is no new math computation, no denser scans, no branch reopening, no staging, and no commit
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is the RH record surface now has a navigation matrix from analysis records to dense nodes, sparse periphery, and governance lanes
+  + [next_action] is write a non-mutating contradiction ledger for the three overlap zones
+  + [boundary] is no Git mutation, broad .sop mutation, runtime code change, test run, proof claim, zero certification, or branch reopening occurred
+
+(record_to_dense_node_matrix_001) :navigation matrix: /records mapped to nodes and overlap zones surfaced/ |proof claims|
+  + [inside] is dense-node record map, sparse periphery map, governance map, and overlap scan
+  + [boundary] is inquiry navigation only
+  |outside| proof, zero certification, staging, commit, branch reopening, and new computation

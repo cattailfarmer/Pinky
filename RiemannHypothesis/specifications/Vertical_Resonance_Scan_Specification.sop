@@ -1,0 +1,44 @@
+Subject: Vertical Resonance Scan Specification
+
+Description: SJS-processed contract for denser fixed-sigma vertical resonance scanning in Re(s) > 1.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_vertical_resonance_scan\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+
+& [VerticalResonanceScan] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 95de114a-63e3-45cb-a712-27b8c2ca3e76
+  + [source_snapshot_uuid] is 380b9d38-9dd1-4659-a41a-67ef05b68614
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is scan denser fixed-sigma vertical samples in Re(s) > 1 and identify finite local extrema/resonance candidates
+  + [not_purpose] is RH proof, disproof, critical-line inspection, independent zero certification, or import of old ZetaOscilloscope/Zetabrot symbolic authority
+
+  = must: require sigma greater than 1 and nonnegative t ranges
+  = must: produce regular vertical sample rows for finite t range and step
+  = must: compute zeta_abs, finite Euler-product residuals, and logarithmic-derivative residuals for each row
+  = must: identify local minima and maxima for selected metrics by adjacent-sample comparison
+  = must: annotate reference-zero ordinates as landmarks only when included or near a sampled row
+  = must: mark output proof_status as finite_vertical_resonance_scan_not_zero_line_evidence
+  - never: treat a finite local minimum as a zero, proof object, or RH evidence
+  - never: treat resemblance to old ZetaOscilloscope/Zetabrot behavior as identity without later source import and periphery inspection
+
+& [VerticalResonanceProbeTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\vertical_resonance_scan.py
+  + [runtime_function] is rh_math.euler_product.vertical_resonance_scan
+  + [input] is finite sigma values greater than 1, t_min, t_max, step, prime bounds, precision metadata, and reference ordinates
+  + [output] is regular sample rows, finite resonance candidate rows, metric names, and summary rows
+  + [proof_status] is finite_vertical_resonance_scan_not_zero_line_evidence
+
+& [VerticalResonanceScanSJS] is the specification justification trace
+  + [protocol_uuid] is 0734a62d-b455-4812-8d64-b1894dab12fa
+  + [source_snapshot_uuid] is 380b9d38-9dd1-4659-a41a-67ef05b68614
+  + [canonical_specification_uuid] is 95de114a-63e3-45cb-a712-27b8c2ca3e76
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_vertical_scan_contract
+  + [reasoning_result] is denser deterministic resonance scanning should precede old symbolic tool translation so later ZetaOscilloscope/Zetabrot meanings can be compared against a local numerical surface
+
+(vertical_resonance_scan) :dense fixed-sigma vertical surface: /local extrema, reference landmarks, finite residuals/ |zero certification|
+  + [inside] is finite vertical resonance candidates in Re(s) > 1
+  + [boundary] is landmark discovery only
+  |outside| RH proof, disproof, zero certification, critical-line inference, and old symbolic authority

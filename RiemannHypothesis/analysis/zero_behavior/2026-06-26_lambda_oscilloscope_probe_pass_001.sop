@@ -1,0 +1,64 @@
+Subject: Lambda Oscilloscope Probe Pass 001
+
+Description: First deterministic implementation and bounded trace pass for the Pinky-local Lambda Oscilloscope probe.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_oscilloscope_probe\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Oscilloscope_Probe_Specification.sop
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_oscilloscope_probe.py
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_trace.json
+
+& [LambdaOscilloscopeProbePass001] is a completed bounded tool-and-analysis pass
+  + [analysis_uuid] is d6c25723-c3f6-46fc-8b81-a0b7613d852d
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool_helper] is C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+  + [tool_script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_oscilloscope_probe.py
+  + [proof_status] is finite_lambda_oscilloscope_trace_not_rh_evidence
+  + [status] is completed
+
+& [ImplementationSummary_001] is deterministic_tool_fact
+  + [helper_added] is rh_math.lambda_oscilloscope
+  + [cli_added] is tools/scripts/lambda_oscilloscope_probe.py
+  + [readme_updated] is tools/README.md
+  + [tests_added] is two focused Lambda Oscilloscope tests in tests/test_rh_math_tools.py
+  + [package_export_added] is lambda_oscilloscope in rh_math.__all__
+
+& [Verification_001] is test_result
+  + [command] is .\.venv\Scripts\python.exe -m pytest
+  + [result] is 25 passed
+  + [duration] is 12.52 seconds
+  + [boundary] is tests verify finite tool behavior, not RH proof, disproof, or zero certification
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [trace_file] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_trace.json
+  + [sigmas] are 1.5 and 0.5
+  + [t_range] is 0 through 30
+  + [t_step] is 5
+  + [prime_power_bound] is 100
+  + [window] is hard
+  + [row_count] is 14
+  + [term_count_per_trace] is 35
+  + [max_prime_power_exponent] is 6
+  + [comparison_row_count] is 7
+  + [sigma_1_5_residual_abs_min] is approximately 0.0108076539323041
+  + [sigma_1_5_residual_abs_max] is approximately 0.204284313734166
+  + [sigma_0_5_trace_abs_min] is approximately 1.18741412028872
+  + [sigma_0_5_trace_abs_max] is approximately 16.8962013442137
+
+& [Inference_001] is tool_value_result
+  + [inference] is the Lambda Oscilloscope probe is useful beyond the Euler-product/log-derivative rail because it exposes the finite complex trajectory and optional per-prime-power phasor decomposition directly
+  + [identity_anchor] is the same Lambda prime-power support already used by -zeta_prime(s)/zeta(s) in Re(s) > 1
+  + [boundary] is sigma <= 1 rows remain finite diagnostic traces and are not compared to the infinite Lambda Dirichlet series
+  + [restraint] is this is a visualization-support and inspection-support primitive, not a zero detector or RH evidence
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is the Pinky-local Lambda Oscilloscope probe is worth keeping as a deterministic periphery-inspection primitive
+  + [reason] is it turns the old ZetaOscilloscope import candidate into a bounded trace tool with explicit cutoff, window, term rows, and convergence boundary
+  + [next_relevant_work] is use the probe to compare window policy, cutoff growth, and landmark ordinates only when that comparison serves whole-field RH objects
+  + [retained_boundary] is no proof, disproof, zero certification, or old symbolic authority follows from finite traces
+
+(lambda_oscilloscope_probe_pass_001) :finite Lambda log-Fourier oscilloscope primitive: /prime-power phasors, trace rows, half-plane comparison boundary/ |RH evidence|
+  + [inside] is deterministic finite complex traces and term decomposition
+  + [boundary] is useful inspection rail with explicit cutoff and window policy
+  |outside| proof claims, zero certification, critical-line convergence claims, and old ZetaOscilloscope authority

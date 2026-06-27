@@ -1,0 +1,17 @@
+Subject: Explicit Residual Arithmetic Discrepancy Method Gate Source Document Manifest
+
+Description: Manifest for preserved source governing explicit residual arithmetic discrepancy method readiness.
+
+& [ExplicitResidualArithmeticDiscrepancyMethodGateSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 37f541db-9809-46c0-9eae-f07e4760918b
+  + [manifest_uuid] is 7ce1c6e6-0331-4bed-90a2-0dde3d386244
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_method_gate\Dictated_Explicit_Residual_Arithmetic_Discrepancy_Method_Gate_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Method_Gate_Specification.sop
+  + [source_preservation_rule] is raw method-gate source remains separate from canonical specification and any later discrepancy synthesis
+  + [authority_status] is source_preserved_before_method_gate_analysis
+
+  = must: process this source through specification before method-gate analysis
+  = must: preserve existing-trace preference, deterministic metrics, contradiction handling, retirement, exit, and no-computation boundary
+  - never: treat this manifest as computation, proof, branch-reopening, staging, commit, or broad .sop mutation authority

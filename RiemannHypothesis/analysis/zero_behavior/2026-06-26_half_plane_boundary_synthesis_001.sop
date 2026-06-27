@@ -1,0 +1,70 @@
+Subject: Half Plane Boundary Synthesis 001
+
+Description: Bounded synthesis of existing Re(s)>1 Euler/log-derivative boundary traces.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_half_plane_boundary_synthesis\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Half_Plane_Boundary_Synthesis_Specification.sop
+@ [euler_weighting] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+@ [sigma_boundary] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+@ [t_axis_boundary] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [vertical_resonance] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+
+& [HalfPlaneBoundarySynthesis001] is a finite synthesis analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is 9a460f95-5fa1-4524-b067-77f7aca06f9d
+  + [source_snapshot_uuid] is ba7c971c-5356-45fb-a4b0-7fd051c443be
+  + [manifest_uuid] is f3e42117-1076-4498-bd05-aa17406440e1
+  + [canonical_specification_uuid] is fd856799-4f0e-4e5a-b007-605ae2d74c4d
+  + [proof_status] is finite_half_plane_boundary_synthesis_not_rh_evidence
+  + [implementation_change] is none; this pass records synthesis only
+  + [verification] is no tests run because no runtime code changed
+
+& [RefinedDenseNode] is the accepted half-plane node refinement
+  + [node_id] is DenseNode_EulerLogDerivativeHalfPlane
+  + [subject] is convergent half-plane Euler-product and logarithmic-derivative weighting in Re(s)>1
+  + [inside] is finite Euler products, finite logarithmic-derivative prime-power sums, Lambda(n)n^-s weighting, sigma approach from above, fixed-sigma t-axis slices, pole-axis separation, known-zero-ordinate reference labels, ordinary vertical samples, and metric-dependent resonance candidates
+  + [outside] is critical-line truth, analytic-continuation proof authority, zero certification, RH proof, RH disproof, and explicit/Euler bridge fusion
+  + [identity_anchor_set] is -zeta_prime/zeta(s), finite Euler product convergence, Lambda prime-power weighting, sigma-boundary trace, t-axis boundary trace, and vertical-resonance trace
+  + [concept_promoter_set] is stable residual shrinkage with prime bound, pole-axis blowup near sigma=1, calmer known-zero-ordinate reference rows, ordinary vertical variation, and metric-dependent resonance offsets
+  + [authority_status] is project_authority_for_Re_s_greater_than_1_boundary_orientation_not_proof
+
+& [LayerDelineation] is the refined inside/boundary map
+  + [stable_weighting_layer] is finite Euler product and logarithmic derivative residuals shrink consistently with prime bound at sampled Re(s)>1 points
+  + [sigma_boundary_layer] is decreasing sigma toward 1 from above makes convergence-boundary stress visible, with strong t-dependence
+  + [pole_axis_layer] is t=0 behaves as a separate object, especially near sigma=1.05 where pole-axis residual dominates landmark residuals
+  + [known_ordinate_reference_layer] is known-zero ordinates are useful labels whose half-plane rows are calmer in bounded traces, but labels do not certify zeros
+  + [ordinary_vertical_layer] is ordinary t samples vary without collapsing into pole-axis shape or known-ordinate identity
+  + [resonance_layer] is dense vertical extrema are metric-dependent landmarks with offsets between zeta_abs, Euler-product residual, and log-derivative residual
+  + [prime_bound_layer] is finite prime-bound truncation improves residuals in sampled rows but weakens near the sigma=1 boundary, especially on the pole axis
+
+& [RelationLedger] is the half-plane relation map
+  + [lambda_to_psi_relation] is shared_fabric: Lambda weights connect Euler/log-derivative surfaces to psi mechanics, but the half-plane weighting identity remains separate from finite explicit residual surfaces
+  + [sigma_to_boundary_relation] is dependency: distance from sigma=1 controls convergence stress in sampled traces
+  + [t_axis_to_shape_relation] is modulatory: vertical ordinate changes the shape of boundary stress before critical-line questions are touched
+  + [landmark_to_zero_relation] is reference_only: known-zero ordinates label rows but do not become zero certification in Re(s)>1 probes
+  + [resonance_to_landmark_relation] is metric_dependent_correlation: extrema can appear near references, offset from references, or peak under different metrics
+  + [half_plane_to_rh_relation] is related_but_not_identity: the half-plane is an orientation surface for zeta-prime fabric, not RH evidence
+
+& [AnsweredQuestion] is the current focal result
+  + [question] is whether to synthesize existing sigma-boundary and t-axis Re(s)>1 traces into a refined half-plane boundary node before any new scans
+  + [answer] is yes, the existing traces are sufficient to refine the node now
+  + [definite_conclusion] is the half-plane boundary node is coherent as a whole-field orientation surface, and no new scan is justified until a later source names a measured quantity beyond existing sigma, t-axis, prime-bound, or resonance records
+  + [blocked_next] is new sigma grids, denser t scans, critical-line inference, zero certification, bridge-kernel work, and special-prime expansion
+  + [allowed_next] is either stop at this boundary or select a next source-defined synthesis object, with landmark-overlay discipline now the natural later comparison surface if the inquiry continues
+
+& [Boundary] is the not-it field
+  + [not_rh_evidence] is all claims remain finite Re(s)>1 orientation
+  + [not_zero_certification] is known-zero ordinate rows and zeta_abs minima do not certify zeros
+  + [not_critical_line_authority] is approach to sigma=1 from above is not a critical-line or critical-strip probe
+  + [not_tool_authority] is this synthesis does not authorize new runtime work
+  + [not_bridge_identity] is Lambda fabric relation does not fuse Euler/log-derivative and explicit residual nodes
+
+  = must: use this half-plane synthesis as orientation and governance only
+  = must: keep pole-axis, ordinary vertical, known-ordinate landmark, and resonance layers distinct
+  = must: require a named measured quantity before any new half-plane scan
+  = must: preserve explicit/Euler bridge pause
+  - never: claim RH proof, disproof, zero certification, critical-line evidence, universal resonance identity, or bridge fusion from this synthesis
+
+(half_plane_boundary_synthesis_001) :finite Re(s)>1 node refinement: /stable Lambda weighting, sigma boundary, t-axis layers, landmarks, resonance, no new scans/ |proof authority|

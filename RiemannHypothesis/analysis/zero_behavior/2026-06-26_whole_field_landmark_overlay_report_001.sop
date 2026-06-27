@@ -1,0 +1,93 @@
+Subject: Whole Field Landmark Overlay Report 001
+
+Description: Synthesis report across existing whole-field RH rails after old framework periphery classification.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landmark_overlay\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Landmark_Overlay_Report_Specification.sop
+@ [arithmetic_rail] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_trace.json
+@ [explicit_formula_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_trace.json
+@ [zero_window_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_trace.json
+@ [euler_product_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_trace.json
+@ [t_axis_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_trace.json
+@ [vertical_resonance_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_trace.json
+@ [lambda_overlay_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+
+& [WholeFieldLandmarkOverlayReport001] is a completed bounded synthesis report
+  + [analysis_uuid] is a82008b7-f7d5-48ca-91aa-7d7e54e6036c
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [proof_status] is finite_overlay_report_not_RH_evidence
+  + [status] is completed
+
+& [RailRole_001_ArithmeticBaseline] is x_domain_baseline
+  + [objects] are pi(x), theta(x), psi(x), and prime-power decomposition
+  + [sample_points] are 100, 200, and 500
+  + [bounded_fact] is higher prime powers are the exact arithmetic correction that distinguishes psi from theta
+  + [noted_motion] is higher-prime-power share of psi was approximately 0.1097 at x = 100, 0.0853 at x = 200, and 0.0540 at x = 500
+  + [role] is baseline arithmetic mechanics before interpreting any family or t-axis signal
+  + [boundary] is arithmetic decomposition is not zero-line evidence
+
+& [RailRole_002_ExplicitFormulaSurface] is x_domain_approximation_surface
+  + [objects] are finite explicit-formula zero-pair estimates against psi(x)
+  + [sample_points] are 100, 200, and 500
+  + [zero_pair_counts] are 5, 10, and 20
+  + [bounded_fact] is residuals are nonmonotonic across zero-pair count: more pairs improved x = 200 but worsened x = 100 and x = 500 in the bounded trace
+  + [zero_window_fact] is Fejer smoothing changed the residual surface but did not dominate sharp truncation
+  + [role] is approximation surface showing zero-term influence and truncation sensitivity
+  + [boundary] is finite explicit-formula rows do not certify zeros or convergence
+
+& [RailRole_003_EulerProductSurface] is convergent_half_plane_surface
+  + [objects] are finite Euler product and logarithmic-derivative prime-power weighting for Re(s) > 1
+  + [bounded_fact] is residuals improved strongly as prime bound increased from 10 to 100 to 500 at sampled points
+  + [example_fact] is at sigma = 2 and t near the first reference ordinate, Euler-product residual moved from approximately 0.0071349 at bound 10 to 0.0000148656 at bound 500
+  + [role] is stable convergent-half-plane comparison surface
+  + [boundary] is this is not direct critical-line authority
+
+& [RailRole_004_SigmaBoundarySurface] is approach_boundary_surface
+  + [objects] are sigma scans at t = 0 and the first reference ordinate, with sigma from 2 down to 1.05
+  + [bounded_fact] is zeta_abs grows sharply toward the pole side at t = 0, while first-reference-ordinate rows remain comparatively quieter as sigma approaches 1 from above
+  + [role] is separates pole-axis growth from ordinary/reference vertical behavior in Re(s) > 1
+  + [boundary] is approach-to-boundary measurement remains outside the critical strip
+
+& [RailRole_005_TAxisReferenceSurface] is reference_ordinate_surface
+  + [objects] are fixed-sigma rows at t = 0, ordinary t values, and first three known zero ordinates
+  + [bounded_fact] is the t-axis rail contains 12 landmark rows and 4 pole-axis rows across the selected sigmas and prime bound
+  + [role] is supplies named reference ordinates for overlay comparison
+  + [boundary] is reference ordinate labels are not independent zero certification
+
+& [RailRole_006_VerticalResonanceSurface] is sparse_landmark_surface
+  + [objects] are dense fixed-sigma vertical extrema for zeta_abs, Euler-product residual, and prime-factor log-derivative residual
+  + [bounded_fact] is the vertical resonance scan produced 46 candidates, with 24 local minima and 22 local maxima
+  + [reference_near_fact] is zeta_abs local minima occurred near the first, second, and third reference ordinates for both sampled sigmas, while log-derivative residual reference-near maxima were sparse
+  + [role] is sparse deterministic landmark rail in Re(s) > 1
+  + [boundary] is candidates are finite half-plane landmarks, not zeros
+
+& [RailRole_007_LambdaDiagnosticOverlay] is diagnostic_overlay_surface
+  + [objects] are Lambda Oscilloscope extrema across hard and Fejer windows and cutoff bounds 100 and 500
+  + [bounded_fact] is the Lambda window/cutoff scan produced 280 candidates, 136 cutoff-stability comparisons with 108 stable within one t step, and 114 cross-window comparisons with 86 stable within one t step
+  + [reference_near_fact] is 42 Lambda candidates occurred within one t step of the first three reference ordinates, mostly local maxima in lambda_trace_abs and finite_trace_residual_abs
+  + [role] is dense diagnostic overlay for inspecting Lambda prime-power phasor behavior beside sparse rails
+  + [boundary] is too dense and cutoff/window-sensitive to serve as a primary landmark identity
+
+& [OverlayInference_001] is whole_field_overlay_result
+  + [inference] is the current field has a layered shape: x-domain arithmetic establishes psi mechanics, explicit formula shows zero-term approximation sensitivity, Euler-product/log-derivative rails provide stable Re(s) > 1 comparison, t-axis rows name reference ordinates, vertical resonance gives sparse landmarks, and Lambda Oscilloscope gives dense overlay heat
+  + [strongest_alignment] is reference-near behavior around the first three known zero ordinates appears in both sparse vertical resonance and dense Lambda overlay surfaces
+  + [restraint] is this alignment is expected to some degree because the rails are all zeta-adjacent and reference-ordinate guided; it is not independent evidence for RH
+  + [identity_boundary] is no single finite surface has become the local identity of RH behavior
+
+& [DirectionDecision_001] is restraint_result
+  + [decision] is use the whole-field overlay as an orientation map, not as the next proof-facing instrument
+  + [recommended_next] is if continuing without new user input, deepen the explicit-formula/Euler-product bridge by comparing cutoff growth and windowing against the same t-reference overlay, because that remains closest to whole-field zeta mechanics
+  + [defer] is more special-prime family hunting, Toribrot geometry runtime, and proof-grade claims
+  + [reason] is the overlay shows the useful surfaces are already whole-field and the next value is reducing truncation/window ambiguity rather than adding a new symbolic layer
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is a whole-field landmark overlay report is useful and now exists, but it should orient attention rather than promote any finite landmark to proof status
+  + [retained_model] is arithmetic baseline plus approximation surface plus convergent half-plane rail plus sparse t-landmarks plus dense Lambda overlay
+  + [retained_boundary] is finite overlay agreement is not RH evidence, proof, disproof, independent zero certification, or zero-line authority
+  + [next_open_question] is whether to deepen cutoff/window comparison specifically between explicit-formula residuals and Euler-product/log-derivative rails
+
+(whole_field_landmark_overlay_report_001) :orientation map over whole-field RH rails: /psi mechanics, explicit-formula residuals, Euler-product convergence, t-reference landmarks, vertical resonance, Lambda overlay/ |RH evidence|
+  + [inside] is bounded synthesis of existing deterministic traces
+  + [boundary] is orientation and prioritization only
+  |outside| proof claims, zero certification, single-surface identity, and special-prime sprawl

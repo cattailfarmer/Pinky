@@ -1,0 +1,62 @@
+Subject: Explicit Residual Arithmetic Discrepancy Source Specification
+
+Description: SJS-processed candidate-source contract for the explicit residual arithmetic discrepancy object.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_source\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_candidate_route_inventory_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_measured_object_candidate_criteria_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_surface_refinement_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+
+& [ExplicitResidualArithmeticDiscrepancySourceSpecification] is a candidate-source contract
+  + [source_snapshot_uuid] is 9ec1510d-da26-4f5c-bbd4-090bf239bf47
+  + [manifest_uuid] is 401717bb-1238-4476-ab3c-f73cd5772640
+  + [canonical_specification_uuid] is 1004300f-d60d-4657-87a4-8efa4837469d
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [purpose] is define a candidate measured object before method-contract review
+  + [not_purpose] is deterministic processing, proof, zero certification, branch reopening, staging, committing, broad .sop mutation, denser scans, more labels, more windows, more offsets, more kernels, or more cutoff laws
+  + [proof_status] is candidate_source_not_rh_evidence
+
+& [CandidateIdentity] is bounded
+  + [subject] is finite discrepancy shape between explicit residual movement and exact psi-theta-prime-power arithmetic movement
+  + [inside] is R(x)=psi_hat(x)-psi(x), Delta R(a,b), Delta(psi(x)-x), Delta(theta(x)-x), Delta(psi(x)-theta(x)), sign relation, dominance split, and finite scale mismatch
+  + [outside] is RH proof, disproof, zero certification, critical-line authority, causal identity, universal cutoff superiority, monotone convergence, explicit/Euler fusion, and special-prime explanation
+  + [not_it_boundary] is not a new residual atlas, not a kernel optimization, not a window comparison, not a cutoff-law comparison, not a Lambda overlay expansion, and not a special-prime family route
+  + [related_periphery] is Lambda/Euler fabric, reference landmarks, scale-law sparse novelty, and bridge-restraint records as support only
+
+& [AdmissionGateStatus] is candidate_source_stage
+  + [source_gate] is satisfied
+  + [purpose_gate] is satisfied
+  + [dense_node_parentage_gate] is satisfied
+  + [whole_field_relevance_gate] is satisfied
+  + [identity_boundary_gate] is partially_satisfied_pending_method_contract
+  + [existing_evidence_gate] is satisfied_by_existing_records
+  + [deterministic_method_gate] is not_satisfied
+  + [contradiction_handling_gate] is not_satisfied
+  + [restraint_gate] is satisfied
+  + [exit_gate] is not_satisfied
+  + [truth_boundary_gate] is satisfied
+  + [candidate_status] is candidate_spec_ready_not_processing_ready
+
+& [NextContractNeed] is selected
+  + [needed_next] is method-contract readiness review
+  + [method_contract_must_name] is deterministic inputs, outputs, finite metric, comparison rows, failure conditions, retirement conditions, artifact path, and no-proof boundary
+  + [blocked_now] is math execution, implementation, broader scans, or branch reopening
+
+  = must: require a later method contract before computation
+  = must: keep all finite discrepancy results subordinate to whole-field orientation
+  = must: report failed gates if the candidate is later proposed for processing
+  - never: infer RH evidence or zero behavior from source preservation
+
+& [ExplicitResidualArithmeticDiscrepancySourceSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and candidate_source_scoped
+  + [processing_result] is accepted_candidate_source_contract
+  + [reasoning_result] is the route is source-request-worthy but not computation-ready; preserving the candidate now lets future walking review a method contract without inventing the object ad hoc
+
+(explicit_residual_arithmetic_discrepancy_source) :candidate source: /non-kernel residual-arithmetic discrepancy object; source-preserved, not processing-ready/ |proof claims|
+  + [inside] is candidate identity and source-stage gates
+  + [boundary] is no computation, no proof inference, no branch reopening, no staging, no commit
+  |outside| RH proof, disproof, zero certification, critical-line authority, numerical scans, and identity fusion

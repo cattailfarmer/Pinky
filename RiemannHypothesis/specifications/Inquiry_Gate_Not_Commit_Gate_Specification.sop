@@ -1,0 +1,44 @@
+Subject: Inquiry Gate Not Commit Gate Specification
+
+Description: SJS-processed route rule for continuing inquiry while commit scope remains a mutation gate.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_inquiry_gate_not_commit_gate\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Commit_Scope_Review_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Walking_Continuity_Correction_Specification.sop
+@ [source] C:\Project\Pinky\.sop\platform\StepBalanceWalk.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryInquiryCuriosityTrigger.sop
+
+& [InquiryGateNotCommitGateSpecification] is a project-local route rule
+  + [source_snapshot_uuid] is 128ae6ab-c544-4ecd-a50b-d3fb2564482b
+  + [manifest_uuid] is b8bbe2d5-73dd-44d3-9f24-bcb9ccaf8ba9
+  + [canonical_specification_uuid] is 90870260-ff31-49e2-af12-01017b6c52e3
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is prevent the first-bookend commit-scope boundary from blocking non-mutating inquiry
+  + [not_purpose] is staging, committing, broad .sop mutation, denser scans, or proof-facing work
+  + [proof_status] is route_rule_not_rh_evidence
+
+& [BoundaryDelineation] is active
+  + [mutation_gate] is staging, committing, broad .sop mutation, ignored runtime inclusion, and authority-scope changes without explicit user direction
+  + [inquiry_lane] is reading, reviewing, inventorying, contradiction scanning, route-map refinement, and synthesizing existing records
+  + [analysis_lane] is allowed only after source preservation and specification when pursuit value is visible
+  + [math_processing_lane] is allowed only when a source-defined non-mutating measured object already exists
+  + [blocked_lane] is paused branch reopening through denser labels, more windows, new proof scans, or special-prime sprawl without source-defined purpose
+
+  = must: keep mutation_gate hard
+  = must: keep inquiry_lane open while pursuit value remains
+  = must: route inquiry through periphery value gates before writing new analysis records
+  = must: preserve proof, disproof, zero certification, and critical-line authority as outside
+  - never: convert a commit permission boundary into global idle
+  - never: treat open inquiry as permission to bypass commit-scope direction
+
+& [InquiryGateNotCommitGateSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and route_scoped
+  + [processing_result] is accepted_route_rule_correction
+  + [reasoning_result] is commit scope is a hard mutation boundary because staging can alter repository authority, but inquiry can continue safely through non-staging review and source-governed project-local analysis
+
+(inquiry_gate_not_commit_gate) :route rule: /mutation gated, inquiry open/ |proof claims|
+  + [inside] is non-staging walking route under commit-scope boundary
+  + [boundary] is no Git mutation and no broad authority mutation without direction
+  |outside| staging, committing, ignored runtime inclusion, proof, zero certification, and paused-branch sprawl

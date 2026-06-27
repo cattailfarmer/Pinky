@@ -1,0 +1,127 @@
+Subject: Zeta Oscilloscope
+Description: Corrected canonical SOP definition for the Zeta Oscilloscope, a finite prime-power phasor instrument aligned with the logarithmic phase structure of the Riemann zeta function.
+
+@ [source] platform/source_documents/2026-05-19_zeta_oscilloscope_definition/Source_Document_Manifest.sop
+@ [source] platform/source_documents/2026-05-19_zeta_oscilloscope_definition/Dictated_Zeta_Oscilloscope_Source.sop
+@ [source] platform/refinement/Zetabrot_Module.sop
+@ [source] platform/refinement/Data_Driven_Design.sop
+@ [source] platform/refinement/UI_Interaction_Specification.sop
+
+& [ZetaOscilloscope] is the corrected finite phasor instrument for visualizing prime-power contributions to the logarithmic derivative structure of zeta
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [canonical_specification_uuid] is d76e9557-27ac-467e-ab46-4642c3879d48
+  + [source_snapshot_uuid] is a6fec933-1869-415c-90b7-c1c324dacf99
+  + [dictated_source_document] is platform/source_documents/2026-05-19_zeta_oscilloscope_definition/Dictated_Zeta_Oscilloscope_Source.sop
+  + [solution_uuid] is 235c3796-8113-4272-bb08-7b6944bd53b9
+  + [instrument_name] is Zeta Oscilloscope
+  + [alias] is Lambda-Oscilloscope
+  + [height_parameter] is t
+  + [line_parameter] is sigma
+  + [critical_default] is sigma = 1/2
+  + [cutoff_parameter] is N
+  + [window_function] is W_N(n), an optional finite cutoff smoothing weight
+  + [default_window_function] is hard cutoff W_N(n) = 1 for n <= N and 0 otherwise
+  + [recommended_smooth_window] is a taper on n/N used to reduce cutoff ringing when visual continuity matters
+  + [von_mangoldt_function] is Lambda(n)
+  + [prime_power_rule] is Lambda(n) = log(p) when n = p^k for prime p and integer k >= 1
+  + [zero_rule] is Lambda(n) = 0 when n is not a prime power
+  + [complex_parameter] is s = sigma + i t
+  + [corrected_phase] is exp(-i t log(n))
+  + [corrected_angular_velocity] is log(n)
+  + [corrected_series] is E_{sigma,N,W}(t) = sum over n from 1 to N of Lambda(n) n^{-sigma} W_N(n) exp(-i t log(n))
+  + [unsmoothed_series] is E_{sigma,N}(t) = sum over n from 1 to N of Lambda(n) n^{-sigma} exp(-i t log(n))
+  + [visual_trace] is t maps to (Re(E_{sigma,N,W}(t)), Im(E_{sigma,N,W}(t)))
+  + [analytic_relation] is the finite Dirichlet-polynomial analogue of -zeta_prime(s) divided by zeta(s)
+  + [zetabrot_readout] is finite cutoff visualization of the Lambda-Zetabrot Fourier layer
+  + [rh_relevance] is strongest when sigma = 1/2 because the trace is sampled on the critical line s = 1/2 + i t
+  + [source_authority_state] is processed_to_satisfaction_for_definition_only
+
+  = must: use exp(-i t log(n)) as the zeta-aligned phase term
+  = must: treat each nonzero Lambda(n) term as a prime-power oscillator
+  = must: weight the n term by Lambda(n) n^{-sigma} and optional W_N(n)
+  = must: define angular velocity as log(n), not n
+  = must: preserve finite cutoff N as part of the computational instrument
+  = must: distinguish hard cutoff from smoothed cutoff
+  = must: identify sigma = 1/2 as critical-line normalization
+  = must: identify the finite trace as an exploratory visualization, not a proof of RH
+  = must: preserve the source lineage from Euler's Mirror through Zeta Ear as conceptual ancestry when referenced
+  - never: use exp(-i t n) for the zeta-aligned definition unless defining a separate non-zeta variant
+  - never: claim normal convergence of the infinite von Mangoldt Dirichlet series on sigma = 1/2
+  - never: present finite cutoff traces as direct RH verification
+
+& [OscillatorTerm] is one active phasor in the Zeta Oscilloscope
+  + [term_index] is n
+  + [prime_base] is p when n is p^k
+  + [power] is k when n is p^k
+  + [amplitude] is Lambda(n) n^{-sigma} W_N(n)
+  + [phase] is -t log(n)
+  + [angular_velocity] is log(n)
+  + [phasor] is amplitude times exp(i phase)
+
+  ? [n is prime power]
+    = must: include term with Lambda(n) = log(p)
+
+  ? [n is not prime power]
+    = must: exclude term because Lambda(n) = 0
+
+& [WindowDiscipline] is the finite cutoff policy
+  + [hard_cutoff] is W_N(n) = 1 for n <= N
+  + [smooth_cutoff] is W(n/N) with values near 1 at small n and decaying toward 0 near the cutoff
+  + [cutoff_ringing] is visual artifact caused by abrupt truncation
+
+  = may: use hard_cutoff for simple finite experiments
+  = should: use smooth_cutoff when comparing visual continuity across N
+  = must: label the selected window policy in any visualization
+  - never: hide smoothing as if it were part of the von Mangoldt function itself
+
+& [VisualizationContract] is the buildable UI shape implied by the definition
+  + [primary_surface] is a complex-plane oscilloscope trace
+  + [secondary_surface] is a phasor stack or spectrum view of prime-power terms
+  + [controls] are sigma, N, t range, t step, window policy, and animation rate
+  + [telemetry] is current t, Re(E), Im(E), magnitude, active term count, sigma, N, and window policy
+  + [provenance] is dictated_source_document and corrected canonical definition
+
+  = must: plot Re(E) against Im(E) as t varies
+  = should: expose prime-power term contributions when the goal is interpretation
+  = should: warn when sigma <= 1/2 and the user interprets finite traces too strongly
+
+& [CorrectionLedger] is the explicit repair from source sketch to canonical definition
+  + [source_phase] is exp(-i t n)
+  + [source_angular_velocity] is n
+  + [corrected_phase] is exp(-i t log(n))
+  + [corrected_angular_velocity] is log(n)
+  + [repair_reason] is n^{-it} equals exp(-i t log(n)) for zeta Dirichlet terms
+  + [preserved_source_intent] is complex-plane waveform driven by prime-power oscillators
+
+  = must: preserve source_intent while correcting phase semantics
+  = must: treat the source sketch as untuned rather than discarded
+
+& [AcceptanceCriteria] is the completion standard for the definition
+  + [canonical_file] is platform/refinement/Zeta_Oscilloscope.sop
+  + [source_file] is platform/source_documents/2026-05-19_zeta_oscilloscope_definition/Dictated_Zeta_Oscilloscope_Source.sop
+  + [phase_corrected] is exp(-i t log(n))
+  + [lambda_defined] is von Mangoldt prime-power rule present
+  + [finite_cutoff_defined] is N and optional W_N(n) present
+  + [rh_boundary_defined] is sigma = 1/2 identified as relevant but not proof-bearing
+  + [correction_ledger_present] is source fault and repair visible
+
+& [SJSProcessingTrace] is the recorded refinement pass from dictated source to canonical Zeta Oscilloscope definition
+  + [stage_set] is source_preserved, delineated, exploded, semantically_refined, constraint_checked, pruned, phase_locked, and signed
+  + [constraint_ledger] is source preservation, phase correction, von Mangoldt identity, finite cutoff, smoothing boundary, critical-line relevance, visualization contract, and proof-claim restraint
+  + [pruning_result] is exp_minus_i_t_n_zeta_claim_pruned, angular_velocity_n_pruned, rh_detector_claim_pruned, and hidden_cutoff_pruned
+  + [growth_seed_set] is browser oscilloscope implementation, smooth-window comparison, prime-power spectrum panel, t-sweep animation, and zero-neighborhood experiments
+  + [exhaustion_state] is phase_locked_for_corrected_definition_with_growth_frontier
+
+& [SatisfactionSignature] is the valid SJS processing signature for this Zeta Oscilloscope definition
+  + [signature_protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_uuid] is d6cdf93e-0581-48cb-ade2-d27157b6c2ad
+  + [signed_subject] is platform/refinement/Zeta_Oscilloscope.sop
+  + [source_snapshot_uuid] is a6fec933-1869-415c-90b7-c1c324dacf99
+  + [dictated_source_document] is platform/source_documents/2026-05-19_zeta_oscilloscope_definition/Dictated_Zeta_Oscilloscope_Source.sop
+  + [processed_stage_set] is source_preserved, delineated, exploded, semantically_refined, constraint_checked, pruned, phase_locked, and signed
+  + [exhaustion_state] is phase_locked_for_corrected_definition_with_growth_frontier
+  + [signature_status] is valid
+  + [invalidation_condition] is source_document_change, failed_definition_acceptance, broken_lineage, or analytic_contradiction
+
+  = must: identify this definition as processed to satisfaction for the corrected canonical artifact
+  = must: invalidate if source_document changes without reprocessing

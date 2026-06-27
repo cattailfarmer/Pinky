@@ -1,0 +1,31 @@
+Subject: Identity Tracking Abandonment Rule
+
+Description: Method rail for abandoning a proposed prime-shape test case when the identity fails across the defining set.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_tracking_identity_abandonment_rule\manifest.sop
+
+& [IdentityTrackingAbandonmentRule] is an active restraint rule
+  + [analysis_uuid] is 00a64fa6-8301-45d7-96ab-05cc42ad0ae5
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is active
+
+  = rule: if two members of the defining set fail to track the proposed identity, abandon or re-scope that test case
+  = reason: repeated set-member failure means the inquiry is not tracking the right identity
+  = application: stop expanding a branch when failures show the branch is an obstruction surface rather than the intended identity surface
+  = boundary: abandonment of a test case is not abandonment of the surrounding mathematical object
+
+& [Application_001] is applied_to_641_power_exponent_variant
+  + [branch] is 65537^(641^N) + 2^r for N in 3, 5, 17, 257, 65537 and r in 0, 1, 2
+  + [failure] is +1 and +4 hit mod-3 obstruction for every tested N
+  + [failure] is +2 hit divisor 7 for every tested N in the 1,000,000 bounded probe
+  + [result] is abandon the branch as the tracked identity
+  + [preserved_meaning] is the branch remains a useful obstruction example for residue rules
+
+& [Application_002] is applied_to_641_product_exponent_shift_ladder
+  + [branch] is 65537^(641*N) + 2^r for N in 3, 5, 17, 257, 65537 and r in 0, 1, 2
+  + [failure] is +1 and +4 hit structural or residue obstruction across the defining set
+  + [failure] is +2 fails for N=3, N=5, N=257, and N=65537 by small divisors under 1000000
+  + [survivor] is N=17 at shift +2 under bounded probing
+  + [result] is abandon the branch as the tracked identity because more than two defining members fail
+  + [preserved_meaning] is 65537^(641*17) + 2 remains an isolated bounded survivor and residue heat marker, not a set identity

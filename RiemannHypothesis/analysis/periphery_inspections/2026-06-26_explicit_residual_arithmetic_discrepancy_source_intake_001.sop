@@ -1,0 +1,46 @@
+Subject: Explicit Residual Arithmetic Discrepancy Source Intake 001
+
+Description: Non-mutating intake analysis for the explicit residual arithmetic discrepancy candidate source.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_source\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Source_Specification.sop
+@ [route_inventory] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_candidate_route_inventory_001.sop
+
+& [ExplicitResidualArithmeticDiscrepancySourceIntake001] is a completed non-mutating source intake
+  + [analysis_uuid] is 1004300f-d60d-4657-87a4-8efa4837469d
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_candidate_source_intake
+  + [proof_status] is candidate_source_intake_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is source/spec intake only
+
+& [CandidateSourceResult] is current_result
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [candidate_question] is preserved
+  + [candidate_purpose] is preserved
+  + [primary_dense_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [support_dense_nodes] are DenseNode_PrimeCountingThetaPsi, DenseNode_EulerLogDerivativeHalfPlane, and DenseNode_BridgeRestraint
+  + [status_after_intake] is candidate_spec_ready_not_processing_ready
+  + [reason] is source, purpose, parentage, whole-field relevance, existing evidence, restraint, and truth boundary now exist, but deterministic method, contradiction handling, and exit gates are still missing
+
+& [BoundaryLedger] is active
+  + [allowed_now] is method-contract readiness review and further non-mutating source/spec inspection
+  + [blocked_now] is deterministic math processing, implementation, denser scans, new kernels, new windows, new cutoff laws, scale-law expansion, Lambda overlay expansion, special-prime reopening, staging, and commit
+  + [truth_boundary] is no proof, disproof, RH evidence, zero certification, critical-line authority, causation, or identity fusion
+
+& [NextNonMutatingLead] is selected
+  + [selected_next] is explicit residual arithmetic discrepancy method-contract readiness review
+  + [reason] is the candidate source is preserved and canonicalized, but the admission gate still lacks deterministic method, contradiction, and exit contracts
+  + [blocked_next] is no math computation, no denser scans, no branch reopening, no staging, and no commit
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is the explicit residual arithmetic discrepancy candidate has been source-preserved and specified, but it is not processing-ready
+  + [next_action] is review the candidate for method-contract readiness before any deterministic math processing
+  + [boundary] is no Git mutation, broad .sop mutation, runtime code change, test run, proof claim, zero certification, or branch reopening occurred
+
+(explicit_residual_arithmetic_discrepancy_source_intake_001) :candidate source intake: /source and spec ready; method gate still missing/ |proof claims|
+  + [inside] is candidate-source preservation and admission-gate status
+  + [boundary] is inquiry navigation only
+  |outside| proof, zero certification, staging, commit, branch reopening, new computation, and identity fusion

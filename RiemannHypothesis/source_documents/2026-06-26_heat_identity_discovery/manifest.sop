@@ -1,0 +1,14 @@
+Subject: Heat Identity Discovery Source Manifest
+
+Description: Source preservation manifest for the heat-based identity discovery refinement.
+
+& [HeatIdentityDiscoverySourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_heat_identity_discovery\Dictated_Heat_Identity_Discovery_Source.sop
+  + [canonical_output] is C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+  + [application_record] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_heat_identity_focus_pass_002.sop
+  + [intake_status] is processed_as_framework_refinement
+  + [captured_on] is 2026-06-26
+  + [active_sop_authority_root] is C:\Project\Pinky\.sop
+
+  = must: keep source refinement separate from canonical framework edits
+  = must: cite this manifest when heat identity rules steer dense-node acceptance

@@ -1,0 +1,17 @@
+Subject: Overlap Contradiction Ledger Source Document Manifest
+
+Description: Manifest for preserved source governing the non-mutating overlap contradiction ledger.
+
+& [OverlapContradictionLedgerSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 17806e47-285d-4ea2-9e2b-a870b4d87c4d
+  + [manifest_uuid] is 46559663-9ba0-4458-8b6f-afa46e873144
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_overlap_contradiction_ledger\Dictated_Overlap_Contradiction_Ledger_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Overlap_Contradiction_Ledger_Specification.sop
+  + [source_preservation_rule] is raw contradiction-ledger source remains separate from canonical specification and ledger analysis
+  + [authority_status] is source_preserved_before_ledger_analysis
+
+  = must: process this source through specification before ledger analysis
+  = must: preserve the three overlap zones and mutation/proof boundaries
+  - never: treat this manifest as computation, proof, branch-reopening, or commit authority

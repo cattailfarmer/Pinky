@@ -1,0 +1,17 @@
+Subject: Explicit Residual Arithmetic Discrepancy Synthesis Source Document Manifest
+
+Description: Manifest for preserved source governing existing-trace explicit residual arithmetic discrepancy synthesis.
+
+& [ExplicitResidualArithmeticDiscrepancySynthesisSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 7498963a-7288-4dcf-90f5-9fa1e0962b7d
+  + [manifest_uuid] is b2e72c41-c42b-45b9-9fde-59ebde0b88ec
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis\Dictated_Explicit_Residual_Arithmetic_Discrepancy_Synthesis_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Synthesis_Specification.sop
+  + [source_preservation_rule] is raw synthesis source remains separate from canonical specification and synthesis result
+  + [authority_status] is source_preserved_before_discrepancy_synthesis
+
+  = must: process this source through specification before synthesis analysis
+  = must: preserve existing-trace-only boundary, contradiction-first reading, and no-proof boundary
+  - never: treat this manifest as computation, proof, branch-reopening, staging, commit, or broad .sop mutation authority

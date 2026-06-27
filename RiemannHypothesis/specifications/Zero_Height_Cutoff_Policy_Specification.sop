@@ -1,0 +1,54 @@
+Subject: Zero Height Cutoff Policy Specification
+
+Description: SJS-processed contract for a bounded explicit-formula residual atlas using zero-height T cutoff policy.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_zero_height_cutoff_policy\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Stability_Atlas_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_pass_001.sop
+
+& [ZeroHeightCutoffPolicy] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is f85c6eab-bd3b-48a5-88bd-011760381fcc
+  + [canonical_specification_uuid] is b1f659bc-3b8f-4aa5-930e-5f7d4e60a81d
+  + [protocol_uuid] is 1350277c-d7cd-48dd-951f-beb0c239ed66
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether zero-height T is a better explicit-formula residual coordinate than raw zero-pair count
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, universal window ranking, or explicit/Euler bridge identity
+
+  = must: use exact finite psi(x), theta(x), and pi(x) rows for sampled x
+  = must: include all positive zeta-zero pairs with ordinate gamma <= T for each cutoff
+  = must: expose the zero_pair_count implied by each T cutoff
+  = must: compare sharp, Fejer, Lanczos, and Hann policies as height-weighted windows of gamma/T
+  = must: expose T/log(x) and T/sqrt(x) as scale-normalized diagnostic columns
+  = must: compare at least seven x samples and at least five T cutoffs
+  = must: report best window by x and T, window win counts, sample-level switch counts, and T-transition behavior
+  = must: mark output proof_status as finite_zero_height_cutoff_atlas_not_zero_certification
+  = must: treat mpmath zetazero as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite T-cutoff residual stability
+  - never: collapse local minima into identity
+  - never: fuse explicit-formula residual rails with Euler-product/log-derivative rails without a later source-defined shared comparison unit
+
+& [HeightWeightedWindowDefinitions] is the canonical finite window set for T cutoff
+  + [sharp] is weight(gamma, T) = 1
+  + [fejer] is weight(gamma, T) = 1 - gamma/T
+  + [lanczos] is weight(gamma, T) = sin(pi*gamma/T)/(pi*gamma/T)
+  + [hann] is weight(gamma, T) = 0.5*(1 + cos(pi*gamma/T))
+  + [domain] is 0 < gamma <= T
+  + [distinction] is these are height-weighted windows, not the earlier index-weighted k/(N+1) windows
+
+& [ZeroHeightCutoffPolicyTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.zero_height_cutoff_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_height_cutoff_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_pass_001.sop
+
+& [ZeroHeightCutoffPolicySJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_height_cutoff_contract
+  + [reasoning_result] is raw zero-pair count ignored the actual zero ordinates, so zero-height T is the next cleaner cutoff coordinate to inspect before another bridge attempt
+
+(zero_height_cutoff_policy) :finite explicit residual T-coordinate test: /gamma <= T, height-weighted windows, scale-normalized columns/ |proof authority|
+  + [inside] is deterministic finite residual measurement against exact psi(x)
+  + [boundary] is bounded coordinate diagnosis only
+  |outside| RH proof, disproof, zero certification, global smoothing claims, and explicit/Euler bridge identity

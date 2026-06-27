@@ -1,0 +1,476 @@
+Subject: Riemann Hypothesis Project Manager State
+
+Description: Lightweight project manager state for the new RiemannHypothesis workspace.
+
+& [RiemannHypothesisProjectManagerState] is the current managed work surface
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [current_focus] is landmark-overlay branch closure after half-plane boundary synthesis
+  + [current_status] is landmark-overlay discipline synthesized; no new computation is justified without a new source-defined measured object or user-selected direction
+  + [governing_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\RiemannHypothesis_Periphery_Workspace_Specification.sop
+  + [latest_inspection] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_framework_initial_periphery_inspection.sop
+  + [latest_correction] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_conceptual_hack_boundary_inspection.sop
+  + [latest_heat_pass] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_heat_identity_focus_pass_002.sop
+  + [latest_inquisitive_pass] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_inquisitive_periphery_focus_pass_003.sop
+  + [latest_restraint_pass] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_focused_restraint_pass_004.sop
+  + [latest_toolchain] is C:\Project\Pinky\RiemannHypothesis\analysis\toolchain\2026-06-26_math_toolchain_verification.sop
+  + [latest_math_processing_tools] is C:\Project\Pinky\RiemannHypothesis\analysis\toolchain\2026-06-26_math_processing_tool_scripts_verification.sop
+  + [latest_prime_periphery] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_fermat_prime_seed_inquiry.sop
+  + [latest_prime_distribution_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_family_distribution_bridge_pass_001.sop
+  + [latest_prime_interval_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_family_interval_bridge_pass_001.sop
+  + [latest_641_operator_boundary] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_operator_hypothesis_boundary.sop
+  + [latest_641_shift_two_boundary] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_two_boundary.sop
+  + [latest_641_shift_power_ladder_boundary] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_power_ladder_boundary.sop
+  + [latest_identity_abandonment_rule] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+  + [latest_641_power_exponent_boundary] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_power_exponent_boundary.sop
+  + [latest_641_coefficient_shift_boundary] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_coefficient_shift_boundary.sop
+  + [latest_irregular_prime_periphery] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_irregular_prime_first_pass.sop
+  + [latest_irregular_prime_distribution_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_irregular_prime_distribution_bridge_pass_001.sop
+  + [latest_prime_power_decomposition_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+  + [latest_explicit_formula_error_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+  + [latest_zero_windowing_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_pass_001.sop
+  + [latest_euler_product_weighting_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+  + [latest_sigma_boundary_scan] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+  + [latest_t_axis_boundary_slice] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+  + [latest_vertical_resonance_scan] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+  + [latest_old_zeta_tool_translation] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_zeta_tool_translation_pass_001.sop
+  + [latest_lambda_oscilloscope_probe] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_pass_001.sop
+  + [latest_lambda_window_cutoff_scan] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+  + [latest_old_riemann_toribrot_translation] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_riemann_toribrot_translation_pass_001.sop
+  + [latest_whole_field_landmark_overlay] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landmark_overlay_report_001.sop
+  + [latest_explicit_euler_cutoff_bridge] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_cutoff_bridge_report_001.sop
+  + [latest_explicit_window_expansion] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_window_expansion_pass_001.sop
+  + [latest_explicit_residual_stability_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_pass_001.sop
+  + [latest_zero_height_cutoff_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_pass_001.sop
+  + [latest_scale_tied_zero_height_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_pass_001.sop
+  + [latest_scale_law_comparison_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_pass_001.sop
+  + [latest_lambda_mellin_bridge_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop
+  + [latest_partial_summation_bridge_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_pass_001.sop
+  + [latest_cesaro_mellin_bridge_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_pass_001.sop
+  + [latest_bias_tuned_kernel_bridge_atlas] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_bias_tuned_kernel_bridge_atlas_pass_001.sop
+  + [latest_explicit_euler_bridge_restraint_synthesis] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_bridge_restraint_synthesis_001.sop
+  + [latest_whole_field_landscape_node_map] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+  + [latest_dense_node_refinement_selection] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_dense_node_refinement_selection_001.sop
+  + [latest_explicit_residual_surface_refinement] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_surface_refinement_001.sop
+  + [latest_explicit_residual_movement_decomposition] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+  + [latest_post_residual_movement_landscape_integration] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_post_residual_movement_landscape_integration_001.sop
+  + [latest_next_dense_node_after_residual_integration_selection] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_next_dense_node_after_residual_integration_selection_001.sop
+  + [latest_half_plane_boundary_synthesis] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_half_plane_boundary_synthesis_001.sop
+  + [latest_landmark_overlay_discipline_synthesis] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_landmark_overlay_discipline_synthesis_001.sop
+
+  = must: preserve source before import or re-authoring
+  = must: use periphery focus before implementation
+  = must: hold focused restraint unless truth, security, priority, or supported immediate-periphery meaning upsets focus
+  = must: keep finite math-processing output separate from proof, disproof, zero certification, and hidden theorem authority
+  = must: block RH proof claims unless a separate proof-grade specification is created
+
+## Work Slices
+
+& [Task_001_WorkspaceInitialization] is completed
+  + [status] is completed
+  + [result] is source intake, initial workspace specification, first periphery inspection, and manager state created
+  + [proof] is RiemannHypothesis source_documents, specifications, analysis, and planning records exist
+
+& [Task_002_ConceptualHackClassification] is completed
+  + [status] is completed
+  + [objective] is classify old Riemann/Zeta/Toribrot objects as useful primitive, conceptual scaffold, workaround hack, obsolete analogy, import candidate, or defer
+  + [reason] is the old workspace was conceptual and some modules, especially the Toribrot math module, may be hacks caused by missing programmatic test, math operation, and feedback capability; persistent correlation and causation heat should suspect separate identity unless known local fabric grounds identity; inquisitive drive should identify concept promoters, identity anchors, and whole-shape cues before closure; focused restraint should prevent interesting but lower-purpose tangents from overtaking classification unless truth, security, priority, or greater immediate-periphery meaning requires it
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_zeta_tool_translation_pass_001.sop and C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_riemann_toribrot_translation_pass_001.sop
+  + [conclusion] is old Zeta tools yielded a local finite Lambda primitive; old Riemann/Toribrot yielded boundary discipline, typed pants separation, address identity as a future candidate, and geometry/runtime deferrals
+  + [boundary] is classification only; do not import old modules as local authority during this task
+
+& [Toolchain_001_LocalMathAnalysisEnvironment] is completed
+  + [status] is completed
+  + [result] is project-local .venv installed from requirements.txt and verified with imports, zeta smoke, plot smoke, and pip check
+  + [boundary] is tool support only; installed packages do not provide theorem authority
+
+& [Toolchain_002_MathProcessingScripts] is completed
+  + [status] is completed
+  + [result] is deterministic Python scripts, shared rh_math helpers, documentation, and tests for finite zeta, functional-equation, critical-line, zero-probe, explicit-formula residual probing, zero-window residual probing, Euler-product/logarithmic-derivative weighting, sigma-boundary scanning, t-axis boundary slicing, vertical-resonance scanning, prime-count, special-prime family, whole-field distribution-return, interval-return, prime-power decomposition, exponential-shift boundary, power-exponent boundary, coefficient-power boundary, and irregular-prime processing
+  + [verification] is C:\Project\Pinky\RiemannHypothesis\analysis\toolchain\2026-06-26_math_processing_tool_scripts_verification.sop
+  + [boundary] is finite numerical processing only; outputs are not RH proof, disproof, or independent zero certification
+
+& [Task_Prime_001_SpecialPrimePeripheryInquiry] is completed
+  + [status] is completed
+  + [objective] is identify the Fermat-prime seed set, clarify the 641 relation, and open nearby odd-prime family candidates without collapsing resemblance into identity
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_fermat_prime_seed_inquiry.sop
+  + [boundary] is special-prime oddity is landscape inspection and not RH evidence by itself
+
+& [Task_Prime_002_WholeFieldPrimeShapeBridge] is completed
+  + [status] is completed
+  + [objective] is begin guardrailed work by measuring special-prime families beside whole-prime pi(x), theta(x), and psi(x) surfaces
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_family_distribution_bridge_pass_001.sop
+  + [boundary] is family-shape measurement is finite probe work and not RH evidence by itself
+
+& [Task_Prime_003_FamilyIntervalBridge] is completed
+  + [status] is completed
+  + [objective] is test whether family increments align simply with interval movement in theta(x)-x or psi(x)-x
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_family_interval_bridge_pass_001.sop
+  + [conclusion] is current tested families are useful probes but not sufficient explanatory variables for whole-field theta or psi interval movement
+  + [boundary] is finite interval co-occurrence is not causation or RH evidence
+
+& [Task_Prime_004_Fermat641OperatorBoundary] is completed
+  + [status] is completed
+  + [objective] is test whether 641 can operate as a power seed in 65537^641 + 1 or 65537^(641*N) +/- 1 for Fermat-prime N
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_operator_hypothesis_boundary.sop
+  + [conclusion] is all tested raw plus/minus whole-number forms are algebraically composite by base +/- 1 factor rules
+  + [boundary] is 641 remains promising as an operator on primitive factor order and congruence constraints, not as this whole-form prime generator
+
+& [Task_Prime_005_Fermat641ShiftTwoBoundary] is completed
+  + [status] is completed
+  + [objective] is test whether 65537^(641*N) +/- 2 avoids the plus-minus-one obstruction for Fermat-prime N
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_two_boundary.sop
+  + [conclusion] is plus-minus-two escapes parity, but most listed forms have small divisors under 100000; 65537^(641*17) + 2 survives this first bound
+  + [boundary] is bounded absence of small divisors is not primality evidence or RH evidence
+
+& [Task_Prime_006_Fermat641ShiftPowerLadder] is completed
+  + [status] is completed
+  + [objective] is test whether the shift levels 2^0, 2^1, and 2^2 reveal a deeper pattern
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_power_ladder_boundary.sop
+  + [conclusion] is +1 and +4 hit structural or mod-3 obstructions, while +2 leaves only 65537^(641*17) + 2 as a bounded isolated survivor
+  + [boundary] is the branch is abandoned as a tracked identity because more than two defining set members fail; the survivor is periphery, not RH evidence
+
+& [Task_Prime_007_IdentityTrackingAbandonmentRule] is completed
+  + [status] is completed
+  + [objective] is establish a restraint rule for abandoning a branch when two defining set members fail to track
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+  + [boundary] is abandoning a test case does not abandon the surrounding mathematical object
+
+& [Task_Prime_008_Fermat641PowerExponentBoundary] is completed
+  + [status] is completed
+  + [objective] is test whether 641^N tracks better than 641*N as an exponent operator
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_power_exponent_boundary.sop
+  + [conclusion] is 641^N fails as the tracked identity because all tested levels are obstructed by mod-3 or mod-7 rules
+  + [boundary] is this branch is abandoned as an identity track and retained only as an obstruction surface
+
+& [Task_Prime_009_Fermat641CoefficientShiftBoundary] is completed
+  + [status] is completed
+  + [objective] is test whether 65537 * 641^N with fixed or N-dependent shifts tracks the Fermat-prime set identity
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_coefficient_shift_boundary.sop
+  + [conclusion] is fixed and N-dependent shifts produce isolated bounded survivors but fail the identity track by the two-failure rule
+  + [boundary] is retained meaning is residue heat only, not RH evidence or a live identity branch
+
+& [Task_Prime_010_Retire641AndIrregularPrimePivot] is completed
+  + [status] is completed
+  + [objective] is retire the 641 special-form inquiry as active focus and pivot to another zeta-adjacent prime family
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_irregular_prime_first_pass.sop
+  + [conclusion] is irregular primes provide a cleaner zeta-special-value periphery through Bernoulli numerator divisibility
+  + [boundary] is irregular-prime scans are not zero-line evidence or RH proof/disproof evidence
+
+& [Task_Prime_011_IrregularPrimeDistributionBridge] is completed
+  + [status] is completed
+  + [objective] is return irregular-prime periphery to whole-field pi(x), theta(x), and psi(x) objects
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_irregular_prime_distribution_bridge_pass_001.sop
+  + [conclusion] is irregular primes remain useful zeta-special-value periphery, but the bounded trace does not identify a causal or identity lock with theta(x)-x or psi(x)-x
+  + [boundary] is irregular-prime distribution is a finite sampling surface, not zero-line evidence or central RH identity
+
+& [Task_Prime_012_PrimePowerDecompositionBridge] is completed
+  + [status] is completed
+  + [objective] is decompose psi interval movement by prime-power layers before interpreting more special-prime family probes
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+  + [conclusion] is higher prime powers are the exact psi-theta correction and materially change interval movement, but remain whole-field arithmetic mechanics rather than a separate identity track
+  + [boundary] is prime-power decomposition is finite arithmetic support, not RH evidence or zero-line certification
+
+& [Task_Zero_001_ExplicitFormulaErrorBridge] is completed
+  + [status] is completed
+  + [objective] is compare pi(x), theta(x), psi(x), and finite zeta-zero terms through a bounded explicit-formula error bridge
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+  + [conclusion] is finite zero-pair sums visibly shape psi approximation, but bounded residuals are oscillatory and truncation-sensitive rather than monotone proof evidence
+  + [boundary] is explicit-formula probing is finite numerical approximation, not proof, disproof, or independent zero certification
+
+& [Task_Zero_002_ZeroWindowingBridge] is completed
+  + [status] is completed
+  + [objective] is compare sharp and Fejer-windowed finite zero-pair explicit-formula approximations against exact psi(x)
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_pass_001.sop
+  + [conclusion] is Fejer smoothing changes the residual surface but does not dominate sharp truncation in the bounded trace
+  + [boundary] is zero-window probing is finite smoothing diagnostics, not proof, disproof, independent zero certification, or universal window superiority
+
+& [Task_Zero_003_EulerProductWeightingBridge] is completed
+  + [status] is completed
+  + [objective] is compare finite Euler-product and logarithmic-derivative prime-power weighting surfaces after explicit-formula and zero-window probes
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+  + [conclusion] is Euler-product/logarithmic-derivative weighting is the better stable whole-field surface in Re(s) > 1, but not a better zero-line probe
+  + [boundary] is convergent half-plane weighting is not RH proof, disproof, critical-line authority, or zero certification
+
+& [Task_Zero_004_SigmaBoundaryScan] is completed
+  + [status] is completed
+  + [objective] is inspect finite Euler-product behavior as sigma approaches 1 from above
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+  + [conclusion] is sigma-boundary scanning makes convergence-boundary behavior visible and separates pole-axis growth from quieter first-zero-ordinate growth
+  + [boundary] is approach-to-boundary measurement remains in Re(s) > 1 and is not critical-line evidence
+
+& [Task_Zero_005_TAxisBoundarySlice] is completed
+  + [status] is completed
+  + [objective] is inspect fixed-sigma t-axis slices to distinguish pole-axis influence, known-zero-ordinate landmarks, and ordinary vertical behavior
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+  + [conclusion] is t-axis boundary slicing separates pole-axis behavior from ordinary and landmark vertical behavior, while preserving known-zero ordinates as landmarks only
+  + [boundary] is fixed-sigma vertical slicing remains in Re(s) > 1 and is not zero-line evidence
+
+& [Task_Zero_006_VerticalResonanceScan] is completed
+  + [status] is completed
+  + [objective] is create a dense deterministic vertical-resonance rail before old ZetaOscilloscope/Zetabrot translation
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+  + [conclusion] is dense vertical resonance scanning creates useful metric-dependent finite landmarks, but not a zero detector or RH evidence
+  + [boundary] is resonance candidates remain finite Re(s) > 1 landmarks and old symbolic tools remain external periphery until inspected
+
+& [Task_Zero_007_OldZetaToolPeripheryTranslation] is completed
+  + [status] is completed
+  + [objective] is classify old ZetaOscilloscope and Zetabrot symbolic objects against current deterministic rails without importing old symbolic authority
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Old_Zeta_Tool_Periphery_Classification_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_zeta_tool_translation_pass_001.sop
+  + [conclusion] is old ZetaOscilloscope and Zetabrot yield one importable primitive, the finite Lambda log-Fourier/logarithmic-derivative readout, while Toribrot geometry remains deferred external periphery
+  + [boundary] is classification gives tool direction, not RH evidence, proof, disproof, zero certification, or old framework authority
+
+& [Task_Zero_008_LambdaOscilloscopeProbe] is completed
+  + [status] is completed
+  + [objective] is implement a Pinky-local deterministic Lambda Oscilloscope probe from the classified old ZetaOscilloscope primitive
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_oscilloscope_probe\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Oscilloscope_Probe_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 25 passed
+  + [conclusion] is the finite Lambda log-Fourier oscilloscope is useful as an inspection primitive beyond Euler-product summaries because it exposes complex trace and per-prime-power phasor rows
+  + [boundary] is finite traces remain visualization-support and inspection-support, not RH evidence, proof, disproof, or zero certification
+
+& [Task_Zero_009_LambdaWindowCutoffScan] is completed
+  + [status] is completed
+  + [objective] is test whether Lambda Oscilloscope window policy and cutoff growth produce stable enough landmarks to compare with existing t-axis and vertical-resonance rails
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_window_cutoff_comparison\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Window_Cutoff_Comparison_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 26 passed
+  + [conclusion] is Lambda window/cutoff landmarks are stable enough for diagnostic overlay but too dense and cutoff/window-sensitive to become a primary RH-facing landmark surface
+  + [boundary] is finite stability remains trace repeatability only, not RH evidence, proof, disproof, or zero certification
+
+& [Task_010_OldRiemannToribrotPeripheryTranslation] is completed
+  + [status] is completed
+  + [objective] is classify old Riemann Workspace, Enumerated Toribrot, Toribrot Math Engine, and Toribrot geometry against current Pinky RH rails
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Old_Riemann_Toribrot_Periphery_Classification_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_riemann_toribrot_translation_pass_001.sop
+  + [conclusion] is old Riemann/Toribrot geometry is coherent as conceptual scaffold and boundary discipline, but not as a local RH computational or proof primitive now
+  + [boundary] is retained primitives are typed pants boundary, stable address identity as future candidate, and audit-trace discipline as future candidate; geometry runtime and SO10 work are deferred
+
+& [Task_Zero_010_WholeFieldLandmarkOverlayReport] is completed
+  + [status] is completed
+  + [objective] is synthesize pi(x), theta(x), psi(x), Euler-product/log-derivative, explicit-formula, t-axis, vertical-resonance, and Lambda Oscilloscope rails into a bounded whole-field overlay report
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landmark_overlay\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Landmark_Overlay_Report_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landmark_overlay_report_001.sop
+  + [conclusion] is the overlay is useful as an orientation map across trusted rails but not as a proof-facing instrument
+  + [boundary] is finite overlay agreement is not RH evidence, proof, disproof, independent zero certification, or zero-line authority
+
+& [Task_Zero_011_ExplicitEulerCutoffBridgeReport] is completed
+  + [status] is completed
+  + [objective] is compare explicit-formula residual windows with Euler-product/logarithmic-derivative cutoff behavior after the whole-field overlay
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_cutoff_bridge\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Euler_Cutoff_Bridge_Report_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_cutoff_bridge_report_001.sop
+  + [conclusion] is explicit-formula residual and Euler/log-derivative cutoff rails are complementary but not yet a single coupled identity track
+  + [boundary] is Euler/log-derivative cutoff convergence remains Re(s) > 1 support, while explicit-formula residuals remain a separate finite windowing problem
+
+& [Task_Zero_012_ExplicitWindowExpansion] is completed
+  + [status] is completed
+  + [objective] is expand explicit-formula finite zero-window testing with larger zero counts and additional smoothing policies before attempting any stronger bridge
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_window_expansion\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Window_Expansion_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_window_expansion_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 26 passed
+  + [conclusion] is sharp truncation dominates the bounded grid while Hann and Lanczos produce local smoothing pockets, so window expansion is useful sensitivity measurement but not stronger proof-facing authority or universal window preference
+  + [boundary] is finite explicit-formula residual windows remain diagnostics, not RH proof, disproof, zero certification, or a fused explicit/Euler identity track
+
+& [Task_Zero_013_ExplicitResidualStabilityAtlas] is completed
+  + [status] is completed
+  + [objective] is build a broader explicit-formula residual stability atlas across x ranges, zero-pair counts, and window policies before attempting another explicit/Euler bridge
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_stability_atlas\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Stability_Atlas_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 27 passed
+  + [conclusion] is raw zero-pair cutoff count is not a stable identity coordinate across the bounded grid; sharp is the best baseline by wins and average residual, but Fejer, Lanczos, and Hann win local pockets and best-window sequence switches frequently
+  + [boundary] is the atlas is finite coordinate diagnosis only, not RH proof, disproof, zero certification, universal window superiority, or an explicit/Euler bridge identity
+
+& [Task_Zero_014_ZeroHeightCutoffPolicy] is completed
+  + [status] is completed
+  + [objective] is test whether zero-height T is a better explicit-formula residual coordinate than raw zero-pair count
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_zero_height_cutoff_policy\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Zero_Height_Cutoff_Policy_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 28 passed
+  + [conclusion] is zero-height T is a cleaner cutoff coordinate than raw zero-pair count, but fixed-T residual behavior still shows local window pockets and scale mismatch across x values
+  + [boundary] is the T-height atlas is finite coordinate diagnosis only, not RH proof, disproof, zero certification, universal window superiority, or an explicit/Euler bridge identity
+
+& [Task_Zero_015_ScaleTiedZeroHeightPolicy] is completed
+  + [status] is completed
+  + [objective] is test whether T = c*log(x) improves explicit-formula residual coordinate behavior compared with fixed T
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_tied_zero_height_policy\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Scale_Tied_Zero_Height_Policy_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 29 passed
+  + [conclusion] is T = c*log(x) is a cleaner diagnostic coordinate than fixed T and strengthens sharp as a finite baseline, but local best c still drifts by x and window switching remains
+  + [boundary] is the scale-tied log atlas is finite coordinate-law diagnosis only, not RH proof, disproof, zero certification, universal cutoff-law superiority, or an explicit/Euler bridge identity
+
+& [Task_Zero_016_ScaleLawComparisonAtlas] is completed
+  + [status] is completed
+  + [objective] is compare declared x-dependent zero-height laws before any explicit/Euler bridge attempt
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_law_comparison\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Scale_Law_Comparison_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 30 passed
+  + [conclusion] is T=c*log(x) remains strongest by average residual and early sample wins, T=c*sqrt(x) wins later local samples, and T=c*sqrt(x)*log(x) is sparse-but-nonwinning; no law supplies an explicit/Euler bridge identity
+  + [boundary] is the scale-law comparison atlas is finite coordinate-law diagnosis only, not RH proof, disproof, zero certification, universal scale-law superiority, or an explicit/Euler bridge identity
+
+& [Task_Zero_017_LambdaMellinBridgeAtlas] is completed
+  + [status] is completed
+  + [objective] is source-define and test a shared weighted Lambda contribution unit for explicit-formula and Euler/log-derivative cutoff rails
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_mellin_bridge_unit\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Mellin_Bridge_Unit_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 31 passed
+  + [conclusion] is a coherent shared Lambda-Mellin unit exists, but raw finite-difference projection of explicit psi estimates creates a non-shrinking bridge residual, so the bridge remains diagnostic rather than an explicit/Euler identity
+  + [boundary] is the Lambda-Mellin bridge atlas is finite Re(s)>1 shared-unit diagnosis only, not RH proof, disproof, zero certification, critical-line evidence, universal bridge identity, or explicit/Euler fusion
+
+& [Task_Zero_018_PartialSummationBridgeAtlas] is completed
+  + [status] is completed
+  + [objective] is test whether discrete partial summation can preserve the shared Lambda-Mellin unit while reducing raw finite-difference noise
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_partial_summation_bridge\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Partial_Summation_Bridge_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 32 passed
+  + [conclusion] is exact psi reconstructs the finite Lambda sum under the partial-summation kernel, but sampled explicit psi_hat partial summation is algebraically equivalent to the raw finite-difference projection and does not reduce the residual plateau
+  + [boundary] is the partial-summation bridge atlas is finite Re(s)>1 shared-unit audit only, not RH proof, disproof, zero certification, critical-line evidence, universal bridge identity, or explicit/Euler fusion
+
+& [Task_Zero_019_CesaroMellinBridgeAtlas] is completed
+  + [status] is completed
+  + [objective] is test whether n-domain kernels create a genuinely new smoothed Lambda-Mellin bridge surface compared with raw finite-difference projection
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cesaro_mellin_bridge\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Cesaro_Mellin_Bridge_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 33 passed
+  + [conclusion] is Cesaro smoothing improves explicit-side bridge residuals in every bounded row, but increases exact smoothed cutoff residual against -zeta_prime/zeta; this is a useful smoothing diagnostic and bias tradeoff, not an explicit/Euler identity
+  + [boundary] is the Cesaro-Mellin bridge atlas is finite Re(s)>1 n-domain smoothing diagnosis only, not RH proof, disproof, zero certification, critical-line evidence, universal bridge identity, or explicit/Euler fusion
+
+& [Task_Zero_020_BiasTunedKernelBridgeAtlas] is completed
+  + [status] is completed
+  + [objective] is test whether an alpha-tuned kernel can preserve Cesaro bridge improvement while reducing smoothing bias
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_bias_tuned_kernel_bridge\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Bias_Tuned_Kernel_Bridge_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_bias_tuned_kernel_bridge_atlas_pass_001.sop
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 34 passed
+  + [conclusion] is alpha tuning exposes a clean Pareto dial: every alpha above zero improves bridge residual over sharp, but increasing alpha also increases exact cutoff bias against -zeta_prime/zeta; no alpha dominates both objectives
+  + [boundary] is the bias-tuned kernel bridge atlas is finite Re(s)>1 Pareto diagnosis only, not RH proof, disproof, zero certification, critical-line evidence, universal bridge identity, or explicit/Euler fusion
+
+& [Task_Zero_021_ExplicitEulerBridgeRestraintSynthesis] is completed
+  + [status] is completed
+  + [objective] is synthesize recent explicit/Euler bridge records and decide whether kernel refinement should pause
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_bridge_restraint_synthesis\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Euler_Bridge_Restraint_Synthesis_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_bridge_restraint_synthesis_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is explicit/Euler kernel refinement should pause because the branch has found a clear bridge-improvement versus cutoff-bias Pareto surface rather than a fused identity
+  + [boundary] is the restraint synthesis is finite branch-direction governance only, not RH proof, disproof, zero certification, critical-line evidence, universal bridge identity, or explicit/Euler fusion
+
+& [Task_Zero_022_WholeFieldLandscapeNodeMap] is completed
+  + [status] is completed
+  + [objective] is map current RH workspace objects into dense nodes, sparse realizations, frontiers, relation traces, and not-it fields before adding new math-processing tools
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landscape_node_map\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_RH_Landscape_Node_Map_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is the workspace now has six durable orientation nodes: prime-counting/Chebyshev mechanics, Euler/log-derivative half-plane weighting, explicit-formula residual surface, t-reference/resonance landmarks, Lambda diagnostic overlay, and bridge-restraint governance
+  + [boundary] is the landscape node map is finite orientation and governance only, not RH proof, disproof, zero certification, critical-line evidence, or single-surface RH identity
+
+& [Task_Zero_023_DenseNodeRefinementSelection] is completed
+  + [status] is completed
+  + [objective] is select one dense node for the next source-defined refinement before creating new math-processing tooling
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_dense_node_refinement_selection\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Dense_Node_Refinement_Selection_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_dense_node_refinement_selection_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is DenseNode_ExplicitFormulaResidualSurface should receive the next refinement because it most directly mediates between psi(x) arithmetic mechanics and finite zeta-zero approximation behavior while preserving the paused bridge branch
+  + [boundary] is the selection is finite planning and governance only, not RH proof, disproof, zero certification, critical-line evidence, implementation authority, or single-surface RH identity
+
+& [Task_Zero_024_ExplicitResidualSurfaceRefinement] is completed
+  + [status] is completed
+  + [objective] is refine the explicit-formula residual surface in relation to psi(x), theta(x), and prime-power mechanics without adding new kernels, windows, cutoff laws, or proof-facing claims
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_surface_refinement\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Surface_Refinement_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_surface_refinement_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is the explicit residual surface is refined enough for current orientation: raw zero count is weak, T-height is cleaner, T=c*log(x) is a retained diagnostic coordinate, sharp remains baseline, local smoothing pockets stay local, and no new tool is justified without a named residual movement decomposition quantity
+  + [boundary] is the refinement is finite orientation and governance only, not RH proof, disproof, zero certification, critical-line evidence, monotone convergence, universal window superiority, universal scale-law identity, or explicit/Euler fusion
+
+& [Task_Zero_025_ExplicitResidualMovementDecomposition] is completed
+  + [status] is completed
+  + [objective] is source-define and test a measured quantity decomposing explicit residual movement against psi(x), theta(x), and higher-prime-power layers without adding kernels, windows, cutoff laws, or proof-facing claims
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_movement_decomposition\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Movement_Decomposition_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+  + [trace] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 35 passed
+  + [conclusion] is the decomposition is useful finite accounting: c32 reduces average residual movement in the bounded trace, but residual-to-psi-error sign alignment is mixed and exact-layer dominance splits evenly, so no simple identity lock is supported
+  + [boundary] is the movement decomposition is finite diagnostic support only, not RH proof, disproof, zero certification, causal proof, universal cutoff superiority, or explicit/Euler bridge fusion
+
+& [Task_Zero_026_PostResidualMovementLandscapeIntegration] is completed
+  + [status] is completed
+  + [objective] is decide whether residual movement decomposition should fold back into the whole-field landscape node map or justify a new movement frontier before further computation
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_post_residual_movement_landscape_integration\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Post_Residual_Movement_Landscape_Integration_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_post_residual_movement_landscape_integration_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is residual movement decomposition should be nested under DenseNode_ExplicitFormulaResidualSurface and folded into whole-field orientation now; mixed sign alignment and evenly split exact-layer dominance block promotion into a new active movement frontier
+  + [boundary] is landscape integration is finite governance only, not RH proof, disproof, zero certification, causal identity, universal cutoff superiority, or explicit/Euler fusion
+
+& [Task_Zero_027_NextDenseNodeAfterResidualIntegrationSelection] is completed
+  + [status] is completed
+  + [objective] is decide whether a future source-defined purpose should select half-plane boundary synthesis, landmark-overlay discipline, or another dense-node refinement after residual movement integration
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_next_dense_node_after_residual_integration\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Next_Dense_Node_After_Residual_Integration_Selection_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_next_dense_node_after_residual_integration_selection_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is DenseNode_EulerLogDerivativeHalfPlane should receive the next source-defined refinement as half-plane boundary synthesis, using existing sigma-boundary and t-axis traces before any new computation
+  + [boundary] is selection is finite planning and governance only, not RH proof, disproof, zero certification, critical-line evidence, runtime authority, or explicit/Euler bridge reopening
+
+& [Task_Zero_028_HalfPlaneBoundarySynthesis] is completed
+  + [status] is completed
+  + [objective] is synthesize existing sigma-boundary and t-axis Re(s)>1 traces into a refined half-plane boundary node before any new scans
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_half_plane_boundary_synthesis\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Half_Plane_Boundary_Synthesis_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_half_plane_boundary_synthesis_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is the half-plane boundary node is coherent as a Re(s)>1 whole-field orientation surface: stable Lambda weighting, sigma-boundary stress, pole-axis separation, known-ordinate reference calm, ordinary vertical variation, metric-dependent resonance, and prime-bound truncation are distinct layers
+  + [boundary] is half-plane synthesis is finite governance only, not RH proof, disproof, zero certification, critical-line evidence, universal resonance identity, runtime authority, or explicit/Euler bridge fusion
+
+& [Task_Zero_029_LandmarkOverlayDisciplineSynthesis] is completed
+  + [status] is completed
+  + [objective] is decide whether to stop after half-plane boundary synthesis or select a new source-defined synthesis object, with landmark-overlay discipline as the natural later comparison surface
+  + [source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_landmark_overlay_discipline_synthesis\Source_Document_Manifest.sop
+  + [specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Landmark_Overlay_Discipline_Synthesis_Specification.sop
+  + [result] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_landmark_overlay_discipline_synthesis_001.sop
+  + [verification] is no tests run because no runtime code changed
+  + [conclusion] is landmark-overlay discipline is now synthesized: reference labels, sparse resonance, dense Lambda heat, half-plane boundary layers, and arithmetic anchors should remain distinct; no new overlay computation is justified without a named measured object
+  + [boundary] is overlay discipline is finite orientation and restraint only, not RH proof, disproof, zero certification, critical-line evidence, primary zero detection, runtime authority, or single-surface identity
+
+& [Task_003_SourceSnapshotImport] is completed
+  + [status] is completed
+  + [objective] is preserve/import old source snapshots only for objects selected as import candidates or necessary comparison records
+  + [result] is selected old Zeta, Riemann Workspace, Enumerated Toribrot, Toribrot Math Engine, and Toribrot geometry snapshots preserved under source_documents
+  + [dependency] is Task_002_ConceptualHackClassification
+  + [boundary] is copied snapshots are comparison records, not imported local authority
+
+& [Task_004_RepairLedgerInspection] is completed
+  + [status] is completed
+  + [objective] is compare selected old source snapshots against old canonical repair ledgers for ZetaOscilloscope, ZetabrotModule, RiemannWorkspace, and any retained Toribrot math boundary lessons
+  + [result] is old repair ledgers classified through Zeta tool and Riemann/Toribrot translation passes
+  + [dependency] is Task_003_SourceSnapshotImport
+
+& [Task_005_LocalMeaningTranslationSpec] is completed
+  + [status] is completed
+  + [objective] is map old symbolic terms into new project-local meanings without collapsing resemblance into identity or preserving workaround hacks as architecture
+  + [result] is local old Zeta and old Riemann/Toribrot classification specifications created
+  + [dependency] is Task_004_RepairLedgerInspection
+
+& [Task_006_FirstRuntimeDecision] is completed
+  + [status] is completed
+  + [objective] is decide between PeripheryInspectionNotebook first or finite ZetaOscilloscope runtime first
+  + [result] is finite Lambda Oscilloscope runtime first, followed by window/cutoff diagnostic scan; PeripheryInspectionNotebook and Toribrot runtime remain deferred
+  + [dependency] is Task_005_LocalMeaningTranslationSpec

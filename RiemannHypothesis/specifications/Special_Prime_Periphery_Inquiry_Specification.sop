@@ -1,0 +1,56 @@
+Subject: Special Prime Periphery Inquiry Specification
+
+Description: SJS-processed project-local contract for investigating Fermat-prime seeds, 641, and nearby special prime families as RH-adjacent periphery.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_special_prime_periphery_inquiry\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Math_Processing_Tool_Scripts_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\AGENTS.md
+
+& [SpecialPrimePeripheryInquiry] is a project-local inquiry contract
+  + [canonical_specification_uuid] is a41e9af8-a4db-4408-b42d-5ebf50d75262
+  + [source_snapshot_uuid] is 4a94b7fe-120b-4687-8433-9aa31e8e0828
+  + [solution_uuid] is c3869518-8287-40c2-90da-343dff618d6e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [seed_primes] is 3, 5, 17, 257, 65537
+  + [correlated_prime] is 641
+  + [role] is periphery inspection of special arithmetic identities and family resemblance
+  + [not_role] is RH proof strategy, proof of prime-family exhaustiveness, or theorem authority
+
+  = must: identify the seed set as Fermat-prime identity when arithmetic facts support it
+  = must: identify 641 by its computed relationship to Fermat-number structure rather than by resemblance alone
+  = must: profile special-prime families using deterministic scripts before interpretive closure
+  = must: classify relations as local identity, correlated periphery, external family resemblance, or deferred candidate
+  = must: keep RH relevance limited to landscape orientation until a later proof-grade specification exists
+  - never: infer global zeta-zero behavior from finite special-prime oddities
+  - never: treat a prime family as causally relevant to RH merely because it is surprising
+
+## Inquiry Objects
+
+& [FermatPrimeSeedSet] is the initial local focus
+  + [members] is 3, 5, 17, 257, 65537
+  + [identity_rule] is p = 2^(2^n) + 1 for n = 0, 1, 2, 3, 4 with p prime
+  + [inspection_question] is what constraints become visible when prime identity is anchored by a power-of-two exponent tower
+
+& [Prime641] is correlated periphery
+  + [known_surface] is a prime related to the next Fermat-number boundary
+  + [inspection_question] is whether 641 belongs to the local Fermat-prime identity or to a distinct factor-boundary identity
+
+& [NearbyOddPrimeFamilies] is an immediate periphery set
+  + [candidate_families] is Mersenne primes, Proth primes, Pierpont primes, Sophie Germain primes, safe primes, Wieferich primes, and irregular primes
+  + [inspection_question] is which nearby families share surface shape, which share causal arithmetic constraints, and which merely resemble the seed focus
+
+## SJS Processing Trace
+
+& [SpecialPrimePeripheryInquirySJS] is the specification justification trace for special-prime inquiry
+  + [protocol_uuid] is 8e595eed-c0ed-40f8-9b11-974d91c70462
+  + [source_snapshot_uuid] is 4a94b7fe-120b-4687-8433-9aa31e8e0828
+  + [canonical_specification_uuid] is a41e9af8-a4db-4408-b42d-5ebf50d75262
+  + [solution_uuid] is c3869518-8287-40c2-90da-343dff618d6e
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [reasoning_result] is inspect special-prime arithmetic facts with deterministic tooling, then record sparse realizations without claiming RH proof relevance beyond landscape orientation
+
+(special_prime_periphery) :arithmetic identity and relation profile: /Fermat identity, factor boundary, and family resemblance/ |RH proof claims and unsupported causation|
+  + [inside] is prime-family facts, congruence surfaces, divisor relations, and candidate-family heat
+  + [boundary] is no global theorem inference from finite or family-specific oddities
+  |outside| proof of RH, disproof of RH, zero certification, and hidden theorem authority

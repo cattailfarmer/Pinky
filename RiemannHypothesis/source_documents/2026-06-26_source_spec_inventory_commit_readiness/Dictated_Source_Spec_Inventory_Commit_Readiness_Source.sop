@@ -1,0 +1,23 @@
+Subject: Dictated Source Spec Inventory Commit Readiness Source
+
+Description: Raw source for inventorying the RH source/spec/tool/test slice before a future commit bookend.
+
+& [DictatedSourceSpecInventoryCommitReadinessSource] is preserved source for making the RH project slice commit-reviewable
+  + [source_snapshot_uuid] is 8a803945-2820-4eb4-8110-eae57ddd9177
+  + [source_kind] is derived_from_worktree_integrity_review_next_step
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_previous_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_worktree_integrity_review_001.sop
+  + [need] is inventory non-ignored RH worktree files by role, distinguish ignored runtime surfaces, and name commit-readiness posture before any staging or commit
+  + [current_non_ignored_untracked_count] is 333 under RiemannHypothesis after walking-continuity and worktree-review records
+  + [current_file_type_counts] are 244 SOP records, 36 JSON traces, 46 Python files, and 7 markdown/text files
+  + [current_role_counts] are 96 analysis files, 137 source document files, 50 specification files, 46 tool files, 1 test file, 1 planning file, AGENTS.md, and requirements.txt
+  + [ignored_runtime_surfaces] are .pytest_cache, .venv, tests\__pycache__, tools\rh_math\__pycache__, and tools\scripts\__pycache__
+  + [verification_anchor] is 36 pytest tests passed before this inventory source was written
+  + [preservation_boundary] is this source supports readiness assessment only and does not stage or commit files
+
+  = must: treat inventory as pre-commit review support
+  = must: preserve ignored runtime surfaces as outside source authority
+  = must: keep proof and theorem claims outside
+  - never: infer mathematical significance from file count or test count

@@ -1,0 +1,47 @@
+Subject: Whole Field Prime Shape Bridge Specification
+
+Description: SJS-processed project-local contract for using special-prime families as probes against whole-prime distribution objects.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_prime_shape_bridge\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Special_Prime_Periphery_Inquiry_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Math_Processing_Tool_Scripts_Specification.sop
+
+& [WholeFieldPrimeShapeBridge] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 9a5e443e-17b1-4c05-8b5f-55f9b227cbde
+  + [source_snapshot_uuid] is a99461a9-3b98-488a-ac4e-6f6c044a30f4
+  + [solution_uuid] is f8a83564-0762-438b-9f25-edfe9185f4e5
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [role] is bridge special-prime shape inquiry back to whole-prime distribution measurement
+  + [not_role] is special-primes hypothesis, RH proof, disproof, or theorem authority
+
+  = must: measure special-prime families beside all-prime pi(x), theta(x), and psi(x)
+  = must: keep family counts, family log weights, and family shares finite and inspectable
+  = must: mark every distribution trace as finite numerical evidence only
+  = must: treat theta(x)-x and psi(x)-x as whole-field return surfaces
+  = must: classify special-prime families as probes unless they demonstrably explain, bound, sample, or illuminate a global object
+  - never: center RH inquiry on special-prime rarity alone
+  - never: infer RH truth from finite family counts or correlations
+
+## Tool Contract
+
+& [PrimeFamilyDistributionTool] is the script surface for whole-field return measurement
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_family_distribution.py
+  + [input] is sample points or generated finite bounds, selected families, and precision metadata
+  + [output] is global rows for pi, li, R, theta, psi, and family rows for count, density, and log-weight share
+  + [proof_status] is finite_family_distribution_probe_not_rh_evidence
+
+## SJS Processing Trace
+
+& [WholeFieldPrimeShapeBridgeSJS] is the specification justification trace
+  + [protocol_uuid] is e17ddcad-18c9-4734-8289-c0ebc83f820e
+  + [source_snapshot_uuid] is a99461a9-3b98-488a-ac4e-6f6c044a30f4
+  + [canonical_specification_uuid] is 9a5e443e-17b1-4c05-8b5f-55f9b227cbde
+  + [solution_uuid] is f8a83564-0762-438b-9f25-edfe9185f4e5
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [reasoning_result] is begin work by building a deterministic whole-field return tool so special-prime families can be inspected without replacing the RH subject
+
+(whole_field_prime_shape_bridge) :special families as probes: /pi, theta, psi, and finite residuals/ |special-primes hypothesis|
+  + [inside] is finite family counts, family log weights, all-prime distribution rows, and explicit non-proof metadata
+  + [boundary] is no proof claims and no global inference from family rarity
+  |outside| RH proof, disproof, theorem authority, and special-family subject replacement

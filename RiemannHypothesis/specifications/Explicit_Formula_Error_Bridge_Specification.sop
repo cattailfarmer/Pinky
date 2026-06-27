@@ -1,0 +1,44 @@
+Subject: Explicit Formula Error Bridge Specification
+
+Description: SJS-processed contract for bounded explicit-formula comparisons between psi(x), theta(x), pi(x), and finite nontrivial zero terms.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_formula_error_bridge\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Math_Processing_Tool_Scripts_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+
+& [ExplicitFormulaErrorBridge] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 5109ee84-7ebc-437d-a286-1cfb9cdcf118
+  + [source_snapshot_uuid] is 78bd2f15-480a-462a-92ba-69da77a7b475
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare exact finite psi(x) with a bounded explicit-formula approximation using first nontrivial zero pairs
+  + [not_purpose] is proof, disproof, independent zero certification, or final explicit-formula convergence authority
+
+  = must: compute exact finite pi(x), theta(x), and psi(x) rows for requested x
+  = must: compute bounded explicit-formula approximations with visible zero_pair_count
+  = must: expose zero-pair contribution sums, constant term, trivial-zero correction, estimate_minus_psi, and scaled residuals
+  = must: treat mpmath zetazero as library numerical lookup, not proof authority
+  = must: mark output proof_status as finite_explicit_formula_probe_not_zero_certification
+  = must: keep special-prime families subordinate to whole-field explicit-formula and psi objects
+  - never: claim RH proof, disproof, or zero certification from finite zero-term traces
+  - never: treat a smaller residual at one truncation as convergence proof
+
+& [ExplicitFormulaProbeTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\explicit_formula_probe.py
+  + [runtime_function] is rh_math.explicit_formula.explicit_formula_probe
+  + [input] is finite sample points, zero pair counts, precision metadata, and optional zero-term inclusion
+  + [output] is exact pi/theta/psi rows, explicit-formula estimate rows, residuals, and optional zero-term rows
+  + [proof_status] is finite_explicit_formula_probe_not_zero_certification
+
+& [ExplicitFormulaErrorBridgeSJS] is the specification justification trace
+  + [protocol_uuid] is 20d915f6-4065-4c50-b61c-b7d590a285dd
+  + [source_snapshot_uuid] is 78bd2f15-480a-462a-92ba-69da77a7b475
+  + [canonical_specification_uuid] is 5109ee84-7ebc-437d-a286-1cfb9cdcf118
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bridge_contract
+  + [reasoning_result] is explicit-formula error should be measured as a bounded zero-term approximation surface before any stronger zero-line interpretation
+
+(explicit_formula_error_bridge) :bounded zero-term approximation: /pi(x), theta(x), psi(x), zero-pair sums, and residuals/ |zero certification|
+  + [inside] is finite explicit-formula comparison and residual trace
+  + [boundary] is approximation and error measurement only
+  |outside| RH proof, disproof, zero certification, and final convergence claims

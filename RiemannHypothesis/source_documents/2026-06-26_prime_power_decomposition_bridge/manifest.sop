@@ -1,0 +1,12 @@
+Subject: Prime Power Decomposition Bridge Source Manifest
+
+Description: Source manifest for the psi prime-power decomposition bridge.
+
+& [PrimePowerDecompositionBridgeSourceManifest] is the source manifest
+  + [manifest_uuid] is 8b139426-567b-4edf-afdd-947f92f70542
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_power_decomposition_bridge\Dictated_Prime_Power_Decomposition_Bridge_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Power_Decomposition_Bridge_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+  + [preservation_rule] is source_document is raw continuation source and must not be overwritten by canonicalized specification

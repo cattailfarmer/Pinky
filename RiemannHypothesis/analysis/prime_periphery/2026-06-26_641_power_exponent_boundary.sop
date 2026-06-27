@@ -1,0 +1,39 @@
+Subject: 641 Power Exponent Boundary
+
+Description: Boundary analysis of 65537^(641^N) + 2^r for Fermat-prime powers N and shifts r = 0, 1, 2.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_power_exponent_variant\manifest.sop
+@ [restraint] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_power_exponent_shift_ladder_probe_1m.json
+
+& [Fermat641PowerExponentBoundary] is a completed bounded modular probe
+  + [analysis_uuid] is 443ff6a6-e21f-4cea-b053-e46cd665496e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [focus_subject] is 65537^(641^N) + 2^r where N is 3, 5, 17, 257, or 65537 and r is 0, 1, or 2
+  + [small_factor_limit] is 1000000
+  + [status] is completed_and_abandoned_as_identity_track
+
+## Computed Boundary
+
+& [Boundary_001_PowerExponentParity] is structural
+  + [statement] is 641^N is odd for every listed odd Fermat-prime N
+  + [meaning] is plus-one remains factor-forced and parity switching does not create even-exponent behavior in this branch
+
+& [Boundary_002_Mod3Obstruction] is decisive_for_r0_and_r2
+  + [statement] is 65537 is congruent to 2 modulo 3 and 641^N is odd, so 65537^(641^N) is congruent to -1 modulo 3
+  + [r_0] is shift 2^0 = 1, so -1 + 1 is congruent to 0 modulo 3
+  + [r_2] is shift 2^2 = 4, so -1 + 4 is congruent to 0 modulo 3
+  + [result] is +1 and +4 levels are obstructed for every listed N
+
+& [Boundary_003_Mod7Obstruction] is decisive_for_r1
+  + [statement] is 65537 is congruent to 3 modulo 7 and 641 is congruent to 4 modulo 7
+  + [exponent_mod] is 641^N is congruent to 5 modulo 6 for the listed odd N
+  + [result] is 65537^(641^N) + 2 is divisible by 7 for every listed N
+  + [meaning] is the +2 level collapses under the power-exponent branch
+
+& [Conclusion_001] is abandon_as_wrong_identity
+  + [statement] is the 641^N branch does not track the intended identity
+  + [reason] is more than two defining set members fail; in fact every tested member is obstructed at the tested levels
+  + [abandonment_rule] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+  + [preserved_meaning] is this branch explains a residue obstruction pattern, not a candidate Fermat-coherent prime sequence

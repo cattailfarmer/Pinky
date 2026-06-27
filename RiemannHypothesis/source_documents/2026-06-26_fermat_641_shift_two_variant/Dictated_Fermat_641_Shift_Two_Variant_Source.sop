@@ -1,0 +1,16 @@
+Subject: Dictated Fermat 641 Shift Two Variant Source
+
+Description: Raw source preserving the user's correction that the 65537^(641*N) form should be tested with plus or minus 2 rather than plus or minus 1.
+
+& [DictatedFermat641ShiftTwoVariantSource] is preserved raw source for the Fermat-coherence shift-two variant
+  + [source_uuid] is b7e7577e-bdd5-4c97-856e-bb47cdd8e605
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "oh right, because those were all odd numbers it always makes an odd product, so +-1 is even... needs to be +-2"
+
+  = must: test 65537^(641*N) plus or minus 2 without expanding large powers
+  = must: distinguish parity escape from primality or RH relevance
+  = must: treat discovered factors as finite arithmetic traces
+  - never: treat absence of small factors as proof of primality

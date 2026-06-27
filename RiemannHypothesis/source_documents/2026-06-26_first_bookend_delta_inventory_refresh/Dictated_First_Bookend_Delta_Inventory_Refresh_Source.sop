@@ -1,0 +1,26 @@
+Subject: Dictated First Bookend Delta Inventory Refresh Source
+
+Description: Raw source for refreshing the RiemannHypothesis first-bookend worktree inventory after post-discrepancy route settlement.
+
+& [DictatedFirstBookendDeltaInventoryRefreshSource] is preserved source for first-bookend delta inventory refresh
+  + [source_snapshot_uuid] is d73ffc45-26dd-43b4-ade5-07e94b75238e
+  + [source_kind] is derived_from_post_discrepancy_route_settlement_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [current_focal_point] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  @ [post_discrepancy_route_settlement] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_post_discrepancy_route_settlement_001.sop
+  @ [commit_scope_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+  @ [source_spec_inventory] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_source_spec_inventory_commit_readiness_001.sop
+  + [need] is refresh the source/spec/analysis/tool and worktree delta inventory because the prior first-bookend commit-scope review is stale after later walking records
+  + [governance_pressure] is the RiemannHypothesis project remains untracked while source/spec/analysis records continue to accumulate
+  + [math_pressure] is low because post-discrepancy route settlement found no computation-ready or source-request-worthy math object
+  + [source_boundary] is this source authorizes inventory refresh only; it does not authorize staging, committing, broad .sop mutation, runtime code changes, new math execution, proof claims, zero certification, or branch reopening
+
+  = must: compare the current non-ignored RiemannHypothesis surface to the earlier first-bookend count
+  = must: separate RiemannHypothesis project surface from .sop\state\CurrentFocalPoint.sop and broad .sop platform state
+  = must: preserve current scope recommendation without staging or committing
+  = must: identify the next non-mutating lead if the refreshed inventory still shows pursuit value
+  - never: treat bookkeeping warmth as mathematical evidence
+  - never: treat the commit boundary as an obstruction on review or periphery inquiry

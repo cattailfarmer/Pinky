@@ -1,0 +1,14 @@
+Subject: Fermat 641 Power Exponent Variant Source Manifest
+
+Description: Manifest for the source hypothesis about applying 641 by powers of N.
+
+& [Fermat641PowerExponentVariantSourceManifest] is the source manifest for the power-exponent variant
+  + [manifest_uuid] is a02b4b09-0dea-4d5a-b18e-bc922014ec72
+  + [source_uuid] is afc3d555-c058-47ea-a602-924b01a18bdd
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_power_exponent_variant\Dictated_Fermat_641_Power_Exponent_Variant_Source.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_power_exponent_boundary.sop
+  + [source_role] is user_hypothesis_for_power_exponent_boundary_testing
+
+  = must: preserve this branch separately from the product-exponent branch

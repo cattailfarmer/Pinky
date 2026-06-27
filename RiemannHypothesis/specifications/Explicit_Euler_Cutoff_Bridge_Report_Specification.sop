@@ -1,0 +1,32 @@
+Subject: Explicit Euler Cutoff Bridge Report Specification
+
+Description: Canonical local specification for comparing explicit-formula residual windows with Euler/log-derivative cutoff behavior.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_cutoff_bridge\Source_Document_Manifest.sop
+
+& [ExplicitEulerCutoffBridgeReportSpecification] is the local authority for this report
+  + [specification_uuid] is cb9eee60-55e9-46a0-9d09-e3af482f403b
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [report_path] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_cutoff_bridge_report_001.sop
+  + [purpose] is determine whether existing traces justify deeper coupling between explicit-formula residuals and Euler/log-derivative cutoffs
+  + [proof_status] is finite_explicit_euler_cutoff_bridge_not_RH_evidence
+
+& [ComparisonBoundary] is the required interpretation boundary
+  + [explicit_formula_domain] is x-domain psi approximation by finite zero-pair sums
+  + [explicit_window_axis] is sharp versus Fejer zero-term weighting
+  + [euler_domain] is s-domain finite Euler-product and Lambda/log-derivative weighting for Re(s) > 1
+  + [euler_cutoff_axis] is increasing prime or prime-power bound
+  + [not_directly_shared] is no direct scalar residual identity exists between these finite traces without a new source-defined bridge model
+
+  = must: compare patterns and roles, not raw residual magnitudes as if they shared units
+  = must: report whether each surface becomes cleaner under its cutoff/window axis
+  = must: state whether a new scanner is justified
+  - never: treat monotone improvement in Re(s) > 1 as zero-line evidence
+
+& [CompletionCriteria] is the completion standard
+  + [source_preserved] is source and manifest saved
+  + [specification_created] is this specification saved before report
+  + [report_created] is analysis/zero_behavior/2026-06-26_explicit_euler_cutoff_bridge_report_001.sop
+  + [manager_updated] is Manager_State.sop points to the report
+  + [focal_point_updated] is CurrentFocalPoint.sop records the answer and next open question

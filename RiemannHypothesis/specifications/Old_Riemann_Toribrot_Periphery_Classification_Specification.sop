@@ -1,0 +1,44 @@
+Subject: Old Riemann Toribrot Periphery Classification Specification
+
+Description: Pinky-local specification for classifying old Riemann Workspace and Toribrot geometry objects against current RH rails.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\Source_Document_Manifest.sop
+@ [prior_classification] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_zeta_tool_translation_pass_001.sop
+@ [local_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+
+& [OldRiemannToribrotPeripheryClassificationSpecification] is the local authority for this bounded classification pass
+  + [specification_uuid] is 5bfc6fbb-3ab0-4852-b4a2-b3a45eda4714
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [classification_subjects] are RiemannWorkspace, Toribrot, EnumeratedToribrotModule, and EnumeratedToribrotMathEngine
+  + [scope] is source-preserved meaning translation and import/defer classification only
+  + [out_of_scope] is Toribrot runtime, proof claim, zero detector claim, physical SO(10) claim, and geometry-to-arithmetic theorem claim
+
+& [ClassificationVocabulary] is the required output vocabulary
+  + [useful_primitive] is a bounded local concept that can be reused after source preservation
+  + [conceptual_scaffold] is an orienting model that helps organize inquiry but does not drive computation or proof-like inference
+  + [workaround_hack] is a structure that likely compensated for missing deterministic tools or collapsed unrelated identities
+  + [obsolete_analogy] is a resemblance that no longer clarifies current work
+  + [import_candidate] is a source-preserved object worth translating into Pinky-local form if a future task needs it
+  + [defer] is an object that remains external periphery until a later source-preserved slice needs it
+
+& [PrimaryBoundary] is the required local interpretation
+  + [riemann_workspace] is an integration and routing scaffold, not a proof method
+  + [enumerated_toribrot_module] is address identity and payload storage, not arithmetic or RH meaning
+  + [enumerated_toribrot_math_engine] is auditable finite computation architecture, not an RH analyzer
+  + [toribrot_geometry] is geometric/perceptual hypothesis generator, not arithmetic identity or zeta truth
+  + [pants_term] may mean topological pants, arithmetic factor pants, or binary operation composition and must be typed before use
+
+  = must: preserve geometry/algebra/computation/RH boundaries
+  = must: declare any map from geometric observable to scalar field a(n) before using it in a Dirichlet or log-Fourier transform
+  = must: compare any geometry-derived field against known arithmetic fields before drawing RH-adjacent conclusions
+  = must: keep SO10 and modifier frames as lineage or future geometry work only
+  - never: let geometry reassign integer identity, prime status, factorization, or zeta analytic truth
+  - never: treat symbolic elegance as evidence of mathematical completeness
+
+& [CompletionCriteria] is the completion standard for this pass
+  + [source_preserved] is exact snapshots and hashes recorded
+  + [classification_record_created] is analysis/periphery_inspections/2026-06-26_old_riemann_toribrot_translation_pass_001.sop
+  + [manager_updated] is planning/project_manager/Manager_State.sop points to the new pass and closes old-framework classification
+  + [focal_point_updated] is .sop/state/CurrentFocalPoint.sop records the answer and next open question
+  + [proof_boundary_retained] is geometry and finite traces remain exploratory only

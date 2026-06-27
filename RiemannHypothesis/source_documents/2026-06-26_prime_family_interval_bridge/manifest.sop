@@ -1,0 +1,15 @@
+Subject: Prime Family Interval Bridge Source Manifest
+
+Description: Manifest for interval-level whole-field return work over special-prime family increments.
+
+& [PrimeFamilyIntervalBridgeSourceManifest] is the source manifest for interval bridge work
+  + [manifest_uuid] is f3c78328-048b-44d4-831d-908801998f3b
+  + [source_uuid] is 4f7b99ca-543e-4555-b7c1-ef77d2244321
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_family_interval_bridge\Dictated_Prime_Family_Interval_Bridge_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Family_Interval_Bridge_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_family_interval_bridge_pass_001.sop
+  + [source_role] is continuation_directive_for_guardrailed_interval_measurement
+
+  = must: keep interval source separate from computed traces and analysis

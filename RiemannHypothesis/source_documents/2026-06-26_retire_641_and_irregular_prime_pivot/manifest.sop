@@ -1,0 +1,15 @@
+Subject: Retire 641 And Irregular Prime Pivot Source Manifest
+
+Description: Manifest for the source direction to pivot from 641 special-form probes to a zeta-adjacent prime family.
+
+& [Retire641AndIrregularPrimePivotSourceManifest] is the source manifest for the irregular-prime pivot
+  + [manifest_uuid] is 733c7a6f-d4ae-4bd8-a96f-07cc0bb4c725
+  + [source_uuid] is b900453b-eb3b-40f1-a110-46eb6a0b8352
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_retire_641_and_irregular_prime_pivot\Dictated_Retire_641_And_Irregular_Prime_Pivot_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Irregular_Prime_Periphery_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_irregular_prime_first_pass.sop
+  + [source_role] is user_direction_for_prime_family_pivot_after_641_retirement
+
+  = must: preserve the pivot as a separate source from the retired 641 branches

@@ -1,0 +1,61 @@
+Subject: Explicit Euler Cutoff Bridge Report 001
+
+Description: Bounded comparison of explicit-formula residual windowing with Euler-product/logarithmic-derivative cutoff behavior.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_cutoff_bridge\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Euler_Cutoff_Bridge_Report_Specification.sop
+@ [explicit_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_trace.json
+@ [zero_window_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_trace.json
+@ [euler_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_trace.json
+
+& [ExplicitEulerCutoffBridgeReport001] is a completed bounded synthesis report
+  + [analysis_uuid] is 45004b94-9d03-424d-80da-50e170e3ca8b
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [proof_status] is finite_explicit_euler_cutoff_bridge_not_RH_evidence
+  + [status] is completed
+
+& [ExplicitFormulaWindowSurface_001] is finite_x_domain_result
+  + [sample_points] are 100, 200, and 500
+  + [zero_pair_counts] are 5, 10, and 20
+  + [windows] are sharp and Fejer
+  + [sharp_motion] is mixed: residual worsened with more zero pairs at x = 100 and x = 500, but improved at x = 200
+  + [fejer_motion] is mixed: residual improved with more zero pairs at x = 100 and x = 200, but improved then worsened at x = 500
+  + [window_comparison] is Fejer improved 3 of 9 sampled rows and worsened 6 of 9 sampled rows against sharp truncation
+  + [inference] is explicit-formula residuals are strongly truncation-sensitive and window-sensitive in this finite sample
+  + [boundary] is finite zero-pair residual behavior is not zero certification or convergence evidence
+
+& [EulerLogDerivativeCutoffSurface_001] is finite_s_domain_result
+  + [sample_points] are s = 2 + 0i, s = 2 + 14.1347251417347i, and s = 1.5 + 14.1347251417347i
+  + [prime_bounds] are 10, 100, and 500
+  + [euler_product_motion] is residuals shrink consistently as bound increases across all sampled points
+  + [log_derivative_motion] is prime-factor and prime-power logarithmic-derivative residuals also shrink consistently as bound increases across all sampled points
+  + [example_euler_product_motion] is at s = 2 + 14.1347251417347i, Euler-product residual shrank from approximately 0.0071349 at bound 10 to 0.0000148656 at bound 500
+  + [example_log_derivative_motion] is at s = 2 + 14.1347251417347i, prime-factor log-derivative residual shrank from approximately 0.0278477 at bound 10 to 0.000136764 at bound 500
+  + [inference] is Euler/log-derivative rails supply a cleaner cutoff-convergence surface in Re(s) > 1 than finite explicit-formula zero-window rows
+  + [boundary] is this clean behavior remains a half-plane convergence result, not critical-line evidence
+
+& [BridgeInference_001] is comparison_result
+  + [shared_fabric] is both surfaces are whole-field zeta-adjacent and Lambda/prime-power connected through psi and -zeta_prime/zeta
+  + [separate_axes] is explicit-formula residuals vary by x, zero-pair count, and zero-window policy, while Euler/log-derivative residuals vary by s and prime cutoff in Re(s) > 1
+  + [direct_comparison_status] is not_directly_comparable_as_scalar_residuals_without_new_bridge_model
+  + [correlation_status] is conceptual rather than numerical in this bounded pass
+  + [identity_boundary] is the two rails should remain separate complementary surfaces, not a single inferred error identity
+
+& [DirectionDecision_001] is restraint_result
+  + [decision] is do not add another scanner yet
+  + [reason] is existing traces already answer the current bridge question: Euler/log-derivative cutoff behavior is stable in Re(s) > 1, while explicit-formula residuals remain oscillatory and window-sensitive
+  + [recommended_next] is if work continues, deepen the explicit-formula side by testing larger zero counts and more smoothing windows against psi(x), because that is the less stable surface
+  + [defer] is special-prime expansion, Toribrot geometry, and proof-facing interpretation
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is the explicit-formula residual and Euler/log-derivative cutoff rails are complementary but not yet a single coupled identity track
+  + [reason] is one finite surface is oscillatory/window-sensitive in the x-domain, while the other is cleanly cutoff-convergent in the s-domain for Re(s) > 1
+  + [retained_model] is use Euler/log-derivative rails as stable half-plane weighting support and explicit-formula residuals as a separate approximation/windowing problem
+  + [next_open_question] is whether to expand explicit-formula window testing with larger zero counts and additional smoothing policies before trying any stronger bridge
+  + [retained_boundary] is no proof, disproof, zero certification, or RH evidence follows from this finite comparison
+
+(explicit_euler_cutoff_bridge_report_001) :x-domain explicit residuals compared with s-domain Euler/log-derivative cutoffs: /window sensitivity, cutoff convergence, complementary rails/ |single error identity|
+  + [inside] is bounded synthesis of existing deterministic traces
+  + [boundary] is role separation and next-inquiry selection only
+  |outside| proof claims, zero certification, critical-line authority, and forced scalar-residual comparison

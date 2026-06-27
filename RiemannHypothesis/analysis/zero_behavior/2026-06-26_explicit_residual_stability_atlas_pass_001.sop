@@ -1,0 +1,66 @@
+Subject: Explicit Residual Stability Atlas Pass 001
+
+Description: Finite diagnostic atlas for explicit-formula residual stability across x, zero-pair cutoff, and window policy.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_stability_atlas\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Stability_Atlas_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\explicit_residual_stability_atlas.py
+
+& [ExplicitResidualStabilityAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether explicit-formula residual behavior stabilizes across a broader grid before attempting another explicit/Euler bridge
+  + [implementation_change] is added zero_window_stability_atlas and explicit_residual_stability_atlas.py for bounded residual atlas output
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 27 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\explicit_residual_stability_atlas.py --x 100 --x 150 --x 200 --x 300 --x 500 --x 800 --x 1000 --zero-count 10 --zero-count 20 --zero-count 40 --zero-count 80 --zero-count 120 --window sharp --window fejer --window lanczos --window hann --dps 80 --output analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_trace.json
+  + [trace_row_count] is 140
+  + [sample_points] is 100, 150, 200, 300, 500, 800, and 1000
+  + [zero_pair_counts] is 10, 20, 40, 80, and 120
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [proof_status] is finite_explicit_residual_stability_atlas_not_zero_certification
+
+& [AtlasWindowSummary] is the observed bounded window field
+  + [best_window_win_counts] is sharp 15, fejer 9, lanczos 6, hann 5 across 35 x/cutoff comparisons
+  + [average_residual_abs_sharp] is 1.0748721109278336350770258365168394142616969579298296304232147612850060788966109
+  + [average_residual_abs_lanczos] is 1.179761271562056260944418265174386043755030516118865914103223750301855660991258
+  + [average_residual_abs_fejer] is 1.2179407988587049212334534556423371236782697879527607245349635451447106834349226
+  + [average_residual_abs_hann] is 1.2321567592259713557631843781189015750893667706890038958439121565971242341340204
+  + [smallest_residual_abs] is sharp at 0.0001980500266066240191516000627696790215583734492261173919514879269267121345769763
+  + [largest_residual_abs] is fejer at 5.1892438378126468597432572676150924737652154847654313376537738945048285830878165
+
+& [AtlasSampleSummary] is the observed bounded sample field
+  + [x_100_best_sequence] is sharp,hann,sharp,sharp,lanczos with 3 switches
+  + [x_150_best_sequence] is lanczos,hann,fejer,lanczos,fejer with 4 switches
+  + [x_200_best_sequence] is sharp,sharp,sharp,sharp,sharp with 0 switches
+  + [x_300_best_sequence] is sharp,lanczos,fejer,sharp,lanczos with 4 switches
+  + [x_500_best_sequence] is lanczos,hann,sharp,hann,hann with 3 switches
+  + [x_800_best_sequence] is sharp,sharp,fejer,sharp,fejer with 3 switches
+  + [x_1000_best_sequence] is fejer,fejer,fejer,fejer,sharp with 1 switch
+  + [stable_local_case] is x=200 where sharp remains best at every tested cutoff
+  + [high_switch_cases] are x=150 and x=300 where best-window identity changes at nearly every cutoff
+
+& [AtlasCutoffTransitionSummary] is the cutoff movement field
+  + [fejer_transitions] is improved 19 and worsened 9
+  + [hann_transitions] is improved 19 and worsened 9
+  + [lanczos_transitions] is improved 15 and worsened 13
+  + [sharp_transitions] is improved 15 and worsened 13
+  + [inference] is increasing zero-pair count usually but not always improves residuals, and the improvement rate differs by smoothing policy
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is raw zero-pair cutoff count is not a stable identity coordinate across this grid
+  + [window_observation] is sharp remains the strongest average and win-count baseline, but Fejer, Lanczos, and Hann all win local pockets
+  + [stability_observation] is best-window sequence switches frequently for most sampled x, while x=200 is a local stable sharp case rather than a general rule
+  + [bridge_result] is the atlas does not justify another explicit/Euler bridge as a single coupled identity track
+  + [next_reasonable_coordinate] is zero-height or scale-tied cutoff policy, because counting zero pairs directly ignores the height T of included zeta zeros and may be a poor coordinate for explicit-formula truncation behavior
+  + [answered_question] is a broader residual stability atlas is useful, but it shows sensitivity and coordinate weakness rather than stable window identity
+
+  = must: treat the atlas as finite residual sensitivity and coordinate diagnosis only
+  = must: keep special-prime observations subordinate to whole-field objects
+  = must: treat x=200 stability and x=150/x=300 switching as local finite observations, not theorem signals
+  = must: prefer a future T-height or scale-normalized cutoff specification over merely adding more smoothing windows
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal smoothing superiority, or explicit/Euler bridge identity from this atlas
+
+(explicit_residual_stability_atlas_pass_001) :finite coordinate diagnosis: /sharp baseline, local smoothing pockets, frequent best-window switches, raw cutoff weakness/ |proof authority|

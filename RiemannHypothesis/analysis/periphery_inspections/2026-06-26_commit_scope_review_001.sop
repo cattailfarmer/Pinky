@@ -1,0 +1,49 @@
+Subject: Commit Scope Review 001
+
+Description: Pre-commit scope review for the first RH project bookend.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_commit_scope_review\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Commit_Scope_Review_Specification.sop
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_source_spec_inventory_commit_readiness_001.sop
+
+& [CommitScopeReview001] is a completed pre-commit scope review
+  + [analysis_uuid] is 640debc9-95ce-4e3a-b18f-e39c10f0b682
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_scope_review
+  + [proof_status] is commit_scope_review_not_rh_evidence
+  + [commit_status] is not_committed
+  + [rh_non_ignored_untracked_count] is 337
+  + [root_sop_dirty_entries] is 80
+  + [root_sop_modified_entries] is 71
+  + [root_sop_untracked_entries] is 9
+  + [current_focal_point_diff_stat] is 303 insertions and 62 deletions
+
+& [ScopeAssessment] is active
+  + [candidate_scope_a] is RiemannHypothesis project files only
+  + [candidate_scope_a_strength] is clean first project bookend with no broad .sop dirt
+  + [candidate_scope_a_weakness] is focal-state authority update remains outside the commit
+  + [candidate_scope_b] is RiemannHypothesis project files plus .sop\state\CurrentFocalPoint.sop
+  + [candidate_scope_b_strength] is binds project material to active reentry state
+  + [candidate_scope_b_weakness] is CurrentFocalPoint already contains a large prior focus transition, so its diff is not a narrow RH-only edit
+  + [candidate_scope_c] is defer commit
+  + [candidate_scope_c_strength] is avoids premature bookend if user wants authority cleanup first
+  + [candidate_scope_c_weakness] is continued untracked growth weakens repo-first reflection
+  + [excluded_scope] is broad .sop platform dirty state
+
+& [Recommendation] is stable_with_watch
+  + [recommended_scope] is candidate_scope_a by default
+  + [reason] is it creates the cleanest first RH project bookend and avoids mixing broad .sop authority changes into a project commit
+  + [alternate_recommended_scope] is candidate_scope_b if the user explicitly wants focal reentry state bound to the first RH commit
+  + [blocked_action] is do not stage or commit without explicit user direction because this is a first-add event with 337 files
+  + [next_action] is ask the user whether to stage RiemannHypothesis only, RiemannHypothesis plus CurrentFocalPoint, or defer
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is commit scope has been reviewed and the safest default is RiemannHypothesis only, but actual staging should wait for explicit user direction
+  + [next_work_if_no_commit_direction] is continue non-mutating periphery review or source/spec inventory, not more math expansion
+  + [boundary] is no staging, commit, proof, zero certification, or new math scan occurred
+
+(commit_scope_review_001) :scope recommendation: /RH-only default; focal-state optional; broad .sop excluded/ |automatic staging|
+  + [inside] is pre-commit scope recommendation
+  + [boundary] is explicit user direction required before staging
+  |outside| broad .sop staging, hidden authority, ignored runtime inclusion, and theorem claims

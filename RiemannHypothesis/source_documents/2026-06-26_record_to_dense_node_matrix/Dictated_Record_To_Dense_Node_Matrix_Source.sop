@@ -1,0 +1,22 @@
+Subject: Dictated Record To Dense Node Matrix Source
+
+Description: Raw source for mapping existing RH analysis records to dense nodes, sparse periphery, and governance lanes.
+
+& [DictatedRecordToDenseNodeMatrixSource] is preserved source for the record-to-dense-node matrix
+  + [source_snapshot_uuid] is f73df46f-300e-4ffb-ae7b-4f511303146a
+  + [source_kind] is derived_from_whole_field_record_index_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_previous_index] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_whole_field_record_index_001.sop
+  @ [governing_landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+  + [need] is map existing RH analysis records to the six dense orientation nodes and sparse periphery/governance lanes without adding computation
+  + [observed_record_count] is 64 analysis SOP records under RiemannHypothesis after the whole-field record index
+  + [dense_node_set] is PrimeCountingThetaPsi, EulerLogDerivativeHalfPlane, ExplicitFormulaResidualSurface, ReferenceAndResonanceLandmarks, LambdaDiagnosticOverlay, and BridgeRestraint
+  + [additional_lane_set] is SparsePeriphery, ImportBoundary, ToolchainSupport, and GovernanceWalking
+  + [source_boundary] is this source authorizes route mapping only; it does not authorize staging, commits, broad .sop mutation, proof claims, or new numerical scans
+
+  = must: map records by primary role and supporting relation
+  = must: preserve paused branch decisions and proof-status boundaries
+  = must: keep special-prime records subordinate to whole-field nodes
+  - never: treat matrix membership as proof, causation, zero certification, or branch reopening authority

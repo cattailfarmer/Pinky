@@ -1,0 +1,52 @@
+Subject: Focused Restraint Periphery Focus Pass 004
+
+Description: Periphery inspection pass turning the user's restraint refinement into a sparse-to-dense framework refinement.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_focused_inquiry_restraint\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_focused_inquiry_restraint\Dictated_Focused_Inquiry_Restraint_Source.sop
+@ [governing_specification] C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+
+& [FocusedRestraintPass004] is a periphery inspection pass over focus restraint
+  + [inspection_uuid] is 7f378182-1dbe-427f-86bc-e43c68492832
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [subject] is FocusedInquiryRestraint
+  + [drawn_from] is user_correction
+  + [surface_fact_set] is focus, current line of inquiry, purpose relevance, truth override, security override, stability, priority, greater impression of meaning, and immediate periphery
+  + [sparse_realization] is inquisitiveness needs a restraint governor that holds the current inquiry stable unless truth, security, priority, or immediate-periphery meaning reason upsets it
+  + [concept_promoter_set] is focus stability, purpose relevance, restraint, override reasoning, and bounded curiosity
+  + [identity_anchor_set] is current line of inquiry, active purpose, focus, immediate periphery, truth, security, and priority
+  + [whole_shape_cue_set] is periphery inspection needs both an expansion drive and a stabilizing governor to avoid losing the selected work surface
+  + [not_it_field] is unbounded curiosity, remote interesting tangents, novelty as authority, and focus shifts without source-grounded reason
+  + [authority_status] is framework_refinement_after_source_preservation
+
+  = must: treat restraint as a complement to inquisitiveness
+  = must: preserve interesting but out-of-purpose material as deferred outside or frontier rather than losing it
+  = must: allow focus to shift when truth, security, priority, or stronger meaning in the focus or immediate periphery provides a supported override
+  - never: use restraint to ignore relevant contradiction, risk, or stronger immediate-periphery meaning
+  - never: use inquisitiveness to abandon the current inquiry merely because an idea is interesting
+
+& [FocusedRestraintRelationTrace] is the relation ledger for this pass
+  + [relation_id] is bc93ce47-fe54-43e8-8a3d-8dfdd28128a0
+  + [source_subject] is InquisitivePeripheryDrive
+  + [target_subject] is FocusedInquiryRestraint
+  + [relation_type] is dependency
+  + [support] is user correction defining restraint as necessary while in focus
+  + [confidence] is high
+  + [heat_profile] is causation_heat and identity_heat
+  + [identity_disposition] is separate_identity_preserved
+  + [local_fabric_grounding] is project_source_lineage
+  + [promotion_rule] is keep both drives in the lifecycle as complementary primitives
+  + [outside] is curiosity and restraint are not the same function
+
+& [FocusedRestraintOverrideTrace] is the override ledger for focus upset
+  + [relation_id] is 22295c83-58f2-4459-8743-6008ad14c5b4
+  + [source_subject] is truth_security_priority_or_greater_meaning_signal
+  + [target_subject] is current_focus_stability
+  + [relation_type] is causal
+  + [support] is user source states restraint holds stability until upset by priority or greater meaning in focus or immediate periphery, with truth and security already named as overrides
+  + [confidence] is high
+  + [heat_profile] is causation_heat
+  + [identity_disposition] is relation_without_identity
+  + [local_fabric_grounding] is project_source_lineage
+  + [promotion_rule] is focus may shift only when the signal is source-grounded, purpose-relevant, or risk-relevant
+  + [outside] is remote novelty does not upset focus stability

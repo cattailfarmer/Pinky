@@ -1,0 +1,63 @@
+Subject: Euler Product Weighting Bridge Pass 001
+
+Description: First bounded comparison of finite Euler products and logarithmic-derivative prime-power weighting in Re(s) > 1.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_euler_product_weighting_bridge\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Euler_Product_Weighting_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_trace.json
+
+& [EulerProductWeightingBridgePass001] is a completed bounded zero-behavior-adjacent pass
+  + [analysis_uuid] is ae45c2ef-e84d-4f68-8c23-d1f478fbd25c
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\euler_product_probe.py
+  + [proof_status] is finite_euler_product_log_derivative_probe_not_rh_evidence
+  + [status] is completed
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [samples] is s=2+0i; s=2+14.1347251417347i; s=1.5+14.1347251417347i
+  + [prime_bounds] is 10, 100, 500
+  + [row_count] is 9
+  + [prime_factor_rows] is 372
+  + [prime_power_term_rows] is 468
+  + [s_2_0_bound_10_euler_product_residual_abs] is 0.049881983514893103
+  + [s_2_0_bound_100_euler_product_residual_abs] is 0.002988870227110689
+  + [s_2_0_bound_500_euler_product_residual_abs] is 0.000449381696148471
+  + [s_2_0_bound_10_log_derivative_residual_abs] is 0.093985689034297449
+  + [s_2_0_bound_100_log_derivative_residual_abs] is 0.009892534469328350
+  + [s_2_0_bound_500_log_derivative_residual_abs] is 0.001944687969388880
+  + [s_2_zero_t_bound_10_euler_product_residual_abs] is 0.007134910504440710
+  + [s_2_zero_t_bound_100_euler_product_residual_abs] is 0.000223634611326139
+  + [s_2_zero_t_bound_500_euler_product_residual_abs] is 0.000014865560925635
+  + [s_2_zero_t_bound_10_log_derivative_residual_abs] is 0.027847712049220194
+  + [s_2_zero_t_bound_100_log_derivative_residual_abs] is 0.001552523987768766
+  + [s_2_zero_t_bound_500_log_derivative_residual_abs] is 0.000136764200273318
+  + [s_1_5_zero_t_bound_10_euler_product_residual_abs] is 0.023173927518022813
+  + [s_1_5_zero_t_bound_100_euler_product_residual_abs] is 0.002020852300444627
+  + [s_1_5_zero_t_bound_500_euler_product_residual_abs] is 0.000289070575302509
+  + [s_1_5_zero_t_bound_10_log_derivative_residual_abs] is 0.121749989457709033
+  + [s_1_5_zero_t_bound_100_log_derivative_residual_abs] is 0.018467799916048687
+  + [s_1_5_zero_t_bound_500_log_derivative_residual_abs] is 0.003462871987067191
+
+& [WeightingInference_001] is whole_field_weighting_result
+  + [inference] is Euler-product and logarithmic-derivative weighting gives a cleaner convergent whole-field surface than sharp or Fejer zero-term truncation for the sampled Re(s) > 1 points
+  + [reason] is finite Euler-product and logarithmic-derivative residuals shrink consistently as the prime bound increases across the sampled points
+  + [identity_anchor] is -zeta'(s)/zeta(s) is the Dirichlet series over von Mangoldt weights Lambda(n)n^-s, directly tying the surface to prime powers and the same arithmetic fabric behind psi(x)
+  + [boundary] is this clean convergence occurs in the half-plane sigma > 1 and should not be read as direct critical-line evidence
+
+& [PrimePowerComparison_001] is boundary_detail
+  + [prime_factor_surface] is sum over included primes p <= bound with all repeated powers for those primes through log(p)p^-s/(1-p^-s)
+  + [prime_power_cutoff_surface] is sum over finite prime powers p^k <= bound with Lambda(p^k)(p^k)^-s
+  + [inference] is both surfaces track the same exact -zeta'(s)/zeta(s) target but expose different truncation boundaries
+  + [boundary] is neither truncation should be promoted as theorem authority or as a replacement for explicit-formula zero behavior
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is Euler-product/logarithmic-derivative weighting is the better next whole-field surface for stable prime-power-weighted inspection, but not a better zero-line probe
+  + [reason] is the bounded trace shows consistent residual shrinkage in Re(s) > 1 while preserving the convergence boundary away from the critical line
+  + [next_relevant_periphery] is approach-to-boundary scans for sigma decreasing toward 1 from above, explicitly marked as convergence-boundary inspection rather than RH evidence
+  + [retained_boundary] is special-prime observations remain subordinate to pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior
+
+(euler_product_weighting_bridge_pass_001) :convergent whole-field weighting surface: /Euler product, log derivative, Lambda(n)n^-s/ |critical-line proof|
+  + [inside] is finite half-plane convergence comparison and prime-power weighting trace
+  + [boundary] is useful stable whole-field lens but not zero-line authority
+  |outside| RH proof, disproof, independent zero certification, and direct critical-line inference

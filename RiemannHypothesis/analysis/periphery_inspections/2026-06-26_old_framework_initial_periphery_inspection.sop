@@ -1,0 +1,113 @@
+Subject: Old Framework Initial Periphery Inspection
+
+Description: First project-local inspection of old ReasoningFramework Riemann/Zeta/Toribrot objects using the periphery focus primitive.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\RiemannHypothesis_Periphery_Workspace_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_workspace_reentry\manifest.sop
+@ [periphery_source] C:\Project\ReasoningFramework\platform\refinement\Riemann_Workspace.sop
+@ [periphery_source] C:\Project\ReasoningFramework\platform\refinement\Zetabrot_Module.sop
+@ [periphery_source] C:\Project\ReasoningFramework\platform\refinement\Zeta_Oscilloscope.sop
+@ [periphery_source] C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Module.sop
+@ [periphery_source] C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Math_Engine.sop
+@ [periphery_source] C:\Project\ReasoningFramework\platform\refinement\Toribrot.sop
+
+& [OldFrameworkInitialPeripheryInspection] is the first object and boundary map for the new RiemannHypothesis workspace
+  + [inspection_uuid] is f4bd473a-aba8-48a8-9522-305650552f1e
+  + [inspection_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [external_periphery_root] is C:\Project\ReasoningFramework
+  + [method] is periphery_focus
+  + [status] is initial_pass_complete_with_import_frontier
+
+  = must: preserve old framework identity as external periphery
+  = must: use source-derived fact points rather than memory
+  = must: preserve uncertainty where old symbolic resemblance is not local identity
+
+## Provenance Hashes
+
+& [OldFrameworkObjectHashes] is the initial external periphery hash ledger
+  + [Riemann_Workspace.sop] is SHA256 416C13BA7DC59EF39A62EF4945D747E0CB2DE0BF98A8975A29F592DEF4884BB8 at C:\Project\ReasoningFramework\platform\refinement\Riemann_Workspace.sop
+  + [Zetabrot_Module.sop] is SHA256 85B573EE1F2E872B7171F2267CF69BF7A5790B8951FC7004CEF85CDE6ABA580E at C:\Project\ReasoningFramework\platform\refinement\Zetabrot_Module.sop
+  + [Zeta_Oscilloscope.sop] is SHA256 43DC85217F375192D2D21237CAE28929D995B64A53D3E16125A82139A59C0D6E at C:\Project\ReasoningFramework\platform\refinement\Zeta_Oscilloscope.sop
+  + [Enumerated_Toribrot_Module.sop] is SHA256 7A58FB0ED57F2FA4124ADFDACD42427AB8DB86ECF45EA12E8282F6317044BBE4 at C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Module.sop
+  + [Enumerated_Toribrot_Math_Engine.sop] is SHA256 6202E928E0E1DCADBAD08866539501AC810A0C4EDA41203CDF61315DEFA10A43 at C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Math_Engine.sop
+  + [Toribrot.sop] is SHA256 1DAF4A6C7BE9BFE2C2CD5A74F9514646FD410C46EC3BF21287586C10F9556EF9 at C:\Project\ReasoningFramework\platform\refinement\Toribrot.sop
+
+  = must: refresh hashes before treating old periphery as unchanged after future edits
+
+## Object Focus Pass
+
+/ [C:\Project\ReasoningFramework Riemann/Zeta periphery] -(PeripheryFocus)> [external_objects], [entangled_system_surfaces], [not_it_field], [uncertainty], [frontier]
+
+& [RiemannWorkspaceObject] is an old external integration workbench object
+  + [surface_facts] are primary_role problem_space_workbench, not_primary_role RH proof or zero oracle, layer stack from Toribrot through ZetaOscilloscope, finite cutoff discipline, and RH claim boundary
+  + [triangulated_identity] is external old workspace assembly and routing layer
+  + [local_classification] is external_periphery_reference
+  + [new_meaning_seed] is a prior map of how geometry, integer identity, spectral operators, finite instruments, and arithmetic certification were separated to avoid proof overclaim
+  + [not_it] is proof, theorem engine, local Pinky authority, imported spec, or executable runtime
+  + [uncertainty] is whether its old integration shape should be imported as a source snapshot or re-authored from smaller object inspections
+
+& [ZetabrotModuleObject] is an old external operator-spectral object
+  + [surface_facts] are integer brot identity over positive integers, scalar field a(n), VonMangoldtField, Dirichlet-Mellin transform, log-domain spike train, log-Fourier phasor layer, finite cutoffs, and spectral interpretation boundary
+  + [triangulated_identity] is external old operator-spectral layer built on EnumeratedToribrot identity
+  + [local_classification] is entangled_but_not_local_system_surface
+  + [new_meaning_seed] is the place where arithmetic object identity, scalar fields, and spectral readouts can be measured as a system without confusing resemblance with analytic proof
+  + [not_it] is ZetaOscilloscope UI, arithmetic proof substrate, Toribrot geometry, or RH proof
+  + [uncertainty] is whether future local work should keep integer-brot vocabulary or translate to conventional analytic-number-theory terms first
+
+& [ZetaOscilloscopeObject] is an old external finite instrument object
+  + [surface_facts] are finite cutoff N, line parameter sigma, height parameter t, optional window W_N, Lambda(n), corrected phase exp(-i t log(n)), angular velocity log(n), critical default sigma = 1/2, and visualization boundary
+  + [triangulated_identity] is external old finite Lambda phasor readout of the Zetabrot Fourier layer
+  + [local_classification] is ready_for_later_import_after_source_snapshot
+  + [new_meaning_seed] is a bounded experimental instrument candidate for observing finite prime-power phasor behavior while labeling cutoff, smoothing, and interpretation limits
+  + [not_it] is analytic continuation, zero certifier, RH detector, or proof of critical-line truth
+  + [uncertainty] is whether to implement a new oscilloscope first or first build the periphery inspection notebook that explains what an oscilloscope reading can and cannot mean
+
+& [EnumeratedToribrotModuleObject] is an old external address identity object
+  + [surface_facts] are root address [0], finite nonempty bit-list addresses, deterministic child and parent rules, node payload fields, and caller-owned semantics
+  + [triangulated_identity] is external old stable binary enumeration and node identity layer
+  + [local_classification] is external_periphery_reference_with_possible_import_candidate
+  + [new_meaning_seed] is a data identity model that may help preserve stable references for inspected mathematical objects
+  + [not_it] is arithmetic validity, geometry, zeta evaluator, proof engine, or semantic meaning by itself
+  + [uncertainty] is whether the new workspace needs this address model or a simpler object registry first
+
+& [EnumeratedToribrotMathEngineObject] is an old external verified finite arithmetic object
+  + [surface_facts] are representation layer, computation graph, local arithmetic, operation protocols, pants execution, verification layer, caller boundary, and RH experiment boundary
+  + [triangulated_identity] is external old arithmetic proof substrate, not analytic theorem engine
+  + [local_classification] is external_periphery_reference
+  + [new_meaning_seed] is a warning and future support layer for finite numerical experiments: arithmetic verification can support evidence but cannot promote visual traces into theorem claims
+  + [not_it] is RH analyzer, zeta theorem engine, universal math oracle, or hidden approximation validator
+  + [uncertainty] is whether to re-author this as a lightweight verification policy before any runtime implementation
+
+& [ToribrotObject] is an old external recursive toroidal geometry object
+  + [surface_facts] are complex torus or elliptic curve base surface, intrinsic maps, pants units, metric texture fields, winding convergence, door traversal, deformation frame, and explicit uncertainty around physical or group-theoretic equivalence
+  + [triangulated_identity] is external old geometric and deformation-frame subject
+  + [local_classification] is entangled_but_not_local_system_surface
+  + [new_meaning_seed] is the strongest resemblance hazard: geometric pants and arithmetic factor pants are entangled by analogy and structure but not the same identity
+  + [not_it] is integer factorization, zeta analytic truth, arithmetic proof substrate, or proof of RH
+  + [uncertainty] is whether Toribrot geometry belongs in the first RH workspace pass or should remain reference until arithmetic and spectral surfaces stabilize
+
+## Boundary Result
+
+& [InitialBoundaryResult] is the first delineated result of the old framework inspection
+  + [inside_new_workspace] is source preservation, periphery inspection method, object map, boundary ledger, project manager frontier, and future import decision records
+  + [external_references] are old canonical specs and their source manifests under C:\Project\ReasoningFramework
+  + [entangled_but_not_local] are Toribrot geometry to Zetabrot arithmetic, pants decomposition to factor pants, symbolic brot vocabulary to analytic zeta objects, and finite oscilloscope traces to RH interpretation
+  + [outside] is proof authority, theorem claims, automatic import, visualization as validation, and symbolic resemblance as identity
+  + [uncertainty] is import order, terminology translation, runtime experiment priority, and proof-grade review path
+
+  = must: keep the old framework visible as periphery
+  = must: bring one object at a time into focus before re-authoring
+  = should: start next with source-snapshot import candidates for ZetaOscilloscope and ZetabrotModule because they have the most direct finite-instrument surface
+
+## Frontier
+
+& [InitialFrontier] is the next safe work set after the first inspection
+  + [task_001] is preserve/import old source snapshots for ZetaOscilloscope and ZetabrotModule into RiemannHypothesis with hashes and manifests
+  + [task_002] is run a deeper periphery inspection comparing each old source snapshot to its old canonical repair ledger
+  + [task_003] is decide whether local first build should be a PeripheryInspectionNotebook or a finite ZetaOscilloscope runtime
+  + [task_004] is write a local meaning translation spec that maps old terms to new workspace terms without collapsing identity
+  + [task_005] is define proof-grade outside boundary for any future RH claim review
+
+  = must: complete source-snapshot import before treating old object content as local authority
+  = should: prefer inspection notebook before numerical runtime if the primitive itself is still under test

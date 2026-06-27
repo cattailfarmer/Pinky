@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "precision_dps": 80,
+    "proof_status": "bounded_exponential_shift_probe_not_primality_proof",
+    "tool": "exponential_shift_probe"
+  },
+  "parameters": {
+    "base": 65537,
+    "exponents": [
+      10897
+    ],
+    "max_hits": 5,
+    "shifts": [
+      2
+    ],
+    "small_factor_limit": 50000000
+  },
+  "rows": [
+    {
+      "base": 65537,
+      "bounded_result": "no_small_divisor_found_within_bound",
+      "exponent": 10897,
+      "expression": "65537^10897+2",
+      "first_small_divisor": null,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 0,
+      "small_divisors": [],
+      "small_factor_limit": 50000000
+    }
+  ]
+}

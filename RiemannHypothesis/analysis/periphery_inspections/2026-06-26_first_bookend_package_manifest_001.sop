@@ -1,0 +1,71 @@
+Subject: First Bookend Package Manifest 001
+
+Description: Non-staging package map for the RiemannHypothesis first bookend.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_package_manifest\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\First_Bookend_Package_Manifest_Specification.sop
+@ [delta_inventory_refresh] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_delta_inventory_refresh_001.sop
+@ [commit_scope_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+
+& [FirstBookendPackageManifest001] is a completed non-staging package manifest
+  + [analysis_uuid] is dfba69b8-d16e-4a62-b18b-0eea4d0f52e6
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_package_manifest
+  + [proof_status] is governance_manifest_not_rh_evidence
+  + [git_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts, runtime code, or tests changed
+  + [new_numerical_processing] is none
+  + [verification] is package inventory and status only
+
+& [PackageInventory] is post_manifest_project_surface
+  + [rh_non_ignored_untracked_count_after_manifest_slice] is 393
+  + [source_documents_files] is 167
+  + [source_document_bundles] is 75
+  + [specification_files] is 65
+  + [analysis_files] is 111
+  + [tools_files] is 46
+  + [tests_files] is 1
+  + [planning_files] is 1
+  + [root_docs] is 2
+  + [sop_files] is 304
+  + [json_files] is 36
+  + [python_files] is 46
+  + [markdown_or_text_files] is 7
+
+& [PackageGroups] is reviewable_first_bookend_map
+  + [root_docs] are RiemannHypothesis\AGENTS.md and RiemannHypothesis\requirements.txt
+  + [planning] is RiemannHypothesis\planning
+  + [tests] is RiemannHypothesis\tests
+  + [tools] is RiemannHypothesis\tools with subgroups README.md=1, rh_math=11, scripts=34
+  + [source_documents] is RiemannHypothesis\source_documents with 75 preserved source bundles and 167 files
+  + [specifications] is RiemannHypothesis\specifications with 65 files
+  + [analysis] is RiemannHypothesis\analysis with subgroups periphery_inspections=24, prime_distribution=13, prime_periphery=18, toolchain=2, zero_behavior=54
+
+& [ScopeOptions] is staging_decision_surface_only
+  + [option_a_default] is stage RiemannHypothesis only
+  + [option_a_strength] is clean first project bookend without broad .sop authority state
+  + [option_a_boundary] is leaves .sop\state\CurrentFocalPoint.sop modified and unstaged
+  + [option_b_explicit] is stage RiemannHypothesis plus .sop\state\CurrentFocalPoint.sop
+  + [option_b_strength] is binds active reentry state with the project package
+  + [option_b_boundary] is includes focal-state history that is not a narrow RH-only project artifact
+  + [option_c_defer] is defer staging and continue non-staging review only
+  + [option_c_boundary] is continued untracked growth increases bookend drift
+  + [excluded_scope] is broad .sop platform dirty state and ignored runtime surfaces
+
+& [Recommendation] is unchanged_project_first
+  + [recommended_default] is option_a_default
+  + [reason] is the package is coherent as a RiemannHypothesis project slice and avoids mixing platform authority state into the first project bookend
+  + [user_gate] is explicit user direction is still required before staging or committing
+  + [non_user_action_next] is first-bookend readiness checkpoint if walking continues without commit direction
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is first-bookend package manifest is complete; the package is reviewable as RH-only default, with CurrentFocalPoint optional and broad .sop excluded
+  + [next_action] is preserve source/spec for a first-bookend readiness checkpoint only if walking continues without explicit commit direction
+  + [boundary] is no staging, no commit, no runtime code change, no test run, no proof claim, no zero certification, no new math execution, no branch reopening, and no broad .sop platform mutation occurred
+
+(first_bookend_package_manifest_001) :package manifest: /393 RH files; RH-only default package; focal optional; readiness checkpoint next/ |staging, commit, proof claims|
+  + [inside] is package group counts and staging decision surface
+  + [boundary] is non-staging review only
+  |outside| theorem authority, runtime implementation, broad .sop mutation, staging, commit, branch change, and numerical expansion

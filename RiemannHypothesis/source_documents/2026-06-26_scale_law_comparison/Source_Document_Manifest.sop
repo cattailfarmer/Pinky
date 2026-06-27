@@ -1,0 +1,17 @@
+Subject: Scale Law Comparison Source Document Manifest
+
+Description: Manifest for preserved source records governing the scale-law comparison slice.
+
+& [ScaleLawComparisonSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 4489c420-f07c-49da-9207-f0cb775a6c39
+  + [manifest_uuid] is 2f85ee4d-2401-4146-9efa-58e74be92188
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_law_comparison\Dictated_Scale_Law_Comparison_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Scale_Law_Comparison_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the comparison finite and diagnostic
+  - never: treat finite scale-law comparison traces as proof, disproof, zero certification, or RH evidence

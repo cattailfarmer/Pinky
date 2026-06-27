@@ -1,0 +1,43 @@
+Subject: Sigma Boundary Scan Specification
+
+Description: SJS-processed contract for scanning finite Euler-product residuals as sigma approaches 1 from above.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_sigma_boundary_scan\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+
+& [SigmaBoundaryScan] is a project-local inquiry contract
+  + [canonical_specification_uuid] is e7103e9d-6862-41c6-b1d6-ff20b801a3c8
+  + [source_snapshot_uuid] is 48e2ffb2-011c-4d16-a3cd-8d3a9ad2e619
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is measure finite Euler-product and logarithmic-derivative residual behavior as sigma decreases toward 1 from above
+  + [not_purpose] is RH proof, disproof, critical-line inspection, independent zero certification, or analytic-continuation authority
+
+  = must: require all sigma values to be greater than 1
+  = must: expose distance_to_sigma_1 for each sampled row
+  = must: compare finite Euler-product and logarithmic-derivative residuals across sigma values and prime bounds
+  = must: expose transition ratios for adjacent sigma values when residuals are nonzero
+  = must: treat t values as fixed horizontal lines in the convergent half-plane
+  = must: mark output proof_status as finite_sigma_boundary_probe_not_critical_line_evidence
+  - never: treat approach toward sigma = 1 as crossing into the critical strip
+  - never: claim RH proof, disproof, zero certification, or critical-line behavior from finite sigma-boundary traces
+
+& [SigmaBoundaryProbeTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\sigma_boundary_probe.py
+  + [runtime_function] is rh_math.euler_product.sigma_boundary_probe
+  + [input] is finite sigma values greater than 1, t values, prime bounds, and precision metadata
+  + [output] is zeta(s), finite Euler-product residuals, logarithmic-derivative residuals, distance-to-boundary rows, and adjacent-sigma transition ratios
+  + [proof_status] is finite_sigma_boundary_probe_not_critical_line_evidence
+
+& [SigmaBoundaryScanSJS] is the specification justification trace
+  + [protocol_uuid] is 701cb2b4-099e-435f-af03-5b36fb1c4fca
+  + [source_snapshot_uuid] is 48e2ffb2-011c-4d16-a3cd-8d3a9ad2e619
+  + [canonical_specification_uuid] is e7103e9d-6862-41c6-b1d6-ff20b801a3c8
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_boundary_scan_contract
+  + [reasoning_result] is approach-to-boundary behavior should be measured after Euler-product weighting proved cleaner in Re(s) > 1 while remaining bounded away from critical-line claims
+
+(sigma_boundary_scan) :Euler-product convergence-boundary inspection: /sigma greater than 1, distance to boundary, finite residuals/ |critical-line authority|
+  + [inside] is finite half-plane approach-to-boundary measurement
+  + [boundary] is convergence-boundary inspection only
+  |outside| RH proof, disproof, zero certification, and direct critical-line inference

@@ -1,0 +1,17 @@
+Subject: Post Discrepancy Route Settlement Source Document Manifest
+
+Description: Manifest for preserved source governing route settlement after explicit residual arithmetic discrepancy synthesis.
+
+& [PostDiscrepancyRouteSettlementSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is b0c7c4de-da24-47c9-ba7a-d587460642a7
+  + [manifest_uuid] is 33189b0f-628d-46db-a13e-389dddc15a8a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_post_discrepancy_route_settlement\Dictated_Post_Discrepancy_Route_Settlement_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Post_Discrepancy_Route_Settlement_Specification.sop
+  + [source_preservation_rule] is raw settlement source remains separate from canonical specification and settlement analysis
+  + [authority_status] is source_preserved_before_route_settlement
+
+  = must: process this source through specification before settlement analysis
+  = must: preserve support-boundary status, whole-field route map, governance pressure, and no-computation boundary
+  - never: treat this manifest as computation, proof, branch-reopening, staging, commit, or broad .sop mutation authority

@@ -1,0 +1,17 @@
+Subject: Landmark Overlay Discipline Synthesis Source Document Manifest
+
+Description: Manifest for preserved source records governing landmark-overlay discipline synthesis.
+
+& [LandmarkOverlayDisciplineSynthesisSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is e313d938-5dee-428d-871f-a8f5aa989936
+  + [manifest_uuid] is de0a5dd9-8a99-4645-86d2-0c6ee726d18a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_landmark_overlay_discipline_synthesis\Dictated_Landmark_Overlay_Discipline_Synthesis_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Landmark_Overlay_Discipline_Synthesis_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before synthesis analysis
+  = must: keep this as finite orientation and restraint only
+  - never: treat synthesis as proof, disproof, zero certification, or implementation authority

@@ -1,0 +1,15 @@
+Subject: Sparse Realization Dense Node Framework Source Manifest
+
+Description: Source preservation manifest for the sparse-realization to dense-node periphery inspection framework.
+
+& [SparseRealizationDenseNodeFrameworkSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_sparse_realization_dense_node_framework\Dictated_Sparse_Realization_Dense_Node_Framework_Source.sop
+  + [canonical_output] is C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+  + [first_application_record] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_sparse_realization_focus_pass_001.sop
+  + [project_manager_state] is C:\Project\Pinky\RiemannHypothesis\planning\project_manager\Manager_State.sop
+  + [intake_status] is processed_to_initial_framework_contract
+  + [captured_on] is 2026-06-26
+  + [active_sop_authority_root] is C:\Project\Pinky\.sop
+
+  = must: keep source direction separate from canonical framework contract
+  = must: cite this manifest when sparse realizations or dense nodes become project planning authority

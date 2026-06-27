@@ -1,0 +1,17 @@
+Subject: Offset Local Contribution Asymmetry Source Document Manifest
+
+Description: Manifest for preserved source records governing offset-local contribution asymmetry synthesis.
+
+& [OffsetLocalContributionAsymmetrySourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 197af7fd-50c1-4b7d-9a41-c718db9332aa
+  + [manifest_uuid] is 71de5f9f-1428-4ba4-8072-6d156444e773
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_offset_local_contribution_asymmetry\Dictated_Offset_Local_Contribution_Asymmetry_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Offset_Local_Contribution_Asymmetry_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before analysis
+  = must: keep this as finite orientation and next-object selection only
+  - never: treat this source as proof, disproof, zero certification, or implementation authority

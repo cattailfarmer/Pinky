@@ -1,0 +1,57 @@
+Subject: Post Residual Movement Landscape Integration 001
+
+Description: Bounded integration of residual movement decomposition into the whole-field RH landscape map.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_post_residual_movement_landscape_integration\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Post_Residual_Movement_Landscape_Integration_Specification.sop
+@ [landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [movement] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+
+& [PostResidualMovementLandscapeIntegration001] is a finite synthesis analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is 6d31b14f-e542-462d-8f5e-ce4bdd6d3163
+  + [source_snapshot_uuid] is 9205f08b-31f9-46f1-9d47-e4a95c0d7cbe
+  + [manifest_uuid] is 36ee3e19-e8d0-4179-87d0-909675a97b7f
+  + [canonical_specification_uuid] is e57a3e42-0537-4c10-88ab-32947ff34606
+  + [proof_status] is finite_post_residual_movement_integration_not_rh_evidence
+  + [implementation_change] is none; this pass records integration and restraint only
+  + [verification] is no tests run because no runtime code changed
+
+& [IntegrationDecision] is the answered current question
+  + [decision] is fold residual movement decomposition back into the whole-field landscape
+  + [not_decision] is do not name a new active movement frontier now
+  + [reason] is the trace exposes useful accounting but mixed residual-to-psi-error sign alignment blocks simple identity and evenly split exact-layer dominance blocks single-layer ownership
+  + [dense_node_target] is DenseNode_ExplicitFormulaResidualSurface
+  + [arithmetic_anchor] is DenseNode_PrimeCountingThetaPsi
+  + [restraint_anchor] is DenseNode_BridgeRestraint
+
+& [LandscapeUpdate] is the conceptual update to the existing node map
+  + [explicit_residual_node_addition] is residual movement decomposition becomes a sub-surface of the explicit residual node
+  + [prime_counting_node_addition] is theta-error movement plus higher-prime-power movement remains the exact decomposition of psi-error movement
+  + [bridge_restraint_addition] is movement accounting does not reopen explicit/Euler bridge refinement or kernel multiplication
+  + [sparse_realization_addition] is mixed sign co-movement becomes sparse curiosity pressure, not a promoted identity
+  + [frontier_update] is a future movement frontier would need a new source-defined reason naming scale, interval law, or comparison object beyond this first bounded trace
+
+& [Inference] is the current whole-field meaning
+  + [positive_meaning] is the workspace can now say how explicit residual motion relates to exact psi-layer movement without inventing a new tool each time
+  + [negative_meaning] is no observed movement relation is coherent enough to promote to causal identity, dense node, or proof-facing object
+  + [periphery_meaning] is the interesting signal is not the c32 local improvement by itself, but the fact that residual smoothing can improve while sign relation to psi-error remains mixed
+  + [restraint_meaning] is this is a boundary result: movement decomposition sharpened the explicit residual node and then closed its own immediate tooling branch
+  + [whole_shape] is current RH workspace shape remains six dense nodes, with explicit residual movement now nested under the explicit-formula residual surface
+
+& [NextOrientation] is the restrained forward rail
+  + [default_next] is no new computation from residual movement alone
+  + [allowed_next] is source-defined whole-field synthesis or dense-node selection if a new purpose is named
+  + [candidate_future_frontiers] is half-plane boundary synthesis, landmark-overlay discipline, or a new movement frontier only if a source names a measured object
+  + [blocked_next] is rerunning larger movement grids, tuning c, adding windows, adding cutoffs, adding kernels, or reopening special-prime search without a new source-defined purpose
+  + [answered_question] is residual movement should be folded back into the whole-field landscape now, not promoted into a new active frontier
+
+  = must: treat residual movement decomposition as support inside DenseNode_ExplicitFormulaResidualSurface
+  = must: keep psi, theta, higher prime powers, and explicit residual motion distinct
+  = must: preserve mixed sign alignment as a restraint against simple identity claims
+  = must: require a new source-defined measured object before further movement computation
+  - never: claim RH proof, disproof, zero certification, causal identity, universal c superiority, or explicit/Euler fusion from this integration
+
+(post_residual_movement_landscape_integration_001) :finite whole-field integration: /movement diagnostic nested into explicit residual node; no new active movement frontier/ |proof authority|

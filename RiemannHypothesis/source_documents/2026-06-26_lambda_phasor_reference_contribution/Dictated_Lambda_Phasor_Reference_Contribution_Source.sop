@@ -1,0 +1,27 @@
+Subject: Dictated Lambda Phasor Reference Contribution Source
+
+Description: Preserved source for continuing the RH inquiry along a source-defined Lambda phasor contribution object.
+
+& [DictatedLambdaPhasorReferenceContributionSource] is raw continuation source
+  + [source_snapshot_uuid] is 8c7262ec-3498-48f8-9d0a-844bd34a53da
+  + [captured_at] is 2026-06-26T13:55:00-05:00 continuation after user challenge to keep following the open road
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is user asked why the road is not being followed continually if material remains to research
+  + [continuation_pressure] is do not confuse a branch stop condition with stopping the whole RH inquiry
+  + [selected_measured_object] is Lambda phasor contribution near selected reference labels
+  + [source_basis] is CurrentFocalPoint dormant measured-object list plus landmark-overlay discipline allowing a new measured overlay object when source-defined
+  + [raw_need] is inspect which finite Lambda prime-power layers contribute to the complex phasor trace around selected t-axis reference labels
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference as labels only
+  + [near_policy] is inspect each reference ordinate at offset 0 and at small symmetric neighboring offsets to see local contribution change
+  + [lambda_object] is finite sum over prime powers q <= N of Lambda(q) W_N(q) q^(-sigma) exp(-i t log(q))
+  + [contribution_question] is whether primes, higher prime powers, low prime powers, or high prime powers carry visibly different phasor contribution structure near reference labels
+  + [whole_field_return] is keep the object tied to Lambda, psi, Euler/log-derivative half-plane weighting, and landmark overlay discipline
+  + [identity_boundary] is this is finite contribution accounting, not a zero detector, proof surface, RH evidence, or critical-line authority
+
+  = must: preserve this raw source separately from canonical specification
+  = must: use deterministic math-processing scripts for numerical contribution aggregation
+  = must: treat known-zero ordinates as reference labels only
+  = must: keep prime-power contribution layers distinct from proof, zero certification, or identity fusion
+  = must: record cutoff, window, sigma, and offset policy in output
+  - never: claim RH proof, disproof, zero certification, critical-line evidence, or single-surface identity from finite phasor contribution rows

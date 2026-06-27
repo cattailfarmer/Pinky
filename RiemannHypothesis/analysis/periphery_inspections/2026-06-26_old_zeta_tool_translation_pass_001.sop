@@ -1,0 +1,92 @@
+Subject: Old Zeta Tool Translation Pass 001
+
+Description: First bounded periphery classification of old ReasoningFramework ZetaOscilloscope and Zetabrot objects against current RiemannHypothesis deterministic rails.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Old_Zeta_Tool_Periphery_Classification_Specification.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\euler_product.py
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+
+& [OldZetaToolTranslationPass001] is a completed bounded periphery-inspection pass
+  + [analysis_uuid] is d22c7ab7-9415-401f-a755-3c6e7ffe70bb
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [external_source_root] is C:\Project\ReasoningFramework
+  + [status] is completed
+  + [proof_status] is classification_only_not_RH_evidence
+
+& [SourceFact_001] is old_zeta_oscilloscope_fact
+  + [fact] is the old dictated Zeta Oscilloscope source explicitly preserves a known tuning fault: exp(-i*t*n) and angular velocity n should be repaired to exp(-i*t*log(n)) and angular velocity log(n)
+  + [local_inference] is the old source already contains a repair boundary, so this object is not blind superstition; it is a corrected finite phasor instrument when the repair is honored
+  + [classification] is useful_primitive_with_boundary
+
+& [SourceFact_002] is old_zetabrot_fact
+  + [fact] is old Zetabrot defines an integer-indexed scalar field a(n), a Dirichlet-Mellin transform, a log-domain spike train, and a log-Fourier phasor layer
+  + [local_inference] is the useful core is not the word brot; the useful core is field over integers mapped into Dirichlet and log-Fourier structure
+  + [classification] is useful_primitive_for_transform_language_and_conceptual_scaffold_for_integer_identity
+
+& [SourceFact_003] is convergence_boundary_fact
+  + [fact] is the Lambda case agrees with -zeta_prime(s)/zeta(s) as a Dirichlet series in Re(s) > 1, while finite critical-line traces are finite Dirichlet-polynomial diagnostics only
+  + [local_inference] is the current project rails already implement the safe half-plane comparison through finite Euler products and logarithmic-derivative probes
+  + [classification] is import_candidate_for_a_guardrailed_lambda_oscilloscope_probe
+
+& [RailCorrelation_001] is deterministic_alignment
+  + [old_object] is ZetaOscilloscope finite Lambda phasor readout
+  + [local_rail] is prime_power_cutoff_log_derivative_sum and negative_zeta_prime_over_zeta in euler_product.py
+  + [correlation] is strong conceptual and formula alignment when sigma > 1 or when finite cutoff status is explicit
+  + [causation] is grounded by the established identity sum Lambda(n)*n^(-s) = -zeta_prime(s)/zeta(s) in Re(s) > 1
+  + [identity_status] is internalizable_as_tool_surface_after_local_specification
+
+& [RailCorrelation_002] is periphery_boundary
+  + [old_object] is Zetabrot pants/factor geometry
+  + [local_rail] is whole-field prime-power decomposition and Euler-product weighting
+  + [correlation] is partial, because factor structure explains where Lambda prime-power support lives but geometry does not improve current deterministic computation
+  + [causation] is not locally established for toroidal or pants geometry as RH-relevant machinery
+  + [identity_status] is related_periphery_not_local_identity
+
+& [HackBoundary_001] is conceptual_hack_boundary
+  + [suspected_hack] is treating visual trace shape, critical-line sampling, or old symbolic resemblance as analytic authority
+  + [reason] is the old framework was compensating for limited deterministic math tooling, while the Pinky workspace now has scripts for finite zeta, explicit formula residuals, Euler products, sigma scans, t-axis scans, and vertical resonance landmarks
+  + [classification] is workaround_hack_when_visualization_drives_inference
+  + [retained_value] is visualization may still guide attention when formula, cutoff, sigma, and proof boundaries are explicit
+
+& [ImportDecision_001] is restraint_result
+  + [import_candidate] is a local Lambda Oscilloscope or Zeta Oscilloscope probe that reuses existing prime-power and log-derivative helpers
+  + [minimum_contract] is every trace declares sigma, t range, N or prime-power bound, window policy, formula, convergence status, and proof boundary
+  + [preferred_first_runtime] is deterministic lambda_oscilloscope_probe before any Toribrot geometry import
+  + [deferred_object] is full Toribrot and Enumerated Toribrot geometry
+  + [defer_reason] is current rails need transform and field semantics more than geometry
+
+& [ActivatedFrameworkSystems_001] is operating_system_trace
+  + [SpecificationGovernance] is active because source snapshots and a local specification precede classification authority
+  + [SpecificationJustificationSolution] is active in source to specification to analysis order
+  + [SourceSpecificationPreservation] is active through exact copied snapshots and hash manifest
+  + [Delineation] is active by separating old external periphery, local rails, useful primitive, scaffold, hack, import candidate, and defer
+  + [DualHemisphereThinking] is active by preserving symbolic meaning while testing it against deterministic math rails
+  + [DataDrivenDesign] is active by subordinating visualization to finite mathematical probes
+  + [FeatureRequirementSupport] is active by turning import interest into a minimum probe contract
+  + [ConversationWorkAttribution] is active through this dated source and analysis record
+  + [OperationalFaults] is active through the recorded PowerShell preservation wrinkle and boundary against old proof-like claims
+  + [SharedCognitionSpace] is active through CurrentFocalPoint renewal
+  + [ProjectNarrativeSurface] is active through this periphery-inspection narrative record
+  + [ProjectManager] is active through Manager_State update requirements
+  + [ConversationMailboxBoxProtocol] is not actively used in this slice because no inter-thread mailbox message was required
+
+& [OperationalFault_001] is harmless_preservation_command_retry
+  + [fault] is the first PowerShell snapshot-directory creation attempt used New-Item -LiteralPath, which this shell rejected
+  + [effect] is no snapshot files were created or overwritten by the failed attempt
+  + [repair] is the preservation step was rerun with New-Item -Path and completed with local snapshot files and matching hashes
+  + [status] is closed
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is old ZetaOscilloscope and Zetabrot are coherent enough to yield one importable primitive, but not coherent enough to import the old symbolic framework wholesale
+  + [importable_primitive] is the finite Lambda log-Fourier phasor/logarithmic-derivative readout with explicit cutoff and convergence boundary
+  + [conceptual_scaffold] is the integer-field-to-transform Zetabrot vocabulary
+  + [deferred_periphery] is Toribrot geometry and pants/toroidal visual embedding
+  + [next_relevant_work] is create a local Lambda Oscilloscope probe specification and script only if the next pass needs interactive or trace output beyond existing Euler-product/log-derivative rails
+  + [retained_boundary] is this classification gives tool direction, not RH evidence, proof, disproof, or zero certification
+
+(old_zeta_tool_translation_pass_001) :external zeta-tool periphery translated against local deterministic rails: /Lambda log-Fourier primitive, integer-field transform scaffold, visualization restraint/ |old symbolic authority|
+  + [inside] is source-preserved classification of ZetaOscilloscope and Zetabrot against Pinky-local RH rails
+  + [boundary] is useful primitive may be re-specified locally; old framework remains external periphery
+  |outside| RH proof, disproof, zero certification, blind import, and Toribrot geometry implementation

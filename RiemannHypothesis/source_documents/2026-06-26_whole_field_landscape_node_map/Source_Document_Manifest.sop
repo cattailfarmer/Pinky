@@ -1,0 +1,17 @@
+Subject: Whole Field Landscape Node Map Source Document Manifest
+
+Description: Manifest for preserved source records governing the whole-field RH landscape node map.
+
+& [WholeFieldLandscapeNodeMapSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is b0b2b5d3-330b-434b-adaa-208abe55b7b9
+  + [manifest_uuid] is 5e9fc0c7-fac9-48b6-ad77-d33a7a555e09
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landscape_node_map\Dictated_Whole_Field_Landscape_Node_Map_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_RH_Landscape_Node_Map_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before synthesis authority
+  = must: keep the map finite, bounded, and non-proof-facing
+  - never: treat finite landscape mapping as proof, disproof, zero certification, critical-line evidence, or RH evidence

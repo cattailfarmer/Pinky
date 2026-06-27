@@ -1,0 +1,71 @@
+Subject: Worktree Integrity Review 001
+
+Description: Repo-first review and periphery route map for the current untracked RiemannHypothesis project slice.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_worktree_integrity_review\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Worktree_Integrity_Review_Specification.sop
+@ [policy] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+@ [policy] C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+@ [policy] C:\Project\Pinky\.sop\platform\TrailingChecksumVoice.sop
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_walking_continuity_reentry_scan_001.sop
+
+& [WorktreeIntegrityReview001] is a completed repo-first review pass
+  + [analysis_uuid] is 7253d067-171f-4ac9-ba0c-ce0c25b5dc9a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_worktree_review
+  + [proof_status] is worktree_integrity_review_not_rh_evidence
+  + [version_a] is HEAD
+  + [version_b] is WORKTREE
+  + [commit_status] is not_committed
+  + [tracked_project_files] is 0
+  + [non_ignored_untracked_project_files_before_this_review] is 329
+  + [verification_command] is .\.venv\Scripts\python.exe -m pytest -q
+  + [verification_result] is 36 passed in 13.43s
+
+& [RoleClassification] is worktree_surface
+  + [source_documents] is 135 non-ignored files before this review
+  + [specifications] is 49 non-ignored files before this review
+  + [analysis] is 95 non-ignored files before this review
+  + [tools] is 46 non-ignored files before this review
+  + [tests] is 1 non-ignored file before this review
+  + [planning] is 1 non-ignored file before this review
+  + [project_agency_files] are AGENTS.md and requirements.txt
+  + [ignored_runtime_surfaces] are .pytest_cache, .venv, tests\__pycache__, tools\rh_math\__pycache__, and tools\scripts\__pycache__
+  + [classification_result] is coherent_untracked_project_slice
+
+& [IntegrityFindings] is review_result
+  + [unique_accomplishment] is the RH workspace now contains a traceable source/spec/analysis/tool/test stack rather than only conceptual notes
+  + [support] is 36 passing tests over deterministic math tools and proof-status metadata
+  + [missed_work] is no project commit bookend exists yet, so commit integrity cannot be claimed
+  + [mistake_risk] is allowing the untracked pile to keep growing without a staging/commit boundary would weaken later repo-first reflection
+  + [new_potential] is a source/spec inventory and project commit-preparation pass can make the first RH commit a clean bookend
+  + [outside] is proof readiness, RH evidence, zero certification, and theorem-level authority
+
+& [PeripheryRouteMap] is next_lead_selection
+  + [hot_zone_001] is Git authority gap: zero tracked RH project files
+  + [hot_zone_001_value] is source/spec governance, review fidelity, and future commit integrity
+  + [hot_zone_001_route] is prepare a source/spec inventory and commit-readiness slice before more math expansion
+  + [warmth_zone_001] is deterministic math toolchain is runnable
+  + [warmth_zone_001_route] is preserve as support for future bounded math passes, not as central pursuit now
+  + [warmth_zone_002] is whole-field RH landscape has many completed branch conclusions
+  + [warmth_zone_002_route] is later synthesize after Git bookend exists
+  + [deferred_zone_001] is denser Lambda overlay, more zero windows, more special-prime scans, and new scale laws
+  + [deferred_zone_001_reason] is no new source-defined whole-field purpose currently requires them
+
+& [NextStepSelection] is active
+  + [selected_next_object] is RH source/spec inventory and commit-readiness slice
+  + [reason] is walking policy now points from worktree review to creating a reliable repo bookend before deeper analysis
+  + [expected_output] is a bounded inventory record separating source documents, canonical specifications, analysis traces, tools, tests, ignored runtime surfaces, and commit-readiness notes
+  + [balance_score] is stable_with_watch
+  + [watch_reason] is the project is coherent and tests pass, but the Git authority gap remains open
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is there is material to work with and the road remains open, but the next best pursuit is not more RH math; it is making the current project slice reviewable by Git and source/spec inventory
+  + [next_action] is preserve source/spec for RH source/spec inventory and commit-readiness slice
+  + [boundary] is no commit has been made, no files have been staged, and no mathematical claim is strengthened by this review
+
+(worktree_integrity_review_001) :repo-first worktree review: /untracked coherent project, tests green, commit boundary needed/ |RH evidence|
+  + [inside] is role classification, pytest result, integrity findings, route map, and next lead
+  + [boundary] is pre-commit review only
+  |outside| proof, zero certification, commit integrity before commit, and unbounded math expansion

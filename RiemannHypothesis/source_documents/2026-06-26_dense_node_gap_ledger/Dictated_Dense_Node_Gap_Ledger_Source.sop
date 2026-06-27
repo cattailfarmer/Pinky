@@ -1,0 +1,20 @@
+Subject: Dictated Dense Node Gap Ledger Source
+
+Description: Raw source for naming what each RH dense node still lacks before selecting any new measured object.
+
+& [DictatedDenseNodeGapLedgerSource] is preserved source for a non-mutating dense-node gap ledger
+  + [source_snapshot_uuid] is 90279bd0-6161-40d9-ba92-f99a7e8604c9
+  + [source_kind] is derived_from_overlap_contradiction_ledger_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_overlap_ledger] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_overlap_contradiction_ledger_001.sop
+  @ [governing_landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+  + [need] is name what each of the six dense nodes still lacks before any new source-defined measured object or computation can be justified
+  + [dense_node_set] is PrimeCountingThetaPsi, EulerLogDerivativeHalfPlane, ExplicitFormulaResidualSurface, ReferenceAndResonanceLandmarks, LambdaDiagnosticOverlay, and BridgeRestraint
+  + [source_boundary] is this source authorizes gap classification only; it does not authorize staging, commits, broad .sop mutation, proof claims, branch reopening, or new numerical scans
+
+  = must: distinguish support from readiness
+  = must: preserve existing pause and restraint decisions
+  = must: name whether a node lacks boundary clarity, identity delineation, evidence quality, whole-field relevance, governance, contradiction handling, or measured-object purpose
+  - never: treat a gap as proof weakness, proof support, or permission for computation by itself

@@ -1,0 +1,18 @@
+Subject: First Bookend Package Manifest Source Manifest
+
+Description: Manifest for preserved source material supporting the first-bookend package manifest.
+
+& [FirstBookendPackageManifestSourceManifest] is source manifest
+  + [manifest_uuid] is 1c2244ae-d586-4b4b-9672-e93bca732d59
+  + [source_snapshot_uuid] is 9fd1d6c8-12a0-4d17-8b14-237e5350917f
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [preserved_source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_package_manifest\Dictated_First_Bookend_Package_Manifest_Source.sop
+  @ [current_focal_point] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  @ [delta_inventory_refresh] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_delta_inventory_refresh_001.sop
+  @ [commit_scope_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+  @ [source_spec_inventory] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_source_spec_inventory_commit_readiness_001.sop
+  + [preservation_status] is raw_source_preserved_before_canonical_specification
+  + [use_status] is eligible_for_sjs_processing
+  + [boundary] is package_manifest_only_no_staging_no_commit_no_new_math

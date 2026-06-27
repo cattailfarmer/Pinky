@@ -1,0 +1,59 @@
+Subject: Shell Explicit Residual Bridge Pass 001
+
+Description: Bounded comparison of log-shell endpoint movement with explicit residual movement.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_shell_explicit_residual_bridge\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Shell_Explicit_Residual_Bridge_Specification.sop
+@ [shell_trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_emergence_shell_signature_log_scale_trace.json
+@ [explicit_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_shell_endpoint_explicit_residual_movement_trace.json
+
+& [ShellExplicitResidualBridgePass001] is a completed finite bridge comparison
+  + [analysis_uuid] is 65580e7f-9576-46ee-be32-1bbf84d98481
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_bridge_boundary_trace
+  + [proof_status] is finite_shell_explicit_residual_bridge_not_rh_evidence
+  + [implementation_change] is none; reused explicit_residual_movement_decomposition.py
+
+& [TraceParameters] is bounded
+  + [shell_endpoints] are 100, 1000, 10000, and 100000
+  + [intervals] are (100,1000], (1000,10000], and (10000,100000]
+  + [scale_law] is log
+  + [scale_multipliers] are 16 and 32
+  + [window] is sharp
+
+& [ExactLayerResult] is bounded_arithmetic_fact
+  + [dominant_exact_layer_counts] is higher_prime_power_movement 6, theta_error_movement 0, balanced_or_zero 0
+  + [theta_error_movement] is negative in all three shell intervals
+  + [psi_error_movement] is positive in all three shell intervals because higher-prime-power movement dominates theta deficits
+  + [inference] is the log-shell surface is governed at this scale by the Lambda prime-power correction when read through psi movement
+  + [boundary] is this is finite endpoint accounting only
+
+& [ExplicitResidualResult] is bounded_arithmetic_fact
+  + [c16_average_explicit_residual_movement_abs] is 19.857497514138565583872194583538590594699... 
+  + [c32_average_explicit_residual_movement_abs] is 7.383592823211985869003827606151245822436...
+  + [c16_sign_relation] is same_sign 1 and opposite_sign 2 against psi_error_movement
+  + [c32_sign_relation] is same_sign 1 and opposite_sign 2 against psi_error_movement
+  + [noted_motion] is c32 reduces movement size relative to c16 on this shell endpoint set, while sign relation remains mixed
+  + [boundary] is c32 improvement is local finite behavior and not cutoff superiority
+
+& [BridgeInference] is the restrained meaning
+  + [positive_meaning] is shell signatures and explicit residual movement can share endpoint intervals without adding a new tool, and the comparison strengthens the separation between exact psi mechanics and explicit approximation residuals
+  + [non_fusion_meaning] is the explicit residual movement does not become a simple identity with psi shell movement because two of three intervals are opposite sign for both c16 and c32
+  + [whole_field_meaning] is Lambda prime-power correction remains the strongest exact shell layer, while explicit residual movement remains an approximation-error surface
+  + [pursuit_gate_result] is satisfied for boundary clarity and identity delineation, but not enough to justify another computation without a new measured object
+
+& [NextBoundary] is stop_condition
+  + [stop_reason] is the shell-to-explicit bridge has produced a clear boundary diagnosis rather than a new active identity
+  + [defer] is Lambda phasor contribution near selected reference labels remains the only previously named measured object with possible future value
+  + [blocked_next] is more shell endpoints, more zero multipliers, more windows, special-prime expansion, and proof-facing inference
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is shell surface signatures connect usefully to explicit residual movement as a comparison surface, but they do not fuse into an identity
+  + [reason] is higher-prime-power movement dominates exact log-shell psi movement, while explicit residual movement remains mixed-sign against psi movement even when c32 reduces residual movement magnitude
+  + [boundary] is no RH evidence, zero evidence, general prime law, or special-prime centrality is inferred
+
+(shell_explicit_residual_bridge_pass_001) :finite bridge boundary: /higher-prime-power exact dominance, c32 local smoothing, mixed residual sign relation/ |proof authority|
+  + [inside] is bounded shell-to-explicit comparison
+  + [boundary] is useful identity delineation and stop condition
+  |outside| RH proof, zero certification, cutoff superiority, and special-prime sprawl

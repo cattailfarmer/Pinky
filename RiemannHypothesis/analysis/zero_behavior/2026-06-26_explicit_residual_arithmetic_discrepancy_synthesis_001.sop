@@ -1,0 +1,81 @@
+Subject: Explicit Residual Arithmetic Discrepancy Synthesis 001
+
+Description: Existing-trace synthesis of explicit residual movement discrepancy against exact psi-theta-prime-power movement.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Synthesis_Specification.sop
+@ [method_gate] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_explicit_residual_arithmetic_discrepancy_method_gate_001.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+
+& [ExplicitResidualArithmeticDiscrepancySynthesis001] is a completed existing-trace synthesis
+  + [analysis_uuid] is 87fbce7d-fdf6-4ef9-942c-c76b4c400285
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_existing_trace_discrepancy_synthesis
+  + [proof_status] is discrepancy_synthesis_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is existing-trace synthesis only
+  + [new_numerical_processing] is none
+
+& [TraceFrame] is bounded
+  + [input_trace] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+  + [sample_count] is 9
+  + [point_row_count] is 18
+  + [movement_row_count] is 16
+  + [configuration_summary_row_count] is 2
+  + [scale_law] is log
+  + [window] is sharp
+  + [scale_multipliers] are 16 and 32
+
+& [SimpleIdentityTest] is contradicted
+  + [global_same_sign_count] is 6
+  + [global_opposite_sign_count] is 10
+  + [zero_involved_count] is 0
+  + [c16_same_sign_count] is 3
+  + [c16_opposite_sign_count] is 5
+  + [c32_same_sign_count] is 3
+  + [c32_opposite_sign_count] is 5
+  + [result] is explicit residual movement is not sign-coherent with psi-error movement in this bounded trace
+  + [boundary] is this contradicts a simple residual-to-psi-error identity, not RH
+
+& [SingleLayerOwnershipTest] is contradicted
+  + [theta_error_movement_dominance_count] is 8
+  + [higher_prime_power_movement_dominance_count] is 8
+  + [balanced_or_zero_count] is 0
+  + [result] is no single exact arithmetic layer owns the discrepancy surface in this bounded trace
+  + [boundary] is theta-error movement and higher-prime-power movement both remain active arithmetic anchors
+
+& [C32DiscrepancyTest] is mixed_support_with_identity_block
+  + [c16_average_explicit_residual_movement_abs] is 2.2769895014432056389015137828099316240383450068028222629825466842588259402669109
+  + [c32_average_explicit_residual_movement_abs] is 0.96600035734026032428031946283940454356329812563488050281153475179594865147801634
+  + [c16_average_abs_residual_minus_psi_error_movement] is 8.956950089142374612789931696402911778455480788617544833794931763878172765775404
+  + [c32_average_abs_residual_minus_psi_error_movement] is 8.1545300015856773663873631577217888609111446174418145075077733240938005420989672
+  + [positive_result] is c32 has lower average explicit residual movement and lower average residual-minus-psi-error movement than c16 in the existing trace
+  + [identity_block] is c32 does not change the same/opposite sign split, which remains 3 same and 5 opposite by configuration
+  + [boundary] is local c32 improvement is support for cutoff-coordinate sensitivity, not a law or identity
+
+& [BranchReopenTest] is blocked
+  + [existing_trace_answer] is enough to state the discrepancy posture
+  + [new_computation_need] is not found
+  + [blocked_expansions] are rerun, wider sample grids, new windows, new cutoffs, new kernels, scale-law tuning, Lambda overlay expansion, and special-prime reopening
+  + [result] is no new deterministic processing is justified by this synthesis
+
+& [DiscrepancyInference] is boundary_result
+  + [positive_meaning] is the candidate clarifies that finite explicit residual movement and exact arithmetic movement can be compared without fusing identities
+  + [negative_meaning] is the existing trace blocks simple residual-to-psi-error identity and single-layer arithmetic ownership
+  + [periphery_meaning] is the interesting shape is lower c32 residual movement alongside persistent mixed sign relation
+  + [dense_node_role] is support inside DenseNode_ExplicitFormulaResidualSurface
+  + [arithmetic_anchor] is DenseNode_PrimeCountingThetaPsi because psi-error movement equals theta-error movement plus higher-prime-power movement
+  + [governance_anchor] is DenseNode_BridgeRestraint because the result does not reopen bridge kernels or cutoff tuning
+  + [candidate_status_after_synthesis] is support_boundary_not_active_computation_frontier
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is ExplicitResidualArithmeticDiscrepancy is useful as a finite support/boundary object, but it is not an identity, proof surface, or new computation frontier
+  + [next_action] is post-discrepancy whole-field route settlement and periphery scan
+  + [boundary] is no Git mutation, broad .sop mutation, runtime code change, test run, proof claim, zero certification, new math execution, branch reopening, or identity fusion occurred
+
+(explicit_residual_arithmetic_discrepancy_synthesis_001) :existing trace discrepancy synthesis: /c32 improves locally; sign relation mixed; exact layer dominance split; no new computation/ |proof claims|
+  + [inside] is finite discrepancy boundary result
+  + [boundary] is existing-trace synthesis only
+  |outside| proof, zero certification, staging, commit, branch reopening, new computation, and identity fusion

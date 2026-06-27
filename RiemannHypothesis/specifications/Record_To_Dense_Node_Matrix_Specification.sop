@@ -1,0 +1,51 @@
+Subject: Record To Dense Node Matrix Specification
+
+Description: SJS-processed contract for mapping existing RH analysis records to dense nodes and periphery lanes.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_record_to_dense_node_matrix\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_whole_field_record_index_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Record_Index_Specification.sop
+
+& [RecordToDenseNodeMatrixSpecification] is a non-mutating navigation contract
+  + [source_snapshot_uuid] is f73df46f-300e-4ffb-ae7b-4f511303146a
+  + [manifest_uuid] is cde1ef32-2d90-4c5c-8d65-9b0a92935b77
+  + [canonical_specification_uuid] is 5648f87b-fc6a-4f6e-9820-1a1cc202cb53
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is improve reentry fidelity by mapping each existing analysis record to dense nodes, sparse periphery, and governance lanes
+  + [not_purpose] is new math computation, proof, zero certification, branch reopening, staging, committing, or broad .sop mutation
+  + [proof_status] is navigation_matrix_not_rh_evidence
+
+& [MatrixContract] is bounded
+  + [record_count] is 64 analysis SOP records observed before this matrix analysis
+  + [dense_node_001] is DenseNode_PrimeCountingThetaPsi
+  + [dense_node_002] is DenseNode_EulerLogDerivativeHalfPlane
+  + [dense_node_003] is DenseNode_ExplicitFormulaResidualSurface
+  + [dense_node_004] is DenseNode_ReferenceAndResonanceLandmarks
+  + [dense_node_005] is DenseNode_LambdaDiagnosticOverlay
+  + [dense_node_006] is DenseNode_BridgeRestraint
+  + [lane_001] is SparsePeriphery
+  + [lane_002] is ImportBoundary
+  + [lane_003] is ToolchainSupport
+  + [lane_004] is GovernanceWalking
+  + [mapping_fields] are record, primary_node_or_lane, support_nodes, status, and restraint_note
+  + [allowed_output] is matrix analysis, contradiction candidates, and next non-mutating lead
+
+  = must: mark special-prime records as SparsePeriphery unless they are explicitly returned to pi, theta, psi, or Lambda mechanics
+  = must: mark explicit/Euler kernel and bridge records with BridgeRestraint support
+  = must: mark Lambda overlay records as diagnostic overlay, not proof or primary detector
+  = must: mark reference/vertical records as landmarks, not zero certification
+  = must: identify any route contradiction or ambiguous membership
+  - never: reopen computation from matrix density alone
+  - never: treat matrix rows as RH evidence
+
+& [RecordToDenseNodeMatrixSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and matrix_scoped
+  + [processing_result] is accepted_navigation_matrix_contract
+  + [reasoning_result] is existing analysis records can be mapped to dense nodes and restraint lanes to improve navigation while preserving all proof and mutation boundaries
+
+(record_to_dense_node_matrix) :navigation matrix: /records to dense nodes, sparse periphery, governance lanes/ |proof claims|
+  + [inside] is non-mutating reentry map over existing records
+  + [boundary] is no computation, no Git mutation, and no proof inference
+  |outside| proof, disproof, zero certification, branch reopening, staging, commit, and broad authority mutation

@@ -1,0 +1,16 @@
+Subject: Vertical Resonance Scan Source Manifest
+
+Description: Manifest for preserved source feeding the vertical resonance scan.
+
+& [VerticalResonanceScanSourceManifest] is the source manifest
+  + [manifest_uuid] is 83debe42-2dcf-4f43-bc7a-910a76dd6a58
+  + [source_snapshot_uuid] is 380b9d38-9dd1-4659-a41a-67ef05b68614
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_vertical_resonance_scan\Dictated_Vertical_Resonance_Scan_Source.sop
+  + [canonical_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Vertical_Resonance_Scan_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+  + [status] is preserved
+
+  = must: preserve raw dictated source separately from canonical specification
+  = must: process through SJS before implementation authority

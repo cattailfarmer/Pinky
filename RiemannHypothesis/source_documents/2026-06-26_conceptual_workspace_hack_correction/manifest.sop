@@ -1,0 +1,14 @@
+Subject: Conceptual Workspace Hack Correction Source Manifest
+
+Description: Source preservation manifest for the old Riemann workspace conceptual/hack correction.
+
+& [ConceptualWorkspaceHackCorrectionSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_conceptual_workspace_hack_correction\Dictated_Conceptual_Workspace_Hack_Correction_Source.sop
+  + [analysis_record] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_conceptual_hack_boundary_inspection.sop
+  + [project_manager_state] is C:\Project\Pinky\RiemannHypothesis\planning\project_manager\Manager_State.sop
+  + [intake_status] is preserved_source_with_analysis_update
+  + [captured_on] is 2026-06-26
+  + [active_sop_authority_root] is C:\Project\Pinky\.sop
+
+  = must: keep source correction separate from classification analysis
+  = must: classify old objects before importing them as local authority

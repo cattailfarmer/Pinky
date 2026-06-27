@@ -1,0 +1,77 @@
+Subject: Cross Layer Landmark Displacement Synthesis 001
+
+Description: Bounded synthesis of finite landmark displacement across sparse resonance, dense Lambda heat, and contribution-layer offset rows.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cross_layer_landmark_displacement\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Cross_Layer_Landmark_Displacement_Specification.sop
+@ [sparse_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_trace.json
+@ [dense_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+@ [contribution_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_trace.json
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_offset_local_contribution_asymmetry_synthesis_001.sop
+
+& [CrossLayerLandmarkDisplacementSynthesis001] is a completed finite synthesis pass
+  + [analysis_uuid] is 0a0195bb-e1cd-4ab4-adfc-4c3cf89f07c0
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_existing_trace_synthesis
+  + [proof_status] is finite_cross_layer_landmark_displacement_not_rh_evidence
+  + [implementation_change] is none; synthesized existing trace rows
+  + [verification] is no runtime tests required because no code changed in this pass
+
+& [TraceScope] is bounded
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference
+  + [sparse_layer] is vertical resonance candidate rows from the existing Re(s)>1 scan
+  + [dense_layer] is Lambda window/cutoff candidate rows from the existing dense overlay scan
+  + [contribution_layer] is Lambda phasor reference contribution three-point offset rows
+  + [reference_policy] is labels only, not zero certification
+  + [displacement_policy] is nearest-reference distance for sparse and dense candidates, plus signed offset for contribution-layer rows
+
+& [SparseResonanceDisplacement] is bounded_arithmetic_fact
+  + [first_reference] is 18 sparse candidates, 3 within 0.5 t units, minimum displacement 0.134725141734694, and average displacement 4.24151396763039
+  + [second_reference] is 14 sparse candidates, 2 within 0.5 t units, minimum displacement 0.022039638771555, and average displacement 1.61029137696737
+  + [third_reference] is 14 sparse candidates, 3 within 0.5 t units, minimum displacement 0.0108575801456888, and average displacement 1.39595930861305
+  + [near_half_step_metric_shape] is zeta_abs local minima near all three references, plus prime_factor_log_derivative_residual_abs local maxima near the first and third references
+  + [inference] is sparse resonance does produce near-reference landmarks, but the layer is metric-dependent and not uniformly distributed by label
+  + [boundary] is sparse resonance candidates remain Re(s)>1 landmarks, not zeros
+
+& [DenseLambdaDisplacement] is bounded_arithmetic_fact
+  + [first_reference] is 165 dense Lambda candidates, 15 within 0.5 t units, minimum displacement 0.134725141734694, and average displacement 5.42652539150713
+  + [second_reference] is 56 dense Lambda candidates, 12 within 0.5 t units, minimum displacement 0.022039638771555, and average displacement 1.54122419540717
+  + [third_reference] is 59 dense Lambda candidates, 15 within 0.5 t units, minimum displacement 0.0108575801456888, and average displacement 1.86754457925043
+  + [near_half_step_metric_shape] is all near-half-step dense candidates are local maxima in lambda_trace_abs or finite_trace_residual_abs
+  + [inference] is dense Lambda heat is reference-near and repeat-rich, but also much denser and more sprawling near the first reference than near the second or third
+  + [boundary] is dense Lambda heat is diagnostic overlay, not a primary landmark identity
+
+& [ContributionLayerDisplacement] is bounded_arithmetic_fact
+  + [first_reference] is higher-prime-power vector share best at +0.5, prime vector share best at +0.5, residual minimum at +0.5, and total trace magnitude maximum at center
+  + [second_reference] is higher-prime-power vector share best at -0.5, prime vector share best at -0.5, residual minimum at +0.5, and total trace magnitude maximum at center
+  + [third_reference] is higher-prime-power vector share best at -0.5, prime vector share best at +0.5, residual minimum at -0.5, and total trace magnitude maximum at center
+  + [inference] is the contribution layer separates phasor magnitude from contribution-layer displacement: total magnitude often centers, while prime, higher-prime-power, and residual behavior can prefer flanks
+  + [boundary] is the three-point stencil is too coarse to authorize a denser offset scan by itself
+
+& [CrossLayerDelineation] is current_identity_boundary
+  + [relation_heat] is real because sparse zeta_abs minima, dense Lambda maxima, and contribution-layer flank preferences all cluster around the same reference-label neighborhoods
+  + [non_identity] is stronger because the sparse layer reads mostly zeta_abs minima, the dense layer reads Lambda maxima, and the contribution layer often displaces away from exact reference labels
+  + [first_reference_shape] is dense and sprawling, with near-reference heat but a much larger average dense displacement than the second and third references
+  + [second_reference_shape] is tighter in dense and sparse average displacement, while contribution layers split direction between negative and positive flanks by metric
+  + [third_reference_shape] is tightest by sparse minimum displacement and shows the strongest higher-prime-power negative-flank displacement among the contribution rows
+  + [whole_field_return] is the comparison keeps Lambda overlay, Euler/log-derivative half-plane landmarks, and psi-theta prime-power mechanics distinct
+
+& [PursuitGateAssessment] is active
+  + [boundary_value] is satisfied: sparse, dense, and contribution layers are clearly separated
+  + [identity_value] is satisfied: relation heat does not collapse into a single landmark identity
+  + [evidence_value] is satisfied for orientation: existing traces show enough cross-layer displacement structure to classify stability next
+  + [whole_field_value] is satisfied: displacement remains anchored to Lambda, Euler/log-derivative, and landmark-overlay discipline
+  + [restraint_result] is do not add scans; if continuing, synthesize cross-window/cutoff stability class from existing Lambda stability rows and cross-layer displacement results
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is cross-layer landmark displacement is useful, but it resolves into layered orientation rather than identity fusion
+  + [reason] is near-reference alignment exists across sparse and dense layers, yet metric type, density, and contribution-layer signed offsets disagree
+  + [next_object] is cross-window/cutoff stability class, using existing Lambda stability rows and this displacement synthesis to ask which dense near-reference landmarks are merely numerous versus repeatably stable
+  + [blocked_next] is denser offset scans, more labels, more windows, proof claims, zero certification, critical-line authority, and exact-reference dominance claims
+  + [boundary] is no RH evidence, zero certification, universal displacement law, or single-surface identity is inferred
+
+(cross_layer_landmark_displacement_synthesis_001) :finite cross-layer displacement synthesis: /sparse minima, dense maxima, contribution flanks, stability next/ |RH evidence|
+  + [inside] is synthesis of existing sparse, dense, and contribution displacement rows
+  + [boundary] is orientation and next-object selection
+  |outside| RH proof, disproof, zero certification, critical-line authority, exact-reference dominance, denser scan authorization, and single-surface identity

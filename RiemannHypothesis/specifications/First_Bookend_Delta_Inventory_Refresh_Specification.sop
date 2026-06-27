@@ -1,0 +1,45 @@
+Subject: First Bookend Delta Inventory Refresh Specification
+
+Description: SJS-processed contract for refreshing the RiemannHypothesis first-bookend inventory after later walking records.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_delta_inventory_refresh\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_post_discrepancy_route_settlement_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_source_spec_inventory_commit_readiness_001.sop
+
+& [FirstBookendDeltaInventoryRefreshSpecification] is a non-staging inventory-refresh contract
+  + [source_snapshot_uuid] is d73ffc45-26dd-43b4-ade5-07e94b75238e
+  + [manifest_uuid] is 37ac9111-54b4-4862-ba7e-68b3eb93f6c7
+  + [canonical_specification_uuid] is bc636717-939e-494a-a630-008105839ced
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is refresh the first-bookend worktree inventory and route the next non-mutating governance lead
+  + [not_purpose] is staging, committing, branch creation, broad .sop mutation, runtime code change, deterministic math execution, proof claim, disproof claim, zero certification, denser scan, window expansion, label expansion, or special-prime reopening
+  + [proof_status] is governance_inventory_not_rh_evidence
+
+& [InventoryContract] is bounded
+  + [baseline_commit_scope_review_count] is 337 RiemannHypothesis non-ignored untracked files
+  + [baseline_source_spec_inventory_count] is 333 RiemannHypothesis non-ignored untracked files before that inventory record
+  + [scope_under_review] is RiemannHypothesis project surface plus optional .sop\state\CurrentFocalPoint.sop status
+  + [excluded_scope] is broad .sop platform dirty state and ignored runtime surfaces
+  + [required_counts] are total non-ignored RiemannHypothesis files, SOP, JSON, Python, markdown/text, source_documents, specifications, analysis, tools, tests, planning, and root docs
+  + [required_comparison] is current project surface versus prior commit-scope count
+  + [required_status] is git status for .sop\state\CurrentFocalPoint.sop and RiemannHypothesis
+
+& [RouteContract] is bounded
+  + [math_status_input] is post-discrepancy math routes settled with no computation-ready or source-request-worthy object
+  + [allowed_next] is one non-mutating governance lead if pursuit value remains
+  + [blocked_next] is no staging, no commit, no broad .sop mutation, no new numerical processing, and no proof-facing interpretation
+  + [preferred_next_if_inventory_is_stale] is first-bookend package manifest or scope-decision checkpoint
+
+& [FirstBookendDeltaInventoryRefreshSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and inventory_scoped
+  + [processing_result] is accepted_inventory_refresh_contract
+  + [reasoning_result] is the project has accumulated enough source/spec/analysis records after the first scope review that a refreshed inventory is the clean next walking step
+
+(first_bookend_delta_inventory_refresh) :governance inventory: /refresh counts and route package manifest/ |staging, commit, proof claims|
+  + [inside] is worktree inventory, scope recommendation, and next non-mutating governance route
+  + [boundary] is no staging, no commit, no broad .sop mutation, no math execution, no proof claim
+  |outside| theorem authority, zero certification, runtime implementation, branch reopening, and platform-wide authority normalization

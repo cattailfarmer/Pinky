@@ -1,0 +1,37 @@
+Subject: Whole Field Landmark Overlay Report Specification
+
+Description: Canonical local specification for synthesizing whole-field RH rails into a bounded landmark overlay report.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landmark_overlay\Source_Document_Manifest.sop
+
+& [WholeFieldLandmarkOverlayReportSpecification] is the local authority for this report
+  + [specification_uuid] is a9f2cc2d-e39a-4727-aa5d-aa54ab2db881
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [report_path] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landmark_overlay_report_001.sop
+  + [purpose] is classify existing rails by role and identify a safe next inquiry surface
+  + [proof_status] is finite_overlay_report_not_RH_evidence
+
+& [RailRoleVocabulary] is the required report vocabulary
+  + [arithmetic_baseline] is pi(x), theta(x), psi(x), and prime-power decomposition in the x-domain
+  + [approximation_surface] is explicit-formula and zero-window residual behavior against psi(x)
+  + [convergent_half_plane_surface] is Euler-product and logarithmic-derivative behavior for Re(s) > 1
+  + [approach_boundary_surface] is sigma-boundary behavior approaching Re(s) = 1 from above
+  + [reference_ordinate_surface] is fixed-sigma t-axis rows that mark known zero ordinates as landmarks only
+  + [sparse_landmark_surface] is vertical-resonance extrema in Re(s) > 1
+  + [diagnostic_overlay] is Lambda Oscilloscope window/cutoff landmarks
+
+& [ReportRequirements] is the completion contract
+  + [must_include_psi_theta] is prime-power decomposition and its role in psi-theta mechanics
+  + [must_include_explicit_formula] is residual sensitivity and nonmonotonic finite zero-pair behavior
+  + [must_include_euler_product] is convergence behavior in Re(s) > 1
+  + [must_include_t_axis] is reference ordinates as landmarks only
+  + [must_include_vertical_resonance] is sparse candidate behavior and reference-near hits
+  + [must_include_lambda_overlay] is dense overlay behavior, stability counts, and caution
+  + [must_include_next_inquiry] is a restrained recommendation for the next meaningful work
+
+  = must: separate x-domain and t-domain conclusions
+  = must: mark every finite scan as incomplete inference
+  = must: avoid proof/disproof/zero-certification language
+  = must: preserve whole-field objects over special-prime sprawl
+  - never: rank a surface as proof-bearing

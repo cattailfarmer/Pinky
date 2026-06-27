@@ -1,0 +1,32 @@
+Subject: Math Toolchain Verification
+
+Description: Verification record for the project-local RiemannHypothesis Python analysis toolchain.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_math_toolchain_install\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\requirements.txt
+
+& [MathToolchainVerification] is the installed and verified local analysis environment
+  + [verification_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [local_environment] is C:\Project\Pinky\RiemannHypothesis\.venv
+  + [python] is Python 3.12 via C:\Project\Pinky\RiemannHypothesis\.venv\Scripts\python.exe
+  + [pip_check] is no_broken_requirements_found
+  + [plot_render_smoke] is passed with matplotlib Agg backend
+  + [zeta_smoke] is abs(zeta(0.5 + 14.134725141734693790457251983562*i)) approximately 3.73000179036e-31 at 50 decimal digits
+
+& [InstalledToolSet] is the verified package set
+  + [mpmath] is 1.3.0 for arbitrary precision numerical zeta and complex analysis probes
+  + [sympy] is 1.14.0 for symbolic math, number theory helpers, and exact expression checks
+  + [numpy] is 2.5.0 for arrays and finite numeric experiment data
+  + [scipy] is 1.18.0 for scientific computation and numerical routines
+  + [pandas] is 3.0.3 for tabular experiment records and comparisons
+  + [matplotlib] is 3.11.0 for static plots and finite trace visualizations
+  + [plotly] is 6.8.0 for interactive plots when needed
+  + [networkx] is 3.6.1 for relation graphs and sparse-realization/dense-node maps
+  + [pytest] is 9.1.1 for repeatable verification tests
+  + [rich] is installed for CLI feedback and readable diagnostics
+  + [pydantic] is 2.13.4 for structured experiment records when schemas are useful
+
+  = must: treat tool output as experiment evidence, not theorem proof
+  = must: record cutoff, precision, method, and error/uncertainty policy for numerical RH-adjacent claims
+  = should: use this environment for the first Riemann fundamentals workbench

@@ -1,0 +1,17 @@
+Subject: Worktree Integrity Review Source Document Manifest
+
+Description: Manifest for the first RH worktree integrity review under walking continuity.
+
+& [WorktreeIntegrityReviewSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 696d1a2f-1d30-4c56-a841-61d04ea4a92d
+  + [manifest_uuid] is 0be64dd9-f313-495c-ad4a-3a44b8f0edf4
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_worktree_integrity_review\Dictated_Worktree_Integrity_Review_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Worktree_Integrity_Review_Specification.sop
+  + [source_preservation_rule] is raw review source remains separate from canonical review contract and findings
+  + [authority_status] is source_preserved_before_review_record
+
+  = must: process source through specification before treating the review as authoritative
+  = must: cite repo-first work frame, role counts, ignored runtime surfaces, and tests
+  = must: keep this as review and route selection, not math proof or proof-adjacent evidence

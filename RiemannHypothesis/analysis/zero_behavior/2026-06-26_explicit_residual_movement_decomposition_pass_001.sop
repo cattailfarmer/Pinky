@@ -1,0 +1,71 @@
+Subject: Explicit Residual Movement Decomposition Pass 001
+
+Description: Bounded trace and analysis of explicit residual movement against psi, theta, and higher-prime-power layers.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_movement_decomposition\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Movement_Decomposition_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+
+& [ExplicitResidualMovementDecompositionPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is 52b1b124-1051-4e7e-8919-69f87ff97229
+  + [source_snapshot_uuid] is b9d5b24c-6b67-4cab-a439-32236f1ac80c
+  + [manifest_uuid] is 9e49d7af-3abf-44a3-ab59-2a0606b19634
+  + [canonical_specification_uuid] is 9bd847f1-deda-4ed8-8acc-1eeac7855829
+  + [proof_status] is finite_explicit_residual_movement_decomposition_not_rh_evidence
+  + [implementation_change] is added explicit_residual_movement_decomposition tool, CLI script, and accounting test
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 35 passed
+  + [cache_cleanup] is removed project .pytest_cache plus tests and tools\rh_math __pycache__
+
+& [MeasuredQuantity] is the named finite diagnostic
+  + [explicit_residual] is R(x)=psi_hat(x)-psi(x)
+  + [explicit_residual_movement] is Delta R(a,b)=R(b)-R(a) over adjacent sampled intervals
+  + [theta_error_movement] is Delta(theta(x)-x)
+  + [higher_prime_power_movement] is Delta(psi(x)-theta(x))
+  + [psi_error_movement] is Delta(psi(x)-x)
+  + [accounting_identity] is psi_error_movement equals theta_error_movement plus higher_prime_power_movement by exact psi mechanics
+  + [interpretation_boundary] is sign/co-movement is finite diagnostic relation only, not causation or RH evidence
+
+& [TraceParameters] is the bounded pass shape
+  + [points] is 100, 150, 200, 300, 500, 800, 1000, 1500, 2000
+  + [scale_law] is log
+  + [scale_multipliers] is 16 and 32
+  + [window] is sharp
+  + [precision_dps] is 80
+  + [policy_boundary] is no new kernels, windows, cutoff laws, or proof-facing surfaces were introduced
+
+& [TraceSummary] is the bounded finite result
+  + [point_row_count] is 18
+  + [movement_row_count] is 16
+  + [dominant_exact_layer_counts] is theta_error_movement 8, higher_prime_power_movement 8, balanced_or_zero 0
+  + [residual_psi_error_sign_relation_counts] is same_sign 6, opposite_sign 10, zero_involved 0
+  + [c16_average_explicit_residual_movement_abs] is 2.2769895014432056389015137828099316240383450068028222629825466842588259402669109
+  + [c32_average_explicit_residual_movement_abs] is 0.96600035734026032428031946283940454356329812563488050281153475179594865147801634
+  + [c16_average_abs_residual_minus_psi_error_movement] is 8.956950089142374612789931696402911778455480788617544833794931763878172765775404
+  + [c32_average_abs_residual_minus_psi_error_movement] is 8.1545300015856773663873631577217888609111446174418145075077733240938005420989672
+  + [same_opposite_by_configuration] is both c16 and c32 produce 3 same-sign and 5 opposite-sign residual-to-psi-error interval relations
+
+& [Interpretation] is the restrained inquiry result
+  + [positive_result] is the decomposition cleanly exposes the exact arithmetic layer movement underneath psi(x) and gives residual movement a named comparison unit
+  + [residual_behavior] is increasing c from 16 to 32 reduces average absolute residual movement in this bounded trace
+  + [non_identity_result] is residual movement does not become sign-coherent with psi_error_movement, because opposite-sign intervals outnumber same-sign intervals in both configurations
+  + [layer_result] is theta-error movement and higher-prime-power movement split dominance evenly across these intervals, so neither layer alone owns the movement surface
+  + [curiosity_pressure] is mixed sign relation plus evenly split exact-layer dominance is useful periphery, but not enough to justify claiming causal identity or adding another tool immediately
+  + [restraint_result] is the current residual movement question is answered for a first bounded pass; further work should return to whole-field node synthesis unless a new source-defined reason names a specific movement frontier
+
+& [Boundary] is the not-it field
+  + [not_rh_evidence] is the trace is finite arithmetic accounting only
+  + [not_zero_certification] is no residual minimum or movement sign certifies a zero
+  + [not_causation] is co-movement relation is not treated as causal proof
+  + [not_cutoff_superiority] is c32 improvement in residual movement is local to this bounded trace
+  + [not_bridge_identity] is this tool does not reopen the paused explicit/Euler bridge branch
+
+  = must: use residual movement decomposition as support for DenseNode_ExplicitFormulaResidualSurface only
+  = must: keep psi, theta, and higher-prime-power layers visible in future residual movement talk
+  = must: preserve c32 movement improvement as bounded observation, not law
+  = must: treat mixed sign alignment as evidence against a simple residual-to-psi-error identity in this pass
+  - never: treat this finite trace as proof, disproof, RH evidence, zero certification, causation, universal c superiority, or explicit/Euler fusion
+
+(explicit_residual_movement_decomposition_pass_001) :finite residual movement accounting: /new quantity implemented; c32 smoother locally; mixed sign alignment blocks identity claim/ |proof authority|

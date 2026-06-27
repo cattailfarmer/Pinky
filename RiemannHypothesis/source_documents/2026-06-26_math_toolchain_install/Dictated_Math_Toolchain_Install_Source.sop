@@ -1,0 +1,17 @@
+Subject: Dictated Math Toolchain Install Source
+
+Description: Preserved source request to install useful tools for Riemann Hypothesis fundamentals work.
+
+& [DictatedMathToolchainInstallSource] is the preserved user request
+  + [source_status] is preserved_raw_request
+  + [captured_request] is install what tools would be useful in this work
+  + [active_project] is C:\Project\Pinky\RiemannHypothesis
+  + [toolchain_goal] is provide a clean local programmatic loop for math operations, tests, tables, plots, graph analysis, and feedback records
+  + [authority_boundary] is source request only until reflected into toolchain requirements and verified installation
+  + [inside] is project-local Python virtual environment, requirements file, useful math and analysis packages, and installation verification
+  + [outside] is proof machinery, remote services, hidden credentials, global environment mutation, and untracked generated virtualenv contents
+
+  = must: prefer project-local environment over global mutation
+  = must: preserve tool selection as support for analysis, not proof
+  = must: verify installed tools before relying on them
+  - never: treat installed packages as theorem authority

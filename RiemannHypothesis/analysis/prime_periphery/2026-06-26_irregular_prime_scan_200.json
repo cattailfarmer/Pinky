@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "precision_dps": 80,
+    "proof_status": "finite_irregular_prime_scan_not_zero_line_evidence",
+    "tool": "irregular_prime_scan"
+  },
+  "parameters": {
+    "include_regular": false,
+    "limit": 200
+  },
+  "rows": [
+    {
+      "irregular_index": 1,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 32,
+          "divides_bernoulli_numerator": true,
+          "prime": 37,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -31
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 37
+    },
+    {
+      "irregular_index": 1,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 44,
+          "divides_bernoulli_numerator": true,
+          "prime": 59,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -43
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 59
+    },
+    {
+      "irregular_index": 1,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 58,
+          "divides_bernoulli_numerator": true,
+          "prime": 67,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -57
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 67
+    },
+    {
+      "irregular_index": 1,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 68,
+          "divides_bernoulli_numerator": true,
+          "prime": 101,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -67
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 101
+    },
+    {
+      "irregular_index": 1,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 24,
+          "divides_bernoulli_numerator": true,
+          "prime": 103,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -23
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 103
+    },
+    {
+      "irregular_index": 1,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 22,
+          "divides_bernoulli_numerator": true,
+          "prime": 131,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -21
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 131
+    },
+    {
+      "irregular_index": 1,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 130,
+          "divides_bernoulli_numerator": true,
+          "prime": 149,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -129
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 149
+    },
+    {
+      "irregular_index": 2,
+      "irregular_pairs": [
+        {
+          "bernoulli_index": 62,
+          "divides_bernoulli_numerator": true,
+          "prime": 157,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -61
+        },
+        {
+          "bernoulli_index": 110,
+          "divides_bernoulli_numerator": true,
+          "prime": 157,
+          "relation": "zeta(1-k) = -B_k/k",
+          "zeta_special_argument": -109
+        }
+      ],
+      "is_irregular_prime": true,
+      "p": 157
+    }
+  ],
+  "summary": {
+    "first_irregular_prime": 37,
+    "irregular_prime_count": 8,
+    "irregular_primes": [
+      37,
+      59,
+      67,
+      101,
+      103,
+      131,
+      149,
+      157
+    ],
+    "odd_prime_count": 45,
+    "reported_row_count": 8
+  }
+}

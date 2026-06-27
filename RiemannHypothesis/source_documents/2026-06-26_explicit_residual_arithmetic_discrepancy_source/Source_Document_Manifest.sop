@@ -1,0 +1,17 @@
+Subject: Explicit Residual Arithmetic Discrepancy Source Document Manifest
+
+Description: Manifest for preserved candidate-specific source governing the explicit residual arithmetic discrepancy object.
+
+& [ExplicitResidualArithmeticDiscrepancySourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 9ec1510d-da26-4f5c-bbd4-090bf239bf47
+  + [manifest_uuid] is 401717bb-1238-4476-ab3c-f73cd5772640
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_source\Dictated_Explicit_Residual_Arithmetic_Discrepancy_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Source_Specification.sop
+  + [source_preservation_rule] is raw candidate source remains separate from canonical specification, method contract, and any later analysis
+  + [authority_status] is source_preserved_before_candidate_specification
+
+  = must: process this source through specification before method review or analysis
+  = must: preserve candidate name, question, purpose, dense-node parentage, whole-field anchors, and no-computation boundary
+  - never: treat this manifest as computation, proof, branch-reopening, staging, commit, or broad .sop mutation authority

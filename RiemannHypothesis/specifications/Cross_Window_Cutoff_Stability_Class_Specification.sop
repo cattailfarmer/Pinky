@@ -1,0 +1,47 @@
+Subject: Cross Window Cutoff Stability Class Specification
+
+Description: SJS-processed contract for classifying near-reference Lambda heat by cutoff and cross-window stability.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cross_window_cutoff_stability_class\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cross_layer_landmark_displacement_synthesis_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+
+& [CrossWindowCutoffStabilityClassSpecification] is a project-local finite synthesis contract
+  + [source_snapshot_uuid] is 2e1bb3e1-5afc-431b-a5f5-53e911534a29
+  + [manifest_uuid] is ae7c4918-6a14-486f-bc51-f17350ba6117
+  + [canonical_specification_uuid] is 918297b2-15fe-4975-92f4-38544a84fb05
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is classify finite Lambda overlay candidates by global stability, near-reference stability, and drift-in/drift-out behavior
+  + [not_purpose] is new scans, new windows, denser offsets, proof, disproof, RH evidence, zero certification, critical-line authority, primary zero detection, or identity fusion
+  + [proof_status] is finite_cross_window_cutoff_stability_class_not_rh_evidence
+
+& [MeasuredComparison] is existing_stability_row_synthesis
+  + [global_cutoff_rows] are cutoff_stability_rows from existing Lambda window/cutoff trace
+  + [global_cross_window_rows] are cross_window_rows from existing Lambda window/cutoff trace
+  + [near_reference_rule] is endpoints are within 0.5 t units of the same reference label
+  + [source_near_rule] is the source endpoint is within 0.5 t units of a reference label
+  + [drift_rule] is source-near endpoint matched to a target outside the same near-reference pocket
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference as labels only
+  + [allowed_output] is analysis pass and focal-point update only
+
+  = must: use existing stability rows only
+  = must: report global stability separately from near-reference pocket stability
+  = must: report cutoff stability and cross-window stability separately
+  = must: report whether near-reference instability is local instability or drift across the comparison
+  = must: decide whether the overlay branch should pause
+  = must: preserve proof_status finite_cross_window_cutoff_stability_class_not_rh_evidence
+  - never: claim stable near-reference pockets are zeros, RH evidence, proof, disproof, or a central identity
+  - never: authorize denser scans from stability alone
+
+& [CrossWindowCutoffStabilityClassSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_bounded_stability_class_contract
+  + [reasoning_result] is the existing Lambda stability rows are sufficient to separate dense heat, stable pockets, and drift without adding another computation grid
+
+(cross_window_cutoff_stability_class) :finite Lambda stability-class synthesis: /global stability, near-reference pockets, drift, pause decision/ |RH evidence|
+  + [inside] is bounded synthesis of existing cutoff and window stability rows
+  + [boundary] is orientation and branch restraint
+  |outside| proof, disproof, zero certification, critical-line authority, new scans, exact-reference dominance, and single-surface identity

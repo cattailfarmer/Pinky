@@ -1,0 +1,57 @@
+Subject: Lambda Window Cutoff Comparison Specification
+
+Description: Canonical local specification for scanning Lambda Oscilloscope extrema across window policy and cutoff growth.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_window_cutoff_comparison\Source_Document_Manifest.sop
+@ [support] C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Oscilloscope_Probe_Specification.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+
+& [LambdaWindowCutoffComparisonSpecification] is the local authority for this bounded scan
+  + [specification_uuid] is 8bdc57f1-1f67-47c9-9a00-183eedaa3da6
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool_helper] is C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+  + [tool_script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_window_cutoff_scan.py
+  + [purpose] is identify whether finite Lambda Oscilloscope extrema remain stable across windows and cutoff growth
+  + [proof_status] is finite_lambda_window_cutoff_scan_not_rh_evidence
+
+& [ScanObject] is the deterministic measurement surface
+  + [sigmas] default to 1.5 and 1.05 so the scan remains in Re(s) > 1
+  + [windows] default to hard and fejer
+  + [prime_power_bounds] default to 100 and 500
+  + [t_range] defaults to 0 through 30
+  + [t_step] defaults to 0.5
+  + [metrics] are lambda_trace_abs and finite_trace_residual_abs when comparison exists
+  + [candidate_rule] is local minimum or local maximum across adjacent t samples for the same sigma, window, bound, and metric
+  + [reference_landmarks] are existing t-axis zero-ordinate landmarks as reference ordinates only
+
+  = must: label every candidate by sigma, window, cutoff, metric, extremum type, t, nearest reference, and reference distance
+  = must: include stability rows comparing candidate t locations across cutoff bounds for the same sigma, window, metric, and extremum type
+  = must: include cross-window rows comparing nearest hard and Fejer candidates
+  = must: cap sample count
+  - never: identify a candidate as a zero
+
+& [StabilityInterpretation] is the allowed inference layer
+  + [stable_across_cutoff] is candidate t locations remain within one t step across cutoff growth for the same window
+  + [stable_across_window] is hard and Fejer nearest candidate t locations remain within one t step at the same cutoff
+  + [unstable] is candidate shifts exceed one t step or disappears under a window/cutoff change
+  + [meaning] is stable finite landmarks may guide further inspection but cannot carry proof force
+
+  = must: treat cutoff sensitivity as evidence of finite-truncation artifact risk
+  = must: treat window sensitivity as smoothing diagnostic rather than universal window superiority
+  = should: compare stable-looking landmarks with existing vertical-resonance rails before promoting focus
+
+& [ImplementationPlan] is the required implementation slice
+  + [step_1] is add lambda_window_cutoff_scan helper to rh_math.lambda_oscilloscope
+  + [step_2] is add tools/scripts/lambda_window_cutoff_scan.py
+  + [step_3] is add tests for candidate output and stability rows
+  + [step_4] is update tools README
+  + [step_5] is run the Python test suite and record analysis
+
+& [AcceptanceCriteria] is the completion standard
+  + [metadata_test] is proof_status finite_lambda_window_cutoff_scan_not_rh_evidence
+  + [candidate_test] is a bounded scan returns candidate rows with known metrics
+  + [stability_test] is a scan across two cutoff bounds returns cutoff stability rows
+  + [window_test] is a scan across hard and Fejer returns cross-window rows
+  + [boundary_test] is all generated rows remain finite scan records and not zero certificates

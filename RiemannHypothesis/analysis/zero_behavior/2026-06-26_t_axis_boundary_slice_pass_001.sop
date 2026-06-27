@@ -1,0 +1,58 @@
+Subject: T Axis Boundary Slice Pass 001
+
+Description: First fixed-sigma t-axis slice of finite Euler-product residual behavior in Re(s) > 1.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_t_axis_boundary_slice\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\T_Axis_Boundary_Slice_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_trace.json
+
+& [TAxisBoundarySlicePass001] is a completed bounded vertical-slice pass
+  + [analysis_uuid] is d3a0f7e5-aa91-407c-a557-f04abab375cc
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\t_axis_boundary_probe.py
+  + [proof_status] is finite_t_axis_boundary_probe_not_zero_line_evidence
+  + [status] is completed
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [sigmas] is 1.5 and 1.05
+  + [t_values] is 0, 5, 10, 14.134725141734693790457251983562, 20, 21.0220396387715549926284795938969, 25.0108575801456887632137909925628, 30
+  + [prime_bounds] is 100 and 500
+  + [row_count] is 32
+  + [transition_row_count] is 28
+  + [landmark_row_count] is 12
+  + [pole_axis_row_count] is 4
+  + [sigma_1_5_bound_500_pole_product_residual_abs] is 0.028967807991017071
+  + [sigma_1_5_bound_500_first_landmark_product_residual_abs] is 0.000289070575302510
+  + [sigma_1_5_bound_500_pole_to_first_landmark_ratio] is 100.210157885154844
+  + [sigma_1_5_bound_500_landmark_avg_product_residual_abs] is 0.000160862997524206
+  + [sigma_1_5_bound_500_ordinary_avg_product_residual_abs] is 0.000643719672640356
+  + [sigma_1_05_bound_500_pole_product_residual_abs] is 11.993953053143510
+  + [sigma_1_05_bound_500_first_landmark_product_residual_abs] is 0.003862796692097880
+  + [sigma_1_05_bound_500_pole_to_first_landmark_ratio] is 3104.992058650027051
+  + [sigma_1_05_bound_500_landmark_avg_product_residual_abs] is 0.002888545960175058
+  + [sigma_1_05_bound_500_ordinary_avg_product_residual_abs] is 0.011380221733712268
+
+& [VerticalSliceInference_001] is t_axis_boundary_result
+  + [inference] is fixed-sigma t-axis slicing distinguishes pole-axis behavior from ordinary vertical samples and known-zero-ordinate landmarks
+  + [pole_axis_motion] is t = 0 remains a separate object, especially near sigma = 1.05, where the pole product residual is more than 3000 times the first-landmark residual at bound 500
+  + [landmark_motion] is the selected known-zero-ordinate landmarks are calmer than the ordinary sample average in this bounded half-plane trace
+  + [ordinary_motion] is ordinary vertical samples vary but do not collapse into the pole-axis shape or a zero-line identity
+  + [boundary] is this measures reference-ordinate behavior at sigma > 1 and does not certify zeros or inspect the critical line
+
+& [IdentityInference_001] is object_delineation_result
+  + [local_identity] is finite Euler-product vertical behavior in the convergent half-plane
+  + [related_periphery] is pole-axis reference, known-zero-ordinate landmarks, ordinary vertical samples, prime-bound truncation, and logarithmic-derivative weighting
+  + [not_identity] is critical-line zeros, RH proof, RH disproof, and proof-grade zero ordinate classification
+  + [reason] is known zero ordinates can serve as landmarks while remaining external to zero certification in this tool surface
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is t-axis boundary slicing is useful because it separates the pole-axis object from ordinary and landmark vertical behavior at fixed sigma
+  + [reason] is the finite trace shows strong pole-axis residual dominance and comparatively calmer known-zero-ordinate landmark residuals, especially near sigma = 1.05
+  + [next_relevant_periphery] is denser vertical resonance scanning or returning to old ZetaOscilloscope/Zetabrot periphery with these new deterministic rails available
+  + [retained_boundary] is special-prime observations remain subordinate to pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior
+
+(t_axis_boundary_slice_pass_001) :fixed-sigma vertical residual slice: /pole-axis, reference ordinates, ordinary samples/ |zero certification|
+  + [inside] is finite vertical slicing in Re(s) > 1
+  + [boundary] is useful landmark comparison but not zero-line evidence
+  |outside| RH proof, disproof, independent zero certification, and critical-line inference

@@ -1,0 +1,17 @@
+Subject: Cesaro Mellin Bridge Source Document Manifest
+
+Description: Manifest for preserved source records governing the n-domain smoothed Lambda-Mellin bridge slice.
+
+& [CesaroMellinBridgeSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is ed78b6e1-08cc-4344-a38b-4f4a553d5361
+  + [manifest_uuid] is 187c3a54-2d0b-44f5-9b2f-d0a5e76c5e0e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cesaro_mellin_bridge\Dictated_Cesaro_Mellin_Bridge_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Cesaro_Mellin_Bridge_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the comparison finite and diagnostic
+  - never: treat finite Cesaro-Mellin bridge traces as proof, disproof, zero certification, critical-line evidence, or RH evidence

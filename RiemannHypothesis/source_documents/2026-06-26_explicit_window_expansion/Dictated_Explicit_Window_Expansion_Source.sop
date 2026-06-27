@@ -1,0 +1,24 @@
+Subject: Dictated Explicit Window Expansion Source
+
+Description: Preserved source for expanding finite explicit-formula zero-window testing.
+
+& [DictatedExplicitWindowExpansionSource] is preserved project source
+  + [source_snapshot_uuid] is 9803f94c-e2c1-423a-bede-f1c4a56cc89f
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_kind] is continuation_source_from_current_focal_point_and_heartbeat
+  + [timestamp_local] is 2026-06-26
+
+## Preserved Source
+
+The current focal point says:
+
+  + [open_question_explicit_window_expansion_next] is whether to expand explicit-formula window testing with larger zero counts and additional smoothing policies before attempting any stronger bridge
+
+The active heartbeat instruction says:
+
+  Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces.
+
+## Source Interpretation Boundary
+
+This source authorizes a bounded finite diagnostic expansion only. It does not authorize proof claims, disproof claims, independent zero certification, or any claim that a finite smoothing policy identifies the truth of RH.

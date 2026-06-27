@@ -1,0 +1,17 @@
+Subject: First Bookend Commit Authority Correction Source Manifest
+
+Description: Manifest for preserved source material supporting the project-local bookend commit authority correction.
+
+& [FirstBookendCommitAuthorityCorrectionSourceManifest] is source manifest
+  + [manifest_uuid] is 0c2c2943-4ce3-4052-adb8-04a8a4ff4eea
+  + [source_snapshot_uuid] is 06fdd049-6032-4313-a592-1a9599938170
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [preserved_source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_commit_authority_correction\Dictated_First_Bookend_Commit_Authority_Correction_Source.sop
+  @ [current_focal_point] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  @ [readiness_checkpoint] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_readiness_checkpoint_001.sop
+  @ [package_manifest] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_package_manifest_001.sop
+  + [preservation_status] is raw_source_preserved_before_canonical_specification
+  + [use_status] is eligible_for_sjs_processing
+  + [boundary] is project_local_commit_authority_only_no_broad_sop_no_unrelated_projects_no_new_math

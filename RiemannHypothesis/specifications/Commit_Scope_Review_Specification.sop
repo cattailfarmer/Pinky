@@ -1,0 +1,42 @@
+Subject: Commit Scope Review Specification
+
+Description: SJS-processed contract for deciding the first RH project bookend scope without accidental broad staging.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_commit_scope_review\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Source_Spec_Inventory_Commit_Readiness_Specification.sop
+@ [source] C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+
+& [CommitScopeReviewSpecification] is a project-local scope contract
+  + [source_snapshot_uuid] is d23baef0-0d75-451d-a255-b0b34bd6b129
+  + [manifest_uuid] is d4abc270-3055-48fd-99e4-e02c62ab4e70
+  + [canonical_specification_uuid] is 640debc9-95ce-4e3a-b18f-e39c10f0b682
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is decide safe staging scope for a future first RH project bookend
+  + [not_purpose] is staging, committing, broad .sop cleanup, proof claims, or math expansion
+  + [proof_status] is commit_scope_review_not_rh_evidence
+
+& [ScopeContract] is bounded
+  + [candidate_scope_a] is RiemannHypothesis project files only
+  + [candidate_scope_b] is RiemannHypothesis project files plus .sop\state\CurrentFocalPoint.sop
+  + [candidate_scope_c] is defer commit and continue review
+  + [excluded_scope] is broad .sop platform dirty state
+  + [allowed_output] is scope review, recommendation, focal-point update, and request for explicit commit direction only
+
+  = must: keep ignored runtime surfaces out of any candidate commit
+  = must: keep broad .sop dirty state out of the RH first-bookend commit unless explicitly selected
+  = must: recommend a scope but not stage or commit without explicit direction
+  = must: preserve no-commit status clearly
+  - never: stage all files from Pinky root for this RH bookend
+
+& [CommitScopeReviewSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and scope_scoped
+  + [processing_result] is accepted_scope_review_contract
+  + [reasoning_result] is RH project files form a coherent candidate bookend, but root .sop has broad unrelated dirt, so safe motion requires scoped staging or user selection
+
+(commit_scope_review) :pre-commit scope: /RH only, RH plus focal state, or defer/ |broad staging|
+  + [inside] is commit-scope recommendation before staging
+  + [boundary] is no commit operation yet
+  |outside| broad .sop staging, ignored runtime surfaces, proof claims, and commit integrity before commit

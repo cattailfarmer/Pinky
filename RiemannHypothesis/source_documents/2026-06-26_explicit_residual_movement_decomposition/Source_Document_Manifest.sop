@@ -1,0 +1,17 @@
+Subject: Explicit Residual Movement Decomposition Source Document Manifest
+
+Description: Manifest for preserved source records governing explicit residual movement decomposition.
+
+& [ExplicitResidualMovementDecompositionSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is b9d5b24c-6b67-4cab-a439-32236f1ac80c
+  + [manifest_uuid] is 9e49d7af-3abf-44a3-ab59-2a0606b19634
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_movement_decomposition\Dictated_Explicit_Residual_Movement_Decomposition_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Movement_Decomposition_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before runtime implementation
+  = must: keep this as finite arithmetic diagnostic support only
+  - never: treat residual movement decomposition as proof, disproof, zero certification, or RH evidence

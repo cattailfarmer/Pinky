@@ -1,0 +1,40 @@
+Subject: Inquiry Gate Not Commit Gate 001
+
+Description: Route correction preserving inquiry progress while first-bookend commit scope remains undecided.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_inquiry_gate_not_commit_gate\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Inquiry_Gate_Not_Commit_Gate_Specification.sop
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+
+& [InquiryGateNotCommitGate001] is a completed route correction
+  + [analysis_uuid] is 90870260-ff31-49e2-af12-01017b6c52e3
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_route_correction
+  + [proof_status] is route_rule_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [mutation_gate] is still hard for staging, committing, broad .sop mutation, and ignored runtime inclusion
+  + [inquiry_status] is open
+
+& [Correction] is boundary_delineation
+  + [incorrect_reading] is commit-scope choice blocks all progress and inquiry
+  + [corrected_reading] is commit-scope choice blocks Git mutation and broad authority mutation only
+  + [continued_path] is non-staging walking through record review, periphery scan, route-map refinement, contradiction handling, and existing-record synthesis
+  + [source_governance] is any new analysis record still requires preserved source and specification first
+  + [restraint] is do not reopen paused Lambda, window, scale-law, special-prime, or proof-facing branches without a source-defined measured purpose
+
+& [PeripheryValue] is active
+  + [boundary_value] is high: the correction prevents mutation-gate confusion from freezing inquiry
+  + [governance_value] is high: explicit user direction remains required for staging and commit scope
+  + [whole_field_value] is moderate: inquiry can continue synthesizing existing RH whole-field nodes without adding new computation
+  + [next_non_mutating_lead] is whole-field record index over existing RH analysis branches, because it can improve reentry and contradiction handling without new math scans
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is the first-bookend boundary is a mutation gate, not an inquiry wall
+  + [next_action] is continue non-staging inquiry by indexing existing RH analysis branches and their paused/open frontiers
+  + [boundary] is no staging, commit, broad .sop edit, proof claim, zero certification, or new math scan occurred
+
+(inquiry_gate_not_commit_gate_001) :route correction: /mutation gate, inquiry lane open/ |commit bypass|
+  + [inside] is corrected walking posture and next non-mutating lead
+  + [boundary] is explicit direction still required for staging and commit
+  |outside| Git mutation, broad authority mutation, proof claims, and paused-branch sprawl

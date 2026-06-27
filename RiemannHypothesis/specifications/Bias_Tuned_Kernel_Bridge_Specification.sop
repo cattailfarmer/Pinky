@@ -1,0 +1,55 @@
+Subject: Bias Tuned Kernel Bridge Specification
+
+Description: SJS-processed contract for alpha-tuned n-domain Lambda-Mellin bridge comparison.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_bias_tuned_kernel_bridge\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_pass_001.sop
+
+& [BiasTunedKernelBridge] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is 88b2ded0-a264-4e41-beaa-fadc1182585e
+  + [manifest_uuid] is ad213257-444c-41e7-910f-727f1f551502
+  + [canonical_specification_uuid] is f966ca91-cded-4c2d-9063-59a4a541f8f5
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether an alpha-tuned kernel can expose useful bridge-improvement versus smoothing-bias tradeoff structure between sharp and Cesaro
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, or explicit/Euler identity fusion
+
+  = must: work only with Re(s) > 1 samples
+  = must: define K_alpha(n,N)=1-alpha*n/(N+1)
+  = must: include alpha values 0, 0.25, 0.5, 0.75, and 1 by default
+  = must: treat alpha=0 as sharp baseline and alpha=1 as Cesaro endpoint
+  = must: compute exact alpha-weighted Lambda sum Sum_{n<=N}K_alpha(n,N)Lambda(n)n^-s
+  = must: compute explicit alpha-weighted Lambda-like sum Sum_{n<=N}K_alpha(n,N)(psi_hat(n)-psi_hat(n-1))n^-s
+  = must: report bridge residual, raw sharp bridge residual, exact alpha cutoff residual against -zeta_prime/zeta(s), bridge improvement over sharp, and cutoff-bias increase over sharp
+  = must: identify Pareto non-dominated alpha rows per N, s, scale multiplier, and zero-window using bridge residual and exact cutoff residual as competing objectives
+  = must: mark output proof_status as finite_bias_tuned_kernel_bridge_not_rh_evidence
+  = must: treat mpmath zetazero and zeta derivative evaluation as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite alpha traces
+  - never: call an alpha universally best without reporting the bias tradeoff
+  - never: collapse explicit-zero truncation identity into Euler prime-power cutoff identity
+
+& [DefaultBiasTunedKernelGrid] is the bounded comparison grid
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.134725141734693790457251983562i, and s=1.5+14.134725141734693790457251983562i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [zero_windows] is sharp, fejer, lanczos, and hann
+  + [alphas] is 0, 0.25, 0.5, 0.75, and 1
+  + [rationale] is reuse the prior Lambda-Mellin grid while varying only the sharp-to-Cesaro smoothing strength
+
+& [BiasTunedKernelBridgeTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.bias_tuned_kernel_bridge_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\bias_tuned_kernel_bridge_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_bias_tuned_kernel_bridge_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_bias_tuned_kernel_bridge_atlas_pass_001.sop
+
+& [BiasTunedKernelBridgeSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_bias_tuned_kernel_bridge_contract
+  + [reasoning_result] is Cesaro created useful smoothing but higher bias; alpha tuning is the restrained way to see whether the tradeoff has an actionable Pareto shape
+
+(bias_tuned_kernel_bridge) :finite sharp-Cesaro alpha bridge: /alpha, bridge improvement, smoothing bias, Pareto frontier/ |proof authority|
+  + [inside] is bounded finite Re(s)>1 shared-unit alpha-kernel comparison
+  + [boundary] is bridge-bias tradeoff diagnosis only
+  |outside| RH proof, disproof, zero certification, global bridge identity, critical-line evidence, and universal scale-law claims

@@ -1,0 +1,23 @@
+Subject: Dictated Cesaro Mellin Bridge Source
+
+Description: Preserved source for the n-domain smoothed Lambda-Mellin bridge inquiry.
+
+& [DictatedCesaroMellinBridgeSource] is raw continuation source
+  + [source_snapshot_uuid] is ed78b6e1-08cc-4344-a38b-4f4a553d5361
+  + [captured_at] is 2026-06-26T17:07:35.668Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_continuous_kernel_bridge_next after partial-summation bridge audit
+  + [raw_need] is determine whether a genuinely new smoothed bridge surface can reduce explicit-side Lambda-Mellin projection noise without collapsing explicit and Euler identities
+  + [prior_result] is discrete partial summation validated the shared unit but proved equivalent to raw finite differences for sampled psi_hat values
+  + [candidate_bridge] is apply n-domain smoothing kernels to the finite Lambda-Mellin sums: compare Sum_{n<=N} K(n,N)(psi_hat(n)-psi_hat(n-1))n^-s against Sum_{n<=N} K(n,N)Lambda(n)n^-s
+  + [candidate_kernels] are sharp, cesaro, and hann
+  + [expected_value] is Cesaro/Hann kernels may reduce cutoff-edge and high-n jump sensitivity while preserving a finite shared Lambda-Mellin unit
+  + [identity_boundary] is smoothed finite sums are not the same target as the unsmoothed finite cutoff or the infinite -zeta_prime/zeta value
+  + [boundary] is finite Re(s)>1 numerical bridge diagnosis, not proof, disproof, zero certification, critical-line evidence, or identity fusion
+
+  = must: preserve this raw source separately from canonical specification
+  = must: keep sharp kernel as the raw unweighted baseline
+  = must: compare smoothed bridge residuals against the raw baseline without treating a changed target as proof of improvement
+  = must: report exact smoothed cutoff residual against -zeta_prime/zeta as smoothing bias/tail context
+  - never: treat finite kernel smoothing agreement as RH evidence

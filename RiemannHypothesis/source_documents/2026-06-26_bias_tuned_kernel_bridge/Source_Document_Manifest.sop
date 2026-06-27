@@ -1,0 +1,17 @@
+Subject: Bias Tuned Kernel Bridge Source Document Manifest
+
+Description: Manifest for preserved source records governing the bias-tuned n-domain Lambda-Mellin bridge slice.
+
+& [BiasTunedKernelBridgeSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 88b2ded0-a264-4e41-beaa-fadc1182585e
+  + [manifest_uuid] is ad213257-444c-41e7-910f-727f1f551502
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_bias_tuned_kernel_bridge\Dictated_Bias_Tuned_Kernel_Bridge_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Bias_Tuned_Kernel_Bridge_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the comparison finite and diagnostic
+  - never: treat finite bias-tuned kernel traces as proof, disproof, zero certification, critical-line evidence, or RH evidence

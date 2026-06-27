@@ -1,0 +1,22 @@
+Subject: Lambda Oscilloscope Probe Source
+
+Description: Preserved source intake for a Pinky-local deterministic Lambda Oscilloscope probe.
+
+& [DictatedLambdaOscilloscopeProbeSource] is the preserved source request for a local math-processing implementation slice
+  + [source_snapshot_uuid] is c0f941b7-a8c3-4a1c-a766-08a88e8a854b
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_reason] is old ZetaOscilloscope and Zetabrot translation identified the finite Lambda log-Fourier phasor/logarithmic-derivative readout as an importable primitive
+  + [user_intent] is build tools needed for deterministic math processing while keeping inference and proof claims separate
+  + [current_question] is whether a Pinky-local Lambda Oscilloscope probe script is useful beyond existing Euler-product/log-derivative rails
+  + [answer_seed] is yes, if it emits the finite complex trace and optional per-prime-power phasors with explicit cutoff, window, sigma, and proof boundary
+  + [retained_old_meaning] is the corrected phase exp(-i*t*log(n)) and angular velocity log(n)
+  + [discarded_old_meaning] is visual trace as proof, zeta-zero detector, or authority imported from old symbolism
+
+  = must: implement as deterministic math-processing support, not inference authority
+  = must: use Lambda(n) over prime powers and zero elsewhere
+  = must: use exp(-i*t*log(n)) as the zeta-aligned phase
+  = must: declare cutoff and window policy in every payload
+  = must: compare against -zeta_prime(s)/zeta(s) only when sigma > 1
+  = must: treat sigma <= 1 traces as finite diagnostics only
+  - never: claim RH proof, disproof, zero certification, or infinite critical-line convergence from a finite trace

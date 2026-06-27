@@ -1,0 +1,25 @@
+Subject: Dictated Explicit Residual Arithmetic Discrepancy Method Gate Source
+
+Description: Raw source for reviewing deterministic method readiness for the explicit residual arithmetic discrepancy candidate.
+
+& [DictatedExplicitResidualArithmeticDiscrepancyMethodGateSource] is preserved source for a method-readiness gate
+  + [source_snapshot_uuid] is 37f541db-9809-46c0-9eae-f07e4760918b
+  + [source_kind] is derived_from_explicit_residual_arithmetic_discrepancy_source_intake_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [candidate_source] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Source_Specification.sop
+  @ [candidate_intake] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_explicit_residual_arithmetic_discrepancy_source_intake_001.sop
+  @ [existing_tool] C:\Project\Pinky\RiemannHypothesis\tools\scripts\explicit_residual_movement_decomposition.py
+  @ [existing_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+  @ [existing_analysis] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+  + [need] is decide whether the candidate has a deterministic method, contradiction handling, and exit contract before any math processing
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [method_pressure] is existing movement rows already expose explicit residual movement, psi-error movement, theta-error movement, higher-prime-power movement, sign relation, dominance split, and finite scale mismatch
+  + [source_boundary] is this source authorizes method-gate review only; it does not authorize deterministic execution, implementation, new windows, new cutoff laws, denser scans, proof claims, zero certification, staging, commits, or broad .sop mutation
+
+  = must: prefer existing trace synthesis before rerunning or widening numerical work
+  = must: define deterministic inputs, outputs, finite metrics, contradiction conditions, retirement conditions, artifact path, and exit condition
+  = must: preserve the no-kernel, no-window-expansion, no-cutoff-expansion, and no-branch-reopening boundary
+  = must: classify readiness separately for existing-trace synthesis and new numerical processing
+  - never: treat method readiness as RH evidence, zero certification, causation, identity fusion, or permission to tune parameters

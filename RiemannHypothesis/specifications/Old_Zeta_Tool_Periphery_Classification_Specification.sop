@@ -1,0 +1,56 @@
+Subject: Old Zeta Tool Periphery Classification Specification
+
+Description: Pinky-local specification for classifying old ZetaOscilloscope and Zetabrot objects against current deterministic RH rails.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\Source_Document_Manifest.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+
+& [OldZetaToolPeripheryClassificationSpecification] is the local authority for this bounded classification pass
+  + [specification_uuid] is 661360e9-3f41-471a-aebd-c56345f62f92
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [classification_subjects] are ZetaOscilloscope and ZetabrotModule
+  + [scope] is meaning translation and classification only
+  + [out_of_scope] is runtime import, proof claim, zero detector claim, and Toribrot geometry implementation
+  + [comparison_rails] are finite explicit-formula error, zero-windowing, Euler-product/logarithmic-derivative weighting, sigma-boundary scan, t-axis boundary slice, and vertical resonance scan
+
+& [ClassificationVocabulary] is the required output vocabulary
+  + [useful_primitive] is an object that can be directly re-used as a bounded local mathematical operation or inspection concept after source preservation
+  + [conceptual_scaffold] is an object that helps orient meaning but should not drive computation or proof-like inference
+  + [workaround_hack] is an object that likely compensated for missing deterministic tooling or collapsed visualization into analytic authority
+  + [obsolete_analogy] is an object whose explanatory shape no longer clarifies the local problem
+  + [import_candidate] is an object worth translating into a Pinky-local tool or specification after this classification
+  + [defer] is an object that remains external periphery until a later source-preserved slice needs it
+
+& [KnownSafePrimitive_LambdaLogFourier] is the target mathematical identity under inspection
+  + [finite_form] is sum over 1 <= n <= N of Lambda(n) * W_N(n) * n^(-sigma) * exp(-i*t*log(n))
+  + [convergent_half_plane_identity] is sum over n >= 1 of Lambda(n) * n^(-s) equals -zeta_prime(s)/zeta(s) for Re(s) > 1
+  + [visual_readout] is t maps to real and imaginary parts of a finite complex sum
+  + [existing_local_support] is C:\Project\Pinky\RiemannHypothesis\tools\rh_math\euler_product.py
+
+  = must: use exp(-i*t*log(n)) for zeta-aligned phasor phase
+  = must: include prime powers through the von Mangoldt function
+  = must: declare N and window policy for finite traces
+  = must: separate Re(s) > 1 convergence authority from critical-line finite diagnostics
+  - never: treat a finite sigma = 1/2 trace as the infinite Lambda Dirichlet series
+  - never: treat visual resonance as proof, disproof, or zero certification
+
+& [ZetabrotTranslationBoundary] is the allowed local meaning of the old Zetabrot layer
+  + [retained_meaning] is integer-indexed scalar field to Dirichlet-Mellin and log-Fourier transform
+  + [retained_identity_anchor] is one integer value per node when an integer-node representation is useful
+  + [retained_factor_anchor] is composite factor structure as explanatory provenance for prime and prime-power support
+  + [not_retained_as_authority] is pants geometry, toroidal embedding, visual resemblance, and proof-adjacent language
+
+  = must: keep arithmetic data, transform, visualization, and RH interpretation as separate layers
+  = must: treat Toribrot geometry as deferred unless a specific deterministic task needs it
+  = should: map old Zetabrot vocabulary to existing whole-field objects before creating any new runtime
+
+& [CompletionCriteria] is the completion standard for this pass
+  + [source_preserved] is exact snapshots and hashes recorded
+  + [classification_record_created] is analysis/periphery_inspections/2026-06-26_old_zeta_tool_translation_pass_001.sop
+  + [manager_updated] is planning/project_manager/Manager_State.sop points to the new pass
+  + [focal_point_updated] is .sop/state/CurrentFocalPoint.sop records the answer and next open question
+  + [proof_boundary_retained] is finite traces remain exploratory only

@@ -1,0 +1,50 @@
+Subject: Whole Field Record Index Specification
+
+Description: SJS-processed contract for indexing existing RH branches without reopening paused computation.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_record_index\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Inquiry_Gate_Not_Commit_Gate_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_dense_node_refinement_selection_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_bridge_restraint_synthesis_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_post_residual_movement_landscape_integration_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_landmark_overlay_discipline_synthesis_001.sop
+
+& [WholeFieldRecordIndexSpecification] is a non-mutating route-map contract
+  + [source_snapshot_uuid] is d2c5a412-2645-4891-bcce-d89d7e7fba2c
+  + [manifest_uuid] is e6654dea-e94e-423b-8fd9-d222c20980d5
+  + [canonical_specification_uuid] is 284693b2-5ec3-46ff-ab39-983d3071d8b2
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is index existing RH record branches by role and frontier state so inquiry can continue without Git mutation or new computation
+  + [not_purpose] is staging, committing, broad .sop mutation, new math scans, proof claims, or exhaustive literature review
+  + [proof_status] is record_index_not_rh_evidence
+
+& [IndexContract] is bounded
+  + [branch_band_001] is periphery_inspections
+  + [branch_band_002] is prime_periphery
+  + [branch_band_003] is prime_distribution
+  + [branch_band_004] is zero_behavior
+  + [branch_band_005] is toolchain
+  + [classification_set] is active_support, closed_branch, paused_branch, deferred_frontier, open_nonmutating_inquiry, and outside
+  + [allowed_output] is one record index, next non-mutating lead, and optional focal-state update
+
+  = must: classify existing branches without treating file volume as progress
+  = must: preserve stopped or paused branch decisions
+  = must: identify at least one non-mutating inquiry lead if pursuit value remains
+  = must: keep special-prime branches subordinate to whole-field pi, theta, psi, Lambda, Euler/log-derivative, explicit residual, and zeta-reference objects
+  = must: keep explicit/Euler bridge restraint active
+  = must: keep Lambda overlay discipline active
+  = must: keep commit-scope boundary as a mutation gate only
+  - never: reopen a paused branch merely because it has dense records
+  - never: infer RH evidence from route-map structure
+
+& [WholeFieldRecordIndexSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and index_scoped
+  + [processing_result] is accepted_non_mutating_record_index_contract
+  + [reasoning_result] is existing RH records contain enough settled branch decisions and dense-node maps to support an index that improves inquiry without new computation
+
+(whole_field_record_index) :record index: /existing branches, closed states, support lanes, open non-mutating lead/ |proof claims|
+  + [inside] is route-map synthesis over existing records
+  + [boundary] is no staging, no commit, no broad authority mutation, and no new computation
+  |outside| proof, disproof, zero certification, critical-line authority, and paused-branch sprawl

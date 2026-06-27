@@ -1,0 +1,24 @@
+Subject: Dictated Explicit Residual Stability Atlas Source
+
+Description: Preserved source for building a broader explicit-formula residual stability atlas.
+
+& [DictatedExplicitResidualStabilityAtlasSource] is preserved project source
+  + [source_snapshot_uuid] is 5418156b-b17f-44dc-93e8-67c1f6466fce
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_kind] is continuation_source_from_current_focal_point_and_heartbeat
+  + [timestamp_local] is 2026-06-26
+
+## Preserved Source
+
+The current focal point says:
+
+  + [open_question_explicit_residual_stability_next] is whether to build a broader explicit-formula residual stability atlas across x ranges, zero-pair counts, and window policies before attempting another explicit/Euler bridge
+
+The active heartbeat instruction says:
+
+  Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces.
+
+## Source Interpretation Boundary
+
+This source authorizes a finite residual-stability atlas only. Stability means repeatable behavior inside a bounded numerical grid, not theorem authority, not RH evidence, and not zero certification.

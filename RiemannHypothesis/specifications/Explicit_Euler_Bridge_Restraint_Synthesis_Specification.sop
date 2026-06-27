@@ -1,0 +1,48 @@
+Subject: Explicit Euler Bridge Restraint Synthesis Specification
+
+Description: SJS-processed contract for deciding whether the explicit/Euler bridge refinement branch should pause.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_bridge_restraint_synthesis\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_cutoff_bridge_report_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_bias_tuned_kernel_bridge_atlas_pass_001.sop
+
+& [ExplicitEulerBridgeRestraintSynthesis] is a project-local finite synthesis contract
+  + [source_snapshot_uuid] is dc514f6c-3433-408b-bc05-3a266a9d2a38
+  + [manifest_uuid] is 775f7413-dd92-4f1e-ba29-56b02a20d523
+  + [canonical_specification_uuid] is 51d664ba-6608-46b3-9f34-e2cadfc13aaf
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is synthesize recent explicit/Euler bridge records and decide whether kernel refinement should pause
+  + [not_purpose] is new numerical implementation, proof, disproof, RH evidence, zero certification, critical-line authority, or explicit/Euler identity fusion
+
+  = must: inspect the bridge chain from explicit/Euler cutoff comparison through bias-tuned kernel atlas
+  = must: preserve explicit-formula x-domain residuals, Euler/log-derivative Re(s)>1 cutoffs, exact finite Lambda cutoff residuals, and explicit projected Lambda residuals as separate identities
+  = must: evaluate whether the latest kernel work produced a dominant correction or only a Pareto tradeoff
+  = must: keep special-prime observations subordinate to whole-field objects
+  = must: name the next useful direction only after restraint is decided
+  = must: mark proof_status as finite_restraint_synthesis_not_rh_evidence
+  - never: reopen kernel refinement without new source-defined purpose
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite synthesis
+
+& [BridgeRecordsToSynthesize] is the bounded source set
+  + [explicit_euler_cutoff_bridge] is complementary rails, no scalar identity
+  + [scale_law_comparison] is coordinate-law diagnosis, no universal law or bridge identity
+  + [lambda_mellin_bridge] is coherent shared weighted Lambda unit, explicit projection residual plateau near 0.202
+  + [partial_summation_bridge] is exact audit identity for exact psi and no reduction for sampled psi_hat
+  + [cesaro_mellin_bridge] is bridge residual improvement with smoothing bias increase
+  + [bias_tuned_kernel_bridge] is alpha Pareto dial with no dominating alpha
+
+& [BridgeRestraintSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_bounded_bridge_restraint_synthesis_contract
+  + [reasoning_result] is the branch has produced enough coherent boundary information to decide whether more kernels are purpose-relevant
+
+(explicit_euler_bridge_restraint_synthesis) :finite bridge branch restraint: /synthesize, decide pause, return whole-field/ |proof authority|
+  + [inside] is bounded synthesis of prior finite bridge diagnostics
+  + [boundary] is branch-direction decision only
+  |outside| RH proof, disproof, zero certification, global explicit/Euler identity, critical-line evidence, and new unsourced implementation

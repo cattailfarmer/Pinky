@@ -1,0 +1,1205 @@
+{
+  "metadata": {
+    "precision_dps": 80,
+    "proof_status": "bounded_coefficient_power_shift_probe_not_primality_proof",
+    "tool": "coefficient_power_shift_probe"
+  },
+  "parameters": {
+    "coefficient": 65537,
+    "fixed_shifts": [
+      -4,
+      -3,
+      -2,
+      -1,
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_hits": 8,
+    "power_base": 641,
+    "powers": [
+      3,
+      5,
+      17,
+      257,
+      65537
+    ],
+    "shift_modes": [
+      "plus_n",
+      "minus_n",
+      "n_plus_1",
+      "one_minus_n",
+      "minus_n_minus_1"
+    ],
+    "small_factor_limit": 1000000
+  },
+  "rows": [
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3-4",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 3,
+      "power_base": 641,
+      "shift": -4,
+      "shift_label": "fixed_-4",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        3
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3-3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 3,
+      "power_base": 641,
+      "shift": -3,
+      "shift_label": "fixed_-3",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        7,
+        2383
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3-2",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 3,
+      "power_base": 641,
+      "shift": -2,
+      "shift_label": "fixed_-2",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        5,
+        1237
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3-1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 3,
+      "power_base": 641,
+      "shift": -1,
+      "shift_label": "fixed_-1",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        3,
+        37,
+        233
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3+1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 3,
+      "power_base": 641,
+      "shift": 1,
+      "shift_label": "fixed_+1",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        41,
+        557,
+        11699,
+        32303
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3+2",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 3,
+      "power_base": 641,
+      "shift": 2,
+      "shift_label": "fixed_+2",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        3,
+        12409,
+        18803,
+        24659
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3+3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 3,
+      "power_base": 641,
+      "shift": 3,
+      "shift_label": "fixed_+3",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        5,
+        131,
+        223
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3+4",
+      "first_small_divisor": 7,
+      "parity": "odd",
+      "power": 3,
+      "power_base": 641,
+      "shift": 4,
+      "shift_label": "fixed_+4",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        7,
+        13,
+        199
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3+3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 3,
+      "power_base": 641,
+      "shift": 3,
+      "shift_label": "plus_n",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        5,
+        131,
+        223
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3-3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 3,
+      "power_base": 641,
+      "shift": -3,
+      "shift_label": "minus_n",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        7,
+        2383
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3+4",
+      "first_small_divisor": 7,
+      "parity": "odd",
+      "power": 3,
+      "power_base": 641,
+      "shift": 4,
+      "shift_label": "n_plus_1",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        7,
+        13,
+        199
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3-2",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 3,
+      "power_base": 641,
+      "shift": -2,
+      "shift_label": "one_minus_n",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        5,
+        1237
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^3-4",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 3,
+      "power_base": 641,
+      "shift": -4,
+      "shift_label": "minus_n_minus_1",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        3
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5-4",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 5,
+      "power_base": 641,
+      "shift": -4,
+      "shift_label": "fixed_-4",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        3
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5-3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 5,
+      "power_base": 641,
+      "shift": -3,
+      "shift_label": "fixed_-3",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        19,
+        137,
+        737981
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5-2",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 5,
+      "power_base": 641,
+      "shift": -2,
+      "shift_label": "fixed_-2",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        5,
+        769,
+        4621,
+        114077
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5-1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 5,
+      "power_base": 641,
+      "shift": -1,
+      "shift_label": "fixed_-1",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        3,
+        13,
+        113,
+        111043
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5+1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 5,
+      "power_base": 641,
+      "shift": 1,
+      "shift_label": "fixed_+1",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        7,
+        11,
+        19927,
+        402817
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5+2",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 5,
+      "power_base": 641,
+      "shift": 2,
+      "shift_label": "fixed_+2",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        109
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5+3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 5,
+      "power_base": 641,
+      "shift": 3,
+      "shift_label": "fixed_+3",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        5,
+        43,
+        79,
+        219677
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5+4",
+      "first_small_divisor": 29,
+      "parity": "odd",
+      "power": 5,
+      "power_base": 641,
+      "shift": 4,
+      "shift_label": "fixed_+4",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        29,
+        37,
+        25537
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5+5",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 5,
+      "power_base": 641,
+      "shift": 5,
+      "shift_label": "plus_n",
+      "small_divisor_count_reported": 7,
+      "small_divisors": [
+        2,
+        3,
+        53,
+        61,
+        67,
+        73,
+        83
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5-5",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 5,
+      "power_base": 641,
+      "shift": -5,
+      "shift_label": "minus_n",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        373,
+        29209
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "no_small_divisor_found_within_bound",
+      "coefficient": 65537,
+      "expression": "65537*641^5+6",
+      "first_small_divisor": null,
+      "parity": "odd",
+      "power": 5,
+      "power_base": 641,
+      "shift": 6,
+      "shift_label": "n_plus_1",
+      "small_divisor_count_reported": 0,
+      "small_divisors": [],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5-4",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 5,
+      "power_base": 641,
+      "shift": -4,
+      "shift_label": "one_minus_n",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        3
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^5-6",
+      "first_small_divisor": 7,
+      "parity": "odd",
+      "power": 5,
+      "power_base": 641,
+      "shift": -6,
+      "shift_label": "minus_n_minus_1",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        7,
+        17,
+        593
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17-4",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 17,
+      "power_base": 641,
+      "shift": -4,
+      "shift_label": "fixed_-4",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        3
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17-3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 17,
+      "power_base": 641,
+      "shift": -3,
+      "shift_label": "fixed_-3",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        1439,
+        24943
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17-2",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 17,
+      "power_base": 641,
+      "shift": -2,
+      "shift_label": "fixed_-2",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        5,
+        11,
+        47,
+        233
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17-1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 17,
+      "power_base": 641,
+      "shift": -1,
+      "shift_label": "fixed_-1",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        3,
+        13,
+        23,
+        971
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17+1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 17,
+      "power_base": 641,
+      "shift": 1,
+      "shift_label": "fixed_+1",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        7,
+        131
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17+2",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 17,
+      "power_base": 641,
+      "shift": 2,
+      "shift_label": "fixed_+2",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        3,
+        461,
+        1787
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17+3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 17,
+      "power_base": 641,
+      "shift": 3,
+      "shift_label": "fixed_+3",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        5,
+        120209
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17+4",
+      "first_small_divisor": 443,
+      "parity": "odd",
+      "power": 17,
+      "power_base": 641,
+      "shift": 4,
+      "shift_label": "fixed_+4",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        443,
+        22861
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17+17",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 17,
+      "power_base": 641,
+      "shift": 17,
+      "shift_label": "plus_n",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        3,
+        162473
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17-17",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 17,
+      "power_base": 641,
+      "shift": -17,
+      "shift_label": "minus_n",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        5,
+        179,
+        1229,
+        2699
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17+18",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 17,
+      "power_base": 641,
+      "shift": 18,
+      "shift_label": "n_plus_1",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        5,
+        1693,
+        195739
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^17-16",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 17,
+      "power_base": 641,
+      "shift": -16,
+      "shift_label": "one_minus_n",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        48029
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "no_small_divisor_found_within_bound",
+      "coefficient": 65537,
+      "expression": "65537*641^17-18",
+      "first_small_divisor": null,
+      "parity": "odd",
+      "power": 17,
+      "power_base": 641,
+      "shift": -18,
+      "shift_label": "minus_n_minus_1",
+      "small_divisor_count_reported": 0,
+      "small_divisors": [],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257-4",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 257,
+      "power_base": 641,
+      "shift": -4,
+      "shift_label": "fixed_-4",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        3,
+        101,
+        2207,
+        7417,
+        70379
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257-3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 257,
+      "power_base": 641,
+      "shift": -3,
+      "shift_label": "fixed_-3",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        2,
+        19
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257-2",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 257,
+      "power_base": 641,
+      "shift": -2,
+      "shift_label": "fixed_-2",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        5,
+        11,
+        5023
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257-1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 257,
+      "power_base": 641,
+      "shift": -1,
+      "shift_label": "fixed_-1",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        3,
+        13,
+        1297
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257+1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 257,
+      "power_base": 641,
+      "shift": 1,
+      "shift_label": "fixed_+1",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        2,
+        7
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257+2",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 257,
+      "power_base": 641,
+      "shift": 2,
+      "shift_label": "fixed_+2",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        3
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257+3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 257,
+      "power_base": 641,
+      "shift": 3,
+      "shift_label": "fixed_+3",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        5,
+        43,
+        257,
+        69317
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257+4",
+      "first_small_divisor": 29,
+      "parity": "odd",
+      "power": 257,
+      "power_base": 641,
+      "shift": 4,
+      "shift_label": "fixed_+4",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        29,
+        37,
+        4969
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257+257",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 257,
+      "power_base": 641,
+      "shift": 257,
+      "shift_label": "plus_n",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        3,
+        3701,
+        19319
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257-257",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 257,
+      "power_base": 641,
+      "shift": -257,
+      "shift_label": "minus_n",
+      "small_divisor_count_reported": 5,
+      "small_divisors": [
+        2,
+        5,
+        29,
+        61,
+        19777
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257+258",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 257,
+      "power_base": 641,
+      "shift": 258,
+      "shift_label": "n_plus_1",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        5,
+        23,
+        887
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257-256",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 257,
+      "power_base": 641,
+      "shift": -256,
+      "shift_label": "one_minus_n",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        2441
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^257-258",
+      "first_small_divisor": 7,
+      "parity": "odd",
+      "power": 257,
+      "power_base": 641,
+      "shift": -258,
+      "shift_label": "minus_n_minus_1",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        7,
+        31,
+        199,
+        15767
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537-4",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 65537,
+      "power_base": 641,
+      "shift": -4,
+      "shift_label": "fixed_-4",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        190391
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537-3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 65537,
+      "power_base": 641,
+      "shift": -3,
+      "shift_label": "fixed_-3",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        2
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537-2",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 65537,
+      "power_base": 641,
+      "shift": -2,
+      "shift_label": "fixed_-2",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        5,
+        11,
+        219983
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537-1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 65537,
+      "power_base": 641,
+      "shift": -1,
+      "shift_label": "fixed_-1",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        3,
+        13
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537+1",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 65537,
+      "power_base": 641,
+      "shift": 1,
+      "shift_label": "fixed_+1",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        7,
+        131,
+        17351
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537+2",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 65537,
+      "power_base": 641,
+      "shift": 2,
+      "shift_label": "fixed_+2",
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        3
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537+3",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 65537,
+      "power_base": 641,
+      "shift": 3,
+      "shift_label": "fixed_+3",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        5,
+        257
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "no_small_divisor_found_within_bound",
+      "coefficient": 65537,
+      "expression": "65537*641^65537+4",
+      "first_small_divisor": null,
+      "parity": "odd",
+      "power": 65537,
+      "power_base": 641,
+      "shift": 4,
+      "shift_label": "fixed_+4",
+      "small_divisor_count_reported": 0,
+      "small_divisors": [],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537+65537",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 65537,
+      "power_base": 641,
+      "shift": 65537,
+      "shift_label": "plus_n",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        3,
+        107,
+        65537
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537-65537",
+      "first_small_divisor": 2,
+      "parity": "even",
+      "power": 65537,
+      "power_base": 641,
+      "shift": -65537,
+      "shift_label": "minus_n",
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        2,
+        5,
+        65537
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537+65538",
+      "first_small_divisor": 5,
+      "parity": "odd",
+      "power": 65537,
+      "power_base": 641,
+      "shift": 65538,
+      "shift_label": "n_plus_1",
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        5,
+        23,
+        257,
+        1439
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537-65536",
+      "first_small_divisor": 3,
+      "parity": "odd",
+      "power": 65537,
+      "power_base": 641,
+      "shift": -65536,
+      "shift_label": "one_minus_n",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        79
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "bounded_result": "small_divisor_found",
+      "coefficient": 65537,
+      "expression": "65537*641^65537-65538",
+      "first_small_divisor": 53,
+      "parity": "odd",
+      "power": 65537,
+      "power_base": 641,
+      "shift": -65538,
+      "shift_label": "minus_n_minus_1",
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        53,
+        107
+      ],
+      "small_factor_limit": 1000000
+    }
+  ]
+}

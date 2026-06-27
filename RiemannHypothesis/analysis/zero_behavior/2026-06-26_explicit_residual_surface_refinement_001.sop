@@ -1,0 +1,79 @@
+Subject: Explicit Residual Surface Refinement 001
+
+Description: Bounded refinement of the explicit-formula residual surface dense node against existing traces.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_surface_refinement\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Surface_Refinement_Specification.sop
+@ [selected_node] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_dense_node_refinement_selection_001.sop
+
+& [ExplicitResidualSurfaceRefinement001] is a finite synthesis analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is 8f3be401-71f0-44f1-87df-a5144743706f
+  + [source_snapshot_uuid] is aa70cc47-ee0b-45db-a429-86a15af36e69
+  + [manifest_uuid] is 3c6b82d1-0c94-4f06-98c4-d2016150a083
+  + [canonical_specification_uuid] is 4f888de5-bcb5-4e48-b1a9-3a3850539531
+  + [proof_status] is finite_explicit_residual_refinement_not_rh_evidence
+  + [implementation_change] is none; this pass records refinement only
+  + [verification] is no tests run because no runtime code changed
+
+& [ResidualSurfaceInside] is the refined inside field
+  + [x_domain_object] is psi(x) approximation by finite explicit-formula zero-pair terms
+  + [arithmetic_anchor] is theta(x) plus higher prime powers as exact psi mechanics
+  + [zero_term_contribution] is finite zero-pair sums visibly shape psi(x) estimates
+  + [cutoff_coordinate] is zero-height T is cleaner than raw zero-pair count, while scale-tied T laws compare x-dependent cutoff behavior
+  + [window_policy] is sharp, Fejer, Lanczos, and Hann windows as finite sensitivity policies
+  + [scale_policy] is log, sqrt, and sqrt_log scale laws as bounded coordinate diagnostics
+  + [bridge_boundary] is the explicit residual surface is related to Euler/log-derivative rails through Lambda fabric but not fused with them
+
+& [ResidualSurfaceOutside] is the refined not-it field
+  + [not_zero_certification] is finite residual minima do not certify zeros
+  + [not_monotone_convergence] is increasing zero-pair count or T usually helps in some grids but does not define monotone convergence
+  + [not_universal_window] is sharp is strongest baseline while smoothed windows have local pockets only
+  + [not_universal_scale_law] is T=c*log(x) is retained as best bounded average coordinate while sqrt wins later local samples and sqrt_log remains sparse-but-nonwinning
+  + [not_bridge_identity] is explicit residuals and Euler/log-derivative cutoffs remain complementary rails rather than a single coupled identity
+  + [not_special_prime_explanation] is special-prime families do not explain this surface unless returned through whole-field psi, theta, Euler, or explicit-error objects
+
+& [ExistingTraceAnswers] is the current answered field
+  + [raw_zero_count_answer] is raw zero-pair count is a weak identity coordinate because best-window sequences switch frequently across x and cutoff
+  + [window_answer] is sharp remains the best finite baseline by average and win count, but Fejer, Lanczos, and Hann all win local pockets
+  + [height_coordinate_answer] is zero-height T should replace raw zero-pair count as the cleaner local cutoff coordinate
+  + [scale_law_answer] is T=c*log(x) remains strongest by average and early sample wins, while T=c*sqrt(x) wins later local samples
+  + [sparse_scale_answer] is sqrt_log is notable as sparse behavior because it beats sqrt on average while winning no sample
+  + [bridge_answer] is no current cutoff law or smoothing policy supplies an explicit/Euler bridge identity
+
+& [RelationLedger] is the refined relation map
+  + [psi_theta_relation] is dependency: psi(x) includes theta(x) plus higher prime powers
+  + [zero_terms_to_psi_relation] is causal_support_limited: zero terms shape finite psi approximations but finite residual behavior remains truncation-sensitive
+  + [window_to_residual_relation] is correlational_and_diagnostic: windows change local residual surfaces without becoming identity
+  + [cutoff_to_residual_relation] is dependency: cutoff coordinate materially changes residual behavior
+  + [scale_law_to_cutoff_relation] is diagnostic_coordinate: x-dependent T laws organize cutoff behavior but do not define theorem structure
+  + [euler_lambda_relation] is relation_without_identity: Euler/log-derivative Lambda fabric relates to explicit residuals but remains a separate half-plane weighting identity
+
+& [RefinedDenseNode] is the accepted node refinement
+  + [node_id] is DenseNode_ExplicitFormulaResidualSurface
+  + [subject] is finite explicit-formula residual behavior anchored to psi(x), theta(x), and prime-power mechanics
+  + [inside] is finite x-domain approximation, arithmetic baseline, zero-term contribution, cutoff coordinate, window sensitivity, scale-law sensitivity, and bridge boundary
+  + [outside] is proof, disproof, zero certification, monotone convergence, universal window superiority, universal scale-law identity, explicit/Euler identity fusion, and special-prime explanation
+  + [identity_anchor_set] is exact psi traces, prime-power decomposition, explicit formula residual traces, residual stability atlas, zero-height atlas, scale-law comparison, and bridge-restraint synthesis
+  + [concept_promoter_set] is zero-term influence, T-height coordinate, sharp baseline, local smoothing pockets, log-scale average strength, and sparse sqrt_log behavior
+  + [uncertainty] is whether a non-kernel, non-window, non-cutoff measured quantity can explain residual movement relative to psi-theta mechanics
+  + [future_use] is guide future explicit residual work without reopening kernel, window, or cutoff sprawl
+  + [authority_status] is project_authority_for_residual_surface_orientation_not_proof
+
+& [ToolingGate] is the implementation restraint result
+  + [current_decision] is no new math-processing tool is justified by this refinement alone
+  + [reason] is existing traces already answer the coordinate, window, and bridge-restraint questions well enough for current orientation
+  + [future_tool_condition] is a later source must name a measured quantity beyond existing traces, such as a residual movement decomposition tied explicitly to psi-theta prime-power layers
+  + [blocked_now] is adding more windows, adding more cutoff laws, adding kernels, rerunning larger grids, or reopening special-prime hunting
+  + [allowed_next] is a source-defined question about residual movement decomposition if it is anchored to psi(x), theta(x), and prime-power mechanics
+  + [answered_question] is the explicit residual surface is refined enough for current orientation; the next meaningful step is not another generic atlas but a named residual-movement decomposition question
+
+  = must: treat this refinement as orientation and governance, not proof authority
+  = must: preserve sharp as baseline and T-height/log-scale as diagnostic coordinates
+  = must: keep local smoothing pockets and sparse scale-law behavior as inquiry pressure only
+  = must: require a new source-defined measured quantity before implementation
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, monotone convergence, universal window superiority, universal scale-law identity, or explicit/Euler fusion from this refinement
+
+(explicit_residual_surface_refinement_001) :finite explicit residual node refinement: /inside-outside clarified; no new tool yet; next only if residual movement decomposition is source-defined/ |proof authority|

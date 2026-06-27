@@ -1,0 +1,18 @@
+Subject: Whole Field Landmark Overlay Source
+
+Description: Preserved source intake for a synthesis report across trusted whole-field RH rails.
+
+& [DictatedWholeFieldLandmarkOverlaySource] is the preserved source request for this bounded report slice
+  + [source_snapshot_uuid] is e82510e9-1669-447d-9683-9c3396add20e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_reason] is CurrentFocalPoint asks whether to compose a whole-field landmark overlay report from pi(x), theta(x), psi(x), Euler-product/log-derivative, explicit-formula, vertical-resonance, and Lambda Oscilloscope rails
+  + [working_decision] is compose a synthesis report from existing deterministic traces without adding a new scanner
+  + [purpose] is clarify which rails are arithmetic baseline, approximation surface, convergent-half-plane surface, sparse landmark surface, and diagnostic overlay
+
+  = must: keep all observations finite and report-like
+  = must: keep special-prime traces subordinate to whole-field objects
+  = must: distinguish x-domain arithmetic rails from t-domain vertical rails
+  = must: preserve reference ordinates as landmarks only
+  = must: state where a rail is useful and where it must not be overread
+  - never: claim proof, disproof, zero certification, independent zero discovery, or RH evidence from the overlay

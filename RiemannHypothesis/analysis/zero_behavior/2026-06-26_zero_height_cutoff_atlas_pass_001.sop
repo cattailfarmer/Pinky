@@ -1,0 +1,68 @@
+Subject: Zero Height Cutoff Atlas Pass 001
+
+Description: Finite diagnostic atlas for explicit-formula residual behavior using zero-height T cutoff policy.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_zero_height_cutoff_policy\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Zero_Height_Cutoff_Policy_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_height_cutoff_atlas.py
+
+& [ZeroHeightCutoffAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether zero-height T is a better explicit-formula residual coordinate than raw zero-pair count
+  + [implementation_change] is added zero_height_window_weight, zero_height_cutoff_atlas, and zero_height_cutoff_atlas.py for bounded T-coordinate output
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 28 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\zero_height_cutoff_atlas.py --x 100 --x 150 --x 200 --x 300 --x 500 --x 800 --x 1000 --zero-height 20 --zero-height 40 --zero-height 80 --zero-height 120 --zero-height 160 --zero-height 220 --window sharp --window fejer --window lanczos --window hann --dps 80 --output analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_trace.json
+  + [trace_row_count] is 168
+  + [sample_points] is 100, 150, 200, 300, 500, 800, and 1000
+  + [zero_height_cutoffs] is 20, 40, 80, 120, 160, and 220
+  + [implied_zero_pair_counts] is 1, 6, 21, 38, 58, and 90
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [proof_status] is finite_zero_height_cutoff_atlas_not_zero_certification
+
+& [HeightWindowSummary] is the observed bounded window field
+  + [best_window_win_counts] is sharp 20, fejer 8, lanczos 7, hann 7 across 42 x/T comparisons
+  + [average_residual_abs_sharp] is 1.5770882353481412546576419069968056633564334648351907654160002765601760849079943
+  + [average_residual_abs_lanczos] is 1.6623577948688577640565394051360283513217926807013932392517371537949491407686508
+  + [average_residual_abs_fejer] is 1.7832053248969567600283681868960258265597671303284796066003482803705129270502283
+  + [average_residual_abs_hann] is 1.7871086576140305805629472792717218041386600171114497485949873862935154867202885
+  + [smallest_residual_abs] is hann at 0.0011898803079734527353608284192137462461300481990211502084881063209329505608094624
+  + [sharp_baseline_result] is sharp remains the best average and win-count baseline in this bounded T-coordinate grid
+
+& [HeightSampleSummary] is the observed bounded sample field
+  + [x_100_best_sequence] is sharp,sharp,sharp,sharp,sharp,sharp with 0 switches
+  + [x_150_best_sequence] is sharp,sharp,lanczos,hann,lanczos,hann with 4 switches
+  + [x_200_best_sequence] is sharp,sharp,sharp,sharp,sharp,sharp with 0 switches
+  + [x_300_best_sequence] is lanczos,hann,fejer,fejer,lanczos,hann with 4 switches
+  + [x_500_best_sequence] is sharp,sharp,hann,sharp,lanczos,hann with 4 switches
+  + [x_800_best_sequence] is sharp,sharp,sharp,lanczos,fejer,fejer with 2 switches
+  + [x_1000_best_sequence] is hann,lanczos,fejer,fejer,fejer,fejer with 2 switches
+  + [stable_local_cases] are x=100 and x=200 where sharp remains best at every tested T cutoff
+  + [high_switch_cases] are x=150, x=300, and x=500 where best-window identity changes four times across six T cutoffs
+
+& [HeightTransitionSummary] is the T movement field
+  + [fejer_transitions] is improved 27 and worsened 8
+  + [hann_transitions] is improved 29 and worsened 6
+  + [lanczos_transitions] is improved 25 and worsened 10
+  + [sharp_transitions] is improved 24 and worsened 11
+  + [inference] is increasing T usually improves residuals in this bounded trace, more consistently than the earlier raw zero-count atlas, but not monotonically enough to become an identity
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is zero-height T is a cleaner coordinate than raw zero-pair count because the cutoff now tracks actual zero ordinates and exposes the implied count explicitly
+  + [coordinate_result] is T-height cutoff improves the diagnostic coordinate but does not stabilize the whole residual surface
+  + [window_observation] is sharp remains the best finite baseline, while Fejer, Lanczos, and Hann all win local T-height pockets
+  + [stability_observation] is some x values become locally stable under sharp, but several still switch window identity frequently
+  + [bridge_result] is the T-height atlas still does not justify another explicit/Euler bridge as a single coupled identity track
+  + [next_reasonable_coordinate] is scale-tied T policy, such as T = c*log(x) or another declared x-dependent cutoff law, because fixed T still compares different x values at different T/log(x) and T/sqrt(x) scales
+  + [answered_question] is yes, zero-height T should replace raw zero-pair count as the cleaner local cutoff coordinate, but no, it is not sufficient as a final stabilizing identity
+
+  = must: treat the atlas as finite residual sensitivity and coordinate diagnosis only
+  = must: keep T-height cutoff separate from index-weighted zero-count windows
+  = must: treat stable x=100 and x=200 cases as local finite observations, not theorem signals
+  = must: prefer a future scale-tied T policy before another explicit/Euler bridge attempt
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal smoothing superiority, or explicit/Euler bridge identity from this atlas
+
+(zero_height_cutoff_atlas_pass_001) :finite T-coordinate diagnosis: /T cleaner than N, sharp baseline, local smoothing pockets, fixed-T scale mismatch remains/ |proof authority|

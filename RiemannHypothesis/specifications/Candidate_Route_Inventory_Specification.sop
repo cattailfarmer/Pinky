@@ -1,0 +1,42 @@
+Subject: Candidate Route Inventory Specification
+
+Description: SJS-processed contract for reviewing RH warm leads against the measured-object admission gate.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_candidate_route_inventory\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Measured_Object_Candidate_Criteria_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_measured_object_candidate_criteria_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_dense_node_gap_ledger_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+
+& [CandidateRouteInventorySpecification] is a non-mutating inventory contract
+  + [source_snapshot_uuid] is bb6a059d-b8fb-4c8c-9972-e2702e12f12b
+  + [manifest_uuid] is 3d3abd70-0ccd-44ce-82f7-48c83c722f65
+  + [canonical_specification_uuid] is 1619a360-3643-4b4f-bf9b-e724e5714773
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is classify existing warm leads by admission-gate status and next route
+  + [not_purpose] is new computation, proof, zero certification, branch reopening, staging, committing, broad .sop mutation, denser scans, more labels, more windows, or more offsets
+  + [proof_status] is route_inventory_not_rh_evidence
+
+& [InventoryContract] is bounded
+  + [candidate_pool] is explicit residual arithmetic discrepancy, Lambda/reference overlay heat, half-plane boundary quantity, prime-power baseline, special-prime return, sparse scale-law novelty, and bridge/kernel refinement
+  + [status_set] is candidate_source_request_worthy, candidate_support_only, candidate_rejected, candidate_governance_only, and candidate_not_ready
+  + [required_review] is source, purpose, dense-node parentage, whole-field relevance, identity boundary, existing evidence, deterministic method, contradiction handling, restraint, exit condition, and truth boundary
+  + [allowed_output] is route inventory, failed gates, support lanes, and one selected next source-request lead
+
+  = must: cite existing record support for each warm lead
+  = must: classify computation readiness separately from source-request worthiness
+  = must: keep explicit residual, Lambda overlay, reference landmarks, Euler half-plane, prime-power, special-prime, sparse scale-law, and bridge-restraint identities separate
+  = must: preserve paused branch decisions unless a new candidate-specific source is selected later
+  - never: admit any candidate for deterministic processing in this inventory pass
+  - never: treat route inventory as RH evidence or zero certification
+
+& [CandidateRouteInventorySJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and inventory_scoped
+  + [processing_result] is accepted_candidate_route_inventory_contract
+  + [reasoning_result] is the measured-object gate should now be applied to the existing warm field before the workspace asks for a new candidate-specific measured object
+
+(candidate_route_inventory) :route inventory: /warm leads, failed gates, source-request worthiness, no computation/ |proof claims|
+  + [inside] is non-mutating candidate triage
+  + [boundary] is no computation, no proof inference, no branch reopening, no staging, no commit
+  |outside| RH proof, disproof, zero certification, critical-line authority, numerical scans, and identity fusion

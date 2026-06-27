@@ -1,0 +1,17 @@
+Subject: Explicit Euler Bridge Restraint Source Document Manifest
+
+Description: Manifest for preserved source records governing the explicit/Euler bridge restraint synthesis.
+
+& [ExplicitEulerBridgeRestraintSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is dc514f6c-3433-408b-bc05-3a266a9d2a38
+  + [manifest_uuid] is 775f7413-dd92-4f1e-ba29-56b02a20d523
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_bridge_restraint_synthesis\Dictated_Explicit_Euler_Bridge_Restraint_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Euler_Bridge_Restraint_Synthesis_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before synthesis authority
+  = must: keep the synthesis finite, bounded, and non-proof-facing
+  - never: treat finite synthesis as proof, disproof, zero certification, critical-line evidence, or RH evidence

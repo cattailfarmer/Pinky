@@ -1,0 +1,58 @@
+Subject: Next Dense Node After Residual Integration Selection 001
+
+Description: Bounded selection of the next RH dense node after explicit residual movement integration.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_next_dense_node_after_residual_integration\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Next_Dense_Node_After_Residual_Integration_Selection_Specification.sop
+@ [landscape] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [post_residual_integration] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_post_residual_movement_landscape_integration_001.sop
+
+& [NextDenseNodeAfterResidualIntegrationSelection001] is a finite synthesis analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is 5cb600d0-7ff1-4c01-a7fe-605e2720c7b5
+  + [source_snapshot_uuid] is 562f6333-dbf2-4dee-a85d-bbc7b5bc5ea6
+  + [manifest_uuid] is b425a5b5-6ed1-4489-8bea-e20b44af8399
+  + [canonical_specification_uuid] is 7f4458d1-c540-48a3-87ac-dc8387ca49b8
+  + [proof_status] is finite_next_dense_node_selection_not_rh_evidence
+  + [implementation_change] is none; this pass records selection only
+  + [verification] is no tests run because no runtime code changed
+
+& [CandidateComparison] is the post-integration selection reasoning field
+  + [half_plane_boundary_synthesis] is strongest next because DenseNode_EulerLogDerivativeHalfPlane is stable, whole-field, Re(s)>1 bounded, and already has sigma-boundary plus t-axis boundary traces that need conceptual integration rather than new computation
+  + [landmark_overlay_discipline] is valuable but should wait because reference/resonance and Lambda overlay are metric-dependent and can over-read landmark heat unless the half-plane boundary object is clearer
+  + [another_explicit_residual_refinement] is blocked because explicit residual movement has just been folded back and no new measured object is named
+  + [prime_counting_chebyshev_refinement] is foundational but remains an arithmetic anchor rather than the next active refinement
+  + [lambda_diagnostic_overlay_refinement] is deferred because it is bridge-adjacent and risks reopening Lambda-Mellin or kernel work
+  + [bridge_restraint_refinement] is already active as governance and does not need a new pass unless a branch tries to reopen
+
+& [SelectedDenseNode] is the answered focal question
+  + [selected_node] is DenseNode_EulerLogDerivativeHalfPlane
+  + [selected_refinement_posture] is half-plane boundary synthesis
+  + [selection_reason] is the next clean whole-field object is the convergent half-plane surface: it can synthesize sigma approach, vertical t-slice behavior, pole-axis separation, known-zero-ordinate landmarks as references, and prime-bound truncation while remaining outside critical-line claims
+  + [restraint_reason] is this selection does not authorize more computation; it authorizes a source-defined conceptual synthesis of existing Re(s)>1 traces
+  + [not_selected_landmarks] is landmark-overlay discipline remains a later comparison task after half-plane boundary meaning is sharper
+  + [not_selected_explicit] is explicit residual work is restrained until a new measured object is named
+
+& [NextRefinementPosture] is the next source-defined purpose
+  + [refinement_subject] is Re(s)>1 half-plane boundary behavior under Euler product and logarithmic-derivative weighting
+  + [refinement_goal] is delineate pole-axis growth, ordinary t-axis behavior, known-zero-ordinate reference behavior, prime-bound truncation, and relation to Lambda fabric without crossing into critical-line authority
+  + [allowed_next_artifact] is a source/spec/analysis synthesis pass for half-plane boundary behavior using existing sigma-boundary and t-axis records
+  + [blocked_next_artifact] is new scans, critical-line inference, zero certification, explicit/Euler bridge reopening, kernel tuning, and special-prime expansion
+  + [future_tool_condition] is a later tool may be justified only if the synthesis names a measured quantity not already present in sigma-boundary or t-axis traces
+
+& [Boundary] is the retained not-it field
+  + [not_rh_evidence] is dense-node selection is not RH evidence
+  + [not_zero_certification] is known-zero ordinates remain reference labels only
+  + [not_critical_line_authority] is Re(s)>1 convergence-boundary behavior must not be treated as critical-line behavior
+  + [not_new_runtime_authority] is no runtime implementation is authorized by this pass
+  + [not_bridge_reopen] is the explicit/Euler bridge branch remains paused
+
+  = must: select DenseNode_EulerLogDerivativeHalfPlane for the next source-defined refinement
+  = must: perform half-plane boundary synthesis before new scans
+  = must: keep pole-axis, ordinary t-axis, and known-zero-ordinate reference behavior distinct
+  = must: keep all claims in Re(s)>1 unless a later proof-grade source explicitly changes scope
+  - never: claim RH proof, disproof, zero certification, critical-line authority, or explicit/Euler fusion from this selection
+
+(next_dense_node_after_residual_integration_selection_001) :finite node selection: /select Euler-log-derivative half-plane node for boundary synthesis/ |proof authority|

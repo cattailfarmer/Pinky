@@ -1,0 +1,21 @@
+Subject: Dictated Overlap Contradiction Ledger Source
+
+Description: Raw source for a non-mutating contradiction ledger over overlap zones surfaced by the record-to-dense-node matrix.
+
+& [DictatedOverlapContradictionLedgerSource] is preserved source for overlap contradiction review
+  + [source_snapshot_uuid] is 17806e47-285d-4ea2-9e2b-a870b4d87c4d
+  + [source_kind] is derived_from_record_to_dense_node_matrix_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_matrix] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_record_to_dense_node_matrix_001.sop
+  + [need] is classify three overlap zones as acceptable entanglement, contradiction, or unresolved boundary before future inquiry treats them as identity
+  + [overlap_001] is t-axis boundary slice between EulerLogDerivativeHalfPlane and ReferenceAndResonanceLandmarks
+  + [overlap_002] is Lambda-Mellin bridge between LambdaDiagnosticOverlay and BridgeRestraint
+  + [overlap_003] is shell-explicit residual bridge between PrimeCountingThetaPsi and ExplicitFormulaResidualSurface
+  + [source_boundary] is this source authorizes contradiction classification only; it does not authorize staging, commits, broad .sop mutation, proof claims, branch reopening, or new numerical scans
+
+  = must: classify overlap without fusing identities
+  = must: preserve proof-status and zero-certification boundaries
+  = must: mark next inquiry only when pursuit value remains after contradiction review
+  - never: treat overlap heat as causation, proof, or permission for denser scans

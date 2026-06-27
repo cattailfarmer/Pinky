@@ -1,0 +1,173 @@
+Subject: Math Processing Tool Scripts Specification
+
+Description: SJS-processed project-local contract for deterministic Python math tools supporting Riemann Hypothesis adjacent analysis without inference-oriented authority.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_math_processing_tool_scripts\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\requirements.txt
+@ [source] C:\Project\Pinky\RiemannHypothesis\AGENTS.md
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\toolchain\2026-06-26_math_toolchain_verification.sop
+
+& [MathProcessingToolScripts] is the project-local runtime surface for finite mathematical processing
+  + [canonical_specification_uuid] is 6d872555-3e20-4f30-83dd-053590a7bc25
+  + [source_snapshot_uuid] is 92611a3d-0cbb-437c-8cce-53e12aa6630c
+  + [solution_uuid] is b944d206-acfb-47e0-a23e-a591b1716ba9
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [tool_root] is C:\Project\Pinky\RiemannHypothesis\tools
+  + [runtime_package] is C:\Project\Pinky\RiemannHypothesis\tools\rh_math
+  + [script_root] is C:\Project\Pinky\RiemannHypothesis\tools\scripts
+  + [role] is deterministic_numeric_and_symbolic_processing
+  + [not_role] is theorem prover, RH proof assistant, inference agent, hidden reasoning engine, or zero certification authority
+
+  = must: use explicit precision for high-precision arithmetic
+  = must: produce inspectable JSON or CSV output for reusable numerical traces
+  = must: include proof_status metadata stating that outputs are finite numerical traces, not proof or certification
+  = must: keep scripts runnable from the project root with the project .venv
+  = must: include tests for representative small computations
+  = must: keep numerical results separate from interpretation, classification, and dense-node inference
+  = must: fail loudly on invalid ranges, nonpositive steps, and unsupported output formats
+  - never: claim proof, disproof, zero certification, or theorem-level authority from tool output
+  - never: import old ReasoningFramework symbolic modules as runtime authority
+
+## Tool Set
+
+& [ZetaEvaluationTool] is the script surface for direct zeta value processing
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\zeta_eval.py
+  + [input] is sigma, t, precision, and output_format
+  + [output] is zeta value real, imaginary, absolute value, argument, and metadata
+  + [proof_status] is numerical_trace_not_proof
+
+& [CriticalLineScanTool] is the script surface for sampling Hardy Z and zeta on the critical line
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\critical_line_scan.py
+  + [input] is t_min, t_max, step, precision, and optional zero refinement
+  + [output] is sample rows, sign-change brackets, optional numerical zero estimates, and metadata
+  + [proof_status] is sign_change_probe_not_zero_certification
+
+& [ZeroProbeTool] is the script surface for known nontrivial zero lookup and residual processing
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_probe.py
+  + [input] is start_index, count, and precision
+  + [output] is mpmath zero ordinates, zeta residuals, and metadata
+  + [proof_status] is library_numeric_lookup_not_independent_certification
+
+& [FunctionalEquationCheckTool] is the script surface for finite residual checks of zeta and xi functional equations
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\functional_equation_check.py
+  + [input] is sigma, t, precision, and equation
+  + [output] is left side, right side, residual, relative residual, and metadata
+  + [proof_status] is finite_residual_check_not_proof
+
+& [PrimeCountCompareTool] is the script surface for prime-count baselines
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_count_compare.py
+  + [input] is integer sample points and optional Riemann R truncation terms
+  + [output] is pi(x), logarithmic integral estimate, Riemann R estimate, and errors
+  + [proof_status] is finite_arithmetic_comparison_not_asymptotic_proof
+
+& [SpecialPrimeProfileTool] is the script surface for special-prime family profiling
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\special_prime_profile.py
+  + [input] is explicit integer primes or the default Fermat-prime and 641 seed set
+  + [output] is Fermat-prime identity, Fermat-number divisor hits, Mersenne, Proth, Pierpont, safe, Sophie Germain, and base-2 Wieferich facts
+  + [proof_status] is finite_prime_family_profile_not_rh_evidence
+
+& [SpecialPrimeScanTool] is the script surface for bounded special-prime family scanning
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\special_prime_scan.py
+  + [input] is finite prime bound and maximum Fermat-number divisor index
+  + [output] is bounded family member lists for selected special-prime classes
+  + [proof_status] is bounded_prime_family_scan_not_rh_evidence
+
+& [PrimeFamilyDistributionTool] is the script surface for returning special-prime family probes to whole-field distribution objects
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_family_distribution.py
+  + [input] is finite sample points or generated bounds, selected families, and precision metadata
+  + [output] is pi(x), li(x), R(x), theta(x), psi(x), family counts, family densities, and family theta shares
+  + [proof_status] is finite_family_distribution_probe_not_rh_evidence
+
+& [PrimeFamilyIntervalDistributionTool] is the script surface for interval-level whole-field return
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_family_intervals.py
+  + [input] is finite interval endpoints and selected families
+  + [output] is interval prime-count, theta, psi, family-count, and family-theta increments
+  + [proof_status] is finite_family_interval_probe_not_rh_evidence
+
+& [PrimePowerDecompositionTool] is the script surface for decomposing psi into prime-power layers
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_power_decomposition.py
+  + [input] is finite sample points or interval endpoints and optional event inclusion
+  + [output] is theta layer, higher-prime-power layers, psi totals, interval movement, and optional prime-power events
+  + [proof_status] is finite_prime_power_decomposition_not_rh_evidence
+
+& [ExplicitFormulaProbeTool] is the script surface for bounded explicit-formula error probes
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\explicit_formula_probe.py
+  + [input] is finite sample points, zero pair counts, precision metadata, and optional zero-term inclusion
+  + [output] is pi(x), theta(x), psi(x), explicit-formula estimates, zero-pair sums, constant/trivial corrections, and residual rows
+  + [proof_status] is finite_explicit_formula_probe_not_zero_certification
+
+& [ZeroWindowProbeTool] is the script surface for bounded sharp and smoothed zero-term window probes
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_window_probe.py
+  + [input] is finite sample points, zero pair counts, window modes, precision metadata, and optional zero-term inclusion
+  + [output] is pi(x), theta(x), psi(x), windowed explicit-formula estimates, weighted zero-pair sums, residuals, and optional weighted zero-term rows
+  + [proof_status] is finite_zero_window_probe_not_zero_certification
+
+& [EulerProductProbeTool] is the script surface for finite Euler-product and logarithmic-derivative weighting probes
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\euler_product_probe.py
+  + [input] is finite s samples with sigma > 1, prime bounds, precision metadata, and optional term inclusion
+  + [output] is zeta(s), finite Euler products, -zeta'(s)/zeta(s), prime-factor logarithmic-derivative sums, prime-power cutoff sums, and residual rows
+  + [proof_status] is finite_euler_product_log_derivative_probe_not_rh_evidence
+
+& [SigmaBoundaryProbeTool] is the script surface for Euler-product approach-to-boundary probes
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\sigma_boundary_probe.py
+  + [input] is finite sigma values greater than 1, t values, prime bounds, and precision metadata
+  + [output] is zeta/log-derivative residual rows with distance_to_sigma_1 and adjacent-sigma transition ratios
+  + [proof_status] is finite_sigma_boundary_probe_not_critical_line_evidence
+
+& [TAxisBoundaryProbeTool] is the script surface for fixed-sigma t-axis Euler-product probes
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\t_axis_boundary_probe.py
+  + [input] is finite sigma values greater than 1, nonnegative t values, prime bounds, and precision metadata
+  + [output] is zeta/log-derivative residual rows with t-axis annotations and adjacent-t transition ratios
+  + [proof_status] is finite_t_axis_boundary_probe_not_zero_line_evidence
+
+& [VerticalResonanceScanTool] is the script surface for dense fixed-sigma vertical resonance scans
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\vertical_resonance_scan.py
+  + [input] is finite sigma values greater than 1, t range, step, prime bounds, precision metadata, and max sample guard
+  + [output] is regular vertical sample rows and finite local-extrema candidate rows for selected metrics
+  + [proof_status] is finite_vertical_resonance_scan_not_zero_line_evidence
+
+& [ExponentialShiftProbeTool] is the script surface for bounded modular probes of base^exponent + shift forms
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\exponential_shift_probe.py
+  + [input] is base, exponent list, shift list, small factor limit, and max hit count
+  + [output] is parity, forced divisibility rules, bounded small prime divisors, and metadata
+  + [proof_status] is bounded_exponential_shift_probe_not_primality_proof
+
+& [ExponentialPowerShiftProbeTool] is the script surface for bounded modular probes of base^(exponent_base^power) + shift forms
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\exponential_power_shift_probe.py
+  + [input] is base, exponent base, exponent power list, shift list, small factor limit, and max hit count
+  + [output] is parity, forced divisibility rules, bounded small prime divisors, and metadata
+  + [proof_status] is bounded_power_exponent_shift_probe_not_primality_proof
+
+& [CoefficientPowerShiftProbeTool] is the script surface for bounded modular probes of coefficient * power_base^N + shift(N) forms
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\coefficient_power_shift_probe.py
+  + [input] is coefficient, power base, powers, fixed shifts, shift modes, small factor limit, and max hit count
+  + [output] is bounded small prime divisors and metadata for each shifted coefficient-power row
+  + [proof_status] is bounded_coefficient_power_shift_probe_not_primality_proof
+
+& [IrregularPrimeScanTool] is the script surface for bounded irregular-prime scans
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\irregular_prime_scan.py
+  + [input] is finite prime bound and optional regular-prime inclusion
+  + [output] is irregular primes, irregular indices, Bernoulli indices, and zeta special-value annotations
+  + [proof_status] is finite_irregular_prime_scan_not_zero_line_evidence
+
+& [IrregularPrimeDistributionTool] is the script surface for returning irregular-prime probes to whole-field distribution objects
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\irregular_prime_distribution.py
+  + [input] is finite sample points or generated bounds, precision metadata, and optional member inclusion
+  + [output] is pi(x), theta(x), psi(x), irregular-prime counts, irregular-prime density among odd primes, and irregular theta share
+  + [proof_status] is finite_irregular_prime_distribution_not_zero_line_evidence
+
+## SJS Processing Trace
+
+& [MathProcessingToolScriptsSJS] is the specification justification trace for the tool scripts
+  + [protocol_uuid] is e6b913bb-8191-4cbb-96e1-bc2888934f43
+  + [source_snapshot_uuid] is 92611a3d-0cbb-437c-8cce-53e12aa6630c
+  + [canonical_specification_uuid] is 6d872555-3e20-4f30-83dd-053590a7bc25
+  + [solution_uuid] is b944d206-acfb-47e0-a23e-a591b1716ba9
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_tool_contract
+  + [reasoning_result] is split math-processing tasks from inference-oriented analysis and build deterministic scripts for zeta values, critical-line samples, zero probes, functional-equation residuals, and prime-count comparison
+
+(math_processing_tools) :finite numerical processing: /precision, metadata, and no proof claims/ |inference, proof, and certification|
+  + [inside] is deterministic computations, explicit inputs, outputs, tests, and verification records
+  + [boundary] is no theorem authority and no imported old symbolic runtime authority
+  |outside| RH proof, proof-adjacent claims, dense-node interpretation, and hidden inference

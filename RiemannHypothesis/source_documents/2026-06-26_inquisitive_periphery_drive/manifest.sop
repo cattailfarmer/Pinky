@@ -1,0 +1,14 @@
+Subject: Inquisitive Periphery Drive Source Manifest
+
+Description: Source preservation manifest for the inquisitive drive refinement.
+
+& [InquisitivePeripheryDriveSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_inquisitive_periphery_drive\Dictated_Inquisitive_Periphery_Drive_Source.sop
+  + [canonical_output] is C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+  + [application_record] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_inquisitive_periphery_focus_pass_003.sop
+  + [intake_status] is processed_as_framework_refinement
+  + [captured_on] is 2026-06-26
+  + [active_sop_authority_root] is C:\Project\Pinky\.sop
+
+  = must: keep source refinement separate from canonical framework edits
+  = must: cite this manifest when inquisitive drive steers periphery inquiry or dense-node review

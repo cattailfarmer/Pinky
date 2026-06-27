@@ -1,0 +1,31 @@
+Subject: Dictated Explicit Residual Arithmetic Discrepancy Source
+
+Description: Raw candidate-specific source for a non-kernel, non-window, non-cutoff explicit residual arithmetic discrepancy object.
+
+& [DictatedExplicitResidualArithmeticDiscrepancySource] is preserved source for a candidate measured object
+  + [source_snapshot_uuid] is 9ec1510d-da26-4f5c-bbd4-090bf239bf47
+  + [source_kind] is derived_from_candidate_route_inventory_source_request
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_route_inventory] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_candidate_route_inventory_001.sop
+  @ [governing_admission_gate] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_measured_object_candidate_criteria_001.sop
+  @ [residual_surface] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_surface_refinement_001.sop
+  @ [residual_movement] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+  @ [prime_power_mechanics] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [candidate_question] is whether finite explicit residual movement has a stable discrepancy shape when compared against exact psi-error movement decomposed into theta-error movement and higher-prime-power movement
+  + [candidate_purpose] is sharpen the explicit residual surface against whole-field arithmetic mechanics without adding kernels, windows, cutoff laws, denser scans, or special-prime family hypotheses
+  + [primary_dense_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [support_dense_nodes] are DenseNode_PrimeCountingThetaPsi, DenseNode_EulerLogDerivativeHalfPlane, and DenseNode_BridgeRestraint
+  + [whole_field_objects] are psi(x), theta(x), higher-prime-power correction psi(x)-theta(x), finite explicit residual R(x), and residual movement Delta R(a,b)
+  + [source_boundary] is this source preserves candidate identity only; it does not authorize deterministic math processing, method implementation, staging, commits, broad .sop mutation, proof claims, zero certification, denser scans, or branch reopening
+
+  = must: keep explicit residual movement, psi-error movement, theta-error movement, and higher-prime-power movement distinct
+  = must: treat disagreement, mixed sign, dominance split, or scale mismatch as finite discrepancy shape only
+  = must: compare against exact arithmetic mechanics before interpreting residual movement
+  = must: use existing traces as evidence for source worthiness, not as a new theorem surface
+  = must: require a later method contract before any deterministic processing
+  = must: preserve bridge restraint and avoid kernel, window, cutoff, label, offset, or scale-law expansion by default
+  - never: treat this candidate as RH evidence, proof, disproof, zero certification, causal identity, monotone convergence, universal cutoff law, or explicit/Euler fusion
+  - never: promote the candidate to computation merely because it is source-preserved

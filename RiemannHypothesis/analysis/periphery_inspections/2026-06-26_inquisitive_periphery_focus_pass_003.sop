@@ -1,0 +1,54 @@
+Subject: Inquisitive Periphery Focus Pass 003
+
+Description: Application pass for inquisitiveness as the drive to find concept promoters, identity anchors, and whole-shape meaning.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_inquisitive_periphery_drive\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_heat_identity_focus_pass_002.sop
+
+& [InquisitivePeripheryFocusPass003] is the first application of inquisitive drive to the active project
+  + [pass_uuid] is beac95cc-c3f0-4b43-ac37-be77e47820e1
+  + [pass_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [method] is inquisitive periphery drive over concept promoters, identity anchors, whole-shape cues, heat, and delineation
+  + [status] is first_inquisitive_drive_rule_applied
+
+  = must: let inquisitiveness widen the picture before dense-node closure
+  = must: keep curiosity bounded by source evidence, relation typing, identity grounding, and outside
+
+& [InquisitiveRule001_WholeShapeBeforeClosure] is the active inquiry rule
+  + [trigger] is a subject is being drawn from periphery into focus
+  + [question_001] is what elements here promote concepts
+  + [question_002] is what elements anchor identity
+  + [question_003] is what wider shape of meaning is visible
+  + [question_004] is what is not yet inspected but seems relevant
+  + [closure_rule] is dense-node closure should wait until concept promoters, identity anchors, and whole-shape outside have been named or explicitly deferred
+  + [outside] is unbounded search and proof by interestingness
+
+& [SR007_InquisitivenessAsDrive] is a sparse realization
+  + [drawn_from] is inquisitive periphery drive source
+  + [realization_text] is periphery inquiry needs a positive drive to understand the whole shape, not only a defensive boundary protocol
+  + [surface_fact_set] is user named inquisitiveness as the drive to see concept promoters, identity anchors, and wider meaning
+  + [relation_hint_set] is causal: inquisitive drive may cause better subject discovery; dependency: dense nodes need identity anchors; casual: wider meaning can guide search before authority
+  + [scope_pressure] is scope in whole-shape inquiry and scope out unbounded wandering
+  + [promotion_condition] is use the inquiry questions during the next old-object classification pass
+  + [outside] is claim that curiosity proves meaning
+
+& [RelationTrace007_InquiryToDenseNodeQuality] is a relation trace
+  + [source_subject] is inquisitive periphery drive
+  + [target_subject] is dense node quality
+  + [relation_type] is causal
+  + [support] is dense nodes require concept promoters, identity anchors, and whole-shape boundary awareness before closure
+  + [confidence] is medium
+  + [heat_profile] is causation_heat and identity_heat
+  + [identity_disposition] is separate_identity_preserved
+  + [local_fabric_grounding] is canonical_local_specification
+  + [promotion_rule] is strengthen by applying to Task_002_ConceptualHackClassification
+  + [outside] is proof that all inquiry improves all nodes
+
+& [InquisitivePeripheryPassResult] is the settled output of this pass
+  + [accepted_rule] is InquisitiveRule001_WholeShapeBeforeClosure
+  + [new_sparse_realization] is SR007_InquisitivenessAsDrive
+  + [relation_update] is RelationTrace007_InquiryToDenseNodeQuality
+  + [next_use] is apply inquisitive drive during classification of old Riemann/Zeta/Toribrot objects
+  + [outside] is unbounded scope, authority by curiosity, and dense-node closure without source evidence

@@ -1,0 +1,16 @@
+Subject: Dictated Fermat 641 Power Exponent Variant Source
+
+Description: Raw source preserving the user's hypothesis that 641 may apply by powers of N rather than products with N.
+
+& [DictatedFermat641PowerExponentVariantSource] is preserved raw source for the 641 power-exponent variant
+  + [source_uuid] is afc3d555-c058-47ea-a602-924b01a18bdd
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "that won't change your recent results... but maybe that means we need to apply 641 by powers of N not a product of N, and then it needs to switch between +-1 and +-2 depending on the even or odd cases?"
+
+  = must: test 641^N as an exponent operator separately from 641*N
+  = must: distinguish parity switching from residue obstruction
+  = must: abandon the branch if it does not track the defining set identity
+  - never: treat a power-exponent branch as live after repeated set-member failures

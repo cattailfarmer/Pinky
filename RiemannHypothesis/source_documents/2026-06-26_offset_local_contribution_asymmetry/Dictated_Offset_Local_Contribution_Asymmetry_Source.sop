@@ -1,0 +1,25 @@
+Subject: Dictated Offset Local Contribution Asymmetry Source
+
+Description: Preserved source for synthesizing offset-local asymmetry from the existing Lambda phasor reference contribution trace.
+
+& [DictatedOffsetLocalContributionAsymmetrySource] is raw continuation source
+  + [source_snapshot_uuid] is 197af7fd-50c1-4b7d-9a41-c718db9332aa
+  + [captured_at] is 2026-06-26T19:01:11-05:00 heartbeat continuation
+  + [automation_id] is riemann-rh-lambda-phasor-road-reactivation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is scheduled continuation after Lambda phasor reference contribution pass 001
+  + [source_basis] is Lambda phasor contribution pass 001 named offset asymmetry as the promising next object
+  + [selected_measured_object] is offset-local contribution asymmetry around selected reference labels
+  + [raw_need] is determine whether the existing -0.5, 0, and +0.5 offset samples imply that reference-centered sampling is insufficient and a displacement object is the better next road
+  + [input_trace] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_trace.json
+  + [analysis_posture] is synthesis of existing finite trace, not new computation grid expansion
+  + [whole_field_return] is keep the result tied to Lambda, prime powers, Euler/log-derivative half-plane comparison, and landmark-overlay discipline
+  + [identity_boundary] is offset asymmetry is inquiry pressure and orientation only, not zero certification, RH evidence, proof, disproof, or critical-line authority
+
+  = must: preserve this raw source separately from canonical specification
+  = must: synthesize existing offset rows before adding any denser offset scan
+  = must: treat reference labels as labels only
+  = must: report whether center rows differ from flank rows for higher-prime-power vector share, prime vector share, residual, and total trace magnitude
+  = must: decide whether the next object should be displacement, stability class, or stop
+  - never: claim RH proof, disproof, zero certification, critical-line evidence, or exact reference dominance from finite offset rows

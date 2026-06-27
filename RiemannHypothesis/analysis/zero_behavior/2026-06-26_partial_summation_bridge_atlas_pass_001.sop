@@ -1,0 +1,79 @@
+Subject: Partial Summation Bridge Atlas Pass 001
+
+Description: Finite diagnostic atlas testing whether discrete partial summation reduces raw finite-difference noise in the Lambda-Mellin bridge.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_partial_summation_bridge\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Partial_Summation_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\partial_summation_bridge_atlas.py
+
+& [PartialSummationBridgeAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether partial summation can preserve the shared Lambda-Mellin unit while reducing raw finite-difference noise from explicit psi estimates
+  + [source_snapshot_uuid] is 00c81407-468a-4099-b55f-77566e6752f2
+  + [manifest_uuid] is 5b53422e-7876-4464-8e5d-319109df44b2
+  + [canonical_specification_uuid] is 8b725a81-f18f-476c-b8eb-efca0de2e821
+  + [implementation_change] is added partial_summation_bridge_atlas and partial_summation_bridge_atlas.py
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 32 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\partial_summation_bridge_atlas.py --n-bound 50 --n-bound 100 --n-bound 200 --sample 2,0 --sample 2,14.134725141734693790457251983562 --sample 1.5,14.134725141734693790457251983562 --multiplier 16 --multiplier 32 --window sharp --window fejer --window lanczos --window hann --dps 80 --output analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_trace.json
+  + [trace_row_count] is 72
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.1347251417347i, and s=1.5+14.1347251417347i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [proof_status] is finite_partial_summation_bridge_not_rh_evidence
+
+& [ExactSanitySummary] is the exact identity audit
+  + [max_exact_partial_summation_residual_abs] is 0 in the saved trace reduction
+  + [identity_result] is exact psi values reconstruct the exact finite Lambda sum under the discrete partial-summation kernel
+  + [meaning] is the tool is measuring the intended shared Lambda-Mellin unit rather than a mismatched raw residual
+
+& [ConfigurationSummary] is the observed bounded configuration field
+  + [best_average_configuration] is log, multiplier 32.0, lanczos window with average_partial_bridge_residual_abs 0.19547263373194112099645489592997291141644599459458340778932961159592455360777568
+  + [second_average_configuration] is log, multiplier 32.0, sharp window with average_partial_bridge_residual_abs 0.19627178677836795656222198201520864594860102916730965329483001356986106353161547
+  + [third_average_configuration] is log, multiplier 32.0, hann window with average_partial_bridge_residual_abs 0.19658301695884466984220933505181555501183992168697772366160873023445564275032327
+  + [weakest_average_configuration] is log, multiplier 16.0, fejer window with average_partial_bridge_residual_abs 0.21204744926591588616833207642884587765565598275611554407004322864054281250757432
+  + [comparison_result] is every configuration has average_partial_over_raw_bridge_residual_abs equal to 1.0 within the comparison tolerance
+  + [improvement_count] is 0 of 72 rows after tolerance-gating numerical roundoff
+
+& [BestPartialRows] is the observed bounded sample field
+  + [best_window_counts] is lanczos 6 and sharp 3
+  + [best_multiplier_counts] is multiplier 32.0 for all 9 best rows
+  + [n_50_s_2_0] is multiplier 32.0, lanczos window, partial_bridge_residual_abs 0.10686365273373928138869852103186595359610600368517471053667058375369590850880392
+  + [n_100_s_2_0] is multiplier 32.0, lanczos window, partial_bridge_residual_abs 0.10680310271008397200120647039790669406536431659149874779508585393162460985423068
+  + [n_200_s_2_0] is multiplier 32.0, lanczos window, partial_bridge_residual_abs 0.10701313407027581447572499119906046354885139418543516987252195952256893050139232
+  + [n_50_s_2_i14] is multiplier 32.0, lanczos window, partial_bridge_residual_abs 0.17001035599845614817957759917295717904014605901744334199231855424548778666798748
+  + [n_100_s_2_i14] is multiplier 32.0, lanczos window, partial_bridge_residual_abs 0.16988230505579301308647186894593935826535721730038966991893297723365632147988594
+  + [n_200_s_2_i14] is multiplier 32.0, lanczos window, partial_bridge_residual_abs 0.16991828520887850460297676283475064780994651042545813141317995420472811816945766
+  + [n_50_s_1_5_i14] is multiplier 32.0, sharp window, partial_bridge_residual_abs 0.30145997219613358295617418724067471668380815458395416286369170248255497090202076
+  + [n_100_s_1_5_i14] is multiplier 32.0, sharp window, partial_bridge_residual_abs 0.30040474975084397677911515389943657464530164805744441381459789442388009123097143
+  + [n_200_s_1_5_i14] is multiplier 32.0, sharp window, partial_bridge_residual_abs 0.30056090106485256663201622518708525098773273876198954988238065254329675270029339
+
+& [NMovementSummary] is the observed cutoff movement field
+  + [average_partial_bridge_residual_n_50] is approximately 0.20231793196431538
+  + [average_partial_bridge_residual_n_100] is approximately 0.20194626527977588
+  + [average_partial_bridge_residual_n_200] is approximately 0.20218621336435391
+  + [average_raw_bridge_residual_n_50] is approximately 0.20231793196431538
+  + [average_raw_bridge_residual_n_100] is approximately 0.20194626527977588
+  + [average_raw_bridge_residual_n_200] is approximately 0.20218621336435391
+  + [movement_result] is the partial bridge residual repeats the raw bridge plateau rather than reducing it
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is discrete partial summation is an exact algebraic re-expression of the finite-difference projection for any sampled psi_hat sequence
+  + [positive_result] is the exact psi sanity check confirms the shared Lambda-Mellin unit and the code path are coherent
+  + [negative_result] is discrete partial summation does not reduce raw bridge noise because it is the same discrete projection in another form
+  + [identity_boundary] is no stronger explicit/Euler identity follows; the explicit-side projection error remains the limiting object
+  + [answered_question] is no, discrete partial summation does not improve the Lambda-Mellin bridge beyond the raw finite-difference atlas
+  + [next_reasonable_coordinate] is only a truly continuous explicit-psi integral, kernel smoothing over x, or Cesaro-style n-domain smoothing would be a new bridge surface; that requires a fresh source-defined contract
+
+  = must: treat discrete partial summation as audit-equivalent to raw finite differences for sampled psi_hat values
+  = must: preserve the exact partial-summation sanity check as useful validation
+  = must: treat the repeated plateau near 0.202 as a finite diagnostic observation, not theorem signal
+  = must: require new source/spec before continuous-kernel, x-integral, or Cesaro smoothing work
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal bridge identity, or explicit/Euler fusion from this atlas
+
+(partial_summation_bridge_atlas_pass_001) :finite shared-unit audit: /exact sanity passes, discrete partial summation equals raw projection, no smoothing gain/ |proof authority|

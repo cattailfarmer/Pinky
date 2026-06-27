@@ -1,0 +1,14 @@
+Subject: Dictated Vertical Resonance Scan Source
+
+Description: Preserved source for denser fixed-sigma vertical resonance scanning in the Euler-product half-plane.
+
+& [DictatedVerticalResonanceScanSource] is preserved source for the vertical resonance scan
+  + [source_snapshot_uuid] is 380b9d38-9dd1-4659-a41a-67ef05b68614
+  + [preserved_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [dictated_source] is "Return to this RiemannHypothesis thread after the wakeup. Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces."
+  + [focal_question] is whether denser vertical resonance scanning or old ZetaOscilloscope/Zetabrot periphery translation should be the next useful zero-behavior rail
+  + [decision] is build the denser vertical resonance scan first so old symbolic periphery has a deterministic comparison surface before translation
+  + [implementation_need] is deterministic finite math processing for local extrema and resonance candidates in fixed-sigma Euler-product vertical slices
+  + [restraint] is vertical resonance candidates are finite half-plane landmarks and not zero certification, RH proof, RH disproof, or old-symbolic-tool authority

@@ -1,0 +1,74 @@
+Subject: Scale Law Comparison Atlas Pass 001
+
+Description: Finite diagnostic atlas comparing declared x-dependent zero-height laws for explicit-formula residual behavior.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_law_comparison\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Scale_Law_Comparison_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\scale_law_comparison_atlas.py
+
+& [ScaleLawComparisonAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare declared x-dependent zero-height laws as bounded explicit-formula residual coordinates before any explicit/Euler bridge attempt
+  + [source_snapshot_uuid] is 4489c420-f07c-49da-9207-f0cb775a6c39
+  + [canonical_specification_uuid] is 6854719c-1751-4038-a7e7-84b10b3f90a0
+  + [protocol_uuid] is 2f85ee4d-2401-4146-9efa-58e74be92188
+  + [implementation_change] is added log, sqrt, and sqrt_log scale-law comparison support, a scale_law_comparison_atlas runtime function, and a scale_law_comparison_atlas.py script
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 30 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\scale_law_comparison_atlas.py --x 100 --x 150 --x 200 --x 300 --x 500 --x 800 --x 1000 --scale-law log --scale-law sqrt --scale-law sqrt_log --window sharp --window fejer --window lanczos --window hann --dps 80 --output analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_trace.json
+  + [trace_row_count] is 392
+  + [sample_points] is 100, 150, 200, 300, 500, 800, and 1000
+  + [scale_laws] is log, sqrt, and sqrt_log
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [proof_status] is finite_scale_law_comparison_not_zero_certification
+
+& [ScaleLawSummary] is the observed bounded law field
+  + [log_sample_best_count] is 4 of 7
+  + [log_average_residual_abs] is 1.4625998224359727218575135558103231029151947904479579908903598116889157037697561
+  + [log_min_residual_abs] is 0.0010070084570542273445980371416396056286080817866701417248538625581653919078470728 at x=300, multiplier=32.0, window=hann
+  + [sqrt_sample_best_count] is 3 of 7
+  + [sqrt_average_residual_abs] is 2.1687346091956926140545444545784725620613452512525111685750398163908155930619886
+  + [sqrt_min_residual_abs] is 0.0054193557473897328982176745552788496557426844176183788806559064320796675998961978 at x=1000, multiplier=2.0, window=fejer
+  + [sqrt_log_sample_best_count] is 0 of 7
+  + [sqrt_log_average_residual_abs] is 2.0445015710938450757642065684442835957882588111175028594822667912832748769485613
+  + [sqrt_log_min_residual_abs] is 0.061980582849415152693996132868206149944799460952533377611605666019042937398392526 at x=300, multiplier=1.0, window=fejer
+  + [average_result] is log has the best bounded average residual, sqrt_log beats sqrt on average but never wins a sample, and sqrt wins only as a later local coordinate
+
+& [SampleBestLawSummary] is the observed bounded sample field
+  + [x_100] is log with multiplier 32.0, T=147.36544595161892377715145309979930928647049527224147046613298566192464701935056, zero_pair_count=51, window=sharp, residual_abs=0.3949652319690031263639793186717170921773298818050140027345305341829602593490406
+  + [x_150] is log with multiplier 32.0, T=160.34032941108018400044787279465848165677418882304128478978144403453586849931581, zero_pair_count=58, window=lanczos, residual_abs=0.005663969418681278909481343450390672298997695796713511790103345203289235585427897
+  + [x_200] is log with multiplier 32.0, T=169.54615572953717367850288098646095946488649957176963859799474596571324292238079, zero_pair_count=63, window=sharp, residual_abs=1.1055736333947887470206479299407661730922631184727610984494563658469809507970352
+  + [x_300] is log with multiplier 32.0, T=182.52103918899843390179930068132013183519019312256945292164320433832446440234605, zero_pair_count=70, window=hann, residual_abs=0.0010070084570542273445980371416396056286080817866701417248538625581653919078470728
+  + [x_500] is sqrt with multiplier 6.0, T=134.16407864998738178455042012387657412643710157669154345625383472463125553826829, zero_pair_count=45, window=sharp, residual_abs=0.010674842914987145441648709430146829264234774467428796721757563122986680525893657
+  + [x_800] is sqrt with multiplier 4.0, T=113.13708498984760390413509793677584628557375003015584585413437903925859827696856, zero_pair_count=35, window=lanczos, residual_abs=0.08631879022952488173265785221890414365548922460414403153048537090985464463135508
+  + [x_1000] is sqrt with multiplier 2.0, T=63.245553203367586639977870888654370674391102786504336537150097055851888772784764, zero_pair_count=14, window=fejer, residual_abs=0.0054193557473897328982176745552788496557426844176183788806559064320796675998961978
+  + [drift_observation] is the bounded best law moves from log at x=100 through x=300 to sqrt at x=500 through x=1000
+
+& [WindowAndTransitionSummary] is the observed cutoff movement field
+  + [log_window_wins] is sharp 17, fejer 8, lanczos 5, and hann 5
+  + [sqrt_window_wins] is sharp 20, lanczos 7, fejer 6, and hann 2
+  + [sqrt_log_window_wins] is sharp 15, fejer 7, lanczos 4, and hann 2
+  + [log_multiplier_transitions] is improved 76 and worsened 36
+  + [sqrt_multiplier_transitions] is improved 86 and worsened 26
+  + [sqrt_log_multiplier_transitions] is improved 59 and worsened 25
+  + [window_result] is sharp remains the strongest finite baseline by win count for all three laws, while smoothed windows keep local pockets
+  + [transition_result] is increasing multiplier usually improves residuals in this bounded grid, but not monotonically enough to define identity
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is scale-law comparison clarifies cutoff-coordinate periphery without producing a universal law
+  + [coordinate_result] is T=c*log(x) remains the strongest average diagnostic coordinate in this grid, but sqrt becomes locally better at larger sampled x values
+  + [sparse_novelty_result] is sqrt_log is notable as sparse against the denser meaning field because it has a better average than sqrt while winning no sample; this is inquiry pressure only, not identity evidence
+  + [bridge_result] is no tested law supplies the shared comparison unit needed to fuse explicit-formula residual rails with Euler-product/log-derivative cutoff rails
+  + [answered_question] is yes, multiple scale laws were worth comparing before another bridge attempt; no, this pass does not justify a stronger explicit/Euler bridge identity
+  + [next_reasonable_coordinate] is stop adding cutoff laws for now and source-define a shared explicit/Euler comparison unit only if the next slice can preserve what quantity both rails measure in common
+
+  = must: treat the atlas as finite residual sensitivity and coordinate-law diagnosis only
+  = must: keep special-prime and cutoff-law observations subordinate to pi(x), theta(x), psi(x), Euler-product behavior, explicit-formula error, and zero-height behavior
+  = must: treat log early wins, sqrt later wins, and sqrt_log sparse behavior as bounded prompts for inquiry, not theorem signals
+  = must: require a new source-defined shared comparison unit before another explicit/Euler bridge attempt
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal scale-law superiority, or explicit/Euler bridge identity from this atlas
+
+(scale_law_comparison_atlas_pass_001) :finite scale-law diagnosis: /log average strongest, sqrt later local wins, sqrt_log sparse non-winner, no bridge identity/ |proof authority|

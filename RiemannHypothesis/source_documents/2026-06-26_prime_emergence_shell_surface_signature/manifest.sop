@@ -1,0 +1,21 @@
+Subject: Prime Emergence Shell Surface Signature Source Manifest
+
+Description: Manifest for shell-surface measured-object source and SJS path.
+
+& [PrimeEmergenceShellSurfaceSignatureSourceManifest] is the source manifest
+  + [manifest_uuid] is d1b8c30f-296f-4a01-8e3b-f116563aefe5
+  + [source_uuid] is effa227e-b050-4000-ae9f-8da10cb7bd6a
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_emergence_shell_surface_signature\Dictated_Prime_Emergence_Shell_Surface_Signature_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Emergence_Shell_Surface_Signature_Specification.sop
+  + [tool_target] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_emergence_shell_signature.py
+  + [trace_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_emergence_shell_signature_trace.json
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_emergence_shell_signature_pass_001.sop
+  + [related_surfaces] are Prime_Inflation_Surface_Metaphor, Prime_Power_Decomposition_Bridge, Whole_Field_Prime_Shape_Bridge, Special_Prime_Periphery_Inquiry, DenseNode_PrimeCountingThetaPsi, and DenseNode_LambdaDiagnosticOverlay
+  + [source_role] is measured_object_authorization_for_first_shell_surface_probe
+
+  = must: keep source preservation separate from computed trace
+  = must: require deterministic tool output before shell-surface inference
+  = must: keep finite shell signatures as orientation and not RH evidence

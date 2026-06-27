@@ -1,0 +1,17 @@
+Subject: Commit Scope Review Source Document Manifest
+
+Description: Manifest for preserved source governing the RH first-bookend commit scope review.
+
+& [CommitScopeReviewSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is d23baef0-0d75-451d-a255-b0b34bd6b129
+  + [manifest_uuid] is d4abc270-3055-48fd-99e4-e02c62ab4e70
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_commit_scope_review\Dictated_Commit_Scope_Review_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Commit_Scope_Review_Specification.sop
+  + [source_preservation_rule] is raw scope source remains separate from canonical scope contract and review findings
+  + [authority_status] is source_preserved_before_scope_decision
+
+  = must: process this source through specification before deciding scope posture
+  = must: preserve candidate scopes and dirty-root boundary
+  - never: stage or commit from this manifest alone

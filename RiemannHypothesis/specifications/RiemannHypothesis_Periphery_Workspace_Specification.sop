@@ -1,0 +1,108 @@
+Subject: Riemann Hypothesis Periphery Workspace Specification
+
+Description: Initial SJS-processed workspace contract for analyzing old Riemann/Zeta/Toribrot framework material through the periphery focus primitive.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_workspace_reentry\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_workspace_reentry\Dictated_Riemann_Hypothesis_Workspace_Reentry_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_periphery_focus_primitive\Dictated_Periphery_Focus_Primitive_Source.sop
+@ [external_periphery] C:\Project\ReasoningFramework\platform\refinement\Riemann_Workspace.sop
+@ [external_periphery] C:\Project\ReasoningFramework\platform\refinement\Zetabrot_Module.sop
+@ [external_periphery] C:\Project\ReasoningFramework\platform\refinement\Zeta_Oscilloscope.sop
+@ [external_periphery] C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Module.sop
+@ [external_periphery] C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Math_Engine.sop
+@ [external_periphery] C:\Project\ReasoningFramework\platform\refinement\Toribrot.sop
+
+& [RiemannHypothesisPeripheryWorkspace] is the Pinky project workspace for RH-adjacent exploratory analysis using periphery inspection before implementation or proof-adjacent writing
+  + [canonical_specification_uuid] is d3f11878-eb86-4cb9-9b99-22d26fa362d4
+  + [source_snapshot_uuid] is 5b94d33d-665a-494e-b747-0f4ea7b12c4f
+  + [solution_uuid] is 4f04e4e2-59ee-4815-b221-24a276436be0
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_role] is periphery_inspection_and_reauthoring_workspace
+  + [not_primary_role] is RH proof engine, theorem prover, zero oracle, or automatic importer of old framework material
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [external_periphery_root] is C:\Project\ReasoningFramework
+  + [method] is periphery_focus
+  + [initial_object_set] is RiemannWorkspace, ZetabrotModule, ZetaOscilloscope, EnumeratedToribrotModule, EnumeratedToribrotMathEngine, and Toribrot
+
+  = must: preserve source before re-authoring old framework meaning
+  = must: identify objects on the periphery before moving them into focus
+  = must: gather source-derived fact points for each object
+  = must: triangulate identity from correlated fact points
+  = must: classify each object as external, internal, entangled-but-not-local, or ready-for-import
+  = must: grow a not-it periphery around each focused object
+  = must: preserve incomplete inference when boundaries are not clearly delineated
+  = must: keep finite numerical evidence, symbolic instrumentation, arithmetic verification, and theorem-level RH reasoning distinct
+  - never: claim proof, disproof, or zero certification from finite traces, symbolic resemblance, or old framework authority
+  - never: let old ReasoningFramework identity silently become Pinky local identity
+
+## Periphery Focus Routine
+
+& [RHPeripheryFocusRoutine] is the project-local use of the periphery focus primitive
+  + [step_1_object_detection] is find candidate objects in old framework periphery by path, subject, source manifest, canonical signature, and role
+  + [step_2_surface_fact_collection] is record visible facts such as primary role, non-role, input data, mathematical object, output surface, acceptance criteria, and explicit prohibitions
+  + [step_3_fact_correlation] is compare fact points across source manifests, canonical specs, and neighboring modules
+  + [step_4_triangulated_identity] is name what the object is locally, what it is in old authority, and what it only resembles
+  + [step_5_boundary_classification] is classify as external periphery, internal .sop fabric, entangled-but-not-local system surface, or import candidate
+  + [step_6_not_it_growth] is list nearby things the object is not, especially proof, oracle, theorem engine, hidden analytic continuation, or local identity
+  + [step_7_frontier_selection] is choose the next safe work item from import, re-author, inspect, defer, or experiment-plan
+
+  = must: execute steps in order for every object promoted from periphery to focus
+  = must: preserve old object identity even when new meaning is derived
+  = must: emit an uncertainty record when resemblance and belonging cannot be separated
+
+## Boundary Contract
+
+& [RHWorkspaceBoundary] is the initial inside, reference, outside, and uncertainty map
+  + [inside] is project-local source documents, specifications, periphery inspections, planning records, future imported snapshots, future re-authored analysis specs, and bounded experiment plans
+  + [references] are old ReasoningFramework Riemann/Zeta/Toribrot source manifests, canonical specifications, and source snapshots
+  + [outside] is proof claims, blind import, external authority promotion, finite visualization as theorem evidence, hidden model-state claims, and symbolic resemblance as identity
+  + [uncertainty] is which old objects should be imported, which should remain external references, which symbolic tools can become executable experiments, and whether any new mathematical claim survives proof-grade review
+
+  = must: keep old framework objects as references until import is explicitly performed
+  = must: keep RH as an analytic statement about nontrivial zeta zeros
+  = must: require a separate proof-grade specification before any theorem-level claim is pursued
+
+## Initial Object Map
+
+& [InitialRHPeripheryObjects] is the first object set discovered in C:\Project\ReasoningFramework
+  + [RiemannWorkspace] is old external integration workbench joining Toribrot geometry, Enumerated Toribrot identity, Zetabrot spectral transforms, Zeta Oscilloscope readout, and certified computation boundaries
+  + [ZetabrotModule] is old external operator-spectral layer over integer brots, scalar fields a(n), Dirichlet-Mellin transforms, and log-Fourier phasor sums
+  + [ZetaOscilloscope] is old external finite Lambda phasor instrument using sigma, t, cutoff N, window W_N, Lambda(n), and exp(-i t log(n))
+  + [EnumeratedToribrotModule] is old external binary address identity layer for stable node enumeration
+  + [EnumeratedToribrotMathEngine] is old external arithmetic proof substrate for finite, inspectable, verified computations
+  + [Toribrot] is old external recursive toroidal geometry and deformation-frame subject
+
+  = must: treat shared terms such as pants, brot, factor, field, trace, and transform as resemblance until identity is triangulated
+  = should: inspect source snapshots before importing any old canonical file into local authority
+
+## Acceptance Criteria
+
+& [RiemannHypothesisPeripheryWorkspaceAcceptance] is the initial completion standard
+  + [source_preservation_test] is source request saved under RiemannHypothesis source_documents
+  + [workspace_shell_test] is project root, source_documents, specifications, analysis, and planning surfaces exist
+  + [external_hash_test] is initial old framework objects are cited by path and hash in the first inspection record
+  + [boundary_test] is old framework material is classified as external periphery, not local authority
+  + [method_test] is initial analysis uses object detection, surface facts, triangulation, boundary classification, not-it field, and frontier selection
+  + [rh_safety_test] is proof, disproof, and zero-certification claims are blocked
+
+  = must: pass all acceptance tests before treating the new workspace as initialized
+
+## SJS Processing Trace
+
+& [SJSProcessingTrace] is the specification justification trace for the initial Riemann Hypothesis periphery workspace
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [source_snapshot_uuid] is 5b94d33d-665a-494e-b747-0f4ea7b12c4f
+  + [canonical_specification_uuid] is d3f11878-eb86-4cb9-9b99-22d26fa362d4
+  + [solution_uuid] is 4f04e4e2-59ee-4815-b221-24a276436be0
+  + [processed_stage_set] is source_preserved, delineated, exploded, semantically_refined, constraint_checked, pruned, exhaustion_reviewed, justified, and registry_recorded
+  + [processing_result] is stable_initial_workspace_contract
+  + [reasoning_result] is user direction separated into new project identity, old framework external periphery, periphery-focus method, RH claim boundary, and first inspection frontier
+  + [exhaustion_state] is phase_locked_for_initial_workspace_creation_with_import_frontier
+
+& [SatisfactionSignature] is the satisfaction signature for this initial workspace specification
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_uuid] is 442173d6-4cb2-41dd-a4d9-8c8fb61e164e
+  + [signed_artifact] is C:\Project\Pinky\RiemannHypothesis\specifications\RiemannHypothesis_Periphery_Workspace_Specification.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_workspace_reentry\Dictated_Riemann_Hypothesis_Workspace_Reentry_Source.sop
+  + [signature_status] is valid
+  + [invalidation_condition] is source_document_change, failed_boundary_test, missing_old_framework_provenance, RH_overclaim, or broken_lineage

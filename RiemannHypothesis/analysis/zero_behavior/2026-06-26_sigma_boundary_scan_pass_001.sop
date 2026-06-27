@@ -1,0 +1,56 @@
+Subject: Sigma Boundary Scan Pass 001
+
+Description: First bounded scan of finite Euler-product residual behavior as sigma approaches 1 from above.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_sigma_boundary_scan\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Sigma_Boundary_Scan_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_trace.json
+
+& [SigmaBoundaryScanPass001] is a completed bounded convergence-boundary pass
+  + [analysis_uuid] is e337cbe1-220c-421d-8f77-05e374f3b706
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\sigma_boundary_probe.py
+  + [proof_status] is finite_sigma_boundary_probe_not_critical_line_evidence
+  + [status] is completed
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [sigmas] is 2.0, 1.5, 1.25, 1.1, 1.05
+  + [t_values] is 0.0 and 14.134725141734693790457251983562
+  + [prime_bounds] is 100 and 500
+  + [row_count] is 20
+  + [transition_row_count] is 16
+  + [minimum_sigma] is 1.05
+  + [minimum_distance_to_sigma_1] is 0.05
+  + [t_0_bound_500_sigma_2_product_residual_abs] is 0.000449381696148471
+  + [t_0_bound_500_sigma_1_05_product_residual_abs] is 11.993953053143510
+  + [t_0_bound_500_product_residual_endpoint_ratio] is 26689.901159616488
+  + [t_0_bound_500_log_derivative_endpoint_ratio] is 7516.285125172488
+  + [t_zero_ordinate_bound_500_sigma_2_product_residual_abs] is 0.000014865560925635
+  + [t_zero_ordinate_bound_500_sigma_1_05_product_residual_abs] is 0.003862796692097880
+  + [t_zero_ordinate_bound_500_product_residual_endpoint_ratio] is 259.848700726561308
+  + [t_zero_ordinate_bound_500_log_derivative_endpoint_ratio] is 567.311493688793355
+
+& [BoundaryInference_001] is convergence_boundary_result
+  + [inference] is residual growth toward sigma = 1 is a meaningful boundary signal, but the shape depends strongly on t
+  + [pole_axis_motion] is at t = 0 the Euler-product residual grows sharply as sigma approaches 1, consistent with proximity to the zeta pole at s = 1
+  + [zero_ordinate_motion] is at the first-zero ordinate the residuals also grow toward the boundary, but remain far smaller and more controlled in this bounded trace
+  + [prime_bound_motion] is increasing the bound from 100 to 500 helps at all sampled rows, but the improvement weakens near sigma = 1 on the t = 0 axis
+  + [boundary] is this is convergence-boundary inspection from Re(s) > 1 and does not inspect the critical line directly
+
+& [IdentityInference_001] is object_delineation_result
+  + [local_identity] is convergent Euler-product half-plane behavior
+  + [related_periphery] is pole-axis behavior at t = 0, first-zero ordinate behavior at t = 14.134725..., prime-bound truncation, and logarithmic-derivative weighting
+  + [not_identity] is RH zero-line truth, critical-strip behavior, and proof-grade analytic continuation
+  + [reason] is the same finite Euler-product surface reacts differently by vertical ordinate before any critical-line object is touched
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is sigma-boundary scanning is useful because it makes the convergence boundary visible, but it does not move the inquiry into RH evidence
+  + [reason] is the bounded trace separates pole-dominated boundary growth from quieter first-zero-ordinate boundary growth while staying entirely in Re(s) > 1
+  + [next_relevant_periphery] is t-axis boundary slicing at fixed sigma > 1 to distinguish pole-axis influence, zero-ordinate proximity, and ordinary vertical behavior before any deeper zero-behavior inference
+  + [retained_boundary] is special-prime observations remain subordinate to pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior
+
+(sigma_boundary_scan_pass_001) :approach-to-boundary Euler-product surface: /sigma greater than 1, residual growth, t-dependence/ |critical-line authority|
+  + [inside] is finite half-plane convergence-boundary measurement
+  + [boundary] is useful boundary lens but not critical-line evidence
+  |outside| RH proof, disproof, independent zero certification, and direct critical-strip inference

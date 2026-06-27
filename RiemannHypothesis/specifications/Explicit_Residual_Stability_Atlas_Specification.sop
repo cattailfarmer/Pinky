@@ -1,0 +1,45 @@
+Subject: Explicit Residual Stability Atlas Specification
+
+Description: SJS-processed contract for a bounded explicit-formula residual stability atlas.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_stability_atlas\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Window_Expansion_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_window_expansion_pass_001.sop
+
+& [ExplicitResidualStabilityAtlas] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is 5418156b-b17f-44dc-93e8-67c1f6466fce
+  + [canonical_specification_uuid] is 432942ee-f7a4-4dfb-961a-77ea5a21330a
+  + [protocol_uuid] is 76fb47b3-41ad-4b70-a39e-f338425a534e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is map finite explicit-formula residual stability across x ranges, zero-pair cutoff counts, and sharp/Fejer/Lanczos/Hann window policies before attempting another explicit/Euler bridge
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, critical-line authority, universal smoothing-window ranking, or bridge identity
+
+  = must: use exact finite psi(x), theta(x), and pi(x) rows for sampled x
+  = must: compare at least seven x samples and at least five zero-pair cutoff counts
+  = must: compare sharp, Fejer, Lanczos, and Hann windows
+  = must: report best window by x and zero-pair count
+  = must: report window win counts and average residual magnitude across the bounded grid
+  = must: report cutoff transitions by x and window so instability remains visible
+  = must: mark output proof_status as finite_explicit_residual_stability_atlas_not_zero_certification
+  = must: treat mpmath zetazero as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite residual stability
+  - never: collapse local minima into identity
+  - never: fuse explicit-formula residual rails with Euler-product/log-derivative rails without a later source-defined shared comparison unit
+
+& [ExplicitResidualStabilityAtlasTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.zero_window_stability_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\explicit_residual_stability_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_pass_001.sop
+
+& [ExplicitResidualStabilityAtlasSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_stability_atlas_contract
+  + [reasoning_result] is the previous expanded window pass showed local smoothing pockets and cutoff sensitivity, so the next useful question is whether those pockets persist across a broader grid before spending attention on a stronger bridge
+
+(explicit_residual_stability_atlas) :finite explicit residual stability surface: /x samples, zero cutoffs, window policies, transition rows/ |proof authority|
+  + [inside] is deterministic finite residual stability measurement against exact psi(x)
+  + [boundary] is bounded diagnostic stability only
+  |outside| RH proof, disproof, zero certification, global smoothing claims, and explicit/Euler bridge identity

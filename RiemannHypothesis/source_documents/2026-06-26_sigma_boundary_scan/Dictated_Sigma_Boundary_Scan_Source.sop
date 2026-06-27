@@ -1,0 +1,13 @@
+Subject: Dictated Sigma Boundary Scan Source
+
+Description: Preserved source for inspecting Euler-product behavior as sigma approaches 1 from above.
+
+& [DictatedSigmaBoundaryScanSource] is preserved source for the sigma-boundary scan
+  + [source_snapshot_uuid] is 48e2ffb2-011c-4d16-a3cd-8d3a9ad2e619
+  + [preserved_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [dictated_source] is "Return to this RiemannHypothesis thread after the wakeup. Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces."
+  + [focal_question] is whether approach-to-boundary scans with sigma decreasing toward 1 from above reveal useful convergence-boundary behavior without pretending to inspect the critical line directly
+  + [implementation_need] is deterministic finite math processing for Euler-product/logarithmic-derivative residuals as sigma moves toward 1 from above
+  + [restraint] is sigma-boundary traces inspect the convergence boundary from Re(s) > 1 and are not RH proof, disproof, critical-line authority, or zero certification

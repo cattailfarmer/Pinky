@@ -1,0 +1,58 @@
+Subject: Zero Windowing Bridge Pass 001
+
+Description: First bounded comparison of sharp and Fejer-windowed finite explicit-formula zero-pair approximations.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_zero_windowing_bridge\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Zero_Windowing_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_trace.json
+
+& [ZeroWindowingBridgePass001] is a completed bounded zero-behavior pass
+  + [analysis_uuid] is 80638b61-95f9-42a9-9a08-1966e4cc2d48
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_window_probe.py
+  + [proof_status] is finite_zero_window_probe_not_zero_certification
+  + [status] is completed
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [sample_points] is 100, 200, 500
+  + [zero_pair_counts] is 5, 10, 20
+  + [windows] is sharp, fejer
+  + [row_count] is 18
+  + [zero_term_rows] is 210
+  + [x_100_n_5_sharp_residual_abs] is 0.773641788493781914
+  + [x_100_n_5_fejer_residual_abs] is 2.270047654559265324
+  + [x_100_n_10_sharp_residual_abs] is 0.995029944300423855
+  + [x_100_n_10_fejer_residual_abs] is 1.725223954883912741
+  + [x_100_n_20_sharp_residual_abs] is 1.636707449085916690
+  + [x_100_n_20_fejer_residual_abs] is 1.556002037788010445
+  + [x_200_n_5_sharp_residual_abs] is 4.737728103004113532
+  + [x_200_n_5_fejer_residual_abs] is 6.247465437775017884
+  + [x_200_n_10_sharp_residual_abs] is 3.816801886266636989
+  + [x_200_n_10_fejer_residual_abs] is 5.189243837812646860
+  + [x_200_n_20_sharp_residual_abs] is 2.319604343556295824
+  + [x_200_n_20_fejer_residual_abs] is 4.137023555892528438
+  + [x_500_n_5_sharp_residual_abs] is 0.418026628068468618
+  + [x_500_n_5_fejer_residual_abs] is 1.179242278451202709
+  + [x_500_n_10_sharp_residual_abs] is 1.011050533941918138
+  + [x_500_n_10_fejer_residual_abs] is 0.882239993001090808
+  + [x_500_n_20_sharp_residual_abs] is 1.828129191659744703
+  + [x_500_n_20_fejer_residual_abs] is 1.034101165287954881
+
+& [WindowComparison_001] is zero_behavior_lens_result
+  + [improved_rows] is x=100,N=20; x=500,N=10; x=500,N=20
+  + [worsened_rows] is x=100,N=5; x=100,N=10; x=200,N=5; x=200,N=10; x=200,N=20; x=500,N=5
+  + [inference] is Fejer smoothing changes the residual surface but does not dominate sharp truncation in this bounded trace
+  + [noted_motion] is smoothing damped later zero-pair influence and helped some larger-window rows while worsening most small-window rows
+  + [boundary] is this is finite window comparison and not a convergence claim, zero certification, or RH evidence
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is zero-windowing is useful as a diagnostic comparator, but this first bounded pass does not justify replacing sharp truncation with Fejer smoothing as the preferred surface
+  + [reason] is Fejer improved 3 of 9 sampled rows and worsened 6 of 9 sampled rows against exact psi(x)
+  + [next_relevant_periphery] is Euler-product or logarithmic-derivative weighting, plus larger controlled windows if a new source-defined smoothing question requires them
+  + [retained_boundary] is finite window traces remain subordinate to whole-field pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior
+
+(zero_windowing_bridge_pass_001) :smoothed zero-term approximation surface: /sharp, fejer, residual comparison/ |zero certification|
+  + [inside] is finite windowed zero-term comparison and residual trace
+  + [boundary] is useful smoothing diagnostic but not proof evidence
+  |outside| RH proof, disproof, independent zero certification, and universal window superiority claims

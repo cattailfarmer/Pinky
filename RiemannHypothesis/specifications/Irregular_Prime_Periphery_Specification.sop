@@ -1,0 +1,43 @@
+Subject: Irregular Prime Periphery Specification
+
+Description: SJS-processed project-local contract for inspecting irregular primes as a zeta-adjacent prime family.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_retire_641_and_irregular_prime_pivot\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+
+& [IrregularPrimePeriphery] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 4bc32a41-bc93-425b-b4b5-fa827278d677
+  + [source_snapshot_uuid] is b900453b-eb3b-40f1-a110-46eb6a0b8352
+  + [solution_uuid] is 456518ab-d4b7-4505-be18-002b8bde6b5a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [role] is inspect irregular primes as a prime family tied to Bernoulli numerators and zeta special values
+  + [not_role] is RH proof, zero-line explanation, p-adic theorem authority, or replacement of whole-field RH inquiry
+
+  = must: compute irregular pairs by checking whether prime p divides the numerator of B_k for even k from 2 through p-3
+  = must: record the zeta special-value bridge zeta(1-k) = -B_k/k
+  = must: keep irregular-prime traces finite and bounded
+  = must: treat this family as zeta-adjacent periphery, not zero-line evidence
+  = must: retire 641 special-form branches as active identity tracks unless a new source-defined identity appears
+  - never: infer RH truth, falsehood, or zero-line behavior from irregular-prime scans
+
+& [IrregularPrimeScanTool] is the script surface for bounded irregular-prime scanning
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\irregular_prime_scan.py
+  + [input] is finite prime bound and optional regular-prime inclusion
+  + [output] is irregular primes, irregular indices, Bernoulli indices, and zeta special-value annotations
+  + [proof_status] is finite_irregular_prime_scan_not_zero_line_evidence
+
+## SJS Processing Trace
+
+& [IrregularPrimePeripherySJS] is the specification justification trace
+  + [protocol_uuid] is ebeb0465-cc48-41d6-bfb1-f254f60cfa80
+  + [source_snapshot_uuid] is b900453b-eb3b-40f1-a110-46eb6a0b8352
+  + [canonical_specification_uuid] is 4bc32a41-bc93-425b-b4b5-fa827278d677
+  + [solution_uuid] is 456518ab-d4b7-4505-be18-002b8bde6b5a
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [reasoning_result] is pivot from exhausted 641 special forms to irregular primes because they connect prime irregularity to zeta special values more directly
+
+(irregular_prime_periphery) :zeta special-value prime family: /Bernoulli numerators and finite scans/ |zero-line proof claims|
+  + [inside] is irregular pairs, Bernoulli divisibility, zeta(1-k) relation, and finite traces
+  + [boundary] is no zero-line inference from finite special-value divisibility
+  |outside| RH proof, disproof, zero certification, and special-family subject replacement

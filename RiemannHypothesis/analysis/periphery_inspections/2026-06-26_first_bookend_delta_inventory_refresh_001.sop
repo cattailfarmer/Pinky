@@ -1,0 +1,71 @@
+Subject: First Bookend Delta Inventory Refresh 001
+
+Description: Refreshed first-bookend inventory for the RiemannHypothesis project surface after later walking records.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_delta_inventory_refresh\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\First_Bookend_Delta_Inventory_Refresh_Specification.sop
+@ [commit_scope_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+@ [post_discrepancy_route_settlement] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_post_discrepancy_route_settlement_001.sop
+
+& [FirstBookendDeltaInventoryRefresh001] is a completed non-staging inventory refresh
+  + [analysis_uuid] is 006edf9f-40ca-40dc-9005-bb642b6e0e92
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_inventory_refresh
+  + [proof_status] is governance_inventory_not_rh_evidence
+  + [git_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts, runtime code, or tests changed
+  + [new_numerical_processing] is none
+  + [verification] is git inventory and status only
+
+& [InventoryDelta] is refreshed_first_bookend_surface
+  + [prior_commit_scope_review_rh_non_ignored_untracked_count] is 337
+  + [pre_refresh_slice_rh_non_ignored_untracked_count] is 385
+  + [post_refresh_slice_rh_non_ignored_untracked_count] is 389
+  + [delta_since_prior_commit_scope_review_after_this_slice] is 52
+  + [delta_added_by_this_refresh_slice] is 4
+  + [status_summary] is RiemannHypothesis remains untracked and .sop\state\CurrentFocalPoint.sop remains modified
+
+& [PostRefreshRoleCounts] is current_project_surface
+  + [sop_files] is 300
+  + [json_files] is 36
+  + [python_files] is 46
+  + [markdown_or_text_files] is 7
+  + [source_documents_files] is 165
+  + [specifications_files] is 64
+  + [analysis_files] is 110
+  + [tools_files] is 46
+  + [tests_files] is 1
+  + [planning_files] is 1
+  + [root_docs] is 2
+
+& [ShapeInterpretation] is governance_heat_not_math_heat
+  + [stable_runtime_surface] is Python, JSON, tools, tests, planning, and root docs stayed stable during this refresh
+  + [growth_surface] is source/spec/analysis SOP records
+  + [math_route_status] is unchanged from post-discrepancy settlement: no computation-ready or source-request-worthy measured object is active
+  + [pursuit_value] is package-scope clarity, not additional mathematical computation
+  + [contradiction_result] is no contradiction found; the inventory strengthens the earlier caution that continued untracked growth weakens repo-first reflection
+
+& [ScopeRecommendationRefresh] is unchanged_but_more_urgent
+  + [default_first_bookend_scope] is RiemannHypothesis project files only
+  + [optional_explicit_scope] is RiemannHypothesis project files plus .sop\state\CurrentFocalPoint.sop
+  + [excluded_scope] is broad .sop platform dirty state and ignored runtime surfaces
+  + [blocked_action] is no staging or commit without explicit user direction
+  + [reason] is the project surface has grown from 337 to 389 non-ignored files since the prior commit-scope review, so a first bookend is more valuable, but the boundary still gates Git mutation
+
+& [NextNonMutatingLead] is selected
+  + [selected_next] is first-bookend package manifest
+  + [reason] is the refreshed inventory clarifies the project surface but does not yet give a concise package map for an eventual explicit staging decision
+  + [allowed_next] is prepare a non-mutating package manifest grouping the RH files by source/spec/analysis/tools/tests/root docs and marking CurrentFocalPoint as optional
+  + [blocked_next] is no staging, no commit, no branch change, no broad .sop mutation, and no math expansion
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is first-bookend inventory is refreshed; the RH project has 389 non-ignored files after this slice, with growth concentrated in source/spec/analysis SOP records
+  + [next_action] is preserve source/spec for a first-bookend package manifest if walking continues and no explicit commit direction arrives
+  + [boundary] is no staging, no commit, no runtime code change, no test run, no proof claim, no zero certification, no new math execution, no branch reopening, and no broad .sop platform mutation occurred
+
+(first_bookend_delta_inventory_refresh_001) :inventory refresh: /389 RH files; RH-only default; CurrentFocalPoint optional; package manifest next/ |staging, commit, proof claims|
+  + [inside] is refreshed worktree inventory and next governance route
+  + [boundary] is non-staging review only
+  |outside| theorem authority, runtime implementation, broad .sop mutation, staging, commit, branch change, and numerical expansion

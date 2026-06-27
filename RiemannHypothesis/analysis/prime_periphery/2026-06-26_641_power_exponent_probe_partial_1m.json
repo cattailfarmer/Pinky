@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "precision_dps": 80,
+    "proof_status": "bounded_exponential_shift_probe_not_primality_proof",
+    "tool": "exponential_shift_probe"
+  },
+  "parameters": {
+    "base": 65537,
+    "exponents": [
+      263374721,
+      1082688676741
+    ],
+    "max_hits": 8,
+    "shifts": [
+      1,
+      2,
+      4
+    ],
+    "small_factor_limit": 1000000
+  },
+  "rows": [
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent": 263374721,
+      "expression": "65537^263374721+1",
+      "first_small_divisor": 2,
+      "forced_divisors": [
+        {
+          "divisor": 65538,
+          "factorization": {
+            "11": 1,
+            "2": 1,
+            "3": 2,
+            "331": 1
+          },
+          "reason": "base^odd_exponent + 1 is divisible by base + 1"
+        }
+      ],
+      "parity": "even",
+      "shift": 1,
+      "small_divisor_count_reported": 6,
+      "small_divisors": [
+        2,
+        3,
+        11,
+        331,
+        1283,
+        49999
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent": 263374721,
+      "expression": "65537^263374721+2",
+      "first_small_divisor": 7,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        7,
+        271,
+        7187
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent": 263374721,
+      "expression": "65537^263374721+4",
+      "first_small_divisor": 3,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 4,
+      "small_divisor_count_reported": 3,
+      "small_divisors": [
+        3,
+        23,
+        2699
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent": 1082688676741,
+      "expression": "65537^1082688676741+1",
+      "first_small_divisor": 2,
+      "forced_divisors": [
+        {
+          "divisor": 65538,
+          "factorization": {
+            "11": 1,
+            "2": 1,
+            "3": 2,
+            "331": 1
+          },
+          "reason": "base^odd_exponent + 1 is divisible by base + 1"
+        }
+      ],
+      "parity": "even",
+      "shift": 1,
+      "small_divisor_count_reported": 4,
+      "small_divisors": [
+        2,
+        3,
+        11,
+        331
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent": 1082688676741,
+      "expression": "65537^1082688676741+2",
+      "first_small_divisor": 17,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 2,
+      "small_divisor_count_reported": 1,
+      "small_divisors": [
+        17
+      ],
+      "small_factor_limit": 1000000
+    },
+    {
+      "base": 65537,
+      "bounded_result": "small_divisor_found",
+      "exponent": 1082688676741,
+      "expression": "65537^1082688676741+4",
+      "first_small_divisor": 3,
+      "forced_divisors": [],
+      "parity": "odd",
+      "shift": 4,
+      "small_divisor_count_reported": 2,
+      "small_divisors": [
+        3,
+        7
+      ],
+      "small_factor_limit": 1000000
+    }
+  ]
+}

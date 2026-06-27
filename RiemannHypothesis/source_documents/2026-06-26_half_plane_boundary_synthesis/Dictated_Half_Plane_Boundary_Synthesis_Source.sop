@@ -1,0 +1,21 @@
+Subject: Dictated Half Plane Boundary Synthesis Source
+
+Description: Preserved source for synthesizing existing Re(s)>1 Euler/log-derivative boundary traces.
+
+& [DictatedHalfPlaneBoundarySynthesisSource] is raw continuation source
+  + [source_snapshot_uuid] is ba7c971c-5356-45fb-a4b0-7fd051c443be
+  + [captured_at] is 2026-06-26T17:49:36.232Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_half_plane_boundary_synthesis_next
+  + [raw_need] is synthesize existing sigma-boundary and t-axis Re(s)>1 traces into a refined half-plane boundary node before any new scans
+  + [selected_node] is DenseNode_EulerLogDerivativeHalfPlane
+  + [known_pressure] is Euler-product and logarithmic-derivative traces are stable whole-field surfaces in Re(s)>1, but pole-axis, ordinary t-axis, known-zero-ordinate references, and vertical resonance landmarks must remain distinct
+  + [identity_boundary] is this synthesis is orientation and governance only, not critical-line authority, zero certification, proof, disproof, or implementation authority
+
+  = must: preserve this raw source separately from canonical specification
+  = must: use existing Euler-product weighting, sigma-boundary, t-axis boundary, and vertical-resonance records
+  = must: keep all claims in Re(s)>1
+  = must: separate pole-axis behavior, ordinary vertical behavior, known-zero-ordinate reference behavior, prime-bound truncation, and metric-dependent resonance behavior
+  = must: decide whether new scans are blocked or conditionally allowed
+  - never: treat half-plane convergence as critical-line evidence or RH proof/disproof support

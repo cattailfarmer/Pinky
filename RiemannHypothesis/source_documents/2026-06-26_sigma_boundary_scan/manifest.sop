@@ -1,0 +1,16 @@
+Subject: Sigma Boundary Scan Source Manifest
+
+Description: Manifest for preserved source feeding the sigma-boundary scan.
+
+& [SigmaBoundaryScanSourceManifest] is the source manifest
+  + [manifest_uuid] is c396c2e0-abee-42ea-83ff-9421886eb6f6
+  + [source_snapshot_uuid] is 48e2ffb2-011c-4d16-a3cd-8d3a9ad2e619
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_sigma_boundary_scan\Dictated_Sigma_Boundary_Scan_Source.sop
+  + [canonical_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Sigma_Boundary_Scan_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+  + [status] is preserved
+
+  = must: preserve raw dictated source separately from canonical specification
+  = must: process through SJS before implementation authority

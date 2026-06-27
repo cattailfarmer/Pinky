@@ -1,0 +1,15 @@
+Subject: Dictated Tracking Identity Abandonment Rule Source
+
+Description: Raw source preserving the user's rule for abandoning a test case when the proposed identity does not track across the set.
+
+& [DictatedTrackingIdentityAbandonmentRuleSource] is preserved raw source for identity-tracking restraint
+  + [source_uuid] is 5649f09a-28f2-428d-b2fe-d0b1d86c82fe
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "and you can abandon a test case if two of the numbers in the set don't track. we're not tracking the right identity then and it's clear."
+
+  = must: abandon or re-scope a proposed identity when two members of the defining set fail to track
+  = must: treat repeated member failure as evidence of wrong identity focus, not as a reason to chase exceptions
+  = must: preserve restraint before expanding search branches

@@ -1,0 +1,80 @@
+Subject: Scale-Tied Zero Height Atlas Pass 001
+
+Description: Finite diagnostic atlas for explicit-formula residual behavior using T = c*log(x).
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_tied_zero_height_policy\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Scale_Tied_Zero_Height_Policy_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\scale_tied_zero_height_atlas.py
+
+& [ScaleTiedZeroHeightAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether T = c*log(x) improves explicit-formula residual coordinate behavior compared with fixed T before attempting another explicit/Euler bridge
+  + [implementation_change] is added scale_tied_zero_height, scale_tied_zero_height_atlas, and scale_tied_zero_height_atlas.py
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 29 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\scale_tied_zero_height_atlas.py --x 100 --x 150 --x 200 --x 300 --x 500 --x 800 --x 1000 --scale-law log --multiplier 4 --multiplier 6 --multiplier 8 --multiplier 12 --multiplier 16 --multiplier 24 --multiplier 32 --window sharp --window fejer --window lanczos --window hann --dps 80 --output analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_trace.json
+  + [trace_row_count] is 196
+  + [sample_points] is 100, 150, 200, 300, 500, 800, and 1000
+  + [scale_law] is log
+  + [multipliers] is 4, 6, 8, 12, 16, 24, and 32
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [proof_status] is finite_scale_tied_zero_height_atlas_not_zero_certification
+
+& [ScaleTiedWindowSummary] is the observed bounded window field
+  + [best_window_win_counts] is sharp 27, fejer 8, lanczos 7, hann 7 across 49 x/multiplier comparisons
+  + [average_residual_abs_sharp] is 1.5461546221288350119651604168568593973241044946113632730650810036256047309213764
+  + [average_residual_abs_lanczos] is 1.8246104287154675741476728025806679618222600351073500424565139443247919559556743
+  + [average_residual_abs_fejer] is 1.9588896279253364462120536277556465586500444758606084244493186330668455066586817
+  + [average_residual_abs_hann] is 1.9818850220419405628571548294063471551779126887738602471621680225929865721958458
+  + [smallest_residual_abs] is hann at 0.0010070084570542273445980371416396056286080817866701417248538625581653919078470728
+  + [sharp_baseline_result] is sharp becomes an even stronger finite baseline by win count than in the fixed-T atlas
+
+& [ScaleMultiplierSummary] is the observed bounded multiplier field
+  + [average_residual_abs_c32] is 1.09138869113762
+  + [average_residual_abs_c24] is 1.16910174410118
+  + [average_residual_abs_c16] is 1.45323568417652
+  + [average_residual_abs_c12] is 1.67610076440038
+  + [average_residual_abs_c8] is 1.92317222836416
+  + [average_residual_abs_c6] is 2.56294071717487
+  + [average_residual_abs_c4] is 2.91925464706553
+  + [average_result] is larger tested c values improve average residual in this bounded grid
+  + [local_best_multipliers] are c32 for x=100, x=150, x=200, and x=300; c16 for x=500; c24 for x=800; and c8 for x=1000
+  + [local_result] is the best multiplier drifts by x and does not become a stable identity
+
+& [ScaleTiedSampleSummary] is the observed bounded sample field
+  + [x_100_best_sequence] is sharp,sharp,sharp,sharp,sharp,sharp,sharp with 0 switches
+  + [x_150_best_sequence] is sharp,hann,sharp,lanczos,lanczos,hann,lanczos with 5 switches
+  + [x_200_best_sequence] is sharp,sharp,sharp,sharp,sharp,sharp,sharp with 0 switches
+  + [x_300_best_sequence] is lanczos,hann,fejer,fejer,fejer,hann,hann with 3 switches
+  + [x_500_best_sequence] is sharp,sharp,sharp,lanczos,sharp,sharp,hann with 3 switches
+  + [x_800_best_sequence] is sharp,sharp,sharp,sharp,lanczos,fejer,fejer with 2 switches
+  + [x_1000_best_sequence] is sharp,lanczos,hann,fejer,fejer,fejer,sharp with 4 switches
+  + [stable_local_cases] are x=100 and x=200 where sharp remains best at every tested multiplier
+  + [high_switch_cases] are x=150 and x=1000 where best-window identity changes frequently
+
+& [ScaleMultiplierTransitionSummary] is the multiplier movement field
+  + [fejer_transitions] is improved 33 and worsened 9
+  + [hann_transitions] is improved 34 and worsened 8
+  + [lanczos_transitions] is improved 32 and worsened 10
+  + [sharp_transitions] is improved 26 and worsened 16
+  + [inference] is increasing c usually improves residuals for smoothed windows, but sharp remains less monotone and local windows still switch
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is T = c*log(x) is a cleaner coordinate law than fixed T because T/log(x) is held equal to c across samples
+  + [coordinate_result] is scale-tied T improves average residual structure and strengthens sharp as a finite baseline, but does not stabilize the whole residual surface
+  + [window_observation] is sharp dominates win count and average residual, while Fejer, Lanczos, and Hann still win local pockets
+  + [multiplier_observation] is c32 gives the best average residual, but best local c drifts by x, especially at x=500, x=800, and x=1000
+  + [bridge_result] is the scale-tied log atlas still does not justify another explicit/Euler bridge as a single coupled identity track
+  + [next_reasonable_coordinate] is compare multiple declared scale laws, rather than increasing smoothing policy complexity; candidates include T = c*log(x), T = c*sqrt(x), and T = c*sqrt(x)*log(x) only as bounded diagnostic laws
+  + [answered_question] is yes, T = c*log(x) should be retained as a cleaner diagnostic coordinate than fixed T, but no, it is not sufficient as a final stabilizing identity
+
+  = must: treat the atlas as finite residual sensitivity and coordinate-law diagnosis only
+  = must: keep scale-tied T separate from fixed T and raw zero-pair count
+  = must: treat c32 average strength and x=100/x=200 stability as local finite observations, not theorem signals
+  = must: require a new source-defined scale-law comparison before testing other x-dependent laws
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal cutoff-law superiority, or explicit/Euler bridge identity from this atlas
+
+(scale_tied_zero_height_atlas_pass_001) :finite scale-law diagnosis: /T=c*log(x), sharp baseline strengthened, local c drift remains/ |proof authority|

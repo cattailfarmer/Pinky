@@ -1,0 +1,43 @@
+Subject: Irregular Prime Distribution Bridge Specification
+
+Description: SJS-processed contract for returning irregular-prime periphery to whole-field prime distribution objects.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_irregular_prime_distribution_bridge\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Irregular_Prime_Periphery_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Math_Processing_Tool_Scripts_Specification.sop
+
+& [IrregularPrimeDistributionBridge] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 610f5060-afa3-45c1-bc24-e52e547ab579
+  + [source_snapshot_uuid] is bdbd9674-26e1-4be2-b80c-1c8912b070a1
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is measure irregular-prime counts and log weights beside pi(x), theta(x), and psi(x)
+  + [not_purpose] is proof, disproof, zero certification, or converting irregular primes into the central RH hypothesis
+
+  = must: preserve irregular primes as zeta-special-value periphery through Bernoulli numerator divisibility
+  = must: return every irregular-prime observation to whole-field rows containing pi(x), theta(x), and psi(x)
+  = must: report finite counts, density among odd primes, irregular theta weight, theta share, and global theta/psi error values
+  = must: keep generated rows deterministic and inspectable
+  = must: mark output proof_status as finite_irregular_prime_distribution_not_zero_line_evidence
+  - never: claim that finite irregular-prime distribution explains RH or the zero line
+  - never: revive the retired 641 special-form branch without a new source-defined identity
+
+& [IrregularPrimeDistributionTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\irregular_prime_distribution.py
+  + [runtime_function] is rh_math.irregular_primes.irregular_prime_distribution
+  + [input] is finite sample points or generated bounds, precision metadata, and optional member inclusion
+  + [output] is global pi/theta/psi rows and irregular-prime distribution rows
+  + [proof_status] is finite_irregular_prime_distribution_not_zero_line_evidence
+
+& [IrregularPrimeDistributionBridgeSJS] is the specification justification trace
+  + [protocol_uuid] is 978e4089-a2f6-413f-87d2-676f7602f551
+  + [source_snapshot_uuid] is bdbd9674-26e1-4be2-b80c-1c8912b070a1
+  + [canonical_specification_uuid] is 610f5060-afa3-45c1-bc24-e52e547ab579
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bridge_contract
+  + [reasoning_result] is irregular primes remain a useful zeta-adjacent periphery only when measured against the whole-prime distribution surface
+
+(irregular_prime_distribution_bridge) :zeta-special-value periphery measured against whole-field objects: /pi(x), theta(x), psi(x), and finite log weights/ |zero-line proof claims|
+  + [inside] is bounded irregular-prime distribution rows and whole-field comparison rows
+  + [boundary] is finite measurement and not theorem authority
+  |outside| RH proof, disproof, zero certification, and special-prime hypothesis sprawl

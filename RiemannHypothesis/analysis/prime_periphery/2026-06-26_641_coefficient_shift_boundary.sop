@@ -1,0 +1,51 @@
+Subject: 641 Coefficient Shift Boundary
+
+Description: Boundary analysis of 65537 * 641^N + shift(N) for fixed and N-dependent shifts.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_coefficient_shift_variant\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Coefficient_Power_Shift_Probe_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_coefficient_shift_probe_1m.json
+@ [restraint] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+
+& [Fermat641CoefficientShiftBoundary] is a completed bounded modular probe
+  + [analysis_uuid] is 82680d62-e014-4fcf-bf64-ee37e2e6083e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [focus_subject] is 65537 * 641^N + shift(N) where N is 3, 5, 17, 257, or 65537
+  + [small_factor_limit] is 1000000
+  + [status] is completed_and_abandoned_as_identity_track
+
+## Computed Boundary
+
+& [Boundary_001_FixedSmallShifts] is failed_identity_track
+  + [tested_shifts] is -4, -3, -2, -1, +1, +2, +3, +4
+  + [result] is every fixed-shift mode has at least four defining set failures under bounded small-divisor probing
+  + [isolated_survivor] is fixed +4 at N = 65537 under the current bound
+  + [meaning] is fixed small shifts do not track the Fermat-prime set identity
+
+& [Boundary_002_NDependentShifts] is failed_identity_track
+  + [tested_modes] is +N, -N, N+1, 1-N, and -(N+1)
+  + [+N_result] is every listed N has a small divisor under the bound
+  + [-N_result] is every listed N has a small divisor under the bound
+  + [N_plus_1_result] is only N = 5 survived the bound while N = 3, 17, 257, and 65537 failed
+  + [one_minus_N_result] is every listed N has a small divisor under the bound
+  + [minus_N_minus_1_result] is only N = 17 survived the bound while N = 3, 5, 257, and 65537 failed
+  + [meaning] is N-dependent shifts create isolated heat markers but do not track the set
+
+& [Realization_001_CoefficientPlacementChangesSurface] is a dense-node candidate
+  + [statement] is moving 641 from exponent operator to coefficient-power base changes the obstruction surface but does not recover the intended identity
+  + [reason] is bounded survivors are isolated and shift-specific rather than set-coherent
+  + [result] is abandon this coefficient-power branch as a tracked identity
+
+& [Realization_002_MethodRuleHolds] is a restraint confirmation
+  + [statement] is the two-failure abandonment rule prevents isolated survivors from becoming the center of inquiry
+  + [reason] is every tested shift rule fails across more than two defining set members
+  + [preserved_meaning] is isolated survivors may be retained as residue heat markers, not as identity tracks
+
+## Definite First-Pass Conclusion
+
+& [Conclusion_001] is definite_for_current_scope
+  + [statement] is 65537 * 641^N + shift(N) does not track the Fermat-prime set identity for the tested fixed or N-dependent shifts
+  + [survivors] is fixed +4 at N = 65537, N+1 at N = 5, and -(N+1) at N = 17 under the 1000000 bound
+  + [abandonment] is abandon the branch as a tracked identity because every shift rule has more than two set-member failures
+  + [next_boundary] is return attention to whole-field RH objects or require a new identity rule before more special-form testing

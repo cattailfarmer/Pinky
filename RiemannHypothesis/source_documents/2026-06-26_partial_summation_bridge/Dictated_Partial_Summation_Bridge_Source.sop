@@ -1,0 +1,22 @@
+Subject: Dictated Partial Summation Bridge Source
+
+Description: Preserved source for the smoothed Lambda-Mellin bridge inquiry.
+
+& [DictatedPartialSummationBridgeSource] is raw continuation source
+  + [source_snapshot_uuid] is 00c81407-468a-4099-b55f-77566e6752f2
+  + [captured_at] is 2026-06-26T16:59:35.537Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_smoothed_mellin_bridge_next after Lambda-Mellin bridge diagnosis
+  + [raw_need] is determine whether a smoother Stieltjes or partial-summation bridge can preserve the shared Lambda-Mellin unit while reducing raw finite-difference noise
+  + [prior_result] is raw finite differences of explicit psi estimates produced a coherent but non-shrinking bridge residual near 0.202 in the bounded grid
+  + [candidate_common_fabric] is Abel/partial summation: Sum_{n<=N} Lambda(n)n^-s equals psi(N)N^-s + s*Integral_2^N psi(x)x^(-s-1) dx for Re(s)>1, interpreted locally through exact step psi
+  + [candidate_bridge] is use the finite interval kernel psi(k)*(k^-s - (k+1)^-s) plus endpoint psi(N)N^-s, replacing raw Delta psi_hat(n) with a smoothed partial-summation projection of psi_hat
+  + [expected_value] is exact psi should reconstruct the exact finite Lambda sum while explicit psi_hat can be compared through the same kernel with less jump noise
+  + [boundary] is this is finite Re(s)>1 numerical bridge diagnosis, not proof, disproof, zero certification, critical-line evidence, or identity fusion
+
+  = must: preserve this raw source separately from canonical specification
+  = must: report exact partial-summation sanity residual against exact finite Lambda sum
+  = must: compare partial-summation projection residual against the prior raw finite-difference projection residual
+  = must: treat improvement as diagnostic support only
+  - never: treat finite partial-summation agreement as RH evidence

@@ -1,0 +1,17 @@
+Subject: Zero Height Cutoff Policy Source Document Manifest
+
+Description: Manifest for preserved source records governing the zero-height cutoff policy slice.
+
+& [ZeroHeightCutoffPolicySourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is f85c6eab-bd3b-48a5-88bd-011760381fcc
+  + [manifest_uuid] is 1350277c-d7cd-48dd-951f-beb0c239ed66
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_zero_height_cutoff_policy\Dictated_Zero_Height_Cutoff_Policy_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Zero_Height_Cutoff_Policy_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the cutoff policy finite and diagnostic
+  - never: treat finite zero-height cutoff traces as proof, disproof, zero certification, or RH evidence

@@ -1,0 +1,21 @@
+Subject: Lambda Window Cutoff Comparison Source Document Manifest
+
+Description: Manifest for the local source record authorizing the Lambda window and cutoff comparison scan.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_window_cutoff_comparison\Dictated_Lambda_Window_Cutoff_Comparison_Source.sop
+@ [prior_spec] C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Oscilloscope_Probe_Specification.sop
+@ [prior_analysis] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_pass_001.sop
+
+& [LambdaWindowCutoffComparisonSourceManifest] is the preserved source set for the comparison scan
+  + [manifest_uuid] is e1743a28-6da2-43f3-a5f5-503df755109f
+  + [source_snapshot_uuid] is b5faa7e8-7326-4467-93a9-24eef79f1809
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_window_cutoff_comparison\Dictated_Lambda_Window_Cutoff_Comparison_Source.sop
+  + [source_purpose] is turn the next Lambda Oscilloscope open question into a bounded deterministic comparison
+  + [preservation_event] is source/spec saved before implementation edits
+  + [authority_status] is local_source_for_bounded_scan_slice
+
+  = must: keep this source separate from scan implementation and analysis
+  = must: preserve prior Lambda Oscilloscope probe as support, not proof authority
+  - never: overwrite prior source or trace records with this comparison

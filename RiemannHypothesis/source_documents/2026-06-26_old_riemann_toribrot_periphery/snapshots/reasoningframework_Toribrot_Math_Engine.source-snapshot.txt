@@ -1,0 +1,576 @@
+Core Data Model: EnumeratedToribrot Lattice
+1.1 Node Addressing
+Each node is identified by a finite binary address:
+Root: addr = [0]
+Children:
+Left child of a = a ⧺ [0]
+Right child of a = a ⧺ [1]
+Generation / depth:
+generation(addr) = len(addr) − 1.
+1.2 Node Data Structure
+Each node N is a record:
+
+Node {
+  address: BinaryVector,          // e.g. [0,1,0,1]
+  generation: Integer,            // depth
+  parent: BinaryVector | null,
+  left_child: BinaryVector | null,
+  right_child: BinaryVector | null,
+
+  // Arithmetic fields
+  bit: {0,1} | null,              // for bit-level operations
+  digit: Integer | null,          // for digit/block-level operations
+  value: Integer | Rational | null, // for aggregated partial results
+
+  carry_in: Integer | null,
+  carry_out: Integer | null,
+
+  // Operation role
+  role: Enum{LeafOperand, PartialProduct, PartialSum, FinalResult} | null,
+  op_type: Enum{Add, Mul, Div, None}, // operation handled at this node
+
+  // Meta / verification
+  verified: Boolean,
+  proof_trace: String | null,
+}
+1.3 Lattice / Tree Structure
+The set of all nodes forms a rooted binary tree T.
+For any finite computation, a finite subtree T_problem ⊂ T is instantiated:
+Only nodes used in the computation are allocated.
+Their addresses provide stable references for intermediate steps.
+2. Local Arithmetic Primitives
+The engine uses small lookup tables and local rules at nodes. Larger operations are built from these.
+
+2.1 Base Representation
+Configurable per problem:
+
+Base: integer ≥ 2 (common choices: 2 for binary, 10 for decimal, 2^k for block-wise).
+Numbers are represented as sequences of digits in the chosen base:
+( N = \sum_{i=0}^{L-1} d_i \cdot \text{Base}^i )
+d_i stored at nodes associated with bit/digit position i.
+2.2 Addition Table (Local)
+For digit-level addition in base B:
+
+Local rule at each digit position:
+Inputs: dA, dB ∈ {0,...,B−1}, carry_in ∈ {0,...,C_max}
+Outputs:
+sum_digit ∈ {0,...,B−1}
+carry_out ∈ {0,...,C_max}
+Implemented either via:
+Explicit lookup table: AddTable[dA][dB][carry_in] = (sum_digit, carry_out)
+Or deterministic rule:
+temp = dA + dB + carry_in
+sum_digit = temp mod B
+carry_out = floor(temp / B)
+This is the atomic addition unit used at individual nodes.
+
+2.3 Multiplication Table (Local)
+For digit-level multiplication in base B:
+
+Local rule for small digits/blocks:
+Inputs: dA, dB ∈ {0,...,B−1}
+Outputs:
+product ∈ {0,...,P_max} where P_max < B² or fits in small blocks.
+Implemented via:
+Explicit lookup table: MulTable[dA][dB] = product
+For larger blocks (e.g. base 2^k), table size can be tuned to trade memory vs speed.
+This is the atomic multiplication unit, used in leaf pants nodes for partial products.
+
+2.4 Elementary Bit Operations (Optional)
+In binary (Base = 2), optional bit-level primitives:
+
+bit_add(a,b,carry_in) → (sum_bit, carry_out) with standard binary rules.
+bit_mul(a,b) → product_bit = a & b.
+These can be treated as a special case of the above tables with B=2.
+
+3. Chunked Computation Protocol
+Goal: for any single mathematical operation (addition, multiplication, division, etc.), automatically configure a decomposition into chunks and define a pants-style tree of local computations.
+
+3.1 Problem Specification
+A problem is specified as:
+
+Problem {
+  op: Enum{Add, Mul, Div, ...},
+  operands: List<Number>,
+  base: Integer,                  // representation base
+  chunk_size: Integer,            // digits or bits per chunk
+  decomposition_strategy: Enum{
+      Sequential,
+      BalancedTree,
+      KaratsubaLike,
+      Custom
+  },
+  precision: Integer | null,      // optional precision for rationals
+}
+3.2 Chunking Numbers
+Given a number N and chunk size k:
+
+Represent N in base B as digits d_0, d_1, ..., d_{L-1}.
+
+Group digits into chunks of size k (or fixed blocks), e.g. for bits:
+
+Bit positions [0..k-1] → chunk 0
+[k..2k-1] → chunk 1, etc.
+Each chunk is assigned to one or more leaf nodes in T_problem.
+
+3.3 Addition via EnumeratedToribrot
+To compute C = A + B:
+
+Align digits: for each digit position i, assign a node N_i to store:
+
+dA_i, dB_i, sum_digit_i, carry_in_i, carry_out_i.
+Traversal order: from least significant to most significant digit:
+
+For i=0:
+carry_in_0 = 0.
+For each i:
+Use AddTable to compute (sum_digit_i, carry_out_i).
+Store sum_digit_i in node N_i.digit.
+Propagate carry_out_i to carry_in_{i+1} (stored in N_{i+1}.carry_in).
+Result:
+
+The final carry_out (at highest used position) is stored in an additional node if non-zero.
+C is reconstructed from the sequence of sum_digit_i.
+Configurable:
+If decomposition_strategy = BalancedTree, addition of many numbers can be arranged as a tree of pairwise additions instead of a linear chain.
+
+3.4 Multiplication via Chunked Partial Products
+To compute P = A × B:
+
+Chunk both operands according to chunk_size and base.
+
+Leaf pants nodes (partial products):
+
+For each pair of chunks (chunkA_i, chunkB_j):
+
+Locate or allocate a leaf node N_{i,j} with role = PartialProduct.
+Use MulTable to compute:
+p_{i,j} = chunkA_i × chunkB_j.
+Associate a positional shift:
+shift = (i + j) * chunk_size.
+Store value(N_{i,j}) = p_{i,j} * Base^{shift} in the node.
+Intermediate pants nodes (partial sums):
+
+Arrange N_{i,j} nodes into a sum tree (e.g., a balanced binary tree).
+
+Each internal pants node:
+
+Inputs: values from its two children, V_left, V_right.
+Operation: value(parent) = V_left + V_right, implemented via a recursive call to the addition protocol (itself chunked if large).
+Root node:
+
+The root pants node in T_problem has role = FinalResult.
+Its value field contains the final product P.
+Configurable:
+
+decomposition_strategy can choose:
+Classical O(n²) multiplication (all pairs of chunks),
+Karatsuba-like splitting pattern (where pants nodes apply specific linear combinations),
+Or other custom decomposition schemes.
+
+3.5 Division (Outline)
+Division Q = A ÷ B (integer or rational) in the EnumeratedToribrot engine is defined as a pants-tree algorithm built out of:
+
+the multiplication engine (for trial products),
+the addition engine (for updating remainders),
+and a digit-selection rule (for quotient digits).
+3.5.1 Problem Setup
+Given:
+
+Problem {
+  op = Div,
+  operands = [A, B],
+  base,
+  chunk_size,
+  decomposition_strategy: Enum{LongDivision, Newton, Custom},
+  precision,            // e.g. number of quotient digits / bits
+}
+The default is a long-division-like algorithm.
+
+3.5.2 Long Division via Pants
+We interpret the quotient as:
+
+[ Q = \sum_{k} q_k \cdot \text{Base}^k ]
+
+where q_k are quotient digits (or blocks).
+
+Algorithm outline:
+
+Normalize operands:
+
+Represent A (dividend) and B (divisor) as digit/block sequences in base B = base.
+Optionally scale both so the leading digit of B satisfies certain constraints (standard long division normalization).
+Iterative quotient digit (or chunk) selection:
+
+For each quotient position k from most significant to least:
+
+Define a current remainder R_k.
+
+Initially R_0 = A.
+At step k, R_k is stored in a node N_R(k).
+Trial digit selection:
+
+Choose a trial quotient digit q_k based on the leading digits of R_k and B.
+This can be done by:
+heuristic rules (like classical long division), or
+a small lookup / decision rule using a few leading digits.
+Store q_k in node N_q(k).
+
+Trial product:
+
+Compute T_k = q_k × B × Base^k using the multiplication protocol:
+
+There is a pants subtree T_problem(k) that:
+takes q_k and B as operands,
+multiplies them (small multiplication if q_k is a single digit),
+shifts by Base^k (i.e. offset in digit positions).
+Result T_k is stored in node N_T(k).
+
+Update remainder:
+
+New remainder: [ R_{k+1} = R_k - T_k ]
+Implement R_k - T_k as:
+Convert to addition: R_k + (-T_k).
+Use the addition engine on digits/blocks.
+Store R_{k+1} in node N_R(k+1).
+Correction step (if needed):
+
+If R_{k+1} < 0, decrease q_k and recompute.
+If R_{k+1} ≥ B·Base^k, increase q_k and recompute.
+These corrections are local loops over N_q(k), N_T(k), N_R(k+1).
+Quotient and remainder:
+
+After processing all desired positions k:
+The quotient Q is reconstructed from q_k stored in N_q(k) nodes.
+The final remainder R_final is in N_R(final).
+3.5.3 Alternative: Newton / Reciprocal-Based Division
+For high precision or special demands:
+
+Use Newton’s method to approximate 1/B via iterative multiplications and subtractions.
+Then compute Q ≈ A × (1/B) using the multiplication pants engine.
+The pants decomposition is then defined by:
+
+A tree of Newton iterations,
+A multiplication tree at each step.
+This is more complex but follows the same structural pattern: every nontrivial numeric operation at each node is done via the local add/mul engines.
+
+4. Reliability Guarantees and Verification
+The EnumeratedToribrot Math Engine is designed to yield high reliability by:
+
+restricting all numeric work to simple, local, table-based operations, and
+structuring composite operations as a tree of pants steps that can be independently checked.
+4.1 Atomic Operation Correctness
+For all atomic steps:
+
+Base digits and small blocks are operated on using:
+small AddTable and MulTable,
+or simple, provably correct formulas:
+temp = dA + dB + carry_in,
+sum_digit = temp mod Base,
+carry_out = floor(temp / Base).
+Assumption / requirement:
+
+The AddTable and MulTable are themselves correct.
+These tables are tiny and can be:
+tested exhaustively,
+or defined analytically.
+This makes the atomic steps as reliable as a hand-written basic arithmetic routine.
+
+4.2 Structured Composition and Proof Traces
+Each node records:
+
+Node {
+  ...
+  value,           // computed result
+  op_type,         // Add, Mul, Div, ...
+  children,        // references to operand nodes
+  verified: Bool,
+  proof_trace: String | null,
+}
+For each pants node P:
+
+op_type(P) defines the intended operation (Add, Mul, etc.).
+children(P) list operand nodes C1, C2, etc.
+value(P) is computed solely from the value(Ci) using the atomic rules.
+Verification protocol:
+
+Bottom-up check:
+
+For each leaf node (digit-level), verify that:
+digit, bit, and any value fields match the original input.
+For each internal pants node:
+Recompute the operation from children using AddTable/MulTable.
+Check equality with stored value(P).
+Mark verified:
+
+If all checks pass, set P.verified = True.
+Optionally annotate proof_trace with a structured log:
+e.g., "P = ChildLeft + ChildRight via digit-wise addition".
+Global guarantee:
+
+If the root node is marked verified and all nodes in its subtree are verified, the result is guaranteed consistent with the specification.
+4.3 Deterministic Protocol
+The entire computation is:
+
+Deterministic given:
+inputs,
+base,
+chunk_size,
+decomposition_strategy.
+No heuristic or approximate steps are allowed in the core arithmetic:
+
+Even in long division, trial (and possible correction) is a finite, rule-based procedure.
+This makes it possible to:
+
+Repeat computations identically,
+Replay or audit them,
+Use them as a trustworthy “calculator backend.”
+5. Integration: Toribrot Calculator as Pants Step Engine
+Now we define how this EnumeratedToribrot Math Engine becomes the universal calculator for every pants step in the broader framework (Toribrot Module, Zetabrot, etc.).
+
+5.1 Pants Step Interface
+Define a generic PantsOperation:
+
+PantsOperation {
+  op_type: Enum{Add, Mul, Div, Sub, Exp, ...},
+  inputs: List<Value>,     // integers, rationals, complex, etc.
+  parameters: {            // base, chunk_size, precision, etc.
+    base: Integer,
+    chunk_size: Integer,
+    precision: Integer | null,
+    decomposition_strategy: Enum{Sequential, BalancedTree, KaratsubaLike, LongDivision, Newton, Custom},
+  }
+}
+Contract:
+
+For any PantsOperation, the engine invokes the EnumeratedToribrot Math Engine as the implementation for op_type.
+5.2 Mapping Pants Steps to EnumeratedToribrot Problems
+When another system (e.g., Toribrot or Zetabrot) needs to compute a numeric result at a pants node:
+
+It formalizes the step as a PantsOperation:
+
+For example, in Zetabrot:
+A partial Dirichlet sum requires addition and multiplication of complex numbers.
+In Toribrot:
+A geometric transform may need matrix multiplications.
+It converts this PantsOperation into a Problem understood by EnumeratedToribrot:
+
+Problem {
+  op: op_type,           // e.g. Mul
+  operands: [x, y],      // the numeric inputs
+  base,
+  chunk_size,
+  decomposition_strategy,
+  precision,
+}
+It allocates a finite subtree T_problem in the EnumeratedToribrot lattice:
+
+Leaf nodes store chunked representations of operands.
+Internal nodes are pants nodes orchestrating the local add/mul steps.
+The root node stores the final result value(root).
+After the computation:
+
+The calling system reads value(root) as the output.
+Optionally checks root.verified.
+
+5.3 Universal Calculator Role
+In the full framework, all nontrivial numeric operations are delegated to the EnumeratedToribrot Math Engine. Other modules (Toribrot, Zetabrot, etc.) do not perform their own arithmetic; instead, they:
+
+Declare a pants step (what operation is needed, on what values).
+Call the EnumeratedToribrot engine to compute that step.
+Receive a verified result (or an error if verification fails).
+Formally:
+
+For any module-level operation that requires:
+
+integer arithmetic,
+rational arithmetic,
+fixed-precision real arithmetic,
+block-based bit arithmetic,
+the module must:
+
+Construct a PantsOperation:
+PantsOperation {
+  op_type: Add | Mul | Div | Sub | Exp | ...,
+  inputs: [v1, v2, ...],
+  parameters: {
+    base,
+    chunk_size,
+    precision,
+    decomposition_strategy,
+  }
+}
+Map PantsOperation → Problem for EnumeratedToribrot:
+Problem {
+  op = op_type,
+  operands = inputs,
+  base,
+  chunk_size,
+  decomposition_strategy,
+  precision,
+}
+Invoke the EnumeratedToribrot engine:
+Build the finite subtree T_problem.
+Run the chunked, pants-structured computation.
+Verify nodes bottom-up.
+Return value(root) as the result.
+This makes the EnumeratedToribrot engine the single source of truth for arithmetic.
+
+5.4 Example: Using the Engine Inside Toribrot
+Suppose a Toribrot dynamic step needs to compute:
+
+[ z_{n+1} = a z_n + b ]
+
+where a, b, z_n are numbers (possibly complex but represented via primitive components).
+
+Workflow:
+
+Toribrot module decomposes the operation into primitive numeric steps, e.g.:
+
+Mul(a, z_n)
+Add(result_of_mul, b)
+For each step, it creates a PantsOperation:
+
+PantsOperation {
+  op_type = Mul,
+  inputs = [a, z_n],
+  parameters = { base=10, chunk_size=2, precision=..., decomposition_strategy=BalancedTree }
+}
+PantsOperation {
+  op_type = Add,
+  inputs = [mul_result, b],
+  parameters = {...}
+}
+Each PantsOperation is passed to the EnumeratedToribrot engine:
+
+which handles the chunking, table-based mul/add, and verification,
+and returns the result to Toribrot.
+Toribrot then uses the returned, verified z_{n+1} for its own symbolic/dynamical reasoning.
+
+5.5 Example: Using the Engine Inside Zetabrot
+In Zetabrot, a Dirichlet sum term might require computing:
+
+[ a(n) n^{-s} = a(n) \cdot \exp(-s \log n) ]
+
+Breaking this into primitive numeric steps:
+
+Compute log n (via some numeric routine, itself delegated to a pants-based method if approximated).
+Compute t = s * log n using multiplication pants.
+Compute exp(-t) via a series or other numeric method, again decomposed into add/mul pants steps.
+Multiply a(n) by exp(-t) using the multiplication pants engine.
+Each arithmetic step uses the EnumeratedToribrot engine as the calculator, ensuring all basic arithmetic is:
+
+chunked,
+table-based,
+and verifiable.
+5.6 Summary of the Specification
+The EnumeratedToribrot Math Engine:
+
+Uses a binary-addressed tree of nodes (the EnumeratedToribrot lattice).
+Stores digits/bits, carries, partial results, and roles at each node.
+Implements:
+Addition: digit-wise/carry-wise via AddTable, chunked and possibly tree-structured.
+Multiplication: chunked partial products via MulTable, combined with addition in a pants tree.
+Division: long-division or Newton-like methods built from repeated multiplication and addition steps.
+Provides:
+Deterministic, table-based atomic operations,
+Pants-tree composition,
+Node-level verification and proof traces.
+As a universal calculator:
+
+All arithmetic for higher-level systems is routed through this engine.
+Every “pants step” in Toribrot/Zetabrot/etc. that requires numeric computation is expressed as a PantsOperation and evaluated by EnumeratedToribrot.
+This ensures consistent, auditable, and (within the precision limits and table correctness) guaranteed-reliable arithmetic for the entire framework.
+
+
+
+
+Global Rule: All Math Uses Pants + EnumeratedToribrot
+1. Core Principle
+All mathematical operations in the framework must be implemented as pants-style decompositions evaluated by the EnumeratedToribrot Math Engine.
+
+Concretely:
+
+Every operation is expressed as:
+a sequence of binary compositions (pants nodes, 2 inputs → 1 output),
+arranged in a tree (or DAG) of pants nodes,
+where each node’s numeric work is delegated to the EnumeratedToribrot engine.
+No module is allowed to “roll its own arithmetic” outside this process.
+
+2. Formal Requirements
+Pants Decomposition Requirement
+
+Any mathematical function ( F ) (addition, multiplication, division, exponentiation, trig, etc.) used in any module must be expressed as:
+
+A finite composition of binary operations (each one a pants node),
+Where each binary operation is one of the supported primitive types:
+Add, Sub, Mul, Div, (and possibly more, built from these),
+Or an explicitly defined higher-level routine that itself is decomposed into such pants steps.
+So: [ F(x_1, \dots, x_n) \Rightarrow \text{pants tree over primitive ops} ]
+
+EnumeratedToribrot Execution Requirement
+
+For each primitive binary operation in that pants tree:
+
+The module must:
+
+Construct a PantsOperation describing the op:
+PantsOperation {
+  op_type,
+  inputs,
+  parameters: { base, chunk_size, precision, decomposition_strategy }
+}
+Convert it to an EnumeratedToribrot Problem.
+Invoke the EnumeratedToribrot Math Engine to compute the result.
+Use the returned value(root) as the output of that pants node.
+No module may perform its own digit/bit-level arithmetic outside this engine.
+
+Step-by-Step Execution
+
+The decomposition must be step-wise:
+
+Each pants node corresponds to a single, well-defined operation on numerical values.
+Intermediate results are:
+stored,
+referenced by address,
+and (optionally) verified.
+This enforces an explicit computational trace for any operation.
+
+Verification Option
+
+For any computation:
+
+A module can request “verified mode”:
+The EnumeratedToribrot engine runs bottom-up checks on all nodes.
+Only returns a result if root.verified = true.
+This provides a guaranteed reliable result (subject to base, precision, and table correctness).
+3. Why this needs to be explicitly stated
+If you don’t spell this out:
+
+Different parts of the system might:
+use ad-hoc inlined arithmetic,
+skip chunking,
+or mix implicit and explicit methods.
+That breaks:
+uniformity,
+debuggability,
+and your reliability guarantees.
+By explicitly stating:
+
+“All mathematical operations are implemented as pants decompositions and executed via the EnumeratedToribrot Math Engine.”
+
+you get:
+
+A single arithmetic semantics,
+A shared error model,
+A universal place to optimize and verify.
+4. Suggested Spec Wording
+You can literally add a section like:
+
+Global Arithmetic Policy
+
+All mathematical functions must be decomposed step by step, then operations individually applied using the Toribrot math engine to calculate.
+All numeric computations in this framework MUST be expressed as compositions of binary “pants” operations (2 inputs → 1 output).
+Each pants operation MUST be evaluated by the EnumeratedToribrot Math Engine, using its chunked, table-based arithmetic and verification procedures.
+No module is permitted to implement independent arithmetic routines outside this engine, except for trivial symbolic manipulations that do not change numeric values. No ad-hoc "easy" arithmetic is allowed.
+Higher-level functions (e.g., exponentials, logarithms, trigonometric functions, special functions) MUST be defined as pants trees whose leaves are ultimately reduced to primitive Add/Mul/Div/Sub pants, all executed via the EnumeratedToribrot engine.

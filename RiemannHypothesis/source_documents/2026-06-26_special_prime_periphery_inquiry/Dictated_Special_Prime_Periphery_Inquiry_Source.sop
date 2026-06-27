@@ -1,0 +1,17 @@
+Subject: Dictated Special Prime Periphery Inquiry Source
+
+Description: Raw dictated source preserving the user's request to investigate Fermat-prime-like oddities and nearby prime families.
+
+& [DictatedSpecialPrimePeripheryInquirySource] is preserved raw source for a special-prime periphery inquiry
+  + [source_uuid] is 4a94b7fe-120b-4687-8433-9aa31e8e0828
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "then there is a set of primes that I thought we should start with analyzing: 3, 5, 17, 257, and 65537... and I think 641 had some correlation... then there was another odd set of primes I thought to investigate but I can't remember. we should infer and inquire around those primes and others that have unique natures. I think that, for primes that have distinct oddities about them like that, unintuitive rules can be inferred about them under analysis and that may help understand the Riemann hypothesis landscape."
+
+  = must: preserve the Fermat-prime seed set as raw source before classification
+  = must: treat 641 as correlated periphery until its arithmetic relation is identified
+  = must: inquire around nearby odd prime families without collapsing resemblance into identity
+  = must: separate computed arithmetic facts from interpretive inference
+  - never: treat special-prime oddity as proof, disproof, or privileged RH theorem authority

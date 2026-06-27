@@ -1,0 +1,26 @@
+Subject: Dictated First Bookend Package Manifest Source
+
+Description: Raw source for a non-staging package manifest that turns the refreshed inventory into a reviewable first-bookend scope map.
+
+& [DictatedFirstBookendPackageManifestSource] is preserved source for first-bookend package manifest
+  + [source_snapshot_uuid] is 9fd1d6c8-12a0-4d17-8b14-237e5350917f
+  + [source_kind] is derived_from_first_bookend_delta_inventory_refresh_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [current_focal_point] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  @ [delta_inventory_refresh] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_delta_inventory_refresh_001.sop
+  @ [commit_scope_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+  @ [source_spec_inventory] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_source_spec_inventory_commit_readiness_001.sop
+  + [need] is convert the refreshed first-bookend inventory into a concise package map for future explicit staging direction
+  + [package_pressure] is RiemannHypothesis has enough source/spec/analysis/tool/test material to warrant a clean first bookend, but staging remains user-gated
+  + [scope_pressure] is CurrentFocalPoint is useful reentry state but belongs outside the RH-only default unless explicitly included
+  + [source_boundary] is this source authorizes package mapping only; it does not authorize staging, committing, branch creation, broad .sop mutation, runtime code changes, new math execution, proof claims, zero certification, or package expansion
+
+  = must: group the RH project files into source_documents, specifications, analysis, tools, tests, planning, and root docs
+  = must: mark .sop\state\CurrentFocalPoint.sop as optional explicit scope, not default RH-only scope
+  = must: keep broad .sop platform state and ignored runtime surfaces outside the package
+  = must: provide a future staging decision surface without performing staging
+  - never: use the package manifest as proof evidence or mathematical inference
+  - never: stage or commit from this source

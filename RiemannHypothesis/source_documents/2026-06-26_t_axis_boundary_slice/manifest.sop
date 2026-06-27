@@ -1,0 +1,16 @@
+Subject: T Axis Boundary Slice Source Manifest
+
+Description: Manifest for preserved source feeding the fixed-sigma t-axis boundary slice.
+
+& [TAxisBoundarySliceSourceManifest] is the source manifest
+  + [manifest_uuid] is a8d5da3b-e605-4cd4-91f0-c42ee2babb8f
+  + [source_snapshot_uuid] is 386555da-4497-4f6c-a62f-3da7d5fc9ddd
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_t_axis_boundary_slice\Dictated_T_Axis_Boundary_Slice_Source.sop
+  + [canonical_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\T_Axis_Boundary_Slice_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+  + [status] is preserved
+
+  = must: preserve raw dictated source separately from canonical specification
+  = must: process through SJS before implementation authority

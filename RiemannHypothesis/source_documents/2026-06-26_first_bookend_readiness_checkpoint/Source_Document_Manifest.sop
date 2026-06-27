@@ -1,0 +1,18 @@
+Subject: First Bookend Readiness Checkpoint Source Manifest
+
+Description: Manifest for preserved source material supporting the first-bookend readiness checkpoint.
+
+& [FirstBookendReadinessCheckpointSourceManifest] is source manifest
+  + [manifest_uuid] is 36f58d5c-d990-4c62-9699-c5bbb9978b14
+  + [source_snapshot_uuid] is cf31e769-0b72-4e3c-8d2c-7bba93f3de97
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [preserved_source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_readiness_checkpoint\Dictated_First_Bookend_Readiness_Checkpoint_Source.sop
+  @ [current_focal_point] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  @ [package_manifest] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_package_manifest_001.sop
+  @ [worktree_integrity_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_worktree_integrity_review_001.sop
+  @ [commit_scope_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+  + [preservation_status] is raw_source_preserved_before_canonical_specification
+  + [use_status] is eligible_for_sjs_processing
+  + [boundary] is readiness_checkpoint_only_no_staging_no_commit_no_test_run_no_new_math

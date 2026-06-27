@@ -1,0 +1,43 @@
+Subject: Exponential Shift Probe Specification
+
+Description: SJS-processed project-local contract for finite modular probes of large exponential forms such as 65537^(641*N) +/- 2.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_shift_two_variant\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_operator_hypothesis_boundary.sop
+
+& [ExponentialShiftProbe] is a deterministic math-processing tool contract
+  + [canonical_specification_uuid] is c49bc18c-a1d4-42be-9d5a-c01276ed4665
+  + [source_snapshot_uuid] is b7e7577e-bdd5-4c97-856e-bb47cdd8e605
+  + [solution_uuid] is 54012719-2ca6-4d7a-92fe-0c8f769695bc
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [role] is finite modular factor probing for large exponential shift forms
+  + [not_role] is primality proof, factorization proof, RH evidence, or theorem authority
+
+  = must: avoid expanding huge base^exponent expressions
+  = must: compute residues using modular exponentiation
+  = must: report forced divisibility rules for plus-one and minus-one shapes
+  = must: search bounded small prime divisors for arbitrary integer shifts
+  = must: include proof_status metadata stating bounded factor probing is not primality proof
+  - never: claim primality from no small divisor found
+
+& [ExponentialShiftProbeTool] is the script surface for bounded modular probes
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\exponential_shift_probe.py
+  + [input] is base, exponent list, shift list, and small factor limit
+  + [output] is parity, forced divisors, bounded small prime divisors, and metadata
+  + [proof_status] is bounded_exponential_shift_probe_not_primality_proof
+
+## SJS Processing Trace
+
+& [ExponentialShiftProbeSJS] is the specification justification trace
+  + [protocol_uuid] is 7f7ba849-94b7-4752-99d2-673514c4d83e
+  + [source_snapshot_uuid] is b7e7577e-bdd5-4c97-856e-bb47cdd8e605
+  + [canonical_specification_uuid] is c49bc18c-a1d4-42be-9d5a-c01276ed4665
+  + [solution_uuid] is 54012719-2ca6-4d7a-92fe-0c8f769695bc
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [reasoning_result] is test the shift-two correction through finite modular arithmetic and bounded divisor search while refusing primality or RH claims
+
+(exponential_shift_probe) :large exponential form boundary testing: /modular residues and bounded factors/ |primality proof or RH evidence|
+  + [inside] is parity, forced divisibility, small divisor hits, and no-expansion arithmetic
+  + [boundary] is no proof from bounded searches
+  |outside| proof, disproof, complete factorization, and RH inference

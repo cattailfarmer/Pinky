@@ -1,0 +1,148 @@
+Subject: Sparse Realization Focus Pass 001
+
+Description: First application of the sparse-realization to dense-node framework to the RiemannHypothesis workspace.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_conceptual_hack_boundary_inspection.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_framework_initial_periphery_inspection.sop
+@ [source] C:\Project\Pinky\.sop\events\reviews\2026-06-26_codex_sop_operating_system_readiness_review_001.sop
+
+& [SparseRealizationFocusPass001] is the first operating pass using sparse realizations and dense-node gates
+  + [pass_uuid] is 99cd34e6-3a5f-4919-a1e9-c87ec23333f8
+  + [pass_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [method] is periphery_focus plus sparse_to_dense_lifecycle
+  + [status] is first_pass_complete
+
+  = must: keep sparse realizations lightweight
+  = must: densify only subjects that passed enough boundary tests
+  = must: preserve causal and casual relation types separately
+
+## Sparse Realizations
+
+& [SR001_ConceptualWorkspace] is a sparse realization
+  + [drawn_from] is user correction and old framework inspection
+  + [realization_text] is the old Riemann workspace is conceptual periphery, not a ready implementation architecture
+  + [surface_fact_set] is user said the original workspace was conceptual and some concepts may not help
+  + [relation_hint_set] is causal: missing programmatic test and feedback capability may have caused conceptual workaround modules; casual: old symbolic coherence still helps attention navigate
+  + [scope_pressure] is scope out implementation authority and scope in conceptual provenance
+  + [promotion_condition] is classify each old object before import
+  + [outside] is proof that every old concept is unhelpful
+
+& [SR002_ToribrotMathAsWorkaround] is a sparse realization
+  + [drawn_from] is conceptual hack correction and old Enumerated Toribrot Math Engine repair ledger
+  + [realization_text] is the Toribrot math module likely preserves a real runtime need while its Toribrot-branded architecture may be a workaround hack
+  + [surface_fact_set] is old file says not RH_solver or universal_math_oracle and records source_fault as fusing arithmetic substrate, Toribrot geometry, and RH analysis
+  + [relation_hint_set] is causal: missing clean math/test/feedback loop enabled the workaround; contrast: runtime need is not the same identity as Toribrot geometry
+  + [scope_pressure] is scope out first import target and proof engine; scope in exactness, approximation, caller boundary, and feedback-loop lessons
+  + [promotion_condition] is design a clean test/math/feedback loop or kernel command surface
+  + [outside] is claim that no Toribrot math ideas have value
+
+& [SR003_ZetaOscilloscopeAsFiniteInstrument] is a sparse realization
+  + [drawn_from] is old framework initial periphery inspection
+  + [realization_text] is ZetaOscilloscope appears more likely to become a useful finite instrument than the Toribrot math engine
+  + [surface_fact_set] is finite cutoff N, sigma, t, Lambda(n), W_N, exp(-i t log(n)), and explicit proof boundary
+  + [relation_hint_set] is dependency: Zetabrot defines the spectral form read by the oscilloscope; causal unknown: whether implementing it first improves RH understanding; casual: it is visually and symbolically attractive
+  + [scope_pressure] is scope out RH detector and scope in finite experiment surface
+  + [promotion_condition] is import source snapshot and compare old canonical repair ledger before runtime implementation
+  + [outside] is theorem-level meaning of finite traces
+
+& [SR004_KernelBeforeOS] is a sparse realization
+  + [drawn_from] is Codex SOP operating-system readiness review
+  + [realization_text] is the .sop system is ready for a kernel-shaped boot loop, not a full operating system
+  + [surface_fact_set] is authority root, current focus, attention registry, operating loop, task manager, and launch queue exist while boot protocol, command surface, permissions, process table, and tests are missing
+  + [relation_hint_set] is causal: missing boot and command surfaces block OS claim; dependency: kernel v0 can test source import and feedback loops
+  + [scope_pressure] is scope out complete OS and scope in CodexSOPKernelV0
+  + [promotion_condition] is write boot protocol and test it on RiemannHypothesis classification/import work
+  + [outside] is autonomous scheduling or worker launch
+
+& [SR005_CausalCasualRelationNeed] is a sparse realization
+  + [drawn_from] is current user directive
+  + [realization_text] is relation tracing needs two lanes: causal relations for supported mechanisms and casual relations for loose periphery navigation
+  + [surface_fact_set] is user explicitly requested causal and casual relationships
+  + [relation_hint_set] is dependency: dense nodes need typed relations; contrast: casual resemblance must not become causal explanation
+  + [scope_pressure] is scope out proof by relation and scope in attention navigation value
+  + [promotion_condition] is use relation trace records in the next object classification pass
+  + [outside] is a full causal model of the old workspace
+
+## Dense Node Candidates
+
+& [DN001_PeripheryFocusPrimitive] is a dense node candidate
+  + [subject] is Periphery Focus Primitive
+  + [inside] is object identification, surface facts, triangulation, internal/external classification, not-it growth, incomplete-inference boundary, and entangled-not-local system measurement
+  + [outside] is proof, exhaustive coverage, hidden model state, and automatic import authority
+  + [references] are C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_periphery_focus_primitive and RiemannHypothesis periphery workspace specification
+  + [relation_ledger] is dependency to sparse-realization framework and causal support for project inspection order
+  + [authority_status] is project_authority_via_prior_source_and_current_spec
+  + [use] is sensory front end for drawing old framework objects into focus
+  + [gate_result] is accepted_as_dense_node_for_project_method
+
+& [DN002_ConceptualHackClassifier] is a dense node candidate
+  + [subject] is Conceptual Hack Classifier
+  + [inside] is useful primitive, conceptual scaffold, workaround hack, obsolete analogy, import candidate, and defer classifications
+  + [outside] is final rejection of old concepts, proof that a concept cannot later be useful, and automatic import
+  + [references] are conceptual hack correction source, conceptual hack boundary inspection, and project manager Task_002
+  + [relation_ledger] is causal relation from missing runtime feedback capability to workaround modules; casual relation from old symbolic coherence to navigation value
+  + [authority_status] is project_authority_for_next_classification_pass
+  + [use] is classify old Riemann/Zeta/Toribrot objects before source snapshot import
+  + [gate_result] is accepted_as_dense_node_for_planning
+
+& [DN003_CleanTestMathFeedbackLoop] is a dense node candidate
+  + [subject] is Clean Test Math Feedback Loop
+  + [inside] is ordinary executable testing, math operations, precision/error reporting, evidence capture, and feedback records
+  + [outside] is Toribrot identity, RH proof, theorem engine, and symbolic workaround machinery
+  + [references] are Toribrot math module correction and CodexSOPKernel readiness review
+  + [relation_ledger] is causal candidate that missing feedback loop produced workaround pressure; dependency candidate that ZetaOscilloscope runtime needs a clean feedback loop
+  + [authority_status] is proposal_only
+  + [use] is future kernel/runtime specification target
+  + [gate_result] is not_yet_dense_because implementation surface and command protocol are not scoped
+
+## Relation Ledger
+
+& [RelationTrace001_MissingRuntimeToHackModule] is a relation trace
+  + [source_subject] is missing clean test/math/feedback loop
+  + [target_subject] is Toribrot math module workaround pressure
+  + [relation_type] is causal
+  + [support] is user correction plus old repair ledger recording over-fusion and pruned oracle/RH-solver claims
+  + [confidence] is medium
+  + [promotion_rule] is strengthen by reading old source snapshot and identifying exactly what runtime capability the module tried to replace
+  + [outside] is proof that all Toribrot math content is useless
+
+& [RelationTrace002_ToribrotGeometryToZetabrotArithmetic] is a relation trace
+  + [source_subject] is Toribrot geometry
+  + [target_subject] is Zetabrot arithmetic/spectral layer
+  + [relation_type] is analogical
+  + [support] is old workspace bridge language and initial periphery inspection
+  + [confidence] is medium
+  + [promotion_rule] is keep as entangled-but-not-local unless a specific mathematical map is defined
+  + [outside] is identity, proof, or causal mechanism
+
+& [RelationTrace003_ZetabrotToZetaOscilloscope] is a relation trace
+  + [source_subject] is Zetabrot Fourier layer
+  + [target_subject] is ZetaOscilloscope
+  + [relation_type] is dependency
+  + [support] is old canonical descriptions where ZetaOscilloscope is finite readout of Lambda-Zetabrot Fourier layer
+  + [confidence] is high
+  + [promotion_rule] is import both source snapshots before implementation
+  + [outside] is proof that the visualization has theorem value
+
+& [RelationTrace004_SymbolicCoherenceToNavigation] is a relation trace
+  + [source_subject] is old symbolic workspace coherence
+  + [target_subject] is new periphery navigation
+  + [relation_type] is casual
+  + [support] is old terms help find objects and relations but do not establish local authority
+  + [confidence] is medium
+  + [promotion_rule] is use symbols as search and attention handles only
+  + [outside] is causal proof or import readiness
+
+## Focus Result
+
+& [FocusPass001Result] is the settled output of this pass
+  + [dense_node_accepted] is DN001_PeripheryFocusPrimitive and DN002_ConceptualHackClassifier
+  + [kept_sparse] is SR001_ConceptualWorkspace, SR002_ToribrotMathAsWorkaround, SR003_ZetaOscilloscopeAsFiniteInstrument, SR004_KernelBeforeOS, and SR005_CausalCasualRelationNeed
+  + [proposal_node] is DN003_CleanTestMathFeedbackLoop
+  + [next_focus] is use ConceptualHackClassifier on old Riemann/Zeta/Toribrot objects before importing source snapshots
+  + [outside] is full OS, proof-grade RH claims, autonomous workers, and Toribrot math architecture import
+
+  = must: use accepted dense nodes in the next classification pass
+  = must: keep proposal node out of authority until kernel/runtime surface is scoped

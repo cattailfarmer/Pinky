@@ -1,0 +1,67 @@
+Subject: Whole Field Record Index 001
+
+Description: Non-mutating index over existing RH record branches and their frontier states.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_record_index\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Record_Index_Specification.sop
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_inquiry_gate_not_commit_gate_001.sop
+
+& [WholeFieldRecordIndex001] is a completed non-mutating index pass
+  + [analysis_uuid] is 284693b2-5ec3-46ff-ab39-983d3071d8b2
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_record_index
+  + [proof_status] is record_index_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is record synthesis only
+
+& [BranchBandIndex] is current_record_surface
+  + [periphery_inspections] is 13 SOP records covering old framework import boundary, periphery focus primitive, walking continuity, worktree review, commit-scope mutation gate, and inquiry-gate correction
+  + [prime_periphery] is 8 SOP records plus 10 JSON traces covering Fermat-prime seeds, 641 branches, identity-abandonment discipline, and irregular primes
+  + [prime_distribution] is 7 SOP records plus 6 JSON traces covering family distribution, intervals, prime-power decomposition, shell metaphor, and shell signatures
+  + [zero_behavior] is 33 SOP records plus 20 JSON traces covering explicit formula, windows, cutoff laws, Lambda/Euler bridges, half-plane boundary, landmark overlay, residual movement, and Lambda overlay stability
+  + [toolchain] is 2 SOP records supporting deterministic Python math tools and verification posture
+
+& [ClosedBranchLedger] is active
+  + [closed_001_641_special_forms] is retired as an active identity track because defining set members failed to track
+  + [closed_002_shell_expansion] is paused unless a new comparison target is named
+  + [closed_003_explicit_euler_kernel_loop] is paused because the branch found a bridge-improvement versus cutoff-bias Pareto surface rather than fused identity
+  + [closed_004_residual_movement_tooling] is folded into DenseNode_ExplicitFormulaResidualSurface, not promoted as new active frontier
+  + [closed_005_landmark_overlay_computation] is paused unless a new measured overlay object is named
+  + [closed_006_lambda_overlay_road] is locally complete after contribution, displacement, and cross-window stability syntheses
+
+& [SupportLaneLedger] is active
+  + [support_001_prime_counting_theta_psi] is baseline whole-field arithmetic mechanics
+  + [support_002_prime_power_layer] is exact psi-theta correction and Lambda texture support
+  + [support_003_euler_log_derivative_half_plane] is stable Re(s)>1 weighting support
+  + [support_004_explicit_residual_surface] is central approximation-surface support with cutoff/window sensitivity visible
+  + [support_005_reference_landmarks] is orientation support only
+  + [support_006_lambda_diagnostic_overlay] is phasor and prime-power inspection support only
+  + [support_007_bridge_restraint] is governance support preventing numerical sprawl
+
+& [OpenNonMutatingInquiry] is current_frontier
+  + [frontier_001_contradiction_ledger] is compare branch conclusions for conflicts among pause rules, support roles, and next-lead selections
+  + [frontier_001_value] is contradiction handling and route clarity
+  + [frontier_002_record_to_dense_node_matrix] is map each existing analysis record to the six dense nodes and sparse periphery set
+  + [frontier_002_value] is reentry fidelity and whole-field navigation
+  + [frontier_003_commit_bookend_scope_wait] is keep mutation boundary visible while inquiry proceeds
+  + [frontier_003_value] is governance and review fidelity
+  + [selected_next_nonmutating_lead] is record-to-dense-node matrix
+  + [selection_reason] is it improves navigation and future contradiction checks without new computation, staging, or branch reopening
+
+& [RestraintSet] is retained
+  + [no_new_math] is no deterministic script is justified by this index alone
+  + [no_staging] is commit scope still requires explicit user direction
+  + [no_proof_claims] is no finite trace, branch map, or index is RH evidence
+  + [no_branch_reopen] is paused branches stay paused unless a new source-defined purpose names a measured object
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is the RH workspace now has a navigable branch index supporting continued non-mutating inquiry
+  + [next_action] is create a record-to-dense-node matrix from existing analysis records
+  + [boundary] is no Git mutation, broad .sop mutation, new computation, proof claim, or zero certification occurred
+
+(whole_field_record_index_001) :non-mutating route index: /branch bands, closed ledger, support lanes, next matrix/ |proof claims|
+  + [inside] is existing-record navigation and next non-mutating lead
+  + [boundary] is inquiry continues while mutation remains gated
+  |outside| staging, commit, proof, zero certification, ignored runtime inclusion, and paused-branch sprawl

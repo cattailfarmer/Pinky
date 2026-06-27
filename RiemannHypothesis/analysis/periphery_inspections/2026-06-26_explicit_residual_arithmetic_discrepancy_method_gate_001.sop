@@ -1,0 +1,55 @@
+Subject: Explicit Residual Arithmetic Discrepancy Method Gate 001
+
+Description: Non-mutating method-gate review for the explicit residual arithmetic discrepancy candidate.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_method_gate\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Method_Gate_Specification.sop
+@ [candidate_source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_explicit_residual_arithmetic_discrepancy_source_intake_001.sop
+
+& [ExplicitResidualArithmeticDiscrepancyMethodGate001] is a completed non-mutating method-gate review
+  + [analysis_uuid] is fcb72d75-9a82-46f8-9afd-86c8c290d87a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_method_gate_review
+  + [proof_status] is method_gate_review_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is method-contract synthesis only
+
+& [MethodGateResult] is current_result
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [existing_trace_synthesis_ready] is yes
+  + [new_numerical_processing_ready] is no
+  + [implementation_ready] is no
+  + [tool_reuse_status] is existing explicit_residual_movement_decomposition trace already contains the required row fields and summary fields
+  + [reason_ready] is deterministic inputs, outputs, finite metrics, contradiction handling, retirement, artifact path, and exit condition are now specified for existing-trace synthesis
+  + [reason_not_numerical] is no current method need justifies rerunning, widening, adding windows, adding cutoffs, adding kernels, or tuning scale laws
+
+& [GateCompletion] is admission_gate_update
+  + [source_gate] is satisfied
+  + [purpose_gate] is satisfied
+  + [dense_node_parentage_gate] is satisfied
+  + [whole_field_relevance_gate] is satisfied
+  + [identity_boundary_gate] is satisfied_for_existing_trace_synthesis
+  + [existing_evidence_gate] is satisfied
+  + [deterministic_method_gate] is satisfied_for_existing_trace_synthesis
+  + [contradiction_handling_gate] is satisfied_for_existing_trace_synthesis
+  + [restraint_gate] is satisfied
+  + [exit_gate] is satisfied_for_existing_trace_synthesis
+  + [truth_boundary_gate] is satisfied
+  + [candidate_status] is existing_trace_synthesis_ready_not_new_processing_ready
+
+& [NextNonMutatingLead] is selected
+  + [selected_next] is explicit residual arithmetic discrepancy existing-trace synthesis
+  + [reason] is the candidate has an existing-trace method contract and should be synthesized before any new computation is considered
+  + [blocked_next] is no new math execution, no denser scans, no branch reopening, no staging, and no commit
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is method-contract readiness is complete for existing-trace synthesis only
+  + [next_action] is synthesize the existing movement trace into an explicit residual arithmetic discrepancy result
+  + [boundary] is no Git mutation, broad .sop mutation, runtime code change, test run, proof claim, zero certification, new math execution, or branch reopening occurred
+
+(explicit_residual_arithmetic_discrepancy_method_gate_001) :method gate review: /existing trace synthesis ready; new numerical processing blocked/ |proof claims|
+  + [inside] is method readiness and bounded next synthesis
+  + [boundary] is inquiry navigation only
+  |outside| proof, zero certification, staging, commit, branch reopening, new computation, and identity fusion

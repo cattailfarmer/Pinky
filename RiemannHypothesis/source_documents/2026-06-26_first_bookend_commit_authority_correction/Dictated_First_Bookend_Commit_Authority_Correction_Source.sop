@@ -1,0 +1,26 @@
+Subject: Dictated First Bookend Commit Authority Correction Source
+
+Description: Raw source preserving the user's correction that project-local bookend commits are standard walking procedure in SOP, not a special permission event.
+
+& [DictatedFirstBookendCommitAuthorityCorrectionSource] is preserved source for project bookend commit authority correction
+  + [source_snapshot_uuid] is 06fdd049-6032-4313-a592-1a9599938170
+  + [source_kind] is direct_user_correction
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [current_focal_point] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  @ [readiness_checkpoint] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_readiness_checkpoint_001.sop
+  @ [package_manifest] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_package_manifest_001.sop
+  + [user_correction] is commits are standard operating procedure in subject oriented programming when the project bookend is ready
+  + [user_boundary_reframe] is this project is not a delicate workspace to tread lightly; it is Codex's active stomping ground
+  + [authority_correction] is RH-only bookends should be treated as autonomous walking procedure once package and readiness checks find no blocker
+  + [scope_boundary] is broader .sop platform authority, unrelated projects, and optional CurrentFocalPoint state remain separate scope decisions
+  + [source_boundary] is this source authorizes project-local RH-only bookend commitment after readiness; it does not authorize broad .sop staging, unrelated project staging, theorem claims, new math execution, or ignored runtime inclusion
+
+  = must: distinguish project-local bookend authority from broad authority mutation
+  = must: treat RH-only first bookend as SOP walking action when package/readiness records find no blocker
+  = must: preserve repo-first review after the bookend
+  = must: keep CurrentFocalPoint useful as live continuity even when not included in the RH-only commit
+  - never: hide unrelated dirty state inside the RH bookend
+  - never: treat a project bookend commit as proof evidence or mathematical progress

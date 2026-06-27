@@ -1,0 +1,18 @@
+Subject: Walking Continuity Correction Source Document Manifest
+
+Description: Manifest for preserved source governing the Riemann Hypothesis walking-continuity correction.
+
+& [WalkingContinuityCorrectionSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 445a45e7-73e6-4753-84a6-19e71c14ad2d
+  + [manifest_uuid] is 711a5403-be16-4e1d-bac1-600213682a5f
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_walking_continuity_correction\Dictated_Walking_Continuity_Correction_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Walking_Continuity_Correction_Specification.sop
+  + [source_preservation_rule] is raw user correction remains separate from canonical specification and analysis
+  + [authority_status] is source_preserved_before_focal_state_update
+
+  = must: process this source through specification before treating it as operating authority
+  = must: cite StepBalanceWalk, PeripheryContinuityRun, RepoFirstInternalScan, TurnBookmark, and TrailingChecksumVoice before changing cadence
+  = must: preserve local branch closure as a step-settlement event rather than global idle when periphery remains valuable
+  - never: use this source to authorize proof claims, zero certification, or undisciplined scope expansion

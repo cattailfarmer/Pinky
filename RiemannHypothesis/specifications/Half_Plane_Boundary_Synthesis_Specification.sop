@@ -1,0 +1,41 @@
+Subject: Half Plane Boundary Synthesis Specification
+
+Description: SJS-processed contract for refining DenseNode_EulerLogDerivativeHalfPlane using existing Re(s)>1 traces.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_half_plane_boundary_synthesis\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_next_dense_node_after_residual_integration_selection_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+
+& [HalfPlaneBoundarySynthesis] is a project-local finite synthesis contract
+  + [source_snapshot_uuid] is ba7c971c-5356-45fb-a4b0-7fd051c443be
+  + [manifest_uuid] is f3e42117-1076-4498-bd05-aa17406440e1
+  + [canonical_specification_uuid] is fd856799-4f0e-4e5a-b007-605ae2d74c4d
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is refine DenseNode_EulerLogDerivativeHalfPlane as a Re(s)>1 boundary-orientation node using existing traces
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, critical-line authority, new scans, new math-processing tools, or explicit/Euler bridge reopening
+
+  = must: identify the stable inside field of the half-plane node
+  = must: distinguish pole-axis growth from ordinary vertical behavior and known-zero-ordinate reference behavior
+  = must: treat known-zero ordinates as labels and landmarks only
+  = must: preserve prime-bound truncation as a finite cutoff identity, not infinite convergence proof
+  = must: preserve metric-dependent vertical resonance extrema as comparison landmarks, not zero detectors
+  = must: define future-tool conditions only if existing records leave a named measured quantity unanswered
+  = must: mark proof_status as finite_half_plane_boundary_synthesis_not_rh_evidence
+  - never: infer critical-line truth from Re(s)>1 behavior
+  - never: promote half-plane residual calm near known ordinates into zero certification
+  - never: authorize new scans from curiosity alone
+
+& [HalfPlaneBoundarySynthesisSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_bounded_half_plane_boundary_synthesis_contract
+  + [reasoning_result] is existing traces are rich enough to refine the half-plane node before any new math-processing work
+
+(half_plane_boundary_synthesis) :finite Re(s)>1 boundary synthesis: /Euler-log-derivative node, pole axis, t-axis, landmarks, resonance, truncation/ |critical-line authority|
+  + [inside] is bounded synthesis of existing Re(s)>1 traces
+  + [boundary] is orientation and governance only
+  |outside| RH proof, disproof, zero certification, critical-line evidence, new scans, and bridge fusion

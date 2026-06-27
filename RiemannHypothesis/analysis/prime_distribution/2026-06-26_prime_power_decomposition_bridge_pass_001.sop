@@ -1,0 +1,61 @@
+Subject: Prime Power Decomposition Bridge Pass 001
+
+Description: First bounded decomposition of psi(x) and psi interval movement into prime-power layers.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_power_decomposition_bridge\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Power_Decomposition_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_trace.json
+
+& [PrimePowerDecompositionBridgePass001] is a completed bounded whole-field mechanics pass
+  + [analysis_uuid] is ec326363-797e-4671-a09b-b188e8fe5109
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_power_decomposition.py
+  + [proof_status] is finite_prime_power_decomposition_not_rh_evidence
+  + [status] is completed
+
+& [CumulativeTrace_001] is bounded_arithmetic_fact
+  + [sample_points] is 100, 200, 500
+  + [x_100_theta_x] is 83.72839039906392
+  + [x_100_psi_x] is 94.04531122935739
+  + [x_100_higher_prime_power_sum] is 10.31692083029347
+  + [x_100_higher_power_share_of_psi] is 0.1097015969794879
+  + [x_200_theta_x] is 188.5635062715073
+  + [x_200_psi_x] is 206.1458568250548
+  + [x_200_higher_prime_power_sum] is 17.58235055354742
+  + [x_200_higher_power_share_of_psi] is 0.08529082672017341
+  + [x_500_theta_x] is 474.5544441546942
+  + [x_500_psi_x] is 501.6521166497476
+  + [x_500_higher_prime_power_sum] is 27.09767249505345
+  + [x_500_higher_power_share_of_psi] is 0.05401686068031281
+  + [prime_power_event_count_to_500] is 114
+  + [higher_prime_power_event_count_to_500] is 19
+  + [max_exponent_seen_to_500] is 8
+
+& [IntervalTrace_001] is bounded_arithmetic_fact
+  + [interval_0_100_theta_increment_minus_length] is -16.27160960093608
+  + [interval_0_100_higher_prime_power_increment] is 10.31692083029347
+  + [interval_0_100_psi_increment_minus_length] is -5.954688770642608
+  + [interval_100_200_theta_increment_minus_length] is 4.835115872443410
+  + [interval_100_200_higher_prime_power_increment] is 7.265429723253953
+  + [interval_100_200_psi_increment_minus_length] is 12.10054559569736
+  + [interval_200_500_theta_increment_minus_length] is -14.00906211681314
+  + [interval_200_500_higher_prime_power_increment] is 9.515321941506025
+  + [interval_200_500_psi_increment_minus_length] is -4.493740175307119
+
+& [IdentityInference_001] is whole_field_mechanics_result
+  + [inference] is prime powers are not a separate special-prime identity here; they are the exact arithmetic correction that distinguishes psi from theta
+  + [boundary] is this decomposition explains psi-theta mechanics but does not explain zeta-zero behavior, explicit-formula error, or RH truth status
+  + [noted_motion] is higher prime powers softened theta deficits in 0-100 and 200-500, and amplified the positive interval movement in 100-200
+  + [restraint] is the declining cumulative higher-prime-power share across 100, 200, and 500 is a local finite observation only
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is psi interval movement should be decomposed by prime powers before interpreting family probes
+  + [reason] is the higher-prime-power layer materially changes interval error movement while remaining part of the whole-field psi object
+  + [next_relevant_periphery] is explicit-formula error and Euler-product or logarithmic-derivative weighting, not more special-prime families yet
+  + [retained_boundary] is finite prime-power traces are arithmetic support and not RH evidence by themselves
+
+(prime_power_decomposition_bridge_pass_001) :psi mechanics before family interpretation: /theta layer plus higher prime powers/ |zero-line proof claims|
+  + [inside] is finite layer sums, interval movement, and whole-field return
+  + [boundary] is useful arithmetic decomposition but incomplete RH explanation
+  |outside| RH proof, disproof, zero certification, and special-prime hypothesis sprawl

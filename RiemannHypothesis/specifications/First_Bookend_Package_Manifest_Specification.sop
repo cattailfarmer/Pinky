@@ -1,0 +1,42 @@
+Subject: First Bookend Package Manifest Specification
+
+Description: SJS-processed contract for a non-staging package manifest for the RiemannHypothesis first bookend.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_first_bookend_package_manifest\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_first_bookend_delta_inventory_refresh_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_commit_scope_review_001.sop
+
+& [FirstBookendPackageManifestSpecification] is a non-staging package-map contract
+  + [source_snapshot_uuid] is 9fd1d6c8-12a0-4d17-8b14-237e5350917f
+  + [manifest_uuid] is 1c2244ae-d586-4b4b-9672-e93bca732d59
+  + [canonical_specification_uuid] is bad4aedf-1a6d-4361-a6f6-bb028ae88ffd
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [workspace_root] is C:\Project\Pinky
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is provide a concise first-bookend package map for future explicit staging direction
+  + [not_purpose] is staging, committing, branch creation, broad .sop mutation, runtime code change, deterministic math execution, proof claim, disproof claim, zero certification, or route expansion
+  + [proof_status] is governance_manifest_not_rh_evidence
+
+& [PackageManifestContract] is bounded
+  + [default_package] is RiemannHypothesis project files only
+  + [optional_package_addition] is .sop\state\CurrentFocalPoint.sop only by explicit user direction
+  + [excluded_package] is broad .sop platform dirty state and ignored runtime surfaces
+  + [required_groups] are root docs, planning, tests, tools, source_documents, specifications, analysis
+  + [required_group_counts] are post-manifest counts after this package record is preserved
+  + [required_scope_options] are RH-only, RH-plus-CurrentFocalPoint, and defer
+
+& [DecisionSurfaceContract] is bounded
+  + [allowed_output] is reviewable package map and next checkpoint
+  + [blocked_output] is staging command, commit command, branch action, proof interpretation, or new math instruction
+  + [route_if_no_user_commit_direction] is continue non-staging readiness review only while pursuit value remains
+
+& [FirstBookendPackageManifestSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and package_scoped
+  + [processing_result] is accepted_package_manifest_contract
+  + [reasoning_result] is a concise package map reduces the risk of accidental broad authority staging and makes the eventual first-bookend decision easier to review
+
+(first_bookend_package_manifest) :package manifest: /RH-only default; focal optional; broad .sop excluded/ |staging, commit, proof claims|
+  + [inside] is package group counts, scope options, and next checkpoint
+  + [boundary] is no staging, no commit, no broad .sop mutation, no math execution, no proof claim
+  |outside| theorem authority, zero certification, runtime implementation, branch change, and platform-wide authority inclusion

@@ -1,0 +1,96 @@
+Subject: Bias Tuned Kernel Bridge Atlas Pass 001
+
+Description: Finite diagnostic atlas testing alpha-tuned n-domain kernels between sharp and Cesaro Lambda-Mellin bridge surfaces.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_bias_tuned_kernel_bridge\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Bias_Tuned_Kernel_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_bias_tuned_kernel_bridge_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\bias_tuned_kernel_bridge_atlas.py
+
+& [BiasTunedKernelBridgeAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether an alpha-tuned kernel can preserve Cesaro bridge improvement while reducing smoothing bias
+  + [source_snapshot_uuid] is 88b2ded0-a264-4e41-beaa-fadc1182585e
+  + [manifest_uuid] is ad213257-444c-41e7-910f-727f1f551502
+  + [canonical_specification_uuid] is f966ca91-cded-4c2d-9063-59a4a541f8f5
+  + [implementation_change] is added alpha_cesaro_kernel_weight, bias_tuned_kernel_bridge_atlas, and bias_tuned_kernel_bridge_atlas.py
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 34 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\bias_tuned_kernel_bridge_atlas.py --n-bound 50 --n-bound 100 --n-bound 200 --sample 2,0 --sample 2,14.134725141734693790457251983562 --sample 1.5,14.134725141734693790457251983562 --multiplier 16 --multiplier 32 --window sharp --window fejer --window lanczos --window hann --alpha 0 --alpha 0.25 --alpha 0.5 --alpha 0.75 --alpha 1 --dps 80 --output analysis\zero_behavior\2026-06-26_bias_tuned_kernel_bridge_atlas_trace.json
+  + [trace_row_count] is 360
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.1347251417347i, and s=1.5+14.1347251417347i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [zero_windows] is sharp, fejer, lanczos, and hann
+  + [alphas] is 0, 0.25, 0.5, 0.75, and 1
+  + [proof_status] is finite_bias_tuned_kernel_bridge_not_rh_evidence
+
+& [AlphaSummary] is the observed bounded alpha field
+  + [alpha_0_average_bridge_residual_abs] is 0.20215013686948171181128178438972504070630749063419948108093960277566647809102337
+  + [alpha_0_average_exact_cutoff_residual_abs] is 0.0081881873673536333723141060145746634389250122143817792114557407193758064834827344
+  + [alpha_0_improved_over_sharp_count] is 0 of 72 rows
+  + [alpha_0_pareto_row_count] is 72 of 72 rows
+  + [alpha_0_25_average_bridge_residual_abs] is 0.19996346559970920482363330267280848165213632182505986230380572409826494604163327
+  + [alpha_0_25_average_exact_cutoff_residual_abs] is 0.016572081159690268745429238636362006011709830905815251299301715896805224301633899
+  + [alpha_0_25_average_bridge_improvement_over_sharp_abs] is 0.0021866712697725069876484817169165590541711688091396187771338786774015320493901012
+  + [alpha_0_25_average_cutoff_bias_increase_over_sharp_abs] is 0.0083838937923366353731151326217873425727848186914334720878459751774294178181511646
+  + [alpha_0_25_improved_over_sharp_count] is 72 of 72 rows
+  + [alpha_0_25_pareto_row_count] is 72 of 72 rows
+  + [alpha_0_5_average_bridge_residual_abs] is 0.19778168278318344779618246840609699376402582169814632994397942313673224035662723
+  + [alpha_0_5_average_exact_cutoff_residual_abs] is 0.025229732471188469640013237403369350919448931981665478380858714514141808550527871
+  + [alpha_0_5_average_bridge_improvement_over_sharp_abs] is 0.0043684540862982640150993159836280469422816689360531511369601796389342377343961454
+  + [alpha_0_5_average_cutoff_bias_increase_over_sharp_abs] is 0.017041545103834836267699131388794687480523919767283699169402973794766002067045136
+  + [alpha_0_5_improved_over_sharp_count] is 72 of 72 rows
+  + [alpha_0_5_pareto_row_count] is 72 of 72 rows
+  + [alpha_0_75_average_bridge_residual_abs] is 0.19560508551891900414586086696488848348532485709359949748389829827601915597788956
+  + [alpha_0_75_average_exact_cutoff_residual_abs] is 0.03394179130993170589311923671947202880220070340204557712216550217185786088941275
+  + [alpha_0_75_average_bridge_improvement_over_sharp_abs] is 0.0065450513505627076654209174248365572209826335405999835970413044996473221131338073
+  + [alpha_0_75_average_cutoff_bias_increase_over_sharp_abs] is 0.025753603942578072520805130704897365363275691187663797910709761452482054405930016
+  + [alpha_0_75_improved_over_sharp_count] is 72 of 72 rows
+  + [alpha_0_75_pareto_row_count] is 72 of 72 rows
+  + [alpha_1_average_bridge_residual_abs] is 0.19343399613885109985902922910971965786018101462270708768812308267052988299268814
+  + [alpha_1_average_exact_cutoff_residual_abs] is 0.042674577324135931136275383454211308304387970251585649989508678999847321026857
+  + [alpha_1_average_bridge_improvement_over_sharp_abs] is 0.0087161407306306119522525552800053828461264760114923933928165201051365950983352279
+  + [alpha_1_average_cutoff_bias_increase_over_sharp_abs] is 0.034486389956782297763961277439636847869379375755869806438533767959624040837544122
+  + [alpha_1_improved_over_sharp_count] is 72 of 72 rows
+  + [alpha_1_pareto_row_count] is 72 of 72 rows
+  + [summary_result] is bridge residual decreases monotonically as alpha increases, while exact cutoff bias increases monotonically as alpha increases
+
+& [ParetoSummary] is the observed tradeoff boundary
+  + [best_bridge_alpha_counts] is alpha 1.0 for 9 of 9 best bridge rows
+  + [pareto_row_count] is 360 of 360 rows
+  + [pareto_alpha_counts] is alpha 0, 0.25, 0.5, 0.75, and 1 each with 72 rows
+  + [improved_over_sharp_row_count] is 288 of 360 rows
+  + [interpretation] is every tested alpha is non-dominated because each added smoothing step trades lower bridge residual for higher exact cutoff bias
+  + [restraint_result] is alpha tuning exposes a clean Pareto dial, not a bias-corrected kernel that dominates both objectives
+
+& [BestBridgeRows] is the observed bounded sample field
+  + [n_50_s_2_0] is multiplier 32.0, zero-window lanczos, alpha 1.0, bridge_residual_abs 0.10247780281687611577407855786590112579663167003165767829998353369781735405724901, exact_cutoff_residual_abs 0.085364762830990381499916771169201701130586855754437661383926383575
+  + [n_50_s_2_i14] is multiplier 32.0, zero-window lanczos, alpha 1.0, bridge_residual_abs 0.15822011034341930317759202470305585027190858510822322973142455972264182618251158, exact_cutoff_residual_abs 0.028162687208180668756404690803442065690064821682615439072950302279370602251962471
+  + [n_50_s_1_5_i14] is multiplier 32.0, zero-window sharp, alpha 1.0, bridge_residual_abs 0.27678875925562879127396983235776664888858742052626086308729802731747515065875448, exact_cutoff_residual_abs 0.088349284025579948707319717989641526131499674833703325182048065428143604999331101
+  + [n_100_s_2_0] is multiplier 32.0, zero-window lanczos, alpha 1.0, bridge_residual_abs 0.10469459424606569800046482675693712293045522812375582033706708133257276744435014, exact_cutoff_residual_abs 0.049894704953622117196556698152124338761054189954398339998349588003642653774778198
+  + [n_100_s_2_i14] is multiplier 32.0, zero-window lanczos, alpha 1.0, bridge_residual_abs 0.16401089574912955343541761302872402521824341087554650493507209135892098341206966, exact_cutoff_residual_abs 0.014843775320368841280795384498017980509818959686753714262182210661517507909714876
+  + [n_100_s_1_5_i14] is multiplier 32.0, zero-window sharp, alpha 1.0, bridge_residual_abs 0.28853085914896472260522178322519213000674615853447923521658544413419097861653583, exact_cutoff_residual_abs 0.05228719909681369055867791848711285984376188639208261273599749261987527822255859
+  + [n_200_s_2_0] is multiplier 32.0, zero-window lanczos, alpha 1.0, bridge_residual_abs 0.10582718284452756590668948362355949254709612267537859224670414125037576204445919, exact_cutoff_residual_abs 0.028485169308765494348906265652692965554785831455876693503444959747155441122691603
+  + [n_200_s_2_i14] is multiplier 32.0, zero-window lanczos, alpha 1.0, bridge_residual_abs 0.16696615343181744850410549893199895634427810264389101557761847137559913921880285, exact_cutoff_residual_abs 0.007599734242232996416719490407320417634590320511554764703000955311888483924978046
+  + [n_200_s_1_5_i14] is multiplier 32.0, zero-window sharp, alpha 1.0, bridge_residual_abs 0.29457570305048489294872169123831821809227957364175066232821277214144309782646634, exact_cutoff_residual_abs 0.02908387893066924146118151392834974651857695146084172008580217432174366975684325
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is alpha tuning cleanly parameterizes the Cesaro smoothing tradeoff
+  + [positive_result] is every alpha above zero improves bridge residual over sharp in every bounded row
+  + [negative_result] is every alpha above zero also increases exact cutoff residual against -zeta_prime/zeta on average, with alpha 1.0 the largest increase
+  + [identity_boundary] is no tested alpha dominates both bridge residual and cutoff bias, so the branch has found a diagnostic Pareto coordinate rather than a fused explicit/Euler identity
+  + [answered_question] is no bias-corrected superiority appears in this bounded pass; yes, the tradeoff is clear enough to pause kernel multiplication unless a new source-defined purpose appears
+  + [next_reasonable_coordinate] is return to whole-field synthesis or define a new non-kernel bridge object; do not keep adding kernel variants only to refine the same Pareto curve
+
+  = must: treat alpha tuning as finite Re(s)>1 bridge-surface diagnosis only
+  = must: report cutoff bias whenever reporting alpha bridge improvement
+  = must: preserve alpha 0 sharp as the lower-bias finite cutoff baseline
+  = must: treat alpha 1 Cesaro as the bridge-residual endpoint, not as a universally best kernel
+  = must: pause kernel multiplication unless a new source-defined purpose or whole-field object requires it
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal bridge identity, or explicit/Euler fusion from this atlas
+
+(bias_tuned_kernel_bridge_atlas_pass_001) :finite alpha-kernel Pareto diagnosis: /alpha improves bridge residual while increasing smoothing bias; pause kernel multiplication/ |proof authority|

@@ -1,0 +1,60 @@
+Subject: 641 Shift Power Ladder Boundary
+
+Description: Boundary analysis of the shift ladder 65537^(641*N) + 2^r for r = 0, 1, 2 and Fermat-prime multipliers N.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_shift_power_ladder\manifest.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_power_ladder_probe_1m.json
+@ [prior] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_two_boundary.sop
+
+& [Fermat641ShiftPowerLadderBoundary] is a completed bounded modular probe
+  + [analysis_uuid] is a091d41d-601c-4b54-af69-b111733ca6bd
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [focus_subject] is 65537^(641*N) + 2^r where r is 0, 1, or 2 and N is 3, 5, 17, 257, or 65537
+  + [small_factor_limit] is 1000000 for ladder trace and 50000000 for focused N=17, r=1 survivor
+  + [status] is completed_first_ladder_boundary_test
+
+## Computed Boundary
+
+& [Boundary_001_LevelZeroPlusOne] is factor_obstructed
+  + [shift] is 2^0 = 1
+  + [result] is every tested form has small divisors because plus-one with odd exponent is already factor-forced by base + 1
+  + [additional_residue] is all tested forms are divisible by 3 because 65537 is congruent to 2 modulo 3 and odd powers are congruent to -1 modulo 3
+
+& [Boundary_002_LevelOnePlusTwo] is partially_surviving
+  + [shift] is 2^1 = 2
+  + [eliminated] is N=3, N=5, N=257, and N=65537 by small divisors under 1000000
+  + [survivor] is N=17, exponent 10897
+  + [focused_bound] is no small divisor found for 65537^10897 + 2 under 50000000
+  + [boundary] is bounded survival only, not primality evidence
+
+& [Boundary_003_LevelTwoPlusFour] is residue_obstructed
+  + [shift] is 2^2 = 4
+  + [result] is every tested form has small divisors under 1000000
+  + [mod_3_rule] is because 65537 is congruent to 2 modulo 3, odd powers are congruent to -1 modulo 3, and -1 + 4 is congruent to 0 modulo 3
+  + [meaning] is level two collapses immediately by a simple residue wall for all listed N
+
+& [Realization_001_LevelOneIsNotArbitrary] is a dense-node candidate
+  + [statement] is +2 is structurally privileged among +1, +2, and +4 for odd exponents with base 65537
+  + [reason] is +1 and +4 both hit the mod-3 wall, while +2 avoids it
+  + [meaning] is the apparent second level is not merely aesthetic; it is the first tested power-of-two shift that escapes the simplest residue obstruction
+
+& [Realization_002_SurvivorNarrowsToN17] is a heat marker
+  + [statement] is the only survivor in the tested ladder is 65537^(641*17) + 2
+  + [reason] is no divisor was found under 1000000 in the ladder scan and none under 50000000 in a focused scan
+  + [boundary] is no bounded divisor found is not proof, probable primality, or RH relevance
+
+& [Realization_003_ProductLadderFailsIdentityTracking] is an abandonment realization
+  + [statement] is the product-exponent shift ladder does not track the defining set identity
+  + [reason] is more than two defining set members fail at the only nontrivially surviving level, +2
+  + [abandonment_rule] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+  + [result] is abandon this branch as an identity track
+  + [preserved_meaning] is the N=17 survivor remains a bounded isolated heat marker
+
+## Definite First-Pass Conclusion
+
+& [Conclusion_001] is definite_for_current_scope
+  + [statement] is the 2^r shift ladder has a real residue structure for r = 0, 1, 2, but it does not track the defining set identity
+  + [survivor] is 65537^(641*17) + 2
+  + [abandonment] is abandon the branch as an identity track because more than two defining set members fail
+  + [next_boundary] is do not jump to r = 3 as a deeper level unless a new source-defined identity is proposed; otherwise the ladder becomes a special-form search detached from RH terrain

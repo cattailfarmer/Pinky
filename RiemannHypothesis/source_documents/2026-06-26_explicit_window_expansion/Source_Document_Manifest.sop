@@ -1,0 +1,17 @@
+Subject: Explicit Window Expansion Source Document Manifest
+
+Description: Manifest for preserved source records governing the explicit-window expansion slice.
+
+& [ExplicitWindowExpansionSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 9803f94c-e2c1-423a-bede-f1c4a56cc89f
+  + [manifest_uuid] is bb671578-cefa-4585-aa5f-11464f8ad26a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_window_expansion\Dictated_Explicit_Window_Expansion_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Window_Expansion_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the expansion finite and diagnostic
+  - never: treat finite window traces as proof, disproof, zero certification, or universal window superiority

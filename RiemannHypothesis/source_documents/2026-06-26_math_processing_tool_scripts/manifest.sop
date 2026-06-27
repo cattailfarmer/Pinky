@@ -1,0 +1,16 @@
+Subject: Math Processing Tool Scripts Source Manifest
+
+Description: Manifest for the source request to create deterministic Python tools for Riemann Hypothesis adjacent math processing.
+
+& [MathProcessingToolScriptsSourceManifest] is the source manifest for math-processing tools
+  + [manifest_uuid] is 283900fc-b156-4302-9330-a18a908df1bf
+  + [source_uuid] is 92611a3d-0cbb-437c-8cce-53e12aa6630c
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_math_processing_tool_scripts\Dictated_Math_Processing_Tool_Scripts_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Math_Processing_Tool_Scripts_Specification.sop
+  + [verification_target] is C:\Project\Pinky\RiemannHypothesis\analysis\toolchain\2026-06-26_math_processing_tool_scripts_verification.sop
+  + [source_role] is user_directive_for_non_inference_math_runtime_tools
+
+  = must: keep source preservation separate from scripts and tests
+  = must: trace tool scope back to this manifest

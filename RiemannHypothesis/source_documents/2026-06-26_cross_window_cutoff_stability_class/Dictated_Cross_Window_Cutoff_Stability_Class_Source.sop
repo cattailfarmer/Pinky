@@ -1,0 +1,26 @@
+Subject: Dictated Cross Window Cutoff Stability Class Source
+
+Description: Preserved source for classifying near-reference Lambda heat by cutoff and cross-window stability.
+
+& [DictatedCrossWindowCutoffStabilityClassSource] is raw continuation source
+  + [source_snapshot_uuid] is 2e1bb3e1-5afc-431b-a5f5-53e911534a29
+  + [captured_at] is 2026-06-26T19:08:12-05:00 heartbeat continuation
+  + [automation_id] is riemann-rh-lambda-phasor-road-reactivation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is scheduled continuation after cross-layer landmark displacement synthesis
+  + [source_basis] is cross-layer landmark displacement promoted cross-window/cutoff stability class as the next object
+  + [selected_measured_object] is cross-window and cutoff stability class
+  + [raw_need] is distinguish merely dense near-reference Lambda heat from repeatably stable near-reference Lambda heat using existing cutoff_stability_rows and cross_window_rows
+  + [input_trace] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+  + [input_context] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cross_layer_landmark_displacement_synthesis_001.sop
+  + [analysis_posture] is finite synthesis of existing stability rows, not a new scan
+  + [whole_field_return] is keep stability as Lambda overlay discipline tied to Euler/log-derivative half-plane behavior and psi-theta prime-power mechanics
+  + [identity_boundary] is stability class is repeatability orientation only, not zero certification, RH evidence, proof, disproof, critical-line authority, or single-surface identity
+
+  = must: preserve this raw source separately from canonical specification
+  = must: use existing cutoff_stability_rows and cross_window_rows only
+  = must: classify near-reference stability separately from global stability
+  = must: distinguish endpoint-stable near-reference pockets from drift-in/drift-out rows
+  = must: decide whether there remains a meaningful next object or whether the overlay branch should pause
+  - never: claim that stable near-reference Lambda heat proves, disproves, certifies, or directly measures RH

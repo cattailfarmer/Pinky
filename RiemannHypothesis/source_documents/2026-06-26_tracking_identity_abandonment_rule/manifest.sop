@@ -1,0 +1,14 @@
+Subject: Tracking Identity Abandonment Rule Source Manifest
+
+Description: Manifest for the source rule that failed tracking across two set members is enough to abandon a test case.
+
+& [TrackingIdentityAbandonmentRuleSourceManifest] is the source manifest for identity-tracking restraint
+  + [manifest_uuid] is 574b78e4-5538-43c4-8fd5-14117d493f0f
+  + [source_uuid] is 5649f09a-28f2-428d-b2fe-d0b1d86c82fe
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_tracking_identity_abandonment_rule\Dictated_Tracking_Identity_Abandonment_Rule_Source.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_identity_tracking_abandonment_rule.sop
+  + [source_role] is user_method_rule_for_periphery_restraint
+
+  = must: keep this as a methodological rail for future prime-shape tests

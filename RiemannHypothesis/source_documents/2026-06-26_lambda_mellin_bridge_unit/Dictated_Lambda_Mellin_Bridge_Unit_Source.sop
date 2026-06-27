@@ -1,0 +1,23 @@
+Subject: Dictated Lambda Mellin Bridge Unit Source
+
+Description: Preserved source for the shared explicit/Euler comparison-unit inquiry.
+
+& [DictatedLambdaMellinBridgeUnitSource] is raw continuation source
+  + [source_snapshot_uuid] is 7783707d-15da-4d52-a206-f66b034bf71d
+  + [captured_at] is 2026-06-26T16:51:35.398Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_shared_comparison_unit_next after scale-law comparison
+  + [raw_need] is determine whether a source-defined shared comparison unit can compare explicit-formula residual rails with Euler-product/log-derivative cutoff rails without collapsing distinct identities
+  + [governing_restraint] is do not add more cutoff laws just because the periphery is interesting
+  + [candidate_common_fabric] is the Lambda/psi summatory relation: psi(x) records cumulative von Mangoldt weights and -zeta_prime/zeta(s) records their Dirichlet/Mellin weighting for Re(s) > 1
+  + [not_identity] is explicit-formula zero truncation and Euler/log-derivative prime-power cutoff are not the same residual surface
+  + [possible_bridge_unit] is convert explicit-formula psi estimates into finite Lambda-like increments over n <= N, weight those increments by n^-s, and compare them against the exact finite prime-power Lambda sum over the same N and s
+  + [expected_value] is this creates a common unit of weighted Lambda contribution, allowing bounded comparison of how explicit zero-side approximation error appears after being projected into the same half-plane log-derivative unit as the Euler rail
+  + [boundary] is this is still finite numerical trace work in Re(s) > 1, not critical-line evidence, zero certification, proof, disproof, or a hidden theorem
+
+  = must: preserve this raw source separately from canonical specification
+  = must: keep the explicit-zero approximation, exact Lambda finite sum, and infinite exact -zeta_prime/zeta target as distinct objects
+  = must: compare in shared weighted Lambda units rather than raw explicit residual magnitude
+  = must: report whether the bridge is coherent enough to keep, not whether it proves anything
+  - never: collapse finite projection agreement into RH evidence

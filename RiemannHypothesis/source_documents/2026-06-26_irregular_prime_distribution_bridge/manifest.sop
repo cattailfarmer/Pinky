@@ -1,0 +1,12 @@
+Subject: Irregular Prime Distribution Bridge Source Manifest
+
+Description: Source manifest for the irregular-prime whole-field distribution bridge.
+
+& [IrregularPrimeDistributionBridgeSourceManifest] is the source manifest for the irregular-prime distribution bridge
+  + [manifest_uuid] is 36259a72-8912-4a5e-8d41-26cbe05076d0
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_irregular_prime_distribution_bridge\Dictated_Irregular_Prime_Distribution_Bridge_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Irregular_Prime_Distribution_Bridge_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_irregular_prime_distribution_bridge_pass_001.sop
+  + [preservation_rule] is source_document is raw continuation source and must not be overwritten by canonicalized specification

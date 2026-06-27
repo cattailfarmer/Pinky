@@ -1,0 +1,45 @@
+Subject: Zero Windowing Bridge Specification
+
+Description: SJS-processed contract for comparing sharp and smoothed finite zero-term explicit-formula approximations.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_zero_windowing_bridge\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Formula_Error_Bridge_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+
+& [ZeroWindowingBridge] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 1f94d1ea-e2e6-4361-8550-3042668a4481
+  + [source_snapshot_uuid] is e6c1074d-3d4a-44b3-9672-0c75e4d36397
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare sharp zero-pair truncation to a simple Fejer-windowed zero-pair approximation for psi(x)
+  + [not_purpose] is proof, disproof, independent zero certification, or final smoothed explicit-formula theorem authority
+
+  = must: compute exact finite pi(x), theta(x), and psi(x) rows for requested x
+  = must: compare sharp and fejer window modes with visible zero_pair_count
+  = must: expose windowed zero-pair sums, estimate_minus_psi, absolute residual, and scaled residuals
+  = must: preserve the window formula and per-zero weights when requested
+  = must: treat mpmath zetazero as library numerical lookup, not proof authority
+  = must: mark output proof_status as finite_zero_window_probe_not_zero_certification
+  = must: compare smoothed rows to the earlier explicit-formula error bridge before drawing a conclusion
+  - never: claim RH proof, disproof, or zero certification from finite smoothed zero-term traces
+  - never: treat lower residual under one window as universal superiority or convergence proof
+
+& [ZeroWindowProbeTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_window_probe.py
+  + [runtime_function] is rh_math.explicit_formula.zero_window_probe
+  + [input] is finite sample points, zero pair counts, window modes, precision metadata, and optional zero-term inclusion
+  + [output] is exact pi/theta/psi rows, windowed explicit-formula estimates, residuals, and optional weighted zero-term rows
+  + [proof_status] is finite_zero_window_probe_not_zero_certification
+
+& [ZeroWindowingBridgeSJS] is the specification justification trace
+  + [protocol_uuid] is a3ce3ff4-9214-4d8b-9af9-320ede87cd6d
+  + [source_snapshot_uuid] is e6c1074d-3d4a-44b3-9672-0c75e4d36397
+  + [canonical_specification_uuid] is 1f94d1ea-e2e6-4361-8550-3042668a4481
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bridge_contract
+  + [reasoning_result] is smoothing finite zero-pair sums should be measured as an approximation surface after sharp truncation showed oscillatory residuals
+
+(zero_windowing_bridge) :smoothed zero-term approximation: /sharp, fejer, residual comparison/ |zero certification|
+  + [inside] is finite windowed zero-term comparison and residual trace
+  + [boundary] is approximation and smoothing measurement only
+  |outside| RH proof, disproof, zero certification, and final convergence claims

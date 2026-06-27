@@ -1,0 +1,16 @@
+Subject: Dictated Fermat 641 Shift Power Ladder Source
+
+Description: Raw source preserving the user's hypothesis that shifts should advance by powers of two across levels.
+
+& [DictatedFermat641ShiftPowerLadderSource] is preserved raw source for a shift power ladder hypothesis
+  + [source_uuid] is 00fba5e0-03ea-4ad3-8274-c30d3483ab8f
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "maybe that needs to be a power as well, 2^0 for the first set (3, 5, 17, 257, 65537) making it a +1, and 2^1 for the second set to apply a +2, then if we find a deeper pattern it will be defined by 2^2 level to make it a +4?"
+
+  = must: test shifts as a power-of-two ladder rather than as isolated plus-two
+  = must: use modular arithmetic and bounded divisibility rather than expanding large powers
+  = must: preserve bounded survivors as heat markers only
+  - never: treat ladder survival as primality evidence or RH evidence

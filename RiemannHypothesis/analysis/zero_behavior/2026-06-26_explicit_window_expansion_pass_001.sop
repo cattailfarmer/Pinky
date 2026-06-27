@@ -1,0 +1,48 @@
+Subject: Explicit Window Expansion Pass 001
+
+Description: Finite diagnostic pass expanding explicit-formula zero-window testing beyond sharp and Fejer.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_window_expansion\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Window_Expansion_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_window_expansion_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_window_probe.py
+
+& [ExplicitWindowExpansionPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether larger zero-pair counts and additional smoothing windows change the earlier zero-windowing conclusion before any stronger explicit/Euler bridge is attempted
+  + [implementation_change] is zero_window_probe now supports sharp, fejer, lanczos, and hann windows
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 26 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\zero_window_probe.py --x 100 --x 200 --x 500 --zero-count 5 --zero-count 10 --zero-count 20 --zero-count 40 --zero-count 80 --window sharp --window fejer --window lanczos --window hann --dps 80 --output analysis\zero_behavior\2026-06-26_explicit_window_expansion_trace.json
+  + [trace_row_count] is 60
+  + [sample_points] is 100, 200, and 500
+  + [zero_pair_counts] is 5, 10, 20, 40, and 80
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [proof_status] is finite_zero_window_probe_not_zero_certification
+
+& [ExpandedWindowResult] is the observed bounded residual field
+  + [best_by_sample_x_100] is sharp at zero_pair_count 80 with residual_abs 0.024318907245683346596951605635625656034454845485973893619678514140092397718244703
+  + [best_by_sample_x_200] is sharp at zero_pair_count 80 with residual_abs 0.38626151673798359237558828954442999843502267816515141840515124745696972523667292
+  + [best_by_sample_x_500] is sharp at zero_pair_count 40 with residual_abs 0.14812501056238077371766983809537520130620882067929726566567703622876680829574127
+  + [window_wins_across_x_and_zero_count_pairs] is sharp 11, hann 3, lanczos 1, fejer 0
+  + [average_residual_abs_by_window] is sharp 1.45344167783182, lanczos 1.85661511725082, hann 2.00813336604142, fejer 2.19337128152506
+  + [best_at_zero_pair_count_80_x_100] is sharp with residual_abs 0.024318907245683346596951605635625656034454845485973893619678514140092397718244703
+  + [best_at_zero_pair_count_80_x_200] is sharp with residual_abs 0.38626151673798359237558828954442999843502267816515141840515124745696972523667292
+  + [best_at_zero_pair_count_80_x_500] is hann with residual_abs 0.6673321889714193599838220694312885173852347418140854976913597772442012590952459
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is sharp truncation dominates this small grid more often than the smoothing policies, while Hann and Lanczos occasionally reduce residuals at particular x and cutoff pairs
+  + [cutoff_sensitivity] is still present because the best x=500 row occurs at zero_pair_count 40 under sharp, while at zero_pair_count 80 Hann beats sharp locally
+  + [fejer_result] is no best-row wins in this expanded grid despite remaining a valid smoothing diagnostic
+  + [identity_result] is no window policy becomes a stable local identity for the explicit-formula residual field
+  + [bridge_result] is expanded window testing does not justify fusing explicit-formula residuals with Euler/log-derivative cutoff rails into a single coupled identity track
+  + [answered_question] is the explicit-window expansion is useful as a sensitivity measurement, but it does not create stronger proof-facing authority or universal window preference
+
+  = must: keep these observations subordinate to whole-field RH objects such as psi(x), explicit-formula residual, Euler products, and zeta-zero behavior
+  = must: treat local residual minima as cutoff/window diagnostics only
+  = must: preserve the trace as finite numerical evidence about the tool surface, not theorem evidence
+  - never: claim RH proof, disproof, independent zero certification, or universal smoothing superiority from this trace
+
+(explicit_window_expansion_pass_001) :finite residual sensitivity field: /sharp dominant in grid, local smoothing pockets, cutoff sensitivity remains/ |proof authority|

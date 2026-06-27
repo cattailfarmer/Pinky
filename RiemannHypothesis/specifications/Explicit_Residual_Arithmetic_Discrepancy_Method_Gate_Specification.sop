@@ -1,0 +1,72 @@
+Subject: Explicit Residual Arithmetic Discrepancy Method Gate Specification
+
+Description: SJS-processed method-readiness contract for the explicit residual arithmetic discrepancy candidate.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_arithmetic_discrepancy_method_gate\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Source_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_explicit_residual_arithmetic_discrepancy_source_intake_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\tools\scripts\explicit_residual_movement_decomposition.py
+
+& [ExplicitResidualArithmeticDiscrepancyMethodGateSpecification] is a method-readiness contract
+  + [source_snapshot_uuid] is 37f541db-9809-46c0-9eae-f07e4760918b
+  + [manifest_uuid] is 7ce1c6e6-0331-4bed-90a2-0dde3d386244
+  + [canonical_specification_uuid] is fcb72d75-9a82-46f8-9afd-86c8c290d87a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [purpose] is define deterministic method readiness for existing-trace discrepancy synthesis
+  + [not_purpose] is new numerical execution, implementation, proof, zero certification, branch reopening, staging, committing, broad .sop mutation, denser scans, more labels, more windows, more offsets, more kernels, or more cutoff laws
+  + [proof_status] is method_gate_not_rh_evidence
+
+& [MethodContract] is existing_trace_synthesis_ready
+  + [input_trace] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+  + [input_analysis] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+  + [existing_tool_surface] is explicit_residual_movement_decomposition
+  + [tool_reuse_status] is sufficient_for_existing_trace_schema
+  + [new_execution_status] is not_authorized_by_this_contract
+  + [expected_output_artifact] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_arithmetic_discrepancy_synthesis_001.sop
+  + [allowed_processing] is non-mutating synthesis of existing trace rows and summary rows only
+
+& [FiniteMetricContract] is bounded
+  + [metric_001] is residual_to_psi_error_sign_relation_counts
+  + [metric_002] is dominant_exact_layer_counts across theta_error_movement, higher_prime_power_movement, and balanced_or_zero
+  + [metric_003] is average_abs_residual_minus_psi_error_movement by configuration
+  + [metric_004] is average_explicit_residual_movement_abs by configuration
+  + [metric_005] is whether residual movement smoothing and residual-to-psi discrepancy improve together or separate
+  + [metric_006] is whether the exact arithmetic layer dominance resolves into a single owner or remains split
+
+& [ContradictionContract] is bounded
+  + [simple_identity_contradicted_when] is residual-to-psi-error opposite-sign intervals are not fewer than same-sign intervals
+  + [single_layer_ownership_contradicted_when] is theta-error and higher-prime-power dominance both remain materially present rather than one layer dominating the surface
+  + [smoothing_identity_contradicted_when] is lower residual movement does not remove residual-to-psi discrepancy or sign mismatch
+  + [branch_reopen_contradicted_when] is the result mainly asks for more windows, cutoffs, kernels, labels, or denser scans
+
+& [RetirementAndExitContract] is bounded
+  + [retire_simple_identity_if] is mixed sign relation persists in the existing bounded trace
+  + [retire_single_layer_claim_if] is exact-layer dominance remains split
+  + [retire_new_computation_if] is existing trace already answers the discrepancy posture without a new method need
+  + [exit_condition] is report candidate as support, contradiction, or source-needed after applying finite metrics to existing trace
+  + [truth_boundary] is finite discrepancy synthesis only; no RH evidence, proof, disproof, zero certification, critical-line authority, causation, or identity fusion
+
+& [ReadinessClassification] is current_contract_status
+  + [existing_trace_synthesis_ready] is yes
+  + [new_numerical_processing_ready] is no
+  + [implementation_ready] is no
+  + [next_allowed_step] is write existing-trace discrepancy synthesis using this method contract
+  + [blocked_step] is rerun, widen, tune, implement, stage, commit, or mutate broad .sop
+
+  = must: use existing-trace synthesis before any new numerical work
+  = must: report contradiction conditions before curiosity conditions
+  = must: preserve proof boundary in any synthesis result
+  - never: treat readiness for existing-trace synthesis as readiness for expanded deterministic scans
+
+& [ExplicitResidualArithmeticDiscrepancyMethodGateSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and method_gate_scoped
+  + [processing_result] is accepted_existing_trace_method_contract
+  + [reasoning_result] is the candidate has enough deterministic structure for existing-trace synthesis, while new numerical processing remains blocked by restraint and lack of need
+
+(explicit_residual_arithmetic_discrepancy_method_gate) :method gate: /existing trace ready; new numerical processing not authorized/ |proof claims|
+  + [inside] is deterministic method contract for existing-trace synthesis
+  + [boundary] is no new computation, no proof inference, no branch reopening, no staging, no commit
+  |outside| RH proof, disproof, zero certification, critical-line authority, numerical expansion, and identity fusion

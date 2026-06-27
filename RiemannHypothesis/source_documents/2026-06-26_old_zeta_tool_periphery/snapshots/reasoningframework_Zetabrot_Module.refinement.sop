@@ -1,0 +1,268 @@
+Subject: Zetabrot Module
+Description: Corrected canonical SOP definition for the Zetabrot module: the integer-brot, factor-pants, scalar-field, and operator-spectral layer built on the Enumerated Toribrot address module.
+
+@ [source] platform/source_documents/2026-05-19_zetabrot_module/Source_Document_Manifest.sop
+@ [source] platform/source_documents/2026-05-19_zetabrot_module/Zetabrot Module.source-snapshot.txt
+@ [source] platform/refinement/Enumerated_Toribrot_Module.sop
+@ [source] platform/refinement/Zeta_Oscilloscope.sop
+@ [source] platform/refinement/Data_Driven_Design.sop
+@ [source] platform/refinement/Specification_Governance.sop
+
+& [ZetabrotModule] is the operator-spectral transform layer over the Enumerated Toribrot integer field
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [canonical_specification_uuid] is 8c931d3e-dd0a-446b-92c3-503585d46b8a
+  + [source_snapshot_uuid] is 79ba0199-0423-46fe-87b2-5e88b01c574b
+  + [source_document] is platform/source_documents/2026-05-19_zetabrot_module/Zetabrot Module.source-snapshot.txt
+  + [solution_uuid] is 1a2df201-a7e4-411e-87e2-5cd28925d67b
+  + [primary_role] is operator_spectral_layer
+  + [base_module] is EnumeratedToribrotModule
+  + [identity_model] is positive_integer_brot_indexing_over_binary_heap_addresses
+  + [root_integer] is 1
+  + [active_brot_domain] is integers n >= 2 with n = 1 retained as the unit root when required by transforms
+  + [factor_model] is pants-style decomposition of composite integers
+  + [field_model] is scalar field a(n) over integer brots
+  + [spectral_model] is Dirichlet-Mellin transform and log-Fourier phasor transform
+  + [lambda_case] is a(n) = Lambda(n), the von Mangoldt function
+  + [oscilloscope_relationship] is ZetaOscilloscope is a finite cutoff readout of the Lambda-Zetabrot Fourier form
+  + [not_primary_role] is RH proof, zeta zero oracle, or arithmetic correctness substrate
+
+  = must: import address identity from EnumeratedToribrotModule
+  = must: assign exactly one integer brot to each positive integer value when the unit root is included
+  = must: keep integer identity separate from geometric embedding and visualization
+  = must: attach factor pants to composite brots and parameter pants to prime brots
+  = must: declare the selected scalar field a(n) before forming spectral transforms
+  = must: distinguish infinite analytic transforms from finite computational cutoffs
+  - never: duplicate an integer brot for multiple factorizations
+  - never: treat visual oscillation as a proof of RH
+  - never: use this layer as a substitute for the EnumeratedToribrot address rules
+
+## Integer Brot Identity
+
+& [IntegerBrot] is one Zetabrot node carrying one positive integer value
+  + [integer_value] is n
+  + [domain] is n >= 1
+  + [active_domain] is n >= 2 for non-unit arithmetic brots
+  + [unit_node] is n = 1 at address [0]
+  + [address] is ToribrotAddress from EnumeratedToribrotModule
+  + [generation] is floor(log2(n))
+  + [sequence_id] is n - 2^generation
+  + [global_id_zero_based] is n - 1
+  + [payload] is factor data, prime parameter data, scalar field value, and optional visualization state
+
+  = must: preserve one brot per integer value
+  = must: preserve integer_value as the semantic key
+  = must: derive address from integer_value through IntegerAddressMap
+  = must: treat generation and sequence_id as derived identity coordinates
+  - never: let geometric placement redefine integer_value
+
+& [IntegerAddressMap] is the bijection between positive integers and Enumerated Toribrot addresses
+  + [to_address_input] is positive integer n
+  + [to_address_rule] is write n in base 2, remove the leading 1, prepend root marker [0], and use the remaining binary digits as path bits
+  + [from_address_rule] is read address [0] plus path bits as the binary integer with implicit leading 1 before the path bits
+  + [root_case] is n = 1 maps to [0]
+  + [left_child_value] is 2n
+  + [right_child_value] is 2n + 1
+  + [left_child_address] is address(n) concatenated with [0]
+  + [right_child_address] is address(n) concatenated with [1]
+
+  = must: reject n < 1
+  = must: use the EnumeratedToribrotModule address validation rules
+  = must: preserve the binary heap relation between parent and children
+  = must: compute parent integer as floor(n / 2) for n > 1
+
+  ? [n is 1]
+    + [address] is [0]
+    + [generation] is 0
+    + [sequence_id] is 0
+
+  ? [n is 2]
+    + [address] is [0,0]
+    + [generation] is 1
+    + [sequence_id] is 0
+
+  ? [n is 3]
+    + [address] is [0,1]
+    + [generation] is 1
+    + [sequence_id] is 1
+
+  ? [n is 12]
+    + [binary] is 1100
+    + [address] is [0,1,0,0]
+    + [generation] is 3
+    + [sequence_id] is 4
+
+## Factor Pants Layer
+
+& [CompositeBrot] is an IntegerBrot whose integer_value n is composite
+  + [integer_value] is n
+  + [factorization] is n = a*b with 1 < a <= b
+  + [waist] is brot(n)
+  + [left_leg] is brot(a)
+  + [right_leg] is brot(b)
+  + [factor_pants] is pants unit with waist n and legs a, b
+  + [factorization_policy] is smallest_factor, prime_factor_chain, declared_factor_path, or exploratory_path
+
+  = must: require a*b = n before attaching factor pants
+  = must: require 1 < a <= b
+  = must: reference existing integer brots for a and b
+  = must: keep factor pants as structure over integer identity, not as duplicate brots
+
+& [FactorStack] is a serial decomposition path through composite factor pants
+  + [start] is composite brot n
+  + [step_set] is ordered factor pants units
+  + [terminal_nodes] are prime brots
+  + [stack_mode] is serial rather than parallel
+  + [path_id] is stable identifier when alternative factor paths are explored
+
+  = must: stack multiple factor choices in series when a single decomposition is being represented
+  = must: use separate path_id values when comparing alternative decompositions
+  = must: stop decomposition at prime brots
+  - never: make two integer nodes for the same n in order to represent two factorizations
+
+## Prime Parameter Layer
+
+& [PrimeBrot] is an IntegerBrot whose integer_value p is prime
+  + [integer_value] is p
+  + [prime_index] is k when p is the k-th prime
+  + [factor_pants] is none
+  + [parameter_pants] is attached arithmetic observables
+  + [log_parameter] is log(p)
+  + [next_prime_gap] is p_next - p when p_next is available
+  + [von_mangoldt_value] is Lambda(p) = log(p)
+
+  = must: attach no factor pants to prime brots
+  = must: attach parameter pants only after primality is established or declared by a trusted caller
+  = must: distinguish prime_index k from integer_value p
+
+& [VonMangoldtField] is the canonical Lambda field over positive integers
+  + [field_name] is Lambda(n)
+  + [prime_power_rule] is Lambda(n) = log(p) when n = p^k for some prime p and integer k >= 1
+  + [zero_rule] is Lambda(n) = 0 when n is not a prime power
+  + [unit_value] is Lambda(1) = 0
+
+  = must: include prime powers, not only primes
+  = must: set composite non-prime-powers to zero
+  = must: use natural logarithm unless another base is explicitly declared
+
+## Scalar Field Layer
+
+& [ZetabrotScalarField] is a scalar field a(n) attached to integer brots
+  + [domain] is positive integers or finite cutoff subset {1, ..., N}
+  + [field_value] is a(n)
+  + [field_examples] are prime_indicator, gap_derived_field, Lambda(n), residue_field, smoothed_weighted_field, or custom_observable
+  + [field_metadata] is definition, domain, support, exactness, normalization, and cutoff policy
+
+  = must: define a(n) before forming F(s), G(u), or Ghat(t;sigma)
+  = must: declare whether the field is exact, approximate, finite, infinite, smoothed, or sampled
+  = must: preserve the field as data attached to brots, not as node identity
+
+## Operator And Spectral Layer
+
+& [DirichletMellinTransform] is the Zetabrot transform from integer field to complex spectral function
+  + [field] is a(n)
+  + [complex_parameter] is s = sigma + i*t
+  + [formal_series] is F_a(s) = sum over n >= 1 of a(n)*n^(-s)
+  + [pants_interpretation] is field leg a(n), kernel leg n^(-s), waist summation over integer brots
+  + [convergence_contract] is required before treating the infinite series as an ordinary analytic function
+  + [finite_version] is F_{a,N,W}(s) = sum over 1 <= n <= N of a(n)*W_N(n)*n^(-s)
+
+  = must: state the convergence domain or finite cutoff
+  = must: use finite_version for direct computation unless an analytic continuation method is separately defined
+  = must: preserve n^(-s) as exp(-s log(n)) with natural log
+
+& [LambdaZetabrotTransform] is the special Zetabrot transform for a(n) = Lambda(n)
+  + [field] is VonMangoldtField
+  + [series] is F_Lambda(s) = sum over n >= 1 of Lambda(n)*n^(-s)
+  + [analytic_identity] is F_Lambda(s) = -zeta_prime(s) / zeta(s) for Re(s) > 1
+  + [continued_object] is the meromorphic continuation of -zeta_prime(s) / zeta(s)
+  + [singularity_set] includes zeta zeros, trivial zeros, and the zeta pole contribution at s = 1
+  + [rh_relevance] concerns nontrivial zeros rho = beta + i*gamma and the condition beta = 1/2
+
+  = must: restrict the Dirichlet series identity to Re(s) > 1 unless continuation is declared
+  = must: distinguish the convergent series from the meromorphic continuation
+  = must: identify RH as a statement about nontrivial zeros, not about finite traces
+
+& [LogDomainSpikeTrain] is the compression of the integer field onto logarithmic time
+  + [log_time] is u = log(n)
+  + [formal_distribution] is G_a(u) = sum over n >= 1 of a(n)*delta(u - log(n))
+  + [spike_location] is log(n)
+  + [spike_weight] is a(n)
+
+  = must: treat G_a as a distribution or finite spike train, not as an ordinary continuous function
+  = must: keep integer brot identity available behind every spike
+
+& [ZetabrotFourierLayer] is the log-Fourier phasor form of the Zetabrot
+  + [undamped_form] is Ghat_a(t) = sum over n >= 1 of a(n)*exp(-i*t*log(n))
+  + [damped_form] is Ghat_a(t;sigma) = sum over n >= 1 of a(n)*n^(-sigma)*exp(-i*t*log(n))
+  + [dirichlet_equivalent] is sum over n >= 1 of a(n)*n^(-sigma - i*t)
+  + [phasor_term] is a(n)*n^(-sigma)*exp(-i*t*log(n))
+  + [angular_velocity] is log(n)
+  + [amplitude] is a(n)*n^(-sigma)
+  + [finite_version] is Ghat_{a,N,W}(t;sigma) = sum over 1 <= n <= N of a(n)*W_N(n)*n^(-sigma)*exp(-i*t*log(n))
+
+  = must: use exp(-i*t*log(n)), not exp(-i*t*n), for zeta-aligned phase
+  = must: require cutoff N and optional window W_N for computation and visualization
+  = must: identify ZetaOscilloscope as the finite visual instrument for this layer when a(n) = Lambda(n)
+
+## Spectral Interpretation Boundary
+
+& [ZetabrotSpectralBoundary] is the safe interpretation layer for zeros and RH-adjacent meaning
+  + [arithmetic_domain] is integer brots, primes, prime powers, gaps, and factor pants
+  + [spectral_domain] is s-plane behavior of F_a(s), especially the Lambda case
+  + [explicit_formula_relation] is prime-counting fluctuations are connected to zeta zeros through established explicit formula machinery
+  + [zero_term_shape] is x^rho = x^beta * exp(i*gamma*log(x))
+  + [rh_constraint] is beta = 1/2 for every nontrivial zero rho
+  + [finite_evidence_status] is exploratory numerical evidence or visualization unless connected to a theorem-level argument
+
+  = must: keep arithmetic data, spectral transforms, and RH interpretation in separate layers
+  = must: distinguish poles of -zeta_prime/zeta from finite phasor behavior
+  = must: require independent analytic justification before making proof-level claims
+  - never: infer RH from a pretty oscilloscope trace
+
+## Relationship To Other Modules
+
+& [ZetabrotPlacement] is the corrected module order in the Toribrot line
+  + [lower_layer] is EnumeratedToribrotModule
+  + [current_layer] is ZetabrotModule
+  + [instrument_layer] is ZetaOscilloscope
+  + [computation_layer] is EnumeratedToribrotMathEngine when exact or certified arithmetic execution is required
+  + [geometry_layer] is Toribrot when recursive toroidal embedding or pants geometry is being modeled
+
+  = must: obtain integer and address identity from EnumeratedToribrotModule
+  = must: use ZetabrotModule to define fields and spectral operators
+  = must: use ZetaOscilloscope only as a finite readout or visualization of a Zetabrot Fourier form
+  = must: use EnumeratedToribrotMathEngine only when a computation needs certified arithmetic execution
+
+## Acceptance Criteria
+
+& [ZetabrotModuleAcceptance] is the satisfaction test for this processed specification
+  + [integer_identity_test] is n = 1 maps to [0], n = 2 maps to [0,0], n = 3 maps to [0,1], and n = 12 maps to [0,1,0,0]
+  + [child_value_test] is children of brot n are brots 2n and 2n + 1
+  + [composite_test] is n = 12 may attach factor pants with waist 12 and legs 3 and 4
+  + [prime_test] is p = 11 has no factor pants and may attach log(11), next_prime_gap 2, and Lambda(11) = log(11)
+  + [lambda_prime_power_test] is Lambda(8) = log(2)
+  + [lambda_nonprimepower_test] is Lambda(12) = 0
+  + [phase_test] is Fourier phasor phase -t*log(n)
+  + [finite_boundary_test] is every computational trace declares N and optional W_N
+
+  = must: pass all acceptance tests before treating an implementation as conformant
+
+## SJS Processing Trace
+
+& [SJSProcessingTrace] is the specification justification trace for the Zetabrot Module
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [source_snapshot_uuid] is 79ba0199-0423-46fe-87b2-5e88b01c574b
+  + [canonical_specification_uuid] is 8c931d3e-dd0a-446b-92c3-503585d46b8a
+  + [solution_uuid] is 1a2df201-a7e4-411e-87e2-5cd28925d67b
+  + [input_source_hash] is EB6219087593BBA220A771735778705A2FA38598F283EE619066A5A6C33168F4
+  + [processing_result] is stable_canonical_module_definition
+  + [reasoning_result] is source separated into integer identity, factor pants, prime parameters, scalar fields, Dirichlet-Mellin transform, log-Fourier layer, and spectral interpretation boundary
+
+& [SatisfactionSignature] is the satisfaction signature for this canonical specification
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_uuid] is aef59eda-b42b-453a-80d0-cd570109ca80
+  + [signed_artifact] is platform/refinement/Zetabrot_Module.sop
+  + [source_document] is platform/source_documents/2026-05-19_zetabrot_module/Zetabrot Module.source-snapshot.txt
+  + [source_document_sha256] is EB6219087593BBA220A771735778705A2FA38598F283EE619066A5A6C33168F4
+  + [signature_status] is valid
+  + [satisfaction_scope] is canonical processing of the Zetabrot operator-spectral module into a stable SOP specification

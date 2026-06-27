@@ -1,0 +1,14 @@
+Subject: Fermat 641 Shift Power Ladder Source Manifest
+
+Description: Manifest for the source hypothesis that shift levels should be 2^0, 2^1, 2^2, and beyond.
+
+& [Fermat641ShiftPowerLadderSourceManifest] is the source manifest for the shift power ladder
+  + [manifest_uuid] is 2d77808e-7aab-480b-9044-85c0a7c766ec
+  + [source_uuid] is 00fba5e0-03ea-4ad3-8274-c30d3483ab8f
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_shift_power_ladder\Dictated_Fermat_641_Shift_Power_Ladder_Source.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_shift_power_ladder_boundary.sop
+  + [source_role] is user_hypothesis_for_power_of_two_shift_ladder_testing
+
+  = must: preserve ladder hypothesis separately from the prior plus-two correction

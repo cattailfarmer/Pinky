@@ -1,0 +1,83 @@
+Subject: Old Riemann Toribrot Translation Pass 001
+
+Description: Bounded periphery classification of old ReasoningFramework Riemann Workspace and Toribrot geometry objects against current Pinky RH rails.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Old_Riemann_Toribrot_Periphery_Classification_Specification.sop
+@ [prior_zeta_translation] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_zeta_tool_translation_pass_001.sop
+@ [local_lambda_scan] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+
+& [OldRiemannToribrotTranslationPass001] is a completed bounded periphery-inspection pass
+  + [analysis_uuid] is ea270c1d-98f3-425a-9951-7db69faddccc
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [external_source_root] is C:\Project\ReasoningFramework
+  + [status] is completed
+  + [proof_status] is classification_only_not_RH_evidence
+
+& [Classification_001_RiemannWorkspace] is classification_result
+  + [old_object] is RiemannWorkspace
+  + [source_fact] is the old refinement already defines the workspace as an RH-adjacent exploration workbench and explicitly rejects RH proof, zero oracle, and theorem-engine roles
+  + [useful_value] is integration scaffold and bridge boundary between geometric pants and arithmetic factor pants
+  + [classification] is conceptual_scaffold_and_boundary_primitive
+  + [local_decision] is do not import as architecture because the Pinky RiemannHypothesis workspace already performs this routing locally
+
+& [Classification_002_EnumeratedToribrotModule] is classification_result
+  + [old_object] is EnumeratedToribrotModule
+  + [source_fact] is the old refinement narrows this module to finite binary-tree address identity, generation, parent-child rules, optional value, and scalar fields
+  + [useful_value] is stable address identity for future notebook or graph overlay work
+  + [classification] is useful_primitive_and_future_import_candidate
+  + [local_decision] is defer implementation until a concrete graph, notebook, or overlay needs stable local node addressing
+
+& [Classification_003_EnumeratedToribrotMathEngine] is classification_result
+  + [old_object] is EnumeratedToribrotMathEngine
+  + [source_fact] is the old refinement repairs the source by separating representation, finite arithmetic, operation graph, verification, and caller boundaries while pruning RH solver and universal oracle claims
+  + [useful_value] is audit-trace discipline for finite computation
+  + [classification] is conceptual_scaffold_with_selective_future_import_candidate
+  + [hack_boundary] is workaround_hack_if_used_to_replace existing Python, mpmath, sympy, or interval libraries without a specific audit-trace need
+  + [local_decision] is defer runtime import; current deterministic Python tools already satisfy the active math-processing need
+
+& [Classification_004_ToribrotGeometry] is classification_result
+  + [old_object] is Toribrot geometry and deformation frame
+  + [source_fact] is Toribrot is a recursive toroidal subject architecture with intrinsic maps, pants decomposition, winding convergence, deformation modifiers, and explicit uncertainty around SO10-style frames
+  + [useful_value] is geometric imagination, periphery-inspection vocabulary, and a source of possible scalar observables only after a declared sampling map to integer identities
+  + [classification] is conceptual_scaffold_and_defer_for_RH
+  + [hack_boundary] is workaround_hack_if_geometry is allowed to reassign arithmetic identity, prime structure, factorization, zeta truth, or RH meaning
+  + [local_decision] is defer geometry implementation and keep it outside the current RH math rails
+
+& [Classification_005_PantsVocabulary] is boundary_result
+  + [old_object] is pants vocabulary across geometry, factorization, and operation composition
+  + [source_fact] is the old Riemann Workspace already warns that topological pants and arithmetic factor pants must be distinguished
+  + [local_inference] is pants is not one identity; it is a recurring shape across separate layers
+  + [classification] is useful_boundary_primitive
+  + [rule] is every local use of pants must declare whether it is topological gluing, arithmetic factorization, or operation composition
+
+& [Classification_006_SO10AndModifierFrames] is boundary_result
+  + [old_object] is SO10Frame and candidate modifier families
+  + [source_fact] is old Toribrot explicitly marks SO10 as historical, candidate, and unproven unless formal representation, invariant form, closure, and Lie algebra correspondence are supplied
+  + [classification] is lineage_preserved_and_defer
+  + [local_decision] is not relevant to current RH rails except as a caution against choosing a symbolic frame before deriving observed axes
+
+& [WholeFieldRelation_001] is local_field_boundary
+  + [required_bridge] is any Toribrot geometry-derived observable must become an explicit scalar field a(n) attached to stable integer identity before Zetabrot, Lambda Oscilloscope, Euler-product, or explicit-formula comparison
+  + [comparison_baseline] is known arithmetic fields such as Lambda(n), prime indicator, gap fields, theta(x), psi(x), and prime-power decomposition
+  + [current_status] is no geometry-derived field is currently defined well enough to compare
+  + [inference] is old Toribrot geometry should not drive RH inquiry until it produces a declared field with reproducible sampling and a comparison contract
+
+& [ProjectSliceClosure_001] is restraint_result
+  + [closed_slice] is old Riemann/Zeta/Toribrot conceptual-hack classification
+  + [reason] is old Zeta tools yielded one local finite Lambda primitive, while old Riemann/Toribrot objects yielded boundary discipline and deferrals rather than new RH math tools
+  + [source_import_status] is selected old source snapshots preserved locally for comparison records
+  + [next_relevant_work] is a whole-field landmark overlay report if the user wants a synthesis view, or a periphery-inspection notebook/address primitive only if a concrete graph workflow needs it
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is old Riemann/Toribrot geometry is coherent as conceptual scaffold and boundary discipline, but not coherent enough to become a local RH computational or proof primitive now
+  + [retained_primitives] are typed pants boundary, stable address identity as future import candidate, and audit-trace discipline as future computation-support candidate
+  + [deferred_objects] are Toribrot geometry runtime, SO10/modifier-frame work, and full EnumeratedToribrotMathEngine runtime
+  + [discarded_overreach] is geometry as arithmetic identity, arithmetic engine as RH analyzer, visual pattern as theorem evidence, and symbolic elegance as proof pressure
+  + [retained_boundary] is this classification gives project direction, not RH evidence, proof, disproof, or zero certification
+
+(old_riemann_toribrot_translation_pass_001) :external Riemann/Toribrot periphery translated against local deterministic rails: /workspace scaffold, address identity, typed pants boundary, audit-trace discipline, geometry deferral/ |RH computational authority|
+  + [inside] is source-preserved classification of old Riemann Workspace and Toribrot objects
+  + [boundary] is retained as scaffold and future import candidates only when local tasks need them
+  |outside| RH proof, disproof, zero certification, blind geometry import, SO10 proof claims, and arithmetic identity from geometric resemblance

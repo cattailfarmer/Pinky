@@ -1,0 +1,59 @@
+Module: EnumeratedToribrot
+import Toribrot
+
+1. Addressing the Toribrot
+Represent the address as a string value.
+Each node has a finite binary address: [ a = (b_1, b_2, \dots, b_k),\quad b_i \in {0,1},\ k \ge 1. ]
+The root node has address: [ a_{\text{root}} = [0]. ]
+The generation (depth) of a node with address (a) is: [ \mathrm{gen}(a) = \text{len}(a) - 1. ] So:
+(\mathrm{gen}([0]) = 0) for the root,
+children of root have addresses [0,0] and [0,1] and generation 1, etc.
+2. Tree Structure
+Nodes are indexed by finite binary lists starting with 0:
+Root: [0].
+For any node with address a, its children have addresses:
+a + [0],
+a + [1].
+Parent/child relation:
+The parent of a node with address a (length ≥ 2) is the node with address a[:-1] (drop the last bit).
+The root [0] has no parent.
+This gives a rooted full binary tree with:
+
+Root at [0],
+Unique path from root to any node,
+generation = len(address) - 1.
+3. Node Data
+Each node stores:
+
+address: list[int] of 0/1, with root [0],
+generation: int = len(address) - 1,
+children: list[Node], either empty or [left, right],
+value: optional arithmetic value (default None),
+fields: dict[str, Any] for scalar fields (prime flag, log, gap, Λ, etc.).
+Updated Python Skeleton
+Here is the revised class and helper functions:
+
+class Node:
+    def __init__(self, address_bits):
+        # address_bits: list of 0/1, root is [0]
+        self.address = address_bits
+        # generation: root [0] -> 0, children [0,0],[0,1] -> 1, etc.
+        self.generation = len(address_bits) - 1
+        self.children = []      # will be [left, right] or []
+        self.value = None       # optional arithmetic value
+        self.fields = {}        # arbitrary scalar fields
+
+def create_root():
+    # root node has address [0]
+    return Node([0])
+
+def expand(node):
+    left  = Node(node.address + [0])
+    right = Node(node.address + [1])
+    node.children = [left, right]
+    return left, right
+This:
+
+Uses [0] as the root address,
+Treats the first element 0 as the root label,
+Keeps the binary expansion rule consistent.

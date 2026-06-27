@@ -1,0 +1,67 @@
+Subject: Family Distribution Bridge Pass 001
+
+Description: First whole-field return pass measuring special-prime family probes beside pi(x), theta(x), and psi(x).
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_prime_shape_bridge\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Prime_Shape_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_family_distribution_bridge_trace.json
+
+& [FamilyDistributionBridgePass001] is a completed whole-field return pass
+  + [analysis_uuid] is ade3362d-d92d-48c5-81bb-0714d07a2b7a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_family_distribution.py
+  + [sample_points] is 1000, 10000, 100000
+  + [status] is completed_first_pass
+
+## Whole Field Return
+
+& [GlobalSurface_001] is the all-prime measurement surface
+  + [x_1000] has pi(x) 168, theta(x)-x about -43.7547, and psi(x)-x about -3.31909
+  + [x_10000] has pi(x) 1229, theta(x)-x about -104.009, and psi(x)-x about 13.3967
+  + [x_100000] has pi(x) 9592, theta(x)-x about -314.611, and psi(x)-x about 51.5640
+  + [meaning] is the center of measurement is whole-prime distribution error, not family rarity
+
+## Sparse Realizations
+
+& [Realization_001_UltraSparseCrystallineWitnesses] is a dense-node candidate
+  + [subjects] is Fermat-prime identity, Fermat-number factor periphery, Mersenne primes, and base-2 Wieferich primes
+  + [x_100000_counts] is Fermat-prime identity 5, Fermat-number factor periphery 1, Mersenne primes 5, and base-2 Wieferich primes 2
+  + [x_100000_theta_shares] is about 0.0002225, 0.0000648, 0.0002040, and 0.0001521 respectively
+  + [meaning] is these families are sharp local witnesses of arithmetic constraint but too sparse in this finite pass to be the distribution field itself
+  + [boundary] is their rarity may illuminate local structure without explaining theta(x)-x or psi(x)-x by itself
+
+& [Realization_002_BroaderLinkedPrimeSubfields] is a separate identity candidate
+  + [subjects] is Sophie Germain primes and safe primes
+  + [x_100000_counts] is Sophie Germain primes 1171 and safe primes 670
+  + [x_100000_theta_shares] is about 0.1200 and 0.0684 respectively
+  + [meaning] is linked-prime propagation creates a much broader family surface than Fermat/Mersenne/Wieferich-style crystalline witnesses
+  + [boundary] is broad family share still does not imply RH relevance unless it illuminates whole-field error or zeta structure
+
+& [Realization_003_SmoothnessConstraintMiddleLayer] is a separate identity candidate
+  + [subjects] is Proth and Pierpont primes
+  + [x_100000_counts] is Proth primes 99 and Pierpont primes 32
+  + [x_100000_theta_shares] is about 0.00902 and 0.00197 respectively
+  + [meaning] is p-1 smoothness creates a middle layer between rare crystalline witnesses and broad linked-prime subfields
+  + [boundary] is smoothness of p-1 is a local arithmetic constraint, not a global distribution explanation by itself
+
+& [Realization_004_GoverningRuleCandidate] is an inquiry direction
+  + [candidate_rule] is special-prime families are intersections between primality and a second constraint coordinate
+  + [constraint_coordinates] is multiplicative order, power-cycle boundary, p-1 smoothness, p-adic lifting, and linked-prime propagation
+  + [whole_field_test] is whether the second coordinate changes, explains, bounds, samples, or illuminates pi(x), theta(x), psi(x), Euler products, explicit formula error, or zeta-zero behavior
+  + [status] is promising_but_unproven
+
+& [Restraint_001] is active
+  + [statement] is special primes remain witnesses, not the RH subject
+  + [reason] is the first whole-field return shows large differences in family density and theta-share; family beauty alone does not determine global prime distribution
+  + [next_method] is compare family-specific interval increments against theta and psi error movement before adding any stronger inference
+
+## Next Work
+
+& [NextQuestion_001] is ready
+  + [question] is whether family increments cluster around changes in theta(x)-x or psi(x)-x in any repeatable finite way
+  + [method] is build interval-level distribution probes rather than only cumulative family shares
+
+& [NextQuestion_002] is ready
+  + [question] is whether irregular primes should be added as a zeta-adjacent family surface
+  + [method] is add a Bernoulli-divisibility tool only after source/spec preservation because it touches zeta special values more directly than the current power-cycle families

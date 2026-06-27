@@ -1,0 +1,56 @@
+Subject: Prime Inflation Surface Metaphor Specification
+
+Description: SJS-processed measured-metaphor specification for interpreting prime emergence as an inflating surface.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_inflation_surface_metaphor\manifest.sop
+@ [related] C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_Prime_Shape_Bridge_Specification.sop
+@ [related] C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Power_Decomposition_Bridge_Specification.sop
+
+& [PrimeInflationSurfaceMetaphorSpecification] is a measured metaphor contract
+  + [canonical_specification_uuid] is 7b1f3a43-ba10-48e6-af6d-1d896a8e6fb1
+  + [source_uuid] is ea842cad-0f9a-4168-a164-24b6176fd1b2
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [role] is translate the user's inflating-surface image into bounded prime-emergence inquiry
+  + [not_role] is physical causation, prime creation, RH proof, zero certification, or permission for arbitrary special-prime pursuit
+
+& [MetaphorCanonicalization] is the canonical mapping
+  + [inflating_ball] is the expanding scale horizon of integer inspection
+  + [surface] is the currently visible prime-distribution boundary at scale x or across a declared shell
+  + [surface_stretch] is the thinning prime density and growing spacing pressure as scale increases, with ordinary prime density approximated by 1/log(x)
+  + [new_surface_area] is a new interval, log-shell, or scale band added to the inspection horizon
+  + [beneath_surface_material] is candidate integers and residue classes not yet resolved in the selected scale shell
+  + [push_forward] is sieve-survival becoming visible when candidates cross the current inspection boundary and avoid divisibility by already-visible smaller primes up to the relevant square-root boundary
+  + [new_prime_ordained] is observational emergence of a fixed prime into the current scale surface, not literal creation
+  + [membrane_texture] is local arithmetic constraints such as congruence classes, multiplicative order, special-family membership, prime powers, and Lambda weights
+
+& [PursuitValueGate] is active
+  + [pursuit_value_signal] is the metaphor can connect special-prime family surfaces to general prime emergence without treating special primes as the center
+  + [boundary_value] is separates literal creation from scale-visible emergence
+  + [identity_value] is separates general primes, special-family operators, sieve survivors, prime powers, and zeta-facing whole-field objects
+  + [whole_field_value] is returns any special-prime insight to pi(x), theta(x), psi(x), Lambda(n), Euler/log-derivative weighting, and explicit-formula residual behavior
+  + [governance_value] is prevents arbitrary special-prime chasing by requiring a declared shell, operator surface, or whole-field return
+
+& [MeasuredContracts] is the future-tool eligibility set
+  + [shell_density_contract] is compare prime counts in declared shells against x/log(x), Li(x) increments, theta increments, and psi increments
+  + [sieve_survivor_contract] is measure which candidates in a declared shell survive divisibility constraints from smaller primes up to the square-root boundary
+  + [operator_texture_contract] is overlay special-prime family membership as surface texture, not as central identity
+  + [lambda_surface_contract] is measure Lambda-weighted prime and prime-power contributions inside the shell before interpreting visual or family patterns
+  + [explicit_residual_contract] is compare shell behavior to finite explicit-formula residual surfaces only after source-defined cutoff and window policies are named
+
+& [RestraintBoundary] is the not-it field
+  + [not_literal] is primes are fixed arithmetic objects; the metaphor describes scale visibility and inquiry focus
+  + [not_sufficient] is special-prime overlap does not imply general-prime law unless returned to whole-field objects
+  + [not_proof] is finite shell, sieve, Lambda, or residual traces are not RH evidence by themselves
+  + [not_tool_ready] is no new computation is justified until a measured contract names a shell, scale law, family overlay, or Lambda contribution target
+
+  = must: translate metaphor into declared shell, scale, sieve, density, Lambda, or whole-field objects before computation
+  = must: preserve special primes as operator texture on the surface unless a whole-field return gives them stronger value
+  = must: keep prime emergence as observational emergence inside a scale horizon, not literal generation
+  = must: use the pursuit value gate before adding tools or reopening special-prime searches
+  - never: treat the surface metaphor as proof, disproof, zero certification, or automatic focus promotion
+
+(prime_inflation_surface_metaphor) :measured metaphor: /scale horizon, shell surface, sieve survival, density stretch, Lambda texture/ |literal prime creation|
+  + [inside] is bounded translation from metaphor to measurable whole-field inquiry
+  + [boundary] is useful orientation but incomplete explanation
+  |outside| RH proof, arbitrary special-prime sprawl, and visual metaphor as theorem authority

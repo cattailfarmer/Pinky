@@ -1,0 +1,73 @@
+Subject: Lambda Window Cutoff Scan Pass 001
+
+Description: First bounded scan of Lambda Oscilloscope extrema across window policy and cutoff growth.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_window_cutoff_comparison\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Window_Cutoff_Comparison_Specification.sop
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_window_cutoff_scan.py
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+@ [comparison_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [comparison_rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+
+& [LambdaWindowCutoffScanPass001] is a completed bounded scan pass
+  + [analysis_uuid] is b87d3e19-98b8-4d91-9e72-94d9c9cfb466
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [proof_status] is finite_lambda_window_cutoff_scan_not_rh_evidence
+  + [status] is completed
+
+& [ImplementationSummary_001] is deterministic_tool_fact
+  + [helper_added] is lambda_window_cutoff_scan in rh_math.lambda_oscilloscope
+  + [cli_added] is tools/scripts/lambda_window_cutoff_scan.py
+  + [readme_updated] is tools/README.md
+  + [tests_added] is one focused Lambda window/cutoff scan test in tests/test_rh_math_tools.py
+  + [scan_metrics] are lambda_trace_abs and finite_trace_residual_abs
+  + [candidate_rule] is local extrema over adjacent t samples within each sigma, window, cutoff, and metric group
+
+& [Verification_001] is test_result
+  + [command] is .\.venv\Scripts\python.exe -m pytest
+  + [result] is 26 passed
+  + [duration] is 11.25 seconds
+  + [boundary] is tests verify finite tool behavior, not RH proof, disproof, or zero certification
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [trace_file] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+  + [sigmas] are 1.5 and 1.05
+  + [windows] are hard and fejer
+  + [prime_power_bounds] are 100 and 500
+  + [t_range] is 0 through 30
+  + [t_step] is 0.5
+  + [row_count] is 488
+  + [candidate_count] is 280
+  + [cutoff_stability_row_count] is 136
+  + [cutoff_stable_count] is 108
+  + [cross_window_row_count] is 114
+  + [cross_window_stable_count] is 86
+  + [near_reference_candidate_count_within_half_step] is 42
+
+& [RailComparison_001] is comparison_result
+  + [existing_vertical_resonance_candidate_count] is 46
+  + [existing_vertical_resonance_reference_near_hits] is zeta_abs local minima near the first, second, and third reference ordinates plus sparse log-derivative residual maxima
+  + [lambda_scan_reference_near_hits] is 42 candidates within one t step of the first three reference ordinates, mostly local maxima in lambda_trace_abs and finite_trace_residual_abs
+  + [inference] is Lambda Oscilloscope landmarks are denser than vertical-resonance landmarks and therefore more useful as an overlay than as a primary detector
+
+& [StabilityInference_001] is bounded_inference
+  + [cutoff_stability_result] is many candidate locations persist across cutoff growth, with 108 of 136 nearest-candidate cutoff comparisons stable within one t step
+  + [window_stability_result] is many candidate locations persist across hard versus Fejer windows, with 86 of 114 nearest-candidate window comparisons stable within one t step
+  + [instability_result] is 28 cutoff comparisons and 28 cross-window comparisons exceeded the one-step tolerance
+  + [meaning] is stable landmarks exist but the field is too dense and too sensitive to use as a central zero-behavior identity
+  + [boundary] is window and cutoff stability indicates finite trace repeatability only
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is Lambda Oscilloscope window and cutoff behavior is stable enough to compare with t-axis and vertical-resonance rails, but not clean enough to become the primary RH-facing landmark surface
+  + [reason] is stable candidates persist across many cutoff/window comparisons, while candidate density and nontrivial sensitivity show strong finite-truncation and smoothing effects
+  + [recommended_use] is diagnostic overlay for inspecting whole-field Lambda prime-power phasor behavior beside t-axis and vertical-resonance landmarks
+  + [not_recommended_use] is zero detector, proof surface, or replacement for explicit-formula and Euler-product rails
+  + [next_relevant_work] is return to old Riemann/Toribrot periphery classification or build a small landmark-overlay report only when a specific whole-field question needs it
+  + [retained_boundary] is finite Lambda trace landmarks are not RH evidence, proof, disproof, or zero certification
+
+(lambda_window_cutoff_scan_pass_001) :finite Lambda window and cutoff stability scan: /stable overlay landmarks, dense candidate field, smoothing sensitivity/ |primary zero detector|
+  + [inside] is finite cutoff/window comparison for Lambda Oscilloscope extrema
+  + [boundary] is useful diagnostic overlay only
+  |outside| proof claims, zero certification, critical-line authority, and replacement of whole-field rails

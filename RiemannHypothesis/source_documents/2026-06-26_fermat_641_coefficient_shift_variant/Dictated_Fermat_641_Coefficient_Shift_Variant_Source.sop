@@ -1,0 +1,17 @@
+Subject: Dictated Fermat 641 Coefficient Shift Variant Source
+
+Description: Raw source preserving the user's hypothesis that 641 may act inside a coefficient-power form with N-dependent shifts.
+
+& [DictatedFermat641CoefficientShiftVariantSource] is preserved raw source for a coefficient-power shift variant
+  + [source_uuid] is 0a2f4ddd-fb08-4d8a-a965-c18a10b9eb15
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "then we should try other methods of computing it, like 65537*641^N +-1,2,3,4... or maybe N?"
+  + [followup_statement] is "maybe +-N, or +-N+1?"
+
+  = must: test 65537 * 641^N plus small fixed shifts and N-dependent shifts
+  = must: use modular arithmetic rather than expanding 641^65537
+  = must: apply the two-failure identity abandonment rule
+  - never: treat bounded divisor survival as primality evidence or RH evidence

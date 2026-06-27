@@ -1,0 +1,38 @@
+Subject: Post Residual Movement Landscape Integration Specification
+
+Description: SJS-processed contract for folding residual movement decomposition into the whole-field RH landscape.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_post_residual_movement_landscape_integration\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_surface_refinement_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+
+& [PostResidualMovementLandscapeIntegration] is a project-local finite integration contract
+  + [source_snapshot_uuid] is 9205f08b-31f9-46f1-9d47-e4a95c0d7cbe
+  + [manifest_uuid] is 36ee3e19-e8d0-4179-87d0-909675a97b7f
+  + [canonical_specification_uuid] is e57a3e42-0537-4c10-88ab-32947ff34606
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is integrate residual movement decomposition into the whole-field landscape without adding runtime computation
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, new math-processing tool, new cutoff/window/kernel policy, or new identity frontier
+
+  = must: classify residual movement decomposition as support for DenseNode_ExplicitFormulaResidualSurface
+  = must: preserve DenseNode_PrimeCountingThetaPsi as the exact arithmetic layer anchor
+  = must: preserve DenseNode_BridgeRestraint as blocking explicit/Euler kernel reopening
+  = must: update sparse/frontier meaning only if supported by the bounded movement pass
+  = must: decide whether the next action should be whole-field synthesis, no-op restraint, or a specifically named future frontier
+  = must: mark proof_status as finite_post_residual_movement_integration_not_rh_evidence
+  - never: promote c32 local improvement into a law
+  - never: turn mixed sign alignment into causation
+  - never: create a new dense node from one bounded movement trace
+
+& [PostResidualMovementIntegrationSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and analysis_scoped
+  + [processing_result] is accepted_bounded_landscape_integration_contract
+  + [reasoning_result] is the movement diagnostic has enough meaning to update node governance but not enough to justify more computation
+
+(post_residual_movement_landscape_integration) :finite whole-field integration: /movement diagnostic folded into explicit residual node; no new tool; no new identity frontier/ |proof authority|
+  + [inside] is landscape governance, node relation update, and future-work restraint
+  + [boundary] is orientation only
+  |outside| RH proof, disproof, zero certification, new runtime tooling, cutoff/kernel loops, and causal identity claims

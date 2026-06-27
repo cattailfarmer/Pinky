@@ -1,0 +1,21 @@
+Subject: Dictated Landmark Overlay Discipline Synthesis Source
+
+Description: Preserved source for synthesizing landmark-overlay discipline after half-plane boundary synthesis.
+
+& [DictatedLandmarkOverlayDisciplineSynthesisSource] is raw continuation source
+  + [source_snapshot_uuid] is e313d938-5dee-428d-871f-a8f5aa989936
+  + [captured_at] is 2026-06-26T17:52:06.216Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_after_half_plane_synthesis_next
+  + [raw_need] is decide whether to stop after half-plane boundary synthesis or select a new source-defined synthesis object, with landmark-overlay discipline as the natural later comparison surface
+  + [selected_surface] is landmark-overlay discipline across t-axis references, vertical resonance, Lambda diagnostic overlay, and half-plane boundary layers
+  + [known_pressure] is reference-near heat appears in sparse and dense finite surfaces, but the surfaces are metric-dependent, cutoff-sensitive, and not independent zero evidence
+  + [identity_boundary] is this synthesis is orientation and restraint only, not zero certification, RH evidence, proof, disproof, or implementation authority
+
+  = must: preserve this raw source separately from canonical specification
+  = must: use existing whole-field landmark overlay, t-axis, vertical resonance, Lambda Oscilloscope, Lambda window/cutoff, and half-plane boundary synthesis records
+  = must: keep sparse landmarks and dense overlay heat distinct
+  = must: treat known-zero ordinates as labels and reference anchors only
+  = must: decide whether new overlay computation is blocked or conditionally allowed
+  - never: treat reference-near alignment as proof, disproof, zero certification, or single RH identity

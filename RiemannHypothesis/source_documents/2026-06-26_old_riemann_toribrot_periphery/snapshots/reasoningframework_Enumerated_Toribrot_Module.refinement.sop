@@ -1,0 +1,173 @@
+Subject: Enumerated Toribrot Module
+Description: Corrected canonical SOP definition for the intended Enumerated Toribrot module: a finite rooted binary address tree whose nodes carry optional values and scalar fields for downstream Toribrot or math-engine use.
+
+@ [source] platform/source_documents/2026-05-19_enumerated_toribrot_module/Source_Document_Manifest.sop
+@ [source] platform/source_documents/2026-05-19_enumerated_toribrot_module/Enumerated Toribrot Module.source-snapshot.txt
+@ [source] platform/refinement/Toribrot.sop
+@ [source] platform/refinement/Delineation.sop
+@ [source] platform/refinement/Data_Driven_Design.sop
+@ [source] platform/refinement/Specification_Governance.sop
+
+& [EnumeratedToribrotModule] is the finite binary tree addressing layer for Toribrot enumeration
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [canonical_specification_uuid] is c28de748-d7c0-4666-baad-67a17e9d9a88
+  + [source_snapshot_uuid] is 87ed77ac-62bb-4e9e-ae68-1dd811ae45f4
+  + [source_document] is platform/source_documents/2026-05-19_enumerated_toribrot_module/Enumerated Toribrot Module.source-snapshot.txt
+  + [solution_uuid] is a68581f2-a0a4-4da5-a1c3-687c3821208b
+  + [primary_role] is address_identity_module
+  + [import_target] is Toribrot, EnumeratedToribrotMathEngine, Zetabrot, ZetaOscilloscope, or another caller that needs stable binary node enumeration
+  + [not_primary_role] is arithmetic engine, RH analyzer, proof engine, zeta evaluator, or geometric Toribrot dynamics model
+  + [root_address] is [0]
+  + [address_form] is finite nonempty list of bits beginning with 0
+  + [tree_shape] is rooted full binary tree
+  + [node_payload] is optional arithmetic value plus arbitrary scalar fields
+
+  = must: treat [0] as the unique root address
+  = must: require every address to be a finite list of bits and to begin with 0
+  = must: define generation as address length minus one
+  = must: derive parent and child relations from address structure
+  = must: keep this module responsible for enumeration and node identity only
+  - never: infer arithmetic validity from address existence alone
+  - never: use binary addressing as a substitute for Toribrot geometry, operation semantics, or RH interpretation
+
+## Address Identity
+
+& [ToribrotAddress] is a finite binary list identifying one node in the Enumerated Toribrot tree
+  + [bit_set] is {0, 1}
+  + [first_bit] is 0
+  + [root_address] is [0]
+  + [length] is a positive integer
+  + [generation] is length minus 1
+  + [string_form] is an optional serialization of the bit list for storage or display
+
+  = must: reject an empty address
+  = must: reject any address whose first bit is not 0
+  = must: reject any address containing values outside {0, 1}
+  = must: preserve the list form as canonical even when a string form is used
+  = must: compute generation by len(address) - 1
+
+  ? [address is [0]]
+    + [generation] is 0
+    + [parent] is none
+    + [role] is root
+
+  ? [address length is greater than 1]
+    + [parent] is address without its final bit
+    + [last_step] is final bit
+    + [role] is nonroot_node
+
+& [ToribrotChildRule] is the deterministic expansion rule for one Enumerated Toribrot node
+  + [input_address] is a valid ToribrotAddress
+  + [left_child] is input_address concatenated with [0]
+  + [right_child] is input_address concatenated with [1]
+  + [child_generation] is input_generation plus 1
+
+  = must: create children in left, right order
+  = must: preserve the parent address as the prefix of each child
+  = must: allow expansion to be lazy or eager according to the caller
+
+& [ToribrotParentRule] is the inverse relation from a nonroot node to its parent
+  + [input_address] is a valid ToribrotAddress with length greater than 1
+  + [parent_address] is input_address without the final bit
+  + [sibling_address] is parent_address concatenated with the opposite final bit
+
+  = must: return no parent for [0]
+  = must: preserve uniqueness of the path from [0] to every valid address
+
+## Node Model
+
+& [EnumeratedToribrotNode] is one node stored in the Enumerated Toribrot module
+  + [address] is ToribrotAddress
+  + [generation] is len(address) - 1
+  + [children] is empty or [left_child, right_child]
+  + [value] is optional arithmetic value
+  + [fields] is dictionary of scalar fields
+  + [field_examples] are prime_flag, log_value, prime_gap, von_mangoldt_value, residue, phase, weight, or verification_state
+
+  = must: derive generation from address rather than store an independent authority
+  = must: keep children empty until expansion when lazy allocation is used
+  = must: store scalar annotations in fields without changing address identity
+  = must: distinguish value from fields
+  - never: let a scalar field redefine parent, child, or generation semantics
+
+& [NodeConstructionProtocol] is the minimal procedure for constructing nodes
+  + [create_root] returns EnumeratedToribrotNode with address [0], generation 0, empty children, value none, and empty fields
+  + [expand] maps one node to two child nodes with addresses node.address + [0] and node.address + [1]
+  + [validation] checks address form before constructing or accepting a node
+
+  = must: create root before expanding descendants
+  = must: validate every externally supplied address
+  = must: keep expansion deterministic
+
+## Data Boundary
+
+& [EnumeratedToribrotDataBoundary] is the contract between the address module and downstream systems
+  + [provided_by_module] is address validation, generation calculation, parent lookup, child expansion, node payload storage, and scalar field storage
+  + [owned_by_caller] is arithmetic meaning, Toribrot geometric meaning, zeta meaning, visualization meaning, and proof interpretation
+  + [allowed_payload] is optional value and scalar fields attached to a node
+  + [disallowed_payload_authority] is any payload that changes address identity rules
+
+  = must: let callers attach mathematical data without changing tree identity
+  = must: require callers to define the semantics of their fields
+  = must: expose enough node identity for reproducible traversal
+  - never: claim that a populated field is meaningful without its caller specification
+
+& [PythonSkeletonConformance] is the reference behavior expressed by the source document's skeleton
+  + [node_init] accepts address_bits
+  + [node_address] stores address_bits
+  + [node_generation] stores len(address_bits) - 1
+  + [node_children] starts as empty list
+  + [node_value] starts as None
+  + [node_fields] starts as empty dictionary
+  + [create_root] returns Node([0])
+  + [expand] creates left Node(node.address + [0]) and right Node(node.address + [1])
+
+  = must: preserve the root [0] convention
+  = must: preserve deterministic left and right child construction
+  = must: add validation before production use
+  = should: avoid mutable address aliasing by copying address_bits during construction in an implementation
+  = should: avoid replacing existing children silently unless the caller explicitly requests re-expansion
+
+## Relationship To Broader Toribrot Work
+
+& [ModulePlacement] is the corrected relationship between this source and broader Toribrot systems
+  + [source_correction] is this module is the intended Enumerated Toribrot definition, while the earlier math-engine source is a broader downstream architecture sketch
+  + [engine_relationship] is EnumeratedToribrotMathEngine may import this module for its node address layer
+  + [toribrot_relationship] is Toribrot may use this module when a finite discrete enumeration of recursive nodes is required
+  + [rh_relationship] is indirect only through callers that attach prime, zeta, or numerical fields to nodes
+
+  = must: keep enumeration separate from computation
+  = must: keep computation separate from analytic interpretation
+  = must: treat RH-related use as caller-owned experimental meaning
+
+## Acceptance Criteria
+
+& [EnumeratedToribrotModuleAcceptance] is the satisfaction test for this processed specification
+  + [root_test] is create_root produces address [0] and generation 0
+  + [child_test] is expand([0]) produces [0,0] and [0,1] at generation 1
+  + [deep_generation_test] is address [0,1,0,1] has generation 3
+  + [parent_test] is parent([0,1,0,1]) equals [0,1,0]
+  + [sibling_test] is sibling([0,1,0,1]) equals [0,1,0,0]
+  + [invalid_test] rejects [], [1], [0,2], and [0,-1]
+
+  = must: pass all acceptance tests before treating an implementation as conformant
+
+## SJS Processing Trace
+
+& [SJSProcessingTrace] is the specification justification trace for the Enumerated Toribrot Module
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [source_snapshot_uuid] is 87ed77ac-62bb-4e9e-ae68-1dd811ae45f4
+  + [canonical_specification_uuid] is c28de748-d7c0-4666-baad-67a17e9d9a88
+  + [solution_uuid] is a68581f2-a0a4-4da5-a1c3-687c3821208b
+  + [input_source_hash] is 445CAE03D82EC3B89DB6D7C17221E460DA085463678DE069BC7D1842C9CD37BF
+  + [processing_result] is stable_canonical_module_definition
+  + [reasoning_result] is source narrowed to address identity, tree construction, node payload storage, and caller-owned semantics
+
+& [SatisfactionSignature] is the satisfaction signature for this canonical specification
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_uuid] is 8025e1f1-000f-4a61-83ee-68c64ddada95
+  + [signed_artifact] is platform/refinement/Enumerated_Toribrot_Module.sop
+  + [source_document] is platform/source_documents/2026-05-19_enumerated_toribrot_module/Enumerated Toribrot Module.source-snapshot.txt
+  + [source_document_sha256] is 445CAE03D82EC3B89DB6D7C17221E460DA085463678DE069BC7D1842C9CD37BF
+  + [signature_status] is valid
+  + [satisfaction_scope] is canonical processing of the intended Enumerated Toribrot address module into a stable SOP specification

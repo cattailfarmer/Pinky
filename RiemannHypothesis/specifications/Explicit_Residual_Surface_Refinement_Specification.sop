@@ -1,0 +1,43 @@
+Subject: Explicit Residual Surface Refinement Specification
+
+Description: SJS-processed contract for refining the explicit-formula residual surface dense node without new tooling.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_residual_surface_refinement\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_dense_node_refinement_selection_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_window_expansion_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_stability_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_law_comparison_atlas_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_bridge_restraint_synthesis_001.sop
+
+& [ExplicitResidualSurfaceRefinement] is a project-local finite refinement contract
+  + [source_snapshot_uuid] is aa70cc47-ee0b-45db-a429-86a15af36e69
+  + [manifest_uuid] is 3c6b82d1-0c94-4f06-98c4-d2016150a083
+  + [canonical_specification_uuid] is 4f888de5-bcb5-4e48-b1a9-3a3850539531
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is refine the explicit-formula residual surface dense node against existing traces before any new computation
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, critical-line authority, new window policy, new cutoff law, new kernel, or runtime implementation
+
+  = must: delineate the residual surface into x-domain object, arithmetic baseline, zero-term contribution, cutoff coordinate, window sensitivity, scale-law sensitivity, and bridge boundary
+  = must: keep psi(x), theta(x), and prime-power mechanics visible as anchors
+  = must: preserve sharp as baseline, T-height as cleaner coordinate than zero count, and T=c*log(x) as retained diagnostic law
+  = must: preserve local smoothing pockets as local, not universal
+  = must: preserve explicit/Euler bridge refinement as paused
+  = must: identify whether new tooling is blocked or conditionally allowed
+  = must: mark proof_status as finite_explicit_residual_refinement_not_rh_evidence
+  - never: claim monotone convergence, zero certification, universal window superiority, scale-law theorem, or explicit/Euler identity
+  - never: authorize implementation without a later source-defined measured quantity
+
+& [ExplicitResidualRefinementSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and refinement_scoped
+  + [processing_result] is accepted_bounded_explicit_residual_refinement_contract
+  + [reasoning_result] is existing traces are rich enough to refine the dense node conceptually before adding new math tooling
+
+(explicit_residual_surface_refinement) :finite residual-node refinement: /psi anchors, zero terms, cutoff coordinates, window sensitivity, scale-law drift, bridge boundary/ |proof authority|
+  + [inside] is bounded synthesis of existing explicit-formula residual traces
+  + [boundary] is node refinement and future-use governance only
+  |outside| RH proof, disproof, zero certification, critical-line evidence, new unsourced tooling, and explicit/Euler fusion

@@ -1,0 +1,16 @@
+Subject: Dictated Math Processing Tool Scripts Source
+
+Description: Raw dictated source preserving the user request to build math-processing Python tools for the RiemannHypothesis workspace.
+
+& [DictatedMathProcessingToolScriptsSource] is preserved raw source for project-local math processing tools
+  + [source_uuid] is 92611a3d-0cbb-437c-8cce-53e12aa6630c
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "returning to Riemann hypothesis, can you build the tools you will need, making python scripts for the tasks that are fit for math processing and not inference-oriented?"
+
+  = must: preserve this source before building scripts
+  = must: separate math processing from inference-oriented interpretation
+  = must: keep theorem and proof claims outside these tools
+  - never: treat this raw source as implementation authority without SJS processing

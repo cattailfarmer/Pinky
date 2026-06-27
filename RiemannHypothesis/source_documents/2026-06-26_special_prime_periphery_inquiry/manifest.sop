@@ -1,0 +1,16 @@
+Subject: Special Prime Periphery Inquiry Source Manifest
+
+Description: Manifest for the source request to investigate Fermat-prime seeds, 641, and nearby special prime families.
+
+& [SpecialPrimePeripheryInquirySourceManifest] is the source manifest for special-prime periphery inquiry
+  + [manifest_uuid] is d8eb850d-761d-42ed-84e1-cdb501c44e83
+  + [source_uuid] is 4a94b7fe-120b-4687-8433-9aa31e8e0828
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_special_prime_periphery_inquiry\Dictated_Special_Prime_Periphery_Inquiry_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Special_Prime_Periphery_Inquiry_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_fermat_prime_seed_inquiry.sop
+  + [source_role] is user_directive_for_prime_oddity_periphery_analysis
+
+  = must: keep source preservation separate from computed profiles and inference records
+  = must: trace prime-family tool additions back to this manifest

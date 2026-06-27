@@ -1,0 +1,72 @@
+Subject: Math Processing Tool Scripts Verification
+
+Description: Verification record for deterministic Python scripts created for finite Riemann Hypothesis adjacent math processing.
+
+& [MathProcessingToolScriptsVerification] is a toolchain verification record
+  + [verification_uuid] is d144d183-d637-467f-8899-2937ad9369fc
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_record] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_math_processing_tool_scripts\Dictated_Math_Processing_Tool_Scripts_Source.sop
+  + [canonical_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Math_Processing_Tool_Scripts_Specification.sop
+  + [tool_package] is C:\Project\Pinky\RiemannHypothesis\tools\rh_math
+  + [script_directory] is C:\Project\Pinky\RiemannHypothesis\tools\scripts
+  + [test_file] is C:\Project\Pinky\RiemannHypothesis\tests\test_rh_math_tools.py
+  + [status] is completed
+
+  = contains:
+    - zeta_eval.py for finite zeta value evaluation at sigma + it
+    - functional_equation_check.py for finite zeta or completed-xi functional-equation residuals
+    - critical_line_scan.py for Hardy Z critical-line sampling and sign-change brackets
+    - zero_probe.py for mpmath zetazero lookup residual probes
+    - prime_count_compare.py for finite prime-count, li(x), and truncated Riemann R comparison
+    - special_prime_profile.py for finite special-prime family profiling
+    - special_prime_scan.py for bounded special-prime family scans
+    - prime_family_distribution.py for returning special-prime family probes to pi(x), theta(x), and psi(x)
+    - prime_family_intervals.py for interval-level family increments against theta and psi movement
+    - prime_power_decomposition.py for decomposing psi(x) and interval movement into prime-power layers
+    - explicit_formula_probe.py for bounded explicit-formula zero-pair residual probes
+    - zero_window_probe.py for bounded sharp and Fejer-windowed explicit-formula zero-pair residual probes
+    - euler_product_probe.py for finite Euler-product and logarithmic-derivative weighting probes in Re(s) > 1
+    - sigma_boundary_probe.py for finite Euler-product approach-to-boundary scans with sigma > 1
+    - t_axis_boundary_probe.py for fixed-sigma Euler-product vertical slices with reference-ordinate annotations
+    - vertical_resonance_scan.py for dense fixed-sigma vertical local-extrema scans in Re(s) > 1
+    - exponential_shift_probe.py for bounded modular probes of base^exponent + shift forms without expanding large powers
+    - exponential_power_shift_probe.py for bounded modular probes of base^(exponent_base^power) + shift forms without expanding huge exponents
+    - coefficient_power_shift_probe.py for bounded modular probes of coefficient * power_base^N + shift(N) forms
+    - irregular_prime_scan.py for bounded Bernoulli-numerator scans of irregular primes
+    - irregular_prime_distribution.py for returning irregular-prime probes to pi(x), theta(x), and psi(x)
+
+  = verification:
+    - pytest tests -q returned 23 passed
+    - zeta_eval.py at sigma 0.5 and the first known zero ordinate returned near-zero residual magnitude under the test threshold
+    - critical_line_scan.py over 14 <= t <= 15 with step 0.1 detected and refined the first critical-line sign-change neighborhood
+    - functional_equation_check.py for xi at s = 2 + 3i returned a finite residual near working precision
+    - prime_count_compare.py returned finite prime_pi, li(x), and truncated Riemann R comparison rows for 10, 100, and 1000
+    - zero_probe.py returned finite residual probes for the first two mpmath zetazero values
+    - special_prime_profile.py classified 3, 5, 17, 257, and 65537 as Fermat-prime identities and 641 as a Fermat-number factor boundary at F5
+    - special_prime_scan.py under 2000 found Mersenne-prime, Proth-prime, Pierpont-prime, Sophie Germain, safe-prime, Fermat-factor, and base-2 Wieferich family surfaces
+    - prime_family_distribution.py returned finite pi(x), li(x), R(x), theta(x), psi(x), family density, and family theta-share rows for selected special-prime families
+    - prime_family_intervals.py returned finite interval increments for prime count, theta, psi, and selected family log weights
+    - prime_power_decomposition.py decomposed psi into theta and higher-prime-power layers and generated interval movement rows at 100, 200, and 500
+    - explicit_formula_probe.py compared exact psi(x) to bounded explicit-formula estimates using 5, 10, and 20 zero-pair truncations at 100, 200, and 500
+    - zero_window_probe.py compared sharp and Fejer-windowed zero-pair estimates against exact psi(x) using 5, 10, and 20 zero-pair truncations at 100, 200, and 500
+    - euler_product_probe.py compared finite Euler products, prime-factor log-derivative sums, and prime-power cutoff sums to zeta(s) and -zeta'(s)/zeta(s) for samples with sigma > 1
+    - sigma_boundary_probe.py measured finite Euler-product and logarithmic-derivative residuals as sigma approached 1 from above for t = 0 and the first-zero ordinate
+    - t_axis_boundary_probe.py measured fixed-sigma vertical residual slices and annotated pole-axis and known-zero-ordinate reference landmarks without zero certification
+    - vertical_resonance_scan.py identified finite local-extrema candidates for zeta_abs, Euler-product residual, and logarithmic-derivative residual metrics in Re(s) > 1
+    - exponential_shift_probe.py found bounded small divisors for most 65537^(641*N) +/- 2 forms and no divisor under 100000 for 65537^(641*17) + 2
+    - exponential_power_shift_probe.py found mod-3 or mod-7 obstructions for all tested 65537^(641^N) + 2^r forms with r in 0, 1, 2
+    - coefficient_power_shift_probe.py tested fixed and N-dependent shifts for 65537 * 641^N and found only isolated bounded survivors, not a tracked set identity
+    - irregular_prime_scan.py found first irregular primes through 200 and annotated Bernoulli indices with zeta special-value arguments
+    - irregular_prime_distribution.py measured irregular-prime counts, density among odd primes, theta share, and global theta/psi error rows at 100, 200, and 500
+
+  = boundary:
+    - these scripts are math-processing instruments, not inference-oriented framework authority
+    - finite numerical traces are not proof of RH, disproof of RH, or independent zero certification
+    - mpmath zetazero output is external numerical library output and must be treated as a probe, not proof authority
+    - old ReasoningFramework symbolic tools remain external periphery unless explicitly imported through source preservation and SJS
+
+& [Toolchain_002_MathProcessingScripts] is completed
+  + [result] is deterministic Python scripts and tests for finite numerical, prime-family, whole-field return, interval-return, prime-power decomposition, explicit-formula residual probing, zero-window residual probing, Euler-product/logarithmic-derivative weighting, sigma-boundary scanning, t-axis boundary slicing, vertical-resonance scanning, exponential-shift boundary, power-exponent boundary, coefficient-power boundary, irregular-prime scanning, and irregular-prime distribution processing
+  + [purpose] is separate repeatable math operations from Codex inference so later periphery inspection can ground claims in reproduced finite traces
+  + [next_use] is use these tools to inspect local numerical behavior before translating old ZetaOscilloscope, Zetabrot, or Toribrot symbolic objects into Pinky-local meaning

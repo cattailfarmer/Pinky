@@ -1,0 +1,24 @@
+Subject: Dictated Commit Scope Review Source
+
+Description: Raw source for deciding the first RH project bookend scope before any staging or commit.
+
+& [DictatedCommitScopeReviewSource] is preserved source for the RH first-bookend scope decision
+  + [source_snapshot_uuid] is d23baef0-0d75-451d-a255-b0b34bd6b129
+  + [source_kind] is derived_from_source_spec_inventory_commit_readiness
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_previous_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_source_spec_inventory_commit_readiness_001.sop
+  + [current_rh_non_ignored_untracked_count] is 337 after the source/spec inventory records
+  + [current_root_sop_dirty_entries] is 80 under .sop
+  + [current_root_sop_modified_entries] is 71
+  + [current_root_sop_untracked_entries] is 9
+  + [candidate_pairing_file] is C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+  + [candidate_pairing_file_diff_stat] is 303 insertions and 62 deletions
+  + [scope_question] is whether the first RH project bookend should include only RiemannHypothesis, or RiemannHypothesis plus CurrentFocalPoint, while leaving broader .sop dirt outside
+  + [preservation_boundary] is this source supports scope review only and does not stage or commit
+
+  = must: avoid staging broad root .sop dirty state by accident
+  = must: distinguish focal-state pairing from unrelated .sop platform changes
+  = must: require explicit user direction before actual staging or commit if scope remains ambiguous
+  - never: claim commit integrity before a commit exists

@@ -1,0 +1,147 @@
+Subject: Riemann Workspace
+Description: Canonical SOP definition for the Riemann Workspace: a research workbench that coordinates Toribrot geometry, Enumerated Toribrot integer identity, Zetabrot scalar fields, and finite zeta-aligned spectral instruments without claiming proof-level RH authority.
+
+@ [source] platform/source_documents/2026-05-19_riemann_workspace/Source_Document_Manifest.sop
+@ [source] platform/source_documents/2026-05-19_riemann_workspace/Riemann Workspace.source-snapshot.txt
+@ [source] platform/refinement/Toribrot.sop
+@ [source] platform/refinement/Enumerated_Toribrot_Module.sop
+@ [source] platform/refinement/Zetabrot_Module.sop
+@ [source] platform/refinement/Zeta_Oscilloscope.sop
+@ [source] platform/refinement/Enumerated_Toribrot_Math_Engine.sop
+@ [source] platform/refinement/Data_Driven_Design.sop
+@ [source] platform/refinement/Specification_Governance.sop
+
+& [RiemannWorkspace] is the RH-adjacent exploration workspace formed by joining Toribrot geometric dynamics, Enumerated Toribrot integer identity, Zetabrot factor fields, and zeta-aligned spectral readouts
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [canonical_specification_uuid] is ed8647a4-bcb7-4b57-994c-e9f1dac9dbe4
+  + [source_snapshot_uuid] is 00cc55d0-9f0d-4803-b425-196b057f46b4
+  + [source_document] is platform/source_documents/2026-05-19_riemann_workspace/Riemann Workspace.source-snapshot.txt
+  + [solution_uuid] is a245500f-cfd6-4e4b-9ae6-c1b7ad69d6bb
+  + [primary_role] is problem_space_workbench
+  + [not_primary_role] is RH proof, zero oracle, or theorem engine
+  + [geometric_foundation] is Toribrot
+  + [identity_foundation] is EnumeratedToribrotModule
+  + [algebraic_spectral_layer] is ZetabrotModule
+  + [visual_instrument_layer] is ZetaOscilloscope
+  + [certified_computation_layer] is EnumeratedToribrotMathEngine
+  + [core_unification] is geometry and algebra are joined through stable identity, field attachment, factor pants, and declared transforms
+
+  = must: treat this file as a workspace assembly and routing layer
+  = must: preserve the lower-level module boundaries
+  = must: keep geometry, integer identity, scalar fields, spectral transforms, and RH interpretation distinct
+  = must: route computations through finite cutoffs and declared precision contracts
+  = must: mark all RH-adjacent outputs as exploration unless a separate theorem-level argument is supplied
+  - never: infer RH from geometry alone
+  - never: infer RH from finite spectral visualization alone
+  - never: let geometric embedding redefine integer identity or factorization
+
+## Layer Stack
+
+& [RiemannWorkspaceLayerStack] is the ordered module structure used by the workspace
+  + [layer_1_geometry] is Toribrot complex torus, elliptic curve, SL(2,Z) smooth torus map, pants decomposition, and metric texture fields
+  + [layer_2_identity] is EnumeratedToribrotModule binary tree addressing and positive-integer brot identity
+  + [layer_3_arithmetic_field] is ZetabrotModule integer brots, factor pants, prime parameters, and scalar field a(n)
+  + [layer_4_spectral_operator] is Dirichlet-Mellin transform, log-domain spike train, and log-Fourier phasor layer
+  + [layer_5_visual_readout] is ZetaOscilloscope finite cutoff trace, phasor stack, and exploratory complex-plane waveform
+  + [layer_6_certification] is EnumeratedToribrotMathEngine when exact or interval-certified arithmetic execution is needed
+
+  = must: use lower layers as authority for their owned identities
+  = must: treat upper layers as interpretations over lower-layer data
+  = must: prevent visual or geometric labels from changing arithmetic facts
+
+## Geometric-Algebraic Bridge
+
+& [GeometryAlgebraBridge] is the declared interface between Toribrot geometry and Zetabrot arithmetic
+  + [geometry_side] is torus surface, intrinsic maps, pants domains, gluing relations, winding paths, and metric texture fields
+  + [algebra_side] is integer brots, factor pants, prime brots, scalar fields, and spectral transforms
+  + [shared_form] is pants-style decomposition and composition
+  + [shared_data_carrier] is scalar fields attached to stable brot identities
+  + [allowed_geometry_to_algebra_flow] is geometry supplies embedding, visualization, adjacency hypothesis, texture field, or candidate scalar observable
+  + [allowed_algebra_to_geometry_flow] is integer brots, factor pants, and spectral phases can be embedded or drawn on Toribrot geometry for inspection
+  + [forbidden_flow] is geometry reassigning integer identity, prime status, factorization, or zeta analytic truth
+
+  = must: declare the map from geometric observable to scalar field a(n) before spectral use
+  = must: preserve one brot per integer in the algebraic layer
+  = must: distinguish topological pants from factor pants when both are present
+  = must: explain whether a pants edge is geometric gluing, arithmetic factorization, or visual analogy
+
+& [MetricTextureBridge] is the workspace use of Toribrot metric and texture fields
+  + [source_rule] is pullback-renormalized metric iteration such as g_next = lambda^(-2) times F_A pullback of g_current when hyperbolic toral automorphism mode is active
+  + [field_outputs] are distortion, recurrence density, winding density, curvature proxy, compression proxy, or texture transport values
+  + [zetabrot_input_condition] is a metric or texture output becomes Zetabrot data only after being sampled or assigned as an explicit scalar field a(n)
+  + [risk] is mistaking geometric recurrence for arithmetic prime structure
+
+  = must: keep metric texture values dimensioned or normalized according to the Toribrot source
+  = must: declare sampling from geometry to integer brots before using the values in Dirichlet sums
+  = should: compare any geometry-derived a(n) against known arithmetic fields such as Lambda(n), prime_indicator, and gap fields
+
+## RH Problem Space Contract
+
+& [RHProblemSpaceContract] is the safe analysis scope for this workspace
+  + [valid_questions] are finite phasor behavior, scalar field comparisons, prime-power spike structure, factor-pants topology, zero-neighborhood visualization, cutoff sensitivity, smoothing sensitivity, and candidate bridge observables
+  + [invalid_claims] are proof of RH, disproof of RH, direct zero certification, or theorem inference from a visual pattern
+  + [required_for_strong_claims] is analytic continuation control, convergence or summability argument, error estimates, independent verification, and theorem-level reasoning outside the visual workbench
+  + [rh_statement] is every nontrivial zero rho = beta + i*gamma of zeta has beta = 1/2
+  + [workspace_status] is exploratory_instrumentation_for_problem_space_analysis
+
+  = must: preserve RH as an analytic statement about zeta zeros
+  = must: separate finite computational evidence from proof
+  = must: attach cutoff N, window W_N, sigma, t-range, and error or precision policy to every computed spectral trace
+
+## Experiment Routing
+
+& [WorkspaceExperimentRouting] is the recommended way to use the assembled tools
+  + [factor_experiment] is inspect composite pants paths and prime terminal structure over integer brots
+  + [lambda_experiment] is build Lambda(n) over brots and compare prime-power spike structure
+  + [spectral_experiment] is compute finite Ghat_{Lambda,N,W}(t;sigma) and inspect ZetaOscilloscope traces
+  + [geometry_experiment] is run Toribrot metric or winding dynamics and sample a declared field onto brots
+  + [bridge_experiment] is compare geometry-derived fields against arithmetic fields before drawing RH-adjacent conclusions
+  + [certification_experiment] is route exact integer, rational, or interval arithmetic through EnumeratedToribrotMathEngine
+
+  = must: choose the module by question type
+  = must: record the field definition a(n) and its provenance
+  = must: treat matching patterns as hypotheses until independently analyzed
+
+## Source Contribution Ledger
+
+& [RiemannWorkspaceContributionLedger] is the assessment of what the source adds beyond the existing modules
+  + [repeated_content] is Toribrot geometry, Enumerated Toribrot addressing, and Zetabrot spectral transform already exist as separate processed modules
+  + [new_workspace_value] is the assembly of those modules into one RH problem-space workbench
+  + [new_geometric_detail] is the explicit metric pullback-renormalization framing for hyperbolic toral automorphism mode
+  + [new_semantic_value] is the bridge boundary between geometric pants and arithmetic factor pants
+  + [not_added] is a new proof method, a new zeta identity, or a valid RH decision procedure
+
+  = must: preserve the workspace as integration context
+  = must: avoid duplicating lower-level module authority when a lower module already owns a definition
+  = must: treat the geometry-algebra unification as a hypothesis generator and visualization framework
+
+## Acceptance Criteria
+
+& [RiemannWorkspaceAcceptance] is the satisfaction test for this processed specification
+  + [module_map_test] is Toribrot, EnumeratedToribrotModule, ZetabrotModule, ZetaOscilloscope, and EnumeratedToribrotMathEngine are named with separate responsibilities
+  + [bridge_test] is geometry-to-algebra and algebra-to-geometry flows are declared with forbidden overreach
+  + [rh_boundary_test] is proof, disproof, and zero-certification claims are blocked
+  + [experiment_test] is finite spectral work requires cutoff and field definition
+  + [contribution_test] is repeated content is separated from new workspace value
+
+  = must: pass all acceptance tests before treating the workspace as processed to satisfaction
+
+## SJS Processing Trace
+
+& [SJSProcessingTrace] is the specification justification trace for the Riemann Workspace
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [source_snapshot_uuid] is 00cc55d0-9f0d-4803-b425-196b057f46b4
+  + [canonical_specification_uuid] is ed8647a4-bcb7-4b57-994c-e9f1dac9dbe4
+  + [solution_uuid] is a245500f-cfd6-4e4b-9ae6-c1b7ad69d6bb
+  + [input_source_hash] is 58E955997D09B6C490E79FEA64C74192983DDDFE2833ABCE5322BF3221A9BAD8
+  + [processing_result] is stable_canonical_workspace_definition
+  + [reasoning_result] is source separated into repeated lower-module content, integration workspace value, geometry-algebra bridge contract, and RH claim boundary
+
+& [SatisfactionSignature] is the satisfaction signature for this canonical specification
+  + [protocol_uuid] is ad10f10f-d506-48ef-a805-f8b0a133766c
+  + [signature_uuid] is 04c7c254-4a77-4f4c-a1b0-e2337cf748fd
+  + [signed_artifact] is platform/refinement/Riemann_Workspace.sop
+  + [source_document] is platform/source_documents/2026-05-19_riemann_workspace/Riemann Workspace.source-snapshot.txt
+  + [source_document_sha256] is 58E955997D09B6C490E79FEA64C74192983DDDFE2833ABCE5322BF3221A9BAD8
+  + [signature_status] is valid
+  + [satisfaction_scope] is canonical processing of the Riemann Workspace as an RH-adjacent integration and routing layer

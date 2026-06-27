@@ -1,0 +1,17 @@
+Subject: Scale-Tied Zero Height Policy Source Document Manifest
+
+Description: Manifest for preserved source records governing the scale-tied zero-height cutoff policy slice.
+
+& [ScaleTiedZeroHeightPolicySourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is f7dbb7da-49f1-442d-b099-96b2dbef4b15
+  + [manifest_uuid] is a4ab4ba3-3b1e-45bf-aef6-7df76cf7cd5a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_tied_zero_height_policy\Dictated_Scale_Tied_Zero_Height_Policy_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Scale_Tied_Zero_Height_Policy_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the cutoff policy finite and diagnostic
+  - never: treat finite scale-tied cutoff traces as proof, disproof, zero certification, or RH evidence

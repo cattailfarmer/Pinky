@@ -1,0 +1,74 @@
+Subject: Old Riemann Toribrot Periphery Source Document Manifest
+
+Description: Manifest for preserved old ReasoningFramework Riemann Workspace and Toribrot source/refinement snapshots.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\Dictated_Old_Riemann_Toribrot_Periphery_Source.sop
+@ [snapshot_root] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots
+
+& [OldRiemannToribrotPeripherySourceManifest] is the preserved source set for old Riemann/Toribrot classification
+  + [manifest_uuid] is 54693500-d089-4faa-9f2c-f1026086fbc8
+  + [source_snapshot_uuid] is 20275d9c-4c3f-42ae-a84c-9cc04074a5c5
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [external_source_root] is C:\Project\ReasoningFramework
+  + [preservation_event] is exact snapshots copied into the RiemannHypothesis source_documents lane before classification
+  + [authority_status] is preserved_external_periphery_not_imported_authority
+
+& [Snapshot_001_RiemannWorkspaceSource] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Riemann_Workspace.source-snapshot.txt
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_riemann_workspace\Riemann Workspace.source-snapshot.txt
+  + [sha256] is 58E955997D09B6C490E79FEA64C74192983DDDFE2833ABCE5322BF3221A9BAD8
+
+& [Snapshot_002_RiemannWorkspaceManifest] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Riemann_Workspace_Source_Document_Manifest.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_riemann_workspace\Source_Document_Manifest.sop
+  + [sha256] is 138E96D48E448DA05434E700A1418D2CF47207FAC9D231BADB8FE9735CB26F34
+
+& [Snapshot_003_RiemannWorkspaceRefinement] is preserved_external_refinement
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Riemann_Workspace.refinement.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\refinement\Riemann_Workspace.sop
+  + [sha256] is 416C13BA7DC59EF39A62EF4945D747E0CB2DE0BF98A8975A29F592DEF4884BB8
+
+& [Snapshot_004_EnumeratedToribrotModuleSource] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Enumerated_Toribrot_Module.source-snapshot.txt
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_enumerated_toribrot_module\Enumerated Toribrot Module.source-snapshot.txt
+  + [sha256] is 445CAE03D82EC3B89DB6D7C17221E460DA085463678DE069BC7D1842C9CD37BF
+
+& [Snapshot_005_EnumeratedToribrotModuleManifest] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Enumerated_Toribrot_Module_Source_Document_Manifest.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_enumerated_toribrot_module\Source_Document_Manifest.sop
+  + [sha256] is 5FC0FAE60C26291F8C4776C0F6601DAA69020D10694900F77EB999019E65A325
+
+& [Snapshot_006_EnumeratedToribrotModuleRefinement] is preserved_external_refinement
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Enumerated_Toribrot_Module.refinement.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Module.sop
+  + [sha256] is 7A58FB0ED57F2FA4124ADFDACD42427AB8DB86ECF45EA12E8282F6317044BBE4
+
+& [Snapshot_007_ToribrotMathEngineSource] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Toribrot_Math_Engine.source-snapshot.txt
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_enumerated_toribrot_math_engine\Toribrot Math Engine.source-snapshot.txt
+  + [sha256] is BF3DC35D8E6931311C011ECF5E2C9EE64EBD8CD3CE4A9F7AE4654DA427B7D221
+
+& [Snapshot_008_ToribrotMathEngineManifest] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Toribrot_Math_Engine_Source_Document_Manifest.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_enumerated_toribrot_math_engine\Source_Document_Manifest.sop
+  + [sha256] is D5A423016CF1EE06C4678C1C707BFCF0EF5B0A8231C4AA7361145C5548D99558
+
+& [Snapshot_009_ToribrotMathEngineRefinement] is preserved_external_refinement
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Enumerated_Toribrot_Math_Engine.refinement.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Math_Engine.sop
+  + [sha256] is 6202E928E0E1DCADBAD08866539501AC810A0C4EDA41203CDF61315DEFA10A43
+
+& [Snapshot_010_ToribrotRefinement] is preserved_external_refinement
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Toribrot.refinement.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\refinement\Toribrot.sop
+  + [sha256] is 1DAF4A6C7BE9BFE2C2CD5A74F9514646FD410C46EC3BF21287586C10F9556EF9
+
+& [Snapshot_011_ToribrotSOPDefinition] is preserved_external_refinement
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_riemann_toribrot_periphery\snapshots\reasoningframework_Toribrot_SOP_Definition.refinement.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\refinement\Toribrot_SOP_Definition.sop
+  + [sha256] is 0FF49A718B09E71976A500ACD6DF0B00E6E6CB5DDCAD3A425F04E4D5F18EB6A9
+
+  = must: keep copied snapshots immutable unless a new preservation event supersedes this manifest
+  = must: treat old refinement snapshots as comparison sources, not local implementation authority
+  - never: overwrite raw snapshots with Pinky-local conclusions

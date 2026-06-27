@@ -1,0 +1,19 @@
+Subject: Dictated Walking Continuity Correction Source
+
+Description: Raw user correction preserving the walking/running policy reentry requirement for the Riemann Hypothesis workspace.
+
+& [DictatedWalkingContinuityCorrectionSource] is the preserved raw source for correcting branch-stop behavior into walking continuity
+  + [source_snapshot_uuid] is 445a45e7-73e6-4753-84a6-19e71c14ad2d
+  + [source_kind] is dictated_conversation_source
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [recorded_on_utc_date] is 2026-06-27
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [user_statement] "there should be no stopping condition if there's work to review and periphery to explore in reflection on work done. walking is a continual assessment of forward progress, planning the next step, and following through. read the SOP policy on walking/running via commit + review and analysis + periphery scan + following leads. keep progress moving forward."
+  + [raw_meaning] is branch closure must route into review, reflection, periphery scan, planning, and next-step follow-through when valuable work remains
+  + [preservation_boundary] is this raw correction must remain separate from canonical specification, analysis, automation prompts, and focal-point updates
+
+  = must: preserve the user's no-idle correction
+  = must: preserve commit plus review plus analysis plus periphery scan plus following leads as the walking cadence
+  = must: keep progress moving while reviewable work and valuable periphery remain
+  - never: treat this source as proof authority, mathematical authority, or permission to ignore truth, security, balance, or pursuit-value gates

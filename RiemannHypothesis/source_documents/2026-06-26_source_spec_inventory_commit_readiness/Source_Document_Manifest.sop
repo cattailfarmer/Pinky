@@ -1,0 +1,17 @@
+Subject: Source Spec Inventory Commit Readiness Source Document Manifest
+
+Description: Manifest for preserved source governing RH source/spec inventory and commit-readiness assessment.
+
+& [SourceSpecInventoryCommitReadinessSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 8a803945-2820-4eb4-8110-eae57ddd9177
+  + [manifest_uuid] is b2cc832d-b6ef-448c-b5a9-497cc529a84a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_source_spec_inventory_commit_readiness\Dictated_Source_Spec_Inventory_Commit_Readiness_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Source_Spec_Inventory_Commit_Readiness_Specification.sop
+  + [source_preservation_rule] is raw inventory source remains separate from canonical readiness contract and analysis record
+  + [authority_status] is source_preserved_before_inventory_analysis
+
+  = must: process this source through specification before readiness findings
+  = must: preserve role counts, file type counts, ignored runtime boundary, and test anchor
+  - never: convert inventory into staging or commit without explicit user direction or a selected commit operation

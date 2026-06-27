@@ -1,0 +1,64 @@
+Subject: Lambda Phasor Reference Contribution Specification
+
+Description: SJS-processed contract for measuring finite Lambda phasor contributions near selected reference labels.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_phasor_reference_contribution\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_landmark_overlay_discipline_synthesis_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_oscilloscope_probe_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+@ [support] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+@ [support] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\euler_product.py
+
+& [LambdaPhasorReferenceContributionSpecification] is a project-local finite math-processing contract
+  + [source_snapshot_uuid] is 8c7262ec-3498-48f8-9d0a-844bd34a53da
+  + [manifest_uuid] is 9832c73b-7c0f-4f34-a60f-b2955658024e
+  + [canonical_specification_uuid] is 04bf5713-ec70-4e97-8c44-7fa47cde4402
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is measure finite Lambda phasor contribution layers near selected t-axis reference labels
+  + [not_purpose] is proof, disproof, RH evidence, zero certification, critical-line authority, primary zero detection, or special-prime hunting
+  + [proof_status] is finite_lambda_phasor_reference_contribution_not_rh_evidence
+
+& [MeasuredObject] is finite_lambda_contribution_accounting
+  + [series] is E_{sigma,N,W}(t) = sum over prime powers q <= N of Lambda(q) W_N(q) q^(-sigma) exp(-i t log(q))
+  + [term_contribution] is Lambda(q) W_N(q) q^(-sigma) exp(-i t log(q))
+  + [layer_set] is prime_terms, higher_prime_power_terms, low_q_terms, high_q_terms, and exponent layers
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference as labels only
+  + [offset_policy] is centered_offsets around each reference label, including 0 and small symmetric offsets
+  + [comparison_unit] is contribution share, complex vector angle, magnitude, real part, imaginary part, and finite residual when sigma > 1
+  + [default_sigmas] are 1.5 and 1.05
+  + [default_prime_power_bounds] are 100 and 500
+  + [default_windows] are hard and fejer
+
+  = must: include prime powers, not only primes
+  = must: report exact input sigma, bound, window, reference label, reference t, sampled t, and offset
+  = must: report prime versus higher-prime-power contribution separation
+  = must: report top term contributors by amplitude and by projection onto the total phasor direction
+  = must: compare to -zeta_prime(s)/zeta(s) only for sigma > 1
+  = must: keep reference labels distinct from zero certification
+  - never: interpret local contribution alignment as RH proof, disproof, zero certification, critical-line authority, or identity fusion
+
+& [ImplementationPlan] is bounded
+  + [step_1] is reuse rh_math.lambda_oscilloscope term formulas where possible
+  + [step_2] is add a deterministic CLI script if existing term rows need aggregation
+  + [step_3] is emit JSON trace into analysis\zero_behavior
+  + [step_4] is record a finite analysis pass with contribution findings and restraint result
+  + [step_5] is update CurrentFocalPoint with latest source, specification, trace, and analysis
+
+& [AcceptanceCriteria] is bounded
+  + [metadata_test] is trace proof_status finite_lambda_phasor_reference_contribution_not_rh_evidence
+  + [reference_policy_test] is output contains first three reference labels as labels only
+  + [layer_test] is output separates prime terms and higher-prime-power terms
+  + [offset_test] is output contains centered offsets around each reference label
+  + [boundary_test] is analysis preserves no-proof and no-zero-certification boundary
+
+& [LambdaPhasorReferenceContributionSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_lambda_phasor_reference_contribution_contract
+  + [reasoning_result] is landmark-overlay discipline named this as a valid future measured object, and the existing Lambda Oscilloscope primitive already supplies the needed finite phasor fabric
+
+(lambda_phasor_reference_contribution) :finite Lambda phasor contribution accounting: /reference labels, prime powers, offset-local contribution layers/ |RH evidence|
+  + [inside] is deterministic finite Lambda contribution measurement near selected reference labels
+  + [boundary] is diagnostic overlay and whole-field orientation only
+  |outside| RH proof, disproof, zero certification, critical-line authority, primary zero detection, special-prime sprawl, and single-surface identity

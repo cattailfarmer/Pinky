@@ -1,0 +1,77 @@
+Subject: Offset Local Contribution Asymmetry Synthesis 001
+
+Description: Bounded synthesis of center-versus-flank contribution asymmetry from the existing Lambda phasor reference contribution trace.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_offset_local_contribution_asymmetry\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Offset_Local_Contribution_Asymmetry_Specification.sop
+@ [input_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_trace.json
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_pass_001.sop
+
+& [OffsetLocalContributionAsymmetrySynthesis001] is a completed finite synthesis pass
+  + [analysis_uuid] is 02f0d4d6-f0ef-4e31-b80c-f3fa1e524aa4
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_existing_trace_synthesis
+  + [proof_status] is finite_offset_local_contribution_asymmetry_not_rh_evidence
+  + [implementation_change] is none; synthesized existing Lambda phasor trace rows
+  + [verification] is no runtime tests required because no code changed in this pass
+
+& [TraceScope] is bounded
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference
+  + [offsets] are -0.5, 0, and +0.5
+  + [sigmas] are 1.5 and 1.05
+  + [prime_power_bounds] are 100 and 500
+  + [windows] are hard and fejer
+  + [metrics] are higher-prime-power vector share, prime vector share, residual magnitude, and total Lambda trace magnitude
+  + [reference_policy] is labels only, not zero certification
+
+& [HigherPrimePowerAsymmetry] is bounded_arithmetic_fact
+  + [first_reference] is -0.5 average 0.1498135685668911, center average 0.1415888596126667, +0.5 average 0.1679551550613858
+  + [second_reference] is -0.5 average 0.1339251504112818, center average 0.0949950216252350, +0.5 average 0.1187041596404557
+  + [third_reference] is -0.5 average 0.2390232391589963, center average 0.1621487057912029, +0.5 average 0.1239654295301181
+  + [center_minus_flank_average] is first -0.0172955022014717, second -0.0313196334006337, and third -0.0193456285533543
+  + [directional_flank_difference_plus_minus_minus] is first +0.0181415864944947, second -0.0152209907708261, and third -0.1150578096288783
+  + [inference] is the higher-prime-power vector layer is offset-local rather than centered on the reference label in all three bounded cases
+  + [boundary] is this is displacement pressure, not zero-line evidence
+
+& [PrimeVectorAsymmetry] is bounded_arithmetic_fact
+  + [first_reference] is -0.5 average 1.1427875609917866, center average 1.1368856997715597, +0.5 average 1.1608368727372491
+  + [second_reference] is -0.5 average 0.9668130841894980, center average 0.9570607035956713, +0.5 average 0.8976610986336151
+  + [third_reference] is -0.5 average 0.7971430536638766, center average 0.8445224543057855, +0.5 average 0.8769326928272869
+  + [directional_flank_difference_plus_minus_minus] is first +0.0180493117454625, second -0.0691519855558829, and third +0.0797896391634103
+  + [inference] is prime-term vector orientation also shifts across offsets, but not with the same directional pattern as the higher-prime-power layer
+  + [identity_boundary] is prime and higher-prime-power offset shapes remain related but not fused
+
+& [ResidualAndMagnitudeAsymmetry] is bounded_arithmetic_fact
+  + [finite_residual_center_average] is first 0.0992461356408826, second 0.0932169472167982, and third 0.0941962932252720
+  + [finite_residual_flank_pattern] is lower than center on both sampled flanks for all three reference labels
+  + [total_trace_first_reference] is -0.5 average 0.8162076720272520, center average 0.9539755105934311, and +0.5 average 0.8644216856463851
+  + [total_trace_second_reference] is -0.5 average 0.7675743394065197, center average 0.8170646465466291, and +0.5 average 0.6718597883930432
+  + [total_trace_third_reference] is -0.5 average 0.5912983442624985, center average 0.7556714931569296, and +0.5 average 0.7555065704327135
+  + [inference] is exact-reference rows can have larger finite residuals while total phasor magnitude remains locally high, so magnitude, residual, and contribution-layer direction should not be collapsed into one identity
+  + [boundary] is residual asymmetry remains finite half-plane cutoff behavior
+
+& [DelineationResult] is current_identity_boundary
+  + [separated_layers] are exact reference label, offset flank, prime vector share, higher-prime-power vector share, finite residual, and total trace magnitude
+  + [relation_heat] is real because multiple metrics change across the same local offsets
+  + [non_identity] is also clear because prime and higher-prime-power layers do not share one directional flank pattern, and residual and magnitude do not tell the same story
+  + [whole_field_return] is the shape supports Lambda and psi-theta prime-power mechanics as an overlay discipline rather than a zero detector
+
+& [PursuitGateAssessment] is active
+  + [boundary_value] is satisfied: exact-label rows are separated from local flanks
+  + [identity_value] is satisfied: displacement pressure is distinguished from zero identity and from simple Lambda magnitude identity
+  + [evidence_value] is satisfied for orientation: existing trace contains enough asymmetry to justify naming displacement as the next object
+  + [whole_field_value] is satisfied: the result stays in Lambda, Euler/log-derivative, psi-theta, and landmark-overlay fabric
+  + [restraint_result] is do not run denser offsets yet; first define a cross-layer displacement metric that can compare sparse resonance, dense Lambda heat, and reference labels
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is offset-local contribution asymmetry is real enough in the existing trace to promote cross-layer landmark displacement as the next source-defined object
+  + [reason] is higher-prime-power vector share is below flank average at the exact reference label in all three cases, and the strongest flank direction differs by label and by layer
+  + [next_object] is cross-layer landmark displacement, not a denser Lambda-only offset scan
+  + [blocked_next] is more offsets, more labels, more windows, special-prime expansion, zero certification, proof claims, or exact-reference dominance claims
+  + [boundary] is no RH evidence, zero certification, critical-line authority, or single-surface identity is inferred
+
+(offset_local_contribution_asymmetry_synthesis_001) :finite offset-local synthesis: /center not peak, flank asymmetry, layer non-fusion, displacement next/ |RH evidence|
+  + [inside] is synthesis of existing Lambda offset rows
+  + [boundary] is next-object selection and orientation
+  |outside| RH proof, disproof, zero certification, critical-line authority, exact-reference dominance, and denser scan authorization

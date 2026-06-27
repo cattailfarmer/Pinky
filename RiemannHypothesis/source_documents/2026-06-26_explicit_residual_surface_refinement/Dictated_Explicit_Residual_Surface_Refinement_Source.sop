@@ -1,0 +1,20 @@
+Subject: Dictated Explicit Residual Surface Refinement Source
+
+Description: Preserved source for refining the explicit-formula residual surface dense node.
+
+& [DictatedExplicitResidualSurfaceRefinementSource] is raw continuation source
+  + [source_snapshot_uuid] is aa70cc47-ee0b-45db-a429-86a15af36e69
+  + [captured_at] is 2026-06-26T17:32:35.932Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_explicit_residual_surface_refinement_next after DenseNode_ExplicitFormulaResidualSurface selection
+  + [raw_need] is refine the explicit-formula residual surface in relation to psi(x), theta(x), and prime-power mechanics without adding new kernels, windows, cutoff laws, or proof-facing claims
+  + [selected_node] is DenseNode_ExplicitFormulaResidualSurface
+  + [known_pressure] is existing traces show zero-term influence, truncation sensitivity, window sensitivity, zero-height coordinate improvement, scale-law drift, and no explicit/Euler identity
+  + [identity_boundary] is this refinement is conceptual delineation and future-use governance, not proof, disproof, RH evidence, zero certification, or implementation authority
+
+  = must: preserve this raw source separately from canonical specification
+  = must: anchor refinement to psi(x), theta(x), and prime-power mechanics
+  = must: preserve explicit/Euler bridge refinement as paused
+  = must: decide whether existing traces already answer the current refinement enough to avoid new tooling
+  - never: add a new math-processing tool without a later source-defined measured quantity

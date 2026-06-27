@@ -1,0 +1,51 @@
+Subject: Explicit Window Expansion Specification
+
+Description: SJS-processed contract for expanding finite explicit-formula zero-window tests.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_window_expansion\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Zero_Windowing_Bridge_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_euler_cutoff_bridge_report_001.sop
+
+& [ExplicitWindowExpansion] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is 9803f94c-e2c1-423a-bede-f1c4a56cc89f
+  + [canonical_specification_uuid] is 55cf5b4b-f50b-4627-9315-5d2f5d56f114
+  + [protocol_uuid] is bb671578-cefa-4585-aa5f-11464f8ad26a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is expand explicit-formula finite zero-pair window testing with larger zero counts and additional smoothing policies before attempting any stronger bridge
+  + [not_purpose] is proof, disproof, independent zero certification, critical-line authority, or universal smoothing-window ranking
+
+  = must: preserve sharp and Fejer behavior from the earlier zero-window bridge
+  = must: add Lanczos sigma and Hann smoothing policies as explicit named finite window modes
+  = must: expose window definitions in the output payload
+  = must: keep exact pi(x), theta(x), and psi(x) comparison rows visible
+  = must: compare expanded window modes across at least x values 100, 200, and 500 and zero-pair counts 5, 10, 20, 40, and 80
+  = must: preserve proof_status as finite_zero_window_probe_not_zero_certification
+  = must: treat mpmath zetazero as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, or zero certification from finite window residuals
+  - never: treat a lower residual in one row as universal window superiority
+  - never: fuse explicit-formula residual rails with Euler-product/log-derivative rails without a later source-defined shared comparison unit
+
+& [ExpandedWindowDefinitions] is the canonical finite window set
+  + [sharp] is weight(k, N) = 1
+  + [fejer] is weight(k, N) = 1 - k/(N + 1)
+  + [lanczos] is weight(k, N) = sin(pi*k/(N + 1))/(pi*k/(N + 1))
+  + [hann] is weight(k, N) = 0.5*(1 + cos(pi*k/(N + 1)))
+  + [indexing] is k ranges from 1 to N
+
+& [ExplicitWindowExpansionTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.zero_window_probe
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\zero_window_probe.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_window_expansion_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_window_expansion_pass_001.sop
+
+& [ExplicitWindowExpansionSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_diagnostic_expansion
+  + [reasoning_result] is larger zero counts and additional smoothing policies can test whether previous sharp/Fejer residual behavior was local window choice, cutoff sensitivity, or a broader truncation phenomenon
+
+(explicit_window_expansion) :finite smoothed explicit-formula residual surface: /sharp, fejer, lanczos, hann, larger zero counts/ |zero certification|
+  + [inside] is deterministic finite window comparison against exact psi(x)
+  + [boundary] is approximation diagnostics only
+  |outside| RH proof, disproof, zero certification, hidden theorem authority, and global smoothing-window claims

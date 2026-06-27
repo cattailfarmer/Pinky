@@ -1,0 +1,69 @@
+Subject: Fermat Prime Seed Inquiry
+
+Description: First periphery inspection of the Fermat-prime seed set, 641, and nearby special-prime family candidates.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_special_prime_periphery_inquiry\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Special_Prime_Periphery_Inquiry_Specification.sop
+@ [profile_trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_special_prime_seed_profile.json
+@ [scan_trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_special_prime_scan_2000.json
+
+& [FermatPrimeSeedInquiry] is a completed sparse-realization pass
+  + [analysis_uuid] is ba021a6b-f706-4116-8748-cef7a2d79c75
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [focus_subject] is Fermat-prime seed set and correlated special-prime periphery
+  + [status] is completed_first_pass
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\special_prime_profile.py
+  + [scan_tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\special_prime_scan.py
+
+## Sparse Realizations
+
+& [Realization_001_FermatPrimeSeedIdentity] is a dense-node candidate
+  + [subject] is 3, 5, 17, 257, 65537
+  + [computed_identity] is Fermat-prime identity for F0 through F4
+  + [rule_surface] is p = 2^(2^n) + 1 and p - 1 is a pure power of two whose exponent is itself a power of two
+  + [computed_orders] is ord_p(2) = 2, 4, 8, 16, 32 for p = 3, 5, 17, 257, 65537
+  + [scope] is local identity within the seed focus
+  + [boundary] is no claim that these are all Fermat primes in theorem authority or current computational authority
+
+& [Realization_002_Prime641Boundary] is correlated periphery
+  + [subject] is 641
+  + [computed_relation] is 641 divides F5 because 2^(2^5) is congruent to -1 modulo 641
+  + [computed_order] is ord_641(2) = 64
+  + [computed_form] is 641 = 5*2^7 + 1
+  + [scope] is Fermat-number factor boundary, not Fermat-prime seed identity
+  + [meaning] is 641 marks the first visible fracture of the naive Fermat-prime continuation from F0 through F4
+
+& [Realization_003_OverlappingFamilySurfaces] is unresolved periphery
+  + [subject] is special-prime family overlap
+  + [computed_relation] is the seed Fermat primes are also Proth-form and Pierpont-form primes, while 641 is Proth-form but not Pierpont-form
+  + [computed_relation] is 3 is also a Mersenne prime and 5 is both safe and Sophie Germain in the scanned profile
+  + [computed_relation] is 641 is also Sophie Germain because 1283 is prime
+  + [meaning] is surface resemblance can cross identity boundaries; family overlap is not identity collapse
+
+& [Realization_004_ForgottenSetCandidates] is immediate periphery
+  + [candidate] is Mersenne primes
+  + [reason] is they are the natural power-of-two mirror family, p = 2^q - 1, and the bounded scan under 2000 found 3, 7, 31, and 127
+  + [candidate] is base-2 Wieferich primes
+  + [reason] is they are rare Fermat-congruence exceptions, and the bounded scan under 2000 found 1093
+  + [candidate] is Proth and Pierpont primes
+  + [reason] is they contain or neighbor the Fermat-prime seed surface without sharing the exact Fermat identity
+  + [candidate] is irregular primes
+  + [reason] is they connect prime oddity to Bernoulli numerators and zeta special values, but they require a separate scan tool before local authority
+  + [status] is unresolved_memory_match
+
+& [Realization_005_RHBoundary] is restraint
+  + [subject] is RH landscape relevance
+  + [meaning] is special prime families can expose local arithmetic constraints in the prime landscape and help train periphery focus
+  + [boundary] is RH concerns global zeta-zero structure and prime distribution; finite special-family profiles are not RH evidence by themselves
+  + [next_use] is use family profiles to form inspection questions, not theorem claims
+
+## Next Questions
+
+& [NextQuestion_001] is ready
+  + [question] is whether the forgotten odd set was Mersenne primes, base-2 Wieferich primes, irregular primes, or another family adjacent to Fermat congruence
+  + [method] is run bounded scans and add family-specific scripts only when the relation heat persists
+
+& [NextQuestion_002] is ready
+  + [question] is which special-family constraints affect explicit-formula terms only through ordinary prime distribution and which create useful test surfaces for analysis
+  + [method] is compare family membership against prime-count residuals, zeta Euler-product truncation behavior, and congruence-class distribution without proof claims

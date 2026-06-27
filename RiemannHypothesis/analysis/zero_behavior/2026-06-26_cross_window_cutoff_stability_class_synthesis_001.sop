@@ -1,0 +1,78 @@
+Subject: Cross Window Cutoff Stability Class Synthesis 001
+
+Description: Bounded synthesis of near-reference Lambda heat stability across cutoff growth and window policy.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cross_window_cutoff_stability_class\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Cross_Window_Cutoff_Stability_Class_Specification.sop
+@ [stability_trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_trace.json
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cross_layer_landmark_displacement_synthesis_001.sop
+
+& [CrossWindowCutoffStabilityClassSynthesis001] is a completed finite synthesis pass
+  + [analysis_uuid] is a8ebd6e2-530d-448e-b23b-6edac35d3f99
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_existing_trace_synthesis
+  + [proof_status] is finite_cross_window_cutoff_stability_class_not_rh_evidence
+  + [implementation_change] is none; synthesized existing stability rows
+  + [verification] is no runtime tests required because no code changed in this pass
+
+& [TraceScope] is bounded
+  + [cutoff_stability_rows] are 136 total, with 108 stable within tolerance
+  + [cross_window_rows] are 114 total, with 86 stable within tolerance
+  + [near_reference_rule] is both endpoints within 0.5 t units of the same reference label
+  + [source_near_rule] is the source endpoint within 0.5 t units of a reference label
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference as labels only
+  + [metrics] are lambda_trace_abs and finite_trace_residual_abs
+
+& [CutoffStabilityClass] is bounded_arithmetic_fact
+  + [global_cutoff_stability] is 108 of 136 rows stable within tolerance
+  + [first_reference_source_near] is 8 source-near rows, 7 stable, and 7 with both endpoints in the same near-reference pocket
+  + [second_reference_source_near] is 6 source-near rows, 5 stable, and 4 with both endpoints in the same near-reference pocket
+  + [third_reference_source_near] is 8 source-near rows, 7 stable, and 7 with both endpoints in the same near-reference pocket
+  + [endpoint_near_pocket_result] is first 7 of 7 stable, second 4 of 4 stable, and third 7 of 7 stable when both endpoints remain in the same near-reference pocket
+  + [near_pocket_metric_shape] is finite_trace_residual_abs and lambda_trace_abs local maxima across hard and Fejer cutoff rows
+  + [inference] is instability in source-near cutoff rows is mostly drift into or out of the near-reference pocket rather than instability inside the pocket
+  + [boundary] is cutoff stability is finite repeatability only
+
+& [CrossWindowStabilityClass] is bounded_arithmetic_fact
+  + [global_cross_window_stability] is 86 of 114 rows stable within tolerance
+  + [first_reference_source_near] is 7 source-near rows, 7 stable, and 7 with both endpoints in the same near-reference pocket
+  + [second_reference_source_near] is 5 source-near rows, 5 stable, and 5 with both endpoints in the same near-reference pocket
+  + [third_reference_source_near] is 7 source-near rows, 7 stable, and 7 with both endpoints in the same near-reference pocket
+  + [endpoint_near_pocket_result] is first 7 of 7 stable, second 5 of 5 stable, and third 7 of 7 stable when hard and Fejer endpoints remain near the same reference
+  + [near_pocket_metric_shape] is finite_trace_residual_abs local maxima and lambda_trace_abs local maxima in all three reference neighborhoods
+  + [inference] is hard-versus-Fejer agreement is stronger inside the near-reference pockets than in the global dense field
+  + [boundary] is cross-window stability is finite repeatability only
+
+& [DenseHeatVsStableHeat] is current_delineation
+  + [dense_heat] is broad: the Lambda window/cutoff scan produced 280 candidates and 42 near-reference candidates within one t step
+  + [stable_heat] is narrower: source-near stability rows remain stable when both endpoints stay inside the same near-reference pocket
+  + [drift_behavior] is meaningful: source-near cutoff rows can drift out of the pocket under cutoff growth, especially around the second reference where only 4 of 6 source-near rows remain endpoint-near
+  + [metric_boundary] is stable near-reference rows are local maxima in Lambda trace magnitude or finite trace residual magnitude, while sparse resonance near-reference rows were mostly zeta_abs minima
+  + [identity_boundary] is stable dense Lambda heat and sparse resonance landmarks remain related overlay layers, not one identity
+
+& [WholeFieldReturn] is branch_synthesis
+  + [retained_value] is the overlay branch now distinguishes dense heat, stable near-reference pockets, drift-in/drift-out rows, contribution-layer flank displacement, and sparse resonance landmarks
+  + [truth_posture] is finite stability supports orientation and comparison quality only
+  + [security_posture] is proof, disproof, zero certification, critical-line authority, and exact-reference dominance remain outside the branch
+  + [restraint_result] is pause the Lambda overlay branch because further progress would require denser offsets, more windows, or new scans without a new whole-field purpose
+
+& [PursuitGateAssessment] is active
+  + [boundary_value] is satisfied: dense heat, stable heat, and drift behavior are separated
+  + [identity_value] is satisfied: no layer becomes the identity of another layer
+  + [evidence_value] is satisfied for orientation: existing rows show near-reference pockets are repeatably stable under the tested policies
+  + [whole_field_value] is satisfied: result remains tied to Lambda overlay, Euler/log-derivative, psi-theta prime-power mechanics, and landmark discipline
+  + [restraint_result] is stop this scheduled overlay road unless the user names a new whole-field measured object
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is cross-window/cutoff stability class is useful and now complete for the existing trace set
+  + [reason] is near-reference dense Lambda heat is not merely numerous; inside the tested near-reference pockets it is repeatably stable across cutoff and window comparisons, while drift rows and metric differences prevent identity fusion
+  + [next_object] is none within the current scheduled overlay branch
+  + [branch_decision] is pause the recurring Lambda phasor road schedule
+  + [blocked_next] is denser offsets, more labels, more windows, new scans, proof claims, zero certification, critical-line authority, and exact-reference dominance claims
+  + [boundary] is no RH evidence, zero certification, universal stability law, or single-surface identity is inferred
+
+(cross_window_cutoff_stability_class_synthesis_001) :finite Lambda stability-class synthesis: /dense heat, stable pockets, drift, pause branch/ |RH evidence|
+  + [inside] is synthesis of existing cutoff and cross-window stability rows
+  + [boundary] is orientation and branch restraint
+  |outside| RH proof, disproof, zero certification, critical-line authority, exact-reference dominance, denser scan authorization, and single-surface identity

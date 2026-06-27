@@ -1,0 +1,63 @@
+Subject: Landmark Overlay Discipline Synthesis 001
+
+Description: Bounded synthesis of landmark-overlay discipline after half-plane boundary synthesis.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_landmark_overlay_discipline_synthesis\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Landmark_Overlay_Discipline_Synthesis_Specification.sop
+@ [half_plane_boundary] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_half_plane_boundary_synthesis_001.sop
+@ [whole_field_overlay] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landmark_overlay_report_001.sop
+@ [vertical_resonance] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+@ [lambda_window_cutoff] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+
+& [LandmarkOverlayDisciplineSynthesis001] is a finite synthesis analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is 0beb5b6a-5cc7-4ffc-98b4-ef5ff7548a8b
+  + [source_snapshot_uuid] is e313d938-5dee-428d-871f-a8f5aa989936
+  + [manifest_uuid] is de0a5dd9-8a99-4645-86d2-0c6ee726d18a
+  + [canonical_specification_uuid] is bcb81288-bc58-4275-96dd-aef755ed4b92
+  + [proof_status] is finite_landmark_overlay_discipline_not_rh_evidence
+  + [implementation_change] is none; this pass records synthesis only
+  + [verification] is no tests run because no runtime code changed
+
+& [AnsweredQuestion] is the current focal result
+  + [question] is whether to stop after half-plane boundary synthesis or select a new source-defined synthesis object
+  + [answer] is select and synthesize landmark-overlay discipline, then stop this branch unless a new measured overlay object is named
+  + [reason] is half-plane synthesis made the Re(s)>1 boundary layers clear enough that sparse/dense landmark comparison can now be disciplined without becoming a zero-detector branch
+
+& [OverlayLayerMap] is the refined landmark discipline
+  + [reference_label_layer] is t-axis known-zero ordinates are named reference labels only
+  + [sparse_landmark_layer] is vertical resonance candidates are metric-dependent finite extrema, with zeta_abs minima often nearer reference labels than Euler-product residual minima
+  + [dense_lambda_overlay_layer] is Lambda Oscilloscope/window-cutoff candidates are dense, often reference-near, and partly stable across cutoff/window comparisons
+  + [half_plane_boundary_layer] is pole-axis, ordinary vertical, known-ordinate reference, resonance, and prime-bound layers constrain how overlay heat may be read
+  + [arithmetic_anchor_layer] is Lambda overlay remains tied to prime-power fabric but does not replace psi/theta mechanics or explicit residual analysis
+
+& [DisciplineRules] is the overlay governance result
+  + [rule_001] is use known-zero ordinates as reference labels, never as labels that certify local extrema
+  + [rule_002] is read sparse vertical resonance as a comparison surface, not a primary detector
+  + [rule_003] is read dense Lambda overlay heat as phasor and prime-power inspection pressure, not identity
+  + [rule_004] is require agreement across layers to ask better questions, not to claim causation
+  + [rule_005] is treat cutoff stability and cross-window stability as finite repeatability only
+  + [rule_006] is block new overlay computation unless a source names a measured object such as cross-layer landmark displacement, stability class, or phasor-layer contribution
+
+& [Inference] is the current whole-field meaning
+  + [positive_meaning] is the overlay field now has a disciplined reading order from reference labels to sparse landmarks to dense Lambda heat to half-plane boundary checks
+  + [negative_meaning] is no overlay alignment collapses into a single RH identity because the candidate fields are dense, metric-dependent, cutoff-sensitive, and reference-guided
+  + [curiosity_pressure] is reference-near heat remains meaningful periphery because it appears in both sparse and dense surfaces, but the correct response is bounded comparison, not proof inference
+  + [restraint_result] is landmark-overlay work is now refined enough for orientation; no new overlay scan or visualization is justified from existing records alone
+
+& [NextOrientation] is the restrained forward rail
+  + [default_next] is stop active computation and hold the six-node landscape with refined explicit residual, half-plane boundary, and landmark-overlay discipline
+  + [allowed_next] is only a new source-defined measured object or user-selected direction
+  + [candidate_future_measured_objects] is cross-layer landmark displacement, cross-window/cutoff stability class, or Lambda phasor contribution near selected reference labels
+  + [blocked_next] is more dense overlay scans, more special-prime hunting, critical-line inference, proof claims, zero certification, or reopening explicit/Euler bridge kernels
+  + [definite_conclusion] is there is nothing more meaningful to compute in this branch without a new source-defined measured object or new user direction
+
+  = must: use landmark overlay as disciplined orientation only
+  = must: keep reference labels, sparse resonance, dense Lambda heat, and half-plane boundary layers distinct
+  = must: require a new measured object before any further overlay computation
+  = must: preserve all proof, disproof, zero-certification, and critical-line boundaries
+  - never: claim RH proof, disproof, zero certification, critical-line evidence, primary zero detection, or single-surface identity from landmark overlay
+
+(landmark_overlay_discipline_synthesis_001) :finite overlay discipline: /reference labels, sparse landmarks, dense Lambda heat, no new computation without measured object/ |proof authority|

@@ -1,0 +1,115 @@
+Subject: Whole Field RH Landscape Node Map 001
+
+Description: Bounded landscape map of current RH workspace objects after explicit/Euler bridge restraint.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landscape_node_map\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Whole_Field_RH_Landscape_Node_Map_Specification.sop
+@ [framework] C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+
+& [WholeFieldRHLandscapeNodeMap001] is a finite synthesis analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [analysis_uuid] is cb992ffb-4df4-4c0e-a959-d7ebedb703f8
+  + [source_snapshot_uuid] is b0b2b5d3-330b-434b-adaa-208abe55b7b9
+  + [manifest_uuid] is 5e9fc0c7-fac9-48b6-ad77-d33a7a555e09
+  + [canonical_specification_uuid] is 12559605-eb4f-482b-9414-f719f3af801e
+  + [proof_status] is finite_landscape_node_map_not_rh_evidence
+  + [implementation_change] is none; this pass records landscape synthesis only
+  + [verification] is no tests run because no runtime code changed
+
+& [DenseNode_PrimeCountingThetaPsi] is dense_node
+  + [subject] is whole-field prime counting and Chebyshev arithmetic mechanics
+  + [inside] is pi(x), theta(x), psi(x), interval movement, and the exact higher-prime-power correction psi(x)-theta(x)
+  + [outside] is special-prime identity claims, zero-line proof claims, and treating family increments as sufficient explanation
+  + [identity_anchor_set] is theta and psi source traces, prime-power decomposition, and whole-field distribution-return records
+  + [concept_promoter_set] is prime powers as exact psi mechanics, not as a separate special-prime family
+  + [relation_ledger] is dependency: psi depends on prime powers; contrast: theta omits higher prime powers; relation_without_identity: special-prime families may sample the field but do not define it
+  + [uncertainty] is how large-scale psi-theta mechanics should be compared to explicit-formula error beyond the current finite samples
+  + [future_use] is baseline node for any future special-prime, explicit-formula, or Euler-product inquiry
+  + [authority_status] is project_authority_for_orientation_not_proof
+
+& [DenseNode_EulerLogDerivativeHalfPlane] is dense_node
+  + [subject] is Euler product and logarithmic-derivative weighting in Re(s) > 1
+  + [inside] is finite Euler product, prime-factor logarithmic derivative, prime-power cutoff, Lambda(n)n^-s weighting, and convergence-boundary scans from sigma > 1
+  + [outside] is direct critical-line authority, zero certification, and replacing explicit-formula zero behavior
+  + [identity_anchor_set] is -zeta_prime/zeta(s) as the Lambda Dirichlet series and consistent residual shrinkage as prime bound increases in sampled Re(s) > 1 rows
+  + [concept_promoter_set] is stable half-plane convergence as a clean whole-field weighting surface
+  + [relation_ledger] is dependency: Euler/log-derivative rails use the same Lambda fabric behind psi; boundary: convergence is half-plane limited; relation_without_identity: not the same identity as finite explicit zero truncation
+  + [uncertainty] is how boundary approach toward sigma=1 should be synthesized without leaking into critical-line claims
+  + [future_use] is stable comparison node for weighting, cutoff, and convergence-boundary reasoning
+  + [authority_status] is project_authority_for_Re_s_greater_than_1_diagnostics
+
+& [DenseNode_ExplicitFormulaResidualSurface] is dense_node
+  + [subject] is finite explicit-formula approximation to psi(x)
+  + [inside] is exact psi(x), finite zero-pair estimates, zero-height cutoff, window policies, scale laws, and residual surfaces
+  + [outside] is zero certification, monotone convergence claims, universal window superiority, and proof-facing critical-line claims
+  + [identity_anchor_set] is explicit formula residual traces and later stability, zero-height, and scale-law atlases
+  + [concept_promoter_set] is zero-term influence on psi(x) with visible truncation and window sensitivity
+  + [relation_ledger] is causal_support_limited: zero terms shape approximation; contrast: residuals remain nonmonotonic and window-sensitive; dependency: cutoff coordinate choice changes the surface
+  + [uncertainty] is which future non-kernel object can reduce ambiguity without becoming another cutoff-tuning loop
+  + [future_use] is approximation-surface node for any future comparison against psi, theta, or Euler/log-derivative rails
+  + [authority_status] is project_authority_for_finite_approximation_diagnostics
+
+& [DenseNode_ReferenceAndResonanceLandmarks] is dense_node
+  + [subject] is t-axis reference ordinates and finite vertical resonance landmarks in Re(s) > 1
+  + [inside] is fixed-sigma t-axis slices, named known-zero ordinates as reference labels, zeta_abs extrema, Euler-product residual extrema, and log-derivative residual extrema
+  + [outside] is independent zero certification, critical-line evidence, and treating metric-specific extrema as one zero identity
+  + [identity_anchor_set] is t-axis boundary slice and vertical resonance scan records
+  + [concept_promoter_set] is sparse landmarking for comparison against denser Lambda and explicit-formula surfaces
+  + [relation_ledger] is correlational: zeta_abs minima near known reference ordinates; contrast: Euler/log-derivative residual extrema can be offset or peak differently; relation_without_identity: landmarks are metric-dependent
+  + [uncertainty] is how much of the reference-near alignment is expected from zeta adjacency versus meaningful new structure
+  + [future_use] is orientation node for overlaying t-dependent diagnostics without claiming zeros
+  + [authority_status] is project_authority_for_reference_landmark_orientation
+
+& [DenseNode_LambdaDiagnosticOverlay] is dense_node
+  + [subject] is finite Lambda log-Fourier and Lambda-Mellin diagnostic overlay
+  + [inside] is Lambda Oscilloscope traces, Lambda window/cutoff comparisons, weighted Lambda-Mellin shared unit, exact finite Lambda cutoff residuals, and explicit projected Lambda residuals
+  + [outside] is proof surface, primary zero detector, and explicit/Euler identity fusion
+  + [identity_anchor_set] is old ZetaOscilloscope translation, Pinky-local Lambda Oscilloscope probe, and Lambda-Mellin bridge records
+  + [concept_promoter_set] is per-prime-power phasor inspection and shared Lambda unit as a bridge diagnostic
+  + [relation_ledger] is dependency: Lambda overlay draws from prime-power fabric; relation_without_identity: exact finite Lambda cutoff and explicit projected Lambda residual remain separate; boundary: kernel smoothing is diagnostic only
+  + [uncertainty] is whether a future non-kernel object can connect Lambda overlay to whole-field synthesis without reopening the paused bridge loop
+  + [future_use] is diagnostic overlay node for comparing prime-power phasor behavior against sparse landmarks and explicit residuals
+  + [authority_status] is project_authority_for_diagnostic_overlay_only
+
+& [DenseNode_BridgeRestraint] is dense_node
+  + [subject] is explicit/Euler bridge branch restraint
+  + [inside] is explicit/Euler cutoff comparison, scale-law comparison, Lambda-Mellin bridge, partial summation audit, Cesaro smoothing, bias-tuned alpha Pareto diagnosis, and the pause decision
+  + [outside] is more kernel multiplication without new source purpose, bridge identity claims, and finite-trace RH evidence
+  + [identity_anchor_set] is the explicit_euler_bridge_restraint_synthesis_001 record
+  + [concept_promoter_set] is restraint as an operational primitive: a productive branch can close by mapping its boundary
+  + [relation_ledger] is dependency: bridge work depends on both explicit residual and Euler/Lambda surfaces; contrast: smoothing improvement differs from infinite-target cutoff accuracy; governance: pause until a new whole-field object changes purpose
+  + [uncertainty] is which whole-field dense node should next receive refinement
+  + [future_use] is guardrail preventing repeated kernel/cutoff expansion
+  + [authority_status] is project_authority_for_branch_direction
+
+& [SparseRealizationSet] is sparse realization ledger
+  + [sparse_001_special_prime_families] is Fermat primes, 641 forms, irregular primes, and other special families remain useful periphery only when returned to pi(x), theta(x), psi(x), Euler products, explicit-formula error, or zero-behavior surfaces
+  + [sparse_002_sqrt_log_scale_law] is notable sparse behavior because sqrt_log beat sqrt on average but won no sample in the bounded scale-law comparison; this is inquiry pressure only
+  + [sparse_003_reference_near_lambda_heat] is Lambda overlay and vertical resonance both show reference-near heat, but this remains expected zeta-adjacent correlation without identity fusion
+  + [sparse_004_old_toribrot_geometry] is old Toribrot geometry remains conceptual scaffold and boundary discipline until a scalar field, sampling map, and comparison contract exist
+  + [sparse_005_psi_theta_prime_power_layer] is the prime-power layer is dense as arithmetic mechanics but sparse as an explanatory bridge to zero behavior
+
+& [FrontierSet] is restrained future-work map
+  + [frontier_001_node_refinement_selection] is choose which dense node deserves the next source-defined refinement before any new tool is created
+  + [frontier_002_explicit_surface_without_kernel_loop] is inspect explicit-formula residual structure in relation to psi/theta without adding more windows or kernel variants by default
+  + [frontier_003_half_plane_boundary_synthesis] is synthesize sigma-boundary and t-axis half-plane behavior as boundary approach, not critical-line evidence
+  + [frontier_004_landmark_overlay_discipline] is compare sparse reference landmarks and dense Lambda overlay only as orientation unless a new comparison contract names a shared measured quantity
+  + [frontier_005_special_prime_return_rule] is reopen special-prime work only through whole-field return and two-failure abandonment discipline
+
+& [WholeShapeInference] is the current landscape contour
+  + [whole_shape] is the RH workspace now has six durable orientation nodes: prime-counting/Chebyshev mechanics, Euler/log-derivative half-plane weighting, explicit-formula residual surface, t-reference/resonance landmarks, Lambda diagnostic overlay, and bridge-restraint governance
+  + [central_boundary] is the zeta-prime fabric connects these nodes, but relation heat does not fuse their identities
+  + [dense_field] is arithmetic mechanics plus half-plane weighting plus explicit approximation plus landmark orientation
+  + [sparse_periphery] is special-prime families, sqrt_log sparse behavior, reference-near overlay heat, and old symbolic geometry
+  + [restraint_result] is the workspace should not add new math-processing tools until a dense node is selected for a source-defined refinement
+  + [answered_question] is yes, a source-defined RH landscape node map should precede new tools, and this first map now provides that orientation
+
+  = must: use this map as orientation and governance, not proof authority
+  = must: keep special-prime observations subordinate to whole-field nodes
+  = must: preserve explicit/Euler bridge refinement as paused
+  = must: select a dense node and source-defined purpose before new math-processing implementation
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, or single-surface RH identity from this map
+
+(whole_field_rh_landscape_node_map_001) :finite landscape node map: /six dense orientation nodes, sparse periphery, frontiers, tool restraint/ |proof authority|

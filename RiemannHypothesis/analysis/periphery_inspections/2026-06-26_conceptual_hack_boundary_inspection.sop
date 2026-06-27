@@ -1,0 +1,42 @@
+Subject: Conceptual Hack Boundary Inspection
+
+Description: Periphery inspection update distinguishing old conceptual tools from useful primitives, workaround hacks, and import candidates.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_conceptual_workspace_hack_correction\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_old_framework_initial_periphery_inspection.sop
+@ [periphery_source] C:\Project\ReasoningFramework\platform\refinement\Enumerated_Toribrot_Math_Engine.sop
+
+& [ConceptualHackBoundaryInspection] is the correction pass over old framework import readiness
+  + [inspection_uuid] is 8d47a257-4a45-4700-a972-2623b230e981
+  + [inspection_date] is 2026-06-26
+  + [reason] is the old Riemann workspace was conceptual and some modules may have been hacks for missing programmatic test, math operation, and feedback loops
+  + [classification_axis] is useful_primitive, conceptual_scaffold, workaround_hack, obsolete_analogy, import_candidate, or defer
+  + [current_result] is Toribrot math module should be treated as workaround_hack_candidate plus cautionary repair ledger, not as initial architecture to import
+
+  = must: classify old objects before import
+  = must: preserve useful pressure even when a module is rejected as architecture
+  = must: prefer direct executable test/math/feedback capability over conceptual machinery that only simulated such capability
+
+& [ToribrotMathModuleCorrection] is the focused reclassification of the old Enumerated Toribrot Math Engine
+  + [old_surface_fact] is primary_role arithmetic_proof_substrate
+  + [old_non_role_fact] is not RH_solver, zeta_theorem_engine, or universal_math_oracle
+  + [old_repair_fact] is source_fault fusing arithmetic substrate, Toribrot geometry, and RH analysis into one over-authoritative engine
+  + [old_pruning_fact] is universal_math_oracle_claim_pruned, RH_solver_claim_pruned, binary_identity_overclaim_pruned, toribrot_geometry_arithmetic_fusion_pruned, and hidden_approximation_pruned
+  + [new_classification] is workaround_hack_candidate
+  + [preserved_value] is the need for auditable finite computation, explicit precision, reproducible tests, and feedback records
+  + [rejected_shape] is an over-symbolic Toribrot-branded math engine standing in for normal runtime tooling
+  + [not_it] is core RH concept, first import target, proof engine, theorem engine, or required kernel component
+  + [replacement_direction] is build or specify a clean test/math/feedback loop that can run ordinary computations and report evidence without carrying Toribrot identity unless Toribrot itself is under test
+
+  = must: preserve the original pressure that created the module
+  = must: avoid importing the Toribrot math module as architecture before a clean runtime feedback design exists
+  = should: reuse its boundary lessons around exactness, approximation, caller responsibility, and RH overclaim prevention
+
+& [RevisedImportFrontier] is the corrected next work frontier
+  + [first] is classify old objects by usefulness versus workaround status
+  + [second] is preserve source snapshots only for objects selected as likely import candidates or necessary comparison records
+  + [third] is specify CodexSOPKernelV0 as a boot and feedback loop before implementing math-heavy instruments
+  + [fourth] is decide whether ZetaOscilloscope can be implemented using ordinary math/runtime tools rather than old Toribrot math machinery
+
+  = must: let classification precede import
+  = should: treat ZetaOscilloscope as more likely useful than ToribrotMathModule for first executable experiment

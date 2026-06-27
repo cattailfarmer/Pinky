@@ -1,0 +1,24 @@
+Subject: Dictated Zero Height Cutoff Policy Source
+
+Description: Preserved source for replacing raw zero-pair counts with zero-height T cutoff policy in explicit-formula residual analysis.
+
+& [DictatedZeroHeightCutoffPolicySource] is preserved project source
+  + [source_snapshot_uuid] is f85c6eab-bd3b-48a5-88bd-011760381fcc
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_kind] is continuation_source_from_current_focal_point_and_heartbeat
+  + [timestamp_local] is 2026-06-26
+
+## Preserved Source
+
+The current focal point says:
+
+  + [open_question_zero_height_cutoff_policy_next] is whether to replace raw zero-pair counts with zero-height T or scale-normalized cutoff policies for explicit-formula residual analysis before attempting another explicit/Euler bridge
+
+The active heartbeat instruction says:
+
+  Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces.
+
+## Source Interpretation Boundary
+
+This source authorizes a finite zero-height cutoff atlas only. It does not authorize proof claims, disproof claims, independent zero certification, RH evidence, or a final explicit/Euler bridge.

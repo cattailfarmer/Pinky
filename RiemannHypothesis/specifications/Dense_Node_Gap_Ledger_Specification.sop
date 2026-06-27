@@ -1,0 +1,41 @@
+Subject: Dense Node Gap Ledger Specification
+
+Description: SJS-processed contract for classifying what each RH dense node lacks before measured-object selection.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_dense_node_gap_ledger\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_overlap_contradiction_ledger_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_record_to_dense_node_matrix_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landscape_node_map_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_dense_node_refinement_selection_001.sop
+
+& [DenseNodeGapLedgerSpecification] is a non-mutating gap-classification contract
+  + [source_snapshot_uuid] is 90279bd0-6161-40d9-ba92-f99a7e8604c9
+  + [manifest_uuid] is 52932326-1d65-4806-90bd-edd5b31518d7
+  + [canonical_specification_uuid] is afc736d9-4ad0-4bf0-ba76-b6abc1deb70d
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is name missing preconditions for future measured-object selection across the six dense nodes
+  + [not_purpose] is new computation, proof, zero certification, branch reopening, staging, committing, or broad .sop mutation
+  + [proof_status] is dense_node_gap_ledger_not_rh_evidence
+
+& [GapClassificationContract] is bounded
+  + [gap_kind_set] is boundary_gap, identity_gap, evidence_gap, whole_field_gap, governance_gap, contradiction_gap, measured_object_gap, and no_current_gap
+  + [readiness_set] is support_ready, synthesis_ready, measured_object_not_ready, measured_object_candidate_ready, and paused
+  + [allowed_output] is gap ledger, readiness posture, and next non-mutating lead
+
+  = must: classify all six dense nodes using existing records only
+  = must: preserve explicit/Euler bridge restraint and Lambda overlay restraint
+  = must: identify whether any node has a measured-object candidate without requiring computation
+  = must: preserve proof, disproof, zero certification, and critical-line authority as outside
+  - never: treat a gap as permission to fill it with computation without source-defined purpose
+  - never: treat a dense node as proof-facing because it is well indexed
+
+& [DenseNodeGapLedgerSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and gap_ledger_scoped
+  + [processing_result] is accepted_dense_node_gap_contract
+  + [reasoning_result] is overlap contradictions have been cleared enough that the next useful non-mutating step is to name node gaps before any future measured object is selected
+
+(dense_node_gap_ledger) :gap ledger: /six nodes, missing preconditions, next measured-object readiness/ |proof claims|
+  + [inside] is non-mutating readiness and gap classification
+  + [boundary] is no computation, no mutation, no proof inference, and no branch reopening
+  |outside| RH proof, disproof, zero certification, critical-line authority, staging, commit, and broad authority mutation

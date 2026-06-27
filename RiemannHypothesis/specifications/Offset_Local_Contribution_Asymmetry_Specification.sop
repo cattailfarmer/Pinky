@@ -1,0 +1,43 @@
+Subject: Offset Local Contribution Asymmetry Specification
+
+Description: SJS-processed contract for synthesizing offset-local contribution asymmetry from existing Lambda phasor reference rows.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_offset_local_contribution_asymmetry\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_trace.json
+
+& [OffsetLocalContributionAsymmetrySpecification] is a project-local finite synthesis contract
+  + [source_snapshot_uuid] is 197af7fd-50c1-4b7d-9a41-c718db9332aa
+  + [manifest_uuid] is 71de5f9f-1428-4ba4-8072-6d156444e773
+  + [canonical_specification_uuid] is e5e87eb0-ce84-413d-b04d-410d873fbfb1
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is synthesize whether existing Lambda phasor offset rows show center/flank asymmetry worth promoting into a later displacement object
+  + [not_purpose] is new scans, denser offsets, proof, disproof, RH evidence, zero certification, critical-line authority, or primary zero detection
+  + [proof_status] is finite_offset_local_contribution_asymmetry_not_rh_evidence
+
+& [MeasuredComparison] is existing_trace_synthesis
+  + [offsets] are -0.5, 0, and +0.5 from Lambda phasor reference contribution pass 001
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference as labels only
+  + [metrics] are higher_prime_power_vector_abs_share, prime_vector_abs_share, finite_trace_residual_abs, and total_lambda_trace_abs
+  + [comparison_rules] are plus_minus_flank_difference and center_minus_flank_average
+  + [allowed_output] is analysis pass and focal-point update only
+
+  = must: use existing trace rows only
+  = must: report directional asymmetry per reference label
+  = must: distinguish exact-reference rows from flank rows
+  = must: decide whether future work should be cross-layer displacement, stability class, or stop
+  = must: preserve proof_status finite_offset_local_contribution_asymmetry_not_rh_evidence
+  - never: claim exact reference labels are centers of a true zero object from this trace
+  - never: authorize denser offset scans without a later source-defined displacement contract
+
+& [OffsetLocalContributionAsymmetrySJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and synthesis_scoped
+  + [processing_result] is accepted_bounded_offset_local_asymmetry_contract
+  + [reasoning_result] is the existing Lambda phasor trace already contains enough offset evidence to choose the next road without adding another computation grid
+
+(offset_local_contribution_asymmetry) :finite offset-local synthesis: /center versus flanks, Lambda layers, displacement pressure/ |RH evidence|
+  + [inside] is bounded synthesis of existing offset rows
+  + [boundary] is next-object selection and orientation only
+  |outside| proof, disproof, zero certification, critical-line authority, new scans, exact reference dominance, and single-surface identity

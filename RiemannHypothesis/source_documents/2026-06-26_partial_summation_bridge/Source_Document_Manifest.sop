@@ -1,0 +1,17 @@
+Subject: Partial Summation Bridge Source Document Manifest
+
+Description: Manifest for preserved source records governing the smoothed Lambda-Mellin bridge slice.
+
+& [PartialSummationBridgeSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 00c81407-468a-4099-b55f-77566e6752f2
+  + [manifest_uuid] is 5b53422e-7876-4464-8e5d-319109df44b2
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_partial_summation_bridge\Dictated_Partial_Summation_Bridge_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Partial_Summation_Bridge_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the comparison finite and diagnostic
+  - never: treat finite partial-summation bridge traces as proof, disproof, zero certification, critical-line evidence, or RH evidence

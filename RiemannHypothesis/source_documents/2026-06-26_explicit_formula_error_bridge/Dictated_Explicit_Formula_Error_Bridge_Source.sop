@@ -1,0 +1,13 @@
+Subject: Dictated Explicit Formula Error Bridge Source
+
+Description: Preserved source for comparing finite explicit-formula zero terms against pi(x), theta(x), and psi(x).
+
+& [DictatedExplicitFormulaErrorBridgeSource] is preserved source for the explicit-formula error bridge
+  + [source_snapshot_uuid] is 78bd2f15-480a-462a-92ba-69da77a7b475
+  + [preserved_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [dictated_source] is "Return to this RiemannHypothesis thread after the wakeup. Continue the current .sop-governed RH inquiry from C:\Project\Pinky\RiemannHypothesis, reading C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop first. Keep special-prime observations subordinate to whole-field RH objects such as pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior. Continue working until a definite conclusion for the current inquiry is reached or there is nothing meaningful left to explore without new user input. Preserve source/spec records before new implementation slices and do not make proof/disproof claims from finite traces."
+  + [focal_question] is whether a bounded explicit-formula error bridge can compare pi(x), psi(x), theta(x), and first zeta-zero terms without proof or zero-certification claims
+  + [implementation_need] is deterministic finite math processing for explicit-formula approximations to psi(x) using a bounded count of mpmath zeta-zero pairs
+  + [restraint] is finite explicit-formula traces are approximation and error surfaces, not RH proof, disproof, or independent zero certification

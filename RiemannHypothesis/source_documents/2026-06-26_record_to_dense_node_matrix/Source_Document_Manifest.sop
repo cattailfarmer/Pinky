@@ -1,0 +1,17 @@
+Subject: Record To Dense Node Matrix Source Document Manifest
+
+Description: Manifest for preserved source governing the RH record-to-dense-node matrix.
+
+& [RecordToDenseNodeMatrixSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is f73df46f-300e-4ffb-ae7b-4f511303146a
+  + [manifest_uuid] is cde1ef32-2d90-4c5c-8d65-9b0a92935b77
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_record_to_dense_node_matrix\Dictated_Record_To_Dense_Node_Matrix_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Record_To_Dense_Node_Matrix_Specification.sop
+  + [source_preservation_rule] is raw matrix source remains separate from canonical specification and matrix analysis
+  + [authority_status] is source_preserved_before_matrix_analysis
+
+  = must: process this source through specification before matrix analysis
+  = must: preserve record count, node set, lane set, and proof boundary
+  - never: treat this manifest as computation, proof, or commit authority

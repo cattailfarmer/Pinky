@@ -1,0 +1,65 @@
+Subject: Vertical Resonance Scan Pass 001
+
+Description: First dense fixed-sigma vertical resonance scan of finite Euler-product behavior in Re(s) > 1.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_vertical_resonance_scan\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Vertical_Resonance_Scan_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_trace.json
+
+& [VerticalResonanceScanPass001] is a completed bounded vertical-resonance pass
+  + [analysis_uuid] is 1ad288c1-c9a3-42d8-9320-b3e363d5d48f
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\vertical_resonance_scan.py
+  + [proof_status] is finite_vertical_resonance_scan_not_zero_line_evidence
+  + [status] is completed
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [sigmas] is 1.5 and 1.05
+  + [t_range] is 0 through 30
+  + [t_step] is 0.5
+  + [prime_bound] is 500
+  + [row_count] is 122
+  + [candidate_count] is 46
+  + [local_minimum_count] is 24
+  + [local_maximum_count] is 22
+  + [zeta_abs_local_minima] is 8
+  + [zeta_abs_local_maxima] is 8
+  + [euler_product_residual_local_minima] is 9
+  + [euler_product_residual_local_maxima] is 9
+  + [log_derivative_residual_local_minima] is 7
+  + [log_derivative_residual_local_maxima] is 5
+
+& [ReferenceLandmarkMotion_001] is bounded_numerical_fact
+  + [first_reference] is 14.134725141734693790457251983562
+  + [nearest_zeta_abs_minimum_to_first_reference] is t = 14.0 with distance 0.134725141734693790457251983562
+  + [nearest_euler_product_residual_minimum_to_first_reference] is t = 15.0 with distance 0.865274858265306209542748016438
+  + [second_reference] is 21.0220396387715549926284795938969
+  + [nearest_zeta_abs_minimum_to_second_reference] is t = 21.0 with distance 0.0220396387715549926284795938969
+  + [nearest_euler_product_residual_minimum_to_second_reference] is t = 22.0 with distance 0.9779603612284450073715204061031
+  + [third_reference] is 25.0108575801456887632137909925628
+  + [nearest_zeta_abs_minimum_to_third_reference] is t = 25.0 with distance 0.0108575801456887632137909925628
+  + [nearest_log_derivative_residual_maximum_to_third_reference] is t = 25.0 with distance 0.0108575801456887632137909925628
+
+& [ResonanceInference_001] is vertical_resonance_result
+  + [inference] is dense vertical resonance scanning produces useful finite landmarks, but the landmarks are metric-dependent rather than one shared zero-identity surface
+  + [zeta_abs_motion] is zeta_abs local minima align closely with the sampled known-zero-ordinate landmarks in the half-plane slice
+  + [euler_product_motion] is Euler-product residual minima are often offset from the known-zero-ordinate landmarks by roughly half to one t unit in this step-0.5 trace
+  + [log_derivative_motion] is logarithmic-derivative residual extrema have their own shape and can peak near a reference where zeta_abs has a local minimum
+  + [boundary] is these are finite Re(s) > 1 resonance candidates, not zeros, proof evidence, or critical-line measurements
+
+& [DirectionDecision_001] is restraint_result
+  + [decision] is return next to old ZetaOscilloscope/Zetabrot periphery translation rather than adding another denser scan immediately
+  + [reason] is the current deterministic rails now include explicit-formula residuals, zero-windowing, Euler-product weighting, sigma-boundary scans, t-axis slicing, and dense resonance candidates
+  + [boundary] is old symbolic tools must still be treated as external periphery and classified before import or reuse
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is vertical resonance scanning is useful as a deterministic landmark-finding rail, but it does not collapse into a zero detector or RH evidence
+  + [reason] is local extrema appear in repeatable metric-specific patterns while remaining separated from proof-grade critical-line identity
+  + [next_relevant_periphery] is old ZetaOscilloscope and Zetabrot translation/classification against the new deterministic rails
+  + [retained_boundary] is special-prime observations remain subordinate to pi(x), theta(x), psi(x), Euler products, explicit-formula error, and zeta-zero behavior
+
+(vertical_resonance_scan_pass_001) :dense vertical half-plane resonance surface: /local extrema, reference landmarks, metric-dependent offsets/ |zero certification|
+  + [inside] is finite fixed-sigma resonance candidates in Re(s) > 1
+  + [boundary] is useful deterministic comparison rail but not zero-line evidence
+  |outside| RH proof, disproof, independent zero certification, critical-line inference, and old symbolic authority

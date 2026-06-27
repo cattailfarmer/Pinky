@@ -1,0 +1,122 @@
+Module: Zetabrot
+import EnumeratedToribrot
+
+Start from the Enumerated Toribrot structure, using it as a binary representation of explicit integer value.
+
+Nodes (Brots)
+
+For each integer (n \ge 2), there is exactly one brot node.
+The node is indexed by the integer (n).
+No duplication: one brot = one integer.
+Composite Pants (Factor Structure)
+
+For a composite (n), choose a factorization (n = ab) with (1 < a \le b).
+Attach a pants unit:
+Waist: node (n),
+Legs: nodes (a) and (b).
+If multiple factorizations are used, pants stack in series, not parallel: [ n \to a_1 b_1 \to a_2 b_2 \to \cdots ]
+This recursively decomposes (n) down to primes, forming a loop‑back circuit to prime seeds.
+Prime Nodes
+
+For a prime (p), there are no factor pants; instead, the node receives parameter pants (arithmetic observables).
+Prime Parameters
+For the (n)-th prime (p_n), attach:
+
+Log parameter: (L_n = \log p_n),
+Gap parameter: (g_n = p_{n+1} - p_n),
+Optional canonical field: the von Mangoldt function (\Lambda(n)), extended to all integers: [ \Lambda(n) = \begin{cases} \log p & \text{if } n = p^k \text{ for some prime } p, k\ge 1,\[2pt] 0 & \text{otherwise.} \end{cases} ]
+Field Layer
+
+Define a scalar field (a(n)) over all integer brots:
+e.g. prime indicator, gap‑derived function, or (\Lambda(n)).
+This makes the Toribrot an integer‑indexed scalar field with a pants‑style factorization structure.
+II. Zetabrot: Operator & Spectral Construction
+The Zetabrot is the operator‑spectral layer built from the Enumerated Toribrot field.
+
+1. Dirichlet/Mellin Operator (Brot → Spectral Map)
+Given a field (a(n)) on brots, define the Dirichlet/Mellin transform:
+
+[ F(s) = \sum_{n=1}^{\infty} a(n),n^{-s},\quad s = \sigma + it. ]
+
+Interpretation in pants language:
+
+One leg: field value (a(n)),
+Other leg: kernel (n^{-s}),
+Waist: summation over all brot nodes (n).
+This operator (F(s)) is the Zetabrot transform of the Toribrot field.
+
+Special case (Λ‑Zetabrot):
+
+If (a(n) = \Lambda(n)), then for (\Re(s) > 1),
+
+[ F(s) = \sum_{n\ge 1} \Lambda(n),n^{-s} = -\frac{\zeta'(s)}{\zeta(s)}. ]
+
+This is the Λ‑Zetabrot, directly linked to the zeta zeros.
+
+2. Log-Domain Compression (Zetabrot Signal)
+Introduce log‑time variable:
+
+[ u = \log n. ]
+
+Define the Zetabrot spike train:
+
+[ G(u) = \sum_{n\ge 1} a(n),\delta(u - \log n). ]
+
+This is the Toribrot field compressed onto the log axis:
+
+Each brot (n) becomes a spike at (u = \log n) with weight (a(n)).
+3. Fourier Layer (Zeta Ear / Zetabrot Phasor Sum)
+Define the Fourier transform of (G):
+
+[ \widehat{G}(t) = \int_{-\infty}^{\infty} G(u),e^{-itu},du = \sum_{n\ge 1} a(n),e^{-it\log n}. ]
+
+With damping exponent (\sigma), this becomes:
+
+[ \widehat{G}(t;\sigma) = \sum_{n\ge 1} a(n),n^{-\sigma} e^{-it\log n} = \sum_{n\ge 1} a(n),n^{-\sigma - it}. ]
+
+Λ‑Zetabrot Fourier form:
+
+For (a(n)=\Lambda(n)):
+
+[ \widehat{G}(t;\sigma) = \sum_{n\ge 1} \Lambda(n),n^{-\sigma - it} = -\frac{\zeta'(\sigma+it)}{\zeta(\sigma+it)}. ]
+
+Each term:
+
+[ \Lambda(n),n^{-\sigma} e^{-it\log n} ]
+
+is a rotating phasor with angular velocity (\log n) and amplitude controlled by (n^{-\sigma}) and (\Lambda(n)).
+
+This is the Zetabrot Ear / Oscilloscope: a spectral readout of the Toribrot integer field in log‑time.
+
+4. Spectral Layer (Zeros & Explicit Formula)
+In the Λ‑Zetabrot case, the transform (-\zeta'(s)/\zeta(s)) has poles at the non‑trivial zeros (\rho = \beta + i\gamma) of (\zeta(s)). The explicit formula connects:
+
+Arithmetic domain (Toribrot field over integers / primes),
+Spectral domain (zeros (\rho)),
+with each zero contributing a term of the form:
+
+[ x^\rho = x^\beta e^{i\gamma\log x} ]
+
+to prime‑counting fluctuations.
+
+The Riemann Hypothesis becomes a Zetabrot spectral amplitude constraint:
+
+[ \beta = \tfrac12 \quad \forall \rho, ]
+
+i.e., all non‑trivial zeros lie on the critical line (\Re(s) = \tfrac12), meaning every spectral contribution has magnitude (x^{1/2}).
+
+III. Summary: What Zetabrot Is
+Input: The Enumerated Toribrot (one node per integer), with:
+
+pants‑style factor structure for composites,
+parameter pants for primes,
+a chosen scalar field (a(n)) (especially (a(n)=\Lambda(n))).
+Zetabrot Construction:
+
+Form the Dirichlet/Mellin transform (F(s)=\sum a(n)n^{-s}).
+Interpret this via log‑domain spike train (G(u)).
+Take the Fourier transform (\widehat{G}(t;\sigma)) = Zetabrot Ear / Oscilloscope.
+In the Λ‑case, this is (-\zeta'/\zeta), whose singularities encode the zeta zeros.
+Zetabrot is thus:
+
+The operator‑spectral transform of the Enumerated Toribrot integer field, realized as a log‑domain Fourier/Mellin phasor sum whose poles and oscillations are governed by the zeros of the Riemann zeta function.

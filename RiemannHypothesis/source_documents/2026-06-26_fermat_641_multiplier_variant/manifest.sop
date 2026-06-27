@@ -1,0 +1,14 @@
+Subject: Fermat 641 Multiplier Variant Source Manifest
+
+Description: Manifest for the source hypothesis about 65537^(641*N) plus or minus 1.
+
+& [Fermat641MultiplierVariantSourceManifest] is the source manifest for the 641 multiplier variant
+  + [manifest_uuid] is 1a068fea-8f05-4f9c-b6d8-6c8ea3631598
+  + [source_uuid] is 0ececf26-9ea2-4123-8e00-756e8133716b
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_multiplier_variant\Dictated_Fermat_641_Multiplier_Variant_Source.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_operator_hypothesis_boundary.sop
+  + [source_role] is user_hypothesis_for_fermat_multiplier_boundary_testing
+
+  = must: preserve the multiplier variant as a distinct source from the first 65537^641 + 1 hypothesis

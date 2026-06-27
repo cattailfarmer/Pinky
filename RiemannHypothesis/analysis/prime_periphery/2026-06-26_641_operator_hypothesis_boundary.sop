@@ -1,0 +1,69 @@
+Subject: 641 Operator Hypothesis Boundary
+
+Description: First boundary analysis of whether 641 can operate as a next-sequence exponent for Fermat-coherent primes.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_operator_hypothesis\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_multiplier_variant\manifest.sop
+@ [prior] C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_fermat_prime_seed_inquiry.sop
+
+& [Fermat641OperatorHypothesisBoundary] is a completed arithmetic boundary pass
+  + [analysis_uuid] is 0286e11a-40a9-4815-ab26-e1bc382c1e51
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [focus_subject] is 65537^641 + 1 and the possible operator role of 641
+  + [status] is completed_first_boundary_test
+
+## Computed Boundary
+
+& [Boundary_001_OddExponentPlusOneFactor] is decisive_for_proposed_number
+  + [proposed_number] is 65537^641 + 1
+  + [rule] is a^n + 1 is divisible by a + 1 when n is odd
+  + [reason] is a is congruent to -1 modulo a + 1, so a^n + 1 is congruent to 0 modulo a + 1 for odd n
+  + [computed_divisor] is 65538
+  + [computed_divisor_factorization] is 2 * 3^2 * 11 * 331
+  + [result] is proposed number is composite
+  + [scope] is arithmetic compositeness of this proposed continuation, not a rejection of all 641-related inquiry
+
+& [Boundary_002_641AsExponent] is not_prime_generator_for_plus_one_shape
+  + [subject] is 641 as exponent in a^641 + 1
+  + [meaning] is odd exponent plus-one forms are factor-forced unless the base is exceptional in a different scoped construction
+  + [boundary] is 641 does not act as a clean next Fermat-prime exponent operator in this shape
+
+& [Boundary_003_641AsFermatFactorOperator] is still_promising_periphery
+  + [subject] is 641 as Fermat-number factor boundary
+  + [known_relation] is 641 divides F5 = 2^32 + 1
+  + [known_form] is 641 = 5 * 2^7 + 1
+  + [known_order] is ord_641(2) = 64
+  + [meaning] is 641 may be useful as an operator for factor-boundary searches, not for naive next-sequence plus-one prime generation
+  + [better_search_shape] is find primes p = k * 2^(n+2) + 1 where 2^(2^n) is congruent to -1 modulo p
+
+& [Boundary_004_641FermatMultiplierVariant] is decisive_for_raw_plus_minus_forms
+  + [proposed_forms] is 65537^(641*N) + 1 and 65537^(641*N) - 1 where N is 3, 5, 17, 257, or 65537
+  + [exponent_property] is 641*N is odd for every listed N
+  + [plus_one_result] is 65537^(641*N) + 1 is divisible by 65537 + 1 = 65538 for every listed N
+  + [plus_one_divisor_factorization] is 65538 = 2 * 3^2 * 11 * 331
+  + [minus_one_result] is 65537^(641*N) - 1 is divisible by 65537 - 1 = 65536 for every listed N
+  + [minus_one_divisor_factorization] is 65536 = 2^16
+  + [result] is every raw plus-one or minus-one proposed form is composite
+  + [scope] is whole-number primality only; primitive factors may still carry useful order constraints
+
+& [Boundary_005_PrimitiveFactorOperatorRelocation] is promising_periphery
+  + [subject] is 641*N as an exponent operator
+  + [minus_one_factor_rule] is primitive prime divisors of 65537^m - 1 have multiplicative order m modulo q and therefore q is congruent to 1 modulo m
+  + [plus_one_factor_rule] is primitive prime divisors of 65537^m + 1 for odd m have multiplicative order 2m modulo q and therefore q is congruent to 1 modulo 2m
+  + [where_m] is m = 641*N
+  + [meaning] is the operator idea survives as a congruence/order filter on factors, not as primality of the whole expression
+  + [rh_boundary] is this points toward primes in arithmetic progressions and L-function territory, not direct RH evidence
+
+## Sparse Realization
+
+& [Realization_001_ContinuationBreaksIntoFactorIdentity] is a dense-node candidate
+  + [statement] is the Fermat-prime identity does not continue by taking a previous Fermat prime and raising it to the 641st power plus one
+  + [reason] is the odd-exponent plus-one factor rule forces compositeness
+  + [meaning] is 641's local identity is better treated as factor-boundary coherence than as power-seed prime generation
+  + [next_use] is build or use a Fermat-factor candidate scanner if this heat persists
+
+& [Realization_002_OperatorMeansFactorConstraint] is a dense-node candidate
+  + [statement] is 641*N can act as an operator only after moving attention from whole-form primality to primitive factor constraints
+  + [reason] is the whole plus/minus forms are algebraically composite, while their primitive factors are forced into multiplicative-order and congruence classes
+  + [next_use] is inspect cyclotomic factors Phi_m(65537) and Phi_2m(65537) for small feasible m rather than testing 65537^m +/- 1 as prime

@@ -1,0 +1,21 @@
+Subject: Zeta Oscilloscope Dictated Source
+Description: Preserved user-dictated source sketch for the Zeta Oscilloscope definition.
+
+& [DictatedZetaOscilloscopeSource] is the preserved source request for a corrected Zeta Oscilloscope definition
+  + [conversation_uuid] is 42c4c9ad-e962-4f5f-85ab-ed21ff7e118f
+  + [source_snapshot_uuid] is a6fec933-1869-415c-90b7-c1c324dacf99
+  + [source_context] is a continuation from Euler's Mirror to Zeta Ear to Zeta Oscilloscope
+  + [dictated_source_ascii_transcription] is:
+    "Zeta Oscilloscope, recommended definition, clean plus RH-relevant.
+    Define the Zeta Oscilloscope, Lambda-Oscilloscope, by E_(t,N) using the von Mangoldt function Lambda(n), a damping parameter, t as the height/frequency parameter so s = sigma + it, and N as a finite computational cutoff.
+    Visualization plots the moving point (Re(E_(t,N)), Im(E_(t,N))) as t varies.
+    This produces a complex-plane waveform driven by prime-power oscillators, where each term Lambda(n) n^{-sigma} e^{-itn} acts as a rotating phasor with angular velocity n.
+    At sigma = 1/2, the system is critically normalized, aligning the Oscilloscope with the analytic structure of the Riemann zeta function along Re(s)=1/2."
+  + [known_tuning_fault] is source sketch uses e^{-i t n} and angular velocity n where zeta-aligned Dirichlet terms require e^{-i t log n} and angular velocity log(n)
+  + [source_purpose] is to create a corrected .sop definition that preserves the visual instrument while aligning the phasor formula with zeta function structure
+
+  = must: preserve this dictated source as the original-purpose anchor
+  = must: correct the phase term in the canonical definition
+  = must: preserve finite cutoff as part of the instrument
+  = must: distinguish RH relevance from RH proof or detector claims
+  - never: overwrite this source document with canonical material

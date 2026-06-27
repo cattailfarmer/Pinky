@@ -1,0 +1,17 @@
+Subject: Dictated Retire 641 And Irregular Prime Pivot Source
+
+Description: Raw source preserving the user's direction to retire the exhausted 641 line and inspect another RH-adjacent prime family.
+
+& [DictatedRetire641AndIrregularPrimePivotSource] is preserved raw source for the next prime-family pivot
+  + [source_uuid] is b900453b-eb3b-40f1-a110-46eb6a0b8352
+  + [capture_date] is 2026-06-26
+  + [captured_by] is Codex
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [authority_state] is source_preserved_not_canonical
+  + [raw_user_statement] is "if that doesn't reveal anything, retire that line of inquiry and chase something else for a while in the RH workspace. maybe there's some other prime family that will yield it's secrets and give us some periphery to infer around, to understand the zero line better?"
+
+  = must: retire the 641 special-form line as an active identity track
+  = must: choose another prime family with stronger RH or zeta adjacency
+  = must: keep the new family subordinate to whole-field RH objects and zeta structure
+  = must: preserve source before creating new tooling or analysis
+  - never: claim that a special prime family explains the zero line from finite traces

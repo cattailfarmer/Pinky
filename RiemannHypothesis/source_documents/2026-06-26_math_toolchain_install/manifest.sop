@@ -1,0 +1,14 @@
+Subject: Math Toolchain Install Source Manifest
+
+Description: Source preservation manifest for the RiemannHypothesis math toolchain install.
+
+& [MathToolchainInstallSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_math_toolchain_install\Dictated_Math_Toolchain_Install_Source.sop
+  + [requirements_file] is C:\Project\Pinky\RiemannHypothesis\requirements.txt
+  + [local_environment] is C:\Project\Pinky\RiemannHypothesis\.venv
+  + [verification_record] is C:\Project\Pinky\RiemannHypothesis\analysis\toolchain\2026-06-26_math_toolchain_verification.sop
+  + [intake_status] is preserved_source_with_toolchain_install
+  + [captured_on] is 2026-06-26
+
+  = must: keep source request separate from installed environment
+  = must: update this manifest if the required tool list materially changes

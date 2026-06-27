@@ -1,0 +1,16 @@
+Subject: Focused Inquiry Restraint Source Manifest
+
+Description: Manifest for preserved dictated source defining restraint as a focus-stability governor inside inquisitive periphery inspection.
+
+& [FocusedInquiryRestraintSourceManifest] is the source manifest for focused inquiry restraint
+  + [manifest_uuid] is 722b0331-169c-421e-959a-f122f52c739b
+  + [source_uuid] is b36758a7-e4a0-46e7-bbda-9c18aa18237c
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_focused_inquiry_restraint\Dictated_Focused_Inquiry_Restraint_Source.sop
+  + [canonicalization_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Sparse_Realization_Dense_Node_Framework.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_focused_restraint_pass_004.sop
+  + [source_role] is dictated_refinement_for_focus_stability_and_scope_control
+
+  = must: preserve raw source before canonical restraint rules are used
+  = must: trace canonical restraint claims back to this manifest or source document

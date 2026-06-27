@@ -1,0 +1,57 @@
+Subject: Cesaro Mellin Bridge Specification
+
+Description: SJS-processed contract for n-domain smoothed Lambda-Mellin bridge comparison.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cesaro_mellin_bridge\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_partial_summation_bridge_atlas_pass_001.sop
+
+& [CesaroMellinBridge] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is ed78b6e1-08cc-4344-a38b-4f4a553d5361
+  + [manifest_uuid] is 187c3a54-2d0b-44f5-9b2f-d0a5e76c5e0e
+  + [canonical_specification_uuid] is 9bfa7990-9b8d-4e99-85a5-d61f20559921
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether n-domain kernels create a genuinely new smoothed Lambda-Mellin bridge surface compared with raw finite-difference projection
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, or explicit/Euler identity fusion
+
+  = must: work only with Re(s) > 1 samples
+  = must: include sharp, cesaro, and hann n-domain kernels
+  = must: define sharp as K(n,N)=1
+  = must: define cesaro as K(n,N)=1-n/(N+1)
+  = must: define hann as K(n,N)=0.5*(1+cos(pi*n/(N+1)))
+  = must: compute exact smoothed Lambda sum Sum_{n<=N}K(n,N)Lambda(n)n^-s
+  = must: compute explicit smoothed Lambda-like sum Sum_{n<=N}K(n,N)(psi_hat(n)-psi_hat(n-1))n^-s
+  = must: report smoothed bridge residual, raw unweighted bridge residual, kernel-over-raw ratio, and exact smoothed cutoff residual against -zeta_prime/zeta(s)
+  = must: keep exact smoothed finite cutoff residual visible as smoothing bias/tail context, not as a universal target error
+  = must: include sample-level rows for N, s, scale law, multiplier, zero-window, n-domain kernel, exact smoothed sum, explicit smoothed sum, and residual magnitudes
+  = must: mark output proof_status as finite_cesaro_mellin_bridge_not_rh_evidence
+  = must: treat mpmath zetazero and zeta derivative evaluation as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite kernel traces
+  - never: collapse explicit-zero truncation identity into Euler prime-power cutoff identity
+  - never: call a smoothed residual improvement a proof of better approximation to -zeta_prime/zeta without reporting smoothing bias
+
+& [DefaultCesaroMellinBridgeGrid] is the bounded comparison grid
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.134725141734693790457251983562i, and s=1.5+14.134725141734693790457251983562i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [zero_windows] is sharp, fejer, lanczos, and hann
+  + [n_domain_kernels] is sharp, cesaro, and hann
+  + [rationale] is reuse the prior Lambda-Mellin grid while changing only the n-domain projection surface
+
+& [CesaroMellinBridgeTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.cesaro_mellin_bridge_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\cesaro_mellin_bridge_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_cesaro_mellin_bridge_atlas_pass_001.sop
+
+& [CesaroMellinBridgeSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_cesaro_mellin_bridge_contract
+  + [reasoning_result] is prior partial summation showed no new surface; n-domain kernels are a restrained next test because they alter the finite comparison surface while retaining the Lambda-Mellin shared unit
+
+(cesaro_mellin_bridge) :finite n-domain smoothed Lambda-Mellin projection: /sharp baseline, Cesaro, Hann, smoothing bias visible/ |proof authority|
+  + [inside] is bounded finite Re(s)>1 shared-unit kernel comparison
+  + [boundary] is bridge-smoothing diagnosis only
+  |outside| RH proof, disproof, zero certification, global bridge identity, critical-line evidence, and universal scale-law claims

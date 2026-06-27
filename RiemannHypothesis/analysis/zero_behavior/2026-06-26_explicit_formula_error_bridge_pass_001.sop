@@ -1,0 +1,47 @@
+Subject: Explicit Formula Error Bridge Pass 001
+
+Description: First bounded comparison of exact psi(x) with finite explicit-formula zero-pair approximations.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_formula_error_bridge\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Formula_Error_Bridge_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_trace.json
+
+& [ExplicitFormulaErrorBridgePass001] is a completed bounded zero-behavior pass
+  + [analysis_uuid] is eb92c9aa-233c-43f9-b239-a8ad40ee7d9a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [tool] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\explicit_formula_probe.py
+  + [proof_status] is finite_explicit_formula_probe_not_zero_certification
+  + [status] is completed
+
+& [TraceSummary_001] is bounded_numerical_fact
+  + [sample_points] is 100, 200, 500
+  + [zero_pair_counts] is 5, 10, 20
+  + [row_count] is 9
+  + [zero_term_rows] is 105
+  + [x_100_residual_abs_zero_5] is 0.7736417884937819
+  + [x_100_residual_abs_zero_10] is 0.9950299443004239
+  + [x_100_residual_abs_zero_20] is 1.636707449085917
+  + [x_200_residual_abs_zero_5] is 4.737728103004114
+  + [x_200_residual_abs_zero_10] is 3.816801886266637
+  + [x_200_residual_abs_zero_20] is 2.319604343556296
+  + [x_500_residual_abs_zero_5] is 0.4180266280684686
+  + [x_500_residual_abs_zero_10] is 1.011050533941918
+  + [x_500_residual_abs_zero_20] is 1.828129191659745
+
+& [IdentityInference_001] is zero_behavior_lens_result
+  + [inference] is finite explicit-formula zero-pair sums visibly shape approximations to psi(x), but the bounded residuals are oscillatory and truncation-sensitive
+  + [boundary] is this trace measures a finite approximation surface and does not certify zeros, establish convergence, or prove RH behavior
+  + [noted_motion] is more zero pairs improved the residual at x = 200 but worsened the residual at x = 100 and x = 500 in this bounded trace
+  + [restraint] is the correct next object is smoothing, windowing, or Euler-product/logarithmic-derivative weighting rather than special-prime family expansion
+
+& [Conclusion_001] is definite_current_inquiry_conclusion
+  + [result] is a bounded explicit-formula error bridge is useful and now exists, but finite zero-pair traces cannot be read as monotone evidence or zero certification
+  + [reason] is the estimate residuals show meaningful zero-term influence while also showing truncation sensitivity across the sampled points
+  + [next_relevant_periphery] is smoothed explicit formula, zero-term windowing, Euler product, or logarithmic derivative weighting
+  + [retained_boundary] is special-prime observations remain subordinate until whole-field zero-behavior and Euler-product objects are better scoped
+
+(explicit_formula_error_bridge_pass_001) :bounded explicit-formula residual surface: /psi exact, zero-pair estimates, residuals/ |zero certification|
+  + [inside] is finite zero-pair approximation and residual comparison
+  + [boundary] is useful zero-behavior lens but not proof evidence
+  |outside| RH proof, disproof, independent zero certification, and monotone convergence claims

@@ -1,0 +1,17 @@
+Subject: Inquiry Gate Not Commit Gate Source Document Manifest
+
+Description: Manifest for preserving the mutation-gate versus inquiry-gate correction.
+
+& [InquiryGateNotCommitGateSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 128ae6ab-c544-4ecd-a50b-d3fb2564482b
+  + [manifest_uuid] is b8bbe2d5-73dd-44d3-9f24-bcb9ccaf8ba9
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_inquiry_gate_not_commit_gate\Dictated_Inquiry_Gate_Not_Commit_Gate_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Inquiry_Gate_Not_Commit_Gate_Specification.sop
+  + [source_preservation_rule] is raw correction remains separate from canonical specification and analysis
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this correction through specification before applying as a durable route rule
+  = must: keep commit mutation, inquiry progress, and proof status distinct
+  - never: use this source to bypass explicit commit-scope direction

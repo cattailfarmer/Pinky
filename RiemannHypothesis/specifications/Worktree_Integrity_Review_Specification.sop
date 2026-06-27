@@ -1,0 +1,53 @@
+Subject: Worktree Integrity Review Specification
+
+Description: SJS-processed contract for reviewing the untracked RiemannHypothesis work frame and selecting the next bounded lead.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_worktree_integrity_review\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Walking_Continuity_Correction_Specification.sop
+@ [source] C:\Project\Pinky\.sop\platform\RepoFirstInternalScan.sop
+@ [source] C:\Project\Pinky\.sop\platform\TurnBookmark.sop
+@ [source] C:\Project\Pinky\.sop\platform\TrailingChecksumVoice.sop
+@ [source] C:\Project\Pinky\.sop\platform\PeripheryInquiryCuriosityTrigger.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+
+& [WorktreeIntegrityReviewSpecification] is a project-local review contract
+  + [source_snapshot_uuid] is 696d1a2f-1d30-4c56-a841-61d04ea4a92d
+  + [manifest_uuid] is 0be64dd9-f313-495c-ad4a-3a44b8f0edf4
+  + [canonical_specification_uuid] is 7253d067-171f-4ac9-ba0c-ce0c25b5dc9a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is review current untracked RH project state before selecting further work
+  + [not_purpose] is staging, committing, proof claims, denser math scans, or treating file volume as achievement
+  + [proof_status] is worktree_integrity_review_not_rh_evidence
+
+& [ReviewContract] is repo_first_worktree_review
+  + [version_a] is HEAD
+  + [version_b] is WORKTREE
+  + [tracked_project_files] is zero under RiemannHypothesis at review time
+  + [non_ignored_untracked_project_files] is 329
+  + [role_count_analysis] is 95 analysis files
+  + [role_count_source_documents] is 135 source document files
+  + [role_count_specifications] is 49 specification files
+  + [role_count_tools] is 46 non-ignored tool files
+  + [role_count_tests] is 1 non-ignored test file
+  + [ignored_runtime_surfaces] are .pytest_cache, .venv, __pycache__
+  + [test_command] is .\.venv\Scripts\python.exe -m pytest -q
+  + [allowed_output] is review record, focal-point update, and next-lead selection only
+
+  = must: classify the untracked project slice by role
+  = must: keep ignored runtime surfaces outside source authority
+  = must: report test result before calling the worktree runnable
+  = must: decide whether the next lead is commit preparation, source/spec indexing, math-tool audit, or whole-field synthesis
+  = must: keep local branch conclusions subordinate to whole-field RH objects
+  - never: claim commit integrity before staging and committing
+  - never: treat green tests as mathematical truth, RH evidence, or proof readiness
+
+& [WorktreeIntegrityReviewSJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and review_scoped
+  + [processing_result] is accepted_worktree_review_contract
+  + [reasoning_result] is the untracked project has enough coherent source/spec/analysis/tool/test material to review as a project slice, but not enough Git authority to call it committed work
+
+(worktree_integrity_review) :repo-first review: /HEAD to WORKTREE, roles, ignored runtime, tests, next lead/ |RH evidence|
+  + [inside] is worktree role classification, test result, review findings, and next route
+  + [boundary] is pre-commit project integrity only
+  |outside| proof, disproof, zero certification, commit integrity before commit, and hidden authority

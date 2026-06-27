@@ -1,0 +1,17 @@
+Subject: Measured Object Candidate Criteria Source Document Manifest
+
+Description: Manifest for preserved source governing RH measured-object admission criteria.
+
+& [MeasuredObjectCandidateCriteriaSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 9c480377-8dd9-41b0-9405-942ebdb3d754
+  + [manifest_uuid] is 7f99c312-abe9-4c7e-90d7-3922fbf17593
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_measured_object_candidate_criteria\Dictated_Measured_Object_Candidate_Criteria_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Measured_Object_Candidate_Criteria_Specification.sop
+  + [source_preservation_rule] is raw admission-gate source remains separate from canonical specification and analysis
+  + [authority_status] is source_preserved_before_criteria_analysis
+
+  = must: process this source through specification before criteria analysis
+  = must: preserve purpose, dense-node parentage, identity boundary, method contract, contradiction handling, and no-proof boundary
+  - never: treat this manifest as computation, proof, branch-reopening, staging, commit, or broad .sop mutation authority

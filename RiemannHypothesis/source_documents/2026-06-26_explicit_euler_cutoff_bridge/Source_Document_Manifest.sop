@@ -1,0 +1,23 @@
+Subject: Explicit Euler Cutoff Bridge Source Document Manifest
+
+Description: Manifest for the local source record authorizing the explicit-formula versus Euler/log-derivative cutoff bridge report.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_cutoff_bridge\Dictated_Explicit_Euler_Cutoff_Bridge_Source.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+@ [overlay] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_whole_field_landmark_overlay_report_001.sop
+
+& [ExplicitEulerCutoffBridgeSourceManifest] is the preserved source set for this report
+  + [manifest_uuid] is cf222c2a-be8f-4e31-8439-380cc0e5443b
+  + [source_snapshot_uuid] is 4c567e29-4f09-4a0a-afcf-905fce5b04a5
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_explicit_euler_cutoff_bridge\Dictated_Explicit_Euler_Cutoff_Bridge_Source.sop
+  + [source_purpose] is synthesize existing finite traces into a clear cutoff/window boundary result
+  + [preservation_event] is source/spec saved before report authorship
+  + [authority_status] is local_source_for_bounded_report_slice
+
+  = must: preserve this source separately from report conclusions
+  = must: treat referenced traces as finite deterministic support, not proof authority
+  - never: overwrite earlier rail records with this bridge interpretation

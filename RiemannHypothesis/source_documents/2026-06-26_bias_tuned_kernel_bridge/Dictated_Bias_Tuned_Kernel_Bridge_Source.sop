@@ -1,0 +1,22 @@
+Subject: Dictated Bias Tuned Kernel Bridge Source
+
+Description: Preserved source for the bias-tuned n-domain Lambda-Mellin bridge inquiry.
+
+& [DictatedBiasTunedKernelBridgeSource] is raw continuation source
+  + [source_snapshot_uuid] is 88b2ded0-a264-4e41-beaa-fadc1182585e
+  + [captured_at] is 2026-06-26T17:14:35.770Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_bias_corrected_kernel_next after Cesaro-Mellin bridge diagnosis
+  + [raw_need] is determine whether a bias-corrected or tunable n-domain kernel can preserve some Cesaro bridge improvement while reducing smoothing bias
+  + [prior_result] is Cesaro improved explicit-side bridge residual in every bounded row but increased exact smoothed cutoff residual against -zeta_prime/zeta
+  + [candidate_bridge] is test an alpha blend between sharp and Cesaro: K_alpha(n,N)=1-alpha*n/(N+1)
+  + [candidate_alphas] are 0, 0.25, 0.5, 0.75, and 1
+  + [expected_value] is alpha may expose a Pareto surface between bridge improvement and smoothing bias, clarifying whether the branch has useful tunable structure or only an unavoidable tradeoff
+  + [identity_boundary] is alpha tuning is finite bridge-surface diagnosis only and does not create a proof-facing identity
+
+  = must: preserve this raw source separately from canonical specification
+  = must: keep alpha=0 as sharp baseline and alpha=1 as Cesaro endpoint
+  = must: report bridge improvement and smoothing bias together
+  = must: identify Pareto non-dominated alpha rows rather than calling one alpha universally best
+  - never: treat finite alpha tuning as RH evidence or zero certification

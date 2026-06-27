@@ -1,0 +1,20 @@
+Subject: Dictated Inquiry Gate Not Commit Gate Source
+
+Description: Raw source preserving the correction that commit scope gates mutation but not inquiry.
+
+& [DictatedInquiryGateNotCommitGateSource] is preserved source for the mutation-gate versus inquiry-gate distinction
+  + [source_snapshot_uuid] is 128ae6ab-c544-4ecd-a50b-d3fb2564482b
+  + [source_kind] is dictated_conversation_correction
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [user_statement] "the boundary is a hard obstruction on progress and inquiry?"
+  + [implied_correction] is the commit-scope boundary must not be interpreted as a hard obstruction on progress or inquiry
+  + [corrected_boundary] is hard gate on staging, committing, or broad authority mutation without explicit scope direction
+  + [continued_inquiry] is non-staging review, periphery scan, route-map refinement, contradiction search, and synthesis of existing records while pursuit value remains
+  + [preservation_boundary] is this source does not authorize staging, committing, broad .sop mutation, proof claims, or denser paused-branch scans
+
+  = must: distinguish mutation gates from inquiry gates
+  = must: let inquiry continue through non-mutating review when pursuit value remains
+  = must: preserve commit-scope choice as a mutation permission boundary
+  - never: treat waiting for commit scope as global idle or inquiry obstruction

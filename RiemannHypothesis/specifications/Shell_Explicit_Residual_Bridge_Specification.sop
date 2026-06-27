@@ -1,0 +1,40 @@
+Subject: Shell Explicit Residual Bridge Specification
+
+Description: SJS-processed contract for comparing shell-surface signatures with explicit residual movement.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_shell_explicit_residual_bridge\Source_Document_Manifest.sop
+@ [related] C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Emergence_Shell_Surface_Signature_Specification.sop
+@ [related] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Movement_Decomposition_Specification.sop
+
+& [ShellExplicitResidualBridgeSpecification] is a finite comparison contract
+  + [canonical_specification_uuid] is 84eedb05-5402-4473-b55e-1b7705e71879
+  + [source_uuid] is cfae4416-cc13-4f5a-bd5b-a24d50a7b699
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is compare prime-emergence shell endpoint movement with explicit residual movement using existing tooling
+  + [not_purpose] is new cutoff law, new window, new kernel, proof, disproof, RH evidence, zero certification, or special-prime expansion
+
+& [MeasuredComparison] is the bridge object
+  + [shell_endpoints] are 100, 1000, 10000, and 100000
+  + [shell_intervals] are (100,1000], (1000,10000], and (10000,100000]
+  + [exact_layers] are theta_error_movement, higher_prime_power_movement, and psi_error_movement
+  + [explicit_layer] is explicit_residual_movement R(b)-R(a)
+  + [cutoff_policy] is existing T=c*log(x), sharp window, with c=16 and c=32
+  + [comparison_rule] is inspect sign relation, dominant exact layer, and average residual movement without claiming causation
+
+& [PursuitValueGate] is active
+  + [boundary_value] is tests whether the shell surface connects to the explicit residual surface or remains separate
+  + [identity_value] is preserves distinct identities for shell density/sieve texture, Lambda prime-power movement, and explicit residual movement
+  + [evidence_value] is uses existing deterministic tools and a declared endpoint set
+  + [whole_field_value] is keeps psi, theta, prime powers, and explicit zero-term approximation in one comparison unit
+
+  = must: use existing explicit_residual_movement_decomposition output
+  = must: keep c16 and c32 as finite cutoff multipliers, not superiority claims
+  = must: preserve sign mismatch as evidence against simple identity when it appears
+  = must: stop the shell-explicit bridge if the comparison produces boundary diagnosis instead of a new named measured object
+  - never: treat finite residual movement as RH evidence, zero certification, or proof
+
+(shell_explicit_residual_bridge) :finite comparison contract: /shell endpoints, exact movement layers, explicit residual movement/ |proof authority|
+  + [inside] is bounded bridge diagnosis using existing tools
+  + [boundary] is orientation and identity delineation only
+  |outside| proof, zero certification, new policies, and special-prime expansion

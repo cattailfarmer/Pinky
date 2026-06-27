@@ -1,0 +1,100 @@
+Subject: Lambda Phasor Reference Contribution Pass 001
+
+Description: Bounded contribution-accounting pass for finite Lambda phasor layers near selected reference labels.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_phasor_reference_contribution\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Phasor_Reference_Contribution_Specification.sop
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\lambda_oscilloscope.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_phasor_reference_contribution.py
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_phasor_reference_contribution_trace.json
+
+& [LambdaPhasorReferenceContributionPass001] is a completed finite contribution-accounting pass
+  + [analysis_uuid] is e5d05247-70cf-43f4-8303-92b113a66df7
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_bounded_measurement
+  + [proof_status] is finite_lambda_phasor_reference_contribution_not_rh_evidence
+  + [implementation_change] is added deterministic aggregation function and CLI for Lambda phasor reference contribution
+
+& [Verification_001] is test_result
+  + [compile_command] is .\.venv\Scripts\python.exe -m py_compile tools\rh_math\lambda_oscilloscope.py tools\scripts\lambda_phasor_reference_contribution.py
+  + [test_command] is .\.venv\Scripts\python.exe -m pytest tests\test_rh_math_tools.py -q
+  + [test_result] is 36 passed
+  + [diff_check] is git diff --check -- RiemannHypothesis passed
+  + [boundary] is tests verify finite tool behavior, not RH proof, disproof, or zero certification
+
+& [TraceParameters] is bounded
+  + [reference_labels] are first_zero_ordinate_reference, second_zero_ordinate_reference, and third_zero_ordinate_reference
+  + [reference_label_policy] is labels only, not zero certification
+  + [offsets] are -0.5, 0, and 0.5
+  + [sigmas] are 1.5 and 1.05
+  + [prime_power_bounds] are 100 and 500
+  + [windows] are hard and fejer
+  + [row_count] is 72
+  + [layer_row_count] is 288
+  + [exponent_layer_row_count] is 504
+
+& [PrimePowerLayerFinding] is bounded_arithmetic_fact
+  + [higher_prime_power_amplitude_share_min] is approximately 0.1279781505368546
+  + [higher_prime_power_amplitude_share_max] is approximately 0.1680928076385712
+  + [higher_prime_power_amplitude_share_average] is approximately 0.1506531386939455
+  + [prime_term_amplitude_share_average] is approximately 0.8493468613060549
+  + [inference] is higher prime powers form a visible but bounded Lambda phasor contribution layer near the selected reference labels
+  + [identity_boundary] is the higher-prime-power layer is a whole-field Lambda/psi mechanic, not a zero detector or special-prime identity
+
+& [VectorLayerFinding] is bounded_arithmetic_fact
+  + [prime_vector_abs_share_range] is approximately 0.7402522934258210 through 1.1912895444269827
+  + [higher_prime_power_vector_abs_share_range] is approximately 0.0556032117159160 through 0.2663911902999572
+  + [noted_shape] is prime-term vector share can exceed total-trace magnitude because higher-prime-power terms can partly cancel or redirect the total phasor
+  + [inference] is the contribution identity is not simply amplitude share; vector direction and cancellation matter
+  + [boundary] is vector-share behavior is finite cutoff/window behavior and not an RH-facing identity
+
+& [ExponentLayerFinding] is bounded_arithmetic_fact
+  + [exponent_1_average_amplitude_share] is approximately 0.8493468613060549
+  + [exponent_2_average_amplitude_share] is approximately 0.1047461366202105
+  + [exponent_3_average_amplitude_share] is approximately 0.0300397943402579
+  + [exponent_4_average_amplitude_share] is approximately 0.0103885021930851
+  + [inference] is exponent 2 is the main higher-prime-power contributor in this bounded pass, with higher exponents quickly thinning
+  + [whole_field_return] is this supports the earlier psi-theta prime-power decomposition: prime powers are a real correction layer, not the whole surface
+
+& [TopContributorFinding] is bounded_arithmetic_fact
+  + [top_amplitude_recurrent_prime_powers] are 2, 3, 4, 5, 7, 11, and 13 in all 72 rows, with 9 and 17 appearing in 36 rows
+  + [top_projection_recurrent_prime_powers] include 5, 3, 7, 2, 11, 4, 17, and 23 most frequently
+  + [top_cancellation_recurrent_prime_powers] include 37, 53, 27, 16, 8, 59, 47, 25, 13, 9, 11, and 4 most frequently
+  + [inference] is local phasor alignment is carried mostly by small prime powers, while cancellation involves a different mixture of mid and higher powers
+  + [boundary] is this is contribution accounting only; recurrence in top rows does not define a prime family law
+
+& [CutoffWindowFinding] is bounded_arithmetic_fact
+  + [hard_bound_100_sigma_1_5_residual_average] is approximately 0.0166883258903751
+  + [hard_bound_500_sigma_1_5_residual_average] is approximately 0.00181287732918866
+  + [fejer_bound_100_sigma_1_5_residual_average] is approximately 0.0412005365818072
+  + [fejer_bound_500_sigma_1_5_residual_average] is approximately 0.00946695009010114
+  + [hard_bound_100_sigma_1_05_residual_average] is approximately 0.1701838375367879
+  + [hard_bound_500_sigma_1_05_residual_average] is approximately 0.0458133745681444
+  + [inference] is cutoff growth improves finite half-plane agreement in this trace, and hard cutoff is lower-residual than Fejer for this measured object
+  + [boundary] is this is local finite behavior, not universal cutoff superiority
+
+& [ReferenceOffsetFinding] is bounded_orientation_fact
+  + [first_reference_higher_vector_share] is centered row average approximately 0.1416, +0.5 average approximately 0.1680, and -0.5 average approximately 0.1498
+  + [second_reference_higher_vector_share] is centered row average approximately 0.0950, +0.5 average approximately 0.1187, and -0.5 average approximately 0.1339
+  + [third_reference_higher_vector_share] is centered row average approximately 0.1621, +0.5 average approximately 0.1240, and -0.5 average approximately 0.2390
+  + [inference] is reference-near contribution shape is asymmetric under small offsets, so a future displacement object would be more informative than merely sampling exact reference labels
+  + [boundary] is offset asymmetry is inquiry pressure only, not zero-line evidence
+
+& [PursuitGateAssessment] is active
+  + [boundary_value] is satisfied: prime, higher-prime-power, exponent, cutoff, window, and offset layers are separated
+  + [identity_value] is satisfied: Lambda contribution accounting remains distinct from zero detection and explicit/Euler bridge fusion
+  + [evidence_value] is satisfied for orientation: bounded trace confirms higher prime powers carry nontrivial vector contribution near reference labels
+  + [whole_field_value] is satisfied: result returns to Lambda, psi-theta correction, Euler/log-derivative half-plane comparison, and landmark-overlay discipline
+  + [restraint_result] is do not expand to more labels, denser offsets, or more windows until a displacement or stability-class question is source-defined
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is Lambda phasor contribution near reference labels is productive research material, but it resolves into contribution accounting and displacement pressure rather than proof-facing evidence
+  + [promising_next_object] is cross-layer landmark displacement or offset-local contribution asymmetry, because exact reference-only sampling misses meaningful local shape
+  + [blocked_next] is more labels, denser scans, more special-prime hunting, zero certification, and proof inference without a new source-defined measured object
+  + [boundary] is no RH evidence, zero certification, critical-line authority, universal cutoff rule, or prime-family law is inferred
+
+(lambda_phasor_reference_contribution_pass_001) :finite Lambda phasor contribution pass: /higher-prime-power layer, exponent thinning, top alignment, cancellation, offset asymmetry/ |RH evidence|
+  + [inside] is bounded contribution accounting near selected reference labels
+  + [boundary] is useful orientation and next-object discovery
+  |outside| RH proof, disproof, zero certification, critical-line authority, cutoff superiority, and single-surface identity

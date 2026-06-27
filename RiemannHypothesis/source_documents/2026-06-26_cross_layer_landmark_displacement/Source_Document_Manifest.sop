@@ -1,0 +1,17 @@
+Subject: Cross Layer Landmark Displacement Source Document Manifest
+
+Description: Manifest for preserved source records governing cross-layer landmark displacement synthesis.
+
+& [CrossLayerLandmarkDisplacementSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is f87a7776-2b61-4e98-8bee-b774ff725f2a
+  + [manifest_uuid] is 6c30bbe2-b64d-4a0d-a78f-b2815bd60e82
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_cross_layer_landmark_displacement\Dictated_Cross_Layer_Landmark_Displacement_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Cross_Layer_Landmark_Displacement_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before analysis
+  = must: keep this as finite displacement orientation only
+  - never: treat this source as proof, disproof, zero certification, or implementation authority

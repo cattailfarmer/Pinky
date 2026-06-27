@@ -1,0 +1,17 @@
+Subject: Dense Node Gap Ledger Source Document Manifest
+
+Description: Manifest for preserved source governing the RH dense-node gap ledger.
+
+& [DenseNodeGapLedgerSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 90279bd0-6161-40d9-ba92-f99a7e8604c9
+  + [manifest_uuid] is 52932326-1d65-4806-90bd-edd5b31518d7
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_dense_node_gap_ledger\Dictated_Dense_Node_Gap_Ledger_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Dense_Node_Gap_Ledger_Specification.sop
+  + [source_preservation_rule] is raw dense-node-gap source remains separate from canonical specification and ledger analysis
+  + [authority_status] is source_preserved_before_ledger_analysis
+
+  = must: process this source through specification before ledger analysis
+  = must: preserve node set, gap criteria, and no-computation boundary
+  - never: treat this manifest as computation, proof, branch-reopening, or commit authority

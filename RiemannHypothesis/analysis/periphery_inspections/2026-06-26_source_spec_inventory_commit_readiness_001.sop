@@ -1,0 +1,61 @@
+Subject: Source Spec Inventory Commit Readiness 001
+
+Description: Inventory and readiness assessment for the untracked RH project slice after worktree review.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_source_spec_inventory_commit_readiness\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Source_Spec_Inventory_Commit_Readiness_Specification.sop
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_worktree_integrity_review_001.sop
+
+& [SourceSpecInventoryCommitReadiness001] is a completed inventory readiness pass
+  + [analysis_uuid] is 8017d7e8-efe5-4ecd-ad82-308f158f0de6
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_inventory_readiness_assessment
+  + [proof_status] is inventory_commit_readiness_not_rh_evidence
+  + [version_a] is HEAD
+  + [version_b] is WORKTREE
+  + [commit_status] is not_committed
+  + [non_ignored_untracked_count] is 333
+  + [verification_anchor] is 36 pytest tests passed in the preceding worktree review
+
+& [InventoryFindings] is current_slice
+  + [sop_records] is 244
+  + [json_traces] is 36
+  + [python_files] is 46
+  + [markdown_and_text_files] is 7
+  + [source_documents_role_count] is 137
+  + [specifications_role_count] is 50
+  + [analysis_role_count] is 96
+  + [tools_role_count] is 46
+  + [tests_role_count] is 1
+  + [planning_role_count] is 1
+  + [project_authority_files] are AGENTS.md and requirements.txt
+  + [ignored_runtime_surfaces] are RiemannHypothesis\.pytest_cache, RiemannHypothesis\.venv, tests\__pycache__, tools\rh_math\__pycache__, and tools\scripts\__pycache__
+
+& [ReadinessAssessment] is stable_with_watch
+  + [ready_signal_001] is project authority is explicit through RiemannHypothesis\AGENTS.md
+  + [ready_signal_002] is source/spec/analysis trace density is sufficient for a meaningful first project bookend
+  + [ready_signal_003] is deterministic math tools have a passing test anchor
+  + [watch_signal_001] is all project files are still untracked, so a commit operation would be a first-add event rather than an ordinary delta
+  + [watch_signal_002] is root .sop state also changed, so commit scope must decide whether to stage RH project files and focal-state updates together
+  + [watch_signal_003] is ignored runtime surfaces must remain out of authority
+  + [decision] is commit_ready_in_principle_after_scope_review
+
+& [NextStepSelection] is active
+  + [selected_next_object] is commit scope review for RH first project bookend
+  + [reason] is the next walking step should decide staging boundaries before any actual commit, preserving user work and avoiding accidental inclusion of runtime byproducts
+  + [candidate_scope_001] is RiemannHypothesis project files plus .sop\state\CurrentFocalPoint.sop focal update
+  + [candidate_scope_002] is RiemannHypothesis project files only, leaving broader .sop changes for a separate authority commit
+  + [candidate_scope_003] is no commit yet; continue with more inventory only if a contradiction appears
+  + [recommended_scope] is candidate_scope_001 if the user wants the RH walking state and project material bound together, otherwise candidate_scope_002
+  + [balance_score] is stable_with_watch
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is the RH project slice is coherent, test-backed, and ready for commit-scope review, but not yet committed
+  + [next_action] is perform commit scope review or ask for explicit commit direction before staging
+  + [boundary] is no staging, commit, proof, zero certification, or new math expansion occurred in this pass
+
+(source_spec_inventory_commit_readiness_001) :commit readiness: /333 files, green tests, ignored runtime outside, scope review next/ |RH evidence|
+  + [inside] is pre-commit inventory, readiness assessment, and next scope candidates
+  + [boundary] is commit-preparation only
+  |outside| mathematical proof, commit integrity before commit, ignored runtime inclusion, and automatic staging

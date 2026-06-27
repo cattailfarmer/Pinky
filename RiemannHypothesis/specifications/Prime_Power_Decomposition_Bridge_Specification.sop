@@ -1,0 +1,46 @@
+Subject: Prime Power Decomposition Bridge Specification
+
+Description: SJS-processed contract for decomposing Chebyshev psi movement into prime-power layers before further special-prime interpretation.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_power_decomposition_bridge\manifest.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Math_Processing_Tool_Scripts_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_family_interval_bridge_pass_001.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_irregular_prime_distribution_bridge_pass_001.sop
+
+& [PrimePowerDecompositionBridge] is a project-local inquiry contract
+  + [canonical_specification_uuid] is 9e0f1be7-2396-4ddb-8099-f519203545b0
+  + [source_snapshot_uuid] is c2346572-262f-4a09-9b9e-d9c7cf564206
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is split psi(x) and interval psi movement into theta-like prime layer and higher prime-power layers
+  + [not_purpose] is proof, disproof, zero certification, or explanation of RH from finite traces
+
+  = must: compute finite prime-power contributions without expanding beyond requested bounds
+  = must: keep k = 1 prime contributions visible as theta layer
+  = must: keep k >= 2 higher-prime-power contributions visible as the psi-theta difference
+  = must: report interval movement by exponent layer and by prime-power event when requested
+  = must: compare layer sums to psi(x), theta(x), and psi(x)-theta(x)
+  = must: mark output proof_status as finite_prime_power_decomposition_not_rh_evidence
+  = must: keep special-prime families subordinate until this whole-field object is understood
+  - never: claim finite prime-power decomposition proves RH, disproof, or zero behavior
+  - never: treat a large layer contribution as causal proof of explicit-formula error
+
+& [PrimePowerDecompositionTool] is the script surface for the bridge
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\prime_power_decomposition.py
+  + [runtime_function] is rh_math.distribution.prime_power_decomposition
+  + [input] is finite sample points or interval endpoints, precision metadata, and optional event inclusion
+  + [output] is psi rows, theta rows, higher-prime-power sums, per-exponent layers, and optional prime-power events
+  + [proof_status] is finite_prime_power_decomposition_not_rh_evidence
+
+& [PrimePowerDecompositionBridgeSJS] is the specification justification trace
+  + [protocol_uuid] is 9d6cf172-021b-471a-8d78-95e84f2f6829
+  + [source_snapshot_uuid] is c2346572-262f-4a09-9b9e-d9c7cf564206
+  + [canonical_specification_uuid] is 9e0f1be7-2396-4ddb-8099-f519203545b0
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bridge_contract
+  + [reasoning_result] is psi interval movement should be decomposed into prime-power layers before more special-prime family interpretation
+
+(prime_power_decomposition_bridge) :whole-field psi mechanics: /theta layer, higher prime powers, and interval movement/ |RH proof claims|
+  + [inside] is finite psi decomposition, layer sums, interval events, and comparison to theta
+  + [boundary] is arithmetic measurement only
+  |outside| RH proof, disproof, zero certification, and special-prime hypothesis sprawl

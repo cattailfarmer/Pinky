@@ -1,0 +1,17 @@
+Subject: Lambda Mellin Bridge Unit Source Document Manifest
+
+Description: Manifest for preserved source records governing the shared explicit/Euler comparison-unit slice.
+
+& [LambdaMellinBridgeUnitSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 7783707d-15da-4d52-a206-f66b034bf71d
+  + [manifest_uuid] is 55f2fc43-3523-4e21-b170-1f50a15c5278
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_mellin_bridge_unit\Dictated_Lambda_Mellin_Bridge_Unit_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Mellin_Bridge_Unit_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation
+
+  = must: process this source through specification before implementation authority
+  = must: keep the comparison finite and diagnostic
+  - never: treat finite Lambda-Mellin bridge traces as proof, disproof, zero certification, critical-line evidence, or RH evidence

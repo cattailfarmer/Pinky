@@ -1,0 +1,19 @@
+Subject: Dictated Dense Node Refinement Selection Source
+
+Description: Preserved source for selecting the next whole-field RH dense node for refinement.
+
+& [DictatedDenseNodeRefinementSelectionSource] is raw continuation source
+  + [source_snapshot_uuid] is 3d888d96-082b-40ab-8aa5-efe14ce332b7
+  + [captured_at] is 2026-06-26T17:30:05.983Z heartbeat continuation
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [conversation_source] is CurrentFocalPoint open_question_dense_node_refinement_next after whole-field RH landscape node map
+  + [raw_need] is choose which dense node should receive the next source-defined refinement before any new math-processing implementation
+  + [candidate_nodes] are prime-counting/Chebyshev mechanics, Euler/log-derivative half-plane weighting, explicit-formula residual surface, t-reference/resonance landmarks, Lambda diagnostic overlay, and bridge-restraint governance
+  + [selection_pressure] is choose the node that most directly improves whole-field RH understanding while preserving the explicit/Euler bridge pause and avoiding new kernel or cutoff sprawl
+  + [identity_boundary] is node selection is planning and governance only, not proof, disproof, RH evidence, or zero certification
+
+  = must: preserve this raw source separately from canonical specification
+  = must: compare candidate nodes by purpose fit, boundary clarity, and next-use value
+  = must: select a dense node before any new math-processing tool
+  - never: treat the selected node as proof authority

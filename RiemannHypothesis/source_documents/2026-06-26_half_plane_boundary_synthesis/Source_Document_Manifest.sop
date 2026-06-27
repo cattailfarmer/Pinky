@@ -1,0 +1,17 @@
+Subject: Half Plane Boundary Synthesis Source Document Manifest
+
+Description: Manifest for preserved source records governing half-plane boundary synthesis.
+
+& [HalfPlaneBoundarySynthesisSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is ba7c971c-5356-45fb-a4b0-7fd051c443be
+  + [manifest_uuid] is f3e42117-1076-4498-bd05-aa17406440e1
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_half_plane_boundary_synthesis\Dictated_Half_Plane_Boundary_Synthesis_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Half_Plane_Boundary_Synthesis_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_analysis
+
+  = must: process this source through specification before synthesis analysis
+  = must: keep this as finite whole-field orientation only
+  - never: treat synthesis as proof, disproof, zero certification, or implementation authority

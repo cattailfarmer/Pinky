@@ -1,0 +1,54 @@
+Subject: Scale-Tied Zero Height Policy Specification
+
+Description: SJS-processed contract for a bounded explicit-formula residual atlas using x-dependent zero-height T laws.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_scale_tied_zero_height_policy\Source_Document_Manifest.sop
+@ [source] C:\Project\Pinky\.sop\state\CurrentFocalPoint.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\specifications\Zero_Height_Cutoff_Policy_Specification.sop
+@ [source] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_height_cutoff_atlas_pass_001.sop
+
+& [ScaleTiedZeroHeightPolicy] is a project-local finite diagnostic contract
+  + [source_snapshot_uuid] is f7dbb7da-49f1-442d-b099-96b2dbef4b15
+  + [canonical_specification_uuid] is 9e77d85b-e73a-4cc3-8bb2-c6d834614394
+  + [protocol_uuid] is a4ab4ba3-3b1e-45bf-aef6-7df76cf7cd5a
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether an x-dependent zero-height law such as T = c*log(x) improves explicit-formula residual coordinate behavior compared with fixed T
+  + [not_purpose] is proof, disproof, RH evidence, independent zero certification, critical-line authority, universal cutoff-law ranking, or explicit/Euler bridge identity
+
+  = must: use exact finite psi(x), theta(x), and pi(x) rows for sampled x
+  = must: compute T from a declared law and expose the law name, multiplier c, and resulting T for each x
+  = must: use T = c*log(x) as the first scale-tied law
+  = must: include all positive zeta-zero pairs with ordinate gamma <= T for each computed cutoff
+  = must: expose the zero_pair_count implied by each computed T
+  = must: compare sharp, Fejer, Lanczos, and Hann policies as height-weighted windows of gamma/T
+  = must: report best window by x and c, window win counts, sample-level switch counts, and multiplier-transition behavior
+  = must: mark output proof_status as finite_scale_tied_zero_height_atlas_not_zero_certification
+  = must: treat mpmath zetazero as numerical library lookup, not proof authority
+  - never: infer RH proof, disproof, zero certification, or critical-line truth from finite scale-tied residual stability
+  - never: collapse local minima into identity
+  - never: treat one multiplier or law as universal without a later source-defined broader comparison
+  - never: fuse explicit-formula residual rails with Euler-product/log-derivative rails without a later source-defined shared comparison unit
+
+& [ScaleTiedHeightWindowDefinitions] is inherited from T cutoff
+  + [sharp] is weight(gamma, T) = 1
+  + [fejer] is weight(gamma, T) = 1 - gamma/T
+  + [lanczos] is weight(gamma, T) = sin(pi*gamma/T)/(pi*gamma/T)
+  + [hann] is weight(gamma, T) = 0.5*(1 + cos(pi*gamma/T))
+  + [domain] is 0 < gamma <= T(x)
+
+& [ScaleTiedZeroHeightPolicyTooling] is the implementation scope
+  + [runtime_function] is rh_math.explicit_formula.scale_tied_zero_height_atlas
+  + [script] is C:\Project\Pinky\RiemannHypothesis\tools\scripts\scale_tied_zero_height_atlas.py
+  + [trace_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_trace.json
+  + [analysis_output] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_scale_tied_zero_height_atlas_pass_001.sop
+
+& [ScaleTiedZeroHeightPolicySJS] is the specification justification trace
+  + [processed_stage_set] is source_preserved, delineated, canonicalized, constraint_checked, justified, and implementation_scoped
+  + [processing_result] is accepted_bounded_scale_tied_contract
+  + [reasoning_result] is fixed T still compared x samples at mismatched scales, so T = c*log(x) is the next cleaner coordinate law to inspect before another bridge attempt
+
+(scale_tied_zero_height_policy) :finite explicit residual scale-law test: /T=c*log(x), height-weighted windows, implied zero counts/ |proof authority|
+  + [inside] is deterministic finite residual measurement against exact psi(x)
+  + [boundary] is bounded coordinate-law diagnosis only
+  |outside| RH proof, disproof, zero certification, global cutoff-law claims, and explicit/Euler bridge identity

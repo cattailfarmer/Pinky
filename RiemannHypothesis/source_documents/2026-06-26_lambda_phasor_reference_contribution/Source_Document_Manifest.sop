@@ -1,0 +1,17 @@
+Subject: Lambda Phasor Reference Contribution Source Document Manifest
+
+Description: Manifest for preserved source records governing Lambda phasor contribution near selected reference labels.
+
+& [LambdaPhasorReferenceContributionSourceManifest] is a source preservation manifest
+  + [source_snapshot_uuid] is 8c7262ec-3498-48f8-9d0a-844bd34a53da
+  + [manifest_uuid] is 9832c73b-7c0f-4f34-a60f-b2955658024e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [preserved_source] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_phasor_reference_contribution\Dictated_Lambda_Phasor_Reference_Contribution_Source.sop
+  + [derived_specification] is C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Phasor_Reference_Contribution_Specification.sop
+  + [source_preservation_rule] is raw continuation source remains separate from canonical specification
+  + [authority_status] is source_preserved_before_implementation_or_analysis
+
+  = must: process this source through specification before implementation or analysis
+  = must: keep this as finite contribution accounting and landmark overlay orientation only
+  - never: treat this source as proof, disproof, zero certification, or direct critical-line authority

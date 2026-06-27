@@ -1,0 +1,24 @@
+Subject: Dictated Explicit Residual Arithmetic Discrepancy Synthesis Source
+
+Description: Raw source for synthesizing the existing residual movement trace under the explicit residual arithmetic discrepancy method contract.
+
+& [DictatedExplicitResidualArithmeticDiscrepancySynthesisSource] is preserved source for existing-trace discrepancy synthesis
+  + [source_snapshot_uuid] is 7498963a-7288-4dcf-90f5-9fa1e0962b7d
+  + [source_kind] is derived_from_explicit_residual_arithmetic_discrepancy_method_gate_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [method_gate] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_explicit_residual_arithmetic_discrepancy_method_gate_001.sop
+  @ [method_specification] C:\Project\Pinky\RiemannHypothesis\specifications\Explicit_Residual_Arithmetic_Discrepancy_Method_Gate_Specification.sop
+  @ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_trace.json
+  @ [movement_analysis] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_residual_movement_decomposition_pass_001.sop
+  + [need] is synthesize the existing residual movement trace as an explicit residual arithmetic discrepancy result before any new computation is considered
+  + [candidate_name] is ExplicitResidualArithmeticDiscrepancy
+  + [synthesis_boundary] is existing trace rows and summary rows only
+  + [source_boundary] is this source authorizes non-mutating synthesis only; it does not authorize deterministic execution, implementation, new windows, new cutoff laws, new kernels, wider grids, denser scans, proof claims, zero certification, staging, commits, or broad .sop mutation
+
+  = must: apply the method-gate finite metrics before curiosity interpretation
+  = must: report simple-identity, single-layer-ownership, smoothing-identity, and branch-reopen contradiction results
+  = must: keep psi-error movement, theta-error movement, higher-prime-power movement, and explicit residual movement distinct
+  = must: preserve c32 improvement as bounded local trace behavior only
+  - never: infer RH evidence, zero certification, causation, universal cutoff law, monotone convergence, or explicit/Euler fusion from this synthesis

@@ -1,0 +1,71 @@
+Subject: Prime Emergence Shell Signature Log Scale Pass 001
+
+Description: Larger log-spaced shell persistence probe using the same shell-signature tool and family predicates.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_prime_emergence_shell_surface_signature\manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Prime_Emergence_Shell_Surface_Signature_Specification.sop
+@ [previous] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_emergence_shell_signature_pass_001.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_emergence_shell_signature_log_scale_trace.json
+
+& [PrimeEmergenceShellSignatureLogScalePass001] is a completed deterministic persistence probe
+  + [analysis_uuid] is 8085c97e-dfcc-4dfc-bb55-7c8050d1eb4b
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_log_scale_persistence_trace
+  + [proof_status] is finite_shell_signature_not_rh_evidence
+  + [implementation_change] is none after first shell-signature tool
+
+& [TraceParameters] is bounded
+  + [shells] are (0,100], (100,1000], (1000,10000], and (10000,100000]
+  + [family_predicates] are unchanged from pass 001
+  + [family_member_lists] are omitted for broad trace compactness
+
+& [PersistenceTrace] is bounded_arithmetic_fact
+  + [survivor_share_0_100] is 0.489795918367346938775510204081632653061224489795918367
+  + [survivor_share_100_1000] is 0.317777777777777777777777777777777777777777777777778
+  + [survivor_share_1000_10000] is 0.235777777777777777777777777777777777777777777777778
+  + [survivor_share_10000_100000] is 0.185844444444444444444444444444444444444444444444444
+  + [inference] is the sieve-surface stretch remains visible at log scale as odd-candidate survivor share continues to thin
+  + [boundary] is this remains expected finite prime-density behavior, not a new general law
+
+& [FamilyTexturePersistence] is bounded_arithmetic_fact
+  + [fermat_texture] is concentrated and sparse: 3, 5, 17 in first shell, 257 and 641 in second shell, 65537 in fourth shell by predicate count
+  + [base2_wieferich_texture] appears as two rare shell hits in (1000,10000] and none in (10000,100000] under current trace predicates
+  + [proth_texture_share] falls from 0.24 to 0.0769230769230769 to 0.0179076343072573 to 0.00753318187253378
+  + [pierpont_texture_share] falls from 0.4 to 0.0559440559440559 to 0.00659754948162111 to 0.000837020208059309
+  + [sophie_texture_share] falls from 0.4 to 0.188811188811189 to 0.144203581526861 to 0.11730240344374
+  + [safe_texture_share] falls from 0.28 to 0.125874125874126 to 0.0848256361922714 to 0.0663637450675595
+  + [inference] is special-prime families behave as heterogeneous texture classes: some are definitional landmarks, some are rapidly thinning structural forms, and Sophie/safe families remain broad but still subordinate to the whole shell surface
+  + [identity_boundary] is no family texture becomes a general-prime emergence identity in this trace
+
+& [LambdaLayerPersistence] is bounded_arithmetic_fact
+  + [higher_power_share_0_100] is 0.109701596979487867210524295605946459059342783961081548
+  + [higher_power_share_100_1000] is 0.033367536426505700672992277553610961226620993823624
+  + [higher_power_share_1000_10000] is 0.008536330616194569989178184708200319749801399424468
+  + [higher_power_share_10000_100000] is 0.002762933212766217259086187009569692431616319954627
+  + [noted_motion] is theta_increment_minus_length remains negative in every log shell, while psi_increment_minus_length is positive for every shell after (0,100]
+  + [inference] is the Lambda/prime-power layer materially changes the apparent shell surface even when its share is shrinking
+  + [identity_boundary] is prime-power Lambda texture is a whole-field psi mechanic, not a special-prime-family identity
+
+& [PursuitGateAssessment] is active
+  + [boundary_value] is satisfied: shell visibility, sieve accounting, and Lambda texture are now separated
+  + [identity_value] is satisfied: special-prime families remain texture, not surface identity
+  + [evidence_value] is satisfied for orientation: two traces agree on layer separation at small and log scale
+  + [whole_field_value] is satisfied: pi, theta, psi, Lambda, and family rows stay in one comparison unit
+  + [restraint_result] is pause shell-surface expansion unless the next object connects shell signatures to explicit residual, Euler/log-derivative weighting, or a named family-texture index
+
+& [NextMeaningfulPeriphery] is deferred
+  + [candidate_001] is shell-to-explicit-residual comparison, because theta/psi shell movement can be compared with finite explicit-formula residual surfaces
+  + [candidate_002] is family-texture persistence index, but only if needed for identity delineation rather than more special-prime hunting
+  + [candidate_003] is Lambda phasor contribution near selected reference labels, already named in landmark-overlay discipline
+  + [blocked_next] is more endpoint expansion using the same fields without a new comparison target
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is the shell-surface metaphor remains promising as a disciplined orientation frame, but the current shell branch has reached a useful stopping boundary
+  + [reason] is larger shells preserve the separation between sieve survivor thinning, family texture sparsity, and Lambda/psi prime-power correction; more shell expansion would likely repeat this structure without a new measured comparison target
+  + [boundary] is no RH evidence, zero-line evidence, or general-prime law is inferred from these finite traces
+
+(prime_emergence_shell_signature_log_scale_pass_001) :finite log shell persistence trace: /survivor thinning, family texture sparsity, Lambda psi correction/ |proof authority|
+  + [inside] is persistence check and restraint result
+  + [boundary] is useful orientation with stop condition
+  |outside| RH proof, zero certification, and unbounded shell expansion

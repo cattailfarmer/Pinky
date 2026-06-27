@@ -1,0 +1,70 @@
+Subject: Overlap Contradiction Ledger 001
+
+Description: Non-mutating contradiction ledger for three overlap zones in the RH record matrix.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_overlap_contradiction_ledger\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Overlap_Contradiction_Ledger_Specification.sop
+@ [matrix] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_record_to_dense_node_matrix_001.sop
+
+& [OverlapContradictionLedger001] is a completed non-mutating contradiction review
+  + [analysis_uuid] is b97ecadf-97a9-4fce-8a54-80720fddc5e3
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [status] is completed_overlap_contradiction_ledger
+  + [proof_status] is overlap_contradiction_ledger_not_rh_evidence
+  + [commit_status] is not_staged_and_not_committed
+  + [implementation_change] is none; no math scripts or tests changed
+  + [verification] is no tests run because this is record synthesis only
+
+& [LedgerEntry_001_TAxisBoundaryReferenceOverlap] is acceptable_entanglement
+  + [record] is 2026-06-26_t_axis_boundary_slice_pass_001.sop
+  + [node_a] is DenseNode_EulerLogDerivativeHalfPlane
+  + [node_b] is DenseNode_ReferenceAndResonanceLandmarks
+  + [evidence] is the record measures finite Euler-product residual behavior in Re(s)>1 while using known-zero ordinates as reference landmarks
+  + [boundary] is the local identity remains half-plane vertical residual slicing; reference labels orient the t-axis but do not certify zero behavior
+  + [not_contradiction_reason] is the record explicitly states sigma > 1, reference-ordinate behavior, and no zero-line evidence
+  + [disposition] is preserve as acceptable_entanglement and keep reference labels external to zero certification
+  + [outside] is RH proof, disproof, independent zero certification, and critical-line inference
+
+& [LedgerEntry_002_LambdaMellinOverlayRestraintOverlap] is acceptable_entanglement
+  + [record] is 2026-06-26_lambda_mellin_bridge_atlas_pass_001.sop
+  + [node_a] is DenseNode_LambdaDiagnosticOverlay
+  + [node_b] is DenseNode_BridgeRestraint
+  + [evidence] is the record creates a coherent shared weighted Lambda comparison unit while finding explicit-side projection residual plateau and no explicit/Euler identity
+  + [boundary] is Lambda-Mellin is a diagnostic overlay and bridge surface, while BridgeRestraint governs against identity fusion and kernel sprawl
+  + [not_contradiction_reason] is the record's own answer is yes to shared unit and no to resolving explicit/Euler boundary
+  + [disposition] is preserve as acceptable_entanglement with bridge branch still paused
+  + [outside] is universal bridge identity, explicit/Euler fusion, critical-line authority, and proof claims
+
+& [LedgerEntry_003_ShellExplicitArithmeticOverlap] is acceptable_entanglement
+  + [record] is 2026-06-26_shell_explicit_residual_bridge_pass_001.sop
+  + [node_a] is DenseNode_PrimeCountingThetaPsi
+  + [node_b] is DenseNode_ExplicitFormulaResidualSurface
+  + [evidence] is the record compares shell endpoints to explicit residual movement and finds higher-prime-power exact dominance while explicit residual movement has mixed sign relation to psi movement
+  + [boundary] is exact psi mechanics and explicit approximation residual remain separate even when read over shared shell endpoints
+  + [not_contradiction_reason] is the record explicitly treats the result as boundary diagnosis rather than fused identity
+  + [disposition] is preserve as acceptable_entanglement and keep shell-explicit bridge closed without a new measured object
+  + [outside] is RH evidence, zero evidence, general prime law, cutoff superiority, and special-prime centrality
+
+& [ContradictionScanResult] is current_result
+  + [route_contradictions_found] is none
+  + [unresolved_boundaries_found] is none requiring computation
+  + [acceptable_entanglements_found] are three
+  + [shared_pattern] is each overlap crosses dense-node boundaries while its source record already contains a non-fusion boundary
+  + [governance_result] is future inquiry can use these overlap zones as navigation markers, not measured-object authority
+  + [pursuit_value_result] is contradiction handling value satisfied; no computation value yet
+
+& [NextNonMutatingLead] is selected
+  + [selected_next] is dense-node gap ledger
+  + [reason] is after contradictions are cleared, the next useful non-mutating inquiry is to name what each dense node still lacks before any source-defined measured object can be selected
+  + [blocked_next] is no new math computation, no denser scans, no branch reopening, no staging, and no commit
+
+& [Conclusion_001] is definite_current_scope
+  + [result] is the three overlap zones are acceptable entanglements, not contradictions and not identity fusions
+  + [next_action] is write a dense-node gap ledger over existing six nodes
+  + [boundary] is no Git mutation, broad .sop mutation, runtime code change, test run, proof claim, zero certification, or branch reopening occurred
+
+(overlap_contradiction_ledger_001) :contradiction ledger: /three acceptable entanglements, no route contradiction, next gap ledger/ |proof claims|
+  + [inside] is overlap classification and route restraint
+  + [boundary] is inquiry navigation only
+  |outside| proof, zero certification, staging, commit, branch reopening, new computation, and identity fusion

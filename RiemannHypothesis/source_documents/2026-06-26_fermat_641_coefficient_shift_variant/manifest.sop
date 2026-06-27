@@ -1,0 +1,15 @@
+Subject: Fermat 641 Coefficient Shift Variant Source Manifest
+
+Description: Manifest for the coefficient-power shift hypothesis 65537 * 641^N + shift(N).
+
+& [Fermat641CoefficientShiftVariantSourceManifest] is the source manifest for the coefficient-power shift variant
+  + [manifest_uuid] is eebd2b54-84df-48d1-af62-87ee6e2dc6cd
+  + [source_uuid] is 0a2f4ddd-fb08-4d8a-a965-c18a10b9eb15
+  + [captured_at] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_fermat_641_coefficient_shift_variant\Dictated_Fermat_641_Coefficient_Shift_Variant_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Coefficient_Power_Shift_Probe_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\prime_periphery\2026-06-26_641_coefficient_shift_boundary.sop
+  + [source_role] is user_hypothesis_for_coefficient_power_shift_boundary_testing
+
+  = must: preserve this branch separately from exponent-product and exponent-power variants

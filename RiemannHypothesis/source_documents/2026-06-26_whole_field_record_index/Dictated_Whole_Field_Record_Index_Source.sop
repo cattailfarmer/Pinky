@@ -1,0 +1,20 @@
+Subject: Dictated Whole Field Record Index Source
+
+Description: Raw source for indexing existing RH records as non-mutating walking material.
+
+& [DictatedWholeFieldRecordIndexSource] is preserved source for a whole-field record index over existing RH branches
+  + [source_snapshot_uuid] is d2c5a412-2645-4891-bcce-d89d7e7fba2c
+  + [source_kind] is derived_from_inquiry_gate_not_commit_gate_next_lead
+  + [recorded_on_local_project_date] is 2026-06-26
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  @ [governing_previous_review] C:\Project\Pinky\RiemannHypothesis\analysis\periphery_inspections\2026-06-26_inquiry_gate_not_commit_gate_001.sop
+  + [need] is create a navigation index over existing RH analysis branches and their paused, support, open, and deferred states without adding math computation
+  + [observed_analysis_bands] are periphery_inspections, prime_distribution, prime_periphery, toolchain, and zero_behavior
+  + [observed_counts] are 13 periphery_inspection SOP files, 7 prime_distribution SOP files plus 6 JSON traces, 8 prime_periphery SOP files plus 10 JSON traces, 2 toolchain SOP files, and 33 zero_behavior SOP files plus 20 JSON traces
+  + [source_boundary] is this source supports route mapping and contradiction handling only; it does not authorize staging, commits, broad .sop mutation, proof claims, or denser paused-branch scans
+
+  = must: index existing records rather than reopen computation
+  = must: distinguish closed branches, support branches, active inquiry lanes, and deferred frontiers
+  = must: keep RH proof, disproof, zero certification, and critical-line authority outside
+  - never: convert the index into proof evidence or a reason to add scans

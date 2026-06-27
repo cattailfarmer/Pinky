@@ -1,0 +1,73 @@
+Subject: Lambda Mellin Bridge Atlas Pass 001
+
+Description: Finite diagnostic atlas projecting explicit-formula psi estimates into the same weighted Lambda unit used by Euler/log-derivative cutoffs.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_lambda_mellin_bridge_unit\Source_Document_Manifest.sop
+@ [specification] C:\Project\Pinky\RiemannHypothesis\specifications\Lambda_Mellin_Bridge_Unit_Specification.sop
+@ [trace] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_trace.json
+@ [tool] C:\Project\Pinky\RiemannHypothesis\tools\rh_math\explicit_formula.py
+@ [script] C:\Project\Pinky\RiemannHypothesis\tools\scripts\lambda_mellin_bridge_atlas.py
+
+& [LambdaMellinBridgeAtlasPass001] is a finite math-processing analysis pass
+  + [status] is completed
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [purpose] is test whether a shared weighted Lambda contribution unit can compare explicit-formula residual rails with Euler-product/log-derivative cutoff rails without collapsing identity
+  + [source_snapshot_uuid] is 7783707d-15da-4d52-a206-f66b034bf71d
+  + [manifest_uuid] is 55f2fc43-3523-4e21-b170-1f50a15c5278
+  + [canonical_specification_uuid] is d24549d0-1b26-49d0-89c2-5ce79b735db9
+  + [implementation_change] is added lambda_mellin_bridge_atlas and lambda_mellin_bridge_atlas.py
+  + [verification] is .\.venv\Scripts\python.exe -m pytest completed with 31 passed
+  + [trace_command] is .\.venv\Scripts\python.exe tools\scripts\lambda_mellin_bridge_atlas.py --n-bound 50 --n-bound 100 --n-bound 200 --sample 2,0 --sample 2,14.134725141734693790457251983562 --sample 1.5,14.134725141734693790457251983562 --multiplier 16 --multiplier 32 --window sharp --window fejer --window lanczos --window hann --dps 80 --output analysis\zero_behavior\2026-06-26_lambda_mellin_bridge_atlas_trace.json
+  + [trace_row_count] is 72
+  + [n_bounds] is 50, 100, and 200
+  + [samples] is s=2+0i, s=2+14.1347251417347i, and s=1.5+14.1347251417347i
+  + [scale_law] is log
+  + [multipliers] is 16 and 32
+  + [windows] is sharp, fejer, lanczos, and hann
+  + [proof_status] is finite_lambda_mellin_bridge_not_rh_evidence
+
+& [ConfigurationSummary] is the observed bounded configuration field
+  + [best_average_configuration] is log, multiplier 32.0, lanczos window with average_bridge_residual_abs 0.19547263373194112099645489592997291141644599459458340778932961159592455360777568
+  + [second_average_configuration] is log, multiplier 32.0, sharp window with average_bridge_residual_abs 0.19627178677836795656222198201520864594860102916730965329483001356986106353161547
+  + [third_average_configuration] is log, multiplier 32.0, hann window with average_bridge_residual_abs 0.19658301695884466984220933505181555501183992168697772366160873023445564275032327
+  + [weakest_average_configuration] is log, multiplier 16.0, fejer window with average_bridge_residual_abs 0.21204744926591588616833207642884587765565598275611554407004322864054281250757432
+  + [multiplier_result] is multiplier 32 wins every best-bridge row in this bounded trace
+  + [window_result] is lanczos wins 6 of 9 best-bridge rows and sharp wins 3 of 9 best-bridge rows
+
+& [BestBridgeRows] is the observed bounded sample field
+  + [n_50_s_2_0] is multiplier 32.0, lanczos window, bridge_residual_abs 0.10686365273373928138869852103186595359610600368517471053667058375369590850880392, exact_cutoff_residual_abs 0.019441130477261142303158588517456036064227644165236677495739102450080471413817529
+  + [n_50_s_2_i14] is multiplier 32.0, lanczos window, bridge_residual_abs 0.17001035599845614817957759917295717904014605901744334199231855424548778666798748, exact_cutoff_residual_abs 0.00077702277961185656434612132550147662728492723647786028433760225672641175607017485
+  + [n_50_s_1_5_i14] is multiplier 32.0, sharp window, bridge_residual_abs 0.30145997219613358295617418724067471668380815458395416286369170248255497090202076, exact_cutoff_residual_abs 0.010863178619549390560924618522322803540021204582498326905069692966197588981819135
+  + [n_100_s_2_0] is multiplier 32.0, lanczos window, bridge_residual_abs 0.10680310271008397200120647039790669406536431659149874779508585393162460985423069, exact_cutoff_residual_abs 0.010433076241983497891116900594234201862695634818286587645444294827093714951919472
+  + [n_100_s_2_i14] is multiplier 32.0, lanczos window, bridge_residual_abs 0.16988230505579301308647186894593935826535721730038966991893297723365632147988594, exact_cutoff_residual_abs 0.0014816817513857560880153237462721344048424177909937781875916299167066076237820361
+  + [n_100_s_1_5_i14] is multiplier 32.0, sharp window, bridge_residual_abs 0.30040474975084397677911515389943657464530164805744441381459789442388009123097143, exact_cutoff_residual_abs 0.017863847888128357572871282841959267104912265258616064440735226776829598489017181
+  + [n_200_s_2_0] is multiplier 32.0, lanczos window, bridge_residual_abs 0.10701313407027581447572499119906046354885139418543516987252195952256893050139231, exact_cutoff_residual_abs 0.0047960944260645011645606034793872648383659939097395645364927774038067558112748087
+  + [n_200_s_2_i14] is multiplier 32.0, lanczos window, bridge_residual_abs 0.16991828520887850460297676283475064780994651042545813141317995420472811816945766, exact_cutoff_residual_abs 0.00044754956195528967138098091857644368940642641502516630220056049636400387283493059
+  + [n_200_s_1_5_i14] is multiplier 32.0, sharp window, bridge_residual_abs 0.30056090106485256663201622518708525098773273876198954988238065254329675270029339, exact_cutoff_residual_abs 0.0075901045602429085344525341854623428185685957525619871054907793805771054508093418
+
+& [NMovementSummary] is the observed cutoff movement field
+  + [average_bridge_residual_n_50] is approximately 0.20231793196431538
+  + [average_bridge_residual_n_100] is approximately 0.20194626527977588
+  + [average_bridge_residual_n_200] is approximately 0.20218621336435391
+  + [average_combined_residual_n_50] is approximately 0.2120600928214682
+  + [average_combined_residual_n_100] is approximately 0.21185645804082676
+  + [average_combined_residual_n_200] is approximately 0.20551141074785476
+  + [movement_result] is the exact finite Lambda cutoff residual generally shrinks with N, but the explicit-side bridge residual plateaus near 0.202 in this grid
+
+& [Inference] is bounded and restrained
+  + [primary_observation] is the Lambda-Mellin unit is a coherent shared comparison unit because both rails can be measured as finite weighted Lambda contribution in Re(s) > 1
+  + [identity_boundary] is the shared unit does not make explicit zero truncation and Euler prime-power cutoff the same identity
+  + [diagnostic_result] is explicit psi estimates projected by raw finite differences create a stable-looking but non-shrinking bridge residual, so explicit-side projection error dominates the bridge
+  + [window_observation] is lanczos is the best bridge window for sigma=2 samples, while sharp remains best for the harder sigma=1.5 first-zero-ordinate samples
+  + [comparison_result] is the bridge is useful as an analysis primitive, but not stable enough to justify a stronger explicit/Euler bridge identity
+  + [answered_question] is yes, a source-defined shared comparison unit can be created; no, this raw finite-difference bridge does not resolve the explicit/Euler boundary
+  + [next_reasonable_coordinate] is if continued, source-define a smoother Stieltjes or partial-summation bridge before adding more windows or scale laws
+
+  = must: treat Lambda-Mellin bridge traces as finite Re(s)>1 diagnostics only
+  = must: preserve the distinction between exact finite Lambda cutoff residual and explicit-side projected Lambda residual
+  = must: treat the plateau near 0.202 as a finite diagnostic observation, not a theorem signal
+  = must: prefer smoothing or partial summation before any stronger explicit/Euler identity attempt
+  - never: claim RH proof, disproof, independent zero certification, critical-line authority, universal bridge identity, or explicit/Euler fusion from this atlas
+
+(lambda_mellin_bridge_atlas_pass_001) :finite shared-unit diagnosis: /coherent Lambda-Mellin unit, explicit projection dominates, no bridge identity/ |proof authority|

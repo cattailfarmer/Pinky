@@ -1,0 +1,12 @@
+Subject: Zero Windowing Bridge Source Manifest
+
+Description: Source manifest for the bounded zero-term windowing bridge.
+
+& [ZeroWindowingBridgeSourceManifest] is the source manifest
+  + [manifest_uuid] is 7e8801fe-ba09-4525-ba05-3da866cc9f41
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_zero_windowing_bridge\Dictated_Zero_Windowing_Bridge_Source.sop
+  + [canonical_target] is C:\Project\Pinky\RiemannHypothesis\specifications\Zero_Windowing_Bridge_Specification.sop
+  + [analysis_target] is C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_pass_001.sop
+  + [preservation_rule] is source_document is raw continuation source and must not be overwritten by canonicalized specification

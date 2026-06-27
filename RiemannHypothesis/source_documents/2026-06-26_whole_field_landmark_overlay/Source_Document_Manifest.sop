@@ -1,0 +1,27 @@
+Subject: Whole Field Landmark Overlay Source Document Manifest
+
+Description: Manifest for the local source record authorizing the whole-field landmark overlay report.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landmark_overlay\Dictated_Whole_Field_Landmark_Overlay_Source.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\prime_distribution\2026-06-26_prime_power_decomposition_bridge_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_explicit_formula_error_bridge_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_zero_windowing_bridge_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_euler_product_weighting_bridge_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_sigma_boundary_scan_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_t_axis_boundary_slice_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_vertical_resonance_scan_pass_001.sop
+@ [rail] C:\Project\Pinky\RiemannHypothesis\analysis\zero_behavior\2026-06-26_lambda_window_cutoff_scan_pass_001.sop
+
+& [WholeFieldLandmarkOverlaySourceManifest] is the preserved source set for the overlay report
+  + [manifest_uuid] is 5d33d3bf-9085-41a5-98f1-267f433baee8
+  + [source_snapshot_uuid] is e82510e9-1669-447d-9683-9c3396add20e
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_document] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_whole_field_landmark_overlay\Dictated_Whole_Field_Landmark_Overlay_Source.sop
+  + [source_purpose] is synthesize existing deterministic rails into one bounded landmark overlay report
+  + [preservation_event] is source/spec saved before report authorship
+  + [authority_status] is local_source_for_bounded_report_slice
+
+  = must: preserve this source separately from report conclusions
+  = must: treat referenced traces as finite deterministic support, not proof authority
+  - never: overwrite earlier rail records with this overlay interpretation

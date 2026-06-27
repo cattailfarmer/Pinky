@@ -1,0 +1,17 @@
+Subject: Explicit Euler Cutoff Bridge Source
+
+Description: Preserved source intake for comparing explicit-formula residual windows with Euler/log-derivative cutoff behavior.
+
+& [DictatedExplicitEulerCutoffBridgeSource] is the preserved source request for this bounded bridge report
+  + [source_snapshot_uuid] is 4c567e29-4f09-4a0a-afcf-905fce5b04a5
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [source_reason] is CurrentFocalPoint asks whether to deepen cutoff/window comparison specifically between explicit-formula residuals and Euler-product/log-derivative rails
+  + [working_decision] is compare existing deterministic traces before adding another scanner
+  + [purpose] is distinguish x-domain zero-term truncation/window sensitivity from Re(s)>1 Euler/log-derivative cutoff convergence
+
+  = must: preserve x-domain and s-domain boundaries
+  = must: compare finite residual behavior without claiming shared error identity
+  = must: keep Euler-product/log-derivative conclusions inside Re(s) > 1
+  = must: keep explicit-formula rows as finite zero-pair approximation surfaces
+  - never: claim proof, disproof, zero certification, or RH evidence from this comparison

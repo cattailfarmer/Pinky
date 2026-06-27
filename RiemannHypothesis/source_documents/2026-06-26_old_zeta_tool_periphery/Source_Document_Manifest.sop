@@ -1,0 +1,60 @@
+Subject: Old Zeta Tool Periphery Source Document Manifest
+
+Description: Manifest for the preserved old ReasoningFramework ZetaOscilloscope and Zetabrot source snapshots.
+
+@ [source] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\Dictated_Old_Zeta_Tool_Periphery_Source.sop
+@ [snapshot] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Dictated_Zeta_Oscilloscope_Source.sop
+@ [snapshot] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zeta_Oscilloscope_Source_Document_Manifest.sop
+@ [snapshot] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zetabrot_Module.source-snapshot.txt
+@ [snapshot] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zetabrot_Module_Source_Document_Manifest.sop
+@ [snapshot] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zeta_Oscilloscope.refinement.sop
+@ [snapshot] C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zetabrot_Module.refinement.sop
+
+& [OldZetaToolPeripherySourceManifest] is the preserved source set for old zeta-tool periphery classification
+  + [manifest_uuid] is 1531c24c-9c73-4293-9982-b396f211c50c
+  + [source_snapshot_uuid] is ccb687f8-79ab-451f-9966-f04cc15a96d1
+  + [project_root] is C:\Project\Pinky\RiemannHypothesis
+  + [active_authority_root] is C:\Project\Pinky\.sop
+  + [external_source_root] is C:\Project\ReasoningFramework
+  + [preservation_event] is exact snapshots copied into the RiemannHypothesis source_documents lane before classification
+  + [authority_status] is preserved_external_periphery_not_imported_authority
+
+& [Snapshot_001_DictatedZetaOscilloscopeSource] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Dictated_Zeta_Oscilloscope_Source.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_zeta_oscilloscope_definition\Dictated_Zeta_Oscilloscope_Source.sop
+  + [sha256] is A73AF20860E1D9E20ED8B099F0BF91BE0CD82283F3E5EB7B3F0A7609EDA4EE0A
+  + [role] is raw dictated source anchor
+
+& [Snapshot_002_ZetaOscilloscopeManifest] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zeta_Oscilloscope_Source_Document_Manifest.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_zeta_oscilloscope_definition\Source_Document_Manifest.sop
+  + [sha256] is E84D16D7B9F63A2BBC81655A5DAD908F55EBE47701473EBDBB549580914C870C
+  + [role] is old source-preservation ledger
+
+& [Snapshot_003_ZetabrotSourceSnapshot] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zetabrot_Module.source-snapshot.txt
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_zetabrot_module\Zetabrot Module.source-snapshot.txt
+  + [sha256] is EB6219087593BBA220A771735778705A2FA38598F283EE619066A5A6C33168F4
+  + [role] is raw old Zetabrot module source snapshot
+
+& [Snapshot_004_ZetabrotManifest] is preserved_external_source
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zetabrot_Module_Source_Document_Manifest.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\source_documents\2026-05-19_zetabrot_module\Source_Document_Manifest.sop
+  + [sha256] is CEA935125C0697DF48B2B3C148909F2FF7CDEDF6ACDD87DEF1FAC30E1D2B0B6F
+  + [role] is old source-preservation ledger
+
+& [Snapshot_005_ZetaOscilloscopeRefinement] is preserved_external_refinement
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zeta_Oscilloscope.refinement.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\refinement\Zeta_Oscilloscope.sop
+  + [sha256] is 43DC85217F375192D2D21237CAE28929D995B64A53D3E16125A82139A59C0D6E
+  + [role] is old canonical refinement preserved for comparison only
+
+& [Snapshot_006_ZetabrotRefinement] is preserved_external_refinement
+  + [local_path] is C:\Project\Pinky\RiemannHypothesis\source_documents\2026-06-26_old_zeta_tool_periphery\snapshots\reasoningframework_Zetabrot_Module.refinement.sop
+  + [external_path] is C:\Project\ReasoningFramework\platform\refinement\Zetabrot_Module.sop
+  + [sha256] is 85B573EE1F2E872B7171F2267CF69BF7A5790B8951FC7004CEF85CDE6ABA580E
+  + [role] is old canonical refinement preserved for comparison only
+
+  = must: keep copied snapshots immutable unless a new preservation event supersedes this manifest
+  = must: treat old refinement snapshots as comparison sources, not local implementation authority
+  - never: overwrite raw snapshots with Pinky-local conclusions
