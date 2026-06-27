@@ -1,0 +1,49 @@
+Subject: Seven Math Problems Build Project Git Reflection Walking Protocol
+
+Description: Project-local protocol for using commit history and diff surfaces as the reentry substrate for ongoing research motion.
+
+& [BuildProjectGitReflectionWalkingProtocol] is a research operating tool
+  + [tool_uuid] is c12becd0-472f-4e49-a874-88be313e0d42
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [source_request] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-26_build_project_git_reflection\Dictated_Build_Project_Git_Reflection_Source.sop
+  + [role] is make the latest commit, diff, and untracked project surface sufficient substrate for the next bounded research step
+  + [not_role] is replacing theorem targets, proof validation, or source authority with narrative momentum
+
+& [WalkingLoop] is the recurring protocol
+  + [step_001_read_commit_surface] is inspect recent commits, current status, and relevant SOP artifacts
+  + [step_002_reflect_change] is infer what the last committed increment changed in the project state
+  + [step_003_find_curious_periphery] is name the next adjacent question that follows from the change surface
+  + [step_004_classify_mode] is choose proof_lane, model_validation, public_synthesis, tooling, source_boundary, or quiet_watch
+  + [step_005_bound_authority] is state what the step cannot claim before doing it
+  + [step_006_record_increment] is write the smallest useful SOP artifact or update
+  + [step_007_commit_increment] is commit the bounded change so the next loop has evidence
+
+  = must: treat every commit as evidence of work done and as a prompt for changed perspective
+  = must: include untracked build-project artifacts in the reflection surface without staging unrelated files
+  = must: preserve source/proof boundaries when the curious periphery touches mathematics
+  = must: allow non-proof progress when proof lanes are saturated
+  = should: prefer one small artifact per walk unless a larger synthesis is needed
+  - never: reopen a proof lane only to repeat a saturated obstruction
+  - never: treat repeated commits as proof progress by themselves
+
+& [PeripheryModeSet] is the allowed motion surface
+  + [mode_proof_lane] is used only when a concrete theorem, proof section, or accepted validation target appears
+  + [mode_model_validation] is used for Symbolic Ricci Flow diagnostics, scoring, calibration, and non-proof model questions
+  + [mode_public_synthesis] is used to explain current results and blocked shapes without solution claims
+  + [mode_tooling] is used when a narrow tool would make future reflection or scoring more reliable
+  + [mode_source_boundary] is used when a source/proof or imported/external authority boundary needs correction
+  + [mode_quiet_watch] is used when the latest commit surface is current and no responsible adjacent step appears
+
+(build_project_git_reflection_walking_protocol) :commit, status, artifacts/ |curious periphery, bounded mode, SOP increment, commit|
+  + [inside] is research locomotion based on evidence from the project's own history
+  + [boundary] is commit reflection may create navigation meaning but not mathematical proof authority
+  |outside| unbounded theorem hunting, unrelated file cleanup, and narrative proof promotion
+
+& [CurrentApplication] is the post-synthesis reentry
+  + [latest_commit] is 72390c6 Synthesize heartbeat reentry cycle
+  + [last_change_meaning] is proof-lane churn was closed and responsible next modes were named
+  + [curious_periphery] is commit-reflection itself as the walking surface for perpetual bounded research
+  + [selected_mode] is tooling
+  + [reason] is the user clarified that commit review plus periphery inference is the intended running protocol even without a theorem target
+  + [next_walk_candidate] is apply this protocol to score whether the next increment should be model validation, public synthesis, source-boundary cleanup, or quiet watch
