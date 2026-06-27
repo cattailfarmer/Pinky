@@ -1,0 +1,42 @@
+Subject: Bridge Obstruction Mode Selector
+
+Description: Narrow walking-protocol tool for selecting a legitimate next motion from a bridge obstruction morphology row.
+
+& [BridgeObstructionModeSelector] is a research operating tool
+  + [tool_uuid] is 3b6233ff-7877-4ddc-b299-7ba482f8c7cd
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [parent_morphology] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Bridge_Obstruction_Morphology.sop
+  + [role] is choose the next bounded walking mode from bridge type, available evidence, and authority boundary
+  + [not_role] is creating theorem targets, validating proofs, or turning morphology into proof progress
+
+& [SelectorInputSet] is the required input surface
+  + [bridge_type] is transfer, propagation, accepted_criterion, generation, simulation, validation, reconstruction, model_boundary, source_boundary, public_synthesis, or quiet_watch
+  + [available_target] is theorem_section, validation_source, model_fixture, public_artifact, source_artifact, none
+  + [authority_boundary] is proof_blocked, model_only, source_boundary, accepted_external, or public_draft
+  + [recent_commit_meaning] is the latest committed change surface
+
+& [SelectionRuleSet] is the mode decision table
+  + [rule_001_transfer] is choose proof_lane only if a transfer theorem target is available; otherwise choose public_synthesis or quiet_watch
+  + [rule_002_propagation_or_accepted_criterion] is choose proof_lane only if an estimate or criterion bridge theorem is available; otherwise choose model_calibration if scoring can preserve the gap
+  + [rule_003_generation] is choose proof_lane only if an arbitrary-input generation theorem target is available; otherwise choose public_synthesis or quiet_watch
+  + [rule_004_simulation] is choose proof_lane only if a named proof system and universal theorem or barrier target is available; otherwise choose model_calibration or quiet_watch
+  + [rule_005_validation_or_reconstruction] is choose proof_lane only if an accepted validation source or selected theorem section is available; otherwise choose public_synthesis or quiet_watch
+  + [rule_006_model_boundary] is choose model_validation when a runtime fixture or calibration question is available; otherwise choose public_synthesis or quiet_watch
+  + [rule_007_source_boundary] is choose source_boundary when untracked, uncited, or conflicting source surfaces are present; otherwise do not keep rechecking
+  + [rule_008_public_synthesis] is choose public_synthesis when a note or synthesis lacks readiness, audience fit, or boundary clarity; otherwise quiet_watch
+  + [rule_009_quiet_watch] is choose quiet_watch only after checking morphology and finding no target, fixture, source issue, or public artifact need
+
+& [CurrentApplication] is the post-morphology walking decision
+  + [recent_commit] is 0bcfcd7 Define bridge obstruction morphology
+  + [bridge_type] is model_boundary_and_public_synthesis
+  + [available_target] is none
+    = reason: public note is ready for user review, six-lane runtime fixture is implemented, and no new theorem or validation target is present
+  + [authority_boundary] is model_only_and_public_draft
+  + [selected_mode] is quiet_watch
+  + [reason] is morphology now provides the missing pre-watch check and finds no bounded action beyond waiting for user review or new target
+
+& [InterpretationRule] is the selector boundary
+  + [rule] is mode selection improves walking discipline but does not reduce mathematical lock mass
+  + [use] is call this before quiet-watch so the system does not miss non-proof peripheries
+  + [stop] is do not create new artifacts merely to avoid silence after the selector returns quiet_watch
