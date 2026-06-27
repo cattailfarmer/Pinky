@@ -1,0 +1,61 @@
+Subject: Navier-Stokes Source Tail Subterm Inspection
+
+Description: Source-bound inspection of previously extracted quadrupole tail-module records to separate tail subterms before local pressure projection admission.
+
+& [NavierStokesSourceTailSubtermInspection] is a source_boundary record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is c0d042b Map Navier-Stokes source tail projection slots
+  + [parent_mapping] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_source_tail_projection_slot_mapping_001.sop
+  + [local_source_extraction] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_quadrupole_tail_lemma_line_extraction_001.sop
+  + [authority_boundary] is inspection of existing source-bound extraction only
+  + [not_claimed] is no new source theorem, no formula-level projection rewrite, and no pressure smallness admission
+
+& [SourceAvailabilityReading] is the workspace source status
+  + [local_imported_corpus] is C:\Project\Pinky\seven math problems\Seven Millennium Math Problems.txt
+    = result: contains only a high-level Navier-Stokes problem summary, not the quadrupole tail lemma text
+  + [local_sop_extraction] is available
+    = result: prior SOP extraction records page-level tail lemma facts sufficient for category-level subterm split
+  + [external_pdf_status] is not revalidated in this increment
+    = reason: existing SOP extraction is the current preserved project authority surface for the source route
+
+& [SubtermSplit] is the current category-level separation
+  + [subterm_001_far_field_tail] is far-field component of the source tail module
+    = extraction_basis: prior line extraction says the source isolates far-field and cutoff commutator debris into a tail module
+    = projection_slot: projection_remainder_or_outer_pressure_remainder
+    = current_status: category_split_only
+    = missing_feature: formula-level far-field expression and larger-scale velocity or pressure norm
+  + [subterm_002_cutoff_commutator_debris] is cutoff and commutator debris from localization
+    = extraction_basis: prior line extraction names cutoff commutator debris inside the tail module
+    = projection_slot: cutoff_error_terms_or_p_0_source_error
+    = current_status: category_split_only
+    = missing_feature: cutoff/commutator estimate preserving epsilon-threshold accounting
+  + [subterm_003_localized_pressure_work] is pressure-work term controlled by entropy/direction-gradient coercive terms plus tail budget
+    = extraction_basis: prior line extraction says localized pressure work is controlled by a small multiple of coercive terms plus tail budget
+    = projection_slot: pressure_work_term_not_pressure_size
+    = current_status: separated_from_tail_smallness
+    = missing_feature: replacement by same-cylinder pressure-size or modulo-pressure smallness
+  + [subterm_004_explicit_tail_control_expression] is Appendix-style explicit Omega/tail control expression
+    = extraction_basis: prior line extraction says an explicit Omega choice controls the tail using local vorticity or local velocity-size quantities
+    = projection_slot: potential_larger_scale_norm_candidate
+    = current_status: promising_but_not_formula_mapped
+    = missing_feature: exact expression copied into local pressure projection variables and tested for scale/threshold output
+
+& [InspectionReading] is the developed obstruction
+  + [resolved_part] is source_tail_no_longer_single_bundle_at_category_level
+  + [remaining_blocker] is category_split_not_formula_level_projection_mapping
+  + [meaning_gain] is the source tail should be treated as at least four subterms before local pressure projection admission
+  + [best_next_handle] is extract the exact Appendix/Omega tail-control expression or source lemma formula, because that is the only subterm with a possible larger-scale norm handle
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [GateUpdateNeeded] is the immediate tool adjustment
+  + [target_file] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Projection_Remainder_Admission_Gate.sop
+  + [source_term_mapping_status] is partially_mapped_at_category_level
+  + [larger_scale_norm_status] is candidate_source_tail_expression
+  + [first_missing_feature] is exact_tail_control_formula_mapped_to_projection_remainder_or_p_0_source_term
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is source_boundary_or_deep_research
+  + [question] is locate and extract the exact tail-control expression from the source route, especially the Appendix/Omega expression, before any projection-remainder admission
+  + [Deep_Research_Priority_Gate] is ready_if_exact_formula_is_not_present_in_local_SOP_records
