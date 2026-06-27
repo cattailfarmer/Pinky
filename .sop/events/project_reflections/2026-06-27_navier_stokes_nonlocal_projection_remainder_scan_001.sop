@@ -1,0 +1,55 @@
+Subject: Navier-Stokes Nonlocal Projection Remainder Scan
+
+Description: Targeted scan for local pressure projection estimates controlling nonlocal or outer-pressure remainders.
+
+& [NavierStokesNonlocalProjectionRemainderScan] is a target_prospecting record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 0747ffb Compare Navier-Stokes pressure projection components
+  + [parent_comparison] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_local_pressure_projection_comparison_001.sop
+  + [component] is nonlocal_far_field_part
+  + [authority_boundary] is operator-estimate prospecting only
+  + [not_claimed] is no source-tail estimate has been converted into local pressure projection smallness
+
+& [ScanQuestion] is the bounded inquiry
+  + [question] is whether local pressure projection estimates control nonlocal or outer-pressure remainders in terms of larger-scale velocity or pressure quantities
+  + [purpose] is determine whether the project tail budget can plausibly be compared to projection-frame remainder estimates
+
+& [SourceEstimateNeighborhood] is the scan result
+  + [source_001_local_pressure_projection] is On the local pressure of the Navier-Stokes equations and related systems
+    = url: https://arxiv.org/pdf/1611.01482
+    = relevance: gives the local pressure projection vocabulary and operator frame for arbitrary cylindrical domains
+    = reading: strongest current operator source for expressing pressure through local projection terms
+    = limitation: operator frame still requires the project source terms to be rewritten through the projection; it does not identify the project tail budget by itself
+  + [source_002_local_suitable_decomposition] is Wolf/local suitable pressure decomposition exposition
+    = url: https://sebastian-hensel.com/master_thesis.pdf
+    = relevance: explains local pressure decomposition based on steady Stokes systems and harmonic pressure terms
+    = reading: supports the idea that nonlocal pressure must be separated from harmonic/local pieces
+    = limitation: gives frame language rather than a source-tail smallness lemma
+  + [source_003_leray_uloc_projected_pressure] is local energy weak solution framework with projected pressure
+    = url: https://arxiv.org/abs/1711.04486
+    = relevance: projected pressure localizes pressure behavior and gives a secondary frame for pressure representation formulas
+    = reading: likely useful for comparing larger-scale or exterior data to local pressure behavior
+    = limitation: half-space/local-energy setting may not match the project source route without careful domain and boundary audit
+  + [source_004_pressure_estimate_background] is non-obvious pressure estimate and Riesz-transform pressure relation
+    = url: https://math.uchicago.edu/~luis/preprints/pressureestimate.pdf
+    = relevance: reminds that pressure is nonlocal and estimated from velocity through singular integral structure
+    = reading: useful caution against treating far-field pressure tail as an independent small local quantity
+    = limitation: Holder pressure estimate background, not a CKN admission estimate
+
+& [RemainderReading] is the current result
+  + [projection_estimate_found] is frame_found_not_tail_conversion
+  + [meaning_gain] is local pressure projection supplies the right operator language for nonlocal remainder control, but the project tail budget remains outside until rewritten through that operator
+  + [first_required_move] is identify the exact projection operator applied to source local pressure and far-field terms
+  + [second_required_move] is express source far-field tail as a larger-scale velocity or pressure quantity compatible with the projection estimate
+  + [third_required_move] is prove or cite smallness/decay sufficient for same-cylinder pressure quantity
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is proof_lane_precheck
+  + [question] is build a projection-remainder admission gate with rows for operator definition, source term mapping, larger-scale norm, decay/smallness, and same-cylinder pressure output
+  + [tool_need] is narrow
+    = reason: existing decomposition ledger names components, but not the exact admission gates for projection-remainder estimates
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: source resolution is now high enough to create the gate locally
