@@ -102,6 +102,35 @@ class SymbolicRicciFlowTests(unittest.TestCase):
         self.assertEqual(delta.distinction_loss_delta, -3)
         self.assertEqual(delta.authority_leak_delta, -1)
 
+    def test_six_lane_synthesis_keeps_locks_visible_after_boundary_cleanup(self) -> None:
+        state = FlowStateCounts(
+            active_claims=6,
+            source_linked_claims=6,
+            claims_with_explicit_boundary=6,
+            unresolved_locks={
+                "bsd_source_transfer_to_target_rank": 2.5,
+                "navier_stokes_pressure_smallness_bridge": 2.0,
+                "hodge_general_correspondence_generation": 2.5,
+                "p_vs_np_universal_polynomial_simulation": 2.5,
+                "yang_mills_independent_validation": 3.0,
+            },
+            edges={
+                "depends_on_open_lock": 5,
+                "supports_with_source_trace": 6,
+                "refines_distinction": 6,
+                "blocks_proof_promotion": 5,
+            },
+        )
+
+        score = score_state(state)
+
+        self.assertEqual(score.irregularity_total, 0.0)
+        self.assertEqual(score.unresolved_lock_mass, 12.5)
+        self.assertEqual(score.boundary_clarity, 1.0)
+        self.assertEqual(score.source_coverage, 1.0)
+        self.assertEqual(score.distinction_loss, 0)
+        self.assertEqual(score.authority_leak_count, 0)
+
     def test_zero_claim_state_has_zero_ratios(self) -> None:
         score = score_state(FlowStateCounts())
 

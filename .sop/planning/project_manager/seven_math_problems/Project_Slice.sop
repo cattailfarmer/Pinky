@@ -456,6 +456,11 @@ Description: Managed work surface for staged analysis of the imported seven math
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_build_project_git_reflection_walking_protocol_001.sop
   + [Task_151_apply_git_reflection_walking_protocol_to_source_boundary] is apply the walking protocol to verify the untracked imported corpus against preserved source hashes and record the staging boundary
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_git_reflection_walking_protocol_application_001.sop
+  + [Task_152_validate_symbolic_ricci_flow_against_six_lane_synthesis] is apply the walking protocol in model-validation mode and define the six-lane post-synthesis scoring fixture need
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_symbolic_ricci_flow_six_lane_model_validation_001.sop
+  + [Task_153_implement_symbolic_ricci_flow_six_lane_score_fixture] is add a focused runtime test that keeps unresolved six-lane lock mass visible after boundary cleanup
+    = evidence: C:\Project\Pinky\.sop\runtime\tests\test_symbolic_ricci_flow.py
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_symbolic_ricci_flow_six_lane_fixture_implementation_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
