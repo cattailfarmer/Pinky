@@ -44,20 +44,21 @@ Description: Narrow admission gate for testing whether a proposed P vs NP operat
 & [CurrentApplication] is local propagation with repair
   + [candidate_operator] is local_propagation_with_repair
   + [target_scope] is SAT_3SAT_or_NP_complete_CSP
-  + [simulated_proof_system] is local_consistency_or_resolution_like_until_named
-  + [simulation_direction] is unclear
-  + [refutation_output] is fixed_point_failure_or_repair_failure_not_yet_explicit_unsat_certificate
-  + [proof_size_bound] is exponential_or_unknown
-  + [runtime_bound] is exponential_or_unknown
-  + [soundness_status] is local_only
-  + [completeness_status] is unknown_for_np_complete_scope
+  + [simulated_proof_system] is bounded_width_resolution_or_local_consistency
+  + [simulation_direction] is operator_to_bounded_width_resolution_at_best
+  + [refutation_output] is bounded_width_refutation_when_width_bound_exists
+  + [proof_size_bound] is polynomial_only_if_required_width_is_controlled_by_a_named_theorem
+  + [runtime_bound] is polynomial_only_in_restricted_width_scope
+  + [soundness_status] is checked_in_named_proof_system_scope
+  + [completeness_status] is bounded_width_only
   + [barrier_or_lower_bound_risk] is high_for_general_sat
-  + [admission_status] is boundary_only
-  + [first_missing_feature] is no_polynomial_operator_to_refutation_simulation_for_hard_sat_instances
+  + [admission_status] is admitted_as_scoped_tool
+  + [first_missing_feature] is no_theorem_that_hard_general_sat_has_polynomially_bounded_width_refutations_generated_by_the_operator
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_p_vs_np_local_consistency_resolution_width_deep_research_001.sop
 
 & [PeripheryReadout] is the current shape of meaning
   + [curious_periphery] is proof traces rather than solution states
   + [meaning_shift] is from can propagation find assignments to can propagation failures become short checkable refutations
-  + [promising_followup] is search for a named local-consistency, resolution, or proof-complexity theorem that either bounds the operator or shows why it cannot scale
-  + [Deep_Research_Priority_Gate] is not_triggered
-    = reason: the missing feature is now sharply named and can be tested against existing local records before external research is required
+  + [promising_followup] is inspect whether repair increases strength beyond bounded-width resolution or simply reintroduces exponential branching
+  + [Deep_Research_Priority_Gate] is triggered_and_recorded
+    = record: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_p_vs_np_local_consistency_resolution_width_deep_research_001.sop

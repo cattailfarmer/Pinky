@@ -1,0 +1,58 @@
+Subject: P vs NP Local Consistency Resolution Width Deep Research
+
+Description: Bounded deep-research record applying the P versus NP simulation admission gate to local propagation with repair.
+
+& [PvsNPLocalConsistencyResolutionWidthDeepResearch] is a proof_inquiry record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [active_problem] is P versus NP
+  + [reentry_commit] is cdb14b7 Add P vs NP simulation admission gate
+  + [gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Simulation_Admission_Gate.sop
+  + [candidate_operator] is local_propagation_with_repair
+  + [source_boundary] is external deep research for theorem-interface clarification only
+  + [proof_boundary] is no P equals NP result, no P not equals NP result, and no polynomial refutation theorem
+
+& [DeepResearchPriorityGateApplication] is triggered
+  + [curiosity_signal] is propagation failure as proof trace
+  + [resolution_gap] is low_resolution_theorem_boundary
+  + [proof_obligation_link] is a P equals NP style route needs polynomial unsat certificates for SAT, 3SAT, or NP-complete CSP instances
+  + [bounded_question] is whether local consistency or propagation failure has a named proof-system interpretation strong enough for polynomial refutations on hard SAT instances
+  + [promotion_criteria] is a named theorem interface that admits, narrows, or rejects the operator-to-proof-system simulation claim
+
+& [SourceSet] is primary_or_near_primary theorem interface
+  + [source_001] is https://eccc.weizmann.ac.il/report/2002/035/
+    = title: A Combinatorial Characterization of Resolution Width
+    = authors: Albert Atserias and Victor Dalmau
+    = extracted_boundary: resolution width is characterized through an existential pebble-game/local-consistency style object
+  + [source_002] is https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf
+    = title: A Combinatorial Characterization of Resolution Width
+    = role: PDF theorem source for the width characterization
+  + [source_003] is https://arxiv.org/pdf/1711.07320
+    = title: Proof Complexity Meets Algebra
+    = extracted_boundary: local consistency algorithms, existential pebble games, and bounded-width resolution are an established correspondence in CSP proof complexity
+
+& [GateApplication] is local_propagation_with_repair_against_resolution_width
+  + [candidate_operator] is local_propagation_with_repair
+  + [target_scope] is SAT_3SAT_or_NP_complete_CSP
+  + [simulated_proof_system] is bounded_width_resolution_or_local_consistency
+  + [simulation_direction] is operator_to_bounded_width_resolution_at_best
+  + [refutation_output] is bounded_width_refutation_when_width_bound_exists
+  + [proof_size_bound] is polynomial_only_if_required_resolution_width_is_bounded_or_polylogarithmically_controlled_by_a_named_theorem
+  + [runtime_bound] is polynomial_only_in_restricted_width_scope
+  + [soundness_status] is checked_in_named_proof_system_scope
+  + [completeness_status] is bounded_width_only
+  + [barrier_or_lower_bound_risk] is high_for_general_sat
+  + [admission_status] is admitted_as_scoped_tool
+  + [first_missing_feature] is no_theorem_that_hard_general_sat_has_polynomially_bounded_width_refutations_generated_by_the_operator
+
+& [DevelopedUnderstanding] is proposition adjustment
+  + [old_shape] is local propagation with repair might solve NP-complete instances
+  + [new_shape] is local propagation corresponds naturally to bounded-width proof search, which can certify unsatisfiability only when the needed width stays controlled
+  + [meaning_gained] is the operator has a real proof-system home, but that home is too weak as a general P versus NP route unless a new theorem collapses hard SAT refutations into bounded-width or otherwise polynomially bounded traces
+  + [route_status] is useful_scoped_tool_not_solution_route
+  + [lock_mass_change] is reduced_ambiguity_not_problem_lock
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is proof_lane_precheck
+  + [question] is inspect whether repair adds strength beyond bounded-width resolution, or merely hides branching/search that should be classified as resolution/CDCL search-tree size
+  + [expected_output] is a repair-strength classification row in the simulation gate or a route away from P vs NP if no sharper theorem interface appears
