@@ -62,3 +62,18 @@ Description: Narrow admission gate for testing whether a proposed P vs NP operat
   + [promising_followup] is inspect whether repair increases strength beyond bounded-width resolution or simply reintroduces exponential branching
   + [Deep_Research_Priority_Gate] is triggered_and_recorded
     = record: C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_p_vs_np_local_consistency_resolution_width_deep_research_001.sop
+
+& [RepairApplication] is local propagation with repair as clause-learning search
+  + [candidate_operator] is local_propagation_with_repair
+  + [target_scope] is SAT_3SAT_or_NP_complete_CSP
+  + [simulated_proof_system] is resolution_cdcl_when_repair_learns_clauses
+  + [simulation_direction] is operator_to_system_when_each_repair_step_emits_a_clause_or_derivation_trace
+  + [refutation_output] is search_tree_plus_learned_clause_derivation
+  + [proof_size_bound] is polynomial_conditional_on_polynomial_resolution_or_cdcl_trace_size
+  + [runtime_bound] is polynomial_conditional_on_polynomial_number_of_conflicts_repairs_and_derivation_steps
+  + [soundness_status] is conditional
+  + [completeness_status] is np_complete_scope_only_if_general_resolution_or_stronger_simulation_is_named_and_polynomially_bounded
+  + [barrier_or_lower_bound_risk] is high_for_general_sat
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is no_polynomial_bound_on_repair_conflict_trace_size_for_hard_sat_instances
+  + [research_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_p_vs_np_repair_strength_classification_001.sop

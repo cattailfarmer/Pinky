@@ -1,0 +1,57 @@
+Subject: P vs NP Repair Strength Classification
+
+Description: Bounded proof-inquiry record classifying whether repair adds proof-system strength beyond bounded-width local propagation.
+
+& [PvsNPRepairStrengthClassification] is a proof_inquiry record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [active_problem] is P versus NP
+  + [reentry_commit] is 3bc1cde Classify P vs NP propagation by resolution width
+  + [gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Simulation_Admission_Gate.sop
+  + [candidate_operator] is local_propagation_with_repair
+  + [source_boundary] is external deep research for proof-system classification only
+  + [proof_boundary] is no P equals NP result, no P not equals NP result, and no polynomial refutation theorem
+
+& [DeepResearchPriorityGateApplication] is triggered
+  + [curiosity_signal] is repair as possible strength increase
+  + [resolution_gap] is low_resolution_theorem_boundary
+  + [proof_obligation_link] is determine whether repair upgrades local propagation to a stronger proof system or reintroduces branching whose cost must be counted
+  + [bounded_question] is whether repair should be classified as bounded-width propagation, resolution/CDCL clause learning, extended-resolution-like strengthening, or heuristic search
+  + [promotion_criteria] is a named proof-system placement with explicit proof-size and runtime obligations
+
+& [SourceSet] is proof_system_context
+  + [source_001] is https://www.jair.org/index.php/jair/article/download/10392/24888/19250
+    = title: Towards Understanding and Harnessing the Potential of Clause Learning
+    = extracted_boundary: clause learning is studied relative to resolution proof systems and can be compared by proof-size strength
+  + [source_002] is https://arxiv.org/pdf/1401.3868
+    = title: Clause-Learning Algorithms with Many Restarts and Bounded-Width Resolution
+    = extracted_boundary: clause learning with restarts can detect unsatisfiability from bounded-width resolution refutations under stated algorithmic conditions, but this remains bounded by the needed refutation width and conflict budget
+  + [source_003] is https://cdn.aaai.org/AAAI/2008/AAAI08-045.pdf
+    = title: Clause Learning Can Effectively P-Simulate General Propositional Resolution
+    = extracted_boundary: stronger clause-learning frameworks may p-simulate general resolution, but that places the route inside resolution-strength proof complexity rather than solving P versus NP by itself
+
+& [RepairClassification] is the applied gate row
+  + [candidate_operator] is local_propagation_with_repair
+  + [target_scope] is SAT_3SAT_or_NP_complete_CSP
+  + [simulated_proof_system] is resolution_cdcl_when_repair_learns_clauses
+  + [simulation_direction] is operator_to_system_when_each_repair_step_emits_a_clause_or_derivation_trace
+  + [refutation_output] is search_tree_plus_learned_clause_derivation
+  + [proof_size_bound] is polynomial_conditional_on_polynomial_resolution_or_cdcl_trace_size
+  + [runtime_bound] is polynomial_conditional_on_polynomial_number_of_conflicts_repairs_and_derivation_steps
+  + [soundness_status] is conditional
+  + [completeness_status] is np_complete_scope_only_if_general_resolution_or_stronger_simulation_is_named_and_polynomially_bounded
+  + [barrier_or_lower_bound_risk] is high_for_general_sat
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is no_polynomial_bound_on_repair_conflict_trace_size_for_hard_sat_instances
+
+& [DevelopedUnderstanding] is proposition adjustment
+  + [old_shape] is repair may rescue local propagation from bounded-width weakness
+  + [new_shape] is repair must be counted as proof search and clause derivation; if it learns clauses it enters resolution/CDCL proof complexity
+  + [meaning_gained] is repair can strengthen the operator's proof-system home from bounded-width local consistency toward resolution/CDCL, but the central obstruction simply moves to proof-size and conflict-count bounds
+  + [route_status] is not_blocked_as_a_scoped_model_but_blocked_as_solution_route
+  + [lock_mass_change] is reduced_ambiguity_not_problem_lock
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is route_decision
+  + [question] is decide whether to continue P versus NP into resolution lower-bound/barrier mapping or route to the next problem lane because no polynomial bound interface is present
+  + [expected_output] is either a P versus NP saturation reflection or a selected resolution/CDCL lower-bound target
