@@ -1,0 +1,79 @@
+Subject: Bridge Obstruction Morphology
+
+Description: Non-proof research morphology for classifying recurring bridge failures across the seven math problems project.
+
+& [BridgeObstructionMorphology] is a research inquiry tool
+  + [tool_uuid] is 2631f405-7ff2-4a38-a490-587962ab9b2b
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [source_synthesis] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_heartbeat_reentry_cycle_synthesis_001.sop
+  + [public_synthesis] is C:\Project\Pinky\.sop\platform\seven_math_problems\Public_Research_State_Synthesis.sop
+  + [role] is study the recurring form of failed proof bridges without claiming proof progress
+  + [not_role] is solving any Millennium Problem, replacing theorem targets, or treating analogy as evidence
+
+& [MorphologyColumnSet] is the bridge-failure surface
+  + [lane] is the problem lane or model context
+  + [local_structure] is the meaningful partial object or organized corridor already present
+  + [bridge_type] is transfer, propagation, generation, simulation, validation, reconstruction, or model_boundary
+  + [missing_bridge] is the named theorem, estimate, construction, or validation step not yet present
+  + [authority_boundary] is proof_blocked, model_only, source_boundary, or accepted_external
+  + [next_legitimate_motion] is theorem_target, validation_target, model_calibration, public_synthesis, source_boundary, or quiet_watch
+
+& [CurrentMorphologyMap] is the six-lane bridge obstruction table
+  + [bsd] is transfer morphology
+    = local_structure: diagonal-cycle and triple-product source-count corridor
+    = bridge_type: transfer
+    = missing_bridge: source_transfer_to_target_mordell_weil_rank
+    = authority_boundary: proof_blocked
+    = next_legitimate_motion: theorem_target
+  + [navier_stokes] is propagation_and_criterion morphology
+    = local_structure: quadrupole pressure-work route, active balls, localized entropy pressure work, and tail module
+    = bridge_type: propagation
+    = bridge_type_002: accepted_criterion
+    = missing_bridge: no_tail_budget_to_pressure_oscillation_or_L3_over_2_smallness_lemma
+    = authority_boundary: proof_blocked
+    = next_legitimate_motion: theorem_target
+  + [hodge] is generation morphology
+    = local_structure: correspondence, motive, Hodge-locus, normal-function, and known-case organization
+    = bridge_type: generation
+    = missing_bridge: no_general_correspondence_generation_from_arbitrary_hodge_class
+    = authority_boundary: proof_blocked
+    = next_legitimate_motion: theorem_target
+  + [p_vs_np] is simulation morphology
+    = local_structure: proof-complexity language for certificates and proof systems
+    = bridge_type: simulation
+    = missing_bridge: no_universal_polynomial_refutation_or_simulation_theorem
+    = authority_boundary: proof_blocked
+    = next_legitimate_motion: theorem_target_or_barrier_target
+  + [yang_mills] is validation_and_reconstruction morphology
+    = local_structure: staged construction-chain claim with regulator, continuum limit, OS reconstruction, observables, and mass-gap transfer
+    = bridge_type: validation
+    = bridge_type_002: reconstruction
+    = missing_bridge: independent_acceptance_of_uniform_estimates_and_regulator_equivalence
+    = authority_boundary: proof_blocked
+    = next_legitimate_motion: validation_target
+  + [poincare_symbolic_ricci_flow] is model-boundary morphology
+    = local_structure: accepted external Poincare proof plus project-local Symbolic Ricci Flow diagnostic runtime
+    = bridge_type: model_boundary
+    = missing_bridge: none_as_solution_lane
+    = authority_boundary: accepted_external_and_model_only
+    = next_legitimate_motion: model_calibration_or_public_synthesis
+
+& [InterpretationRule] is the morphology boundary
+  + [rule_001] is local structure can be meaningful even when bridge proof is absent
+  + [rule_002] is naming bridge type improves navigation but does not reduce unresolved lock mass
+  + [rule_003] is future inquiry should match its motion type to the bridge type
+  + [rule_004] is repeated inquiry without a matching theorem, validation, or model target becomes churn
+  + [rule_005] is model scoring should keep bridge failures visible rather than smoothing them into coherence
+
+& [CuriousPeriphery] is the next research edge
+  + [question] is whether bridge types can predict the responsible next motion before a theorem target appears
+  + [candidate_next_tool] is BridgeObstructionModeSelector
+  + [tool_need] is conditional
+    = reason: create only if future walks repeatedly need to choose between theorem_target, validation_target, model_calibration, public_synthesis, source_boundary, and quiet_watch
+
+& [CurrentReading] is the walking-protocol update
+  + [selected_mode] is tooling
+  + [meaning] is the recurring bridge-failure pattern has become a project-local research object
+  + [proof_boundary] is unchanged
+  + [next_walk_candidate] is apply morphology to select the next legitimate motion or quiet-watch if no bridge-specific motion appears
