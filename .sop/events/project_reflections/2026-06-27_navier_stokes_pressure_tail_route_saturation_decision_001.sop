@@ -1,0 +1,41 @@
+Subject: Navier-Stokes Pressure Tail Route Saturation Decision
+
+Description: Route decision after formula-level projection mapping saturated the Navier-Stokes pressure-tail-to-projection branch.
+
+& [NavierStokesPressureTailRouteSaturationDecision] is a route_decision record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 9520917 Map Navier-Stokes tail formula to projection gate
+  + [lane] is Navier-Stokes Existence and Smoothness
+  + [authority_boundary] is research routing only
+  + [not_claimed] is no Navier-Stokes proof, no pressure-smallness bridge, and no reduction of mathematical lock mass
+
+& [SaturationEvidence] is the current branch result
+  + [tail_formula_extracted] is yes
+    = result: tail formula outputs local L3 velocity, scaled enstrophy, cutoff/transport budgets, and outer-log scale loss
+  + [projection_operator_selected] is yes
+    = result: local pressure projection gives an operator language for pressure decomposition
+  + [projection_admission] is no
+    = reason: the tail formula does not output same-cylinder pressure L3_over_2 or pressure oscillation smallness
+  + [missing_theorem] is velocity_enstrophy_cutoff_budget_to_same_cylinder_pressure_smallness
+  + [branch_status] is saturated_until_new_theorem_target
+
+& [RouteDecision] is the next project motion
+  + [decision] is pause Navier-Stokes pressure-tail-to-projection route
+  + [resume_if] is a theorem or source lemma converts local L3 velocity, enstrophy, cutoff, or transport budgets into same-cylinder pressure smallness or pressure oscillation in a local epsilon frame
+  + [do_not_continue_by] is repeating pressure-tail projection comparisons without a new conversion theorem
+  + [next_lane] is Hodge Conjecture
+  + [next_handle] is Hodge_Cycle_Output_Admission_Ledger
+  + [reason] is the established six-problem order routes from Navier-Stokes to Hodge after Navier-Stokes reaches a precise obstruction
+
+& [HodgeReentrySeed] is the next curious periphery
+  + [problem_shape] is arbitrary rational Hodge-class-to-algebraic-cycle construction
+  + [current_lock] is no_general_correspondence_generation_from_arbitrary_hodge_class
+  + [local_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Cycle_Output_Admission_Ledger.sop
+  + [first_question] is whether any named mechanism starts from arbitrary rational Hodge-class input and outputs algebraic cycles or generated correspondences with cohomology match
+  + [proof_boundary] is known cases, normal functions, motives, and correspondence transfer remain non-proof unless they output or generate algebraic cycles for the target input scope
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is proof_lane_precheck
+  + [question] is re-enter Hodge through the cycle-output admission ledger and select the narrowest candidate mechanism for correspondence generation or cycle output
+  + [Deep_Research_Priority_Gate] is ready_if_local_records_do_not_identify_a_named_candidate_mechanism
