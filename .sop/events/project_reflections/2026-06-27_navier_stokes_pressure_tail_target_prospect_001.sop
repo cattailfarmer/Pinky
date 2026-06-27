@@ -1,0 +1,53 @@
+Subject: Navier-Stokes Pressure Tail Target Prospect
+
+Description: Bounded target-prospecting pass for the Navier-Stokes bridge obstruction after the quiet-watch idleness correction.
+
+& [NavierStokesPressureTailTargetProspect] is a target_prospecting record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 7f5e8b4 Correct quiet watch research idleness
+  + [lane] is Navier-Stokes
+  + [missing_bridge] is no_tail_budget_to_pressure_oscillation_or_L3_over_2_smallness_lemma
+  + [authority_boundary] is proof_blocked
+  + [not_claimed] is no regularity proof, no lock-mass reduction, and no validation of the project-local pressure-tail route
+
+& [ProspectQuery] is the bounded search question
+  + [query] is identify accepted theorem interfaces connecting pressure control, local energy inequality, scale-critical smallness, and Escauriaza-Seregin-Sverak type criteria
+  + [purpose] is find a concrete theorem target for later audit
+  + [not_purpose] is deriving the missing bridge during this pass
+
+& [CandidateInterfaceSet] is the target neighborhood found
+  + [candidate_001_caffarelli_kohn_nirenberg] is partial regularity and epsilon-regularity framework for suitable weak solutions
+    = source: Caffarelli, Kohn, and Nirenberg, Partial regularity of suitable weak solutions of the Navier-Stokes equations, Communications in Pure and Applied Mathematics 35(6), 771-831, 1982, doi 10.1002/cpa.3160350604
+    = url: https://onlinelibrary.wiley.com/doi/10.1002/cpa.3160350604
+    = relevance: gives the local energy and scale-critical pressure/velocity environment into which a pressure-tail estimate would need to fit
+    = limitation: does not by itself convert a tail budget into the required smallness quantity
+  + [candidate_002_escauriaza_seregin_sverak] is endpoint L-infinity-time L3-space regularity via backward uniqueness
+    = source: Escauriaza, Seregin, and Sverak, L3,infinity-solutions of the Navier-Stokes equations and backward uniqueness, Russian Mathematical Surveys 58(2), 211-250, 2003
+    = url: https://www.pdmi.ras.ru/~seregin/Recent%20Publications/engESS3.pdf
+    = relevance: supplies the accepted endpoint-critical target family adjacent to the project's L3 or L3/2 criterion language
+    = limitation: the project still lacks a bridge from localized pressure-tail accounting to the global/local critical norm hypothesis
+  + [candidate_003_pressure_criteria] is pressure-based regularity criterion literature
+    = source: Tran and Yu, Regularity of Navier-Stokes flows with bounds for the pressure, Applicable Analysis 2016 preprint copy
+    = url: https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/12230/Tran_2016_Regularity_AML_AAM.pdf?isAllowed=y&sequence=1
+    = relevance: directly studies regularity from pressure bounds and is closer to the project's pressure-tail vocabulary than pure velocity criteria
+    = limitation: must be audited for whether its pressure bounds match the project's tail object or require a different domain/measure condition
+  + [candidate_004_one_scale_epsilon_regularities] is modern one-scale epsilon regularity target
+    = source: Albritton, Barker, and Prange, Epsilon regularity for the Navier-Stokes equations via weak-strong uniqueness
+    = url: https://prange.perso.math.cnrs.fr/papers/epreg-viaWSU.pdf
+    = relevance: offers a compact theorem-interface form for asking whether a project-local estimate can feed an epsilon regularity criterion
+    = limitation: still requires exact matching of quantities and hypotheses before it can become a proof-lane target
+
+& [ProspectReading] is the current shape of meaning
+  + [found_target] is yes
+  + [target_shape] is not a single theorem yet but a target neighborhood around local epsilon regularity plus pressure-control criteria
+  + [most_promising_next_audit] is compare the project-local pressure-tail module against pressure criterion hypotheses before attempting ESS endpoint language
+  + [reason] is pressure criteria are closest in vocabulary to the missing bridge, while ESS is more authoritative but farther from the project-local tail object
+  + [risk] is target drift from pressure-tail accounting into generic regularity-criterion summaries
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is target_prospecting_or_proof_lane_precheck
+  + [next_question] is can the project-local tail budget be expressed as a scale-invariant pressure quantity used in a cited pressure regularity criterion
+  + [required_artifact] is a hypothesis-matching table with rows for project-tail quantity, accepted theorem quantity, scaling, locality, and missing conversion lemma
+  + [Deep_Research_Priority_Gate] is not triggered yet
+    = reason: the target neighborhood has enough resolution for one local hypothesis-matching audit
