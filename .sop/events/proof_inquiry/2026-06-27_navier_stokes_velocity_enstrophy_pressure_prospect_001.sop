@@ -1,0 +1,67 @@
+Subject: Navier-Stokes Velocity Enstrophy Pressure Prospect 001
+
+Description: Deep Research Priority Gate pass on whether local velocity, enstrophy, and cutoff budgets can be converted into same-cylinder pressure smallness or projection-remainder estimates.
+
+& [NavierStokesVelocityEnstrophyPressureProspect] is a proof_inquiry record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [active_problem] is Navier-Stokes Existence and Smoothness
+  + [reentry_commit] is 46be1fe Map Navier-Stokes tail components to pressure frame
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_current_cycle_component_mapping_001.sop
+  + [authority_status] is deep_research_not_proof
+  + [proof_boundary] is no Navier-Stokes regularity proof, no pressure-smallness theorem, and no continuation criterion admitted
+
+& [DeepResearchPriorityGateApplication] is triggered
+  + [curiosity_signal] is velocity_enstrophy_cutoff_budget_to_pressure_smallness
+  + [resolution_gap] is low_resolution_theorem_boundary
+  + [proof_obligation_link] is pressure-tail route needs same-cylinder pressure L3_over_2 smallness, pressure oscillation smallness, or a projection-remainder estimate strong enough for an accepted local regularity criterion
+  + [bounded_question] is whether known local pressure estimates or local suitable pressure decompositions convert the source's velocity, enstrophy, cutoff, transport, and scale-loss budgets into accepted pressure smallness
+  + [promotion_criteria] is a named theorem that outputs same-cylinder pressure quantity with threshold smallness or scale decay from the available source budgets
+
+& [SourceSet] is selected_theorem_neighborhood
+  + [source_001] is https://www.math.lsu.edu/~pcnguyen/papers_html/Phuc_NS_regularity_08_16_14_Simplify_3D.pdf
+    = role: epsilon-regularity and local pressure quantities
+    = extracted_boundary: accepted criteria keep pressure quantities such as D(p) explicit alongside velocity quantities; pressure smallness is not automatically removed by local velocity control
+  + [source_002] is https://sebastian-hensel.com/master_thesis.pdf
+    = role: local suitable weak solutions and harmonic pressure decomposition
+    = extracted_boundary: local pressure can be decomposed using harmonic pressure and local pressure terms, but this supplies a frame, not project-tail smallness
+  + [source_003] is https://arxiv.org/pdf/2606.08352
+    = role: harmonic pressure caution
+    = extracted_boundary: modulo-harmonic formulations are needed because harmonic pressure behavior can defeat naive pressure-gradient or oscillation intuition
+  + [source_004] is https://par.nsf.gov/servlets/purl/10333954
+    = role: local pressure expansion for intermittent/local-energy settings
+    = extracted_boundary: local pressure expansion estimates pressure parts under specified far-field controls, suggesting a possible comparison frame but not a theorem for the current source tail budget
+  + [source_005] is https://www.uni-ulm.de/fileadmin/website_uni_ulm/mawi.inst.020/skipper/NotesCKN_Jack_2.pdf
+    = role: CKN target language
+    = extracted_boundary: local regularity criteria preserve velocity-pressure smallness as the target object
+
+& [ProspectResult] is no_bridge_target_found
+  + [result] is negative_prospect
+  + [reason] is known pressure-estimate frameworks either retain pressure as an independent local quantity, require a precise pressure decomposition with controlled remainders, or assume far-field controls not supplied by the source tail formula
+  + [accepted_positive_neighborhood] is local pressure estimates can bound pressure components from velocity/source terms after a decomposition is fixed
+  + [missing_for_project] is threshold-small same-cylinder pressure output from the source's velocity/enstrophy/cutoff/transport/log-loss budget
+  + [first_missing_feature] is no_velocity_enstrophy_cutoff_budget_to_pressure_smallness_theorem
+  + [admission_status] is boundary_only
+
+& [TheoremBoundary] is the refined obstruction
+  + [not_enough_001] is Calderon-Zygmund pressure representation from u tensor u alone
+    = reason: it yields pressure estimates from velocity norms but does not absorb cutoff, transport, nonlocal, and log-loss terms into epsilon smallness
+  + [not_enough_002] is local suitable pressure decomposition
+    = reason: it names p_h and p_0 slots but requires component-level bounds not supplied by the source tail formula
+  + [not_enough_003] is local energy or epsilon regularity pressure criterion
+    = reason: it requires pressure quantity smallness in the criterion rather than deriving it from the current tail budget
+  + [not_enough_004] is far-field pressure expansion
+    = reason: it requires explicit far-field control and scale decay, while the source formula carries bounded tail terms and an outer logarithmic loss
+
+& [DevelopedUnderstanding] is the current shape of meaning
+  + [old_shape] is perhaps velocity and enstrophy budgets can be promoted through local pressure estimates into pressure smallness
+  + [new_shape] is pressure estimates provide comparison language but not the missing threshold bridge for this source route
+  + [meaning_gained] is the Navier-Stokes pressure-tail lane is saturated unless a specific theorem supplies scale decay or smallness for the projection remainder from exactly these budgets
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is saturation_reflection
+  + [question] is mark the current Navier-Stokes pressure-bridge reentry saturated until a theorem with exact velocity/enstrophy/cutoff-to-pressure-smallness output is supplied
+  + [expected_output] is saturation reflection and route selection from refined missing theorem map
+
