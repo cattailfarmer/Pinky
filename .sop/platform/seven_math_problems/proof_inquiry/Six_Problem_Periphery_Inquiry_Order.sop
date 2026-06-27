@@ -36,10 +36,10 @@ Description: Ordered proof-inquiry route for the six remaining Millennium proble
   + [stage_006_adjustment] is strengthen, narrow, split, or retire the proposition according to evidence
 
 & [CurrentFocus] is the active lane
-  + [problem] is P versus NP
-  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_hodge_reentry_reconciliation_to_p_vs_np_001.sop
-  + [previous_problem] is Hodge Conjecture
+  + [problem] is Yang-Mills Existence and Mass Gap
+  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_p_vs_np_reentry_reconciliation_to_yang_mills_001.sop
+  + [previous_problem] is P versus NP
   + [previous_status] is saturated_until_new_candidate
-    = first_lock: no_general_correspondence_generation_from_arbitrary_hodge_class
-  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Certificate_Or_Separation_Admission_Ledger.sop
-  + [next_question] is re-enter P versus NP through certificate-or-separation admission and select a concrete proof-system simulation, polynomial unsat certificate, or barrier-aware separation audit target if locally named
+    = first_lock: no_polynomial_bound_on_repair_conflict_trace_size_for_hard_sat_instances
+  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_OS_Reconstruction_Boundary_Ledger.sop
+  + [next_question] is re-enter Yang-Mills through OS reconstruction and uniform continuum-limit records, then decide whether the uniform lattice-spacing derivative lemma remains the best concrete audit target
