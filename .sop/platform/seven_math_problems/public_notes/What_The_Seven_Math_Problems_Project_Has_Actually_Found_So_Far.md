@@ -20,7 +20,7 @@ In plain language: special source cycles may be meaningful, but the project has 
 
 ### Navier-Stokes
 
-The quadrupole pressure-work route became a precise local pressure-work program. The external source contains active balls, localized entropy pressure work, tail control, and target theorem language.
+The quadrupole pressure-work route became a precise local pressure-work program. In the source audited by this project, there are active balls, localized entropy pressure work, tail control, and target theorem language. That audit does not make the source authoritative; it only makes the route more inspectable.
 
 The lock is still the bridge to accepted regularity criteria:
 
@@ -50,7 +50,7 @@ In plain language: the project has not found a proof-system theorem that gives p
 
 ### Yang-Mills Existence and Mass Gap
 
-A recent complete-proof claim gives a staged construction-chain target: regulator, continuum limit, OS reconstruction, observables, and mass-gap transfer. That makes it auditable as a chain.
+A recent complete-proof claim gives a staged construction-chain target: regulator, continuum limit, OS reconstruction, observables, and mass-gap transfer. That makes it auditable as a chain, not accepted as a proof.
 
 The lock is still independent validation:
 
