@@ -1,0 +1,56 @@
+Subject: Navier-Stokes Harmonic Pressure Gate Scan
+
+Description: Deep Research Priority Gate pass on the harmonic-pressure component of the pressure-tail decomposition ledger.
+
+& [NavierStokesHarmonicPressureGateScan] is a deep_research_priority_gate record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is e05d6f9 Add Navier-Stokes pressure tail decomposition ledger
+  + [parent_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Tail_Decomposition_Remainder_Ledger.sop
+  + [component] is harmonic_pressure_part
+  + [authority_boundary] is external-source clarification only
+  + [not_claimed] is no harmonic-pressure estimate is proved from the project route and no CKN admission is granted
+
+& [GateQuestion] is the low-resolution periphery
+  + [question] is whether harmonic pressure can be treated as a controllable harmless remainder when trying to convert a pressure-tail budget into same-cylinder pressure L3_over_2 or pressure oscillation smallness
+  + [reason_for_gate] is local artifacts marked harmonic pressure as implicit, high risk, and not extracted
+
+& [SourceResolutionSet] is the clarified source neighborhood
+  + [source_001_local_suitable_pressure_decomposition] is Wolf-style local suitable solution pressure decomposition
+    = url: https://sebastian-hensel.com/master_thesis.pdf
+    = reading: local pressure can be decomposed with a harmonic component, allowing local suitable solution frameworks without a globally defined pressure field
+    = meaning_for_project: harmonic pressure must be named as its own component rather than hidden inside tail budget
+    = limitation: decomposition vocabulary does not supply smallness of the harmonic part in the project regularity cylinder
+  + [source_002_local_energy_epsilon_pressure_estimates] is Guevara-Phuc local energy and epsilon-regularity pressure-estimate framework
+    = url: https://www.math.lsu.edu/~pcnguyen/papers_html/Guevara-Phuc-12-29-16.pdf
+    = reading: local epsilon-regularity arguments track pressure quantities through local energy estimates and pressure-function spaces
+    = meaning_for_project: the harmonic component must be compatible with the accepted pressure quantity, not merely bounded as a source-tail remainder
+    = limitation: does not identify the project tail budget with the accepted pressure quantity
+  + [source_003_harmonic_pressure_caution] is finite-scale one-component regularity via harmonic pressure
+    = url: https://arxiv.org/abs/2606.08352
+    = reading: a spatially harmonic pressure can have bounded scale-invariant L3_over_2 oscillation while its pointwise gradient becomes arbitrarily large under time concentration
+    = meaning_for_project: pressure oscillation smallness or boundedness alone may not control the harmful aspect of harmonic pressure unless the theorem target is formulated modulo harmonic pressures or includes the correct remainder control
+    = limitation: recent source; use as caution and periphery-shaping evidence, not as primary proof authority
+  + [source_004_seregin_regular_regularization_survey] is Seregin survey on bounded scale-invariant quantities and epsilon regularity
+    = url: https://ora.ox.ac.uk/objects/uuid%3Ae5f199d6-4981-44e2-9318-1db638e96e54/files/rx633f188s
+    = reading: local regularity theory depends on suitable weak solutions and scale-invariant quantities for velocity and pressure on parabolic cylinders
+    = meaning_for_project: harmonic pressure must be handled in the same scale-invariant framework, not as an external narrative remainder
+    = limitation: survey context, not a project-tail conversion lemma
+
+& [GateReading] is the resolved periphery
+  + [harmonic_pressure_status] is caution_component_not_harmless_remainder
+  + [conversion_lemma_status] is not_found
+  + [new_required_feature] is harmonic_pressure_modulo_or_remainder_control_statement
+  + [meaning_gain] is the project should not target raw pressure oscillation alone unless it specifies how harmonic pressure is removed, controlled, or absorbed in the accepted theorem frame
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [LedgerAdjustmentNeeded] is the follow-up
+  + [target_file] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Tail_Decomposition_Remainder_Ledger.sop
+  + [adjustment] is refine harmonic_pressure_part required_bound to require modulo-harmonic formulation or separate harmonic-gradient/remainder control
+  + [reason] is deep research shows harmonic pressure cannot be casually bundled under pressure oscillation smallness
+
+& [NextBoundedMotion] is the next walking step
+  + [mode] is tooling_update
+  + [question] is update the decomposition ledger so future CKN pressure matching distinguishes pressure-size smallness from modulo-harmonic pressure control
+  + [stop_condition] is after the ledger update, continue only if a specific theorem statement can be selected for modulo-harmonic pressure treatment

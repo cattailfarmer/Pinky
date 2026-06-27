@@ -52,11 +52,11 @@ Description: Project-local math inquiry tool for splitting a bundled pressure-ta
     = admission_status: boundary_only
   + [component_002_harmonic_pressure_part] is harmonic pressure remainder from pressure decomposition
     = source_status: implicit
-    = accepted_pressure_quantity_match: pressure_oscillation_smallness_or_unclear
+    = accepted_pressure_quantity_match: modulo_harmonic_pressure_control_or_unclear
     = same_frame_status: unclear
     = harmonic_or_nonlocal_risk: high
-    = required_bound: harmonic_pressure_oscillation_control_in_same_cylinder_with_no_hidden_gradient_concentration
-    = current_blocker: harmonic_remainder_control_not_extracted
+    = required_bound: modulo_harmonic_formulation_or_separate_harmonic_gradient_and_remainder_control_in_same_cylinder
+    = current_blocker: harmonic_pressure_cannot_be_treated_as_harmless_pressure_oscillation_remainder
     = admission_status: deep_research_needed
   + [component_003_nonlocal_far_field_part] is far-field pressure contribution bundled into the tail module
     = source_status: named_only
@@ -88,5 +88,6 @@ Description: Project-local math inquiry tool for splitting a bundled pressure-ta
   + [reason] is local, harmonic, nonlocal, cutoff, and pressure-work components all require different bounds and cannot be bundled as one tail-budget smallness claim
   + [highest_value_next_component] is harmonic_pressure_part
   + [reason_for_priority] is harmonic pressure is both central to local pressure decomposition and the most dangerous place for false pressure-oscillation intuition
+  + [deep_research_adjustment] is raw pressure oscillation language is insufficient unless the target theorem handles pressure modulo harmonic components or separately controls harmonic gradients and remainders
   + [Deep_Research_Priority_Gate] is ready_for_harmonic_pressure_component_if_next_reentry_needs_resolution
   + [proof_promotion_status] is blocked
