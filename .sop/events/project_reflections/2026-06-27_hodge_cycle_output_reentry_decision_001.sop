@@ -1,0 +1,41 @@
+Subject: Hodge Cycle Output Reentry Decision
+
+Description: Reentry decision after Navier-Stokes route saturation moved active focus to Hodge cycle-output admission.
+
+& [HodgeCycleOutputReentryDecision] is a route_decision record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 4e27c86 Route from Navier-Stokes saturation to Hodge
+  + [lane] is Hodge Conjecture
+  + [authority_boundary] is research routing only
+  + [not_claimed] is no Hodge proof, no algebraic-cycle construction, and no correspondence-generation theorem
+
+& [LocalRecordCheck] is the current Hodge reentry surface
+  + [cycle_output_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Hodge_Cycle_Output_Admission_Ledger.sop
+    = result: current application still has no named arbitrary-class-to-cycle output mechanism
+  + [mechanism_table] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_hodge_cycle_realization_mechanism_table_001.sop
+    = result: known cases, special geometry, normal functions, motivated/absolute cycles, and explicit search are classified but not admitted as arbitrary cycle-output machinery
+  + [correspondence_generation_reflection] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_hodge_correspondence_generation_saturation_reflection_001.sop
+    = result: no general theorem candidate starts with arbitrary rational Hodge-class input and outputs algebraic cycles or generated correspondences with cohomology match
+  + [cycle_output_saturation_reflection] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_hodge_cycle_output_reentry_saturation_reflection_001.sop
+    = result: Hodge should continue only if a concrete theorem candidate supplies cycle output or generated correspondences from arbitrary rational Hodge-class input
+
+& [Decision] is the current route
+  + [hodge_status] is saturated_until_new_candidate
+  + [reason] is local records already performed the correspondence-generation deep research and found no named arbitrary-class output theorem
+  + [continue_hodge_if] is a concrete theorem candidate supplies cycle output or generated correspondences from arbitrary rational Hodge-class input
+  + [do_not_continue_hodge_by] is repeating normal-function, Noether-Lefschetz, motivated-cycle, or known-case surveys without new output machinery
+  + [preserved_potential] is high_structural_realization_target
+  + [lock_mass_change] is none
+
+& [NextLane] is selected
+  + [problem] is P versus NP
+  + [reason] is the ordered six-problem route moves from Hodge to P versus NP when Hodge lacks a concrete cycle-output theorem target
+  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Certificate_Or_Separation_Admission_Ledger.sop
+  + [first_question] is whether any candidate mechanism supplies polynomial unsat certificates, proof-system simulation, or barrier-aware separation for NP-complete instances
+  + [proof_boundary] is no P versus NP claim until a mechanism reaches NP-complete instances and survives known barrier/proof-system limits
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is proof_lane_precheck
+  + [question] is re-enter P versus NP through the certificate-or-separation admission ledger and select a concrete audit target if one is locally named
+  + [Deep_Research_Priority_Gate] is ready_if_local_records_do_not_identify_a_named_proof_system_or_certificate_target
