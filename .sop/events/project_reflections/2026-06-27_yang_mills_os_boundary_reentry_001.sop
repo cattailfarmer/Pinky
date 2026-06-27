@@ -1,0 +1,37 @@
+Subject: Yang-Mills OS Boundary Reentry
+
+Description: Reentry record after P versus NP saturation, selecting the Yang-Mills OS reconstruction boundary as the next active proof-inquiry surface.
+
+& [YangMillsOSBoundaryReentry] is a project_reflection record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [lane] is Yang-Mills Existence and Mass Gap
+  + [previous_lane] is P versus NP
+  + [previous_status] is saturated_until_new_candidate
+  + [previous_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_p_vs_np_resolution_repair_saturation_reflection_001.sop
+  + [selected_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_OS_Reconstruction_Boundary_Ledger.sop
+  + [authority_status] is reentry_not_proof
+  + [proof_boundary] is no Yang-Mills construction, no OS reconstruction authority, and no mass-gap proof
+
+& [LocalRecordReadout] is the Yang-Mills surface
+  + [os_saturation_reflection] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_yang_mills_os_reconstruction_saturation_reflection_001.sop
+    = status: saturated_for_current_cycle
+    = decisive_missing_artifact: continuum Euclidean measure or Schwinger functions with OS-ready properties
+  + [os_boundary_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_OS_Reconstruction_Boundary_Ledger.sop
+    = first_boundary: finite cutoff does not imply continuum authority
+  + [complete_claim_stage_audit] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_yang_mills_complete_claim_stage_audit_001.sop
+    = first_missing_feature: independent_acceptance_of_uniform_estimates_and_regulator_equivalence
+
+& [ReentryDecision] is the current shape
+  + [best_live_question] is whether any concrete artifact can supply an OS-ready continuum Yang-Mills measure or Schwinger function family
+  + [current_best_audit_target] is recent complete-proof claim only if a specific theorem section is selected for line-by-line verification
+  + [route_status] is boundary_only
+  + [curious_periphery] is regulator equivalence and uniform estimates for continuum cutoff removal
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: local records already identify the missing feature as validation of specific estimates, not low-resolution concept mapping
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is audit_target_selection
+  + [question] is inspect whether the recent complete-proof claim contains a concrete uniform-estimate or regulator-equivalence theorem section suitable for line-by-line audit
+  + [expected_output] is either a theorem-section audit target or a Yang-Mills saturation reflection for this cycle
+
