@@ -16,10 +16,10 @@ Description: Internal navigation map of missing theorem shapes, audit targets, a
 
 & [LaneRows] is the missing theorem table
   + [bsd] is Birch and Swinnerton-Dyer
-    = missing_theorem_shape: rank-parametrized source-count mechanism with independence, same-frame measurement, and upper-control closure
+    = missing_theorem_shape: single theorem package joining rank-parametrized source factory, derived-height or regulator nondegeneracy, and same-hypothesis upper Selmer control
     = current_status: saturated_for_current_cycle
-    = best_reentry_target: higher-rank Euler/Kolyvagin-style mechanism or source-count theorem for line-by-line sufficiency audit
-    = audit_boundary: point or cycle existence is insufficient without independence and upper control
+    = best_reentry_target: named package proving source factory, measurement nondegeneracy, and upper control under one hypothesis set, or genuinely new source-count theorem for line-by-line sufficiency audit
+    = audit_boundary: abstract Selmer control, derived-height measurement, and special Heegner/Chow-Heegner sources are individually meaningful but insufficient without the unified join
   + [navier_stokes] is Navier-Stokes Existence and Smoothness
     = missing_theorem_shape: exact theorem converting local velocity/enstrophy/cutoff tail budgets into same-cylinder pressure smallness, or alternate pressure-Hessian/defect-functional inequality with continuation closure
     = current_status: saturated_for_current_cycle
