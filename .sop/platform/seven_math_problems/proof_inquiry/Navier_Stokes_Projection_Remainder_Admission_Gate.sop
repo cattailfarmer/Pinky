@@ -43,8 +43,8 @@ Description: Project-local gate for testing whether a nonlocal pressure tail can
 & [CurrentApplication] is the project nonlocal far-field tail
   + [operator_definition_status] is exact_projection_operator_named
     = reason: local pressure projection source is selected and the structural formula surface is extracted as E_q^* projection with pressure representation partial_t grad p_h plus grad p_0
-  + [source_term_mapping_status] is analogy_only
-    = reason: the far-field tail is conceptually a nonlocal remainder but is not yet mapped to p_h, p_0, or a projection remainder term
+  + [source_term_mapping_status] is partially_mapped
+    = reason: source tail is not admitted as p_h; it plausibly splits across p_0, projection remainder, and cutoff error, but no source subterm split is extracted
   + [larger_scale_norm_status] is source_tail_only
     = reason: no accepted larger-scale velocity or pressure norm has been extracted
   + [decay_or_smallness_status] is absent
@@ -52,11 +52,11 @@ Description: Project-local gate for testing whether a nonlocal pressure tail can
   + [same_cylinder_output_status] is absent
     = reason: no same-cylinder pressure L3_over_2 or oscillation output has been obtained
   + [admission_status] is boundary_only
-  + [first_missing_feature] is source_tail_mapping_to_p_h_p_0_or_projection_remainder_terms
+  + [first_missing_feature] is source_tail_subterm_split_into_p_0_projection_remainder_and_cutoff_error
 
 & [CurrentReading] is the developed obstruction
   + [old_blocker] is project_tail_budget_not_expressed_under_local_pressure_projection_operator
-  + [new_blocker] is source_tail_mapping_to_p_h_p_0_or_projection_remainder_terms
-  + [best_next_handle] is map the source tail into p_h, p_0, or projection remainder slots before comparing source-tail bounds
+  + [new_blocker] is source_tail_subterm_split_into_p_0_projection_remainder_and_cutoff_error
+  + [best_next_handle] is inspect source tail text directly and separate far-field, tensor/source, and cutoff subterms before comparing source-tail bounds
   + [proof_promotion_status] is blocked
   + [lock_mass_change] is none
