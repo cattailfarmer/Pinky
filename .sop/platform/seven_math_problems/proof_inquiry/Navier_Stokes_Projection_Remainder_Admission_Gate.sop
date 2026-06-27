@@ -1,0 +1,62 @@
+Subject: Navier-Stokes Projection Remainder Admission Gate
+
+Description: Project-local gate for testing whether a nonlocal pressure tail can be admitted as a local-pressure-projection remainder estimate.
+
+& [NavierStokesProjectionRemainderAdmissionGate] is a math inquiry tool
+  + [tool_uuid] is 7ec093d2-1f52-41ed-9358-0cb9ce3b61f6
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-27
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_nonlocal_projection_remainder_scan_001.sop
+  + [parent_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Tail_Decomposition_Remainder_Ledger.sop
+  + [role] is test whether far-field pressure-tail language can enter a local pressure projection estimate
+  + [not_role] is proving a projection estimate, validating the source route, or treating nonlocal tails as local pressure smallness
+
+& [GateColumnSet] is the admission surface
+  + [operator_definition_status] is exact_projection_operator_named, frame_named_only, incompatible_operator, absent, or unclear
+  + [source_term_mapping_status] is mapped_to_projection_term, partially_mapped, analogy_only, absent, or unclear
+  + [larger_scale_norm_status] is velocity_norm_available, pressure_norm_available, mixed_norm_available, source_tail_only, absent, or unclear
+  + [decay_or_smallness_status] is threshold_smallness, scale_decay, bounded_only, conditional, absent, or unclear
+  + [same_cylinder_output_status] is pressure_L3_over_2_smallness, pressure_oscillation_smallness, bounded_remainder_only, pressure_work_only, absent, or unclear
+  + [admission_status] is admitted_for_line_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+  + [first_missing_feature] is the earliest missing item blocking admission
+
+& [UseProcedure] is the projection-remainder admission workflow
+  + [step_001_operator] is name the exact local pressure projection or projected-pressure operator statement
+  + [step_002_map_source] is map the source tail term to the operator's nonlocal or outer-pressure remainder term
+  + [step_003_norm] is identify the larger-scale velocity or pressure norm controlling the remainder
+  + [step_004_decay] is classify whether that norm gives threshold smallness, scale decay, or boundedness only
+  + [step_005_output] is identify whether the output is same-cylinder pressure L3_over_2, pressure oscillation, bounded remainder, or only pressure work
+  + [step_006_admit] is admit only if the operator, mapping, norm, decay, and same-cylinder output all match the target theorem frame
+
+  = must: distinguish bounded nonlocal remainder from epsilon-small local pressure quantity
+  = must: require a larger-scale norm or decay mechanism before any far-field tail promotion
+  = must: preserve operator-frame compatibility
+  = should: trigger Deep_Research_Priority_Gate when the exact projection formula cannot be resolved locally
+  - never: count a named tail module as an operator remainder without a source-term mapping
+
+(navier_stokes_projection_remainder_admission_gate) :projection operator, source tail, larger-scale norm, decay/ |same-cylinder pressure output|
+  + [inside] is admission control for nonlocal pressure-tail to projection-remainder claims
+  + [boundary] is admission clarifies a line-audit target but does not reduce Navier-Stokes lock mass
+  |outside| CKN proof promotion, generic pressure estimates, and source-route validation
+
+& [CurrentApplication] is the project nonlocal far-field tail
+  + [operator_definition_status] is frame_named_only
+    = reason: local pressure projection is selected, but the exact operator formula has not yet been copied into the project-local comparison
+  + [source_term_mapping_status] is analogy_only
+    = reason: the far-field tail is conceptually a nonlocal remainder but is not mapped to an operator term
+  + [larger_scale_norm_status] is source_tail_only
+    = reason: no accepted larger-scale velocity or pressure norm has been extracted
+  + [decay_or_smallness_status] is absent
+    = reason: no threshold smallness or scale decay is proved or cited for the projection remainder
+  + [same_cylinder_output_status] is absent
+    = reason: no same-cylinder pressure L3_over_2 or oscillation output has been obtained
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is exact_projection_operator_formula_and_source_tail_mapping
+
+& [CurrentReading] is the developed obstruction
+  + [old_blocker] is project_tail_budget_not_expressed_under_local_pressure_projection_operator
+  + [new_blocker] is exact_projection_operator_formula_and_source_tail_mapping
+  + [best_next_handle] is extract the operator definition from the selected local pressure projection source before comparing source-tail bounds
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
