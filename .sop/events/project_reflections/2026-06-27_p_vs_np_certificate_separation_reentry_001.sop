@@ -1,0 +1,54 @@
+Subject: P vs NP Certificate Separation Reentry
+
+Description: Reentry decision and proof-lane precheck after Hodge saturation moved active focus to P versus NP.
+
+& [PvsNPCertificateSeparationReentry] is a proof_lane_precheck record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 1632b46 Route from Hodge saturation to P vs NP
+  + [lane] is P versus NP
+  + [admission_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Certificate_Or_Separation_Admission_Ledger.sop
+  + [proof_system_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Boundary_Ledger.sop
+  + [operator_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Operator_Completeness_Gate.sop
+  + [authority_boundary] is reentry and target selection only
+  + [not_claimed] is no P equals NP algorithm, no P not equals NP lower bound, and no polynomial refutation theorem
+
+& [LocalRecordReadout] is the current P vs NP surface
+  + [certificate_or_separation_ledger] is boundary_only
+    = first_missing_feature: no_named_route_with_proof_system_or_barrier_placement
+  + [operator_completeness_gate] is local_propagation_with_repair_blocked
+    = first_gap: global_completeness
+    = missing: failure_certificate and polynomial branching control
+  + [proof_complexity_deep_research] is resolved_to_proof_system_boundary
+    = meaning: propagation fixed-point certification is a proof-system strength question
+    = warning: local consistency is complete only in restricted bounded-width or tractable scopes
+  + [proof_system_boundary_ledger] is best_current_handle
+    = reason: every proposed coherence operator must be placed into local consistency, resolution/CDCL, cutting planes, polynomial calculus, sum-of-squares, Frege-like, or lower-bound route before proof-shaped claims
+
+& [RouteClassification] is the selected shape
+  + [candidate_route] is polynomial_unsat_certificate_or_proof_system_simulation
+  + [route_type] is p_equals_np_certificate
+  + [target_scope] is SAT_3SAT_or_NP_complete_CSP
+  + [proof_system_or_model] is unknown_until_operator_placed
+  + [certificate_or_lower_bound_output] is polynomial_refutations_or_simulation_theorem_needed
+  + [worst_case_polynomial_status] is unknown
+  + [barrier_status] is not_applicable_for_p_equals_np_route_but_lower_bound_barriers_remain_if_route_flips
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is no_named_operator_with_proof_system_placement_and_polynomial_unsat_certificates
+
+& [DevelopedObstruction] is the current shape of meaning
+  + [old_question] is whether a coherence or propagation operator can solve NP-complete instances
+  + [new_question] is whether any named operator polynomially simulates a proof system strong enough to refute all hard SAT or NP-complete CSP instances
+  + [blocked_route] is local_propagation_with_repair
+    = reason: locally consistent hard instances can remain globally unsatisfiable and repair may hide exponential search
+  + [most_promising_next_target] is proof_system_simulation_admission
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is tooling_or_proof_lane_precheck
+  + [question] is build or apply a proof-system simulation admission gate that asks whether a named operator simulates resolution, cutting planes, polynomial calculus, sum-of-squares, or Frege-like systems with polynomial proof size on NP-complete scope
+  + [tool_need] is conditional
+    = reason: the existing proof-system boundary ledger classifies systems, but a simulation-specific gate may be needed to test operator-to-proof-system claims
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: local records already resolve the periphery to proof-system simulation and no external lookup is needed yet
