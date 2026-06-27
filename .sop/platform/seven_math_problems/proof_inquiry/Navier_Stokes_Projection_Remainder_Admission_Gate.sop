@@ -41,10 +41,10 @@ Description: Project-local gate for testing whether a nonlocal pressure tail can
   |outside| CKN proof promotion, generic pressure estimates, and source-route validation
 
 & [CurrentApplication] is the project nonlocal far-field tail
-  + [operator_definition_status] is frame_named_only
-    = reason: local pressure projection is selected, but the exact operator formula has not yet been copied into the project-local comparison
+  + [operator_definition_status] is exact_projection_operator_named
+    = reason: local pressure projection source is selected and the structural formula surface is extracted as E_q^* projection with pressure representation partial_t grad p_h plus grad p_0
   + [source_term_mapping_status] is analogy_only
-    = reason: the far-field tail is conceptually a nonlocal remainder but is not mapped to an operator term
+    = reason: the far-field tail is conceptually a nonlocal remainder but is not yet mapped to p_h, p_0, or a projection remainder term
   + [larger_scale_norm_status] is source_tail_only
     = reason: no accepted larger-scale velocity or pressure norm has been extracted
   + [decay_or_smallness_status] is absent
@@ -52,11 +52,11 @@ Description: Project-local gate for testing whether a nonlocal pressure tail can
   + [same_cylinder_output_status] is absent
     = reason: no same-cylinder pressure L3_over_2 or oscillation output has been obtained
   + [admission_status] is boundary_only
-  + [first_missing_feature] is exact_projection_operator_formula_and_source_tail_mapping
+  + [first_missing_feature] is source_tail_mapping_to_p_h_p_0_or_projection_remainder_terms
 
 & [CurrentReading] is the developed obstruction
   + [old_blocker] is project_tail_budget_not_expressed_under_local_pressure_projection_operator
-  + [new_blocker] is exact_projection_operator_formula_and_source_tail_mapping
-  + [best_next_handle] is extract the operator definition from the selected local pressure projection source before comparing source-tail bounds
+  + [new_blocker] is source_tail_mapping_to_p_h_p_0_or_projection_remainder_terms
+  + [best_next_handle] is map the source tail into p_h, p_0, or projection remainder slots before comparing source-tail bounds
   + [proof_promotion_status] is blocked
   + [lock_mass_change] is none
