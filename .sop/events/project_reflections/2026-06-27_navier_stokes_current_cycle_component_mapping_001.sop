@@ -1,0 +1,69 @@
+Subject: Navier-Stokes Current-Cycle Component Mapping 001
+
+Description: Current-cycle component mapping of the Navier-Stokes source pressure-tail formula into the local suitable pressure/projection frame.
+
+& [NavierStokesCurrentCycleComponentMapping] is a project_reflection record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [trigger_commit] is 427e93f Precheck Navier-Stokes pressure projection bridge
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_local_projection_tail_precheck_001.sop
+  + [active_problem] is Navier-Stokes Existence and Smoothness
+  + [authority_status] is component_mapping_not_proof
+  + [proof_boundary] is no Navier-Stokes regularity proof, no pressure-smallness theorem, and no continuation criterion admitted
+
+& [PriorMappingReadout] is local_record_reentry
+  + [slot_mapping] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_source_tail_projection_slot_mapping_001.sop
+    = mapping_result: partial_ambiguous_mapping
+    = likely_slots: p_0_or_projection_remainder_or_cutoff_error
+  + [formula_mapping] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_tail_formula_projection_mapping_001.sop
+    = new_blocker: tail_formula_outputs_velocity_enstrophy_cutoff_budgets_not_pressure_projection_smallness
+  + [projection_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Projection_Remainder_Admission_Gate.sop
+    = admission_status: boundary_only
+    = first_missing_feature: no_formula_level_map_from_tail_budget_to_same_cylinder_pressure_quantity
+
+& [ComponentMapping] is the current frame assignment
+  + [component_001_local_L3_velocity_budget] is larger_scale_velocity_norm_candidate
+    = pressure_frame_slot: p_0_source_input_or_projection_remainder_input
+    = admission_status: boundary_only
+    = blocker: velocity_norm_input_is_not_pressure_L3_over_2_or_pressure_oscillation_output
+  + [component_002_scaled_enstrophy_budget] is local_gradient_or_vorticity_energy_candidate
+    = pressure_frame_slot: p_0_source_or_gradient_energy_input
+    = admission_status: boundary_only
+    = blocker: enstrophy_controls_tail_absorption_not_same_cylinder_pressure_smallness
+  + [component_003_cutoff_commutator_budget] is cutoff_error
+    = pressure_frame_slot: outside_pressure_smallness_or_projection_error_if_separately_absorbed
+    = admission_status: boundary_only
+    = blocker: no_threshold_preserving_cutoff_error_absorption_estimate
+  + [component_004_transport_boundary_budget] is transport_or_boundary_error
+    = pressure_frame_slot: outside_same_cylinder_pressure_quantity
+    = admission_status: boundary_only
+    = blocker: transport_boundary_term_is_not_pressure_remainder_estimate
+  + [component_005_outer_log_factor] is scale_loss
+    = pressure_frame_slot: adverse_remainder_factor
+    = admission_status: rejected_for_smallness_promotion
+    = blocker: logarithmic_outer_scale_loss_worsens_epsilon_smallness_unless_offset_by_decay
+  + [component_006_harmonic_pressure_part] is not_extracted_from_source_tail_formula
+    = pressure_frame_slot: p_h_only_if_explicit_harmonic_component_is_supplied
+    = admission_status: boundary_only
+    = blocker: source_tail_formula_does_not_name_harmonic_pressure_control
+
+& [MappingResult] is no_theorem_target_selected
+  + [result] is current_cycle_mapping_confirms_block
+  + [reason] is every source tail subterm enters as velocity, enstrophy, cutoff, transport, or scale-loss budget rather than a same-cylinder pressure quantity
+  + [best_possible_new_route] is velocity_enstrophy_cutoff_budget_to_pressure_projection_smallness_theorem
+  + [first_missing_feature] is no_theorem_converting_velocity_enstrophy_cutoff_budgets_to_same_cylinder_pressure_smallness
+  + [Deep_Research_Priority_Gate] is conditionally_ready
+    = trigger: only if a specific theorem family for velocity-enstrophy-to-pressure projection smallness is selected
+
+& [DevelopedUnderstanding] is the current shape of meaning
+  + [old_shape] is map source pressure-tail components to p_h, p_0, projected-pressure remainder, or outside status
+  + [new_shape] is the mapping succeeds only negatively: p_h is absent, p_0/remainder inputs are not pressure outputs, and cutoff/scale terms remain outside pressure-smallness authority
+  + [meaning_gained] is the pressure bridge cannot be advanced by relabeling the source tail; it would require a new theorem turning these budgets into pressure smallness
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is route_decision
+  + [question] is decide whether to run a targeted deep-research prospect for velocity-enstrophy-to-pressure projection smallness or mark this Navier-Stokes reentry saturated
+  + [expected_output] is a Deep_Research_Priority_Gate event or a saturation reflection
+
