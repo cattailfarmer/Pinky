@@ -36,10 +36,10 @@ Description: Ordered proof-inquiry route for the six remaining Millennium proble
   + [stage_006_adjustment] is strengthen, narrow, split, or retire the proposition according to evidence
 
 & [CurrentFocus] is the active lane
-  + [problem] is Navier-Stokes Existence and Smoothness
-  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_pressure_bridge_saturation_reflection_001.sop
-  + [previous_problem] is Poincare Conjecture
-  + [previous_status] is model_boundary_verified
-    = first_lock: no_new_poincare_proof_work_symbolic_ricci_flow_is_model_only
-  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Projection_Remainder_Admission_Gate.sop
-  + [next_question] is select another concrete target from the refined map, most likely BSD source-count sufficiency audit or Navier-Stokes pressure-Hessian/defect-functional handle
+  + [problem] is Birch and Swinnerton-Dyer
+  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_refined_map_bsd_reentry_selection_001.sop
+  + [previous_problem] is Navier-Stokes Existence and Smoothness
+  + [previous_status] is saturated_until_new_candidate
+    = first_lock: no_velocity_enstrophy_cutoff_budget_to_pressure_smallness_theorem
+  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Transfer_Sufficiency_Ledger.sop
+  + [next_question] is apply the BSD sufficiency ledger to the generalized Heegner or Chow-Heegner plus derived-height bridge

@@ -1,0 +1,44 @@
+Subject: Refined Map BSD Reentry Selection 001
+
+Description: Target-selection record from the refined missing theorem map, selecting BSD source-count sufficiency through a two-part source plus measurement bridge.
+
+& [RefinedMapBSDReentrySelection] is a project_reflection record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [trigger_commit] is debfbe4 Saturate Navier-Stokes pressure bridge reentry
+  + [source_map] is C:\Project\Pinky\.sop\platform\seven_math_problems\Six_Lane_Missing_Theorem_Map.sop
+  + [selected_lane] is Birch and Swinnerton-Dyer
+  + [authority_status] is target_selection_not_proof
+  + [proof_boundary] is no BSD proof, no rank equality theorem, and no source-count sufficiency theorem admitted
+
+& [SelectionReason] is the walking decision
+  + [map_row] is BSD rank-parametrized source-count mechanism with independence, same-frame measurement, and upper-control closure
+  + [available_local_tools] are C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Transfer_Sufficiency_Ledger.sop and C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Higher_Rank_Frontier_Matrix.sop
+  + [reason] is BSD has the cleanest next non-repeated audit surface after Navier-Stokes pressure bridge saturation
+  + [selected_mode] is target_prospecting_then_sufficiency_precheck
+
+& [SelectedTarget] is the two-part BSD bridge
+  + [source_part] is generalized Heegner or Chow-Heegner cycle-to-point corridors
+  + [measurement_part] is derived heights plus regulator nondegeneracy
+  + [control_part] is same-hypothesis upper Selmer control or equivalent bound
+  + [bounded_question] is whether any local record already supplies a candidate row where source count, independence measurement, and upper control can be tested under one hypothesis package
+  + [expected_positive_target] is a concrete family or theorem statement producing enough independent classes or points with a nondegenerate height/regulator determinant and upper control
+  + [expected_negative_result] is confirmation that current records have source families and measurement language but no rank-parametrized source factory
+
+& [PriorRecordReadout] is current evidence
+  + [frontier_matrix] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_bsd_higher_rank_frontier_matrix_001.sop
+    = best_primary_focus: derived heights plus regulator nondegeneracy
+    = best_constructive_periphery: generalized Heegner cycles
+    = shape_correction: no single candidate currently does all jobs
+  + [source_transfer_saturation] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_bsd_source_transfer_reopen_saturation_reflection_001.sop
+    = first_boundary: no rank-parametrized source factory over the target field has been identified
+  + [sufficiency_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Transfer_Sufficiency_Ledger.sop
+    = first_gap_surface: source count, independence, measurement, and upper control must all close
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is sufficiency_precheck
+  + [question] is apply the BSD Source Transfer Sufficiency Ledger to the generalized Heegner or Chow-Heegner plus derived-height bridge and decide whether a concrete theorem target exists
+  + [expected_output] is admitted line-audit target, boundary-only row, or saturation reflection
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: local records already identify the two-part bridge; the next move is ledger application before external search
+
