@@ -37,9 +37,9 @@ Description: Ordered proof-inquiry route for the six remaining Millennium proble
 
 & [CurrentFocus] is the active lane
   + [problem] is Yang-Mills Existence and Mass Gap
-  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_yang_mills_os_boundary_reentry_001.sop
+  + [focus_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_yang_mills_uniform_limit_audit_target_selection_001.sop
   + [previous_problem] is P versus NP
   + [previous_status] is saturated_until_new_candidate
     = first_lock: no_polynomial_bound_on_repair_conflict_trace_size_for_hard_sat_instances
   + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_OS_Reconstruction_Boundary_Ledger.sop
-  + [next_question] is whether the recent complete-proof claim contains a concrete uniform-estimate or regulator-equivalence theorem section suitable for line-by-line audit
+  + [next_question] is audit Appendix C Cauchy convergence against the polymer-bound dependencies, beginning with Lipschitz continuity in lattice spacing

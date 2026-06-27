@@ -1,0 +1,55 @@
+Subject: Yang-Mills Uniform Limit Audit Target Selection
+
+Description: Bounded target-selection pass for the recent Yang-Mills complete-proof claim, choosing the first line-by-line audit section under the OS reconstruction boundary.
+
+& [YangMillsUniformLimitAuditTargetSelection] is a proof_inquiry record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [active_problem] is Yang-Mills Existence and Mass Gap
+  + [reentry_commit] is 69d8d38 Route from P vs NP saturation to Yang-Mills
+  + [reentry_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_yang_mills_os_boundary_reentry_001.sop
+  + [boundary_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_OS_Reconstruction_Boundary_Ledger.sop
+  + [candidate_artifact] is recent complete-proof claim centered on five-dimensional orbifold regulator and constructive-QFT pipeline
+  + [authority_status] is target_selection_not_proof
+  + [proof_boundary] is no Yang-Mills proof authority admitted
+
+& [SourceSet] is selected_claim_source
+  + [source_001] is https://arxiv.org/html/2506.00284v1
+    = title: A Constructive Proof of Existence and Mass Gap for Pure SU(3) Yang-Mills in Four-Dimensional Space-Time
+    = inspected_sections: table_of_contents, Section 6, Section 7, Appendix C, Appendix E
+  + [source_002] is https://philarchive.org/archive/NIETEO-12v8
+    = role: alternate upload previously indexed but not used for this target-selection pass
+
+& [AuditTargetSelection] is the selected first theorem section
+  + [selected_target] is Appendix C Cauchy Convergence in the Space of Tempered Distributions
+  + [supporting_section] is Section 6 Continuum and Infinite-Volume Limits
+  + [why_first] is continuum Schwinger-function convergence is upstream of OS reconstruction, observables, and spectral-gap transfer
+  + [claim_to_audit] is lattice Schwinger functions converge to a unique tempered-distribution limit as lattice spacing goes to zero and volume goes to infinity
+  + [claimed_inputs] are uniform exponential-decay bounds, polymer expansion control, Lipschitz continuity in lattice spacing, Lipschitz continuity in volume, and joint limit compatibility
+  + [first_dependency] is Section 4 polymer expansion and Appendix A Kotecky-Preiss convergence threshold
+  + [first_risk] is whether the claimed uniform bounds are strong and correctly parameterized enough to justify differentiating/summing over plaquette insertions and passing to the joint continuum/infinite-volume limit
+  + [admission_status] is admitted_for_line_audit
+  + [first_missing_feature] is checked_uniform_estimate_chain_from_polymer_bounds_to_schwinger_function_cauchy_convergence
+
+& [OSBoundaryApplication] is stage placement
+  + [finite_cutoff_status] is finite_model_claimed
+  + [continuum_limit_status] is claimed_limit_with_auditable_appendix_c
+  + [reflection_positivity_status] is claimed_upstream
+  + [schwinger_function_status] is claimed_constructed_after_limit
+  + [reconstruction_status] is blocked_until_limit_and_os_axioms_are_verified
+  + [gap_transfer_status] is blocked_upstream
+  + [first_missing_feature] is line_by_line_validation_of_appendix_c_uniform_limit_estimates
+
+& [DevelopedUnderstanding] is the current meaning shape
+  + [old_question] is whether the complete-proof claim is precise enough to audit
+  + [new_question] is whether Appendix C's Cauchy convergence estimates really follow from the polymer and clustering bounds cited earlier in the paper
+  + [meaning_gained] is the first responsible audit target is not the mass-gap section but the continuum-limit construction of Schwinger functions
+  + [route_status] is concrete_audit_target_selected
+  + [Deep_Research_Priority_Gate] is triggered_as_source_inspection
+    = reason: the local record named the missing feature, but the source section had to be inspected to select a concrete theorem-level audit target
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is line_by_line_audit_precheck
+  + [question] is audit Appendix C against the exact dependencies in Sections 4, 6, Appendix A, and Appendix E, beginning with the claimed Lipschitz continuity in lattice spacing
+  + [expected_output] is an audit ledger row that either accepts the section for further verification, isolates a gap, or demotes the complete-proof claim back to boundary-only
+
