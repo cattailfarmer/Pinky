@@ -1,0 +1,60 @@
+Subject: Navier-Stokes CKN Pressure Precheck
+
+Description: Proof-lane precheck for the selected local epsilon pressure-size target, using the existing pressure-bound-to-epsilon audit.
+
+& [NavierStokesCKNPressurePrecheck] is a proof_lane_precheck record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 2ce0ee5 Select Navier-Stokes pressure criterion target
+  + [parent_scan] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_pressure_criterion_specificity_scan_001.sop
+  + [audit_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
+  + [selected_target] is CKN_style_local_velocity_pressure_smallness
+  + [authority_boundary] is precheck only
+  + [not_claimed] is no CKN theorem proof, no validation of the external route, and no conversion from tail budget to regularity
+
+& [PrecheckRowSet] is the target admission table
+  + [row_001_accepted_pressure_quantity] is scale-invariant local pressure size or pressure oscillation in the same parabolic cylinder as the regularity criterion
+    = project_object: localized_entropy_pressure_bound_and_tail_budget
+    = current_evidence: source extraction records pressure-work bound and tail budget, not accepted pressure-size smallness
+    = required_conversion_lemma: tail_budget_controls_same_cylinder_pressure_L3_over_2_or_pressure_oscillation_smallness
+    = blocker: pressure_work_bound_is_not_pressure_size_smallness
+    = status: not_admitted
+  + [row_002_accepted_velocity_partner] is local velocity quantity paired with pressure in the epsilon criterion
+    = project_object: endpoint_global_L3_with_local_entropy_terms
+    = current_evidence: endpoint L3 language is present, but same-cylinder velocity smallness is not extracted
+    = required_conversion_lemma: local_entropy_terms_and_tail_budget_imply_same_cylinder_velocity_pressure_smallness
+    = blocker: endpoint_continuation_target_is_not_local_epsilon_target
+    = status: not_admitted
+  + [row_003_same_frame_cylinder] is a regularity cylinder accepted by the local epsilon theorem
+    = project_object: active_ball_and_local_entropy_ball
+    = current_evidence: active/local balls exist in the source-bound extraction table
+    = required_conversion_lemma: active_ball_selection_yields_regularizing_parabolic_cylinder_with_matching_scale
+    = blocker: source_active_ball_is_not_yet_an_accepted_epsilon_regularization_cylinder
+    = status: conditional_not_admitted
+  + [row_004_harmonic_nonlocal_pressure] is controlled pressure decomposition compatible with the local criterion
+    = project_object: tail_module_and_pressure_work_absorption
+    = current_evidence: tail module names far-field and cutoff debris but does not bound nonlocal or harmonic pressure in the criterion frame
+    = required_conversion_lemma: tail_module_controls_harmonic_or_nonlocal_pressure_remainder_in_same_frame
+    = blocker: pressure_remainder_control_not_extracted
+    = status: not_admitted
+  + [row_005_threshold_smallness] is explicit epsilon-threshold smallness, not merely boundedness
+    = project_object: localized_pressure_bound_and_tail_budget
+    = current_evidence: audit records smallness_status absent
+    = required_conversion_lemma: source_pressure_bound_has_threshold_form_below_accepted_epsilon
+    = blocker: no_smallness_threshold_extracted_from_source_pressure_bound
+    = status: not_admitted
+
+& [PrecheckReading] is the developed obstruction
+  + [admission_result] is not_admitted_for_CKN_line_audit
+  + [reason] is the selected target is precise, but every admission row still requires a conversion lemma absent from current project artifacts
+  + [most_meaningful_conversion] is tail_budget_controls_same_cylinder_pressure_L3_over_2_or_pressure_oscillation_smallness
+  + [second_conversion] is active_ball_selection_yields_regularizing_parabolic_cylinder_with_matching_scale
+  + [third_conversion] is same_cylinder_velocity_partner
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is target_prospecting
+  + [question] is search specifically for source or accepted lemmas that convert pressure tails, harmonic/nonlocal remainders, or pressure oscillation into CKN-scale local pressure smallness
+  + [Deep_Research_Priority_Gate] is ready_if_no_local_source_can_resolve_the_conversion_lemma
+  + [stop_condition] is do not repeat CKN admission rows unless a new lemma or source text changes one row status
