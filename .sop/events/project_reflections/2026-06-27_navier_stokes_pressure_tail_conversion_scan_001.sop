@@ -1,0 +1,66 @@
+Subject: Navier-Stokes Pressure Tail Conversion Scan
+
+Description: Targeted scan for pressure-tail, harmonic-pressure, and nonlocal-pressure conversion lemmas after the CKN pressure precheck.
+
+& [NavierStokesPressureTailConversionScan] is a target_prospecting record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 25c30fb Precheck Navier-Stokes CKN pressure target
+  + [parent_precheck] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_ckn_pressure_precheck_001.sop
+  + [lane] is Navier-Stokes
+  + [authority_boundary] is source and theorem-interface prospecting only
+  + [not_claimed] is no found source proves the project-local tail-budget conversion lemma
+
+& [SearchQuestion] is the bounded inquiry
+  + [question] is whether accepted local pressure-decomposition or pressure-regularity literature contains a lemma close to tail_budget_controls_same_cylinder_pressure_L3_over_2_or_pressure_oscillation_smallness
+  + [target_quantity] is same-cylinder scale-invariant pressure L3_over_2 or pressure oscillation smallness
+  + [target_context] is CKN-style local epsilon regularity for suitable weak solutions
+
+& [CandidateConversionNeighborhood] is the source scan
+  + [candidate_001_local_pressure_decomposition] is local suitable weak solution pressure decomposition with harmonic component
+    = source: Wolf-local-suitable-solution literature as represented by local boundedness and local pressure decomposition expositions
+    = source_url: https://sebastian-hensel.com/master_thesis.pdf
+    = fit: high_background
+    = reading: this gives the correct decomposition vocabulary, but not the project-specific tail-budget smallness conversion
+    = blocker: decomposition is structural; smallness still must be proved in the same cylinder
+  + [candidate_002_local_pressure_estimates] is local pressure estimates inside epsilon-regularity frameworks
+    = source: Guevara and Phuc, Local energy bounds and epsilon-regularity criteria for the 3D Navier-Stokes equations
+    = source_url: https://www.math.lsu.edu/~pcnguyen/papers_html/Guevara-Phuc-12-29-16.pdf
+    = fit: strongest_audit_support
+    = reading: useful for line-auditing how pressure quantities are estimated from local energy and larger-scale terms
+    = blocker: still does not identify the project tail budget as one of the accepted pressure quantities
+  + [candidate_003_pressure_role_partial_regularity] is pressure-centered partial regularity and dissipative/local suitable frameworks
+    = source: Chamorro, Lemarie-Rieusset, and Mayoufi pressure-role line, plus later ETH pressure-role work
+    = source_url: https://www.research-collection.ethz.ch/bitstreams/1c1170b9-dc9d-4f74-a4d5-b8479bb403bf/download
+    = fit: medium_high_context
+    = reading: clarifies that pressure treatment is central and subtle in partial regularity
+    = blocker: not yet a narrow same-cylinder tail-to-pressure-smallness lemma
+  + [candidate_004_harmonic_pressure_caution] is finite-scale harmonic-pressure caution
+    = source: arXiv 2606.08352 Finite-Scale One-Component Regularity via Harmonic Pressure
+    = source_url: https://arxiv.org/abs/2606.08352
+    = fit: cautionary
+    = reading: harmonic pressure can have bounded scale-invariant L3_over_2 oscillation while pointwise gradient behavior is bad under time concentration
+    = blocker: strengthens the need to track harmonic/nonlocal pressure separately rather than bundling it into a tail budget
+  + [candidate_005_pressure_conditions_local_regular_regularization] is older pressure conditions for local regularity
+    = source: Neustupa and Penel, Pressure conditions for local regularity of solutions of the Navier-Stokes equations
+    = source_url: https://emis.de/ft/511
+    = fit: pressure_criterion_candidate
+    = reading: gives pressure-specific local regularity conditions that may help select a theorem statement
+    = blocker: must be checked against exact exponents, weak-solution class, and locality before use
+
+& [ScanReading] is the current result
+  + [conversion_lemma_found] is no
+  + [meaning_gain] is the right next object is not generic pressure regularity but a pressure-decomposition remainder ledger
+  + [first_refinement] is split the project tail budget into local pressure part, harmonic pressure part, nonlocal far-field part, and cutoff/debris part
+  + [second_refinement] is test which part could feed same-cylinder L3_over_2 or oscillation smallness
+  + [third_refinement] is treat harmonic pressure as a caution zone rather than harmless remainder
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: the scan found enough resolved structure for one narrow project-local decomposition ledger
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is tooling
+  + [tool_need] is pressure_tail_decomposition_remainder_ledger
+  + [reason] is the current project object is too bundled; a line audit needs the tail budget separated by pressure component before any theorem statement can be matched
+  + [columns] is component, source_status, accepted_pressure_quantity_match, harmonic_or_nonlocal_risk, required_bound, current_blocker
