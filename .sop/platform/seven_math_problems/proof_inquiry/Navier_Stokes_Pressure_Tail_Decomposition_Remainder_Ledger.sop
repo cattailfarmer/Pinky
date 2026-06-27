@@ -1,0 +1,92 @@
+Subject: Navier-Stokes Pressure Tail Decomposition Remainder Ledger
+
+Description: Project-local math inquiry tool for splitting a bundled pressure-tail budget into pressure components before matching it to local epsilon-regularity quantities.
+
+& [NavierStokesPressureTailDecompositionRemainderLedger] is a math inquiry tool
+  + [tool_uuid] is 8e1e5e3a-c4b1-4d75-9a3f-bd17e61ce810
+  + [project] is seven math problems
+  + [problem] is Navier-Stokes Existence and Smoothness
+  + [created_at] is 2026-06-27
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_pressure_tail_conversion_scan_001.sop
+  + [parent_audit] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
+  + [role] is prevent a pressure tail budget from being treated as pressure smallness before its local, harmonic, nonlocal, and cutoff components are separated
+  + [not_role] is proving Navier-Stokes, validating pressure decomposition estimates, or asserting any component is small without a cited bound
+
+& [LedgerColumnSet] is the decomposition surface
+  + [component] is local_pressure_part, harmonic_pressure_part, nonlocal_far_field_part, cutoff_debris_part, pressure_work_part, or unclear
+  + [source_status] is extracted, named_only, implicit, absent, or unclear
+  + [accepted_pressure_quantity_match] is L3_over_2_pressure_smallness, pressure_oscillation_smallness, pressure_gradient_bound, pressure_work_only, none, or unclear
+  + [same_frame_status] is same_cylinder, comparable_cylinder, larger_scale_only, global_only, conditional, or absent
+  + [harmonic_or_nonlocal_risk] is low, medium, high, or unknown
+  + [required_bound] is the exact estimate needed to feed a local epsilon criterion
+  + [current_blocker] is the earliest missing feature blocking promotion
+  + [admission_status] is admitted_for_pressure_audit, boundary_only, deep_research_needed, rejected_as_authority, or outside
+
+& [UseProcedure] is the component audit workflow
+  + [step_001_split] is list every pressure component hidden inside a tail budget or pressure-work term
+  + [step_002_localize] is mark whether each component lives in the same cylinder as the regularity target
+  + [step_003_match] is map each component to an accepted pressure quantity or mark it pressure_work_only or none
+  + [step_004_risk] is mark harmonic or nonlocal risks before any smallness claim
+  + [step_005_bound] is name the bound that would be required to admit the component to CKN-style pressure smallness
+  + [step_006_status] is classify whether the component is admitted, boundary-only, or needs deep research
+
+  = must: split harmonic pressure from nonlocal far-field pressure
+  = must: separate pressure-work absorption from pressure-size or pressure-oscillation smallness
+  = must: keep same-cylinder locality explicit
+  = should: trigger Deep_Research_Priority_Gate when a component is named but its source lemma cannot be resolved from local artifacts
+  - never: let a bundled tail budget count as L3_over_2 pressure smallness without component-level bounds
+
+(navier_stokes_pressure_tail_decomposition_remainder_ledger) :tail budget, pressure split, target cylinder/ |component admission|
+  + [inside] is pressure-tail decomposition before CKN or pressure-criterion matching
+  + [boundary] is component separation creates audit clarity but not regularity proof
+  |outside| proof promotion, source validation, and generic pressure-criterion summaries
+
+& [CurrentApplication] is the external quadrupole-depletion pressure-tail route
+  + [component_001_local_pressure_part] is local pressure contribution inside the localized entropy pressure bound
+    = source_status: extracted
+    = accepted_pressure_quantity_match: unclear
+    = same_frame_status: same_cylinder_for_source_estimate
+    = harmonic_or_nonlocal_risk: medium
+    = required_bound: scale_invariant_L3_over_2_or_pressure_oscillation_smallness_on_regularizing_cylinder
+    = current_blocker: local_pressure_bound_not_stated_as_accepted_smallness_threshold
+    = admission_status: boundary_only
+  + [component_002_harmonic_pressure_part] is harmonic pressure remainder from pressure decomposition
+    = source_status: implicit
+    = accepted_pressure_quantity_match: pressure_oscillation_smallness_or_unclear
+    = same_frame_status: unclear
+    = harmonic_or_nonlocal_risk: high
+    = required_bound: harmonic_pressure_oscillation_control_in_same_cylinder_with_no_hidden_gradient_concentration
+    = current_blocker: harmonic_remainder_control_not_extracted
+    = admission_status: deep_research_needed
+  + [component_003_nonlocal_far_field_part] is far-field pressure contribution bundled into the tail module
+    = source_status: named_only
+    = accepted_pressure_quantity_match: unclear
+    = same_frame_status: larger_scale_only
+    = harmonic_or_nonlocal_risk: high
+    = required_bound: nonlocal_far_field_tail_bound_implies_same_cylinder_pressure_L3_over_2_or_oscillation_smallness
+    = current_blocker: far_field_tail_not_converted_to_same_cylinder_pressure_quantity
+    = admission_status: deep_research_needed
+  + [component_004_cutoff_debris_part] is cutoff and localization debris bundled into the tail module
+    = source_status: named_only
+    = accepted_pressure_quantity_match: none
+    = same_frame_status: comparable_cylinder
+    = harmonic_or_nonlocal_risk: medium
+    = required_bound: cutoff_debris_absorbed_without_changing_pressure_smallness_threshold
+    = current_blocker: cutoff_debris_absorption_not_separated_from_pressure_size
+    = admission_status: boundary_only
+  + [component_005_pressure_work_part] is pressure-work absorption term used in the source route
+    = source_status: extracted
+    = accepted_pressure_quantity_match: pressure_work_only
+    = same_frame_status: same_cylinder_for_source_estimate
+    = harmonic_or_nonlocal_risk: medium
+    = required_bound: pressure_work_absorption_implies_or_is_replaced_by_pressure_size_smallness
+    = current_blocker: pressure_work_is_not_CKN_pressure_size
+    = admission_status: boundary_only
+
+& [CurrentReading] is the developed proof-shape
+  + [admission_result] is not_admitted_for_CKN_pressure_smallness
+  + [reason] is local, harmonic, nonlocal, cutoff, and pressure-work components all require different bounds and cannot be bundled as one tail-budget smallness claim
+  + [highest_value_next_component] is harmonic_pressure_part
+  + [reason_for_priority] is harmonic pressure is both central to local pressure decomposition and the most dangerous place for false pressure-oscillation intuition
+  + [Deep_Research_Priority_Gate] is ready_for_harmonic_pressure_component_if_next_reentry_needs_resolution
+  + [proof_promotion_status] is blocked
