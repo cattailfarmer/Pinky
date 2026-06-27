@@ -1,0 +1,60 @@
+Subject: Navier-Stokes Local Suitable Pressure Frame Mapping
+
+Description: Proof-lane precheck mapping the project pressure-tail decomposition ledger onto the selected Wolf/local suitable pressure-decomposition frame.
+
+& [NavierStokesLocalSuitablePressureFrameMapping] is a proof_lane_precheck record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is e79b0db Select modulo harmonic pressure frame
+  + [parent_frame] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_modulo_harmonic_pressure_target_frame_001.sop
+  + [decomposition_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Tail_Decomposition_Remainder_Ledger.sop
+  + [selected_frame] is Wolf/local suitable pressure decomposition
+  + [authority_boundary] is frame mapping only
+  + [not_claimed] is no local suitable solution theorem is proved, no pressure decomposition is derived for the source route, and no CKN admission is granted
+
+& [FrameMappingTable] is the current comparison
+  + [row_001_local_pressure_part] is project local pressure contribution inside localized entropy pressure bound
+    = frame_slot: non_harmonic_local_pressure_component
+    = slot_status: conceptual_slot_found
+    = current_evidence: project source extraction says local pressure bound exists in source frame
+    = missing_feature: explicit_operator_level_projection_or_local_pressure_formula_matching_the_local_suitable_frame
+    = admission_status: boundary_only
+  + [row_002_harmonic_pressure_part] is project harmonic pressure remainder from pressure decomposition
+    = frame_slot: harmonic_correction_or_pressure_modulo_harmonic_component
+    = slot_status: conceptual_slot_found
+    = current_evidence: deep-research gate identified harmonic pressure as non-harmless and requiring modulo formulation or separate control
+    = missing_feature: same-cylinder harmonic norm, oscillation, or gradient/remainder control in the chosen frame
+    = admission_status: deep_research_needed
+  + [row_003_nonlocal_far_field_part] is project far-field pressure bundled into tail module
+    = frame_slot: projected_pressure_remainder_or_outer_pressure_tail
+    = slot_status: partial_slot_found
+    = current_evidence: source route names far-field tail but does not express it through local suitable pressure projection
+    = missing_feature: far-field tail estimate rewritten as projected/local pressure remainder in the same cylinder
+    = admission_status: deep_research_needed
+  + [row_004_cutoff_debris_part] is project cutoff and localization debris
+    = frame_slot: cutoff_error_terms_in_local_energy_inequality
+    = slot_status: conceptual_slot_found
+    = current_evidence: source route names cutoff debris, but earlier audit separates it from pressure-size smallness
+    = missing_feature: cutoff error bound that does not alter the local pressure-smallness threshold
+    = admission_status: boundary_only
+  + [row_005_pressure_work_part] is project pressure-work absorption term
+    = frame_slot: local_energy_pressure_work_term
+    = slot_status: conceptual_slot_found
+    = current_evidence: source route has pressure-work absorption in same source estimate frame
+    = missing_feature: replacement of pressure-work absorption by accepted pressure-size or modulo-pressure smallness
+    = admission_status: boundary_only
+
+& [PrecheckReading] is the developed obstruction
+  + [mapping_result] is frame_slots_found_but_not_admitted
+  + [meaning_gain] is the selected local suitable frame gives correct vocabulary for the pressure-tail components
+  + [first_lock] is no explicit operator-level pressure projection/decomposition from the source route into the selected frame
+  + [second_lock] is harmonic component still lacks same-cylinder modulo or remainder control
+  + [third_lock] is nonlocal far-field tail is not yet a projected-pressure remainder estimate
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is target_prospecting
+  + [question] is search for the exact Wolf/local suitable pressure decomposition formula or projected-pressure operator statement and record the operator-level terms needed for a later source-route comparison
+  + [Deep_Research_Priority_Gate] is ready_if_formula_details_are_low_resolution
+  + [stop_condition] is do not attempt CKN admission until at least one operator-level pressure decomposition statement is selected
