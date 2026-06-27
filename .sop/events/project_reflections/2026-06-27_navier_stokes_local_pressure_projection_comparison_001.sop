@@ -1,0 +1,65 @@
+Subject: Navier-Stokes Local Pressure Projection Comparison
+
+Description: Proof-lane precheck comparing pressure-tail decomposition components with local pressure projection operator terms.
+
+& [NavierStokesLocalPressureProjectionComparison] is a proof_lane_precheck record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 02eb9a2 Select Navier-Stokes pressure projection operator
+  + [parent_operator_scan] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_pressure_projection_operator_scan_001.sop
+  + [decomposition_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Tail_Decomposition_Remainder_Ledger.sop
+  + [operator_frame] is local_pressure_projection
+  + [authority_boundary] is comparison only
+  + [not_claimed] is no component has been rewritten through the projection operator with a cited bound
+
+& [ProjectionComparisonTable] is the current component map
+  + [row_001_local_pressure_part] is project local pressure contribution
+    = projection_slot: projected_local_pressure
+    = conceptual_match: yes
+    = cited_bound_status: absent
+    = current_evidence: localized entropy pressure bound is source-extracted but not expressed by local pressure projection
+    = required_next_evidence: formula-level projection of the source local pressure term plus a scale-invariant bound
+    = admission_status: boundary_only
+  + [row_002_harmonic_pressure_part] is project harmonic pressure remainder
+    = projection_slot: harmonic_pressure_correction
+    = conceptual_match: yes
+    = cited_bound_status: absent
+    = current_evidence: harmonic pressure is identified as high-risk and requiring modulo or remainder control
+    = required_next_evidence: same-cylinder harmonic correction estimate or theorem frame that works modulo harmonic pressure
+    = admission_status: deep_research_needed
+  + [row_003_nonlocal_far_field_part] is project far-field pressure tail
+    = projection_slot: nonlocal_or_outer_pressure_remainder
+    = conceptual_match: partial
+    = cited_bound_status: absent
+    = current_evidence: far-field tail is named in source extraction but not expressed as a projected-pressure remainder
+    = required_next_evidence: nonlocal pressure projection estimate that converts far-field tail into same-cylinder pressure quantity or bounded remainder
+    = admission_status: deep_research_needed
+  + [row_004_cutoff_debris_part] is project cutoff and localization debris
+    = projection_slot: cutoff_error_terms
+    = conceptual_match: yes
+    = cited_bound_status: absent
+    = current_evidence: cutoff debris is named but not separated from pressure-size threshold accounting
+    = required_next_evidence: cutoff error absorption bound preserving the epsilon threshold
+    = admission_status: boundary_only
+  + [row_005_pressure_work_part] is project pressure-work absorption term
+    = projection_slot: pressure_work_term
+    = conceptual_match: yes
+    = cited_bound_status: absent
+    = current_evidence: pressure-work is same-source-frame but not pressure-size smallness
+    = required_next_evidence: projection-frame replacement of pressure-work absorption by local pressure-size or modulo-pressure control
+    = admission_status: boundary_only
+
+& [ComparisonReading] is the developed result
+  + [overall_admission] is not_admitted
+  + [meaning_gain] is local pressure projection gives a stable operator vocabulary but no project component has crossed into accepted theorem evidence
+  + [highest_value_next_component] is nonlocal_far_field_part
+  + [reason] is it is the component most likely to connect the source tail-budget language to the projection operator's outer-pressure remainder terms
+  + [secondary_component] is harmonic_pressure_part
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is target_prospecting
+  + [question] is search for local pressure projection estimates that control nonlocal or outer-pressure remainders in terms of larger-scale velocity or pressure quantities
+  + [Deep_Research_Priority_Gate] is ready_for_nonlocal_projection_remainder_if_source_formula_details_are_low_resolution
+  + [stop_condition] is do not repeat the projection comparison table unless a projection estimate changes a row's cited_bound_status
