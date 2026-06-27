@@ -1,0 +1,72 @@
+Subject: Navier-Stokes Pressure Criterion Specificity Scan
+
+Description: Target-prospecting scan selecting the pressure-regularity theorem interface closest to the project-local pressure-tail obstruction.
+
+& [NavierStokesPressureCriterionSpecificityScan] is a target_prospecting record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 88ac6ec Match Navier-Stokes pressure tail hypotheses
+  + [parent_match] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_pressure_tail_hypothesis_match_001.sop
+  + [lane] is Navier-Stokes
+  + [authority_boundary] is target selection only
+  + [not_claimed] is no pressure criterion is proved from the project tail budget, and no Navier-Stokes regularity result is claimed
+
+& [ScanQuestion] is the bounded target-selection question
+  + [question] is which pressure-regularity theorem interface is closest to a local pressure oscillation or L3_over_2 pressure quantity that a tail-budget lemma could target
+  + [selection_standard] is prefer local, scale-invariant, same-cylinder pressure quantities over global pressure Serrin-type criteria
+  + [reason] is the project obstruction is local tail-budget-to-pressure-smallness, not merely global pressure integrability
+
+& [CandidateSpecificityTable] is the current scan
+  + [candidate_001_local_epsilon_pressure_size] is CKN-style velocity-pressure smallness on parabolic cylinders
+    = source: Caffarelli, Kohn, and Nirenberg, Partial regularity of suitable weak solutions of the Navier-Stokes equations, Communications in Pure and Applied Mathematics 35(6), 771-831, 1982
+    = source_url: https://onlinelibrary.wiley.com/doi/10.1002/cpa.3160350604
+    = fit: highest structural fit
+    = why: the project-local tail object is already localized and pressure-adjacent, so the most direct target is a same-cylinder scale-invariant pressure-size or pressure-oscillation quantity paired with velocity control
+    = blocker: the project has no extracted lemma converting tail budget into the accepted pressure quantity and no local velocity smallness partner
+  + [candidate_002_local_pressure_estimate_support] is pressure bounds inside local energy and epsilon regularity frameworks
+    = source: Guevara and Phuc, Local energy bounds and epsilon-regularity criteria for the 3D Navier-Stokes equations, preprint copy
+    = source_url: https://www.math.lsu.edu/~pcnguyen/papers_html/Guevara-Phuc-12-29-16.pdf
+    = fit: high support target
+    = why: pressure-estimate lemmas can clarify exactly how local pressure quantities are bounded from larger-scale pressure and velocity terms
+    = blocker: useful as support for the audit, but not yet the single proof-lane target unless its theorem statement matches the tail-budget object
+  + [candidate_003_pressure_serrin_or_morrey] is global pressure regularity criteria in Serrin/Morrey-Campanato style
+    = source: Zhou and Gala, Regularity Criteria in Terms of the Pressure for the Navier-Stokes Equations in the Critical Morrey-Campanato Space, ZAA 30, 83-93, 2011
+    = source_url: https://ems.press/content/serial-article-files/35793
+    = fit: medium
+    = why: it is pressure-explicit and accepted as a pressure criterion family
+    = blocker: global or function-space pressure bounds may be too far from the project's local tail-budget bookkeeping
+  + [candidate_004_pressure_gradient_criteria] is criteria in terms of pressure gradient
+    = source: regularity criterion literature for weak solutions in terms of pressure gradient
+    = source_url: https://www.hindawi.com/journals/aaa/2012/682436/
+    = fit: low_to_medium
+    = why: pressure-gradient control is adjacent to pressure-tail control only if a derivative estimate can be extracted
+    = blocker: the project object is not currently a pressure-gradient norm, and harmonic pressure components can make gradient targets delicate
+  + [candidate_005_recent_harmonic_pressure_one_component] is harmonic-pressure-aware local one-component regularity
+    = source: arXiv 2606.08352, Finite-Scale One-Component Regularity via Harmonic Pressure
+    = source_url: https://arxiv.org/abs/2606.08352
+    = fit: exploratory
+    = why: explicitly warns that harmonic pressure can preserve L3/2 oscillation while gradients behave badly, which is relevant to avoiding target mismatch
+    = blocker: recent and specialized; use as cautionary periphery rather than first audit authority
+
+& [SelectedTarget] is the current theorem interface
+  + [selected] is local_epsilon_pressure_size
+  + [line_audit_target] is CKN-style local velocity-pressure smallness, with pressure-estimate support from local energy epsilon-regularity literature
+  + [near_phrase] is scale-invariant local pressure L3_over_2 or pressure oscillation smallness on the same regularity cylinder
+  + [reason] is this target directly tests the project lock: pressure-tail accounting must become accepted pressure smallness in the same frame
+  + [secondary_target] is pressure_serrin_or_morrey
+    = use: only if local pressure-size matching fails and a global pressure-bound route becomes more plausible
+
+& [DevelopedObstruction] is the current shape of meaning
+  + [old_question] is can the tail budget satisfy some pressure criterion
+  + [new_question] is can the tail budget become a same-cylinder scale-invariant pressure-size or pressure-oscillation smallness term compatible with local epsilon regularity
+  + [first_missing_feature] is tail_budget_to_same_cylinder_pressure_size_smallness
+  + [second_missing_feature] is same_cylinder_local_velocity_partner
+  + [third_missing_feature] is harmonic_or_nonlocal_pressure_remainder_control
+  + [proof_promotion_status] is blocked
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: the selected theorem interface is now sufficiently resolved for a line-audit precheck
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is proof_lane_precheck
+  + [question] is create a line-audit precheck for the selected local epsilon pressure-size target using the existing Navier_Stokes_Pressure_Bound_To_Epsilon_Audit tool
+  + [output_needed] is a small row set: accepted quantity, project object, required conversion lemma, current evidence, and blocker
