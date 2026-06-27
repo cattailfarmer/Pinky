@@ -1,0 +1,56 @@
+Subject: Yang-Mills Appendix A/G Dependency Audit 001
+
+Description: Dependency trace for Appendix C.1 of the Yang-Mills complete-proof claim, checking whether Appendix A or Appendix G supplies the missing uniform lattice-spacing derivative estimate.
+
+& [YangMillsAppendixAGDependencyAudit] is a proof_inquiry record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [active_problem] is Yang-Mills Existence and Mass Gap
+  + [reentry_commit] is 12ed9eb Audit Yang-Mills Appendix C Lipschitz step
+  + [prior_audit] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_yang_mills_appendix_c_lipschitz_audit_001.sop
+  + [source] is https://arxiv.org/html/2506.00284v1
+  + [source_sections] are Appendix A Polymer Combinatorics and SU(3) Convergence Threshold and Appendix G Hierarchical Renormalization-Group Induction
+  + [authority_status] is dependency_audit_not_proof
+  + [proof_boundary] is no Yang-Mills proof authority admitted
+
+& [DependencyQuestion] is the active audit need
+  + [needed_estimate] is an explicit uniform bound on the lattice-spacing derivative of smeared Schwinger functions
+  + [needed_operator_control] is a definition and norm bound for the plaquette-derived insertion produced by d_da
+  + [needed_sum_control] is proof that summing derivative insertions over lattice plaquettes remains bounded after smearing and renormalization as a goes to zero
+  + [needed_uniformity] is constants independent of lattice spacing, volume, and the relevant tempered-distribution seminorms
+
+& [AppendixAReadout] is dependency_check
+  + [section_scope] is polymer counting, single-plaquette weight, and Kotecky-Preiss convergence criterion
+  + [useful_content] is absolute convergence and volume-independent control for polymer expansion in the stated large-coupling regime
+  + [missing_for_appendix_c] is no d_da derivative operator, no Schwinger-function seminorm estimate, no plaquette-sum cancellation or renormalized scaling argument
+  + [dependency_match] is no
+
+& [AppendixGReadout] is dependency_check
+  + [section_scope] is hierarchical RG induction, scale-cluster expansion, one-loop shift isolation, remainder estimate, and uniform summability
+  + [useful_content] is a claimed scale-by-scale summability framework for effective actions
+  + [missing_for_appendix_c] is no explicit map from RG remainder bounds to the C.1 Lipschitz constant, no derivative insertion estimate, and no proof that the continuum a-variation is uniformly controlled in Schwinger-function topology
+  + [dependency_match] is no
+
+& [AuditResult] is missing_lemma_sharpened
+  + [admission_status] is boundary_only
+  + [accepted_for_further_audit] is no
+  + [first_missing_feature] is uniform_lattice_spacing_derivative_lemma_for_smeared_schwinger_functions
+  + [sharpened_missing_lemma] is for test functions f and lattice spacings a,a_prime, prove a bound of the form norm(S_a,N(f)-S_a_prime,N(f)) <= C_f |a-a_prime| with C_f independent of a,a_prime,N, derived from explicit derivative insertion and polymer/RG estimates
+  + [why_this_blocks] is Appendix C.1 is the first continuum-limit step needed before OS reconstruction, observables, or mass-gap transfer can be admitted
+  + [source_status] is precise_but_unvalidated_and_missing_a_required_estimate
+
+& [MeaningDevelopment] is the adjusted Yang-Mills shape
+  + [old_shape] is Appendix A or G might supply the missing Appendix C estimate
+  + [new_shape] is Appendix A and G provide surrounding convergence rhetoric but not the specific uniform derivative lemma required by the Cauchy proof
+  + [meaning_gained] is the complete-proof claim's first serious audit lock is now a named missing lemma rather than a broad validation concern
+  + [lock_mass_change] is obstruction_sharpened
+  + [proof_promotion] is blocked
+    = reason: no OS-ready continuum Schwinger functions can be admitted until the missing derivative lemma is supplied or independently verified
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is Yang_Mills_route_decision
+  + [question] is decide whether to search the source for an explicit missing derivative lemma elsewhere, or mark Yang-Mills saturated for this cycle and route to Poincare or Symbolic Ricci Flow model-building
+  + [expected_output] is route decision with source/proof boundaries preserved
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: the section-level dependency audit resolved the local question; further broad research is unnecessary unless a new named theorem or section is selected
+
