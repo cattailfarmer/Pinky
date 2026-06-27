@@ -43,20 +43,20 @@ Description: Project-local gate for testing whether a nonlocal pressure tail can
 & [CurrentApplication] is the project nonlocal far-field tail
   + [operator_definition_status] is exact_projection_operator_named
     = reason: local pressure projection source is selected and the structural formula surface is extracted as E_q^* projection with pressure representation partial_t grad p_h plus grad p_0
-  + [source_term_mapping_status] is partially_mapped
-    = reason: source tail is split at category level into far-field tail, cutoff commutator debris, localized pressure work, and explicit Omega/tail-control expression, but not formula-mapped to projection terms
+  + [source_term_mapping_status] is mapped_to_projection_term
+    = reason: exact source tail formula maps to local L3 velocity, scaled enstrophy, cutoff commutator, transport-boundary, and outer-log scale-loss terms rather than directly to pressure projection smallness
   + [larger_scale_norm_status] is mixed_norm_available
     = reason: prior source extraction reports an explicit Omega/tail control expression using local vorticity or local velocity-size quantities, but the exact formula is not mapped to projection variables
-  + [decay_or_smallness_status] is absent
-    = reason: no threshold smallness or scale decay is proved or cited for the projection remainder
+  + [decay_or_smallness_status] is bounded_only
+    = reason: Appendix/Omega choice bounds the source tail by U3(B,t) plus U3(B,t)^(2/3), not by epsilon-small same-cylinder pressure quantity
   + [same_cylinder_output_status] is absent
     = reason: no same-cylinder pressure L3_over_2 or oscillation output has been obtained
   + [admission_status] is boundary_only
-  + [first_missing_feature] is exact_tail_control_formula_mapped_to_projection_remainder_or_p_0_source_term
+  + [first_missing_feature] is no_formula_level_map_from_tail_budget_to_same_cylinder_pressure_quantity
 
 & [CurrentReading] is the developed obstruction
   + [old_blocker] is project_tail_budget_not_expressed_under_local_pressure_projection_operator
-  + [new_blocker] is exact_tail_control_formula_mapped_to_projection_remainder_or_p_0_source_term
-  + [best_next_handle] is locate and extract the exact Appendix or Omega tail-control expression before comparing source-tail bounds
+  + [new_blocker] is tail_formula_outputs_velocity_enstrophy_cutoff_budgets_not_pressure_projection_smallness
+  + [best_next_handle] is pause this pressure-tail-to-projection route unless a theorem converts velocity/enstrophy/cutoff budgets into same-cylinder pressure smallness
   + [proof_promotion_status] is blocked
   + [lock_mass_change] is none

@@ -1,0 +1,69 @@
+Subject: Navier-Stokes Tail Formula Projection Mapping
+
+Description: Formula-level inspection of the source tail budget against the local pressure projection remainder gate.
+
+& [NavierStokesTailFormulaProjectionMapping] is a source_boundary record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is a9bfdaf Inspect Navier-Stokes source tail subterms
+  + [source] is https://quantumaetherdynamics.org/papers/Navier_Stokes_Millenium_Puzzle.pdf
+  + [source_pages] is page 9 and page 13 by PDF extraction
+  + [gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Projection_Remainder_Admission_Gate.sop
+  + [authority_boundary] is source formula extraction and mapping only
+  + [not_claimed] is no validation of the source lemma, no projection estimate, and no pressure smallness bridge
+
+& [ExtractedFormulaSurface] is the source tail formula shape
+  + [outer_log_factor] is Lambda(rho) = 1 + log(L/rho)
+  + [tail_budget_B] is sum of local L3 velocity, scaled enstrophy, cutoff commutator, and transport-boundary terms on B(y,2rho)
+  + [tail_lemma_bound] is Tail_phi,r0(t) bounded by theta times nu integral phi^2 q plus C_theta Lambda(rho) times B_phi,r0(y,rho;t)
+  + [omega_choice] is Omega(B,t) chosen from local enstrophy divided by rho times local L3 velocity mass to the two-thirds power
+  + [omega_tail_reading] is with that Omega, the tail is bounded by U3(B,t) plus U3(B,t)^(2/3)
+
+& [ProjectionMappingTable] is the formula-level comparison
+  + [row_001_local_L3_velocity_budget] is local integral of u^3 over 2B scaled by rho^-3
+    = projection_slot: larger_scale_velocity_norm_candidate
+    = mapping_status: velocity_norm_available
+    = pressure_output_status: absent
+    = blocker: local_L3_velocity_budget_is_not_same_cylinder_pressure_L3_over_2_or_pressure_oscillation
+  + [row_002_scaled_enstrophy_budget] is Omega^-1 rho^-1 times local integral of vorticity squared
+    = projection_slot: p_0_source_or_gradient_energy_candidate
+    = mapping_status: mixed_norm_available
+    = pressure_output_status: absent
+    = blocker: enstrophy_budget_controls_tail_absorption_not_projection_pressure_smallness
+  + [row_003_cutoff_commutator_budget] is cutoff-gradient and cutoff-Laplacian weighted entropy-speed term
+    = projection_slot: cutoff_error_terms
+    = mapping_status: mapped_to_cutoff_error
+    = pressure_output_status: absent
+    = blocker: cutoff_error_absorption_not_threshold_preserving_pressure_smallness
+  + [row_004_transport_boundary_budget] is rho^-1 cutoff-gradient weighted entropy-speed-squared term
+    = projection_slot: cutoff_or_transport_error
+    = mapping_status: mapped_to_cutoff_error
+    = pressure_output_status: absent
+    = blocker: transport_boundary_term_not_projection_pressure_remainder_estimate
+  + [row_005_outer_log_factor] is Lambda(rho)
+    = projection_slot: scale_loss
+    = mapping_status: adverse_scale_factor
+    = pressure_output_status: worsens_smallness
+    = blocker: logarithmic_outer_scale_loss_must_be_absorbed_or_decayed_before_epsilon_smallness
+
+& [GateReading] is the admission result
+  + [operator_definition_status] is exact_projection_operator_named
+  + [source_term_mapping_status] is mapped_to_velocity_enstrophy_and_cutoff_budgets_not_projection_pressure_terms
+  + [larger_scale_norm_status] is mixed_norm_available
+  + [decay_or_smallness_status] is bounded_only
+  + [same_cylinder_output_status] is absent
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is no_formula_level_map_from_tail_budget_to_same_cylinder_pressure_quantity
+
+& [DevelopedObstruction] is the current shape of meaning
+  + [old_blocker] is exact_tail_control_formula_mapped_to_projection_remainder_or_p_0_source_term
+  + [resolved_part] is exact_tail_formula_extracted_and_subterms_classified
+  + [new_blocker] is tail_formula_outputs_velocity_enstrophy_cutoff_budgets_not_pressure_projection_smallness
+  + [meaning_gain] is the source tail formula is useful for entropy absorption, but it points away from direct pressure-projection admission
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is synthesis_or_route_decision
+  + [question] is decide whether the Navier-Stokes pressure-tail lane should now pause as saturated or shift to a velocity/enstrophy-to-pressure projection route with a new theorem target
+  + [stop_condition] is do not continue the pressure-tail-to-projection route without a theorem converting velocity/enstrophy/cutoff budgets into same-cylinder pressure smallness
