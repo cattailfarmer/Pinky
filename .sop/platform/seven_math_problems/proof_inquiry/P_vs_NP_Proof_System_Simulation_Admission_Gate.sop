@@ -1,0 +1,63 @@
+Subject: P vs NP Proof-System Simulation Admission Gate
+
+Description: Narrow admission gate for testing whether a proposed P vs NP operator has enough proof-system placement and polynomial simulation strength to support a proof-shaped claim.
+
+& [PvsNPProofSystemSimulationAdmissionGate] is a math inquiry tool
+  + [tool_uuid] is 9b8fc78e-6f44-4b1f-a46a-3ac4f1243c13
+  + [project] is seven math problems
+  + [problem] is P versus NP
+  + [created_at] is 2026-06-27
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_p_vs_np_certificate_separation_reentry_001.sop
+  + [parent_boundary_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Boundary_Ledger.sop
+  + [role] is admit or reject operator-to-proof-system simulation claims before they are treated as P versus NP proof obligations
+  + [not_role] is proving P equals NP, proving P not equals NP, or treating local consistency success as worst-case proof-system completeness
+
+& [ColumnSet] is the simulation admission surface
+  + [candidate_operator] is the named algorithmic, coherence, propagation, repair, or refutation mechanism
+  + [target_scope] is SAT, 3SAT, NP_complete_CSP, restricted_CSP, tractable_fragment, or unknown
+  + [simulated_proof_system] is local_consistency, bounded_width, resolution_cdcl, cutting_planes, polynomial_calculus, sum_of_squares, frege_like, extended_frege_like, unknown, or none
+  + [simulation_direction] is operator_to_system, system_to_operator, mutual_simulation, heuristic_analogy, or unclear
+  + [refutation_output] is explicit_unsat_certificate, derivation_trace, fixed_point_failure, search_tree, semantic_gap, sat_only, or none
+  + [proof_size_bound] is polynomial_named, polynomial_conditional, quasipolynomial, exponential_or_unknown, lower_bound_conflict, or none
+  + [runtime_bound] is polynomial_named, polynomial_conditional, exponential_or_unknown, model_specific, or none
+  + [soundness_status] is checked, conditional, local_only, semantic_only, unknown, or failed
+  + [completeness_status] is np_complete_scope, restricted_scope, bounded_width_only, unknown, or failed
+  + [barrier_or_lower_bound_risk] is low_in_scope, high_for_general_sat, proof_complexity_lower_bound_known, natural_proof_relativization_algebrization_relevant, unknown, or not_applicable
+  + [admission_status] is admitted_as_scoped_tool, boundary_only, deep_research_required, rejected_for_missing_certificate, rejected_for_scope_mismatch, or rejected_for_bound_failure
+  + [first_missing_feature] is the earliest missing item preventing proof-shaped promotion
+
+& [UseProcedure] is the simulation admission workflow
+  + [step_001_name_operator] is require a precise operator before proof-system strength can be assessed
+  + [step_002_place_system] is map the operator to a named proof system or mark the claim unknown
+  + [step_003_check_direction] is separate an operator producing proofs from a proof system merely explaining the operator
+  + [step_004_check_output] is require an inspectable unsat certificate, derivation, or lower-bound witness
+  + [step_005_check_bounds] is require polynomial proof-size and runtime bounds for NP-complete target scope
+  + [step_006_check_scope] is reject promotion when success is only bounded-width, local-consistency, or tractable-fragment completeness
+  + [step_007_route_research] is trigger Deep_Research_Priority_Gate only when a named theorem or proof-system interface is low-resolution but searchable
+
+  = must: distinguish local propagation fixed points from global unsat refutations
+  = must: preserve restricted-scope success as useful but not decisive for P versus NP
+  = must: identify whether the proposed route is algorithmic certification or lower-bound separation
+  = should: prefer concrete derivation objects over semantic descriptions
+  - never: admit heuristic analogy as polynomial proof-system simulation
+
+& [CurrentApplication] is local propagation with repair
+  + [candidate_operator] is local_propagation_with_repair
+  + [target_scope] is SAT_3SAT_or_NP_complete_CSP
+  + [simulated_proof_system] is local_consistency_or_resolution_like_until_named
+  + [simulation_direction] is unclear
+  + [refutation_output] is fixed_point_failure_or_repair_failure_not_yet_explicit_unsat_certificate
+  + [proof_size_bound] is exponential_or_unknown
+  + [runtime_bound] is exponential_or_unknown
+  + [soundness_status] is local_only
+  + [completeness_status] is unknown_for_np_complete_scope
+  + [barrier_or_lower_bound_risk] is high_for_general_sat
+  + [admission_status] is boundary_only
+  + [first_missing_feature] is no_polynomial_operator_to_refutation_simulation_for_hard_sat_instances
+
+& [PeripheryReadout] is the current shape of meaning
+  + [curious_periphery] is proof traces rather than solution states
+  + [meaning_shift] is from can propagation find assignments to can propagation failures become short checkable refutations
+  + [promising_followup] is search for a named local-consistency, resolution, or proof-complexity theorem that either bounds the operator or shows why it cannot scale
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: the missing feature is now sharply named and can be tested against existing local records before external research is required

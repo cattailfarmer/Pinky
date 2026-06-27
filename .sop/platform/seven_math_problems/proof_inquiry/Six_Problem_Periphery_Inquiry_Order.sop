@@ -37,9 +37,9 @@ Description: Ordered proof-inquiry route for the six remaining Millennium proble
 
 & [CurrentFocus] is the active lane
   + [problem] is P versus NP
-  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_p_vs_np_certificate_separation_reentry_001.sop
+  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_p_vs_np_simulation_gate_creation_001.sop
   + [previous_problem] is Hodge Conjecture
   + [previous_status] is saturated_until_new_candidate
     = first_lock: no_general_correspondence_generation_from_arbitrary_hodge_class
-  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Boundary_Ledger.sop
-  + [next_question] is whether a named operator can be placed into and polynomially simulate a proof system strong enough to refute all hard SAT or NP-complete CSP instances
+  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Simulation_Admission_Gate.sop
+  + [next_question] is whether local propagation with repair can emit short checkable refutation traces in a named proof system on hard SAT or NP-complete CSP instances

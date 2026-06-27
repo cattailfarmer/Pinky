@@ -1,0 +1,39 @@
+Subject: P vs NP Simulation Gate Creation
+
+Description: Reflection record for the bounded increment that converted the P versus NP proof-system boundary into an explicit simulation admission gate.
+
+& [PvsNPSimulationGateCreation] is a project_reflection record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is e245fa5 Reenter P vs NP proof-system boundary
+  + [active_problem] is P versus NP
+  + [created_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Proof_System_Simulation_Admission_Gate.sop
+  + [source_boundary] is local SOP reflection and proof-inquiry tooling only
+  + [proof_boundary] is no P equals NP result, no P not equals NP result, and no polynomial refutation theorem
+
+& [GitDiffReflection] is the work evidence
+  + [previous_frontier] is proof_system_boundary_ledger
+  + [diff_meaning] is the boundary ledger was too broad for a concrete operator claim, so a simulation-specific gate was needed
+  + [new_artifact] is proof_system_simulation_admission_gate
+  + [scope_control] is tool creation and current application only
+  + [unrelated_workspace_changes] are ignored
+
+& [DevelopedUnderstanding] is the research result
+  + [old_focus] is whether a coherence or propagation operator solves NP-complete instances
+  + [new_focus] is whether failed propagation or repair produces a short checkable refutation in a named proof system
+  + [important_distinction] is solution_state_search versus refutation_trace_generation
+  + [current_candidate] is local_propagation_with_repair
+  + [current_status] is boundary_only
+  + [first_missing_feature] is no_polynomial_operator_to_refutation_simulation_for_hard_sat_instances
+
+& [CuriousPeriphery] is the next research edge
+  + [subject] is proof traces produced by propagation failures
+  + [nearby_theory] is local consistency, resolution/CDCL, cutting planes, polynomial calculus, sum-of-squares, and Frege-like proof systems
+  + [question] is whether the candidate operator can emit derivation objects whose size and verification time remain polynomial on hard SAT or NP-complete CSP instances
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: the current increment clarified the target; external research becomes useful only after a named theorem interface is selected
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is gate_application_or_deep_research_precheck
+  + [question] is apply the new gate to local_propagation_with_repair and decide whether a named proof-system theorem should be researched next
+  + [expected_output] is either a rejected/admitted scoped row or a Deep_Research_Priority_Gate event for a named proof-complexity interface
