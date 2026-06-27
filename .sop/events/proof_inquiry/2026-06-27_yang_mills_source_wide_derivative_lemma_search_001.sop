@@ -1,0 +1,59 @@
+Subject: Yang-Mills Source-Wide Derivative Lemma Search 001
+
+Description: Source-wide search for the missing uniform lattice-spacing derivative lemma needed by Appendix C.1 of the Yang-Mills complete-proof claim.
+
+& [YangMillsSourceWideDerivativeLemmaSearch] is a proof_inquiry record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [active_problem] is Yang-Mills Existence and Mass Gap
+  + [reentry_commit] is f703d8e Trace Yang-Mills Appendix C dependency gap
+  + [prior_dependency_audit] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_yang_mills_appendix_a_g_dependency_audit_001.sop
+  + [source] is https://arxiv.org/html/2506.00284v1
+  + [authority_status] is source_search_not_proof
+  + [proof_boundary] is no Yang-Mills construction, no OS reconstruction authority, and no mass-gap proof admitted
+
+& [SearchTarget] is the missing lemma
+  + [needed_object] is uniform_lattice_spacing_derivative_lemma_for_smeared_schwinger_functions
+  + [needed_bound] is norm(S_a,N(f)-S_a_prime,N(f)) <= C_f |a-a_prime| with C_f independent of a,a_prime,N
+  + [needed_inputs] are explicit d_da derivative insertion, plaquette-sum scaling control, smearing seminorm dependence, and polymer_or_RG uniform constants
+  + [needed_stage] is before OS reconstruction, observables, Ward identities, and mass-gap transfer
+
+& [SourceWideReadout] is search_result
+  + [table_of_contents_match] is Section 6.1 and Appendix C.1 are the only direct lattice-spacing Lipschitz loci
+  + [section_6_1] is claim_repeated
+    = source_lines: arxiv_html lines 317-327
+    = readout: differentiating in lattice spacing is said to bring local plaquette-derived insertions and a uniform bound is asserted
+  + [appendix_c_1] is claim_repeated_with_more_words
+    = source_lines: arxiv_html lines 599-610
+    = readout: the same derivative-under-integral and plaquette-sum step is asserted but not expanded into a lemma with constants
+  + [appendix_a] is polymer_counting_not_derivative_control
+    = source_lines: arxiv_html lines 513-553
+  + [appendix_g] is rg_summability_not_c1_derivative_control
+    = source_lines: arxiv_html lines 748-758 and surrounding G-section
+  + [appendix_d] is stress_tensor_metric_variation_not_lattice_spacing_lipschitz_control
+    = source_lines: arxiv_html lines 619-644
+  + [source_wide_dependency_match] is no
+
+& [AuditResult] is negative_match
+  + [admission_status] is boundary_only
+  + [accepted_for_further_audit] is no
+  + [first_missing_feature] is explicit_uniform_lattice_spacing_derivative_bound_for_smeared_schwinger_functions
+  + [reason] is the source repeats the derivative-insertion claim but does not provide the standalone estimate needed to validate the continuum Schwinger-function limit
+  + [not_a_disproof] is true
+    = boundary: this record only says the project did not find the missing lemma in the source text inspected
+  + [proof_promotion] is blocked
+    = reason: without this lemma, continuum-limit authority cannot be admitted and downstream OS/mass-gap stages remain blocked upstream
+
+& [MeaningDevelopment] is the adjusted Yang-Mills shape
+  + [old_shape] is the missing derivative lemma might appear elsewhere in the source
+  + [new_shape] is the source-wide visible text repeats the assertion at the exact pressure point rather than proving it
+  + [meaning_gained] is the complete-proof claim's first audit failure is localized before reconstruction: the construction of continuum Schwinger functions is not admitted
+  + [lock_mass_change] is obstruction_sharpened_to_source_wide_negative_match
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is Yang_Mills_saturation_or_user_supplied_section
+  + [question] is mark Yang-Mills saturated for this cycle unless a new source section or external validation supplies the missing derivative lemma
+  + [expected_output] is saturation reflection and route to Poincare or Symbolic Ricci Flow model-building
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: the source-wide search resolved the named local question; broader research would be drift without a new theorem target
+

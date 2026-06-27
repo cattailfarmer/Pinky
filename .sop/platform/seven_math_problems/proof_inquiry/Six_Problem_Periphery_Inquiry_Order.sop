@@ -37,9 +37,9 @@ Description: Ordered proof-inquiry route for the six remaining Millennium proble
 
 & [CurrentFocus] is the active lane
   + [problem] is Yang-Mills Existence and Mass Gap
-  + [focus_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_yang_mills_appendix_a_g_dependency_audit_001.sop
+  + [focus_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_yang_mills_source_wide_derivative_lemma_search_001.sop
   + [previous_problem] is P versus NP
   + [previous_status] is saturated_until_new_candidate
     = first_lock: no_polynomial_bound_on_repair_conflict_trace_size_for_hard_sat_instances
   + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Yang_Mills_OS_Reconstruction_Boundary_Ledger.sop
-  + [next_question] is decide whether to search elsewhere in the source for the missing uniform derivative lemma or mark Yang-Mills saturated for this cycle
+  + [next_question] is mark Yang-Mills saturated for this cycle unless a new source section or validation supplies the missing uniform derivative lemma
