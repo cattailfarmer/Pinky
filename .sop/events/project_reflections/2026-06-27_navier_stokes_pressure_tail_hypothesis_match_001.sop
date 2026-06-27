@@ -1,0 +1,73 @@
+Subject: Navier-Stokes Pressure Tail Hypothesis Match
+
+Description: Hypothesis-matching audit comparing the project-local pressure-tail object against accepted pressure and epsilon-regularity theorem interfaces.
+
+& [NavierStokesPressureTailHypothesisMatch] is a proof_lane_precheck record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 29f6f4f Prospect Navier-Stokes pressure tail targets
+  + [parent_prospect] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_pressure_tail_target_prospect_001.sop
+  + [audit_tool] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Bound_To_Epsilon_Audit.sop
+  + [authority_boundary] is theorem-interface matching only
+  + [not_claimed] is no Navier-Stokes proof, no validation of the source route, and no proof that pressure-tail control implies regularity
+
+& [AcceptedTargetFrame] is the external theorem neighborhood
+  + [ckn_family] is local epsilon regularity for suitable weak solutions using scale-invariant velocity and pressure quantities
+    = source: Caffarelli, Kohn, and Nirenberg, Partial regularity of suitable weak solutions of the Navier-Stokes equations, Communications in Pure and Applied Mathematics 35(6), 771-831, 1982, doi 10.1002/cpa.3160350604
+    = url: https://onlinelibrary.wiley.com/doi/10.1002/cpa.3160350604
+  + [ess_family] is endpoint L-infinity-time L3-space regularity and backward uniqueness
+    = source: Escauriaza, Seregin, and Sverak, L3,infinity-solutions of the Navier-Stokes equations and backward uniqueness, Russian Mathematical Surveys 58(2), 211-250, 2003
+    = url: https://www.pdmi.ras.ru/~seregin/Recent%20Publications/engESS3.pdf
+  + [pressure_criteria_family] is regularity criteria stated with pressure bounds
+    = source: Tran and Yu, Regularity of Navier-Stokes flows with bounds for the pressure, Applicable Analysis 2016 preprint copy
+    = url: https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/12230/Tran_2016_Regularity_AML_AAM.pdf?isAllowed=y&sequence=1
+  + [one_scale_epsilon_family] is epsilon regularity through weak-strong uniqueness
+    = source: Albritton, Barker, and Prange, Epsilon regularity for the Navier-Stokes equations via weak-strong uniqueness
+    = url: https://prange.perso.math.cnrs.fr/papers/epreg-viaWSU.pdf
+
+& [HypothesisMatchTable] is the current comparison surface
+  + [row_001_project_tail_object] is local tail budget from the external active-cylinder route
+    = project_status: source_extractable as a tail_module
+    = accepted_quantity_match: partial
+    = reason: it is pressure-adjacent and local, but currently recorded as far-field/cutoff debris accounting rather than pressure oscillation or pressure L3/2 smallness
+    = missing_conversion_lemma: tail_budget_controls_scale_invariant_pressure_oscillation_or_L3_over_2_norm_on_regularizing_cylinder
+  + [row_002_same_frame_locality] is whether the project object lives on the same ball or cylinder as the regularity test
+    = project_status: same_ball_for_source_estimate for the source estimate, but regularizing cylinder admission remains unproved
+    = accepted_quantity_match: conditional
+    = reason: the source has active balls and localized pressure balls, but the audit records no bridge from active ball to accepted epsilon-regularity cylinder
+    = missing_conversion_lemma: active_ball_selection_yields_CKN_or_pressure_criterion_cylinder_with_matching_scale
+  + [row_003_velocity_partner] is the velocity quantity required alongside pressure control
+    = project_status: endpoint_global_L3_with_local_entropy_terms
+    = accepted_quantity_match: mismatched_for_local_epsilon
+    = reason: endpoint L3 continuation and local epsilon regularity are different targets; the current route has not extracted local velocity smallness in the same frame
+    = missing_conversion_lemma: local_entropy_and_tail_budget_imply_scale_invariant_velocity_pressure_smallness
+  + [row_004_pressure_size_vs_pressure_work] is whether pressure-work absorption is enough
+    = project_status: pressure_work_bound_and_tail_budget
+    = accepted_quantity_match: mismatched
+    = reason: existing audit explicitly separates pressure-work absorption from pressure-size or oscillation smallness
+    = missing_conversion_lemma: pressure_work_absorption_implies_pressure_size_smallness_under_verified_localization
+  + [row_005_pressure_criterion_target] is whether pressure-bound regularity criteria are a better first target than ESS
+    = project_status: promising_precheck
+    = accepted_quantity_match: closest_family
+    = reason: pressure criteria share vocabulary with the project object more directly than endpoint velocity-only criteria
+    = missing_conversion_lemma: source_tail_budget_satisfies_a_specific_pressure_criterion_hypothesis_with_correct_exponents_and_locality
+  + [row_006_ess_endpoint_target] is whether ESS can be targeted immediately
+    = project_status: not_admitted
+    = accepted_quantity_match: distant
+    = reason: ESS is authoritative endpoint-critical structure, but the project object is localized pressure-tail accounting rather than an L-infinity-time L3-space solution bound
+    = missing_conversion_lemma: localized_tail_budget_forces_endpoint_L3_control_or_excludes_concentration_sequence
+
+& [AuditReading] is the developed meaning
+  + [best_near_target] is pressure_criteria_family
+  + [reason] is it minimizes target drift from the project's pressure-tail vocabulary while preserving accepted-theorem discipline
+  + [first_lock] is tail budget is not yet a scale-invariant pressure norm or oscillation estimate
+  + [second_lock] is active-ball locality is not yet admitted as an accepted regularity cylinder
+  + [third_lock] is endpoint L3 language cannot substitute for local velocity-pressure smallness
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the next walking step
+  + [mode] is target_prospecting
+  + [candidate] is pressure_criterion_specificity_scan
+  + [question] is which pressure-regularity theorem has hypotheses closest to a local pressure oscillation or L3_over_2 pressure quantity that a tail-budget lemma could plausibly target
+  + [output_needed] is select one theorem statement for line-audit or declare Deep_Research_Priority_Gate if the pressure-criterion family remains too low-resolution
