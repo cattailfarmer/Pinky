@@ -1,0 +1,49 @@
+Subject: Navier-Stokes Local Projection Tail Precheck 001
+
+Description: Local-record precheck after refined-map reentry, deciding whether the pressure-tail to pressure-smallness bridge already has an exact theorem target.
+
+& [NavierStokesLocalProjectionTailPrecheck] is a project_reflection record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [trigger_commit] is 027b81b Select Navier-Stokes pressure bridge reentry
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_refined_map_navier_stokes_reentry_selection_001.sop
+  + [active_problem] is Navier-Stokes Existence and Smoothness
+  + [authority_status] is local_precheck_not_proof
+  + [proof_boundary] is no Navier-Stokes regularity proof, no pressure-smallness theorem, and no continuation criterion admitted
+
+& [LocalRecordPrecheck] is complete
+  + [projection_gate] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Projection_Remainder_Admission_Gate.sop
+    = admission_status: boundary_only
+    = first_missing_feature: no_formula_level_map_from_tail_budget_to_same_cylinder_pressure_quantity
+  + [tail_decomposition_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Pressure_Tail_Decomposition_Remainder_Ledger.sop
+    = admission_result: not_admitted_for_CKN_pressure_smallness
+    = highest_value_next_component: harmonic_pressure_part
+  + [harmonic_pressure_gate] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_harmonic_pressure_gate_scan_001.sop
+    = conversion_lemma_status: not_found
+    = new_required_feature: harmonic_pressure_modulo_or_remainder_control_statement
+  + [modulo_harmonic_frame] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_modulo_harmonic_pressure_target_frame_001.sop
+    = selected: wolf_local_suitable_solution_frame
+    = secondary: projected_pressure_local_energy_frame
+  + [projection_formula_extraction] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_local_pressure_projection_formula_extraction_001.sop
+    = remaining_blocker: source_tail_mapping_to_p_h_p_0_or_projection_remainder_terms
+
+& [PrecheckResult] is no_exact_theorem_target_yet
+  + [found_existing_target] is no
+  + [reason] is local records contain an operator frame and a harmonic-pressure target frame, but no component-level map from the source tail budget to same-cylinder pressure smallness
+  + [best_next_target] is local_suitable_pressure_frame_mapping
+  + [specific_question] is whether the source tail components map to harmonic pressure p_h, local pressure p_0, projected-pressure remainder, or outside cutoff/nonlocal debris
+  + [Deep_Research_Priority_Gate] is not_triggered
+    = reason: existing local records already resolve the theorem neighborhood; the next need is component mapping, not external concept search
+
+& [DevelopedUnderstanding] is the current shape of meaning
+  + [old_shape] is prospect for a theorem converting source tail budget directly to pressure smallness
+  + [new_shape] is the direct theorem is not locally present; the responsible next step is to map tail components into the local suitable pressure decomposition before searching farther
+  + [meaning_gained] is the bridge obstruction has moved from generic pressure smallness to a slot-assignment problem inside the accepted local pressure frame
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is frame_mapping_precheck
+  + [question] is map local pressure, harmonic pressure, nonlocal far-field, cutoff debris, and pressure-work components to p_h, p_0, projected-pressure remainder, or outside status
+  + [expected_output] is a component mapping record and either a selected theorem target or renewed saturation
+
