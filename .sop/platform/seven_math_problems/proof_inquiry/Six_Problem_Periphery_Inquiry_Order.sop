@@ -37,9 +37,9 @@ Description: Ordered proof-inquiry route for the six remaining Millennium proble
 
 & [CurrentFocus] is the active lane
   + [problem] is Birch and Swinnerton-Dyer
-  + [focus_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_bsd_two_part_bridge_sufficiency_precheck_001.sop
+  + [focus_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_bsd_theorem_package_prospect_001.sop
   + [previous_problem] is Navier-Stokes Existence and Smoothness
   + [previous_status] is saturated_until_new_candidate
     = first_lock: no_velocity_enstrophy_cutoff_budget_to_pressure_smallness_theorem
   + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Transfer_Sufficiency_Ledger.sop
-  + [next_question] is decide whether to deep-research a theorem package joining generalized Heegner sources, derived heights, and Selmer upper control or mark BSD source-sufficiency saturated
+  + [next_question] is mark BSD source-sufficiency saturated in the missing-theorem map unless a named theorem package supplies rank-parametrized source factory, derived-height nondegeneracy, and Selmer upper control under one hypothesis set
