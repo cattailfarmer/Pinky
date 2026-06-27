@@ -6,7 +6,7 @@ Description: Internal navigation map of missing theorem shapes, audit targets, a
   + [map_uuid] is 5497a737-99d4-4a80-a582-11f7634713ad
   + [project] is seven math problems
   + [created_at] is 2026-06-26T20:05Z
-  + [source_synthesis] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_current_cycle_six_lane_symbolic_ricci_flow_synthesis_001.sop
+  + [source_synthesis] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_refined_current_cycle_six_lane_synthesis_001.sop
   + [authority_status] is internal_research_map_not_proof
 
 & [MapUse] is the navigation rule
@@ -21,7 +21,7 @@ Description: Internal navigation map of missing theorem shapes, audit targets, a
     = best_reentry_target: higher-rank Euler/Kolyvagin-style mechanism or source-count theorem for line-by-line sufficiency audit
     = audit_boundary: point or cycle existence is insufficient without independence and upper control
   + [navier_stokes] is Navier-Stokes Existence and Smoothness
-    = missing_theorem_shape: deterministic pressure-Hessian or pressure-strain one-sided continuation-scale inequality controlling positive middle-strain or strain self-amplification
+    = missing_theorem_shape: theorem converting local velocity/enstrophy/cutoff tail budgets into same-cylinder pressure smallness or a projection-remainder estimate strong enough for regularity criteria
     = current_status: saturated_for_current_cycle
     = best_reentry_target: pressure-Hessian coercivity proof, endpoint pressure-work estimate, or concrete defect functional with autonomous inequality
     = audit_boundary: geometric depletion intuition is insufficient without sign/coercivity and continuation closure
@@ -31,14 +31,14 @@ Description: Internal navigation map of missing theorem shapes, audit targets, a
     = best_reentry_target: explicit cycle algorithm, correspondence-generation theorem, or concrete construction mechanism
     = audit_boundary: normal functions, Noether-Lefschetz loci, and substitute structures are not proof authority without algebraic cycle output
   + [p_vs_np] is P versus NP
-    = missing_theorem_shape: polynomial proof-system simulation or refutation power for hard SAT/3-SAT fixed points, or barrier-aware lower-bound route
+    = missing_theorem_shape: polynomial bound on repair/CDCL conflict traces or proof sizes for hard SAT instances, or a separate barrier-aware lower-bound framework
     = current_status: saturated_for_current_cycle
     = best_reentry_target: polynomial unsat-certificate theorem, complete propagation proof, proof-system simulation theorem, or barrier-aware lower-bound route
     = audit_boundary: local consistency and tractable CSP fragments are meaningful but not NP-complete completeness
   + [yang_mills] is Yang-Mills Existence and Mass Gap
-    = missing_theorem_shape: continuum nonabelian Yang-Mills Schwinger functions or Euclidean measure satisfying OS properties plus reconstruction and gauge-invariant decay-to-gap transfer
+    = missing_theorem_shape: uniform lattice-spacing derivative lemma for smeared Schwinger functions with constants independent of lattice spacing and volume, upstream of OS reconstruction
     = current_status: saturated_for_current_cycle
-    = best_reentry_target: OS-ready Schwinger-function construction, continuum measure, lattice continuum-limit theorem, or complete-proof claim for stage audit
+    = best_reentry_target: source section or external validation proving the uniform lattice-spacing derivative lemma, or another OS-ready continuum construction artifact
     = audit_boundary: finite lattice models and confinement intuition are insufficient without continuum reconstruction and gap transfer
   + [poincare] is Poincare Conjecture and Symbolic Ricci Flow context
     = missing_theorem_shape: none_for_poincare_in_this_project
@@ -57,4 +57,3 @@ Description: Internal navigation map of missing theorem shapes, audit targets, a
   + [option_002] is create a public-facing synthesis that states no solution claims and explains the missing theorem shapes
   + [option_003] is implement a repeatable graph prototype for Symbolic Ricci Flow scoring
   + [option_004] is pause proof inquiry until a concrete external target is supplied
-
