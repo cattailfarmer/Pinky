@@ -1,0 +1,36 @@
+Subject: Hodge Reentry Reconciliation To P vs NP 001
+
+Description: Reconciliation after the BSD-to-Hodge route found an existing Hodge reentry decision that already saturated the cycle-output branch and selected P versus NP.
+
+& [ReconciliationContext] is the heartbeat reentry
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [trigger_commit] is 4757d10 Route from BSD saturation to Hodge
+  + [active_focus_before_reconciliation] is Hodge Conjecture
+  + [authority_status] is navigation_reconciliation_not_proof
+  + [proof_boundary] is no Hodge proof, no algebraic-cycle construction, no correspondence-generation theorem, and no P versus NP proof claim
+
+& [LatestLocalEvidence] is the discovered Hodge boundary
+  + [record_001] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_hodge_cycle_output_reentry_decision_001.sop
+    = result: Hodge is saturated until a concrete theorem candidate supplies cycle output or generated correspondences from arbitrary rational Hodge-class input
+    = selected_next_problem: P versus NP
+    = selected_next_handle: C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Certificate_Or_Separation_Admission_Ledger.sop
+  + [record_002] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_hodge_correspondence_generation_saturation_reflection_001.sop
+    = result: no general correspondence-generation theorem candidate starts with arbitrary rational Hodge-class input and outputs cycles or generated correspondences
+  + [record_003] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-26_hodge_construction_transfer_saturation_reflection_001.sop
+    = result: continue Hodge only if a concrete construction mechanism, correspondence-generation theorem, or explicit cycle algorithm is selected for line-by-line audit
+
+& [Decision] is the corrected route
+  + [hodge_status] is saturated_until_new_candidate
+  + [reason] is local records already completed the Hodge cycle-output and correspondence-generation branch, and no new named Hodge construction theorem was introduced by the latest heartbeat
+  + [next_problem] is P versus NP
+  + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\P_vs_NP_Certificate_Or_Separation_Admission_Ledger.sop
+  + [first_question] is whether the current P versus NP records name a concrete proof-system simulation, polynomial unsat certificate, or barrier-aware separation audit target
+  + [Deep_Research_Priority_Gate] is conditionally_ready
+    = trigger: only if local P versus NP records leave a concrete proof-system or certificate target low-resolution
+
+& [WalkingProtocolNote] is the continuity outcome
+  + [correction_type] is focus_reconciliation
+  + [commit_as_reflection_unit] is yes
+  + [next_turn_start] is reenter P versus NP through the certificate-or-separation admission ledger and latest P versus NP saturation/prospect records
+  + [avoid] is repeating Hodge normal-function, Noether-Lefschetz, motivated-cycle, known-case, or correspondence-generation surveys without new output machinery
