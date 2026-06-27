@@ -461,6 +461,9 @@ Description: Managed work surface for staged analysis of the imported seven math
   + [Task_153_implement_symbolic_ricci_flow_six_lane_score_fixture] is add a focused runtime test that keeps unresolved six-lane lock mass visible after boundary cleanup
     = evidence: C:\Project\Pinky\.sop\runtime\tests\test_symbolic_ricci_flow.py
     = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_symbolic_ricci_flow_six_lane_fixture_implementation_001.sop
+  + [Task_154_create_public_research_state_synthesis] is create a boundary-safe public-facing synthesis of the current obstruction map and bridge-failure pattern
+    = evidence: C:\Project\Pinky\.sop\platform\seven_math_problems\Public_Research_State_Synthesis.sop
+    = evidence: C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_public_research_state_synthesis_001.sop
 
 & [BlockedOrDeferredTaskSet] is not ready as authority work
   + [Task_formal_math_validation] is validate any Millennium Problem solution claim as mathematically accepted
