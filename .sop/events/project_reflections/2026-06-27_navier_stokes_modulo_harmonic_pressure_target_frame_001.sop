@@ -1,0 +1,63 @@
+Subject: Navier-Stokes Modulo Harmonic Pressure Target Frame
+
+Description: Target-frame selection for handling harmonic pressure in the Navier-Stokes pressure-tail decomposition route.
+
+& [NavierStokesModuloHarmonicPressureTargetFrame] is a target_prospecting record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 1354c94 Clarify Navier-Stokes harmonic pressure gate
+  + [parent_gate] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_harmonic_pressure_gate_scan_001.sop
+  + [lane] is Navier-Stokes
+  + [authority_boundary] is theorem-frame selection only
+  + [not_claimed] is no project tail-budget estimate is admitted to the selected frame
+
+& [FrameQuestion] is the bounded inquiry
+  + [question] is which accepted theorem frame can handle local pressure modulo harmonic components so the project does not mistake raw pressure oscillation for regularity-relevant pressure control
+  + [reason] is harmonic pressure was identified as the highest-risk component in the pressure-tail decomposition ledger
+
+& [CandidateFrameSet] is the source neighborhood
+  + [candidate_001_wolf_local_suitable_solution_frame] is local suitable weak solutions using pressure decomposition with harmonic correction
+    = source: Wolf-style local suitable weak solution literature, represented by local boundedness exposition
+    = source_url: https://sebastian-hensel.com/master_thesis.pdf
+    = fit: highest
+    = reason: directly replaces globally defined pressure dependence with local pressure decomposition involving a harmonic part
+    = limitation: current project artifacts do not identify the external source route's tail budget with the pressure pieces in this frame
+  + [candidate_002_projected_pressure_local_energy_frame] is local energy weak solutions with projected pressure
+    = source: Kikuchi-Seregin / local energy weak solution lineage, represented in local energy weak solution summaries
+    = source_url: https://prange.perso.math.cnrs.fr/papers/lerayuloc.pdf
+    = fit: high
+    = reason: projected pressure is designed to localize pressure behavior for local energy solutions and epsilon-regularity use
+    = limitation: must audit exact projected-pressure definition before mapping project tails
+  + [candidate_003_dissipative_solution_pressure_role_frame] is dissipative or generalized suitable weak solutions with distributional pressure
+    = source: Chamorro, Lemarie-Rieusset, and Mayoufi, The role of the pressure in the regularity theory for the Navier-Stokes equations
+    = source_url: https://www.research-collection.ethz.ch/bitstreams/1c1170b9-dc9d-4f74-a4d5-b8479bb403bf/download
+    = fit: medium_high
+    = reason: clarifies equivalences and pressure's role in partial regularity contexts
+    = limitation: broader than the project-local harmonic pressure gate
+  + [candidate_004_one_component_harmonic_pressure_frame] is finite-scale one-component regularity via harmonic pressure
+    = source: arXiv 2606.08352
+    = source_url: https://arxiv.org/abs/2606.08352
+    = fit: cautionary_specialized
+    = reason: demonstrates why harmonic pressure cannot be casually bundled under pressure oscillation
+    = limitation: recent and specialized; useful as warning, not primary target frame
+
+& [SelectedFrame] is the current target
+  + [selected] is wolf_local_suitable_solution_frame
+  + [secondary] is projected_pressure_local_energy_frame
+  + [reason] is the selected frame most directly names harmonic pressure as a local decomposition component, matching the ledger's missing feature
+  + [line_audit_target] is identify the pressure decomposition terms and local energy inequality terms in the Wolf/local suitable solution frame, then compare them to the project pressure-tail components
+  + [admission_boundary] is selected frame does not admit project proof; it only gives the next exact comparison language
+
+& [DevelopedObstruction] is the current shape of meaning
+  + [old_blocker] is harmonic_pressure_cannot_be_treated_as_harmless_pressure_oscillation_remainder
+  + [new_blocker] is project_tail_budget_not_mapped_to_local_suitable_pressure_decomposition_terms
+  + [required_match_001] is project local pressure part maps to non-harmonic local pressure component
+  + [required_match_002] is project harmonic pressure part maps to harmonic correction with controlled norm or modulo formulation
+  + [required_match_003] is project nonlocal/cutoff tails map to projected-pressure remainder or are separately bounded
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is proof_lane_precheck
+  + [question] is create a frame-mapping precheck between the pressure-tail decomposition ledger and Wolf/local suitable solution pressure decomposition terms
+  + [stop_condition] is do not return to raw CKN pressure oscillation until this frame mapping is resolved
