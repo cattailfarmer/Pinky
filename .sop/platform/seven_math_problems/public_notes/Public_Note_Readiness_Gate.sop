@@ -1,0 +1,47 @@
+Subject: Seven Math Problems Public Note Readiness Gate
+
+Description: Boundary-safe readiness gate for deciding whether a public-facing note should be edited, held as a draft, or treated as ready for user review.
+
+& [PublicNoteReadinessGate] is a public synthesis tool
+  + [tool_uuid] is 5683a6da-80c6-4d15-b51f-c606405a5961
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_public_note_boundary_review_001.sop
+  + [role] is prevent endless public-note polish while preserving source/proof authority boundaries
+  + [not_role] is certifying mathematical correctness, publishing externally, or accepting any proof claim
+
+& [ReadinessColumnSet] is the note review surface
+  + [opening_boundary] is explicit_no_solution_claim, implied_no_solution_claim, unclear, or absent
+  + [lane_lock_visibility] is all_locks_named, most_locks_named, vague, or absent
+  + [external_claim_boundary] is audit_target_only, partially_clear, unclear, or absent
+  + [model_boundary] is diagnostic_only, partially_clear, unclear, or absent
+  + [readability_status] is readable_draft, dense_but_usable, confusing, or not_reviewed
+  + [next_action] is ready_for_user_review, needs_boundary_edit, needs_style_edit, needs_source_citation_pass, or hold_draft
+
+& [UseProcedure] is the readiness workflow
+  + [step_001_boundary] is verify the opening does not imply a solution
+  + [step_002_locks] is verify each lane keeps its unresolved lock visible
+  + [step_003_external] is verify external sources and complete-proof claims are framed as audit targets unless independently accepted
+  + [step_004_model] is verify Symbolic Ricci Flow is framed as diagnostic or model only
+  + [step_005_readability] is decide whether the note is readable enough for user review
+  + [step_006_stop] is stop editing if the note is ready and no specific improvement is named
+
+  = must: preserve no-solution and no-proof-promotion language
+  = must: keep unresolved locks visible
+  = must: stop style churn when the note is readable and boundary-safe
+  = should: prefer user review before turning the draft into a polished publication artifact
+  - never: polish away caution language to make the note more exciting
+
+& [CurrentApplication] is What The Seven Math Problems Project Has Actually Found So Far
+  + [note] is C:\Project\Pinky\.sop\platform\seven_math_problems\public_notes\What_The_Seven_Math_Problems_Project_Has_Actually_Found_So_Far.md
+  + [opening_boundary] is explicit_no_solution_claim
+  + [lane_lock_visibility] is all_locks_named
+  + [external_claim_boundary] is audit_target_only
+  + [model_boundary] is diagnostic_only
+  + [readability_status] is readable_draft
+  + [next_action] is ready_for_user_review
+
+& [CurrentReading] is the stop condition
+  + [meaning] is the note is boundary-safe and readable enough to place in front of the user
+  + [do_next_only_if] is the user asks for publication polish, citations, format conversion, or a different audience
+  + [heartbeat_recommendation] is quiet_watch_or_model_calibration_unless_new_periphery_appears
