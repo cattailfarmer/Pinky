@@ -1,0 +1,64 @@
+Subject: Navier-Stokes Pressure Projection Operator Scan
+
+Description: Target-prospecting pass for operator-level pressure decomposition statements after the local suitable pressure-frame mapping.
+
+& [NavierStokesPressureProjectionOperatorScan] is a target_prospecting record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [reentry_commit] is 5a28cf0 Map Navier-Stokes local suitable pressure frame
+  + [parent_mapping] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_local_suitable_pressure_frame_mapping_001.sop
+  + [lane] is Navier-Stokes
+  + [authority_boundary] is operator-frame selection only
+  + [not_claimed] is no project source estimate is rewritten through the selected operator and no regularity admission is granted
+
+& [OperatorQuestion] is the bounded inquiry
+  + [question] is identify the exact pressure-decomposition or local pressure projection statement needed to compare project pressure-tail components with local suitable solution pressure terms
+  + [reason] is the previous mapping found conceptual slots but no operator-level bridge
+
+& [OperatorSourceSet] is the resolved source neighborhood
+  + [source_001_local_pressure_projection] is local pressure projection introduced for CKN-type results for local suitable weak solutions
+    = source: On the local pressure of the Navier-Stokes equations and related systems
+    = url: https://arxiv.org/pdf/1611.01482
+    = role: primary operator target
+    = reading: local pressure projection is the precise operator vocabulary for removing or localizing pressure in arbitrary cylindrical domains
+    = project_use: compare each project pressure-tail component against the projection-generated local pressure and harmonic remainder terms
+  + [source_002_wolf_local_suitable_frame] is local suitable weak solutions with local pressure decomposition p = partial_t p_h + p_0 in exposition
+    = source: Local boundedness of local suitable weak solutions of the Navier-Stokes equations
+    = url: https://sebastian-hensel.com/master_thesis.pdf
+    = role: frame support
+    = reading: the harmonic component p_h is not optional vocabulary; it is part of the local suitable solution structure
+    = project_use: prevents treating harmonic pressure as generic tail debris
+  + [source_003_projected_pressure_local_energy] is local energy weak solution framework with projected pressure
+    = source: Local energy weak solutions for the Navier-Stokes equations in the half-space
+    = url: https://arxiv.org/abs/1711.04486
+    = role: secondary operator target
+    = reading: projected pressure and pressure representation formulas are used to localize pressure behavior in local energy weak solution settings
+    = project_use: fallback if Wolf-frame terms do not match the project pressure-tail route
+  + [source_004_pressure_role_equivalence] is pressure-role regularity and dissipative/local suitable equivalence work
+    = source: The role of the pressure in the regularity theory for the Navier-Stokes equations
+    = url: https://www.research-collection.ethz.ch/bitstreams/1c1170b9-dc9d-4f74-a4d5-b8479bb403bf/download
+    = role: authority-context support
+    = reading: pressure definitions and solution classes matter for epsilon regularity and short-time local regularity
+    = project_use: avoid mixing incompatible pressure notions across frames
+
+& [SelectedOperatorFrame] is the current target
+  + [primary] is local_pressure_projection
+  + [secondary] is projected_pressure_local_energy
+  + [support] is Wolf_local_suitable_pressure_decomposition
+  + [reason] is local pressure projection gives the operator-level statement missing from the previous frame mapping
+  + [comparison_terms_needed] is projected_local_pressure, harmonic_pressure_correction, nonlocal_or_outer_pressure_remainder, cutoff_error_terms, pressure_work_term
+  + [admission_boundary] is selecting the operator frame only prepares a future source-route comparison
+
+& [DevelopedObstruction] is the current shape of meaning
+  + [old_blocker] is no explicit operator-level pressure projection/decomposition from the source route into the selected frame
+  + [new_blocker] is project_tail_budget_not_expressed_under_local_pressure_projection_operator
+  + [first_required_match] is source local pressure bound rewritten as projected_local_pressure quantity
+  + [second_required_match] is harmonic part tracked as harmonic_pressure_correction with same-cylinder control or modulo formulation
+  + [third_required_match] is far-field and cutoff tails assigned to nonlocal_or_outer_pressure_remainder and cutoff_error_terms
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is the follow-up
+  + [mode] is proof_lane_precheck
+  + [question] is create a local-pressure-projection comparison table using the decomposition ledger rows and selected operator terms
+  + [stop_condition] is do not claim pressure smallness until at least one project component is rewritten under the local pressure projection frame with a cited bound
