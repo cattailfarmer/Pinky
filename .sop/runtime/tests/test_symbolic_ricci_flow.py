@@ -111,8 +111,8 @@ class SymbolicRicciFlowTests(unittest.TestCase):
                 "bsd_source_transfer_to_target_rank": 2.5,
                 "navier_stokes_pressure_smallness_bridge": 2.0,
                 "hodge_general_correspondence_generation": 2.5,
-                "p_vs_np_universal_polynomial_simulation": 2.5,
-                "yang_mills_independent_validation": 3.0,
+                "p_vs_np_repair_conflict_trace_bound": 2.5,
+                "yang_mills_uniform_lattice_spacing_derivative_lemma": 3.0,
             },
             edges={
                 "depends_on_open_lock": 5,
