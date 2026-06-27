@@ -1,0 +1,49 @@
+Subject: BSD Two-Part Bridge Sufficiency Precheck 001
+
+Description: Application of the BSD Source Transfer Sufficiency Ledger to the generalized Heegner or Chow-Heegner source family paired with derived-height or regulator measurement.
+
+& [BSDTwoPartBridgeSufficiencyPrecheck] is a proof_inquiry record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [active_problem] is Birch and Swinnerton-Dyer
+  + [trigger_commit] is 736aad1 Select BSD source sufficiency reentry
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_refined_map_bsd_reentry_selection_001.sop
+  + [sufficiency_ledger] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Transfer_Sufficiency_Ledger.sop
+  + [pairing_table] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\BSD_Source_Measurement_Pairing_Table.sop
+  + [authority_status] is sufficiency_precheck_not_proof
+  + [proof_boundary] is no BSD proof, no rank equality theorem, and no source-count sufficiency theorem admitted
+
+& [CandidateRow] is generalized_Heegner_or_Chow_Heegner_plus_derived_height
+  + [corridor] is generalized Heegner or Chow-Heegner cycle-to-point corridor paired with derived-height or regulator nondegeneracy
+  + [target_curve_scope] is special elliptic curve or motive families, not all elliptic curves over Q
+  + [source_object] is higher cycle, diagonal cycle, Chow-Heegner point, or related transferred point
+  + [transfer_lands_in] is Mordell-Weil point in special settings or height/regulator class depending on construction
+  + [source_count_status] is one_or_some
+  + [independence_status] is measured_if_nonzero_or_conjectural
+  + [measurement_status] is derived_height_or_regulator_nonvanishing_is_central_but_not_general_factory
+  + [upper_control_status] is not_same_hypothesis_general_upper_control
+  + [sufficiency_class] is partial_meaningful
+  + [first_gap] is no_rank_parametrized_source_factory_over_target_field
+
+& [LedgerReading] is the sufficiency result
+  + [admitted_for_line_audit] is no
+  + [reason] is local records identify real special source-transfer and measurement mechanisms but not a candidate theorem that supplies analytic-rank-many independent generators with same-hypothesis upper control
+  + [meaningful_part_001] is Chow-Heegner and generalized Heegner constructions are genuine R-hand source candidates in special settings
+  + [meaningful_part_002] is derived heights and regulators are genuine phase-correction measurement mechanisms
+  + [blocking_part_001] is construction does not supply enough independent points in arbitrary rank
+  + [blocking_part_002] is nonzero measurement does not itself construct the required source count
+  + [blocking_part_003] is upper Selmer control is not packaged under the same assumptions
+
+& [DevelopedUnderstanding] is the current shape of meaning
+  + [old_shape] is perhaps source family plus derived-height measurement can become a concrete BSD sufficiency target
+  + [new_shape] is the pair is structurally meaningful but still decomposes into source, measurement, and control jobs that no local theorem unifies
+  + [meaning_gained] is BSD remains strongest as a two-part bridge, but the missing object is now one theorem package joining source-count, independence/regulator, and upper control
+  + [proof_promotion_status] is blocked
+  + [lock_mass_change] is none
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is route_decision
+  + [question] is either run targeted deep research for a theorem package joining generalized Heegner sources, derived heights, and Selmer upper control, or mark the BSD source-sufficiency reentry saturated
+  + [Deep_Research_Priority_Gate] is conditionally_ready
+    = trigger: only if a specific theorem family or source package is selected, not for another broad Chow-Heegner survey
+
