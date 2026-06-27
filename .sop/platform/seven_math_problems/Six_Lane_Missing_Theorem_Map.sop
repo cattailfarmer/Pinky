@@ -21,10 +21,10 @@ Description: Internal navigation map of missing theorem shapes, audit targets, a
     = best_reentry_target: higher-rank Euler/Kolyvagin-style mechanism or source-count theorem for line-by-line sufficiency audit
     = audit_boundary: point or cycle existence is insufficient without independence and upper control
   + [navier_stokes] is Navier-Stokes Existence and Smoothness
-    = missing_theorem_shape: theorem converting local velocity/enstrophy/cutoff tail budgets into same-cylinder pressure smallness or a projection-remainder estimate strong enough for regularity criteria
+    = missing_theorem_shape: exact theorem converting local velocity/enstrophy/cutoff tail budgets into same-cylinder pressure smallness, or alternate pressure-Hessian/defect-functional inequality with continuation closure
     = current_status: saturated_for_current_cycle
-    = best_reentry_target: pressure-Hessian coercivity proof, endpoint pressure-work estimate, or concrete defect functional with autonomous inequality
-    = audit_boundary: geometric depletion intuition is insufficient without sign/coercivity and continuation closure
+    = best_reentry_target: pressure-Hessian coercivity proof, endpoint pressure-work estimate, concrete defect functional with autonomous inequality, or newly supplied velocity/enstrophy-to-pressure-smallness theorem
+    = audit_boundary: tail control and geometric depletion intuition are insufficient without pressure smallness, sign/coercivity, and continuation closure
   + [hodge] is Hodge Conjecture
     = missing_theorem_shape: arbitrary rational Hodge-class-to-algebraic-cycle construction or correspondence-generation theorem
     = current_status: saturated_for_current_cycle

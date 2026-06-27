@@ -37,9 +37,9 @@ Description: Ordered proof-inquiry route for the six remaining Millennium proble
 
 & [CurrentFocus] is the active lane
   + [problem] is Navier-Stokes Existence and Smoothness
-  + [focus_record] is C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-27_navier_stokes_velocity_enstrophy_pressure_prospect_001.sop
+  + [focus_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_pressure_bridge_saturation_reflection_001.sop
   + [previous_problem] is Poincare Conjecture
   + [previous_status] is model_boundary_verified
     = first_lock: no_new_poincare_proof_work_symbolic_ricci_flow_is_model_only
   + [next_handle] is C:\Project\Pinky\.sop\platform\seven_math_problems\proof_inquiry\Navier_Stokes_Projection_Remainder_Admission_Gate.sop
-  + [next_question] is mark the current Navier-Stokes pressure-bridge reentry saturated unless an exact velocity/enstrophy/cutoff-to-pressure-smallness theorem is supplied
+  + [next_question] is select another concrete target from the refined map, most likely BSD source-count sufficiency audit or Navier-Stokes pressure-Hessian/defect-functional handle
