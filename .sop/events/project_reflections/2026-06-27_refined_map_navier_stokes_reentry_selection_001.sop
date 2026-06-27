@@ -1,0 +1,42 @@
+Subject: Refined Map Navier-Stokes Reentry Selection 001
+
+Description: Target-prospecting reentry decision from the refined six-lane synthesis, selecting Navier-Stokes tail-budget to pressure-smallness as the next concrete inquiry interface.
+
+& [RefinedMapNavierStokesReentrySelection] is a project_reflection record
+  + [project] is seven math problems
+  + [created_at] is 2026-06-27
+  + [trigger_commit] is 74729dd Record refined six-lane synthesis
+  + [trigger_record] is C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_refined_current_cycle_six_lane_synthesis_001.sop
+  + [selector] is C:\Project\Pinky\.sop\platform\seven_math_problems\research\Bridge_Obstruction_Mode_Selector.sop
+  + [selected_lane] is Navier-Stokes Existence and Smoothness
+  + [authority_status] is target_selection_not_proof
+  + [proof_boundary] is no Navier-Stokes regularity proof, no pressure-smallness theorem, and no continuation criterion admitted
+
+& [SelectorApplication] is the walking decision
+  + [bridge_type] is propagation_or_accepted_criterion
+  + [available_target] is prospect_query
+  + [authority_boundary] is proof_blocked
+  + [recent_commit_meaning] is refined synthesis exposed concrete missing theorem interfaces across lanes
+  + [selected_mode] is target_prospecting
+  + [reason] is the Navier-Stokes row has a named accepted-criterion bridge shape that can be searched or scoped without treating prospecting as proof progress
+
+& [TargetChoice] is the selected interface
+  + [missing_theorem_shape] is theorem converting local velocity, enstrophy, and cutoff tail budgets into same-cylinder pressure smallness or a projection-remainder estimate strong enough for regularity criteria
+  + [prior_local_records] are C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_tail_budget_pressure_smallness_inspection_001.sop, C:\Project\Pinky\.sop\events\proof_inquiry\2026-06-26_navier_stokes_quadrupole_tail_lemma_line_extraction_001.sop, and C:\Project\Pinky\.sop\events\project_reflections\2026-06-27_navier_stokes_tail_formula_projection_mapping_001.sop
+  + [accepted_target_language] is CKN-style velocity-pressure smallness, local pressure oscillation, pressure modulo harmonic functions, or pressure L3_over_2 smallness on the same cylinder
+  + [source_quantity_language] is local velocity L3, scaled enstrophy, cutoff commutator terms, transport-boundary terms, and outer-log tail loss
+  + [first_obstruction] is the source quantities live as tail/error budgets rather than pressure oscillation or same-cylinder pressure norm control
+
+& [CuriousPeriphery] is the next prospect
+  + [subject] is projection remainder absorption
+  + [question] is whether pressure projection formulas plus local Calderon-Zygmund estimates can convert the source tail formula into the accepted pressure-smallness frame, or whether the cutoff and nonlocal tail terms necessarily remain outside
+  + [expected_positive_target] is a named theorem or lemma bounding pressure oscillation by local velocity and controlled tail/remainder terms on a smaller cylinder
+  + [expected_negative_result] is confirmation that the pressure decomposition requires a pressure term or nonlocal remainder not supplied by the source tail budget
+  + [Deep_Research_Priority_Gate] is conditionally_ready
+    = trigger: use if local records do not already contain an exact local pressure decomposition theorem with the needed remainder control
+
+& [NextBoundedMotion] is follow-up
+  + [mode] is local_record_precheck_then_deep_research_if_needed
+  + [question] is inspect the Navier-Stokes projection remainder gate and pressure tail decomposition ledger for an existing exact theorem target before external searching
+  + [expected_output] is either a concrete theorem target, a no-target saturation record, or a Deep_Research_Priority_Gate event
+
