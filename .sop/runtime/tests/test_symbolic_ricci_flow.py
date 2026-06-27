@@ -108,7 +108,7 @@ class SymbolicRicciFlowTests(unittest.TestCase):
             source_linked_claims=6,
             claims_with_explicit_boundary=6,
             unresolved_locks={
-                "bsd_source_transfer_to_target_rank": 2.5,
+                "bsd_source_measurement_control_theorem_package": 2.5,
                 "navier_stokes_pressure_smallness_bridge": 2.0,
                 "hodge_general_correspondence_generation": 2.5,
                 "p_vs_np_repair_conflict_trace_bound": 2.5,
