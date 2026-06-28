@@ -1,0 +1,41 @@
+Subject: Attention Journal Continuity Event 002 Hypergraph
+
+Description: SOP-HG shape for the time-space continuity refinement event.
+
+& [AttentionJournalContinuityGraph_2026_06_28_002] is an attention journal hypergraph record
+  + [record_status] is completed
+  + [record_date] is 2026-06-28
+  + [stream_node] is N:journal_stream:attention_journal_system_bootstrap_stream
+  + [event_node] is N:attention_event:attention_event_2026_06_28_attention_journal_continuity_002
+  + [parent_event_node] is N:attention_event:attention_event_2026_06_28_attention_journal_system_001
+  + [child_event_node] is N:attention_event:future_operating_loop_journal_integration_event
+  + [intention_node] is N:intention:intention_chain_attention_journal_system
+  + [focal_subject_node] is N:subject:AttentionJournal_time_space_continuity
+  + [trigger_node] is N:trigger:user_request_time_space_continuity_local_awareness_pair
+  + [temporal_anchor_node] is N:time:current_turn_after_commit_ebaa2eb_event_sequence_002
+  + [spatial_anchor_node] is N:space:C_Project_Pinky_dot_sop_journal_surfaces
+  + [continuity_node] is N:continuity:continuity_attention_journal_system_001_to_continuity_002
+  + [local_awareness_pair_node] is N:local_awareness_pair:local_awareness_pair_attention_journal_and_narrative
+  + [operation_node] is N:operation:add_temporal_anchor_spatial_anchor_continuity_frame_local_awareness_pair
+  + [boundary_node] is N:boundary:append_only_journal_continuity_no_runtime_slice
+  + [inside_node] is N:inside:event_continuity_time_space_and_narrative_pairing
+  + [outside_node] is N:outside:hidden_attention_physical_sensor_state_prior_history_backfill_runtime
+  + [evidence_node] is N:evidence:continuity_source_manifest_contract_state_parent_event
+  + [balance_node] is N:balance:stable
+  + [next_node] is N:attention_hint:future_operating_loop_journal_event_emission
+  + [contains_edge] is E:contains_event:attention_journal_system_bootstrap_stream->attention_event_2026_06_28_attention_journal_continuity_002
+  + [follows_edge] is E:follows_event:attention_event_2026_06_28_attention_journal_system_001->attention_event_2026_06_28_attention_journal_continuity_002
+  + [opens_edge] is E:opens_event:attention_event_2026_06_28_attention_journal_continuity_002->future_operating_loop_journal_integration_event
+  + [time_edge] is E:anchors_time:attention_event_2026_06_28_attention_journal_continuity_002->current_turn_after_commit_ebaa2eb_event_sequence_002
+  + [space_edge] is E:anchors_space:attention_event_2026_06_28_attention_journal_continuity_002->C_Project_Pinky_dot_sop_journal_surfaces
+  + [continues_edge] is E:continues:continuity_attention_journal_system_001_to_continuity_002
+  + [pairs_edge] is E:pairs_with_narrative:attention_event_2026_06_28_attention_journal_continuity_002->local_awareness_pair_attention_journal_and_narrative
+  + [triggers_edge] is E:triggers:user_request_time_space_continuity_local_awareness_pair->attention_event_2026_06_28_attention_journal_continuity_002
+  + [intends_edge] is E:intends:attention_event_2026_06_28_attention_journal_continuity_002->intention_chain_attention_journal_system
+  + [touches_edge] is E:touches:attention_event_2026_06_28_attention_journal_continuity_002->AttentionJournal_time_space_continuity
+  + [bounds_edge] is E:bounds:attention_event_2026_06_28_attention_journal_continuity_002->append_only_journal_continuity_no_runtime_slice
+  + [evidences_edge] is E:evidences:attention_event_2026_06_28_attention_journal_continuity_002->continuity_source_manifest_contract_state_parent_event
+  + [routes_edge] is E:routes_next:attention_event_2026_06_28_attention_journal_continuity_002->future_operating_loop_journal_event_emission
+
+  = must: preserve time-space continuity separately from narrative interpretation
+  = must: preserve journal and narrative as complementary local-awareness units

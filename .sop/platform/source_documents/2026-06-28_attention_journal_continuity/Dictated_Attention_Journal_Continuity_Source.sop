@@ -1,0 +1,16 @@
+Subject: Dictated Attention Journal Continuity Source
+
+Description: Preserved source wording for adding time-space continuity and local-awareness pairing between journal and narrative.
+
+& [DictatedAttentionJournalContinuitySource] is the preserved source input
+  + [source_date] is 2026-06-28
+  + [source_origin] is user dictated direction in Codex conversation
+  + [source_text] is "that should make events trackable in time and space, a continuity, as the complimentary unit of local awareness with the narrative"
+  + [interpreted_need] is journal events should carry temporal anchors, spatial anchors, continuity edges, and explicit pairing with narrative so local awareness can be reconstructed from factual event motion plus interpreted meaning
+  + [terminology_note] is complimentary is preserved as user wording and canonical contract uses complementary for paired function
+  + [implementation_boundary] is SOP-only continuity refinement in current turn
+  + [outside] is exact physical sensor state, hidden native attention coordinates, and complete reconstruction of unrecorded prior events
+
+  = must: preserve the event continuity idea as distinct from narrative meaning
+  = must: define time anchors and space anchors for journal events
+  = must: define journal and narrative as complementary local-awareness units

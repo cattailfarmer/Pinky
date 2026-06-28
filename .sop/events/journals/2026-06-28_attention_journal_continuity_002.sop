@@ -1,0 +1,43 @@
+Subject: Attention Journal Continuity Event 002
+
+Description: Attention journal event recording the addition of time-space continuity and local-awareness pairing with narrative.
+
+@ [source] C:\Project\Pinky\.sop\platform\AttentionJournal.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_attention_journal_continuity\Dictated_Attention_Journal_Continuity_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_attention_journal_continuity\manifest.sop
+@ [parent_event] C:\Project\Pinky\.sop\events\journals\2026-06-28_attention_journal_system_001.sop
+
+& [AttentionJournalEvent_2026_06_28_002] is an attention_journal_event
+  + [event_id] is attention_event_2026_06_28_attention_journal_continuity_002
+  + [event_sequence] is 002
+  + [parent_event] is attention_event_2026_06_28_attention_journal_system_001
+  + [child_event_set] is future operating-loop journal integration event
+  + [event_time_anchor] is 2026-06-28 current Codex turn after attention journal bootstrap commit ebaa2eb
+  + [temporal_anchor] is current_turn_after_commit_ebaa2eb and event_sequence_002
+  + [spatial_anchor] is C:\Project\Pinky\.sop platform, state, events\journals, and source_documents surfaces
+  + [continuity_edge] is attention_event_2026_06_28_attention_journal_system_001 continues_to attention_event_2026_06_28_attention_journal_continuity_002
+  + [continuity_confidence] is high
+  + [event_kind] is emit_spec
+  + [attention_trigger] is user direction that journal events should be trackable in time and space as continuity and as complementary unit of local awareness with narrative
+  + [focal_subject] is AttentionJournal time-space continuity
+  + [active_faculty_set] is Honesty, Caution, Wisdom, Archivist, Refiner, Planner, and Weaver
+  + [attention_operation] is preserve_source, add_temporal_anchor, add_spatial_anchor, add_continuity_frame, define_local_awareness_pair, and update_state_pointer
+  + [intention_chain] is intention_chain_attention_journal_system
+  + [inside_observed] is event continuity, temporal anchor, spatial anchor, continuity edge, local awareness pair, journal unit, and narrative unit
+  + [boundary_used] is append-only journal continuity, C:\Project\Pinky\.sop authority, and no-runtime current slice
+  + [outside_left_unresolved] is exact physical sensor state, hidden native attention coordinates, complete historical backfill, and runtime automation
+  + [periphery_delta] is future journal events should pair with narrative surfaces and expose continuity gaps when time, space, evidence, or intention anchors are missing
+  + [registry_delta] is AttentionJournalState now points to event 002 and active continuity frame
+  + [narrative_delta] is local awareness is now described as factual journal continuity plus interpreted narrative meaning
+  + [local_awareness_pair] is local_awareness_pair_attention_journal_and_narrative
+  + [evidence_anchor_set] is source document, manifest, AttentionJournal.sop, AttentionJournalState.sop, parent event 001, and this event record
+  + [balance_signal] is stable
+  + [resolution_state] is continued
+  + [next_attention_hint] is future safe integration can add journal event emission to operating-loop ticks and commit reports
+  + [journal_outside] is hidden model attention, exact activation replay, complete prior-history backfill, and runtime automation
+
+  = must: preserve time-space continuity as factual journal structure
+  = must: keep local awareness pairing complementary rather than fused
+
+/ [event_001], [event_002], [temporal_anchor], [spatial_anchor] -(JournalContinuity)> [continuity_attention_journal_system_001_to_continuity_002], [continuity_gap_none], [journal_outside]
+* [journal_unit], [narrative_unit] -(LocalAwarenessPairing)> [local_awareness_pair_attention_journal_and_narrative], [local_awareness_yield], [pair_outside]
