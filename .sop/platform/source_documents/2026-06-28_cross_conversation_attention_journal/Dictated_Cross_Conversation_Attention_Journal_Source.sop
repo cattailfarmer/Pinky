@@ -1,0 +1,17 @@
+Subject: Dictated Cross Conversation Attention Journal Source
+
+Description: Preserved source wording for making the attention journal conversation-spanning while keeping narratives context-local.
+
+& [DictatedCrossConversationAttentionJournalSource] is the preserved source input
+  + [source_date] is 2026-06-28
+  + [source_origin] is user dictated direction in Codex conversation
+  + [source_text] is "this journal should notice the context of events, and track through every conversation, not per each conversation. so that this journal creates a web of momentary awareness nodes traveling through all the conversations and narrative. the narratives each belong in their context, but the journal will weave together a single awareness of all narratives"
+  + [interpreted_need] is make AttentionJournal a global journal stream over accessible conversation contexts, event contexts, and narrative surfaces, so momentary awareness nodes can be woven across conversations without collapsing local narrative ownership
+  + [implementation_boundary] is SOP-only cross-conversation journal refinement in current turn
+  + [authority_boundary] is only available, exported, preserved, or explicitly shared conversation records may be journaled
+  + [outside] is hidden inaccessible conversations, private thread state, unexported records, exact hidden activations, and claiming complete awareness without available records
+
+  = must: preserve the distinction between global journal and context-local narratives
+  = must: define momentary awareness nodes as cross-conversation journal objects
+  = must: define context anchors for each journaled event
+  = must: prevent the global journal from overwriting narrative ownership

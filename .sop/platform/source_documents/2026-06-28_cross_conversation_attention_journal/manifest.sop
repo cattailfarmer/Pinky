@@ -1,0 +1,14 @@
+Subject: Cross Conversation Attention Journal Source Manifest
+
+Description: Source preservation manifest for the cross-conversation attention journal refinement.
+
+& [CrossConversationAttentionJournalSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_cross_conversation_attention_journal\Dictated_Cross_Conversation_Attention_Journal_Source.sop
+  + [canonical_output] is C:\Project\Pinky\.sop\platform\AttentionJournal.sop
+  + [state_output] is C:\Project\Pinky\.sop\state\AttentionJournalState.sop
+  + [journal_event] is C:\Project\Pinky\.sop\events\journals\2026-06-28_cross_conversation_attention_journal_003.sop
+  + [hypergraph_record] is C:\Project\Pinky\.sop\events\journals\2026-06-28_cross_conversation_attention_journal_003.hg.sop
+  + [intake_status] is processed_to_canonical_sop
+  + [authority_boundary] is source document preserved separately from canonical cross-conversation journal rules and emitted event records
+
+  = must: cite this manifest when the cross-conversation journal refinement is treated as completed

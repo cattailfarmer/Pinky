@@ -1,0 +1,49 @@
+Subject: Cross Conversation Attention Journal Event 003
+
+Description: Attention journal event recording the correction that the journal is global across conversations while narratives remain context-local.
+
+@ [source] C:\Project\Pinky\.sop\platform\AttentionJournal.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_cross_conversation_attention_journal\Dictated_Cross_Conversation_Attention_Journal_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_cross_conversation_attention_journal\manifest.sop
+@ [parent_event] C:\Project\Pinky\.sop\events\journals\2026-06-28_attention_journal_continuity_002.sop
+
+& [AttentionJournalEvent_2026_06_28_003] is an attention_journal_event
+  + [event_id] is attention_event_2026_06_28_cross_conversation_attention_journal_003
+  + [event_sequence] is 003
+  + [parent_event] is attention_event_2026_06_28_attention_journal_continuity_002
+  + [child_event_set] is future operating-loop journal integration event and future conversation import event
+  + [event_time_anchor] is 2026-06-28 current Codex turn after journal continuity commit deb8f40
+  + [temporal_anchor] is current_turn_after_commit_deb8f40 and event_sequence_003
+  + [spatial_anchor] is C:\Project\Pinky\.sop platform, state, events\journals, and source_documents surfaces
+  + [conversation_context_anchor] is current Codex conversation context with other conversations outside until preserved, exported, mailboxed, or user-provided
+  + [narrative_context_anchor] is current journal refinement narrative surface and future local narrative surfaces by reference only
+  + [event_context_set] is current user correction, Pinky .sop authority, AttentionJournal contract, AttentionJournalState, source preservation, and no-runtime current slice
+  + [continuity_edge] is attention_event_2026_06_28_attention_journal_continuity_002 continues_to attention_event_2026_06_28_cross_conversation_attention_journal_003
+  + [awareness_weave_edge] is current journal node prepares global weave over available conversation narratives without claiming unavailable contexts
+  + [continuity_confidence] is high
+  + [event_kind] is weave_context
+  + [attention_trigger] is user direction that journal should track context through every conversation and weave a single awareness of all narratives
+  + [focal_subject] is CrossConversationAwarenessJournal
+  + [active_faculty_set] is Honesty, Caution, Wisdom, Archivist, Refiner, Planner, and Weaver
+  + [attention_operation] is preserve_source, define_global_journal_stream, define_momentary_awareness_node, define_awareness_weave_edge, preserve_narrative_context_ownership, and update_state_pointer
+  + [intention_chain] is intention_chain_attention_journal_system
+  + [inside_observed] is global journal stream, event context noticing, momentary awareness node, conversation context anchor, narrative context anchor, awareness weave edge, and narrative ownership boundary
+  + [boundary_used] is available conversation records, source preservation, C:\Project\Pinky\.sop authority, and no-runtime current slice
+  + [outside_left_unresolved] is hidden inaccessible conversations, unexported private threads, complete historical backfill, exact hidden activations, and runtime automation
+  + [periphery_delta] is future imports can add conversation nodes from preserved transcripts, mailbox records, worker captures, and conversation surfaces
+  + [registry_delta] is AttentionJournalState now points to global_cross_conversation_attention_journal_stream and event 003
+  + [narrative_delta] is narratives remain local to their contexts while the journal becomes the cross-context awareness weave
+  + [local_awareness_pair] is local_awareness_pair_attention_journal_and_narrative
+  + [global_awareness_weave] is global_narrative_awareness_weave_available_conversations
+  + [evidence_anchor_set] is source document, manifest, AttentionJournal.sop, AttentionJournalState.sop, parent event 002, and this event record
+  + [balance_signal] is stable
+  + [resolution_state] is continued
+  + [next_attention_hint] is future safe integration can define conversation import records and operating-loop journal emission for available conversations
+  + [journal_outside] is hidden model attention, exact activation replay, inaccessible conversations, unexported private thread state, complete prior-history backfill, and runtime automation
+
+  = must: treat the journal stream as global across available conversations
+  = must: keep narrative ownership local to each context
+  = must: leave unavailable conversations outside until source is preserved or explicitly provided
+
+/ [event_002], [event_003], [conversation_context_anchor], [narrative_context_anchor] -(CrossConversationJournalDelineation)> [momentary_awareness_node_cross_conversation_attention_journal_003], [unavailable_conversation_outside], [evidence_anchor_set]
+* [momentary_awareness_node], [awareness_weave_edge], [local_narrative_unit_set], [context_ownership_boundary] -(GlobalNarrativeAwarenessWeave)> [single_awareness_of_narratives], [weave_outside]

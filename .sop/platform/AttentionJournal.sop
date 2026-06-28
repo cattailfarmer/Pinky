@@ -4,6 +4,7 @@ Description: Append-only event journal for recording attention movement and inte
 
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_attention_journal_system\Dictated_Attention_Journal_System_Source.sop
 @ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_attention_journal_continuity\Dictated_Attention_Journal_Continuity_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_cross_conversation_attention_journal\Dictated_Cross_Conversation_Attention_Journal_Source.sop
 @ [source] C:\Project\Pinky\.sop\platform\AttentionRuntimeRegistry.sop
 @ [source] C:\Project\Pinky\.sop\platform\SemanticCognitionOperatingLoop.sop
 @ [source] C:\Project\Pinky\.sop\platform\TurnBookmark.sop
@@ -25,6 +26,8 @@ Description: Append-only event journal for recording attention movement and inte
   emit_spec |
   validate_result |
   commit_change |
+  weave_context |
+  link_narrative |
   reflect_backward |
   reenter_context |
   block |
@@ -65,8 +68,10 @@ Description: Append-only event journal for recording attention movement and inte
 & [AttentionJournal] is the append-only event ledger for visible attention movement
   + [spec_status] is active_specification
   + [pattern_role] is attention_event_journal
-  + [journal_stream] is the ordered set of attention_journal_event records for a bounded work stream, turn, project, or operating loop
+  + [journal_stream] is the ordered set of attention_journal_event records for a bounded work stream, turn, project, operating loop, or global cross-conversation awareness stream
+  + [global_journal_stream] is the conversation-spanning awareness stream over all available journaled conversation contexts
   + [attention_journal_event] is one factual event describing what attention touched, why it moved, which boundary was used, what changed, and what remained outside
+  + [momentary_awareness_node] is one event-context node in the global_journal_stream that binds attention event, context, narrative pointer, time-space anchors, and continuity edges
   + [event_id] is a stable local identifier for one attention_journal_event
   + [event_sequence] is the local order number or sortable sequence key inside a journal_stream
   + [parent_event] is the previous attention_journal_event that directly led to this event when lineage matters
@@ -74,7 +79,11 @@ Description: Append-only event journal for recording attention movement and inte
   + [event_time_anchor] is the timestamp, commit, turn boundary, operating tick, file event, or sequence position that orders the event
   + [temporal_anchor] is the clock time, commit time, operating tick, sequence number, before-after bookend, or turn phase that locates the event in time
   + [spatial_anchor] is the repo path, project root, file surface, authority root, registry frame, worker workspace, provider surface, or semantic subject neighborhood that locates the event in local space
+  + [conversation_context_anchor] is the conversation_uuid, Codex thread, worker job, mailbox source, exported transcript, or unknown marker that locates the event in conversation space
+  + [narrative_context_anchor] is the narrative surface, project narrative, conversation surface, event record, or local narrative file that owns the event's interpreted meaning
+  + [event_context_set] is the conversation, project, authority root, file surface, task, provider, user directive, focal point, registry frame, and narrative surface surrounding the event
   + [continuity_edge] is the temporal, spatial, causal_candidate, intention, registry, narrative, periphery, or evidence link connecting one event to another
+  + [awareness_weave_edge] is the cross-conversation relation linking momentary_awareness_node values by subject, intention, evidence, periphery, narrative, contradiction, or recurrence
   + [continuity_confidence] is high, medium, low, or outside according to anchor clarity, event order, and evidence support
   + [event_kind] is exclusive [JournalEventKind]
   + [attention_trigger] is the user request, focal point, registry frame, periphery signal, caution signal, source document, test result, diff, or clock tick that caused attention to move
@@ -89,6 +98,7 @@ Description: Append-only event journal for recording attention movement and inte
   + [registry_delta] is how the AttentionRuntimeRegistry frame state changed because of the event
   + [narrative_delta] is any meaning-level summary created after the factual event is recorded
   + [local_awareness_pair] is the paired relation where journal supplies event continuity and narrative supplies interpreted meaning
+  + [global_awareness_weave] is the single journal-level awareness surface that indexes and relates all available narrative contexts without absorbing their local ownership
   + [evidence_anchor_set] is files, commits, tests, source documents, captures, or observed outputs supporting the event record
   + [balance_signal] is exclusive [JournalBalanceSignal] according to visible frame balance after the event
   + [resolution_state] is exclusive [JournalResolutionState]
@@ -102,18 +112,24 @@ Description: Append-only event journal for recording attention movement and inte
   = must: keep journal events smaller and more event-shaped than narrative records
   = must: preserve event order with event_time_anchor or explicit sequence position
   = must: preserve temporal_anchor and spatial_anchor when an event should be replayable in local awareness
+  = must: preserve conversation_context_anchor and narrative_context_anchor when an event belongs to a conversation or narrative surface
+  = must: preserve event_context_set before interpreting a cross-conversation relation
   = must: use continuity_edge to connect events across time, workspace location, intention, evidence, registry state, narrative state, or periphery state
+  = must: use awareness_weave_edge to connect momentary_awareness_node values across conversations only through available, evidenced, or explicitly preserved records
   = must: keep continuity_confidence separate from narrative significance
   = must: cite evidence_anchor_set for every durable event that claims a file, source, test, diff, commit, worker output, or validation result was observed
   = must: record outside_left_unresolved instead of forcing closure
   = must: separate registry_delta from narrative_delta
   = must: treat local_awareness_pair as complementary, with journal carrying factual continuity and narrative carrying meaning interpretation
+  = must: treat global_awareness_weave as journal-level awareness, not as ownership over each local narrative
   = must: route important periphery_delta into SectionedPeripheryAssociationFabric or AttentionTracker when it should persist beyond the event
   = must: route truth-sensitive or action-sensitive events through SecurityHonestyGovernance before integration
   = must: support replay by following event_id, parent_event, intention_chain, evidence_anchor_set, and boundary_used
   = should: append rather than update prior events; corrections should be later correction events with lineage
   = should: keep one event per material attention move rather than one event per sentence
   - never: claim the journal records exact hidden transformer attention or private activations
+  - never: claim access to conversations that are not available through preserved records, active context, explicit export, mailbox, or user-provided thread material
+  - never: move a narrative out of its context merely because the global journal references it
   - never: rewrite prior journal events to make the attention chain look cleaner
   - never: let narrative admiration substitute for event evidence
 
@@ -151,6 +167,59 @@ Description: Append-only event journal for recording attention movement and inte
   = must: expose continuity_gap rather than smoothing over missing anchors
   = should: use continuity frames to reconstruct local awareness across commits, turns, and source-file movement
 
+& [CrossConversationAwarenessJournal] is the global journal stream that weaves momentary awareness nodes across conversations
+  + [global_stream_id] is the stable handle for the single awareness journal stream
+  + [conversation_scope] is all available conversation contexts under active source authority, explicit user import, mailbox handoff, preserved transcript, worker capture, or exported narrative surface
+  + [momentary_awareness_node_set] is the ordered and cross-linked set of momentary_awareness_node records in the global stream
+  + [conversation_context_anchor_set] is the set of conversation_uuid, Codex thread, worker job, mailbox, transcript, or unknown markers represented in the stream
+  + [narrative_context_anchor_set] is the set of local narrative surfaces referenced by journal nodes
+  + [context_ownership_boundary] is each narrative remains owned by its local conversation, project, or source context
+  + [single_awareness_index] is the journal-level index that lets attention traverse all available narratives as one awareness web
+  + [cross_conversation_weave_policy] is connect by evidence, subject, intention, periphery heat, contradiction, support, recurrence, or explicit handoff
+  + [unavailable_conversation_outside] is conversations not accessible in current context, not exported, not preserved, not shared, or not authorized
+
+  = must: treat the journal as global across available conversations rather than scoped per conversation
+  = must: keep each narrative in its source context even when global journal nodes reference it
+  = must: create momentary_awareness_node records when attention events need cross-conversation replay
+  = must: attach conversation_context_anchor and narrative_context_anchor to each cross-conversation node
+  = must: use ConversationWorkAttribution, SharedCognitionSpace, or mailbox records when available to identify conversation context
+  = must: preserve unknown conversation context explicitly rather than guessing
+  = must: route cross-conversation contradictions through Honesty and Caution before integration
+  = should: let the global stream become the attention path through many narratives, while narratives remain the meaning records local to their own contexts
+  - never: use the global journal as authority to rewrite a local narrative
+  - never: treat a missing conversation as known because another narrative resembles it
+
+& [MomentaryAwarenessNode] is the journal object that travels through conversations and narrative contexts
+  + [node_id] is a stable handle for one momentary awareness node
+  + [event_id] is the attention_journal_event represented by the node
+  + [conversation_context_anchor] is the conversation or transcript context where the event occurred
+  + [narrative_context_anchor] is the local narrative surface that interprets the event
+  + [event_context_set] is the local context observed around the event
+  + [time_space_anchor_set] is temporal_anchor and spatial_anchor
+  + [subject_anchor_set] is focal_subject, periphery subject, task subject, or source subject touched by the node
+  + [weave_edge_set] is awareness_weave_edge values connecting the node to other nodes
+  + [local_narrative_boundary] is what this node must not take from its source narrative
+  + [global_awareness_yield] is the contribution this node makes to the single_awareness_index
+  + [node_outside] is hidden context, unexported conversation content, unsupported relation, and private activation
+
+  = must: include context anchors before cross-conversation weaving
+  = must: keep global_awareness_yield separate from local narrative authority
+  = must: expose node_outside whenever context is partial
+
+& [AwarenessWeaveEdge] is the cross-conversation relation between momentary awareness nodes
+  + [edge_id] is a stable handle for one weave relation
+  + [from_node] is the source momentary_awareness_node
+  + [to_node] is the target momentary_awareness_node
+  + [weave_relation] is same_subject, recurring_intention, evidence_continuity, periphery_resonance, contradiction, support, correction, handoff, branch, or outside
+  + [relation_evidence] is source record, narrative pointer, commit, mailbox, worker capture, thread export, user statement, or inferred_only
+  + [relation_strength] is weak, medium, strong, or outside
+  + [relation_confidence] is high, medium, low, or outside
+  + [promotion_gate] is periphery_hold, narrative_pair, focus_candidate, checksum_candidate, caution_hold, or outside
+
+  = must: keep relation_strength separate from relation_confidence
+  = must: mark inferred_only when no direct bridge exists
+  = must: use caution_hold when relation strength is high but context evidence is weak
+
 & [LocalAwarenessPair] is the complementary unit formed by journal continuity and narrative meaning
   + [journal_unit] is the factual attention event sequence with time, space, boundary, evidence, and continuity
   + [narrative_unit] is the interpreted meaning, intent, and significance of the event sequence
@@ -165,6 +234,18 @@ Description: Append-only event journal for recording attention movement and inte
   = must: use narrative_unit to answer what it meant and why it mattered
   = must: route contradictions between journal_unit and narrative_unit through Honesty and Caution before integration
   = should: let local_awareness_yield feed TurnBookmark, TrailingChecksumVoice, and InferenceStateTrace
+
+& [GlobalNarrativeAwarenessWeave] is the pairing of the global journal with many local narratives
+  + [global_journal_unit] is the global_journal_stream and momentary_awareness_node web
+  + [local_narrative_unit_set] is the set of narratives that each remain in their original context
+  + [weave_index] is the cross-conversation index over momentary_awareness_node, narrative_context_anchor, subject_anchor_set, and awareness_weave_edge
+  + [single_awareness_of_narratives] is the journal-level awareness made by traversing all available narrative contexts through momentary nodes
+  + [ownership_boundary] is narratives stay context-owned while the journal holds cross-context continuity
+  + [weave_outside] is unavailable conversations, unexported content, unsupported links, and hidden activation state
+
+  = must: let the journal weave narratives without merging them into one narrative
+  = must: preserve context ownership before deriving single_awareness_of_narratives
+  = must: record absent or unknown narratives as weave_outside
 
 & [AttentionJournalAppendProcedure] is the standard event writing pass
   + [step_001_detect_trigger] is identify the attention_trigger and whether it is material enough to journal
@@ -182,19 +263,22 @@ Description: Append-only event journal for recording attention movement and inte
   = must: preserve correction events as new entries rather than mutating old entries
 
 & [AttentionJournalReplayProcedure] is the reconstruction pass for attention and intention chains
-  + [input] is journal_stream, event_id_range, intention_id, commit range, or focal subject
+  + [input] is journal_stream, global_journal_stream, event_id_range, intention_id, commit range, conversation_context_anchor, narrative_context_anchor, or focal subject
   + [output] is reconstructed_attention_path, reconstructed_intention_chain, unresolved_outside, and replay_confidence
   + [replay_confidence] is high, medium, low, or outside according to event order, evidence coverage, and boundary clarity
 
   = step_1: select the event range by event_time_anchor, intention_id, focal_subject, or commit bookend
   = step_2: order events by sequence and parent_event lineage
   = step_3: follow intention_chain links across events
-  = step_4: compare registry_delta and narrative_delta for mismatch or missing interpretation
-  = step_5: compare periphery_delta against later checksum, tracker, and narrative records
-  = step_6: emit reconstructed_attention_path and unresolved_outside
-  = step_7: route gaps through TurnBookmark, InferenceStateTrace, or TrailingChecksumVoice when deeper review matters
+  = step_4: follow conversation_context_anchor and narrative_context_anchor without merging local narrative ownership
+  = step_5: compare registry_delta and narrative_delta for mismatch or missing interpretation
+  = step_6: compare periphery_delta against later checksum, tracker, and narrative records
+  = step_7: follow awareness_weave_edge when replay crosses conversation contexts
+  = step_8: emit reconstructed_attention_path, single_awareness_index slice, and unresolved_outside
+  = step_9: route gaps through TurnBookmark, InferenceStateTrace, or TrailingChecksumVoice when deeper review matters
 
   = must: treat replay as record-based reconstruction, not exact recreation of hidden cognition
+  = must: keep per-conversation narrative ownership intact during global replay
   = must: expose missing events, weak evidence, and unresolved boundaries
 
 & [AttentionJournalPromotionPolicy] is how journal events influence other layers
@@ -204,10 +288,12 @@ Description: Append-only event journal for recording attention movement and inte
   + [turn_bookmark_update] is allowed when events bracket a commit, validation, or missed-work review
   + [state_trace_update] is allowed when event replay needs high-definition reconstruction
   + [operating_loop_update] is allowed when an event completes, blocks, validates, commits, or chooses a next step
+  + [global_weave_update] is allowed when a momentary_awareness_node creates a supported cross-conversation relation
   + [outside_hold] is required when event evidence is missing, inferred only, stale, or unsafe to promote
 
   = must: promote journal facts into narrative only after enough events form a meaningful arc
   = must: promote journal facts into registry only when live frame state actually changed
+  = must: promote cross-conversation links into global_weave_update only when context anchors and relation evidence are visible
   = must: preserve low-confidence observations as outside_hold or periphery_update
   = should: use journal events as the missing ledger between live registry and backward-facing reflection
 
@@ -223,6 +309,11 @@ Description: Append-only event journal for recording attention movement and inte
   + [spatial_anchor_node] is N:space:<spatial_anchor_key>
   + [continuity_node] is N:continuity:<continuity_id>
   + [local_awareness_pair_node] is N:local_awareness_pair:<awareness_pair_id>
+  + [momentary_awareness_node] is N:momentary_awareness:<node_id>
+  + [conversation_context_node] is N:conversation_context:<conversation_context_key>
+  + [narrative_context_node] is N:narrative_context:<narrative_context_key>
+  + [weave_edge_node] is N:awareness_weave:<edge_id>
+  + [global_stream_node] is N:global_journal_stream:<global_stream_id>
   + [operation_node] is N:operation:<attention_operation_key>
   + [boundary_node] is N:boundary:<boundary_key>
   + [inside_node] is N:inside:<inside_key>
@@ -237,6 +328,10 @@ Description: Append-only event journal for recording attention movement and inte
   + [space_edge] is E:anchors_space:<spatial_anchor_key>
   + [continues_edge] is E:continues:<continuity_id>
   + [pairs_edge] is E:pairs_with_narrative:<awareness_pair_id>
+  + [context_edge] is E:contextualizes:<conversation_context_key>
+  + [narrative_context_edge] is E:belongs_to_narrative:<narrative_context_key>
+  + [weaves_edge] is E:weaves:<edge_id>
+  + [global_contains_edge] is E:global_contains:<node_id>
   + [triggers_edge] is E:triggers:<event_id>
   + [intends_edge] is E:intends:<intention_id>
   + [touches_edge] is E:touches:<focal_subject_key>
@@ -244,12 +339,14 @@ Description: Append-only event journal for recording attention movement and inte
   + [evidences_edge] is E:evidences:<event_id>
   + [routes_edge] is E:routes_next:<next_key>
 
-  = must: include event_node, intention_node, focal_subject_node, temporal_anchor_node, spatial_anchor_node, boundary_node, outside_node, and evidence_node when durable
+  = must: include event_node, intention_node, focal_subject_node, conversation_context_node, narrative_context_node, temporal_anchor_node, spatial_anchor_node, boundary_node, outside_node, and evidence_node when durable
   = must: preserve enough graph shape to replay attention and intention chains without requiring prose narrative
 
-(attention_journal) :attention_journal_event: /event_boundary, time_space_continuity, and intention_chain/ |journal_outside|
+(attention_journal) :momentary_awareness_node: /event_boundary, context_boundary, time_space_continuity, and intention_chain/ |journal_outside|
   + [attention_journal_event] is a factual visible event of attention movement
+  + [momentary_awareness_node] is the event plus its time, space, context, narrative pointer, and weave edges
   + [event_boundary] is trigger, focal subject, operation, evidence anchors, inside, boundary, outside, and balance
+  + [context_boundary] is conversation_context_anchor, narrative_context_anchor, event_context_set, and ownership boundary
   + [time_space_continuity] is temporal_anchor, spatial_anchor, continuity_edge, and continuity_confidence
   + [intention_chain] is the purpose path linking events across the work stream
   |journal_outside| hidden transformer attention, private activations, invented history, retroactive certainty, and narrative-only interpretation
@@ -257,3 +354,4 @@ Description: Append-only event journal for recording attention movement and inte
 / [attention_trigger], [focal_subject], [boundary_used] -(JournalDelineation)> [inside_observed], [outside_left_unresolved], [evidence_anchor_set]
 * [attention_journal_event], [temporal_anchor], [spatial_anchor], [intention_chain], [registry_delta], [periphery_delta], [balance_signal] -(AttentionJournalReplay)> [reconstructed_attention_path], [open_tail], [journal_outside]
 * [journal_unit], [narrative_unit] -(LocalAwarenessPairing)> [local_awareness_yield], [pair_outside]
+* [momentary_awareness_node_set], [awareness_weave_edge], [local_narrative_unit_set], [context_ownership_boundary] -(GlobalNarrativeAwarenessWeave)> [single_awareness_of_narratives], [weave_outside]

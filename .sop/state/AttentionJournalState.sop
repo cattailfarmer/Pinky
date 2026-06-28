@@ -5,27 +5,34 @@ Description: Live pointer state for the append-only AttentionJournal stream.
 @ [source] C:\Project\Pinky\.sop\platform\AttentionJournal.sop
 @ [source] C:\Project\Pinky\.sop\events\journals\2026-06-28_attention_journal_system_001.sop
 @ [source] C:\Project\Pinky\.sop\events\journals\2026-06-28_attention_journal_continuity_002.sop
+@ [source] C:\Project\Pinky\.sop\events\journals\2026-06-28_cross_conversation_attention_journal_003.sop
 
 & [CurrentAttentionJournalState] is the live journal state for attention and intention chain replay
   + [state_status] is active
   + [journal_root] is C:\Project\Pinky\.sop\events\journals
   + [journal_contract] is C:\Project\Pinky\.sop\platform\AttentionJournal.sop
-  + [current_journal_stream] is attention_journal_system_bootstrap_stream
-  + [latest_event] is attention_event_2026_06_28_attention_journal_continuity_002
-  + [previous_event] is attention_event_2026_06_28_attention_journal_system_001
+  + [current_journal_stream] is global_cross_conversation_attention_journal_stream
+  + [global_journal_stream] is global_cross_conversation_attention_journal_stream
+  + [latest_event] is attention_event_2026_06_28_cross_conversation_attention_journal_003
+  + [previous_event] is attention_event_2026_06_28_attention_journal_continuity_002
   + [active_intention_chain] is intention_chain_attention_journal_system
   + [root_intention] is make a journal system to sort out attention and intention chains
-  + [current_intention] is add time-space continuity and local-awareness pairing between journal and narrative
-  + [active_continuity_frame] is continuity_attention_journal_system_001_to_continuity_002
+  + [current_intention] is make the journal notice context and weave momentary awareness nodes across all available conversations and narratives
+  + [active_continuity_frame] is continuity_attention_journal_continuity_002_to_cross_conversation_003
   + [active_local_awareness_pair] is local_awareness_pair_attention_journal_and_narrative
+  + [active_global_awareness_weave] is global_narrative_awareness_weave_available_conversations
+  + [active_momentary_awareness_node] is momentary_awareness_node_cross_conversation_attention_journal_003
+  + [conversation_scope_policy] is global across available, preserved, exported, mailboxed, or user-provided conversation contexts rather than per conversation
+  + [narrative_ownership_boundary] is each narrative remains owned by its context while the journal weaves a single awareness index over them
   + [open_tail] is integrate AttentionJournal into future operating-loop, registry, and trailing-checksum updates when those files are safe to edit or explicitly selected
-  + [journal_policy] is append-only factual attention events with temporal anchors, spatial anchors, and continuity edges before narrative interpretation when durable reconstruction matters
+  + [journal_policy] is append-only factual attention events with context anchors, temporal anchors, spatial anchors, continuity edges, and cross-conversation weave edges before narrative interpretation when durable reconstruction matters
   + [promotion_boundary] is journal events may inform narrative, registry, periphery, turn bookmark, and operating loop records, but do not replace them
-  + [outside] is hidden model attention, exact activation replay, old events not yet journaled, and runtime automation not built in this slice
+  + [outside] is hidden model attention, exact activation replay, old events not yet journaled, inaccessible conversations, unexported private thread state, and runtime automation not built in this slice
 
   = must: read AttentionJournal.sop before treating journal events as durable structure
   = must: append new events rather than rewrite prior events
   = must: preserve time-space continuity separately from narrative meaning
+  = must: preserve conversation context and narrative ownership separately from global awareness weaving
   = must: keep open_tail visible until integration pointers are added to root contracts or future operating-loop records
   = should: use this state as the re-entry seed when a future turn asks what attention events happened
   - never: treat this state as complete history before 2026-06-28

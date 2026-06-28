@@ -1,0 +1,51 @@
+Subject: Cross Conversation Attention Journal Event 003 Hypergraph
+
+Description: SOP-HG shape for the cross-conversation journal refinement event.
+
+& [CrossConversationAttentionJournalGraph_2026_06_28_003] is an attention journal hypergraph record
+  + [record_status] is completed
+  + [record_date] is 2026-06-28
+  + [global_stream_node] is N:global_journal_stream:global_cross_conversation_attention_journal_stream
+  + [stream_node] is N:journal_stream:global_cross_conversation_attention_journal_stream
+  + [event_node] is N:attention_event:attention_event_2026_06_28_cross_conversation_attention_journal_003
+  + [momentary_awareness_node] is N:momentary_awareness:momentary_awareness_node_cross_conversation_attention_journal_003
+  + [parent_event_node] is N:attention_event:attention_event_2026_06_28_attention_journal_continuity_002
+  + [child_event_node] is N:attention_event:future_conversation_import_or_operating_loop_journal_event
+  + [intention_node] is N:intention:intention_chain_attention_journal_system
+  + [conversation_context_node] is N:conversation_context:current_codex_conversation_context
+  + [narrative_context_node] is N:narrative_context:current_journal_refinement_narrative_surface
+  + [focal_subject_node] is N:subject:CrossConversationAwarenessJournal
+  + [trigger_node] is N:trigger:user_request_global_journal_weave_all_narratives
+  + [temporal_anchor_node] is N:time:current_turn_after_commit_deb8f40_event_sequence_003
+  + [spatial_anchor_node] is N:space:C_Project_Pinky_dot_sop_journal_surfaces
+  + [continuity_node] is N:continuity:continuity_attention_journal_continuity_002_to_cross_conversation_003
+  + [weave_edge_node] is N:awareness_weave:global_narrative_awareness_weave_available_conversations
+  + [local_awareness_pair_node] is N:local_awareness_pair:local_awareness_pair_attention_journal_and_narrative
+  + [operation_node] is N:operation:define_global_journal_stream_momentary_awareness_nodes_context_weave
+  + [boundary_node] is N:boundary:available_conversation_records_narrative_context_ownership
+  + [inside_node] is N:inside:global_journal_stream_context_anchors_momentary_nodes_weave_edges
+  + [outside_node] is N:outside:unavailable_conversations_unexported_threads_hidden_activations_runtime
+  + [evidence_node] is N:evidence:cross_conversation_source_manifest_contract_state_parent_event
+  + [balance_node] is N:balance:stable
+  + [next_node] is N:attention_hint:future_conversation_import_records_and_operating_loop_journal_emission
+  + [global_contains_edge] is E:global_contains:global_cross_conversation_attention_journal_stream->momentary_awareness_node_cross_conversation_attention_journal_003
+  + [contains_edge] is E:contains_event:global_cross_conversation_attention_journal_stream->attention_event_2026_06_28_cross_conversation_attention_journal_003
+  + [follows_edge] is E:follows_event:attention_event_2026_06_28_attention_journal_continuity_002->attention_event_2026_06_28_cross_conversation_attention_journal_003
+  + [opens_edge] is E:opens_event:attention_event_2026_06_28_cross_conversation_attention_journal_003->future_conversation_import_or_operating_loop_journal_event
+  + [context_edge] is E:contextualizes:attention_event_2026_06_28_cross_conversation_attention_journal_003->current_codex_conversation_context
+  + [narrative_context_edge] is E:belongs_to_narrative:attention_event_2026_06_28_cross_conversation_attention_journal_003->current_journal_refinement_narrative_surface
+  + [time_edge] is E:anchors_time:attention_event_2026_06_28_cross_conversation_attention_journal_003->current_turn_after_commit_deb8f40_event_sequence_003
+  + [space_edge] is E:anchors_space:attention_event_2026_06_28_cross_conversation_attention_journal_003->C_Project_Pinky_dot_sop_journal_surfaces
+  + [continues_edge] is E:continues:continuity_attention_journal_continuity_002_to_cross_conversation_003
+  + [weaves_edge] is E:weaves:momentary_awareness_node_cross_conversation_attention_journal_003->global_narrative_awareness_weave_available_conversations
+  + [pairs_edge] is E:pairs_with_narrative:attention_event_2026_06_28_cross_conversation_attention_journal_003->local_awareness_pair_attention_journal_and_narrative
+  + [triggers_edge] is E:triggers:user_request_global_journal_weave_all_narratives->attention_event_2026_06_28_cross_conversation_attention_journal_003
+  + [intends_edge] is E:intends:attention_event_2026_06_28_cross_conversation_attention_journal_003->intention_chain_attention_journal_system
+  + [touches_edge] is E:touches:attention_event_2026_06_28_cross_conversation_attention_journal_003->CrossConversationAwarenessJournal
+  + [bounds_edge] is E:bounds:attention_event_2026_06_28_cross_conversation_attention_journal_003->available_conversation_records_narrative_context_ownership
+  + [evidences_edge] is E:evidences:attention_event_2026_06_28_cross_conversation_attention_journal_003->cross_conversation_source_manifest_contract_state_parent_event
+  + [routes_edge] is E:routes_next:attention_event_2026_06_28_cross_conversation_attention_journal_003->future_conversation_import_records_and_operating_loop_journal_emission
+
+  = must: preserve global journal stream across available conversation contexts
+  = must: preserve local narrative context ownership
+  = must: preserve unavailable conversations outside until explicitly provided or preserved
