@@ -1,0 +1,18 @@
+Subject: Dictated Attention Journal System Source
+
+Description: Preserved source wording for adding a journal layer that records attention events and intention chains separately from narrative interpretation.
+
+& [DictatedAttentionJournalSystemSource] is the preserved source input
+  + [source_date] is 2026-06-28
+  + [source_origin] is user dictated direction in Codex conversation
+  + [source_text] is "I just had another idea... this system has a 'narrative' that tracks the plain description of intent of operations in the system, but it doesn't have a real clean 'journal' tracking the events of attention?"
+  + [source_text_2] is "let's make a journal system. that will help to sort out attention and intention chains."
+  + [interpreted_need] is add an append-only attention event ledger that records what attention touched, in what order, under what trigger, and how intention chains moved across focus, registry, narrative, periphery, and reflection
+  + [narrative_boundary] is narrative explains meaning and intent while the journal records factual attention events and state movement
+  + [implementation_boundary] is SOP-only specification, state seed, and first event record in current turn
+  + [outside] is hidden model activations, exact native attention access, executable runtime automation, and retroactive rewriting of prior attention events
+
+  = must: preserve the user's distinction between narrative and journal
+  = must: keep journal events factual, small, ordered, and append-only
+  = must: define intention chains as inspectable links of purpose across attention events
+  = must: route canonical rules through the active Pinky .sop source authority

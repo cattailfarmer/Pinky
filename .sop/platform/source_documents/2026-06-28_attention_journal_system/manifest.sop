@@ -1,0 +1,15 @@
+Subject: Attention Journal System Source Manifest
+
+Description: Source preservation manifest for the attention journal system.
+
+& [AttentionJournalSystemSourceManifest] is the source manifest
+  + [source_document] is C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_attention_journal_system\Dictated_Attention_Journal_System_Source.sop
+  + [canonical_output] is C:\Project\Pinky\.sop\platform\AttentionJournal.sop
+  + [state_output] is C:\Project\Pinky\.sop\state\AttentionJournalState.sop
+  + [journal_event] is C:\Project\Pinky\.sop\events\journals\2026-06-28_attention_journal_system_001.sop
+  + [hypergraph_record] is C:\Project\Pinky\.sop\events\journals\2026-06-28_attention_journal_system_001.hg.sop
+  + [intake_status] is processed_to_canonical_sop
+  + [authority_boundary] is source document preserved separately from canonical journal rules and emitted event records
+
+  = must: keep source wording separate from canonical AttentionJournal rules
+  = must: cite this manifest when the journal layer is treated as a completed platform slice

@@ -1,0 +1,26 @@
+Subject: Current Attention Journal State
+
+Description: Live pointer state for the append-only AttentionJournal stream.
+
+@ [source] C:\Project\Pinky\.sop\platform\AttentionJournal.sop
+@ [source] C:\Project\Pinky\.sop\events\journals\2026-06-28_attention_journal_system_001.sop
+
+& [CurrentAttentionJournalState] is the live journal state for attention and intention chain replay
+  + [state_status] is active
+  + [journal_root] is C:\Project\Pinky\.sop\events\journals
+  + [journal_contract] is C:\Project\Pinky\.sop\platform\AttentionJournal.sop
+  + [current_journal_stream] is attention_journal_system_bootstrap_stream
+  + [latest_event] is attention_event_2026_06_28_attention_journal_system_001
+  + [active_intention_chain] is intention_chain_attention_journal_system
+  + [root_intention] is make a journal system to sort out attention and intention chains
+  + [current_intention] is define the canonical journal layer, live pointer state, and first event record without runtime automation
+  + [open_tail] is integrate AttentionJournal into future operating-loop, registry, and trailing-checksum updates when those files are safe to edit or explicitly selected
+  + [journal_policy] is append-only factual attention events before narrative interpretation when durable reconstruction matters
+  + [promotion_boundary] is journal events may inform narrative, registry, periphery, turn bookmark, and operating loop records, but do not replace them
+  + [outside] is hidden model attention, exact activation replay, old events not yet journaled, and runtime automation not built in this slice
+
+  = must: read AttentionJournal.sop before treating journal events as durable structure
+  = must: append new events rather than rewrite prior events
+  = must: keep open_tail visible until integration pointers are added to root contracts or future operating-loop records
+  = should: use this state as the re-entry seed when a future turn asks what attention events happened
+  - never: treat this state as complete history before 2026-06-28

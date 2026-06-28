@@ -1,0 +1,37 @@
+Subject: Attention Journal System Event 001
+
+Description: First attention journal event recording the creation of the journal layer as distinct from narrative.
+
+@ [source] C:\Project\Pinky\.sop\platform\AttentionJournal.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_attention_journal_system\Dictated_Attention_Journal_System_Source.sop
+@ [source] C:\Project\Pinky\.sop\platform\source_documents\2026-06-28_attention_journal_system\manifest.sop
+
+& [AttentionJournalEvent_2026_06_28_001] is an attention_journal_event
+  + [event_id] is attention_event_2026_06_28_attention_journal_system_001
+  + [event_sequence] is 001
+  + [parent_event] is none because this is the bootstrap event for the journal stream
+  + [child_event_set] is future root integration event, future operating-loop journal event, or future correction event
+  + [event_time_anchor] is 2026-06-28 current Codex turn before journal-system commit
+  + [event_kind] is receive_input and emit_spec
+  + [attention_trigger] is user request to make a journal system for sorting attention and intention chains
+  + [focal_subject] is AttentionJournal
+  + [active_faculty_set] is Honesty, Caution, Wisdom, Archivist, Refiner, Planner, and Weaver
+  + [attention_operation] is preserve_source, delineate_journal_from_narrative, define_event_schema, define_intention_chain, seed_state, and emit_first_event
+  + [intention_chain] is intention_chain_attention_journal_system
+  + [inside_observed] is narrative gap, attention event ledger need, intention chain need, append-only event order, replay support, and source preservation
+  + [boundary_used] is C:\Project\Pinky\.sop active authority, SOP Markdown, source preservation, and no-runtime current slice
+  + [outside_left_unresolved] is hidden model attention, exact activation replay, retroactive journaling of all prior events, root contract updates inside dirty existing files, and runtime automation
+  + [periphery_delta] is journal should later bridge registry, narrative, periphery, turn bookmark, trailing checksum, operating loop, and inference state trace
+  + [registry_delta] is new AttentionJournalState pointer created separately from existing AttentionRuntimeRegistryState
+  + [narrative_delta] is journal is now the factual attention-event ledger beneath narrative interpretation
+  + [evidence_anchor_set] is source document, manifest, AttentionJournal.sop, AttentionJournalState.sop, and this event record
+  + [balance_signal] is stable
+  + [resolution_state] is continued
+  + [next_attention_hint] is future safe integration can add AttentionJournal import pointers to Attention.sop, AttentionRuntimeRegistry.sop, SemanticCognitionOperatingLoop.sop, TurnBookmark.sop, and TrailingChecksumVoice.sop after dirty-state review
+  + [journal_outside] is private activations, exact hidden state, invented prior event history, and runtime automation
+
+  = must: preserve this event as the bootstrap journal entry
+  = must: treat this event as beginning the journal layer, not as complete historical coverage
+
+/ [user_request], [AttentionJournal], [source_preservation_boundary] -(JournalDelineation)> [attention_event_ledger_need], [journal_outside], [evidence_anchor_set]
+* [attention_event_ledger_need], [intention_chain_attention_journal_system], [state_pointer], [balance_signal] -(JournalBootstrap)> [AttentionJournal], [CurrentAttentionJournalState], [open_tail]
